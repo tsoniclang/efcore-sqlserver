@@ -1,0 +1,316 @@
+{
+  "namespace": "Azure.Messaging",
+  "contributingAssemblies": [
+    "Azure.Core"
+  ],
+  "types": [
+    {
+      "stableId": "Azure.Core:Azure.Messaging.CloudEventDataFormat",
+      "clrName": "Azure.Messaging.CloudEventDataFormat",
+      "tsEmitName": "CloudEventDataFormat",
+      "kind": "Enum",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Azure.Core:Azure.Messaging.CloudEventDataFormat::value__System.Int32",
+          "clrName": "value__",
+          "tsEmitName": "value__",
+          "normalizedSignature": "value__|System.Int32|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "isLiteral": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Messaging.CloudEventDataFormat::BinaryAzure.Messaging.CloudEventDataFormat",
+          "clrName": "Binary",
+          "tsEmitName": "binary",
+          "normalizedSignature": "Binary|Azure.Messaging.CloudEventDataFormat|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Azure.Core:Azure.Messaging.CloudEventDataFormat::JsonAzure.Messaging.CloudEventDataFormat",
+          "clrName": "Json",
+          "tsEmitName": "json",
+          "normalizedSignature": "Json|Azure.Messaging.CloudEventDataFormat|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        }
+      ],
+      "events": [],
+      "constructors": []
+    },
+    {
+      "stableId": "Azure.Core:Azure.Messaging.CloudEvent",
+      "clrName": "Azure.Messaging.CloudEvent",
+      "tsEmitName": "CloudEvent",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Azure.Core:Azure.Messaging.CloudEvent::ParseMany(System.BinaryData,System.Boolean):Azure.Messaging.CloudEvent[]",
+          "clrName": "ParseMany",
+          "tsEmitName": "parseMany",
+          "normalizedSignature": "ParseMany|(System.BinaryData,System.Boolean):Azure.Messaging.CloudEvent[]|static=true",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 2,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Messaging.CloudEvent::Parse(System.BinaryData,System.Boolean):Azure.Messaging.CloudEvent",
+          "clrName": "Parse",
+          "tsEmitName": "parse",
+          "normalizedSignature": "Parse|(System.BinaryData,System.Boolean):Azure.Messaging.CloudEvent|static=true",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 2,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Azure.Core:Azure.Messaging.CloudEvent::Data:System.BinaryData",
+          "clrName": "Data",
+          "tsEmitName": "data",
+          "normalizedSignature": "Data|:System.BinaryData|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Azure.Core:Azure.Messaging.CloudEvent::Id:System.String",
+          "clrName": "Id",
+          "tsEmitName": "id",
+          "normalizedSignature": "Id|:System.String|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Azure.Core:Azure.Messaging.CloudEvent::Source:System.String",
+          "clrName": "Source",
+          "tsEmitName": "source",
+          "normalizedSignature": "Source|:System.String|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Azure.Core:Azure.Messaging.CloudEvent::Type:System.String",
+          "clrName": "Type",
+          "tsEmitName": "type_",
+          "normalizedSignature": "Type|:System.String|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Azure.Core:Azure.Messaging.CloudEvent::Time:System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "Time",
+          "tsEmitName": "time",
+          "normalizedSignature": "Time|:System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Azure.Core:Azure.Messaging.CloudEvent::DataSchema:System.String",
+          "clrName": "DataSchema",
+          "tsEmitName": "dataSchema",
+          "normalizedSignature": "DataSchema|:System.String|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Azure.Core:Azure.Messaging.CloudEvent::DataContentType:System.String",
+          "clrName": "DataContentType",
+          "tsEmitName": "dataContentType",
+          "normalizedSignature": "DataContentType|:System.String|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Azure.Core:Azure.Messaging.CloudEvent::Subject:System.String",
+          "clrName": "Subject",
+          "tsEmitName": "subject",
+          "normalizedSignature": "Subject|:System.String|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Azure.Core:Azure.Messaging.CloudEvent::ExtensionAttributes:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "ExtensionAttributes",
+          "tsEmitName": "extensionAttributes",
+          "normalizedSignature": "ExtensionAttributes|:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|(System.String,System.String,System.Object,System.Type):void|static=false",
+          "isStatic": false,
+          "parameterCount": 4
+        },
+        {
+          "normalizedSignature": "constructor|(System.String,System.String,System.BinaryData,System.String,Azure.Messaging.CloudEventDataFormat):void|static=false",
+          "isStatic": false,
+          "parameterCount": 5
+        }
+      ]
+    },
+    {
+      "stableId": "Azure.Core:Azure.Messaging.MessageContent",
+      "clrName": "Azure.Messaging.MessageContent",
+      "tsEmitName": "MessageContent",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Azure.Core:Azure.Messaging.MessageContent::Data:System.BinaryData",
+          "clrName": "Data",
+          "tsEmitName": "data",
+          "normalizedSignature": "Data|:System.BinaryData|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Azure.Core:Azure.Messaging.MessageContent::ContentType:System.Nullable_1[[Azure.Core.ContentType,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
+          "clrName": "ContentType",
+          "tsEmitName": "contentType",
+          "normalizedSignature": "ContentType|:System.Nullable_1[[Azure.Core.ContentType,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Azure.Core:Azure.Messaging.MessageContent::IsReadOnly:System.Boolean",
+          "clrName": "IsReadOnly",
+          "tsEmitName": "isReadOnly",
+          "normalizedSignature": "IsReadOnly|:System.Boolean|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "namespace": "System.Diagnostics",
+  "types": [
+    {
+      "stableId": "System.Configuration.ConfigurationManager:System.Diagnostics.TraceConfiguration",
+      "clrName": "System.Diagnostics.TraceConfiguration",
+      "tsEmitName": "TraceConfiguration",
+      "assemblyName": "System.Configuration.ConfigurationManager",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Diagnostics.TraceConfiguration::Register():System.Void",
+          "clrName": "Register",
+          "tsEmitName": "register",
+          "metadataToken": 100663618,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "Register|():System.Void|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "System.Diagnostics.TraceConfiguration",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "register",
+          "isStatic": true,
+          "tsSignatureId": "Register|():System.Void|static=true",
+          "target": {
+            "declaringClrType": "System.Diagnostics.TraceConfiguration",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100663618
+          }
+        }
+      ]
+    }
+  ]
+}

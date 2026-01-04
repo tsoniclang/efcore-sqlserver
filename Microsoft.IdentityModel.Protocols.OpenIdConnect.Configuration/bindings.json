@@ -1,0 +1,117 @@
+{
+  "namespace": "Microsoft.IdentityModel.Protocols.OpenIdConnect.Configuration",
+  "types": [
+    {
+      "stableId": "Microsoft.IdentityModel.Protocols.OpenIdConnect:Microsoft.IdentityModel.Protocols.OpenIdConnect.Configuration.OpenIdConnectConfigurationValidator",
+      "clrName": "Microsoft.IdentityModel.Protocols.OpenIdConnect.Configuration.OpenIdConnectConfigurationValidator",
+      "tsEmitName": "OpenIdConnectConfigurationValidator",
+      "assemblyName": "Microsoft.IdentityModel.Protocols.OpenIdConnect",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.IdentityModel.Protocols.OpenIdConnect:Microsoft.IdentityModel.Protocols.OpenIdConnect.Configuration.OpenIdConnectConfigurationValidator::Validate(Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfiguration):Microsoft.IdentityModel.Protocols.ConfigurationValidationResult",
+          "clrName": "Validate",
+          "tsEmitName": "validate",
+          "metadataToken": 100663703,
+          "canonicalSignature": "(Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfiguration):Microsoft.IdentityModel.Protocols.ConfigurationValidationResult",
+          "normalizedSignature": "Validate|(Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfiguration):Microsoft.IdentityModel.Protocols.ConfigurationValidationResult|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.IdentityModel.Protocols.OpenIdConnect.Configuration.OpenIdConnectConfigurationValidator",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Protocols.OpenIdConnect",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.IConfigurationValidator\u00601::Validate(T):Microsoft.IdentityModel.Protocols.ConfigurationValidationResult",
+          "clrName": "Validate",
+          "tsEmitName": "validate$view",
+          "metadataToken": 100663349,
+          "canonicalSignature": "(T):Microsoft.IdentityModel.Protocols.ConfigurationValidationResult",
+          "normalizedSignature": "Validate|(T):Microsoft.IdentityModel.Protocols.ConfigurationValidationResult|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.IdentityModel.Protocols.IConfigurationValidator\u00601",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Protocols",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.IdentityModel.Protocols.OpenIdConnect:Microsoft.IdentityModel.Protocols.OpenIdConnect.Configuration.OpenIdConnectConfigurationValidator::MinimumNumberOfKeys:System.Int32",
+          "clrName": "MinimumNumberOfKeys",
+          "tsEmitName": "minimumNumberOfKeys",
+          "metadataToken": 385876189,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "MinimumNumberOfKeys|:System.Int32|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.IdentityModel.Protocols.OpenIdConnect.Configuration.OpenIdConnectConfigurationValidator",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Protocols.OpenIdConnect"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.IdentityModel.Protocols.OpenIdConnect:Microsoft.IdentityModel.Protocols.OpenIdConnect.Configuration.OpenIdConnectConfigurationValidator::.ctor():void",
+          "metadataToken": 100663706,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.IdentityModel.Protocols.OpenIdConnect.Configuration.OpenIdConnectConfigurationValidator",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Protocols.OpenIdConnect"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "validate",
+          "isStatic": false,
+          "tsSignatureId": "Validate|(Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfiguration):Microsoft.IdentityModel.Protocols.ConfigurationValidationResult|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Protocols.OpenIdConnect.Configuration.OpenIdConnectConfigurationValidator",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Protocols.OpenIdConnect",
+            "metadataToken": 100663703
+          }
+        },
+        {
+          "tsName": "validate$view",
+          "isStatic": false,
+          "tsSignatureId": "Validate|(T):Microsoft.IdentityModel.Protocols.ConfigurationValidationResult|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Protocols.IConfigurationValidator\u00601",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Protocols",
+            "metadataToken": 100663349
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "minimumNumberOfKeys",
+          "isStatic": false,
+          "tsSignatureId": "MinimumNumberOfKeys|:System.Int32|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Protocols.OpenIdConnect.Configuration.OpenIdConnectConfigurationValidator",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Protocols.OpenIdConnect",
+            "metadataToken": 385876189
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Protocols.OpenIdConnect.Configuration.OpenIdConnectConfigurationValidator",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Protocols.OpenIdConnect",
+            "metadataToken": 100663706
+          }
+        }
+      ]
+    }
+  ]
+}

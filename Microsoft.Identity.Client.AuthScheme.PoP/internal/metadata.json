@@ -1,0 +1,72 @@
+{
+  "namespace": "Microsoft.Identity.Client.AuthScheme.PoP",
+  "contributingAssemblies": [
+    "Microsoft.Identity.Client"
+  ],
+  "types": [
+    {
+      "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AuthScheme.PoP.IPoPCryptoProvider",
+      "clrName": "Microsoft.Identity.Client.AuthScheme.PoP.IPoPCryptoProvider",
+      "tsEmitName": "IPoPCryptoProvider",
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AuthScheme.PoP.IPoPCryptoProvider::Sign(System.Byte[]):System.Byte[]",
+          "clrName": "Sign",
+          "tsEmitName": "sign",
+          "normalizedSignature": "Sign|(System.Byte[]):System.Byte[]|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AuthScheme.PoP.IPoPCryptoProvider::CannonicalPublicKeyJwk:System.String",
+          "clrName": "CannonicalPublicKeyJwk",
+          "tsEmitName": "cannonicalPublicKeyJwk",
+          "normalizedSignature": "CannonicalPublicKeyJwk|:System.String|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AuthScheme.PoP.IPoPCryptoProvider::CryptographicAlgorithm:System.String",
+          "clrName": "CryptographicAlgorithm",
+          "tsEmitName": "cryptographicAlgorithm",
+          "normalizedSignature": "CryptographicAlgorithm|:System.String|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    }
+  ]
+}

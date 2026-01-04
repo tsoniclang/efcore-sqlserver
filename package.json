@@ -1,0 +1,28 @@
+{
+  "name": "@tsonic/efcore-sqlserver",
+  "version": "0.1.0",
+  "description": "TypeScript type definitions for Microsoft.EntityFrameworkCore.SqlServer (+ dependencies) for .NET 10",
+  "type": "module",
+  "keywords": [
+    "dotnet",
+    "typescript",
+    "types",
+    "tsonic",
+    "efcore",
+    "entity-framework-core",
+    "sqlserver"
+  ],
+  "author": "Tsonic Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tsoniclang/efcore-sqlserver.git"
+  },
+  "peerDependencies": {
+    "@tsonic/core": "^0.6.0",
+    "@tsonic/dotnet": "^0.8.4",
+    "@tsonic/microsoft-extensions": "^0.1.0",
+    "@tsonic/efcore": "^0.1.0"
+  }
+}
+

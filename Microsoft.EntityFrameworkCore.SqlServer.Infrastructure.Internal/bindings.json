@@ -1,0 +1,1259 @@
+{
+  "namespace": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal",
+  "types": [
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType",
+      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType",
+      "tsEmitName": "SqlServerEngineType",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType::value__System.Int32",
+          "clrName": "value__",
+          "tsEmitName": "value__",
+          "metadataToken": 67109415,
+          "normalizedSignature": "value__|System.Int32|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType::UnknownMicrosoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType",
+          "clrName": "Unknown",
+          "tsEmitName": "unknown_",
+          "metadataToken": 67109416,
+          "normalizedSignature": "Unknown|Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType::SqlServerMicrosoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType",
+          "clrName": "SqlServer",
+          "tsEmitName": "sqlServer",
+          "metadataToken": 67109417,
+          "normalizedSignature": "SqlServer|Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType::AzureSqlMicrosoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType",
+          "clrName": "AzureSql",
+          "tsEmitName": "azureSql",
+          "metadataToken": 67109418,
+          "normalizedSignature": "AzureSql|Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType::AzureSynapseMicrosoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType",
+          "clrName": "AzureSynapse",
+          "tsEmitName": "azureSynapse",
+          "metadataToken": 67109419,
+          "normalizedSignature": "AzureSynapse|Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "events": [],
+      "constructors": [],
+      "exposedFields": [
+        {
+          "tsName": "value__",
+          "isStatic": false,
+          "tsSignatureId": "value__|System.Int32|static=false|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109415
+          }
+        },
+        {
+          "tsName": "unknown_",
+          "isStatic": true,
+          "tsSignatureId": "Unknown|Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109416
+          }
+        },
+        {
+          "tsName": "sqlServer",
+          "isStatic": true,
+          "tsSignatureId": "SqlServer|Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109417
+          }
+        },
+        {
+          "tsName": "azureSql",
+          "isStatic": true,
+          "tsSignatureId": "AzureSql|Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109418
+          }
+        },
+        {
+          "tsName": "azureSynapse",
+          "isStatic": true,
+          "tsSignatureId": "AzureSynapse|Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109419
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
+      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
+      "tsEmitName": "ISqlServerSingletonOptions",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions::EngineType:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType",
+          "clrName": "EngineType",
+          "tsEmitName": "engineType",
+          "metadataToken": 385876184,
+          "canonicalSignature": ":Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType",
+          "normalizedSignature": "EngineType|:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions::SqlServerCompatibilityLevel:System.Int32",
+          "clrName": "SqlServerCompatibilityLevel",
+          "tsEmitName": "sqlServerCompatibilityLevel",
+          "metadataToken": 385876185,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "SqlServerCompatibilityLevel|:System.Int32|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions::AzureSqlCompatibilityLevel:System.Int32",
+          "clrName": "AzureSqlCompatibilityLevel",
+          "tsEmitName": "azureSqlCompatibilityLevel",
+          "metadataToken": 385876186,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "AzureSqlCompatibilityLevel|:System.Int32|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions::AzureSynapseCompatibilityLevel:System.Int32",
+          "clrName": "AzureSynapseCompatibilityLevel",
+          "tsEmitName": "azureSynapseCompatibilityLevel",
+          "metadataToken": 385876187,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "AzureSynapseCompatibilityLevel|:System.Int32|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions::SupportsJsonFunctions:System.Boolean",
+          "clrName": "SupportsJsonFunctions",
+          "tsEmitName": "supportsJsonFunctions",
+          "metadataToken": 385876188,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "SupportsJsonFunctions|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions::SupportsJsonObjectArray:System.Boolean",
+          "clrName": "SupportsJsonObjectArray",
+          "tsEmitName": "supportsJsonObjectArray",
+          "metadataToken": 385876189,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "SupportsJsonObjectArray|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions::SupportsJsonType:System.Boolean",
+          "clrName": "SupportsJsonType",
+          "tsEmitName": "supportsJsonType",
+          "metadataToken": 385876190,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "SupportsJsonType|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedProperties": [
+        {
+          "tsName": "engineType",
+          "isStatic": false,
+          "tsSignatureId": "EngineType|:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876184
+          }
+        },
+        {
+          "tsName": "sqlServerCompatibilityLevel",
+          "isStatic": false,
+          "tsSignatureId": "SqlServerCompatibilityLevel|:System.Int32|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876185
+          }
+        },
+        {
+          "tsName": "azureSqlCompatibilityLevel",
+          "isStatic": false,
+          "tsSignatureId": "AzureSqlCompatibilityLevel|:System.Int32|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876186
+          }
+        },
+        {
+          "tsName": "azureSynapseCompatibilityLevel",
+          "isStatic": false,
+          "tsSignatureId": "AzureSynapseCompatibilityLevel|:System.Int32|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876187
+          }
+        },
+        {
+          "tsName": "supportsJsonFunctions",
+          "isStatic": false,
+          "tsSignatureId": "SupportsJsonFunctions|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876188
+          }
+        },
+        {
+          "tsName": "supportsJsonObjectArray",
+          "isStatic": false,
+          "tsSignatureId": "SupportsJsonObjectArray|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876189
+          }
+        },
+        {
+          "tsName": "supportsJsonType",
+          "isStatic": false,
+          "tsSignatureId": "SupportsJsonType|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876190
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerModelValidator",
+      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerModelValidator",
+      "tsEmitName": "SqlServerModelValidator",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerModelValidator::Validate(Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BModel\u002BValidation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
+          "clrName": "Validate",
+          "tsEmitName": "validate",
+          "metadataToken": 100665184,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BModel\u002BValidation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
+          "normalizedSignature": "Validate|(Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BModel\u002BValidation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerModelValidator",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerModelValidator::.ctor(Microsoft.EntityFrameworkCore.Infrastructure.ModelValidatorDependencies,Microsoft.EntityFrameworkCore.Infrastructure.RelationalModelValidatorDependencies):void",
+          "metadataToken": 100665183,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Infrastructure.ModelValidatorDependencies,Microsoft.EntityFrameworkCore.Infrastructure.RelationalModelValidatorDependencies):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Infrastructure.ModelValidatorDependencies,Microsoft.EntityFrameworkCore.Infrastructure.RelationalModelValidatorDependencies):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerModelValidator",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "validate",
+          "isStatic": false,
+          "tsSignatureId": "Validate|(Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BModel\u002BValidation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerModelValidator",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665184
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Infrastructure.ModelValidatorDependencies,Microsoft.EntityFrameworkCore.Infrastructure.RelationalModelValidatorDependencies):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerModelValidator",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665183
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+      "tsEmitName": "SqlServerOptionsExtension",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension::WithEngineType(Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType):Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+          "clrName": "WithEngineType",
+          "tsEmitName": "withEngineType",
+          "metadataToken": 100665207,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType):Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+          "normalizedSignature": "WithEngineType|(Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType):Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension::WithLegacyAzureSql(System.Boolean):Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+          "clrName": "WithLegacyAzureSql",
+          "tsEmitName": "withLegacyAzureSql",
+          "metadataToken": 100665208,
+          "canonicalSignature": "(System.Boolean):Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+          "normalizedSignature": "WithLegacyAzureSql|(System.Boolean):Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension::WithSqlServerCompatibilityLevel(System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+          "clrName": "WithSqlServerCompatibilityLevel",
+          "tsEmitName": "withSqlServerCompatibilityLevel",
+          "metadataToken": 100665209,
+          "canonicalSignature": "(System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+          "normalizedSignature": "WithSqlServerCompatibilityLevel|(System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension::WithAzureSqlCompatibilityLevel(System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+          "clrName": "WithAzureSqlCompatibilityLevel",
+          "tsEmitName": "withAzureSqlCompatibilityLevel",
+          "metadataToken": 100665210,
+          "canonicalSignature": "(System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+          "normalizedSignature": "WithAzureSqlCompatibilityLevel|(System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension::WithAzureSynapseCompatibilityLevel(System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+          "clrName": "WithAzureSynapseCompatibilityLevel",
+          "tsEmitName": "withAzureSynapseCompatibilityLevel",
+          "metadataToken": 100665211,
+          "canonicalSignature": "(System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+          "normalizedSignature": "WithAzureSynapseCompatibilityLevel|(System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension::WithUseRetryingStrategyByDefault(System.Boolean):Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+          "clrName": "WithUseRetryingStrategyByDefault",
+          "tsEmitName": "withUseRetryingStrategyByDefault",
+          "metadataToken": 100665212,
+          "canonicalSignature": "(System.Boolean):Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+          "normalizedSignature": "WithUseRetryingStrategyByDefault|(System.Boolean):Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension::ApplyDefaults(Microsoft.EntityFrameworkCore.Infrastructure.IDbContextOptions):Microsoft.EntityFrameworkCore.Infrastructure.IDbContextOptionsExtension",
+          "clrName": "ApplyDefaults",
+          "tsEmitName": "applyDefaults",
+          "metadataToken": 100665213,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Infrastructure.IDbContextOptions):Microsoft.EntityFrameworkCore.Infrastructure.IDbContextOptionsExtension",
+          "normalizedSignature": "ApplyDefaults|(Microsoft.EntityFrameworkCore.Infrastructure.IDbContextOptions):Microsoft.EntityFrameworkCore.Infrastructure.IDbContextOptionsExtension|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension::ApplyServices(Microsoft.Extensions.DependencyInjection.IServiceCollection):System.Void",
+          "clrName": "ApplyServices",
+          "tsEmitName": "applyServices",
+          "metadataToken": 100665214,
+          "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection):System.Void",
+          "normalizedSignature": "ApplyServices|(Microsoft.Extensions.DependencyInjection.IServiceCollection):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension::Validate(Microsoft.EntityFrameworkCore.Infrastructure.IDbContextOptions):System.Void",
+          "clrName": "Validate",
+          "tsEmitName": "validate",
+          "metadataToken": 100665215,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Infrastructure.IDbContextOptions):System.Void",
+          "normalizedSignature": "Validate|(Microsoft.EntityFrameworkCore.Infrastructure.IDbContextOptions):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension::Info:Microsoft.EntityFrameworkCore.Infrastructure.DbContextOptionsExtensionInfo",
+          "clrName": "Info",
+          "tsEmitName": "info",
+          "metadataToken": 385876191,
+          "canonicalSignature": ":Microsoft.EntityFrameworkCore.Infrastructure.DbContextOptionsExtensionInfo",
+          "normalizedSignature": "Info|:Microsoft.EntityFrameworkCore.Infrastructure.DbContextOptionsExtensionInfo|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension::EngineType:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType",
+          "clrName": "EngineType",
+          "tsEmitName": "engineType",
+          "metadataToken": 385876192,
+          "canonicalSignature": ":Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType",
+          "normalizedSignature": "EngineType|:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension::SqlServerCompatibilityLevel:System.Int32",
+          "clrName": "SqlServerCompatibilityLevel",
+          "tsEmitName": "sqlServerCompatibilityLevel",
+          "metadataToken": 385876193,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "SqlServerCompatibilityLevel|:System.Int32|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension::AzureSqlCompatibilityLevel:System.Int32",
+          "clrName": "AzureSqlCompatibilityLevel",
+          "tsEmitName": "azureSqlCompatibilityLevel",
+          "metadataToken": 385876194,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "AzureSqlCompatibilityLevel|:System.Int32|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension::AzureSynapseCompatibilityLevel:System.Int32",
+          "clrName": "AzureSynapseCompatibilityLevel",
+          "tsEmitName": "azureSynapseCompatibilityLevel",
+          "metadataToken": 385876195,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "AzureSynapseCompatibilityLevel|:System.Int32|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension::UseRetryingStrategyByDefault:System.Boolean",
+          "clrName": "UseRetryingStrategyByDefault",
+          "tsEmitName": "useRetryingStrategyByDefault",
+          "metadataToken": 385876196,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "UseRetryingStrategyByDefault|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "fields": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension::SqlServerDefaultCompatibilityLevelSystem.Int32",
+          "clrName": "SqlServerDefaultCompatibilityLevel",
+          "tsEmitName": "sqlServerDefaultCompatibilityLevel",
+          "metadataToken": 67109426,
+          "normalizedSignature": "SqlServerDefaultCompatibilityLevel|System.Int32|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension::AzureSqlDefaultCompatibilityLevelSystem.Int32",
+          "clrName": "AzureSqlDefaultCompatibilityLevel",
+          "tsEmitName": "azureSqlDefaultCompatibilityLevel",
+          "metadataToken": 67109427,
+          "normalizedSignature": "AzureSqlDefaultCompatibilityLevel|System.Int32|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension::AzureSynapseDefaultCompatibilityLevelSystem.Int32",
+          "clrName": "AzureSynapseDefaultCompatibilityLevel",
+          "tsEmitName": "azureSynapseDefaultCompatibilityLevel",
+          "metadataToken": 67109428,
+          "normalizedSignature": "AzureSynapseDefaultCompatibilityLevel|System.Int32|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension::.ctor():void",
+          "metadataToken": 100665198,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "withEngineType",
+          "isStatic": false,
+          "tsSignatureId": "WithEngineType|(Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType):Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665207
+          }
+        },
+        {
+          "tsName": "withLegacyAzureSql",
+          "isStatic": false,
+          "tsSignatureId": "WithLegacyAzureSql|(System.Boolean):Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665208
+          }
+        },
+        {
+          "tsName": "withSqlServerCompatibilityLevel",
+          "isStatic": false,
+          "tsSignatureId": "WithSqlServerCompatibilityLevel|(System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665209
+          }
+        },
+        {
+          "tsName": "withAzureSqlCompatibilityLevel",
+          "isStatic": false,
+          "tsSignatureId": "WithAzureSqlCompatibilityLevel|(System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665210
+          }
+        },
+        {
+          "tsName": "withAzureSynapseCompatibilityLevel",
+          "isStatic": false,
+          "tsSignatureId": "WithAzureSynapseCompatibilityLevel|(System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665211
+          }
+        },
+        {
+          "tsName": "withUseRetryingStrategyByDefault",
+          "isStatic": false,
+          "tsSignatureId": "WithUseRetryingStrategyByDefault|(System.Boolean):Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665212
+          }
+        },
+        {
+          "tsName": "applyDefaults",
+          "isStatic": false,
+          "tsSignatureId": "ApplyDefaults|(Microsoft.EntityFrameworkCore.Infrastructure.IDbContextOptions):Microsoft.EntityFrameworkCore.Infrastructure.IDbContextOptionsExtension|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665213
+          }
+        },
+        {
+          "tsName": "applyServices",
+          "isStatic": false,
+          "tsSignatureId": "ApplyServices|(Microsoft.Extensions.DependencyInjection.IServiceCollection):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665214
+          }
+        },
+        {
+          "tsName": "validate",
+          "isStatic": false,
+          "tsSignatureId": "Validate|(Microsoft.EntityFrameworkCore.Infrastructure.IDbContextOptions):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665215
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "info",
+          "isStatic": false,
+          "tsSignatureId": "Info|:Microsoft.EntityFrameworkCore.Infrastructure.DbContextOptionsExtensionInfo|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876191
+          }
+        },
+        {
+          "tsName": "engineType",
+          "isStatic": false,
+          "tsSignatureId": "EngineType|:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876192
+          }
+        },
+        {
+          "tsName": "sqlServerCompatibilityLevel",
+          "isStatic": false,
+          "tsSignatureId": "SqlServerCompatibilityLevel|:System.Int32|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876193
+          }
+        },
+        {
+          "tsName": "azureSqlCompatibilityLevel",
+          "isStatic": false,
+          "tsSignatureId": "AzureSqlCompatibilityLevel|:System.Int32|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876194
+          }
+        },
+        {
+          "tsName": "azureSynapseCompatibilityLevel",
+          "isStatic": false,
+          "tsSignatureId": "AzureSynapseCompatibilityLevel|:System.Int32|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876195
+          }
+        },
+        {
+          "tsName": "useRetryingStrategyByDefault",
+          "isStatic": false,
+          "tsSignatureId": "UseRetryingStrategyByDefault|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876196
+          }
+        }
+      ],
+      "exposedFields": [
+        {
+          "tsName": "sqlServerDefaultCompatibilityLevel",
+          "isStatic": true,
+          "tsSignatureId": "SqlServerDefaultCompatibilityLevel|System.Int32|static=true|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109426
+          }
+        },
+        {
+          "tsName": "azureSqlDefaultCompatibilityLevel",
+          "isStatic": true,
+          "tsSignatureId": "AzureSqlDefaultCompatibilityLevel|System.Int32|static=true|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109427
+          }
+        },
+        {
+          "tsName": "azureSynapseDefaultCompatibilityLevel",
+          "isStatic": true,
+          "tsSignatureId": "AzureSynapseDefaultCompatibilityLevel|System.Int32|static=true|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109428
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665198
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerSingletonOptions",
+      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerSingletonOptions",
+      "tsEmitName": "SqlServerSingletonOptions",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerSingletonOptions::Initialize(Microsoft.EntityFrameworkCore.Infrastructure.IDbContextOptions):System.Void",
+          "clrName": "Initialize",
+          "tsEmitName": "initialize",
+          "metadataToken": 100665228,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Infrastructure.IDbContextOptions):System.Void",
+          "normalizedSignature": "Initialize|(Microsoft.EntityFrameworkCore.Infrastructure.IDbContextOptions):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerSingletonOptions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerSingletonOptions::Validate(Microsoft.EntityFrameworkCore.Infrastructure.IDbContextOptions):System.Void",
+          "clrName": "Validate",
+          "tsEmitName": "validate",
+          "metadataToken": 100665229,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Infrastructure.IDbContextOptions):System.Void",
+          "normalizedSignature": "Validate|(Microsoft.EntityFrameworkCore.Infrastructure.IDbContextOptions):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerSingletonOptions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerSingletonOptions::EngineType:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType",
+          "clrName": "EngineType",
+          "tsEmitName": "engineType",
+          "metadataToken": 385876197,
+          "canonicalSignature": ":Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType",
+          "normalizedSignature": "EngineType|:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerSingletonOptions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerSingletonOptions::SqlServerCompatibilityLevel:System.Int32",
+          "clrName": "SqlServerCompatibilityLevel",
+          "tsEmitName": "sqlServerCompatibilityLevel",
+          "metadataToken": 385876198,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "SqlServerCompatibilityLevel|:System.Int32|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerSingletonOptions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerSingletonOptions::AzureSqlCompatibilityLevel:System.Int32",
+          "clrName": "AzureSqlCompatibilityLevel",
+          "tsEmitName": "azureSqlCompatibilityLevel",
+          "metadataToken": 385876199,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "AzureSqlCompatibilityLevel|:System.Int32|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerSingletonOptions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerSingletonOptions::AzureSynapseCompatibilityLevel:System.Int32",
+          "clrName": "AzureSynapseCompatibilityLevel",
+          "tsEmitName": "azureSynapseCompatibilityLevel",
+          "metadataToken": 385876200,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "AzureSynapseCompatibilityLevel|:System.Int32|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerSingletonOptions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerSingletonOptions::SupportsJsonFunctions:System.Boolean",
+          "clrName": "SupportsJsonFunctions",
+          "tsEmitName": "supportsJsonFunctions",
+          "metadataToken": 385876201,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "SupportsJsonFunctions|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerSingletonOptions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerSingletonOptions::SupportsJsonObjectArray:System.Boolean",
+          "clrName": "SupportsJsonObjectArray",
+          "tsEmitName": "supportsJsonObjectArray",
+          "metadataToken": 385876202,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "SupportsJsonObjectArray|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerSingletonOptions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerSingletonOptions::SupportsJsonType:System.Boolean",
+          "clrName": "SupportsJsonType",
+          "tsEmitName": "supportsJsonType",
+          "metadataToken": 385876203,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "SupportsJsonType|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerSingletonOptions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions::EngineType:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType",
+          "clrName": "EngineType",
+          "tsEmitName": "engineType$view",
+          "metadataToken": 385876184,
+          "canonicalSignature": ":Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType",
+          "normalizedSignature": "EngineType|:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType|static=false|accessor=get",
+          "emitScope": "ViewOnly",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions::SqlServerCompatibilityLevel:System.Int32",
+          "clrName": "SqlServerCompatibilityLevel",
+          "tsEmitName": "sqlServerCompatibilityLevel$view",
+          "metadataToken": 385876185,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "SqlServerCompatibilityLevel|:System.Int32|static=false|accessor=get",
+          "emitScope": "ViewOnly",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions::AzureSqlCompatibilityLevel:System.Int32",
+          "clrName": "AzureSqlCompatibilityLevel",
+          "tsEmitName": "azureSqlCompatibilityLevel$view",
+          "metadataToken": 385876186,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "AzureSqlCompatibilityLevel|:System.Int32|static=false|accessor=get",
+          "emitScope": "ViewOnly",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions::AzureSynapseCompatibilityLevel:System.Int32",
+          "clrName": "AzureSynapseCompatibilityLevel",
+          "tsEmitName": "azureSynapseCompatibilityLevel$view",
+          "metadataToken": 385876187,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "AzureSynapseCompatibilityLevel|:System.Int32|static=false|accessor=get",
+          "emitScope": "ViewOnly",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions::SupportsJsonFunctions:System.Boolean",
+          "clrName": "SupportsJsonFunctions",
+          "tsEmitName": "supportsJsonFunctions$view",
+          "metadataToken": 385876188,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "SupportsJsonFunctions|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ViewOnly",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions::SupportsJsonObjectArray:System.Boolean",
+          "clrName": "SupportsJsonObjectArray",
+          "tsEmitName": "supportsJsonObjectArray$view",
+          "metadataToken": 385876189,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "SupportsJsonObjectArray|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ViewOnly",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions::SupportsJsonType:System.Boolean",
+          "clrName": "SupportsJsonType",
+          "tsEmitName": "supportsJsonType$view",
+          "metadataToken": 385876190,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "SupportsJsonType|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ViewOnly",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerSingletonOptions::.ctor():void",
+          "metadataToken": 100665230,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerSingletonOptions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "initialize",
+          "isStatic": false,
+          "tsSignatureId": "Initialize|(Microsoft.EntityFrameworkCore.Infrastructure.IDbContextOptions):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerSingletonOptions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665228
+          }
+        },
+        {
+          "tsName": "validate",
+          "isStatic": false,
+          "tsSignatureId": "Validate|(Microsoft.EntityFrameworkCore.Infrastructure.IDbContextOptions):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerSingletonOptions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665229
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "engineType",
+          "isStatic": false,
+          "tsSignatureId": "EngineType|:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerSingletonOptions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876197
+          }
+        },
+        {
+          "tsName": "sqlServerCompatibilityLevel",
+          "isStatic": false,
+          "tsSignatureId": "SqlServerCompatibilityLevel|:System.Int32|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerSingletonOptions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876198
+          }
+        },
+        {
+          "tsName": "azureSqlCompatibilityLevel",
+          "isStatic": false,
+          "tsSignatureId": "AzureSqlCompatibilityLevel|:System.Int32|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerSingletonOptions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876199
+          }
+        },
+        {
+          "tsName": "azureSynapseCompatibilityLevel",
+          "isStatic": false,
+          "tsSignatureId": "AzureSynapseCompatibilityLevel|:System.Int32|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerSingletonOptions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876200
+          }
+        },
+        {
+          "tsName": "supportsJsonFunctions",
+          "isStatic": false,
+          "tsSignatureId": "SupportsJsonFunctions|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerSingletonOptions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876201
+          }
+        },
+        {
+          "tsName": "supportsJsonObjectArray",
+          "isStatic": false,
+          "tsSignatureId": "SupportsJsonObjectArray|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerSingletonOptions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876202
+          }
+        },
+        {
+          "tsName": "supportsJsonType",
+          "isStatic": false,
+          "tsSignatureId": "SupportsJsonType|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerSingletonOptions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876203
+          }
+        },
+        {
+          "tsName": "engineType$view",
+          "isStatic": false,
+          "tsSignatureId": "EngineType|:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876184
+          }
+        },
+        {
+          "tsName": "sqlServerCompatibilityLevel$view",
+          "isStatic": false,
+          "tsSignatureId": "SqlServerCompatibilityLevel|:System.Int32|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876185
+          }
+        },
+        {
+          "tsName": "azureSqlCompatibilityLevel$view",
+          "isStatic": false,
+          "tsSignatureId": "AzureSqlCompatibilityLevel|:System.Int32|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876186
+          }
+        },
+        {
+          "tsName": "azureSynapseCompatibilityLevel$view",
+          "isStatic": false,
+          "tsSignatureId": "AzureSynapseCompatibilityLevel|:System.Int32|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876187
+          }
+        },
+        {
+          "tsName": "supportsJsonFunctions$view",
+          "isStatic": false,
+          "tsSignatureId": "SupportsJsonFunctions|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876188
+          }
+        },
+        {
+          "tsName": "supportsJsonObjectArray$view",
+          "isStatic": false,
+          "tsSignatureId": "SupportsJsonObjectArray|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876189
+          }
+        },
+        {
+          "tsName": "supportsJsonType$view",
+          "isStatic": false,
+          "tsSignatureId": "SupportsJsonType|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876190
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerSingletonOptions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665230
+          }
+        }
+      ]
+    }
+  ]
+}

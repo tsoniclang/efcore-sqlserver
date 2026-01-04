@@ -1,0 +1,162 @@
+{
+  "namespace": "Microsoft.IdentityModel.Tokens.Configuration",
+  "types": [
+    {
+      "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
+      "clrName": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
+      "tsEmitName": "LKGConfigurationCacheOptions",
+      "assemblyName": "Microsoft.IdentityModel.Tokens",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions::BaseConfigurationComparer:System.Collections.Generic.IEqualityComparer_1[[Microsoft.IdentityModel.Tokens.BaseConfiguration,Microsoft.IdentityModel.Tokens,Version=7.7.1.0,Culture=neutral,PublicKeyToken=31bf3856ad364e35]]",
+          "clrName": "BaseConfigurationComparer",
+          "tsEmitName": "baseConfigurationComparer",
+          "metadataToken": 385876254,
+          "canonicalSignature": ":System.Collections.Generic.IEqualityComparer_1[[Microsoft.IdentityModel.Tokens.BaseConfiguration,Microsoft.IdentityModel.Tokens,Version=7.7.1.0,Culture=neutral,PublicKeyToken=31bf3856ad364e35]]",
+          "normalizedSignature": "BaseConfigurationComparer|:System.Collections.Generic.IEqualityComparer_1[[Microsoft.IdentityModel.Tokens.BaseConfiguration,Microsoft.IdentityModel.Tokens,Version=7.7.1.0,Culture=neutral,PublicKeyToken=31bf3856ad364e35]]|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Tokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions::LastKnownGoodConfigurationSizeLimit:System.Int32",
+          "clrName": "LastKnownGoodConfigurationSizeLimit",
+          "tsEmitName": "lastKnownGoodConfigurationSizeLimit",
+          "metadataToken": 385876255,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "LastKnownGoodConfigurationSizeLimit|:System.Int32|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Tokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions::TaskCreationOptions:System.Threading.Tasks.TaskCreationOptions",
+          "clrName": "TaskCreationOptions",
+          "tsEmitName": "taskCreationOptions",
+          "metadataToken": 385876256,
+          "canonicalSignature": ":System.Threading.Tasks.TaskCreationOptions",
+          "normalizedSignature": "TaskCreationOptions|:System.Threading.Tasks.TaskCreationOptions|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Tokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions::RemoveExpiredValues:System.Boolean",
+          "clrName": "RemoveExpiredValues",
+          "tsEmitName": "removeExpiredValues",
+          "metadataToken": 385876257,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "RemoveExpiredValues|:System.Boolean|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Tokens"
+        }
+      ],
+      "fields": [
+        {
+          "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions::DefaultLKGConfigurationSizeLimitSystem.Int32",
+          "clrName": "DefaultLKGConfigurationSizeLimit",
+          "tsEmitName": "defaultLKGConfigurationSizeLimit",
+          "metadataToken": 67109536,
+          "normalizedSignature": "DefaultLKGConfigurationSizeLimit|System.Int32|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "declaringClrType": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Tokens"
+        }
+      ],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions::.ctor():void",
+          "metadataToken": 100664531,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Tokens"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "baseConfigurationComparer",
+          "isStatic": false,
+          "tsSignatureId": "BaseConfigurationComparer|:System.Collections.Generic.IEqualityComparer_1[[Microsoft.IdentityModel.Tokens.BaseConfiguration,Microsoft.IdentityModel.Tokens,Version=7.7.1.0,Culture=neutral,PublicKeyToken=31bf3856ad364e35]]|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Tokens",
+            "metadataToken": 385876254
+          }
+        },
+        {
+          "tsName": "lastKnownGoodConfigurationSizeLimit",
+          "isStatic": false,
+          "tsSignatureId": "LastKnownGoodConfigurationSizeLimit|:System.Int32|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Tokens",
+            "metadataToken": 385876255
+          }
+        },
+        {
+          "tsName": "taskCreationOptions",
+          "isStatic": false,
+          "tsSignatureId": "TaskCreationOptions|:System.Threading.Tasks.TaskCreationOptions|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Tokens",
+            "metadataToken": 385876256
+          }
+        },
+        {
+          "tsName": "removeExpiredValues",
+          "isStatic": false,
+          "tsSignatureId": "RemoveExpiredValues|:System.Boolean|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Tokens",
+            "metadataToken": 385876257
+          }
+        }
+      ],
+      "exposedFields": [
+        {
+          "tsName": "defaultLKGConfigurationSizeLimit",
+          "isStatic": true,
+          "tsSignatureId": "DefaultLKGConfigurationSizeLimit|System.Int32|static=true|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Tokens",
+            "metadataToken": 67109536
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Tokens",
+            "metadataToken": 100664531
+          }
+        }
+      ]
+    }
+  ]
+}

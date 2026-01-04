@@ -1,0 +1,96 @@
+{
+  "namespace": "System.Text.Json.Serialization",
+  "types": [
+    {
+      "stableId": "System.Memory.Data:System.Text.Json.Serialization.BinaryDataJsonConverter",
+      "clrName": "System.Text.Json.Serialization.BinaryDataJsonConverter",
+      "tsEmitName": "BinaryDataJsonConverter",
+      "assemblyName": "System.Memory.Data",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "System.Memory.Data:System.Text.Json.Serialization.BinaryDataJsonConverter::Read(System.Text.Json.Utf8JsonReader\u0026,System.Type,System.Text.Json.JsonSerializerOptions):System.BinaryData",
+          "clrName": "Read",
+          "tsEmitName": "read",
+          "metadataToken": 100663353,
+          "canonicalSignature": "(System.Text.Json.Utf8JsonReader\u0026,System.Type,System.Text.Json.JsonSerializerOptions):System.BinaryData",
+          "normalizedSignature": "Read|(System.Text.Json.Utf8JsonReader\u0026,System.Type,System.Text.Json.JsonSerializerOptions):System.BinaryData|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "System.Text.Json.Serialization.BinaryDataJsonConverter",
+          "declaringAssemblyName": "System.Memory.Data",
+          "isExtensionMethod": false,
+          "parameterModifiers": [
+            {
+              "index": 0,
+              "modifier": "ref"
+            }
+          ]
+        },
+        {
+          "stableId": "System.Memory.Data:System.Text.Json.Serialization.BinaryDataJsonConverter::Write(System.Text.Json.Utf8JsonWriter,System.BinaryData,System.Text.Json.JsonSerializerOptions):System.Void",
+          "clrName": "Write",
+          "tsEmitName": "write",
+          "metadataToken": 100663354,
+          "canonicalSignature": "(System.Text.Json.Utf8JsonWriter,System.BinaryData,System.Text.Json.JsonSerializerOptions):System.Void",
+          "normalizedSignature": "Write|(System.Text.Json.Utf8JsonWriter,System.BinaryData,System.Text.Json.JsonSerializerOptions):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "System.Text.Json.Serialization.BinaryDataJsonConverter",
+          "declaringAssemblyName": "System.Memory.Data",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "System.Memory.Data:System.Text.Json.Serialization.BinaryDataJsonConverter::.ctor():void",
+          "metadataToken": 100663355,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "System.Text.Json.Serialization.BinaryDataJsonConverter",
+          "declaringAssemblyName": "System.Memory.Data"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "read",
+          "isStatic": false,
+          "tsSignatureId": "Read|(System.Text.Json.Utf8JsonReader\u0026,System.Type,System.Text.Json.JsonSerializerOptions):System.BinaryData|static=false",
+          "target": {
+            "declaringClrType": "System.Text.Json.Serialization.BinaryDataJsonConverter",
+            "declaringAssemblyName": "System.Memory.Data",
+            "metadataToken": 100663353
+          }
+        },
+        {
+          "tsName": "write",
+          "isStatic": false,
+          "tsSignatureId": "Write|(System.Text.Json.Utf8JsonWriter,System.BinaryData,System.Text.Json.JsonSerializerOptions):System.Void|static=false",
+          "target": {
+            "declaringClrType": "System.Text.Json.Serialization.BinaryDataJsonConverter",
+            "declaringAssemblyName": "System.Memory.Data",
+            "metadataToken": 100663354
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "System.Text.Json.Serialization.BinaryDataJsonConverter",
+            "declaringAssemblyName": "System.Memory.Data",
+            "metadataToken": 100663355
+          }
+        }
+      ]
+    }
+  ]
+}

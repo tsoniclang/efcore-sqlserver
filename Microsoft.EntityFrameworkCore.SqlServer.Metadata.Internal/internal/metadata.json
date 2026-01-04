@@ -1,0 +1,452 @@
+{
+  "namespace": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal",
+  "contributingAssemblies": [
+    "Microsoft.EntityFrameworkCore.SqlServer"
+  ],
+  "types": [
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationProvider",
+      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationProvider",
+      "tsEmitName": "SqlServerAnnotationProvider",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationProvider::For(Microsoft.EntityFrameworkCore.Metadata.IRelationalModel,System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "For",
+          "tsEmitName": "for_",
+          "normalizedSignature": "For|(Microsoft.EntityFrameworkCore.Metadata.IRelationalModel,System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 2,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationProvider::For(Microsoft.EntityFrameworkCore.Metadata.ITable,System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "For",
+          "tsEmitName": "for_",
+          "normalizedSignature": "For|(Microsoft.EntityFrameworkCore.Metadata.ITable,System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 2,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationProvider::For(Microsoft.EntityFrameworkCore.Metadata.IUniqueConstraint,System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "For",
+          "tsEmitName": "for_",
+          "normalizedSignature": "For|(Microsoft.EntityFrameworkCore.Metadata.IUniqueConstraint,System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 2,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationProvider::For(Microsoft.EntityFrameworkCore.Metadata.ITableIndex,System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "For",
+          "tsEmitName": "for_",
+          "normalizedSignature": "For|(Microsoft.EntityFrameworkCore.Metadata.ITableIndex,System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 2,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationProvider::For(Microsoft.EntityFrameworkCore.Metadata.IColumn,System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "For",
+          "tsEmitName": "for_",
+          "normalizedSignature": "For|(Microsoft.EntityFrameworkCore.Metadata.IColumn,System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 2,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Metadata.RelationalAnnotationProviderDependencies):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
+      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
+      "tsEmitName": "SqlServerAnnotationNames",
+      "kind": "StaticNamespace",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": true,
+      "isStatic": true,
+      "arity": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::PrefixSystem.String",
+          "clrName": "Prefix",
+          "tsEmitName": "prefix",
+          "normalizedSignature": "Prefix|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::ClusteredSystem.String",
+          "clrName": "Clustered",
+          "tsEmitName": "clustered",
+          "normalizedSignature": "Clustered|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::CreatedOnlineSystem.String",
+          "clrName": "CreatedOnline",
+          "tsEmitName": "createdOnline",
+          "normalizedSignature": "CreatedOnline|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::EditionOptionsSystem.String",
+          "clrName": "EditionOptions",
+          "tsEmitName": "editionOptions",
+          "normalizedSignature": "EditionOptions|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::FillFactorSystem.String",
+          "clrName": "FillFactor",
+          "tsEmitName": "fillFactor",
+          "normalizedSignature": "FillFactor|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::SortInTempDbSystem.String",
+          "clrName": "SortInTempDb",
+          "tsEmitName": "sortInTempDb",
+          "normalizedSignature": "SortInTempDb|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::DataCompressionSystem.String",
+          "clrName": "DataCompression",
+          "tsEmitName": "dataCompression",
+          "normalizedSignature": "DataCompression|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::HiLoSequenceNameSystem.String",
+          "clrName": "HiLoSequenceName",
+          "tsEmitName": "hiLoSequenceName",
+          "normalizedSignature": "HiLoSequenceName|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::HiLoSequenceSchemaSystem.String",
+          "clrName": "HiLoSequenceSchema",
+          "tsEmitName": "hiLoSequenceSchema",
+          "normalizedSignature": "HiLoSequenceSchema|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::SequenceNameSuffixSystem.String",
+          "clrName": "SequenceNameSuffix",
+          "tsEmitName": "sequenceNameSuffix",
+          "normalizedSignature": "SequenceNameSuffix|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::SequenceNameSystem.String",
+          "clrName": "SequenceName",
+          "tsEmitName": "sequenceName",
+          "normalizedSignature": "SequenceName|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::SequenceSchemaSystem.String",
+          "clrName": "SequenceSchema",
+          "tsEmitName": "sequenceSchema",
+          "normalizedSignature": "SequenceSchema|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::IdentitySystem.String",
+          "clrName": "Identity",
+          "tsEmitName": "identity",
+          "normalizedSignature": "Identity|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::IdentityIncrementSystem.String",
+          "clrName": "IdentityIncrement",
+          "tsEmitName": "identityIncrement",
+          "normalizedSignature": "IdentityIncrement|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::IdentitySeedSystem.String",
+          "clrName": "IdentitySeed",
+          "tsEmitName": "identitySeed",
+          "normalizedSignature": "IdentitySeed|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::IncludeSystem.String",
+          "clrName": "Include",
+          "tsEmitName": "include",
+          "normalizedSignature": "Include|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::MaxDatabaseSizeSystem.String",
+          "clrName": "MaxDatabaseSize",
+          "tsEmitName": "maxDatabaseSize",
+          "normalizedSignature": "MaxDatabaseSize|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::MemoryOptimizedSystem.String",
+          "clrName": "MemoryOptimized",
+          "tsEmitName": "memoryOptimized",
+          "normalizedSignature": "MemoryOptimized|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::PerformanceLevelSqlSystem.String",
+          "clrName": "PerformanceLevelSql",
+          "tsEmitName": "performanceLevelSql",
+          "normalizedSignature": "PerformanceLevelSql|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::ServiceTierSqlSystem.String",
+          "clrName": "ServiceTierSql",
+          "tsEmitName": "serviceTierSql",
+          "normalizedSignature": "ServiceTierSql|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::SparseSystem.String",
+          "clrName": "Sparse",
+          "tsEmitName": "sparse",
+          "normalizedSignature": "Sparse|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::IsTemporalSystem.String",
+          "clrName": "IsTemporal",
+          "tsEmitName": "isTemporal",
+          "normalizedSignature": "IsTemporal|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::TemporalHistoryTableNameSystem.String",
+          "clrName": "TemporalHistoryTableName",
+          "tsEmitName": "temporalHistoryTableName",
+          "normalizedSignature": "TemporalHistoryTableName|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::TemporalHistoryTableSchemaSystem.String",
+          "clrName": "TemporalHistoryTableSchema",
+          "tsEmitName": "temporalHistoryTableSchema",
+          "normalizedSignature": "TemporalHistoryTableSchema|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::TemporalPeriodStartPropertyNameSystem.String",
+          "clrName": "TemporalPeriodStartPropertyName",
+          "tsEmitName": "temporalPeriodStartPropertyName",
+          "normalizedSignature": "TemporalPeriodStartPropertyName|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::TemporalPeriodStartColumnNameSystem.String",
+          "clrName": "TemporalPeriodStartColumnName",
+          "tsEmitName": "temporalPeriodStartColumnName",
+          "normalizedSignature": "TemporalPeriodStartColumnName|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::TemporalPeriodEndPropertyNameSystem.String",
+          "clrName": "TemporalPeriodEndPropertyName",
+          "tsEmitName": "temporalPeriodEndPropertyName",
+          "normalizedSignature": "TemporalPeriodEndPropertyName|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::TemporalPeriodEndColumnNameSystem.String",
+          "clrName": "TemporalPeriodEndColumnName",
+          "tsEmitName": "temporalPeriodEndColumnName",
+          "normalizedSignature": "TemporalPeriodEndColumnName|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::TemporalOperationTypeSystem.String",
+          "clrName": "TemporalOperationType",
+          "tsEmitName": "temporalOperationType",
+          "normalizedSignature": "TemporalOperationType|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::TemporalAsOfPointInTimeSystem.String",
+          "clrName": "TemporalAsOfPointInTime",
+          "tsEmitName": "temporalAsOfPointInTime",
+          "normalizedSignature": "TemporalAsOfPointInTime|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::TemporalRangeOperationFromSystem.String",
+          "clrName": "TemporalRangeOperationFrom",
+          "tsEmitName": "temporalRangeOperationFrom",
+          "normalizedSignature": "TemporalRangeOperationFrom|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::TemporalRangeOperationToSystem.String",
+          "clrName": "TemporalRangeOperationTo",
+          "tsEmitName": "temporalRangeOperationTo",
+          "normalizedSignature": "TemporalRangeOperationTo|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::ValueGenerationStrategySystem.String",
+          "clrName": "ValueGenerationStrategy",
+          "tsEmitName": "valueGenerationStrategy",
+          "normalizedSignature": "ValueGenerationStrategy|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::UseSqlOutputClauseSystem.String",
+          "clrName": "UseSqlOutputClause",
+          "tsEmitName": "useSqlOutputClause",
+          "normalizedSignature": "UseSqlOutputClause|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::TemporalIsPeriodStartColumnSystem.String",
+          "clrName": "TemporalIsPeriodStartColumn",
+          "tsEmitName": "temporalIsPeriodStartColumn",
+          "normalizedSignature": "TemporalIsPeriodStartColumn|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::TemporalIsPeriodEndColumnSystem.String",
+          "clrName": "TemporalIsPeriodEndColumn",
+          "tsEmitName": "temporalIsPeriodEndColumn",
+          "normalizedSignature": "TemporalIsPeriodEndColumn|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        }
+      ],
+      "events": [],
+      "constructors": []
+    }
+  ]
+}

@@ -1,0 +1,482 @@
+{
+  "namespace": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal",
+  "types": [
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerHistoryRepository",
+      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerHistoryRepository",
+      "tsEmitName": "SqlServerHistoryRepository",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerHistoryRepository::AcquireDatabaseLock():Microsoft.EntityFrameworkCore.Migrations.IMigrationsDatabaseLock",
+          "clrName": "AcquireDatabaseLock",
+          "tsEmitName": "acquireDatabaseLock",
+          "metadataToken": 100665151,
+          "canonicalSignature": "():Microsoft.EntityFrameworkCore.Migrations.IMigrationsDatabaseLock",
+          "normalizedSignature": "AcquireDatabaseLock|():Microsoft.EntityFrameworkCore.Migrations.IMigrationsDatabaseLock|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerHistoryRepository",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerHistoryRepository::AcquireDatabaseLockAsync(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Microsoft.EntityFrameworkCore.Migrations.IMigrationsDatabaseLock,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "AcquireDatabaseLockAsync",
+          "tsEmitName": "acquireDatabaseLockAsync",
+          "metadataToken": 100665152,
+          "canonicalSignature": "(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Microsoft.EntityFrameworkCore.Migrations.IMigrationsDatabaseLock,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "AcquireDatabaseLockAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Microsoft.EntityFrameworkCore.Migrations.IMigrationsDatabaseLock,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerHistoryRepository",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerHistoryRepository::GetCreateIfNotExistsScript():System.String",
+          "clrName": "GetCreateIfNotExistsScript",
+          "tsEmitName": "getCreateIfNotExistsScript",
+          "metadataToken": 100665156,
+          "canonicalSignature": "():System.String",
+          "normalizedSignature": "GetCreateIfNotExistsScript|():System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerHistoryRepository",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerHistoryRepository::GetBeginIfNotExistsScript(System.String):System.String",
+          "clrName": "GetBeginIfNotExistsScript",
+          "tsEmitName": "getBeginIfNotExistsScript",
+          "metadataToken": 100665157,
+          "canonicalSignature": "(System.String):System.String",
+          "normalizedSignature": "GetBeginIfNotExistsScript|(System.String):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerHistoryRepository",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerHistoryRepository::GetBeginIfExistsScript(System.String):System.String",
+          "clrName": "GetBeginIfExistsScript",
+          "tsEmitName": "getBeginIfExistsScript",
+          "metadataToken": 100665158,
+          "canonicalSignature": "(System.String):System.String",
+          "normalizedSignature": "GetBeginIfExistsScript|(System.String):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerHistoryRepository",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerHistoryRepository::GetEndIfScript():System.String",
+          "clrName": "GetEndIfScript",
+          "tsEmitName": "getEndIfScript",
+          "metadataToken": 100665159,
+          "canonicalSignature": "():System.String",
+          "normalizedSignature": "GetEndIfScript|():System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerHistoryRepository",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerHistoryRepository::LockReleaseBehavior:Microsoft.EntityFrameworkCore.Migrations.LockReleaseBehavior",
+          "clrName": "LockReleaseBehavior",
+          "tsEmitName": "lockReleaseBehavior",
+          "metadataToken": 385876182,
+          "canonicalSignature": ":Microsoft.EntityFrameworkCore.Migrations.LockReleaseBehavior",
+          "normalizedSignature": "LockReleaseBehavior|:Microsoft.EntityFrameworkCore.Migrations.LockReleaseBehavior|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerHistoryRepository",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerHistoryRepository::.ctor(Microsoft.EntityFrameworkCore.Migrations.HistoryRepositoryDependencies):void",
+          "metadataToken": 100665147,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Migrations.HistoryRepositoryDependencies):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Migrations.HistoryRepositoryDependencies):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerHistoryRepository",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "acquireDatabaseLock",
+          "isStatic": false,
+          "tsSignatureId": "AcquireDatabaseLock|():Microsoft.EntityFrameworkCore.Migrations.IMigrationsDatabaseLock|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerHistoryRepository",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665151
+          }
+        },
+        {
+          "tsName": "acquireDatabaseLockAsync",
+          "isStatic": false,
+          "tsSignatureId": "AcquireDatabaseLockAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Microsoft.EntityFrameworkCore.Migrations.IMigrationsDatabaseLock,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerHistoryRepository",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665152
+          }
+        },
+        {
+          "tsName": "getCreateIfNotExistsScript",
+          "isStatic": false,
+          "tsSignatureId": "GetCreateIfNotExistsScript|():System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerHistoryRepository",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665156
+          }
+        },
+        {
+          "tsName": "getBeginIfNotExistsScript",
+          "isStatic": false,
+          "tsSignatureId": "GetBeginIfNotExistsScript|(System.String):System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerHistoryRepository",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665157
+          }
+        },
+        {
+          "tsName": "getBeginIfExistsScript",
+          "isStatic": false,
+          "tsSignatureId": "GetBeginIfExistsScript|(System.String):System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerHistoryRepository",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665158
+          }
+        },
+        {
+          "tsName": "getEndIfScript",
+          "isStatic": false,
+          "tsSignatureId": "GetEndIfScript|():System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerHistoryRepository",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665159
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "lockReleaseBehavior",
+          "isStatic": false,
+          "tsSignatureId": "LockReleaseBehavior|:Microsoft.EntityFrameworkCore.Migrations.LockReleaseBehavior|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerHistoryRepository",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876182
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Migrations.HistoryRepositoryDependencies):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerHistoryRepository",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665147
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerMigrationDatabaseLock",
+      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerMigrationDatabaseLock",
+      "tsEmitName": "SqlServerMigrationDatabaseLock",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerMigrationDatabaseLock::Dispose():System.Void",
+          "clrName": "Dispose",
+          "tsEmitName": "dispose",
+          "metadataToken": 100665162,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "Dispose|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerMigrationDatabaseLock",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerMigrationDatabaseLock::DisposeAsync():System.Threading.Tasks.ValueTask",
+          "clrName": "DisposeAsync",
+          "tsEmitName": "disposeAsync",
+          "metadataToken": 100665163,
+          "canonicalSignature": "():System.Threading.Tasks.ValueTask",
+          "normalizedSignature": "DisposeAsync|():System.Threading.Tasks.ValueTask|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerMigrationDatabaseLock",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerMigrationDatabaseLock::HistoryRepository:Microsoft.EntityFrameworkCore.Migrations.IHistoryRepository",
+          "clrName": "HistoryRepository",
+          "tsEmitName": "historyRepository",
+          "metadataToken": 385876183,
+          "canonicalSignature": ":Microsoft.EntityFrameworkCore.Migrations.IHistoryRepository",
+          "normalizedSignature": "HistoryRepository|:Microsoft.EntityFrameworkCore.Migrations.IHistoryRepository|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerMigrationDatabaseLock",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerMigrationDatabaseLock::.ctor(Microsoft.EntityFrameworkCore.Storage.IRelationalCommand,Microsoft.EntityFrameworkCore.Storage.RelationalCommandParameterObject,Microsoft.EntityFrameworkCore.Migrations.IHistoryRepository,System.Threading.CancellationToken):void",
+          "metadataToken": 100665160,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.IRelationalCommand,Microsoft.EntityFrameworkCore.Storage.RelationalCommandParameterObject,Microsoft.EntityFrameworkCore.Migrations.IHistoryRepository,System.Threading.CancellationToken):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.IRelationalCommand,Microsoft.EntityFrameworkCore.Storage.RelationalCommandParameterObject,Microsoft.EntityFrameworkCore.Migrations.IHistoryRepository,System.Threading.CancellationToken):void|static=false",
+          "isStatic": false,
+          "parameterCount": 4,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerMigrationDatabaseLock",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "dispose",
+          "isStatic": false,
+          "tsSignatureId": "Dispose|():System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerMigrationDatabaseLock",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665162
+          }
+        },
+        {
+          "tsName": "disposeAsync",
+          "isStatic": false,
+          "tsSignatureId": "DisposeAsync|():System.Threading.Tasks.ValueTask|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerMigrationDatabaseLock",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665163
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "historyRepository",
+          "isStatic": false,
+          "tsSignatureId": "HistoryRepository|:Microsoft.EntityFrameworkCore.Migrations.IHistoryRepository|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerMigrationDatabaseLock",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876183
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Storage.IRelationalCommand,Microsoft.EntityFrameworkCore.Storage.RelationalCommandParameterObject,Microsoft.EntityFrameworkCore.Migrations.IHistoryRepository,System.Threading.CancellationToken):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerMigrationDatabaseLock",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665160
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerMigrationsAnnotationProvider",
+      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerMigrationsAnnotationProvider",
+      "tsEmitName": "SqlServerMigrationsAnnotationProvider",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerMigrationsAnnotationProvider::ForRemove(Microsoft.EntityFrameworkCore.Metadata.IRelationalModel):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "ForRemove",
+          "tsEmitName": "forRemove",
+          "metadataToken": 100665165,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IRelationalModel):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "ForRemove|(Microsoft.EntityFrameworkCore.Metadata.IRelationalModel):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerMigrationsAnnotationProvider",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerMigrationsAnnotationProvider::ForRemove(Microsoft.EntityFrameworkCore.Metadata.ITable):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "ForRemove",
+          "tsEmitName": "forRemove",
+          "metadataToken": 100665166,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.ITable):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "ForRemove|(Microsoft.EntityFrameworkCore.Metadata.ITable):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerMigrationsAnnotationProvider",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerMigrationsAnnotationProvider::ForRemove(Microsoft.EntityFrameworkCore.Metadata.IColumn):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "ForRemove",
+          "tsEmitName": "forRemove",
+          "metadataToken": 100665167,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IColumn):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "ForRemove|(Microsoft.EntityFrameworkCore.Metadata.IColumn):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerMigrationsAnnotationProvider",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerMigrationsAnnotationProvider::ForRename(Microsoft.EntityFrameworkCore.Metadata.ITable):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "ForRename",
+          "tsEmitName": "forRename",
+          "metadataToken": 100665168,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.ITable):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "ForRename|(Microsoft.EntityFrameworkCore.Metadata.ITable):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerMigrationsAnnotationProvider",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerMigrationsAnnotationProvider::ForRename(Microsoft.EntityFrameworkCore.Metadata.IColumn):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "ForRename",
+          "tsEmitName": "forRename",
+          "metadataToken": 100665169,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IColumn):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "ForRename|(Microsoft.EntityFrameworkCore.Metadata.IColumn):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerMigrationsAnnotationProvider",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerMigrationsAnnotationProvider::.ctor(Microsoft.EntityFrameworkCore.Migrations.MigrationsAnnotationProviderDependencies):void",
+          "metadataToken": 100665164,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Migrations.MigrationsAnnotationProviderDependencies):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Migrations.MigrationsAnnotationProviderDependencies):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerMigrationsAnnotationProvider",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "forRemove",
+          "isStatic": false,
+          "tsSignatureId": "ForRemove|(Microsoft.EntityFrameworkCore.Metadata.IRelationalModel):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerMigrationsAnnotationProvider",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665165
+          }
+        },
+        {
+          "tsName": "forRemove",
+          "isStatic": false,
+          "tsSignatureId": "ForRemove|(Microsoft.EntityFrameworkCore.Metadata.ITable):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerMigrationsAnnotationProvider",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665166
+          }
+        },
+        {
+          "tsName": "forRemove",
+          "isStatic": false,
+          "tsSignatureId": "ForRemove|(Microsoft.EntityFrameworkCore.Metadata.IColumn):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerMigrationsAnnotationProvider",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665167
+          }
+        },
+        {
+          "tsName": "forRename",
+          "isStatic": false,
+          "tsSignatureId": "ForRename|(Microsoft.EntityFrameworkCore.Metadata.ITable):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerMigrationsAnnotationProvider",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665168
+          }
+        },
+        {
+          "tsName": "forRename",
+          "isStatic": false,
+          "tsSignatureId": "ForRename|(Microsoft.EntityFrameworkCore.Metadata.IColumn):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerMigrationsAnnotationProvider",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665169
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Migrations.MigrationsAnnotationProviderDependencies):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerMigrationsAnnotationProvider",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665164
+          }
+        }
+      ]
+    }
+  ]
+}

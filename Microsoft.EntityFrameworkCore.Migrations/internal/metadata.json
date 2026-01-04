@@ -1,0 +1,81 @@
+{
+  "namespace": "Microsoft.EntityFrameworkCore.Migrations",
+  "contributingAssemblies": [
+    "Microsoft.EntityFrameworkCore.Relational",
+    "Microsoft.EntityFrameworkCore.SqlServer"
+  ],
+  "types": [
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Migrations.SqlServerMigrationsSqlGenerator",
+      "clrName": "Microsoft.EntityFrameworkCore.Migrations.SqlServerMigrationsSqlGenerator",
+      "tsEmitName": "SqlServerMigrationsSqlGenerator",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Migrations.SqlServerMigrationsSqlGenerator::Generate(System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Migrations.Operations.MigrationOperation,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationsSqlGenerationOptions):System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Migrations.MigrationCommand,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "Generate",
+          "tsEmitName": "generate",
+          "normalizedSignature": "Generate|(System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Migrations.Operations.MigrationOperation,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationsSqlGenerationOptions):System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Migrations.MigrationCommand,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 3,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Migrations.MigrationsSqlGeneratorDependencies,Microsoft.EntityFrameworkCore.Update.ICommandBatchPreparer):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Migrations.SqlServerMigrationBuilderExtensions",
+      "clrName": "Microsoft.EntityFrameworkCore.Migrations.SqlServerMigrationBuilderExtensions",
+      "tsEmitName": "SqlServerMigrationBuilderExtensions",
+      "kind": "StaticNamespace",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": true,
+      "isStatic": true,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Migrations.SqlServerMigrationBuilderExtensions::IsSqlServer(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder):System.Boolean",
+          "clrName": "IsSqlServer",
+          "tsEmitName": "isSqlServer",
+          "normalizedSignature": "IsSqlServer|(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder):System.Boolean|static=true",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": true
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    }
+  ]
+}

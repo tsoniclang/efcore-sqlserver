@@ -1,0 +1,164 @@
+{
+  "namespace": "Microsoft.Identity.Client.Utils",
+  "types": [
+    {
+      "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Utils.MacMainThreadScheduler",
+      "clrName": "Microsoft.Identity.Client.Utils.MacMainThreadScheduler",
+      "tsEmitName": "MacMainThreadScheduler",
+      "assemblyName": "Microsoft.Identity.Client",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Utils.MacMainThreadScheduler::Instance():Microsoft.Identity.Client.Utils.MacMainThreadScheduler",
+          "clrName": "Instance",
+          "tsEmitName": "instance",
+          "metadataToken": 100664849,
+          "canonicalSignature": "():Microsoft.Identity.Client.Utils.MacMainThreadScheduler",
+          "normalizedSignature": "Instance|():Microsoft.Identity.Client.Utils.MacMainThreadScheduler|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Identity.Client.Utils.MacMainThreadScheduler",
+          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Utils.MacMainThreadScheduler::IsCurrentlyOnMainThread():System.Boolean",
+          "clrName": "IsCurrentlyOnMainThread",
+          "tsEmitName": "isCurrentlyOnMainThread",
+          "metadataToken": 100664851,
+          "canonicalSignature": "():System.Boolean",
+          "normalizedSignature": "IsCurrentlyOnMainThread|():System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Identity.Client.Utils.MacMainThreadScheduler",
+          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Utils.MacMainThreadScheduler::IsRunning():System.Boolean",
+          "clrName": "IsRunning",
+          "tsEmitName": "isRunning",
+          "metadataToken": 100664852,
+          "canonicalSignature": "():System.Boolean",
+          "normalizedSignature": "IsRunning|():System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Identity.Client.Utils.MacMainThreadScheduler",
+          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Utils.MacMainThreadScheduler::Stop():System.Void",
+          "clrName": "Stop",
+          "tsEmitName": "stop",
+          "metadataToken": 100664853,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "Stop|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Identity.Client.Utils.MacMainThreadScheduler",
+          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Utils.MacMainThreadScheduler::RunOnMainThreadAsync(System.Func_1[[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Threading.Tasks.Task",
+          "clrName": "RunOnMainThreadAsync",
+          "tsEmitName": "runOnMainThreadAsync",
+          "metadataToken": 100664854,
+          "canonicalSignature": "(System.Func_1[[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Threading.Tasks.Task",
+          "normalizedSignature": "RunOnMainThreadAsync|(System.Func_1[[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Threading.Tasks.Task|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Identity.Client.Utils.MacMainThreadScheduler",
+          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Utils.MacMainThreadScheduler::StartMessageLoop():System.Void",
+          "clrName": "StartMessageLoop",
+          "tsEmitName": "startMessageLoop",
+          "metadataToken": 100664855,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "StartMessageLoop|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Identity.Client.Utils.MacMainThreadScheduler",
+          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "instance",
+          "isStatic": true,
+          "tsSignatureId": "Instance|():Microsoft.Identity.Client.Utils.MacMainThreadScheduler|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Utils.MacMainThreadScheduler",
+            "declaringAssemblyName": "Microsoft.Identity.Client",
+            "metadataToken": 100664849
+          }
+        },
+        {
+          "tsName": "isCurrentlyOnMainThread",
+          "isStatic": false,
+          "tsSignatureId": "IsCurrentlyOnMainThread|():System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Utils.MacMainThreadScheduler",
+            "declaringAssemblyName": "Microsoft.Identity.Client",
+            "metadataToken": 100664851
+          }
+        },
+        {
+          "tsName": "isRunning",
+          "isStatic": false,
+          "tsSignatureId": "IsRunning|():System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Utils.MacMainThreadScheduler",
+            "declaringAssemblyName": "Microsoft.Identity.Client",
+            "metadataToken": 100664852
+          }
+        },
+        {
+          "tsName": "stop",
+          "isStatic": false,
+          "tsSignatureId": "Stop|():System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Utils.MacMainThreadScheduler",
+            "declaringAssemblyName": "Microsoft.Identity.Client",
+            "metadataToken": 100664853
+          }
+        },
+        {
+          "tsName": "runOnMainThreadAsync",
+          "isStatic": false,
+          "tsSignatureId": "RunOnMainThreadAsync|(System.Func_1[[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Threading.Tasks.Task|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Utils.MacMainThreadScheduler",
+            "declaringAssemblyName": "Microsoft.Identity.Client",
+            "metadataToken": 100664854
+          }
+        },
+        {
+          "tsName": "startMessageLoop",
+          "isStatic": false,
+          "tsSignatureId": "StartMessageLoop|():System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Utils.MacMainThreadScheduler",
+            "declaringAssemblyName": "Microsoft.Identity.Client",
+            "metadataToken": 100664855
+          }
+        }
+      ]
+    }
+  ]
+}

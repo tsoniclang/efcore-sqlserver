@@ -1,0 +1,70 @@
+{
+  "namespace": "System.Text.Json.Serialization",
+  "contributingAssemblies": [
+    "System.Memory.Data",
+    "System.Text.Json"
+  ],
+  "types": [
+    {
+      "stableId": "System.Memory.Data:System.Text.Json.Serialization.BinaryDataJsonConverter",
+      "clrName": "System.Text.Json.Serialization.BinaryDataJsonConverter",
+      "tsEmitName": "BinaryDataJsonConverter",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "System.Memory.Data:System.Text.Json.Serialization.BinaryDataJsonConverter::Read(System.Text.Json.Utf8JsonReader\u0026,System.Type,System.Text.Json.JsonSerializerOptions):System.BinaryData",
+          "clrName": "Read",
+          "tsEmitName": "read",
+          "normalizedSignature": "Read|(System.Text.Json.Utf8JsonReader\u0026,System.Type,System.Text.Json.JsonSerializerOptions):System.BinaryData|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 3,
+          "isExtensionMethod": false,
+          "parameterModifiers": [
+            {
+              "index": 0,
+              "modifier": "ref"
+            }
+          ]
+        },
+        {
+          "stableId": "System.Memory.Data:System.Text.Json.Serialization.BinaryDataJsonConverter::Write(System.Text.Json.Utf8JsonWriter,System.BinaryData,System.Text.Json.JsonSerializerOptions):System.Void",
+          "clrName": "Write",
+          "tsEmitName": "write",
+          "normalizedSignature": "Write|(System.Text.Json.Utf8JsonWriter,System.BinaryData,System.Text.Json.JsonSerializerOptions):System.Void|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 3,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0
+        }
+      ]
+    }
+  ]
+}

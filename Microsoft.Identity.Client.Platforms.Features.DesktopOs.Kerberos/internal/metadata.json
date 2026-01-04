@@ -1,0 +1,41 @@
+{
+  "namespace": "Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos",
+  "contributingAssemblies": [
+    "Microsoft.Identity.Client"
+  ],
+  "types": [
+    {
+      "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos.Credential",
+      "clrName": "Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos.Credential",
+      "tsEmitName": "Credential",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos.Credential::Current():Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos.Credential",
+          "clrName": "Current",
+          "tsEmitName": "current",
+          "normalizedSignature": "Current|():Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos.Credential|static=true",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 0,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    }
+  ]
+}

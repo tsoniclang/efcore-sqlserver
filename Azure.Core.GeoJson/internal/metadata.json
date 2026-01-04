@@ -1,0 +1,1469 @@
+{
+  "namespace": "Azure.Core.GeoJson",
+  "contributingAssemblies": [
+    "Azure.Core"
+  ],
+  "types": [
+    {
+      "stableId": "Azure.Core:Azure.Core.GeoJson.GeoObjectType",
+      "clrName": "Azure.Core.GeoJson.GeoObjectType",
+      "tsEmitName": "GeoObjectType",
+      "kind": "Enum",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoObjectType::value__System.Int32",
+          "clrName": "value__",
+          "tsEmitName": "value__",
+          "normalizedSignature": "value__|System.Int32|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "isLiteral": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoObjectType::PointAzure.Core.GeoJson.GeoObjectType",
+          "clrName": "Point",
+          "tsEmitName": "point",
+          "normalizedSignature": "Point|Azure.Core.GeoJson.GeoObjectType|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoObjectType::MultiPointAzure.Core.GeoJson.GeoObjectType",
+          "clrName": "MultiPoint",
+          "tsEmitName": "multiPoint",
+          "normalizedSignature": "MultiPoint|Azure.Core.GeoJson.GeoObjectType|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoObjectType::PolygonAzure.Core.GeoJson.GeoObjectType",
+          "clrName": "Polygon",
+          "tsEmitName": "polygon",
+          "normalizedSignature": "Polygon|Azure.Core.GeoJson.GeoObjectType|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoObjectType::MultiPolygonAzure.Core.GeoJson.GeoObjectType",
+          "clrName": "MultiPolygon",
+          "tsEmitName": "multiPolygon",
+          "normalizedSignature": "MultiPolygon|Azure.Core.GeoJson.GeoObjectType|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoObjectType::LineStringAzure.Core.GeoJson.GeoObjectType",
+          "clrName": "LineString",
+          "tsEmitName": "lineString",
+          "normalizedSignature": "LineString|Azure.Core.GeoJson.GeoObjectType|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoObjectType::MultiLineStringAzure.Core.GeoJson.GeoObjectType",
+          "clrName": "MultiLineString",
+          "tsEmitName": "multiLineString",
+          "normalizedSignature": "MultiLineString|Azure.Core.GeoJson.GeoObjectType|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoObjectType::GeometryCollectionAzure.Core.GeoJson.GeoObjectType",
+          "clrName": "GeometryCollection",
+          "tsEmitName": "geometryCollection",
+          "normalizedSignature": "GeometryCollection|Azure.Core.GeoJson.GeoObjectType|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        }
+      ],
+      "events": [],
+      "constructors": []
+    },
+    {
+      "stableId": "Azure.Core:Azure.Core.GeoJson.GeoArray\u00601",
+      "clrName": "Azure.Core.GeoJson.GeoArray\u00601",
+      "tsEmitName": "GeoArray_1",
+      "kind": "Struct",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 1,
+      "methods": [
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoArray\u00601::GetEnumerator():Enumerator",
+          "clrName": "GetEnumerator",
+          "tsEmitName": "getEnumerator",
+          "normalizedSignature": "GetEnumerator|():Enumerator|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 0,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoArray\u00601::Item[System.Int32]:T",
+          "clrName": "Item",
+          "tsEmitName": "item",
+          "normalizedSignature": "Item|[System.Int32]:T|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": true,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoArray\u00601::Count:System.Int32",
+          "clrName": "Count",
+          "tsEmitName": "count",
+          "normalizedSignature": "Count|:System.Int32|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    },
+    {
+      "stableId": "Azure.Core:Azure.Core.GeoJson.GeoArray\u00601\u002BEnumerator",
+      "clrName": "Azure.Core.GeoJson.GeoArray\u00601\u002BEnumerator",
+      "tsEmitName": "GeoArray_1_Enumerator",
+      "kind": "Struct",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 1,
+      "methods": [
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoArray\u00601\u002BEnumerator::MoveNext():System.Boolean",
+          "clrName": "MoveNext",
+          "tsEmitName": "moveNext",
+          "normalizedSignature": "MoveNext|():System.Boolean|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "arity": 0,
+          "parameterCount": 0,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoArray\u00601\u002BEnumerator::Reset():System.Void",
+          "clrName": "Reset",
+          "tsEmitName": "reset",
+          "normalizedSignature": "Reset|():System.Void|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "arity": 0,
+          "parameterCount": 0,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoArray\u00601\u002BEnumerator::Dispose():System.Void",
+          "clrName": "Dispose",
+          "tsEmitName": "dispose",
+          "normalizedSignature": "Dispose|():System.Void|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "arity": 0,
+          "parameterCount": 0,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoArray\u00601\u002BEnumerator::Current:T",
+          "clrName": "Current",
+          "tsEmitName": "current",
+          "normalizedSignature": "Current|:T|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    },
+    {
+      "stableId": "Azure.Core:Azure.Core.GeoJson.GeoPosition",
+      "clrName": "Azure.Core.GeoJson.GeoPosition",
+      "tsEmitName": "GeoPosition",
+      "kind": "Struct",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoPosition::Equals(Azure.Core.GeoJson.GeoPosition):System.Boolean",
+          "clrName": "Equals",
+          "tsEmitName": "equals",
+          "normalizedSignature": "Equals|(Azure.Core.GeoJson.GeoPosition):System.Boolean|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoPosition::Equals(System.Object):System.Boolean",
+          "clrName": "Equals",
+          "tsEmitName": "equals",
+          "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoPosition::GetHashCode():System.Int32",
+          "clrName": "GetHashCode",
+          "tsEmitName": "getHashCode",
+          "normalizedSignature": "GetHashCode|():System.Int32|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 0,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoPosition::ToString():System.String",
+          "clrName": "ToString",
+          "tsEmitName": "toString",
+          "normalizedSignature": "ToString|():System.String|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 0,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoPosition::Altitude:System.Nullable_1[[System.Double,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "Altitude",
+          "tsEmitName": "altitude",
+          "normalizedSignature": "Altitude|:System.Nullable_1[[System.Double,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoPosition::Longitude:System.Double",
+          "clrName": "Longitude",
+          "tsEmitName": "longitude",
+          "normalizedSignature": "Longitude|:System.Double|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoPosition::Latitude:System.Double",
+          "clrName": "Latitude",
+          "tsEmitName": "latitude",
+          "normalizedSignature": "Latitude|:System.Double|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoPosition::Item[System.Int32]:System.Double",
+          "clrName": "Item",
+          "tsEmitName": "item",
+          "normalizedSignature": "Item|[System.Int32]:System.Double|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": true,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoPosition::Count:System.Int32",
+          "clrName": "Count",
+          "tsEmitName": "count",
+          "normalizedSignature": "Count|:System.Int32|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|(System.Double,System.Double):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2
+        },
+        {
+          "normalizedSignature": "constructor|(System.Double,System.Double,System.Nullable_1[[System.Double,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3
+        }
+      ]
+    },
+    {
+      "stableId": "Azure.Core:Azure.Core.GeoJson.GeoBoundingBox",
+      "clrName": "Azure.Core.GeoJson.GeoBoundingBox",
+      "tsEmitName": "GeoBoundingBox",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoBoundingBox::Equals(Azure.Core.GeoJson.GeoBoundingBox):System.Boolean",
+          "clrName": "Equals",
+          "tsEmitName": "equals",
+          "normalizedSignature": "Equals|(Azure.Core.GeoJson.GeoBoundingBox):System.Boolean|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoBoundingBox::Equals(System.Object):System.Boolean",
+          "clrName": "Equals",
+          "tsEmitName": "equals",
+          "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoBoundingBox::GetHashCode():System.Int32",
+          "clrName": "GetHashCode",
+          "tsEmitName": "getHashCode",
+          "normalizedSignature": "GetHashCode|():System.Int32|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 0,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoBoundingBox::ToString():System.String",
+          "clrName": "ToString",
+          "tsEmitName": "toString",
+          "normalizedSignature": "ToString|():System.String|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 0,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoBoundingBox::West:System.Double",
+          "clrName": "West",
+          "tsEmitName": "west",
+          "normalizedSignature": "West|:System.Double|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoBoundingBox::South:System.Double",
+          "clrName": "South",
+          "tsEmitName": "south",
+          "normalizedSignature": "South|:System.Double|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoBoundingBox::East:System.Double",
+          "clrName": "East",
+          "tsEmitName": "east",
+          "normalizedSignature": "East|:System.Double|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoBoundingBox::North:System.Double",
+          "clrName": "North",
+          "tsEmitName": "north",
+          "normalizedSignature": "North|:System.Double|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoBoundingBox::MinAltitude:System.Nullable_1[[System.Double,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "MinAltitude",
+          "tsEmitName": "minAltitude",
+          "normalizedSignature": "MinAltitude|:System.Nullable_1[[System.Double,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoBoundingBox::MaxAltitude:System.Nullable_1[[System.Double,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "MaxAltitude",
+          "tsEmitName": "maxAltitude",
+          "normalizedSignature": "MaxAltitude|:System.Nullable_1[[System.Double,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoBoundingBox::Item[System.Int32]:System.Double",
+          "clrName": "Item",
+          "tsEmitName": "item",
+          "normalizedSignature": "Item|[System.Int32]:System.Double|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": true,
+          "hasGetter": true,
+          "hasSetter": false
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|(System.Double,System.Double,System.Double,System.Double):void|static=false",
+          "isStatic": false,
+          "parameterCount": 4
+        },
+        {
+          "normalizedSignature": "constructor|(System.Double,System.Double,System.Double,System.Double,System.Nullable_1[[System.Double,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.Double,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 6
+        }
+      ]
+    },
+    {
+      "stableId": "Azure.Core:Azure.Core.GeoJson.GeoCollection",
+      "clrName": "Azure.Core.GeoJson.GeoCollection",
+      "tsEmitName": "GeoCollection",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoCollection::GetEnumerator():System.Collections.Generic.IEnumerator_1[[Azure.Core.GeoJson.GeoObject,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
+          "clrName": "GetEnumerator",
+          "tsEmitName": "getEnumerator",
+          "normalizedSignature": "GetEnumerator|():System.Collections.Generic.IEnumerator_1[[Azure.Core.GeoJson.GeoObject,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "arity": 0,
+          "parameterCount": 0,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoCollection::Count:System.Int32",
+          "clrName": "Count",
+          "tsEmitName": "count",
+          "normalizedSignature": "Count|:System.Int32|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoCollection::Item[System.Int32]:Azure.Core.GeoJson.GeoObject",
+          "clrName": "Item",
+          "tsEmitName": "item",
+          "normalizedSignature": "Item|[System.Int32]:Azure.Core.GeoJson.GeoObject|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": true,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoCollection::Type:Azure.Core.GeoJson.GeoObjectType",
+          "clrName": "Type",
+          "tsEmitName": "type_",
+          "normalizedSignature": "Type|:Azure.Core.GeoJson.GeoObjectType|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|(System.Collections.Generic.IEnumerable_1[[Azure.Core.GeoJson.GeoObject,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1
+        },
+        {
+          "normalizedSignature": "constructor|(System.Collections.Generic.IEnumerable_1[[Azure.Core.GeoJson.GeoObject,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]],Azure.Core.GeoJson.GeoBoundingBox,System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3
+        }
+      ]
+    },
+    {
+      "stableId": "Azure.Core:Azure.Core.GeoJson.GeoLinearRing",
+      "clrName": "Azure.Core.GeoJson.GeoLinearRing",
+      "tsEmitName": "GeoLinearRing",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoLinearRing::Coordinates:Azure.Core.GeoJson.GeoArray_1[[Azure.Core.GeoJson.GeoPosition,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
+          "clrName": "Coordinates",
+          "tsEmitName": "coordinates",
+          "normalizedSignature": "Coordinates|:Azure.Core.GeoJson.GeoArray_1[[Azure.Core.GeoJson.GeoPosition,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|(System.Collections.Generic.IEnumerable_1[[Azure.Core.GeoJson.GeoPosition,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1
+        }
+      ]
+    },
+    {
+      "stableId": "Azure.Core:Azure.Core.GeoJson.GeoLineString",
+      "clrName": "Azure.Core.GeoJson.GeoLineString",
+      "tsEmitName": "GeoLineString",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoLineString::Coordinates:Azure.Core.GeoJson.GeoArray_1[[Azure.Core.GeoJson.GeoPosition,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
+          "clrName": "Coordinates",
+          "tsEmitName": "coordinates",
+          "normalizedSignature": "Coordinates|:Azure.Core.GeoJson.GeoArray_1[[Azure.Core.GeoJson.GeoPosition,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoLineString::Type:Azure.Core.GeoJson.GeoObjectType",
+          "clrName": "Type",
+          "tsEmitName": "type_",
+          "normalizedSignature": "Type|:Azure.Core.GeoJson.GeoObjectType|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|(System.Collections.Generic.IEnumerable_1[[Azure.Core.GeoJson.GeoPosition,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1
+        },
+        {
+          "normalizedSignature": "constructor|(System.Collections.Generic.IEnumerable_1[[Azure.Core.GeoJson.GeoPosition,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]],Azure.Core.GeoJson.GeoBoundingBox,System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3
+        }
+      ]
+    },
+    {
+      "stableId": "Azure.Core:Azure.Core.GeoJson.GeoLineStringCollection",
+      "clrName": "Azure.Core.GeoJson.GeoLineStringCollection",
+      "tsEmitName": "GeoLineStringCollection",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoLineStringCollection::GetEnumerator():System.Collections.Generic.IEnumerator_1[[Azure.Core.GeoJson.GeoLineString,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
+          "clrName": "GetEnumerator",
+          "tsEmitName": "getEnumerator",
+          "normalizedSignature": "GetEnumerator|():System.Collections.Generic.IEnumerator_1[[Azure.Core.GeoJson.GeoLineString,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "arity": 0,
+          "parameterCount": 0,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoLineStringCollection::Count:System.Int32",
+          "clrName": "Count",
+          "tsEmitName": "count",
+          "normalizedSignature": "Count|:System.Int32|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoLineStringCollection::Item[System.Int32]:Azure.Core.GeoJson.GeoLineString",
+          "clrName": "Item",
+          "tsEmitName": "item",
+          "normalizedSignature": "Item|[System.Int32]:Azure.Core.GeoJson.GeoLineString|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": true,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoLineStringCollection::Coordinates:Azure.Core.GeoJson.GeoArray_1[[Azure.Core.GeoJson.GeoArray_1[[Azure.Core.GeoJson.GeoPosition,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]],Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
+          "clrName": "Coordinates",
+          "tsEmitName": "coordinates",
+          "normalizedSignature": "Coordinates|:Azure.Core.GeoJson.GeoArray_1[[Azure.Core.GeoJson.GeoArray_1[[Azure.Core.GeoJson.GeoPosition,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]],Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoLineStringCollection::Type:Azure.Core.GeoJson.GeoObjectType",
+          "clrName": "Type",
+          "tsEmitName": "type_",
+          "normalizedSignature": "Type|:Azure.Core.GeoJson.GeoObjectType|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|(System.Collections.Generic.IEnumerable_1[[Azure.Core.GeoJson.GeoLineString,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1
+        },
+        {
+          "normalizedSignature": "constructor|(System.Collections.Generic.IEnumerable_1[[Azure.Core.GeoJson.GeoLineString,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]],Azure.Core.GeoJson.GeoBoundingBox,System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3
+        }
+      ]
+    },
+    {
+      "stableId": "Azure.Core:Azure.Core.GeoJson.GeoObject",
+      "clrName": "Azure.Core.GeoJson.GeoObject",
+      "tsEmitName": "GeoObject",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoObject::TryGetCustomProperty(System.String,System.Object\u0026):System.Boolean",
+          "clrName": "TryGetCustomProperty",
+          "tsEmitName": "tryGetCustomProperty",
+          "normalizedSignature": "TryGetCustomProperty|(System.String,System.Object\u0026):System.Boolean|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 2,
+          "isExtensionMethod": false,
+          "parameterModifiers": [
+            {
+              "index": 1,
+              "modifier": "out"
+            }
+          ]
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoObject::ToString():System.String",
+          "clrName": "ToString",
+          "tsEmitName": "toString",
+          "normalizedSignature": "ToString|():System.String|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 0,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoObject::Parse(System.String):Azure.Core.GeoJson.GeoObject",
+          "clrName": "Parse",
+          "tsEmitName": "parse",
+          "normalizedSignature": "Parse|(System.String):Azure.Core.GeoJson.GeoObject|static=true",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoObject::Type:Azure.Core.GeoJson.GeoObjectType",
+          "clrName": "Type",
+          "tsEmitName": "type_",
+          "normalizedSignature": "Type|:Azure.Core.GeoJson.GeoObjectType|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoObject::BoundingBox:Azure.Core.GeoJson.GeoBoundingBox",
+          "clrName": "BoundingBox",
+          "tsEmitName": "boundingBox",
+          "normalizedSignature": "BoundingBox|:Azure.Core.GeoJson.GeoBoundingBox|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    },
+    {
+      "stableId": "Azure.Core:Azure.Core.GeoJson.GeoPoint",
+      "clrName": "Azure.Core.GeoJson.GeoPoint",
+      "tsEmitName": "GeoPoint",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.IJsonModel\u00601::Write(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions):System.Void",
+          "clrName": "Write",
+          "tsEmitName": "write",
+          "normalizedSignature": "Write|(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions):System.Void|static=false",
+          "provenance": "ExplicitView",
+          "emitScope": "ViewOnly",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 2,
+          "sourceInterface": "System.ClientModel.Primitives.IJsonModel\u00601",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.IJsonModel\u00601::Create(System.Text.Json.Utf8JsonReader\u0026,System.ClientModel.Primitives.ModelReaderWriterOptions):T",
+          "clrName": "Create",
+          "tsEmitName": "create",
+          "normalizedSignature": "Create|(System.Text.Json.Utf8JsonReader\u0026,System.ClientModel.Primitives.ModelReaderWriterOptions):T|static=false",
+          "provenance": "ExplicitView",
+          "emitScope": "ViewOnly",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 2,
+          "sourceInterface": "System.ClientModel.Primitives.IJsonModel\u00601",
+          "isExtensionMethod": false,
+          "parameterModifiers": [
+            {
+              "index": 0,
+              "modifier": "ref"
+            }
+          ]
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.IPersistableModel\u00601::Write(System.ClientModel.Primitives.ModelReaderWriterOptions):System.BinaryData",
+          "clrName": "Write",
+          "tsEmitName": "write",
+          "normalizedSignature": "Write|(System.ClientModel.Primitives.ModelReaderWriterOptions):System.BinaryData|static=false",
+          "provenance": "ExplicitView",
+          "emitScope": "ViewOnly",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "sourceInterface": "System.ClientModel.Primitives.IPersistableModel\u00601",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.IPersistableModel\u00601::Create(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions):T",
+          "clrName": "Create",
+          "tsEmitName": "create",
+          "normalizedSignature": "Create|(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions):T|static=false",
+          "provenance": "ExplicitView",
+          "emitScope": "ViewOnly",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 2,
+          "sourceInterface": "System.ClientModel.Primitives.IPersistableModel\u00601",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.IPersistableModel\u00601::GetFormatFromOptions(System.ClientModel.Primitives.ModelReaderWriterOptions):System.String",
+          "clrName": "GetFormatFromOptions",
+          "tsEmitName": "getFormatFromOptions",
+          "normalizedSignature": "GetFormatFromOptions|(System.ClientModel.Primitives.ModelReaderWriterOptions):System.String|static=false",
+          "provenance": "ExplicitView",
+          "emitScope": "ViewOnly",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "sourceInterface": "System.ClientModel.Primitives.IPersistableModel\u00601",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoPoint::Coordinates:Azure.Core.GeoJson.GeoPosition",
+          "clrName": "Coordinates",
+          "tsEmitName": "coordinates",
+          "normalizedSignature": "Coordinates|:Azure.Core.GeoJson.GeoPosition|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoPoint::Type:Azure.Core.GeoJson.GeoObjectType",
+          "clrName": "Type",
+          "tsEmitName": "type_",
+          "normalizedSignature": "Type|:Azure.Core.GeoJson.GeoObjectType|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0
+        },
+        {
+          "normalizedSignature": "constructor|(System.Double,System.Double):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2
+        },
+        {
+          "normalizedSignature": "constructor|(System.Double,System.Double,System.Nullable_1[[System.Double,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3
+        },
+        {
+          "normalizedSignature": "constructor|(Azure.Core.GeoJson.GeoPosition):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1
+        },
+        {
+          "normalizedSignature": "constructor|(Azure.Core.GeoJson.GeoPosition,Azure.Core.GeoJson.GeoBoundingBox,System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3
+        }
+      ]
+    },
+    {
+      "stableId": "Azure.Core:Azure.Core.GeoJson.GeoPointCollection",
+      "clrName": "Azure.Core.GeoJson.GeoPointCollection",
+      "tsEmitName": "GeoPointCollection",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoPointCollection::GetEnumerator():System.Collections.Generic.IEnumerator_1[[Azure.Core.GeoJson.GeoPoint,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
+          "clrName": "GetEnumerator",
+          "tsEmitName": "getEnumerator",
+          "normalizedSignature": "GetEnumerator|():System.Collections.Generic.IEnumerator_1[[Azure.Core.GeoJson.GeoPoint,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "arity": 0,
+          "parameterCount": 0,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoPointCollection::Count:System.Int32",
+          "clrName": "Count",
+          "tsEmitName": "count",
+          "normalizedSignature": "Count|:System.Int32|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoPointCollection::Item[System.Int32]:Azure.Core.GeoJson.GeoPoint",
+          "clrName": "Item",
+          "tsEmitName": "item",
+          "normalizedSignature": "Item|[System.Int32]:Azure.Core.GeoJson.GeoPoint|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": true,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoPointCollection::Coordinates:Azure.Core.GeoJson.GeoArray_1[[Azure.Core.GeoJson.GeoPosition,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
+          "clrName": "Coordinates",
+          "tsEmitName": "coordinates",
+          "normalizedSignature": "Coordinates|:Azure.Core.GeoJson.GeoArray_1[[Azure.Core.GeoJson.GeoPosition,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoPointCollection::Type:Azure.Core.GeoJson.GeoObjectType",
+          "clrName": "Type",
+          "tsEmitName": "type_",
+          "normalizedSignature": "Type|:Azure.Core.GeoJson.GeoObjectType|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|(System.Collections.Generic.IEnumerable_1[[Azure.Core.GeoJson.GeoPoint,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1
+        },
+        {
+          "normalizedSignature": "constructor|(System.Collections.Generic.IEnumerable_1[[Azure.Core.GeoJson.GeoPoint,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]],Azure.Core.GeoJson.GeoBoundingBox,System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3
+        }
+      ]
+    },
+    {
+      "stableId": "Azure.Core:Azure.Core.GeoJson.GeoPolygon",
+      "clrName": "Azure.Core.GeoJson.GeoPolygon",
+      "tsEmitName": "GeoPolygon",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoPolygon::Rings:System.Collections.Generic.IReadOnlyList_1[[Azure.Core.GeoJson.GeoLinearRing,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
+          "clrName": "Rings",
+          "tsEmitName": "rings",
+          "normalizedSignature": "Rings|:System.Collections.Generic.IReadOnlyList_1[[Azure.Core.GeoJson.GeoLinearRing,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoPolygon::OuterRing:Azure.Core.GeoJson.GeoLinearRing",
+          "clrName": "OuterRing",
+          "tsEmitName": "outerRing",
+          "normalizedSignature": "OuterRing|:Azure.Core.GeoJson.GeoLinearRing|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoPolygon::Coordinates:Azure.Core.GeoJson.GeoArray_1[[Azure.Core.GeoJson.GeoArray_1[[Azure.Core.GeoJson.GeoPosition,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]],Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
+          "clrName": "Coordinates",
+          "tsEmitName": "coordinates",
+          "normalizedSignature": "Coordinates|:Azure.Core.GeoJson.GeoArray_1[[Azure.Core.GeoJson.GeoArray_1[[Azure.Core.GeoJson.GeoPosition,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]],Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoPolygon::Type:Azure.Core.GeoJson.GeoObjectType",
+          "clrName": "Type",
+          "tsEmitName": "type_",
+          "normalizedSignature": "Type|:Azure.Core.GeoJson.GeoObjectType|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|(System.Collections.Generic.IEnumerable_1[[Azure.Core.GeoJson.GeoPosition,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1
+        },
+        {
+          "normalizedSignature": "constructor|(System.Collections.Generic.IEnumerable_1[[Azure.Core.GeoJson.GeoLinearRing,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1
+        },
+        {
+          "normalizedSignature": "constructor|(System.Collections.Generic.IEnumerable_1[[Azure.Core.GeoJson.GeoLinearRing,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]],Azure.Core.GeoJson.GeoBoundingBox,System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3
+        }
+      ]
+    },
+    {
+      "stableId": "Azure.Core:Azure.Core.GeoJson.GeoPolygonCollection",
+      "clrName": "Azure.Core.GeoJson.GeoPolygonCollection",
+      "tsEmitName": "GeoPolygonCollection",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoPolygonCollection::GetEnumerator():System.Collections.Generic.IEnumerator_1[[Azure.Core.GeoJson.GeoPolygon,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
+          "clrName": "GetEnumerator",
+          "tsEmitName": "getEnumerator",
+          "normalizedSignature": "GetEnumerator|():System.Collections.Generic.IEnumerator_1[[Azure.Core.GeoJson.GeoPolygon,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "arity": 0,
+          "parameterCount": 0,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoPolygonCollection::Count:System.Int32",
+          "clrName": "Count",
+          "tsEmitName": "count",
+          "normalizedSignature": "Count|:System.Int32|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoPolygonCollection::Item[System.Int32]:Azure.Core.GeoJson.GeoPolygon",
+          "clrName": "Item",
+          "tsEmitName": "item",
+          "normalizedSignature": "Item|[System.Int32]:Azure.Core.GeoJson.GeoPolygon|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": true,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoPolygonCollection::Coordinates:Azure.Core.GeoJson.GeoArray_1[[Azure.Core.GeoJson.GeoArray_1[[Azure.Core.GeoJson.GeoArray_1[[Azure.Core.GeoJson.GeoPosition,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]],Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]],Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
+          "clrName": "Coordinates",
+          "tsEmitName": "coordinates",
+          "normalizedSignature": "Coordinates|:Azure.Core.GeoJson.GeoArray_1[[Azure.Core.GeoJson.GeoArray_1[[Azure.Core.GeoJson.GeoArray_1[[Azure.Core.GeoJson.GeoPosition,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]],Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]],Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.GeoJson.GeoPolygonCollection::Type:Azure.Core.GeoJson.GeoObjectType",
+          "clrName": "Type",
+          "tsEmitName": "type_",
+          "normalizedSignature": "Type|:Azure.Core.GeoJson.GeoObjectType|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|(System.Collections.Generic.IEnumerable_1[[Azure.Core.GeoJson.GeoPolygon,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1
+        },
+        {
+          "normalizedSignature": "constructor|(System.Collections.Generic.IEnumerable_1[[Azure.Core.GeoJson.GeoPolygon,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]],Azure.Core.GeoJson.GeoBoundingBox,System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3
+        }
+      ]
+    }
+  ]
+}

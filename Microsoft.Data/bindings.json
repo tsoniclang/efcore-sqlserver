@@ -1,0 +1,74 @@
+{
+  "namespace": "Microsoft.Data",
+  "types": [
+    {
+      "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.OperationAbortedException",
+      "clrName": "Microsoft.Data.OperationAbortedException",
+      "tsEmitName": "OperationAbortedException",
+      "assemblyName": "Microsoft.Data.SqlClient",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    },
+    {
+      "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlDbTypeExtensions",
+      "clrName": "Microsoft.Data.SqlDbTypeExtensions",
+      "tsEmitName": "SqlDbTypeExtensions",
+      "assemblyName": "Microsoft.Data.SqlClient",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlDbTypeExtensions::JsonSystem.Data.SqlDbType",
+          "clrName": "Json",
+          "tsEmitName": "json",
+          "metadataToken": 67108870,
+          "normalizedSignature": "Json|System.Data.SqlDbType|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.Data.SqlDbTypeExtensions",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlDbTypeExtensions::VectorSystem.Data.SqlDbType",
+          "clrName": "Vector",
+          "tsEmitName": "vector",
+          "metadataToken": 67108871,
+          "normalizedSignature": "Vector|System.Data.SqlDbType|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.Data.SqlDbTypeExtensions",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+        }
+      ],
+      "events": [],
+      "constructors": [],
+      "exposedFields": [
+        {
+          "tsName": "json",
+          "isStatic": true,
+          "tsSignatureId": "Json|System.Data.SqlDbType|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlDbTypeExtensions",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 67108870
+          }
+        },
+        {
+          "tsName": "vector",
+          "isStatic": true,
+          "tsSignatureId": "Vector|System.Data.SqlDbType|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlDbTypeExtensions",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 67108871
+          }
+        }
+      ]
+    }
+  ]
+}

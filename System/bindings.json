@@ -1,0 +1,877 @@
+{
+  "namespace": "System",
+  "types": [
+    {
+      "stableId": "System.Configuration.ConfigurationManager:System.UriIdnScope",
+      "clrName": "System.UriIdnScope",
+      "tsEmitName": "UriIdnScope",
+      "assemblyName": "System.Configuration.ConfigurationManager",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.UriIdnScope::value__System.Int32",
+          "clrName": "value__",
+          "tsEmitName": "value__",
+          "metadataToken": 67108865,
+          "normalizedSignature": "value__|System.Int32|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "declaringClrType": "System.UriIdnScope",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.UriIdnScope::NoneSystem.UriIdnScope",
+          "clrName": "None",
+          "tsEmitName": "none",
+          "metadataToken": 67108866,
+          "normalizedSignature": "None|System.UriIdnScope|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "System.UriIdnScope",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.UriIdnScope::AllExceptIntranetSystem.UriIdnScope",
+          "clrName": "AllExceptIntranet",
+          "tsEmitName": "allExceptIntranet",
+          "metadataToken": 67108867,
+          "normalizedSignature": "AllExceptIntranet|System.UriIdnScope|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "System.UriIdnScope",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.UriIdnScope::AllSystem.UriIdnScope",
+          "clrName": "All",
+          "tsEmitName": "all",
+          "metadataToken": 67108868,
+          "normalizedSignature": "All|System.UriIdnScope|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "System.UriIdnScope",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+        }
+      ],
+      "events": [],
+      "constructors": [],
+      "exposedFields": [
+        {
+          "tsName": "value__",
+          "isStatic": false,
+          "tsSignatureId": "value__|System.Int32|static=false|const=false",
+          "target": {
+            "declaringClrType": "System.UriIdnScope",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 67108865
+          }
+        },
+        {
+          "tsName": "none",
+          "isStatic": true,
+          "tsSignatureId": "None|System.UriIdnScope|static=true|const=true",
+          "target": {
+            "declaringClrType": "System.UriIdnScope",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 67108866
+          }
+        },
+        {
+          "tsName": "allExceptIntranet",
+          "isStatic": true,
+          "tsSignatureId": "AllExceptIntranet|System.UriIdnScope|static=true|const=true",
+          "target": {
+            "declaringClrType": "System.UriIdnScope",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 67108867
+          }
+        },
+        {
+          "tsName": "all",
+          "isStatic": true,
+          "tsSignatureId": "All|System.UriIdnScope|static=true|const=true",
+          "target": {
+            "declaringClrType": "System.UriIdnScope",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 67108868
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "System.Memory.Data:System.BinaryData",
+      "clrName": "System.BinaryData",
+      "tsEmitName": "BinaryData",
+      "assemblyName": "System.Memory.Data",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "System.Memory.Data:System.BinaryData::FromBytes(System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.BinaryData",
+          "clrName": "FromBytes",
+          "tsEmitName": "fromBytes",
+          "metadataToken": 100663309,
+          "canonicalSignature": "(System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.BinaryData",
+          "normalizedSignature": "FromBytes|(System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.BinaryData|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.BinaryData",
+          "declaringAssemblyName": "System.Memory.Data",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Memory.Data:System.BinaryData::FromBytes(System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):System.BinaryData",
+          "clrName": "FromBytes",
+          "tsEmitName": "fromBytes",
+          "metadataToken": 100663310,
+          "canonicalSignature": "(System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):System.BinaryData",
+          "normalizedSignature": "FromBytes|(System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):System.BinaryData|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "System.BinaryData",
+          "declaringAssemblyName": "System.Memory.Data",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Memory.Data:System.BinaryData::FromBytes(System.Byte[]):System.BinaryData",
+          "clrName": "FromBytes",
+          "tsEmitName": "fromBytes",
+          "metadataToken": 100663311,
+          "canonicalSignature": "(System.Byte[]):System.BinaryData",
+          "normalizedSignature": "FromBytes|(System.Byte[]):System.BinaryData|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.BinaryData",
+          "declaringAssemblyName": "System.Memory.Data",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Memory.Data:System.BinaryData::FromBytes(System.Byte[],System.String):System.BinaryData",
+          "clrName": "FromBytes",
+          "tsEmitName": "fromBytes",
+          "metadataToken": 100663312,
+          "canonicalSignature": "(System.Byte[],System.String):System.BinaryData",
+          "normalizedSignature": "FromBytes|(System.Byte[],System.String):System.BinaryData|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "System.BinaryData",
+          "declaringAssemblyName": "System.Memory.Data",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Memory.Data:System.BinaryData::FromString(System.String):System.BinaryData",
+          "clrName": "FromString",
+          "tsEmitName": "fromString",
+          "metadataToken": 100663313,
+          "canonicalSignature": "(System.String):System.BinaryData",
+          "normalizedSignature": "FromString|(System.String):System.BinaryData|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.BinaryData",
+          "declaringAssemblyName": "System.Memory.Data",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Memory.Data:System.BinaryData::FromString(System.String,System.String):System.BinaryData",
+          "clrName": "FromString",
+          "tsEmitName": "fromString",
+          "metadataToken": 100663314,
+          "canonicalSignature": "(System.String,System.String):System.BinaryData",
+          "normalizedSignature": "FromString|(System.String,System.String):System.BinaryData|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "System.BinaryData",
+          "declaringAssemblyName": "System.Memory.Data",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Memory.Data:System.BinaryData::FromStream(System.IO.Stream):System.BinaryData",
+          "clrName": "FromStream",
+          "tsEmitName": "fromStream",
+          "metadataToken": 100663315,
+          "canonicalSignature": "(System.IO.Stream):System.BinaryData",
+          "normalizedSignature": "FromStream|(System.IO.Stream):System.BinaryData|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.BinaryData",
+          "declaringAssemblyName": "System.Memory.Data",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Memory.Data:System.BinaryData::FromStream(System.IO.Stream,System.String):System.BinaryData",
+          "clrName": "FromStream",
+          "tsEmitName": "fromStream",
+          "metadataToken": 100663316,
+          "canonicalSignature": "(System.IO.Stream,System.String):System.BinaryData",
+          "normalizedSignature": "FromStream|(System.IO.Stream,System.String):System.BinaryData|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "System.BinaryData",
+          "declaringAssemblyName": "System.Memory.Data",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Memory.Data:System.BinaryData::FromStreamAsync(System.IO.Stream,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.BinaryData,System.Memory.Data,Version=8.0.0.1,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]",
+          "clrName": "FromStreamAsync",
+          "tsEmitName": "fromStreamAsync",
+          "metadataToken": 100663317,
+          "canonicalSignature": "(System.IO.Stream,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.BinaryData,System.Memory.Data,Version=8.0.0.1,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]",
+          "normalizedSignature": "FromStreamAsync|(System.IO.Stream,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.BinaryData,System.Memory.Data,Version=8.0.0.1,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "System.BinaryData",
+          "declaringAssemblyName": "System.Memory.Data",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Memory.Data:System.BinaryData::FromStreamAsync(System.IO.Stream,System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.BinaryData,System.Memory.Data,Version=8.0.0.1,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]",
+          "clrName": "FromStreamAsync",
+          "tsEmitName": "fromStreamAsync",
+          "metadataToken": 100663318,
+          "canonicalSignature": "(System.IO.Stream,System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.BinaryData,System.Memory.Data,Version=8.0.0.1,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]",
+          "normalizedSignature": "FromStreamAsync|(System.IO.Stream,System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.BinaryData,System.Memory.Data,Version=8.0.0.1,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "System.BinaryData",
+          "declaringAssemblyName": "System.Memory.Data",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Memory.Data:System.BinaryData::FromObjectAsJson(T,System.Text.Json.JsonSerializerOptions):System.BinaryData",
+          "clrName": "FromObjectAsJson",
+          "tsEmitName": "fromObjectAsJson",
+          "metadataToken": 100663320,
+          "canonicalSignature": "(T,System.Text.Json.JsonSerializerOptions):System.BinaryData",
+          "normalizedSignature": "FromObjectAsJson|(T,System.Text.Json.JsonSerializerOptions):System.BinaryData|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 1,
+          "parameterCount": 2,
+          "declaringClrType": "System.BinaryData",
+          "declaringAssemblyName": "System.Memory.Data",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Memory.Data:System.BinaryData::FromObjectAsJson(T,JsonTypeInfo_1):System.BinaryData",
+          "clrName": "FromObjectAsJson",
+          "tsEmitName": "fromObjectAsJson",
+          "metadataToken": 100663321,
+          "canonicalSignature": "(T,JsonTypeInfo_1):System.BinaryData",
+          "normalizedSignature": "FromObjectAsJson|(T,JsonTypeInfo_1):System.BinaryData|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 1,
+          "parameterCount": 2,
+          "declaringClrType": "System.BinaryData",
+          "declaringAssemblyName": "System.Memory.Data",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Memory.Data:System.BinaryData::WithMediaType(System.String):System.BinaryData",
+          "clrName": "WithMediaType",
+          "tsEmitName": "withMediaType",
+          "metadataToken": 100663322,
+          "canonicalSignature": "(System.String):System.BinaryData",
+          "normalizedSignature": "WithMediaType|(System.String):System.BinaryData|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.BinaryData",
+          "declaringAssemblyName": "System.Memory.Data",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Memory.Data:System.BinaryData::ToString():System.String",
+          "clrName": "ToString",
+          "tsEmitName": "toString",
+          "metadataToken": 100663323,
+          "canonicalSignature": "():System.String",
+          "normalizedSignature": "ToString|():System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "System.BinaryData",
+          "declaringAssemblyName": "System.Memory.Data",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Memory.Data:System.BinaryData::ToStream():System.IO.Stream",
+          "clrName": "ToStream",
+          "tsEmitName": "toStream",
+          "metadataToken": 100663324,
+          "canonicalSignature": "():System.IO.Stream",
+          "normalizedSignature": "ToStream|():System.IO.Stream|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "System.BinaryData",
+          "declaringAssemblyName": "System.Memory.Data",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Memory.Data:System.BinaryData::ToMemory():System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "ToMemory",
+          "tsEmitName": "toMemory",
+          "metadataToken": 100663325,
+          "canonicalSignature": "():System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "ToMemory|():System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "System.BinaryData",
+          "declaringAssemblyName": "System.Memory.Data",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Memory.Data:System.BinaryData::ToArray():System.Byte[]",
+          "clrName": "ToArray",
+          "tsEmitName": "toArray",
+          "metadataToken": 100663326,
+          "canonicalSignature": "():System.Byte[]",
+          "normalizedSignature": "ToArray|():System.Byte[]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "System.BinaryData",
+          "declaringAssemblyName": "System.Memory.Data",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Memory.Data:System.BinaryData::ToObjectFromJson(System.Text.Json.JsonSerializerOptions):T",
+          "clrName": "ToObjectFromJson",
+          "tsEmitName": "toObjectFromJson",
+          "metadataToken": 100663327,
+          "canonicalSignature": "(System.Text.Json.JsonSerializerOptions):T",
+          "normalizedSignature": "ToObjectFromJson|(System.Text.Json.JsonSerializerOptions):T|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 1,
+          "parameterCount": 1,
+          "declaringClrType": "System.BinaryData",
+          "declaringAssemblyName": "System.Memory.Data",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Memory.Data:System.BinaryData::ToObjectFromJson(JsonTypeInfo_1):T",
+          "clrName": "ToObjectFromJson",
+          "tsEmitName": "toObjectFromJson",
+          "metadataToken": 100663328,
+          "canonicalSignature": "(JsonTypeInfo_1):T",
+          "normalizedSignature": "ToObjectFromJson|(JsonTypeInfo_1):T|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 1,
+          "parameterCount": 1,
+          "declaringClrType": "System.BinaryData",
+          "declaringAssemblyName": "System.Memory.Data",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Memory.Data:System.BinaryData::Equals(System.Object):System.Boolean",
+          "clrName": "Equals",
+          "tsEmitName": "equals",
+          "metadataToken": 100663332,
+          "canonicalSignature": "(System.Object):System.Boolean",
+          "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.BinaryData",
+          "declaringAssemblyName": "System.Memory.Data",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Memory.Data:System.BinaryData::GetHashCode():System.Int32",
+          "clrName": "GetHashCode",
+          "tsEmitName": "getHashCode",
+          "metadataToken": 100663333,
+          "canonicalSignature": "():System.Int32",
+          "normalizedSignature": "GetHashCode|():System.Int32|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "System.BinaryData",
+          "declaringAssemblyName": "System.Memory.Data",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "System.Memory.Data:System.BinaryData::Empty:System.BinaryData",
+          "clrName": "Empty",
+          "tsEmitName": "empty",
+          "metadataToken": 385875969,
+          "canonicalSignature": ":System.BinaryData",
+          "normalizedSignature": "Empty|:System.BinaryData|static=true|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.BinaryData",
+          "declaringAssemblyName": "System.Memory.Data"
+        },
+        {
+          "stableId": "System.Memory.Data:System.BinaryData::Length:System.Int32",
+          "clrName": "Length",
+          "tsEmitName": "length",
+          "metadataToken": 385875970,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "Length|:System.Int32|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.BinaryData",
+          "declaringAssemblyName": "System.Memory.Data"
+        },
+        {
+          "stableId": "System.Memory.Data:System.BinaryData::IsEmpty:System.Boolean",
+          "clrName": "IsEmpty",
+          "tsEmitName": "isEmpty",
+          "metadataToken": 385875971,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "IsEmpty|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.BinaryData",
+          "declaringAssemblyName": "System.Memory.Data"
+        },
+        {
+          "stableId": "System.Memory.Data:System.BinaryData::MediaType:System.String",
+          "clrName": "MediaType",
+          "tsEmitName": "mediaType",
+          "metadataToken": 385875972,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "MediaType|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.BinaryData",
+          "declaringAssemblyName": "System.Memory.Data"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "System.Memory.Data:System.BinaryData::.ctor(System.Byte[]):void",
+          "metadataToken": 100663301,
+          "canonicalSignature": "(System.Byte[]):void",
+          "normalizedSignature": "constructor|(System.Byte[]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "System.BinaryData",
+          "declaringAssemblyName": "System.Memory.Data"
+        },
+        {
+          "stableId": "System.Memory.Data:System.BinaryData::.ctor(System.Byte[],System.String):void",
+          "metadataToken": 100663302,
+          "canonicalSignature": "(System.Byte[],System.String):void",
+          "normalizedSignature": "constructor|(System.Byte[],System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "declaringClrType": "System.BinaryData",
+          "declaringAssemblyName": "System.Memory.Data"
+        },
+        {
+          "stableId": "System.Memory.Data:System.BinaryData::.ctor(System.Object,System.Text.Json.JsonSerializerOptions,System.Type):void",
+          "metadataToken": 100663303,
+          "canonicalSignature": "(System.Object,System.Text.Json.JsonSerializerOptions,System.Type):void",
+          "normalizedSignature": "constructor|(System.Object,System.Text.Json.JsonSerializerOptions,System.Type):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3,
+          "declaringClrType": "System.BinaryData",
+          "declaringAssemblyName": "System.Memory.Data"
+        },
+        {
+          "stableId": "System.Memory.Data:System.BinaryData::.ctor(System.Object,System.Text.Json.Serialization.JsonSerializerContext,System.Type):void",
+          "metadataToken": 100663304,
+          "canonicalSignature": "(System.Object,System.Text.Json.Serialization.JsonSerializerContext,System.Type):void",
+          "normalizedSignature": "constructor|(System.Object,System.Text.Json.Serialization.JsonSerializerContext,System.Type):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3,
+          "declaringClrType": "System.BinaryData",
+          "declaringAssemblyName": "System.Memory.Data"
+        },
+        {
+          "stableId": "System.Memory.Data:System.BinaryData::.ctor(System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
+          "metadataToken": 100663305,
+          "canonicalSignature": "(System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
+          "normalizedSignature": "constructor|(System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "System.BinaryData",
+          "declaringAssemblyName": "System.Memory.Data"
+        },
+        {
+          "stableId": "System.Memory.Data:System.BinaryData::.ctor(System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):void",
+          "metadataToken": 100663306,
+          "canonicalSignature": "(System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):void",
+          "normalizedSignature": "constructor|(System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "declaringClrType": "System.BinaryData",
+          "declaringAssemblyName": "System.Memory.Data"
+        },
+        {
+          "stableId": "System.Memory.Data:System.BinaryData::.ctor(System.String):void",
+          "metadataToken": 100663307,
+          "canonicalSignature": "(System.String):void",
+          "normalizedSignature": "constructor|(System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "System.BinaryData",
+          "declaringAssemblyName": "System.Memory.Data"
+        },
+        {
+          "stableId": "System.Memory.Data:System.BinaryData::.ctor(System.String,System.String):void",
+          "metadataToken": 100663308,
+          "canonicalSignature": "(System.String,System.String):void",
+          "normalizedSignature": "constructor|(System.String,System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "declaringClrType": "System.BinaryData",
+          "declaringAssemblyName": "System.Memory.Data"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "fromBytes",
+          "isStatic": true,
+          "tsSignatureId": "FromBytes|(System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.BinaryData|static=true",
+          "target": {
+            "declaringClrType": "System.BinaryData",
+            "declaringAssemblyName": "System.Memory.Data",
+            "metadataToken": 100663309
+          }
+        },
+        {
+          "tsName": "fromBytes",
+          "isStatic": true,
+          "tsSignatureId": "FromBytes|(System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):System.BinaryData|static=true",
+          "target": {
+            "declaringClrType": "System.BinaryData",
+            "declaringAssemblyName": "System.Memory.Data",
+            "metadataToken": 100663310
+          }
+        },
+        {
+          "tsName": "fromBytes",
+          "isStatic": true,
+          "tsSignatureId": "FromBytes|(System.Byte[]):System.BinaryData|static=true",
+          "target": {
+            "declaringClrType": "System.BinaryData",
+            "declaringAssemblyName": "System.Memory.Data",
+            "metadataToken": 100663311
+          }
+        },
+        {
+          "tsName": "fromBytes",
+          "isStatic": true,
+          "tsSignatureId": "FromBytes|(System.Byte[],System.String):System.BinaryData|static=true",
+          "target": {
+            "declaringClrType": "System.BinaryData",
+            "declaringAssemblyName": "System.Memory.Data",
+            "metadataToken": 100663312
+          }
+        },
+        {
+          "tsName": "fromString",
+          "isStatic": true,
+          "tsSignatureId": "FromString|(System.String):System.BinaryData|static=true",
+          "target": {
+            "declaringClrType": "System.BinaryData",
+            "declaringAssemblyName": "System.Memory.Data",
+            "metadataToken": 100663313
+          }
+        },
+        {
+          "tsName": "fromString",
+          "isStatic": true,
+          "tsSignatureId": "FromString|(System.String,System.String):System.BinaryData|static=true",
+          "target": {
+            "declaringClrType": "System.BinaryData",
+            "declaringAssemblyName": "System.Memory.Data",
+            "metadataToken": 100663314
+          }
+        },
+        {
+          "tsName": "fromStream",
+          "isStatic": true,
+          "tsSignatureId": "FromStream|(System.IO.Stream):System.BinaryData|static=true",
+          "target": {
+            "declaringClrType": "System.BinaryData",
+            "declaringAssemblyName": "System.Memory.Data",
+            "metadataToken": 100663315
+          }
+        },
+        {
+          "tsName": "fromStream",
+          "isStatic": true,
+          "tsSignatureId": "FromStream|(System.IO.Stream,System.String):System.BinaryData|static=true",
+          "target": {
+            "declaringClrType": "System.BinaryData",
+            "declaringAssemblyName": "System.Memory.Data",
+            "metadataToken": 100663316
+          }
+        },
+        {
+          "tsName": "fromStreamAsync",
+          "isStatic": true,
+          "tsSignatureId": "FromStreamAsync|(System.IO.Stream,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.BinaryData,System.Memory.Data,Version=8.0.0.1,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]|static=true",
+          "target": {
+            "declaringClrType": "System.BinaryData",
+            "declaringAssemblyName": "System.Memory.Data",
+            "metadataToken": 100663317
+          }
+        },
+        {
+          "tsName": "fromStreamAsync",
+          "isStatic": true,
+          "tsSignatureId": "FromStreamAsync|(System.IO.Stream,System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.BinaryData,System.Memory.Data,Version=8.0.0.1,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]|static=true",
+          "target": {
+            "declaringClrType": "System.BinaryData",
+            "declaringAssemblyName": "System.Memory.Data",
+            "metadataToken": 100663318
+          }
+        },
+        {
+          "tsName": "fromObjectAsJson",
+          "isStatic": true,
+          "tsSignatureId": "FromObjectAsJson|(T,System.Text.Json.JsonSerializerOptions):System.BinaryData|static=true",
+          "target": {
+            "declaringClrType": "System.BinaryData",
+            "declaringAssemblyName": "System.Memory.Data",
+            "metadataToken": 100663320
+          }
+        },
+        {
+          "tsName": "fromObjectAsJson",
+          "isStatic": true,
+          "tsSignatureId": "FromObjectAsJson|(T,JsonTypeInfo_1):System.BinaryData|static=true",
+          "target": {
+            "declaringClrType": "System.BinaryData",
+            "declaringAssemblyName": "System.Memory.Data",
+            "metadataToken": 100663321
+          }
+        },
+        {
+          "tsName": "withMediaType",
+          "isStatic": false,
+          "tsSignatureId": "WithMediaType|(System.String):System.BinaryData|static=false",
+          "target": {
+            "declaringClrType": "System.BinaryData",
+            "declaringAssemblyName": "System.Memory.Data",
+            "metadataToken": 100663322
+          }
+        },
+        {
+          "tsName": "toString",
+          "isStatic": false,
+          "tsSignatureId": "ToString|():System.String|static=false",
+          "target": {
+            "declaringClrType": "System.BinaryData",
+            "declaringAssemblyName": "System.Memory.Data",
+            "metadataToken": 100663323
+          }
+        },
+        {
+          "tsName": "toStream",
+          "isStatic": false,
+          "tsSignatureId": "ToStream|():System.IO.Stream|static=false",
+          "target": {
+            "declaringClrType": "System.BinaryData",
+            "declaringAssemblyName": "System.Memory.Data",
+            "metadataToken": 100663324
+          }
+        },
+        {
+          "tsName": "toMemory",
+          "isStatic": false,
+          "tsSignatureId": "ToMemory|():System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "target": {
+            "declaringClrType": "System.BinaryData",
+            "declaringAssemblyName": "System.Memory.Data",
+            "metadataToken": 100663325
+          }
+        },
+        {
+          "tsName": "toArray",
+          "isStatic": false,
+          "tsSignatureId": "ToArray|():System.Byte[]|static=false",
+          "target": {
+            "declaringClrType": "System.BinaryData",
+            "declaringAssemblyName": "System.Memory.Data",
+            "metadataToken": 100663326
+          }
+        },
+        {
+          "tsName": "toObjectFromJson",
+          "isStatic": false,
+          "tsSignatureId": "ToObjectFromJson|(System.Text.Json.JsonSerializerOptions):T|static=false",
+          "target": {
+            "declaringClrType": "System.BinaryData",
+            "declaringAssemblyName": "System.Memory.Data",
+            "metadataToken": 100663327
+          }
+        },
+        {
+          "tsName": "toObjectFromJson",
+          "isStatic": false,
+          "tsSignatureId": "ToObjectFromJson|(JsonTypeInfo_1):T|static=false",
+          "target": {
+            "declaringClrType": "System.BinaryData",
+            "declaringAssemblyName": "System.Memory.Data",
+            "metadataToken": 100663328
+          }
+        },
+        {
+          "tsName": "equals",
+          "isStatic": false,
+          "tsSignatureId": "Equals|(System.Object):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "System.BinaryData",
+            "declaringAssemblyName": "System.Memory.Data",
+            "metadataToken": 100663332
+          }
+        },
+        {
+          "tsName": "getHashCode",
+          "isStatic": false,
+          "tsSignatureId": "GetHashCode|():System.Int32|static=false",
+          "target": {
+            "declaringClrType": "System.BinaryData",
+            "declaringAssemblyName": "System.Memory.Data",
+            "metadataToken": 100663333
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "empty",
+          "isStatic": true,
+          "tsSignatureId": "Empty|:System.BinaryData|static=true|accessor=get",
+          "target": {
+            "declaringClrType": "System.BinaryData",
+            "declaringAssemblyName": "System.Memory.Data",
+            "metadataToken": 385875969
+          }
+        },
+        {
+          "tsName": "length",
+          "isStatic": false,
+          "tsSignatureId": "Length|:System.Int32|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.BinaryData",
+            "declaringAssemblyName": "System.Memory.Data",
+            "metadataToken": 385875970
+          }
+        },
+        {
+          "tsName": "isEmpty",
+          "isStatic": false,
+          "tsSignatureId": "IsEmpty|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.BinaryData",
+            "declaringAssemblyName": "System.Memory.Data",
+            "metadataToken": 385875971
+          }
+        },
+        {
+          "tsName": "mediaType",
+          "isStatic": false,
+          "tsSignatureId": "MediaType|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.BinaryData",
+            "declaringAssemblyName": "System.Memory.Data",
+            "metadataToken": 385875972
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.Byte[]):void|static=false",
+          "target": {
+            "declaringClrType": "System.BinaryData",
+            "declaringAssemblyName": "System.Memory.Data",
+            "metadataToken": 100663301
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.Byte[],System.String):void|static=false",
+          "target": {
+            "declaringClrType": "System.BinaryData",
+            "declaringAssemblyName": "System.Memory.Data",
+            "metadataToken": 100663302
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.Object,System.Text.Json.JsonSerializerOptions,System.Type):void|static=false",
+          "target": {
+            "declaringClrType": "System.BinaryData",
+            "declaringAssemblyName": "System.Memory.Data",
+            "metadataToken": 100663303
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.Object,System.Text.Json.Serialization.JsonSerializerContext,System.Type):void|static=false",
+          "target": {
+            "declaringClrType": "System.BinaryData",
+            "declaringAssemblyName": "System.Memory.Data",
+            "metadataToken": 100663304
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "target": {
+            "declaringClrType": "System.BinaryData",
+            "declaringAssemblyName": "System.Memory.Data",
+            "metadataToken": 100663305
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):void|static=false",
+          "target": {
+            "declaringClrType": "System.BinaryData",
+            "declaringAssemblyName": "System.Memory.Data",
+            "metadataToken": 100663306
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String):void|static=false",
+          "target": {
+            "declaringClrType": "System.BinaryData",
+            "declaringAssemblyName": "System.Memory.Data",
+            "metadataToken": 100663307
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.String):void|static=false",
+          "target": {
+            "declaringClrType": "System.BinaryData",
+            "declaringAssemblyName": "System.Memory.Data",
+            "metadataToken": 100663308
+          }
+        }
+      ]
+    }
+  ]
+}

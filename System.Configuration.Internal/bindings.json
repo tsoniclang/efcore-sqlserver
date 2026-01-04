@@ -1,0 +1,3313 @@
+{
+  "namespace": "System.Configuration.Internal",
+  "types": [
+    {
+      "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.InternalConfigEventHandler",
+      "clrName": "System.Configuration.Internal.InternalConfigEventHandler",
+      "tsEmitName": "InternalConfigEventHandler",
+      "assemblyName": "System.Configuration.ConfigurationManager",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.InternalConfigEventHandler::Invoke(System.Object,System.Configuration.Internal.InternalConfigEventArgs):System.Void",
+          "clrName": "Invoke",
+          "tsEmitName": "invoke",
+          "metadataToken": 100665830,
+          "canonicalSignature": "(System.Object,System.Configuration.Internal.InternalConfigEventArgs):System.Void",
+          "normalizedSignature": "Invoke|(System.Object,System.Configuration.Internal.InternalConfigEventArgs):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "System.Configuration.Internal.InternalConfigEventHandler",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.InternalConfigEventHandler::BeginInvoke(System.Object,System.Configuration.Internal.InternalConfigEventArgs,System.AsyncCallback,System.Object):System.IAsyncResult",
+          "clrName": "BeginInvoke",
+          "tsEmitName": "beginInvoke",
+          "metadataToken": 100665831,
+          "canonicalSignature": "(System.Object,System.Configuration.Internal.InternalConfigEventArgs,System.AsyncCallback,System.Object):System.IAsyncResult",
+          "normalizedSignature": "BeginInvoke|(System.Object,System.Configuration.Internal.InternalConfigEventArgs,System.AsyncCallback,System.Object):System.IAsyncResult|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 4,
+          "declaringClrType": "System.Configuration.Internal.InternalConfigEventHandler",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.InternalConfigEventHandler::EndInvoke(System.IAsyncResult):System.Void",
+          "clrName": "EndInvoke",
+          "tsEmitName": "endInvoke",
+          "metadataToken": 100665832,
+          "canonicalSignature": "(System.IAsyncResult):System.Void",
+          "normalizedSignature": "EndInvoke|(System.IAsyncResult):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.Configuration.Internal.InternalConfigEventHandler",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.InternalConfigEventHandler::.ctor(System.Object,System.IntPtr):void",
+          "metadataToken": 100665829,
+          "canonicalSignature": "(System.Object,System.IntPtr):void",
+          "normalizedSignature": "constructor|(System.Object,System.IntPtr):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "declaringClrType": "System.Configuration.Internal.InternalConfigEventHandler",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "invoke",
+          "isStatic": false,
+          "tsSignatureId": "Invoke|(System.Object,System.Configuration.Internal.InternalConfigEventArgs):System.Void|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.InternalConfigEventHandler",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665830
+          }
+        },
+        {
+          "tsName": "beginInvoke",
+          "isStatic": false,
+          "tsSignatureId": "BeginInvoke|(System.Object,System.Configuration.Internal.InternalConfigEventArgs,System.AsyncCallback,System.Object):System.IAsyncResult|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.InternalConfigEventHandler",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665831
+          }
+        },
+        {
+          "tsName": "endInvoke",
+          "isStatic": false,
+          "tsSignatureId": "EndInvoke|(System.IAsyncResult):System.Void|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.InternalConfigEventHandler",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665832
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.Object,System.IntPtr):void|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.InternalConfigEventHandler",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665829
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.StreamChangeCallback",
+      "clrName": "System.Configuration.Internal.StreamChangeCallback",
+      "tsEmitName": "StreamChangeCallback",
+      "assemblyName": "System.Configuration.ConfigurationManager",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.StreamChangeCallback::Invoke(System.String):System.Void",
+          "clrName": "Invoke",
+          "tsEmitName": "invoke",
+          "metadataToken": 100665917,
+          "canonicalSignature": "(System.String):System.Void",
+          "normalizedSignature": "Invoke|(System.String):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.Configuration.Internal.StreamChangeCallback",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.StreamChangeCallback::BeginInvoke(System.String,System.AsyncCallback,System.Object):System.IAsyncResult",
+          "clrName": "BeginInvoke",
+          "tsEmitName": "beginInvoke",
+          "metadataToken": 100665918,
+          "canonicalSignature": "(System.String,System.AsyncCallback,System.Object):System.IAsyncResult",
+          "normalizedSignature": "BeginInvoke|(System.String,System.AsyncCallback,System.Object):System.IAsyncResult|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "System.Configuration.Internal.StreamChangeCallback",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.StreamChangeCallback::EndInvoke(System.IAsyncResult):System.Void",
+          "clrName": "EndInvoke",
+          "tsEmitName": "endInvoke",
+          "metadataToken": 100665919,
+          "canonicalSignature": "(System.IAsyncResult):System.Void",
+          "normalizedSignature": "EndInvoke|(System.IAsyncResult):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.Configuration.Internal.StreamChangeCallback",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.StreamChangeCallback::.ctor(System.Object,System.IntPtr):void",
+          "metadataToken": 100665916,
+          "canonicalSignature": "(System.Object,System.IntPtr):void",
+          "normalizedSignature": "constructor|(System.Object,System.IntPtr):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "declaringClrType": "System.Configuration.Internal.StreamChangeCallback",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "invoke",
+          "isStatic": false,
+          "tsSignatureId": "Invoke|(System.String):System.Void|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.StreamChangeCallback",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665917
+          }
+        },
+        {
+          "tsName": "beginInvoke",
+          "isStatic": false,
+          "tsSignatureId": "BeginInvoke|(System.String,System.AsyncCallback,System.Object):System.IAsyncResult|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.StreamChangeCallback",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665918
+          }
+        },
+        {
+          "tsName": "endInvoke",
+          "isStatic": false,
+          "tsSignatureId": "EndInvoke|(System.IAsyncResult):System.Void|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.StreamChangeCallback",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665919
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.Object,System.IntPtr):void|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.StreamChangeCallback",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665916
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IConfigErrorInfo",
+      "clrName": "System.Configuration.Internal.IConfigErrorInfo",
+      "tsEmitName": "IConfigErrorInfo",
+      "assemblyName": "System.Configuration.ConfigurationManager",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IConfigErrorInfo::Filename:System.String",
+          "clrName": "Filename",
+          "tsEmitName": "filename",
+          "metadataToken": 385876849,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Filename|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Configuration.Internal.IConfigErrorInfo",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IConfigErrorInfo::LineNumber:System.Int32",
+          "clrName": "LineNumber",
+          "tsEmitName": "lineNumber",
+          "metadataToken": 385876850,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "LineNumber|:System.Int32|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Configuration.Internal.IConfigErrorInfo",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedProperties": [
+        {
+          "tsName": "filename",
+          "isStatic": false,
+          "tsSignatureId": "Filename|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IConfigErrorInfo",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 385876849
+          }
+        },
+        {
+          "tsName": "lineNumber",
+          "isStatic": false,
+          "tsSignatureId": "LineNumber|:System.Int32|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IConfigErrorInfo",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 385876850
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IConfigSystem",
+      "clrName": "System.Configuration.Internal.IConfigSystem",
+      "tsEmitName": "IConfigSystem",
+      "assemblyName": "System.Configuration.ConfigurationManager",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IConfigSystem::Init(System.Type,System.Object[]):System.Void",
+          "clrName": "Init",
+          "tsEmitName": "init",
+          "metadataToken": 100665733,
+          "canonicalSignature": "(System.Type,System.Object[]):System.Void",
+          "normalizedSignature": "Init|(System.Type,System.Object[]):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "System.Configuration.Internal.IConfigSystem",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IConfigSystem::Host:System.Configuration.Internal.IInternalConfigHost",
+          "clrName": "Host",
+          "tsEmitName": "host",
+          "metadataToken": 385876851,
+          "canonicalSignature": ":System.Configuration.Internal.IInternalConfigHost",
+          "normalizedSignature": "Host|:System.Configuration.Internal.IInternalConfigHost|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Configuration.Internal.IConfigSystem",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IConfigSystem::Root:System.Configuration.Internal.IInternalConfigRoot",
+          "clrName": "Root",
+          "tsEmitName": "root",
+          "metadataToken": 385876852,
+          "canonicalSignature": ":System.Configuration.Internal.IInternalConfigRoot",
+          "normalizedSignature": "Root|:System.Configuration.Internal.IInternalConfigRoot|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Configuration.Internal.IConfigSystem",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "init",
+          "isStatic": false,
+          "tsSignatureId": "Init|(System.Type,System.Object[]):System.Void|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IConfigSystem",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665733
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "host",
+          "isStatic": false,
+          "tsSignatureId": "Host|:System.Configuration.Internal.IInternalConfigHost|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IConfigSystem",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 385876851
+          }
+        },
+        {
+          "tsName": "root",
+          "isStatic": false,
+          "tsSignatureId": "Root|:System.Configuration.Internal.IInternalConfigRoot|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IConfigSystem",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 385876852
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IConfigurationManagerHelper",
+      "clrName": "System.Configuration.Internal.IConfigurationManagerHelper",
+      "tsEmitName": "IConfigurationManagerHelper",
+      "assemblyName": "System.Configuration.ConfigurationManager",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IConfigurationManagerHelper::EnsureNetConfigLoaded():System.Void",
+          "clrName": "EnsureNetConfigLoaded",
+          "tsEmitName": "ensureNetConfigLoaded",
+          "metadataToken": 100665734,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "EnsureNetConfigLoaded|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "System.Configuration.Internal.IConfigurationManagerHelper",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "ensureNetConfigLoaded",
+          "isStatic": false,
+          "tsSignatureId": "EnsureNetConfigLoaded|():System.Void|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IConfigurationManagerHelper",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665734
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IConfigurationManagerInternal",
+      "clrName": "System.Configuration.Internal.IConfigurationManagerInternal",
+      "tsEmitName": "IConfigurationManagerInternal",
+      "assemblyName": "System.Configuration.ConfigurationManager",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IConfigurationManagerInternal::SupportsUserConfig:System.Boolean",
+          "clrName": "SupportsUserConfig",
+          "tsEmitName": "supportsUserConfig",
+          "metadataToken": 385876853,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "SupportsUserConfig|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Configuration.Internal.IConfigurationManagerInternal",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IConfigurationManagerInternal::SetConfigurationSystemInProgress:System.Boolean",
+          "clrName": "SetConfigurationSystemInProgress",
+          "tsEmitName": "setConfigurationSystemInProgress",
+          "metadataToken": 385876854,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "SetConfigurationSystemInProgress|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Configuration.Internal.IConfigurationManagerInternal",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IConfigurationManagerInternal::MachineConfigPath:System.String",
+          "clrName": "MachineConfigPath",
+          "tsEmitName": "machineConfigPath",
+          "metadataToken": 385876855,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "MachineConfigPath|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Configuration.Internal.IConfigurationManagerInternal",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IConfigurationManagerInternal::ApplicationConfigUri:System.String",
+          "clrName": "ApplicationConfigUri",
+          "tsEmitName": "applicationConfigUri",
+          "metadataToken": 385876856,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "ApplicationConfigUri|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Configuration.Internal.IConfigurationManagerInternal",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IConfigurationManagerInternal::ExeProductName:System.String",
+          "clrName": "ExeProductName",
+          "tsEmitName": "exeProductName",
+          "metadataToken": 385876857,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "ExeProductName|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Configuration.Internal.IConfigurationManagerInternal",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IConfigurationManagerInternal::ExeProductVersion:System.String",
+          "clrName": "ExeProductVersion",
+          "tsEmitName": "exeProductVersion",
+          "metadataToken": 385876858,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "ExeProductVersion|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Configuration.Internal.IConfigurationManagerInternal",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IConfigurationManagerInternal::ExeRoamingConfigDirectory:System.String",
+          "clrName": "ExeRoamingConfigDirectory",
+          "tsEmitName": "exeRoamingConfigDirectory",
+          "metadataToken": 385876859,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "ExeRoamingConfigDirectory|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Configuration.Internal.IConfigurationManagerInternal",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IConfigurationManagerInternal::ExeRoamingConfigPath:System.String",
+          "clrName": "ExeRoamingConfigPath",
+          "tsEmitName": "exeRoamingConfigPath",
+          "metadataToken": 385876860,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "ExeRoamingConfigPath|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Configuration.Internal.IConfigurationManagerInternal",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IConfigurationManagerInternal::ExeLocalConfigDirectory:System.String",
+          "clrName": "ExeLocalConfigDirectory",
+          "tsEmitName": "exeLocalConfigDirectory",
+          "metadataToken": 385876861,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "ExeLocalConfigDirectory|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Configuration.Internal.IConfigurationManagerInternal",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IConfigurationManagerInternal::ExeLocalConfigPath:System.String",
+          "clrName": "ExeLocalConfigPath",
+          "tsEmitName": "exeLocalConfigPath",
+          "metadataToken": 385876862,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "ExeLocalConfigPath|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Configuration.Internal.IConfigurationManagerInternal",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IConfigurationManagerInternal::UserConfigFilename:System.String",
+          "clrName": "UserConfigFilename",
+          "tsEmitName": "userConfigFilename",
+          "metadataToken": 385876863,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "UserConfigFilename|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Configuration.Internal.IConfigurationManagerInternal",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedProperties": [
+        {
+          "tsName": "supportsUserConfig",
+          "isStatic": false,
+          "tsSignatureId": "SupportsUserConfig|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IConfigurationManagerInternal",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 385876853
+          }
+        },
+        {
+          "tsName": "setConfigurationSystemInProgress",
+          "isStatic": false,
+          "tsSignatureId": "SetConfigurationSystemInProgress|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IConfigurationManagerInternal",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 385876854
+          }
+        },
+        {
+          "tsName": "machineConfigPath",
+          "isStatic": false,
+          "tsSignatureId": "MachineConfigPath|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IConfigurationManagerInternal",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 385876855
+          }
+        },
+        {
+          "tsName": "applicationConfigUri",
+          "isStatic": false,
+          "tsSignatureId": "ApplicationConfigUri|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IConfigurationManagerInternal",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 385876856
+          }
+        },
+        {
+          "tsName": "exeProductName",
+          "isStatic": false,
+          "tsSignatureId": "ExeProductName|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IConfigurationManagerInternal",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 385876857
+          }
+        },
+        {
+          "tsName": "exeProductVersion",
+          "isStatic": false,
+          "tsSignatureId": "ExeProductVersion|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IConfigurationManagerInternal",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 385876858
+          }
+        },
+        {
+          "tsName": "exeRoamingConfigDirectory",
+          "isStatic": false,
+          "tsSignatureId": "ExeRoamingConfigDirectory|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IConfigurationManagerInternal",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 385876859
+          }
+        },
+        {
+          "tsName": "exeRoamingConfigPath",
+          "isStatic": false,
+          "tsSignatureId": "ExeRoamingConfigPath|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IConfigurationManagerInternal",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 385876860
+          }
+        },
+        {
+          "tsName": "exeLocalConfigDirectory",
+          "isStatic": false,
+          "tsSignatureId": "ExeLocalConfigDirectory|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IConfigurationManagerInternal",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 385876861
+          }
+        },
+        {
+          "tsName": "exeLocalConfigPath",
+          "isStatic": false,
+          "tsSignatureId": "ExeLocalConfigPath|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IConfigurationManagerInternal",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 385876862
+          }
+        },
+        {
+          "tsName": "userConfigFilename",
+          "isStatic": false,
+          "tsSignatureId": "UserConfigFilename|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IConfigurationManagerInternal",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 385876863
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigClientHost",
+      "clrName": "System.Configuration.Internal.IInternalConfigClientHost",
+      "tsEmitName": "IInternalConfigClientHost",
+      "assemblyName": "System.Configuration.ConfigurationManager",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigClientHost::IsExeConfig(System.String):System.Boolean",
+          "clrName": "IsExeConfig",
+          "tsEmitName": "isExeConfig",
+          "metadataToken": 100665746,
+          "canonicalSignature": "(System.String):System.Boolean",
+          "normalizedSignature": "IsExeConfig|(System.String):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigClientHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigClientHost::GetExeConfigPath():System.String",
+          "clrName": "GetExeConfigPath",
+          "tsEmitName": "getExeConfigPath",
+          "metadataToken": 100665749,
+          "canonicalSignature": "():System.String",
+          "normalizedSignature": "GetExeConfigPath|():System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigClientHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "isExeConfig",
+          "isStatic": false,
+          "tsSignatureId": "IsExeConfig|(System.String):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigClientHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665746
+          }
+        },
+        {
+          "tsName": "getExeConfigPath",
+          "isStatic": false,
+          "tsSignatureId": "GetExeConfigPath|():System.String|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigClientHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665749
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigConfigurationFactory",
+      "clrName": "System.Configuration.Internal.IInternalConfigConfigurationFactory",
+      "tsEmitName": "IInternalConfigConfigurationFactory",
+      "assemblyName": "System.Configuration.ConfigurationManager",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigConfigurationFactory::Create(System.Type,System.Object[]):System.Configuration.Configuration",
+          "clrName": "Create",
+          "tsEmitName": "create",
+          "metadataToken": 100665752,
+          "canonicalSignature": "(System.Type,System.Object[]):System.Configuration.Configuration",
+          "normalizedSignature": "Create|(System.Type,System.Object[]):System.Configuration.Configuration|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigConfigurationFactory",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigConfigurationFactory::NormalizeLocationSubPath(System.String,System.Configuration.Internal.IConfigErrorInfo):System.String",
+          "clrName": "NormalizeLocationSubPath",
+          "tsEmitName": "normalizeLocationSubPath",
+          "metadataToken": 100665753,
+          "canonicalSignature": "(System.String,System.Configuration.Internal.IConfigErrorInfo):System.String",
+          "normalizedSignature": "NormalizeLocationSubPath|(System.String,System.Configuration.Internal.IConfigErrorInfo):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigConfigurationFactory",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "create",
+          "isStatic": false,
+          "tsSignatureId": "Create|(System.Type,System.Object[]):System.Configuration.Configuration|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigConfigurationFactory",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665752
+          }
+        },
+        {
+          "tsName": "normalizeLocationSubPath",
+          "isStatic": false,
+          "tsSignatureId": "NormalizeLocationSubPath|(System.String,System.Configuration.Internal.IConfigErrorInfo):System.String|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigConfigurationFactory",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665753
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigHost",
+      "clrName": "System.Configuration.Internal.IInternalConfigHost",
+      "tsEmitName": "IInternalConfigHost",
+      "assemblyName": "System.Configuration.ConfigurationManager",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigHost::Init(System.Configuration.Internal.IInternalConfigRoot,System.Object[]):System.Void",
+          "clrName": "Init",
+          "tsEmitName": "init",
+          "metadataToken": 100665759,
+          "canonicalSignature": "(System.Configuration.Internal.IInternalConfigRoot,System.Object[]):System.Void",
+          "normalizedSignature": "Init|(System.Configuration.Internal.IInternalConfigRoot,System.Object[]):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigHost::InitForConfiguration(System.String\u0026,System.String\u0026,System.String\u0026,System.Configuration.Internal.IInternalConfigRoot,System.Object[]):System.Void",
+          "clrName": "InitForConfiguration",
+          "tsEmitName": "initForConfiguration",
+          "metadataToken": 100665760,
+          "canonicalSignature": "(System.String\u0026,System.String\u0026,System.String\u0026,System.Configuration.Internal.IInternalConfigRoot,System.Object[]):System.Void",
+          "normalizedSignature": "InitForConfiguration|(System.String\u0026,System.String\u0026,System.String\u0026,System.Configuration.Internal.IInternalConfigRoot,System.Object[]):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false,
+          "parameterModifiers": [
+            {
+              "index": 0,
+              "modifier": "ref"
+            },
+            {
+              "index": 1,
+              "modifier": "out"
+            },
+            {
+              "index": 2,
+              "modifier": "out"
+            }
+          ]
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigHost::IsConfigRecordRequired(System.String):System.Boolean",
+          "clrName": "IsConfigRecordRequired",
+          "tsEmitName": "isConfigRecordRequired",
+          "metadataToken": 100665761,
+          "canonicalSignature": "(System.String):System.Boolean",
+          "normalizedSignature": "IsConfigRecordRequired|(System.String):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigHost::IsInitDelayed(System.Configuration.Internal.IInternalConfigRecord):System.Boolean",
+          "clrName": "IsInitDelayed",
+          "tsEmitName": "isInitDelayed",
+          "metadataToken": 100665762,
+          "canonicalSignature": "(System.Configuration.Internal.IInternalConfigRecord):System.Boolean",
+          "normalizedSignature": "IsInitDelayed|(System.Configuration.Internal.IInternalConfigRecord):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigHost::RequireCompleteInit(System.Configuration.Internal.IInternalConfigRecord):System.Void",
+          "clrName": "RequireCompleteInit",
+          "tsEmitName": "requireCompleteInit",
+          "metadataToken": 100665763,
+          "canonicalSignature": "(System.Configuration.Internal.IInternalConfigRecord):System.Void",
+          "normalizedSignature": "RequireCompleteInit|(System.Configuration.Internal.IInternalConfigRecord):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigHost::GetStreamName(System.String):System.String",
+          "clrName": "GetStreamName",
+          "tsEmitName": "getStreamName",
+          "metadataToken": 100665765,
+          "canonicalSignature": "(System.String):System.String",
+          "normalizedSignature": "GetStreamName|(System.String):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigHost::GetStreamNameForConfigSource(System.String,System.String):System.String",
+          "clrName": "GetStreamNameForConfigSource",
+          "tsEmitName": "getStreamNameForConfigSource",
+          "metadataToken": 100665766,
+          "canonicalSignature": "(System.String,System.String):System.String",
+          "normalizedSignature": "GetStreamNameForConfigSource|(System.String,System.String):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigHost::GetStreamVersion(System.String):System.Object",
+          "clrName": "GetStreamVersion",
+          "tsEmitName": "getStreamVersion",
+          "metadataToken": 100665767,
+          "canonicalSignature": "(System.String):System.Object",
+          "normalizedSignature": "GetStreamVersion|(System.String):System.Object|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigHost::OpenStreamForRead(System.String):System.IO.Stream",
+          "clrName": "OpenStreamForRead",
+          "tsEmitName": "openStreamForRead",
+          "metadataToken": 100665768,
+          "canonicalSignature": "(System.String):System.IO.Stream",
+          "normalizedSignature": "OpenStreamForRead|(System.String):System.IO.Stream|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigHost::OpenStreamForRead(System.String,System.Boolean):System.IO.Stream",
+          "clrName": "OpenStreamForRead",
+          "tsEmitName": "openStreamForRead",
+          "metadataToken": 100665769,
+          "canonicalSignature": "(System.String,System.Boolean):System.IO.Stream",
+          "normalizedSignature": "OpenStreamForRead|(System.String,System.Boolean):System.IO.Stream|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigHost::OpenStreamForWrite(System.String,System.String,System.Object\u0026):System.IO.Stream",
+          "clrName": "OpenStreamForWrite",
+          "tsEmitName": "openStreamForWrite",
+          "metadataToken": 100665770,
+          "canonicalSignature": "(System.String,System.String,System.Object\u0026):System.IO.Stream",
+          "normalizedSignature": "OpenStreamForWrite|(System.String,System.String,System.Object\u0026):System.IO.Stream|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false,
+          "parameterModifiers": [
+            {
+              "index": 2,
+              "modifier": "ref"
+            }
+          ]
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigHost::OpenStreamForWrite(System.String,System.String,System.Object\u0026,System.Boolean):System.IO.Stream",
+          "clrName": "OpenStreamForWrite",
+          "tsEmitName": "openStreamForWrite",
+          "metadataToken": 100665771,
+          "canonicalSignature": "(System.String,System.String,System.Object\u0026,System.Boolean):System.IO.Stream",
+          "normalizedSignature": "OpenStreamForWrite|(System.String,System.String,System.Object\u0026,System.Boolean):System.IO.Stream|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 4,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false,
+          "parameterModifiers": [
+            {
+              "index": 2,
+              "modifier": "ref"
+            }
+          ]
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigHost::WriteCompleted(System.String,System.Boolean,System.Object):System.Void",
+          "clrName": "WriteCompleted",
+          "tsEmitName": "writeCompleted",
+          "metadataToken": 100665772,
+          "canonicalSignature": "(System.String,System.Boolean,System.Object):System.Void",
+          "normalizedSignature": "WriteCompleted|(System.String,System.Boolean,System.Object):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigHost::WriteCompleted(System.String,System.Boolean,System.Object,System.Boolean):System.Void",
+          "clrName": "WriteCompleted",
+          "tsEmitName": "writeCompleted",
+          "metadataToken": 100665773,
+          "canonicalSignature": "(System.String,System.Boolean,System.Object,System.Boolean):System.Void",
+          "normalizedSignature": "WriteCompleted|(System.String,System.Boolean,System.Object,System.Boolean):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 4,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigHost::DeleteStream(System.String):System.Void",
+          "clrName": "DeleteStream",
+          "tsEmitName": "deleteStream",
+          "metadataToken": 100665774,
+          "canonicalSignature": "(System.String):System.Void",
+          "normalizedSignature": "DeleteStream|(System.String):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigHost::StartMonitoringStreamForChanges(System.String,System.Configuration.Internal.StreamChangeCallback):System.Object",
+          "clrName": "StartMonitoringStreamForChanges",
+          "tsEmitName": "startMonitoringStreamForChanges",
+          "metadataToken": 100665776,
+          "canonicalSignature": "(System.String,System.Configuration.Internal.StreamChangeCallback):System.Object",
+          "normalizedSignature": "StartMonitoringStreamForChanges|(System.String,System.Configuration.Internal.StreamChangeCallback):System.Object|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigHost::StopMonitoringStreamForChanges(System.String,System.Configuration.Internal.StreamChangeCallback):System.Void",
+          "clrName": "StopMonitoringStreamForChanges",
+          "tsEmitName": "stopMonitoringStreamForChanges",
+          "metadataToken": 100665777,
+          "canonicalSignature": "(System.String,System.Configuration.Internal.StreamChangeCallback):System.Void",
+          "normalizedSignature": "StopMonitoringStreamForChanges|(System.String,System.Configuration.Internal.StreamChangeCallback):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigHost::IsDefinitionAllowed(System.String,System.Configuration.ConfigurationAllowDefinition,System.Configuration.ConfigurationAllowExeDefinition):System.Boolean",
+          "clrName": "IsDefinitionAllowed",
+          "tsEmitName": "isDefinitionAllowed",
+          "metadataToken": 100665781,
+          "canonicalSignature": "(System.String,System.Configuration.ConfigurationAllowDefinition,System.Configuration.ConfigurationAllowExeDefinition):System.Boolean",
+          "normalizedSignature": "IsDefinitionAllowed|(System.String,System.Configuration.ConfigurationAllowDefinition,System.Configuration.ConfigurationAllowExeDefinition):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigHost::VerifyDefinitionAllowed(System.String,System.Configuration.ConfigurationAllowDefinition,System.Configuration.ConfigurationAllowExeDefinition,System.Configuration.Internal.IConfigErrorInfo):System.Void",
+          "clrName": "VerifyDefinitionAllowed",
+          "tsEmitName": "verifyDefinitionAllowed",
+          "metadataToken": 100665782,
+          "canonicalSignature": "(System.String,System.Configuration.ConfigurationAllowDefinition,System.Configuration.ConfigurationAllowExeDefinition,System.Configuration.Internal.IConfigErrorInfo):System.Void",
+          "normalizedSignature": "VerifyDefinitionAllowed|(System.String,System.Configuration.ConfigurationAllowDefinition,System.Configuration.ConfigurationAllowExeDefinition,System.Configuration.Internal.IConfigErrorInfo):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 4,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigHost::PrefetchAll(System.String,System.String):System.Boolean",
+          "clrName": "PrefetchAll",
+          "tsEmitName": "prefetchAll",
+          "metadataToken": 100665783,
+          "canonicalSignature": "(System.String,System.String):System.Boolean",
+          "normalizedSignature": "PrefetchAll|(System.String,System.String):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigHost::CreateConfigurationContext(System.String,System.String):System.Object",
+          "clrName": "CreateConfigurationContext",
+          "tsEmitName": "createConfigurationContext",
+          "metadataToken": 100665786,
+          "canonicalSignature": "(System.String,System.String):System.Object",
+          "normalizedSignature": "CreateConfigurationContext|(System.String,System.String):System.Object|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigHost::DecryptSection(System.String,System.Configuration.ProtectedConfigurationProvider,System.Configuration.ProtectedConfigurationSection):System.String",
+          "clrName": "DecryptSection",
+          "tsEmitName": "decryptSection",
+          "metadataToken": 100665787,
+          "canonicalSignature": "(System.String,System.Configuration.ProtectedConfigurationProvider,System.Configuration.ProtectedConfigurationSection):System.String",
+          "normalizedSignature": "DecryptSection|(System.String,System.Configuration.ProtectedConfigurationProvider,System.Configuration.ProtectedConfigurationSection):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigHost::GetConfigType(System.String,System.Boolean):System.Type",
+          "clrName": "GetConfigType",
+          "tsEmitName": "getConfigType",
+          "metadataToken": 100665789,
+          "canonicalSignature": "(System.String,System.Boolean):System.Type",
+          "normalizedSignature": "GetConfigType|(System.String,System.Boolean):System.Type|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigHost::GetConfigTypeName(System.Type):System.String",
+          "clrName": "GetConfigTypeName",
+          "tsEmitName": "getConfigTypeName",
+          "metadataToken": 100665790,
+          "canonicalSignature": "(System.Type):System.String",
+          "normalizedSignature": "GetConfigTypeName|(System.Type):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigHost::Impersonate():System.IDisposable",
+          "clrName": "Impersonate",
+          "tsEmitName": "impersonate",
+          "metadataToken": 100665793,
+          "canonicalSignature": "():System.IDisposable",
+          "normalizedSignature": "Impersonate|():System.IDisposable|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigHost::GetRestrictedPermissions(System.Configuration.Internal.IInternalConfigRecord,System.Security.PermissionSet\u0026,System.Boolean\u0026):System.Void",
+          "clrName": "GetRestrictedPermissions",
+          "tsEmitName": "getRestrictedPermissions",
+          "metadataToken": 100665794,
+          "canonicalSignature": "(System.Configuration.Internal.IInternalConfigRecord,System.Security.PermissionSet\u0026,System.Boolean\u0026):System.Void",
+          "normalizedSignature": "GetRestrictedPermissions|(System.Configuration.Internal.IInternalConfigRecord,System.Security.PermissionSet\u0026,System.Boolean\u0026):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false,
+          "parameterModifiers": [
+            {
+              "index": 1,
+              "modifier": "out"
+            },
+            {
+              "index": 2,
+              "modifier": "out"
+            }
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigHost::SupportsChangeNotifications:System.Boolean",
+          "clrName": "SupportsChangeNotifications",
+          "tsEmitName": "supportsChangeNotifications",
+          "metadataToken": 385876864,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "SupportsChangeNotifications|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigHost::SupportsRefresh:System.Boolean",
+          "clrName": "SupportsRefresh",
+          "tsEmitName": "supportsRefresh",
+          "metadataToken": 385876865,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "SupportsRefresh|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigHost::SupportsPath:System.Boolean",
+          "clrName": "SupportsPath",
+          "tsEmitName": "supportsPath",
+          "metadataToken": 385876866,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "SupportsPath|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigHost::SupportsLocation:System.Boolean",
+          "clrName": "SupportsLocation",
+          "tsEmitName": "supportsLocation",
+          "metadataToken": 385876867,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "SupportsLocation|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigHost::IsRemote:System.Boolean",
+          "clrName": "IsRemote",
+          "tsEmitName": "isRemote",
+          "metadataToken": 385876868,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "IsRemote|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "init",
+          "isStatic": false,
+          "tsSignatureId": "Init|(System.Configuration.Internal.IInternalConfigRoot,System.Object[]):System.Void|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665759
+          }
+        },
+        {
+          "tsName": "initForConfiguration",
+          "isStatic": false,
+          "tsSignatureId": "InitForConfiguration|(System.String\u0026,System.String\u0026,System.String\u0026,System.Configuration.Internal.IInternalConfigRoot,System.Object[]):System.Void|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665760
+          }
+        },
+        {
+          "tsName": "isConfigRecordRequired",
+          "isStatic": false,
+          "tsSignatureId": "IsConfigRecordRequired|(System.String):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665761
+          }
+        },
+        {
+          "tsName": "isInitDelayed",
+          "isStatic": false,
+          "tsSignatureId": "IsInitDelayed|(System.Configuration.Internal.IInternalConfigRecord):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665762
+          }
+        },
+        {
+          "tsName": "requireCompleteInit",
+          "isStatic": false,
+          "tsSignatureId": "RequireCompleteInit|(System.Configuration.Internal.IInternalConfigRecord):System.Void|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665763
+          }
+        },
+        {
+          "tsName": "getStreamName",
+          "isStatic": false,
+          "tsSignatureId": "GetStreamName|(System.String):System.String|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665765
+          }
+        },
+        {
+          "tsName": "getStreamNameForConfigSource",
+          "isStatic": false,
+          "tsSignatureId": "GetStreamNameForConfigSource|(System.String,System.String):System.String|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665766
+          }
+        },
+        {
+          "tsName": "getStreamVersion",
+          "isStatic": false,
+          "tsSignatureId": "GetStreamVersion|(System.String):System.Object|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665767
+          }
+        },
+        {
+          "tsName": "openStreamForRead",
+          "isStatic": false,
+          "tsSignatureId": "OpenStreamForRead|(System.String):System.IO.Stream|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665768
+          }
+        },
+        {
+          "tsName": "openStreamForRead",
+          "isStatic": false,
+          "tsSignatureId": "OpenStreamForRead|(System.String,System.Boolean):System.IO.Stream|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665769
+          }
+        },
+        {
+          "tsName": "openStreamForWrite",
+          "isStatic": false,
+          "tsSignatureId": "OpenStreamForWrite|(System.String,System.String,System.Object\u0026):System.IO.Stream|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665770
+          }
+        },
+        {
+          "tsName": "openStreamForWrite",
+          "isStatic": false,
+          "tsSignatureId": "OpenStreamForWrite|(System.String,System.String,System.Object\u0026,System.Boolean):System.IO.Stream|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665771
+          }
+        },
+        {
+          "tsName": "writeCompleted",
+          "isStatic": false,
+          "tsSignatureId": "WriteCompleted|(System.String,System.Boolean,System.Object):System.Void|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665772
+          }
+        },
+        {
+          "tsName": "writeCompleted",
+          "isStatic": false,
+          "tsSignatureId": "WriteCompleted|(System.String,System.Boolean,System.Object,System.Boolean):System.Void|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665773
+          }
+        },
+        {
+          "tsName": "deleteStream",
+          "isStatic": false,
+          "tsSignatureId": "DeleteStream|(System.String):System.Void|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665774
+          }
+        },
+        {
+          "tsName": "startMonitoringStreamForChanges",
+          "isStatic": false,
+          "tsSignatureId": "StartMonitoringStreamForChanges|(System.String,System.Configuration.Internal.StreamChangeCallback):System.Object|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665776
+          }
+        },
+        {
+          "tsName": "stopMonitoringStreamForChanges",
+          "isStatic": false,
+          "tsSignatureId": "StopMonitoringStreamForChanges|(System.String,System.Configuration.Internal.StreamChangeCallback):System.Void|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665777
+          }
+        },
+        {
+          "tsName": "isDefinitionAllowed",
+          "isStatic": false,
+          "tsSignatureId": "IsDefinitionAllowed|(System.String,System.Configuration.ConfigurationAllowDefinition,System.Configuration.ConfigurationAllowExeDefinition):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665781
+          }
+        },
+        {
+          "tsName": "verifyDefinitionAllowed",
+          "isStatic": false,
+          "tsSignatureId": "VerifyDefinitionAllowed|(System.String,System.Configuration.ConfigurationAllowDefinition,System.Configuration.ConfigurationAllowExeDefinition,System.Configuration.Internal.IConfigErrorInfo):System.Void|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665782
+          }
+        },
+        {
+          "tsName": "prefetchAll",
+          "isStatic": false,
+          "tsSignatureId": "PrefetchAll|(System.String,System.String):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665783
+          }
+        },
+        {
+          "tsName": "createConfigurationContext",
+          "isStatic": false,
+          "tsSignatureId": "CreateConfigurationContext|(System.String,System.String):System.Object|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665786
+          }
+        },
+        {
+          "tsName": "decryptSection",
+          "isStatic": false,
+          "tsSignatureId": "DecryptSection|(System.String,System.Configuration.ProtectedConfigurationProvider,System.Configuration.ProtectedConfigurationSection):System.String|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665787
+          }
+        },
+        {
+          "tsName": "getConfigType",
+          "isStatic": false,
+          "tsSignatureId": "GetConfigType|(System.String,System.Boolean):System.Type|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665789
+          }
+        },
+        {
+          "tsName": "getConfigTypeName",
+          "isStatic": false,
+          "tsSignatureId": "GetConfigTypeName|(System.Type):System.String|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665790
+          }
+        },
+        {
+          "tsName": "impersonate",
+          "isStatic": false,
+          "tsSignatureId": "Impersonate|():System.IDisposable|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665793
+          }
+        },
+        {
+          "tsName": "getRestrictedPermissions",
+          "isStatic": false,
+          "tsSignatureId": "GetRestrictedPermissions|(System.Configuration.Internal.IInternalConfigRecord,System.Security.PermissionSet\u0026,System.Boolean\u0026):System.Void|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665794
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "supportsChangeNotifications",
+          "isStatic": false,
+          "tsSignatureId": "SupportsChangeNotifications|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 385876864
+          }
+        },
+        {
+          "tsName": "supportsRefresh",
+          "isStatic": false,
+          "tsSignatureId": "SupportsRefresh|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 385876865
+          }
+        },
+        {
+          "tsName": "supportsPath",
+          "isStatic": false,
+          "tsSignatureId": "SupportsPath|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 385876866
+          }
+        },
+        {
+          "tsName": "supportsLocation",
+          "isStatic": false,
+          "tsSignatureId": "SupportsLocation|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 385876867
+          }
+        },
+        {
+          "tsName": "isRemote",
+          "isStatic": false,
+          "tsSignatureId": "IsRemote|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 385876868
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigRecord",
+      "clrName": "System.Configuration.Internal.IInternalConfigRecord",
+      "tsEmitName": "IInternalConfigRecord",
+      "assemblyName": "System.Configuration.ConfigurationManager",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigRecord::ThrowIfInitErrors():System.Void",
+          "clrName": "ThrowIfInitErrors",
+          "tsEmitName": "throwIfInitErrors",
+          "metadataToken": 100665802,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "ThrowIfInitErrors|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigRecord",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigRecord::GetSection(System.String):System.Object",
+          "clrName": "GetSection",
+          "tsEmitName": "getSection",
+          "metadataToken": 100665803,
+          "canonicalSignature": "(System.String):System.Object",
+          "normalizedSignature": "GetSection|(System.String):System.Object|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigRecord",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigRecord::RefreshSection(System.String):System.Void",
+          "clrName": "RefreshSection",
+          "tsEmitName": "refreshSection",
+          "metadataToken": 100665805,
+          "canonicalSignature": "(System.String):System.Void",
+          "normalizedSignature": "RefreshSection|(System.String):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigRecord",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigRecord::ConfigPath:System.String",
+          "clrName": "ConfigPath",
+          "tsEmitName": "configPath",
+          "metadataToken": 385876872,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "ConfigPath|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigRecord",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigRecord::StreamName:System.String",
+          "clrName": "StreamName",
+          "tsEmitName": "streamName",
+          "metadataToken": 385876873,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "StreamName|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigRecord",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigRecord::HasInitErrors:System.Boolean",
+          "clrName": "HasInitErrors",
+          "tsEmitName": "hasInitErrors",
+          "metadataToken": 385876874,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "HasInitErrors|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigRecord",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "throwIfInitErrors",
+          "isStatic": false,
+          "tsSignatureId": "ThrowIfInitErrors|():System.Void|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigRecord",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665802
+          }
+        },
+        {
+          "tsName": "getSection",
+          "isStatic": false,
+          "tsSignatureId": "GetSection|(System.String):System.Object|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigRecord",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665803
+          }
+        },
+        {
+          "tsName": "refreshSection",
+          "isStatic": false,
+          "tsSignatureId": "RefreshSection|(System.String):System.Void|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigRecord",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665805
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "configPath",
+          "isStatic": false,
+          "tsSignatureId": "ConfigPath|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigRecord",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 385876872
+          }
+        },
+        {
+          "tsName": "streamName",
+          "isStatic": false,
+          "tsSignatureId": "StreamName|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigRecord",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 385876873
+          }
+        },
+        {
+          "tsName": "hasInitErrors",
+          "isStatic": false,
+          "tsSignatureId": "HasInitErrors|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigRecord",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 385876874
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigRoot",
+      "clrName": "System.Configuration.Internal.IInternalConfigRoot",
+      "tsEmitName": "IInternalConfigRoot",
+      "assemblyName": "System.Configuration.ConfigurationManager",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigRoot::Init(System.Configuration.Internal.IInternalConfigHost,System.Boolean):System.Void",
+          "clrName": "Init",
+          "tsEmitName": "init",
+          "metadataToken": 100665808,
+          "canonicalSignature": "(System.Configuration.Internal.IInternalConfigHost,System.Boolean):System.Void",
+          "normalizedSignature": "Init|(System.Configuration.Internal.IInternalConfigHost,System.Boolean):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigRoot",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigRoot::GetSection(System.String,System.String):System.Object",
+          "clrName": "GetSection",
+          "tsEmitName": "getSection",
+          "metadataToken": 100665813,
+          "canonicalSignature": "(System.String,System.String):System.Object",
+          "normalizedSignature": "GetSection|(System.String,System.String):System.Object|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigRoot",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigRoot::GetUniqueConfigPath(System.String):System.String",
+          "clrName": "GetUniqueConfigPath",
+          "tsEmitName": "getUniqueConfigPath",
+          "metadataToken": 100665814,
+          "canonicalSignature": "(System.String):System.String",
+          "normalizedSignature": "GetUniqueConfigPath|(System.String):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigRoot",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigRoot::GetUniqueConfigRecord(System.String):System.Configuration.Internal.IInternalConfigRecord",
+          "clrName": "GetUniqueConfigRecord",
+          "tsEmitName": "getUniqueConfigRecord",
+          "metadataToken": 100665815,
+          "canonicalSignature": "(System.String):System.Configuration.Internal.IInternalConfigRecord",
+          "normalizedSignature": "GetUniqueConfigRecord|(System.String):System.Configuration.Internal.IInternalConfigRecord|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigRoot",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigRoot::RemoveConfig(System.String):System.Void",
+          "clrName": "RemoveConfig",
+          "tsEmitName": "removeConfig",
+          "metadataToken": 100665817,
+          "canonicalSignature": "(System.String):System.Void",
+          "normalizedSignature": "RemoveConfig|(System.String):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigRoot",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigRoot::IsDesignTime:System.Boolean",
+          "clrName": "IsDesignTime",
+          "tsEmitName": "isDesignTime",
+          "metadataToken": 385876875,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "IsDesignTime|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigRoot",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+        }
+      ],
+      "fields": [],
+      "events": [
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigRoot::ConfigChangedSystem.Configuration.Internal.InternalConfigEventHandler",
+          "clrName": "ConfigChanged",
+          "tsEmitName": "configChanged",
+          "metadataToken": 335544325,
+          "normalizedSignature": "ConfigChanged|System.Configuration.Internal.InternalConfigEventHandler|static=false",
+          "isStatic": false,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigRoot",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+        }
+      ],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "init",
+          "isStatic": false,
+          "tsSignatureId": "Init|(System.Configuration.Internal.IInternalConfigHost,System.Boolean):System.Void|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigRoot",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665808
+          }
+        },
+        {
+          "tsName": "getSection",
+          "isStatic": false,
+          "tsSignatureId": "GetSection|(System.String,System.String):System.Object|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigRoot",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665813
+          }
+        },
+        {
+          "tsName": "getUniqueConfigPath",
+          "isStatic": false,
+          "tsSignatureId": "GetUniqueConfigPath|(System.String):System.String|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigRoot",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665814
+          }
+        },
+        {
+          "tsName": "getUniqueConfigRecord",
+          "isStatic": false,
+          "tsSignatureId": "GetUniqueConfigRecord|(System.String):System.Configuration.Internal.IInternalConfigRecord|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigRoot",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665815
+          }
+        },
+        {
+          "tsName": "removeConfig",
+          "isStatic": false,
+          "tsSignatureId": "RemoveConfig|(System.String):System.Void|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigRoot",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665817
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "isDesignTime",
+          "isStatic": false,
+          "tsSignatureId": "IsDesignTime|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigRoot",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 385876875
+          }
+        }
+      ],
+      "exposedEvents": [
+        {
+          "tsName": "configChanged",
+          "isStatic": false,
+          "tsSignatureId": "ConfigChanged|System.Configuration.Internal.InternalConfigEventHandler|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigRoot",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 335544325
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigSettingsFactory",
+      "clrName": "System.Configuration.Internal.IInternalConfigSettingsFactory",
+      "tsEmitName": "IInternalConfigSettingsFactory",
+      "assemblyName": "System.Configuration.ConfigurationManager",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigSettingsFactory::SetConfigurationSystem(System.Configuration.Internal.IInternalConfigSystem,System.Boolean):System.Void",
+          "clrName": "SetConfigurationSystem",
+          "tsEmitName": "setConfigurationSystem",
+          "metadataToken": 100665818,
+          "canonicalSignature": "(System.Configuration.Internal.IInternalConfigSystem,System.Boolean):System.Void",
+          "normalizedSignature": "SetConfigurationSystem|(System.Configuration.Internal.IInternalConfigSystem,System.Boolean):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigSettingsFactory",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigSettingsFactory::CompleteInit():System.Void",
+          "clrName": "CompleteInit",
+          "tsEmitName": "completeInit",
+          "metadataToken": 100665819,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "CompleteInit|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigSettingsFactory",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "setConfigurationSystem",
+          "isStatic": false,
+          "tsSignatureId": "SetConfigurationSystem|(System.Configuration.Internal.IInternalConfigSystem,System.Boolean):System.Void|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigSettingsFactory",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665818
+          }
+        },
+        {
+          "tsName": "completeInit",
+          "isStatic": false,
+          "tsSignatureId": "CompleteInit|():System.Void|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigSettingsFactory",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665819
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigSystem",
+      "clrName": "System.Configuration.Internal.IInternalConfigSystem",
+      "tsEmitName": "IInternalConfigSystem",
+      "assemblyName": "System.Configuration.ConfigurationManager",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigSystem::GetSection(System.String):System.Object",
+          "clrName": "GetSection",
+          "tsEmitName": "getSection",
+          "metadataToken": 100665821,
+          "canonicalSignature": "(System.String):System.Object",
+          "normalizedSignature": "GetSection|(System.String):System.Object|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigSystem",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigSystem::RefreshConfig(System.String):System.Void",
+          "clrName": "RefreshConfig",
+          "tsEmitName": "refreshConfig",
+          "metadataToken": 100665822,
+          "canonicalSignature": "(System.String):System.Void",
+          "normalizedSignature": "RefreshConfig|(System.String):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigSystem",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.IInternalConfigSystem::SupportsUserConfig:System.Boolean",
+          "clrName": "SupportsUserConfig",
+          "tsEmitName": "supportsUserConfig",
+          "metadataToken": 385876876,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "SupportsUserConfig|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Configuration.Internal.IInternalConfigSystem",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "getSection",
+          "isStatic": false,
+          "tsSignatureId": "GetSection|(System.String):System.Object|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigSystem",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665821
+          }
+        },
+        {
+          "tsName": "refreshConfig",
+          "isStatic": false,
+          "tsSignatureId": "RefreshConfig|(System.String):System.Void|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigSystem",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665822
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "supportsUserConfig",
+          "isStatic": false,
+          "tsSignatureId": "SupportsUserConfig|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.IInternalConfigSystem",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 385876876
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost",
+      "clrName": "System.Configuration.Internal.DelegatingConfigHost",
+      "tsEmitName": "DelegatingConfigHost",
+      "assemblyName": "System.Configuration.ConfigurationManager",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::Init(System.Configuration.Internal.IInternalConfigRoot,System.Object[]):System.Void",
+          "clrName": "Init",
+          "tsEmitName": "init",
+          "metadataToken": 100665680,
+          "canonicalSignature": "(System.Configuration.Internal.IInternalConfigRoot,System.Object[]):System.Void",
+          "normalizedSignature": "Init|(System.Configuration.Internal.IInternalConfigRoot,System.Object[]):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::InitForConfiguration(System.String\u0026,System.String\u0026,System.String\u0026,System.Configuration.Internal.IInternalConfigRoot,System.Object[]):System.Void",
+          "clrName": "InitForConfiguration",
+          "tsEmitName": "initForConfiguration",
+          "metadataToken": 100665681,
+          "canonicalSignature": "(System.String\u0026,System.String\u0026,System.String\u0026,System.Configuration.Internal.IInternalConfigRoot,System.Object[]):System.Void",
+          "normalizedSignature": "InitForConfiguration|(System.String\u0026,System.String\u0026,System.String\u0026,System.Configuration.Internal.IInternalConfigRoot,System.Object[]):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false,
+          "parameterModifiers": [
+            {
+              "index": 0,
+              "modifier": "ref"
+            },
+            {
+              "index": 1,
+              "modifier": "out"
+            },
+            {
+              "index": 2,
+              "modifier": "out"
+            }
+          ]
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::IsConfigRecordRequired(System.String):System.Boolean",
+          "clrName": "IsConfigRecordRequired",
+          "tsEmitName": "isConfigRecordRequired",
+          "metadataToken": 100665682,
+          "canonicalSignature": "(System.String):System.Boolean",
+          "normalizedSignature": "IsConfigRecordRequired|(System.String):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::IsInitDelayed(System.Configuration.Internal.IInternalConfigRecord):System.Boolean",
+          "clrName": "IsInitDelayed",
+          "tsEmitName": "isInitDelayed",
+          "metadataToken": 100665683,
+          "canonicalSignature": "(System.Configuration.Internal.IInternalConfigRecord):System.Boolean",
+          "normalizedSignature": "IsInitDelayed|(System.Configuration.Internal.IInternalConfigRecord):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::RequireCompleteInit(System.Configuration.Internal.IInternalConfigRecord):System.Void",
+          "clrName": "RequireCompleteInit",
+          "tsEmitName": "requireCompleteInit",
+          "metadataToken": 100665684,
+          "canonicalSignature": "(System.Configuration.Internal.IInternalConfigRecord):System.Void",
+          "normalizedSignature": "RequireCompleteInit|(System.Configuration.Internal.IInternalConfigRecord):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::IsSecondaryRoot(System.String):System.Boolean",
+          "clrName": "IsSecondaryRoot",
+          "tsEmitName": "isSecondaryRoot",
+          "metadataToken": 100665685,
+          "canonicalSignature": "(System.String):System.Boolean",
+          "normalizedSignature": "IsSecondaryRoot|(System.String):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::GetStreamName(System.String):System.String",
+          "clrName": "GetStreamName",
+          "tsEmitName": "getStreamName",
+          "metadataToken": 100665686,
+          "canonicalSignature": "(System.String):System.String",
+          "normalizedSignature": "GetStreamName|(System.String):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::GetStreamNameForConfigSource(System.String,System.String):System.String",
+          "clrName": "GetStreamNameForConfigSource",
+          "tsEmitName": "getStreamNameForConfigSource",
+          "metadataToken": 100665687,
+          "canonicalSignature": "(System.String,System.String):System.String",
+          "normalizedSignature": "GetStreamNameForConfigSource|(System.String,System.String):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::GetStreamVersion(System.String):System.Object",
+          "clrName": "GetStreamVersion",
+          "tsEmitName": "getStreamVersion",
+          "metadataToken": 100665688,
+          "canonicalSignature": "(System.String):System.Object",
+          "normalizedSignature": "GetStreamVersion|(System.String):System.Object|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::OpenStreamForRead(System.String):System.IO.Stream",
+          "clrName": "OpenStreamForRead",
+          "tsEmitName": "openStreamForRead",
+          "metadataToken": 100665689,
+          "canonicalSignature": "(System.String):System.IO.Stream",
+          "normalizedSignature": "OpenStreamForRead|(System.String):System.IO.Stream|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::OpenStreamForRead(System.String,System.Boolean):System.IO.Stream",
+          "clrName": "OpenStreamForRead",
+          "tsEmitName": "openStreamForRead",
+          "metadataToken": 100665690,
+          "canonicalSignature": "(System.String,System.Boolean):System.IO.Stream",
+          "normalizedSignature": "OpenStreamForRead|(System.String,System.Boolean):System.IO.Stream|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::OpenStreamForWrite(System.String,System.String,System.Object\u0026):System.IO.Stream",
+          "clrName": "OpenStreamForWrite",
+          "tsEmitName": "openStreamForWrite",
+          "metadataToken": 100665691,
+          "canonicalSignature": "(System.String,System.String,System.Object\u0026):System.IO.Stream",
+          "normalizedSignature": "OpenStreamForWrite|(System.String,System.String,System.Object\u0026):System.IO.Stream|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false,
+          "parameterModifiers": [
+            {
+              "index": 2,
+              "modifier": "ref"
+            }
+          ]
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::OpenStreamForWrite(System.String,System.String,System.Object\u0026,System.Boolean):System.IO.Stream",
+          "clrName": "OpenStreamForWrite",
+          "tsEmitName": "openStreamForWrite",
+          "metadataToken": 100665692,
+          "canonicalSignature": "(System.String,System.String,System.Object\u0026,System.Boolean):System.IO.Stream",
+          "normalizedSignature": "OpenStreamForWrite|(System.String,System.String,System.Object\u0026,System.Boolean):System.IO.Stream|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 4,
+          "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false,
+          "parameterModifiers": [
+            {
+              "index": 2,
+              "modifier": "ref"
+            }
+          ]
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::WriteCompleted(System.String,System.Boolean,System.Object):System.Void",
+          "clrName": "WriteCompleted",
+          "tsEmitName": "writeCompleted",
+          "metadataToken": 100665693,
+          "canonicalSignature": "(System.String,System.Boolean,System.Object):System.Void",
+          "normalizedSignature": "WriteCompleted|(System.String,System.Boolean,System.Object):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::WriteCompleted(System.String,System.Boolean,System.Object,System.Boolean):System.Void",
+          "clrName": "WriteCompleted",
+          "tsEmitName": "writeCompleted",
+          "metadataToken": 100665694,
+          "canonicalSignature": "(System.String,System.Boolean,System.Object,System.Boolean):System.Void",
+          "normalizedSignature": "WriteCompleted|(System.String,System.Boolean,System.Object,System.Boolean):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 4,
+          "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::DeleteStream(System.String):System.Void",
+          "clrName": "DeleteStream",
+          "tsEmitName": "deleteStream",
+          "metadataToken": 100665695,
+          "canonicalSignature": "(System.String):System.Void",
+          "normalizedSignature": "DeleteStream|(System.String):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::IsFile(System.String):System.Boolean",
+          "clrName": "IsFile",
+          "tsEmitName": "isFile",
+          "metadataToken": 100665696,
+          "canonicalSignature": "(System.String):System.Boolean",
+          "normalizedSignature": "IsFile|(System.String):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::StartMonitoringStreamForChanges(System.String,System.Configuration.Internal.StreamChangeCallback):System.Object",
+          "clrName": "StartMonitoringStreamForChanges",
+          "tsEmitName": "startMonitoringStreamForChanges",
+          "metadataToken": 100665698,
+          "canonicalSignature": "(System.String,System.Configuration.Internal.StreamChangeCallback):System.Object",
+          "normalizedSignature": "StartMonitoringStreamForChanges|(System.String,System.Configuration.Internal.StreamChangeCallback):System.Object|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::StopMonitoringStreamForChanges(System.String,System.Configuration.Internal.StreamChangeCallback):System.Void",
+          "clrName": "StopMonitoringStreamForChanges",
+          "tsEmitName": "stopMonitoringStreamForChanges",
+          "metadataToken": 100665699,
+          "canonicalSignature": "(System.String,System.Configuration.Internal.StreamChangeCallback):System.Void",
+          "normalizedSignature": "StopMonitoringStreamForChanges|(System.String,System.Configuration.Internal.StreamChangeCallback):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::IsAboveApplication(System.String):System.Boolean",
+          "clrName": "IsAboveApplication",
+          "tsEmitName": "isAboveApplication",
+          "metadataToken": 100665703,
+          "canonicalSignature": "(System.String):System.Boolean",
+          "normalizedSignature": "IsAboveApplication|(System.String):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::IsDefinitionAllowed(System.String,System.Configuration.ConfigurationAllowDefinition,System.Configuration.ConfigurationAllowExeDefinition):System.Boolean",
+          "clrName": "IsDefinitionAllowed",
+          "tsEmitName": "isDefinitionAllowed",
+          "metadataToken": 100665704,
+          "canonicalSignature": "(System.String,System.Configuration.ConfigurationAllowDefinition,System.Configuration.ConfigurationAllowExeDefinition):System.Boolean",
+          "normalizedSignature": "IsDefinitionAllowed|(System.String,System.Configuration.ConfigurationAllowDefinition,System.Configuration.ConfigurationAllowExeDefinition):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::VerifyDefinitionAllowed(System.String,System.Configuration.ConfigurationAllowDefinition,System.Configuration.ConfigurationAllowExeDefinition,System.Configuration.Internal.IConfigErrorInfo):System.Void",
+          "clrName": "VerifyDefinitionAllowed",
+          "tsEmitName": "verifyDefinitionAllowed",
+          "metadataToken": 100665705,
+          "canonicalSignature": "(System.String,System.Configuration.ConfigurationAllowDefinition,System.Configuration.ConfigurationAllowExeDefinition,System.Configuration.Internal.IConfigErrorInfo):System.Void",
+          "normalizedSignature": "VerifyDefinitionAllowed|(System.String,System.Configuration.ConfigurationAllowDefinition,System.Configuration.ConfigurationAllowExeDefinition,System.Configuration.Internal.IConfigErrorInfo):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 4,
+          "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::GetConfigPathFromLocationSubPath(System.String,System.String):System.String",
+          "clrName": "GetConfigPathFromLocationSubPath",
+          "tsEmitName": "getConfigPathFromLocationSubPath",
+          "metadataToken": 100665706,
+          "canonicalSignature": "(System.String,System.String):System.String",
+          "normalizedSignature": "GetConfigPathFromLocationSubPath|(System.String,System.String):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::IsLocationApplicable(System.String):System.Boolean",
+          "clrName": "IsLocationApplicable",
+          "tsEmitName": "isLocationApplicable",
+          "metadataToken": 100665707,
+          "canonicalSignature": "(System.String):System.Boolean",
+          "normalizedSignature": "IsLocationApplicable|(System.String):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::PrefetchAll(System.String,System.String):System.Boolean",
+          "clrName": "PrefetchAll",
+          "tsEmitName": "prefetchAll",
+          "metadataToken": 100665708,
+          "canonicalSignature": "(System.String,System.String):System.Boolean",
+          "normalizedSignature": "PrefetchAll|(System.String,System.String):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::PrefetchSection(System.String,System.String):System.Boolean",
+          "clrName": "PrefetchSection",
+          "tsEmitName": "prefetchSection",
+          "metadataToken": 100665709,
+          "canonicalSignature": "(System.String,System.String):System.Boolean",
+          "normalizedSignature": "PrefetchSection|(System.String,System.String):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::CreateDeprecatedConfigContext(System.String):System.Object",
+          "clrName": "CreateDeprecatedConfigContext",
+          "tsEmitName": "createDeprecatedConfigContext",
+          "metadataToken": 100665710,
+          "canonicalSignature": "(System.String):System.Object",
+          "normalizedSignature": "CreateDeprecatedConfigContext|(System.String):System.Object|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::CreateConfigurationContext(System.String,System.String):System.Object",
+          "clrName": "CreateConfigurationContext",
+          "tsEmitName": "createConfigurationContext",
+          "metadataToken": 100665711,
+          "canonicalSignature": "(System.String,System.String):System.Object",
+          "normalizedSignature": "CreateConfigurationContext|(System.String,System.String):System.Object|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::DecryptSection(System.String,System.Configuration.ProtectedConfigurationProvider,System.Configuration.ProtectedConfigurationSection):System.String",
+          "clrName": "DecryptSection",
+          "tsEmitName": "decryptSection",
+          "metadataToken": 100665712,
+          "canonicalSignature": "(System.String,System.Configuration.ProtectedConfigurationProvider,System.Configuration.ProtectedConfigurationSection):System.String",
+          "normalizedSignature": "DecryptSection|(System.String,System.Configuration.ProtectedConfigurationProvider,System.Configuration.ProtectedConfigurationSection):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::EncryptSection(System.String,System.Configuration.ProtectedConfigurationProvider,System.Configuration.ProtectedConfigurationSection):System.String",
+          "clrName": "EncryptSection",
+          "tsEmitName": "encryptSection",
+          "metadataToken": 100665713,
+          "canonicalSignature": "(System.String,System.Configuration.ProtectedConfigurationProvider,System.Configuration.ProtectedConfigurationSection):System.String",
+          "normalizedSignature": "EncryptSection|(System.String,System.Configuration.ProtectedConfigurationProvider,System.Configuration.ProtectedConfigurationSection):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::GetConfigType(System.String,System.Boolean):System.Type",
+          "clrName": "GetConfigType",
+          "tsEmitName": "getConfigType",
+          "metadataToken": 100665714,
+          "canonicalSignature": "(System.String,System.Boolean):System.Type",
+          "normalizedSignature": "GetConfigType|(System.String,System.Boolean):System.Type|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::GetConfigTypeName(System.Type):System.String",
+          "clrName": "GetConfigTypeName",
+          "tsEmitName": "getConfigTypeName",
+          "metadataToken": 100665715,
+          "canonicalSignature": "(System.Type):System.String",
+          "normalizedSignature": "GetConfigTypeName|(System.Type):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::RefreshConfigPaths():System.Void",
+          "clrName": "RefreshConfigPaths",
+          "tsEmitName": "refreshConfigPaths",
+          "metadataToken": 100665718,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "RefreshConfigPaths|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::IsTrustedConfigPath(System.String):System.Boolean",
+          "clrName": "IsTrustedConfigPath",
+          "tsEmitName": "isTrustedConfigPath",
+          "metadataToken": 100665722,
+          "canonicalSignature": "(System.String):System.Boolean",
+          "normalizedSignature": "IsTrustedConfigPath|(System.String):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::IsFullTrustSectionWithoutAptcaAllowed(System.Configuration.Internal.IInternalConfigRecord):System.Boolean",
+          "clrName": "IsFullTrustSectionWithoutAptcaAllowed",
+          "tsEmitName": "isFullTrustSectionWithoutAptcaAllowed",
+          "metadataToken": 100665723,
+          "canonicalSignature": "(System.Configuration.Internal.IInternalConfigRecord):System.Boolean",
+          "normalizedSignature": "IsFullTrustSectionWithoutAptcaAllowed|(System.Configuration.Internal.IInternalConfigRecord):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::Impersonate():System.IDisposable",
+          "clrName": "Impersonate",
+          "tsEmitName": "impersonate",
+          "metadataToken": 100665724,
+          "canonicalSignature": "():System.IDisposable",
+          "normalizedSignature": "Impersonate|():System.IDisposable|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::GetRestrictedPermissions(System.Configuration.Internal.IInternalConfigRecord,System.Security.PermissionSet\u0026,System.Boolean\u0026):System.Void",
+          "clrName": "GetRestrictedPermissions",
+          "tsEmitName": "getRestrictedPermissions",
+          "metadataToken": 100665725,
+          "canonicalSignature": "(System.Configuration.Internal.IInternalConfigRecord,System.Security.PermissionSet\u0026,System.Boolean\u0026):System.Void",
+          "normalizedSignature": "GetRestrictedPermissions|(System.Configuration.Internal.IInternalConfigRecord,System.Security.PermissionSet\u0026,System.Boolean\u0026):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "isExtensionMethod": false,
+          "parameterModifiers": [
+            {
+              "index": 1,
+              "modifier": "out"
+            },
+            {
+              "index": 2,
+              "modifier": "out"
+            }
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::SupportsChangeNotifications:System.Boolean",
+          "clrName": "SupportsChangeNotifications",
+          "tsEmitName": "supportsChangeNotifications",
+          "metadataToken": 385876840,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "SupportsChangeNotifications|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::SupportsRefresh:System.Boolean",
+          "clrName": "SupportsRefresh",
+          "tsEmitName": "supportsRefresh",
+          "metadataToken": 385876841,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "SupportsRefresh|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::SupportsPath:System.Boolean",
+          "clrName": "SupportsPath",
+          "tsEmitName": "supportsPath",
+          "metadataToken": 385876842,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "SupportsPath|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::SupportsLocation:System.Boolean",
+          "clrName": "SupportsLocation",
+          "tsEmitName": "supportsLocation",
+          "metadataToken": 385876843,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "SupportsLocation|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::IsRemote:System.Boolean",
+          "clrName": "IsRemote",
+          "tsEmitName": "isRemote",
+          "metadataToken": 385876844,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "IsRemote|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::HasLocalConfig:System.Boolean",
+          "clrName": "HasLocalConfig",
+          "tsEmitName": "hasLocalConfig",
+          "metadataToken": 385876846,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "HasLocalConfig|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::HasRoamingConfig:System.Boolean",
+          "clrName": "HasRoamingConfig",
+          "tsEmitName": "hasRoamingConfig",
+          "metadataToken": 385876847,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "HasRoamingConfig|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::IsAppConfigHttp:System.Boolean",
+          "clrName": "IsAppConfigHttp",
+          "tsEmitName": "isAppConfigHttp",
+          "metadataToken": 385876848,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "IsAppConfigHttp|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "init",
+          "isStatic": false,
+          "tsSignatureId": "Init|(System.Configuration.Internal.IInternalConfigRoot,System.Object[]):System.Void|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665680
+          }
+        },
+        {
+          "tsName": "initForConfiguration",
+          "isStatic": false,
+          "tsSignatureId": "InitForConfiguration|(System.String\u0026,System.String\u0026,System.String\u0026,System.Configuration.Internal.IInternalConfigRoot,System.Object[]):System.Void|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665681
+          }
+        },
+        {
+          "tsName": "isConfigRecordRequired",
+          "isStatic": false,
+          "tsSignatureId": "IsConfigRecordRequired|(System.String):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665682
+          }
+        },
+        {
+          "tsName": "isInitDelayed",
+          "isStatic": false,
+          "tsSignatureId": "IsInitDelayed|(System.Configuration.Internal.IInternalConfigRecord):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665683
+          }
+        },
+        {
+          "tsName": "requireCompleteInit",
+          "isStatic": false,
+          "tsSignatureId": "RequireCompleteInit|(System.Configuration.Internal.IInternalConfigRecord):System.Void|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665684
+          }
+        },
+        {
+          "tsName": "isSecondaryRoot",
+          "isStatic": false,
+          "tsSignatureId": "IsSecondaryRoot|(System.String):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665685
+          }
+        },
+        {
+          "tsName": "getStreamName",
+          "isStatic": false,
+          "tsSignatureId": "GetStreamName|(System.String):System.String|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665686
+          }
+        },
+        {
+          "tsName": "getStreamNameForConfigSource",
+          "isStatic": false,
+          "tsSignatureId": "GetStreamNameForConfigSource|(System.String,System.String):System.String|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665687
+          }
+        },
+        {
+          "tsName": "getStreamVersion",
+          "isStatic": false,
+          "tsSignatureId": "GetStreamVersion|(System.String):System.Object|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665688
+          }
+        },
+        {
+          "tsName": "openStreamForRead",
+          "isStatic": false,
+          "tsSignatureId": "OpenStreamForRead|(System.String):System.IO.Stream|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665689
+          }
+        },
+        {
+          "tsName": "openStreamForRead",
+          "isStatic": false,
+          "tsSignatureId": "OpenStreamForRead|(System.String,System.Boolean):System.IO.Stream|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665690
+          }
+        },
+        {
+          "tsName": "openStreamForWrite",
+          "isStatic": false,
+          "tsSignatureId": "OpenStreamForWrite|(System.String,System.String,System.Object\u0026):System.IO.Stream|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665691
+          }
+        },
+        {
+          "tsName": "openStreamForWrite",
+          "isStatic": false,
+          "tsSignatureId": "OpenStreamForWrite|(System.String,System.String,System.Object\u0026,System.Boolean):System.IO.Stream|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665692
+          }
+        },
+        {
+          "tsName": "writeCompleted",
+          "isStatic": false,
+          "tsSignatureId": "WriteCompleted|(System.String,System.Boolean,System.Object):System.Void|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665693
+          }
+        },
+        {
+          "tsName": "writeCompleted",
+          "isStatic": false,
+          "tsSignatureId": "WriteCompleted|(System.String,System.Boolean,System.Object,System.Boolean):System.Void|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665694
+          }
+        },
+        {
+          "tsName": "deleteStream",
+          "isStatic": false,
+          "tsSignatureId": "DeleteStream|(System.String):System.Void|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665695
+          }
+        },
+        {
+          "tsName": "isFile",
+          "isStatic": false,
+          "tsSignatureId": "IsFile|(System.String):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665696
+          }
+        },
+        {
+          "tsName": "startMonitoringStreamForChanges",
+          "isStatic": false,
+          "tsSignatureId": "StartMonitoringStreamForChanges|(System.String,System.Configuration.Internal.StreamChangeCallback):System.Object|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665698
+          }
+        },
+        {
+          "tsName": "stopMonitoringStreamForChanges",
+          "isStatic": false,
+          "tsSignatureId": "StopMonitoringStreamForChanges|(System.String,System.Configuration.Internal.StreamChangeCallback):System.Void|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665699
+          }
+        },
+        {
+          "tsName": "isAboveApplication",
+          "isStatic": false,
+          "tsSignatureId": "IsAboveApplication|(System.String):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665703
+          }
+        },
+        {
+          "tsName": "isDefinitionAllowed",
+          "isStatic": false,
+          "tsSignatureId": "IsDefinitionAllowed|(System.String,System.Configuration.ConfigurationAllowDefinition,System.Configuration.ConfigurationAllowExeDefinition):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665704
+          }
+        },
+        {
+          "tsName": "verifyDefinitionAllowed",
+          "isStatic": false,
+          "tsSignatureId": "VerifyDefinitionAllowed|(System.String,System.Configuration.ConfigurationAllowDefinition,System.Configuration.ConfigurationAllowExeDefinition,System.Configuration.Internal.IConfigErrorInfo):System.Void|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665705
+          }
+        },
+        {
+          "tsName": "getConfigPathFromLocationSubPath",
+          "isStatic": false,
+          "tsSignatureId": "GetConfigPathFromLocationSubPath|(System.String,System.String):System.String|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665706
+          }
+        },
+        {
+          "tsName": "isLocationApplicable",
+          "isStatic": false,
+          "tsSignatureId": "IsLocationApplicable|(System.String):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665707
+          }
+        },
+        {
+          "tsName": "prefetchAll",
+          "isStatic": false,
+          "tsSignatureId": "PrefetchAll|(System.String,System.String):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665708
+          }
+        },
+        {
+          "tsName": "prefetchSection",
+          "isStatic": false,
+          "tsSignatureId": "PrefetchSection|(System.String,System.String):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665709
+          }
+        },
+        {
+          "tsName": "createDeprecatedConfigContext",
+          "isStatic": false,
+          "tsSignatureId": "CreateDeprecatedConfigContext|(System.String):System.Object|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665710
+          }
+        },
+        {
+          "tsName": "createConfigurationContext",
+          "isStatic": false,
+          "tsSignatureId": "CreateConfigurationContext|(System.String,System.String):System.Object|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665711
+          }
+        },
+        {
+          "tsName": "decryptSection",
+          "isStatic": false,
+          "tsSignatureId": "DecryptSection|(System.String,System.Configuration.ProtectedConfigurationProvider,System.Configuration.ProtectedConfigurationSection):System.String|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665712
+          }
+        },
+        {
+          "tsName": "encryptSection",
+          "isStatic": false,
+          "tsSignatureId": "EncryptSection|(System.String,System.Configuration.ProtectedConfigurationProvider,System.Configuration.ProtectedConfigurationSection):System.String|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665713
+          }
+        },
+        {
+          "tsName": "getConfigType",
+          "isStatic": false,
+          "tsSignatureId": "GetConfigType|(System.String,System.Boolean):System.Type|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665714
+          }
+        },
+        {
+          "tsName": "getConfigTypeName",
+          "isStatic": false,
+          "tsSignatureId": "GetConfigTypeName|(System.Type):System.String|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665715
+          }
+        },
+        {
+          "tsName": "refreshConfigPaths",
+          "isStatic": false,
+          "tsSignatureId": "RefreshConfigPaths|():System.Void|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665718
+          }
+        },
+        {
+          "tsName": "isTrustedConfigPath",
+          "isStatic": false,
+          "tsSignatureId": "IsTrustedConfigPath|(System.String):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665722
+          }
+        },
+        {
+          "tsName": "isFullTrustSectionWithoutAptcaAllowed",
+          "isStatic": false,
+          "tsSignatureId": "IsFullTrustSectionWithoutAptcaAllowed|(System.Configuration.Internal.IInternalConfigRecord):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665723
+          }
+        },
+        {
+          "tsName": "impersonate",
+          "isStatic": false,
+          "tsSignatureId": "Impersonate|():System.IDisposable|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665724
+          }
+        },
+        {
+          "tsName": "getRestrictedPermissions",
+          "isStatic": false,
+          "tsSignatureId": "GetRestrictedPermissions|(System.Configuration.Internal.IInternalConfigRecord,System.Security.PermissionSet\u0026,System.Boolean\u0026):System.Void|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665725
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "supportsChangeNotifications",
+          "isStatic": false,
+          "tsSignatureId": "SupportsChangeNotifications|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 385876840
+          }
+        },
+        {
+          "tsName": "supportsRefresh",
+          "isStatic": false,
+          "tsSignatureId": "SupportsRefresh|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 385876841
+          }
+        },
+        {
+          "tsName": "supportsPath",
+          "isStatic": false,
+          "tsSignatureId": "SupportsPath|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 385876842
+          }
+        },
+        {
+          "tsName": "supportsLocation",
+          "isStatic": false,
+          "tsSignatureId": "SupportsLocation|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 385876843
+          }
+        },
+        {
+          "tsName": "isRemote",
+          "isStatic": false,
+          "tsSignatureId": "IsRemote|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 385876844
+          }
+        },
+        {
+          "tsName": "hasLocalConfig",
+          "isStatic": false,
+          "tsSignatureId": "HasLocalConfig|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 385876846
+          }
+        },
+        {
+          "tsName": "hasRoamingConfig",
+          "isStatic": false,
+          "tsSignatureId": "HasRoamingConfig|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 385876847
+          }
+        },
+        {
+          "tsName": "isAppConfigHttp",
+          "isStatic": false,
+          "tsSignatureId": "IsAppConfigHttp|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 385876848
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.InternalConfigEventArgs",
+      "clrName": "System.Configuration.Internal.InternalConfigEventArgs",
+      "tsEmitName": "InternalConfigEventArgs",
+      "assemblyName": "System.Configuration.ConfigurationManager",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.InternalConfigEventArgs::ConfigPath:System.String",
+          "clrName": "ConfigPath",
+          "tsEmitName": "configPath",
+          "metadataToken": 385876877,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "ConfigPath|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "System.Configuration.Internal.InternalConfigEventArgs",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.InternalConfigEventArgs::.ctor(System.String):void",
+          "metadataToken": 100665826,
+          "canonicalSignature": "(System.String):void",
+          "normalizedSignature": "constructor|(System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "System.Configuration.Internal.InternalConfigEventArgs",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "configPath",
+          "isStatic": false,
+          "tsSignatureId": "ConfigPath|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.InternalConfigEventArgs",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 385876877
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String):void|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.Internal.InternalConfigEventArgs",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100665826
+          }
+        }
+      ]
+    }
+  ]
+}

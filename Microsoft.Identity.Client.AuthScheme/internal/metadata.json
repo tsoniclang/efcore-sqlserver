@@ -1,0 +1,118 @@
+{
+  "namespace": "Microsoft.Identity.Client.AuthScheme",
+  "contributingAssemblies": [
+    "Microsoft.Identity.Client"
+  ],
+  "types": [
+    {
+      "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation",
+      "clrName": "Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation",
+      "tsEmitName": "IAuthenticationOperation",
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation::GetTokenRequestParams():System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "GetTokenRequestParams",
+          "tsEmitName": "getTokenRequestParams",
+          "normalizedSignature": "GetTokenRequestParams|():System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 0,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation::FormatResult(Microsoft.Identity.Client.AuthenticationResult):System.Void",
+          "clrName": "FormatResult",
+          "tsEmitName": "formatResult",
+          "normalizedSignature": "FormatResult|(Microsoft.Identity.Client.AuthenticationResult):System.Void|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation::TelemetryTokenType:System.Int32",
+          "clrName": "TelemetryTokenType",
+          "tsEmitName": "telemetryTokenType",
+          "normalizedSignature": "TelemetryTokenType|:System.Int32|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation::AuthorizationHeaderPrefix:System.String",
+          "clrName": "AuthorizationHeaderPrefix",
+          "tsEmitName": "authorizationHeaderPrefix",
+          "normalizedSignature": "AuthorizationHeaderPrefix|:System.String|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation::KeyId:System.String",
+          "clrName": "KeyId",
+          "tsEmitName": "keyId",
+          "normalizedSignature": "KeyId|:System.String|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation::AccessTokenType:System.String",
+          "clrName": "AccessTokenType",
+          "tsEmitName": "accessTokenType",
+          "normalizedSignature": "AccessTokenType|:System.String|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    }
+  ]
+}

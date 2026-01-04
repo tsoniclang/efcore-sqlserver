@@ -1,0 +1,221 @@
+{
+  "namespace": "Microsoft.Data.Sql",
+  "types": [
+    {
+      "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.Sql.SqlDataSourceEnumerator",
+      "clrName": "Microsoft.Data.Sql.SqlDataSourceEnumerator",
+      "tsEmitName": "SqlDataSourceEnumerator",
+      "assemblyName": "Microsoft.Data.SqlClient",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.Sql.SqlDataSourceEnumerator::GetDataSources():System.Data.DataTable",
+          "clrName": "GetDataSources",
+          "tsEmitName": "getDataSources",
+          "metadataToken": 100666073,
+          "canonicalSignature": "():System.Data.DataTable",
+          "normalizedSignature": "GetDataSources|():System.Data.DataTable|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Data.Sql.SqlDataSourceEnumerator",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.Sql.SqlDataSourceEnumerator::Instance:Microsoft.Data.Sql.SqlDataSourceEnumerator",
+          "clrName": "Instance",
+          "tsEmitName": "instance",
+          "metadataToken": 385877945,
+          "canonicalSignature": ":Microsoft.Data.Sql.SqlDataSourceEnumerator",
+          "normalizedSignature": "Instance|:Microsoft.Data.Sql.SqlDataSourceEnumerator|static=true|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Data.Sql.SqlDataSourceEnumerator",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.Sql.SqlDataSourceEnumerator::.ctor():void",
+          "metadataToken": 100666071,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Data.Sql.SqlDataSourceEnumerator",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "getDataSources",
+          "isStatic": false,
+          "tsSignatureId": "GetDataSources|():System.Data.DataTable|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.Sql.SqlDataSourceEnumerator",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100666073
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "instance",
+          "isStatic": true,
+          "tsSignatureId": "Instance|:Microsoft.Data.Sql.SqlDataSourceEnumerator|static=true|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Data.Sql.SqlDataSourceEnumerator",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 385877945
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.Sql.SqlDataSourceEnumerator",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100666071
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.Sql.SqlNotificationRequest",
+      "clrName": "Microsoft.Data.Sql.SqlNotificationRequest",
+      "tsEmitName": "SqlNotificationRequest",
+      "assemblyName": "Microsoft.Data.SqlClient",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.Sql.SqlNotificationRequest::Options:System.String",
+          "clrName": "Options",
+          "tsEmitName": "options",
+          "metadataToken": 385877946,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Options|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.Data.Sql.SqlNotificationRequest",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.Sql.SqlNotificationRequest::Timeout:System.Int32",
+          "clrName": "Timeout",
+          "tsEmitName": "timeout",
+          "metadataToken": 385877947,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "Timeout|:System.Int32|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.Data.Sql.SqlNotificationRequest",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.Sql.SqlNotificationRequest::UserData:System.String",
+          "clrName": "UserData",
+          "tsEmitName": "userData",
+          "metadataToken": 385877948,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "UserData|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.Data.Sql.SqlNotificationRequest",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.Sql.SqlNotificationRequest::.ctor():void",
+          "metadataToken": 100666074,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Data.Sql.SqlNotificationRequest",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.Sql.SqlNotificationRequest::.ctor(System.String,System.String,System.Int32):void",
+          "metadataToken": 100666075,
+          "canonicalSignature": "(System.String,System.String,System.Int32):void",
+          "normalizedSignature": "constructor|(System.String,System.String,System.Int32):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.Data.Sql.SqlNotificationRequest",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "options",
+          "isStatic": false,
+          "tsSignatureId": "Options|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.Data.Sql.SqlNotificationRequest",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 385877946
+          }
+        },
+        {
+          "tsName": "timeout",
+          "isStatic": false,
+          "tsSignatureId": "Timeout|:System.Int32|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.Data.Sql.SqlNotificationRequest",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 385877947
+          }
+        },
+        {
+          "tsName": "userData",
+          "isStatic": false,
+          "tsSignatureId": "UserData|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.Data.Sql.SqlNotificationRequest",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 385877948
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.Sql.SqlNotificationRequest",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100666074
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.String,System.Int32):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.Sql.SqlNotificationRequest",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100666075
+          }
+        }
+      ]
+    }
+  ]
+}

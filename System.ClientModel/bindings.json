@@ -1,0 +1,975 @@
+{
+  "namespace": "System.ClientModel",
+  "types": [
+    {
+      "stableId": "System.ClientModel:System.ClientModel.ApiKeyCredential",
+      "clrName": "System.ClientModel.ApiKeyCredential",
+      "tsEmitName": "ApiKeyCredential",
+      "assemblyName": "System.ClientModel",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "System.ClientModel:System.ClientModel.ApiKeyCredential::Deconstruct(System.String\u0026):System.Void",
+          "clrName": "Deconstruct",
+          "tsEmitName": "deconstruct",
+          "metadataToken": 100663303,
+          "canonicalSignature": "(System.String\u0026):System.Void",
+          "normalizedSignature": "Deconstruct|(System.String\u0026):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.ClientModel.ApiKeyCredential",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false,
+          "parameterModifiers": [
+            {
+              "index": 0,
+              "modifier": "out"
+            }
+          ]
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.ApiKeyCredential::Update(System.String):System.Void",
+          "clrName": "Update",
+          "tsEmitName": "update",
+          "metadataToken": 100663304,
+          "canonicalSignature": "(System.String):System.Void",
+          "normalizedSignature": "Update|(System.String):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.ClientModel.ApiKeyCredential",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "System.ClientModel:System.ClientModel.ApiKeyCredential::.ctor(System.String):void",
+          "metadataToken": 100663302,
+          "canonicalSignature": "(System.String):void",
+          "normalizedSignature": "constructor|(System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "System.ClientModel.ApiKeyCredential",
+          "declaringAssemblyName": "System.ClientModel"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "deconstruct",
+          "isStatic": false,
+          "tsSignatureId": "Deconstruct|(System.String\u0026):System.Void|static=false",
+          "target": {
+            "declaringClrType": "System.ClientModel.ApiKeyCredential",
+            "declaringAssemblyName": "System.ClientModel",
+            "metadataToken": 100663303
+          }
+        },
+        {
+          "tsName": "update",
+          "isStatic": false,
+          "tsSignatureId": "Update|(System.String):System.Void|static=false",
+          "target": {
+            "declaringClrType": "System.ClientModel.ApiKeyCredential",
+            "declaringAssemblyName": "System.ClientModel",
+            "metadataToken": 100663304
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String):void|static=false",
+          "target": {
+            "declaringClrType": "System.ClientModel.ApiKeyCredential",
+            "declaringAssemblyName": "System.ClientModel",
+            "metadataToken": 100663302
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "System.ClientModel:System.ClientModel.AsyncCollectionResult\u00601",
+      "clrName": "System.ClientModel.AsyncCollectionResult\u00601",
+      "tsEmitName": "AsyncCollectionResult_1",
+      "assemblyName": "System.ClientModel",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "System.ClientModel:System.ClientModel.AsyncCollectionResult\u00601::GetAsyncEnumerator(System.Threading.CancellationToken):IAsyncEnumerator_1",
+          "clrName": "GetAsyncEnumerator",
+          "tsEmitName": "getAsyncEnumerator",
+          "metadataToken": 100663306,
+          "canonicalSignature": "(System.Threading.CancellationToken):IAsyncEnumerator_1",
+          "normalizedSignature": "GetAsyncEnumerator|(System.Threading.CancellationToken):IAsyncEnumerator_1|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.ClientModel.AsyncCollectionResult\u00601",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "getAsyncEnumerator",
+          "isStatic": false,
+          "tsSignatureId": "GetAsyncEnumerator|(System.Threading.CancellationToken):IAsyncEnumerator_1|static=false",
+          "target": {
+            "declaringClrType": "System.ClientModel.AsyncCollectionResult\u00601",
+            "declaringAssemblyName": "System.ClientModel",
+            "metadataToken": 100663306
+          }
+        },
+        {
+          "tsName": "getRawPagesAsync",
+          "isStatic": false,
+          "tsSignatureId": "GetRawPagesAsync|():System.Collections.Generic.IAsyncEnumerable_1[[System.ClientModel.ClientResult,System.ClientModel,Version=1.5.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]|static=false",
+          "target": {
+            "declaringClrType": "System.ClientModel.Primitives.AsyncCollectionResult",
+            "declaringAssemblyName": "System.ClientModel",
+            "metadataToken": 100663544
+          }
+        },
+        {
+          "tsName": "getContinuationToken",
+          "isStatic": false,
+          "tsSignatureId": "GetContinuationToken|(System.ClientModel.ClientResult):System.ClientModel.ContinuationToken|static=false",
+          "target": {
+            "declaringClrType": "System.ClientModel.Primitives.AsyncCollectionResult",
+            "declaringAssemblyName": "System.ClientModel",
+            "metadataToken": 100663545
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "System.ClientModel:System.ClientModel.AuthenticationTokenProvider",
+      "clrName": "System.ClientModel.AuthenticationTokenProvider",
+      "tsEmitName": "AuthenticationTokenProvider",
+      "assemblyName": "System.ClientModel",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "System.ClientModel:System.ClientModel.AuthenticationTokenProvider::CreateTokenOptions(System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.ClientModel.Primitives.GetTokenOptions",
+          "clrName": "CreateTokenOptions",
+          "tsEmitName": "createTokenOptions",
+          "metadataToken": 100663298,
+          "canonicalSignature": "(System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.ClientModel.Primitives.GetTokenOptions",
+          "normalizedSignature": "CreateTokenOptions|(System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.ClientModel.Primitives.GetTokenOptions|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.ClientModel.AuthenticationTokenProvider",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.AuthenticationTokenProvider::GetToken(System.ClientModel.Primitives.GetTokenOptions,System.Threading.CancellationToken):System.ClientModel.Primitives.AuthenticationToken",
+          "clrName": "GetToken",
+          "tsEmitName": "getToken",
+          "metadataToken": 100663299,
+          "canonicalSignature": "(System.ClientModel.Primitives.GetTokenOptions,System.Threading.CancellationToken):System.ClientModel.Primitives.AuthenticationToken",
+          "normalizedSignature": "GetToken|(System.ClientModel.Primitives.GetTokenOptions,System.Threading.CancellationToken):System.ClientModel.Primitives.AuthenticationToken|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "System.ClientModel.AuthenticationTokenProvider",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.AuthenticationTokenProvider::GetTokenAsync(System.ClientModel.Primitives.GetTokenOptions,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.ClientModel.Primitives.AuthenticationToken,System.ClientModel,Version=1.5.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
+          "clrName": "GetTokenAsync",
+          "tsEmitName": "getTokenAsync",
+          "metadataToken": 100663300,
+          "canonicalSignature": "(System.ClientModel.Primitives.GetTokenOptions,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.ClientModel.Primitives.AuthenticationToken,System.ClientModel,Version=1.5.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
+          "normalizedSignature": "GetTokenAsync|(System.ClientModel.Primitives.GetTokenOptions,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.ClientModel.Primitives.AuthenticationToken,System.ClientModel,Version=1.5.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "System.ClientModel.AuthenticationTokenProvider",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "createTokenOptions",
+          "isStatic": false,
+          "tsSignatureId": "CreateTokenOptions|(System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.ClientModel.Primitives.GetTokenOptions|static=false",
+          "target": {
+            "declaringClrType": "System.ClientModel.AuthenticationTokenProvider",
+            "declaringAssemblyName": "System.ClientModel",
+            "metadataToken": 100663298
+          }
+        },
+        {
+          "tsName": "getToken",
+          "isStatic": false,
+          "tsSignatureId": "GetToken|(System.ClientModel.Primitives.GetTokenOptions,System.Threading.CancellationToken):System.ClientModel.Primitives.AuthenticationToken|static=false",
+          "target": {
+            "declaringClrType": "System.ClientModel.AuthenticationTokenProvider",
+            "declaringAssemblyName": "System.ClientModel",
+            "metadataToken": 100663299
+          }
+        },
+        {
+          "tsName": "getTokenAsync",
+          "isStatic": false,
+          "tsSignatureId": "GetTokenAsync|(System.ClientModel.Primitives.GetTokenOptions,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.ClientModel.Primitives.AuthenticationToken,System.ClientModel,Version=1.5.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]|static=false",
+          "target": {
+            "declaringClrType": "System.ClientModel.AuthenticationTokenProvider",
+            "declaringAssemblyName": "System.ClientModel",
+            "metadataToken": 100663300
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "System.ClientModel:System.ClientModel.BinaryContent",
+      "clrName": "System.ClientModel.BinaryContent",
+      "tsEmitName": "BinaryContent",
+      "assemblyName": "System.ClientModel",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "System.ClientModel:System.ClientModel.BinaryContent::Create(System.BinaryData):System.ClientModel.BinaryContent",
+          "clrName": "Create",
+          "tsEmitName": "create",
+          "metadataToken": 100663335,
+          "canonicalSignature": "(System.BinaryData):System.ClientModel.BinaryContent",
+          "normalizedSignature": "Create|(System.BinaryData):System.ClientModel.BinaryContent|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.ClientModel.BinaryContent",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.BinaryContent::Create(T,System.ClientModel.Primitives.ModelReaderWriterOptions):System.ClientModel.BinaryContent",
+          "clrName": "Create",
+          "tsEmitName": "create",
+          "metadataToken": 100663336,
+          "canonicalSignature": "(T,System.ClientModel.Primitives.ModelReaderWriterOptions):System.ClientModel.BinaryContent",
+          "normalizedSignature": "Create|(T,System.ClientModel.Primitives.ModelReaderWriterOptions):System.ClientModel.BinaryContent|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 1,
+          "parameterCount": 2,
+          "declaringClrType": "System.ClientModel.BinaryContent",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.BinaryContent::Create(System.IO.Stream):System.ClientModel.BinaryContent",
+          "clrName": "Create",
+          "tsEmitName": "create",
+          "metadataToken": 100663337,
+          "canonicalSignature": "(System.IO.Stream):System.ClientModel.BinaryContent",
+          "normalizedSignature": "Create|(System.IO.Stream):System.ClientModel.BinaryContent|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.ClientModel.BinaryContent",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.BinaryContent::CreateJson(T,System.Text.Json.JsonSerializerOptions):System.ClientModel.BinaryContent",
+          "clrName": "CreateJson",
+          "tsEmitName": "createJson",
+          "metadataToken": 100663338,
+          "canonicalSignature": "(T,System.Text.Json.JsonSerializerOptions):System.ClientModel.BinaryContent",
+          "normalizedSignature": "CreateJson|(T,System.Text.Json.JsonSerializerOptions):System.ClientModel.BinaryContent|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 1,
+          "parameterCount": 2,
+          "declaringClrType": "System.ClientModel.BinaryContent",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.BinaryContent::CreateJson(T,JsonTypeInfo_1):System.ClientModel.BinaryContent",
+          "clrName": "CreateJson",
+          "tsEmitName": "createJson",
+          "metadataToken": 100663339,
+          "canonicalSignature": "(T,JsonTypeInfo_1):System.ClientModel.BinaryContent",
+          "normalizedSignature": "CreateJson|(T,JsonTypeInfo_1):System.ClientModel.BinaryContent|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 1,
+          "parameterCount": 2,
+          "declaringClrType": "System.ClientModel.BinaryContent",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.BinaryContent::CreateJson(System.String,System.Boolean):System.ClientModel.BinaryContent",
+          "clrName": "CreateJson",
+          "tsEmitName": "createJson",
+          "metadataToken": 100663340,
+          "canonicalSignature": "(System.String,System.Boolean):System.ClientModel.BinaryContent",
+          "normalizedSignature": "CreateJson|(System.String,System.Boolean):System.ClientModel.BinaryContent|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "System.ClientModel.BinaryContent",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.BinaryContent::TryComputeLength(System.Int64\u0026):System.Boolean",
+          "clrName": "TryComputeLength",
+          "tsEmitName": "tryComputeLength",
+          "metadataToken": 100663342,
+          "canonicalSignature": "(System.Int64\u0026):System.Boolean",
+          "normalizedSignature": "TryComputeLength|(System.Int64\u0026):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.ClientModel.BinaryContent",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false,
+          "parameterModifiers": [
+            {
+              "index": 0,
+              "modifier": "out"
+            }
+          ]
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.BinaryContent::WriteToAsync(System.IO.Stream,System.Threading.CancellationToken):System.Threading.Tasks.Task",
+          "clrName": "WriteToAsync",
+          "tsEmitName": "writeToAsync",
+          "metadataToken": 100663343,
+          "canonicalSignature": "(System.IO.Stream,System.Threading.CancellationToken):System.Threading.Tasks.Task",
+          "normalizedSignature": "WriteToAsync|(System.IO.Stream,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "System.ClientModel.BinaryContent",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.BinaryContent::WriteTo(System.IO.Stream,System.Threading.CancellationToken):System.Void",
+          "clrName": "WriteTo",
+          "tsEmitName": "writeTo",
+          "metadataToken": 100663344,
+          "canonicalSignature": "(System.IO.Stream,System.Threading.CancellationToken):System.Void",
+          "normalizedSignature": "WriteTo|(System.IO.Stream,System.Threading.CancellationToken):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "System.ClientModel.BinaryContent",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.BinaryContent::Dispose():System.Void",
+          "clrName": "Dispose",
+          "tsEmitName": "dispose",
+          "metadataToken": 100663345,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "Dispose|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "System.ClientModel.BinaryContent",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "System.ClientModel:System.ClientModel.BinaryContent::MediaType:System.String",
+          "clrName": "MediaType",
+          "tsEmitName": "mediaType",
+          "metadataToken": 385875971,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "MediaType|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.ClientModel.BinaryContent",
+          "declaringAssemblyName": "System.ClientModel"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "create",
+          "isStatic": true,
+          "tsSignatureId": "Create|(System.BinaryData):System.ClientModel.BinaryContent|static=true",
+          "target": {
+            "declaringClrType": "System.ClientModel.BinaryContent",
+            "declaringAssemblyName": "System.ClientModel",
+            "metadataToken": 100663335
+          }
+        },
+        {
+          "tsName": "create",
+          "isStatic": true,
+          "tsSignatureId": "Create|(T,System.ClientModel.Primitives.ModelReaderWriterOptions):System.ClientModel.BinaryContent|static=true",
+          "target": {
+            "declaringClrType": "System.ClientModel.BinaryContent",
+            "declaringAssemblyName": "System.ClientModel",
+            "metadataToken": 100663336
+          }
+        },
+        {
+          "tsName": "create",
+          "isStatic": true,
+          "tsSignatureId": "Create|(System.IO.Stream):System.ClientModel.BinaryContent|static=true",
+          "target": {
+            "declaringClrType": "System.ClientModel.BinaryContent",
+            "declaringAssemblyName": "System.ClientModel",
+            "metadataToken": 100663337
+          }
+        },
+        {
+          "tsName": "createJson",
+          "isStatic": true,
+          "tsSignatureId": "CreateJson|(T,System.Text.Json.JsonSerializerOptions):System.ClientModel.BinaryContent|static=true",
+          "target": {
+            "declaringClrType": "System.ClientModel.BinaryContent",
+            "declaringAssemblyName": "System.ClientModel",
+            "metadataToken": 100663338
+          }
+        },
+        {
+          "tsName": "createJson",
+          "isStatic": true,
+          "tsSignatureId": "CreateJson|(T,JsonTypeInfo_1):System.ClientModel.BinaryContent|static=true",
+          "target": {
+            "declaringClrType": "System.ClientModel.BinaryContent",
+            "declaringAssemblyName": "System.ClientModel",
+            "metadataToken": 100663339
+          }
+        },
+        {
+          "tsName": "createJson",
+          "isStatic": true,
+          "tsSignatureId": "CreateJson|(System.String,System.Boolean):System.ClientModel.BinaryContent|static=true",
+          "target": {
+            "declaringClrType": "System.ClientModel.BinaryContent",
+            "declaringAssemblyName": "System.ClientModel",
+            "metadataToken": 100663340
+          }
+        },
+        {
+          "tsName": "tryComputeLength",
+          "isStatic": false,
+          "tsSignatureId": "TryComputeLength|(System.Int64\u0026):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "System.ClientModel.BinaryContent",
+            "declaringAssemblyName": "System.ClientModel",
+            "metadataToken": 100663342
+          }
+        },
+        {
+          "tsName": "writeToAsync",
+          "isStatic": false,
+          "tsSignatureId": "WriteToAsync|(System.IO.Stream,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
+          "target": {
+            "declaringClrType": "System.ClientModel.BinaryContent",
+            "declaringAssemblyName": "System.ClientModel",
+            "metadataToken": 100663343
+          }
+        },
+        {
+          "tsName": "writeTo",
+          "isStatic": false,
+          "tsSignatureId": "WriteTo|(System.IO.Stream,System.Threading.CancellationToken):System.Void|static=false",
+          "target": {
+            "declaringClrType": "System.ClientModel.BinaryContent",
+            "declaringAssemblyName": "System.ClientModel",
+            "metadataToken": 100663344
+          }
+        },
+        {
+          "tsName": "dispose",
+          "isStatic": false,
+          "tsSignatureId": "Dispose|():System.Void|static=false",
+          "target": {
+            "declaringClrType": "System.ClientModel.BinaryContent",
+            "declaringAssemblyName": "System.ClientModel",
+            "metadataToken": 100663345
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "mediaType",
+          "isStatic": false,
+          "tsSignatureId": "MediaType|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.ClientModel.BinaryContent",
+            "declaringAssemblyName": "System.ClientModel",
+            "metadataToken": 385875971
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "System.ClientModel:System.ClientModel.ClientResult",
+      "clrName": "System.ClientModel.ClientResult",
+      "tsEmitName": "ClientResult",
+      "assemblyName": "System.ClientModel",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "System.ClientModel:System.ClientModel.ClientResult::GetRawResponse():System.ClientModel.Primitives.PipelineResponse",
+          "clrName": "GetRawResponse",
+          "tsEmitName": "getRawResponse",
+          "metadataToken": 100663309,
+          "canonicalSignature": "():System.ClientModel.Primitives.PipelineResponse",
+          "normalizedSignature": "GetRawResponse|():System.ClientModel.Primitives.PipelineResponse|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "System.ClientModel.ClientResult",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.ClientResult::FromResponse(System.ClientModel.Primitives.PipelineResponse):System.ClientModel.ClientResult",
+          "clrName": "FromResponse",
+          "tsEmitName": "fromResponse",
+          "metadataToken": 100663310,
+          "canonicalSignature": "(System.ClientModel.Primitives.PipelineResponse):System.ClientModel.ClientResult",
+          "normalizedSignature": "FromResponse|(System.ClientModel.Primitives.PipelineResponse):System.ClientModel.ClientResult|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.ClientModel.ClientResult",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.ClientResult::FromValue(T,System.ClientModel.Primitives.PipelineResponse):ClientResult_1",
+          "clrName": "FromValue",
+          "tsEmitName": "fromValue",
+          "metadataToken": 100663311,
+          "canonicalSignature": "(T,System.ClientModel.Primitives.PipelineResponse):ClientResult_1",
+          "normalizedSignature": "FromValue|(T,System.ClientModel.Primitives.PipelineResponse):ClientResult_1|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 1,
+          "parameterCount": 2,
+          "declaringClrType": "System.ClientModel.ClientResult",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.ClientResult::FromOptionalValue(T,System.ClientModel.Primitives.PipelineResponse):ClientResult_1",
+          "clrName": "FromOptionalValue",
+          "tsEmitName": "fromOptionalValue",
+          "metadataToken": 100663312,
+          "canonicalSignature": "(T,System.ClientModel.Primitives.PipelineResponse):ClientResult_1",
+          "normalizedSignature": "FromOptionalValue|(T,System.ClientModel.Primitives.PipelineResponse):ClientResult_1|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 1,
+          "parameterCount": 2,
+          "declaringClrType": "System.ClientModel.ClientResult",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "getRawResponse",
+          "isStatic": false,
+          "tsSignatureId": "GetRawResponse|():System.ClientModel.Primitives.PipelineResponse|static=false",
+          "target": {
+            "declaringClrType": "System.ClientModel.ClientResult",
+            "declaringAssemblyName": "System.ClientModel",
+            "metadataToken": 100663309
+          }
+        },
+        {
+          "tsName": "fromResponse",
+          "isStatic": true,
+          "tsSignatureId": "FromResponse|(System.ClientModel.Primitives.PipelineResponse):System.ClientModel.ClientResult|static=true",
+          "target": {
+            "declaringClrType": "System.ClientModel.ClientResult",
+            "declaringAssemblyName": "System.ClientModel",
+            "metadataToken": 100663310
+          }
+        },
+        {
+          "tsName": "fromValue",
+          "isStatic": true,
+          "tsSignatureId": "FromValue|(T,System.ClientModel.Primitives.PipelineResponse):ClientResult_1|static=true",
+          "target": {
+            "declaringClrType": "System.ClientModel.ClientResult",
+            "declaringAssemblyName": "System.ClientModel",
+            "metadataToken": 100663311
+          }
+        },
+        {
+          "tsName": "fromOptionalValue",
+          "isStatic": true,
+          "tsSignatureId": "FromOptionalValue|(T,System.ClientModel.Primitives.PipelineResponse):ClientResult_1|static=true",
+          "target": {
+            "declaringClrType": "System.ClientModel.ClientResult",
+            "declaringAssemblyName": "System.ClientModel",
+            "metadataToken": 100663312
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "System.ClientModel:System.ClientModel.ClientResult\u00601",
+      "clrName": "System.ClientModel.ClientResult\u00601",
+      "tsEmitName": "ClientResult_1",
+      "assemblyName": "System.ClientModel",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "System.ClientModel:System.ClientModel.ClientResult\u00601::Value:T",
+          "clrName": "Value",
+          "tsEmitName": "value",
+          "metadataToken": 385875970,
+          "canonicalSignature": ":T",
+          "normalizedSignature": "Value|:T|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.ClientModel.ClientResult\u00601",
+          "declaringAssemblyName": "System.ClientModel"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "getRawResponse",
+          "isStatic": false,
+          "tsSignatureId": "GetRawResponse|():System.ClientModel.Primitives.PipelineResponse|static=false",
+          "target": {
+            "declaringClrType": "System.ClientModel.ClientResult",
+            "declaringAssemblyName": "System.ClientModel",
+            "metadataToken": 100663309
+          }
+        },
+        {
+          "tsName": "fromResponse",
+          "isStatic": true,
+          "tsSignatureId": "FromResponse|(System.ClientModel.Primitives.PipelineResponse):System.ClientModel.ClientResult|static=true",
+          "target": {
+            "declaringClrType": "System.ClientModel.ClientResult",
+            "declaringAssemblyName": "System.ClientModel",
+            "metadataToken": 100663310
+          }
+        },
+        {
+          "tsName": "fromValue",
+          "isStatic": true,
+          "tsSignatureId": "FromValue|(T,System.ClientModel.Primitives.PipelineResponse):ClientResult_1|static=true",
+          "target": {
+            "declaringClrType": "System.ClientModel.ClientResult",
+            "declaringAssemblyName": "System.ClientModel",
+            "metadataToken": 100663311
+          }
+        },
+        {
+          "tsName": "fromOptionalValue",
+          "isStatic": true,
+          "tsSignatureId": "FromOptionalValue|(T,System.ClientModel.Primitives.PipelineResponse):ClientResult_1|static=true",
+          "target": {
+            "declaringClrType": "System.ClientModel.ClientResult",
+            "declaringAssemblyName": "System.ClientModel",
+            "metadataToken": 100663312
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "value",
+          "isStatic": false,
+          "tsSignatureId": "Value|:T|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.ClientModel.ClientResult\u00601",
+            "declaringAssemblyName": "System.ClientModel",
+            "metadataToken": 385875970
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "System.ClientModel:System.ClientModel.ClientResultException",
+      "clrName": "System.ClientModel.ClientResultException",
+      "tsEmitName": "ClientResultException",
+      "assemblyName": "System.ClientModel",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "System.ClientModel:System.ClientModel.ClientResultException::CreateAsync(System.ClientModel.Primitives.PipelineResponse,System.Exception):System.Threading.Tasks.Task_1[[System.ClientModel.ClientResultException,System.ClientModel,Version=1.5.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
+          "clrName": "CreateAsync",
+          "tsEmitName": "createAsync",
+          "metadataToken": 100663313,
+          "canonicalSignature": "(System.ClientModel.Primitives.PipelineResponse,System.Exception):System.Threading.Tasks.Task_1[[System.ClientModel.ClientResultException,System.ClientModel,Version=1.5.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
+          "normalizedSignature": "CreateAsync|(System.ClientModel.Primitives.PipelineResponse,System.Exception):System.Threading.Tasks.Task_1[[System.ClientModel.ClientResultException,System.ClientModel,Version=1.5.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "System.ClientModel.ClientResultException",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.ClientResultException::GetRawResponse():System.ClientModel.Primitives.PipelineResponse",
+          "clrName": "GetRawResponse",
+          "tsEmitName": "getRawResponse",
+          "metadataToken": 100663318,
+          "canonicalSignature": "():System.ClientModel.Primitives.PipelineResponse",
+          "normalizedSignature": "GetRawResponse|():System.ClientModel.Primitives.PipelineResponse|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "System.ClientModel.ClientResultException",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "System.ClientModel:System.ClientModel.ClientResultException::Status:System.Int32",
+          "clrName": "Status",
+          "tsEmitName": "status",
+          "metadataToken": 385875969,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "Status|:System.Int32|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "System.ClientModel.ClientResultException",
+          "declaringAssemblyName": "System.ClientModel"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "System.ClientModel:System.ClientModel.ClientResultException::.ctor(System.ClientModel.Primitives.PipelineResponse,System.Exception):void",
+          "metadataToken": 100663316,
+          "canonicalSignature": "(System.ClientModel.Primitives.PipelineResponse,System.Exception):void",
+          "normalizedSignature": "constructor|(System.ClientModel.Primitives.PipelineResponse,System.Exception):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "declaringClrType": "System.ClientModel.ClientResultException",
+          "declaringAssemblyName": "System.ClientModel"
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.ClientResultException::.ctor(System.String,System.ClientModel.Primitives.PipelineResponse,System.Exception):void",
+          "metadataToken": 100663317,
+          "canonicalSignature": "(System.String,System.ClientModel.Primitives.PipelineResponse,System.Exception):void",
+          "normalizedSignature": "constructor|(System.String,System.ClientModel.Primitives.PipelineResponse,System.Exception):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3,
+          "declaringClrType": "System.ClientModel.ClientResultException",
+          "declaringAssemblyName": "System.ClientModel"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "createAsync",
+          "isStatic": true,
+          "tsSignatureId": "CreateAsync|(System.ClientModel.Primitives.PipelineResponse,System.Exception):System.Threading.Tasks.Task_1[[System.ClientModel.ClientResultException,System.ClientModel,Version=1.5.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]|static=true",
+          "target": {
+            "declaringClrType": "System.ClientModel.ClientResultException",
+            "declaringAssemblyName": "System.ClientModel",
+            "metadataToken": 100663313
+          }
+        },
+        {
+          "tsName": "getRawResponse",
+          "isStatic": false,
+          "tsSignatureId": "GetRawResponse|():System.ClientModel.Primitives.PipelineResponse|static=false",
+          "target": {
+            "declaringClrType": "System.ClientModel.ClientResultException",
+            "declaringAssemblyName": "System.ClientModel",
+            "metadataToken": 100663318
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "status",
+          "isStatic": false,
+          "tsSignatureId": "Status|:System.Int32|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.ClientModel.ClientResultException",
+            "declaringAssemblyName": "System.ClientModel",
+            "metadataToken": 385875969
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.ClientModel.Primitives.PipelineResponse,System.Exception):void|static=false",
+          "target": {
+            "declaringClrType": "System.ClientModel.ClientResultException",
+            "declaringAssemblyName": "System.ClientModel",
+            "metadataToken": 100663316
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.ClientModel.Primitives.PipelineResponse,System.Exception):void|static=false",
+          "target": {
+            "declaringClrType": "System.ClientModel.ClientResultException",
+            "declaringAssemblyName": "System.ClientModel",
+            "metadataToken": 100663317
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "System.ClientModel:System.ClientModel.CollectionResult\u00601",
+      "clrName": "System.ClientModel.CollectionResult\u00601",
+      "tsEmitName": "CollectionResult_1",
+      "assemblyName": "System.ClientModel",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "System.ClientModel:System.ClientModel.CollectionResult\u00601::GetEnumerator():IEnumerator_1",
+          "clrName": "GetEnumerator",
+          "tsEmitName": "getEnumerator",
+          "metadataToken": 100663326,
+          "canonicalSignature": "():IEnumerator_1",
+          "normalizedSignature": "GetEnumerator|():IEnumerator_1|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "System.ClientModel.CollectionResult\u00601",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "getEnumerator",
+          "isStatic": false,
+          "tsSignatureId": "GetEnumerator|():IEnumerator_1|static=false",
+          "target": {
+            "declaringClrType": "System.ClientModel.CollectionResult\u00601",
+            "declaringAssemblyName": "System.ClientModel",
+            "metadataToken": 100663326
+          }
+        },
+        {
+          "tsName": "getRawPages",
+          "isStatic": false,
+          "tsSignatureId": "GetRawPages|():System.Collections.Generic.IEnumerable_1[[System.ClientModel.ClientResult,System.ClientModel,Version=1.5.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]|static=false",
+          "target": {
+            "declaringClrType": "System.ClientModel.Primitives.CollectionResult",
+            "declaringAssemblyName": "System.ClientModel",
+            "metadataToken": 100663575
+          }
+        },
+        {
+          "tsName": "getContinuationToken",
+          "isStatic": false,
+          "tsSignatureId": "GetContinuationToken|(System.ClientModel.ClientResult):System.ClientModel.ContinuationToken|static=false",
+          "target": {
+            "declaringClrType": "System.ClientModel.Primitives.CollectionResult",
+            "declaringAssemblyName": "System.ClientModel",
+            "metadataToken": 100663576
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "System.ClientModel:System.ClientModel.ContinuationToken",
+      "clrName": "System.ClientModel.ContinuationToken",
+      "tsEmitName": "ContinuationToken",
+      "assemblyName": "System.ClientModel",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "System.ClientModel:System.ClientModel.ContinuationToken::FromBytes(System.BinaryData):System.ClientModel.ContinuationToken",
+          "clrName": "FromBytes",
+          "tsEmitName": "fromBytes",
+          "metadataToken": 100663331,
+          "canonicalSignature": "(System.BinaryData):System.ClientModel.ContinuationToken",
+          "normalizedSignature": "FromBytes|(System.BinaryData):System.ClientModel.ContinuationToken|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.ClientModel.ContinuationToken",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.ContinuationToken::ToBytes():System.BinaryData",
+          "clrName": "ToBytes",
+          "tsEmitName": "toBytes",
+          "metadataToken": 100663332,
+          "canonicalSignature": "():System.BinaryData",
+          "normalizedSignature": "ToBytes|():System.BinaryData|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "System.ClientModel.ContinuationToken",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "fromBytes",
+          "isStatic": true,
+          "tsSignatureId": "FromBytes|(System.BinaryData):System.ClientModel.ContinuationToken|static=true",
+          "target": {
+            "declaringClrType": "System.ClientModel.ContinuationToken",
+            "declaringAssemblyName": "System.ClientModel",
+            "metadataToken": 100663331
+          }
+        },
+        {
+          "tsName": "toBytes",
+          "isStatic": false,
+          "tsSignatureId": "ToBytes|():System.BinaryData|static=false",
+          "target": {
+            "declaringClrType": "System.ClientModel.ContinuationToken",
+            "declaringAssemblyName": "System.ClientModel",
+            "metadataToken": 100663332
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1337 @@
+{
+  "namespace": "Microsoft.SqlServer.Server",
+  "types": [
+    {
+      "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.DataAccessKind",
+      "clrName": "Microsoft.SqlServer.Server.DataAccessKind",
+      "tsEmitName": "DataAccessKind",
+      "assemblyName": "Microsoft.SqlServer.Server",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.DataAccessKind::value__System.Int32",
+          "clrName": "value__",
+          "tsEmitName": "value__",
+          "metadataToken": 67108872,
+          "normalizedSignature": "value__|System.Int32|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.SqlServer.Server.DataAccessKind",
+          "declaringAssemblyName": "Microsoft.SqlServer.Server"
+        },
+        {
+          "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.DataAccessKind::NoneMicrosoft.SqlServer.Server.DataAccessKind",
+          "clrName": "None",
+          "tsEmitName": "none",
+          "metadataToken": 67108873,
+          "normalizedSignature": "None|Microsoft.SqlServer.Server.DataAccessKind|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.SqlServer.Server.DataAccessKind",
+          "declaringAssemblyName": "Microsoft.SqlServer.Server"
+        },
+        {
+          "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.DataAccessKind::ReadMicrosoft.SqlServer.Server.DataAccessKind",
+          "clrName": "Read",
+          "tsEmitName": "read",
+          "metadataToken": 67108874,
+          "normalizedSignature": "Read|Microsoft.SqlServer.Server.DataAccessKind|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.SqlServer.Server.DataAccessKind",
+          "declaringAssemblyName": "Microsoft.SqlServer.Server"
+        }
+      ],
+      "events": [],
+      "constructors": [],
+      "exposedFields": [
+        {
+          "tsName": "value__",
+          "isStatic": false,
+          "tsSignatureId": "value__|System.Int32|static=false|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.DataAccessKind",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 67108872
+          }
+        },
+        {
+          "tsName": "none",
+          "isStatic": true,
+          "tsSignatureId": "None|Microsoft.SqlServer.Server.DataAccessKind|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.DataAccessKind",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 67108873
+          }
+        },
+        {
+          "tsName": "read",
+          "isStatic": true,
+          "tsSignatureId": "Read|Microsoft.SqlServer.Server.DataAccessKind|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.DataAccessKind",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 67108874
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.Format",
+      "clrName": "Microsoft.SqlServer.Server.Format",
+      "tsEmitName": "Format",
+      "assemblyName": "Microsoft.SqlServer.Server",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.Format::value__System.Int32",
+          "clrName": "value__",
+          "tsEmitName": "value__",
+          "metadataToken": 67108896,
+          "normalizedSignature": "value__|System.Int32|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.SqlServer.Server.Format",
+          "declaringAssemblyName": "Microsoft.SqlServer.Server"
+        },
+        {
+          "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.Format::UnknownMicrosoft.SqlServer.Server.Format",
+          "clrName": "Unknown",
+          "tsEmitName": "unknown_",
+          "metadataToken": 67108897,
+          "normalizedSignature": "Unknown|Microsoft.SqlServer.Server.Format|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.SqlServer.Server.Format",
+          "declaringAssemblyName": "Microsoft.SqlServer.Server"
+        },
+        {
+          "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.Format::NativeMicrosoft.SqlServer.Server.Format",
+          "clrName": "Native",
+          "tsEmitName": "native",
+          "metadataToken": 67108898,
+          "normalizedSignature": "Native|Microsoft.SqlServer.Server.Format|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.SqlServer.Server.Format",
+          "declaringAssemblyName": "Microsoft.SqlServer.Server"
+        },
+        {
+          "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.Format::UserDefinedMicrosoft.SqlServer.Server.Format",
+          "clrName": "UserDefined",
+          "tsEmitName": "userDefined",
+          "metadataToken": 67108899,
+          "normalizedSignature": "UserDefined|Microsoft.SqlServer.Server.Format|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.SqlServer.Server.Format",
+          "declaringAssemblyName": "Microsoft.SqlServer.Server"
+        }
+      ],
+      "events": [],
+      "constructors": [],
+      "exposedFields": [
+        {
+          "tsName": "value__",
+          "isStatic": false,
+          "tsSignatureId": "value__|System.Int32|static=false|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.Format",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 67108896
+          }
+        },
+        {
+          "tsName": "unknown_",
+          "isStatic": true,
+          "tsSignatureId": "Unknown|Microsoft.SqlServer.Server.Format|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.Format",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 67108897
+          }
+        },
+        {
+          "tsName": "native",
+          "isStatic": true,
+          "tsSignatureId": "Native|Microsoft.SqlServer.Server.Format|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.Format",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 67108898
+          }
+        },
+        {
+          "tsName": "userDefined",
+          "isStatic": true,
+          "tsSignatureId": "UserDefined|Microsoft.SqlServer.Server.Format|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.Format",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 67108899
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.SystemDataAccessKind",
+      "clrName": "Microsoft.SqlServer.Server.SystemDataAccessKind",
+      "tsEmitName": "SystemDataAccessKind",
+      "assemblyName": "Microsoft.SqlServer.Server",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.SystemDataAccessKind::value__System.Int32",
+          "clrName": "value__",
+          "tsEmitName": "value__",
+          "metadataToken": 67108875,
+          "normalizedSignature": "value__|System.Int32|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.SqlServer.Server.SystemDataAccessKind",
+          "declaringAssemblyName": "Microsoft.SqlServer.Server"
+        },
+        {
+          "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.SystemDataAccessKind::NoneMicrosoft.SqlServer.Server.SystemDataAccessKind",
+          "clrName": "None",
+          "tsEmitName": "none",
+          "metadataToken": 67108876,
+          "normalizedSignature": "None|Microsoft.SqlServer.Server.SystemDataAccessKind|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.SqlServer.Server.SystemDataAccessKind",
+          "declaringAssemblyName": "Microsoft.SqlServer.Server"
+        },
+        {
+          "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.SystemDataAccessKind::ReadMicrosoft.SqlServer.Server.SystemDataAccessKind",
+          "clrName": "Read",
+          "tsEmitName": "read",
+          "metadataToken": 67108877,
+          "normalizedSignature": "Read|Microsoft.SqlServer.Server.SystemDataAccessKind|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.SqlServer.Server.SystemDataAccessKind",
+          "declaringAssemblyName": "Microsoft.SqlServer.Server"
+        }
+      ],
+      "events": [],
+      "constructors": [],
+      "exposedFields": [
+        {
+          "tsName": "value__",
+          "isStatic": false,
+          "tsSignatureId": "value__|System.Int32|static=false|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.SystemDataAccessKind",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 67108875
+          }
+        },
+        {
+          "tsName": "none",
+          "isStatic": true,
+          "tsSignatureId": "None|Microsoft.SqlServer.Server.SystemDataAccessKind|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.SystemDataAccessKind",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 67108876
+          }
+        },
+        {
+          "tsName": "read",
+          "isStatic": true,
+          "tsSignatureId": "Read|Microsoft.SqlServer.Server.SystemDataAccessKind|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.SystemDataAccessKind",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 67108877
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.IBinarySerialize",
+      "clrName": "Microsoft.SqlServer.Server.IBinarySerialize",
+      "tsEmitName": "IBinarySerialize",
+      "assemblyName": "Microsoft.SqlServer.Server",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.IBinarySerialize::Read(System.IO.BinaryReader):System.Void",
+          "clrName": "Read",
+          "tsEmitName": "read",
+          "metadataToken": 100663297,
+          "canonicalSignature": "(System.IO.BinaryReader):System.Void",
+          "normalizedSignature": "Read|(System.IO.BinaryReader):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.SqlServer.Server.IBinarySerialize",
+          "declaringAssemblyName": "Microsoft.SqlServer.Server",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.IBinarySerialize::Write(System.IO.BinaryWriter):System.Void",
+          "clrName": "Write",
+          "tsEmitName": "write",
+          "metadataToken": 100663298,
+          "canonicalSignature": "(System.IO.BinaryWriter):System.Void",
+          "normalizedSignature": "Write|(System.IO.BinaryWriter):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.SqlServer.Server.IBinarySerialize",
+          "declaringAssemblyName": "Microsoft.SqlServer.Server",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "read",
+          "isStatic": false,
+          "tsSignatureId": "Read|(System.IO.BinaryReader):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.IBinarySerialize",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 100663297
+          }
+        },
+        {
+          "tsName": "write",
+          "isStatic": false,
+          "tsSignatureId": "Write|(System.IO.BinaryWriter):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.IBinarySerialize",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 100663298
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.InvalidUdtException",
+      "clrName": "Microsoft.SqlServer.Server.InvalidUdtException",
+      "tsEmitName": "InvalidUdtException",
+      "assemblyName": "Microsoft.SqlServer.Server",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.InvalidUdtException::GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):System.Void",
+          "clrName": "GetObjectData",
+          "tsEmitName": "getObjectData",
+          "metadataToken": 100663303,
+          "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):System.Void",
+          "normalizedSignature": "GetObjectData|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.SqlServer.Server.InvalidUdtException",
+          "declaringAssemblyName": "Microsoft.SqlServer.Server",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.InvalidUdtException::Create(System.Type,System.String):Microsoft.SqlServer.Server.InvalidUdtException",
+          "clrName": "Create",
+          "tsEmitName": "create",
+          "metadataToken": 100663304,
+          "canonicalSignature": "(System.Type,System.String):Microsoft.SqlServer.Server.InvalidUdtException",
+          "normalizedSignature": "Create|(System.Type,System.String):Microsoft.SqlServer.Server.InvalidUdtException|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.SqlServer.Server.InvalidUdtException",
+          "declaringAssemblyName": "Microsoft.SqlServer.Server",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "getObjectData",
+          "isStatic": false,
+          "tsSignatureId": "GetObjectData|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.InvalidUdtException",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 100663303
+          }
+        },
+        {
+          "tsName": "create",
+          "isStatic": true,
+          "tsSignatureId": "Create|(System.Type,System.String):Microsoft.SqlServer.Server.InvalidUdtException|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.InvalidUdtException",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 100663304
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.SqlFacetAttribute",
+      "clrName": "Microsoft.SqlServer.Server.SqlFacetAttribute",
+      "tsEmitName": "SqlFacetAttribute",
+      "assemblyName": "Microsoft.SqlServer.Server",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.SqlFacetAttribute::IsFixedLength:System.Boolean",
+          "clrName": "IsFixedLength",
+          "tsEmitName": "isFixedLength",
+          "metadataToken": 385875969,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "IsFixedLength|:System.Boolean|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.SqlServer.Server.SqlFacetAttribute",
+          "declaringAssemblyName": "Microsoft.SqlServer.Server"
+        },
+        {
+          "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.SqlFacetAttribute::MaxSize:System.Int32",
+          "clrName": "MaxSize",
+          "tsEmitName": "maxSize",
+          "metadataToken": 385875970,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "MaxSize|:System.Int32|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.SqlServer.Server.SqlFacetAttribute",
+          "declaringAssemblyName": "Microsoft.SqlServer.Server"
+        },
+        {
+          "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.SqlFacetAttribute::Precision:System.Int32",
+          "clrName": "Precision",
+          "tsEmitName": "precision",
+          "metadataToken": 385875971,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "Precision|:System.Int32|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.SqlServer.Server.SqlFacetAttribute",
+          "declaringAssemblyName": "Microsoft.SqlServer.Server"
+        },
+        {
+          "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.SqlFacetAttribute::Scale:System.Int32",
+          "clrName": "Scale",
+          "tsEmitName": "scale",
+          "metadataToken": 385875972,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "Scale|:System.Int32|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.SqlServer.Server.SqlFacetAttribute",
+          "declaringAssemblyName": "Microsoft.SqlServer.Server"
+        },
+        {
+          "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.SqlFacetAttribute::IsNullable:System.Boolean",
+          "clrName": "IsNullable",
+          "tsEmitName": "isNullable",
+          "metadataToken": 385875973,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "IsNullable|:System.Boolean|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.SqlServer.Server.SqlFacetAttribute",
+          "declaringAssemblyName": "Microsoft.SqlServer.Server"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.SqlFacetAttribute::.ctor():void",
+          "metadataToken": 100663305,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.SqlServer.Server.SqlFacetAttribute",
+          "declaringAssemblyName": "Microsoft.SqlServer.Server"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "isFixedLength",
+          "isStatic": false,
+          "tsSignatureId": "IsFixedLength|:System.Boolean|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.SqlFacetAttribute",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 385875969
+          }
+        },
+        {
+          "tsName": "maxSize",
+          "isStatic": false,
+          "tsSignatureId": "MaxSize|:System.Int32|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.SqlFacetAttribute",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 385875970
+          }
+        },
+        {
+          "tsName": "precision",
+          "isStatic": false,
+          "tsSignatureId": "Precision|:System.Int32|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.SqlFacetAttribute",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 385875971
+          }
+        },
+        {
+          "tsName": "scale",
+          "isStatic": false,
+          "tsSignatureId": "Scale|:System.Int32|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.SqlFacetAttribute",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 385875972
+          }
+        },
+        {
+          "tsName": "isNullable",
+          "isStatic": false,
+          "tsSignatureId": "IsNullable|:System.Boolean|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.SqlFacetAttribute",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 385875973
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.SqlFacetAttribute",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 100663305
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.SqlFunctionAttribute",
+      "clrName": "Microsoft.SqlServer.Server.SqlFunctionAttribute",
+      "tsEmitName": "SqlFunctionAttribute",
+      "assemblyName": "Microsoft.SqlServer.Server",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.SqlFunctionAttribute::IsDeterministic:System.Boolean",
+          "clrName": "IsDeterministic",
+          "tsEmitName": "isDeterministic",
+          "metadataToken": 385875974,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "IsDeterministic|:System.Boolean|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.SqlServer.Server.SqlFunctionAttribute",
+          "declaringAssemblyName": "Microsoft.SqlServer.Server"
+        },
+        {
+          "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.SqlFunctionAttribute::DataAccess:Microsoft.SqlServer.Server.DataAccessKind",
+          "clrName": "DataAccess",
+          "tsEmitName": "dataAccess",
+          "metadataToken": 385875975,
+          "canonicalSignature": ":Microsoft.SqlServer.Server.DataAccessKind",
+          "normalizedSignature": "DataAccess|:Microsoft.SqlServer.Server.DataAccessKind|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.SqlServer.Server.SqlFunctionAttribute",
+          "declaringAssemblyName": "Microsoft.SqlServer.Server"
+        },
+        {
+          "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.SqlFunctionAttribute::SystemDataAccess:Microsoft.SqlServer.Server.SystemDataAccessKind",
+          "clrName": "SystemDataAccess",
+          "tsEmitName": "systemDataAccess",
+          "metadataToken": 385875976,
+          "canonicalSignature": ":Microsoft.SqlServer.Server.SystemDataAccessKind",
+          "normalizedSignature": "SystemDataAccess|:Microsoft.SqlServer.Server.SystemDataAccessKind|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.SqlServer.Server.SqlFunctionAttribute",
+          "declaringAssemblyName": "Microsoft.SqlServer.Server"
+        },
+        {
+          "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.SqlFunctionAttribute::IsPrecise:System.Boolean",
+          "clrName": "IsPrecise",
+          "tsEmitName": "isPrecise",
+          "metadataToken": 385875977,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "IsPrecise|:System.Boolean|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.SqlServer.Server.SqlFunctionAttribute",
+          "declaringAssemblyName": "Microsoft.SqlServer.Server"
+        },
+        {
+          "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.SqlFunctionAttribute::Name:System.String",
+          "clrName": "Name",
+          "tsEmitName": "name",
+          "metadataToken": 385875978,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Name|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.SqlServer.Server.SqlFunctionAttribute",
+          "declaringAssemblyName": "Microsoft.SqlServer.Server"
+        },
+        {
+          "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.SqlFunctionAttribute::TableDefinition:System.String",
+          "clrName": "TableDefinition",
+          "tsEmitName": "tableDefinition",
+          "metadataToken": 385875979,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "TableDefinition|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.SqlServer.Server.SqlFunctionAttribute",
+          "declaringAssemblyName": "Microsoft.SqlServer.Server"
+        },
+        {
+          "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.SqlFunctionAttribute::FillRowMethodName:System.String",
+          "clrName": "FillRowMethodName",
+          "tsEmitName": "fillRowMethodName",
+          "metadataToken": 385875980,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "FillRowMethodName|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.SqlServer.Server.SqlFunctionAttribute",
+          "declaringAssemblyName": "Microsoft.SqlServer.Server"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.SqlFunctionAttribute::.ctor():void",
+          "metadataToken": 100663316,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.SqlServer.Server.SqlFunctionAttribute",
+          "declaringAssemblyName": "Microsoft.SqlServer.Server"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "isDeterministic",
+          "isStatic": false,
+          "tsSignatureId": "IsDeterministic|:System.Boolean|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.SqlFunctionAttribute",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 385875974
+          }
+        },
+        {
+          "tsName": "dataAccess",
+          "isStatic": false,
+          "tsSignatureId": "DataAccess|:Microsoft.SqlServer.Server.DataAccessKind|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.SqlFunctionAttribute",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 385875975
+          }
+        },
+        {
+          "tsName": "systemDataAccess",
+          "isStatic": false,
+          "tsSignatureId": "SystemDataAccess|:Microsoft.SqlServer.Server.SystemDataAccessKind|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.SqlFunctionAttribute",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 385875976
+          }
+        },
+        {
+          "tsName": "isPrecise",
+          "isStatic": false,
+          "tsSignatureId": "IsPrecise|:System.Boolean|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.SqlFunctionAttribute",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 385875977
+          }
+        },
+        {
+          "tsName": "name",
+          "isStatic": false,
+          "tsSignatureId": "Name|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.SqlFunctionAttribute",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 385875978
+          }
+        },
+        {
+          "tsName": "tableDefinition",
+          "isStatic": false,
+          "tsSignatureId": "TableDefinition|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.SqlFunctionAttribute",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 385875979
+          }
+        },
+        {
+          "tsName": "fillRowMethodName",
+          "isStatic": false,
+          "tsSignatureId": "FillRowMethodName|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.SqlFunctionAttribute",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 385875980
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.SqlFunctionAttribute",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 100663316
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.SqlMethodAttribute",
+      "clrName": "Microsoft.SqlServer.Server.SqlMethodAttribute",
+      "tsEmitName": "SqlMethodAttribute",
+      "assemblyName": "Microsoft.SqlServer.Server",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.SqlMethodAttribute::OnNullCall:System.Boolean",
+          "clrName": "OnNullCall",
+          "tsEmitName": "onNullCall",
+          "metadataToken": 385875981,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "OnNullCall|:System.Boolean|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.SqlServer.Server.SqlMethodAttribute",
+          "declaringAssemblyName": "Microsoft.SqlServer.Server"
+        },
+        {
+          "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.SqlMethodAttribute::IsMutator:System.Boolean",
+          "clrName": "IsMutator",
+          "tsEmitName": "isMutator",
+          "metadataToken": 385875982,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "IsMutator|:System.Boolean|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.SqlServer.Server.SqlMethodAttribute",
+          "declaringAssemblyName": "Microsoft.SqlServer.Server"
+        },
+        {
+          "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.SqlMethodAttribute::InvokeIfReceiverIsNull:System.Boolean",
+          "clrName": "InvokeIfReceiverIsNull",
+          "tsEmitName": "invokeIfReceiverIsNull",
+          "metadataToken": 385875983,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "InvokeIfReceiverIsNull|:System.Boolean|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.SqlServer.Server.SqlMethodAttribute",
+          "declaringAssemblyName": "Microsoft.SqlServer.Server"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.SqlMethodAttribute::.ctor():void",
+          "metadataToken": 100663331,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.SqlServer.Server.SqlMethodAttribute",
+          "declaringAssemblyName": "Microsoft.SqlServer.Server"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "onNullCall",
+          "isStatic": false,
+          "tsSignatureId": "OnNullCall|:System.Boolean|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.SqlMethodAttribute",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 385875981
+          }
+        },
+        {
+          "tsName": "isMutator",
+          "isStatic": false,
+          "tsSignatureId": "IsMutator|:System.Boolean|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.SqlMethodAttribute",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 385875982
+          }
+        },
+        {
+          "tsName": "invokeIfReceiverIsNull",
+          "isStatic": false,
+          "tsSignatureId": "InvokeIfReceiverIsNull|:System.Boolean|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.SqlMethodAttribute",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 385875983
+          }
+        },
+        {
+          "tsName": "isDeterministic",
+          "isStatic": false,
+          "tsSignatureId": "IsDeterministic|:System.Boolean|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.SqlFunctionAttribute",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 385875974
+          }
+        },
+        {
+          "tsName": "dataAccess",
+          "isStatic": false,
+          "tsSignatureId": "DataAccess|:Microsoft.SqlServer.Server.DataAccessKind|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.SqlFunctionAttribute",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 385875975
+          }
+        },
+        {
+          "tsName": "systemDataAccess",
+          "isStatic": false,
+          "tsSignatureId": "SystemDataAccess|:Microsoft.SqlServer.Server.SystemDataAccessKind|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.SqlFunctionAttribute",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 385875976
+          }
+        },
+        {
+          "tsName": "isPrecise",
+          "isStatic": false,
+          "tsSignatureId": "IsPrecise|:System.Boolean|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.SqlFunctionAttribute",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 385875977
+          }
+        },
+        {
+          "tsName": "name",
+          "isStatic": false,
+          "tsSignatureId": "Name|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.SqlFunctionAttribute",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 385875978
+          }
+        },
+        {
+          "tsName": "tableDefinition",
+          "isStatic": false,
+          "tsSignatureId": "TableDefinition|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.SqlFunctionAttribute",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 385875979
+          }
+        },
+        {
+          "tsName": "fillRowMethodName",
+          "isStatic": false,
+          "tsSignatureId": "FillRowMethodName|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.SqlFunctionAttribute",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 385875980
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.SqlMethodAttribute",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 100663331
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute",
+      "clrName": "Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute",
+      "tsEmitName": "SqlUserDefinedAggregateAttribute",
+      "assemblyName": "Microsoft.SqlServer.Server",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute::MaxByteSize:System.Int32",
+          "clrName": "MaxByteSize",
+          "tsEmitName": "maxByteSize",
+          "metadataToken": 385875984,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "MaxByteSize|:System.Int32|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute",
+          "declaringAssemblyName": "Microsoft.SqlServer.Server"
+        },
+        {
+          "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute::IsInvariantToDuplicates:System.Boolean",
+          "clrName": "IsInvariantToDuplicates",
+          "tsEmitName": "isInvariantToDuplicates",
+          "metadataToken": 385875985,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "IsInvariantToDuplicates|:System.Boolean|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute",
+          "declaringAssemblyName": "Microsoft.SqlServer.Server"
+        },
+        {
+          "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute::IsInvariantToNulls:System.Boolean",
+          "clrName": "IsInvariantToNulls",
+          "tsEmitName": "isInvariantToNulls",
+          "metadataToken": 385875986,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "IsInvariantToNulls|:System.Boolean|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute",
+          "declaringAssemblyName": "Microsoft.SqlServer.Server"
+        },
+        {
+          "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute::IsInvariantToOrder:System.Boolean",
+          "clrName": "IsInvariantToOrder",
+          "tsEmitName": "isInvariantToOrder",
+          "metadataToken": 385875987,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "IsInvariantToOrder|:System.Boolean|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute",
+          "declaringAssemblyName": "Microsoft.SqlServer.Server"
+        },
+        {
+          "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute::IsNullIfEmpty:System.Boolean",
+          "clrName": "IsNullIfEmpty",
+          "tsEmitName": "isNullIfEmpty",
+          "metadataToken": 385875988,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "IsNullIfEmpty|:System.Boolean|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute",
+          "declaringAssemblyName": "Microsoft.SqlServer.Server"
+        },
+        {
+          "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute::Format:Microsoft.SqlServer.Server.Format",
+          "clrName": "Format",
+          "tsEmitName": "format",
+          "metadataToken": 385875989,
+          "canonicalSignature": ":Microsoft.SqlServer.Server.Format",
+          "normalizedSignature": "Format|:Microsoft.SqlServer.Server.Format|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute",
+          "declaringAssemblyName": "Microsoft.SqlServer.Server"
+        },
+        {
+          "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute::Name:System.String",
+          "clrName": "Name",
+          "tsEmitName": "name",
+          "metadataToken": 385875990,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Name|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute",
+          "declaringAssemblyName": "Microsoft.SqlServer.Server"
+        }
+      ],
+      "fields": [
+        {
+          "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute::MaxByteSizeValueSystem.Int32",
+          "clrName": "MaxByteSizeValue",
+          "tsEmitName": "maxByteSizeValue",
+          "metadataToken": 67108895,
+          "normalizedSignature": "MaxByteSizeValue|System.Int32|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute",
+          "declaringAssemblyName": "Microsoft.SqlServer.Server"
+        }
+      ],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute::.ctor(Microsoft.SqlServer.Server.Format):void",
+          "metadataToken": 100663338,
+          "canonicalSignature": "(Microsoft.SqlServer.Server.Format):void",
+          "normalizedSignature": "constructor|(Microsoft.SqlServer.Server.Format):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute",
+          "declaringAssemblyName": "Microsoft.SqlServer.Server"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "maxByteSize",
+          "isStatic": false,
+          "tsSignatureId": "MaxByteSize|:System.Int32|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 385875984
+          }
+        },
+        {
+          "tsName": "isInvariantToDuplicates",
+          "isStatic": false,
+          "tsSignatureId": "IsInvariantToDuplicates|:System.Boolean|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 385875985
+          }
+        },
+        {
+          "tsName": "isInvariantToNulls",
+          "isStatic": false,
+          "tsSignatureId": "IsInvariantToNulls|:System.Boolean|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 385875986
+          }
+        },
+        {
+          "tsName": "isInvariantToOrder",
+          "isStatic": false,
+          "tsSignatureId": "IsInvariantToOrder|:System.Boolean|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 385875987
+          }
+        },
+        {
+          "tsName": "isNullIfEmpty",
+          "isStatic": false,
+          "tsSignatureId": "IsNullIfEmpty|:System.Boolean|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 385875988
+          }
+        },
+        {
+          "tsName": "format",
+          "isStatic": false,
+          "tsSignatureId": "Format|:Microsoft.SqlServer.Server.Format|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 385875989
+          }
+        },
+        {
+          "tsName": "name",
+          "isStatic": false,
+          "tsSignatureId": "Name|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 385875990
+          }
+        }
+      ],
+      "exposedFields": [
+        {
+          "tsName": "maxByteSizeValue",
+          "isStatic": true,
+          "tsSignatureId": "MaxByteSizeValue|System.Int32|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 67108895
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.SqlServer.Server.Format):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 100663338
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.SqlUserDefinedTypeAttribute",
+      "clrName": "Microsoft.SqlServer.Server.SqlUserDefinedTypeAttribute",
+      "tsEmitName": "SqlUserDefinedTypeAttribute",
+      "assemblyName": "Microsoft.SqlServer.Server",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.SqlUserDefinedTypeAttribute::MaxByteSize:System.Int32",
+          "clrName": "MaxByteSize",
+          "tsEmitName": "maxByteSize",
+          "metadataToken": 385875991,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "MaxByteSize|:System.Int32|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.SqlServer.Server.SqlUserDefinedTypeAttribute",
+          "declaringAssemblyName": "Microsoft.SqlServer.Server"
+        },
+        {
+          "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.SqlUserDefinedTypeAttribute::IsFixedLength:System.Boolean",
+          "clrName": "IsFixedLength",
+          "tsEmitName": "isFixedLength",
+          "metadataToken": 385875992,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "IsFixedLength|:System.Boolean|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.SqlServer.Server.SqlUserDefinedTypeAttribute",
+          "declaringAssemblyName": "Microsoft.SqlServer.Server"
+        },
+        {
+          "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.SqlUserDefinedTypeAttribute::IsByteOrdered:System.Boolean",
+          "clrName": "IsByteOrdered",
+          "tsEmitName": "isByteOrdered",
+          "metadataToken": 385875993,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "IsByteOrdered|:System.Boolean|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.SqlServer.Server.SqlUserDefinedTypeAttribute",
+          "declaringAssemblyName": "Microsoft.SqlServer.Server"
+        },
+        {
+          "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.SqlUserDefinedTypeAttribute::Format:Microsoft.SqlServer.Server.Format",
+          "clrName": "Format",
+          "tsEmitName": "format",
+          "metadataToken": 385875994,
+          "canonicalSignature": ":Microsoft.SqlServer.Server.Format",
+          "normalizedSignature": "Format|:Microsoft.SqlServer.Server.Format|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.SqlServer.Server.SqlUserDefinedTypeAttribute",
+          "declaringAssemblyName": "Microsoft.SqlServer.Server"
+        },
+        {
+          "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.SqlUserDefinedTypeAttribute::ValidationMethodName:System.String",
+          "clrName": "ValidationMethodName",
+          "tsEmitName": "validationMethodName",
+          "metadataToken": 385875995,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "ValidationMethodName|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.SqlServer.Server.SqlUserDefinedTypeAttribute",
+          "declaringAssemblyName": "Microsoft.SqlServer.Server"
+        },
+        {
+          "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.SqlUserDefinedTypeAttribute::Name:System.String",
+          "clrName": "Name",
+          "tsEmitName": "name",
+          "metadataToken": 385875996,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Name|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.SqlServer.Server.SqlUserDefinedTypeAttribute",
+          "declaringAssemblyName": "Microsoft.SqlServer.Server"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.SqlUserDefinedTypeAttribute::.ctor(Microsoft.SqlServer.Server.Format):void",
+          "metadataToken": 100663352,
+          "canonicalSignature": "(Microsoft.SqlServer.Server.Format):void",
+          "normalizedSignature": "constructor|(Microsoft.SqlServer.Server.Format):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.SqlServer.Server.SqlUserDefinedTypeAttribute",
+          "declaringAssemblyName": "Microsoft.SqlServer.Server"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "maxByteSize",
+          "isStatic": false,
+          "tsSignatureId": "MaxByteSize|:System.Int32|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.SqlUserDefinedTypeAttribute",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 385875991
+          }
+        },
+        {
+          "tsName": "isFixedLength",
+          "isStatic": false,
+          "tsSignatureId": "IsFixedLength|:System.Boolean|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.SqlUserDefinedTypeAttribute",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 385875992
+          }
+        },
+        {
+          "tsName": "isByteOrdered",
+          "isStatic": false,
+          "tsSignatureId": "IsByteOrdered|:System.Boolean|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.SqlUserDefinedTypeAttribute",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 385875993
+          }
+        },
+        {
+          "tsName": "format",
+          "isStatic": false,
+          "tsSignatureId": "Format|:Microsoft.SqlServer.Server.Format|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.SqlUserDefinedTypeAttribute",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 385875994
+          }
+        },
+        {
+          "tsName": "validationMethodName",
+          "isStatic": false,
+          "tsSignatureId": "ValidationMethodName|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.SqlUserDefinedTypeAttribute",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 385875995
+          }
+        },
+        {
+          "tsName": "name",
+          "isStatic": false,
+          "tsSignatureId": "Name|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.SqlUserDefinedTypeAttribute",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 385875996
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.SqlServer.Server.Format):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.SqlServer.Server.SqlUserDefinedTypeAttribute",
+            "declaringAssemblyName": "Microsoft.SqlServer.Server",
+            "metadataToken": 100663352
+          }
+        }
+      ]
+    }
+  ]
+}

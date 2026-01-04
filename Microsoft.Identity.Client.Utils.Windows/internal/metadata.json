@@ -1,0 +1,57 @@
+{
+  "namespace": "Microsoft.Identity.Client.Utils.Windows",
+  "contributingAssemblies": [
+    "Microsoft.Identity.Client"
+  ],
+  "types": [
+    {
+      "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Utils.Windows.WindowsNativeUtils",
+      "clrName": "Microsoft.Identity.Client.Utils.Windows.WindowsNativeUtils",
+      "tsEmitName": "WindowsNativeUtils",
+      "kind": "StaticNamespace",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": true,
+      "isStatic": true,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Utils.Windows.WindowsNativeUtils::IsElevatedUser():System.Boolean",
+          "clrName": "IsElevatedUser",
+          "tsEmitName": "isElevatedUser",
+          "normalizedSignature": "IsElevatedUser|():System.Boolean|static=true",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 0,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Utils.Windows.WindowsNativeUtils::InitializeProcessSecurity():System.Void",
+          "clrName": "InitializeProcessSecurity",
+          "tsEmitName": "initializeProcessSecurity",
+          "normalizedSignature": "InitializeProcessSecurity|():System.Void|static=true",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 0,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    }
+  ]
+}

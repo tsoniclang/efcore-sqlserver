@@ -1,0 +1,386 @@
+{
+  "namespace": "Microsoft.Identity.Client.Kerberos",
+  "contributingAssemblies": [
+    "Microsoft.Identity.Client"
+  ],
+  "types": [
+    {
+      "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosKeyTypes",
+      "clrName": "Microsoft.Identity.Client.Kerberos.KerberosKeyTypes",
+      "tsEmitName": "KerberosKeyTypes",
+      "kind": "Enum",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosKeyTypes::value__System.Int32",
+          "clrName": "value__",
+          "tsEmitName": "value__",
+          "normalizedSignature": "value__|System.Int32|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "isLiteral": false
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosKeyTypes::NoneMicrosoft.Identity.Client.Kerberos.KerberosKeyTypes",
+          "clrName": "None",
+          "tsEmitName": "none",
+          "normalizedSignature": "None|Microsoft.Identity.Client.Kerberos.KerberosKeyTypes|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosKeyTypes::DecCbcCrcMicrosoft.Identity.Client.Kerberos.KerberosKeyTypes",
+          "clrName": "DecCbcCrc",
+          "tsEmitName": "decCbcCrc",
+          "normalizedSignature": "DecCbcCrc|Microsoft.Identity.Client.Kerberos.KerberosKeyTypes|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosKeyTypes::DesCbcMd5Microsoft.Identity.Client.Kerberos.KerberosKeyTypes",
+          "clrName": "DesCbcMd5",
+          "tsEmitName": "desCbcMd5",
+          "normalizedSignature": "DesCbcMd5|Microsoft.Identity.Client.Kerberos.KerberosKeyTypes|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosKeyTypes::Aes128CtsHmacSha196Microsoft.Identity.Client.Kerberos.KerberosKeyTypes",
+          "clrName": "Aes128CtsHmacSha196",
+          "tsEmitName": "aes128CtsHmacSha196",
+          "normalizedSignature": "Aes128CtsHmacSha196|Microsoft.Identity.Client.Kerberos.KerberosKeyTypes|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosKeyTypes::Aes256CtsHmacSha196Microsoft.Identity.Client.Kerberos.KerberosKeyTypes",
+          "clrName": "Aes256CtsHmacSha196",
+          "tsEmitName": "aes256CtsHmacSha196",
+          "normalizedSignature": "Aes256CtsHmacSha196|Microsoft.Identity.Client.Kerberos.KerberosKeyTypes|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        }
+      ],
+      "events": [],
+      "constructors": []
+    },
+    {
+      "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosTicketContainer",
+      "clrName": "Microsoft.Identity.Client.Kerberos.KerberosTicketContainer",
+      "tsEmitName": "KerberosTicketContainer",
+      "kind": "Enum",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosTicketContainer::value__System.Int32",
+          "clrName": "value__",
+          "tsEmitName": "value__",
+          "normalizedSignature": "value__|System.Int32|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "isLiteral": false
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosTicketContainer::IdTokenMicrosoft.Identity.Client.Kerberos.KerberosTicketContainer",
+          "clrName": "IdToken",
+          "tsEmitName": "idToken",
+          "normalizedSignature": "IdToken|Microsoft.Identity.Client.Kerberos.KerberosTicketContainer|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosTicketContainer::AccessTokenMicrosoft.Identity.Client.Kerberos.KerberosTicketContainer",
+          "clrName": "AccessToken",
+          "tsEmitName": "accessToken",
+          "normalizedSignature": "AccessToken|Microsoft.Identity.Client.Kerberos.KerberosTicketContainer|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        }
+      ],
+      "events": [],
+      "constructors": []
+    },
+    {
+      "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket",
+      "clrName": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket",
+      "tsEmitName": "KerberosSupplementalTicket",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket::ToString():System.String",
+          "clrName": "ToString",
+          "tsEmitName": "toString",
+          "normalizedSignature": "ToString|():System.String|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 0,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket::ClientKey:System.String",
+          "clrName": "ClientKey",
+          "tsEmitName": "clientKey",
+          "normalizedSignature": "ClientKey|:System.String|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket::KeyType:Microsoft.Identity.Client.Kerberos.KerberosKeyTypes",
+          "clrName": "KeyType",
+          "tsEmitName": "keyType",
+          "normalizedSignature": "KeyType|:Microsoft.Identity.Client.Kerberos.KerberosKeyTypes|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket::KerberosMessageBuffer:System.String",
+          "clrName": "KerberosMessageBuffer",
+          "tsEmitName": "kerberosMessageBuffer",
+          "normalizedSignature": "KerberosMessageBuffer|:System.String|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket::ErrorMessage:System.String",
+          "clrName": "ErrorMessage",
+          "tsEmitName": "errorMessage",
+          "normalizedSignature": "ErrorMessage|:System.String|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket::Realm:System.String",
+          "clrName": "Realm",
+          "tsEmitName": "realm",
+          "normalizedSignature": "Realm|:System.String|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket::ServicePrincipalName:System.String",
+          "clrName": "ServicePrincipalName",
+          "tsEmitName": "servicePrincipalName",
+          "normalizedSignature": "ServicePrincipalName|:System.String|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket::ClientName:System.String",
+          "clrName": "ClientName",
+          "tsEmitName": "clientName",
+          "normalizedSignature": "ClientName|:System.String|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0
+        },
+        {
+          "normalizedSignature": "constructor|(System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicketManager",
+      "clrName": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicketManager",
+      "tsEmitName": "KerberosSupplementalTicketManager",
+      "kind": "StaticNamespace",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": true,
+      "isStatic": true,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicketManager::FromIdToken(System.String):Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket",
+          "clrName": "FromIdToken",
+          "tsEmitName": "fromIdToken",
+          "normalizedSignature": "FromIdToken|(System.String):Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket|static=true",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicketManager::SaveToWindowsTicketCache(Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket):System.Void",
+          "clrName": "SaveToWindowsTicketCache",
+          "tsEmitName": "saveToWindowsTicketCache",
+          "normalizedSignature": "SaveToWindowsTicketCache|(Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket):System.Void|static=true",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicketManager::SaveToWindowsTicketCache(Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket,System.Int64):System.Void",
+          "clrName": "SaveToWindowsTicketCache",
+          "tsEmitName": "saveToWindowsTicketCache",
+          "normalizedSignature": "SaveToWindowsTicketCache|(Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket,System.Int64):System.Void|static=true",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 2,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicketManager::GetKerberosTicketFromWindowsTicketCache(System.String):System.Byte[]",
+          "clrName": "GetKerberosTicketFromWindowsTicketCache",
+          "tsEmitName": "getKerberosTicketFromWindowsTicketCache",
+          "normalizedSignature": "GetKerberosTicketFromWindowsTicketCache|(System.String):System.Byte[]|static=true",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicketManager::GetKerberosTicketFromWindowsTicketCache(System.String,System.Int64):System.Byte[]",
+          "clrName": "GetKerberosTicketFromWindowsTicketCache",
+          "tsEmitName": "getKerberosTicketFromWindowsTicketCache",
+          "normalizedSignature": "GetKerberosTicketFromWindowsTicketCache|(System.String,System.Int64):System.Byte[]|static=true",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 2,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicketManager::GetKrbCred(Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket):System.Byte[]",
+          "clrName": "GetKrbCred",
+          "tsEmitName": "getKrbCred",
+          "normalizedSignature": "GetKrbCred|(Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket):System.Byte[]|static=true",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    }
+  ]
+}

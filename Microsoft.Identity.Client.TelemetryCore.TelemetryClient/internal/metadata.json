@@ -1,0 +1,46 @@
+{
+  "namespace": "Microsoft.Identity.Client.TelemetryCore.TelemetryClient",
+  "contributingAssemblies": [
+    "Microsoft.Identity.Client"
+  ],
+  "types": [
+    {
+      "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.TelemetryCore.TelemetryClient.TelemetryData",
+      "clrName": "Microsoft.Identity.Client.TelemetryCore.TelemetryClient.TelemetryData",
+      "tsEmitName": "TelemetryData",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.TelemetryCore.TelemetryClient.TelemetryData::CacheLevel:Microsoft.Identity.Client.Cache.CacheLevel",
+          "clrName": "CacheLevel",
+          "tsEmitName": "cacheLevel",
+          "normalizedSignature": "CacheLevel|:Microsoft.Identity.Client.Cache.CacheLevel|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0
+        }
+      ]
+    }
+  ]
+}

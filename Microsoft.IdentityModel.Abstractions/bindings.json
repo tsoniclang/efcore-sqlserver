@@ -1,0 +1,1278 @@
+{
+  "namespace": "Microsoft.IdentityModel.Abstractions",
+  "types": [
+    {
+      "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.EventLogLevel",
+      "clrName": "Microsoft.IdentityModel.Abstractions.EventLogLevel",
+      "tsEmitName": "EventLogLevel",
+      "assemblyName": "Microsoft.IdentityModel.Abstractions",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.EventLogLevel::value__System.Int32",
+          "clrName": "value__",
+          "tsEmitName": "value__",
+          "metadataToken": 67108865,
+          "normalizedSignature": "value__|System.Int32|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.Abstractions.EventLogLevel",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.EventLogLevel::LogAlwaysMicrosoft.IdentityModel.Abstractions.EventLogLevel",
+          "clrName": "LogAlways",
+          "tsEmitName": "logAlways",
+          "metadataToken": 67108866,
+          "normalizedSignature": "LogAlways|Microsoft.IdentityModel.Abstractions.EventLogLevel|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.Abstractions.EventLogLevel",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.EventLogLevel::CriticalMicrosoft.IdentityModel.Abstractions.EventLogLevel",
+          "clrName": "Critical",
+          "tsEmitName": "critical",
+          "metadataToken": 67108867,
+          "normalizedSignature": "Critical|Microsoft.IdentityModel.Abstractions.EventLogLevel|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.Abstractions.EventLogLevel",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.EventLogLevel::ErrorMicrosoft.IdentityModel.Abstractions.EventLogLevel",
+          "clrName": "Error",
+          "tsEmitName": "error",
+          "metadataToken": 67108868,
+          "normalizedSignature": "Error|Microsoft.IdentityModel.Abstractions.EventLogLevel|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.Abstractions.EventLogLevel",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.EventLogLevel::WarningMicrosoft.IdentityModel.Abstractions.EventLogLevel",
+          "clrName": "Warning",
+          "tsEmitName": "warning",
+          "metadataToken": 67108869,
+          "normalizedSignature": "Warning|Microsoft.IdentityModel.Abstractions.EventLogLevel|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.Abstractions.EventLogLevel",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.EventLogLevel::InformationalMicrosoft.IdentityModel.Abstractions.EventLogLevel",
+          "clrName": "Informational",
+          "tsEmitName": "informational",
+          "metadataToken": 67108870,
+          "normalizedSignature": "Informational|Microsoft.IdentityModel.Abstractions.EventLogLevel|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.Abstractions.EventLogLevel",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.EventLogLevel::VerboseMicrosoft.IdentityModel.Abstractions.EventLogLevel",
+          "clrName": "Verbose",
+          "tsEmitName": "verbose",
+          "metadataToken": 67108871,
+          "normalizedSignature": "Verbose|Microsoft.IdentityModel.Abstractions.EventLogLevel|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.Abstractions.EventLogLevel",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions"
+        }
+      ],
+      "events": [],
+      "constructors": [],
+      "exposedFields": [
+        {
+          "tsName": "value__",
+          "isStatic": false,
+          "tsSignatureId": "value__|System.Int32|static=false|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Abstractions.EventLogLevel",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+            "metadataToken": 67108865
+          }
+        },
+        {
+          "tsName": "logAlways",
+          "isStatic": true,
+          "tsSignatureId": "LogAlways|Microsoft.IdentityModel.Abstractions.EventLogLevel|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Abstractions.EventLogLevel",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+            "metadataToken": 67108866
+          }
+        },
+        {
+          "tsName": "critical",
+          "isStatic": true,
+          "tsSignatureId": "Critical|Microsoft.IdentityModel.Abstractions.EventLogLevel|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Abstractions.EventLogLevel",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+            "metadataToken": 67108867
+          }
+        },
+        {
+          "tsName": "error",
+          "isStatic": true,
+          "tsSignatureId": "Error|Microsoft.IdentityModel.Abstractions.EventLogLevel|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Abstractions.EventLogLevel",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+            "metadataToken": 67108868
+          }
+        },
+        {
+          "tsName": "warning",
+          "isStatic": true,
+          "tsSignatureId": "Warning|Microsoft.IdentityModel.Abstractions.EventLogLevel|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Abstractions.EventLogLevel",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+            "metadataToken": 67108869
+          }
+        },
+        {
+          "tsName": "informational",
+          "isStatic": true,
+          "tsSignatureId": "Informational|Microsoft.IdentityModel.Abstractions.EventLogLevel|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Abstractions.EventLogLevel",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+            "metadataToken": 67108870
+          }
+        },
+        {
+          "tsName": "verbose",
+          "isStatic": true,
+          "tsSignatureId": "Verbose|Microsoft.IdentityModel.Abstractions.EventLogLevel|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Abstractions.EventLogLevel",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+            "metadataToken": 67108871
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.IIdentityLogger",
+      "clrName": "Microsoft.IdentityModel.Abstractions.IIdentityLogger",
+      "tsEmitName": "IIdentityLogger",
+      "assemblyName": "Microsoft.IdentityModel.Abstractions",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.IIdentityLogger::IsEnabled(Microsoft.IdentityModel.Abstractions.EventLogLevel):System.Boolean",
+          "clrName": "IsEnabled",
+          "tsEmitName": "isEnabled",
+          "metadataToken": 100663297,
+          "canonicalSignature": "(Microsoft.IdentityModel.Abstractions.EventLogLevel):System.Boolean",
+          "normalizedSignature": "IsEnabled|(Microsoft.IdentityModel.Abstractions.EventLogLevel):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.IdentityModel.Abstractions.IIdentityLogger",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.IIdentityLogger::Log(Microsoft.IdentityModel.Abstractions.LogEntry):System.Void",
+          "clrName": "Log",
+          "tsEmitName": "log",
+          "metadataToken": 100663298,
+          "canonicalSignature": "(Microsoft.IdentityModel.Abstractions.LogEntry):System.Void",
+          "normalizedSignature": "Log|(Microsoft.IdentityModel.Abstractions.LogEntry):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.IdentityModel.Abstractions.IIdentityLogger",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "isEnabled",
+          "isStatic": false,
+          "tsSignatureId": "IsEnabled|(Microsoft.IdentityModel.Abstractions.EventLogLevel):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Abstractions.IIdentityLogger",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+            "metadataToken": 100663297
+          }
+        },
+        {
+          "tsName": "log",
+          "isStatic": false,
+          "tsSignatureId": "Log|(Microsoft.IdentityModel.Abstractions.LogEntry):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Abstractions.IIdentityLogger",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+            "metadataToken": 100663298
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.ITelemetryClient",
+      "clrName": "Microsoft.IdentityModel.Abstractions.ITelemetryClient",
+      "tsEmitName": "ITelemetryClient",
+      "assemblyName": "Microsoft.IdentityModel.Abstractions",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.ITelemetryClient::Initialize():System.Void",
+          "clrName": "Initialize",
+          "tsEmitName": "initialize",
+          "metadataToken": 100663301,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "Initialize|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.IdentityModel.Abstractions.ITelemetryClient",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.ITelemetryClient::IsEnabled():System.Boolean",
+          "clrName": "IsEnabled",
+          "tsEmitName": "isEnabled",
+          "metadataToken": 100663302,
+          "canonicalSignature": "():System.Boolean",
+          "normalizedSignature": "IsEnabled|():System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.IdentityModel.Abstractions.ITelemetryClient",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.ITelemetryClient::IsEnabled(System.String):System.Boolean",
+          "clrName": "IsEnabled",
+          "tsEmitName": "isEnabled",
+          "metadataToken": 100663303,
+          "canonicalSignature": "(System.String):System.Boolean",
+          "normalizedSignature": "IsEnabled|(System.String):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.IdentityModel.Abstractions.ITelemetryClient",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.ITelemetryClient::TrackEvent(Microsoft.IdentityModel.Abstractions.TelemetryEventDetails):System.Void",
+          "clrName": "TrackEvent",
+          "tsEmitName": "trackEvent",
+          "metadataToken": 100663304,
+          "canonicalSignature": "(Microsoft.IdentityModel.Abstractions.TelemetryEventDetails):System.Void",
+          "normalizedSignature": "TrackEvent|(Microsoft.IdentityModel.Abstractions.TelemetryEventDetails):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.IdentityModel.Abstractions.ITelemetryClient",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.ITelemetryClient::TrackEvent(System.String,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.DateTime,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Double,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Guid,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
+          "clrName": "TrackEvent",
+          "tsEmitName": "trackEvent",
+          "metadataToken": 100663305,
+          "canonicalSignature": "(System.String,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.DateTime,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Double,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Guid,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
+          "normalizedSignature": "TrackEvent|(System.String,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.DateTime,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Double,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Guid,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 7,
+          "declaringClrType": "Microsoft.IdentityModel.Abstractions.ITelemetryClient",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.ITelemetryClient::ClientId:System.String",
+          "clrName": "ClientId",
+          "tsEmitName": "clientId",
+          "metadataToken": 385875969,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "ClientId|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.IdentityModel.Abstractions.ITelemetryClient",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "initialize",
+          "isStatic": false,
+          "tsSignatureId": "Initialize|():System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Abstractions.ITelemetryClient",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+            "metadataToken": 100663301
+          }
+        },
+        {
+          "tsName": "isEnabled",
+          "isStatic": false,
+          "tsSignatureId": "IsEnabled|():System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Abstractions.ITelemetryClient",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+            "metadataToken": 100663302
+          }
+        },
+        {
+          "tsName": "isEnabled",
+          "isStatic": false,
+          "tsSignatureId": "IsEnabled|(System.String):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Abstractions.ITelemetryClient",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+            "metadataToken": 100663303
+          }
+        },
+        {
+          "tsName": "trackEvent",
+          "isStatic": false,
+          "tsSignatureId": "TrackEvent|(Microsoft.IdentityModel.Abstractions.TelemetryEventDetails):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Abstractions.ITelemetryClient",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+            "metadataToken": 100663304
+          }
+        },
+        {
+          "tsName": "trackEvent",
+          "isStatic": false,
+          "tsSignatureId": "TrackEvent|(System.String,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.DateTime,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Double,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Guid,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Abstractions.ITelemetryClient",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+            "metadataToken": 100663305
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "clientId",
+          "isStatic": false,
+          "tsSignatureId": "ClientId|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Abstractions.ITelemetryClient",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+            "metadataToken": 385875969
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.LogEntry",
+      "clrName": "Microsoft.IdentityModel.Abstractions.LogEntry",
+      "tsEmitName": "LogEntry",
+      "assemblyName": "Microsoft.IdentityModel.Abstractions",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.LogEntry::EventLogLevel:Microsoft.IdentityModel.Abstractions.EventLogLevel",
+          "clrName": "EventLogLevel",
+          "tsEmitName": "eventLogLevel",
+          "metadataToken": 385875970,
+          "canonicalSignature": ":Microsoft.IdentityModel.Abstractions.EventLogLevel",
+          "normalizedSignature": "EventLogLevel|:Microsoft.IdentityModel.Abstractions.EventLogLevel|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.IdentityModel.Abstractions.LogEntry",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.LogEntry::Message:System.String",
+          "clrName": "Message",
+          "tsEmitName": "message",
+          "metadataToken": 385875971,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Message|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.IdentityModel.Abstractions.LogEntry",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.LogEntry::CorrelationId:System.String",
+          "clrName": "CorrelationId",
+          "tsEmitName": "correlationId",
+          "metadataToken": 385875972,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "CorrelationId|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.IdentityModel.Abstractions.LogEntry",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.LogEntry::.ctor():void",
+          "metadataToken": 100663312,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.IdentityModel.Abstractions.LogEntry",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "eventLogLevel",
+          "isStatic": false,
+          "tsSignatureId": "EventLogLevel|:Microsoft.IdentityModel.Abstractions.EventLogLevel|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Abstractions.LogEntry",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+            "metadataToken": 385875970
+          }
+        },
+        {
+          "tsName": "message",
+          "isStatic": false,
+          "tsSignatureId": "Message|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Abstractions.LogEntry",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+            "metadataToken": 385875971
+          }
+        },
+        {
+          "tsName": "correlationId",
+          "isStatic": false,
+          "tsSignatureId": "CorrelationId|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Abstractions.LogEntry",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+            "metadataToken": 385875972
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Abstractions.LogEntry",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+            "metadataToken": 100663312
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.NullIdentityModelLogger",
+      "clrName": "Microsoft.IdentityModel.Abstractions.NullIdentityModelLogger",
+      "tsEmitName": "NullIdentityModelLogger",
+      "assemblyName": "Microsoft.IdentityModel.Abstractions",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.NullIdentityModelLogger::IsEnabled(Microsoft.IdentityModel.Abstractions.EventLogLevel):System.Boolean",
+          "clrName": "IsEnabled",
+          "tsEmitName": "isEnabled",
+          "metadataToken": 100663315,
+          "canonicalSignature": "(Microsoft.IdentityModel.Abstractions.EventLogLevel):System.Boolean",
+          "normalizedSignature": "IsEnabled|(Microsoft.IdentityModel.Abstractions.EventLogLevel):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.IdentityModel.Abstractions.NullIdentityModelLogger",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.NullIdentityModelLogger::Log(Microsoft.IdentityModel.Abstractions.LogEntry):System.Void",
+          "clrName": "Log",
+          "tsEmitName": "log",
+          "metadataToken": 100663316,
+          "canonicalSignature": "(Microsoft.IdentityModel.Abstractions.LogEntry):System.Void",
+          "normalizedSignature": "Log|(Microsoft.IdentityModel.Abstractions.LogEntry):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.IdentityModel.Abstractions.NullIdentityModelLogger",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.IIdentityLogger::IsEnabled(Microsoft.IdentityModel.Abstractions.EventLogLevel):System.Boolean",
+          "clrName": "IsEnabled",
+          "tsEmitName": "isEnabled$view",
+          "metadataToken": 100663297,
+          "canonicalSignature": "(Microsoft.IdentityModel.Abstractions.EventLogLevel):System.Boolean",
+          "normalizedSignature": "IsEnabled|(Microsoft.IdentityModel.Abstractions.EventLogLevel):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.IdentityModel.Abstractions.IIdentityLogger",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.IIdentityLogger::Log(Microsoft.IdentityModel.Abstractions.LogEntry):System.Void",
+          "clrName": "Log",
+          "tsEmitName": "log$view",
+          "metadataToken": 100663298,
+          "canonicalSignature": "(Microsoft.IdentityModel.Abstractions.LogEntry):System.Void",
+          "normalizedSignature": "Log|(Microsoft.IdentityModel.Abstractions.LogEntry):System.Void|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.IdentityModel.Abstractions.IIdentityLogger",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.NullIdentityModelLogger::Instance:Microsoft.IdentityModel.Abstractions.NullIdentityModelLogger",
+          "clrName": "Instance",
+          "tsEmitName": "instance",
+          "metadataToken": 385875973,
+          "canonicalSignature": ":Microsoft.IdentityModel.Abstractions.NullIdentityModelLogger",
+          "normalizedSignature": "Instance|:Microsoft.IdentityModel.Abstractions.NullIdentityModelLogger|static=true|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.IdentityModel.Abstractions.NullIdentityModelLogger",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "isEnabled",
+          "isStatic": false,
+          "tsSignatureId": "IsEnabled|(Microsoft.IdentityModel.Abstractions.EventLogLevel):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Abstractions.NullIdentityModelLogger",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+            "metadataToken": 100663315
+          }
+        },
+        {
+          "tsName": "log",
+          "isStatic": false,
+          "tsSignatureId": "Log|(Microsoft.IdentityModel.Abstractions.LogEntry):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Abstractions.NullIdentityModelLogger",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+            "metadataToken": 100663316
+          }
+        },
+        {
+          "tsName": "isEnabled$view",
+          "isStatic": false,
+          "tsSignatureId": "IsEnabled|(Microsoft.IdentityModel.Abstractions.EventLogLevel):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Abstractions.IIdentityLogger",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+            "metadataToken": 100663297
+          }
+        },
+        {
+          "tsName": "log$view",
+          "isStatic": false,
+          "tsSignatureId": "Log|(Microsoft.IdentityModel.Abstractions.LogEntry):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Abstractions.IIdentityLogger",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+            "metadataToken": 100663298
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "instance",
+          "isStatic": true,
+          "tsSignatureId": "Instance|:Microsoft.IdentityModel.Abstractions.NullIdentityModelLogger|static=true|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Abstractions.NullIdentityModelLogger",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+            "metadataToken": 385875973
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.NullTelemetryClient",
+      "clrName": "Microsoft.IdentityModel.Abstractions.NullTelemetryClient",
+      "tsEmitName": "NullTelemetryClient",
+      "assemblyName": "Microsoft.IdentityModel.Abstractions",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.NullTelemetryClient::IsEnabled():System.Boolean",
+          "clrName": "IsEnabled",
+          "tsEmitName": "isEnabled",
+          "metadataToken": 100663322,
+          "canonicalSignature": "():System.Boolean",
+          "normalizedSignature": "IsEnabled|():System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.IdentityModel.Abstractions.NullTelemetryClient",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.NullTelemetryClient::IsEnabled(System.String):System.Boolean",
+          "clrName": "IsEnabled",
+          "tsEmitName": "isEnabled",
+          "metadataToken": 100663323,
+          "canonicalSignature": "(System.String):System.Boolean",
+          "normalizedSignature": "IsEnabled|(System.String):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.IdentityModel.Abstractions.NullTelemetryClient",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.NullTelemetryClient::Initialize():System.Void",
+          "clrName": "Initialize",
+          "tsEmitName": "initialize",
+          "metadataToken": 100663324,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "Initialize|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.IdentityModel.Abstractions.NullTelemetryClient",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.NullTelemetryClient::TrackEvent(Microsoft.IdentityModel.Abstractions.TelemetryEventDetails):System.Void",
+          "clrName": "TrackEvent",
+          "tsEmitName": "trackEvent",
+          "metadataToken": 100663325,
+          "canonicalSignature": "(Microsoft.IdentityModel.Abstractions.TelemetryEventDetails):System.Void",
+          "normalizedSignature": "TrackEvent|(Microsoft.IdentityModel.Abstractions.TelemetryEventDetails):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.IdentityModel.Abstractions.NullTelemetryClient",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.NullTelemetryClient::TrackEvent(System.String,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.DateTime,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Double,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Guid,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
+          "clrName": "TrackEvent",
+          "tsEmitName": "trackEvent",
+          "metadataToken": 100663326,
+          "canonicalSignature": "(System.String,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.DateTime,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Double,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Guid,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
+          "normalizedSignature": "TrackEvent|(System.String,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.DateTime,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Double,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Guid,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 7,
+          "declaringClrType": "Microsoft.IdentityModel.Abstractions.NullTelemetryClient",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.ITelemetryClient::Initialize():System.Void",
+          "clrName": "Initialize",
+          "tsEmitName": "initialize$view",
+          "metadataToken": 100663301,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "Initialize|():System.Void|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.IdentityModel.Abstractions.ITelemetryClient",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.ITelemetryClient::IsEnabled():System.Boolean",
+          "clrName": "IsEnabled",
+          "tsEmitName": "isEnabled$view",
+          "metadataToken": 100663302,
+          "canonicalSignature": "():System.Boolean",
+          "normalizedSignature": "IsEnabled|():System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.IdentityModel.Abstractions.ITelemetryClient",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.ITelemetryClient::IsEnabled(System.String):System.Boolean",
+          "clrName": "IsEnabled",
+          "tsEmitName": "isEnabled$view2",
+          "metadataToken": 100663303,
+          "canonicalSignature": "(System.String):System.Boolean",
+          "normalizedSignature": "IsEnabled|(System.String):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.IdentityModel.Abstractions.ITelemetryClient",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.ITelemetryClient::TrackEvent(Microsoft.IdentityModel.Abstractions.TelemetryEventDetails):System.Void",
+          "clrName": "TrackEvent",
+          "tsEmitName": "trackEvent$view",
+          "metadataToken": 100663304,
+          "canonicalSignature": "(Microsoft.IdentityModel.Abstractions.TelemetryEventDetails):System.Void",
+          "normalizedSignature": "TrackEvent|(Microsoft.IdentityModel.Abstractions.TelemetryEventDetails):System.Void|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.IdentityModel.Abstractions.ITelemetryClient",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.ITelemetryClient::TrackEvent(System.String,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.DateTime,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Double,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Guid,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
+          "clrName": "TrackEvent",
+          "tsEmitName": "trackEvent$view2",
+          "metadataToken": 100663305,
+          "canonicalSignature": "(System.String,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.DateTime,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Double,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Guid,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
+          "normalizedSignature": "TrackEvent|(System.String,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.DateTime,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Double,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Guid,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 7,
+          "declaringClrType": "Microsoft.IdentityModel.Abstractions.ITelemetryClient",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.NullTelemetryClient::ClientId:System.String",
+          "clrName": "ClientId",
+          "tsEmitName": "clientId",
+          "metadataToken": 385875974,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "ClientId|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.IdentityModel.Abstractions.NullTelemetryClient",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.NullTelemetryClient::Instance:Microsoft.IdentityModel.Abstractions.NullTelemetryClient",
+          "clrName": "Instance",
+          "tsEmitName": "instance",
+          "metadataToken": 385875975,
+          "canonicalSignature": ":Microsoft.IdentityModel.Abstractions.NullTelemetryClient",
+          "normalizedSignature": "Instance|:Microsoft.IdentityModel.Abstractions.NullTelemetryClient|static=true|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.IdentityModel.Abstractions.NullTelemetryClient",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.ITelemetryClient::ClientId:System.String",
+          "clrName": "ClientId",
+          "tsEmitName": "clientId$view",
+          "metadataToken": 385875969,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "ClientId|:System.String|static=false|accessor=getset",
+          "emitScope": "ViewOnly",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.IdentityModel.Abstractions.ITelemetryClient",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "isEnabled",
+          "isStatic": false,
+          "tsSignatureId": "IsEnabled|():System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Abstractions.NullTelemetryClient",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+            "metadataToken": 100663322
+          }
+        },
+        {
+          "tsName": "isEnabled",
+          "isStatic": false,
+          "tsSignatureId": "IsEnabled|(System.String):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Abstractions.NullTelemetryClient",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+            "metadataToken": 100663323
+          }
+        },
+        {
+          "tsName": "initialize",
+          "isStatic": false,
+          "tsSignatureId": "Initialize|():System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Abstractions.NullTelemetryClient",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+            "metadataToken": 100663324
+          }
+        },
+        {
+          "tsName": "trackEvent",
+          "isStatic": false,
+          "tsSignatureId": "TrackEvent|(Microsoft.IdentityModel.Abstractions.TelemetryEventDetails):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Abstractions.NullTelemetryClient",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+            "metadataToken": 100663325
+          }
+        },
+        {
+          "tsName": "trackEvent",
+          "isStatic": false,
+          "tsSignatureId": "TrackEvent|(System.String,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.DateTime,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Double,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Guid,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Abstractions.NullTelemetryClient",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+            "metadataToken": 100663326
+          }
+        },
+        {
+          "tsName": "initialize$view",
+          "isStatic": false,
+          "tsSignatureId": "Initialize|():System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Abstractions.ITelemetryClient",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+            "metadataToken": 100663301
+          }
+        },
+        {
+          "tsName": "isEnabled$view",
+          "isStatic": false,
+          "tsSignatureId": "IsEnabled|():System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Abstractions.ITelemetryClient",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+            "metadataToken": 100663302
+          }
+        },
+        {
+          "tsName": "isEnabled$view2",
+          "isStatic": false,
+          "tsSignatureId": "IsEnabled|(System.String):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Abstractions.ITelemetryClient",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+            "metadataToken": 100663303
+          }
+        },
+        {
+          "tsName": "trackEvent$view",
+          "isStatic": false,
+          "tsSignatureId": "TrackEvent|(Microsoft.IdentityModel.Abstractions.TelemetryEventDetails):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Abstractions.ITelemetryClient",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+            "metadataToken": 100663304
+          }
+        },
+        {
+          "tsName": "trackEvent$view2",
+          "isStatic": false,
+          "tsSignatureId": "TrackEvent|(System.String,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.DateTime,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Double,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Guid,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Abstractions.ITelemetryClient",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+            "metadataToken": 100663305
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "clientId",
+          "isStatic": false,
+          "tsSignatureId": "ClientId|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Abstractions.NullTelemetryClient",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+            "metadataToken": 385875974
+          }
+        },
+        {
+          "tsName": "instance",
+          "isStatic": true,
+          "tsSignatureId": "Instance|:Microsoft.IdentityModel.Abstractions.NullTelemetryClient|static=true|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Abstractions.NullTelemetryClient",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+            "metadataToken": 385875975
+          }
+        },
+        {
+          "tsName": "clientId$view",
+          "isStatic": false,
+          "tsSignatureId": "ClientId|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Abstractions.ITelemetryClient",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+            "metadataToken": 385875969
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.TelemetryEventDetails",
+      "clrName": "Microsoft.IdentityModel.Abstractions.TelemetryEventDetails",
+      "tsEmitName": "TelemetryEventDetails",
+      "assemblyName": "Microsoft.IdentityModel.Abstractions",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.TelemetryEventDetails::SetProperty(System.String,System.String):System.Void",
+          "clrName": "SetProperty",
+          "tsEmitName": "setProperty",
+          "metadataToken": 100663332,
+          "canonicalSignature": "(System.String,System.String):System.Void",
+          "normalizedSignature": "SetProperty|(System.String,System.String):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.IdentityModel.Abstractions.TelemetryEventDetails",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.TelemetryEventDetails::SetProperty(System.String,System.Int64):System.Void",
+          "clrName": "SetProperty",
+          "tsEmitName": "setProperty",
+          "metadataToken": 100663333,
+          "canonicalSignature": "(System.String,System.Int64):System.Void",
+          "normalizedSignature": "SetProperty|(System.String,System.Int64):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.IdentityModel.Abstractions.TelemetryEventDetails",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.TelemetryEventDetails::SetProperty(System.String,System.Boolean):System.Void",
+          "clrName": "SetProperty",
+          "tsEmitName": "setProperty",
+          "metadataToken": 100663334,
+          "canonicalSignature": "(System.String,System.Boolean):System.Void",
+          "normalizedSignature": "SetProperty|(System.String,System.Boolean):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.IdentityModel.Abstractions.TelemetryEventDetails",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.TelemetryEventDetails::SetProperty(System.String,System.DateTime):System.Void",
+          "clrName": "SetProperty",
+          "tsEmitName": "setProperty",
+          "metadataToken": 100663335,
+          "canonicalSignature": "(System.String,System.DateTime):System.Void",
+          "normalizedSignature": "SetProperty|(System.String,System.DateTime):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.IdentityModel.Abstractions.TelemetryEventDetails",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.TelemetryEventDetails::SetProperty(System.String,System.Double):System.Void",
+          "clrName": "SetProperty",
+          "tsEmitName": "setProperty",
+          "metadataToken": 100663336,
+          "canonicalSignature": "(System.String,System.Double):System.Void",
+          "normalizedSignature": "SetProperty|(System.String,System.Double):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.IdentityModel.Abstractions.TelemetryEventDetails",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.TelemetryEventDetails::SetProperty(System.String,System.Guid):System.Void",
+          "clrName": "SetProperty",
+          "tsEmitName": "setProperty",
+          "metadataToken": 100663337,
+          "canonicalSignature": "(System.String,System.Guid):System.Void",
+          "normalizedSignature": "SetProperty|(System.String,System.Guid):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.IdentityModel.Abstractions.TelemetryEventDetails",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.TelemetryEventDetails::Name:System.String",
+          "clrName": "Name",
+          "tsEmitName": "name",
+          "metadataToken": 385875977,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Name|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.IdentityModel.Abstractions.TelemetryEventDetails",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.TelemetryEventDetails::Properties:System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "Properties",
+          "tsEmitName": "properties",
+          "metadataToken": 385875978,
+          "canonicalSignature": ":System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "Properties|:System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.IdentityModel.Abstractions.TelemetryEventDetails",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "setProperty",
+          "isStatic": false,
+          "tsSignatureId": "SetProperty|(System.String,System.String):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Abstractions.TelemetryEventDetails",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+            "metadataToken": 100663332
+          }
+        },
+        {
+          "tsName": "setProperty",
+          "isStatic": false,
+          "tsSignatureId": "SetProperty|(System.String,System.Int64):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Abstractions.TelemetryEventDetails",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+            "metadataToken": 100663333
+          }
+        },
+        {
+          "tsName": "setProperty",
+          "isStatic": false,
+          "tsSignatureId": "SetProperty|(System.String,System.Boolean):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Abstractions.TelemetryEventDetails",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+            "metadataToken": 100663334
+          }
+        },
+        {
+          "tsName": "setProperty",
+          "isStatic": false,
+          "tsSignatureId": "SetProperty|(System.String,System.DateTime):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Abstractions.TelemetryEventDetails",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+            "metadataToken": 100663335
+          }
+        },
+        {
+          "tsName": "setProperty",
+          "isStatic": false,
+          "tsSignatureId": "SetProperty|(System.String,System.Double):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Abstractions.TelemetryEventDetails",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+            "metadataToken": 100663336
+          }
+        },
+        {
+          "tsName": "setProperty",
+          "isStatic": false,
+          "tsSignatureId": "SetProperty|(System.String,System.Guid):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Abstractions.TelemetryEventDetails",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+            "metadataToken": 100663337
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "name",
+          "isStatic": false,
+          "tsSignatureId": "Name|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Abstractions.TelemetryEventDetails",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+            "metadataToken": 385875977
+          }
+        },
+        {
+          "tsName": "properties",
+          "isStatic": false,
+          "tsSignatureId": "Properties|:System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Abstractions.TelemetryEventDetails",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+            "metadataToken": 385875978
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.ObservabilityConstants",
+      "clrName": "Microsoft.IdentityModel.Abstractions.ObservabilityConstants",
+      "tsEmitName": "ObservabilityConstants",
+      "assemblyName": "Microsoft.IdentityModel.Abstractions",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.ObservabilityConstants::SucceededSystem.String",
+          "clrName": "Succeeded",
+          "tsEmitName": "succeeded",
+          "metadataToken": 67108878,
+          "normalizedSignature": "Succeeded|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.Abstractions.ObservabilityConstants",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.ObservabilityConstants::DurationSystem.String",
+          "clrName": "Duration",
+          "tsEmitName": "duration",
+          "metadataToken": 67108879,
+          "normalizedSignature": "Duration|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.Abstractions.ObservabilityConstants",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.ObservabilityConstants::ActivityIdSystem.String",
+          "clrName": "ActivityId",
+          "tsEmitName": "activityId",
+          "metadataToken": 67108880,
+          "normalizedSignature": "ActivityId|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.Abstractions.ObservabilityConstants",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.ObservabilityConstants::ClientIdSystem.String",
+          "clrName": "ClientId",
+          "tsEmitName": "clientId",
+          "metadataToken": 67108881,
+          "normalizedSignature": "ClientId|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.Abstractions.ObservabilityConstants",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions"
+        }
+      ],
+      "events": [],
+      "constructors": [],
+      "exposedFields": [
+        {
+          "tsName": "succeeded",
+          "isStatic": true,
+          "tsSignatureId": "Succeeded|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Abstractions.ObservabilityConstants",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+            "metadataToken": 67108878
+          }
+        },
+        {
+          "tsName": "duration",
+          "isStatic": true,
+          "tsSignatureId": "Duration|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Abstractions.ObservabilityConstants",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+            "metadataToken": 67108879
+          }
+        },
+        {
+          "tsName": "activityId",
+          "isStatic": true,
+          "tsSignatureId": "ActivityId|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Abstractions.ObservabilityConstants",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+            "metadataToken": 67108880
+          }
+        },
+        {
+          "tsName": "clientId",
+          "isStatic": true,
+          "tsSignatureId": "ClientId|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Abstractions.ObservabilityConstants",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
+            "metadataToken": 67108881
+          }
+        }
+      ]
+    }
+  ]
+}

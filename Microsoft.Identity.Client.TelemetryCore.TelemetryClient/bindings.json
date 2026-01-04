@@ -1,0 +1,66 @@
+{
+  "namespace": "Microsoft.Identity.Client.TelemetryCore.TelemetryClient",
+  "types": [
+    {
+      "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.TelemetryCore.TelemetryClient.TelemetryData",
+      "clrName": "Microsoft.Identity.Client.TelemetryCore.TelemetryClient.TelemetryData",
+      "tsEmitName": "TelemetryData",
+      "assemblyName": "Microsoft.Identity.Client",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.TelemetryCore.TelemetryClient.TelemetryData::CacheLevel:Microsoft.Identity.Client.Cache.CacheLevel",
+          "clrName": "CacheLevel",
+          "tsEmitName": "cacheLevel",
+          "metadataToken": 385876387,
+          "canonicalSignature": ":Microsoft.Identity.Client.Cache.CacheLevel",
+          "normalizedSignature": "CacheLevel|:Microsoft.Identity.Client.Cache.CacheLevel|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.Identity.Client.TelemetryCore.TelemetryClient.TelemetryData",
+          "declaringAssemblyName": "Microsoft.Identity.Client"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.TelemetryCore.TelemetryClient.TelemetryData::.ctor():void",
+          "metadataToken": 100664954,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Identity.Client.TelemetryCore.TelemetryClient.TelemetryData",
+          "declaringAssemblyName": "Microsoft.Identity.Client"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "cacheLevel",
+          "isStatic": false,
+          "tsSignatureId": "CacheLevel|:Microsoft.Identity.Client.Cache.CacheLevel|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.TelemetryCore.TelemetryClient.TelemetryData",
+            "declaringAssemblyName": "Microsoft.Identity.Client",
+            "metadataToken": 385876387
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.TelemetryCore.TelemetryClient.TelemetryData",
+            "declaringAssemblyName": "Microsoft.Identity.Client",
+            "metadataToken": 100664954
+          }
+        }
+      ]
+    }
+  ]
+}

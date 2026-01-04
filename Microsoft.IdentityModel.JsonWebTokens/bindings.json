@@ -1,0 +1,3592 @@
+{
+  "namespace": "Microsoft.IdentityModel.JsonWebTokens",
+  "types": [
+    {
+      "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames",
+      "clrName": "Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames",
+      "tsEmitName": "JwtHeaderParameterNames",
+      "assemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames::AlgSystem.String",
+          "clrName": "Alg",
+          "tsEmitName": "alg",
+          "metadataToken": 67108948,
+          "normalizedSignature": "Alg|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames::ApuSystem.String",
+          "clrName": "Apu",
+          "tsEmitName": "apu",
+          "metadataToken": 67108949,
+          "normalizedSignature": "Apu|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames::ApvSystem.String",
+          "clrName": "Apv",
+          "tsEmitName": "apv",
+          "metadataToken": 67108950,
+          "normalizedSignature": "Apv|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames::EpkSystem.String",
+          "clrName": "Epk",
+          "tsEmitName": "epk",
+          "metadataToken": 67108951,
+          "normalizedSignature": "Epk|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames::CtySystem.String",
+          "clrName": "Cty",
+          "tsEmitName": "cty",
+          "metadataToken": 67108952,
+          "normalizedSignature": "Cty|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames::EncSystem.String",
+          "clrName": "Enc",
+          "tsEmitName": "enc",
+          "metadataToken": 67108953,
+          "normalizedSignature": "Enc|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames::IVSystem.String",
+          "clrName": "IV",
+          "tsEmitName": "IV",
+          "metadataToken": 67108954,
+          "normalizedSignature": "IV|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames::JkuSystem.String",
+          "clrName": "Jku",
+          "tsEmitName": "jku",
+          "metadataToken": 67108955,
+          "normalizedSignature": "Jku|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames::JwkSystem.String",
+          "clrName": "Jwk",
+          "tsEmitName": "jwk",
+          "metadataToken": 67108956,
+          "normalizedSignature": "Jwk|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames::KidSystem.String",
+          "clrName": "Kid",
+          "tsEmitName": "kid",
+          "metadataToken": 67108957,
+          "normalizedSignature": "Kid|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames::TypSystem.String",
+          "clrName": "Typ",
+          "tsEmitName": "typ",
+          "metadataToken": 67108958,
+          "normalizedSignature": "Typ|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames::X5cSystem.String",
+          "clrName": "X5c",
+          "tsEmitName": "x5c",
+          "metadataToken": 67108959,
+          "normalizedSignature": "X5c|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames::X5tSystem.String",
+          "clrName": "X5t",
+          "tsEmitName": "x5t",
+          "metadataToken": 67108960,
+          "normalizedSignature": "X5t|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames::X5uSystem.String",
+          "clrName": "X5u",
+          "tsEmitName": "x5u",
+          "metadataToken": 67108961,
+          "normalizedSignature": "X5u|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames::ZipSystem.String",
+          "clrName": "Zip",
+          "tsEmitName": "zip",
+          "metadataToken": 67108962,
+          "normalizedSignature": "Zip|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        }
+      ],
+      "events": [],
+      "constructors": [],
+      "exposedFields": [
+        {
+          "tsName": "alg",
+          "isStatic": true,
+          "tsSignatureId": "Alg|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108948
+          }
+        },
+        {
+          "tsName": "apu",
+          "isStatic": true,
+          "tsSignatureId": "Apu|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108949
+          }
+        },
+        {
+          "tsName": "apv",
+          "isStatic": true,
+          "tsSignatureId": "Apv|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108950
+          }
+        },
+        {
+          "tsName": "epk",
+          "isStatic": true,
+          "tsSignatureId": "Epk|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108951
+          }
+        },
+        {
+          "tsName": "cty",
+          "isStatic": true,
+          "tsSignatureId": "Cty|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108952
+          }
+        },
+        {
+          "tsName": "enc",
+          "isStatic": true,
+          "tsSignatureId": "Enc|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108953
+          }
+        },
+        {
+          "tsName": "IV",
+          "isStatic": true,
+          "tsSignatureId": "IV|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108954
+          }
+        },
+        {
+          "tsName": "jku",
+          "isStatic": true,
+          "tsSignatureId": "Jku|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108955
+          }
+        },
+        {
+          "tsName": "jwk",
+          "isStatic": true,
+          "tsSignatureId": "Jwk|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108956
+          }
+        },
+        {
+          "tsName": "kid",
+          "isStatic": true,
+          "tsSignatureId": "Kid|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108957
+          }
+        },
+        {
+          "tsName": "typ",
+          "isStatic": true,
+          "tsSignatureId": "Typ|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108958
+          }
+        },
+        {
+          "tsName": "x5c",
+          "isStatic": true,
+          "tsSignatureId": "X5c|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108959
+          }
+        },
+        {
+          "tsName": "x5t",
+          "isStatic": true,
+          "tsSignatureId": "X5t|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108960
+          }
+        },
+        {
+          "tsName": "x5u",
+          "isStatic": true,
+          "tsSignatureId": "X5u|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108961
+          }
+        },
+        {
+          "tsName": "zip",
+          "isStatic": true,
+          "tsSignatureId": "Zip|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108962
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+      "clrName": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+      "tsEmitName": "JwtRegisteredClaimNames",
+      "assemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames::ActortSystem.String",
+          "clrName": "Actort",
+          "tsEmitName": "actort",
+          "metadataToken": 67108963,
+          "normalizedSignature": "Actort|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames::AcrSystem.String",
+          "clrName": "Acr",
+          "tsEmitName": "acr",
+          "metadataToken": 67108964,
+          "normalizedSignature": "Acr|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames::AddressSystem.String",
+          "clrName": "Address",
+          "tsEmitName": "address",
+          "metadataToken": 67108965,
+          "normalizedSignature": "Address|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames::AmrSystem.String",
+          "clrName": "Amr",
+          "tsEmitName": "amr",
+          "metadataToken": 67108966,
+          "normalizedSignature": "Amr|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames::AudSystem.String",
+          "clrName": "Aud",
+          "tsEmitName": "aud",
+          "metadataToken": 67108967,
+          "normalizedSignature": "Aud|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames::AuthTimeSystem.String",
+          "clrName": "AuthTime",
+          "tsEmitName": "authTime",
+          "metadataToken": 67108968,
+          "normalizedSignature": "AuthTime|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames::AzpSystem.String",
+          "clrName": "Azp",
+          "tsEmitName": "azp",
+          "metadataToken": 67108969,
+          "normalizedSignature": "Azp|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames::BirthdateSystem.String",
+          "clrName": "Birthdate",
+          "tsEmitName": "birthdate",
+          "metadataToken": 67108970,
+          "normalizedSignature": "Birthdate|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames::CHashSystem.String",
+          "clrName": "CHash",
+          "tsEmitName": "cHash",
+          "metadataToken": 67108971,
+          "normalizedSignature": "CHash|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames::AtHashSystem.String",
+          "clrName": "AtHash",
+          "tsEmitName": "atHash",
+          "metadataToken": 67108972,
+          "normalizedSignature": "AtHash|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames::EmailSystem.String",
+          "clrName": "Email",
+          "tsEmitName": "email",
+          "metadataToken": 67108973,
+          "normalizedSignature": "Email|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames::EmailVerifiedSystem.String",
+          "clrName": "EmailVerified",
+          "tsEmitName": "emailVerified",
+          "metadataToken": 67108974,
+          "normalizedSignature": "EmailVerified|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames::ExpSystem.String",
+          "clrName": "Exp",
+          "tsEmitName": "exp",
+          "metadataToken": 67108975,
+          "normalizedSignature": "Exp|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames::GenderSystem.String",
+          "clrName": "Gender",
+          "tsEmitName": "gender",
+          "metadataToken": 67108976,
+          "normalizedSignature": "Gender|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames::FamilyNameSystem.String",
+          "clrName": "FamilyName",
+          "tsEmitName": "familyName",
+          "metadataToken": 67108977,
+          "normalizedSignature": "FamilyName|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames::GivenNameSystem.String",
+          "clrName": "GivenName",
+          "tsEmitName": "givenName",
+          "metadataToken": 67108978,
+          "normalizedSignature": "GivenName|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames::IatSystem.String",
+          "clrName": "Iat",
+          "tsEmitName": "iat",
+          "metadataToken": 67108979,
+          "normalizedSignature": "Iat|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames::IssSystem.String",
+          "clrName": "Iss",
+          "tsEmitName": "iss",
+          "metadataToken": 67108980,
+          "normalizedSignature": "Iss|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames::JtiSystem.String",
+          "clrName": "Jti",
+          "tsEmitName": "jti",
+          "metadataToken": 67108981,
+          "normalizedSignature": "Jti|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames::LocaleSystem.String",
+          "clrName": "Locale",
+          "tsEmitName": "locale",
+          "metadataToken": 67108982,
+          "normalizedSignature": "Locale|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames::MiddleNameSystem.String",
+          "clrName": "MiddleName",
+          "tsEmitName": "middleName",
+          "metadataToken": 67108983,
+          "normalizedSignature": "MiddleName|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames::NameSystem.String",
+          "clrName": "Name",
+          "tsEmitName": "name",
+          "metadataToken": 67108984,
+          "normalizedSignature": "Name|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames::NameIdSystem.String",
+          "clrName": "NameId",
+          "tsEmitName": "nameId",
+          "metadataToken": 67108985,
+          "normalizedSignature": "NameId|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames::NicknameSystem.String",
+          "clrName": "Nickname",
+          "tsEmitName": "nickname",
+          "metadataToken": 67108986,
+          "normalizedSignature": "Nickname|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames::NonceSystem.String",
+          "clrName": "Nonce",
+          "tsEmitName": "nonce",
+          "metadataToken": 67108987,
+          "normalizedSignature": "Nonce|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames::NbfSystem.String",
+          "clrName": "Nbf",
+          "tsEmitName": "nbf",
+          "metadataToken": 67108988,
+          "normalizedSignature": "Nbf|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames::PhoneNumberSystem.String",
+          "clrName": "PhoneNumber",
+          "tsEmitName": "phoneNumber",
+          "metadataToken": 67108989,
+          "normalizedSignature": "PhoneNumber|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames::PhoneNumberVerifiedSystem.String",
+          "clrName": "PhoneNumberVerified",
+          "tsEmitName": "phoneNumberVerified",
+          "metadataToken": 67108990,
+          "normalizedSignature": "PhoneNumberVerified|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames::PictureSystem.String",
+          "clrName": "Picture",
+          "tsEmitName": "picture",
+          "metadataToken": 67108991,
+          "normalizedSignature": "Picture|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames::PrnSystem.String",
+          "clrName": "Prn",
+          "tsEmitName": "prn",
+          "metadataToken": 67108992,
+          "normalizedSignature": "Prn|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames::PreferredUsernameSystem.String",
+          "clrName": "PreferredUsername",
+          "tsEmitName": "preferredUsername",
+          "metadataToken": 67108993,
+          "normalizedSignature": "PreferredUsername|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames::ProfileSystem.String",
+          "clrName": "Profile",
+          "tsEmitName": "profile",
+          "metadataToken": 67108994,
+          "normalizedSignature": "Profile|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames::SidSystem.String",
+          "clrName": "Sid",
+          "tsEmitName": "sid",
+          "metadataToken": 67108995,
+          "normalizedSignature": "Sid|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames::SubSystem.String",
+          "clrName": "Sub",
+          "tsEmitName": "sub",
+          "metadataToken": 67108996,
+          "normalizedSignature": "Sub|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames::TypSystem.String",
+          "clrName": "Typ",
+          "tsEmitName": "typ",
+          "metadataToken": 67108997,
+          "normalizedSignature": "Typ|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames::UniqueNameSystem.String",
+          "clrName": "UniqueName",
+          "tsEmitName": "uniqueName",
+          "metadataToken": 67108998,
+          "normalizedSignature": "UniqueName|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames::UpdatedAtSystem.String",
+          "clrName": "UpdatedAt",
+          "tsEmitName": "updatedAt",
+          "metadataToken": 67108999,
+          "normalizedSignature": "UpdatedAt|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames::WebsiteSystem.String",
+          "clrName": "Website",
+          "tsEmitName": "website",
+          "metadataToken": 67109000,
+          "normalizedSignature": "Website|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames::ZoneInfoSystem.String",
+          "clrName": "ZoneInfo",
+          "tsEmitName": "zoneInfo",
+          "metadataToken": 67109001,
+          "normalizedSignature": "ZoneInfo|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        }
+      ],
+      "events": [],
+      "constructors": [],
+      "exposedFields": [
+        {
+          "tsName": "actort",
+          "isStatic": true,
+          "tsSignatureId": "Actort|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108963
+          }
+        },
+        {
+          "tsName": "acr",
+          "isStatic": true,
+          "tsSignatureId": "Acr|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108964
+          }
+        },
+        {
+          "tsName": "address",
+          "isStatic": true,
+          "tsSignatureId": "Address|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108965
+          }
+        },
+        {
+          "tsName": "amr",
+          "isStatic": true,
+          "tsSignatureId": "Amr|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108966
+          }
+        },
+        {
+          "tsName": "aud",
+          "isStatic": true,
+          "tsSignatureId": "Aud|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108967
+          }
+        },
+        {
+          "tsName": "authTime",
+          "isStatic": true,
+          "tsSignatureId": "AuthTime|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108968
+          }
+        },
+        {
+          "tsName": "azp",
+          "isStatic": true,
+          "tsSignatureId": "Azp|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108969
+          }
+        },
+        {
+          "tsName": "birthdate",
+          "isStatic": true,
+          "tsSignatureId": "Birthdate|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108970
+          }
+        },
+        {
+          "tsName": "cHash",
+          "isStatic": true,
+          "tsSignatureId": "CHash|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108971
+          }
+        },
+        {
+          "tsName": "atHash",
+          "isStatic": true,
+          "tsSignatureId": "AtHash|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108972
+          }
+        },
+        {
+          "tsName": "email",
+          "isStatic": true,
+          "tsSignatureId": "Email|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108973
+          }
+        },
+        {
+          "tsName": "emailVerified",
+          "isStatic": true,
+          "tsSignatureId": "EmailVerified|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108974
+          }
+        },
+        {
+          "tsName": "exp",
+          "isStatic": true,
+          "tsSignatureId": "Exp|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108975
+          }
+        },
+        {
+          "tsName": "gender",
+          "isStatic": true,
+          "tsSignatureId": "Gender|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108976
+          }
+        },
+        {
+          "tsName": "familyName",
+          "isStatic": true,
+          "tsSignatureId": "FamilyName|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108977
+          }
+        },
+        {
+          "tsName": "givenName",
+          "isStatic": true,
+          "tsSignatureId": "GivenName|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108978
+          }
+        },
+        {
+          "tsName": "iat",
+          "isStatic": true,
+          "tsSignatureId": "Iat|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108979
+          }
+        },
+        {
+          "tsName": "iss",
+          "isStatic": true,
+          "tsSignatureId": "Iss|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108980
+          }
+        },
+        {
+          "tsName": "jti",
+          "isStatic": true,
+          "tsSignatureId": "Jti|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108981
+          }
+        },
+        {
+          "tsName": "locale",
+          "isStatic": true,
+          "tsSignatureId": "Locale|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108982
+          }
+        },
+        {
+          "tsName": "middleName",
+          "isStatic": true,
+          "tsSignatureId": "MiddleName|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108983
+          }
+        },
+        {
+          "tsName": "name",
+          "isStatic": true,
+          "tsSignatureId": "Name|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108984
+          }
+        },
+        {
+          "tsName": "nameId",
+          "isStatic": true,
+          "tsSignatureId": "NameId|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108985
+          }
+        },
+        {
+          "tsName": "nickname",
+          "isStatic": true,
+          "tsSignatureId": "Nickname|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108986
+          }
+        },
+        {
+          "tsName": "nonce",
+          "isStatic": true,
+          "tsSignatureId": "Nonce|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108987
+          }
+        },
+        {
+          "tsName": "nbf",
+          "isStatic": true,
+          "tsSignatureId": "Nbf|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108988
+          }
+        },
+        {
+          "tsName": "phoneNumber",
+          "isStatic": true,
+          "tsSignatureId": "PhoneNumber|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108989
+          }
+        },
+        {
+          "tsName": "phoneNumberVerified",
+          "isStatic": true,
+          "tsSignatureId": "PhoneNumberVerified|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108990
+          }
+        },
+        {
+          "tsName": "picture",
+          "isStatic": true,
+          "tsSignatureId": "Picture|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108991
+          }
+        },
+        {
+          "tsName": "prn",
+          "isStatic": true,
+          "tsSignatureId": "Prn|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108992
+          }
+        },
+        {
+          "tsName": "preferredUsername",
+          "isStatic": true,
+          "tsSignatureId": "PreferredUsername|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108993
+          }
+        },
+        {
+          "tsName": "profile",
+          "isStatic": true,
+          "tsSignatureId": "Profile|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108994
+          }
+        },
+        {
+          "tsName": "sid",
+          "isStatic": true,
+          "tsSignatureId": "Sid|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108995
+          }
+        },
+        {
+          "tsName": "sub",
+          "isStatic": true,
+          "tsSignatureId": "Sub|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108996
+          }
+        },
+        {
+          "tsName": "typ",
+          "isStatic": true,
+          "tsSignatureId": "Typ|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108997
+          }
+        },
+        {
+          "tsName": "uniqueName",
+          "isStatic": true,
+          "tsSignatureId": "UniqueName|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108998
+          }
+        },
+        {
+          "tsName": "updatedAt",
+          "isStatic": true,
+          "tsSignatureId": "UpdatedAt|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108999
+          }
+        },
+        {
+          "tsName": "website",
+          "isStatic": true,
+          "tsSignatureId": "Website|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67109000
+          }
+        },
+        {
+          "tsName": "zoneInfo",
+          "isStatic": true,
+          "tsSignatureId": "ZoneInfo|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67109001
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+      "clrName": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+      "tsEmitName": "JsonWebToken",
+      "assemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken::ToString():System.String",
+          "clrName": "ToString",
+          "tsEmitName": "toString",
+          "metadataToken": 100663357,
+          "canonicalSignature": "():System.String",
+          "normalizedSignature": "ToString|():System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken::UnsafeToString():System.String",
+          "clrName": "UnsafeToString",
+          "tsEmitName": "unsafeToString",
+          "metadataToken": 100663358,
+          "canonicalSignature": "():System.String",
+          "normalizedSignature": "UnsafeToString|():System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken::GetClaim(System.String):System.Security.Claims.Claim",
+          "clrName": "GetClaim",
+          "tsEmitName": "getClaim",
+          "metadataToken": 100663360,
+          "canonicalSignature": "(System.String):System.Security.Claims.Claim",
+          "normalizedSignature": "GetClaim|(System.String):System.Security.Claims.Claim|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken::TryGetClaim(System.String,System.Security.Claims.Claim\u0026):System.Boolean",
+          "clrName": "TryGetClaim",
+          "tsEmitName": "tryGetClaim",
+          "metadataToken": 100663364,
+          "canonicalSignature": "(System.String,System.Security.Claims.Claim\u0026):System.Boolean",
+          "normalizedSignature": "TryGetClaim|(System.String,System.Security.Claims.Claim\u0026):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+          "isExtensionMethod": false,
+          "parameterModifiers": [
+            {
+              "index": 1,
+              "modifier": "out"
+            }
+          ]
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken::GetHeaderValue(System.String):T",
+          "clrName": "GetHeaderValue",
+          "tsEmitName": "getHeaderValue",
+          "metadataToken": 100663366,
+          "canonicalSignature": "(System.String):T",
+          "normalizedSignature": "GetHeaderValue|(System.String):T|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 1,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken::GetPayloadValue(System.String):T",
+          "clrName": "GetPayloadValue",
+          "tsEmitName": "getPayloadValue",
+          "metadataToken": 100663367,
+          "canonicalSignature": "(System.String):T",
+          "normalizedSignature": "GetPayloadValue|(System.String):T|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 1,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken::TryGetValue(System.String,T\u0026):System.Boolean",
+          "clrName": "TryGetValue",
+          "tsEmitName": "tryGetValue",
+          "metadataToken": 100663368,
+          "canonicalSignature": "(System.String,T\u0026):System.Boolean",
+          "normalizedSignature": "TryGetValue|(System.String,T\u0026):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 1,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+          "isExtensionMethod": false,
+          "parameterModifiers": [
+            {
+              "index": 1,
+              "modifier": "out"
+            }
+          ]
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken::TryGetHeaderValue(System.String,T\u0026):System.Boolean",
+          "clrName": "TryGetHeaderValue",
+          "tsEmitName": "tryGetHeaderValue",
+          "metadataToken": 100663369,
+          "canonicalSignature": "(System.String,T\u0026):System.Boolean",
+          "normalizedSignature": "TryGetHeaderValue|(System.String,T\u0026):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 1,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+          "isExtensionMethod": false,
+          "parameterModifiers": [
+            {
+              "index": 1,
+              "modifier": "out"
+            }
+          ]
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken::TryGetPayloadValue(System.String,T\u0026):System.Boolean",
+          "clrName": "TryGetPayloadValue",
+          "tsEmitName": "tryGetPayloadValue",
+          "metadataToken": 100663370,
+          "canonicalSignature": "(System.String,T\u0026):System.Boolean",
+          "normalizedSignature": "TryGetPayloadValue|(System.String,T\u0026):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 1,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+          "isExtensionMethod": false,
+          "parameterModifiers": [
+            {
+              "index": 1,
+              "modifier": "out"
+            }
+          ]
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.ISafeLogSecurityArtifact::UnsafeToString():System.String",
+          "clrName": "UnsafeToString",
+          "tsEmitName": "unsafeToString$view",
+          "metadataToken": 100663332,
+          "canonicalSignature": "():System.String",
+          "normalizedSignature": "UnsafeToString|():System.String|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.IdentityModel.Logging.ISafeLogSecurityArtifact",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken::AuthenticationTag:System.String",
+          "clrName": "AuthenticationTag",
+          "tsEmitName": "authenticationTag",
+          "metadataToken": 385875974,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "AuthenticationTag|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken::Ciphertext:System.String",
+          "clrName": "Ciphertext",
+          "tsEmitName": "ciphertext",
+          "metadataToken": 385875976,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Ciphertext|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken::EncodedHeader:System.String",
+          "clrName": "EncodedHeader",
+          "tsEmitName": "encodedHeader",
+          "metadataToken": 385875982,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "EncodedHeader|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken::EncryptedKey:System.String",
+          "clrName": "EncryptedKey",
+          "tsEmitName": "encryptedKey",
+          "metadataToken": 385875983,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "EncryptedKey|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken::EncodedPayload:System.String",
+          "clrName": "EncodedPayload",
+          "tsEmitName": "encodedPayload",
+          "metadataToken": 385875985,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "EncodedPayload|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken::EncodedSignature:System.String",
+          "clrName": "EncodedSignature",
+          "tsEmitName": "encodedSignature",
+          "metadataToken": 385875986,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "EncodedSignature|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken::EncodedToken:System.String",
+          "clrName": "EncodedToken",
+          "tsEmitName": "encodedToken",
+          "metadataToken": 385875987,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "EncodedToken|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken::InitializationVector:System.String",
+          "clrName": "InitializationVector",
+          "tsEmitName": "initializationVector",
+          "metadataToken": 385875991,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "InitializationVector|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken::InnerToken:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+          "clrName": "InnerToken",
+          "tsEmitName": "innerToken",
+          "metadataToken": 385875992,
+          "canonicalSignature": ":Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+          "normalizedSignature": "InnerToken|:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken::IsEncrypted:System.Boolean",
+          "clrName": "IsEncrypted",
+          "tsEmitName": "isEncrypted",
+          "metadataToken": 385875993,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "IsEncrypted|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken::IsSigned:System.Boolean",
+          "clrName": "IsSigned",
+          "tsEmitName": "isSigned",
+          "metadataToken": 385875994,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "IsSigned|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken::SecurityKey:Microsoft.IdentityModel.Tokens.SecurityKey",
+          "clrName": "SecurityKey",
+          "tsEmitName": "securityKey",
+          "metadataToken": 385875996,
+          "canonicalSignature": ":Microsoft.IdentityModel.Tokens.SecurityKey",
+          "normalizedSignature": "SecurityKey|:Microsoft.IdentityModel.Tokens.SecurityKey|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken::SigningKey:Microsoft.IdentityModel.Tokens.SecurityKey",
+          "clrName": "SigningKey",
+          "tsEmitName": "signingKey",
+          "metadataToken": 385875997,
+          "canonicalSignature": ":Microsoft.IdentityModel.Tokens.SecurityKey",
+          "normalizedSignature": "SigningKey|:Microsoft.IdentityModel.Tokens.SecurityKey|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken::Claims:System.Collections.Generic.IEnumerable_1[[System.Security.Claims.Claim,System.Security.Claims,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]",
+          "clrName": "Claims",
+          "tsEmitName": "claims",
+          "metadataToken": 385876000,
+          "canonicalSignature": ":System.Collections.Generic.IEnumerable_1[[System.Security.Claims.Claim,System.Security.Claims,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]",
+          "normalizedSignature": "Claims|:System.Collections.Generic.IEnumerable_1[[System.Security.Claims.Claim,System.Security.Claims,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken::Alg:System.String",
+          "clrName": "Alg",
+          "tsEmitName": "alg",
+          "metadataToken": 385876003,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Alg|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken::Cty:System.String",
+          "clrName": "Cty",
+          "tsEmitName": "cty",
+          "metadataToken": 385876004,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Cty|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken::Enc:System.String",
+          "clrName": "Enc",
+          "tsEmitName": "enc",
+          "metadataToken": 385876005,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Enc|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken::Kid:System.String",
+          "clrName": "Kid",
+          "tsEmitName": "kid",
+          "metadataToken": 385876006,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Kid|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken::Typ:System.String",
+          "clrName": "Typ",
+          "tsEmitName": "typ",
+          "metadataToken": 385876007,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Typ|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken::X5t:System.String",
+          "clrName": "X5t",
+          "tsEmitName": "x5t",
+          "metadataToken": 385876008,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "X5t|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken::Zip:System.String",
+          "clrName": "Zip",
+          "tsEmitName": "zip",
+          "metadataToken": 385876009,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Zip|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken::Actor:System.String",
+          "clrName": "Actor",
+          "tsEmitName": "actor",
+          "metadataToken": 385876010,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Actor|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken::Audiences:System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "Audiences",
+          "tsEmitName": "audiences",
+          "metadataToken": 385876011,
+          "canonicalSignature": ":System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "Audiences|:System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken::Azp:System.String",
+          "clrName": "Azp",
+          "tsEmitName": "azp",
+          "metadataToken": 385876012,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Azp|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken::IssuedAt:System.DateTime",
+          "clrName": "IssuedAt",
+          "tsEmitName": "issuedAt",
+          "metadataToken": 385876013,
+          "canonicalSignature": ":System.DateTime",
+          "normalizedSignature": "IssuedAt|:System.DateTime|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken::Issuer:System.String",
+          "clrName": "Issuer",
+          "tsEmitName": "issuer",
+          "metadataToken": 385876014,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Issuer|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken::Id:System.String",
+          "clrName": "Id",
+          "tsEmitName": "id",
+          "metadataToken": 385876015,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Id|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken::Subject:System.String",
+          "clrName": "Subject",
+          "tsEmitName": "subject",
+          "metadataToken": 385876016,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Subject|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken::ValidFrom:System.DateTime",
+          "clrName": "ValidFrom",
+          "tsEmitName": "validFrom",
+          "metadataToken": 385876017,
+          "canonicalSignature": ":System.DateTime",
+          "normalizedSignature": "ValidFrom|:System.DateTime|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken::ValidTo:System.DateTime",
+          "clrName": "ValidTo",
+          "tsEmitName": "validTo",
+          "metadataToken": 385876019,
+          "canonicalSignature": ":System.DateTime",
+          "normalizedSignature": "ValidTo|:System.DateTime|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken::.ctor(System.String):void",
+          "metadataToken": 100663306,
+          "canonicalSignature": "(System.String):void",
+          "normalizedSignature": "constructor|(System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken::.ctor(System.ReadOnlyMemory_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
+          "metadataToken": 100663307,
+          "canonicalSignature": "(System.ReadOnlyMemory_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
+          "normalizedSignature": "constructor|(System.ReadOnlyMemory_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken::.ctor(System.String,System.String):void",
+          "metadataToken": 100663308,
+          "canonicalSignature": "(System.String,System.String):void",
+          "normalizedSignature": "constructor|(System.String,System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "toString",
+          "isStatic": false,
+          "tsSignatureId": "ToString|():System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 100663357
+          }
+        },
+        {
+          "tsName": "unsafeToString",
+          "isStatic": false,
+          "tsSignatureId": "UnsafeToString|():System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 100663358
+          }
+        },
+        {
+          "tsName": "getClaim",
+          "isStatic": false,
+          "tsSignatureId": "GetClaim|(System.String):System.Security.Claims.Claim|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 100663360
+          }
+        },
+        {
+          "tsName": "tryGetClaim",
+          "isStatic": false,
+          "tsSignatureId": "TryGetClaim|(System.String,System.Security.Claims.Claim\u0026):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 100663364
+          }
+        },
+        {
+          "tsName": "getHeaderValue",
+          "isStatic": false,
+          "tsSignatureId": "GetHeaderValue|(System.String):T|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 100663366
+          }
+        },
+        {
+          "tsName": "getPayloadValue",
+          "isStatic": false,
+          "tsSignatureId": "GetPayloadValue|(System.String):T|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 100663367
+          }
+        },
+        {
+          "tsName": "tryGetValue",
+          "isStatic": false,
+          "tsSignatureId": "TryGetValue|(System.String,T\u0026):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 100663368
+          }
+        },
+        {
+          "tsName": "tryGetHeaderValue",
+          "isStatic": false,
+          "tsSignatureId": "TryGetHeaderValue|(System.String,T\u0026):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 100663369
+          }
+        },
+        {
+          "tsName": "tryGetPayloadValue",
+          "isStatic": false,
+          "tsSignatureId": "TryGetPayloadValue|(System.String,T\u0026):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 100663370
+          }
+        },
+        {
+          "tsName": "unsafeToString$view",
+          "isStatic": false,
+          "tsSignatureId": "UnsafeToString|():System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Logging.ISafeLogSecurityArtifact",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
+            "metadataToken": 100663332
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "authenticationTag",
+          "isStatic": false,
+          "tsSignatureId": "AuthenticationTag|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 385875974
+          }
+        },
+        {
+          "tsName": "ciphertext",
+          "isStatic": false,
+          "tsSignatureId": "Ciphertext|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 385875976
+          }
+        },
+        {
+          "tsName": "encodedHeader",
+          "isStatic": false,
+          "tsSignatureId": "EncodedHeader|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 385875982
+          }
+        },
+        {
+          "tsName": "encryptedKey",
+          "isStatic": false,
+          "tsSignatureId": "EncryptedKey|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 385875983
+          }
+        },
+        {
+          "tsName": "encodedPayload",
+          "isStatic": false,
+          "tsSignatureId": "EncodedPayload|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 385875985
+          }
+        },
+        {
+          "tsName": "encodedSignature",
+          "isStatic": false,
+          "tsSignatureId": "EncodedSignature|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 385875986
+          }
+        },
+        {
+          "tsName": "encodedToken",
+          "isStatic": false,
+          "tsSignatureId": "EncodedToken|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 385875987
+          }
+        },
+        {
+          "tsName": "initializationVector",
+          "isStatic": false,
+          "tsSignatureId": "InitializationVector|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 385875991
+          }
+        },
+        {
+          "tsName": "innerToken",
+          "isStatic": false,
+          "tsSignatureId": "InnerToken|:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 385875992
+          }
+        },
+        {
+          "tsName": "isEncrypted",
+          "isStatic": false,
+          "tsSignatureId": "IsEncrypted|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 385875993
+          }
+        },
+        {
+          "tsName": "isSigned",
+          "isStatic": false,
+          "tsSignatureId": "IsSigned|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 385875994
+          }
+        },
+        {
+          "tsName": "securityKey",
+          "isStatic": false,
+          "tsSignatureId": "SecurityKey|:Microsoft.IdentityModel.Tokens.SecurityKey|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 385875996
+          }
+        },
+        {
+          "tsName": "signingKey",
+          "isStatic": false,
+          "tsSignatureId": "SigningKey|:Microsoft.IdentityModel.Tokens.SecurityKey|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 385875997
+          }
+        },
+        {
+          "tsName": "claims",
+          "isStatic": false,
+          "tsSignatureId": "Claims|:System.Collections.Generic.IEnumerable_1[[System.Security.Claims.Claim,System.Security.Claims,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 385876000
+          }
+        },
+        {
+          "tsName": "alg",
+          "isStatic": false,
+          "tsSignatureId": "Alg|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 385876003
+          }
+        },
+        {
+          "tsName": "cty",
+          "isStatic": false,
+          "tsSignatureId": "Cty|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 385876004
+          }
+        },
+        {
+          "tsName": "enc",
+          "isStatic": false,
+          "tsSignatureId": "Enc|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 385876005
+          }
+        },
+        {
+          "tsName": "kid",
+          "isStatic": false,
+          "tsSignatureId": "Kid|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 385876006
+          }
+        },
+        {
+          "tsName": "typ",
+          "isStatic": false,
+          "tsSignatureId": "Typ|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 385876007
+          }
+        },
+        {
+          "tsName": "x5t",
+          "isStatic": false,
+          "tsSignatureId": "X5t|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 385876008
+          }
+        },
+        {
+          "tsName": "zip",
+          "isStatic": false,
+          "tsSignatureId": "Zip|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 385876009
+          }
+        },
+        {
+          "tsName": "actor",
+          "isStatic": false,
+          "tsSignatureId": "Actor|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 385876010
+          }
+        },
+        {
+          "tsName": "audiences",
+          "isStatic": false,
+          "tsSignatureId": "Audiences|:System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 385876011
+          }
+        },
+        {
+          "tsName": "azp",
+          "isStatic": false,
+          "tsSignatureId": "Azp|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 385876012
+          }
+        },
+        {
+          "tsName": "issuedAt",
+          "isStatic": false,
+          "tsSignatureId": "IssuedAt|:System.DateTime|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 385876013
+          }
+        },
+        {
+          "tsName": "issuer",
+          "isStatic": false,
+          "tsSignatureId": "Issuer|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 385876014
+          }
+        },
+        {
+          "tsName": "id",
+          "isStatic": false,
+          "tsSignatureId": "Id|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 385876015
+          }
+        },
+        {
+          "tsName": "subject",
+          "isStatic": false,
+          "tsSignatureId": "Subject|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 385876016
+          }
+        },
+        {
+          "tsName": "validFrom",
+          "isStatic": false,
+          "tsSignatureId": "ValidFrom|:System.DateTime|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 385876017
+          }
+        },
+        {
+          "tsName": "validTo",
+          "isStatic": false,
+          "tsSignatureId": "ValidTo|:System.DateTime|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 385876019
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 100663306
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.ReadOnlyMemory_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 100663307
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.String):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 100663308
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+      "clrName": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+      "tsEmitName": "JsonWebTokenHandler",
+      "assemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler::CreateToken(System.String):System.String",
+          "clrName": "CreateToken",
+          "tsEmitName": "createToken",
+          "metadataToken": 100663396,
+          "canonicalSignature": "(System.String):System.String",
+          "normalizedSignature": "CreateToken|(System.String):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler::CreateToken(System.String,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.String",
+          "clrName": "CreateToken",
+          "tsEmitName": "createToken",
+          "metadataToken": 100663397,
+          "canonicalSignature": "(System.String,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.String",
+          "normalizedSignature": "CreateToken|(System.String,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler::CreateToken(System.String,Microsoft.IdentityModel.Tokens.SigningCredentials):System.String",
+          "clrName": "CreateToken",
+          "tsEmitName": "createToken",
+          "metadataToken": 100663398,
+          "canonicalSignature": "(System.String,Microsoft.IdentityModel.Tokens.SigningCredentials):System.String",
+          "normalizedSignature": "CreateToken|(System.String,Microsoft.IdentityModel.Tokens.SigningCredentials):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler::CreateToken(System.String,Microsoft.IdentityModel.Tokens.SigningCredentials,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.String",
+          "clrName": "CreateToken",
+          "tsEmitName": "createToken",
+          "metadataToken": 100663399,
+          "canonicalSignature": "(System.String,Microsoft.IdentityModel.Tokens.SigningCredentials,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.String",
+          "normalizedSignature": "CreateToken|(System.String,Microsoft.IdentityModel.Tokens.SigningCredentials,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler::CreateToken(Microsoft.IdentityModel.Tokens.SecurityTokenDescriptor):System.String",
+          "clrName": "CreateToken",
+          "tsEmitName": "createToken",
+          "metadataToken": 100663400,
+          "canonicalSignature": "(Microsoft.IdentityModel.Tokens.SecurityTokenDescriptor):System.String",
+          "normalizedSignature": "CreateToken|(Microsoft.IdentityModel.Tokens.SecurityTokenDescriptor):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler::CreateToken(System.String,Microsoft.IdentityModel.Tokens.EncryptingCredentials):System.String",
+          "clrName": "CreateToken",
+          "tsEmitName": "createToken",
+          "metadataToken": 100663402,
+          "canonicalSignature": "(System.String,Microsoft.IdentityModel.Tokens.EncryptingCredentials):System.String",
+          "normalizedSignature": "CreateToken|(System.String,Microsoft.IdentityModel.Tokens.EncryptingCredentials):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler::CreateToken(System.String,Microsoft.IdentityModel.Tokens.EncryptingCredentials,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.String",
+          "clrName": "CreateToken",
+          "tsEmitName": "createToken",
+          "metadataToken": 100663403,
+          "canonicalSignature": "(System.String,Microsoft.IdentityModel.Tokens.EncryptingCredentials,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.String",
+          "normalizedSignature": "CreateToken|(System.String,Microsoft.IdentityModel.Tokens.EncryptingCredentials,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler::CreateToken(System.String,Microsoft.IdentityModel.Tokens.SigningCredentials,Microsoft.IdentityModel.Tokens.EncryptingCredentials):System.String",
+          "clrName": "CreateToken",
+          "tsEmitName": "createToken",
+          "metadataToken": 100663404,
+          "canonicalSignature": "(System.String,Microsoft.IdentityModel.Tokens.SigningCredentials,Microsoft.IdentityModel.Tokens.EncryptingCredentials):System.String",
+          "normalizedSignature": "CreateToken|(System.String,Microsoft.IdentityModel.Tokens.SigningCredentials,Microsoft.IdentityModel.Tokens.EncryptingCredentials):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler::CreateToken(System.String,Microsoft.IdentityModel.Tokens.SigningCredentials,Microsoft.IdentityModel.Tokens.EncryptingCredentials,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.String",
+          "clrName": "CreateToken",
+          "tsEmitName": "createToken",
+          "metadataToken": 100663405,
+          "canonicalSignature": "(System.String,Microsoft.IdentityModel.Tokens.SigningCredentials,Microsoft.IdentityModel.Tokens.EncryptingCredentials,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.String",
+          "normalizedSignature": "CreateToken|(System.String,Microsoft.IdentityModel.Tokens.SigningCredentials,Microsoft.IdentityModel.Tokens.EncryptingCredentials,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 4,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler::CreateToken(System.String,Microsoft.IdentityModel.Tokens.EncryptingCredentials,System.String):System.String",
+          "clrName": "CreateToken",
+          "tsEmitName": "createToken",
+          "metadataToken": 100663406,
+          "canonicalSignature": "(System.String,Microsoft.IdentityModel.Tokens.EncryptingCredentials,System.String):System.String",
+          "normalizedSignature": "CreateToken|(System.String,Microsoft.IdentityModel.Tokens.EncryptingCredentials,System.String):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler::CreateToken(System.String,Microsoft.IdentityModel.Tokens.SigningCredentials,Microsoft.IdentityModel.Tokens.EncryptingCredentials,System.String):System.String",
+          "clrName": "CreateToken",
+          "tsEmitName": "createToken",
+          "metadataToken": 100663407,
+          "canonicalSignature": "(System.String,Microsoft.IdentityModel.Tokens.SigningCredentials,Microsoft.IdentityModel.Tokens.EncryptingCredentials,System.String):System.String",
+          "normalizedSignature": "CreateToken|(System.String,Microsoft.IdentityModel.Tokens.SigningCredentials,Microsoft.IdentityModel.Tokens.EncryptingCredentials,System.String):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 4,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler::CreateToken(System.String,Microsoft.IdentityModel.Tokens.SigningCredentials,Microsoft.IdentityModel.Tokens.EncryptingCredentials,System.String,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.String",
+          "clrName": "CreateToken",
+          "tsEmitName": "createToken",
+          "metadataToken": 100663408,
+          "canonicalSignature": "(System.String,Microsoft.IdentityModel.Tokens.SigningCredentials,Microsoft.IdentityModel.Tokens.EncryptingCredentials,System.String,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.String",
+          "normalizedSignature": "CreateToken|(System.String,Microsoft.IdentityModel.Tokens.SigningCredentials,Microsoft.IdentityModel.Tokens.EncryptingCredentials,System.String,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 6,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler::CreateToken(System.String,Microsoft.IdentityModel.Tokens.SigningCredentials,Microsoft.IdentityModel.Tokens.EncryptingCredentials,System.String,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.String",
+          "clrName": "CreateToken",
+          "tsEmitName": "createToken",
+          "metadataToken": 100663409,
+          "canonicalSignature": "(System.String,Microsoft.IdentityModel.Tokens.SigningCredentials,Microsoft.IdentityModel.Tokens.EncryptingCredentials,System.String,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.String",
+          "normalizedSignature": "CreateToken|(System.String,Microsoft.IdentityModel.Tokens.SigningCredentials,Microsoft.IdentityModel.Tokens.EncryptingCredentials,System.String,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler::EncryptToken(System.String,Microsoft.IdentityModel.Tokens.EncryptingCredentials):System.String",
+          "clrName": "EncryptToken",
+          "tsEmitName": "encryptToken",
+          "metadataToken": 100663416,
+          "canonicalSignature": "(System.String,Microsoft.IdentityModel.Tokens.EncryptingCredentials):System.String",
+          "normalizedSignature": "EncryptToken|(System.String,Microsoft.IdentityModel.Tokens.EncryptingCredentials):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler::EncryptToken(System.String,Microsoft.IdentityModel.Tokens.EncryptingCredentials,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.String",
+          "clrName": "EncryptToken",
+          "tsEmitName": "encryptToken",
+          "metadataToken": 100663417,
+          "canonicalSignature": "(System.String,Microsoft.IdentityModel.Tokens.EncryptingCredentials,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.String",
+          "normalizedSignature": "EncryptToken|(System.String,Microsoft.IdentityModel.Tokens.EncryptingCredentials,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler::EncryptToken(System.String,Microsoft.IdentityModel.Tokens.EncryptingCredentials,System.String):System.String",
+          "clrName": "EncryptToken",
+          "tsEmitName": "encryptToken",
+          "metadataToken": 100663418,
+          "canonicalSignature": "(System.String,Microsoft.IdentityModel.Tokens.EncryptingCredentials,System.String):System.String",
+          "normalizedSignature": "EncryptToken|(System.String,Microsoft.IdentityModel.Tokens.EncryptingCredentials,System.String):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler::EncryptToken(System.String,Microsoft.IdentityModel.Tokens.EncryptingCredentials,System.String,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.String",
+          "clrName": "EncryptToken",
+          "tsEmitName": "encryptToken",
+          "metadataToken": 100663419,
+          "canonicalSignature": "(System.String,Microsoft.IdentityModel.Tokens.EncryptingCredentials,System.String,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.String",
+          "normalizedSignature": "EncryptToken|(System.String,Microsoft.IdentityModel.Tokens.EncryptingCredentials,System.String,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 4,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler::CanReadToken(System.String):System.Boolean",
+          "clrName": "CanReadToken",
+          "tsEmitName": "canReadToken",
+          "metadataToken": 100663431,
+          "canonicalSignature": "(System.String):System.Boolean",
+          "normalizedSignature": "CanReadToken|(System.String):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler::DecryptToken(Microsoft.IdentityModel.JsonWebTokens.JsonWebToken,Microsoft.IdentityModel.Tokens.TokenValidationParameters):System.String",
+          "clrName": "DecryptToken",
+          "tsEmitName": "decryptToken",
+          "metadataToken": 100663441,
+          "canonicalSignature": "(Microsoft.IdentityModel.JsonWebTokens.JsonWebToken,Microsoft.IdentityModel.Tokens.TokenValidationParameters):System.String",
+          "normalizedSignature": "DecryptToken|(Microsoft.IdentityModel.JsonWebTokens.JsonWebToken,Microsoft.IdentityModel.Tokens.TokenValidationParameters):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler::ReadJsonWebToken(System.String):Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+          "clrName": "ReadJsonWebToken",
+          "tsEmitName": "readJsonWebToken",
+          "metadataToken": 100663445,
+          "canonicalSignature": "(System.String):Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
+          "normalizedSignature": "ReadJsonWebToken|(System.String):Microsoft.IdentityModel.JsonWebTokens.JsonWebToken|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler::ReadToken(System.String):Microsoft.IdentityModel.Tokens.SecurityToken",
+          "clrName": "ReadToken",
+          "tsEmitName": "readToken",
+          "metadataToken": 100663446,
+          "canonicalSignature": "(System.String):Microsoft.IdentityModel.Tokens.SecurityToken",
+          "normalizedSignature": "ReadToken|(System.String):Microsoft.IdentityModel.Tokens.SecurityToken|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler::ValidateToken(System.String,Microsoft.IdentityModel.Tokens.TokenValidationParameters):Microsoft.IdentityModel.Tokens.TokenValidationResult",
+          "clrName": "ValidateToken",
+          "tsEmitName": "validateToken",
+          "metadataToken": 100663447,
+          "canonicalSignature": "(System.String,Microsoft.IdentityModel.Tokens.TokenValidationParameters):Microsoft.IdentityModel.Tokens.TokenValidationResult",
+          "normalizedSignature": "ValidateToken|(System.String,Microsoft.IdentityModel.Tokens.TokenValidationParameters):Microsoft.IdentityModel.Tokens.TokenValidationResult|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler::ValidateTokenAsync(System.String,Microsoft.IdentityModel.Tokens.TokenValidationParameters):System.Threading.Tasks.Task_1[[Microsoft.IdentityModel.Tokens.TokenValidationResult,Microsoft.IdentityModel.Tokens,Version=7.7.1.0,Culture=neutral,PublicKeyToken=31bf3856ad364e35]]",
+          "clrName": "ValidateTokenAsync",
+          "tsEmitName": "validateTokenAsync3",
+          "metadataToken": 100663448,
+          "canonicalSignature": "(System.String,Microsoft.IdentityModel.Tokens.TokenValidationParameters):System.Threading.Tasks.Task_1[[Microsoft.IdentityModel.Tokens.TokenValidationResult,Microsoft.IdentityModel.Tokens,Version=7.7.1.0,Culture=neutral,PublicKeyToken=31bf3856ad364e35]]",
+          "normalizedSignature": "ValidateTokenAsync|(System.String,Microsoft.IdentityModel.Tokens.TokenValidationParameters):System.Threading.Tasks.Task_1[[Microsoft.IdentityModel.Tokens.TokenValidationResult,Microsoft.IdentityModel.Tokens,Version=7.7.1.0,Culture=neutral,PublicKeyToken=31bf3856ad364e35]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler::ValidateTokenAsync(Microsoft.IdentityModel.Tokens.SecurityToken,Microsoft.IdentityModel.Tokens.TokenValidationParameters):System.Threading.Tasks.Task_1[[Microsoft.IdentityModel.Tokens.TokenValidationResult,Microsoft.IdentityModel.Tokens,Version=7.7.1.0,Culture=neutral,PublicKeyToken=31bf3856ad364e35]]",
+          "clrName": "ValidateTokenAsync",
+          "tsEmitName": "validateTokenAsync3",
+          "metadataToken": 100663449,
+          "canonicalSignature": "(Microsoft.IdentityModel.Tokens.SecurityToken,Microsoft.IdentityModel.Tokens.TokenValidationParameters):System.Threading.Tasks.Task_1[[Microsoft.IdentityModel.Tokens.TokenValidationResult,Microsoft.IdentityModel.Tokens,Version=7.7.1.0,Culture=neutral,PublicKeyToken=31bf3856ad364e35]]",
+          "normalizedSignature": "ValidateTokenAsync|(Microsoft.IdentityModel.Tokens.SecurityToken,Microsoft.IdentityModel.Tokens.TokenValidationParameters):System.Threading.Tasks.Task_1[[Microsoft.IdentityModel.Tokens.TokenValidationResult,Microsoft.IdentityModel.Tokens,Version=7.7.1.0,Culture=neutral,PublicKeyToken=31bf3856ad364e35]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler::ValidateTokenAsync(System.String,Microsoft.IdentityModel.Tokens.TokenValidationParameters):System.Threading.Tasks.Task_1",
+          "clrName": "ValidateTokenAsync",
+          "tsEmitName": "validateTokenAsync",
+          "metadataToken": 0,
+          "canonicalSignature": "(System.String,Microsoft.IdentityModel.Tokens.TokenValidationParameters):System.Threading.Tasks.Task_1",
+          "normalizedSignature": "ValidateTokenAsync|(System.String,Microsoft.IdentityModel.Tokens.TokenValidationParameters):System.Threading.Tasks.Task_1|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler::ValidateTokenAsync(Microsoft.IdentityModel.Tokens.SecurityToken,Microsoft.IdentityModel.Tokens.TokenValidationParameters):System.Threading.Tasks.Task_1",
+          "clrName": "ValidateTokenAsync",
+          "tsEmitName": "validateTokenAsync2",
+          "metadataToken": 0,
+          "canonicalSignature": "(Microsoft.IdentityModel.Tokens.SecurityToken,Microsoft.IdentityModel.Tokens.TokenValidationParameters):System.Threading.Tasks.Task_1",
+          "normalizedSignature": "ValidateTokenAsync|(Microsoft.IdentityModel.Tokens.SecurityToken,Microsoft.IdentityModel.Tokens.TokenValidationParameters):System.Threading.Tasks.Task_1|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler::TokenType:System.Type",
+          "clrName": "TokenType",
+          "tsEmitName": "tokenType",
+          "metadataToken": 385876021,
+          "canonicalSignature": ":System.Type",
+          "normalizedSignature": "TokenType|:System.Type|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler::ShortClaimTypeProperty:System.String",
+          "clrName": "ShortClaimTypeProperty",
+          "tsEmitName": "shortClaimTypeProperty",
+          "metadataToken": 385876022,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "ShortClaimTypeProperty|:System.String|static=true|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler::MapInboundClaims:System.Boolean",
+          "clrName": "MapInboundClaims",
+          "tsEmitName": "mapInboundClaims",
+          "metadataToken": 385876023,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "MapInboundClaims|:System.Boolean|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler::InboundClaimTypeMap:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "InboundClaimTypeMap",
+          "tsEmitName": "inboundClaimTypeMap",
+          "metadataToken": 385876024,
+          "canonicalSignature": ":System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "InboundClaimTypeMap|:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler::CanValidateToken:System.Boolean",
+          "clrName": "CanValidateToken",
+          "tsEmitName": "canValidateToken",
+          "metadataToken": 385876025,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "CanValidateToken|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        }
+      ],
+      "fields": [
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler::DefaultInboundClaimTypeMapSystem.Collections.Generic.IDictionary\u00602[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "DefaultInboundClaimTypeMap",
+          "tsEmitName": "defaultInboundClaimTypeMap",
+          "metadataToken": 67108931,
+          "normalizedSignature": "DefaultInboundClaimTypeMap|System.Collections.Generic.IDictionary\u00602[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler::DefaultMapInboundClaimsSystem.Boolean",
+          "clrName": "DefaultMapInboundClaims",
+          "tsEmitName": "defaultMapInboundClaims",
+          "metadataToken": 67108932,
+          "normalizedSignature": "DefaultMapInboundClaims|System.Boolean|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler::Base64UrlEncodedUnsignedJWSHeaderSystem.String",
+          "clrName": "Base64UrlEncodedUnsignedJWSHeader",
+          "tsEmitName": "base64UrlEncodedUnsignedJWSHeader",
+          "metadataToken": 67108933,
+          "normalizedSignature": "Base64UrlEncodedUnsignedJWSHeader|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        }
+      ],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler::.ctor():void",
+          "metadataToken": 100663423,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "createToken",
+          "isStatic": false,
+          "tsSignatureId": "CreateToken|(System.String):System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 100663396
+          }
+        },
+        {
+          "tsName": "createToken",
+          "isStatic": false,
+          "tsSignatureId": "CreateToken|(System.String,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 100663397
+          }
+        },
+        {
+          "tsName": "createToken",
+          "isStatic": false,
+          "tsSignatureId": "CreateToken|(System.String,Microsoft.IdentityModel.Tokens.SigningCredentials):System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 100663398
+          }
+        },
+        {
+          "tsName": "createToken",
+          "isStatic": false,
+          "tsSignatureId": "CreateToken|(System.String,Microsoft.IdentityModel.Tokens.SigningCredentials,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 100663399
+          }
+        },
+        {
+          "tsName": "createToken",
+          "isStatic": false,
+          "tsSignatureId": "CreateToken|(Microsoft.IdentityModel.Tokens.SecurityTokenDescriptor):System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 100663400
+          }
+        },
+        {
+          "tsName": "createToken",
+          "isStatic": false,
+          "tsSignatureId": "CreateToken|(System.String,Microsoft.IdentityModel.Tokens.EncryptingCredentials):System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 100663402
+          }
+        },
+        {
+          "tsName": "createToken",
+          "isStatic": false,
+          "tsSignatureId": "CreateToken|(System.String,Microsoft.IdentityModel.Tokens.EncryptingCredentials,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 100663403
+          }
+        },
+        {
+          "tsName": "createToken",
+          "isStatic": false,
+          "tsSignatureId": "CreateToken|(System.String,Microsoft.IdentityModel.Tokens.SigningCredentials,Microsoft.IdentityModel.Tokens.EncryptingCredentials):System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 100663404
+          }
+        },
+        {
+          "tsName": "createToken",
+          "isStatic": false,
+          "tsSignatureId": "CreateToken|(System.String,Microsoft.IdentityModel.Tokens.SigningCredentials,Microsoft.IdentityModel.Tokens.EncryptingCredentials,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 100663405
+          }
+        },
+        {
+          "tsName": "createToken",
+          "isStatic": false,
+          "tsSignatureId": "CreateToken|(System.String,Microsoft.IdentityModel.Tokens.EncryptingCredentials,System.String):System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 100663406
+          }
+        },
+        {
+          "tsName": "createToken",
+          "isStatic": false,
+          "tsSignatureId": "CreateToken|(System.String,Microsoft.IdentityModel.Tokens.SigningCredentials,Microsoft.IdentityModel.Tokens.EncryptingCredentials,System.String):System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 100663407
+          }
+        },
+        {
+          "tsName": "createToken",
+          "isStatic": false,
+          "tsSignatureId": "CreateToken|(System.String,Microsoft.IdentityModel.Tokens.SigningCredentials,Microsoft.IdentityModel.Tokens.EncryptingCredentials,System.String,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 100663408
+          }
+        },
+        {
+          "tsName": "createToken",
+          "isStatic": false,
+          "tsSignatureId": "CreateToken|(System.String,Microsoft.IdentityModel.Tokens.SigningCredentials,Microsoft.IdentityModel.Tokens.EncryptingCredentials,System.String,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 100663409
+          }
+        },
+        {
+          "tsName": "encryptToken",
+          "isStatic": false,
+          "tsSignatureId": "EncryptToken|(System.String,Microsoft.IdentityModel.Tokens.EncryptingCredentials):System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 100663416
+          }
+        },
+        {
+          "tsName": "encryptToken",
+          "isStatic": false,
+          "tsSignatureId": "EncryptToken|(System.String,Microsoft.IdentityModel.Tokens.EncryptingCredentials,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 100663417
+          }
+        },
+        {
+          "tsName": "encryptToken",
+          "isStatic": false,
+          "tsSignatureId": "EncryptToken|(System.String,Microsoft.IdentityModel.Tokens.EncryptingCredentials,System.String):System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 100663418
+          }
+        },
+        {
+          "tsName": "encryptToken",
+          "isStatic": false,
+          "tsSignatureId": "EncryptToken|(System.String,Microsoft.IdentityModel.Tokens.EncryptingCredentials,System.String,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 100663419
+          }
+        },
+        {
+          "tsName": "canReadToken",
+          "isStatic": false,
+          "tsSignatureId": "CanReadToken|(System.String):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 100663431
+          }
+        },
+        {
+          "tsName": "decryptToken",
+          "isStatic": false,
+          "tsSignatureId": "DecryptToken|(Microsoft.IdentityModel.JsonWebTokens.JsonWebToken,Microsoft.IdentityModel.Tokens.TokenValidationParameters):System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 100663441
+          }
+        },
+        {
+          "tsName": "readJsonWebToken",
+          "isStatic": false,
+          "tsSignatureId": "ReadJsonWebToken|(System.String):Microsoft.IdentityModel.JsonWebTokens.JsonWebToken|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 100663445
+          }
+        },
+        {
+          "tsName": "readToken",
+          "isStatic": false,
+          "tsSignatureId": "ReadToken|(System.String):Microsoft.IdentityModel.Tokens.SecurityToken|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 100663446
+          }
+        },
+        {
+          "tsName": "validateToken",
+          "isStatic": false,
+          "tsSignatureId": "ValidateToken|(System.String,Microsoft.IdentityModel.Tokens.TokenValidationParameters):Microsoft.IdentityModel.Tokens.TokenValidationResult|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 100663447
+          }
+        },
+        {
+          "tsName": "validateTokenAsync3",
+          "isStatic": false,
+          "tsSignatureId": "ValidateTokenAsync|(System.String,Microsoft.IdentityModel.Tokens.TokenValidationParameters):System.Threading.Tasks.Task_1[[Microsoft.IdentityModel.Tokens.TokenValidationResult,Microsoft.IdentityModel.Tokens,Version=7.7.1.0,Culture=neutral,PublicKeyToken=31bf3856ad364e35]]|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 100663448
+          }
+        },
+        {
+          "tsName": "validateTokenAsync3",
+          "isStatic": false,
+          "tsSignatureId": "ValidateTokenAsync|(Microsoft.IdentityModel.Tokens.SecurityToken,Microsoft.IdentityModel.Tokens.TokenValidationParameters):System.Threading.Tasks.Task_1[[Microsoft.IdentityModel.Tokens.TokenValidationResult,Microsoft.IdentityModel.Tokens,Version=7.7.1.0,Culture=neutral,PublicKeyToken=31bf3856ad364e35]]|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 100663449
+          }
+        },
+        {
+          "tsName": "validateTokenAsync",
+          "isStatic": false,
+          "tsSignatureId": "ValidateTokenAsync|(System.String,Microsoft.IdentityModel.Tokens.TokenValidationParameters):System.Threading.Tasks.Task_1|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 0
+          }
+        },
+        {
+          "tsName": "validateTokenAsync2",
+          "isStatic": false,
+          "tsSignatureId": "ValidateTokenAsync|(Microsoft.IdentityModel.Tokens.SecurityToken,Microsoft.IdentityModel.Tokens.TokenValidationParameters):System.Threading.Tasks.Task_1|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 0
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "tokenType",
+          "isStatic": false,
+          "tsSignatureId": "TokenType|:System.Type|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 385876021
+          }
+        },
+        {
+          "tsName": "shortClaimTypeProperty",
+          "isStatic": true,
+          "tsSignatureId": "ShortClaimTypeProperty|:System.String|static=true|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 385876022
+          }
+        },
+        {
+          "tsName": "mapInboundClaims",
+          "isStatic": false,
+          "tsSignatureId": "MapInboundClaims|:System.Boolean|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 385876023
+          }
+        },
+        {
+          "tsName": "inboundClaimTypeMap",
+          "isStatic": false,
+          "tsSignatureId": "InboundClaimTypeMap|:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 385876024
+          }
+        },
+        {
+          "tsName": "canValidateToken",
+          "isStatic": false,
+          "tsSignatureId": "CanValidateToken|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 385876025
+          }
+        },
+        {
+          "tsName": "maximumTokenSizeInBytes",
+          "isStatic": false,
+          "tsSignatureId": "MaximumTokenSizeInBytes|:System.Int32|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Tokens.TokenHandler",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Tokens",
+            "metadataToken": 385876169
+          }
+        },
+        {
+          "tsName": "setDefaultTimesOnTokenCreation",
+          "isStatic": false,
+          "tsSignatureId": "SetDefaultTimesOnTokenCreation|:System.Boolean|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Tokens.TokenHandler",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Tokens",
+            "metadataToken": 385876170
+          }
+        },
+        {
+          "tsName": "tokenLifetimeInMinutes",
+          "isStatic": false,
+          "tsSignatureId": "TokenLifetimeInMinutes|:System.Int32|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Tokens.TokenHandler",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Tokens",
+            "metadataToken": 385876171
+          }
+        }
+      ],
+      "exposedFields": [
+        {
+          "tsName": "defaultInboundClaimTypeMap",
+          "isStatic": true,
+          "tsSignatureId": "DefaultInboundClaimTypeMap|System.Collections.Generic.IDictionary\u00602[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]|static=true|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108931
+          }
+        },
+        {
+          "tsName": "defaultMapInboundClaims",
+          "isStatic": true,
+          "tsSignatureId": "DefaultMapInboundClaims|System.Boolean|static=true|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108932
+          }
+        },
+        {
+          "tsName": "base64UrlEncodedUnsignedJWSHeader",
+          "isStatic": true,
+          "tsSignatureId": "Base64UrlEncodedUnsignedJWSHeader|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108933
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 100663423
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities",
+      "clrName": "Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities",
+      "tsEmitName": "JwtTokenUtilities",
+      "assemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities::CreateEncodedSignature(System.String,Microsoft.IdentityModel.Tokens.SigningCredentials):System.String",
+          "clrName": "CreateEncodedSignature",
+          "tsEmitName": "createEncodedSignature",
+          "metadataToken": 100663554,
+          "canonicalSignature": "(System.String,Microsoft.IdentityModel.Tokens.SigningCredentials):System.String",
+          "normalizedSignature": "CreateEncodedSignature|(System.String,Microsoft.IdentityModel.Tokens.SigningCredentials):System.String|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities::CreateEncodedSignature(System.String,Microsoft.IdentityModel.Tokens.SigningCredentials,System.Boolean):System.String",
+          "clrName": "CreateEncodedSignature",
+          "tsEmitName": "createEncodedSignature",
+          "metadataToken": 100663555,
+          "canonicalSignature": "(System.String,Microsoft.IdentityModel.Tokens.SigningCredentials,System.Boolean):System.String",
+          "normalizedSignature": "CreateEncodedSignature|(System.String,Microsoft.IdentityModel.Tokens.SigningCredentials,System.Boolean):System.String|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities::GenerateKeyBytes(System.Int32):System.Byte[]",
+          "clrName": "GenerateKeyBytes",
+          "tsEmitName": "generateKeyBytes",
+          "metadataToken": 100663562,
+          "canonicalSignature": "(System.Int32):System.Byte[]",
+          "normalizedSignature": "GenerateKeyBytes|(System.Int32):System.Byte[]|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities::GetAllDecryptionKeys(Microsoft.IdentityModel.Tokens.TokenValidationParameters):System.Collections.Generic.IEnumerable_1[[Microsoft.IdentityModel.Tokens.SecurityKey,Microsoft.IdentityModel.Tokens,Version=7.7.1.0,Culture=neutral,PublicKeyToken=31bf3856ad364e35]]",
+          "clrName": "GetAllDecryptionKeys",
+          "tsEmitName": "getAllDecryptionKeys",
+          "metadataToken": 100663564,
+          "canonicalSignature": "(Microsoft.IdentityModel.Tokens.TokenValidationParameters):System.Collections.Generic.IEnumerable_1[[Microsoft.IdentityModel.Tokens.SecurityKey,Microsoft.IdentityModel.Tokens,Version=7.7.1.0,Culture=neutral,PublicKeyToken=31bf3856ad364e35]]",
+          "normalizedSignature": "GetAllDecryptionKeys|(Microsoft.IdentityModel.Tokens.TokenValidationParameters):System.Collections.Generic.IEnumerable_1[[Microsoft.IdentityModel.Tokens.SecurityKey,Microsoft.IdentityModel.Tokens,Version=7.7.1.0,Culture=neutral,PublicKeyToken=31bf3856ad364e35]]|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities::RegexJwsSystem.Text.RegularExpressions.Regex",
+          "clrName": "RegexJws",
+          "tsEmitName": "regexJws",
+          "metadataToken": 67109019,
+          "normalizedSignature": "RegexJws|System.Text.RegularExpressions.Regex|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities::RegexJweSystem.Text.RegularExpressions.Regex",
+          "clrName": "RegexJwe",
+          "tsEmitName": "regexJwe",
+          "metadataToken": 67109020,
+          "normalizedSignature": "RegexJwe|System.Text.RegularExpressions.Regex|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        }
+      ],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities::.ctor():void",
+          "metadataToken": 100663572,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "createEncodedSignature",
+          "isStatic": true,
+          "tsSignatureId": "CreateEncodedSignature|(System.String,Microsoft.IdentityModel.Tokens.SigningCredentials):System.String|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 100663554
+          }
+        },
+        {
+          "tsName": "createEncodedSignature",
+          "isStatic": true,
+          "tsSignatureId": "CreateEncodedSignature|(System.String,Microsoft.IdentityModel.Tokens.SigningCredentials,System.Boolean):System.String|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 100663555
+          }
+        },
+        {
+          "tsName": "generateKeyBytes",
+          "isStatic": true,
+          "tsSignatureId": "GenerateKeyBytes|(System.Int32):System.Byte[]|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 100663562
+          }
+        },
+        {
+          "tsName": "getAllDecryptionKeys",
+          "isStatic": true,
+          "tsSignatureId": "GetAllDecryptionKeys|(Microsoft.IdentityModel.Tokens.TokenValidationParameters):System.Collections.Generic.IEnumerable_1[[Microsoft.IdentityModel.Tokens.SecurityKey,Microsoft.IdentityModel.Tokens,Version=7.7.1.0,Culture=neutral,PublicKeyToken=31bf3856ad364e35]]|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 100663564
+          }
+        }
+      ],
+      "exposedFields": [
+        {
+          "tsName": "regexJws",
+          "isStatic": true,
+          "tsSignatureId": "RegexJws|System.Text.RegularExpressions.Regex|static=true|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67109019
+          }
+        },
+        {
+          "tsName": "regexJwe",
+          "isStatic": true,
+          "tsSignatureId": "RegexJwe|System.Text.RegularExpressions.Regex|static=true|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67109020
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 100663572
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonClaimValueTypes",
+      "clrName": "Microsoft.IdentityModel.JsonWebTokens.JsonClaimValueTypes",
+      "tsEmitName": "JsonClaimValueTypes",
+      "assemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonClaimValueTypes::JsonSystem.String",
+          "clrName": "Json",
+          "tsEmitName": "json",
+          "metadataToken": 67108871,
+          "normalizedSignature": "Json|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonClaimValueTypes",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonClaimValueTypes::JsonArraySystem.String",
+          "clrName": "JsonArray",
+          "tsEmitName": "jsonArray",
+          "metadataToken": 67108872,
+          "normalizedSignature": "JsonArray|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonClaimValueTypes",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonClaimValueTypes::JsonNullSystem.String",
+          "clrName": "JsonNull",
+          "tsEmitName": "jsonNull",
+          "metadataToken": 67108873,
+          "normalizedSignature": "JsonNull|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonClaimValueTypes",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        }
+      ],
+      "events": [],
+      "constructors": [],
+      "exposedFields": [
+        {
+          "tsName": "json",
+          "isStatic": true,
+          "tsSignatureId": "Json|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonClaimValueTypes",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108871
+          }
+        },
+        {
+          "tsName": "jsonArray",
+          "isStatic": true,
+          "tsSignatureId": "JsonArray|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonClaimValueTypes",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108872
+          }
+        },
+        {
+          "tsName": "jsonNull",
+          "isStatic": true,
+          "tsSignatureId": "JsonNull|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonClaimValueTypes",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108873
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtConstants",
+      "clrName": "Microsoft.IdentityModel.JsonWebTokens.JwtConstants",
+      "tsEmitName": "JwtConstants",
+      "assemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtConstants::HeaderTypeSystem.String",
+          "clrName": "HeaderType",
+          "tsEmitName": "headerType",
+          "metadataToken": 67108938,
+          "normalizedSignature": "HeaderType|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtConstants",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtConstants::HeaderTypeAltSystem.String",
+          "clrName": "HeaderTypeAlt",
+          "tsEmitName": "headerTypeAlt",
+          "metadataToken": 67108939,
+          "normalizedSignature": "HeaderTypeAlt|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtConstants",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtConstants::TokenTypeSystem.String",
+          "clrName": "TokenType",
+          "tsEmitName": "tokenType",
+          "metadataToken": 67108940,
+          "normalizedSignature": "TokenType|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtConstants",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtConstants::TokenTypeAltSystem.String",
+          "clrName": "TokenTypeAlt",
+          "tsEmitName": "tokenTypeAlt",
+          "metadataToken": 67108941,
+          "normalizedSignature": "TokenTypeAlt|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtConstants",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtConstants::JsonCompactSerializationRegexSystem.String",
+          "clrName": "JsonCompactSerializationRegex",
+          "tsEmitName": "jsonCompactSerializationRegex",
+          "metadataToken": 67108942,
+          "normalizedSignature": "JsonCompactSerializationRegex|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtConstants",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtConstants::JweCompactSerializationRegexSystem.String",
+          "clrName": "JweCompactSerializationRegex",
+          "tsEmitName": "jweCompactSerializationRegex",
+          "metadataToken": 67108943,
+          "normalizedSignature": "JweCompactSerializationRegex|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtConstants",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtConstants::JweSegmentCountSystem.Int32",
+          "clrName": "JweSegmentCount",
+          "tsEmitName": "jweSegmentCount",
+          "metadataToken": 67108944,
+          "normalizedSignature": "JweSegmentCount|System.Int32|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtConstants",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtConstants::JwsSegmentCountSystem.Int32",
+          "clrName": "JwsSegmentCount",
+          "tsEmitName": "jwsSegmentCount",
+          "metadataToken": 67108945,
+          "normalizedSignature": "JwsSegmentCount|System.Int32|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtConstants",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtConstants::MaxJwtSegmentCountSystem.Int32",
+          "clrName": "MaxJwtSegmentCount",
+          "tsEmitName": "maxJwtSegmentCount",
+          "metadataToken": 67108946,
+          "normalizedSignature": "MaxJwtSegmentCount|System.Int32|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtConstants",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtConstants::DirectKeyUseAlgSystem.String",
+          "clrName": "DirectKeyUseAlg",
+          "tsEmitName": "directKeyUseAlg",
+          "metadataToken": 67108947,
+          "normalizedSignature": "DirectKeyUseAlg|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtConstants",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
+        }
+      ],
+      "events": [],
+      "constructors": [],
+      "exposedFields": [
+        {
+          "tsName": "headerType",
+          "isStatic": true,
+          "tsSignatureId": "HeaderType|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtConstants",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108938
+          }
+        },
+        {
+          "tsName": "headerTypeAlt",
+          "isStatic": true,
+          "tsSignatureId": "HeaderTypeAlt|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtConstants",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108939
+          }
+        },
+        {
+          "tsName": "tokenType",
+          "isStatic": true,
+          "tsSignatureId": "TokenType|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtConstants",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108940
+          }
+        },
+        {
+          "tsName": "tokenTypeAlt",
+          "isStatic": true,
+          "tsSignatureId": "TokenTypeAlt|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtConstants",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108941
+          }
+        },
+        {
+          "tsName": "jsonCompactSerializationRegex",
+          "isStatic": true,
+          "tsSignatureId": "JsonCompactSerializationRegex|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtConstants",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108942
+          }
+        },
+        {
+          "tsName": "jweCompactSerializationRegex",
+          "isStatic": true,
+          "tsSignatureId": "JweCompactSerializationRegex|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtConstants",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108943
+          }
+        },
+        {
+          "tsName": "jweSegmentCount",
+          "isStatic": true,
+          "tsSignatureId": "JweSegmentCount|System.Int32|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtConstants",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108944
+          }
+        },
+        {
+          "tsName": "jwsSegmentCount",
+          "isStatic": true,
+          "tsSignatureId": "JwsSegmentCount|System.Int32|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtConstants",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108945
+          }
+        },
+        {
+          "tsName": "maxJwtSegmentCount",
+          "isStatic": true,
+          "tsSignatureId": "MaxJwtSegmentCount|System.Int32|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtConstants",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108946
+          }
+        },
+        {
+          "tsName": "directKeyUseAlg",
+          "isStatic": true,
+          "tsSignatureId": "DirectKeyUseAlg|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtConstants",
+            "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+            "metadataToken": 67108947
+          }
+        }
+      ]
+    }
+  ]
+}

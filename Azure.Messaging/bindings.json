@@ -1,0 +1,515 @@
+{
+  "namespace": "Azure.Messaging",
+  "types": [
+    {
+      "stableId": "Azure.Core:Azure.Messaging.CloudEventDataFormat",
+      "clrName": "Azure.Messaging.CloudEventDataFormat",
+      "tsEmitName": "CloudEventDataFormat",
+      "assemblyName": "Azure.Core",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Azure.Core:Azure.Messaging.CloudEventDataFormat::value__System.Int32",
+          "clrName": "value__",
+          "tsEmitName": "value__",
+          "metadataToken": 67108959,
+          "normalizedSignature": "value__|System.Int32|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "declaringClrType": "Azure.Messaging.CloudEventDataFormat",
+          "declaringAssemblyName": "Azure.Core"
+        },
+        {
+          "stableId": "Azure.Core:Azure.Messaging.CloudEventDataFormat::BinaryAzure.Messaging.CloudEventDataFormat",
+          "clrName": "Binary",
+          "tsEmitName": "binary",
+          "metadataToken": 67108960,
+          "normalizedSignature": "Binary|Azure.Messaging.CloudEventDataFormat|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Azure.Messaging.CloudEventDataFormat",
+          "declaringAssemblyName": "Azure.Core"
+        },
+        {
+          "stableId": "Azure.Core:Azure.Messaging.CloudEventDataFormat::JsonAzure.Messaging.CloudEventDataFormat",
+          "clrName": "Json",
+          "tsEmitName": "json",
+          "metadataToken": 67108961,
+          "normalizedSignature": "Json|Azure.Messaging.CloudEventDataFormat|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Azure.Messaging.CloudEventDataFormat",
+          "declaringAssemblyName": "Azure.Core"
+        }
+      ],
+      "events": [],
+      "constructors": [],
+      "exposedFields": [
+        {
+          "tsName": "value__",
+          "isStatic": false,
+          "tsSignatureId": "value__|System.Int32|static=false|const=false",
+          "target": {
+            "declaringClrType": "Azure.Messaging.CloudEventDataFormat",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 67108959
+          }
+        },
+        {
+          "tsName": "binary",
+          "isStatic": true,
+          "tsSignatureId": "Binary|Azure.Messaging.CloudEventDataFormat|static=true|const=true",
+          "target": {
+            "declaringClrType": "Azure.Messaging.CloudEventDataFormat",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 67108960
+          }
+        },
+        {
+          "tsName": "json",
+          "isStatic": true,
+          "tsSignatureId": "Json|Azure.Messaging.CloudEventDataFormat|static=true|const=true",
+          "target": {
+            "declaringClrType": "Azure.Messaging.CloudEventDataFormat",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 67108961
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Azure.Core:Azure.Messaging.CloudEvent",
+      "clrName": "Azure.Messaging.CloudEvent",
+      "tsEmitName": "CloudEvent",
+      "assemblyName": "Azure.Core",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Azure.Core:Azure.Messaging.CloudEvent::ParseMany(System.BinaryData,System.Boolean):Azure.Messaging.CloudEvent[]",
+          "clrName": "ParseMany",
+          "tsEmitName": "parseMany",
+          "metadataToken": 100663607,
+          "canonicalSignature": "(System.BinaryData,System.Boolean):Azure.Messaging.CloudEvent[]",
+          "normalizedSignature": "ParseMany|(System.BinaryData,System.Boolean):Azure.Messaging.CloudEvent[]|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Azure.Messaging.CloudEvent",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Messaging.CloudEvent::Parse(System.BinaryData,System.Boolean):Azure.Messaging.CloudEvent",
+          "clrName": "Parse",
+          "tsEmitName": "parse",
+          "metadataToken": 100663608,
+          "canonicalSignature": "(System.BinaryData,System.Boolean):Azure.Messaging.CloudEvent",
+          "normalizedSignature": "Parse|(System.BinaryData,System.Boolean):Azure.Messaging.CloudEvent|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Azure.Messaging.CloudEvent",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Azure.Core:Azure.Messaging.CloudEvent::Data:System.BinaryData",
+          "clrName": "Data",
+          "tsEmitName": "data",
+          "metadataToken": 385876034,
+          "canonicalSignature": ":System.BinaryData",
+          "normalizedSignature": "Data|:System.BinaryData|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Azure.Messaging.CloudEvent",
+          "declaringAssemblyName": "Azure.Core"
+        },
+        {
+          "stableId": "Azure.Core:Azure.Messaging.CloudEvent::Id:System.String",
+          "clrName": "Id",
+          "tsEmitName": "id",
+          "metadataToken": 385876035,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Id|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Azure.Messaging.CloudEvent",
+          "declaringAssemblyName": "Azure.Core"
+        },
+        {
+          "stableId": "Azure.Core:Azure.Messaging.CloudEvent::Source:System.String",
+          "clrName": "Source",
+          "tsEmitName": "source",
+          "metadataToken": 385876037,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Source|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Azure.Messaging.CloudEvent",
+          "declaringAssemblyName": "Azure.Core"
+        },
+        {
+          "stableId": "Azure.Core:Azure.Messaging.CloudEvent::Type:System.String",
+          "clrName": "Type",
+          "tsEmitName": "type_",
+          "metadataToken": 385876038,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Type|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Azure.Messaging.CloudEvent",
+          "declaringAssemblyName": "Azure.Core"
+        },
+        {
+          "stableId": "Azure.Core:Azure.Messaging.CloudEvent::Time:System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "Time",
+          "tsEmitName": "time",
+          "metadataToken": 385876040,
+          "canonicalSignature": ":System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "Time|:System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Azure.Messaging.CloudEvent",
+          "declaringAssemblyName": "Azure.Core"
+        },
+        {
+          "stableId": "Azure.Core:Azure.Messaging.CloudEvent::DataSchema:System.String",
+          "clrName": "DataSchema",
+          "tsEmitName": "dataSchema",
+          "metadataToken": 385876041,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "DataSchema|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Azure.Messaging.CloudEvent",
+          "declaringAssemblyName": "Azure.Core"
+        },
+        {
+          "stableId": "Azure.Core:Azure.Messaging.CloudEvent::DataContentType:System.String",
+          "clrName": "DataContentType",
+          "tsEmitName": "dataContentType",
+          "metadataToken": 385876042,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "DataContentType|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Azure.Messaging.CloudEvent",
+          "declaringAssemblyName": "Azure.Core"
+        },
+        {
+          "stableId": "Azure.Core:Azure.Messaging.CloudEvent::Subject:System.String",
+          "clrName": "Subject",
+          "tsEmitName": "subject",
+          "metadataToken": 385876044,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Subject|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Azure.Messaging.CloudEvent",
+          "declaringAssemblyName": "Azure.Core"
+        },
+        {
+          "stableId": "Azure.Core:Azure.Messaging.CloudEvent::ExtensionAttributes:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "ExtensionAttributes",
+          "tsEmitName": "extensionAttributes",
+          "metadataToken": 385876045,
+          "canonicalSignature": ":System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "ExtensionAttributes|:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Azure.Messaging.CloudEvent",
+          "declaringAssemblyName": "Azure.Core"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Azure.Core:Azure.Messaging.CloudEvent::.ctor(System.String,System.String,System.Object,System.Type):void",
+          "metadataToken": 100663582,
+          "canonicalSignature": "(System.String,System.String,System.Object,System.Type):void",
+          "normalizedSignature": "constructor|(System.String,System.String,System.Object,System.Type):void|static=false",
+          "isStatic": false,
+          "parameterCount": 4,
+          "declaringClrType": "Azure.Messaging.CloudEvent",
+          "declaringAssemblyName": "Azure.Core"
+        },
+        {
+          "stableId": "Azure.Core:Azure.Messaging.CloudEvent::.ctor(System.String,System.String,System.BinaryData,System.String,Azure.Messaging.CloudEventDataFormat):void",
+          "metadataToken": 100663583,
+          "canonicalSignature": "(System.String,System.String,System.BinaryData,System.String,Azure.Messaging.CloudEventDataFormat):void",
+          "normalizedSignature": "constructor|(System.String,System.String,System.BinaryData,System.String,Azure.Messaging.CloudEventDataFormat):void|static=false",
+          "isStatic": false,
+          "parameterCount": 5,
+          "declaringClrType": "Azure.Messaging.CloudEvent",
+          "declaringAssemblyName": "Azure.Core"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "parseMany",
+          "isStatic": true,
+          "tsSignatureId": "ParseMany|(System.BinaryData,System.Boolean):Azure.Messaging.CloudEvent[]|static=true",
+          "target": {
+            "declaringClrType": "Azure.Messaging.CloudEvent",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100663607
+          }
+        },
+        {
+          "tsName": "parse",
+          "isStatic": true,
+          "tsSignatureId": "Parse|(System.BinaryData,System.Boolean):Azure.Messaging.CloudEvent|static=true",
+          "target": {
+            "declaringClrType": "Azure.Messaging.CloudEvent",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100663608
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "data",
+          "isStatic": false,
+          "tsSignatureId": "Data|:System.BinaryData|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Azure.Messaging.CloudEvent",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 385876034
+          }
+        },
+        {
+          "tsName": "id",
+          "isStatic": false,
+          "tsSignatureId": "Id|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Azure.Messaging.CloudEvent",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 385876035
+          }
+        },
+        {
+          "tsName": "source",
+          "isStatic": false,
+          "tsSignatureId": "Source|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Azure.Messaging.CloudEvent",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 385876037
+          }
+        },
+        {
+          "tsName": "type_",
+          "isStatic": false,
+          "tsSignatureId": "Type|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Azure.Messaging.CloudEvent",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 385876038
+          }
+        },
+        {
+          "tsName": "time",
+          "isStatic": false,
+          "tsSignatureId": "Time|:System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Azure.Messaging.CloudEvent",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 385876040
+          }
+        },
+        {
+          "tsName": "dataSchema",
+          "isStatic": false,
+          "tsSignatureId": "DataSchema|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Azure.Messaging.CloudEvent",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 385876041
+          }
+        },
+        {
+          "tsName": "dataContentType",
+          "isStatic": false,
+          "tsSignatureId": "DataContentType|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Azure.Messaging.CloudEvent",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 385876042
+          }
+        },
+        {
+          "tsName": "subject",
+          "isStatic": false,
+          "tsSignatureId": "Subject|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Azure.Messaging.CloudEvent",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 385876044
+          }
+        },
+        {
+          "tsName": "extensionAttributes",
+          "isStatic": false,
+          "tsSignatureId": "ExtensionAttributes|:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Azure.Messaging.CloudEvent",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 385876045
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.String,System.Object,System.Type):void|static=false",
+          "target": {
+            "declaringClrType": "Azure.Messaging.CloudEvent",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100663582
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.String,System.BinaryData,System.String,Azure.Messaging.CloudEventDataFormat):void|static=false",
+          "target": {
+            "declaringClrType": "Azure.Messaging.CloudEvent",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100663583
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Azure.Core:Azure.Messaging.MessageContent",
+      "clrName": "Azure.Messaging.MessageContent",
+      "tsEmitName": "MessageContent",
+      "assemblyName": "Azure.Core",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Azure.Core:Azure.Messaging.MessageContent::Data:System.BinaryData",
+          "clrName": "Data",
+          "tsEmitName": "data",
+          "metadataToken": 385876051,
+          "canonicalSignature": ":System.BinaryData",
+          "normalizedSignature": "Data|:System.BinaryData|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Azure.Messaging.MessageContent",
+          "declaringAssemblyName": "Azure.Core"
+        },
+        {
+          "stableId": "Azure.Core:Azure.Messaging.MessageContent::ContentType:System.Nullable_1[[Azure.Core.ContentType,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
+          "clrName": "ContentType",
+          "tsEmitName": "contentType",
+          "metadataToken": 385876052,
+          "canonicalSignature": ":System.Nullable_1[[Azure.Core.ContentType,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
+          "normalizedSignature": "ContentType|:System.Nullable_1[[Azure.Core.ContentType,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Azure.Messaging.MessageContent",
+          "declaringAssemblyName": "Azure.Core"
+        },
+        {
+          "stableId": "Azure.Core:Azure.Messaging.MessageContent::IsReadOnly:System.Boolean",
+          "clrName": "IsReadOnly",
+          "tsEmitName": "isReadOnly",
+          "metadataToken": 385876054,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "IsReadOnly|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Azure.Messaging.MessageContent",
+          "declaringAssemblyName": "Azure.Core"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Azure.Core:Azure.Messaging.MessageContent::.ctor():void",
+          "metadataToken": 100663644,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Azure.Messaging.MessageContent",
+          "declaringAssemblyName": "Azure.Core"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "data",
+          "isStatic": false,
+          "tsSignatureId": "Data|:System.BinaryData|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Azure.Messaging.MessageContent",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 385876051
+          }
+        },
+        {
+          "tsName": "contentType",
+          "isStatic": false,
+          "tsSignatureId": "ContentType|:System.Nullable_1[[Azure.Core.ContentType,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Azure.Messaging.MessageContent",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 385876052
+          }
+        },
+        {
+          "tsName": "isReadOnly",
+          "isStatic": false,
+          "tsSignatureId": "IsReadOnly|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Azure.Messaging.MessageContent",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 385876054
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Azure.Messaging.MessageContent",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100663644
+          }
+        }
+      ]
+    }
+  ]
+}

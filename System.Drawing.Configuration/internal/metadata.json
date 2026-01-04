@@ -1,0 +1,46 @@
+{
+  "namespace": "System.Drawing.Configuration",
+  "contributingAssemblies": [
+    "System.Configuration.ConfigurationManager"
+  ],
+  "types": [
+    {
+      "stableId": "System.Configuration.ConfigurationManager:System.Drawing.Configuration.SystemDrawingSection",
+      "clrName": "System.Drawing.Configuration.SystemDrawingSection",
+      "tsEmitName": "SystemDrawingSection",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Drawing.Configuration.SystemDrawingSection::BitmapSuffix:System.String",
+          "clrName": "BitmapSuffix",
+          "tsEmitName": "bitmapSuffix",
+          "normalizedSignature": "BitmapSuffix|:System.String|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0
+        }
+      ]
+    }
+  ]
+}

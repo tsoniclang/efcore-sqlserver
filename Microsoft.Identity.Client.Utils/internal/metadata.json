@@ -1,0 +1,121 @@
+{
+  "namespace": "Microsoft.Identity.Client.Utils",
+  "contributingAssemblies": [
+    "Microsoft.Identity.Client"
+  ],
+  "types": [
+    {
+      "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Utils.MacMainThreadScheduler",
+      "clrName": "Microsoft.Identity.Client.Utils.MacMainThreadScheduler",
+      "tsEmitName": "MacMainThreadScheduler",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Utils.MacMainThreadScheduler::Instance():Microsoft.Identity.Client.Utils.MacMainThreadScheduler",
+          "clrName": "Instance",
+          "tsEmitName": "instance",
+          "normalizedSignature": "Instance|():Microsoft.Identity.Client.Utils.MacMainThreadScheduler|static=true",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 0,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Utils.MacMainThreadScheduler::IsCurrentlyOnMainThread():System.Boolean",
+          "clrName": "IsCurrentlyOnMainThread",
+          "tsEmitName": "isCurrentlyOnMainThread",
+          "normalizedSignature": "IsCurrentlyOnMainThread|():System.Boolean|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 0,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Utils.MacMainThreadScheduler::IsRunning():System.Boolean",
+          "clrName": "IsRunning",
+          "tsEmitName": "isRunning",
+          "normalizedSignature": "IsRunning|():System.Boolean|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 0,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Utils.MacMainThreadScheduler::Stop():System.Void",
+          "clrName": "Stop",
+          "tsEmitName": "stop",
+          "normalizedSignature": "Stop|():System.Void|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 0,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Utils.MacMainThreadScheduler::RunOnMainThreadAsync(System.Func_1[[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Threading.Tasks.Task",
+          "clrName": "RunOnMainThreadAsync",
+          "tsEmitName": "runOnMainThreadAsync",
+          "normalizedSignature": "RunOnMainThreadAsync|(System.Func_1[[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Threading.Tasks.Task|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Utils.MacMainThreadScheduler::StartMessageLoop():System.Void",
+          "clrName": "StartMessageLoop",
+          "tsEmitName": "startMessageLoop",
+          "normalizedSignature": "StartMessageLoop|():System.Void|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 0,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "namespace": "System.Diagnostics",
+  "contributingAssemblies": [
+    "System.Configuration.ConfigurationManager",
+    "System.Diagnostics.DiagnosticSource",
+    "System.Diagnostics.EventLog",
+    "System.Diagnostics.FileVersionInfo",
+    "System.Diagnostics.Process",
+    "System.Diagnostics.TextWriterTraceListener",
+    "System.Diagnostics.TraceSource",
+    "System.Private.CoreLib"
+  ],
+  "types": [
+    {
+      "stableId": "System.Configuration.ConfigurationManager:System.Diagnostics.TraceConfiguration",
+      "clrName": "System.Diagnostics.TraceConfiguration",
+      "tsEmitName": "TraceConfiguration",
+      "kind": "StaticNamespace",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": true,
+      "isStatic": true,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Diagnostics.TraceConfiguration::Register():System.Void",
+          "clrName": "Register",
+          "tsEmitName": "register",
+          "normalizedSignature": "Register|():System.Void|static=true",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 0,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    }
+  ]
+}

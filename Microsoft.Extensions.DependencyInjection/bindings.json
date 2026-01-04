@@ -1,0 +1,164 @@
+{
+  "namespace": "Microsoft.Extensions.DependencyInjection",
+  "types": [
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.Extensions.DependencyInjection.SqlServerServiceCollectionExtensions",
+      "clrName": "Microsoft.Extensions.DependencyInjection.SqlServerServiceCollectionExtensions",
+      "tsEmitName": "SqlServerServiceCollectionExtensions",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.Extensions.DependencyInjection.SqlServerServiceCollectionExtensions::AddSqlServer(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Action_1[[Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder,Microsoft.EntityFrameworkCore.SqlServer,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Action_1[[Microsoft.EntityFrameworkCore.DbContextOptionsBuilder,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServiceCollection",
+          "clrName": "AddSqlServer",
+          "tsEmitName": "addSqlServer",
+          "metadataToken": 100663379,
+          "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Action_1[[Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder,Microsoft.EntityFrameworkCore.SqlServer,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Action_1[[Microsoft.EntityFrameworkCore.DbContextOptionsBuilder,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServiceCollection",
+          "normalizedSignature": "AddSqlServer|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Action_1[[Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder,Microsoft.EntityFrameworkCore.SqlServer,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Action_1[[Microsoft.EntityFrameworkCore.DbContextOptionsBuilder,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServiceCollection|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 1,
+          "parameterCount": 4,
+          "declaringClrType": "Microsoft.Extensions.DependencyInjection.SqlServerServiceCollectionExtensions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": true
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.Extensions.DependencyInjection.SqlServerServiceCollectionExtensions::AddEntityFrameworkSqlServer(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection",
+          "clrName": "AddEntityFrameworkSqlServer",
+          "tsEmitName": "addEntityFrameworkSqlServer",
+          "metadataToken": 100663380,
+          "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection",
+          "normalizedSignature": "AddEntityFrameworkSqlServer|(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.DependencyInjection.SqlServerServiceCollectionExtensions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": true
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.Extensions.DependencyInjection.SqlServerServiceCollectionExtensions::AddAzureSql(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Action_1[[Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder,Microsoft.EntityFrameworkCore.SqlServer,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Action_1[[Microsoft.EntityFrameworkCore.DbContextOptionsBuilder,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServiceCollection",
+          "clrName": "AddAzureSql",
+          "tsEmitName": "addAzureSql",
+          "metadataToken": 100663381,
+          "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Action_1[[Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder,Microsoft.EntityFrameworkCore.SqlServer,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Action_1[[Microsoft.EntityFrameworkCore.DbContextOptionsBuilder,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServiceCollection",
+          "normalizedSignature": "AddAzureSql|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Action_1[[Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder,Microsoft.EntityFrameworkCore.SqlServer,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Action_1[[Microsoft.EntityFrameworkCore.DbContextOptionsBuilder,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServiceCollection|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 1,
+          "parameterCount": 4,
+          "declaringClrType": "Microsoft.Extensions.DependencyInjection.SqlServerServiceCollectionExtensions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": true
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.Extensions.DependencyInjection.SqlServerServiceCollectionExtensions::AddEntityFrameworkAzureSql(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection",
+          "clrName": "AddEntityFrameworkAzureSql",
+          "tsEmitName": "addEntityFrameworkAzureSql",
+          "metadataToken": 100663382,
+          "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection",
+          "normalizedSignature": "AddEntityFrameworkAzureSql|(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.DependencyInjection.SqlServerServiceCollectionExtensions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": true
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.Extensions.DependencyInjection.SqlServerServiceCollectionExtensions::AddAzureSynapse(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Action_1[[Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder,Microsoft.EntityFrameworkCore.SqlServer,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Action_1[[Microsoft.EntityFrameworkCore.DbContextOptionsBuilder,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServiceCollection",
+          "clrName": "AddAzureSynapse",
+          "tsEmitName": "addAzureSynapse",
+          "metadataToken": 100663383,
+          "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Action_1[[Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder,Microsoft.EntityFrameworkCore.SqlServer,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Action_1[[Microsoft.EntityFrameworkCore.DbContextOptionsBuilder,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServiceCollection",
+          "normalizedSignature": "AddAzureSynapse|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Action_1[[Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder,Microsoft.EntityFrameworkCore.SqlServer,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Action_1[[Microsoft.EntityFrameworkCore.DbContextOptionsBuilder,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServiceCollection|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 1,
+          "parameterCount": 4,
+          "declaringClrType": "Microsoft.Extensions.DependencyInjection.SqlServerServiceCollectionExtensions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": true
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.Extensions.DependencyInjection.SqlServerServiceCollectionExtensions::AddEntityFrameworkAzureSynapse(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection",
+          "clrName": "AddEntityFrameworkAzureSynapse",
+          "tsEmitName": "addEntityFrameworkAzureSynapse",
+          "metadataToken": 100663384,
+          "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection",
+          "normalizedSignature": "AddEntityFrameworkAzureSynapse|(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.DependencyInjection.SqlServerServiceCollectionExtensions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": true
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "addSqlServer",
+          "isStatic": true,
+          "tsSignatureId": "AddSqlServer|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Action_1[[Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder,Microsoft.EntityFrameworkCore.SqlServer,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Action_1[[Microsoft.EntityFrameworkCore.DbContextOptionsBuilder,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServiceCollection|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyInjection.SqlServerServiceCollectionExtensions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100663379
+          }
+        },
+        {
+          "tsName": "addEntityFrameworkSqlServer",
+          "isStatic": true,
+          "tsSignatureId": "AddEntityFrameworkSqlServer|(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyInjection.SqlServerServiceCollectionExtensions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100663380
+          }
+        },
+        {
+          "tsName": "addAzureSql",
+          "isStatic": true,
+          "tsSignatureId": "AddAzureSql|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Action_1[[Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder,Microsoft.EntityFrameworkCore.SqlServer,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Action_1[[Microsoft.EntityFrameworkCore.DbContextOptionsBuilder,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServiceCollection|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyInjection.SqlServerServiceCollectionExtensions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100663381
+          }
+        },
+        {
+          "tsName": "addEntityFrameworkAzureSql",
+          "isStatic": true,
+          "tsSignatureId": "AddEntityFrameworkAzureSql|(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyInjection.SqlServerServiceCollectionExtensions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100663382
+          }
+        },
+        {
+          "tsName": "addAzureSynapse",
+          "isStatic": true,
+          "tsSignatureId": "AddAzureSynapse|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Action_1[[Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder,Microsoft.EntityFrameworkCore.SqlServer,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Action_1[[Microsoft.EntityFrameworkCore.DbContextOptionsBuilder,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServiceCollection|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyInjection.SqlServerServiceCollectionExtensions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100663383
+          }
+        },
+        {
+          "tsName": "addEntityFrameworkAzureSynapse",
+          "isStatic": true,
+          "tsSignatureId": "AddEntityFrameworkAzureSynapse|(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyInjection.SqlServerServiceCollectionExtensions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100663384
+          }
+        }
+      ]
+    }
+  ]
+}
