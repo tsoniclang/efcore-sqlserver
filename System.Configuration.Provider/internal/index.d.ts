@@ -30,7 +30,7 @@ export type ProviderBase = ProviderBase$instance;
 export interface ProviderCollection$instance {
     readonly count: int;
     readonly isSynchronized: boolean;
-    readonly item: ProtectedConfigurationProvider | ProviderBase;
+    readonly item: ProviderBase | SettingsProvider;
     readonly syncRoot: unknown;
     add(provider: ProviderBase): void;
     clear(): void;

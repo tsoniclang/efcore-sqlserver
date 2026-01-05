@@ -27,6 +27,9 @@ export { CollectionResult_1 as CollectionResult } from './System.ClientModel/int
 export { ContinuationToken as ContinuationToken } from './System.ClientModel/internal/index.js';
 export { BinaryContent as BinaryContent } from './System.ClientModel/internal/index.js';
 
+// Multi-arity family value exports (arity-0 constructors/static namespaces)
+export const ClientResult: typeof Internal.ClientResult;
+
 // Multi-arity family sentinel (detects unspecified type parameters)
 declare const __unspecified: unique symbol;
 export type __ = typeof __unspecified;

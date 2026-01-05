@@ -44,6 +44,10 @@ export { AzureCoreExtensions$instance as AzureCoreExtensions } from './Azure/int
 export { SyncAsyncEventArgs as SyncAsyncEventArgs } from './Azure/internal/index.js';
 export { WaitUntil as WaitUntil } from './Azure/internal/index.js';
 
+// Multi-arity family value exports (arity-0 constructors/static namespaces)
+export const Operation: typeof Internal.Operation;
+export const Response: typeof Internal.Response;
+
 // Multi-arity family sentinel (detects unspecified type parameters)
 declare const __unspecified: unique symbol;
 export type __ = typeof __unspecified;

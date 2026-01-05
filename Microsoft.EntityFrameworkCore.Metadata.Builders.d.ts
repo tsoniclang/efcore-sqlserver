@@ -16,6 +16,9 @@ export { OwnedNavigationTemporalTableBuilder as OwnedNavigationTemporalTableBuil
 export { OwnedNavigationTemporalTableBuilder_2 as OwnedNavigationTemporalTableBuilder } from './Microsoft.EntityFrameworkCore.Metadata.Builders/internal/index.js';
 export { TemporalPeriodPropertyBuilder as TemporalPeriodPropertyBuilder } from './Microsoft.EntityFrameworkCore.Metadata.Builders/internal/index.js';
 
+// Multi-arity family value exports (arity-0 constructors/static namespaces)
+export const TemporalTableBuilder: typeof Internal.TemporalTableBuilder;
+
 // Multi-arity family sentinel (detects unspecified type parameters)
 declare const __unspecified: unique symbol;
 export type __ = typeof __unspecified;
