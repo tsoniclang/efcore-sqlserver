@@ -1,0 +1,167 @@
+{
+  "namespace": "Microsoft.Identity.Client.AuthScheme",
+  "types": [
+    {
+      "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation",
+      "clrName": "Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation",
+      "tsEmitName": "IAuthenticationOperation",
+      "assemblyName": "Microsoft.Identity.Client",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation::GetTokenRequestParams():System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "GetTokenRequestParams",
+          "tsEmitName": "getTokenRequestParams",
+          "metadataToken": 100666494,
+          "canonicalSignature": "():System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "GetTokenRequestParams|():System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation",
+          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation::FormatResult(Microsoft.Identity.Client.AuthenticationResult):System.Void",
+          "clrName": "FormatResult",
+          "tsEmitName": "formatResult",
+          "metadataToken": 100666496,
+          "canonicalSignature": "(Microsoft.Identity.Client.AuthenticationResult):System.Void",
+          "normalizedSignature": "FormatResult|(Microsoft.Identity.Client.AuthenticationResult):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation",
+          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation::TelemetryTokenType:System.Int32",
+          "clrName": "TelemetryTokenType",
+          "tsEmitName": "telemetryTokenType",
+          "metadataToken": 385876760,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "TelemetryTokenType|:System.Int32|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation",
+          "declaringAssemblyName": "Microsoft.Identity.Client"
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation::AuthorizationHeaderPrefix:System.String",
+          "clrName": "AuthorizationHeaderPrefix",
+          "tsEmitName": "authorizationHeaderPrefix",
+          "metadataToken": 385876761,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "AuthorizationHeaderPrefix|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation",
+          "declaringAssemblyName": "Microsoft.Identity.Client"
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation::KeyId:System.String",
+          "clrName": "KeyId",
+          "tsEmitName": "keyId",
+          "metadataToken": 385876762,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "KeyId|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation",
+          "declaringAssemblyName": "Microsoft.Identity.Client"
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation::AccessTokenType:System.String",
+          "clrName": "AccessTokenType",
+          "tsEmitName": "accessTokenType",
+          "metadataToken": 385876763,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "AccessTokenType|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation",
+          "declaringAssemblyName": "Microsoft.Identity.Client"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "getTokenRequestParams",
+          "isStatic": false,
+          "tsSignatureId": "GetTokenRequestParams|():System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation",
+            "declaringAssemblyName": "Microsoft.Identity.Client",
+            "metadataToken": 100666494
+          }
+        },
+        {
+          "tsName": "formatResult",
+          "isStatic": false,
+          "tsSignatureId": "FormatResult|(Microsoft.Identity.Client.AuthenticationResult):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation",
+            "declaringAssemblyName": "Microsoft.Identity.Client",
+            "metadataToken": 100666496
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "telemetryTokenType",
+          "isStatic": false,
+          "tsSignatureId": "TelemetryTokenType|:System.Int32|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation",
+            "declaringAssemblyName": "Microsoft.Identity.Client",
+            "metadataToken": 385876760
+          }
+        },
+        {
+          "tsName": "authorizationHeaderPrefix",
+          "isStatic": false,
+          "tsSignatureId": "AuthorizationHeaderPrefix|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation",
+            "declaringAssemblyName": "Microsoft.Identity.Client",
+            "metadataToken": 385876761
+          }
+        },
+        {
+          "tsName": "keyId",
+          "isStatic": false,
+          "tsSignatureId": "KeyId|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation",
+            "declaringAssemblyName": "Microsoft.Identity.Client",
+            "metadataToken": 385876762
+          }
+        },
+        {
+          "tsName": "accessTokenType",
+          "isStatic": false,
+          "tsSignatureId": "AccessTokenType|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation",
+            "declaringAssemblyName": "Microsoft.Identity.Client",
+            "metadataToken": 385876763
+          }
+        }
+      ]
+    }
+  ]
+}

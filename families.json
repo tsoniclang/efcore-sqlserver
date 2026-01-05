@@ -1,0 +1,30 @@
+{
+  "Azure.Operation": {
+    "stem": "Operation",
+    "namespace": "Azure",
+    "minArity": 0,
+    "maxArity": 1,
+    "isDelegate": false
+  },
+  "Azure.Response": {
+    "stem": "Response",
+    "namespace": "Azure",
+    "minArity": 0,
+    "maxArity": 1,
+    "isDelegate": false
+  },
+  "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder": {
+    "stem": "TemporalTableBuilder",
+    "namespace": "Microsoft.EntityFrameworkCore.Metadata.Builders",
+    "minArity": 0,
+    "maxArity": 1,
+    "isDelegate": false
+  },
+  "System.ClientModel.ClientResult": {
+    "stem": "ClientResult",
+    "namespace": "System.ClientModel",
+    "minArity": 0,
+    "maxArity": 1,
+    "isDelegate": false
+  }
+}

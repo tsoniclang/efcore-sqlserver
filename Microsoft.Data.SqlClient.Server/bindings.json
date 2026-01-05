@@ -1,0 +1,3543 @@
+{
+  "namespace": "Microsoft.Data.SqlClient.Server",
+  "types": [
+    {
+      "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord",
+      "clrName": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+      "tsEmitName": "SqlDataRecord",
+      "assemblyName": "Microsoft.Data.SqlClient",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::GetBoolean(System.Int32):System.Boolean",
+          "clrName": "GetBoolean",
+          "tsEmitName": "getBoolean",
+          "metadataToken": 100665734,
+          "canonicalSignature": "(System.Int32):System.Boolean",
+          "normalizedSignature": "GetBoolean|(System.Int32):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::GetByte(System.Int32):System.Byte",
+          "clrName": "GetByte",
+          "tsEmitName": "getByte",
+          "metadataToken": 100665735,
+          "canonicalSignature": "(System.Int32):System.Byte",
+          "normalizedSignature": "GetByte|(System.Int32):System.Byte|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32):System.Int64",
+          "clrName": "GetBytes",
+          "tsEmitName": "getBytes",
+          "metadataToken": 100665736,
+          "canonicalSignature": "(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32):System.Int64",
+          "normalizedSignature": "GetBytes|(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32):System.Int64|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::GetChar(System.Int32):System.Char",
+          "clrName": "GetChar",
+          "tsEmitName": "getChar",
+          "metadataToken": 100665737,
+          "canonicalSignature": "(System.Int32):System.Char",
+          "normalizedSignature": "GetChar|(System.Int32):System.Char|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32):System.Int64",
+          "clrName": "GetChars",
+          "tsEmitName": "getChars",
+          "metadataToken": 100665738,
+          "canonicalSignature": "(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32):System.Int64",
+          "normalizedSignature": "GetChars|(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32):System.Int64|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::GetDataTypeName(System.Int32):System.String",
+          "clrName": "GetDataTypeName",
+          "tsEmitName": "getDataTypeName",
+          "metadataToken": 100665739,
+          "canonicalSignature": "(System.Int32):System.String",
+          "normalizedSignature": "GetDataTypeName|(System.Int32):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::GetDateTime(System.Int32):System.DateTime",
+          "clrName": "GetDateTime",
+          "tsEmitName": "getDateTime",
+          "metadataToken": 100665740,
+          "canonicalSignature": "(System.Int32):System.DateTime",
+          "normalizedSignature": "GetDateTime|(System.Int32):System.DateTime|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::GetDateTimeOffset(System.Int32):System.DateTimeOffset",
+          "clrName": "GetDateTimeOffset",
+          "tsEmitName": "getDateTimeOffset",
+          "metadataToken": 100665741,
+          "canonicalSignature": "(System.Int32):System.DateTimeOffset",
+          "normalizedSignature": "GetDateTimeOffset|(System.Int32):System.DateTimeOffset|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::GetDecimal(System.Int32):System.Decimal",
+          "clrName": "GetDecimal",
+          "tsEmitName": "getDecimal",
+          "metadataToken": 100665742,
+          "canonicalSignature": "(System.Int32):System.Decimal",
+          "normalizedSignature": "GetDecimal|(System.Int32):System.Decimal|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::GetDouble(System.Int32):System.Double",
+          "clrName": "GetDouble",
+          "tsEmitName": "getDouble",
+          "metadataToken": 100665743,
+          "canonicalSignature": "(System.Int32):System.Double",
+          "normalizedSignature": "GetDouble|(System.Int32):System.Double|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::GetFieldType(System.Int32):System.Type",
+          "clrName": "GetFieldType",
+          "tsEmitName": "getFieldType",
+          "metadataToken": 100665744,
+          "canonicalSignature": "(System.Int32):System.Type",
+          "normalizedSignature": "GetFieldType|(System.Int32):System.Type|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::GetFloat(System.Int32):System.Single",
+          "clrName": "GetFloat",
+          "tsEmitName": "getFloat",
+          "metadataToken": 100665745,
+          "canonicalSignature": "(System.Int32):System.Single",
+          "normalizedSignature": "GetFloat|(System.Int32):System.Single|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::GetGuid(System.Int32):System.Guid",
+          "clrName": "GetGuid",
+          "tsEmitName": "getGuid",
+          "metadataToken": 100665746,
+          "canonicalSignature": "(System.Int32):System.Guid",
+          "normalizedSignature": "GetGuid|(System.Int32):System.Guid|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::GetInt16(System.Int32):System.Int16",
+          "clrName": "GetInt16",
+          "tsEmitName": "getInt16",
+          "metadataToken": 100665747,
+          "canonicalSignature": "(System.Int32):System.Int16",
+          "normalizedSignature": "GetInt16|(System.Int32):System.Int16|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::GetInt32(System.Int32):System.Int32",
+          "clrName": "GetInt32",
+          "tsEmitName": "getInt32",
+          "metadataToken": 100665748,
+          "canonicalSignature": "(System.Int32):System.Int32",
+          "normalizedSignature": "GetInt32|(System.Int32):System.Int32|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::GetInt64(System.Int32):System.Int64",
+          "clrName": "GetInt64",
+          "tsEmitName": "getInt64",
+          "metadataToken": 100665749,
+          "canonicalSignature": "(System.Int32):System.Int64",
+          "normalizedSignature": "GetInt64|(System.Int32):System.Int64|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::GetName(System.Int32):System.String",
+          "clrName": "GetName",
+          "tsEmitName": "getName",
+          "metadataToken": 100665750,
+          "canonicalSignature": "(System.Int32):System.String",
+          "normalizedSignature": "GetName|(System.Int32):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::GetOrdinal(System.String):System.Int32",
+          "clrName": "GetOrdinal",
+          "tsEmitName": "getOrdinal",
+          "metadataToken": 100665751,
+          "canonicalSignature": "(System.String):System.Int32",
+          "normalizedSignature": "GetOrdinal|(System.String):System.Int32|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::GetSqlBinary(System.Int32):System.Data.SqlTypes.SqlBinary",
+          "clrName": "GetSqlBinary",
+          "tsEmitName": "getSqlBinary",
+          "metadataToken": 100665752,
+          "canonicalSignature": "(System.Int32):System.Data.SqlTypes.SqlBinary",
+          "normalizedSignature": "GetSqlBinary|(System.Int32):System.Data.SqlTypes.SqlBinary|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::GetSqlBoolean(System.Int32):System.Data.SqlTypes.SqlBoolean",
+          "clrName": "GetSqlBoolean",
+          "tsEmitName": "getSqlBoolean",
+          "metadataToken": 100665753,
+          "canonicalSignature": "(System.Int32):System.Data.SqlTypes.SqlBoolean",
+          "normalizedSignature": "GetSqlBoolean|(System.Int32):System.Data.SqlTypes.SqlBoolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::GetSqlByte(System.Int32):System.Data.SqlTypes.SqlByte",
+          "clrName": "GetSqlByte",
+          "tsEmitName": "getSqlByte",
+          "metadataToken": 100665754,
+          "canonicalSignature": "(System.Int32):System.Data.SqlTypes.SqlByte",
+          "normalizedSignature": "GetSqlByte|(System.Int32):System.Data.SqlTypes.SqlByte|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::GetSqlBytes(System.Int32):System.Data.SqlTypes.SqlBytes",
+          "clrName": "GetSqlBytes",
+          "tsEmitName": "getSqlBytes",
+          "metadataToken": 100665755,
+          "canonicalSignature": "(System.Int32):System.Data.SqlTypes.SqlBytes",
+          "normalizedSignature": "GetSqlBytes|(System.Int32):System.Data.SqlTypes.SqlBytes|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::GetSqlChars(System.Int32):System.Data.SqlTypes.SqlChars",
+          "clrName": "GetSqlChars",
+          "tsEmitName": "getSqlChars",
+          "metadataToken": 100665756,
+          "canonicalSignature": "(System.Int32):System.Data.SqlTypes.SqlChars",
+          "normalizedSignature": "GetSqlChars|(System.Int32):System.Data.SqlTypes.SqlChars|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::GetSqlDateTime(System.Int32):System.Data.SqlTypes.SqlDateTime",
+          "clrName": "GetSqlDateTime",
+          "tsEmitName": "getSqlDateTime",
+          "metadataToken": 100665757,
+          "canonicalSignature": "(System.Int32):System.Data.SqlTypes.SqlDateTime",
+          "normalizedSignature": "GetSqlDateTime|(System.Int32):System.Data.SqlTypes.SqlDateTime|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::GetSqlDecimal(System.Int32):System.Data.SqlTypes.SqlDecimal",
+          "clrName": "GetSqlDecimal",
+          "tsEmitName": "getSqlDecimal",
+          "metadataToken": 100665758,
+          "canonicalSignature": "(System.Int32):System.Data.SqlTypes.SqlDecimal",
+          "normalizedSignature": "GetSqlDecimal|(System.Int32):System.Data.SqlTypes.SqlDecimal|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::GetSqlDouble(System.Int32):System.Data.SqlTypes.SqlDouble",
+          "clrName": "GetSqlDouble",
+          "tsEmitName": "getSqlDouble",
+          "metadataToken": 100665759,
+          "canonicalSignature": "(System.Int32):System.Data.SqlTypes.SqlDouble",
+          "normalizedSignature": "GetSqlDouble|(System.Int32):System.Data.SqlTypes.SqlDouble|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::GetSqlFieldType(System.Int32):System.Type",
+          "clrName": "GetSqlFieldType",
+          "tsEmitName": "getSqlFieldType",
+          "metadataToken": 100665760,
+          "canonicalSignature": "(System.Int32):System.Type",
+          "normalizedSignature": "GetSqlFieldType|(System.Int32):System.Type|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::GetSqlGuid(System.Int32):System.Data.SqlTypes.SqlGuid",
+          "clrName": "GetSqlGuid",
+          "tsEmitName": "getSqlGuid",
+          "metadataToken": 100665761,
+          "canonicalSignature": "(System.Int32):System.Data.SqlTypes.SqlGuid",
+          "normalizedSignature": "GetSqlGuid|(System.Int32):System.Data.SqlTypes.SqlGuid|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::GetSqlInt16(System.Int32):System.Data.SqlTypes.SqlInt16",
+          "clrName": "GetSqlInt16",
+          "tsEmitName": "getSqlInt16",
+          "metadataToken": 100665762,
+          "canonicalSignature": "(System.Int32):System.Data.SqlTypes.SqlInt16",
+          "normalizedSignature": "GetSqlInt16|(System.Int32):System.Data.SqlTypes.SqlInt16|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::GetSqlInt32(System.Int32):System.Data.SqlTypes.SqlInt32",
+          "clrName": "GetSqlInt32",
+          "tsEmitName": "getSqlInt32",
+          "metadataToken": 100665763,
+          "canonicalSignature": "(System.Int32):System.Data.SqlTypes.SqlInt32",
+          "normalizedSignature": "GetSqlInt32|(System.Int32):System.Data.SqlTypes.SqlInt32|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::GetSqlInt64(System.Int32):System.Data.SqlTypes.SqlInt64",
+          "clrName": "GetSqlInt64",
+          "tsEmitName": "getSqlInt64",
+          "metadataToken": 100665764,
+          "canonicalSignature": "(System.Int32):System.Data.SqlTypes.SqlInt64",
+          "normalizedSignature": "GetSqlInt64|(System.Int32):System.Data.SqlTypes.SqlInt64|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::GetSqlMetaData(System.Int32):Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "clrName": "GetSqlMetaData",
+          "tsEmitName": "getSqlMetaData",
+          "metadataToken": 100665765,
+          "canonicalSignature": "(System.Int32):Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "normalizedSignature": "GetSqlMetaData|(System.Int32):Microsoft.Data.SqlClient.Server.SqlMetaData|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::GetSqlMoney(System.Int32):System.Data.SqlTypes.SqlMoney",
+          "clrName": "GetSqlMoney",
+          "tsEmitName": "getSqlMoney",
+          "metadataToken": 100665766,
+          "canonicalSignature": "(System.Int32):System.Data.SqlTypes.SqlMoney",
+          "normalizedSignature": "GetSqlMoney|(System.Int32):System.Data.SqlTypes.SqlMoney|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::GetSqlSingle(System.Int32):System.Data.SqlTypes.SqlSingle",
+          "clrName": "GetSqlSingle",
+          "tsEmitName": "getSqlSingle",
+          "metadataToken": 100665767,
+          "canonicalSignature": "(System.Int32):System.Data.SqlTypes.SqlSingle",
+          "normalizedSignature": "GetSqlSingle|(System.Int32):System.Data.SqlTypes.SqlSingle|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::GetSqlString(System.Int32):System.Data.SqlTypes.SqlString",
+          "clrName": "GetSqlString",
+          "tsEmitName": "getSqlString",
+          "metadataToken": 100665768,
+          "canonicalSignature": "(System.Int32):System.Data.SqlTypes.SqlString",
+          "normalizedSignature": "GetSqlString|(System.Int32):System.Data.SqlTypes.SqlString|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::GetSqlValue(System.Int32):System.Object",
+          "clrName": "GetSqlValue",
+          "tsEmitName": "getSqlValue",
+          "metadataToken": 100665769,
+          "canonicalSignature": "(System.Int32):System.Object",
+          "normalizedSignature": "GetSqlValue|(System.Int32):System.Object|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::GetSqlValues(System.Object[]):System.Int32",
+          "clrName": "GetSqlValues",
+          "tsEmitName": "getSqlValues",
+          "metadataToken": 100665770,
+          "canonicalSignature": "(System.Object[]):System.Int32",
+          "normalizedSignature": "GetSqlValues|(System.Object[]):System.Int32|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::GetSqlXml(System.Int32):System.Data.SqlTypes.SqlXml",
+          "clrName": "GetSqlXml",
+          "tsEmitName": "getSqlXml",
+          "metadataToken": 100665771,
+          "canonicalSignature": "(System.Int32):System.Data.SqlTypes.SqlXml",
+          "normalizedSignature": "GetSqlXml|(System.Int32):System.Data.SqlTypes.SqlXml|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::GetString(System.Int32):System.String",
+          "clrName": "GetString",
+          "tsEmitName": "getString",
+          "metadataToken": 100665772,
+          "canonicalSignature": "(System.Int32):System.String",
+          "normalizedSignature": "GetString|(System.Int32):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::GetTimeSpan(System.Int32):System.TimeSpan",
+          "clrName": "GetTimeSpan",
+          "tsEmitName": "getTimeSpan",
+          "metadataToken": 100665773,
+          "canonicalSignature": "(System.Int32):System.TimeSpan",
+          "normalizedSignature": "GetTimeSpan|(System.Int32):System.TimeSpan|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::GetValue(System.Int32):System.Object",
+          "clrName": "GetValue",
+          "tsEmitName": "getValue",
+          "metadataToken": 100665774,
+          "canonicalSignature": "(System.Int32):System.Object",
+          "normalizedSignature": "GetValue|(System.Int32):System.Object|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::GetValues(System.Object[]):System.Int32",
+          "clrName": "GetValues",
+          "tsEmitName": "getValues",
+          "metadataToken": 100665775,
+          "canonicalSignature": "(System.Object[]):System.Int32",
+          "normalizedSignature": "GetValues|(System.Object[]):System.Int32|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::IsDBNull(System.Int32):System.Boolean",
+          "clrName": "IsDBNull",
+          "tsEmitName": "isDBNull",
+          "metadataToken": 100665776,
+          "canonicalSignature": "(System.Int32):System.Boolean",
+          "normalizedSignature": "IsDBNull|(System.Int32):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::SetBoolean(System.Int32,System.Boolean):System.Void",
+          "clrName": "SetBoolean",
+          "tsEmitName": "setBoolean",
+          "metadataToken": 100665777,
+          "canonicalSignature": "(System.Int32,System.Boolean):System.Void",
+          "normalizedSignature": "SetBoolean|(System.Int32,System.Boolean):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::SetByte(System.Int32,System.Byte):System.Void",
+          "clrName": "SetByte",
+          "tsEmitName": "setByte",
+          "metadataToken": 100665778,
+          "canonicalSignature": "(System.Int32,System.Byte):System.Void",
+          "normalizedSignature": "SetByte|(System.Int32,System.Byte):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::SetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32):System.Void",
+          "clrName": "SetBytes",
+          "tsEmitName": "setBytes",
+          "metadataToken": 100665779,
+          "canonicalSignature": "(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32):System.Void",
+          "normalizedSignature": "SetBytes|(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::SetChar(System.Int32,System.Char):System.Void",
+          "clrName": "SetChar",
+          "tsEmitName": "setChar",
+          "metadataToken": 100665780,
+          "canonicalSignature": "(System.Int32,System.Char):System.Void",
+          "normalizedSignature": "SetChar|(System.Int32,System.Char):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::SetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32):System.Void",
+          "clrName": "SetChars",
+          "tsEmitName": "setChars",
+          "metadataToken": 100665781,
+          "canonicalSignature": "(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32):System.Void",
+          "normalizedSignature": "SetChars|(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::SetDateTime(System.Int32,System.DateTime):System.Void",
+          "clrName": "SetDateTime",
+          "tsEmitName": "setDateTime",
+          "metadataToken": 100665782,
+          "canonicalSignature": "(System.Int32,System.DateTime):System.Void",
+          "normalizedSignature": "SetDateTime|(System.Int32,System.DateTime):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::SetDateTimeOffset(System.Int32,System.DateTimeOffset):System.Void",
+          "clrName": "SetDateTimeOffset",
+          "tsEmitName": "setDateTimeOffset",
+          "metadataToken": 100665783,
+          "canonicalSignature": "(System.Int32,System.DateTimeOffset):System.Void",
+          "normalizedSignature": "SetDateTimeOffset|(System.Int32,System.DateTimeOffset):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::SetDBNull(System.Int32):System.Void",
+          "clrName": "SetDBNull",
+          "tsEmitName": "setDBNull",
+          "metadataToken": 100665784,
+          "canonicalSignature": "(System.Int32):System.Void",
+          "normalizedSignature": "SetDBNull|(System.Int32):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::SetDecimal(System.Int32,System.Decimal):System.Void",
+          "clrName": "SetDecimal",
+          "tsEmitName": "setDecimal",
+          "metadataToken": 100665785,
+          "canonicalSignature": "(System.Int32,System.Decimal):System.Void",
+          "normalizedSignature": "SetDecimal|(System.Int32,System.Decimal):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::SetDouble(System.Int32,System.Double):System.Void",
+          "clrName": "SetDouble",
+          "tsEmitName": "setDouble",
+          "metadataToken": 100665786,
+          "canonicalSignature": "(System.Int32,System.Double):System.Void",
+          "normalizedSignature": "SetDouble|(System.Int32,System.Double):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::SetFloat(System.Int32,System.Single):System.Void",
+          "clrName": "SetFloat",
+          "tsEmitName": "setFloat",
+          "metadataToken": 100665787,
+          "canonicalSignature": "(System.Int32,System.Single):System.Void",
+          "normalizedSignature": "SetFloat|(System.Int32,System.Single):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::SetGuid(System.Int32,System.Guid):System.Void",
+          "clrName": "SetGuid",
+          "tsEmitName": "setGuid",
+          "metadataToken": 100665788,
+          "canonicalSignature": "(System.Int32,System.Guid):System.Void",
+          "normalizedSignature": "SetGuid|(System.Int32,System.Guid):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::SetInt16(System.Int32,System.Int16):System.Void",
+          "clrName": "SetInt16",
+          "tsEmitName": "setInt16",
+          "metadataToken": 100665789,
+          "canonicalSignature": "(System.Int32,System.Int16):System.Void",
+          "normalizedSignature": "SetInt16|(System.Int32,System.Int16):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::SetInt32(System.Int32,System.Int32):System.Void",
+          "clrName": "SetInt32",
+          "tsEmitName": "setInt32",
+          "metadataToken": 100665790,
+          "canonicalSignature": "(System.Int32,System.Int32):System.Void",
+          "normalizedSignature": "SetInt32|(System.Int32,System.Int32):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::SetInt64(System.Int32,System.Int64):System.Void",
+          "clrName": "SetInt64",
+          "tsEmitName": "setInt64",
+          "metadataToken": 100665791,
+          "canonicalSignature": "(System.Int32,System.Int64):System.Void",
+          "normalizedSignature": "SetInt64|(System.Int32,System.Int64):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::SetSqlBinary(System.Int32,System.Data.SqlTypes.SqlBinary):System.Void",
+          "clrName": "SetSqlBinary",
+          "tsEmitName": "setSqlBinary",
+          "metadataToken": 100665792,
+          "canonicalSignature": "(System.Int32,System.Data.SqlTypes.SqlBinary):System.Void",
+          "normalizedSignature": "SetSqlBinary|(System.Int32,System.Data.SqlTypes.SqlBinary):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::SetSqlBoolean(System.Int32,System.Data.SqlTypes.SqlBoolean):System.Void",
+          "clrName": "SetSqlBoolean",
+          "tsEmitName": "setSqlBoolean",
+          "metadataToken": 100665793,
+          "canonicalSignature": "(System.Int32,System.Data.SqlTypes.SqlBoolean):System.Void",
+          "normalizedSignature": "SetSqlBoolean|(System.Int32,System.Data.SqlTypes.SqlBoolean):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::SetSqlByte(System.Int32,System.Data.SqlTypes.SqlByte):System.Void",
+          "clrName": "SetSqlByte",
+          "tsEmitName": "setSqlByte",
+          "metadataToken": 100665794,
+          "canonicalSignature": "(System.Int32,System.Data.SqlTypes.SqlByte):System.Void",
+          "normalizedSignature": "SetSqlByte|(System.Int32,System.Data.SqlTypes.SqlByte):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::SetSqlBytes(System.Int32,System.Data.SqlTypes.SqlBytes):System.Void",
+          "clrName": "SetSqlBytes",
+          "tsEmitName": "setSqlBytes",
+          "metadataToken": 100665795,
+          "canonicalSignature": "(System.Int32,System.Data.SqlTypes.SqlBytes):System.Void",
+          "normalizedSignature": "SetSqlBytes|(System.Int32,System.Data.SqlTypes.SqlBytes):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::SetSqlChars(System.Int32,System.Data.SqlTypes.SqlChars):System.Void",
+          "clrName": "SetSqlChars",
+          "tsEmitName": "setSqlChars",
+          "metadataToken": 100665796,
+          "canonicalSignature": "(System.Int32,System.Data.SqlTypes.SqlChars):System.Void",
+          "normalizedSignature": "SetSqlChars|(System.Int32,System.Data.SqlTypes.SqlChars):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::SetSqlDateTime(System.Int32,System.Data.SqlTypes.SqlDateTime):System.Void",
+          "clrName": "SetSqlDateTime",
+          "tsEmitName": "setSqlDateTime",
+          "metadataToken": 100665797,
+          "canonicalSignature": "(System.Int32,System.Data.SqlTypes.SqlDateTime):System.Void",
+          "normalizedSignature": "SetSqlDateTime|(System.Int32,System.Data.SqlTypes.SqlDateTime):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::SetSqlDecimal(System.Int32,System.Data.SqlTypes.SqlDecimal):System.Void",
+          "clrName": "SetSqlDecimal",
+          "tsEmitName": "setSqlDecimal",
+          "metadataToken": 100665798,
+          "canonicalSignature": "(System.Int32,System.Data.SqlTypes.SqlDecimal):System.Void",
+          "normalizedSignature": "SetSqlDecimal|(System.Int32,System.Data.SqlTypes.SqlDecimal):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::SetSqlDouble(System.Int32,System.Data.SqlTypes.SqlDouble):System.Void",
+          "clrName": "SetSqlDouble",
+          "tsEmitName": "setSqlDouble",
+          "metadataToken": 100665799,
+          "canonicalSignature": "(System.Int32,System.Data.SqlTypes.SqlDouble):System.Void",
+          "normalizedSignature": "SetSqlDouble|(System.Int32,System.Data.SqlTypes.SqlDouble):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::SetSqlGuid(System.Int32,System.Data.SqlTypes.SqlGuid):System.Void",
+          "clrName": "SetSqlGuid",
+          "tsEmitName": "setSqlGuid",
+          "metadataToken": 100665800,
+          "canonicalSignature": "(System.Int32,System.Data.SqlTypes.SqlGuid):System.Void",
+          "normalizedSignature": "SetSqlGuid|(System.Int32,System.Data.SqlTypes.SqlGuid):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::SetSqlInt16(System.Int32,System.Data.SqlTypes.SqlInt16):System.Void",
+          "clrName": "SetSqlInt16",
+          "tsEmitName": "setSqlInt16",
+          "metadataToken": 100665801,
+          "canonicalSignature": "(System.Int32,System.Data.SqlTypes.SqlInt16):System.Void",
+          "normalizedSignature": "SetSqlInt16|(System.Int32,System.Data.SqlTypes.SqlInt16):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::SetSqlInt32(System.Int32,System.Data.SqlTypes.SqlInt32):System.Void",
+          "clrName": "SetSqlInt32",
+          "tsEmitName": "setSqlInt32",
+          "metadataToken": 100665802,
+          "canonicalSignature": "(System.Int32,System.Data.SqlTypes.SqlInt32):System.Void",
+          "normalizedSignature": "SetSqlInt32|(System.Int32,System.Data.SqlTypes.SqlInt32):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::SetSqlInt64(System.Int32,System.Data.SqlTypes.SqlInt64):System.Void",
+          "clrName": "SetSqlInt64",
+          "tsEmitName": "setSqlInt64",
+          "metadataToken": 100665803,
+          "canonicalSignature": "(System.Int32,System.Data.SqlTypes.SqlInt64):System.Void",
+          "normalizedSignature": "SetSqlInt64|(System.Int32,System.Data.SqlTypes.SqlInt64):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::SetSqlMoney(System.Int32,System.Data.SqlTypes.SqlMoney):System.Void",
+          "clrName": "SetSqlMoney",
+          "tsEmitName": "setSqlMoney",
+          "metadataToken": 100665804,
+          "canonicalSignature": "(System.Int32,System.Data.SqlTypes.SqlMoney):System.Void",
+          "normalizedSignature": "SetSqlMoney|(System.Int32,System.Data.SqlTypes.SqlMoney):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::SetSqlSingle(System.Int32,System.Data.SqlTypes.SqlSingle):System.Void",
+          "clrName": "SetSqlSingle",
+          "tsEmitName": "setSqlSingle",
+          "metadataToken": 100665805,
+          "canonicalSignature": "(System.Int32,System.Data.SqlTypes.SqlSingle):System.Void",
+          "normalizedSignature": "SetSqlSingle|(System.Int32,System.Data.SqlTypes.SqlSingle):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::SetSqlString(System.Int32,System.Data.SqlTypes.SqlString):System.Void",
+          "clrName": "SetSqlString",
+          "tsEmitName": "setSqlString",
+          "metadataToken": 100665806,
+          "canonicalSignature": "(System.Int32,System.Data.SqlTypes.SqlString):System.Void",
+          "normalizedSignature": "SetSqlString|(System.Int32,System.Data.SqlTypes.SqlString):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::SetSqlXml(System.Int32,System.Data.SqlTypes.SqlXml):System.Void",
+          "clrName": "SetSqlXml",
+          "tsEmitName": "setSqlXml",
+          "metadataToken": 100665807,
+          "canonicalSignature": "(System.Int32,System.Data.SqlTypes.SqlXml):System.Void",
+          "normalizedSignature": "SetSqlXml|(System.Int32,System.Data.SqlTypes.SqlXml):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::SetString(System.Int32,System.String):System.Void",
+          "clrName": "SetString",
+          "tsEmitName": "setString",
+          "metadataToken": 100665808,
+          "canonicalSignature": "(System.Int32,System.String):System.Void",
+          "normalizedSignature": "SetString|(System.Int32,System.String):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::SetTimeSpan(System.Int32,System.TimeSpan):System.Void",
+          "clrName": "SetTimeSpan",
+          "tsEmitName": "setTimeSpan",
+          "metadataToken": 100665809,
+          "canonicalSignature": "(System.Int32,System.TimeSpan):System.Void",
+          "normalizedSignature": "SetTimeSpan|(System.Int32,System.TimeSpan):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::SetValue(System.Int32,System.Object):System.Void",
+          "clrName": "SetValue",
+          "tsEmitName": "setValue",
+          "metadataToken": 100665810,
+          "canonicalSignature": "(System.Int32,System.Object):System.Void",
+          "normalizedSignature": "SetValue|(System.Int32,System.Object):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::SetValues(System.Object[]):System.Int32",
+          "clrName": "SetValues",
+          "tsEmitName": "setValues",
+          "metadataToken": 100665811,
+          "canonicalSignature": "(System.Object[]):System.Int32",
+          "normalizedSignature": "SetValues|(System.Object[]):System.Int32|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::get_Item(System.Int32):System.Object",
+          "clrName": "get_Item",
+          "tsEmitName": "get_Item",
+          "metadataToken": 0,
+          "canonicalSignature": "(System.Int32):System.Object",
+          "normalizedSignature": "get_Item|(System.Int32):System.Object|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::get_Item(System.String):System.Object",
+          "clrName": "get_Item",
+          "tsEmitName": "get_Item2",
+          "metadataToken": 0,
+          "canonicalSignature": "(System.String):System.Object",
+          "normalizedSignature": "get_Item|(System.String):System.Object|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::FieldCount:System.Int32",
+          "clrName": "FieldCount",
+          "tsEmitName": "fieldCount",
+          "metadataToken": 385877783,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "FieldCount|:System.Int32|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlDataRecord::.ctor(Microsoft.Data.SqlClient.Server.SqlMetaData[]):void",
+          "metadataToken": 100665730,
+          "canonicalSignature": "(Microsoft.Data.SqlClient.Server.SqlMetaData[]):void",
+          "normalizedSignature": "constructor|(Microsoft.Data.SqlClient.Server.SqlMetaData[]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "getBoolean",
+          "isStatic": false,
+          "tsSignatureId": "GetBoolean|(System.Int32):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665734
+          }
+        },
+        {
+          "tsName": "getByte",
+          "isStatic": false,
+          "tsSignatureId": "GetByte|(System.Int32):System.Byte|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665735
+          }
+        },
+        {
+          "tsName": "getBytes",
+          "isStatic": false,
+          "tsSignatureId": "GetBytes|(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32):System.Int64|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665736
+          }
+        },
+        {
+          "tsName": "getChar",
+          "isStatic": false,
+          "tsSignatureId": "GetChar|(System.Int32):System.Char|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665737
+          }
+        },
+        {
+          "tsName": "getChars",
+          "isStatic": false,
+          "tsSignatureId": "GetChars|(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32):System.Int64|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665738
+          }
+        },
+        {
+          "tsName": "getDataTypeName",
+          "isStatic": false,
+          "tsSignatureId": "GetDataTypeName|(System.Int32):System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665739
+          }
+        },
+        {
+          "tsName": "getDateTime",
+          "isStatic": false,
+          "tsSignatureId": "GetDateTime|(System.Int32):System.DateTime|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665740
+          }
+        },
+        {
+          "tsName": "getDateTimeOffset",
+          "isStatic": false,
+          "tsSignatureId": "GetDateTimeOffset|(System.Int32):System.DateTimeOffset|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665741
+          }
+        },
+        {
+          "tsName": "getDecimal",
+          "isStatic": false,
+          "tsSignatureId": "GetDecimal|(System.Int32):System.Decimal|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665742
+          }
+        },
+        {
+          "tsName": "getDouble",
+          "isStatic": false,
+          "tsSignatureId": "GetDouble|(System.Int32):System.Double|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665743
+          }
+        },
+        {
+          "tsName": "getFieldType",
+          "isStatic": false,
+          "tsSignatureId": "GetFieldType|(System.Int32):System.Type|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665744
+          }
+        },
+        {
+          "tsName": "getFloat",
+          "isStatic": false,
+          "tsSignatureId": "GetFloat|(System.Int32):System.Single|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665745
+          }
+        },
+        {
+          "tsName": "getGuid",
+          "isStatic": false,
+          "tsSignatureId": "GetGuid|(System.Int32):System.Guid|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665746
+          }
+        },
+        {
+          "tsName": "getInt16",
+          "isStatic": false,
+          "tsSignatureId": "GetInt16|(System.Int32):System.Int16|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665747
+          }
+        },
+        {
+          "tsName": "getInt32",
+          "isStatic": false,
+          "tsSignatureId": "GetInt32|(System.Int32):System.Int32|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665748
+          }
+        },
+        {
+          "tsName": "getInt64",
+          "isStatic": false,
+          "tsSignatureId": "GetInt64|(System.Int32):System.Int64|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665749
+          }
+        },
+        {
+          "tsName": "getName",
+          "isStatic": false,
+          "tsSignatureId": "GetName|(System.Int32):System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665750
+          }
+        },
+        {
+          "tsName": "getOrdinal",
+          "isStatic": false,
+          "tsSignatureId": "GetOrdinal|(System.String):System.Int32|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665751
+          }
+        },
+        {
+          "tsName": "getSqlBinary",
+          "isStatic": false,
+          "tsSignatureId": "GetSqlBinary|(System.Int32):System.Data.SqlTypes.SqlBinary|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665752
+          }
+        },
+        {
+          "tsName": "getSqlBoolean",
+          "isStatic": false,
+          "tsSignatureId": "GetSqlBoolean|(System.Int32):System.Data.SqlTypes.SqlBoolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665753
+          }
+        },
+        {
+          "tsName": "getSqlByte",
+          "isStatic": false,
+          "tsSignatureId": "GetSqlByte|(System.Int32):System.Data.SqlTypes.SqlByte|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665754
+          }
+        },
+        {
+          "tsName": "getSqlBytes",
+          "isStatic": false,
+          "tsSignatureId": "GetSqlBytes|(System.Int32):System.Data.SqlTypes.SqlBytes|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665755
+          }
+        },
+        {
+          "tsName": "getSqlChars",
+          "isStatic": false,
+          "tsSignatureId": "GetSqlChars|(System.Int32):System.Data.SqlTypes.SqlChars|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665756
+          }
+        },
+        {
+          "tsName": "getSqlDateTime",
+          "isStatic": false,
+          "tsSignatureId": "GetSqlDateTime|(System.Int32):System.Data.SqlTypes.SqlDateTime|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665757
+          }
+        },
+        {
+          "tsName": "getSqlDecimal",
+          "isStatic": false,
+          "tsSignatureId": "GetSqlDecimal|(System.Int32):System.Data.SqlTypes.SqlDecimal|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665758
+          }
+        },
+        {
+          "tsName": "getSqlDouble",
+          "isStatic": false,
+          "tsSignatureId": "GetSqlDouble|(System.Int32):System.Data.SqlTypes.SqlDouble|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665759
+          }
+        },
+        {
+          "tsName": "getSqlFieldType",
+          "isStatic": false,
+          "tsSignatureId": "GetSqlFieldType|(System.Int32):System.Type|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665760
+          }
+        },
+        {
+          "tsName": "getSqlGuid",
+          "isStatic": false,
+          "tsSignatureId": "GetSqlGuid|(System.Int32):System.Data.SqlTypes.SqlGuid|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665761
+          }
+        },
+        {
+          "tsName": "getSqlInt16",
+          "isStatic": false,
+          "tsSignatureId": "GetSqlInt16|(System.Int32):System.Data.SqlTypes.SqlInt16|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665762
+          }
+        },
+        {
+          "tsName": "getSqlInt32",
+          "isStatic": false,
+          "tsSignatureId": "GetSqlInt32|(System.Int32):System.Data.SqlTypes.SqlInt32|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665763
+          }
+        },
+        {
+          "tsName": "getSqlInt64",
+          "isStatic": false,
+          "tsSignatureId": "GetSqlInt64|(System.Int32):System.Data.SqlTypes.SqlInt64|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665764
+          }
+        },
+        {
+          "tsName": "getSqlMetaData",
+          "isStatic": false,
+          "tsSignatureId": "GetSqlMetaData|(System.Int32):Microsoft.Data.SqlClient.Server.SqlMetaData|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665765
+          }
+        },
+        {
+          "tsName": "getSqlMoney",
+          "isStatic": false,
+          "tsSignatureId": "GetSqlMoney|(System.Int32):System.Data.SqlTypes.SqlMoney|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665766
+          }
+        },
+        {
+          "tsName": "getSqlSingle",
+          "isStatic": false,
+          "tsSignatureId": "GetSqlSingle|(System.Int32):System.Data.SqlTypes.SqlSingle|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665767
+          }
+        },
+        {
+          "tsName": "getSqlString",
+          "isStatic": false,
+          "tsSignatureId": "GetSqlString|(System.Int32):System.Data.SqlTypes.SqlString|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665768
+          }
+        },
+        {
+          "tsName": "getSqlValue",
+          "isStatic": false,
+          "tsSignatureId": "GetSqlValue|(System.Int32):System.Object|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665769
+          }
+        },
+        {
+          "tsName": "getSqlValues",
+          "isStatic": false,
+          "tsSignatureId": "GetSqlValues|(System.Object[]):System.Int32|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665770
+          }
+        },
+        {
+          "tsName": "getSqlXml",
+          "isStatic": false,
+          "tsSignatureId": "GetSqlXml|(System.Int32):System.Data.SqlTypes.SqlXml|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665771
+          }
+        },
+        {
+          "tsName": "getString",
+          "isStatic": false,
+          "tsSignatureId": "GetString|(System.Int32):System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665772
+          }
+        },
+        {
+          "tsName": "getTimeSpan",
+          "isStatic": false,
+          "tsSignatureId": "GetTimeSpan|(System.Int32):System.TimeSpan|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665773
+          }
+        },
+        {
+          "tsName": "getValue",
+          "isStatic": false,
+          "tsSignatureId": "GetValue|(System.Int32):System.Object|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665774
+          }
+        },
+        {
+          "tsName": "getValues",
+          "isStatic": false,
+          "tsSignatureId": "GetValues|(System.Object[]):System.Int32|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665775
+          }
+        },
+        {
+          "tsName": "isDBNull",
+          "isStatic": false,
+          "tsSignatureId": "IsDBNull|(System.Int32):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665776
+          }
+        },
+        {
+          "tsName": "setBoolean",
+          "isStatic": false,
+          "tsSignatureId": "SetBoolean|(System.Int32,System.Boolean):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665777
+          }
+        },
+        {
+          "tsName": "setByte",
+          "isStatic": false,
+          "tsSignatureId": "SetByte|(System.Int32,System.Byte):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665778
+          }
+        },
+        {
+          "tsName": "setBytes",
+          "isStatic": false,
+          "tsSignatureId": "SetBytes|(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665779
+          }
+        },
+        {
+          "tsName": "setChar",
+          "isStatic": false,
+          "tsSignatureId": "SetChar|(System.Int32,System.Char):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665780
+          }
+        },
+        {
+          "tsName": "setChars",
+          "isStatic": false,
+          "tsSignatureId": "SetChars|(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665781
+          }
+        },
+        {
+          "tsName": "setDateTime",
+          "isStatic": false,
+          "tsSignatureId": "SetDateTime|(System.Int32,System.DateTime):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665782
+          }
+        },
+        {
+          "tsName": "setDateTimeOffset",
+          "isStatic": false,
+          "tsSignatureId": "SetDateTimeOffset|(System.Int32,System.DateTimeOffset):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665783
+          }
+        },
+        {
+          "tsName": "setDBNull",
+          "isStatic": false,
+          "tsSignatureId": "SetDBNull|(System.Int32):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665784
+          }
+        },
+        {
+          "tsName": "setDecimal",
+          "isStatic": false,
+          "tsSignatureId": "SetDecimal|(System.Int32,System.Decimal):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665785
+          }
+        },
+        {
+          "tsName": "setDouble",
+          "isStatic": false,
+          "tsSignatureId": "SetDouble|(System.Int32,System.Double):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665786
+          }
+        },
+        {
+          "tsName": "setFloat",
+          "isStatic": false,
+          "tsSignatureId": "SetFloat|(System.Int32,System.Single):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665787
+          }
+        },
+        {
+          "tsName": "setGuid",
+          "isStatic": false,
+          "tsSignatureId": "SetGuid|(System.Int32,System.Guid):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665788
+          }
+        },
+        {
+          "tsName": "setInt16",
+          "isStatic": false,
+          "tsSignatureId": "SetInt16|(System.Int32,System.Int16):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665789
+          }
+        },
+        {
+          "tsName": "setInt32",
+          "isStatic": false,
+          "tsSignatureId": "SetInt32|(System.Int32,System.Int32):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665790
+          }
+        },
+        {
+          "tsName": "setInt64",
+          "isStatic": false,
+          "tsSignatureId": "SetInt64|(System.Int32,System.Int64):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665791
+          }
+        },
+        {
+          "tsName": "setSqlBinary",
+          "isStatic": false,
+          "tsSignatureId": "SetSqlBinary|(System.Int32,System.Data.SqlTypes.SqlBinary):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665792
+          }
+        },
+        {
+          "tsName": "setSqlBoolean",
+          "isStatic": false,
+          "tsSignatureId": "SetSqlBoolean|(System.Int32,System.Data.SqlTypes.SqlBoolean):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665793
+          }
+        },
+        {
+          "tsName": "setSqlByte",
+          "isStatic": false,
+          "tsSignatureId": "SetSqlByte|(System.Int32,System.Data.SqlTypes.SqlByte):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665794
+          }
+        },
+        {
+          "tsName": "setSqlBytes",
+          "isStatic": false,
+          "tsSignatureId": "SetSqlBytes|(System.Int32,System.Data.SqlTypes.SqlBytes):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665795
+          }
+        },
+        {
+          "tsName": "setSqlChars",
+          "isStatic": false,
+          "tsSignatureId": "SetSqlChars|(System.Int32,System.Data.SqlTypes.SqlChars):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665796
+          }
+        },
+        {
+          "tsName": "setSqlDateTime",
+          "isStatic": false,
+          "tsSignatureId": "SetSqlDateTime|(System.Int32,System.Data.SqlTypes.SqlDateTime):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665797
+          }
+        },
+        {
+          "tsName": "setSqlDecimal",
+          "isStatic": false,
+          "tsSignatureId": "SetSqlDecimal|(System.Int32,System.Data.SqlTypes.SqlDecimal):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665798
+          }
+        },
+        {
+          "tsName": "setSqlDouble",
+          "isStatic": false,
+          "tsSignatureId": "SetSqlDouble|(System.Int32,System.Data.SqlTypes.SqlDouble):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665799
+          }
+        },
+        {
+          "tsName": "setSqlGuid",
+          "isStatic": false,
+          "tsSignatureId": "SetSqlGuid|(System.Int32,System.Data.SqlTypes.SqlGuid):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665800
+          }
+        },
+        {
+          "tsName": "setSqlInt16",
+          "isStatic": false,
+          "tsSignatureId": "SetSqlInt16|(System.Int32,System.Data.SqlTypes.SqlInt16):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665801
+          }
+        },
+        {
+          "tsName": "setSqlInt32",
+          "isStatic": false,
+          "tsSignatureId": "SetSqlInt32|(System.Int32,System.Data.SqlTypes.SqlInt32):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665802
+          }
+        },
+        {
+          "tsName": "setSqlInt64",
+          "isStatic": false,
+          "tsSignatureId": "SetSqlInt64|(System.Int32,System.Data.SqlTypes.SqlInt64):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665803
+          }
+        },
+        {
+          "tsName": "setSqlMoney",
+          "isStatic": false,
+          "tsSignatureId": "SetSqlMoney|(System.Int32,System.Data.SqlTypes.SqlMoney):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665804
+          }
+        },
+        {
+          "tsName": "setSqlSingle",
+          "isStatic": false,
+          "tsSignatureId": "SetSqlSingle|(System.Int32,System.Data.SqlTypes.SqlSingle):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665805
+          }
+        },
+        {
+          "tsName": "setSqlString",
+          "isStatic": false,
+          "tsSignatureId": "SetSqlString|(System.Int32,System.Data.SqlTypes.SqlString):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665806
+          }
+        },
+        {
+          "tsName": "setSqlXml",
+          "isStatic": false,
+          "tsSignatureId": "SetSqlXml|(System.Int32,System.Data.SqlTypes.SqlXml):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665807
+          }
+        },
+        {
+          "tsName": "setString",
+          "isStatic": false,
+          "tsSignatureId": "SetString|(System.Int32,System.String):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665808
+          }
+        },
+        {
+          "tsName": "setTimeSpan",
+          "isStatic": false,
+          "tsSignatureId": "SetTimeSpan|(System.Int32,System.TimeSpan):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665809
+          }
+        },
+        {
+          "tsName": "setValue",
+          "isStatic": false,
+          "tsSignatureId": "SetValue|(System.Int32,System.Object):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665810
+          }
+        },
+        {
+          "tsName": "setValues",
+          "isStatic": false,
+          "tsSignatureId": "SetValues|(System.Object[]):System.Int32|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665811
+          }
+        },
+        {
+          "tsName": "get_Item",
+          "isStatic": false,
+          "tsSignatureId": "get_Item|(System.Int32):System.Object|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 0
+          }
+        },
+        {
+          "tsName": "get_Item2",
+          "isStatic": false,
+          "tsSignatureId": "get_Item|(System.String):System.Object|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 0
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "fieldCount",
+          "isStatic": false,
+          "tsSignatureId": "FieldCount|:System.Int32|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 385877783
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.Data.SqlClient.Server.SqlMetaData[]):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlDataRecord",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665730
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData",
+      "clrName": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+      "tsEmitName": "SqlMetaData",
+      "assemblyName": "Microsoft.Data.SqlClient",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::Adjust(System.Boolean):System.Boolean",
+          "clrName": "Adjust",
+          "tsEmitName": "adjust",
+          "metadataToken": 100665846,
+          "canonicalSignature": "(System.Boolean):System.Boolean",
+          "normalizedSignature": "Adjust|(System.Boolean):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::Adjust(System.Byte):System.Byte",
+          "clrName": "Adjust",
+          "tsEmitName": "adjust",
+          "metadataToken": 100665847,
+          "canonicalSignature": "(System.Byte):System.Byte",
+          "normalizedSignature": "Adjust|(System.Byte):System.Byte|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::Adjust(System.Byte[]):System.Byte[]",
+          "clrName": "Adjust",
+          "tsEmitName": "adjust",
+          "metadataToken": 100665848,
+          "canonicalSignature": "(System.Byte[]):System.Byte[]",
+          "normalizedSignature": "Adjust|(System.Byte[]):System.Byte[]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::Adjust(System.Char):System.Char",
+          "clrName": "Adjust",
+          "tsEmitName": "adjust",
+          "metadataToken": 100665849,
+          "canonicalSignature": "(System.Char):System.Char",
+          "normalizedSignature": "Adjust|(System.Char):System.Char|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::Adjust(System.Char[]):System.Char[]",
+          "clrName": "Adjust",
+          "tsEmitName": "adjust",
+          "metadataToken": 100665850,
+          "canonicalSignature": "(System.Char[]):System.Char[]",
+          "normalizedSignature": "Adjust|(System.Char[]):System.Char[]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::Adjust(System.Data.SqlTypes.SqlBinary):System.Data.SqlTypes.SqlBinary",
+          "clrName": "Adjust",
+          "tsEmitName": "adjust",
+          "metadataToken": 100665851,
+          "canonicalSignature": "(System.Data.SqlTypes.SqlBinary):System.Data.SqlTypes.SqlBinary",
+          "normalizedSignature": "Adjust|(System.Data.SqlTypes.SqlBinary):System.Data.SqlTypes.SqlBinary|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::Adjust(System.Data.SqlTypes.SqlBoolean):System.Data.SqlTypes.SqlBoolean",
+          "clrName": "Adjust",
+          "tsEmitName": "adjust",
+          "metadataToken": 100665852,
+          "canonicalSignature": "(System.Data.SqlTypes.SqlBoolean):System.Data.SqlTypes.SqlBoolean",
+          "normalizedSignature": "Adjust|(System.Data.SqlTypes.SqlBoolean):System.Data.SqlTypes.SqlBoolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::Adjust(System.Data.SqlTypes.SqlByte):System.Data.SqlTypes.SqlByte",
+          "clrName": "Adjust",
+          "tsEmitName": "adjust",
+          "metadataToken": 100665853,
+          "canonicalSignature": "(System.Data.SqlTypes.SqlByte):System.Data.SqlTypes.SqlByte",
+          "normalizedSignature": "Adjust|(System.Data.SqlTypes.SqlByte):System.Data.SqlTypes.SqlByte|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::Adjust(System.Data.SqlTypes.SqlBytes):System.Data.SqlTypes.SqlBytes",
+          "clrName": "Adjust",
+          "tsEmitName": "adjust",
+          "metadataToken": 100665854,
+          "canonicalSignature": "(System.Data.SqlTypes.SqlBytes):System.Data.SqlTypes.SqlBytes",
+          "normalizedSignature": "Adjust|(System.Data.SqlTypes.SqlBytes):System.Data.SqlTypes.SqlBytes|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::Adjust(System.Data.SqlTypes.SqlChars):System.Data.SqlTypes.SqlChars",
+          "clrName": "Adjust",
+          "tsEmitName": "adjust",
+          "metadataToken": 100665855,
+          "canonicalSignature": "(System.Data.SqlTypes.SqlChars):System.Data.SqlTypes.SqlChars",
+          "normalizedSignature": "Adjust|(System.Data.SqlTypes.SqlChars):System.Data.SqlTypes.SqlChars|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::Adjust(System.Data.SqlTypes.SqlDateTime):System.Data.SqlTypes.SqlDateTime",
+          "clrName": "Adjust",
+          "tsEmitName": "adjust",
+          "metadataToken": 100665856,
+          "canonicalSignature": "(System.Data.SqlTypes.SqlDateTime):System.Data.SqlTypes.SqlDateTime",
+          "normalizedSignature": "Adjust|(System.Data.SqlTypes.SqlDateTime):System.Data.SqlTypes.SqlDateTime|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::Adjust(System.Data.SqlTypes.SqlDecimal):System.Data.SqlTypes.SqlDecimal",
+          "clrName": "Adjust",
+          "tsEmitName": "adjust",
+          "metadataToken": 100665857,
+          "canonicalSignature": "(System.Data.SqlTypes.SqlDecimal):System.Data.SqlTypes.SqlDecimal",
+          "normalizedSignature": "Adjust|(System.Data.SqlTypes.SqlDecimal):System.Data.SqlTypes.SqlDecimal|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::Adjust(System.Data.SqlTypes.SqlDouble):System.Data.SqlTypes.SqlDouble",
+          "clrName": "Adjust",
+          "tsEmitName": "adjust",
+          "metadataToken": 100665858,
+          "canonicalSignature": "(System.Data.SqlTypes.SqlDouble):System.Data.SqlTypes.SqlDouble",
+          "normalizedSignature": "Adjust|(System.Data.SqlTypes.SqlDouble):System.Data.SqlTypes.SqlDouble|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::Adjust(System.Data.SqlTypes.SqlGuid):System.Data.SqlTypes.SqlGuid",
+          "clrName": "Adjust",
+          "tsEmitName": "adjust",
+          "metadataToken": 100665859,
+          "canonicalSignature": "(System.Data.SqlTypes.SqlGuid):System.Data.SqlTypes.SqlGuid",
+          "normalizedSignature": "Adjust|(System.Data.SqlTypes.SqlGuid):System.Data.SqlTypes.SqlGuid|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::Adjust(System.Data.SqlTypes.SqlInt16):System.Data.SqlTypes.SqlInt16",
+          "clrName": "Adjust",
+          "tsEmitName": "adjust",
+          "metadataToken": 100665860,
+          "canonicalSignature": "(System.Data.SqlTypes.SqlInt16):System.Data.SqlTypes.SqlInt16",
+          "normalizedSignature": "Adjust|(System.Data.SqlTypes.SqlInt16):System.Data.SqlTypes.SqlInt16|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::Adjust(System.Data.SqlTypes.SqlInt32):System.Data.SqlTypes.SqlInt32",
+          "clrName": "Adjust",
+          "tsEmitName": "adjust",
+          "metadataToken": 100665861,
+          "canonicalSignature": "(System.Data.SqlTypes.SqlInt32):System.Data.SqlTypes.SqlInt32",
+          "normalizedSignature": "Adjust|(System.Data.SqlTypes.SqlInt32):System.Data.SqlTypes.SqlInt32|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::Adjust(System.Data.SqlTypes.SqlInt64):System.Data.SqlTypes.SqlInt64",
+          "clrName": "Adjust",
+          "tsEmitName": "adjust",
+          "metadataToken": 100665862,
+          "canonicalSignature": "(System.Data.SqlTypes.SqlInt64):System.Data.SqlTypes.SqlInt64",
+          "normalizedSignature": "Adjust|(System.Data.SqlTypes.SqlInt64):System.Data.SqlTypes.SqlInt64|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::Adjust(System.Data.SqlTypes.SqlMoney):System.Data.SqlTypes.SqlMoney",
+          "clrName": "Adjust",
+          "tsEmitName": "adjust",
+          "metadataToken": 100665863,
+          "canonicalSignature": "(System.Data.SqlTypes.SqlMoney):System.Data.SqlTypes.SqlMoney",
+          "normalizedSignature": "Adjust|(System.Data.SqlTypes.SqlMoney):System.Data.SqlTypes.SqlMoney|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::Adjust(System.Data.SqlTypes.SqlSingle):System.Data.SqlTypes.SqlSingle",
+          "clrName": "Adjust",
+          "tsEmitName": "adjust",
+          "metadataToken": 100665864,
+          "canonicalSignature": "(System.Data.SqlTypes.SqlSingle):System.Data.SqlTypes.SqlSingle",
+          "normalizedSignature": "Adjust|(System.Data.SqlTypes.SqlSingle):System.Data.SqlTypes.SqlSingle|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::Adjust(System.Data.SqlTypes.SqlString):System.Data.SqlTypes.SqlString",
+          "clrName": "Adjust",
+          "tsEmitName": "adjust",
+          "metadataToken": 100665865,
+          "canonicalSignature": "(System.Data.SqlTypes.SqlString):System.Data.SqlTypes.SqlString",
+          "normalizedSignature": "Adjust|(System.Data.SqlTypes.SqlString):System.Data.SqlTypes.SqlString|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::Adjust(System.Data.SqlTypes.SqlXml):System.Data.SqlTypes.SqlXml",
+          "clrName": "Adjust",
+          "tsEmitName": "adjust",
+          "metadataToken": 100665866,
+          "canonicalSignature": "(System.Data.SqlTypes.SqlXml):System.Data.SqlTypes.SqlXml",
+          "normalizedSignature": "Adjust|(System.Data.SqlTypes.SqlXml):System.Data.SqlTypes.SqlXml|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::Adjust(System.DateTime):System.DateTime",
+          "clrName": "Adjust",
+          "tsEmitName": "adjust",
+          "metadataToken": 100665867,
+          "canonicalSignature": "(System.DateTime):System.DateTime",
+          "normalizedSignature": "Adjust|(System.DateTime):System.DateTime|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::Adjust(System.DateTimeOffset):System.DateTimeOffset",
+          "clrName": "Adjust",
+          "tsEmitName": "adjust",
+          "metadataToken": 100665868,
+          "canonicalSignature": "(System.DateTimeOffset):System.DateTimeOffset",
+          "normalizedSignature": "Adjust|(System.DateTimeOffset):System.DateTimeOffset|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::Adjust(System.Decimal):System.Decimal",
+          "clrName": "Adjust",
+          "tsEmitName": "adjust",
+          "metadataToken": 100665869,
+          "canonicalSignature": "(System.Decimal):System.Decimal",
+          "normalizedSignature": "Adjust|(System.Decimal):System.Decimal|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::Adjust(System.Double):System.Double",
+          "clrName": "Adjust",
+          "tsEmitName": "adjust",
+          "metadataToken": 100665870,
+          "canonicalSignature": "(System.Double):System.Double",
+          "normalizedSignature": "Adjust|(System.Double):System.Double|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::Adjust(System.Guid):System.Guid",
+          "clrName": "Adjust",
+          "tsEmitName": "adjust",
+          "metadataToken": 100665871,
+          "canonicalSignature": "(System.Guid):System.Guid",
+          "normalizedSignature": "Adjust|(System.Guid):System.Guid|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::Adjust(System.Int16):System.Int16",
+          "clrName": "Adjust",
+          "tsEmitName": "adjust",
+          "metadataToken": 100665872,
+          "canonicalSignature": "(System.Int16):System.Int16",
+          "normalizedSignature": "Adjust|(System.Int16):System.Int16|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::Adjust(System.Int32):System.Int32",
+          "clrName": "Adjust",
+          "tsEmitName": "adjust",
+          "metadataToken": 100665873,
+          "canonicalSignature": "(System.Int32):System.Int32",
+          "normalizedSignature": "Adjust|(System.Int32):System.Int32|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::Adjust(System.Int64):System.Int64",
+          "clrName": "Adjust",
+          "tsEmitName": "adjust",
+          "metadataToken": 100665874,
+          "canonicalSignature": "(System.Int64):System.Int64",
+          "normalizedSignature": "Adjust|(System.Int64):System.Int64|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::Adjust(System.Object):System.Object",
+          "clrName": "Adjust",
+          "tsEmitName": "adjust",
+          "metadataToken": 100665875,
+          "canonicalSignature": "(System.Object):System.Object",
+          "normalizedSignature": "Adjust|(System.Object):System.Object|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::Adjust(System.Single):System.Single",
+          "clrName": "Adjust",
+          "tsEmitName": "adjust",
+          "metadataToken": 100665876,
+          "canonicalSignature": "(System.Single):System.Single",
+          "normalizedSignature": "Adjust|(System.Single):System.Single|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::Adjust(System.String):System.String",
+          "clrName": "Adjust",
+          "tsEmitName": "adjust",
+          "metadataToken": 100665877,
+          "canonicalSignature": "(System.String):System.String",
+          "normalizedSignature": "Adjust|(System.String):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::Adjust(System.TimeSpan):System.TimeSpan",
+          "clrName": "Adjust",
+          "tsEmitName": "adjust",
+          "metadataToken": 100665878,
+          "canonicalSignature": "(System.TimeSpan):System.TimeSpan",
+          "normalizedSignature": "Adjust|(System.TimeSpan):System.TimeSpan|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::InferFromValue(System.Object,System.String):Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "clrName": "InferFromValue",
+          "tsEmitName": "inferFromValue",
+          "metadataToken": 100665879,
+          "canonicalSignature": "(System.Object,System.String):Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "normalizedSignature": "InferFromValue|(System.Object,System.String):Microsoft.Data.SqlClient.Server.SqlMetaData|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::CompareOptions:System.Data.SqlTypes.SqlCompareOptions",
+          "clrName": "CompareOptions",
+          "tsEmitName": "compareOptions",
+          "metadataToken": 385877786,
+          "canonicalSignature": ":System.Data.SqlTypes.SqlCompareOptions",
+          "normalizedSignature": "CompareOptions|:System.Data.SqlTypes.SqlCompareOptions|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::DbType:System.Data.DbType",
+          "clrName": "DbType",
+          "tsEmitName": "dbType",
+          "metadataToken": 385877787,
+          "canonicalSignature": ":System.Data.DbType",
+          "normalizedSignature": "DbType|:System.Data.DbType|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::IsUniqueKey:System.Boolean",
+          "clrName": "IsUniqueKey",
+          "tsEmitName": "isUniqueKey",
+          "metadataToken": 385877788,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "IsUniqueKey|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::LocaleId:System.Int64",
+          "clrName": "LocaleId",
+          "tsEmitName": "localeId",
+          "metadataToken": 385877789,
+          "canonicalSignature": ":System.Int64",
+          "normalizedSignature": "LocaleId|:System.Int64|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::Max:System.Int64",
+          "clrName": "Max",
+          "tsEmitName": "max",
+          "metadataToken": 385877790,
+          "canonicalSignature": ":System.Int64",
+          "normalizedSignature": "Max|:System.Int64|static=true|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::MaxLength:System.Int64",
+          "clrName": "MaxLength",
+          "tsEmitName": "maxLength",
+          "metadataToken": 385877791,
+          "canonicalSignature": ":System.Int64",
+          "normalizedSignature": "MaxLength|:System.Int64|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::Name:System.String",
+          "clrName": "Name",
+          "tsEmitName": "name",
+          "metadataToken": 385877792,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Name|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::Precision:System.Byte",
+          "clrName": "Precision",
+          "tsEmitName": "precision",
+          "metadataToken": 385877793,
+          "canonicalSignature": ":System.Byte",
+          "normalizedSignature": "Precision|:System.Byte|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::Scale:System.Byte",
+          "clrName": "Scale",
+          "tsEmitName": "scale",
+          "metadataToken": 385877794,
+          "canonicalSignature": ":System.Byte",
+          "normalizedSignature": "Scale|:System.Byte|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::SortOrder:Microsoft.Data.SqlClient.SortOrder",
+          "clrName": "SortOrder",
+          "tsEmitName": "sortOrder",
+          "metadataToken": 385877795,
+          "canonicalSignature": ":Microsoft.Data.SqlClient.SortOrder",
+          "normalizedSignature": "SortOrder|:Microsoft.Data.SqlClient.SortOrder|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::SortOrdinal:System.Int32",
+          "clrName": "SortOrdinal",
+          "tsEmitName": "sortOrdinal",
+          "metadataToken": 385877796,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "SortOrdinal|:System.Int32|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::SqlDbType:System.Data.SqlDbType",
+          "clrName": "SqlDbType",
+          "tsEmitName": "sqlDbType",
+          "metadataToken": 385877797,
+          "canonicalSignature": ":System.Data.SqlDbType",
+          "normalizedSignature": "SqlDbType|:System.Data.SqlDbType|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::Type:System.Type",
+          "clrName": "Type",
+          "tsEmitName": "type_",
+          "metadataToken": 385877798,
+          "canonicalSignature": ":System.Type",
+          "normalizedSignature": "Type|:System.Type|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::TypeName:System.String",
+          "clrName": "TypeName",
+          "tsEmitName": "typeName",
+          "metadataToken": 385877799,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "TypeName|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::UseServerDefault:System.Boolean",
+          "clrName": "UseServerDefault",
+          "tsEmitName": "useServerDefault",
+          "metadataToken": 385877800,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "UseServerDefault|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::XmlSchemaCollectionDatabase:System.String",
+          "clrName": "XmlSchemaCollectionDatabase",
+          "tsEmitName": "xmlSchemaCollectionDatabase",
+          "metadataToken": 385877801,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "XmlSchemaCollectionDatabase|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::XmlSchemaCollectionName:System.String",
+          "clrName": "XmlSchemaCollectionName",
+          "tsEmitName": "xmlSchemaCollectionName",
+          "metadataToken": 385877802,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "XmlSchemaCollectionName|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::XmlSchemaCollectionOwningSchema:System.String",
+          "clrName": "XmlSchemaCollectionOwningSchema",
+          "tsEmitName": "xmlSchemaCollectionOwningSchema",
+          "metadataToken": 385877803,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "XmlSchemaCollectionOwningSchema|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::.ctor(System.String,System.Data.SqlDbType):void",
+          "metadataToken": 100665813,
+          "canonicalSignature": "(System.String,System.Data.SqlDbType):void",
+          "normalizedSignature": "constructor|(System.String,System.Data.SqlDbType):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::.ctor(System.String,System.Data.SqlDbType,System.Boolean,System.Boolean,Microsoft.Data.SqlClient.SortOrder,System.Int32):void",
+          "metadataToken": 100665814,
+          "canonicalSignature": "(System.String,System.Data.SqlDbType,System.Boolean,System.Boolean,Microsoft.Data.SqlClient.SortOrder,System.Int32):void",
+          "normalizedSignature": "constructor|(System.String,System.Data.SqlDbType,System.Boolean,System.Boolean,Microsoft.Data.SqlClient.SortOrder,System.Int32):void|static=false",
+          "isStatic": false,
+          "parameterCount": 6,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::.ctor(System.String,System.Data.SqlDbType,System.Byte,System.Byte):void",
+          "metadataToken": 100665815,
+          "canonicalSignature": "(System.String,System.Data.SqlDbType,System.Byte,System.Byte):void",
+          "normalizedSignature": "constructor|(System.String,System.Data.SqlDbType,System.Byte,System.Byte):void|static=false",
+          "isStatic": false,
+          "parameterCount": 4,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::.ctor(System.String,System.Data.SqlDbType,System.Byte,System.Byte,System.Boolean,System.Boolean,Microsoft.Data.SqlClient.SortOrder,System.Int32):void",
+          "metadataToken": 100665816,
+          "canonicalSignature": "(System.String,System.Data.SqlDbType,System.Byte,System.Byte,System.Boolean,System.Boolean,Microsoft.Data.SqlClient.SortOrder,System.Int32):void",
+          "normalizedSignature": "constructor|(System.String,System.Data.SqlDbType,System.Byte,System.Byte,System.Boolean,System.Boolean,Microsoft.Data.SqlClient.SortOrder,System.Int32):void|static=false",
+          "isStatic": false,
+          "parameterCount": 8,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::.ctor(System.String,System.Data.SqlDbType,System.Int64):void",
+          "metadataToken": 100665817,
+          "canonicalSignature": "(System.String,System.Data.SqlDbType,System.Int64):void",
+          "normalizedSignature": "constructor|(System.String,System.Data.SqlDbType,System.Int64):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::.ctor(System.String,System.Data.SqlDbType,System.Int64,System.Boolean,System.Boolean,Microsoft.Data.SqlClient.SortOrder,System.Int32):void",
+          "metadataToken": 100665818,
+          "canonicalSignature": "(System.String,System.Data.SqlDbType,System.Int64,System.Boolean,System.Boolean,Microsoft.Data.SqlClient.SortOrder,System.Int32):void",
+          "normalizedSignature": "constructor|(System.String,System.Data.SqlDbType,System.Int64,System.Boolean,System.Boolean,Microsoft.Data.SqlClient.SortOrder,System.Int32):void|static=false",
+          "isStatic": false,
+          "parameterCount": 7,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::.ctor(System.String,System.Data.SqlDbType,System.Int64,System.Byte,System.Byte,System.Int64,System.Data.SqlTypes.SqlCompareOptions,System.Type):void",
+          "metadataToken": 100665819,
+          "canonicalSignature": "(System.String,System.Data.SqlDbType,System.Int64,System.Byte,System.Byte,System.Int64,System.Data.SqlTypes.SqlCompareOptions,System.Type):void",
+          "normalizedSignature": "constructor|(System.String,System.Data.SqlDbType,System.Int64,System.Byte,System.Byte,System.Int64,System.Data.SqlTypes.SqlCompareOptions,System.Type):void|static=false",
+          "isStatic": false,
+          "parameterCount": 8,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::.ctor(System.String,System.Data.SqlDbType,System.Int64,System.Byte,System.Byte,System.Int64,System.Data.SqlTypes.SqlCompareOptions,System.Type,System.Boolean,System.Boolean,Microsoft.Data.SqlClient.SortOrder,System.Int32):void",
+          "metadataToken": 100665820,
+          "canonicalSignature": "(System.String,System.Data.SqlDbType,System.Int64,System.Byte,System.Byte,System.Int64,System.Data.SqlTypes.SqlCompareOptions,System.Type,System.Boolean,System.Boolean,Microsoft.Data.SqlClient.SortOrder,System.Int32):void",
+          "normalizedSignature": "constructor|(System.String,System.Data.SqlDbType,System.Int64,System.Byte,System.Byte,System.Int64,System.Data.SqlTypes.SqlCompareOptions,System.Type,System.Boolean,System.Boolean,Microsoft.Data.SqlClient.SortOrder,System.Int32):void|static=false",
+          "isStatic": false,
+          "parameterCount": 12,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::.ctor(System.String,System.Data.SqlDbType,System.Int64,System.Int64,System.Data.SqlTypes.SqlCompareOptions):void",
+          "metadataToken": 100665821,
+          "canonicalSignature": "(System.String,System.Data.SqlDbType,System.Int64,System.Int64,System.Data.SqlTypes.SqlCompareOptions):void",
+          "normalizedSignature": "constructor|(System.String,System.Data.SqlDbType,System.Int64,System.Int64,System.Data.SqlTypes.SqlCompareOptions):void|static=false",
+          "isStatic": false,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::.ctor(System.String,System.Data.SqlDbType,System.Int64,System.Int64,System.Data.SqlTypes.SqlCompareOptions,System.Boolean,System.Boolean,Microsoft.Data.SqlClient.SortOrder,System.Int32):void",
+          "metadataToken": 100665822,
+          "canonicalSignature": "(System.String,System.Data.SqlDbType,System.Int64,System.Int64,System.Data.SqlTypes.SqlCompareOptions,System.Boolean,System.Boolean,Microsoft.Data.SqlClient.SortOrder,System.Int32):void",
+          "normalizedSignature": "constructor|(System.String,System.Data.SqlDbType,System.Int64,System.Int64,System.Data.SqlTypes.SqlCompareOptions,System.Boolean,System.Boolean,Microsoft.Data.SqlClient.SortOrder,System.Int32):void|static=false",
+          "isStatic": false,
+          "parameterCount": 9,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::.ctor(System.String,System.Data.SqlDbType,System.String,System.String,System.String):void",
+          "metadataToken": 100665823,
+          "canonicalSignature": "(System.String,System.Data.SqlDbType,System.String,System.String,System.String):void",
+          "normalizedSignature": "constructor|(System.String,System.Data.SqlDbType,System.String,System.String,System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::.ctor(System.String,System.Data.SqlDbType,System.String,System.String,System.String,System.Boolean,System.Boolean,Microsoft.Data.SqlClient.SortOrder,System.Int32):void",
+          "metadataToken": 100665824,
+          "canonicalSignature": "(System.String,System.Data.SqlDbType,System.String,System.String,System.String,System.Boolean,System.Boolean,Microsoft.Data.SqlClient.SortOrder,System.Int32):void",
+          "normalizedSignature": "constructor|(System.String,System.Data.SqlDbType,System.String,System.String,System.String,System.Boolean,System.Boolean,Microsoft.Data.SqlClient.SortOrder,System.Int32):void|static=false",
+          "isStatic": false,
+          "parameterCount": 9,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::.ctor(System.String,System.Data.SqlDbType,System.Type):void",
+          "metadataToken": 100665825,
+          "canonicalSignature": "(System.String,System.Data.SqlDbType,System.Type):void",
+          "normalizedSignature": "constructor|(System.String,System.Data.SqlDbType,System.Type):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::.ctor(System.String,System.Data.SqlDbType,System.Type,System.String):void",
+          "metadataToken": 100665826,
+          "canonicalSignature": "(System.String,System.Data.SqlDbType,System.Type,System.String):void",
+          "normalizedSignature": "constructor|(System.String,System.Data.SqlDbType,System.Type,System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 4,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::.ctor(System.String,System.Data.SqlDbType,System.Type,System.String,System.Boolean,System.Boolean,Microsoft.Data.SqlClient.SortOrder,System.Int32):void",
+          "metadataToken": 100665827,
+          "canonicalSignature": "(System.String,System.Data.SqlDbType,System.Type,System.String,System.Boolean,System.Boolean,Microsoft.Data.SqlClient.SortOrder,System.Int32):void",
+          "normalizedSignature": "constructor|(System.String,System.Data.SqlDbType,System.Type,System.String,System.Boolean,System.Boolean,Microsoft.Data.SqlClient.SortOrder,System.Int32):void|static=false",
+          "isStatic": false,
+          "parameterCount": 8,
+          "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "adjust",
+          "isStatic": false,
+          "tsSignatureId": "Adjust|(System.Boolean):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665846
+          }
+        },
+        {
+          "tsName": "adjust",
+          "isStatic": false,
+          "tsSignatureId": "Adjust|(System.Byte):System.Byte|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665847
+          }
+        },
+        {
+          "tsName": "adjust",
+          "isStatic": false,
+          "tsSignatureId": "Adjust|(System.Byte[]):System.Byte[]|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665848
+          }
+        },
+        {
+          "tsName": "adjust",
+          "isStatic": false,
+          "tsSignatureId": "Adjust|(System.Char):System.Char|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665849
+          }
+        },
+        {
+          "tsName": "adjust",
+          "isStatic": false,
+          "tsSignatureId": "Adjust|(System.Char[]):System.Char[]|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665850
+          }
+        },
+        {
+          "tsName": "adjust",
+          "isStatic": false,
+          "tsSignatureId": "Adjust|(System.Data.SqlTypes.SqlBinary):System.Data.SqlTypes.SqlBinary|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665851
+          }
+        },
+        {
+          "tsName": "adjust",
+          "isStatic": false,
+          "tsSignatureId": "Adjust|(System.Data.SqlTypes.SqlBoolean):System.Data.SqlTypes.SqlBoolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665852
+          }
+        },
+        {
+          "tsName": "adjust",
+          "isStatic": false,
+          "tsSignatureId": "Adjust|(System.Data.SqlTypes.SqlByte):System.Data.SqlTypes.SqlByte|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665853
+          }
+        },
+        {
+          "tsName": "adjust",
+          "isStatic": false,
+          "tsSignatureId": "Adjust|(System.Data.SqlTypes.SqlBytes):System.Data.SqlTypes.SqlBytes|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665854
+          }
+        },
+        {
+          "tsName": "adjust",
+          "isStatic": false,
+          "tsSignatureId": "Adjust|(System.Data.SqlTypes.SqlChars):System.Data.SqlTypes.SqlChars|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665855
+          }
+        },
+        {
+          "tsName": "adjust",
+          "isStatic": false,
+          "tsSignatureId": "Adjust|(System.Data.SqlTypes.SqlDateTime):System.Data.SqlTypes.SqlDateTime|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665856
+          }
+        },
+        {
+          "tsName": "adjust",
+          "isStatic": false,
+          "tsSignatureId": "Adjust|(System.Data.SqlTypes.SqlDecimal):System.Data.SqlTypes.SqlDecimal|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665857
+          }
+        },
+        {
+          "tsName": "adjust",
+          "isStatic": false,
+          "tsSignatureId": "Adjust|(System.Data.SqlTypes.SqlDouble):System.Data.SqlTypes.SqlDouble|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665858
+          }
+        },
+        {
+          "tsName": "adjust",
+          "isStatic": false,
+          "tsSignatureId": "Adjust|(System.Data.SqlTypes.SqlGuid):System.Data.SqlTypes.SqlGuid|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665859
+          }
+        },
+        {
+          "tsName": "adjust",
+          "isStatic": false,
+          "tsSignatureId": "Adjust|(System.Data.SqlTypes.SqlInt16):System.Data.SqlTypes.SqlInt16|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665860
+          }
+        },
+        {
+          "tsName": "adjust",
+          "isStatic": false,
+          "tsSignatureId": "Adjust|(System.Data.SqlTypes.SqlInt32):System.Data.SqlTypes.SqlInt32|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665861
+          }
+        },
+        {
+          "tsName": "adjust",
+          "isStatic": false,
+          "tsSignatureId": "Adjust|(System.Data.SqlTypes.SqlInt64):System.Data.SqlTypes.SqlInt64|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665862
+          }
+        },
+        {
+          "tsName": "adjust",
+          "isStatic": false,
+          "tsSignatureId": "Adjust|(System.Data.SqlTypes.SqlMoney):System.Data.SqlTypes.SqlMoney|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665863
+          }
+        },
+        {
+          "tsName": "adjust",
+          "isStatic": false,
+          "tsSignatureId": "Adjust|(System.Data.SqlTypes.SqlSingle):System.Data.SqlTypes.SqlSingle|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665864
+          }
+        },
+        {
+          "tsName": "adjust",
+          "isStatic": false,
+          "tsSignatureId": "Adjust|(System.Data.SqlTypes.SqlString):System.Data.SqlTypes.SqlString|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665865
+          }
+        },
+        {
+          "tsName": "adjust",
+          "isStatic": false,
+          "tsSignatureId": "Adjust|(System.Data.SqlTypes.SqlXml):System.Data.SqlTypes.SqlXml|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665866
+          }
+        },
+        {
+          "tsName": "adjust",
+          "isStatic": false,
+          "tsSignatureId": "Adjust|(System.DateTime):System.DateTime|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665867
+          }
+        },
+        {
+          "tsName": "adjust",
+          "isStatic": false,
+          "tsSignatureId": "Adjust|(System.DateTimeOffset):System.DateTimeOffset|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665868
+          }
+        },
+        {
+          "tsName": "adjust",
+          "isStatic": false,
+          "tsSignatureId": "Adjust|(System.Decimal):System.Decimal|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665869
+          }
+        },
+        {
+          "tsName": "adjust",
+          "isStatic": false,
+          "tsSignatureId": "Adjust|(System.Double):System.Double|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665870
+          }
+        },
+        {
+          "tsName": "adjust",
+          "isStatic": false,
+          "tsSignatureId": "Adjust|(System.Guid):System.Guid|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665871
+          }
+        },
+        {
+          "tsName": "adjust",
+          "isStatic": false,
+          "tsSignatureId": "Adjust|(System.Int16):System.Int16|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665872
+          }
+        },
+        {
+          "tsName": "adjust",
+          "isStatic": false,
+          "tsSignatureId": "Adjust|(System.Int32):System.Int32|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665873
+          }
+        },
+        {
+          "tsName": "adjust",
+          "isStatic": false,
+          "tsSignatureId": "Adjust|(System.Int64):System.Int64|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665874
+          }
+        },
+        {
+          "tsName": "adjust",
+          "isStatic": false,
+          "tsSignatureId": "Adjust|(System.Object):System.Object|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665875
+          }
+        },
+        {
+          "tsName": "adjust",
+          "isStatic": false,
+          "tsSignatureId": "Adjust|(System.Single):System.Single|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665876
+          }
+        },
+        {
+          "tsName": "adjust",
+          "isStatic": false,
+          "tsSignatureId": "Adjust|(System.String):System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665877
+          }
+        },
+        {
+          "tsName": "adjust",
+          "isStatic": false,
+          "tsSignatureId": "Adjust|(System.TimeSpan):System.TimeSpan|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665878
+          }
+        },
+        {
+          "tsName": "inferFromValue",
+          "isStatic": true,
+          "tsSignatureId": "InferFromValue|(System.Object,System.String):Microsoft.Data.SqlClient.Server.SqlMetaData|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665879
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "compareOptions",
+          "isStatic": false,
+          "tsSignatureId": "CompareOptions|:System.Data.SqlTypes.SqlCompareOptions|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 385877786
+          }
+        },
+        {
+          "tsName": "dbType",
+          "isStatic": false,
+          "tsSignatureId": "DbType|:System.Data.DbType|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 385877787
+          }
+        },
+        {
+          "tsName": "isUniqueKey",
+          "isStatic": false,
+          "tsSignatureId": "IsUniqueKey|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 385877788
+          }
+        },
+        {
+          "tsName": "localeId",
+          "isStatic": false,
+          "tsSignatureId": "LocaleId|:System.Int64|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 385877789
+          }
+        },
+        {
+          "tsName": "max",
+          "isStatic": true,
+          "tsSignatureId": "Max|:System.Int64|static=true|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 385877790
+          }
+        },
+        {
+          "tsName": "maxLength",
+          "isStatic": false,
+          "tsSignatureId": "MaxLength|:System.Int64|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 385877791
+          }
+        },
+        {
+          "tsName": "name",
+          "isStatic": false,
+          "tsSignatureId": "Name|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 385877792
+          }
+        },
+        {
+          "tsName": "precision",
+          "isStatic": false,
+          "tsSignatureId": "Precision|:System.Byte|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 385877793
+          }
+        },
+        {
+          "tsName": "scale",
+          "isStatic": false,
+          "tsSignatureId": "Scale|:System.Byte|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 385877794
+          }
+        },
+        {
+          "tsName": "sortOrder",
+          "isStatic": false,
+          "tsSignatureId": "SortOrder|:Microsoft.Data.SqlClient.SortOrder|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 385877795
+          }
+        },
+        {
+          "tsName": "sortOrdinal",
+          "isStatic": false,
+          "tsSignatureId": "SortOrdinal|:System.Int32|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 385877796
+          }
+        },
+        {
+          "tsName": "sqlDbType",
+          "isStatic": false,
+          "tsSignatureId": "SqlDbType|:System.Data.SqlDbType|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 385877797
+          }
+        },
+        {
+          "tsName": "type_",
+          "isStatic": false,
+          "tsSignatureId": "Type|:System.Type|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 385877798
+          }
+        },
+        {
+          "tsName": "typeName",
+          "isStatic": false,
+          "tsSignatureId": "TypeName|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 385877799
+          }
+        },
+        {
+          "tsName": "useServerDefault",
+          "isStatic": false,
+          "tsSignatureId": "UseServerDefault|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 385877800
+          }
+        },
+        {
+          "tsName": "xmlSchemaCollectionDatabase",
+          "isStatic": false,
+          "tsSignatureId": "XmlSchemaCollectionDatabase|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 385877801
+          }
+        },
+        {
+          "tsName": "xmlSchemaCollectionName",
+          "isStatic": false,
+          "tsSignatureId": "XmlSchemaCollectionName|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 385877802
+          }
+        },
+        {
+          "tsName": "xmlSchemaCollectionOwningSchema",
+          "isStatic": false,
+          "tsSignatureId": "XmlSchemaCollectionOwningSchema|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 385877803
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.Data.SqlDbType):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665813
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.Data.SqlDbType,System.Boolean,System.Boolean,Microsoft.Data.SqlClient.SortOrder,System.Int32):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665814
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.Data.SqlDbType,System.Byte,System.Byte):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665815
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.Data.SqlDbType,System.Byte,System.Byte,System.Boolean,System.Boolean,Microsoft.Data.SqlClient.SortOrder,System.Int32):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665816
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.Data.SqlDbType,System.Int64):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665817
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.Data.SqlDbType,System.Int64,System.Boolean,System.Boolean,Microsoft.Data.SqlClient.SortOrder,System.Int32):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665818
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.Data.SqlDbType,System.Int64,System.Byte,System.Byte,System.Int64,System.Data.SqlTypes.SqlCompareOptions,System.Type):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665819
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.Data.SqlDbType,System.Int64,System.Byte,System.Byte,System.Int64,System.Data.SqlTypes.SqlCompareOptions,System.Type,System.Boolean,System.Boolean,Microsoft.Data.SqlClient.SortOrder,System.Int32):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665820
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.Data.SqlDbType,System.Int64,System.Int64,System.Data.SqlTypes.SqlCompareOptions):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665821
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.Data.SqlDbType,System.Int64,System.Int64,System.Data.SqlTypes.SqlCompareOptions,System.Boolean,System.Boolean,Microsoft.Data.SqlClient.SortOrder,System.Int32):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665822
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.Data.SqlDbType,System.String,System.String,System.String):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665823
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.Data.SqlDbType,System.String,System.String,System.String,System.Boolean,System.Boolean,Microsoft.Data.SqlClient.SortOrder,System.Int32):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665824
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.Data.SqlDbType,System.Type):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665825
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.Data.SqlDbType,System.Type,System.String):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665826
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.Data.SqlDbType,System.Type,System.String,System.Boolean,System.Boolean,Microsoft.Data.SqlClient.SortOrder,System.Int32):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Data.SqlClient.Server.SqlMetaData",
+            "declaringAssemblyName": "Microsoft.Data.SqlClient",
+            "metadataToken": 100665827
+          }
+        }
+      ]
+    }
+  ]
+}

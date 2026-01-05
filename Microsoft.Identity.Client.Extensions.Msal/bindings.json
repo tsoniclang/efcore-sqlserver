@@ -1,0 +1,1464 @@
+{
+  "namespace": "Microsoft.Identity.Client.Extensions.Msal",
+  "types": [
+    {
+      "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.CacheChangedEventArgs",
+      "clrName": "Microsoft.Identity.Client.Extensions.Msal.CacheChangedEventArgs",
+      "tsEmitName": "CacheChangedEventArgs",
+      "assemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.CacheChangedEventArgs::AccountsAddedSystem.Collections.Generic.IEnumerable\u00601[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "AccountsAdded",
+          "tsEmitName": "accountsAdded",
+          "metadataToken": 67108950,
+          "normalizedSignature": "AccountsAdded|System.Collections.Generic.IEnumerable\u00601[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": true,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.CacheChangedEventArgs",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
+        },
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.CacheChangedEventArgs::AccountsRemovedSystem.Collections.Generic.IEnumerable\u00601[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "AccountsRemoved",
+          "tsEmitName": "accountsRemoved",
+          "metadataToken": 67108951,
+          "normalizedSignature": "AccountsRemoved|System.Collections.Generic.IEnumerable\u00601[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": true,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.CacheChangedEventArgs",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
+        }
+      ],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.CacheChangedEventArgs::.ctor(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
+          "metadataToken": 100663372,
+          "canonicalSignature": "(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
+          "normalizedSignature": "constructor|(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.CacheChangedEventArgs",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
+        }
+      ],
+      "exposedFields": [
+        {
+          "tsName": "accountsAdded",
+          "isStatic": false,
+          "tsSignatureId": "AccountsAdded|System.Collections.Generic.IEnumerable\u00601[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]|static=false|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.CacheChangedEventArgs",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 67108950
+          }
+        },
+        {
+          "tsName": "accountsRemoved",
+          "isStatic": false,
+          "tsSignatureId": "AccountsRemoved|System.Collections.Generic.IEnumerable\u00601[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]|static=false|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.CacheChangedEventArgs",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 67108951
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.CacheChangedEventArgs",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 100663372
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.CrossPlatLock",
+      "clrName": "Microsoft.Identity.Client.Extensions.Msal.CrossPlatLock",
+      "tsEmitName": "CrossPlatLock",
+      "assemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.CrossPlatLock::Dispose():System.Void",
+          "clrName": "Dispose",
+          "tsEmitName": "dispose",
+          "metadataToken": 100663405,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "Dispose|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.CrossPlatLock",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.CrossPlatLock::.ctor(System.String,System.Int32,System.Int32):void",
+          "metadataToken": 100663404,
+          "canonicalSignature": "(System.String,System.Int32,System.Int32):void",
+          "normalizedSignature": "constructor|(System.String,System.Int32,System.Int32):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.CrossPlatLock",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "dispose",
+          "isStatic": false,
+          "tsSignatureId": "Dispose|():System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.CrossPlatLock",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 100663405
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.Int32,System.Int32):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.CrossPlatLock",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 100663404
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper",
+      "clrName": "Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper",
+      "tsEmitName": "MsalCacheHelper",
+      "assemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper::CreateAsync(Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties,System.Diagnostics.TraceSource):System.Threading.Tasks.Task_1[[Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper,Microsoft.Identity.Client.Extensions.Msal,Version=4.73.1.0,Culture=neutral,PublicKeyToken=0a613f4dd989e8ae]]",
+          "clrName": "CreateAsync",
+          "tsEmitName": "createAsync",
+          "metadataToken": 100663387,
+          "canonicalSignature": "(Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties,System.Diagnostics.TraceSource):System.Threading.Tasks.Task_1[[Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper,Microsoft.Identity.Client.Extensions.Msal,Version=4.73.1.0,Culture=neutral,PublicKeyToken=0a613f4dd989e8ae]]",
+          "normalizedSignature": "CreateAsync|(Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties,System.Diagnostics.TraceSource):System.Threading.Tasks.Task_1[[Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper,Microsoft.Identity.Client.Extensions.Msal,Version=4.73.1.0,Culture=neutral,PublicKeyToken=0a613f4dd989e8ae]]|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper::RegisterCache(Microsoft.Identity.Client.ITokenCache):System.Void",
+          "clrName": "RegisterCache",
+          "tsEmitName": "registerCache",
+          "metadataToken": 100663389,
+          "canonicalSignature": "(Microsoft.Identity.Client.ITokenCache):System.Void",
+          "normalizedSignature": "RegisterCache|(Microsoft.Identity.Client.ITokenCache):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper::UnregisterCache(Microsoft.Identity.Client.ITokenCache):System.Void",
+          "clrName": "UnregisterCache",
+          "tsEmitName": "unregisterCache",
+          "metadataToken": 100663390,
+          "canonicalSignature": "(Microsoft.Identity.Client.ITokenCache):System.Void",
+          "normalizedSignature": "UnregisterCache|(Microsoft.Identity.Client.ITokenCache):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper::Clear():System.Void",
+          "clrName": "Clear",
+          "tsEmitName": "clear",
+          "metadataToken": 100663391,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "Clear|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper::LoadUnencryptedTokenCache():System.Byte[]",
+          "clrName": "LoadUnencryptedTokenCache",
+          "tsEmitName": "loadUnencryptedTokenCache",
+          "metadataToken": 100663392,
+          "canonicalSignature": "():System.Byte[]",
+          "normalizedSignature": "LoadUnencryptedTokenCache|():System.Byte[]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper::SaveUnencryptedTokenCache(System.Byte[]):System.Void",
+          "clrName": "SaveUnencryptedTokenCache",
+          "tsEmitName": "saveUnencryptedTokenCache",
+          "metadataToken": 100663393,
+          "canonicalSignature": "(System.Byte[]):System.Void",
+          "normalizedSignature": "SaveUnencryptedTokenCache|(System.Byte[]):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper::VerifyPersistence():System.Void",
+          "clrName": "VerifyPersistence",
+          "tsEmitName": "verifyPersistence",
+          "metadataToken": 100663398,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "VerifyPersistence|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper::UserRootDirectory:System.String",
+          "clrName": "UserRootDirectory",
+          "tsEmitName": "userRootDirectory",
+          "metadataToken": 385875978,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "UserRootDirectory|:System.String|static=true|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
+        }
+      ],
+      "fields": [
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper::LinuxKeyRingDefaultCollectionSystem.String",
+          "clrName": "LinuxKeyRingDefaultCollection",
+          "tsEmitName": "linuxKeyRingDefaultCollection",
+          "metadataToken": 67108954,
+          "normalizedSignature": "LinuxKeyRingDefaultCollection|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
+        },
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper::LinuxKeyRingSessionCollectionSystem.String",
+          "clrName": "LinuxKeyRingSessionCollection",
+          "tsEmitName": "linuxKeyRingSessionCollection",
+          "metadataToken": 67108955,
+          "normalizedSignature": "LinuxKeyRingSessionCollection|System.String|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
+        }
+      ],
+      "events": [
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper::CacheChangedSystem.EventHandler\u00601[[Microsoft.Identity.Client.Extensions.Msal.CacheChangedEventArgs, Microsoft.Identity.Client.Extensions.Msal, Version=4.73.1.0, Culture=neutral, PublicKeyToken=0a613f4dd989e8ae]]",
+          "clrName": "CacheChanged",
+          "tsEmitName": "cacheChanged",
+          "metadataToken": 335544321,
+          "normalizedSignature": "CacheChanged|System.EventHandler\u00601[[Microsoft.Identity.Client.Extensions.Msal.CacheChangedEventArgs, Microsoft.Identity.Client.Extensions.Msal, Version=4.73.1.0, Culture=neutral, PublicKeyToken=0a613f4dd989e8ae]]|static=false",
+          "isStatic": false,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
+        }
+      ],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "createAsync",
+          "isStatic": true,
+          "tsSignatureId": "CreateAsync|(Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties,System.Diagnostics.TraceSource):System.Threading.Tasks.Task_1[[Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper,Microsoft.Identity.Client.Extensions.Msal,Version=4.73.1.0,Culture=neutral,PublicKeyToken=0a613f4dd989e8ae]]|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 100663387
+          }
+        },
+        {
+          "tsName": "registerCache",
+          "isStatic": false,
+          "tsSignatureId": "RegisterCache|(Microsoft.Identity.Client.ITokenCache):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 100663389
+          }
+        },
+        {
+          "tsName": "unregisterCache",
+          "isStatic": false,
+          "tsSignatureId": "UnregisterCache|(Microsoft.Identity.Client.ITokenCache):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 100663390
+          }
+        },
+        {
+          "tsName": "clear",
+          "isStatic": false,
+          "tsSignatureId": "Clear|():System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 100663391
+          }
+        },
+        {
+          "tsName": "loadUnencryptedTokenCache",
+          "isStatic": false,
+          "tsSignatureId": "LoadUnencryptedTokenCache|():System.Byte[]|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 100663392
+          }
+        },
+        {
+          "tsName": "saveUnencryptedTokenCache",
+          "isStatic": false,
+          "tsSignatureId": "SaveUnencryptedTokenCache|(System.Byte[]):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 100663393
+          }
+        },
+        {
+          "tsName": "verifyPersistence",
+          "isStatic": false,
+          "tsSignatureId": "VerifyPersistence|():System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 100663398
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "userRootDirectory",
+          "isStatic": true,
+          "tsSignatureId": "UserRootDirectory|:System.String|static=true|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 385875978
+          }
+        }
+      ],
+      "exposedFields": [
+        {
+          "tsName": "linuxKeyRingDefaultCollection",
+          "isStatic": true,
+          "tsSignatureId": "LinuxKeyRingDefaultCollection|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 67108954
+          }
+        },
+        {
+          "tsName": "linuxKeyRingSessionCollection",
+          "isStatic": true,
+          "tsSignatureId": "LinuxKeyRingSessionCollection|System.String|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 67108955
+          }
+        }
+      ],
+      "exposedEvents": [
+        {
+          "tsName": "cacheChanged",
+          "isStatic": false,
+          "tsSignatureId": "CacheChanged|System.EventHandler\u00601[[Microsoft.Identity.Client.Extensions.Msal.CacheChangedEventArgs, Microsoft.Identity.Client.Extensions.Msal, Version=4.73.1.0, Culture=neutral, PublicKeyToken=0a613f4dd989e8ae]]|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 335544321
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.MsalCachePersistenceException",
+      "clrName": "Microsoft.Identity.Client.Extensions.Msal.MsalCachePersistenceException",
+      "tsEmitName": "MsalCachePersistenceException",
+      "assemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.MsalCachePersistenceException::.ctor():void",
+          "metadataToken": 100663400,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.MsalCachePersistenceException",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
+        },
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.MsalCachePersistenceException::.ctor(System.String):void",
+          "metadataToken": 100663401,
+          "canonicalSignature": "(System.String):void",
+          "normalizedSignature": "constructor|(System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.MsalCachePersistenceException",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
+        },
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.MsalCachePersistenceException::.ctor(System.String,System.Exception):void",
+          "metadataToken": 100663402,
+          "canonicalSignature": "(System.String,System.Exception):void",
+          "normalizedSignature": "constructor|(System.String,System.Exception):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.MsalCachePersistenceException",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.MsalCachePersistenceException",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 100663400
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.MsalCachePersistenceException",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 100663401
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.Exception):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.MsalCachePersistenceException",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 100663402
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.Storage",
+      "clrName": "Microsoft.Identity.Client.Extensions.Msal.Storage",
+      "tsEmitName": "Storage",
+      "assemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.Storage::Create(Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties,System.Diagnostics.TraceSource):Microsoft.Identity.Client.Extensions.Msal.Storage",
+          "clrName": "Create",
+          "tsEmitName": "create",
+          "metadataToken": 100663453,
+          "canonicalSignature": "(Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties,System.Diagnostics.TraceSource):Microsoft.Identity.Client.Extensions.Msal.Storage",
+          "normalizedSignature": "Create|(Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties,System.Diagnostics.TraceSource):Microsoft.Identity.Client.Extensions.Msal.Storage|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.Storage",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.Storage::ReadData():System.Byte[]",
+          "clrName": "ReadData",
+          "tsEmitName": "readData",
+          "metadataToken": 100663455,
+          "canonicalSignature": "():System.Byte[]",
+          "normalizedSignature": "ReadData|():System.Byte[]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.Storage",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.Storage::WriteData(System.Byte[]):System.Void",
+          "clrName": "WriteData",
+          "tsEmitName": "writeData",
+          "metadataToken": 100663456,
+          "canonicalSignature": "(System.Byte[]):System.Void",
+          "normalizedSignature": "WriteData|(System.Byte[]):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.Storage",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.Storage::Clear(System.Boolean):System.Void",
+          "clrName": "Clear",
+          "tsEmitName": "clear",
+          "metadataToken": 100663457,
+          "canonicalSignature": "(System.Boolean):System.Void",
+          "normalizedSignature": "Clear|(System.Boolean):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.Storage",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.Storage::VerifyPersistence():System.Void",
+          "clrName": "VerifyPersistence",
+          "tsEmitName": "verifyPersistence",
+          "metadataToken": 100663458,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "VerifyPersistence|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.Storage",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "create",
+          "isStatic": true,
+          "tsSignatureId": "Create|(Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties,System.Diagnostics.TraceSource):Microsoft.Identity.Client.Extensions.Msal.Storage|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.Storage",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 100663453
+          }
+        },
+        {
+          "tsName": "readData",
+          "isStatic": false,
+          "tsSignatureId": "ReadData|():System.Byte[]|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.Storage",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 100663455
+          }
+        },
+        {
+          "tsName": "writeData",
+          "isStatic": false,
+          "tsSignatureId": "WriteData|(System.Byte[]):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.Storage",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 100663456
+          }
+        },
+        {
+          "tsName": "clear",
+          "isStatic": false,
+          "tsSignatureId": "Clear|(System.Boolean):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.Storage",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 100663457
+          }
+        },
+        {
+          "tsName": "verifyPersistence",
+          "isStatic": false,
+          "tsSignatureId": "VerifyPersistence|():System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.Storage",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 100663458
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
+      "clrName": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
+      "tsEmitName": "StorageCreationProperties",
+      "assemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties::CacheFilePath:System.String",
+          "clrName": "CacheFilePath",
+          "tsEmitName": "cacheFilePath",
+          "metadataToken": 385875979,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "CacheFilePath|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
+        },
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties::ClientId:System.String",
+          "clrName": "ClientId",
+          "tsEmitName": "clientId",
+          "metadataToken": 385875980,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "ClientId|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
+        },
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties::Authority:System.String",
+          "clrName": "Authority",
+          "tsEmitName": "authority",
+          "metadataToken": 385875981,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Authority|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
+        }
+      ],
+      "fields": [
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties::CacheFileNameSystem.String",
+          "clrName": "CacheFileName",
+          "tsEmitName": "cacheFileName",
+          "metadataToken": 67108984,
+          "normalizedSignature": "CacheFileName|System.String|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": true,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
+        },
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties::CacheDirectorySystem.String",
+          "clrName": "CacheDirectory",
+          "tsEmitName": "cacheDirectory",
+          "metadataToken": 67108985,
+          "normalizedSignature": "CacheDirectory|System.String|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": true,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
+        },
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties::MacKeyChainServiceNameSystem.String",
+          "clrName": "MacKeyChainServiceName",
+          "tsEmitName": "macKeyChainServiceName",
+          "metadataToken": 67108986,
+          "normalizedSignature": "MacKeyChainServiceName|System.String|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": true,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
+        },
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties::MacKeyChainAccountNameSystem.String",
+          "clrName": "MacKeyChainAccountName",
+          "tsEmitName": "macKeyChainAccountName",
+          "metadataToken": 67108987,
+          "normalizedSignature": "MacKeyChainAccountName|System.String|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": true,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
+        },
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties::KeyringSchemaNameSystem.String",
+          "clrName": "KeyringSchemaName",
+          "tsEmitName": "keyringSchemaName",
+          "metadataToken": 67108988,
+          "normalizedSignature": "KeyringSchemaName|System.String|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": true,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
+        },
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties::KeyringCollectionSystem.String",
+          "clrName": "KeyringCollection",
+          "tsEmitName": "keyringCollection",
+          "metadataToken": 67108989,
+          "normalizedSignature": "KeyringCollection|System.String|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": true,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
+        },
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties::KeyringSecretLabelSystem.String",
+          "clrName": "KeyringSecretLabel",
+          "tsEmitName": "keyringSecretLabel",
+          "metadataToken": 67108990,
+          "normalizedSignature": "KeyringSecretLabel|System.String|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": true,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
+        },
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties::KeyringAttribute1System.Collections.Generic.KeyValuePair\u00602[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "KeyringAttribute1",
+          "tsEmitName": "keyringAttribute1",
+          "metadataToken": 67108991,
+          "normalizedSignature": "KeyringAttribute1|System.Collections.Generic.KeyValuePair\u00602[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": true,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
+        },
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties::KeyringAttribute2System.Collections.Generic.KeyValuePair\u00602[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "KeyringAttribute2",
+          "tsEmitName": "keyringAttribute2",
+          "metadataToken": 67108992,
+          "normalizedSignature": "KeyringAttribute2|System.Collections.Generic.KeyValuePair\u00602[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": true,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
+        },
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties::LockRetryDelaySystem.Int32",
+          "clrName": "LockRetryDelay",
+          "tsEmitName": "lockRetryDelay",
+          "metadataToken": 67108993,
+          "normalizedSignature": "LockRetryDelay|System.Int32|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": true,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
+        },
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties::UseLinuxUnencryptedFallbackSystem.Boolean",
+          "clrName": "UseLinuxUnencryptedFallback",
+          "tsEmitName": "useLinuxUnencryptedFallback",
+          "metadataToken": 67108994,
+          "normalizedSignature": "UseLinuxUnencryptedFallback|System.Boolean|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": true,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
+        },
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties::UseUnencryptedFallbackSystem.Boolean",
+          "clrName": "UseUnencryptedFallback",
+          "tsEmitName": "useUnencryptedFallback",
+          "metadataToken": 67108995,
+          "normalizedSignature": "UseUnencryptedFallback|System.Boolean|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": true,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
+        },
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties::LockRetryCountSystem.Int32",
+          "clrName": "LockRetryCount",
+          "tsEmitName": "lockRetryCount",
+          "metadataToken": 67108996,
+          "normalizedSignature": "LockRetryCount|System.Int32|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": true,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
+        }
+      ],
+      "events": [],
+      "constructors": [],
+      "exposedProperties": [
+        {
+          "tsName": "cacheFilePath",
+          "isStatic": false,
+          "tsSignatureId": "CacheFilePath|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 385875979
+          }
+        },
+        {
+          "tsName": "clientId",
+          "isStatic": false,
+          "tsSignatureId": "ClientId|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 385875980
+          }
+        },
+        {
+          "tsName": "authority",
+          "isStatic": false,
+          "tsSignatureId": "Authority|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 385875981
+          }
+        }
+      ],
+      "exposedFields": [
+        {
+          "tsName": "cacheFileName",
+          "isStatic": false,
+          "tsSignatureId": "CacheFileName|System.String|static=false|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 67108984
+          }
+        },
+        {
+          "tsName": "cacheDirectory",
+          "isStatic": false,
+          "tsSignatureId": "CacheDirectory|System.String|static=false|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 67108985
+          }
+        },
+        {
+          "tsName": "macKeyChainServiceName",
+          "isStatic": false,
+          "tsSignatureId": "MacKeyChainServiceName|System.String|static=false|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 67108986
+          }
+        },
+        {
+          "tsName": "macKeyChainAccountName",
+          "isStatic": false,
+          "tsSignatureId": "MacKeyChainAccountName|System.String|static=false|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 67108987
+          }
+        },
+        {
+          "tsName": "keyringSchemaName",
+          "isStatic": false,
+          "tsSignatureId": "KeyringSchemaName|System.String|static=false|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 67108988
+          }
+        },
+        {
+          "tsName": "keyringCollection",
+          "isStatic": false,
+          "tsSignatureId": "KeyringCollection|System.String|static=false|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 67108989
+          }
+        },
+        {
+          "tsName": "keyringSecretLabel",
+          "isStatic": false,
+          "tsSignatureId": "KeyringSecretLabel|System.String|static=false|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 67108990
+          }
+        },
+        {
+          "tsName": "keyringAttribute1",
+          "isStatic": false,
+          "tsSignatureId": "KeyringAttribute1|System.Collections.Generic.KeyValuePair\u00602[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]|static=false|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 67108991
+          }
+        },
+        {
+          "tsName": "keyringAttribute2",
+          "isStatic": false,
+          "tsSignatureId": "KeyringAttribute2|System.Collections.Generic.KeyValuePair\u00602[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]|static=false|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 67108992
+          }
+        },
+        {
+          "tsName": "lockRetryDelay",
+          "isStatic": false,
+          "tsSignatureId": "LockRetryDelay|System.Int32|static=false|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 67108993
+          }
+        },
+        {
+          "tsName": "useLinuxUnencryptedFallback",
+          "isStatic": false,
+          "tsSignatureId": "UseLinuxUnencryptedFallback|System.Boolean|static=false|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 67108994
+          }
+        },
+        {
+          "tsName": "useUnencryptedFallback",
+          "isStatic": false,
+          "tsSignatureId": "UseUnencryptedFallback|System.Boolean|static=false|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 67108995
+          }
+        },
+        {
+          "tsName": "lockRetryCount",
+          "isStatic": false,
+          "tsSignatureId": "LockRetryCount|System.Int32|static=false|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 67108996
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder",
+      "clrName": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder",
+      "tsEmitName": "StorageCreationPropertiesBuilder",
+      "assemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder::Build():Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
+          "clrName": "Build",
+          "tsEmitName": "build",
+          "metadataToken": 100663438,
+          "canonicalSignature": "():Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
+          "normalizedSignature": "Build|():Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder::WithMacKeyChain(System.String,System.String):Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder",
+          "clrName": "WithMacKeyChain",
+          "tsEmitName": "withMacKeyChain",
+          "metadataToken": 100663439,
+          "canonicalSignature": "(System.String,System.String):Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder",
+          "normalizedSignature": "WithMacKeyChain|(System.String,System.String):Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder::WithCacheChangedEvent(System.String,System.String):Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder",
+          "clrName": "WithCacheChangedEvent",
+          "tsEmitName": "withCacheChangedEvent",
+          "metadataToken": 100663440,
+          "canonicalSignature": "(System.String,System.String):Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder",
+          "normalizedSignature": "WithCacheChangedEvent|(System.String,System.String):Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder::CustomizeLockRetry(System.Int32,System.Int32):Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder",
+          "clrName": "CustomizeLockRetry",
+          "tsEmitName": "customizeLockRetry",
+          "metadataToken": 100663441,
+          "canonicalSignature": "(System.Int32,System.Int32):Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder",
+          "normalizedSignature": "CustomizeLockRetry|(System.Int32,System.Int32):Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder::WithLinuxKeyring(System.String,System.String,System.String,System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder",
+          "clrName": "WithLinuxKeyring",
+          "tsEmitName": "withLinuxKeyring",
+          "metadataToken": 100663442,
+          "canonicalSignature": "(System.String,System.String,System.String,System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder",
+          "normalizedSignature": "WithLinuxKeyring|(System.String,System.String,System.String,System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder::WithLinuxUnprotectedFile():Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder",
+          "clrName": "WithLinuxUnprotectedFile",
+          "tsEmitName": "withLinuxUnprotectedFile",
+          "metadataToken": 100663443,
+          "canonicalSignature": "():Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder",
+          "normalizedSignature": "WithLinuxUnprotectedFile|():Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder::WithUnprotectedFile():Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder",
+          "clrName": "WithUnprotectedFile",
+          "tsEmitName": "withUnprotectedFile",
+          "metadataToken": 100663444,
+          "canonicalSignature": "():Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder",
+          "normalizedSignature": "WithUnprotectedFile|():Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder::.ctor(System.String,System.String,System.String):void",
+          "metadataToken": 100663436,
+          "canonicalSignature": "(System.String,System.String,System.String):void",
+          "normalizedSignature": "constructor|(System.String,System.String,System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
+        },
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder::.ctor(System.String,System.String):void",
+          "metadataToken": 100663437,
+          "canonicalSignature": "(System.String,System.String):void",
+          "normalizedSignature": "constructor|(System.String,System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "build",
+          "isStatic": false,
+          "tsSignatureId": "Build|():Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 100663438
+          }
+        },
+        {
+          "tsName": "withMacKeyChain",
+          "isStatic": false,
+          "tsSignatureId": "WithMacKeyChain|(System.String,System.String):Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 100663439
+          }
+        },
+        {
+          "tsName": "withCacheChangedEvent",
+          "isStatic": false,
+          "tsSignatureId": "WithCacheChangedEvent|(System.String,System.String):Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 100663440
+          }
+        },
+        {
+          "tsName": "customizeLockRetry",
+          "isStatic": false,
+          "tsSignatureId": "CustomizeLockRetry|(System.Int32,System.Int32):Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 100663441
+          }
+        },
+        {
+          "tsName": "withLinuxKeyring",
+          "isStatic": false,
+          "tsSignatureId": "WithLinuxKeyring|(System.String,System.String,System.String,System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 100663442
+          }
+        },
+        {
+          "tsName": "withLinuxUnprotectedFile",
+          "isStatic": false,
+          "tsSignatureId": "WithLinuxUnprotectedFile|():Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 100663443
+          }
+        },
+        {
+          "tsName": "withUnprotectedFile",
+          "isStatic": false,
+          "tsSignatureId": "WithUnprotectedFile|():Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 100663444
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.String,System.String):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 100663436
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.String):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 100663437
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.TraceSourceLogger",
+      "clrName": "Microsoft.Identity.Client.Extensions.Msal.TraceSourceLogger",
+      "tsEmitName": "TraceSourceLogger",
+      "assemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.TraceSourceLogger::LogInformation(System.String):System.Void",
+          "clrName": "LogInformation",
+          "tsEmitName": "logInformation",
+          "metadataToken": 100663447,
+          "canonicalSignature": "(System.String):System.Void",
+          "normalizedSignature": "LogInformation|(System.String):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.TraceSourceLogger",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.TraceSourceLogger::LogError(System.String):System.Void",
+          "clrName": "LogError",
+          "tsEmitName": "logError",
+          "metadataToken": 100663448,
+          "canonicalSignature": "(System.String):System.Void",
+          "normalizedSignature": "LogError|(System.String):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.TraceSourceLogger",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.TraceSourceLogger::LogWarning(System.String):System.Void",
+          "clrName": "LogWarning",
+          "tsEmitName": "logWarning",
+          "metadataToken": 100663449,
+          "canonicalSignature": "(System.String):System.Void",
+          "normalizedSignature": "LogWarning|(System.String):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.TraceSourceLogger",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.TraceSourceLogger::Source:System.Diagnostics.TraceSource",
+          "clrName": "Source",
+          "tsEmitName": "source",
+          "metadataToken": 385875983,
+          "canonicalSignature": ":System.Diagnostics.TraceSource",
+          "normalizedSignature": "Source|:System.Diagnostics.TraceSource|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.TraceSourceLogger",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.TraceSourceLogger::.ctor(System.Diagnostics.TraceSource):void",
+          "metadataToken": 100663445,
+          "canonicalSignature": "(System.Diagnostics.TraceSource):void",
+          "normalizedSignature": "constructor|(System.Diagnostics.TraceSource):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.TraceSourceLogger",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "logInformation",
+          "isStatic": false,
+          "tsSignatureId": "LogInformation|(System.String):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.TraceSourceLogger",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 100663447
+          }
+        },
+        {
+          "tsName": "logError",
+          "isStatic": false,
+          "tsSignatureId": "LogError|(System.String):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.TraceSourceLogger",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 100663448
+          }
+        },
+        {
+          "tsName": "logWarning",
+          "isStatic": false,
+          "tsSignatureId": "LogWarning|(System.String):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.TraceSourceLogger",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 100663449
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "source",
+          "isStatic": false,
+          "tsSignatureId": "Source|:System.Diagnostics.TraceSource|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.TraceSourceLogger",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 385875983
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.Diagnostics.TraceSource):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.TraceSourceLogger",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 100663445
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.SharedUtilities",
+      "clrName": "Microsoft.Identity.Client.Extensions.Msal.SharedUtilities",
+      "tsEmitName": "SharedUtilities",
+      "assemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.SharedUtilities::IsWindowsPlatform():System.Boolean",
+          "clrName": "IsWindowsPlatform",
+          "tsEmitName": "isWindowsPlatform",
+          "metadataToken": 100663421,
+          "canonicalSignature": "():System.Boolean",
+          "normalizedSignature": "IsWindowsPlatform|():System.Boolean|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.SharedUtilities",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.SharedUtilities::IsMacPlatform():System.Boolean",
+          "clrName": "IsMacPlatform",
+          "tsEmitName": "isMacPlatform",
+          "metadataToken": 100663422,
+          "canonicalSignature": "():System.Boolean",
+          "normalizedSignature": "IsMacPlatform|():System.Boolean|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.SharedUtilities",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.SharedUtilities::IsLinuxPlatform():System.Boolean",
+          "clrName": "IsLinuxPlatform",
+          "tsEmitName": "isLinuxPlatform",
+          "metadataToken": 100663423,
+          "canonicalSignature": "():System.Boolean",
+          "normalizedSignature": "IsLinuxPlatform|():System.Boolean|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.SharedUtilities",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.SharedUtilities::GetUserRootDirectory():System.String",
+          "clrName": "GetUserRootDirectory",
+          "tsEmitName": "getUserRootDirectory",
+          "metadataToken": 100663427,
+          "canonicalSignature": "():System.String",
+          "normalizedSignature": "GetUserRootDirectory|():System.String|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.SharedUtilities",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "isWindowsPlatform",
+          "isStatic": true,
+          "tsSignatureId": "IsWindowsPlatform|():System.Boolean|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.SharedUtilities",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 100663421
+          }
+        },
+        {
+          "tsName": "isMacPlatform",
+          "isStatic": true,
+          "tsSignatureId": "IsMacPlatform|():System.Boolean|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.SharedUtilities",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 100663422
+          }
+        },
+        {
+          "tsName": "isLinuxPlatform",
+          "isStatic": true,
+          "tsSignatureId": "IsLinuxPlatform|():System.Boolean|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.SharedUtilities",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 100663423
+          }
+        },
+        {
+          "tsName": "getUserRootDirectory",
+          "isStatic": true,
+          "tsSignatureId": "GetUserRootDirectory|():System.String|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.SharedUtilities",
+            "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
+            "metadataToken": 100663427
+          }
+        }
+      ]
+    }
+  ]
+}

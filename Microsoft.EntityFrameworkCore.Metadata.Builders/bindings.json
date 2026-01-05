@@ -1,0 +1,1095 @@
+{
+  "namespace": "Microsoft.EntityFrameworkCore.Metadata.Builders",
+  "types": [
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalPeriodPropertyBuilder",
+      "clrName": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalPeriodPropertyBuilder",
+      "tsEmitName": "OwnedNavigationTemporalPeriodPropertyBuilder",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalPeriodPropertyBuilder::HasColumnName(System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalPeriodPropertyBuilder",
+          "clrName": "HasColumnName",
+          "tsEmitName": "hasColumnName",
+          "metadataToken": 100664269,
+          "canonicalSignature": "(System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalPeriodPropertyBuilder",
+          "normalizedSignature": "HasColumnName|(System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalPeriodPropertyBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalPeriodPropertyBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalPeriodPropertyBuilder::HasPrecision(System.Int32):Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalPeriodPropertyBuilder",
+          "clrName": "HasPrecision",
+          "tsEmitName": "hasPrecision",
+          "metadataToken": 100664270,
+          "canonicalSignature": "(System.Int32):Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalPeriodPropertyBuilder",
+          "normalizedSignature": "HasPrecision|(System.Int32):Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalPeriodPropertyBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalPeriodPropertyBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalPeriodPropertyBuilder::ToString():System.String",
+          "clrName": "ToString",
+          "tsEmitName": "toString",
+          "metadataToken": 100664271,
+          "canonicalSignature": "():System.String",
+          "normalizedSignature": "ToString|():System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalPeriodPropertyBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalPeriodPropertyBuilder::Equals(System.Object):System.Boolean",
+          "clrName": "Equals",
+          "tsEmitName": "equals",
+          "metadataToken": 100664272,
+          "canonicalSignature": "(System.Object):System.Boolean",
+          "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalPeriodPropertyBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalPeriodPropertyBuilder::GetHashCode():System.Int32",
+          "clrName": "GetHashCode",
+          "tsEmitName": "getHashCode",
+          "metadataToken": 100664273,
+          "canonicalSignature": "():System.Int32",
+          "normalizedSignature": "GetHashCode|():System.Int32|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalPeriodPropertyBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalPeriodPropertyBuilder::.ctor(Microsoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder):void",
+          "metadataToken": 100664268,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalPeriodPropertyBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "hasColumnName",
+          "isStatic": false,
+          "tsSignatureId": "HasColumnName|(System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalPeriodPropertyBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalPeriodPropertyBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664269
+          }
+        },
+        {
+          "tsName": "hasPrecision",
+          "isStatic": false,
+          "tsSignatureId": "HasPrecision|(System.Int32):Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalPeriodPropertyBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalPeriodPropertyBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664270
+          }
+        },
+        {
+          "tsName": "toString",
+          "isStatic": false,
+          "tsSignatureId": "ToString|():System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalPeriodPropertyBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664271
+          }
+        },
+        {
+          "tsName": "equals",
+          "isStatic": false,
+          "tsSignatureId": "Equals|(System.Object):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalPeriodPropertyBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664272
+          }
+        },
+        {
+          "tsName": "getHashCode",
+          "isStatic": false,
+          "tsSignatureId": "GetHashCode|():System.Int32|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalPeriodPropertyBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664273
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalPeriodPropertyBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664268
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder",
+      "clrName": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder",
+      "tsEmitName": "OwnedNavigationTemporalTableBuilder",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder::UseHistoryTable(System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder",
+          "clrName": "UseHistoryTable",
+          "tsEmitName": "useHistoryTable",
+          "metadataToken": 100664275,
+          "canonicalSignature": "(System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder",
+          "normalizedSignature": "UseHistoryTable|(System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder::UseHistoryTable(System.String,System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder",
+          "clrName": "UseHistoryTable",
+          "tsEmitName": "useHistoryTable",
+          "metadataToken": 100664276,
+          "canonicalSignature": "(System.String,System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder",
+          "normalizedSignature": "UseHistoryTable|(System.String,System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder::HasPeriodStart(System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalPeriodPropertyBuilder",
+          "clrName": "HasPeriodStart",
+          "tsEmitName": "hasPeriodStart",
+          "metadataToken": 100664277,
+          "canonicalSignature": "(System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalPeriodPropertyBuilder",
+          "normalizedSignature": "HasPeriodStart|(System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalPeriodPropertyBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder::HasPeriodEnd(System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalPeriodPropertyBuilder",
+          "clrName": "HasPeriodEnd",
+          "tsEmitName": "hasPeriodEnd",
+          "metadataToken": 100664278,
+          "canonicalSignature": "(System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalPeriodPropertyBuilder",
+          "normalizedSignature": "HasPeriodEnd|(System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalPeriodPropertyBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder::ToString():System.String",
+          "clrName": "ToString",
+          "tsEmitName": "toString",
+          "metadataToken": 100664280,
+          "canonicalSignature": "():System.String",
+          "normalizedSignature": "ToString|():System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder::Equals(System.Object):System.Boolean",
+          "clrName": "Equals",
+          "tsEmitName": "equals",
+          "metadataToken": 100664281,
+          "canonicalSignature": "(System.Object):System.Boolean",
+          "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder::GetHashCode():System.Int32",
+          "clrName": "GetHashCode",
+          "tsEmitName": "getHashCode",
+          "metadataToken": 100664282,
+          "canonicalSignature": "():System.Int32",
+          "normalizedSignature": "GetHashCode|():System.Int32|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder::.ctor(Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationBuilder):void",
+          "metadataToken": 100664274,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationBuilder):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationBuilder):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "useHistoryTable",
+          "isStatic": false,
+          "tsSignatureId": "UseHistoryTable|(System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664275
+          }
+        },
+        {
+          "tsName": "useHistoryTable",
+          "isStatic": false,
+          "tsSignatureId": "UseHistoryTable|(System.String,System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664276
+          }
+        },
+        {
+          "tsName": "hasPeriodStart",
+          "isStatic": false,
+          "tsSignatureId": "HasPeriodStart|(System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalPeriodPropertyBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664277
+          }
+        },
+        {
+          "tsName": "hasPeriodEnd",
+          "isStatic": false,
+          "tsSignatureId": "HasPeriodEnd|(System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalPeriodPropertyBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664278
+          }
+        },
+        {
+          "tsName": "toString",
+          "isStatic": false,
+          "tsSignatureId": "ToString|():System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664280
+          }
+        },
+        {
+          "tsName": "equals",
+          "isStatic": false,
+          "tsSignatureId": "Equals|(System.Object):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664281
+          }
+        },
+        {
+          "tsName": "getHashCode",
+          "isStatic": false,
+          "tsSignatureId": "GetHashCode|():System.Int32|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664282
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationBuilder):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664274
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder\u00602",
+      "clrName": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder\u00602",
+      "tsEmitName": "OwnedNavigationTemporalTableBuilder_2",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder\u00602::UseHistoryTable(System.String):OwnedNavigationTemporalTableBuilder_2",
+          "clrName": "UseHistoryTable",
+          "tsEmitName": "useHistoryTable3",
+          "metadataToken": 100664284,
+          "canonicalSignature": "(System.String):OwnedNavigationTemporalTableBuilder_2",
+          "normalizedSignature": "UseHistoryTable|(System.String):OwnedNavigationTemporalTableBuilder_2|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder\u00602",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder\u00602::UseHistoryTable(System.String,System.String):OwnedNavigationTemporalTableBuilder_2",
+          "clrName": "UseHistoryTable",
+          "tsEmitName": "useHistoryTable3",
+          "metadataToken": 100664285,
+          "canonicalSignature": "(System.String,System.String):OwnedNavigationTemporalTableBuilder_2",
+          "normalizedSignature": "UseHistoryTable|(System.String,System.String):OwnedNavigationTemporalTableBuilder_2|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder\u00602",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder\u00602::UseHistoryTable(System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder",
+          "clrName": "UseHistoryTable",
+          "tsEmitName": "useHistoryTable",
+          "metadataToken": 0,
+          "canonicalSignature": "(System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder",
+          "normalizedSignature": "UseHistoryTable|(System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder\u00602",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder\u00602::UseHistoryTable(System.String,System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder",
+          "clrName": "UseHistoryTable",
+          "tsEmitName": "useHistoryTable2",
+          "metadataToken": 0,
+          "canonicalSignature": "(System.String,System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder",
+          "normalizedSignature": "UseHistoryTable|(System.String,System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder\u00602",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder\u00602::.ctor(Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationBuilder):void",
+          "metadataToken": 100664283,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationBuilder):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationBuilder):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder\u00602",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "useHistoryTable3",
+          "isStatic": false,
+          "tsSignatureId": "UseHistoryTable|(System.String):OwnedNavigationTemporalTableBuilder_2|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder\u00602",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664284
+          }
+        },
+        {
+          "tsName": "useHistoryTable3",
+          "isStatic": false,
+          "tsSignatureId": "UseHistoryTable|(System.String,System.String):OwnedNavigationTemporalTableBuilder_2|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder\u00602",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664285
+          }
+        },
+        {
+          "tsName": "useHistoryTable",
+          "isStatic": false,
+          "tsSignatureId": "UseHistoryTable|(System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder\u00602",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 0
+          }
+        },
+        {
+          "tsName": "useHistoryTable2",
+          "isStatic": false,
+          "tsSignatureId": "UseHistoryTable|(System.String,System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder\u00602",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 0
+          }
+        },
+        {
+          "tsName": "hasPeriodStart",
+          "isStatic": false,
+          "tsSignatureId": "HasPeriodStart|(System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalPeriodPropertyBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664277
+          }
+        },
+        {
+          "tsName": "hasPeriodEnd",
+          "isStatic": false,
+          "tsSignatureId": "HasPeriodEnd|(System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalPeriodPropertyBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664278
+          }
+        },
+        {
+          "tsName": "toString",
+          "isStatic": false,
+          "tsSignatureId": "ToString|():System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664280
+          }
+        },
+        {
+          "tsName": "equals",
+          "isStatic": false,
+          "tsSignatureId": "Equals|(System.Object):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664281
+          }
+        },
+        {
+          "tsName": "getHashCode",
+          "isStatic": false,
+          "tsSignatureId": "GetHashCode|():System.Int32|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664282
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationBuilder):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder\u00602",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664283
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalPeriodPropertyBuilder",
+      "clrName": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalPeriodPropertyBuilder",
+      "tsEmitName": "TemporalPeriodPropertyBuilder",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalPeriodPropertyBuilder::HasColumnName(System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalPeriodPropertyBuilder",
+          "clrName": "HasColumnName",
+          "tsEmitName": "hasColumnName",
+          "metadataToken": 100664287,
+          "canonicalSignature": "(System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalPeriodPropertyBuilder",
+          "normalizedSignature": "HasColumnName|(System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalPeriodPropertyBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalPeriodPropertyBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalPeriodPropertyBuilder::HasPrecision(System.Int32):Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalPeriodPropertyBuilder",
+          "clrName": "HasPrecision",
+          "tsEmitName": "hasPrecision",
+          "metadataToken": 100664288,
+          "canonicalSignature": "(System.Int32):Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalPeriodPropertyBuilder",
+          "normalizedSignature": "HasPrecision|(System.Int32):Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalPeriodPropertyBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalPeriodPropertyBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalPeriodPropertyBuilder::ToString():System.String",
+          "clrName": "ToString",
+          "tsEmitName": "toString",
+          "metadataToken": 100664290,
+          "canonicalSignature": "():System.String",
+          "normalizedSignature": "ToString|():System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalPeriodPropertyBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalPeriodPropertyBuilder::Equals(System.Object):System.Boolean",
+          "clrName": "Equals",
+          "tsEmitName": "equals",
+          "metadataToken": 100664291,
+          "canonicalSignature": "(System.Object):System.Boolean",
+          "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalPeriodPropertyBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalPeriodPropertyBuilder::GetHashCode():System.Int32",
+          "clrName": "GetHashCode",
+          "tsEmitName": "getHashCode",
+          "metadataToken": 100664292,
+          "canonicalSignature": "():System.Int32",
+          "normalizedSignature": "GetHashCode|():System.Int32|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalPeriodPropertyBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalPeriodPropertyBuilder::.ctor(Microsoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder):void",
+          "metadataToken": 100664286,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalPeriodPropertyBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "hasColumnName",
+          "isStatic": false,
+          "tsSignatureId": "HasColumnName|(System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalPeriodPropertyBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalPeriodPropertyBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664287
+          }
+        },
+        {
+          "tsName": "hasPrecision",
+          "isStatic": false,
+          "tsSignatureId": "HasPrecision|(System.Int32):Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalPeriodPropertyBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalPeriodPropertyBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664288
+          }
+        },
+        {
+          "tsName": "toString",
+          "isStatic": false,
+          "tsSignatureId": "ToString|():System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalPeriodPropertyBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664290
+          }
+        },
+        {
+          "tsName": "equals",
+          "isStatic": false,
+          "tsSignatureId": "Equals|(System.Object):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalPeriodPropertyBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664291
+          }
+        },
+        {
+          "tsName": "getHashCode",
+          "isStatic": false,
+          "tsSignatureId": "GetHashCode|():System.Int32|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalPeriodPropertyBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664292
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalPeriodPropertyBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664286
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder",
+      "clrName": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder",
+      "tsEmitName": "TemporalTableBuilder",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder::UseHistoryTable(System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder",
+          "clrName": "UseHistoryTable",
+          "tsEmitName": "useHistoryTable",
+          "metadataToken": 100664294,
+          "canonicalSignature": "(System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder",
+          "normalizedSignature": "UseHistoryTable|(System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder::UseHistoryTable(System.String,System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder",
+          "clrName": "UseHistoryTable",
+          "tsEmitName": "useHistoryTable",
+          "metadataToken": 100664295,
+          "canonicalSignature": "(System.String,System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder",
+          "normalizedSignature": "UseHistoryTable|(System.String,System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder::HasPeriodStart(System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalPeriodPropertyBuilder",
+          "clrName": "HasPeriodStart",
+          "tsEmitName": "hasPeriodStart",
+          "metadataToken": 100664296,
+          "canonicalSignature": "(System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalPeriodPropertyBuilder",
+          "normalizedSignature": "HasPeriodStart|(System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalPeriodPropertyBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder::HasPeriodEnd(System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalPeriodPropertyBuilder",
+          "clrName": "HasPeriodEnd",
+          "tsEmitName": "hasPeriodEnd",
+          "metadataToken": 100664297,
+          "canonicalSignature": "(System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalPeriodPropertyBuilder",
+          "normalizedSignature": "HasPeriodEnd|(System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalPeriodPropertyBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder::ToString():System.String",
+          "clrName": "ToString",
+          "tsEmitName": "toString",
+          "metadataToken": 100664299,
+          "canonicalSignature": "():System.String",
+          "normalizedSignature": "ToString|():System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder::Equals(System.Object):System.Boolean",
+          "clrName": "Equals",
+          "tsEmitName": "equals",
+          "metadataToken": 100664300,
+          "canonicalSignature": "(System.Object):System.Boolean",
+          "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder::GetHashCode():System.Int32",
+          "clrName": "GetHashCode",
+          "tsEmitName": "getHashCode",
+          "metadataToken": 100664301,
+          "canonicalSignature": "():System.Int32",
+          "normalizedSignature": "GetHashCode|():System.Int32|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder::.ctor(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder):void",
+          "metadataToken": 100664293,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "useHistoryTable",
+          "isStatic": false,
+          "tsSignatureId": "UseHistoryTable|(System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664294
+          }
+        },
+        {
+          "tsName": "useHistoryTable",
+          "isStatic": false,
+          "tsSignatureId": "UseHistoryTable|(System.String,System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664295
+          }
+        },
+        {
+          "tsName": "hasPeriodStart",
+          "isStatic": false,
+          "tsSignatureId": "HasPeriodStart|(System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalPeriodPropertyBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664296
+          }
+        },
+        {
+          "tsName": "hasPeriodEnd",
+          "isStatic": false,
+          "tsSignatureId": "HasPeriodEnd|(System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalPeriodPropertyBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664297
+          }
+        },
+        {
+          "tsName": "toString",
+          "isStatic": false,
+          "tsSignatureId": "ToString|():System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664299
+          }
+        },
+        {
+          "tsName": "equals",
+          "isStatic": false,
+          "tsSignatureId": "Equals|(System.Object):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664300
+          }
+        },
+        {
+          "tsName": "getHashCode",
+          "isStatic": false,
+          "tsSignatureId": "GetHashCode|():System.Int32|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664301
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664293
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder\u00601",
+      "clrName": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder\u00601",
+      "tsEmitName": "TemporalTableBuilder_1",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder\u00601::UseHistoryTable(System.String):TemporalTableBuilder_1",
+          "clrName": "UseHistoryTable",
+          "tsEmitName": "useHistoryTable3",
+          "metadataToken": 100664303,
+          "canonicalSignature": "(System.String):TemporalTableBuilder_1",
+          "normalizedSignature": "UseHistoryTable|(System.String):TemporalTableBuilder_1|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder\u00601",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder\u00601::UseHistoryTable(System.String,System.String):TemporalTableBuilder_1",
+          "clrName": "UseHistoryTable",
+          "tsEmitName": "useHistoryTable3",
+          "metadataToken": 100664304,
+          "canonicalSignature": "(System.String,System.String):TemporalTableBuilder_1",
+          "normalizedSignature": "UseHistoryTable|(System.String,System.String):TemporalTableBuilder_1|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder\u00601",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder\u00601::UseHistoryTable(System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder",
+          "clrName": "UseHistoryTable",
+          "tsEmitName": "useHistoryTable",
+          "metadataToken": 0,
+          "canonicalSignature": "(System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder",
+          "normalizedSignature": "UseHistoryTable|(System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder\u00601",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder\u00601::UseHistoryTable(System.String,System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder",
+          "clrName": "UseHistoryTable",
+          "tsEmitName": "useHistoryTable2",
+          "metadataToken": 0,
+          "canonicalSignature": "(System.String,System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder",
+          "normalizedSignature": "UseHistoryTable|(System.String,System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder\u00601",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder\u00601::.ctor(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder):void",
+          "metadataToken": 100664302,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder\u00601",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "useHistoryTable3",
+          "isStatic": false,
+          "tsSignatureId": "UseHistoryTable|(System.String):TemporalTableBuilder_1|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder\u00601",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664303
+          }
+        },
+        {
+          "tsName": "useHistoryTable3",
+          "isStatic": false,
+          "tsSignatureId": "UseHistoryTable|(System.String,System.String):TemporalTableBuilder_1|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder\u00601",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664304
+          }
+        },
+        {
+          "tsName": "useHistoryTable",
+          "isStatic": false,
+          "tsSignatureId": "UseHistoryTable|(System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder\u00601",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 0
+          }
+        },
+        {
+          "tsName": "useHistoryTable2",
+          "isStatic": false,
+          "tsSignatureId": "UseHistoryTable|(System.String,System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder\u00601",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 0
+          }
+        },
+        {
+          "tsName": "hasPeriodStart",
+          "isStatic": false,
+          "tsSignatureId": "HasPeriodStart|(System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalPeriodPropertyBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664296
+          }
+        },
+        {
+          "tsName": "hasPeriodEnd",
+          "isStatic": false,
+          "tsSignatureId": "HasPeriodEnd|(System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalPeriodPropertyBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664297
+          }
+        },
+        {
+          "tsName": "toString",
+          "isStatic": false,
+          "tsSignatureId": "ToString|():System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664299
+          }
+        },
+        {
+          "tsName": "equals",
+          "isStatic": false,
+          "tsSignatureId": "Equals|(System.Object):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664300
+          }
+        },
+        {
+          "tsName": "getHashCode",
+          "isStatic": false,
+          "tsSignatureId": "GetHashCode|():System.Int32|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664301
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder\u00601",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664302
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "namespace": "Microsoft.IdentityModel.Protocols.Configuration",
+  "types": [
+    {
+      "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException",
+      "clrName": "Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException",
+      "tsEmitName": "InvalidConfigurationException",
+      "assemblyName": "Microsoft.IdentityModel.Protocols",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException::.ctor():void",
+          "metadataToken": 100663369,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException::.ctor(System.String):void",
+          "metadataToken": 100663370,
+          "canonicalSignature": "(System.String):void",
+          "normalizedSignature": "constructor|(System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException::.ctor(System.String,System.Exception):void",
+          "metadataToken": 100663371,
+          "canonicalSignature": "(System.String,System.Exception):void",
+          "normalizedSignature": "constructor|(System.String,System.Exception):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Protocols",
+            "metadataToken": 100663369
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Protocols",
+            "metadataToken": 100663370
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.Exception):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Protocols",
+            "metadataToken": 100663371
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.Configuration.LastKnownGoodConfigurationCacheOptions",
+      "clrName": "Microsoft.IdentityModel.Protocols.Configuration.LastKnownGoodConfigurationCacheOptions",
+      "tsEmitName": "LastKnownGoodConfigurationCacheOptions",
+      "assemblyName": "Microsoft.IdentityModel.Protocols",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.Configuration.LastKnownGoodConfigurationCacheOptions::DefaultLastKnownGoodConfigurationSizeLimitSystem.Int32",
+          "clrName": "DefaultLastKnownGoodConfigurationSizeLimit",
+          "tsEmitName": "defaultLastKnownGoodConfigurationSizeLimit",
+          "metadataToken": 67108912,
+          "normalizedSignature": "DefaultLastKnownGoodConfigurationSizeLimit|System.Int32|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "declaringClrType": "Microsoft.IdentityModel.Protocols.Configuration.LastKnownGoodConfigurationCacheOptions",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
+        }
+      ],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.Configuration.LastKnownGoodConfigurationCacheOptions::.ctor():void",
+          "metadataToken": 100663373,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.IdentityModel.Protocols.Configuration.LastKnownGoodConfigurationCacheOptions",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "baseConfigurationComparer",
+          "isStatic": false,
+          "tsSignatureId": "BaseConfigurationComparer|:System.Collections.Generic.IEqualityComparer_1[[Microsoft.IdentityModel.Tokens.BaseConfiguration,Microsoft.IdentityModel.Tokens,Version=7.7.1.0,Culture=neutral,PublicKeyToken=31bf3856ad364e35]]|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Tokens",
+            "metadataToken": 385876254
+          }
+        },
+        {
+          "tsName": "lastKnownGoodConfigurationSizeLimit",
+          "isStatic": false,
+          "tsSignatureId": "LastKnownGoodConfigurationSizeLimit|:System.Int32|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Tokens",
+            "metadataToken": 385876255
+          }
+        },
+        {
+          "tsName": "taskCreationOptions",
+          "isStatic": false,
+          "tsSignatureId": "TaskCreationOptions|:System.Threading.Tasks.TaskCreationOptions|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Tokens",
+            "metadataToken": 385876256
+          }
+        },
+        {
+          "tsName": "removeExpiredValues",
+          "isStatic": false,
+          "tsSignatureId": "RemoveExpiredValues|:System.Boolean|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Tokens",
+            "metadataToken": 385876257
+          }
+        }
+      ],
+      "exposedFields": [
+        {
+          "tsName": "defaultLastKnownGoodConfigurationSizeLimit",
+          "isStatic": true,
+          "tsSignatureId": "DefaultLastKnownGoodConfigurationSizeLimit|System.Int32|static=true|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Protocols.Configuration.LastKnownGoodConfigurationCacheOptions",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Protocols",
+            "metadataToken": 67108912
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.IdentityModel.Protocols.Configuration.LastKnownGoodConfigurationCacheOptions",
+            "declaringAssemblyName": "Microsoft.IdentityModel.Protocols",
+            "metadataToken": 100663373
+          }
+        }
+      ]
+    }
+  ]
+}

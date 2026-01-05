@@ -1,0 +1,141 @@
+{
+  "namespace": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlExpressions",
+  "types": [
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlExpressions.SqlServerJsonObjectExpression",
+      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlExpressions.SqlServerJsonObjectExpression",
+      "tsEmitName": "SqlServerJsonObjectExpression",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlExpressions.SqlServerJsonObjectExpression::Quote():System.Linq.Expressions.Expression",
+          "clrName": "Quote",
+          "tsEmitName": "quote",
+          "metadataToken": 100665060,
+          "canonicalSignature": "():System.Linq.Expressions.Expression",
+          "normalizedSignature": "Quote|():System.Linq.Expressions.Expression|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlExpressions.SqlServerJsonObjectExpression",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlExpressions.SqlServerJsonObjectExpression::Equals(System.Object):System.Boolean",
+          "clrName": "Equals",
+          "tsEmitName": "equals",
+          "metadataToken": 100665062,
+          "canonicalSignature": "(System.Object):System.Boolean",
+          "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlExpressions.SqlServerJsonObjectExpression",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlExpressions.SqlServerJsonObjectExpression::GetHashCode():System.Int32",
+          "clrName": "GetHashCode",
+          "tsEmitName": "getHashCode",
+          "metadataToken": 100665064,
+          "canonicalSignature": "():System.Int32",
+          "normalizedSignature": "GetHashCode|():System.Int32|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlExpressions.SqlServerJsonObjectExpression",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlExpressions.SqlServerJsonObjectExpression::PropertyNames:System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "PropertyNames",
+          "tsEmitName": "propertyNames",
+          "metadataToken": 385876167,
+          "canonicalSignature": ":System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "PropertyNames|:System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlExpressions.SqlServerJsonObjectExpression",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlExpressions.SqlServerJsonObjectExpression::.ctor(System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping):void",
+          "metadataToken": 100665058,
+          "canonicalSignature": "(System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping):void",
+          "normalizedSignature": "constructor|(System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlExpressions.SqlServerJsonObjectExpression",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "quote",
+          "isStatic": false,
+          "tsSignatureId": "Quote|():System.Linq.Expressions.Expression|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlExpressions.SqlServerJsonObjectExpression",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665060
+          }
+        },
+        {
+          "tsName": "equals",
+          "isStatic": false,
+          "tsSignatureId": "Equals|(System.Object):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlExpressions.SqlServerJsonObjectExpression",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665062
+          }
+        },
+        {
+          "tsName": "getHashCode",
+          "isStatic": false,
+          "tsSignatureId": "GetHashCode|():System.Int32|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlExpressions.SqlServerJsonObjectExpression",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665064
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "propertyNames",
+          "isStatic": false,
+          "tsSignatureId": "PropertyNames|:System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlExpressions.SqlServerJsonObjectExpression",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876167
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlExpressions.SqlServerJsonObjectExpression",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665058
+          }
+        }
+      ]
+    }
+  ]
+}

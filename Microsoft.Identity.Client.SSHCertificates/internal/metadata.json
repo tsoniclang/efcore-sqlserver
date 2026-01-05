@@ -1,0 +1,57 @@
+{
+  "namespace": "Microsoft.Identity.Client.SSHCertificates",
+  "contributingAssemblies": [
+    "Microsoft.Identity.Client"
+  ],
+  "types": [
+    {
+      "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.SSHCertificates.SSHExtensions",
+      "clrName": "Microsoft.Identity.Client.SSHCertificates.SSHExtensions",
+      "tsEmitName": "SSHExtensions",
+      "kind": "StaticNamespace",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": true,
+      "isStatic": true,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.SSHCertificates.SSHExtensions::WithSSHCertificateAuthenticationScheme(Microsoft.Identity.Client.AcquireTokenInteractiveParameterBuilder,System.String,System.String):Microsoft.Identity.Client.AcquireTokenInteractiveParameterBuilder",
+          "clrName": "WithSSHCertificateAuthenticationScheme",
+          "tsEmitName": "withSSHCertificateAuthenticationScheme",
+          "normalizedSignature": "WithSSHCertificateAuthenticationScheme|(Microsoft.Identity.Client.AcquireTokenInteractiveParameterBuilder,System.String,System.String):Microsoft.Identity.Client.AcquireTokenInteractiveParameterBuilder|static=true",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 3,
+          "isExtensionMethod": true
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.SSHCertificates.SSHExtensions::WithSSHCertificateAuthenticationScheme(Microsoft.Identity.Client.AcquireTokenSilentParameterBuilder,System.String,System.String):Microsoft.Identity.Client.AcquireTokenSilentParameterBuilder",
+          "clrName": "WithSSHCertificateAuthenticationScheme",
+          "tsEmitName": "withSSHCertificateAuthenticationScheme",
+          "normalizedSignature": "WithSSHCertificateAuthenticationScheme|(Microsoft.Identity.Client.AcquireTokenSilentParameterBuilder,System.String,System.String):Microsoft.Identity.Client.AcquireTokenSilentParameterBuilder|static=true",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 3,
+          "isExtensionMethod": true
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    }
+  ]
+}

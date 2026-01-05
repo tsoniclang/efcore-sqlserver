@@ -1,0 +1,72 @@
+{
+  "namespace": "Microsoft.EntityFrameworkCore.Metadata",
+  "contributingAssemblies": [
+    "Microsoft.EntityFrameworkCore",
+    "Microsoft.EntityFrameworkCore.Relational",
+    "Microsoft.EntityFrameworkCore.SqlServer"
+  ],
+  "types": [
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.SqlServerValueGenerationStrategy",
+      "clrName": "Microsoft.EntityFrameworkCore.Metadata.SqlServerValueGenerationStrategy",
+      "tsEmitName": "SqlServerValueGenerationStrategy",
+      "kind": "Enum",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.SqlServerValueGenerationStrategy::value__System.Int32",
+          "clrName": "value__",
+          "tsEmitName": "value__",
+          "normalizedSignature": "value__|System.Int32|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "isLiteral": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.SqlServerValueGenerationStrategy::NoneMicrosoft.EntityFrameworkCore.Metadata.SqlServerValueGenerationStrategy",
+          "clrName": "None",
+          "tsEmitName": "none",
+          "normalizedSignature": "None|Microsoft.EntityFrameworkCore.Metadata.SqlServerValueGenerationStrategy|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.SqlServerValueGenerationStrategy::SequenceHiLoMicrosoft.EntityFrameworkCore.Metadata.SqlServerValueGenerationStrategy",
+          "clrName": "SequenceHiLo",
+          "tsEmitName": "sequenceHiLo",
+          "normalizedSignature": "SequenceHiLo|Microsoft.EntityFrameworkCore.Metadata.SqlServerValueGenerationStrategy|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.SqlServerValueGenerationStrategy::IdentityColumnMicrosoft.EntityFrameworkCore.Metadata.SqlServerValueGenerationStrategy",
+          "clrName": "IdentityColumn",
+          "tsEmitName": "identityColumn",
+          "normalizedSignature": "IdentityColumn|Microsoft.EntityFrameworkCore.Metadata.SqlServerValueGenerationStrategy|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.SqlServerValueGenerationStrategy::SequenceMicrosoft.EntityFrameworkCore.Metadata.SqlServerValueGenerationStrategy",
+          "clrName": "Sequence",
+          "tsEmitName": "sequence",
+          "normalizedSignature": "Sequence|Microsoft.EntityFrameworkCore.Metadata.SqlServerValueGenerationStrategy|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        }
+      ],
+      "events": [],
+      "constructors": []
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "namespace": "Microsoft.Identity.Client.Cache",
+  "contributingAssemblies": [
+    "Microsoft.Identity.Client"
+  ],
+  "types": [
+    {
+      "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Cache.CacheLevel",
+      "clrName": "Microsoft.Identity.Client.Cache.CacheLevel",
+      "tsEmitName": "CacheLevel",
+      "kind": "Enum",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Cache.CacheLevel::value__System.Int32",
+          "clrName": "value__",
+          "tsEmitName": "value__",
+          "normalizedSignature": "value__|System.Int32|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "isLiteral": false
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Cache.CacheLevel::NoneMicrosoft.Identity.Client.Cache.CacheLevel",
+          "clrName": "None",
+          "tsEmitName": "none",
+          "normalizedSignature": "None|Microsoft.Identity.Client.Cache.CacheLevel|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Cache.CacheLevel::UnknownMicrosoft.Identity.Client.Cache.CacheLevel",
+          "clrName": "Unknown",
+          "tsEmitName": "unknown_",
+          "normalizedSignature": "Unknown|Microsoft.Identity.Client.Cache.CacheLevel|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Cache.CacheLevel::L1CacheMicrosoft.Identity.Client.Cache.CacheLevel",
+          "clrName": "L1Cache",
+          "tsEmitName": "l1Cache",
+          "normalizedSignature": "L1Cache|Microsoft.Identity.Client.Cache.CacheLevel|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Cache.CacheLevel::L2CacheMicrosoft.Identity.Client.Cache.CacheLevel",
+          "clrName": "L2Cache",
+          "tsEmitName": "l2Cache",
+          "normalizedSignature": "L2Cache|Microsoft.Identity.Client.Cache.CacheLevel|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        }
+      ],
+      "events": [],
+      "constructors": []
+    },
+    {
+      "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Cache.CacheData",
+      "clrName": "Microsoft.Identity.Client.Cache.CacheData",
+      "tsEmitName": "CacheData",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Cache.CacheData::AdalV3State:System.Byte[]",
+          "clrName": "AdalV3State",
+          "tsEmitName": "adalV3State",
+          "normalizedSignature": "AdalV3State|:System.Byte[]|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Cache.CacheData::UnifiedState:System.Byte[]",
+          "clrName": "UnifiedState",
+          "tsEmitName": "unifiedState",
+          "normalizedSignature": "UnifiedState|:System.Byte[]|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "namespace": "Microsoft.Identity.Client.AppConfig",
+  "contributingAssemblies": [
+    "Microsoft.Identity.Client"
+  ],
+  "types": [
+    {
+      "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AppConfig.ManagedIdentityId",
+      "clrName": "Microsoft.Identity.Client.AppConfig.ManagedIdentityId",
+      "tsEmitName": "ManagedIdentityId",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AppConfig.ManagedIdentityId::WithUserAssignedClientId(System.String):Microsoft.Identity.Client.AppConfig.ManagedIdentityId",
+          "clrName": "WithUserAssignedClientId",
+          "tsEmitName": "withUserAssignedClientId",
+          "normalizedSignature": "WithUserAssignedClientId|(System.String):Microsoft.Identity.Client.AppConfig.ManagedIdentityId|static=true",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AppConfig.ManagedIdentityId::WithUserAssignedResourceId(System.String):Microsoft.Identity.Client.AppConfig.ManagedIdentityId",
+          "clrName": "WithUserAssignedResourceId",
+          "tsEmitName": "withUserAssignedResourceId",
+          "normalizedSignature": "WithUserAssignedResourceId|(System.String):Microsoft.Identity.Client.AppConfig.ManagedIdentityId|static=true",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AppConfig.ManagedIdentityId::WithUserAssignedObjectId(System.String):Microsoft.Identity.Client.AppConfig.ManagedIdentityId",
+          "clrName": "WithUserAssignedObjectId",
+          "tsEmitName": "withUserAssignedObjectId",
+          "normalizedSignature": "WithUserAssignedObjectId|(System.String):Microsoft.Identity.Client.AppConfig.ManagedIdentityId|static=true",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AppConfig.ManagedIdentityId::SystemAssigned:Microsoft.Identity.Client.AppConfig.ManagedIdentityId",
+          "clrName": "SystemAssigned",
+          "tsEmitName": "systemAssigned",
+          "normalizedSignature": "SystemAssigned|:Microsoft.Identity.Client.AppConfig.ManagedIdentityId|static=true|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    },
+    {
+      "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration",
+      "clrName": "Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration",
+      "tsEmitName": "PoPAuthenticationConfiguration",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration::HttpMethod:System.Net.Http.HttpMethod",
+          "clrName": "HttpMethod",
+          "tsEmitName": "httpMethod",
+          "normalizedSignature": "HttpMethod|:System.Net.Http.HttpMethod|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration::HttpHost:System.String",
+          "clrName": "HttpHost",
+          "tsEmitName": "httpHost",
+          "normalizedSignature": "HttpHost|:System.String|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration::HttpPath:System.String",
+          "clrName": "HttpPath",
+          "tsEmitName": "httpPath",
+          "normalizedSignature": "HttpPath|:System.String|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration::PopCryptoProvider:Microsoft.Identity.Client.AuthScheme.PoP.IPoPCryptoProvider",
+          "clrName": "PopCryptoProvider",
+          "tsEmitName": "popCryptoProvider",
+          "normalizedSignature": "PopCryptoProvider|:Microsoft.Identity.Client.AuthScheme.PoP.IPoPCryptoProvider|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration::Nonce:System.String",
+          "clrName": "Nonce",
+          "tsEmitName": "nonce",
+          "normalizedSignature": "Nonce|:System.String|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration::SignHttpRequest:System.Boolean",
+          "clrName": "SignHttpRequest",
+          "tsEmitName": "signHttpRequest",
+          "normalizedSignature": "SignHttpRequest|:System.Boolean|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0
+        },
+        {
+          "normalizedSignature": "constructor|(System.Net.Http.HttpRequestMessage):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1
+        },
+        {
+          "normalizedSignature": "constructor|(System.Uri):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1
+        }
+      ]
+    }
+  ]
+}

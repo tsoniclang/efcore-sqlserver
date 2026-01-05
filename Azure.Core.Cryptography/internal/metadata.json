@@ -1,0 +1,122 @@
+{
+  "namespace": "Azure.Core.Cryptography",
+  "contributingAssemblies": [
+    "Azure.Core"
+  ],
+  "types": [
+    {
+      "stableId": "Azure.Core:Azure.Core.Cryptography.IKeyEncryptionKey",
+      "clrName": "Azure.Core.Cryptography.IKeyEncryptionKey",
+      "tsEmitName": "IKeyEncryptionKey",
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Azure.Core:Azure.Core.Cryptography.IKeyEncryptionKey::WrapKey(System.String,System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):System.Byte[]",
+          "clrName": "WrapKey",
+          "tsEmitName": "wrapKey",
+          "normalizedSignature": "WrapKey|(System.String,System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):System.Byte[]|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 3,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.Cryptography.IKeyEncryptionKey::WrapKeyAsync(System.String,System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Byte[],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "WrapKeyAsync",
+          "tsEmitName": "wrapKeyAsync",
+          "normalizedSignature": "WrapKeyAsync|(System.String,System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Byte[],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 3,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Azure.Core:Azure.Core.Cryptography.IKeyEncryptionKey::KeyId:System.String",
+          "clrName": "KeyId",
+          "tsEmitName": "keyId",
+          "normalizedSignature": "KeyId|:System.String|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    },
+    {
+      "stableId": "Azure.Core:Azure.Core.Cryptography.IKeyEncryptionKeyResolver",
+      "clrName": "Azure.Core.Cryptography.IKeyEncryptionKeyResolver",
+      "tsEmitName": "IKeyEncryptionKeyResolver",
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Azure.Core:Azure.Core.Cryptography.IKeyEncryptionKeyResolver::Resolve(System.String,System.Threading.CancellationToken):Azure.Core.Cryptography.IKeyEncryptionKey",
+          "clrName": "Resolve",
+          "tsEmitName": "resolve",
+          "normalizedSignature": "Resolve|(System.String,System.Threading.CancellationToken):Azure.Core.Cryptography.IKeyEncryptionKey|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 2,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.Cryptography.IKeyEncryptionKeyResolver::ResolveAsync(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Azure.Core.Cryptography.IKeyEncryptionKey,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
+          "clrName": "ResolveAsync",
+          "tsEmitName": "resolveAsync",
+          "normalizedSignature": "ResolveAsync|(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Azure.Core.Cryptography.IKeyEncryptionKey,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 2,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    }
+  ]
+}

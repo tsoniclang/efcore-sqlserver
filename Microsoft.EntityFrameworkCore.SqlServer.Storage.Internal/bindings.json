@@ -1,0 +1,2619 @@
+{
+  "namespace": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal",
+  "types": [
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.ISqlServerConnection",
+      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.ISqlServerConnection",
+      "tsEmitName": "ISqlServerConnection",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.ISqlServerConnection::CreateMasterConnection():Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.ISqlServerConnection",
+          "clrName": "CreateMasterConnection",
+          "tsEmitName": "createMasterConnection",
+          "metadataToken": 100664502,
+          "canonicalSignature": "():Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.ISqlServerConnection",
+          "normalizedSignature": "CreateMasterConnection|():Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.ISqlServerConnection|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.ISqlServerConnection",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.ISqlServerConnection::IsMultipleActiveResultSetsEnabled:System.Boolean",
+          "clrName": "IsMultipleActiveResultSetsEnabled",
+          "tsEmitName": "isMultipleActiveResultSetsEnabled",
+          "metadataToken": 385876102,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "IsMultipleActiveResultSetsEnabled|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.ISqlServerConnection",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "createMasterConnection",
+          "isStatic": false,
+          "tsSignatureId": "CreateMasterConnection|():Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.ISqlServerConnection|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.ISqlServerConnection",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664502
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "isMultipleActiveResultSetsEnabled",
+          "isStatic": false,
+          "tsSignatureId": "IsMultipleActiveResultSetsEnabled|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.ISqlServerConnection",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876102
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerBoolTypeMapping",
+      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerBoolTypeMapping",
+      "tsEmitName": "SqlServerBoolTypeMapping",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerBoolTypeMapping::Default:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerBoolTypeMapping",
+          "clrName": "Default",
+          "tsEmitName": "default_",
+          "metadataToken": 385876103,
+          "canonicalSignature": ":Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerBoolTypeMapping",
+          "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerBoolTypeMapping|static=true|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerBoolTypeMapping",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerBoolTypeMapping::.ctor(System.String,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]):void",
+          "metadataToken": 100664505,
+          "canonicalSignature": "(System.String,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]):void",
+          "normalizedSignature": "constructor|(System.String,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerBoolTypeMapping",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "default_",
+          "isStatic": true,
+          "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerBoolTypeMapping|static=true|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerBoolTypeMapping",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876103
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerBoolTypeMapping",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664505
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerByteArrayTypeMapping",
+      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerByteArrayTypeMapping",
+      "tsEmitName": "SqlServerByteArrayTypeMapping",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerByteArrayTypeMapping::Default:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerByteArrayTypeMapping",
+          "clrName": "Default",
+          "tsEmitName": "default_",
+          "metadataToken": 385876104,
+          "canonicalSignature": ":Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerByteArrayTypeMapping",
+          "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerByteArrayTypeMapping|static=true|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerByteArrayTypeMapping",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerByteArrayTypeMapping::.ctor(System.String,System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Boolean,Microsoft.EntityFrameworkCore.ChangeTracking.ValueComparer,System.Nullable_1[[System.Data.SqlDbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],System.Nullable_1[[Microsoft.EntityFrameworkCore.Storage.StoreTypePostfix,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
+          "metadataToken": 100664511,
+          "canonicalSignature": "(System.String,System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Boolean,Microsoft.EntityFrameworkCore.ChangeTracking.ValueComparer,System.Nullable_1[[System.Data.SqlDbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],System.Nullable_1[[Microsoft.EntityFrameworkCore.Storage.StoreTypePostfix,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
+          "normalizedSignature": "constructor|(System.String,System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Boolean,Microsoft.EntityFrameworkCore.ChangeTracking.ValueComparer,System.Nullable_1[[System.Data.SqlDbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],System.Nullable_1[[Microsoft.EntityFrameworkCore.Storage.StoreTypePostfix,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 6,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerByteArrayTypeMapping",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "default_",
+          "isStatic": true,
+          "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerByteArrayTypeMapping|static=true|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerByteArrayTypeMapping",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876104
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Boolean,Microsoft.EntityFrameworkCore.ChangeTracking.ValueComparer,System.Nullable_1[[System.Data.SqlDbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],System.Nullable_1[[Microsoft.EntityFrameworkCore.Storage.StoreTypePostfix,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerByteArrayTypeMapping",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664511
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerByteTypeMapping",
+      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerByteTypeMapping",
+      "tsEmitName": "SqlServerByteTypeMapping",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerByteTypeMapping::Default:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerByteTypeMapping",
+          "clrName": "Default",
+          "tsEmitName": "default_",
+          "metadataToken": 385876105,
+          "canonicalSignature": ":Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerByteTypeMapping",
+          "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerByteTypeMapping|static=true|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerByteTypeMapping",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerByteTypeMapping::.ctor(System.String,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]):void",
+          "metadataToken": 100664519,
+          "canonicalSignature": "(System.String,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]):void",
+          "normalizedSignature": "constructor|(System.String,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerByteTypeMapping",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "default_",
+          "isStatic": true,
+          "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerByteTypeMapping|static=true|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerByteTypeMapping",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876105
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerByteTypeMapping",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664519
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection",
+      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection",
+      "tsEmitName": "SqlServerConnection",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection::CreateMasterConnection():Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.ISqlServerConnection",
+          "clrName": "CreateMasterConnection",
+          "tsEmitName": "createMasterConnection",
+          "metadataToken": 100664530,
+          "canonicalSignature": "():Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.ISqlServerConnection",
+          "normalizedSignature": "CreateMasterConnection|():Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.ISqlServerConnection|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.ISqlServerConnection::CreateMasterConnection():Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.ISqlServerConnection",
+          "clrName": "CreateMasterConnection",
+          "tsEmitName": "createMasterConnection$view",
+          "metadataToken": 100664502,
+          "canonicalSignature": "():Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.ISqlServerConnection",
+          "normalizedSignature": "CreateMasterConnection|():Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.ISqlServerConnection|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.ISqlServerConnection",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection::ConnectionString:System.String",
+          "clrName": "ConnectionString",
+          "tsEmitName": "connectionString",
+          "metadataToken": 385876106,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "ConnectionString|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection::IsMultipleActiveResultSetsEnabled:System.Boolean",
+          "clrName": "IsMultipleActiveResultSetsEnabled",
+          "tsEmitName": "isMultipleActiveResultSetsEnabled",
+          "metadataToken": 385876107,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "IsMultipleActiveResultSetsEnabled|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.ISqlServerConnection::IsMultipleActiveResultSetsEnabled:System.Boolean",
+          "clrName": "IsMultipleActiveResultSetsEnabled",
+          "tsEmitName": "isMultipleActiveResultSetsEnabled$view",
+          "metadataToken": 385876102,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "IsMultipleActiveResultSetsEnabled|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ViewOnly",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.ISqlServerConnection",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalConnectionDependencies):void",
+          "metadataToken": 100664524,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalConnectionDependencies):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalConnectionDependencies):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "createMasterConnection",
+          "isStatic": false,
+          "tsSignatureId": "CreateMasterConnection|():Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.ISqlServerConnection|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664530
+          }
+        },
+        {
+          "tsName": "createMasterConnection$view",
+          "isStatic": false,
+          "tsSignatureId": "CreateMasterConnection|():Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.ISqlServerConnection|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.ISqlServerConnection",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664502
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "connectionString",
+          "isStatic": false,
+          "tsSignatureId": "ConnectionString|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876106
+          }
+        },
+        {
+          "tsName": "isMultipleActiveResultSetsEnabled",
+          "isStatic": false,
+          "tsSignatureId": "IsMultipleActiveResultSetsEnabled|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876107
+          }
+        },
+        {
+          "tsName": "isMultipleActiveResultSetsEnabled$view",
+          "isStatic": false,
+          "tsSignatureId": "IsMultipleActiveResultSetsEnabled|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.ISqlServerConnection",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876102
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalConnectionDependencies):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664524
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator",
+      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator",
+      "tsEmitName": "SqlServerDatabaseCreator",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator::Create():System.Void",
+          "clrName": "Create",
+          "tsEmitName": "create",
+          "metadataToken": 100664541,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "Create|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator::CreateAsync(System.Threading.CancellationToken):System.Threading.Tasks.Task",
+          "clrName": "CreateAsync",
+          "tsEmitName": "createAsync",
+          "metadataToken": 100664542,
+          "canonicalSignature": "(System.Threading.CancellationToken):System.Threading.Tasks.Task",
+          "normalizedSignature": "CreateAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator::HasTables():System.Boolean",
+          "clrName": "HasTables",
+          "tsEmitName": "hasTables",
+          "metadataToken": 100664543,
+          "canonicalSignature": "():System.Boolean",
+          "normalizedSignature": "HasTables|():System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator::HasTablesAsync(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "HasTablesAsync",
+          "tsEmitName": "hasTablesAsync",
+          "metadataToken": 100664544,
+          "canonicalSignature": "(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "HasTablesAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator::Exists():System.Boolean",
+          "clrName": "Exists",
+          "tsEmitName": "exists",
+          "metadataToken": 100664547,
+          "canonicalSignature": "():System.Boolean",
+          "normalizedSignature": "Exists|():System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator::ExistsAsync(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "ExistsAsync",
+          "tsEmitName": "existsAsync",
+          "metadataToken": 100664549,
+          "canonicalSignature": "(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "ExistsAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator::Delete():System.Void",
+          "clrName": "Delete",
+          "tsEmitName": "delete_",
+          "metadataToken": 100664553,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "Delete|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator::DeleteAsync(System.Threading.CancellationToken):System.Threading.Tasks.Task",
+          "clrName": "DeleteAsync",
+          "tsEmitName": "deleteAsync",
+          "metadataToken": 100664554,
+          "canonicalSignature": "(System.Threading.CancellationToken):System.Threading.Tasks.Task",
+          "normalizedSignature": "DeleteAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator::RetryDelay:System.TimeSpan",
+          "clrName": "RetryDelay",
+          "tsEmitName": "retryDelay",
+          "metadataToken": 385876109,
+          "canonicalSignature": ":System.TimeSpan",
+          "normalizedSignature": "RetryDelay|:System.TimeSpan|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator::RetryTimeout:System.TimeSpan",
+          "clrName": "RetryTimeout",
+          "tsEmitName": "retryTimeout",
+          "metadataToken": 385876110,
+          "canonicalSignature": ":System.TimeSpan",
+          "normalizedSignature": "RetryTimeout|:System.TimeSpan|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalDatabaseCreatorDependencies,Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.ISqlServerConnection,Microsoft.EntityFrameworkCore.Storage.IRawSqlCommandBuilder):void",
+          "metadataToken": 100664536,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalDatabaseCreatorDependencies,Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.ISqlServerConnection,Microsoft.EntityFrameworkCore.Storage.IRawSqlCommandBuilder):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalDatabaseCreatorDependencies,Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.ISqlServerConnection,Microsoft.EntityFrameworkCore.Storage.IRawSqlCommandBuilder):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "create",
+          "isStatic": false,
+          "tsSignatureId": "Create|():System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664541
+          }
+        },
+        {
+          "tsName": "createAsync",
+          "isStatic": false,
+          "tsSignatureId": "CreateAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664542
+          }
+        },
+        {
+          "tsName": "hasTables",
+          "isStatic": false,
+          "tsSignatureId": "HasTables|():System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664543
+          }
+        },
+        {
+          "tsName": "hasTablesAsync",
+          "isStatic": false,
+          "tsSignatureId": "HasTablesAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664544
+          }
+        },
+        {
+          "tsName": "exists",
+          "isStatic": false,
+          "tsSignatureId": "Exists|():System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664547
+          }
+        },
+        {
+          "tsName": "existsAsync",
+          "isStatic": false,
+          "tsSignatureId": "ExistsAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664549
+          }
+        },
+        {
+          "tsName": "delete_",
+          "isStatic": false,
+          "tsSignatureId": "Delete|():System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664553
+          }
+        },
+        {
+          "tsName": "deleteAsync",
+          "isStatic": false,
+          "tsSignatureId": "DeleteAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664554
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "retryDelay",
+          "isStatic": false,
+          "tsSignatureId": "RetryDelay|:System.TimeSpan|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876109
+          }
+        },
+        {
+          "tsName": "retryTimeout",
+          "isStatic": false,
+          "tsSignatureId": "RetryTimeout|:System.TimeSpan|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876110
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalDatabaseCreatorDependencies,Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.ISqlServerConnection,Microsoft.EntityFrameworkCore.Storage.IRawSqlCommandBuilder):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664536
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateOnlyTypeMapping",
+      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateOnlyTypeMapping",
+      "tsEmitName": "SqlServerDateOnlyTypeMapping",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateOnlyTypeMapping::Default:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateOnlyTypeMapping",
+          "clrName": "Default",
+          "tsEmitName": "default_",
+          "metadataToken": 385876111,
+          "canonicalSignature": ":Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateOnlyTypeMapping",
+          "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateOnlyTypeMapping|static=true|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateOnlyTypeMapping",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedProperties": [
+        {
+          "tsName": "default_",
+          "isStatic": true,
+          "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateOnlyTypeMapping|static=true|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateOnlyTypeMapping",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876111
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateTimeOffsetTypeMapping",
+      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateTimeOffsetTypeMapping",
+      "tsEmitName": "SqlServerDateTimeOffsetTypeMapping",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateTimeOffsetTypeMapping::Default:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateTimeOffsetTypeMapping",
+          "clrName": "Default",
+          "tsEmitName": "default_",
+          "metadataToken": 385876113,
+          "canonicalSignature": ":Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateTimeOffsetTypeMapping",
+          "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateTimeOffsetTypeMapping|static=true|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateTimeOffsetTypeMapping",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateTimeOffsetTypeMapping::.ctor(System.String,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],Microsoft.EntityFrameworkCore.Storage.StoreTypePostfix):void",
+          "metadataToken": 100664568,
+          "canonicalSignature": "(System.String,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],Microsoft.EntityFrameworkCore.Storage.StoreTypePostfix):void",
+          "normalizedSignature": "constructor|(System.String,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],Microsoft.EntityFrameworkCore.Storage.StoreTypePostfix):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateTimeOffsetTypeMapping",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "default_",
+          "isStatic": true,
+          "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateTimeOffsetTypeMapping|static=true|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateTimeOffsetTypeMapping",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876113
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],Microsoft.EntityFrameworkCore.Storage.StoreTypePostfix):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateTimeOffsetTypeMapping",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664568
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateTimeTypeMapping",
+      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateTimeTypeMapping",
+      "tsEmitName": "SqlServerDateTimeTypeMapping",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateTimeTypeMapping::Default:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateTimeTypeMapping",
+          "clrName": "Default",
+          "tsEmitName": "default_",
+          "metadataToken": 385876115,
+          "canonicalSignature": ":Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateTimeTypeMapping",
+          "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateTimeTypeMapping|static=true|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateTimeTypeMapping",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateTimeTypeMapping::SqlType:System.Nullable_1[[System.Data.SqlDbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]",
+          "clrName": "SqlType",
+          "tsEmitName": "sqlType",
+          "metadataToken": 385876116,
+          "canonicalSignature": ":System.Nullable_1[[System.Data.SqlDbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]",
+          "normalizedSignature": "SqlType|:System.Nullable_1[[System.Data.SqlDbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateTimeTypeMapping",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateTimeTypeMapping::.ctor(System.String,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],System.Nullable_1[[System.Data.SqlDbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],Microsoft.EntityFrameworkCore.Storage.StoreTypePostfix):void",
+          "metadataToken": 100664575,
+          "canonicalSignature": "(System.String,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],System.Nullable_1[[System.Data.SqlDbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],Microsoft.EntityFrameworkCore.Storage.StoreTypePostfix):void",
+          "normalizedSignature": "constructor|(System.String,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],System.Nullable_1[[System.Data.SqlDbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],Microsoft.EntityFrameworkCore.Storage.StoreTypePostfix):void|static=false",
+          "isStatic": false,
+          "parameterCount": 4,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateTimeTypeMapping",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "default_",
+          "isStatic": true,
+          "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateTimeTypeMapping|static=true|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateTimeTypeMapping",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876115
+          }
+        },
+        {
+          "tsName": "sqlType",
+          "isStatic": false,
+          "tsSignatureId": "SqlType|:System.Nullable_1[[System.Data.SqlDbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateTimeTypeMapping",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876116
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],System.Nullable_1[[System.Data.SqlDbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],Microsoft.EntityFrameworkCore.Storage.StoreTypePostfix):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateTimeTypeMapping",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664575
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDecimalTypeMapping",
+      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDecimalTypeMapping",
+      "tsEmitName": "SqlServerDecimalTypeMapping",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDecimalTypeMapping::Default:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDecimalTypeMapping",
+          "clrName": "Default",
+          "tsEmitName": "default_",
+          "metadataToken": 385876118,
+          "canonicalSignature": ":Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDecimalTypeMapping",
+          "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDecimalTypeMapping|static=true|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDecimalTypeMapping",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDecimalTypeMapping::SqlType:System.Nullable_1[[System.Data.SqlDbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]",
+          "clrName": "SqlType",
+          "tsEmitName": "sqlType",
+          "metadataToken": 385876119,
+          "canonicalSignature": ":System.Nullable_1[[System.Data.SqlDbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]",
+          "normalizedSignature": "SqlType|:System.Nullable_1[[System.Data.SqlDbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDecimalTypeMapping",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDecimalTypeMapping::.ctor(System.String,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.Data.SqlDbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],Microsoft.EntityFrameworkCore.Storage.StoreTypePostfix):void",
+          "metadataToken": 100664583,
+          "canonicalSignature": "(System.String,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.Data.SqlDbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],Microsoft.EntityFrameworkCore.Storage.StoreTypePostfix):void",
+          "normalizedSignature": "constructor|(System.String,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.Data.SqlDbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],Microsoft.EntityFrameworkCore.Storage.StoreTypePostfix):void|static=false",
+          "isStatic": false,
+          "parameterCount": 6,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDecimalTypeMapping",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "default_",
+          "isStatic": true,
+          "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDecimalTypeMapping|static=true|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDecimalTypeMapping",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876118
+          }
+        },
+        {
+          "tsName": "sqlType",
+          "isStatic": false,
+          "tsSignatureId": "SqlType|:System.Nullable_1[[System.Data.SqlDbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDecimalTypeMapping",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876119
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.Data.SqlDbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],Microsoft.EntityFrameworkCore.Storage.StoreTypePostfix):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDecimalTypeMapping",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664583
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDoubleTypeMapping",
+      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDoubleTypeMapping",
+      "tsEmitName": "SqlServerDoubleTypeMapping",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDoubleTypeMapping::GetDataReaderMethod():System.Reflection.MethodInfo",
+          "clrName": "GetDataReaderMethod",
+          "tsEmitName": "getDataReaderMethod",
+          "metadataToken": 100664594,
+          "canonicalSignature": "():System.Reflection.MethodInfo",
+          "normalizedSignature": "GetDataReaderMethod|():System.Reflection.MethodInfo|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDoubleTypeMapping",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDoubleTypeMapping::CustomizeDataReaderExpression(System.Linq.Expressions.Expression):System.Linq.Expressions.Expression",
+          "clrName": "CustomizeDataReaderExpression",
+          "tsEmitName": "customizeDataReaderExpression",
+          "metadataToken": 100664595,
+          "canonicalSignature": "(System.Linq.Expressions.Expression):System.Linq.Expressions.Expression",
+          "normalizedSignature": "CustomizeDataReaderExpression|(System.Linq.Expressions.Expression):System.Linq.Expressions.Expression|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDoubleTypeMapping",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDoubleTypeMapping::Default:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDoubleTypeMapping",
+          "clrName": "Default",
+          "tsEmitName": "default_",
+          "metadataToken": 385876120,
+          "canonicalSignature": ":Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDoubleTypeMapping",
+          "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDoubleTypeMapping|static=true|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDoubleTypeMapping",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDoubleTypeMapping::.ctor(System.String,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],Microsoft.EntityFrameworkCore.Storage.StoreTypePostfix):void",
+          "metadataToken": 100664590,
+          "canonicalSignature": "(System.String,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],Microsoft.EntityFrameworkCore.Storage.StoreTypePostfix):void",
+          "normalizedSignature": "constructor|(System.String,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],Microsoft.EntityFrameworkCore.Storage.StoreTypePostfix):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDoubleTypeMapping",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "getDataReaderMethod",
+          "isStatic": false,
+          "tsSignatureId": "GetDataReaderMethod|():System.Reflection.MethodInfo|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDoubleTypeMapping",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664594
+          }
+        },
+        {
+          "tsName": "customizeDataReaderExpression",
+          "isStatic": false,
+          "tsSignatureId": "CustomizeDataReaderExpression|(System.Linq.Expressions.Expression):System.Linq.Expressions.Expression|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDoubleTypeMapping",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664595
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "default_",
+          "isStatic": true,
+          "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDoubleTypeMapping|static=true|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDoubleTypeMapping",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876120
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],Microsoft.EntityFrameworkCore.Storage.StoreTypePostfix):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDoubleTypeMapping",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664590
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExceptionDetector",
+      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExceptionDetector",
+      "tsEmitName": "SqlServerExceptionDetector",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExceptionDetector::IsCancellation(System.Exception,System.Threading.CancellationToken):System.Boolean",
+          "clrName": "IsCancellation",
+          "tsEmitName": "isCancellation",
+          "metadataToken": 100664598,
+          "canonicalSignature": "(System.Exception,System.Threading.CancellationToken):System.Boolean",
+          "normalizedSignature": "IsCancellation|(System.Exception,System.Threading.CancellationToken):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExceptionDetector",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExceptionDetector::.ctor():void",
+          "metadataToken": 100664599,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExceptionDetector",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "isCancellation",
+          "isStatic": false,
+          "tsSignatureId": "IsCancellation|(System.Exception,System.Threading.CancellationToken):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExceptionDetector",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664598
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExceptionDetector",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664599
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy",
+      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy",
+      "tsEmitName": "SqlServerExecutionStrategy",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy::Execute(TState,Func_3,Func_3):TResult",
+          "clrName": "Execute",
+          "tsEmitName": "execute",
+          "metadataToken": 100664603,
+          "canonicalSignature": "(TState,Func_3,Func_3):TResult",
+          "normalizedSignature": "Execute|(TState,Func_3,Func_3):TResult|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 2,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy::ExecuteAsync(TState,Func_4,Func_4,System.Threading.CancellationToken):Task_1",
+          "clrName": "ExecuteAsync",
+          "tsEmitName": "executeAsync",
+          "metadataToken": 100664604,
+          "canonicalSignature": "(TState,Func_4,Func_4,System.Threading.CancellationToken):Task_1",
+          "normalizedSignature": "ExecuteAsync|(TState,Func_4,Func_4,System.Threading.CancellationToken):Task_1|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 2,
+          "parameterCount": 4,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy::RetriesOnFailure:System.Boolean",
+          "clrName": "RetriesOnFailure",
+          "tsEmitName": "retriesOnFailure",
+          "metadataToken": 385876122,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "RetriesOnFailure|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy::.ctor(Microsoft.EntityFrameworkCore.Storage.ExecutionStrategyDependencies):void",
+          "metadataToken": 100664600,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.ExecutionStrategyDependencies):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.ExecutionStrategyDependencies):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "execute",
+          "isStatic": false,
+          "tsSignatureId": "Execute|(TState,Func_3,Func_3):TResult|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664603
+          }
+        },
+        {
+          "tsName": "executeAsync",
+          "isStatic": false,
+          "tsSignatureId": "ExecuteAsync|(TState,Func_4,Func_4,System.Threading.CancellationToken):Task_1|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664604
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "retriesOnFailure",
+          "isStatic": false,
+          "tsSignatureId": "RetriesOnFailure|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876122
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Storage.ExecutionStrategyDependencies):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664600
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategyFactory",
+      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategyFactory",
+      "tsEmitName": "SqlServerExecutionStrategyFactory",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategyFactory::.ctor(Microsoft.EntityFrameworkCore.Storage.ExecutionStrategyDependencies):void",
+          "metadataToken": 100664605,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.ExecutionStrategyDependencies):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.ExecutionStrategyDependencies):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategyFactory",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Storage.ExecutionStrategyDependencies):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategyFactory",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664605
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerFloatTypeMapping",
+      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerFloatTypeMapping",
+      "tsEmitName": "SqlServerFloatTypeMapping",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerFloatTypeMapping::Default:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerFloatTypeMapping",
+          "clrName": "Default",
+          "tsEmitName": "default_",
+          "metadataToken": 385876123,
+          "canonicalSignature": ":Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerFloatTypeMapping",
+          "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerFloatTypeMapping|static=true|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerFloatTypeMapping",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerFloatTypeMapping::.ctor(System.String,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],Microsoft.EntityFrameworkCore.Storage.StoreTypePostfix):void",
+          "metadataToken": 100664608,
+          "canonicalSignature": "(System.String,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],Microsoft.EntityFrameworkCore.Storage.StoreTypePostfix):void",
+          "normalizedSignature": "constructor|(System.String,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],Microsoft.EntityFrameworkCore.Storage.StoreTypePostfix):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerFloatTypeMapping",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "default_",
+          "isStatic": true,
+          "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerFloatTypeMapping|static=true|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerFloatTypeMapping",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876123
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],Microsoft.EntityFrameworkCore.Storage.StoreTypePostfix):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerFloatTypeMapping",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664608
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerLongTypeMapping",
+      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerLongTypeMapping",
+      "tsEmitName": "SqlServerLongTypeMapping",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerLongTypeMapping::Default:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerLongTypeMapping",
+          "clrName": "Default",
+          "tsEmitName": "default_",
+          "metadataToken": 385876124,
+          "canonicalSignature": ":Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerLongTypeMapping",
+          "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerLongTypeMapping|static=true|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerLongTypeMapping",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerLongTypeMapping::.ctor(System.String,Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter,Microsoft.EntityFrameworkCore.ChangeTracking.ValueComparer,Microsoft.EntityFrameworkCore.ChangeTracking.ValueComparer,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]):void",
+          "metadataToken": 100664615,
+          "canonicalSignature": "(System.String,Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter,Microsoft.EntityFrameworkCore.ChangeTracking.ValueComparer,Microsoft.EntityFrameworkCore.ChangeTracking.ValueComparer,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]):void",
+          "normalizedSignature": "constructor|(System.String,Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter,Microsoft.EntityFrameworkCore.ChangeTracking.ValueComparer,Microsoft.EntityFrameworkCore.ChangeTracking.ValueComparer,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerLongTypeMapping",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "default_",
+          "isStatic": true,
+          "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerLongTypeMapping|static=true|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerLongTypeMapping",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876124
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter,Microsoft.EntityFrameworkCore.ChangeTracking.ValueComparer,Microsoft.EntityFrameworkCore.ChangeTracking.ValueComparer,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerLongTypeMapping",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664615
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerShortTypeMapping",
+      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerShortTypeMapping",
+      "tsEmitName": "SqlServerShortTypeMapping",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerShortTypeMapping::Default:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerShortTypeMapping",
+          "clrName": "Default",
+          "tsEmitName": "default_",
+          "metadataToken": 385876125,
+          "canonicalSignature": ":Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerShortTypeMapping",
+          "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerShortTypeMapping|static=true|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerShortTypeMapping",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerShortTypeMapping::.ctor(System.String,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]):void",
+          "metadataToken": 100664621,
+          "canonicalSignature": "(System.String,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]):void",
+          "normalizedSignature": "constructor|(System.String,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerShortTypeMapping",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "default_",
+          "isStatic": true,
+          "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerShortTypeMapping|static=true|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerShortTypeMapping",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876125
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerShortTypeMapping",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664621
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlGenerationHelper",
+      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlGenerationHelper",
+      "tsEmitName": "SqlServerSqlGenerationHelper",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlGenerationHelper::EscapeIdentifier(System.String):System.String",
+          "clrName": "EscapeIdentifier",
+          "tsEmitName": "escapeIdentifier",
+          "metadataToken": 100664629,
+          "canonicalSignature": "(System.String):System.String",
+          "normalizedSignature": "EscapeIdentifier|(System.String):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlGenerationHelper",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlGenerationHelper::EscapeIdentifier(System.Text.StringBuilder,System.String):System.Void",
+          "clrName": "EscapeIdentifier",
+          "tsEmitName": "escapeIdentifier",
+          "metadataToken": 100664630,
+          "canonicalSignature": "(System.Text.StringBuilder,System.String):System.Void",
+          "normalizedSignature": "EscapeIdentifier|(System.Text.StringBuilder,System.String):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlGenerationHelper",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlGenerationHelper::DelimitIdentifier(System.String):System.String",
+          "clrName": "DelimitIdentifier",
+          "tsEmitName": "delimitIdentifier",
+          "metadataToken": 100664631,
+          "canonicalSignature": "(System.String):System.String",
+          "normalizedSignature": "DelimitIdentifier|(System.String):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlGenerationHelper",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlGenerationHelper::DelimitIdentifier(System.Text.StringBuilder,System.String):System.Void",
+          "clrName": "DelimitIdentifier",
+          "tsEmitName": "delimitIdentifier",
+          "metadataToken": 100664632,
+          "canonicalSignature": "(System.Text.StringBuilder,System.String):System.Void",
+          "normalizedSignature": "DelimitIdentifier|(System.Text.StringBuilder,System.String):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlGenerationHelper",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlGenerationHelper::GenerateCreateSavepointStatement(System.String):System.String",
+          "clrName": "GenerateCreateSavepointStatement",
+          "tsEmitName": "generateCreateSavepointStatement",
+          "metadataToken": 100664633,
+          "canonicalSignature": "(System.String):System.String",
+          "normalizedSignature": "GenerateCreateSavepointStatement|(System.String):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlGenerationHelper",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlGenerationHelper::GenerateRollbackToSavepointStatement(System.String):System.String",
+          "clrName": "GenerateRollbackToSavepointStatement",
+          "tsEmitName": "generateRollbackToSavepointStatement",
+          "metadataToken": 100664634,
+          "canonicalSignature": "(System.String):System.String",
+          "normalizedSignature": "GenerateRollbackToSavepointStatement|(System.String):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlGenerationHelper",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlGenerationHelper::GenerateReleaseSavepointStatement(System.String):System.String",
+          "clrName": "GenerateReleaseSavepointStatement",
+          "tsEmitName": "generateReleaseSavepointStatement",
+          "metadataToken": 100664635,
+          "canonicalSignature": "(System.String):System.String",
+          "normalizedSignature": "GenerateReleaseSavepointStatement|(System.String):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlGenerationHelper",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlGenerationHelper::DelimitJsonPathElement(System.String):System.String",
+          "clrName": "DelimitJsonPathElement",
+          "tsEmitName": "delimitJsonPathElement",
+          "metadataToken": 100664636,
+          "canonicalSignature": "(System.String):System.String",
+          "normalizedSignature": "DelimitJsonPathElement|(System.String):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlGenerationHelper",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlGenerationHelper::BatchTerminator:System.String",
+          "clrName": "BatchTerminator",
+          "tsEmitName": "batchTerminator",
+          "metadataToken": 385876126,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "BatchTerminator|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlGenerationHelper",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlGenerationHelper::StartTransactionStatement:System.String",
+          "clrName": "StartTransactionStatement",
+          "tsEmitName": "startTransactionStatement",
+          "metadataToken": 385876127,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "StartTransactionStatement|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlGenerationHelper",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlGenerationHelper::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalSqlGenerationHelperDependencies):void",
+          "metadataToken": 100664626,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalSqlGenerationHelperDependencies):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalSqlGenerationHelperDependencies):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlGenerationHelper",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "escapeIdentifier",
+          "isStatic": false,
+          "tsSignatureId": "EscapeIdentifier|(System.String):System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlGenerationHelper",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664629
+          }
+        },
+        {
+          "tsName": "escapeIdentifier",
+          "isStatic": false,
+          "tsSignatureId": "EscapeIdentifier|(System.Text.StringBuilder,System.String):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlGenerationHelper",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664630
+          }
+        },
+        {
+          "tsName": "delimitIdentifier",
+          "isStatic": false,
+          "tsSignatureId": "DelimitIdentifier|(System.String):System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlGenerationHelper",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664631
+          }
+        },
+        {
+          "tsName": "delimitIdentifier",
+          "isStatic": false,
+          "tsSignatureId": "DelimitIdentifier|(System.Text.StringBuilder,System.String):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlGenerationHelper",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664632
+          }
+        },
+        {
+          "tsName": "generateCreateSavepointStatement",
+          "isStatic": false,
+          "tsSignatureId": "GenerateCreateSavepointStatement|(System.String):System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlGenerationHelper",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664633
+          }
+        },
+        {
+          "tsName": "generateRollbackToSavepointStatement",
+          "isStatic": false,
+          "tsSignatureId": "GenerateRollbackToSavepointStatement|(System.String):System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlGenerationHelper",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664634
+          }
+        },
+        {
+          "tsName": "generateReleaseSavepointStatement",
+          "isStatic": false,
+          "tsSignatureId": "GenerateReleaseSavepointStatement|(System.String):System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlGenerationHelper",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664635
+          }
+        },
+        {
+          "tsName": "delimitJsonPathElement",
+          "isStatic": false,
+          "tsSignatureId": "DelimitJsonPathElement|(System.String):System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlGenerationHelper",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664636
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "batchTerminator",
+          "isStatic": false,
+          "tsSignatureId": "BatchTerminator|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlGenerationHelper",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876126
+          }
+        },
+        {
+          "tsName": "startTransactionStatement",
+          "isStatic": false,
+          "tsSignatureId": "StartTransactionStatement|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlGenerationHelper",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876127
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalSqlGenerationHelperDependencies):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlGenerationHelper",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664626
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlVariantTypeMapping",
+      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlVariantTypeMapping",
+      "tsEmitName": "SqlServerSqlVariantTypeMapping",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlVariantTypeMapping::Default:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlVariantTypeMapping",
+          "clrName": "Default",
+          "tsEmitName": "default_",
+          "metadataToken": 385876128,
+          "canonicalSignature": ":Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlVariantTypeMapping",
+          "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlVariantTypeMapping|static=true|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlVariantTypeMapping",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlVariantTypeMapping::.ctor(System.String):void",
+          "metadataToken": 100664638,
+          "canonicalSignature": "(System.String):void",
+          "normalizedSignature": "constructor|(System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlVariantTypeMapping",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "default_",
+          "isStatic": true,
+          "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlVariantTypeMapping|static=true|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlVariantTypeMapping",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876128
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlVariantTypeMapping",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664638
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStringTypeMapping",
+      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStringTypeMapping",
+      "tsEmitName": "SqlServerStringTypeMapping",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStringTypeMapping::Default:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStringTypeMapping",
+          "clrName": "Default",
+          "tsEmitName": "default_",
+          "metadataToken": 385876129,
+          "canonicalSignature": ":Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStringTypeMapping",
+          "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStringTypeMapping|static=true|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStringTypeMapping",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStringTypeMapping::JsonTypeDefault:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStringTypeMapping",
+          "clrName": "JsonTypeDefault",
+          "tsEmitName": "jsonTypeDefault",
+          "metadataToken": 385876130,
+          "canonicalSignature": ":Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStringTypeMapping",
+          "normalizedSignature": "JsonTypeDefault|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStringTypeMapping|static=true|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStringTypeMapping",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStringTypeMapping::UnicodeDefault:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStringTypeMapping",
+          "clrName": "UnicodeDefault",
+          "tsEmitName": "unicodeDefault",
+          "metadataToken": 385876131,
+          "canonicalSignature": ":Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStringTypeMapping",
+          "normalizedSignature": "UnicodeDefault|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStringTypeMapping|static=true|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStringTypeMapping",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStringTypeMapping::.ctor(System.String,System.Boolean,System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Boolean,System.Nullable_1[[System.Data.SqlDbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],System.Nullable_1[[Microsoft.EntityFrameworkCore.Storage.StoreTypePostfix,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean):void",
+          "metadataToken": 100664645,
+          "canonicalSignature": "(System.String,System.Boolean,System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Boolean,System.Nullable_1[[System.Data.SqlDbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],System.Nullable_1[[Microsoft.EntityFrameworkCore.Storage.StoreTypePostfix,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean):void",
+          "normalizedSignature": "constructor|(System.String,System.Boolean,System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Boolean,System.Nullable_1[[System.Data.SqlDbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],System.Nullable_1[[Microsoft.EntityFrameworkCore.Storage.StoreTypePostfix,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean):void|static=false",
+          "isStatic": false,
+          "parameterCount": 7,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStringTypeMapping",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "default_",
+          "isStatic": true,
+          "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStringTypeMapping|static=true|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStringTypeMapping",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876129
+          }
+        },
+        {
+          "tsName": "jsonTypeDefault",
+          "isStatic": true,
+          "tsSignatureId": "JsonTypeDefault|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStringTypeMapping|static=true|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStringTypeMapping",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876130
+          }
+        },
+        {
+          "tsName": "unicodeDefault",
+          "isStatic": true,
+          "tsSignatureId": "UnicodeDefault|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStringTypeMapping|static=true|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStringTypeMapping",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876131
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.Boolean,System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Boolean,System.Nullable_1[[System.Data.SqlDbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],System.Nullable_1[[Microsoft.EntityFrameworkCore.Storage.StoreTypePostfix,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStringTypeMapping",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664645
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStructuralJsonTypeMapping",
+      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStructuralJsonTypeMapping",
+      "tsEmitName": "SqlServerStructuralJsonTypeMapping",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStructuralJsonTypeMapping::GetDataReaderMethod():System.Reflection.MethodInfo",
+          "clrName": "GetDataReaderMethod",
+          "tsEmitName": "getDataReaderMethod",
+          "metadataToken": 100664658,
+          "canonicalSignature": "():System.Reflection.MethodInfo",
+          "normalizedSignature": "GetDataReaderMethod|():System.Reflection.MethodInfo|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStructuralJsonTypeMapping",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStructuralJsonTypeMapping::CreateUtf8Stream(System.String):System.IO.MemoryStream",
+          "clrName": "CreateUtf8Stream",
+          "tsEmitName": "createUtf8Stream",
+          "metadataToken": 100664659,
+          "canonicalSignature": "(System.String):System.IO.MemoryStream",
+          "normalizedSignature": "CreateUtf8Stream|(System.String):System.IO.MemoryStream|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStructuralJsonTypeMapping",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStructuralJsonTypeMapping::CustomizeDataReaderExpression(System.Linq.Expressions.Expression):System.Linq.Expressions.Expression",
+          "clrName": "CustomizeDataReaderExpression",
+          "tsEmitName": "customizeDataReaderExpression",
+          "metadataToken": 100664660,
+          "canonicalSignature": "(System.Linq.Expressions.Expression):System.Linq.Expressions.Expression",
+          "normalizedSignature": "CustomizeDataReaderExpression|(System.Linq.Expressions.Expression):System.Linq.Expressions.Expression|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStructuralJsonTypeMapping",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStructuralJsonTypeMapping::Default:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStructuralJsonTypeMapping",
+          "clrName": "Default",
+          "tsEmitName": "default_",
+          "metadataToken": 385876132,
+          "canonicalSignature": ":Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStructuralJsonTypeMapping",
+          "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStructuralJsonTypeMapping|static=true|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStructuralJsonTypeMapping",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStructuralJsonTypeMapping::JsonTypeDefault:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStructuralJsonTypeMapping",
+          "clrName": "JsonTypeDefault",
+          "tsEmitName": "jsonTypeDefault",
+          "metadataToken": 385876133,
+          "canonicalSignature": ":Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStructuralJsonTypeMapping",
+          "normalizedSignature": "JsonTypeDefault|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStructuralJsonTypeMapping|static=true|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStructuralJsonTypeMapping",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStructuralJsonTypeMapping::NvarcharMaxDefault:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStructuralJsonTypeMapping",
+          "clrName": "NvarcharMaxDefault",
+          "tsEmitName": "nvarcharMaxDefault",
+          "metadataToken": 385876134,
+          "canonicalSignature": ":Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStructuralJsonTypeMapping",
+          "normalizedSignature": "NvarcharMaxDefault|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStructuralJsonTypeMapping|static=true|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStructuralJsonTypeMapping",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStructuralJsonTypeMapping::.ctor(System.String):void",
+          "metadataToken": 100664657,
+          "canonicalSignature": "(System.String):void",
+          "normalizedSignature": "constructor|(System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStructuralJsonTypeMapping",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "getDataReaderMethod",
+          "isStatic": false,
+          "tsSignatureId": "GetDataReaderMethod|():System.Reflection.MethodInfo|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStructuralJsonTypeMapping",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664658
+          }
+        },
+        {
+          "tsName": "createUtf8Stream",
+          "isStatic": true,
+          "tsSignatureId": "CreateUtf8Stream|(System.String):System.IO.MemoryStream|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStructuralJsonTypeMapping",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664659
+          }
+        },
+        {
+          "tsName": "customizeDataReaderExpression",
+          "isStatic": false,
+          "tsSignatureId": "CustomizeDataReaderExpression|(System.Linq.Expressions.Expression):System.Linq.Expressions.Expression|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStructuralJsonTypeMapping",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664660
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "default_",
+          "isStatic": true,
+          "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStructuralJsonTypeMapping|static=true|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStructuralJsonTypeMapping",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876132
+          }
+        },
+        {
+          "tsName": "jsonTypeDefault",
+          "isStatic": true,
+          "tsSignatureId": "JsonTypeDefault|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStructuralJsonTypeMapping|static=true|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStructuralJsonTypeMapping",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876133
+          }
+        },
+        {
+          "tsName": "nvarcharMaxDefault",
+          "isStatic": true,
+          "tsSignatureId": "NvarcharMaxDefault|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStructuralJsonTypeMapping|static=true|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStructuralJsonTypeMapping",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876134
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStructuralJsonTypeMapping",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664657
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTimeOnlyTypeMapping",
+      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTimeOnlyTypeMapping",
+      "tsEmitName": "SqlServerTimeOnlyTypeMapping",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTimeOnlyTypeMapping::Default:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTimeOnlyTypeMapping",
+          "clrName": "Default",
+          "tsEmitName": "default_",
+          "metadataToken": 385876135,
+          "canonicalSignature": ":Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTimeOnlyTypeMapping",
+          "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTimeOnlyTypeMapping|static=true|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTimeOnlyTypeMapping",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedProperties": [
+        {
+          "tsName": "default_",
+          "isStatic": true,
+          "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTimeOnlyTypeMapping|static=true|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTimeOnlyTypeMapping",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876135
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTimeSpanTypeMapping",
+      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTimeSpanTypeMapping",
+      "tsEmitName": "SqlServerTimeSpanTypeMapping",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTimeSpanTypeMapping::Default:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTimeSpanTypeMapping",
+          "clrName": "Default",
+          "tsEmitName": "default_",
+          "metadataToken": 385876137,
+          "canonicalSignature": ":Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTimeSpanTypeMapping",
+          "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTimeSpanTypeMapping|static=true|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTimeSpanTypeMapping",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTimeSpanTypeMapping::.ctor(System.String,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],Microsoft.EntityFrameworkCore.Storage.StoreTypePostfix):void",
+          "metadataToken": 100664676,
+          "canonicalSignature": "(System.String,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],Microsoft.EntityFrameworkCore.Storage.StoreTypePostfix):void",
+          "normalizedSignature": "constructor|(System.String,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],Microsoft.EntityFrameworkCore.Storage.StoreTypePostfix):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTimeSpanTypeMapping",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "default_",
+          "isStatic": true,
+          "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTimeSpanTypeMapping|static=true|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTimeSpanTypeMapping",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876137
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],Microsoft.EntityFrameworkCore.Storage.StoreTypePostfix):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTimeSpanTypeMapping",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664676
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTransaction",
+      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTransaction",
+      "tsEmitName": "SqlServerTransaction",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTransaction::ReleaseSavepoint(System.String):System.Void",
+          "clrName": "ReleaseSavepoint",
+          "tsEmitName": "releaseSavepoint",
+          "metadataToken": 100664685,
+          "canonicalSignature": "(System.String):System.Void",
+          "normalizedSignature": "ReleaseSavepoint|(System.String):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTransaction",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTransaction::ReleaseSavepointAsync(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task",
+          "clrName": "ReleaseSavepointAsync",
+          "tsEmitName": "releaseSavepointAsync",
+          "metadataToken": 100664686,
+          "canonicalSignature": "(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task",
+          "normalizedSignature": "ReleaseSavepointAsync|(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTransaction",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTransaction::SupportsSavepoints:System.Boolean",
+          "clrName": "SupportsSavepoints",
+          "tsEmitName": "supportsSavepoints",
+          "metadataToken": 385876139,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "SupportsSavepoints|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTransaction",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTransaction::.ctor(Microsoft.EntityFrameworkCore.Storage.IRelationalConnection,System.Data.Common.DbTransaction,System.Guid,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BDatabase\u002BTransaction,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean,Microsoft.EntityFrameworkCore.Storage.ISqlGenerationHelper):void",
+          "metadataToken": 100664683,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.IRelationalConnection,System.Data.Common.DbTransaction,System.Guid,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BDatabase\u002BTransaction,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean,Microsoft.EntityFrameworkCore.Storage.ISqlGenerationHelper):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.IRelationalConnection,System.Data.Common.DbTransaction,System.Guid,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BDatabase\u002BTransaction,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean,Microsoft.EntityFrameworkCore.Storage.ISqlGenerationHelper):void|static=false",
+          "isStatic": false,
+          "parameterCount": 6,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTransaction",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "releaseSavepoint",
+          "isStatic": false,
+          "tsSignatureId": "ReleaseSavepoint|(System.String):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTransaction",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664685
+          }
+        },
+        {
+          "tsName": "releaseSavepointAsync",
+          "isStatic": false,
+          "tsSignatureId": "ReleaseSavepointAsync|(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTransaction",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664686
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "supportsSavepoints",
+          "isStatic": false,
+          "tsSignatureId": "SupportsSavepoints|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTransaction",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876139
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Storage.IRelationalConnection,System.Data.Common.DbTransaction,System.Guid,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BDatabase\u002BTransaction,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean,Microsoft.EntityFrameworkCore.Storage.ISqlGenerationHelper):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTransaction",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664683
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTransactionFactory",
+      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTransactionFactory",
+      "tsEmitName": "SqlServerTransactionFactory",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTransactionFactory::Create(Microsoft.EntityFrameworkCore.Storage.IRelationalConnection,System.Data.Common.DbTransaction,System.Guid,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BDatabase\u002BTransaction,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean):Microsoft.EntityFrameworkCore.Storage.RelationalTransaction",
+          "clrName": "Create",
+          "tsEmitName": "create",
+          "metadataToken": 100664689,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.IRelationalConnection,System.Data.Common.DbTransaction,System.Guid,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BDatabase\u002BTransaction,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean):Microsoft.EntityFrameworkCore.Storage.RelationalTransaction",
+          "normalizedSignature": "Create|(Microsoft.EntityFrameworkCore.Storage.IRelationalConnection,System.Data.Common.DbTransaction,System.Guid,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BDatabase\u002BTransaction,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean):Microsoft.EntityFrameworkCore.Storage.RelationalTransaction|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTransactionFactory",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTransactionFactory::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTransactionFactoryDependencies):void",
+          "metadataToken": 100664687,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTransactionFactoryDependencies):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTransactionFactoryDependencies):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTransactionFactory",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "create",
+          "isStatic": false,
+          "tsSignatureId": "Create|(Microsoft.EntityFrameworkCore.Storage.IRelationalConnection,System.Data.Common.DbTransaction,System.Guid,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BDatabase\u002BTransaction,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean):Microsoft.EntityFrameworkCore.Storage.RelationalTransaction|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTransactionFactory",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664689
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTransactionFactoryDependencies):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTransactionFactory",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664687
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTypeMappingSource",
+      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTypeMappingSource",
+      "tsEmitName": "SqlServerTypeMappingSource",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTypeMappingSource::.ctor(Microsoft.EntityFrameworkCore.Storage.TypeMappingSourceDependencies,Microsoft.EntityFrameworkCore.Storage.RelationalTypeMappingSourceDependencies,Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions):void",
+          "metadataToken": 100664691,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.TypeMappingSourceDependencies,Microsoft.EntityFrameworkCore.Storage.RelationalTypeMappingSourceDependencies,Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.TypeMappingSourceDependencies,Microsoft.EntityFrameworkCore.Storage.RelationalTypeMappingSourceDependencies,Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTypeMappingSource",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Storage.TypeMappingSourceDependencies,Microsoft.EntityFrameworkCore.Storage.RelationalTypeMappingSourceDependencies,Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTypeMappingSource",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664691
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerUdtTypeMapping",
+      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerUdtTypeMapping",
+      "tsEmitName": "SqlServerUdtTypeMapping",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerUdtTypeMapping::GenerateCodeLiteral(System.Object):System.Linq.Expressions.Expression",
+          "clrName": "GenerateCodeLiteral",
+          "tsEmitName": "generateCodeLiteral",
+          "metadataToken": 100664704,
+          "canonicalSignature": "(System.Object):System.Linq.Expressions.Expression",
+          "normalizedSignature": "GenerateCodeLiteral|(System.Object):System.Linq.Expressions.Expression|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerUdtTypeMapping",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerUdtTypeMapping::UdtTypeName:System.String",
+          "clrName": "UdtTypeName",
+          "tsEmitName": "udtTypeName",
+          "metadataToken": 385876141,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "UdtTypeName|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerUdtTypeMapping",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerUdtTypeMapping::LiteralGenerator:System.Func_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Linq.Expressions.Expression,System.Linq.Expressions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]",
+          "clrName": "LiteralGenerator",
+          "tsEmitName": "literalGenerator",
+          "metadataToken": 385876142,
+          "canonicalSignature": ":System.Func_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Linq.Expressions.Expression,System.Linq.Expressions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]",
+          "normalizedSignature": "LiteralGenerator|:System.Func_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Linq.Expressions.Expression,System.Linq.Expressions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerUdtTypeMapping",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerUdtTypeMapping::.ctor(System.Type,System.String,System.Func_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Linq.Expressions.Expression,System.Linq.Expressions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],Microsoft.EntityFrameworkCore.Storage.StoreTypePostfix,System.String,Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter,Microsoft.EntityFrameworkCore.ChangeTracking.ValueComparer,Microsoft.EntityFrameworkCore.ChangeTracking.ValueComparer,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],System.Boolean,System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Boolean,System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
+          "metadataToken": 100664697,
+          "canonicalSignature": "(System.Type,System.String,System.Func_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Linq.Expressions.Expression,System.Linq.Expressions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],Microsoft.EntityFrameworkCore.Storage.StoreTypePostfix,System.String,Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter,Microsoft.EntityFrameworkCore.ChangeTracking.ValueComparer,Microsoft.EntityFrameworkCore.ChangeTracking.ValueComparer,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],System.Boolean,System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Boolean,System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
+          "normalizedSignature": "constructor|(System.Type,System.String,System.Func_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Linq.Expressions.Expression,System.Linq.Expressions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],Microsoft.EntityFrameworkCore.Storage.StoreTypePostfix,System.String,Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter,Microsoft.EntityFrameworkCore.ChangeTracking.ValueComparer,Microsoft.EntityFrameworkCore.ChangeTracking.ValueComparer,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],System.Boolean,System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Boolean,System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 14,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerUdtTypeMapping",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "generateCodeLiteral",
+          "isStatic": false,
+          "tsSignatureId": "GenerateCodeLiteral|(System.Object):System.Linq.Expressions.Expression|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerUdtTypeMapping",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664704
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "udtTypeName",
+          "isStatic": false,
+          "tsSignatureId": "UdtTypeName|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerUdtTypeMapping",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876141
+          }
+        },
+        {
+          "tsName": "literalGenerator",
+          "isStatic": false,
+          "tsSignatureId": "LiteralGenerator|:System.Func_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Linq.Expressions.Expression,System.Linq.Expressions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerUdtTypeMapping",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876142
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.Type,System.String,System.Func_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Linq.Expressions.Expression,System.Linq.Expressions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],Microsoft.EntityFrameworkCore.Storage.StoreTypePostfix,System.String,Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter,Microsoft.EntityFrameworkCore.ChangeTracking.ValueComparer,Microsoft.EntityFrameworkCore.ChangeTracking.ValueComparer,System.Nullable_1[[System.Data.DbType,System.Data.Common,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],System.Boolean,System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Boolean,System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerUdtTypeMapping",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664697
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerVectorTypeMapping",
+      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerVectorTypeMapping",
+      "tsEmitName": "SqlServerVectorTypeMapping",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerVectorTypeMapping::Default:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerVectorTypeMapping",
+          "clrName": "Default",
+          "tsEmitName": "default_",
+          "metadataToken": 385876143,
+          "canonicalSignature": ":Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerVectorTypeMapping",
+          "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerVectorTypeMapping|static=true|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerVectorTypeMapping",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerVectorTypeMapping::.ctor(System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
+          "metadataToken": 100664707,
+          "canonicalSignature": "(System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
+          "normalizedSignature": "constructor|(System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerVectorTypeMapping",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "default_",
+          "isStatic": true,
+          "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerVectorTypeMapping|static=true|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerVectorTypeMapping",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876143
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerVectorTypeMapping",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664707
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTransientExceptionDetector",
+      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTransientExceptionDetector",
+      "tsEmitName": "SqlServerTransientExceptionDetector",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTransientExceptionDetector::ShouldRetryOn(System.Exception):System.Boolean",
+          "clrName": "ShouldRetryOn",
+          "tsEmitName": "shouldRetryOn",
+          "metadataToken": 100664690,
+          "canonicalSignature": "(System.Exception):System.Boolean",
+          "normalizedSignature": "ShouldRetryOn|(System.Exception):System.Boolean|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTransientExceptionDetector",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "shouldRetryOn",
+          "isStatic": true,
+          "tsSignatureId": "ShouldRetryOn|(System.Exception):System.Boolean|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTransientExceptionDetector",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664690
+          }
+        }
+      ]
+    }
+  ]
+}

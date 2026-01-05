@@ -1,0 +1,105 @@
+{
+  "namespace": "Microsoft.EntityFrameworkCore.Migrations",
+  "types": [
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Migrations.SqlServerMigrationsSqlGenerator",
+      "clrName": "Microsoft.EntityFrameworkCore.Migrations.SqlServerMigrationsSqlGenerator",
+      "tsEmitName": "SqlServerMigrationsSqlGenerator",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Migrations.SqlServerMigrationsSqlGenerator::Generate(System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Migrations.Operations.MigrationOperation,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationsSqlGenerationOptions):System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Migrations.MigrationCommand,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "Generate",
+          "tsEmitName": "generate",
+          "metadataToken": 100664333,
+          "canonicalSignature": "(System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Migrations.Operations.MigrationOperation,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationsSqlGenerationOptions):System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Migrations.MigrationCommand,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "Generate|(System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Migrations.Operations.MigrationOperation,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationsSqlGenerationOptions):System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Migrations.MigrationCommand,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Migrations.SqlServerMigrationsSqlGenerator",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Migrations.SqlServerMigrationsSqlGenerator::.ctor(Microsoft.EntityFrameworkCore.Migrations.MigrationsSqlGeneratorDependencies,Microsoft.EntityFrameworkCore.Update.ICommandBatchPreparer):void",
+          "metadataToken": 100664332,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Migrations.MigrationsSqlGeneratorDependencies,Microsoft.EntityFrameworkCore.Update.ICommandBatchPreparer):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Migrations.MigrationsSqlGeneratorDependencies,Microsoft.EntityFrameworkCore.Update.ICommandBatchPreparer):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Migrations.SqlServerMigrationsSqlGenerator",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "generate",
+          "isStatic": false,
+          "tsSignatureId": "Generate|(System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Migrations.Operations.MigrationOperation,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Migrations.MigrationsSqlGenerationOptions):System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Migrations.MigrationCommand,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Migrations.SqlServerMigrationsSqlGenerator",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664333
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Migrations.MigrationsSqlGeneratorDependencies,Microsoft.EntityFrameworkCore.Update.ICommandBatchPreparer):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Migrations.SqlServerMigrationsSqlGenerator",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664332
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Migrations.SqlServerMigrationBuilderExtensions",
+      "clrName": "Microsoft.EntityFrameworkCore.Migrations.SqlServerMigrationBuilderExtensions",
+      "tsEmitName": "SqlServerMigrationBuilderExtensions",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Migrations.SqlServerMigrationBuilderExtensions::IsSqlServer(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder):System.Boolean",
+          "clrName": "IsSqlServer",
+          "tsEmitName": "isSqlServer",
+          "metadataToken": 100664331,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder):System.Boolean",
+          "normalizedSignature": "IsSqlServer|(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder):System.Boolean|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Migrations.SqlServerMigrationBuilderExtensions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": true
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "isSqlServer",
+          "isStatic": true,
+          "tsSignatureId": "IsSqlServer|(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder):System.Boolean|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Migrations.SqlServerMigrationBuilderExtensions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664331
+          }
+        }
+      ]
+    }
+  ]
+}

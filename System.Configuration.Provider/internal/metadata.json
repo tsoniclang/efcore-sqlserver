@@ -1,0 +1,284 @@
+{
+  "namespace": "System.Configuration.Provider",
+  "contributingAssemblies": [
+    "System.Configuration.ConfigurationManager"
+  ],
+  "types": [
+    {
+      "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderBase",
+      "clrName": "System.Configuration.Provider.ProviderBase",
+      "tsEmitName": "ProviderBase",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderBase::Initialize(System.String,System.Collections.Specialized.NameValueCollection):System.Void",
+          "clrName": "Initialize",
+          "tsEmitName": "initialize",
+          "normalizedSignature": "Initialize|(System.String,System.Collections.Specialized.NameValueCollection):System.Void|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 2,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderBase::Name:System.String",
+          "clrName": "Name",
+          "tsEmitName": "name",
+          "normalizedSignature": "Name|:System.String|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderBase::Description:System.String",
+          "clrName": "Description",
+          "tsEmitName": "description",
+          "normalizedSignature": "Description|:System.String|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    },
+    {
+      "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderCollection",
+      "clrName": "System.Configuration.Provider.ProviderCollection",
+      "tsEmitName": "ProviderCollection",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderCollection::GetEnumerator():System.Collections.IEnumerator",
+          "clrName": "GetEnumerator",
+          "tsEmitName": "getEnumerator",
+          "normalizedSignature": "GetEnumerator|():System.Collections.IEnumerator|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "arity": 0,
+          "parameterCount": 0,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderCollection::Add(System.Configuration.Provider.ProviderBase):System.Void",
+          "clrName": "Add",
+          "tsEmitName": "add",
+          "normalizedSignature": "Add|(System.Configuration.Provider.ProviderBase):System.Void|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderCollection::Remove(System.String):System.Void",
+          "clrName": "Remove",
+          "tsEmitName": "remove",
+          "normalizedSignature": "Remove|(System.String):System.Void|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderCollection::SetReadOnly():System.Void",
+          "clrName": "SetReadOnly",
+          "tsEmitName": "setReadOnly",
+          "normalizedSignature": "SetReadOnly|():System.Void|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 0,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderCollection::Clear():System.Void",
+          "clrName": "Clear",
+          "tsEmitName": "clear",
+          "normalizedSignature": "Clear|():System.Void|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 0,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderCollection::CopyTo(System.Configuration.Provider.ProviderBase[],System.Int32):System.Void",
+          "clrName": "CopyTo",
+          "tsEmitName": "copyTo",
+          "normalizedSignature": "CopyTo|(System.Configuration.Provider.ProviderBase[],System.Int32):System.Void|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 2,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderCollection::Item[System.String]:System.Configuration.Provider.ProviderBase",
+          "clrName": "Item",
+          "tsEmitName": "item",
+          "normalizedSignature": "Item|[System.String]:System.Configuration.Provider.ProviderBase|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": true,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderCollection::Count:System.Int32",
+          "clrName": "Count",
+          "tsEmitName": "count",
+          "normalizedSignature": "Count|:System.Int32|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderCollection::IsSynchronized:System.Boolean",
+          "clrName": "IsSynchronized",
+          "tsEmitName": "isSynchronized",
+          "normalizedSignature": "IsSynchronized|:System.Boolean|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderCollection::SyncRoot:System.Object",
+          "clrName": "SyncRoot",
+          "tsEmitName": "syncRoot",
+          "normalizedSignature": "SyncRoot|:System.Object|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0
+        }
+      ]
+    },
+    {
+      "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderException",
+      "clrName": "System.Configuration.Provider.ProviderException",
+      "tsEmitName": "ProviderException",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0
+        },
+        {
+          "normalizedSignature": "constructor|(System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1
+        },
+        {
+          "normalizedSignature": "constructor|(System.String,System.Exception):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2
+        }
+      ]
+    }
+  ]
+}

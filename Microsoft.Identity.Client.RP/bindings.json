@@ -1,0 +1,83 @@
+{
+  "namespace": "Microsoft.Identity.Client.RP",
+  "types": [
+    {
+      "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.RP.AcquireTokenForClientParameterBuilderForResourceProviders",
+      "clrName": "Microsoft.Identity.Client.RP.AcquireTokenForClientParameterBuilderForResourceProviders",
+      "tsEmitName": "AcquireTokenForClientParameterBuilderForResourceProviders",
+      "assemblyName": "Microsoft.Identity.Client",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.RP.AcquireTokenForClientParameterBuilderForResourceProviders::WithAccessTokenSha256ToRefresh(Microsoft.Identity.Client.AcquireTokenForClientParameterBuilder,System.String):Microsoft.Identity.Client.AcquireTokenForClientParameterBuilder",
+          "clrName": "WithAccessTokenSha256ToRefresh",
+          "tsEmitName": "withAccessTokenSha256ToRefresh",
+          "metadataToken": 100666115,
+          "canonicalSignature": "(Microsoft.Identity.Client.AcquireTokenForClientParameterBuilder,System.String):Microsoft.Identity.Client.AcquireTokenForClientParameterBuilder",
+          "normalizedSignature": "WithAccessTokenSha256ToRefresh|(Microsoft.Identity.Client.AcquireTokenForClientParameterBuilder,System.String):Microsoft.Identity.Client.AcquireTokenForClientParameterBuilder|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Identity.Client.RP.AcquireTokenForClientParameterBuilderForResourceProviders",
+          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "isExtensionMethod": true
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "withAccessTokenSha256ToRefresh",
+          "isStatic": true,
+          "tsSignatureId": "WithAccessTokenSha256ToRefresh|(Microsoft.Identity.Client.AcquireTokenForClientParameterBuilder,System.String):Microsoft.Identity.Client.AcquireTokenForClientParameterBuilder|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.RP.AcquireTokenForClientParameterBuilderForResourceProviders",
+            "declaringAssemblyName": "Microsoft.Identity.Client",
+            "metadataToken": 100666115
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.RP.ConfidentialClientApplicationBuilderForResourceProviders",
+      "clrName": "Microsoft.Identity.Client.RP.ConfidentialClientApplicationBuilderForResourceProviders",
+      "tsEmitName": "ConfidentialClientApplicationBuilderForResourceProviders",
+      "assemblyName": "Microsoft.Identity.Client",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.RP.ConfidentialClientApplicationBuilderForResourceProviders::WithCertificate(Microsoft.Identity.Client.ConfidentialClientApplicationBuilder,System.Security.Cryptography.X509Certificates.X509Certificate2,System.Boolean,System.Boolean):Microsoft.Identity.Client.ConfidentialClientApplicationBuilder",
+          "clrName": "WithCertificate",
+          "tsEmitName": "withCertificate",
+          "metadataToken": 100666116,
+          "canonicalSignature": "(Microsoft.Identity.Client.ConfidentialClientApplicationBuilder,System.Security.Cryptography.X509Certificates.X509Certificate2,System.Boolean,System.Boolean):Microsoft.Identity.Client.ConfidentialClientApplicationBuilder",
+          "normalizedSignature": "WithCertificate|(Microsoft.Identity.Client.ConfidentialClientApplicationBuilder,System.Security.Cryptography.X509Certificates.X509Certificate2,System.Boolean,System.Boolean):Microsoft.Identity.Client.ConfidentialClientApplicationBuilder|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 4,
+          "declaringClrType": "Microsoft.Identity.Client.RP.ConfidentialClientApplicationBuilderForResourceProviders",
+          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "isExtensionMethod": true
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "withCertificate",
+          "isStatic": true,
+          "tsSignatureId": "WithCertificate|(Microsoft.Identity.Client.ConfidentialClientApplicationBuilder,System.Security.Cryptography.X509Certificates.X509Certificate2,System.Boolean,System.Boolean):Microsoft.Identity.Client.ConfidentialClientApplicationBuilder|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.RP.ConfidentialClientApplicationBuilderForResourceProviders",
+            "declaringAssemblyName": "Microsoft.Identity.Client",
+            "metadataToken": 100666116
+          }
+        }
+      ]
+    }
+  ]
+}

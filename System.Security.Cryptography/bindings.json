@@ -1,0 +1,146 @@
+{
+  "namespace": "System.Security.Cryptography",
+  "types": [
+    {
+      "stableId": "System.Security.Cryptography.ProtectedData:System.Security.Cryptography.DataProtectionScope",
+      "clrName": "System.Security.Cryptography.DataProtectionScope",
+      "tsEmitName": "DataProtectionScope",
+      "assemblyName": "System.Security.Cryptography.ProtectedData",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "System.Security.Cryptography.ProtectedData:System.Security.Cryptography.DataProtectionScope::value__System.Int32",
+          "clrName": "value__",
+          "tsEmitName": "value__",
+          "metadataToken": 67108983,
+          "normalizedSignature": "value__|System.Int32|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "declaringClrType": "System.Security.Cryptography.DataProtectionScope",
+          "declaringAssemblyName": "System.Security.Cryptography.ProtectedData"
+        },
+        {
+          "stableId": "System.Security.Cryptography.ProtectedData:System.Security.Cryptography.DataProtectionScope::CurrentUserSystem.Security.Cryptography.DataProtectionScope",
+          "clrName": "CurrentUser",
+          "tsEmitName": "currentUser",
+          "metadataToken": 67108984,
+          "normalizedSignature": "CurrentUser|System.Security.Cryptography.DataProtectionScope|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "System.Security.Cryptography.DataProtectionScope",
+          "declaringAssemblyName": "System.Security.Cryptography.ProtectedData"
+        },
+        {
+          "stableId": "System.Security.Cryptography.ProtectedData:System.Security.Cryptography.DataProtectionScope::LocalMachineSystem.Security.Cryptography.DataProtectionScope",
+          "clrName": "LocalMachine",
+          "tsEmitName": "localMachine",
+          "metadataToken": 67108985,
+          "normalizedSignature": "LocalMachine|System.Security.Cryptography.DataProtectionScope|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "System.Security.Cryptography.DataProtectionScope",
+          "declaringAssemblyName": "System.Security.Cryptography.ProtectedData"
+        }
+      ],
+      "events": [],
+      "constructors": [],
+      "exposedFields": [
+        {
+          "tsName": "value__",
+          "isStatic": false,
+          "tsSignatureId": "value__|System.Int32|static=false|const=false",
+          "target": {
+            "declaringClrType": "System.Security.Cryptography.DataProtectionScope",
+            "declaringAssemblyName": "System.Security.Cryptography.ProtectedData",
+            "metadataToken": 67108983
+          }
+        },
+        {
+          "tsName": "currentUser",
+          "isStatic": true,
+          "tsSignatureId": "CurrentUser|System.Security.Cryptography.DataProtectionScope|static=true|const=true",
+          "target": {
+            "declaringClrType": "System.Security.Cryptography.DataProtectionScope",
+            "declaringAssemblyName": "System.Security.Cryptography.ProtectedData",
+            "metadataToken": 67108984
+          }
+        },
+        {
+          "tsName": "localMachine",
+          "isStatic": true,
+          "tsSignatureId": "LocalMachine|System.Security.Cryptography.DataProtectionScope|static=true|const=true",
+          "target": {
+            "declaringClrType": "System.Security.Cryptography.DataProtectionScope",
+            "declaringAssemblyName": "System.Security.Cryptography.ProtectedData",
+            "metadataToken": 67108985
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "System.Security.Cryptography.ProtectedData:System.Security.Cryptography.ProtectedData",
+      "clrName": "System.Security.Cryptography.ProtectedData",
+      "tsEmitName": "ProtectedData",
+      "assemblyName": "System.Security.Cryptography.ProtectedData",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "System.Security.Cryptography.ProtectedData:System.Security.Cryptography.ProtectedData::Protect(System.Byte[],System.Byte[],System.Security.Cryptography.DataProtectionScope):System.Byte[]",
+          "clrName": "Protect",
+          "tsEmitName": "protect",
+          "metadataToken": 100663314,
+          "canonicalSignature": "(System.Byte[],System.Byte[],System.Security.Cryptography.DataProtectionScope):System.Byte[]",
+          "normalizedSignature": "Protect|(System.Byte[],System.Byte[],System.Security.Cryptography.DataProtectionScope):System.Byte[]|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "System.Security.Cryptography.ProtectedData",
+          "declaringAssemblyName": "System.Security.Cryptography.ProtectedData",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Security.Cryptography.ProtectedData:System.Security.Cryptography.ProtectedData::Unprotect(System.Byte[],System.Byte[],System.Security.Cryptography.DataProtectionScope):System.Byte[]",
+          "clrName": "Unprotect",
+          "tsEmitName": "unprotect",
+          "metadataToken": 100663315,
+          "canonicalSignature": "(System.Byte[],System.Byte[],System.Security.Cryptography.DataProtectionScope):System.Byte[]",
+          "normalizedSignature": "Unprotect|(System.Byte[],System.Byte[],System.Security.Cryptography.DataProtectionScope):System.Byte[]|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "System.Security.Cryptography.ProtectedData",
+          "declaringAssemblyName": "System.Security.Cryptography.ProtectedData",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "protect",
+          "isStatic": true,
+          "tsSignatureId": "Protect|(System.Byte[],System.Byte[],System.Security.Cryptography.DataProtectionScope):System.Byte[]|static=true",
+          "target": {
+            "declaringClrType": "System.Security.Cryptography.ProtectedData",
+            "declaringAssemblyName": "System.Security.Cryptography.ProtectedData",
+            "metadataToken": 100663314
+          }
+        },
+        {
+          "tsName": "unprotect",
+          "isStatic": true,
+          "tsSignatureId": "Unprotect|(System.Byte[],System.Byte[],System.Security.Cryptography.DataProtectionScope):System.Byte[]|static=true",
+          "target": {
+            "declaringClrType": "System.Security.Cryptography.ProtectedData",
+            "declaringAssemblyName": "System.Security.Cryptography.ProtectedData",
+            "metadataToken": 100663315
+          }
+        }
+      ]
+    }
+  ]
+}

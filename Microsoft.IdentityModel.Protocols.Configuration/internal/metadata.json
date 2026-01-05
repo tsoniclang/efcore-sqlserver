@@ -1,0 +1,72 @@
+{
+  "namespace": "Microsoft.IdentityModel.Protocols.Configuration",
+  "contributingAssemblies": [
+    "Microsoft.IdentityModel.Protocols"
+  ],
+  "types": [
+    {
+      "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException",
+      "clrName": "Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException",
+      "tsEmitName": "InvalidConfigurationException",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0
+        },
+        {
+          "normalizedSignature": "constructor|(System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1
+        },
+        {
+          "normalizedSignature": "constructor|(System.String,System.Exception):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.Configuration.LastKnownGoodConfigurationCacheOptions",
+      "clrName": "Microsoft.IdentityModel.Protocols.Configuration.LastKnownGoodConfigurationCacheOptions",
+      "tsEmitName": "LastKnownGoodConfigurationCacheOptions",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.Configuration.LastKnownGoodConfigurationCacheOptions::DefaultLastKnownGoodConfigurationSizeLimitSystem.Int32",
+          "clrName": "DefaultLastKnownGoodConfigurationSizeLimit",
+          "tsEmitName": "defaultLastKnownGoodConfigurationSizeLimit",
+          "normalizedSignature": "DefaultLastKnownGoodConfigurationSizeLimit|System.Int32|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "isLiteral": false
+        }
+      ],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0
+        }
+      ]
+    }
+  ]
+}

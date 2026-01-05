@@ -1,0 +1,95 @@
+{
+  "namespace": "Microsoft.Identity.Client.AuthScheme.PoP",
+  "types": [
+    {
+      "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AuthScheme.PoP.IPoPCryptoProvider",
+      "clrName": "Microsoft.Identity.Client.AuthScheme.PoP.IPoPCryptoProvider",
+      "tsEmitName": "IPoPCryptoProvider",
+      "assemblyName": "Microsoft.Identity.Client",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AuthScheme.PoP.IPoPCryptoProvider::Sign(System.Byte[]):System.Byte[]",
+          "clrName": "Sign",
+          "tsEmitName": "sign",
+          "metadataToken": 100666515,
+          "canonicalSignature": "(System.Byte[]):System.Byte[]",
+          "normalizedSignature": "Sign|(System.Byte[]):System.Byte[]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Identity.Client.AuthScheme.PoP.IPoPCryptoProvider",
+          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AuthScheme.PoP.IPoPCryptoProvider::CannonicalPublicKeyJwk:System.String",
+          "clrName": "CannonicalPublicKeyJwk",
+          "tsEmitName": "cannonicalPublicKeyJwk",
+          "metadataToken": 385876770,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "CannonicalPublicKeyJwk|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Identity.Client.AuthScheme.PoP.IPoPCryptoProvider",
+          "declaringAssemblyName": "Microsoft.Identity.Client"
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AuthScheme.PoP.IPoPCryptoProvider::CryptographicAlgorithm:System.String",
+          "clrName": "CryptographicAlgorithm",
+          "tsEmitName": "cryptographicAlgorithm",
+          "metadataToken": 385876771,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "CryptographicAlgorithm|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Identity.Client.AuthScheme.PoP.IPoPCryptoProvider",
+          "declaringAssemblyName": "Microsoft.Identity.Client"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "sign",
+          "isStatic": false,
+          "tsSignatureId": "Sign|(System.Byte[]):System.Byte[]|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.AuthScheme.PoP.IPoPCryptoProvider",
+            "declaringAssemblyName": "Microsoft.Identity.Client",
+            "metadataToken": 100666515
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "cannonicalPublicKeyJwk",
+          "isStatic": false,
+          "tsSignatureId": "CannonicalPublicKeyJwk|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.AuthScheme.PoP.IPoPCryptoProvider",
+            "declaringAssemblyName": "Microsoft.Identity.Client",
+            "metadataToken": 385876770
+          }
+        },
+        {
+          "tsName": "cryptographicAlgorithm",
+          "isStatic": false,
+          "tsSignatureId": "CryptographicAlgorithm|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.AuthScheme.PoP.IPoPCryptoProvider",
+            "declaringAssemblyName": "Microsoft.Identity.Client",
+            "metadataToken": 385876771
+          }
+        }
+      ]
+    }
+  ]
+}

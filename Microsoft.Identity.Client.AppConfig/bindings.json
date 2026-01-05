@@ -1,0 +1,338 @@
+{
+  "namespace": "Microsoft.Identity.Client.AppConfig",
+  "types": [
+    {
+      "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AppConfig.ManagedIdentityId",
+      "clrName": "Microsoft.Identity.Client.AppConfig.ManagedIdentityId",
+      "tsEmitName": "ManagedIdentityId",
+      "assemblyName": "Microsoft.Identity.Client",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AppConfig.ManagedIdentityId::WithUserAssignedClientId(System.String):Microsoft.Identity.Client.AppConfig.ManagedIdentityId",
+          "clrName": "WithUserAssignedClientId",
+          "tsEmitName": "withUserAssignedClientId",
+          "metadataToken": 100666562,
+          "canonicalSignature": "(System.String):Microsoft.Identity.Client.AppConfig.ManagedIdentityId",
+          "normalizedSignature": "WithUserAssignedClientId|(System.String):Microsoft.Identity.Client.AppConfig.ManagedIdentityId|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Identity.Client.AppConfig.ManagedIdentityId",
+          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AppConfig.ManagedIdentityId::WithUserAssignedResourceId(System.String):Microsoft.Identity.Client.AppConfig.ManagedIdentityId",
+          "clrName": "WithUserAssignedResourceId",
+          "tsEmitName": "withUserAssignedResourceId",
+          "metadataToken": 100666563,
+          "canonicalSignature": "(System.String):Microsoft.Identity.Client.AppConfig.ManagedIdentityId",
+          "normalizedSignature": "WithUserAssignedResourceId|(System.String):Microsoft.Identity.Client.AppConfig.ManagedIdentityId|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Identity.Client.AppConfig.ManagedIdentityId",
+          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AppConfig.ManagedIdentityId::WithUserAssignedObjectId(System.String):Microsoft.Identity.Client.AppConfig.ManagedIdentityId",
+          "clrName": "WithUserAssignedObjectId",
+          "tsEmitName": "withUserAssignedObjectId",
+          "metadataToken": 100666564,
+          "canonicalSignature": "(System.String):Microsoft.Identity.Client.AppConfig.ManagedIdentityId",
+          "normalizedSignature": "WithUserAssignedObjectId|(System.String):Microsoft.Identity.Client.AppConfig.ManagedIdentityId|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Identity.Client.AppConfig.ManagedIdentityId",
+          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AppConfig.ManagedIdentityId::SystemAssigned:Microsoft.Identity.Client.AppConfig.ManagedIdentityId",
+          "clrName": "SystemAssigned",
+          "tsEmitName": "systemAssigned",
+          "metadataToken": 385876793,
+          "canonicalSignature": ":Microsoft.Identity.Client.AppConfig.ManagedIdentityId",
+          "normalizedSignature": "SystemAssigned|:Microsoft.Identity.Client.AppConfig.ManagedIdentityId|static=true|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Identity.Client.AppConfig.ManagedIdentityId",
+          "declaringAssemblyName": "Microsoft.Identity.Client"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "withUserAssignedClientId",
+          "isStatic": true,
+          "tsSignatureId": "WithUserAssignedClientId|(System.String):Microsoft.Identity.Client.AppConfig.ManagedIdentityId|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.AppConfig.ManagedIdentityId",
+            "declaringAssemblyName": "Microsoft.Identity.Client",
+            "metadataToken": 100666562
+          }
+        },
+        {
+          "tsName": "withUserAssignedResourceId",
+          "isStatic": true,
+          "tsSignatureId": "WithUserAssignedResourceId|(System.String):Microsoft.Identity.Client.AppConfig.ManagedIdentityId|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.AppConfig.ManagedIdentityId",
+            "declaringAssemblyName": "Microsoft.Identity.Client",
+            "metadataToken": 100666563
+          }
+        },
+        {
+          "tsName": "withUserAssignedObjectId",
+          "isStatic": true,
+          "tsSignatureId": "WithUserAssignedObjectId|(System.String):Microsoft.Identity.Client.AppConfig.ManagedIdentityId|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.AppConfig.ManagedIdentityId",
+            "declaringAssemblyName": "Microsoft.Identity.Client",
+            "metadataToken": 100666564
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "systemAssigned",
+          "isStatic": true,
+          "tsSignatureId": "SystemAssigned|:Microsoft.Identity.Client.AppConfig.ManagedIdentityId|static=true|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.AppConfig.ManagedIdentityId",
+            "declaringAssemblyName": "Microsoft.Identity.Client",
+            "metadataToken": 385876793
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration",
+      "clrName": "Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration",
+      "tsEmitName": "PoPAuthenticationConfiguration",
+      "assemblyName": "Microsoft.Identity.Client",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration::HttpMethod:System.Net.Http.HttpMethod",
+          "clrName": "HttpMethod",
+          "tsEmitName": "httpMethod",
+          "metadataToken": 385876794,
+          "canonicalSignature": ":System.Net.Http.HttpMethod",
+          "normalizedSignature": "HttpMethod|:System.Net.Http.HttpMethod|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration",
+          "declaringAssemblyName": "Microsoft.Identity.Client"
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration::HttpHost:System.String",
+          "clrName": "HttpHost",
+          "tsEmitName": "httpHost",
+          "metadataToken": 385876795,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "HttpHost|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration",
+          "declaringAssemblyName": "Microsoft.Identity.Client"
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration::HttpPath:System.String",
+          "clrName": "HttpPath",
+          "tsEmitName": "httpPath",
+          "metadataToken": 385876796,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "HttpPath|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration",
+          "declaringAssemblyName": "Microsoft.Identity.Client"
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration::PopCryptoProvider:Microsoft.Identity.Client.AuthScheme.PoP.IPoPCryptoProvider",
+          "clrName": "PopCryptoProvider",
+          "tsEmitName": "popCryptoProvider",
+          "metadataToken": 385876797,
+          "canonicalSignature": ":Microsoft.Identity.Client.AuthScheme.PoP.IPoPCryptoProvider",
+          "normalizedSignature": "PopCryptoProvider|:Microsoft.Identity.Client.AuthScheme.PoP.IPoPCryptoProvider|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration",
+          "declaringAssemblyName": "Microsoft.Identity.Client"
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration::Nonce:System.String",
+          "clrName": "Nonce",
+          "tsEmitName": "nonce",
+          "metadataToken": 385876798,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Nonce|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration",
+          "declaringAssemblyName": "Microsoft.Identity.Client"
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration::SignHttpRequest:System.Boolean",
+          "clrName": "SignHttpRequest",
+          "tsEmitName": "signHttpRequest",
+          "metadataToken": 385876799,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "SignHttpRequest|:System.Boolean|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration",
+          "declaringAssemblyName": "Microsoft.Identity.Client"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration::.ctor():void",
+          "metadataToken": 100666566,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration",
+          "declaringAssemblyName": "Microsoft.Identity.Client"
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration::.ctor(System.Net.Http.HttpRequestMessage):void",
+          "metadataToken": 100666567,
+          "canonicalSignature": "(System.Net.Http.HttpRequestMessage):void",
+          "normalizedSignature": "constructor|(System.Net.Http.HttpRequestMessage):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration",
+          "declaringAssemblyName": "Microsoft.Identity.Client"
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration::.ctor(System.Uri):void",
+          "metadataToken": 100666568,
+          "canonicalSignature": "(System.Uri):void",
+          "normalizedSignature": "constructor|(System.Uri):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration",
+          "declaringAssemblyName": "Microsoft.Identity.Client"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "httpMethod",
+          "isStatic": false,
+          "tsSignatureId": "HttpMethod|:System.Net.Http.HttpMethod|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration",
+            "declaringAssemblyName": "Microsoft.Identity.Client",
+            "metadataToken": 385876794
+          }
+        },
+        {
+          "tsName": "httpHost",
+          "isStatic": false,
+          "tsSignatureId": "HttpHost|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration",
+            "declaringAssemblyName": "Microsoft.Identity.Client",
+            "metadataToken": 385876795
+          }
+        },
+        {
+          "tsName": "httpPath",
+          "isStatic": false,
+          "tsSignatureId": "HttpPath|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration",
+            "declaringAssemblyName": "Microsoft.Identity.Client",
+            "metadataToken": 385876796
+          }
+        },
+        {
+          "tsName": "popCryptoProvider",
+          "isStatic": false,
+          "tsSignatureId": "PopCryptoProvider|:Microsoft.Identity.Client.AuthScheme.PoP.IPoPCryptoProvider|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration",
+            "declaringAssemblyName": "Microsoft.Identity.Client",
+            "metadataToken": 385876797
+          }
+        },
+        {
+          "tsName": "nonce",
+          "isStatic": false,
+          "tsSignatureId": "Nonce|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration",
+            "declaringAssemblyName": "Microsoft.Identity.Client",
+            "metadataToken": 385876798
+          }
+        },
+        {
+          "tsName": "signHttpRequest",
+          "isStatic": false,
+          "tsSignatureId": "SignHttpRequest|:System.Boolean|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration",
+            "declaringAssemblyName": "Microsoft.Identity.Client",
+            "metadataToken": 385876799
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration",
+            "declaringAssemblyName": "Microsoft.Identity.Client",
+            "metadataToken": 100666566
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.Net.Http.HttpRequestMessage):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration",
+            "declaringAssemblyName": "Microsoft.Identity.Client",
+            "metadataToken": 100666567
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.Uri):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration",
+            "declaringAssemblyName": "Microsoft.Identity.Client",
+            "metadataToken": 100666568
+          }
+        }
+      ]
+    }
+  ]
+}

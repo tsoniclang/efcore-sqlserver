@@ -1,0 +1,525 @@
+{
+  "namespace": "Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal",
+  "types": [
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions",
+      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions",
+      "tsEmitName": "SqlServerLoggingDefinitions",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions::LogDecimalTypeKeyMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
+          "clrName": "LogDecimalTypeKey",
+          "tsEmitName": "logDecimalTypeKey",
+          "metadataToken": 67109433,
+          "normalizedSignature": "LogDecimalTypeKey|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions::LogDefaultDecimalTypeColumnMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
+          "clrName": "LogDefaultDecimalTypeColumn",
+          "tsEmitName": "logDefaultDecimalTypeColumn",
+          "metadataToken": 67109434,
+          "normalizedSignature": "LogDefaultDecimalTypeColumn|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions::LogByteIdentityColumnMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
+          "clrName": "LogByteIdentityColumn",
+          "tsEmitName": "logByteIdentityColumn",
+          "metadataToken": 67109435,
+          "normalizedSignature": "LogByteIdentityColumn|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions::LogColumnWithoutTypeMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
+          "clrName": "LogColumnWithoutType",
+          "tsEmitName": "logColumnWithoutType",
+          "metadataToken": 67109436,
+          "normalizedSignature": "LogColumnWithoutType|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions::LogFoundDefaultSchemaMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
+          "clrName": "LogFoundDefaultSchema",
+          "tsEmitName": "logFoundDefaultSchema",
+          "metadataToken": 67109437,
+          "normalizedSignature": "LogFoundDefaultSchema|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions::LogFoundTypeAliasMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
+          "clrName": "LogFoundTypeAlias",
+          "tsEmitName": "logFoundTypeAlias",
+          "metadataToken": 67109438,
+          "normalizedSignature": "LogFoundTypeAlias|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions::LogFoundColumnMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
+          "clrName": "LogFoundColumn",
+          "tsEmitName": "logFoundColumn",
+          "metadataToken": 67109439,
+          "normalizedSignature": "LogFoundColumn|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions::LogFoundForeignKeyMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
+          "clrName": "LogFoundForeignKey",
+          "tsEmitName": "logFoundForeignKey",
+          "metadataToken": 67109440,
+          "normalizedSignature": "LogFoundForeignKey|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions::LogPrincipalTableNotInSelectionSetMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
+          "clrName": "LogPrincipalTableNotInSelectionSet",
+          "tsEmitName": "logPrincipalTableNotInSelectionSet",
+          "metadataToken": 67109441,
+          "normalizedSignature": "LogPrincipalTableNotInSelectionSet|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions::LogMissingSchemaMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
+          "clrName": "LogMissingSchema",
+          "tsEmitName": "logMissingSchema",
+          "metadataToken": 67109442,
+          "normalizedSignature": "LogMissingSchema|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions::LogMissingTableMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
+          "clrName": "LogMissingTable",
+          "tsEmitName": "logMissingTable",
+          "metadataToken": 67109443,
+          "normalizedSignature": "LogMissingTable|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions::LogFoundSequenceMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
+          "clrName": "LogFoundSequence",
+          "tsEmitName": "logFoundSequence",
+          "metadataToken": 67109444,
+          "normalizedSignature": "LogFoundSequence|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions::LogFoundTableMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
+          "clrName": "LogFoundTable",
+          "tsEmitName": "logFoundTable",
+          "metadataToken": 67109445,
+          "normalizedSignature": "LogFoundTable|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions::LogFoundIndexMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
+          "clrName": "LogFoundIndex",
+          "tsEmitName": "logFoundIndex",
+          "metadataToken": 67109446,
+          "normalizedSignature": "LogFoundIndex|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions::LogFoundPrimaryKeyMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
+          "clrName": "LogFoundPrimaryKey",
+          "tsEmitName": "logFoundPrimaryKey",
+          "metadataToken": 67109447,
+          "normalizedSignature": "LogFoundPrimaryKey|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions::LogFoundUniqueConstraintMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
+          "clrName": "LogFoundUniqueConstraint",
+          "tsEmitName": "logFoundUniqueConstraint",
+          "metadataToken": 67109448,
+          "normalizedSignature": "LogFoundUniqueConstraint|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions::LogPrincipalColumnNotFoundMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
+          "clrName": "LogPrincipalColumnNotFound",
+          "tsEmitName": "logPrincipalColumnNotFound",
+          "metadataToken": 67109449,
+          "normalizedSignature": "LogPrincipalColumnNotFound|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions::LogReflexiveConstraintIgnoredMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
+          "clrName": "LogReflexiveConstraintIgnored",
+          "tsEmitName": "logReflexiveConstraintIgnored",
+          "metadataToken": 67109450,
+          "normalizedSignature": "LogReflexiveConstraintIgnored|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions::LogDuplicateForeignKeyConstraintIgnoredMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
+          "clrName": "LogDuplicateForeignKeyConstraintIgnored",
+          "tsEmitName": "logDuplicateForeignKeyConstraintIgnored",
+          "metadataToken": 67109451,
+          "normalizedSignature": "LogDuplicateForeignKeyConstraintIgnored|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions::LogPrincipalTableInformationNotFoundMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
+          "clrName": "LogPrincipalTableInformationNotFound",
+          "tsEmitName": "logPrincipalTableInformationNotFound",
+          "metadataToken": 67109452,
+          "normalizedSignature": "LogPrincipalTableInformationNotFound|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions::LogSavepointsDisabledBecauseOfMARSMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
+          "clrName": "LogSavepointsDisabledBecauseOfMARS",
+          "tsEmitName": "logSavepointsDisabledBecauseOfMARS",
+          "metadataToken": 67109453,
+          "normalizedSignature": "LogSavepointsDisabledBecauseOfMARS|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions::LogConflictingValueGenerationStrategiesMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
+          "clrName": "LogConflictingValueGenerationStrategies",
+          "tsEmitName": "logConflictingValueGenerationStrategies",
+          "metadataToken": 67109454,
+          "normalizedSignature": "LogConflictingValueGenerationStrategies|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions::LogMissingViewDefinitionRightsMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
+          "clrName": "LogMissingViewDefinitionRights",
+          "tsEmitName": "logMissingViewDefinitionRights",
+          "metadataToken": 67109455,
+          "normalizedSignature": "LogMissingViewDefinitionRights|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions::.ctor():void",
+          "metadataToken": 100665258,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "exposedFields": [
+        {
+          "tsName": "logDecimalTypeKey",
+          "isStatic": false,
+          "tsSignatureId": "LogDecimalTypeKey|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109433
+          }
+        },
+        {
+          "tsName": "logDefaultDecimalTypeColumn",
+          "isStatic": false,
+          "tsSignatureId": "LogDefaultDecimalTypeColumn|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109434
+          }
+        },
+        {
+          "tsName": "logByteIdentityColumn",
+          "isStatic": false,
+          "tsSignatureId": "LogByteIdentityColumn|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109435
+          }
+        },
+        {
+          "tsName": "logColumnWithoutType",
+          "isStatic": false,
+          "tsSignatureId": "LogColumnWithoutType|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109436
+          }
+        },
+        {
+          "tsName": "logFoundDefaultSchema",
+          "isStatic": false,
+          "tsSignatureId": "LogFoundDefaultSchema|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109437
+          }
+        },
+        {
+          "tsName": "logFoundTypeAlias",
+          "isStatic": false,
+          "tsSignatureId": "LogFoundTypeAlias|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109438
+          }
+        },
+        {
+          "tsName": "logFoundColumn",
+          "isStatic": false,
+          "tsSignatureId": "LogFoundColumn|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109439
+          }
+        },
+        {
+          "tsName": "logFoundForeignKey",
+          "isStatic": false,
+          "tsSignatureId": "LogFoundForeignKey|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109440
+          }
+        },
+        {
+          "tsName": "logPrincipalTableNotInSelectionSet",
+          "isStatic": false,
+          "tsSignatureId": "LogPrincipalTableNotInSelectionSet|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109441
+          }
+        },
+        {
+          "tsName": "logMissingSchema",
+          "isStatic": false,
+          "tsSignatureId": "LogMissingSchema|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109442
+          }
+        },
+        {
+          "tsName": "logMissingTable",
+          "isStatic": false,
+          "tsSignatureId": "LogMissingTable|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109443
+          }
+        },
+        {
+          "tsName": "logFoundSequence",
+          "isStatic": false,
+          "tsSignatureId": "LogFoundSequence|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109444
+          }
+        },
+        {
+          "tsName": "logFoundTable",
+          "isStatic": false,
+          "tsSignatureId": "LogFoundTable|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109445
+          }
+        },
+        {
+          "tsName": "logFoundIndex",
+          "isStatic": false,
+          "tsSignatureId": "LogFoundIndex|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109446
+          }
+        },
+        {
+          "tsName": "logFoundPrimaryKey",
+          "isStatic": false,
+          "tsSignatureId": "LogFoundPrimaryKey|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109447
+          }
+        },
+        {
+          "tsName": "logFoundUniqueConstraint",
+          "isStatic": false,
+          "tsSignatureId": "LogFoundUniqueConstraint|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109448
+          }
+        },
+        {
+          "tsName": "logPrincipalColumnNotFound",
+          "isStatic": false,
+          "tsSignatureId": "LogPrincipalColumnNotFound|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109449
+          }
+        },
+        {
+          "tsName": "logReflexiveConstraintIgnored",
+          "isStatic": false,
+          "tsSignatureId": "LogReflexiveConstraintIgnored|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109450
+          }
+        },
+        {
+          "tsName": "logDuplicateForeignKeyConstraintIgnored",
+          "isStatic": false,
+          "tsSignatureId": "LogDuplicateForeignKeyConstraintIgnored|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109451
+          }
+        },
+        {
+          "tsName": "logPrincipalTableInformationNotFound",
+          "isStatic": false,
+          "tsSignatureId": "LogPrincipalTableInformationNotFound|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109452
+          }
+        },
+        {
+          "tsName": "logSavepointsDisabledBecauseOfMARS",
+          "isStatic": false,
+          "tsSignatureId": "LogSavepointsDisabledBecauseOfMARS|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109453
+          }
+        },
+        {
+          "tsName": "logConflictingValueGenerationStrategies",
+          "isStatic": false,
+          "tsSignatureId": "LogConflictingValueGenerationStrategies|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109454
+          }
+        },
+        {
+          "tsName": "logMissingViewDefinitionRights",
+          "isStatic": false,
+          "tsSignatureId": "LogMissingViewDefinitionRights|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109455
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Diagnostics.Internal.SqlServerLoggingDefinitions",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665258
+          }
+        }
+      ]
+    }
+  ]
+}

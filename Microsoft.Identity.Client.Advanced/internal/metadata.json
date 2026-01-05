@@ -1,0 +1,41 @@
+{
+  "namespace": "Microsoft.Identity.Client.Advanced",
+  "contributingAssemblies": [
+    "Microsoft.Identity.Client"
+  ],
+  "types": [
+    {
+      "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Advanced.AcquireTokenParameterBuilderExtensions",
+      "clrName": "Microsoft.Identity.Client.Advanced.AcquireTokenParameterBuilderExtensions",
+      "tsEmitName": "AcquireTokenParameterBuilderExtensions",
+      "kind": "StaticNamespace",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": true,
+      "isStatic": true,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Advanced.AcquireTokenParameterBuilderExtensions::WithExtraHttpHeaders(AbstractAcquireTokenParameterBuilder_1,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):T",
+          "clrName": "WithExtraHttpHeaders",
+          "tsEmitName": "withExtraHttpHeaders",
+          "normalizedSignature": "WithExtraHttpHeaders|(AbstractAcquireTokenParameterBuilder_1,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):T|static=true",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 1,
+          "parameterCount": 2,
+          "isExtensionMethod": true
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "namespace": "Microsoft.Identity.Client.Region",
+  "contributingAssemblies": [
+    "Microsoft.Identity.Client"
+  ],
+  "types": [
+    {
+      "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Region.RegionOutcome",
+      "clrName": "Microsoft.Identity.Client.Region.RegionOutcome",
+      "tsEmitName": "RegionOutcome",
+      "kind": "Enum",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Region.RegionOutcome::value__System.Int32",
+          "clrName": "value__",
+          "tsEmitName": "value__",
+          "normalizedSignature": "value__|System.Int32|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "isLiteral": false
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Region.RegionOutcome::NoneMicrosoft.Identity.Client.Region.RegionOutcome",
+          "clrName": "None",
+          "tsEmitName": "none",
+          "normalizedSignature": "None|Microsoft.Identity.Client.Region.RegionOutcome|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Region.RegionOutcome::UserProvidedValidMicrosoft.Identity.Client.Region.RegionOutcome",
+          "clrName": "UserProvidedValid",
+          "tsEmitName": "userProvidedValid",
+          "normalizedSignature": "UserProvidedValid|Microsoft.Identity.Client.Region.RegionOutcome|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Region.RegionOutcome::UserProvidedAutodetectionFailedMicrosoft.Identity.Client.Region.RegionOutcome",
+          "clrName": "UserProvidedAutodetectionFailed",
+          "tsEmitName": "userProvidedAutodetectionFailed",
+          "normalizedSignature": "UserProvidedAutodetectionFailed|Microsoft.Identity.Client.Region.RegionOutcome|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Region.RegionOutcome::UserProvidedInvalidMicrosoft.Identity.Client.Region.RegionOutcome",
+          "clrName": "UserProvidedInvalid",
+          "tsEmitName": "userProvidedInvalid",
+          "normalizedSignature": "UserProvidedInvalid|Microsoft.Identity.Client.Region.RegionOutcome|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Region.RegionOutcome::AutodetectSuccessMicrosoft.Identity.Client.Region.RegionOutcome",
+          "clrName": "AutodetectSuccess",
+          "tsEmitName": "autodetectSuccess",
+          "normalizedSignature": "AutodetectSuccess|Microsoft.Identity.Client.Region.RegionOutcome|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Region.RegionOutcome::FallbackToGlobalMicrosoft.Identity.Client.Region.RegionOutcome",
+          "clrName": "FallbackToGlobal",
+          "tsEmitName": "fallbackToGlobal",
+          "normalizedSignature": "FallbackToGlobal|Microsoft.Identity.Client.Region.RegionOutcome|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true
+        }
+      ],
+      "events": [],
+      "constructors": []
+    }
+  ]
+}

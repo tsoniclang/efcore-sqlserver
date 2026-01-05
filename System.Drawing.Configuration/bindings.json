@@ -1,0 +1,178 @@
+{
+  "namespace": "System.Drawing.Configuration",
+  "types": [
+    {
+      "stableId": "System.Configuration.ConfigurationManager:System.Drawing.Configuration.SystemDrawingSection",
+      "clrName": "System.Drawing.Configuration.SystemDrawingSection",
+      "tsEmitName": "SystemDrawingSection",
+      "assemblyName": "System.Configuration.ConfigurationManager",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Drawing.Configuration.SystemDrawingSection::BitmapSuffix:System.String",
+          "clrName": "BitmapSuffix",
+          "tsEmitName": "bitmapSuffix",
+          "metadataToken": 385876233,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "BitmapSuffix|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "System.Drawing.Configuration.SystemDrawingSection",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Drawing.Configuration.SystemDrawingSection::.ctor():void",
+          "metadataToken": 100663682,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "System.Drawing.Configuration.SystemDrawingSection",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "isReadOnly",
+          "isStatic": false,
+          "tsSignatureId": "IsReadOnly|():System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.ConfigurationElement",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100664059
+          }
+        },
+        {
+          "tsName": "equals",
+          "isStatic": false,
+          "tsSignatureId": "Equals|(System.Object):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.ConfigurationElement",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100664070
+          }
+        },
+        {
+          "tsName": "getHashCode",
+          "isStatic": false,
+          "tsSignatureId": "GetHashCode|():System.Int32|static=false",
+          "target": {
+            "declaringClrType": "System.Configuration.ConfigurationElement",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100664071
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "bitmapSuffix",
+          "isStatic": false,
+          "tsSignatureId": "BitmapSuffix|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "System.Drawing.Configuration.SystemDrawingSection",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 385876233
+          }
+        },
+        {
+          "tsName": "sectionInformation",
+          "isStatic": false,
+          "tsSignatureId": "SectionInformation|:System.Configuration.SectionInformation|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Configuration.ConfigurationSection",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 385876420
+          }
+        },
+        {
+          "tsName": "lockAttributes",
+          "isStatic": false,
+          "tsSignatureId": "LockAttributes|:System.Configuration.ConfigurationLockCollection|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Configuration.ConfigurationElement",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 385876335
+          }
+        },
+        {
+          "tsName": "lockAllAttributesExcept",
+          "isStatic": false,
+          "tsSignatureId": "LockAllAttributesExcept|:System.Configuration.ConfigurationLockCollection|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Configuration.ConfigurationElement",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 385876336
+          }
+        },
+        {
+          "tsName": "lockElements",
+          "isStatic": false,
+          "tsSignatureId": "LockElements|:System.Configuration.ConfigurationLockCollection|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Configuration.ConfigurationElement",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 385876337
+          }
+        },
+        {
+          "tsName": "lockAllElementsExcept",
+          "isStatic": false,
+          "tsSignatureId": "LockAllElementsExcept|:System.Configuration.ConfigurationLockCollection|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Configuration.ConfigurationElement",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 385876338
+          }
+        },
+        {
+          "tsName": "lockItem",
+          "isStatic": false,
+          "tsSignatureId": "LockItem|:System.Boolean|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "System.Configuration.ConfigurationElement",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 385876339
+          }
+        },
+        {
+          "tsName": "elementInformation",
+          "isStatic": false,
+          "tsSignatureId": "ElementInformation|:System.Configuration.ElementInformation|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Configuration.ConfigurationElement",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 385876344
+          }
+        },
+        {
+          "tsName": "currentConfiguration",
+          "isStatic": false,
+          "tsSignatureId": "CurrentConfiguration|:System.Configuration.Configuration|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "System.Configuration.ConfigurationElement",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 385876348
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "System.Drawing.Configuration.SystemDrawingSection",
+            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+            "metadataToken": 100663682
+          }
+        }
+      ]
+    }
+  ]
+}

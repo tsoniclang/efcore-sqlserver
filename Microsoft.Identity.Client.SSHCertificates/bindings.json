@@ -1,0 +1,68 @@
+{
+  "namespace": "Microsoft.Identity.Client.SSHCertificates",
+  "types": [
+    {
+      "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.SSHCertificates.SSHExtensions",
+      "clrName": "Microsoft.Identity.Client.SSHCertificates.SSHExtensions",
+      "tsEmitName": "SSHExtensions",
+      "assemblyName": "Microsoft.Identity.Client",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.SSHCertificates.SSHExtensions::WithSSHCertificateAuthenticationScheme(Microsoft.Identity.Client.AcquireTokenInteractiveParameterBuilder,System.String,System.String):Microsoft.Identity.Client.AcquireTokenInteractiveParameterBuilder",
+          "clrName": "WithSSHCertificateAuthenticationScheme",
+          "tsEmitName": "withSSHCertificateAuthenticationScheme",
+          "metadataToken": 100666113,
+          "canonicalSignature": "(Microsoft.Identity.Client.AcquireTokenInteractiveParameterBuilder,System.String,System.String):Microsoft.Identity.Client.AcquireTokenInteractiveParameterBuilder",
+          "normalizedSignature": "WithSSHCertificateAuthenticationScheme|(Microsoft.Identity.Client.AcquireTokenInteractiveParameterBuilder,System.String,System.String):Microsoft.Identity.Client.AcquireTokenInteractiveParameterBuilder|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.Identity.Client.SSHCertificates.SSHExtensions",
+          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "isExtensionMethod": true
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.SSHCertificates.SSHExtensions::WithSSHCertificateAuthenticationScheme(Microsoft.Identity.Client.AcquireTokenSilentParameterBuilder,System.String,System.String):Microsoft.Identity.Client.AcquireTokenSilentParameterBuilder",
+          "clrName": "WithSSHCertificateAuthenticationScheme",
+          "tsEmitName": "withSSHCertificateAuthenticationScheme",
+          "metadataToken": 100666114,
+          "canonicalSignature": "(Microsoft.Identity.Client.AcquireTokenSilentParameterBuilder,System.String,System.String):Microsoft.Identity.Client.AcquireTokenSilentParameterBuilder",
+          "normalizedSignature": "WithSSHCertificateAuthenticationScheme|(Microsoft.Identity.Client.AcquireTokenSilentParameterBuilder,System.String,System.String):Microsoft.Identity.Client.AcquireTokenSilentParameterBuilder|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.Identity.Client.SSHCertificates.SSHExtensions",
+          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "isExtensionMethod": true
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "withSSHCertificateAuthenticationScheme",
+          "isStatic": true,
+          "tsSignatureId": "WithSSHCertificateAuthenticationScheme|(Microsoft.Identity.Client.AcquireTokenInteractiveParameterBuilder,System.String,System.String):Microsoft.Identity.Client.AcquireTokenInteractiveParameterBuilder|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.SSHCertificates.SSHExtensions",
+            "declaringAssemblyName": "Microsoft.Identity.Client",
+            "metadataToken": 100666113
+          }
+        },
+        {
+          "tsName": "withSSHCertificateAuthenticationScheme",
+          "isStatic": true,
+          "tsSignatureId": "WithSSHCertificateAuthenticationScheme|(Microsoft.Identity.Client.AcquireTokenSilentParameterBuilder,System.String,System.String):Microsoft.Identity.Client.AcquireTokenSilentParameterBuilder|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.SSHCertificates.SSHExtensions",
+            "declaringAssemblyName": "Microsoft.Identity.Client",
+            "metadataToken": 100666114
+          }
+        }
+      ]
+    }
+  ]
+}

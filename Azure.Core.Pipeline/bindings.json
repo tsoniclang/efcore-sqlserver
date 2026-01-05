@@ -1,0 +1,1894 @@
+{
+  "namespace": "Azure.Core.Pipeline",
+  "types": [
+    {
+      "stableId": "Azure.Core:Azure.Core.Pipeline.BearerTokenAuthenticationPolicy",
+      "clrName": "Azure.Core.Pipeline.BearerTokenAuthenticationPolicy",
+      "tsEmitName": "BearerTokenAuthenticationPolicy",
+      "assemblyName": "Azure.Core",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.BearerTokenAuthenticationPolicy::ProcessAsync(Azure.Core.HttpMessage,System.ReadOnlyMemory_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):System.Threading.Tasks.ValueTask",
+          "clrName": "ProcessAsync",
+          "tsEmitName": "processAsync2",
+          "metadataToken": 100664484,
+          "canonicalSignature": "(Azure.Core.HttpMessage,System.ReadOnlyMemory_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):System.Threading.Tasks.ValueTask",
+          "normalizedSignature": "ProcessAsync|(Azure.Core.HttpMessage,System.ReadOnlyMemory_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):System.Threading.Tasks.ValueTask|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Azure.Core.Pipeline.BearerTokenAuthenticationPolicy",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.BearerTokenAuthenticationPolicy::Process(Azure.Core.HttpMessage,System.ReadOnlyMemory_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):System.Void",
+          "clrName": "Process",
+          "tsEmitName": "process2",
+          "metadataToken": 100664485,
+          "canonicalSignature": "(Azure.Core.HttpMessage,System.ReadOnlyMemory_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):System.Void",
+          "normalizedSignature": "Process|(Azure.Core.HttpMessage,System.ReadOnlyMemory_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Azure.Core.Pipeline.BearerTokenAuthenticationPolicy",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.BearerTokenAuthenticationPolicy::Process(Azure.Core.HttpMessage,System.ReadOnlyMemory_1):System.Void",
+          "clrName": "Process",
+          "tsEmitName": "process",
+          "metadataToken": 0,
+          "canonicalSignature": "(Azure.Core.HttpMessage,System.ReadOnlyMemory_1):System.Void",
+          "normalizedSignature": "Process|(Azure.Core.HttpMessage,System.ReadOnlyMemory_1):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Azure.Core.Pipeline.BearerTokenAuthenticationPolicy",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.BearerTokenAuthenticationPolicy::ProcessAsync(Azure.Core.HttpMessage,System.ReadOnlyMemory_1):System.Threading.Tasks.ValueTask",
+          "clrName": "ProcessAsync",
+          "tsEmitName": "processAsync",
+          "metadataToken": 0,
+          "canonicalSignature": "(Azure.Core.HttpMessage,System.ReadOnlyMemory_1):System.Threading.Tasks.ValueTask",
+          "normalizedSignature": "ProcessAsync|(Azure.Core.HttpMessage,System.ReadOnlyMemory_1):System.Threading.Tasks.ValueTask|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Azure.Core.Pipeline.BearerTokenAuthenticationPolicy",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.BearerTokenAuthenticationPolicy::.ctor(Azure.Core.TokenCredential,System.String):void",
+          "metadataToken": 100664481,
+          "canonicalSignature": "(Azure.Core.TokenCredential,System.String):void",
+          "normalizedSignature": "constructor|(Azure.Core.TokenCredential,System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "declaringClrType": "Azure.Core.Pipeline.BearerTokenAuthenticationPolicy",
+          "declaringAssemblyName": "Azure.Core"
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.BearerTokenAuthenticationPolicy::.ctor(Azure.Core.TokenCredential,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
+          "metadataToken": 100664482,
+          "canonicalSignature": "(Azure.Core.TokenCredential,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
+          "normalizedSignature": "constructor|(Azure.Core.TokenCredential,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "declaringClrType": "Azure.Core.Pipeline.BearerTokenAuthenticationPolicy",
+          "declaringAssemblyName": "Azure.Core"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "processAsync2",
+          "isStatic": false,
+          "tsSignatureId": "ProcessAsync|(Azure.Core.HttpMessage,System.ReadOnlyMemory_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):System.Threading.Tasks.ValueTask|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.BearerTokenAuthenticationPolicy",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664484
+          }
+        },
+        {
+          "tsName": "process2",
+          "isStatic": false,
+          "tsSignatureId": "Process|(Azure.Core.HttpMessage,System.ReadOnlyMemory_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.BearerTokenAuthenticationPolicy",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664485
+          }
+        },
+        {
+          "tsName": "process",
+          "isStatic": false,
+          "tsSignatureId": "Process|(Azure.Core.HttpMessage,System.ReadOnlyMemory_1):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.BearerTokenAuthenticationPolicy",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 0
+          }
+        },
+        {
+          "tsName": "processAsync",
+          "isStatic": false,
+          "tsSignatureId": "ProcessAsync|(Azure.Core.HttpMessage,System.ReadOnlyMemory_1):System.Threading.Tasks.ValueTask|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.BearerTokenAuthenticationPolicy",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 0
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Azure.Core.TokenCredential,System.String):void|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.BearerTokenAuthenticationPolicy",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664481
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Azure.Core.TokenCredential,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.BearerTokenAuthenticationPolicy",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664482
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Azure.Core:Azure.Core.Pipeline.DisposableHttpPipeline",
+      "clrName": "Azure.Core.Pipeline.DisposableHttpPipeline",
+      "tsEmitName": "DisposableHttpPipeline",
+      "assemblyName": "Azure.Core",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.DisposableHttpPipeline::Dispose():System.Void",
+          "clrName": "Dispose",
+          "tsEmitName": "dispose",
+          "metadataToken": 100664495,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "Dispose|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Azure.Core.Pipeline.DisposableHttpPipeline",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "dispose",
+          "isStatic": false,
+          "tsSignatureId": "Dispose|():System.Void|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.DisposableHttpPipeline",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664495
+          }
+        },
+        {
+          "tsName": "createRequest",
+          "isStatic": false,
+          "tsSignatureId": "CreateRequest|():Azure.Core.Request|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpPipeline",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664522
+          }
+        },
+        {
+          "tsName": "createMessage",
+          "isStatic": false,
+          "tsSignatureId": "CreateMessage|():Azure.Core.HttpMessage|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpPipeline",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664523
+          }
+        },
+        {
+          "tsName": "createMessage",
+          "isStatic": false,
+          "tsSignatureId": "CreateMessage|(Azure.RequestContext):Azure.Core.HttpMessage|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpPipeline",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664524
+          }
+        },
+        {
+          "tsName": "createMessage",
+          "isStatic": false,
+          "tsSignatureId": "CreateMessage|(Azure.RequestContext,Azure.Core.ResponseClassifier):Azure.Core.HttpMessage|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpPipeline",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664525
+          }
+        },
+        {
+          "tsName": "sendAsync",
+          "isStatic": false,
+          "tsSignatureId": "SendAsync|(Azure.Core.HttpMessage,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpPipeline",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664527
+          }
+        },
+        {
+          "tsName": "send",
+          "isStatic": false,
+          "tsSignatureId": "Send|(Azure.Core.HttpMessage,System.Threading.CancellationToken):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpPipeline",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664529
+          }
+        },
+        {
+          "tsName": "sendRequestAsync",
+          "isStatic": false,
+          "tsSignatureId": "SendRequestAsync|(Azure.Core.Request,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[Azure.Response,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpPipeline",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664530
+          }
+        },
+        {
+          "tsName": "sendRequest",
+          "isStatic": false,
+          "tsSignatureId": "SendRequest|(Azure.Core.Request,System.Threading.CancellationToken):Azure.Response|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpPipeline",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664531
+          }
+        },
+        {
+          "tsName": "createClientRequestIdScope",
+          "isStatic": true,
+          "tsSignatureId": "CreateClientRequestIdScope|(System.String):System.IDisposable|static=true",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpPipeline",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664532
+          }
+        },
+        {
+          "tsName": "createHttpMessagePropertiesScope",
+          "isStatic": true,
+          "tsSignatureId": "CreateHttpMessagePropertiesScope|(System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.IDisposable|static=true",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpPipeline",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664533
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "responseClassifier",
+          "isStatic": false,
+          "tsSignatureId": "ResponseClassifier|:Azure.Core.ResponseClassifier|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpPipeline",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 385876308
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Azure.Core:Azure.Core.Pipeline.HttpClientTransport",
+      "clrName": "Azure.Core.Pipeline.HttpClientTransport",
+      "tsEmitName": "HttpClientTransport",
+      "assemblyName": "Azure.Core",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.HttpClientTransport::CreateRequest():Azure.Core.Request",
+          "clrName": "CreateRequest",
+          "tsEmitName": "createRequest",
+          "metadataToken": 100664501,
+          "canonicalSignature": "():Azure.Core.Request",
+          "normalizedSignature": "CreateRequest|():Azure.Core.Request|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Azure.Core.Pipeline.HttpClientTransport",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.HttpClientTransport::Process(Azure.Core.HttpMessage):System.Void",
+          "clrName": "Process",
+          "tsEmitName": "process",
+          "metadataToken": 100664502,
+          "canonicalSignature": "(Azure.Core.HttpMessage):System.Void",
+          "normalizedSignature": "Process|(Azure.Core.HttpMessage):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Azure.Core.Pipeline.HttpClientTransport",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.HttpClientTransport::ProcessAsync(Azure.Core.HttpMessage):System.Threading.Tasks.ValueTask",
+          "clrName": "ProcessAsync",
+          "tsEmitName": "processAsync",
+          "metadataToken": 100664503,
+          "canonicalSignature": "(Azure.Core.HttpMessage):System.Threading.Tasks.ValueTask",
+          "normalizedSignature": "ProcessAsync|(Azure.Core.HttpMessage):System.Threading.Tasks.ValueTask|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Azure.Core.Pipeline.HttpClientTransport",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.HttpClientTransport::Dispose():System.Void",
+          "clrName": "Dispose",
+          "tsEmitName": "dispose",
+          "metadataToken": 100664509,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "Dispose|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Azure.Core.Pipeline.HttpClientTransport",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.HttpClientTransport::SharedAzure.Core.Pipeline.HttpClientTransport",
+          "clrName": "Shared",
+          "tsEmitName": "shared",
+          "metadataToken": 67109337,
+          "normalizedSignature": "Shared|Azure.Core.Pipeline.HttpClientTransport|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "declaringClrType": "Azure.Core.Pipeline.HttpClientTransport",
+          "declaringAssemblyName": "Azure.Core"
+        }
+      ],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.HttpClientTransport::.ctor():void",
+          "metadataToken": 100664497,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Azure.Core.Pipeline.HttpClientTransport",
+          "declaringAssemblyName": "Azure.Core"
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.HttpClientTransport::.ctor(System.Net.Http.HttpMessageHandler):void",
+          "metadataToken": 100664499,
+          "canonicalSignature": "(System.Net.Http.HttpMessageHandler):void",
+          "normalizedSignature": "constructor|(System.Net.Http.HttpMessageHandler):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Azure.Core.Pipeline.HttpClientTransport",
+          "declaringAssemblyName": "Azure.Core"
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.HttpClientTransport::.ctor(System.Net.Http.HttpClient):void",
+          "metadataToken": 100664500,
+          "canonicalSignature": "(System.Net.Http.HttpClient):void",
+          "normalizedSignature": "constructor|(System.Net.Http.HttpClient):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Azure.Core.Pipeline.HttpClientTransport",
+          "declaringAssemblyName": "Azure.Core"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "createRequest",
+          "isStatic": false,
+          "tsSignatureId": "CreateRequest|():Azure.Core.Request|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpClientTransport",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664501
+          }
+        },
+        {
+          "tsName": "process",
+          "isStatic": false,
+          "tsSignatureId": "Process|(Azure.Core.HttpMessage):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpClientTransport",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664502
+          }
+        },
+        {
+          "tsName": "processAsync",
+          "isStatic": false,
+          "tsSignatureId": "ProcessAsync|(Azure.Core.HttpMessage):System.Threading.Tasks.ValueTask|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpClientTransport",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664503
+          }
+        },
+        {
+          "tsName": "dispose",
+          "isStatic": false,
+          "tsSignatureId": "Dispose|():System.Void|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpClientTransport",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664509
+          }
+        }
+      ],
+      "exposedFields": [
+        {
+          "tsName": "shared",
+          "isStatic": true,
+          "tsSignatureId": "Shared|Azure.Core.Pipeline.HttpClientTransport|static=true|const=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpClientTransport",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 67109337
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpClientTransport",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664497
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.Net.Http.HttpMessageHandler):void|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpClientTransport",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664499
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.Net.Http.HttpClient):void|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpClientTransport",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664500
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipeline",
+      "clrName": "Azure.Core.Pipeline.HttpPipeline",
+      "tsEmitName": "HttpPipeline",
+      "assemblyName": "Azure.Core",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipeline::CreateRequest():Azure.Core.Request",
+          "clrName": "CreateRequest",
+          "tsEmitName": "createRequest",
+          "metadataToken": 100664522,
+          "canonicalSignature": "():Azure.Core.Request",
+          "normalizedSignature": "CreateRequest|():Azure.Core.Request|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Azure.Core.Pipeline.HttpPipeline",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipeline::CreateMessage():Azure.Core.HttpMessage",
+          "clrName": "CreateMessage",
+          "tsEmitName": "createMessage",
+          "metadataToken": 100664523,
+          "canonicalSignature": "():Azure.Core.HttpMessage",
+          "normalizedSignature": "CreateMessage|():Azure.Core.HttpMessage|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Azure.Core.Pipeline.HttpPipeline",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipeline::CreateMessage(Azure.RequestContext):Azure.Core.HttpMessage",
+          "clrName": "CreateMessage",
+          "tsEmitName": "createMessage",
+          "metadataToken": 100664524,
+          "canonicalSignature": "(Azure.RequestContext):Azure.Core.HttpMessage",
+          "normalizedSignature": "CreateMessage|(Azure.RequestContext):Azure.Core.HttpMessage|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Azure.Core.Pipeline.HttpPipeline",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipeline::CreateMessage(Azure.RequestContext,Azure.Core.ResponseClassifier):Azure.Core.HttpMessage",
+          "clrName": "CreateMessage",
+          "tsEmitName": "createMessage",
+          "metadataToken": 100664525,
+          "canonicalSignature": "(Azure.RequestContext,Azure.Core.ResponseClassifier):Azure.Core.HttpMessage",
+          "normalizedSignature": "CreateMessage|(Azure.RequestContext,Azure.Core.ResponseClassifier):Azure.Core.HttpMessage|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Azure.Core.Pipeline.HttpPipeline",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipeline::SendAsync(Azure.Core.HttpMessage,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask",
+          "clrName": "SendAsync",
+          "tsEmitName": "sendAsync",
+          "metadataToken": 100664527,
+          "canonicalSignature": "(Azure.Core.HttpMessage,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask",
+          "normalizedSignature": "SendAsync|(Azure.Core.HttpMessage,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Azure.Core.Pipeline.HttpPipeline",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipeline::Send(Azure.Core.HttpMessage,System.Threading.CancellationToken):System.Void",
+          "clrName": "Send",
+          "tsEmitName": "send",
+          "metadataToken": 100664529,
+          "canonicalSignature": "(Azure.Core.HttpMessage,System.Threading.CancellationToken):System.Void",
+          "normalizedSignature": "Send|(Azure.Core.HttpMessage,System.Threading.CancellationToken):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Azure.Core.Pipeline.HttpPipeline",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipeline::SendRequestAsync(Azure.Core.Request,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[Azure.Response,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
+          "clrName": "SendRequestAsync",
+          "tsEmitName": "sendRequestAsync",
+          "metadataToken": 100664530,
+          "canonicalSignature": "(Azure.Core.Request,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[Azure.Response,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
+          "normalizedSignature": "SendRequestAsync|(Azure.Core.Request,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[Azure.Response,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Azure.Core.Pipeline.HttpPipeline",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipeline::SendRequest(Azure.Core.Request,System.Threading.CancellationToken):Azure.Response",
+          "clrName": "SendRequest",
+          "tsEmitName": "sendRequest",
+          "metadataToken": 100664531,
+          "canonicalSignature": "(Azure.Core.Request,System.Threading.CancellationToken):Azure.Response",
+          "normalizedSignature": "SendRequest|(Azure.Core.Request,System.Threading.CancellationToken):Azure.Response|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Azure.Core.Pipeline.HttpPipeline",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipeline::CreateClientRequestIdScope(System.String):System.IDisposable",
+          "clrName": "CreateClientRequestIdScope",
+          "tsEmitName": "createClientRequestIdScope",
+          "metadataToken": 100664532,
+          "canonicalSignature": "(System.String):System.IDisposable",
+          "normalizedSignature": "CreateClientRequestIdScope|(System.String):System.IDisposable|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Azure.Core.Pipeline.HttpPipeline",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipeline::CreateHttpMessagePropertiesScope(System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.IDisposable",
+          "clrName": "CreateHttpMessagePropertiesScope",
+          "tsEmitName": "createHttpMessagePropertiesScope",
+          "metadataToken": 100664533,
+          "canonicalSignature": "(System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.IDisposable",
+          "normalizedSignature": "CreateHttpMessagePropertiesScope|(System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.IDisposable|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Azure.Core.Pipeline.HttpPipeline",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipeline::ResponseClassifier:Azure.Core.ResponseClassifier",
+          "clrName": "ResponseClassifier",
+          "tsEmitName": "responseClassifier",
+          "metadataToken": 385876308,
+          "canonicalSignature": ":Azure.Core.ResponseClassifier",
+          "normalizedSignature": "ResponseClassifier|:Azure.Core.ResponseClassifier|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Azure.Core.Pipeline.HttpPipeline",
+          "declaringAssemblyName": "Azure.Core"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipeline::.ctor(Azure.Core.Pipeline.HttpPipelineTransport,Azure.Core.Pipeline.HttpPipelinePolicy[],Azure.Core.ResponseClassifier):void",
+          "metadataToken": 100664520,
+          "canonicalSignature": "(Azure.Core.Pipeline.HttpPipelineTransport,Azure.Core.Pipeline.HttpPipelinePolicy[],Azure.Core.ResponseClassifier):void",
+          "normalizedSignature": "constructor|(Azure.Core.Pipeline.HttpPipelineTransport,Azure.Core.Pipeline.HttpPipelinePolicy[],Azure.Core.ResponseClassifier):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3,
+          "declaringClrType": "Azure.Core.Pipeline.HttpPipeline",
+          "declaringAssemblyName": "Azure.Core"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "createRequest",
+          "isStatic": false,
+          "tsSignatureId": "CreateRequest|():Azure.Core.Request|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpPipeline",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664522
+          }
+        },
+        {
+          "tsName": "createMessage",
+          "isStatic": false,
+          "tsSignatureId": "CreateMessage|():Azure.Core.HttpMessage|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpPipeline",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664523
+          }
+        },
+        {
+          "tsName": "createMessage",
+          "isStatic": false,
+          "tsSignatureId": "CreateMessage|(Azure.RequestContext):Azure.Core.HttpMessage|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpPipeline",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664524
+          }
+        },
+        {
+          "tsName": "createMessage",
+          "isStatic": false,
+          "tsSignatureId": "CreateMessage|(Azure.RequestContext,Azure.Core.ResponseClassifier):Azure.Core.HttpMessage|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpPipeline",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664525
+          }
+        },
+        {
+          "tsName": "sendAsync",
+          "isStatic": false,
+          "tsSignatureId": "SendAsync|(Azure.Core.HttpMessage,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpPipeline",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664527
+          }
+        },
+        {
+          "tsName": "send",
+          "isStatic": false,
+          "tsSignatureId": "Send|(Azure.Core.HttpMessage,System.Threading.CancellationToken):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpPipeline",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664529
+          }
+        },
+        {
+          "tsName": "sendRequestAsync",
+          "isStatic": false,
+          "tsSignatureId": "SendRequestAsync|(Azure.Core.Request,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[Azure.Response,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpPipeline",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664530
+          }
+        },
+        {
+          "tsName": "sendRequest",
+          "isStatic": false,
+          "tsSignatureId": "SendRequest|(Azure.Core.Request,System.Threading.CancellationToken):Azure.Response|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpPipeline",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664531
+          }
+        },
+        {
+          "tsName": "createClientRequestIdScope",
+          "isStatic": true,
+          "tsSignatureId": "CreateClientRequestIdScope|(System.String):System.IDisposable|static=true",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpPipeline",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664532
+          }
+        },
+        {
+          "tsName": "createHttpMessagePropertiesScope",
+          "isStatic": true,
+          "tsSignatureId": "CreateHttpMessagePropertiesScope|(System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.IDisposable|static=true",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpPipeline",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664533
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "responseClassifier",
+          "isStatic": false,
+          "tsSignatureId": "ResponseClassifier|:Azure.Core.ResponseClassifier|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpPipeline",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 385876308
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Azure.Core.Pipeline.HttpPipelineTransport,Azure.Core.Pipeline.HttpPipelinePolicy[],Azure.Core.ResponseClassifier):void|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpPipeline",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664520
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipelineOptions",
+      "clrName": "Azure.Core.Pipeline.HttpPipelineOptions",
+      "tsEmitName": "HttpPipelineOptions",
+      "assemblyName": "Azure.Core",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipelineOptions::ClientOptions:Azure.Core.ClientOptions",
+          "clrName": "ClientOptions",
+          "tsEmitName": "clientOptions",
+          "metadataToken": 385876309,
+          "canonicalSignature": ":Azure.Core.ClientOptions",
+          "normalizedSignature": "ClientOptions|:Azure.Core.ClientOptions|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Azure.Core.Pipeline.HttpPipelineOptions",
+          "declaringAssemblyName": "Azure.Core"
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipelineOptions::PerCallPolicies:System.Collections.Generic.IList_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
+          "clrName": "PerCallPolicies",
+          "tsEmitName": "perCallPolicies",
+          "metadataToken": 385876310,
+          "canonicalSignature": ":System.Collections.Generic.IList_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
+          "normalizedSignature": "PerCallPolicies|:System.Collections.Generic.IList_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Azure.Core.Pipeline.HttpPipelineOptions",
+          "declaringAssemblyName": "Azure.Core"
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipelineOptions::PerRetryPolicies:System.Collections.Generic.IList_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
+          "clrName": "PerRetryPolicies",
+          "tsEmitName": "perRetryPolicies",
+          "metadataToken": 385876311,
+          "canonicalSignature": ":System.Collections.Generic.IList_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
+          "normalizedSignature": "PerRetryPolicies|:System.Collections.Generic.IList_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Azure.Core.Pipeline.HttpPipelineOptions",
+          "declaringAssemblyName": "Azure.Core"
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipelineOptions::ResponseClassifier:Azure.Core.ResponseClassifier",
+          "clrName": "ResponseClassifier",
+          "tsEmitName": "responseClassifier",
+          "metadataToken": 385876312,
+          "canonicalSignature": ":Azure.Core.ResponseClassifier",
+          "normalizedSignature": "ResponseClassifier|:Azure.Core.ResponseClassifier|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Azure.Core.Pipeline.HttpPipelineOptions",
+          "declaringAssemblyName": "Azure.Core"
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipelineOptions::RequestFailedDetailsParser:Azure.Core.RequestFailedDetailsParser",
+          "clrName": "RequestFailedDetailsParser",
+          "tsEmitName": "requestFailedDetailsParser",
+          "metadataToken": 385876313,
+          "canonicalSignature": ":Azure.Core.RequestFailedDetailsParser",
+          "normalizedSignature": "RequestFailedDetailsParser|:Azure.Core.RequestFailedDetailsParser|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Azure.Core.Pipeline.HttpPipelineOptions",
+          "declaringAssemblyName": "Azure.Core"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipelineOptions::.ctor(Azure.Core.ClientOptions):void",
+          "metadataToken": 100664548,
+          "canonicalSignature": "(Azure.Core.ClientOptions):void",
+          "normalizedSignature": "constructor|(Azure.Core.ClientOptions):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Azure.Core.Pipeline.HttpPipelineOptions",
+          "declaringAssemblyName": "Azure.Core"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "clientOptions",
+          "isStatic": false,
+          "tsSignatureId": "ClientOptions|:Azure.Core.ClientOptions|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpPipelineOptions",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 385876309
+          }
+        },
+        {
+          "tsName": "perCallPolicies",
+          "isStatic": false,
+          "tsSignatureId": "PerCallPolicies|:System.Collections.Generic.IList_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpPipelineOptions",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 385876310
+          }
+        },
+        {
+          "tsName": "perRetryPolicies",
+          "isStatic": false,
+          "tsSignatureId": "PerRetryPolicies|:System.Collections.Generic.IList_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpPipelineOptions",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 385876311
+          }
+        },
+        {
+          "tsName": "responseClassifier",
+          "isStatic": false,
+          "tsSignatureId": "ResponseClassifier|:Azure.Core.ResponseClassifier|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpPipelineOptions",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 385876312
+          }
+        },
+        {
+          "tsName": "requestFailedDetailsParser",
+          "isStatic": false,
+          "tsSignatureId": "RequestFailedDetailsParser|:Azure.Core.RequestFailedDetailsParser|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpPipelineOptions",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 385876313
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Azure.Core.ClientOptions):void|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpPipelineOptions",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664548
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipelinePolicy",
+      "clrName": "Azure.Core.Pipeline.HttpPipelinePolicy",
+      "tsEmitName": "HttpPipelinePolicy",
+      "assemblyName": "Azure.Core",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipelinePolicy::ProcessAsync(Azure.Core.HttpMessage,System.ReadOnlyMemory_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):System.Threading.Tasks.ValueTask",
+          "clrName": "ProcessAsync",
+          "tsEmitName": "processAsync",
+          "metadataToken": 100664556,
+          "canonicalSignature": "(Azure.Core.HttpMessage,System.ReadOnlyMemory_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):System.Threading.Tasks.ValueTask",
+          "normalizedSignature": "ProcessAsync|(Azure.Core.HttpMessage,System.ReadOnlyMemory_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):System.Threading.Tasks.ValueTask|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Azure.Core.Pipeline.HttpPipelinePolicy",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipelinePolicy::Process(Azure.Core.HttpMessage,System.ReadOnlyMemory_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):System.Void",
+          "clrName": "Process",
+          "tsEmitName": "process",
+          "metadataToken": 100664557,
+          "canonicalSignature": "(Azure.Core.HttpMessage,System.ReadOnlyMemory_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):System.Void",
+          "normalizedSignature": "Process|(Azure.Core.HttpMessage,System.ReadOnlyMemory_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Azure.Core.Pipeline.HttpPipelinePolicy",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "processAsync",
+          "isStatic": false,
+          "tsSignatureId": "ProcessAsync|(Azure.Core.HttpMessage,System.ReadOnlyMemory_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):System.Threading.Tasks.ValueTask|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpPipelinePolicy",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664556
+          }
+        },
+        {
+          "tsName": "process",
+          "isStatic": false,
+          "tsSignatureId": "Process|(Azure.Core.HttpMessage,System.ReadOnlyMemory_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpPipelinePolicy",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664557
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipelineSynchronousPolicy",
+      "clrName": "Azure.Core.Pipeline.HttpPipelineSynchronousPolicy",
+      "tsEmitName": "HttpPipelineSynchronousPolicy",
+      "assemblyName": "Azure.Core",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipelineSynchronousPolicy::Process(Azure.Core.HttpMessage,System.ReadOnlyMemory_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):System.Void",
+          "clrName": "Process",
+          "tsEmitName": "process2",
+          "metadataToken": 100664562,
+          "canonicalSignature": "(Azure.Core.HttpMessage,System.ReadOnlyMemory_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):System.Void",
+          "normalizedSignature": "Process|(Azure.Core.HttpMessage,System.ReadOnlyMemory_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Azure.Core.Pipeline.HttpPipelineSynchronousPolicy",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipelineSynchronousPolicy::ProcessAsync(Azure.Core.HttpMessage,System.ReadOnlyMemory_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):System.Threading.Tasks.ValueTask",
+          "clrName": "ProcessAsync",
+          "tsEmitName": "processAsync2",
+          "metadataToken": 100664563,
+          "canonicalSignature": "(Azure.Core.HttpMessage,System.ReadOnlyMemory_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):System.Threading.Tasks.ValueTask",
+          "normalizedSignature": "ProcessAsync|(Azure.Core.HttpMessage,System.ReadOnlyMemory_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):System.Threading.Tasks.ValueTask|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Azure.Core.Pipeline.HttpPipelineSynchronousPolicy",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipelineSynchronousPolicy::OnSendingRequest(Azure.Core.HttpMessage):System.Void",
+          "clrName": "OnSendingRequest",
+          "tsEmitName": "onSendingRequest",
+          "metadataToken": 100664565,
+          "canonicalSignature": "(Azure.Core.HttpMessage):System.Void",
+          "normalizedSignature": "OnSendingRequest|(Azure.Core.HttpMessage):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Azure.Core.Pipeline.HttpPipelineSynchronousPolicy",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipelineSynchronousPolicy::OnReceivedResponse(Azure.Core.HttpMessage):System.Void",
+          "clrName": "OnReceivedResponse",
+          "tsEmitName": "onReceivedResponse",
+          "metadataToken": 100664566,
+          "canonicalSignature": "(Azure.Core.HttpMessage):System.Void",
+          "normalizedSignature": "OnReceivedResponse|(Azure.Core.HttpMessage):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Azure.Core.Pipeline.HttpPipelineSynchronousPolicy",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipelineSynchronousPolicy::Process(Azure.Core.HttpMessage,System.ReadOnlyMemory_1):System.Void",
+          "clrName": "Process",
+          "tsEmitName": "process",
+          "metadataToken": 0,
+          "canonicalSignature": "(Azure.Core.HttpMessage,System.ReadOnlyMemory_1):System.Void",
+          "normalizedSignature": "Process|(Azure.Core.HttpMessage,System.ReadOnlyMemory_1):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Azure.Core.Pipeline.HttpPipelineSynchronousPolicy",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipelineSynchronousPolicy::ProcessAsync(Azure.Core.HttpMessage,System.ReadOnlyMemory_1):System.Threading.Tasks.ValueTask",
+          "clrName": "ProcessAsync",
+          "tsEmitName": "processAsync",
+          "metadataToken": 0,
+          "canonicalSignature": "(Azure.Core.HttpMessage,System.ReadOnlyMemory_1):System.Threading.Tasks.ValueTask",
+          "normalizedSignature": "ProcessAsync|(Azure.Core.HttpMessage,System.ReadOnlyMemory_1):System.Threading.Tasks.ValueTask|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Azure.Core.Pipeline.HttpPipelineSynchronousPolicy",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "process2",
+          "isStatic": false,
+          "tsSignatureId": "Process|(Azure.Core.HttpMessage,System.ReadOnlyMemory_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpPipelineSynchronousPolicy",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664562
+          }
+        },
+        {
+          "tsName": "processAsync2",
+          "isStatic": false,
+          "tsSignatureId": "ProcessAsync|(Azure.Core.HttpMessage,System.ReadOnlyMemory_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):System.Threading.Tasks.ValueTask|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpPipelineSynchronousPolicy",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664563
+          }
+        },
+        {
+          "tsName": "onSendingRequest",
+          "isStatic": false,
+          "tsSignatureId": "OnSendingRequest|(Azure.Core.HttpMessage):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpPipelineSynchronousPolicy",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664565
+          }
+        },
+        {
+          "tsName": "onReceivedResponse",
+          "isStatic": false,
+          "tsSignatureId": "OnReceivedResponse|(Azure.Core.HttpMessage):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpPipelineSynchronousPolicy",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664566
+          }
+        },
+        {
+          "tsName": "process",
+          "isStatic": false,
+          "tsSignatureId": "Process|(Azure.Core.HttpMessage,System.ReadOnlyMemory_1):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpPipelineSynchronousPolicy",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 0
+          }
+        },
+        {
+          "tsName": "processAsync",
+          "isStatic": false,
+          "tsSignatureId": "ProcessAsync|(Azure.Core.HttpMessage,System.ReadOnlyMemory_1):System.Threading.Tasks.ValueTask|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpPipelineSynchronousPolicy",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 0
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipelineTransport",
+      "clrName": "Azure.Core.Pipeline.HttpPipelineTransport",
+      "tsEmitName": "HttpPipelineTransport",
+      "assemblyName": "Azure.Core",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipelineTransport::Process(Azure.Core.HttpMessage):System.Void",
+          "clrName": "Process",
+          "tsEmitName": "process",
+          "metadataToken": 100664568,
+          "canonicalSignature": "(Azure.Core.HttpMessage):System.Void",
+          "normalizedSignature": "Process|(Azure.Core.HttpMessage):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Azure.Core.Pipeline.HttpPipelineTransport",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipelineTransport::ProcessAsync(Azure.Core.HttpMessage):System.Threading.Tasks.ValueTask",
+          "clrName": "ProcessAsync",
+          "tsEmitName": "processAsync",
+          "metadataToken": 100664569,
+          "canonicalSignature": "(Azure.Core.HttpMessage):System.Threading.Tasks.ValueTask",
+          "normalizedSignature": "ProcessAsync|(Azure.Core.HttpMessage):System.Threading.Tasks.ValueTask|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Azure.Core.Pipeline.HttpPipelineTransport",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipelineTransport::CreateRequest():Azure.Core.Request",
+          "clrName": "CreateRequest",
+          "tsEmitName": "createRequest",
+          "metadataToken": 100664570,
+          "canonicalSignature": "():Azure.Core.Request",
+          "normalizedSignature": "CreateRequest|():Azure.Core.Request|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Azure.Core.Pipeline.HttpPipelineTransport",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "process",
+          "isStatic": false,
+          "tsSignatureId": "Process|(Azure.Core.HttpMessage):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpPipelineTransport",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664568
+          }
+        },
+        {
+          "tsName": "processAsync",
+          "isStatic": false,
+          "tsSignatureId": "ProcessAsync|(Azure.Core.HttpMessage):System.Threading.Tasks.ValueTask|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpPipelineTransport",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664569
+          }
+        },
+        {
+          "tsName": "createRequest",
+          "isStatic": false,
+          "tsSignatureId": "CreateRequest|():Azure.Core.Request|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpPipelineTransport",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664570
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipelineTransportOptions",
+      "clrName": "Azure.Core.Pipeline.HttpPipelineTransportOptions",
+      "tsEmitName": "HttpPipelineTransportOptions",
+      "assemblyName": "Azure.Core",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipelineTransportOptions::ServerCertificateCustomValidationCallback:System.Func_2[[Azure.Core.Pipeline.ServerCertificateCustomValidationArgs,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "ServerCertificateCustomValidationCallback",
+          "tsEmitName": "serverCertificateCustomValidationCallback",
+          "metadataToken": 385876314,
+          "canonicalSignature": ":System.Func_2[[Azure.Core.Pipeline.ServerCertificateCustomValidationArgs,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "ServerCertificateCustomValidationCallback|:System.Func_2[[Azure.Core.Pipeline.ServerCertificateCustomValidationArgs,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Azure.Core.Pipeline.HttpPipelineTransportOptions",
+          "declaringAssemblyName": "Azure.Core"
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipelineTransportOptions::ClientCertificates:System.Collections.Generic.IList_1[[System.Security.Cryptography.X509Certificates.X509Certificate2,System.Security.Cryptography,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]",
+          "clrName": "ClientCertificates",
+          "tsEmitName": "clientCertificates",
+          "metadataToken": 385876315,
+          "canonicalSignature": ":System.Collections.Generic.IList_1[[System.Security.Cryptography.X509Certificates.X509Certificate2,System.Security.Cryptography,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]",
+          "normalizedSignature": "ClientCertificates|:System.Collections.Generic.IList_1[[System.Security.Cryptography.X509Certificates.X509Certificate2,System.Security.Cryptography,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Azure.Core.Pipeline.HttpPipelineTransportOptions",
+          "declaringAssemblyName": "Azure.Core"
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipelineTransportOptions::IsClientRedirectEnabled:System.Boolean",
+          "clrName": "IsClientRedirectEnabled",
+          "tsEmitName": "isClientRedirectEnabled",
+          "metadataToken": 385876316,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "IsClientRedirectEnabled|:System.Boolean|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Azure.Core.Pipeline.HttpPipelineTransportOptions",
+          "declaringAssemblyName": "Azure.Core"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipelineTransportOptions::.ctor():void",
+          "metadataToken": 100664573,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Azure.Core.Pipeline.HttpPipelineTransportOptions",
+          "declaringAssemblyName": "Azure.Core"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "serverCertificateCustomValidationCallback",
+          "isStatic": false,
+          "tsSignatureId": "ServerCertificateCustomValidationCallback|:System.Func_2[[Azure.Core.Pipeline.ServerCertificateCustomValidationArgs,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpPipelineTransportOptions",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 385876314
+          }
+        },
+        {
+          "tsName": "clientCertificates",
+          "isStatic": false,
+          "tsSignatureId": "ClientCertificates|:System.Collections.Generic.IList_1[[System.Security.Cryptography.X509Certificates.X509Certificate2,System.Security.Cryptography,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpPipelineTransportOptions",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 385876315
+          }
+        },
+        {
+          "tsName": "isClientRedirectEnabled",
+          "isStatic": false,
+          "tsSignatureId": "IsClientRedirectEnabled|:System.Boolean|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpPipelineTransportOptions",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 385876316
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpPipelineTransportOptions",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664573
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Azure.Core:Azure.Core.Pipeline.RedirectPolicy",
+      "clrName": "Azure.Core.Pipeline.RedirectPolicy",
+      "tsEmitName": "RedirectPolicy",
+      "assemblyName": "Azure.Core",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.RedirectPolicy::SetAllowAutoRedirect(Azure.Core.HttpMessage,System.Boolean):System.Void",
+          "clrName": "SetAllowAutoRedirect",
+          "tsEmitName": "setAllowAutoRedirect",
+          "metadataToken": 100664661,
+          "canonicalSignature": "(Azure.Core.HttpMessage,System.Boolean):System.Void",
+          "normalizedSignature": "SetAllowAutoRedirect|(Azure.Core.HttpMessage,System.Boolean):System.Void|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Azure.Core.Pipeline.RedirectPolicy",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.RedirectPolicy::ProcessAsync(Azure.Core.HttpMessage,System.ReadOnlyMemory_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):System.Threading.Tasks.ValueTask",
+          "clrName": "ProcessAsync",
+          "tsEmitName": "processAsync2",
+          "metadataToken": 100664667,
+          "canonicalSignature": "(Azure.Core.HttpMessage,System.ReadOnlyMemory_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):System.Threading.Tasks.ValueTask",
+          "normalizedSignature": "ProcessAsync|(Azure.Core.HttpMessage,System.ReadOnlyMemory_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):System.Threading.Tasks.ValueTask|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Azure.Core.Pipeline.RedirectPolicy",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.RedirectPolicy::Process(Azure.Core.HttpMessage,System.ReadOnlyMemory_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):System.Void",
+          "clrName": "Process",
+          "tsEmitName": "process2",
+          "metadataToken": 100664668,
+          "canonicalSignature": "(Azure.Core.HttpMessage,System.ReadOnlyMemory_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):System.Void",
+          "normalizedSignature": "Process|(Azure.Core.HttpMessage,System.ReadOnlyMemory_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Azure.Core.Pipeline.RedirectPolicy",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.RedirectPolicy::Process(Azure.Core.HttpMessage,System.ReadOnlyMemory_1):System.Void",
+          "clrName": "Process",
+          "tsEmitName": "process",
+          "metadataToken": 0,
+          "canonicalSignature": "(Azure.Core.HttpMessage,System.ReadOnlyMemory_1):System.Void",
+          "normalizedSignature": "Process|(Azure.Core.HttpMessage,System.ReadOnlyMemory_1):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Azure.Core.Pipeline.RedirectPolicy",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.RedirectPolicy::ProcessAsync(Azure.Core.HttpMessage,System.ReadOnlyMemory_1):System.Threading.Tasks.ValueTask",
+          "clrName": "ProcessAsync",
+          "tsEmitName": "processAsync",
+          "metadataToken": 0,
+          "canonicalSignature": "(Azure.Core.HttpMessage,System.ReadOnlyMemory_1):System.Threading.Tasks.ValueTask",
+          "normalizedSignature": "ProcessAsync|(Azure.Core.HttpMessage,System.ReadOnlyMemory_1):System.Threading.Tasks.ValueTask|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Azure.Core.Pipeline.RedirectPolicy",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "setAllowAutoRedirect",
+          "isStatic": true,
+          "tsSignatureId": "SetAllowAutoRedirect|(Azure.Core.HttpMessage,System.Boolean):System.Void|static=true",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.RedirectPolicy",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664661
+          }
+        },
+        {
+          "tsName": "processAsync2",
+          "isStatic": false,
+          "tsSignatureId": "ProcessAsync|(Azure.Core.HttpMessage,System.ReadOnlyMemory_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):System.Threading.Tasks.ValueTask|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.RedirectPolicy",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664667
+          }
+        },
+        {
+          "tsName": "process2",
+          "isStatic": false,
+          "tsSignatureId": "Process|(Azure.Core.HttpMessage,System.ReadOnlyMemory_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.RedirectPolicy",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664668
+          }
+        },
+        {
+          "tsName": "process",
+          "isStatic": false,
+          "tsSignatureId": "Process|(Azure.Core.HttpMessage,System.ReadOnlyMemory_1):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.RedirectPolicy",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 0
+          }
+        },
+        {
+          "tsName": "processAsync",
+          "isStatic": false,
+          "tsSignatureId": "ProcessAsync|(Azure.Core.HttpMessage,System.ReadOnlyMemory_1):System.Threading.Tasks.ValueTask|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.RedirectPolicy",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 0
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Azure.Core:Azure.Core.Pipeline.RetryPolicy",
+      "clrName": "Azure.Core.Pipeline.RetryPolicy",
+      "tsEmitName": "RetryPolicy",
+      "assemblyName": "Azure.Core",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.RetryPolicy::ProcessAsync(Azure.Core.HttpMessage,System.ReadOnlyMemory_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):System.Threading.Tasks.ValueTask",
+          "clrName": "ProcessAsync",
+          "tsEmitName": "processAsync2",
+          "metadataToken": 100664674,
+          "canonicalSignature": "(Azure.Core.HttpMessage,System.ReadOnlyMemory_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):System.Threading.Tasks.ValueTask",
+          "normalizedSignature": "ProcessAsync|(Azure.Core.HttpMessage,System.ReadOnlyMemory_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):System.Threading.Tasks.ValueTask|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Azure.Core.Pipeline.RetryPolicy",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.RetryPolicy::Process(Azure.Core.HttpMessage,System.ReadOnlyMemory_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):System.Void",
+          "clrName": "Process",
+          "tsEmitName": "process2",
+          "metadataToken": 100664675,
+          "canonicalSignature": "(Azure.Core.HttpMessage,System.ReadOnlyMemory_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):System.Void",
+          "normalizedSignature": "Process|(Azure.Core.HttpMessage,System.ReadOnlyMemory_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Azure.Core.Pipeline.RetryPolicy",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.RetryPolicy::Process(Azure.Core.HttpMessage,System.ReadOnlyMemory_1):System.Void",
+          "clrName": "Process",
+          "tsEmitName": "process",
+          "metadataToken": 0,
+          "canonicalSignature": "(Azure.Core.HttpMessage,System.ReadOnlyMemory_1):System.Void",
+          "normalizedSignature": "Process|(Azure.Core.HttpMessage,System.ReadOnlyMemory_1):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Azure.Core.Pipeline.RetryPolicy",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.RetryPolicy::ProcessAsync(Azure.Core.HttpMessage,System.ReadOnlyMemory_1):System.Threading.Tasks.ValueTask",
+          "clrName": "ProcessAsync",
+          "tsEmitName": "processAsync",
+          "metadataToken": 0,
+          "canonicalSignature": "(Azure.Core.HttpMessage,System.ReadOnlyMemory_1):System.Threading.Tasks.ValueTask",
+          "normalizedSignature": "ProcessAsync|(Azure.Core.HttpMessage,System.ReadOnlyMemory_1):System.Threading.Tasks.ValueTask|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Azure.Core.Pipeline.RetryPolicy",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.RetryPolicy::.ctor(System.Int32,Azure.Core.DelayStrategy):void",
+          "metadataToken": 100664673,
+          "canonicalSignature": "(System.Int32,Azure.Core.DelayStrategy):void",
+          "normalizedSignature": "constructor|(System.Int32,Azure.Core.DelayStrategy):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "declaringClrType": "Azure.Core.Pipeline.RetryPolicy",
+          "declaringAssemblyName": "Azure.Core"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "processAsync2",
+          "isStatic": false,
+          "tsSignatureId": "ProcessAsync|(Azure.Core.HttpMessage,System.ReadOnlyMemory_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):System.Threading.Tasks.ValueTask|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.RetryPolicy",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664674
+          }
+        },
+        {
+          "tsName": "process2",
+          "isStatic": false,
+          "tsSignatureId": "Process|(Azure.Core.HttpMessage,System.ReadOnlyMemory_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.RetryPolicy",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664675
+          }
+        },
+        {
+          "tsName": "process",
+          "isStatic": false,
+          "tsSignatureId": "Process|(Azure.Core.HttpMessage,System.ReadOnlyMemory_1):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.RetryPolicy",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 0
+          }
+        },
+        {
+          "tsName": "processAsync",
+          "isStatic": false,
+          "tsSignatureId": "ProcessAsync|(Azure.Core.HttpMessage,System.ReadOnlyMemory_1):System.Threading.Tasks.ValueTask|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.RetryPolicy",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 0
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.Int32,Azure.Core.DelayStrategy):void|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.RetryPolicy",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664673
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Azure.Core:Azure.Core.Pipeline.ServerCertificateCustomValidationArgs",
+      "clrName": "Azure.Core.Pipeline.ServerCertificateCustomValidationArgs",
+      "tsEmitName": "ServerCertificateCustomValidationArgs",
+      "assemblyName": "Azure.Core",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.ServerCertificateCustomValidationArgs::Certificate:System.Security.Cryptography.X509Certificates.X509Certificate2",
+          "clrName": "Certificate",
+          "tsEmitName": "certificate",
+          "metadataToken": 385876329,
+          "canonicalSignature": ":System.Security.Cryptography.X509Certificates.X509Certificate2",
+          "normalizedSignature": "Certificate|:System.Security.Cryptography.X509Certificates.X509Certificate2|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Azure.Core.Pipeline.ServerCertificateCustomValidationArgs",
+          "declaringAssemblyName": "Azure.Core"
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.ServerCertificateCustomValidationArgs::CertificateAuthorityChain:System.Security.Cryptography.X509Certificates.X509Chain",
+          "clrName": "CertificateAuthorityChain",
+          "tsEmitName": "certificateAuthorityChain",
+          "metadataToken": 385876330,
+          "canonicalSignature": ":System.Security.Cryptography.X509Certificates.X509Chain",
+          "normalizedSignature": "CertificateAuthorityChain|:System.Security.Cryptography.X509Certificates.X509Chain|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Azure.Core.Pipeline.ServerCertificateCustomValidationArgs",
+          "declaringAssemblyName": "Azure.Core"
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.ServerCertificateCustomValidationArgs::SslPolicyErrors:System.Net.Security.SslPolicyErrors",
+          "clrName": "SslPolicyErrors",
+          "tsEmitName": "sslPolicyErrors",
+          "metadataToken": 385876331,
+          "canonicalSignature": ":System.Net.Security.SslPolicyErrors",
+          "normalizedSignature": "SslPolicyErrors|:System.Net.Security.SslPolicyErrors|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Azure.Core.Pipeline.ServerCertificateCustomValidationArgs",
+          "declaringAssemblyName": "Azure.Core"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.ServerCertificateCustomValidationArgs::.ctor(System.Security.Cryptography.X509Certificates.X509Certificate2,System.Security.Cryptography.X509Certificates.X509Chain,System.Net.Security.SslPolicyErrors):void",
+          "metadataToken": 100664692,
+          "canonicalSignature": "(System.Security.Cryptography.X509Certificates.X509Certificate2,System.Security.Cryptography.X509Certificates.X509Chain,System.Net.Security.SslPolicyErrors):void",
+          "normalizedSignature": "constructor|(System.Security.Cryptography.X509Certificates.X509Certificate2,System.Security.Cryptography.X509Certificates.X509Chain,System.Net.Security.SslPolicyErrors):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3,
+          "declaringClrType": "Azure.Core.Pipeline.ServerCertificateCustomValidationArgs",
+          "declaringAssemblyName": "Azure.Core"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "certificate",
+          "isStatic": false,
+          "tsSignatureId": "Certificate|:System.Security.Cryptography.X509Certificates.X509Certificate2|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.ServerCertificateCustomValidationArgs",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 385876329
+          }
+        },
+        {
+          "tsName": "certificateAuthorityChain",
+          "isStatic": false,
+          "tsSignatureId": "CertificateAuthorityChain|:System.Security.Cryptography.X509Certificates.X509Chain|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.ServerCertificateCustomValidationArgs",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 385876330
+          }
+        },
+        {
+          "tsName": "sslPolicyErrors",
+          "isStatic": false,
+          "tsSignatureId": "SslPolicyErrors|:System.Net.Security.SslPolicyErrors|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.ServerCertificateCustomValidationArgs",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 385876331
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.Security.Cryptography.X509Certificates.X509Certificate2,System.Security.Cryptography.X509Certificates.X509Chain,System.Net.Security.SslPolicyErrors):void|static=false",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.ServerCertificateCustomValidationArgs",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664692
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipelineBuilder",
+      "clrName": "Azure.Core.Pipeline.HttpPipelineBuilder",
+      "tsEmitName": "HttpPipelineBuilder",
+      "assemblyName": "Azure.Core",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipelineBuilder::Build(Azure.Core.ClientOptions,Azure.Core.Pipeline.HttpPipelinePolicy[]):Azure.Core.Pipeline.HttpPipeline",
+          "clrName": "Build",
+          "tsEmitName": "build",
+          "metadataToken": 100664538,
+          "canonicalSignature": "(Azure.Core.ClientOptions,Azure.Core.Pipeline.HttpPipelinePolicy[]):Azure.Core.Pipeline.HttpPipeline",
+          "normalizedSignature": "Build|(Azure.Core.ClientOptions,Azure.Core.Pipeline.HttpPipelinePolicy[]):Azure.Core.Pipeline.HttpPipeline|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Azure.Core.Pipeline.HttpPipelineBuilder",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipelineBuilder::Build(Azure.Core.ClientOptions,Azure.Core.Pipeline.HttpPipelinePolicy[],Azure.Core.Pipeline.HttpPipelinePolicy[],Azure.Core.ResponseClassifier):Azure.Core.Pipeline.HttpPipeline",
+          "clrName": "Build",
+          "tsEmitName": "build",
+          "metadataToken": 100664539,
+          "canonicalSignature": "(Azure.Core.ClientOptions,Azure.Core.Pipeline.HttpPipelinePolicy[],Azure.Core.Pipeline.HttpPipelinePolicy[],Azure.Core.ResponseClassifier):Azure.Core.Pipeline.HttpPipeline",
+          "normalizedSignature": "Build|(Azure.Core.ClientOptions,Azure.Core.Pipeline.HttpPipelinePolicy[],Azure.Core.Pipeline.HttpPipelinePolicy[],Azure.Core.ResponseClassifier):Azure.Core.Pipeline.HttpPipeline|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 4,
+          "declaringClrType": "Azure.Core.Pipeline.HttpPipelineBuilder",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipelineBuilder::Build(Azure.Core.ClientOptions,Azure.Core.Pipeline.HttpPipelinePolicy[],Azure.Core.Pipeline.HttpPipelinePolicy[],Azure.Core.Pipeline.HttpPipelineTransportOptions,Azure.Core.ResponseClassifier):Azure.Core.Pipeline.DisposableHttpPipeline",
+          "clrName": "Build",
+          "tsEmitName": "build",
+          "metadataToken": 100664540,
+          "canonicalSignature": "(Azure.Core.ClientOptions,Azure.Core.Pipeline.HttpPipelinePolicy[],Azure.Core.Pipeline.HttpPipelinePolicy[],Azure.Core.Pipeline.HttpPipelineTransportOptions,Azure.Core.ResponseClassifier):Azure.Core.Pipeline.DisposableHttpPipeline",
+          "normalizedSignature": "Build|(Azure.Core.ClientOptions,Azure.Core.Pipeline.HttpPipelinePolicy[],Azure.Core.Pipeline.HttpPipelinePolicy[],Azure.Core.Pipeline.HttpPipelineTransportOptions,Azure.Core.ResponseClassifier):Azure.Core.Pipeline.DisposableHttpPipeline|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Azure.Core.Pipeline.HttpPipelineBuilder",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipelineBuilder::Build(Azure.Core.Pipeline.HttpPipelineOptions):Azure.Core.Pipeline.HttpPipeline",
+          "clrName": "Build",
+          "tsEmitName": "build",
+          "metadataToken": 100664541,
+          "canonicalSignature": "(Azure.Core.Pipeline.HttpPipelineOptions):Azure.Core.Pipeline.HttpPipeline",
+          "normalizedSignature": "Build|(Azure.Core.Pipeline.HttpPipelineOptions):Azure.Core.Pipeline.HttpPipeline|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Azure.Core.Pipeline.HttpPipelineBuilder",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipelineBuilder::Build(Azure.Core.Pipeline.HttpPipelineOptions,Azure.Core.Pipeline.HttpPipelineTransportOptions):Azure.Core.Pipeline.DisposableHttpPipeline",
+          "clrName": "Build",
+          "tsEmitName": "build",
+          "metadataToken": 100664542,
+          "canonicalSignature": "(Azure.Core.Pipeline.HttpPipelineOptions,Azure.Core.Pipeline.HttpPipelineTransportOptions):Azure.Core.Pipeline.DisposableHttpPipeline",
+          "normalizedSignature": "Build|(Azure.Core.Pipeline.HttpPipelineOptions,Azure.Core.Pipeline.HttpPipelineTransportOptions):Azure.Core.Pipeline.DisposableHttpPipeline|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Azure.Core.Pipeline.HttpPipelineBuilder",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "build",
+          "isStatic": true,
+          "tsSignatureId": "Build|(Azure.Core.ClientOptions,Azure.Core.Pipeline.HttpPipelinePolicy[]):Azure.Core.Pipeline.HttpPipeline|static=true",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpPipelineBuilder",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664538
+          }
+        },
+        {
+          "tsName": "build",
+          "isStatic": true,
+          "tsSignatureId": "Build|(Azure.Core.ClientOptions,Azure.Core.Pipeline.HttpPipelinePolicy[],Azure.Core.Pipeline.HttpPipelinePolicy[],Azure.Core.ResponseClassifier):Azure.Core.Pipeline.HttpPipeline|static=true",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpPipelineBuilder",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664539
+          }
+        },
+        {
+          "tsName": "build",
+          "isStatic": true,
+          "tsSignatureId": "Build|(Azure.Core.ClientOptions,Azure.Core.Pipeline.HttpPipelinePolicy[],Azure.Core.Pipeline.HttpPipelinePolicy[],Azure.Core.Pipeline.HttpPipelineTransportOptions,Azure.Core.ResponseClassifier):Azure.Core.Pipeline.DisposableHttpPipeline|static=true",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpPipelineBuilder",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664540
+          }
+        },
+        {
+          "tsName": "build",
+          "isStatic": true,
+          "tsSignatureId": "Build|(Azure.Core.Pipeline.HttpPipelineOptions):Azure.Core.Pipeline.HttpPipeline|static=true",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpPipelineBuilder",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664541
+          }
+        },
+        {
+          "tsName": "build",
+          "isStatic": true,
+          "tsSignatureId": "Build|(Azure.Core.Pipeline.HttpPipelineOptions,Azure.Core.Pipeline.HttpPipelineTransportOptions):Azure.Core.Pipeline.DisposableHttpPipeline|static=true",
+          "target": {
+            "declaringClrType": "Azure.Core.Pipeline.HttpPipelineBuilder",
+            "declaringAssemblyName": "Azure.Core",
+            "metadataToken": 100664542
+          }
+        }
+      ]
+    }
+  ]
+}

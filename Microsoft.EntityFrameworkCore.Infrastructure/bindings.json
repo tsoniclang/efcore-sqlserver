@@ -1,0 +1,669 @@
+{
+  "namespace": "Microsoft.EntityFrameworkCore.Infrastructure",
+  "types": [
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder",
+      "clrName": "Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder",
+      "tsEmitName": "AzureSqlDbContextOptionsBuilder",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder::EnableRetryOnFailure():Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder",
+          "clrName": "EnableRetryOnFailure",
+          "tsEmitName": "enableRetryOnFailure",
+          "metadataToken": 100664306,
+          "canonicalSignature": "():Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder",
+          "normalizedSignature": "EnableRetryOnFailure|():Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder::EnableRetryOnFailure(System.Int32):Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder",
+          "clrName": "EnableRetryOnFailure",
+          "tsEmitName": "enableRetryOnFailure",
+          "metadataToken": 100664307,
+          "canonicalSignature": "(System.Int32):Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder",
+          "normalizedSignature": "EnableRetryOnFailure|(System.Int32):Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder::EnableRetryOnFailure(System.Collections.Generic.ICollection_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder",
+          "clrName": "EnableRetryOnFailure",
+          "tsEmitName": "enableRetryOnFailure",
+          "metadataToken": 100664308,
+          "canonicalSignature": "(System.Collections.Generic.ICollection_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder",
+          "normalizedSignature": "EnableRetryOnFailure|(System.Collections.Generic.ICollection_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder::EnableRetryOnFailure(System.Int32,System.TimeSpan,System.Collections.Generic.IEnumerable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder",
+          "clrName": "EnableRetryOnFailure",
+          "tsEmitName": "enableRetryOnFailure",
+          "metadataToken": 100664309,
+          "canonicalSignature": "(System.Int32,System.TimeSpan,System.Collections.Generic.IEnumerable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder",
+          "normalizedSignature": "EnableRetryOnFailure|(System.Int32,System.TimeSpan,System.Collections.Generic.IEnumerable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder::UseCompatibilityLevel(System.Int32):Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder",
+          "clrName": "UseCompatibilityLevel",
+          "tsEmitName": "useCompatibilityLevel",
+          "metadataToken": 100664310,
+          "canonicalSignature": "(System.Int32):Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder",
+          "normalizedSignature": "UseCompatibilityLevel|(System.Int32):Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder::.ctor(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder):void",
+          "metadataToken": 100664305,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "enableRetryOnFailure",
+          "isStatic": false,
+          "tsSignatureId": "EnableRetryOnFailure|():Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664306
+          }
+        },
+        {
+          "tsName": "enableRetryOnFailure",
+          "isStatic": false,
+          "tsSignatureId": "EnableRetryOnFailure|(System.Int32):Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664307
+          }
+        },
+        {
+          "tsName": "enableRetryOnFailure",
+          "isStatic": false,
+          "tsSignatureId": "EnableRetryOnFailure|(System.Collections.Generic.ICollection_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664308
+          }
+        },
+        {
+          "tsName": "enableRetryOnFailure",
+          "isStatic": false,
+          "tsSignatureId": "EnableRetryOnFailure|(System.Int32,System.TimeSpan,System.Collections.Generic.IEnumerable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664309
+          }
+        },
+        {
+          "tsName": "useCompatibilityLevel",
+          "isStatic": false,
+          "tsSignatureId": "UseCompatibilityLevel|(System.Int32):Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664310
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664305
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder",
+      "clrName": "Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder",
+      "tsEmitName": "AzureSynapseDbContextOptionsBuilder",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder::EnableRetryOnFailure():Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder",
+          "clrName": "EnableRetryOnFailure",
+          "tsEmitName": "enableRetryOnFailure",
+          "metadataToken": 100664312,
+          "canonicalSignature": "():Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder",
+          "normalizedSignature": "EnableRetryOnFailure|():Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder::EnableRetryOnFailure(System.Int32):Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder",
+          "clrName": "EnableRetryOnFailure",
+          "tsEmitName": "enableRetryOnFailure",
+          "metadataToken": 100664313,
+          "canonicalSignature": "(System.Int32):Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder",
+          "normalizedSignature": "EnableRetryOnFailure|(System.Int32):Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder::EnableRetryOnFailure(System.Collections.Generic.ICollection_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder",
+          "clrName": "EnableRetryOnFailure",
+          "tsEmitName": "enableRetryOnFailure",
+          "metadataToken": 100664314,
+          "canonicalSignature": "(System.Collections.Generic.ICollection_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder",
+          "normalizedSignature": "EnableRetryOnFailure|(System.Collections.Generic.ICollection_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder::EnableRetryOnFailure(System.Int32,System.TimeSpan,System.Collections.Generic.IEnumerable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder",
+          "clrName": "EnableRetryOnFailure",
+          "tsEmitName": "enableRetryOnFailure",
+          "metadataToken": 100664315,
+          "canonicalSignature": "(System.Int32,System.TimeSpan,System.Collections.Generic.IEnumerable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder",
+          "normalizedSignature": "EnableRetryOnFailure|(System.Int32,System.TimeSpan,System.Collections.Generic.IEnumerable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder::UseCompatibilityLevel(System.Int32):Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder",
+          "clrName": "UseCompatibilityLevel",
+          "tsEmitName": "useCompatibilityLevel",
+          "metadataToken": 100664316,
+          "canonicalSignature": "(System.Int32):Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder",
+          "normalizedSignature": "UseCompatibilityLevel|(System.Int32):Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder::.ctor(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder):void",
+          "metadataToken": 100664311,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "enableRetryOnFailure",
+          "isStatic": false,
+          "tsSignatureId": "EnableRetryOnFailure|():Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664312
+          }
+        },
+        {
+          "tsName": "enableRetryOnFailure",
+          "isStatic": false,
+          "tsSignatureId": "EnableRetryOnFailure|(System.Int32):Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664313
+          }
+        },
+        {
+          "tsName": "enableRetryOnFailure",
+          "isStatic": false,
+          "tsSignatureId": "EnableRetryOnFailure|(System.Collections.Generic.ICollection_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664314
+          }
+        },
+        {
+          "tsName": "enableRetryOnFailure",
+          "isStatic": false,
+          "tsSignatureId": "EnableRetryOnFailure|(System.Int32,System.TimeSpan,System.Collections.Generic.IEnumerable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664315
+          }
+        },
+        {
+          "tsName": "useCompatibilityLevel",
+          "isStatic": false,
+          "tsSignatureId": "UseCompatibilityLevel|(System.Int32):Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664316
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664311
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilder",
+      "clrName": "Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilder",
+      "tsEmitName": "SqlEngineDbContextOptionsBuilder",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilder::EnableRetryOnFailure():Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilder",
+          "clrName": "EnableRetryOnFailure",
+          "tsEmitName": "enableRetryOnFailure",
+          "metadataToken": 100664318,
+          "canonicalSignature": "():Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilder",
+          "normalizedSignature": "EnableRetryOnFailure|():Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilder::EnableRetryOnFailureByDefault():Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilder",
+          "clrName": "EnableRetryOnFailureByDefault",
+          "tsEmitName": "enableRetryOnFailureByDefault",
+          "metadataToken": 100664319,
+          "canonicalSignature": "():Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilder",
+          "normalizedSignature": "EnableRetryOnFailureByDefault|():Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilder::EnableRetryOnFailure(System.Int32):Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilder",
+          "clrName": "EnableRetryOnFailure",
+          "tsEmitName": "enableRetryOnFailure",
+          "metadataToken": 100664320,
+          "canonicalSignature": "(System.Int32):Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilder",
+          "normalizedSignature": "EnableRetryOnFailure|(System.Int32):Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilder::EnableRetryOnFailure(System.Collections.Generic.ICollection_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilder",
+          "clrName": "EnableRetryOnFailure",
+          "tsEmitName": "enableRetryOnFailure",
+          "metadataToken": 100664321,
+          "canonicalSignature": "(System.Collections.Generic.ICollection_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilder",
+          "normalizedSignature": "EnableRetryOnFailure|(System.Collections.Generic.ICollection_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilder::EnableRetryOnFailure(System.Int32,System.TimeSpan,System.Collections.Generic.IEnumerable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilder",
+          "clrName": "EnableRetryOnFailure",
+          "tsEmitName": "enableRetryOnFailure",
+          "metadataToken": 100664322,
+          "canonicalSignature": "(System.Int32,System.TimeSpan,System.Collections.Generic.IEnumerable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilder",
+          "normalizedSignature": "EnableRetryOnFailure|(System.Int32,System.TimeSpan,System.Collections.Generic.IEnumerable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilder::.ctor(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder):void",
+          "metadataToken": 100664317,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "enableRetryOnFailure",
+          "isStatic": false,
+          "tsSignatureId": "EnableRetryOnFailure|():Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664318
+          }
+        },
+        {
+          "tsName": "enableRetryOnFailureByDefault",
+          "isStatic": false,
+          "tsSignatureId": "EnableRetryOnFailureByDefault|():Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664319
+          }
+        },
+        {
+          "tsName": "enableRetryOnFailure",
+          "isStatic": false,
+          "tsSignatureId": "EnableRetryOnFailure|(System.Int32):Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664320
+          }
+        },
+        {
+          "tsName": "enableRetryOnFailure",
+          "isStatic": false,
+          "tsSignatureId": "EnableRetryOnFailure|(System.Collections.Generic.ICollection_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664321
+          }
+        },
+        {
+          "tsName": "enableRetryOnFailure",
+          "isStatic": false,
+          "tsSignatureId": "EnableRetryOnFailure|(System.Int32,System.TimeSpan,System.Collections.Generic.IEnumerable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664322
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664317
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilderBase\u00601",
+      "clrName": "Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilderBase\u00601",
+      "tsEmitName": "SqlEngineDbContextOptionsBuilderBase_1",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder",
+      "clrName": "Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder",
+      "tsEmitName": "SqlServerDbContextOptionsBuilder",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder::EnableRetryOnFailure():Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder",
+          "clrName": "EnableRetryOnFailure",
+          "tsEmitName": "enableRetryOnFailure",
+          "metadataToken": 100664325,
+          "canonicalSignature": "():Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder",
+          "normalizedSignature": "EnableRetryOnFailure|():Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder::EnableRetryOnFailure(System.Int32):Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder",
+          "clrName": "EnableRetryOnFailure",
+          "tsEmitName": "enableRetryOnFailure",
+          "metadataToken": 100664326,
+          "canonicalSignature": "(System.Int32):Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder",
+          "normalizedSignature": "EnableRetryOnFailure|(System.Int32):Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder::EnableRetryOnFailure(System.Collections.Generic.ICollection_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder",
+          "clrName": "EnableRetryOnFailure",
+          "tsEmitName": "enableRetryOnFailure",
+          "metadataToken": 100664327,
+          "canonicalSignature": "(System.Collections.Generic.ICollection_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder",
+          "normalizedSignature": "EnableRetryOnFailure|(System.Collections.Generic.ICollection_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder::EnableRetryOnFailure(System.Int32,System.TimeSpan,System.Collections.Generic.IEnumerable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder",
+          "clrName": "EnableRetryOnFailure",
+          "tsEmitName": "enableRetryOnFailure",
+          "metadataToken": 100664328,
+          "canonicalSignature": "(System.Int32,System.TimeSpan,System.Collections.Generic.IEnumerable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder",
+          "normalizedSignature": "EnableRetryOnFailure|(System.Int32,System.TimeSpan,System.Collections.Generic.IEnumerable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder::UseCompatibilityLevel(System.Int32):Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder",
+          "clrName": "UseCompatibilityLevel",
+          "tsEmitName": "useCompatibilityLevel",
+          "metadataToken": 100664329,
+          "canonicalSignature": "(System.Int32):Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder",
+          "normalizedSignature": "UseCompatibilityLevel|(System.Int32):Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder::UseAzureSqlDefaults(System.Boolean):Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder",
+          "clrName": "UseAzureSqlDefaults",
+          "tsEmitName": "useAzureSqlDefaults",
+          "metadataToken": 100664330,
+          "canonicalSignature": "(System.Boolean):Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder",
+          "normalizedSignature": "UseAzureSqlDefaults|(System.Boolean):Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder::.ctor(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder):void",
+          "metadataToken": 100664324,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "enableRetryOnFailure",
+          "isStatic": false,
+          "tsSignatureId": "EnableRetryOnFailure|():Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664325
+          }
+        },
+        {
+          "tsName": "enableRetryOnFailure",
+          "isStatic": false,
+          "tsSignatureId": "EnableRetryOnFailure|(System.Int32):Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664326
+          }
+        },
+        {
+          "tsName": "enableRetryOnFailure",
+          "isStatic": false,
+          "tsSignatureId": "EnableRetryOnFailure|(System.Collections.Generic.ICollection_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664327
+          }
+        },
+        {
+          "tsName": "enableRetryOnFailure",
+          "isStatic": false,
+          "tsSignatureId": "EnableRetryOnFailure|(System.Int32,System.TimeSpan,System.Collections.Generic.IEnumerable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664328
+          }
+        },
+        {
+          "tsName": "useCompatibilityLevel",
+          "isStatic": false,
+          "tsSignatureId": "UseCompatibilityLevel|(System.Int32):Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664329
+          }
+        },
+        {
+          "tsName": "useAzureSqlDefaults",
+          "isStatic": false,
+          "tsSignatureId": "UseAzureSqlDefaults|(System.Boolean):Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664330
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664324
+          }
+        }
+      ]
+    }
+  ]
+}

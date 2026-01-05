@@ -1,0 +1,95 @@
+{
+  "namespace": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlExpressions",
+  "contributingAssemblies": [
+    "Microsoft.EntityFrameworkCore.SqlServer"
+  ],
+  "types": [
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlExpressions.SqlServerJsonObjectExpression",
+      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlExpressions.SqlServerJsonObjectExpression",
+      "tsEmitName": "SqlServerJsonObjectExpression",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlExpressions.SqlServerJsonObjectExpression::Quote():System.Linq.Expressions.Expression",
+          "clrName": "Quote",
+          "tsEmitName": "quote",
+          "normalizedSignature": "Quote|():System.Linq.Expressions.Expression|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 0,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlExpressions.SqlServerJsonObjectExpression::Equals(System.Object):System.Boolean",
+          "clrName": "Equals",
+          "tsEmitName": "equals",
+          "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlExpressions.SqlServerJsonObjectExpression::GetHashCode():System.Int32",
+          "clrName": "GetHashCode",
+          "tsEmitName": "getHashCode",
+          "normalizedSignature": "GetHashCode|():System.Int32|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 0,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlExpressions.SqlServerJsonObjectExpression::PropertyNames:System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "PropertyNames",
+          "tsEmitName": "propertyNames",
+          "normalizedSignature": "PropertyNames|:System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|(System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3
+        }
+      ]
+    }
+  ]
+}

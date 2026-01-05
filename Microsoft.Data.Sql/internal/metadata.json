@@ -1,0 +1,136 @@
+{
+  "namespace": "Microsoft.Data.Sql",
+  "contributingAssemblies": [
+    "Microsoft.Data.SqlClient"
+  ],
+  "types": [
+    {
+      "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.Sql.SqlDataSourceEnumerator",
+      "clrName": "Microsoft.Data.Sql.SqlDataSourceEnumerator",
+      "tsEmitName": "SqlDataSourceEnumerator",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.Sql.SqlDataSourceEnumerator::GetDataSources():System.Data.DataTable",
+          "clrName": "GetDataSources",
+          "tsEmitName": "getDataSources",
+          "normalizedSignature": "GetDataSources|():System.Data.DataTable|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 0,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.Sql.SqlDataSourceEnumerator::Instance:Microsoft.Data.Sql.SqlDataSourceEnumerator",
+          "clrName": "Instance",
+          "tsEmitName": "instance",
+          "normalizedSignature": "Instance|:Microsoft.Data.Sql.SqlDataSourceEnumerator|static=true|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.Sql.SqlNotificationRequest",
+      "clrName": "Microsoft.Data.Sql.SqlNotificationRequest",
+      "tsEmitName": "SqlNotificationRequest",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.Sql.SqlNotificationRequest::Options:System.String",
+          "clrName": "Options",
+          "tsEmitName": "options",
+          "normalizedSignature": "Options|:System.String|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.Sql.SqlNotificationRequest::Timeout:System.Int32",
+          "clrName": "Timeout",
+          "tsEmitName": "timeout",
+          "normalizedSignature": "Timeout|:System.Int32|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.Sql.SqlNotificationRequest::UserData:System.String",
+          "clrName": "UserData",
+          "tsEmitName": "userData",
+          "normalizedSignature": "UserData|:System.String|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0
+        },
+        {
+          "normalizedSignature": "constructor|(System.String,System.String,System.Int32):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "namespace": "Microsoft.Identity.Client.Region",
+  "types": [
+    {
+      "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Region.RegionOutcome",
+      "clrName": "Microsoft.Identity.Client.Region.RegionOutcome",
+      "tsEmitName": "RegionOutcome",
+      "assemblyName": "Microsoft.Identity.Client",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Region.RegionOutcome::value__System.Int32",
+          "clrName": "value__",
+          "tsEmitName": "value__",
+          "metadataToken": 67110662,
+          "normalizedSignature": "value__|System.Int32|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.Identity.Client.Region.RegionOutcome",
+          "declaringAssemblyName": "Microsoft.Identity.Client"
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Region.RegionOutcome::NoneMicrosoft.Identity.Client.Region.RegionOutcome",
+          "clrName": "None",
+          "tsEmitName": "none",
+          "metadataToken": 67110663,
+          "normalizedSignature": "None|Microsoft.Identity.Client.Region.RegionOutcome|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.Identity.Client.Region.RegionOutcome",
+          "declaringAssemblyName": "Microsoft.Identity.Client"
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Region.RegionOutcome::UserProvidedValidMicrosoft.Identity.Client.Region.RegionOutcome",
+          "clrName": "UserProvidedValid",
+          "tsEmitName": "userProvidedValid",
+          "metadataToken": 67110664,
+          "normalizedSignature": "UserProvidedValid|Microsoft.Identity.Client.Region.RegionOutcome|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.Identity.Client.Region.RegionOutcome",
+          "declaringAssemblyName": "Microsoft.Identity.Client"
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Region.RegionOutcome::UserProvidedAutodetectionFailedMicrosoft.Identity.Client.Region.RegionOutcome",
+          "clrName": "UserProvidedAutodetectionFailed",
+          "tsEmitName": "userProvidedAutodetectionFailed",
+          "metadataToken": 67110665,
+          "normalizedSignature": "UserProvidedAutodetectionFailed|Microsoft.Identity.Client.Region.RegionOutcome|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.Identity.Client.Region.RegionOutcome",
+          "declaringAssemblyName": "Microsoft.Identity.Client"
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Region.RegionOutcome::UserProvidedInvalidMicrosoft.Identity.Client.Region.RegionOutcome",
+          "clrName": "UserProvidedInvalid",
+          "tsEmitName": "userProvidedInvalid",
+          "metadataToken": 67110666,
+          "normalizedSignature": "UserProvidedInvalid|Microsoft.Identity.Client.Region.RegionOutcome|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.Identity.Client.Region.RegionOutcome",
+          "declaringAssemblyName": "Microsoft.Identity.Client"
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Region.RegionOutcome::AutodetectSuccessMicrosoft.Identity.Client.Region.RegionOutcome",
+          "clrName": "AutodetectSuccess",
+          "tsEmitName": "autodetectSuccess",
+          "metadataToken": 67110667,
+          "normalizedSignature": "AutodetectSuccess|Microsoft.Identity.Client.Region.RegionOutcome|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.Identity.Client.Region.RegionOutcome",
+          "declaringAssemblyName": "Microsoft.Identity.Client"
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Region.RegionOutcome::FallbackToGlobalMicrosoft.Identity.Client.Region.RegionOutcome",
+          "clrName": "FallbackToGlobal",
+          "tsEmitName": "fallbackToGlobal",
+          "metadataToken": 67110668,
+          "normalizedSignature": "FallbackToGlobal|Microsoft.Identity.Client.Region.RegionOutcome|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.Identity.Client.Region.RegionOutcome",
+          "declaringAssemblyName": "Microsoft.Identity.Client"
+        }
+      ],
+      "events": [],
+      "constructors": [],
+      "exposedFields": [
+        {
+          "tsName": "value__",
+          "isStatic": false,
+          "tsSignatureId": "value__|System.Int32|static=false|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Region.RegionOutcome",
+            "declaringAssemblyName": "Microsoft.Identity.Client",
+            "metadataToken": 67110662
+          }
+        },
+        {
+          "tsName": "none",
+          "isStatic": true,
+          "tsSignatureId": "None|Microsoft.Identity.Client.Region.RegionOutcome|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Region.RegionOutcome",
+            "declaringAssemblyName": "Microsoft.Identity.Client",
+            "metadataToken": 67110663
+          }
+        },
+        {
+          "tsName": "userProvidedValid",
+          "isStatic": true,
+          "tsSignatureId": "UserProvidedValid|Microsoft.Identity.Client.Region.RegionOutcome|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Region.RegionOutcome",
+            "declaringAssemblyName": "Microsoft.Identity.Client",
+            "metadataToken": 67110664
+          }
+        },
+        {
+          "tsName": "userProvidedAutodetectionFailed",
+          "isStatic": true,
+          "tsSignatureId": "UserProvidedAutodetectionFailed|Microsoft.Identity.Client.Region.RegionOutcome|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Region.RegionOutcome",
+            "declaringAssemblyName": "Microsoft.Identity.Client",
+            "metadataToken": 67110665
+          }
+        },
+        {
+          "tsName": "userProvidedInvalid",
+          "isStatic": true,
+          "tsSignatureId": "UserProvidedInvalid|Microsoft.Identity.Client.Region.RegionOutcome|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Region.RegionOutcome",
+            "declaringAssemblyName": "Microsoft.Identity.Client",
+            "metadataToken": 67110666
+          }
+        },
+        {
+          "tsName": "autodetectSuccess",
+          "isStatic": true,
+          "tsSignatureId": "AutodetectSuccess|Microsoft.Identity.Client.Region.RegionOutcome|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Region.RegionOutcome",
+            "declaringAssemblyName": "Microsoft.Identity.Client",
+            "metadataToken": 67110667
+          }
+        },
+        {
+          "tsName": "fallbackToGlobal",
+          "isStatic": true,
+          "tsSignatureId": "FallbackToGlobal|Microsoft.Identity.Client.Region.RegionOutcome|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.Identity.Client.Region.RegionOutcome",
+            "declaringAssemblyName": "Microsoft.Identity.Client",
+            "metadataToken": 67110668
+          }
+        }
+      ]
+    }
+  ]
+}

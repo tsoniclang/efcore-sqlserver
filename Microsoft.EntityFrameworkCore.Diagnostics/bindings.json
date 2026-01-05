@@ -1,0 +1,612 @@
+{
+  "namespace": "Microsoft.EntityFrameworkCore.Diagnostics",
+  "types": [
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Diagnostics.ConflictingValueGenerationStrategiesEventData",
+      "clrName": "Microsoft.EntityFrameworkCore.Diagnostics.ConflictingValueGenerationStrategiesEventData",
+      "tsEmitName": "ConflictingValueGenerationStrategiesEventData",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Diagnostics.ConflictingValueGenerationStrategiesEventData::SqlServerValueGenerationStrategy:Microsoft.EntityFrameworkCore.Metadata.SqlServerValueGenerationStrategy",
+          "clrName": "SqlServerValueGenerationStrategy",
+          "tsEmitName": "sqlServerValueGenerationStrategy",
+          "metadataToken": 385876093,
+          "canonicalSignature": ":Microsoft.EntityFrameworkCore.Metadata.SqlServerValueGenerationStrategy",
+          "normalizedSignature": "SqlServerValueGenerationStrategy|:Microsoft.EntityFrameworkCore.Metadata.SqlServerValueGenerationStrategy|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.ConflictingValueGenerationStrategiesEventData",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Diagnostics.ConflictingValueGenerationStrategiesEventData::OtherValueGenerationStrategy:System.String",
+          "clrName": "OtherValueGenerationStrategy",
+          "tsEmitName": "otherValueGenerationStrategy",
+          "metadataToken": 385876094,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "OtherValueGenerationStrategy|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.ConflictingValueGenerationStrategiesEventData",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Diagnostics.ConflictingValueGenerationStrategiesEventData::Property:Microsoft.EntityFrameworkCore.Metadata.IReadOnlyProperty",
+          "clrName": "Property",
+          "tsEmitName": "property",
+          "metadataToken": 385876095,
+          "canonicalSignature": ":Microsoft.EntityFrameworkCore.Metadata.IReadOnlyProperty",
+          "normalizedSignature": "Property|:Microsoft.EntityFrameworkCore.Metadata.IReadOnlyProperty|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.ConflictingValueGenerationStrategiesEventData",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Diagnostics.ConflictingValueGenerationStrategiesEventData::.ctor(Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase,System.Func_3[[Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.EntityFrameworkCore.Diagnostics.EventData,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.EntityFrameworkCore.Metadata.SqlServerValueGenerationStrategy,System.String,Microsoft.EntityFrameworkCore.Metadata.IReadOnlyProperty):void",
+          "metadataToken": 100664421,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase,System.Func_3[[Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.EntityFrameworkCore.Diagnostics.EventData,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.EntityFrameworkCore.Metadata.SqlServerValueGenerationStrategy,System.String,Microsoft.EntityFrameworkCore.Metadata.IReadOnlyProperty):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase,System.Func_3[[Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.EntityFrameworkCore.Diagnostics.EventData,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.EntityFrameworkCore.Metadata.SqlServerValueGenerationStrategy,System.String,Microsoft.EntityFrameworkCore.Metadata.IReadOnlyProperty):void|static=false",
+          "isStatic": false,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.ConflictingValueGenerationStrategiesEventData",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "sqlServerValueGenerationStrategy",
+          "isStatic": false,
+          "tsSignatureId": "SqlServerValueGenerationStrategy|:Microsoft.EntityFrameworkCore.Metadata.SqlServerValueGenerationStrategy|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.ConflictingValueGenerationStrategiesEventData",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876093
+          }
+        },
+        {
+          "tsName": "otherValueGenerationStrategy",
+          "isStatic": false,
+          "tsSignatureId": "OtherValueGenerationStrategy|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.ConflictingValueGenerationStrategiesEventData",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876094
+          }
+        },
+        {
+          "tsName": "property",
+          "isStatic": false,
+          "tsSignatureId": "Property|:Microsoft.EntityFrameworkCore.Metadata.IReadOnlyProperty|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.ConflictingValueGenerationStrategiesEventData",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 385876095
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase,System.Func_3[[Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.EntityFrameworkCore.Diagnostics.EventData,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.EntityFrameworkCore.Metadata.SqlServerValueGenerationStrategy,System.String,Microsoft.EntityFrameworkCore.Metadata.IReadOnlyProperty):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.ConflictingValueGenerationStrategiesEventData",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100664421
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
+      "clrName": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
+      "tsEmitName": "SqlServerEventId",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId::DecimalTypeKeyWarningMicrosoft.Extensions.Logging.EventId",
+          "clrName": "DecimalTypeKeyWarning",
+          "tsEmitName": "decimalTypeKeyWarning",
+          "metadataToken": 67109035,
+          "normalizedSignature": "DecimalTypeKeyWarning|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId::DecimalTypeDefaultWarningMicrosoft.Extensions.Logging.EventId",
+          "clrName": "DecimalTypeDefaultWarning",
+          "tsEmitName": "decimalTypeDefaultWarning",
+          "metadataToken": 67109036,
+          "normalizedSignature": "DecimalTypeDefaultWarning|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId::ByteIdentityColumnWarningMicrosoft.Extensions.Logging.EventId",
+          "clrName": "ByteIdentityColumnWarning",
+          "tsEmitName": "byteIdentityColumnWarning",
+          "metadataToken": 67109037,
+          "normalizedSignature": "ByteIdentityColumnWarning|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId::ConflictingValueGenerationStrategiesWarningMicrosoft.Extensions.Logging.EventId",
+          "clrName": "ConflictingValueGenerationStrategiesWarning",
+          "tsEmitName": "conflictingValueGenerationStrategiesWarning",
+          "metadataToken": 67109038,
+          "normalizedSignature": "ConflictingValueGenerationStrategiesWarning|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId::SavepointsDisabledBecauseOfMARSMicrosoft.Extensions.Logging.EventId",
+          "clrName": "SavepointsDisabledBecauseOfMARS",
+          "tsEmitName": "savepointsDisabledBecauseOfMARS",
+          "metadataToken": 67109040,
+          "normalizedSignature": "SavepointsDisabledBecauseOfMARS|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId::ColumnFoundMicrosoft.Extensions.Logging.EventId",
+          "clrName": "ColumnFound",
+          "tsEmitName": "columnFound",
+          "metadataToken": 67109042,
+          "normalizedSignature": "ColumnFound|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId::DefaultSchemaFoundMicrosoft.Extensions.Logging.EventId",
+          "clrName": "DefaultSchemaFound",
+          "tsEmitName": "defaultSchemaFound",
+          "metadataToken": 67109043,
+          "normalizedSignature": "DefaultSchemaFound|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId::TypeAliasFoundMicrosoft.Extensions.Logging.EventId",
+          "clrName": "TypeAliasFound",
+          "tsEmitName": "typeAliasFound",
+          "metadataToken": 67109044,
+          "normalizedSignature": "TypeAliasFound|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId::MissingSchemaWarningMicrosoft.Extensions.Logging.EventId",
+          "clrName": "MissingSchemaWarning",
+          "tsEmitName": "missingSchemaWarning",
+          "metadataToken": 67109045,
+          "normalizedSignature": "MissingSchemaWarning|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId::MissingTableWarningMicrosoft.Extensions.Logging.EventId",
+          "clrName": "MissingTableWarning",
+          "tsEmitName": "missingTableWarning",
+          "metadataToken": 67109046,
+          "normalizedSignature": "MissingTableWarning|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId::ForeignKeyReferencesMissingPrincipalTableWarningMicrosoft.Extensions.Logging.EventId",
+          "clrName": "ForeignKeyReferencesMissingPrincipalTableWarning",
+          "tsEmitName": "foreignKeyReferencesMissingPrincipalTableWarning",
+          "metadataToken": 67109047,
+          "normalizedSignature": "ForeignKeyReferencesMissingPrincipalTableWarning|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId::ForeignKeyReferencesUnknownPrincipalTableWarningMicrosoft.Extensions.Logging.EventId",
+          "clrName": "ForeignKeyReferencesUnknownPrincipalTableWarning",
+          "tsEmitName": "foreignKeyReferencesUnknownPrincipalTableWarning",
+          "metadataToken": 67109048,
+          "normalizedSignature": "ForeignKeyReferencesUnknownPrincipalTableWarning|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId::TableFoundMicrosoft.Extensions.Logging.EventId",
+          "clrName": "TableFound",
+          "tsEmitName": "tableFound",
+          "metadataToken": 67109049,
+          "normalizedSignature": "TableFound|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId::SequenceFoundMicrosoft.Extensions.Logging.EventId",
+          "clrName": "SequenceFound",
+          "tsEmitName": "sequenceFound",
+          "metadataToken": 67109050,
+          "normalizedSignature": "SequenceFound|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId::PrimaryKeyFoundMicrosoft.Extensions.Logging.EventId",
+          "clrName": "PrimaryKeyFound",
+          "tsEmitName": "primaryKeyFound",
+          "metadataToken": 67109051,
+          "normalizedSignature": "PrimaryKeyFound|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId::UniqueConstraintFoundMicrosoft.Extensions.Logging.EventId",
+          "clrName": "UniqueConstraintFound",
+          "tsEmitName": "uniqueConstraintFound",
+          "metadataToken": 67109052,
+          "normalizedSignature": "UniqueConstraintFound|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId::IndexFoundMicrosoft.Extensions.Logging.EventId",
+          "clrName": "IndexFound",
+          "tsEmitName": "indexFound",
+          "metadataToken": 67109053,
+          "normalizedSignature": "IndexFound|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId::ForeignKeyFoundMicrosoft.Extensions.Logging.EventId",
+          "clrName": "ForeignKeyFound",
+          "tsEmitName": "foreignKeyFound",
+          "metadataToken": 67109054,
+          "normalizedSignature": "ForeignKeyFound|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId::ForeignKeyPrincipalColumnMissingWarningMicrosoft.Extensions.Logging.EventId",
+          "clrName": "ForeignKeyPrincipalColumnMissingWarning",
+          "tsEmitName": "foreignKeyPrincipalColumnMissingWarning",
+          "metadataToken": 67109055,
+          "normalizedSignature": "ForeignKeyPrincipalColumnMissingWarning|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId::ReflexiveConstraintIgnoredMicrosoft.Extensions.Logging.EventId",
+          "clrName": "ReflexiveConstraintIgnored",
+          "tsEmitName": "reflexiveConstraintIgnored",
+          "metadataToken": 67109056,
+          "normalizedSignature": "ReflexiveConstraintIgnored|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId::DuplicateForeignKeyConstraintIgnoredMicrosoft.Extensions.Logging.EventId",
+          "clrName": "DuplicateForeignKeyConstraintIgnored",
+          "tsEmitName": "duplicateForeignKeyConstraintIgnored",
+          "metadataToken": 67109057,
+          "normalizedSignature": "DuplicateForeignKeyConstraintIgnored|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId::ColumnWithoutTypeWarningMicrosoft.Extensions.Logging.EventId",
+          "clrName": "ColumnWithoutTypeWarning",
+          "tsEmitName": "columnWithoutTypeWarning",
+          "metadataToken": 67109058,
+          "normalizedSignature": "ColumnWithoutTypeWarning|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId::MissingViewDefinitionRightsWarningMicrosoft.Extensions.Logging.EventId",
+          "clrName": "MissingViewDefinitionRightsWarning",
+          "tsEmitName": "missingViewDefinitionRightsWarning",
+          "metadataToken": 67109059,
+          "normalizedSignature": "MissingViewDefinitionRightsWarning|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "events": [],
+      "constructors": [],
+      "exposedFields": [
+        {
+          "tsName": "decimalTypeKeyWarning",
+          "isStatic": true,
+          "tsSignatureId": "DecimalTypeKeyWarning|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109035
+          }
+        },
+        {
+          "tsName": "decimalTypeDefaultWarning",
+          "isStatic": true,
+          "tsSignatureId": "DecimalTypeDefaultWarning|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109036
+          }
+        },
+        {
+          "tsName": "byteIdentityColumnWarning",
+          "isStatic": true,
+          "tsSignatureId": "ByteIdentityColumnWarning|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109037
+          }
+        },
+        {
+          "tsName": "conflictingValueGenerationStrategiesWarning",
+          "isStatic": true,
+          "tsSignatureId": "ConflictingValueGenerationStrategiesWarning|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109038
+          }
+        },
+        {
+          "tsName": "savepointsDisabledBecauseOfMARS",
+          "isStatic": true,
+          "tsSignatureId": "SavepointsDisabledBecauseOfMARS|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109040
+          }
+        },
+        {
+          "tsName": "columnFound",
+          "isStatic": true,
+          "tsSignatureId": "ColumnFound|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109042
+          }
+        },
+        {
+          "tsName": "defaultSchemaFound",
+          "isStatic": true,
+          "tsSignatureId": "DefaultSchemaFound|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109043
+          }
+        },
+        {
+          "tsName": "typeAliasFound",
+          "isStatic": true,
+          "tsSignatureId": "TypeAliasFound|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109044
+          }
+        },
+        {
+          "tsName": "missingSchemaWarning",
+          "isStatic": true,
+          "tsSignatureId": "MissingSchemaWarning|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109045
+          }
+        },
+        {
+          "tsName": "missingTableWarning",
+          "isStatic": true,
+          "tsSignatureId": "MissingTableWarning|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109046
+          }
+        },
+        {
+          "tsName": "foreignKeyReferencesMissingPrincipalTableWarning",
+          "isStatic": true,
+          "tsSignatureId": "ForeignKeyReferencesMissingPrincipalTableWarning|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109047
+          }
+        },
+        {
+          "tsName": "foreignKeyReferencesUnknownPrincipalTableWarning",
+          "isStatic": true,
+          "tsSignatureId": "ForeignKeyReferencesUnknownPrincipalTableWarning|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109048
+          }
+        },
+        {
+          "tsName": "tableFound",
+          "isStatic": true,
+          "tsSignatureId": "TableFound|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109049
+          }
+        },
+        {
+          "tsName": "sequenceFound",
+          "isStatic": true,
+          "tsSignatureId": "SequenceFound|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109050
+          }
+        },
+        {
+          "tsName": "primaryKeyFound",
+          "isStatic": true,
+          "tsSignatureId": "PrimaryKeyFound|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109051
+          }
+        },
+        {
+          "tsName": "uniqueConstraintFound",
+          "isStatic": true,
+          "tsSignatureId": "UniqueConstraintFound|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109052
+          }
+        },
+        {
+          "tsName": "indexFound",
+          "isStatic": true,
+          "tsSignatureId": "IndexFound|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109053
+          }
+        },
+        {
+          "tsName": "foreignKeyFound",
+          "isStatic": true,
+          "tsSignatureId": "ForeignKeyFound|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109054
+          }
+        },
+        {
+          "tsName": "foreignKeyPrincipalColumnMissingWarning",
+          "isStatic": true,
+          "tsSignatureId": "ForeignKeyPrincipalColumnMissingWarning|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109055
+          }
+        },
+        {
+          "tsName": "reflexiveConstraintIgnored",
+          "isStatic": true,
+          "tsSignatureId": "ReflexiveConstraintIgnored|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109056
+          }
+        },
+        {
+          "tsName": "duplicateForeignKeyConstraintIgnored",
+          "isStatic": true,
+          "tsSignatureId": "DuplicateForeignKeyConstraintIgnored|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109057
+          }
+        },
+        {
+          "tsName": "columnWithoutTypeWarning",
+          "isStatic": true,
+          "tsSignatureId": "ColumnWithoutTypeWarning|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109058
+          }
+        },
+        {
+          "tsName": "missingViewDefinitionRightsWarning",
+          "isStatic": true,
+          "tsSignatureId": "MissingViewDefinitionRightsWarning|Microsoft.Extensions.Logging.EventId|static=true|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 67109059
+          }
+        }
+      ]
+    }
+  ]
+}

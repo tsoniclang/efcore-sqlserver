@@ -1,0 +1,476 @@
+{
+  "namespace": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal",
+  "types": [
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerAnnotationCodeGenerator",
+      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerAnnotationCodeGenerator",
+      "tsEmitName": "SqlServerAnnotationCodeGenerator",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerAnnotationCodeGenerator::GenerateFluentApiCalls(Microsoft.EntityFrameworkCore.Metadata.IModel,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Design.MethodCallCodeFragment,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "GenerateFluentApiCalls",
+          "tsEmitName": "generateFluentApiCalls",
+          "metadataToken": 100665260,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IModel,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Design.MethodCallCodeFragment,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "GenerateFluentApiCalls|(Microsoft.EntityFrameworkCore.Metadata.IModel,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Design.MethodCallCodeFragment,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerAnnotationCodeGenerator",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerAnnotationCodeGenerator::GenerateFluentApiCalls(Microsoft.EntityFrameworkCore.Metadata.IProperty,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Design.MethodCallCodeFragment,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "GenerateFluentApiCalls",
+          "tsEmitName": "generateFluentApiCalls",
+          "metadataToken": 100665261,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IProperty,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Design.MethodCallCodeFragment,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "GenerateFluentApiCalls|(Microsoft.EntityFrameworkCore.Metadata.IProperty,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Design.MethodCallCodeFragment,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerAnnotationCodeGenerator",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerAnnotationCodeGenerator::GenerateFluentApiCalls(Microsoft.EntityFrameworkCore.Metadata.IEntityType,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Design.MethodCallCodeFragment,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "GenerateFluentApiCalls",
+          "tsEmitName": "generateFluentApiCalls",
+          "metadataToken": 100665262,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IEntityType,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Design.MethodCallCodeFragment,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "GenerateFluentApiCalls|(Microsoft.EntityFrameworkCore.Metadata.IEntityType,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Design.MethodCallCodeFragment,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerAnnotationCodeGenerator",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerAnnotationCodeGenerator::.ctor(Microsoft.EntityFrameworkCore.Design.AnnotationCodeGeneratorDependencies):void",
+          "metadataToken": 100665259,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Design.AnnotationCodeGeneratorDependencies):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Design.AnnotationCodeGeneratorDependencies):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerAnnotationCodeGenerator",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "generateFluentApiCalls",
+          "isStatic": false,
+          "tsSignatureId": "GenerateFluentApiCalls|(Microsoft.EntityFrameworkCore.Metadata.IModel,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Design.MethodCallCodeFragment,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerAnnotationCodeGenerator",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665260
+          }
+        },
+        {
+          "tsName": "generateFluentApiCalls",
+          "isStatic": false,
+          "tsSignatureId": "GenerateFluentApiCalls|(Microsoft.EntityFrameworkCore.Metadata.IProperty,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Design.MethodCallCodeFragment,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerAnnotationCodeGenerator",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665261
+          }
+        },
+        {
+          "tsName": "generateFluentApiCalls",
+          "isStatic": false,
+          "tsSignatureId": "GenerateFluentApiCalls|(Microsoft.EntityFrameworkCore.Metadata.IEntityType,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Design.MethodCallCodeFragment,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerAnnotationCodeGenerator",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665262
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Design.AnnotationCodeGeneratorDependencies):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerAnnotationCodeGenerator",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665259
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerCSharpRuntimeAnnotationCodeGenerator",
+      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerCSharpRuntimeAnnotationCodeGenerator",
+      "tsEmitName": "SqlServerCSharpRuntimeAnnotationCodeGenerator",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerCSharpRuntimeAnnotationCodeGenerator::Generate(Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Design.Internal.CSharpRuntimeAnnotationCodeGeneratorParameters):System.Void",
+          "clrName": "Generate",
+          "tsEmitName": "generate",
+          "metadataToken": 100665272,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Design.Internal.CSharpRuntimeAnnotationCodeGeneratorParameters):System.Void",
+          "normalizedSignature": "Generate|(Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Design.Internal.CSharpRuntimeAnnotationCodeGeneratorParameters):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerCSharpRuntimeAnnotationCodeGenerator",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerCSharpRuntimeAnnotationCodeGenerator::Generate(Microsoft.EntityFrameworkCore.Metadata.IRelationalModel,Microsoft.EntityFrameworkCore.Design.Internal.CSharpRuntimeAnnotationCodeGeneratorParameters):System.Void",
+          "clrName": "Generate",
+          "tsEmitName": "generate",
+          "metadataToken": 100665273,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IRelationalModel,Microsoft.EntityFrameworkCore.Design.Internal.CSharpRuntimeAnnotationCodeGeneratorParameters):System.Void",
+          "normalizedSignature": "Generate|(Microsoft.EntityFrameworkCore.Metadata.IRelationalModel,Microsoft.EntityFrameworkCore.Design.Internal.CSharpRuntimeAnnotationCodeGeneratorParameters):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerCSharpRuntimeAnnotationCodeGenerator",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerCSharpRuntimeAnnotationCodeGenerator::Generate(Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Design.Internal.CSharpRuntimeAnnotationCodeGeneratorParameters):System.Void",
+          "clrName": "Generate",
+          "tsEmitName": "generate",
+          "metadataToken": 100665274,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Design.Internal.CSharpRuntimeAnnotationCodeGeneratorParameters):System.Void",
+          "normalizedSignature": "Generate|(Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Design.Internal.CSharpRuntimeAnnotationCodeGeneratorParameters):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerCSharpRuntimeAnnotationCodeGenerator",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerCSharpRuntimeAnnotationCodeGenerator::Generate(Microsoft.EntityFrameworkCore.Metadata.IColumn,Microsoft.EntityFrameworkCore.Design.Internal.CSharpRuntimeAnnotationCodeGeneratorParameters):System.Void",
+          "clrName": "Generate",
+          "tsEmitName": "generate",
+          "metadataToken": 100665275,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IColumn,Microsoft.EntityFrameworkCore.Design.Internal.CSharpRuntimeAnnotationCodeGeneratorParameters):System.Void",
+          "normalizedSignature": "Generate|(Microsoft.EntityFrameworkCore.Metadata.IColumn,Microsoft.EntityFrameworkCore.Design.Internal.CSharpRuntimeAnnotationCodeGeneratorParameters):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerCSharpRuntimeAnnotationCodeGenerator",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerCSharpRuntimeAnnotationCodeGenerator::Generate(Microsoft.EntityFrameworkCore.Metadata.IIndex,Microsoft.EntityFrameworkCore.Design.Internal.CSharpRuntimeAnnotationCodeGeneratorParameters):System.Void",
+          "clrName": "Generate",
+          "tsEmitName": "generate",
+          "metadataToken": 100665276,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IIndex,Microsoft.EntityFrameworkCore.Design.Internal.CSharpRuntimeAnnotationCodeGeneratorParameters):System.Void",
+          "normalizedSignature": "Generate|(Microsoft.EntityFrameworkCore.Metadata.IIndex,Microsoft.EntityFrameworkCore.Design.Internal.CSharpRuntimeAnnotationCodeGeneratorParameters):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerCSharpRuntimeAnnotationCodeGenerator",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerCSharpRuntimeAnnotationCodeGenerator::Generate(Microsoft.EntityFrameworkCore.Metadata.ITableIndex,Microsoft.EntityFrameworkCore.Design.Internal.CSharpRuntimeAnnotationCodeGeneratorParameters):System.Void",
+          "clrName": "Generate",
+          "tsEmitName": "generate",
+          "metadataToken": 100665277,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.ITableIndex,Microsoft.EntityFrameworkCore.Design.Internal.CSharpRuntimeAnnotationCodeGeneratorParameters):System.Void",
+          "normalizedSignature": "Generate|(Microsoft.EntityFrameworkCore.Metadata.ITableIndex,Microsoft.EntityFrameworkCore.Design.Internal.CSharpRuntimeAnnotationCodeGeneratorParameters):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerCSharpRuntimeAnnotationCodeGenerator",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerCSharpRuntimeAnnotationCodeGenerator::Generate(Microsoft.EntityFrameworkCore.Metadata.IKey,Microsoft.EntityFrameworkCore.Design.Internal.CSharpRuntimeAnnotationCodeGeneratorParameters):System.Void",
+          "clrName": "Generate",
+          "tsEmitName": "generate",
+          "metadataToken": 100665278,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IKey,Microsoft.EntityFrameworkCore.Design.Internal.CSharpRuntimeAnnotationCodeGeneratorParameters):System.Void",
+          "normalizedSignature": "Generate|(Microsoft.EntityFrameworkCore.Metadata.IKey,Microsoft.EntityFrameworkCore.Design.Internal.CSharpRuntimeAnnotationCodeGeneratorParameters):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerCSharpRuntimeAnnotationCodeGenerator",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerCSharpRuntimeAnnotationCodeGenerator::Generate(Microsoft.EntityFrameworkCore.Metadata.IUniqueConstraint,Microsoft.EntityFrameworkCore.Design.Internal.CSharpRuntimeAnnotationCodeGeneratorParameters):System.Void",
+          "clrName": "Generate",
+          "tsEmitName": "generate",
+          "metadataToken": 100665279,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IUniqueConstraint,Microsoft.EntityFrameworkCore.Design.Internal.CSharpRuntimeAnnotationCodeGeneratorParameters):System.Void",
+          "normalizedSignature": "Generate|(Microsoft.EntityFrameworkCore.Metadata.IUniqueConstraint,Microsoft.EntityFrameworkCore.Design.Internal.CSharpRuntimeAnnotationCodeGeneratorParameters):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerCSharpRuntimeAnnotationCodeGenerator",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerCSharpRuntimeAnnotationCodeGenerator::Generate(Microsoft.EntityFrameworkCore.Metadata.IEntityType,Microsoft.EntityFrameworkCore.Design.Internal.CSharpRuntimeAnnotationCodeGeneratorParameters):System.Void",
+          "clrName": "Generate",
+          "tsEmitName": "generate",
+          "metadataToken": 100665280,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IEntityType,Microsoft.EntityFrameworkCore.Design.Internal.CSharpRuntimeAnnotationCodeGeneratorParameters):System.Void",
+          "normalizedSignature": "Generate|(Microsoft.EntityFrameworkCore.Metadata.IEntityType,Microsoft.EntityFrameworkCore.Design.Internal.CSharpRuntimeAnnotationCodeGeneratorParameters):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerCSharpRuntimeAnnotationCodeGenerator",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerCSharpRuntimeAnnotationCodeGenerator::Generate(Microsoft.EntityFrameworkCore.Metadata.ITable,Microsoft.EntityFrameworkCore.Design.Internal.CSharpRuntimeAnnotationCodeGeneratorParameters):System.Void",
+          "clrName": "Generate",
+          "tsEmitName": "generate",
+          "metadataToken": 100665281,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.ITable,Microsoft.EntityFrameworkCore.Design.Internal.CSharpRuntimeAnnotationCodeGeneratorParameters):System.Void",
+          "normalizedSignature": "Generate|(Microsoft.EntityFrameworkCore.Metadata.ITable,Microsoft.EntityFrameworkCore.Design.Internal.CSharpRuntimeAnnotationCodeGeneratorParameters):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerCSharpRuntimeAnnotationCodeGenerator",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerCSharpRuntimeAnnotationCodeGenerator::Generate(Microsoft.EntityFrameworkCore.Metadata.IRelationalPropertyOverrides,Microsoft.EntityFrameworkCore.Design.Internal.CSharpRuntimeAnnotationCodeGeneratorParameters):System.Void",
+          "clrName": "Generate",
+          "tsEmitName": "generate",
+          "metadataToken": 100665282,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IRelationalPropertyOverrides,Microsoft.EntityFrameworkCore.Design.Internal.CSharpRuntimeAnnotationCodeGeneratorParameters):System.Void",
+          "normalizedSignature": "Generate|(Microsoft.EntityFrameworkCore.Metadata.IRelationalPropertyOverrides,Microsoft.EntityFrameworkCore.Design.Internal.CSharpRuntimeAnnotationCodeGeneratorParameters):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerCSharpRuntimeAnnotationCodeGenerator",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerCSharpRuntimeAnnotationCodeGenerator::.ctor(Microsoft.EntityFrameworkCore.Design.Internal.CSharpRuntimeAnnotationCodeGeneratorDependencies,Microsoft.EntityFrameworkCore.Design.Internal.RelationalCSharpRuntimeAnnotationCodeGeneratorDependencies):void",
+          "metadataToken": 100665271,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Design.Internal.CSharpRuntimeAnnotationCodeGeneratorDependencies,Microsoft.EntityFrameworkCore.Design.Internal.RelationalCSharpRuntimeAnnotationCodeGeneratorDependencies):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Design.Internal.CSharpRuntimeAnnotationCodeGeneratorDependencies,Microsoft.EntityFrameworkCore.Design.Internal.RelationalCSharpRuntimeAnnotationCodeGeneratorDependencies):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerCSharpRuntimeAnnotationCodeGenerator",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "generate",
+          "isStatic": false,
+          "tsSignatureId": "Generate|(Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Design.Internal.CSharpRuntimeAnnotationCodeGeneratorParameters):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerCSharpRuntimeAnnotationCodeGenerator",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665272
+          }
+        },
+        {
+          "tsName": "generate",
+          "isStatic": false,
+          "tsSignatureId": "Generate|(Microsoft.EntityFrameworkCore.Metadata.IRelationalModel,Microsoft.EntityFrameworkCore.Design.Internal.CSharpRuntimeAnnotationCodeGeneratorParameters):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerCSharpRuntimeAnnotationCodeGenerator",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665273
+          }
+        },
+        {
+          "tsName": "generate",
+          "isStatic": false,
+          "tsSignatureId": "Generate|(Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Design.Internal.CSharpRuntimeAnnotationCodeGeneratorParameters):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerCSharpRuntimeAnnotationCodeGenerator",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665274
+          }
+        },
+        {
+          "tsName": "generate",
+          "isStatic": false,
+          "tsSignatureId": "Generate|(Microsoft.EntityFrameworkCore.Metadata.IColumn,Microsoft.EntityFrameworkCore.Design.Internal.CSharpRuntimeAnnotationCodeGeneratorParameters):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerCSharpRuntimeAnnotationCodeGenerator",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665275
+          }
+        },
+        {
+          "tsName": "generate",
+          "isStatic": false,
+          "tsSignatureId": "Generate|(Microsoft.EntityFrameworkCore.Metadata.IIndex,Microsoft.EntityFrameworkCore.Design.Internal.CSharpRuntimeAnnotationCodeGeneratorParameters):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerCSharpRuntimeAnnotationCodeGenerator",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665276
+          }
+        },
+        {
+          "tsName": "generate",
+          "isStatic": false,
+          "tsSignatureId": "Generate|(Microsoft.EntityFrameworkCore.Metadata.ITableIndex,Microsoft.EntityFrameworkCore.Design.Internal.CSharpRuntimeAnnotationCodeGeneratorParameters):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerCSharpRuntimeAnnotationCodeGenerator",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665277
+          }
+        },
+        {
+          "tsName": "generate",
+          "isStatic": false,
+          "tsSignatureId": "Generate|(Microsoft.EntityFrameworkCore.Metadata.IKey,Microsoft.EntityFrameworkCore.Design.Internal.CSharpRuntimeAnnotationCodeGeneratorParameters):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerCSharpRuntimeAnnotationCodeGenerator",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665278
+          }
+        },
+        {
+          "tsName": "generate",
+          "isStatic": false,
+          "tsSignatureId": "Generate|(Microsoft.EntityFrameworkCore.Metadata.IUniqueConstraint,Microsoft.EntityFrameworkCore.Design.Internal.CSharpRuntimeAnnotationCodeGeneratorParameters):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerCSharpRuntimeAnnotationCodeGenerator",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665279
+          }
+        },
+        {
+          "tsName": "generate",
+          "isStatic": false,
+          "tsSignatureId": "Generate|(Microsoft.EntityFrameworkCore.Metadata.IEntityType,Microsoft.EntityFrameworkCore.Design.Internal.CSharpRuntimeAnnotationCodeGeneratorParameters):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerCSharpRuntimeAnnotationCodeGenerator",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665280
+          }
+        },
+        {
+          "tsName": "generate",
+          "isStatic": false,
+          "tsSignatureId": "Generate|(Microsoft.EntityFrameworkCore.Metadata.ITable,Microsoft.EntityFrameworkCore.Design.Internal.CSharpRuntimeAnnotationCodeGeneratorParameters):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerCSharpRuntimeAnnotationCodeGenerator",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665281
+          }
+        },
+        {
+          "tsName": "generate",
+          "isStatic": false,
+          "tsSignatureId": "Generate|(Microsoft.EntityFrameworkCore.Metadata.IRelationalPropertyOverrides,Microsoft.EntityFrameworkCore.Design.Internal.CSharpRuntimeAnnotationCodeGeneratorParameters):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerCSharpRuntimeAnnotationCodeGenerator",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665282
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Design.Internal.CSharpRuntimeAnnotationCodeGeneratorDependencies,Microsoft.EntityFrameworkCore.Design.Internal.RelationalCSharpRuntimeAnnotationCodeGeneratorDependencies):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerCSharpRuntimeAnnotationCodeGenerator",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665271
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerDesignTimeServices",
+      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerDesignTimeServices",
+      "tsEmitName": "SqlServerDesignTimeServices",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerDesignTimeServices::ConfigureDesignTimeServices(Microsoft.Extensions.DependencyInjection.IServiceCollection):System.Void",
+          "clrName": "ConfigureDesignTimeServices",
+          "tsEmitName": "configureDesignTimeServices",
+          "metadataToken": 100665283,
+          "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection):System.Void",
+          "normalizedSignature": "ConfigureDesignTimeServices|(Microsoft.Extensions.DependencyInjection.IServiceCollection):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerDesignTimeServices",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerDesignTimeServices::.ctor():void",
+          "metadataToken": 100665284,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerDesignTimeServices",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "configureDesignTimeServices",
+          "isStatic": false,
+          "tsSignatureId": "ConfigureDesignTimeServices|(Microsoft.Extensions.DependencyInjection.IServiceCollection):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerDesignTimeServices",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665283
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerDesignTimeServices",
+            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+            "metadataToken": 100665284
+          }
+        }
+      ]
+    }
+  ]
+}
