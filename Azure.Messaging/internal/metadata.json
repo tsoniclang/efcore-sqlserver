@@ -141,7 +141,7 @@
         {
           "stableId": "Azure.Core:Azure.Messaging.CloudEvent::Type:System.String",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "normalizedSignature": "Type|:System.String|static=false|accessor=getset",
           "provenance": "Original",
           "emitScope": "ClassSurface",

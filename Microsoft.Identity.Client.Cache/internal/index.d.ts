@@ -11,7 +11,7 @@ import type { Byte, Enum, IComparable, IConvertible, IFormattable, Int32, ISpanF
 
 export enum CacheLevel {
     none = 0,
-    unknown_ = 1,
+    unknown = 1,
     l1Cache = 2,
     l2Cache = 3
 }

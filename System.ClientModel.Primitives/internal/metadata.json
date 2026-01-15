@@ -29,7 +29,7 @@
         {
           "stableId": "System.ClientModel:System.ClientModel.Primitives.ClientErrorBehaviors::DefaultSystem.ClientModel.Primitives.ClientErrorBehaviors",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "normalizedSignature": "Default|System.ClientModel.Primitives.ClientErrorBehaviors|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -1429,7 +1429,7 @@
         {
           "stableId": "System.ClientModel:System.ClientModel.Primitives.ClientRetryPolicy::Default:System.ClientModel.Primitives.ClientRetryPolicy",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "normalizedSignature": "Default|:System.ClientModel.Primitives.ClientRetryPolicy|static=true|accessor=get",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -1813,7 +1813,7 @@
         {
           "stableId": "System.ClientModel:System.ClientModel.Primitives.MessageLoggingPolicy::Default:System.ClientModel.Primitives.MessageLoggingPolicy",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "normalizedSignature": "Default|:System.ClientModel.Primitives.MessageLoggingPolicy|static=true|accessor=get",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -2455,7 +2455,7 @@
         {
           "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelineMessageClassifier::Default:System.ClientModel.Primitives.PipelineMessageClassifier",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "normalizedSignature": "Default|:System.ClientModel.Primitives.PipelineMessageClassifier|static=true|accessor=get",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -2645,7 +2645,7 @@
         {
           "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelineRequestHeaders::Set(System.String,System.String):System.Void",
           "clrName": "Set",
-          "tsEmitName": "set_",
+          "tsEmitName": "set",
           "normalizedSignature": "Set|(System.String,System.String):System.Void|static=false",
           "provenance": "Original",
           "emitScope": "ClassSurface",

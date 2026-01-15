@@ -35,7 +35,7 @@
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Cache.CacheLevel::UnknownMicrosoft.Identity.Client.Cache.CacheLevel",
           "clrName": "Unknown",
-          "tsEmitName": "unknown_",
+          "tsEmitName": "unknown",
           "metadataToken": 67110814,
           "normalizedSignature": "Unknown|Microsoft.Identity.Client.Cache.CacheLevel|static=true|const=true",
           "isStatic": true,
@@ -90,7 +90,7 @@
           }
         },
         {
-          "tsName": "unknown_",
+          "tsName": "unknown",
           "isStatic": true,
           "tsSignatureId": "Unknown|Microsoft.Identity.Client.Cache.CacheLevel|static=true|const=true",
           "target": {

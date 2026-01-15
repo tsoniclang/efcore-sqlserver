@@ -24,7 +24,7 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType::UnknownMicrosoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType",
           "clrName": "Unknown",
-          "tsEmitName": "unknown_",
+          "tsEmitName": "unknown",
           "metadataToken": 67109416,
           "normalizedSignature": "Unknown|Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType|static=true|const=true",
           "isStatic": true,
@@ -80,7 +80,7 @@
           }
         },
         {
-          "tsName": "unknown_",
+          "tsName": "unknown",
           "isStatic": true,
           "tsSignatureId": "Unknown|Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType|static=true|const=true",
           "target": {

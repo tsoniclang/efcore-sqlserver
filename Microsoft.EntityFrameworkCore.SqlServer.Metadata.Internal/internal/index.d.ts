@@ -14,11 +14,11 @@ import * as Microsoft_EntityFrameworkCore_Metadata_Internal from "@tsonic/efcore
 import type { IColumn, IRelationalAnnotationProvider, IRelationalModel, ITable, ITableIndex, IUniqueConstraint, RelationalAnnotationProvider, RelationalAnnotationProviderDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
 
 export interface SqlServerAnnotationProvider$instance extends RelationalAnnotationProvider {
-    for_(model: IRelationalModel, designTime: boolean): IEnumerable<IAnnotation>;
-    for_(table: ITable, designTime: boolean): IEnumerable<IAnnotation>;
-    for_(constraint: IUniqueConstraint, designTime: boolean): IEnumerable<IAnnotation>;
-    for_(index: ITableIndex, designTime: boolean): IEnumerable<IAnnotation>;
-    for_(column: IColumn, designTime: boolean): IEnumerable<IAnnotation>;
+    for(model: IRelationalModel, designTime: boolean): IEnumerable<IAnnotation>;
+    for(table: ITable, designTime: boolean): IEnumerable<IAnnotation>;
+    for(constraint: IUniqueConstraint, designTime: boolean): IEnumerable<IAnnotation>;
+    for(index: ITableIndex, designTime: boolean): IEnumerable<IAnnotation>;
+    for(column: IColumn, designTime: boolean): IEnumerable<IAnnotation>;
 }
 
 

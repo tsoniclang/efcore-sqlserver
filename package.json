@@ -1,6 +1,6 @@
 {
   "name": "@tsonic/efcore-sqlserver",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "TypeScript type definitions for Microsoft.EntityFrameworkCore.SqlServer (+ dependencies) for .NET 10",
   "type": "module",
   "keywords": [

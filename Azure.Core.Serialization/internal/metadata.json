@@ -323,7 +323,7 @@
         {
           "stableId": "Azure.Core:Azure.Core.Serialization.JsonObjectSerializer::Default:Azure.Core.Serialization.JsonObjectSerializer",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "normalizedSignature": "Default|:Azure.Core.Serialization.JsonObjectSerializer|static=true|accessor=get",
           "provenance": "Original",
           "emitScope": "ClassSurface",

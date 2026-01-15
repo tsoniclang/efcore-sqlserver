@@ -1006,7 +1006,7 @@
           }
         },
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Azure.Core.ClientOptions|static=true|accessor=get",
           "target": {
@@ -1467,7 +1467,7 @@
           }
         },
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Azure.Core.ClientOptions|static=true|accessor=get",
           "target": {
@@ -1904,7 +1904,7 @@
           }
         },
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Azure.Core.ClientOptions|static=true|accessor=get",
           "target": {
@@ -2322,7 +2322,7 @@
           }
         },
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Azure.Core.ClientOptions|static=true|accessor=get",
           "target": {
@@ -2759,7 +2759,7 @@
           }
         },
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Azure.Core.ClientOptions|static=true|accessor=get",
           "target": {
@@ -3492,7 +3492,7 @@
           }
         },
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Azure.Core.ClientOptions|static=true|accessor=get",
           "target": {
@@ -4029,7 +4029,7 @@
           }
         },
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Azure.Core.ClientOptions|static=true|accessor=get",
           "target": {
@@ -4485,7 +4485,7 @@
           }
         },
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Azure.Core.ClientOptions|static=true|accessor=get",
           "target": {
@@ -5455,7 +5455,7 @@
           }
         },
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Azure.Core.ClientOptions|static=true|accessor=get",
           "target": {
@@ -6146,7 +6146,7 @@
           }
         },
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Azure.Core.ClientOptions|static=true|accessor=get",
           "target": {
@@ -6578,7 +6578,7 @@
           }
         },
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Azure.Core.ClientOptions|static=true|accessor=get",
           "target": {
@@ -7317,7 +7317,7 @@
           }
         },
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Azure.Core.ClientOptions|static=true|accessor=get",
           "target": {
@@ -7719,7 +7719,7 @@
           }
         },
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Azure.Core.ClientOptions|static=true|accessor=get",
           "target": {
@@ -8394,7 +8394,7 @@
           }
         },
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Azure.Core.ClientOptions|static=true|accessor=get",
           "target": {
@@ -8956,7 +8956,7 @@
           }
         },
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Azure.Core.ClientOptions|static=true|accessor=get",
           "target": {
@@ -9528,7 +9528,7 @@
           }
         },
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Azure.Core.ClientOptions|static=true|accessor=get",
           "target": {
@@ -10114,7 +10114,7 @@
           }
         },
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Azure.Core.ClientOptions|static=true|accessor=get",
           "target": {
@@ -10527,7 +10527,7 @@
           }
         },
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Azure.Core.ClientOptions|static=true|accessor=get",
           "target": {
@@ -10964,7 +10964,7 @@
           }
         },
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Azure.Core.ClientOptions|static=true|accessor=get",
           "target": {
@@ -11449,7 +11449,7 @@
           }
         },
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Azure.Core.ClientOptions|static=true|accessor=get",
           "target": {

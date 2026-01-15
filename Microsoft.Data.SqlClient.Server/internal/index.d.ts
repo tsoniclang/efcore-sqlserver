@@ -117,7 +117,7 @@ export interface SqlMetaData$instance {
     readonly sortOrder: SortOrder;
     readonly sortOrdinal: int;
     readonly sqlDbType: SqlDbType;
-    readonly type_: Type;
+    readonly type: Type;
     readonly typeName: string;
     readonly useServerDefault: boolean;
     readonly xmlSchemaCollectionDatabase: string;

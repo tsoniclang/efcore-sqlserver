@@ -248,11 +248,11 @@ export interface RequestMethod$instance {
 
 export const RequestMethod: {
     new(method: string): RequestMethod;
-    readonly get_: RequestMethod;
+    readonly get: RequestMethod;
     readonly post: RequestMethod;
     readonly put: RequestMethod;
     readonly patch: RequestMethod;
-    readonly delete_: RequestMethod;
+    readonly delete: RequestMethod;
     readonly head: RequestMethod;
     readonly options: RequestMethod;
     readonly trace: RequestMethod;
@@ -263,8 +263,8 @@ export const RequestMethod: {
 export type RequestMethod = RequestMethod$instance;
 
 export interface ResourceType$instance {
-    readonly namespace_: string;
-    readonly type_: string;
+    readonly namespace: string;
+    readonly type: string;
     equals(other: ResourceType): boolean;
     equals(other: unknown): boolean;
     getHashCode(): int;
@@ -331,7 +331,7 @@ export interface AzureCoreContext$instance extends ModelReaderWriterContext {
 
 export const AzureCoreContext: {
     new(): AzureCoreContext;
-    readonly default_: AzureCoreContext;
+    readonly default: AzureCoreContext;
 };
 
 
@@ -351,7 +351,7 @@ export interface ClientOptions$instance {
 
 
 export const ClientOptions: {
-    readonly default_: ClientOptions;
+    readonly default: ClientOptions;
 };
 
 
@@ -404,9 +404,9 @@ export interface HttpMessage$instance {
     dispose(): void;
     extractResponseContent(): Stream | undefined;
     setProperty(name: string, value: unknown): void;
-    setProperty(type_: Type, value: unknown): void;
+    setProperty(type: Type, value: unknown): void;
     tryGetProperty(name: string, value: unknown): boolean;
-    tryGetProperty(type_: Type, value: unknown): boolean;
+    tryGetProperty(type: Type, value: unknown): boolean;
 }
 
 

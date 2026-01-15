@@ -3210,7 +3210,7 @@
         {
           "stableId": "Azure.Core:Azure.Core.RequestMethod::Get:Azure.Core.RequestMethod",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "metadataToken": 385876214,
           "canonicalSignature": ":Azure.Core.RequestMethod",
           "normalizedSignature": "Get|:Azure.Core.RequestMethod|static=true|accessor=get",
@@ -3266,7 +3266,7 @@
         {
           "stableId": "Azure.Core:Azure.Core.RequestMethod::Delete:Azure.Core.RequestMethod",
           "clrName": "Delete",
-          "tsEmitName": "delete_",
+          "tsEmitName": "delete",
           "metadataToken": 385876218,
           "canonicalSignature": ":Azure.Core.RequestMethod",
           "normalizedSignature": "Delete|:Azure.Core.RequestMethod|static=true|accessor=get",
@@ -3398,7 +3398,7 @@
           }
         },
         {
-          "tsName": "get_",
+          "tsName": "get",
           "isStatic": true,
           "tsSignatureId": "Get|:Azure.Core.RequestMethod|static=true|accessor=get",
           "target": {
@@ -3438,7 +3438,7 @@
           }
         },
         {
-          "tsName": "delete_",
+          "tsName": "delete",
           "isStatic": true,
           "tsSignatureId": "Delete|:Azure.Core.RequestMethod|static=true|accessor=get",
           "target": {
@@ -3572,7 +3572,7 @@
         {
           "stableId": "Azure.Core:Azure.Core.ResourceType::Namespace:System.String",
           "clrName": "Namespace",
-          "tsEmitName": "namespace_",
+          "tsEmitName": "namespace",
           "metadataToken": 385876242,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Namespace|:System.String|static=false|accessor=get",
@@ -3586,7 +3586,7 @@
         {
           "stableId": "Azure.Core:Azure.Core.ResourceType::Type:System.String",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385876243,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Type|:System.String|static=false|accessor=get",
@@ -3666,7 +3666,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "namespace_",
+          "tsName": "namespace",
           "isStatic": false,
           "tsSignatureId": "Namespace|:System.String|static=false|accessor=get",
           "target": {
@@ -3676,7 +3676,7 @@
           }
         },
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.String|static=false|accessor=get",
           "target": {
@@ -4308,7 +4308,7 @@
         {
           "stableId": "Azure.Core:Azure.Core.AzureCoreContext::Default:Azure.Core.AzureCoreContext",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 385876059,
           "canonicalSignature": ":Azure.Core.AzureCoreContext",
           "normalizedSignature": "Default|:Azure.Core.AzureCoreContext|static=true|accessor=get",
@@ -4347,7 +4347,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Azure.Core.AzureCoreContext|static=true|accessor=get",
           "target": {
@@ -4426,7 +4426,7 @@
         {
           "stableId": "Azure.Core:Azure.Core.ClientOptions::Default:Azure.Core.ClientOptions",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 385876128,
           "canonicalSignature": ":Azure.Core.ClientOptions",
           "normalizedSignature": "Default|:Azure.Core.ClientOptions|static=true|accessor=get",
@@ -4541,7 +4541,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Azure.Core.ClientOptions|static=true|accessor=get",
           "target": {

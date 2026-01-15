@@ -16,7 +16,7 @@ import type { IModel } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metada
 import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection.js";
 
 export enum SqlServerEngineType {
-    unknown_ = 0,
+    unknown = 0,
     sqlServer = 1,
     azureSql = 2,
     azureSynapse = 3

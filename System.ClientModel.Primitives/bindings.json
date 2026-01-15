@@ -24,7 +24,7 @@
         {
           "stableId": "System.ClientModel:System.ClientModel.Primitives.ClientErrorBehaviors::DefaultSystem.ClientModel.Primitives.ClientErrorBehaviors",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 67109021,
           "normalizedSignature": "Default|System.ClientModel.Primitives.ClientErrorBehaviors|static=true|const=true",
           "isStatic": true,
@@ -58,7 +58,7 @@
           }
         },
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|System.ClientModel.Primitives.ClientErrorBehaviors|static=true|const=true",
           "target": {
@@ -2158,7 +2158,7 @@
         {
           "stableId": "System.ClientModel:System.ClientModel.Primitives.ClientRetryPolicy::Default:System.ClientModel.Primitives.ClientRetryPolicy",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 385876070,
           "canonicalSignature": ":System.ClientModel.Primitives.ClientRetryPolicy",
           "normalizedSignature": "Default|:System.ClientModel.Primitives.ClientRetryPolicy|static=true|accessor=get",
@@ -2238,7 +2238,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:System.ClientModel.Primitives.ClientRetryPolicy|static=true|accessor=get",
           "target": {
@@ -2897,7 +2897,7 @@
         {
           "stableId": "System.ClientModel:System.ClientModel.Primitives.MessageLoggingPolicy::Default:System.ClientModel.Primitives.MessageLoggingPolicy",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 385876072,
           "canonicalSignature": ":System.ClientModel.Primitives.MessageLoggingPolicy",
           "normalizedSignature": "Default|:System.ClientModel.Primitives.MessageLoggingPolicy|static=true|accessor=get",
@@ -2967,7 +2967,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:System.ClientModel.Primitives.MessageLoggingPolicy|static=true|accessor=get",
           "target": {
@@ -3848,7 +3848,7 @@
         {
           "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelineMessageClassifier::Default:System.ClientModel.Primitives.PipelineMessageClassifier",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 385876065,
           "canonicalSignature": ":System.ClientModel.Primitives.PipelineMessageClassifier",
           "normalizedSignature": "Default|:System.ClientModel.Primitives.PipelineMessageClassifier|static=true|accessor=get",
@@ -3897,7 +3897,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:System.ClientModel.Primitives.PipelineMessageClassifier|static=true|accessor=get",
           "target": {
@@ -4133,7 +4133,7 @@
         {
           "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelineRequestHeaders::Set(System.String,System.String):System.Void",
           "clrName": "Set",
-          "tsEmitName": "set_",
+          "tsEmitName": "set",
           "metadataToken": 100663654,
           "canonicalSignature": "(System.String,System.String):System.Void",
           "normalizedSignature": "Set|(System.String,System.String):System.Void|static=false",
@@ -4229,7 +4229,7 @@
           }
         },
         {
-          "tsName": "set_",
+          "tsName": "set",
           "isStatic": false,
           "tsSignatureId": "Set|(System.String,System.String):System.Void|static=false",
           "target": {

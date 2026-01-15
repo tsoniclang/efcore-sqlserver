@@ -367,7 +367,7 @@
         {
           "stableId": "Azure.Core:Azure.Core.Serialization.JsonObjectSerializer::Default:Azure.Core.Serialization.JsonObjectSerializer",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 385876397,
           "canonicalSignature": ":Azure.Core.Serialization.JsonObjectSerializer",
           "normalizedSignature": "Default|:Azure.Core.Serialization.JsonObjectSerializer|static=true|accessor=get",
@@ -497,7 +497,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Azure.Core.Serialization.JsonObjectSerializer|static=true|accessor=get",
           "target": {

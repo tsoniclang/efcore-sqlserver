@@ -29,7 +29,7 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType::UnknownMicrosoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType",
           "clrName": "Unknown",
-          "tsEmitName": "unknown_",
+          "tsEmitName": "unknown",
           "normalizedSignature": "Unknown|Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,

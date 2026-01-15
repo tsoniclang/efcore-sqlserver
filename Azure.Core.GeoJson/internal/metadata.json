@@ -666,7 +666,7 @@
         {
           "stableId": "Azure.Core:Azure.Core.GeoJson.GeoCollection::Type:Azure.Core.GeoJson.GeoObjectType",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "normalizedSignature": "Type|:Azure.Core.GeoJson.GeoObjectType|static=false|accessor=get",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -762,7 +762,7 @@
         {
           "stableId": "Azure.Core:Azure.Core.GeoJson.GeoLineString::Type:Azure.Core.GeoJson.GeoObjectType",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "normalizedSignature": "Type|:Azure.Core.GeoJson.GeoObjectType|static=false|accessor=get",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -867,7 +867,7 @@
         {
           "stableId": "Azure.Core:Azure.Core.GeoJson.GeoLineStringCollection::Type:Azure.Core.GeoJson.GeoObjectType",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "normalizedSignature": "Type|:Azure.Core.GeoJson.GeoObjectType|static=false|accessor=get",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -965,7 +965,7 @@
         {
           "stableId": "Azure.Core:Azure.Core.GeoJson.GeoObject::Type:Azure.Core.GeoJson.GeoObjectType",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "normalizedSignature": "Type|:Azure.Core.GeoJson.GeoObjectType|static=false|accessor=get",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -1119,7 +1119,7 @@
         {
           "stableId": "Azure.Core:Azure.Core.GeoJson.GeoPoint::Type:Azure.Core.GeoJson.GeoObjectType",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "normalizedSignature": "Type|:Azure.Core.GeoJson.GeoObjectType|static=false|accessor=get",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -1239,7 +1239,7 @@
         {
           "stableId": "Azure.Core:Azure.Core.GeoJson.GeoPointCollection::Type:Azure.Core.GeoJson.GeoObjectType",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "normalizedSignature": "Type|:Azure.Core.GeoJson.GeoObjectType|static=false|accessor=get",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -1327,7 +1327,7 @@
         {
           "stableId": "Azure.Core:Azure.Core.GeoJson.GeoPolygon::Type:Azure.Core.GeoJson.GeoObjectType",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "normalizedSignature": "Type|:Azure.Core.GeoJson.GeoObjectType|static=false|accessor=get",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -1437,7 +1437,7 @@
         {
           "stableId": "Azure.Core:Azure.Core.GeoJson.GeoPolygonCollection::Type:Azure.Core.GeoJson.GeoObjectType",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "normalizedSignature": "Type|:Azure.Core.GeoJson.GeoObjectType|static=false|accessor=get",
           "provenance": "Original",
           "emitScope": "ClassSurface",

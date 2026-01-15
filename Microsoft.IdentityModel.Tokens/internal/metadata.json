@@ -47,7 +47,7 @@
         {
           "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.PrivateKeyStatus::UnknownMicrosoft.IdentityModel.Tokens.PrivateKeyStatus",
           "clrName": "Unknown",
-          "tsEmitName": "unknown_",
+          "tsEmitName": "unknown",
           "normalizedSignature": "Unknown|Microsoft.IdentityModel.Tokens.PrivateKeyStatus|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -2526,7 +2526,7 @@
         {
           "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.CompressionProviderFactory::Default:Microsoft.IdentityModel.Tokens.CompressionProviderFactory",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "normalizedSignature": "Default|:Microsoft.IdentityModel.Tokens.CompressionProviderFactory|static=true|accessor=getset",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -2960,7 +2960,7 @@
         {
           "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.CryptoProviderFactory::Default:Microsoft.IdentityModel.Tokens.CryptoProviderFactory",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "normalizedSignature": "Default|:Microsoft.IdentityModel.Tokens.CryptoProviderFactory|static=true|accessor=getset",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -10271,7 +10271,7 @@
         {
           "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.Utility::NullSystem.String",
           "clrName": "Null",
-          "tsEmitName": "null_",
+          "tsEmitName": "null",
           "normalizedSignature": "Null|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,

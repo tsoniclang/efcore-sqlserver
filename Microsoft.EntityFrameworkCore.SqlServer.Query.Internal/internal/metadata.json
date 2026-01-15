@@ -3204,7 +3204,7 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.TemporalRangeQueryRootExpression::From:System.DateTime",
           "clrName": "From",
-          "tsEmitName": "from_",
+          "tsEmitName": "from",
           "normalizedSignature": "From|:System.DateTime|static=false|accessor=get",
           "provenance": "Original",
           "emitScope": "ClassSurface",

@@ -29,7 +29,7 @@
         {
           "stableId": "Azure.Core:Azure.ErrorOptions::DefaultAzure.ErrorOptions",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "normalizedSignature": "Default|Azure.ErrorOptions|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,

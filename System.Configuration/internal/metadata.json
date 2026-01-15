@@ -463,7 +463,7 @@
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Configuration.PropertyValueOrigin::DefaultSystem.Configuration.PropertyValueOrigin",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "normalizedSignature": "Default|System.Configuration.PropertyValueOrigin|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -551,7 +551,7 @@
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Configuration.SettingsSerializeAs::StringSystem.Configuration.SettingsSerializeAs",
           "clrName": "String",
-          "tsEmitName": "string_",
+          "tsEmitName": "string",
           "normalizedSignature": "String|System.Configuration.SettingsSerializeAs|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -1598,7 +1598,7 @@
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Configuration.CallbackValidatorAttribute::Type:System.Type",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "normalizedSignature": "Type|:System.Type|static=false|accessor=getset",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -3584,7 +3584,7 @@
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Configuration.ConfigurationProperty::Type:System.Type",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "normalizedSignature": "Type|:System.Type|static=false|accessor=get",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -4149,7 +4149,7 @@
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Configuration.ConfigurationSectionCollection::Get(System.Int32):System.Configuration.ConfigurationSection",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "normalizedSignature": "Get|(System.Int32):System.Configuration.ConfigurationSection|static=false",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -4165,7 +4165,7 @@
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Configuration.ConfigurationSectionCollection::Get(System.String):System.Configuration.ConfigurationSection",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "normalizedSignature": "Get|(System.String):System.Configuration.ConfigurationSection|static=false",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -4388,7 +4388,7 @@
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Configuration.ConfigurationSectionGroup::Type:System.String",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "normalizedSignature": "Type|:System.String|static=false|accessor=getset",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -4503,7 +4503,7 @@
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Configuration.ConfigurationSectionGroupCollection::Get(System.Int32):System.Configuration.ConfigurationSectionGroup",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "normalizedSignature": "Get|(System.Int32):System.Configuration.ConfigurationSectionGroup|static=false",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -4519,7 +4519,7 @@
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Configuration.ConfigurationSectionGroupCollection::Get(System.String):System.Configuration.ConfigurationSectionGroup",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "normalizedSignature": "Get|(System.String):System.Configuration.ConfigurationSectionGroup|static=false",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -5742,7 +5742,7 @@
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Configuration.ElementInformation::Type:System.Type",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "normalizedSignature": "Type|:System.Type|static=false|accessor=get",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -7461,7 +7461,7 @@
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Configuration.PropertyInformation::Type:System.Type",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "normalizedSignature": "Type|:System.Type|static=false|accessor=get",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -7813,7 +7813,7 @@
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Configuration.ProviderSettings::Type:System.String",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "normalizedSignature": "Type|:System.String|static=false|accessor=getset",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -8847,7 +8847,7 @@
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Configuration.SectionInformation::Type:System.String",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "normalizedSignature": "Type|:System.String|static=false|accessor=getset",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -9104,7 +9104,7 @@
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Configuration.SettingElementCollection::Get(System.String):System.Configuration.SettingElement",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "normalizedSignature": "Get|(System.String):System.Configuration.SettingElement|static=false",
           "provenance": "Original",
           "emitScope": "ClassSurface",

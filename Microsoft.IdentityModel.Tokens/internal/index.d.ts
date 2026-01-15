@@ -31,7 +31,7 @@ import type { XmlReader, XmlWriter } from "@tsonic/dotnet/System.Xml.js";
 export enum PrivateKeyStatus {
     exists = 0,
     doesNotExist = 1,
-    unknown_ = 2
+    unknown = 2
 }
 
 
@@ -87,7 +87,7 @@ export type TokenReplayValidator = (expirationTime: Nullable<DateTime>, security
 export type TransformBeforeSignatureValidation = (token: SecurityToken, validationParameters: TokenValidationParameters) => SecurityToken;
 
 
-export type TypeValidator = (type_: string, securityToken: SecurityToken, validationParameters: TokenValidationParameters) => string;
+export type TypeValidator = (type: string, securityToken: SecurityToken, validationParameters: TokenValidationParameters) => string;
 
 
 export interface ICompressionProvider$instance {
@@ -250,9 +250,9 @@ export type CallContext = CallContext$instance;
 
 export interface CaseSensitiveClaimsIdentity$instance extends ClaimsIdentity {
     readonly securityToken: SecurityToken;
-    findAll(type_: string): IEnumerable<Claim>;
-    findFirst(type_: string): Claim;
-    hasClaim(type_: string, value: string): boolean;
+    findAll(type: string): IEnumerable<Claim>;
+    findFirst(type: string): Claim;
+    hasClaim(type: string, value: string): boolean;
 }
 
 
@@ -292,7 +292,7 @@ export interface CompressionProviderFactory$instance {
 export const CompressionProviderFactory: {
     new(): CompressionProviderFactory;
     new(other: CompressionProviderFactory): CompressionProviderFactory;
-    default_: CompressionProviderFactory;
+    default: CompressionProviderFactory;
 };
 
 
@@ -352,7 +352,7 @@ export const CryptoProviderFactory: {
     new(): CryptoProviderFactory;
     new(cache: CryptoProviderCache): CryptoProviderFactory;
     new(other: CryptoProviderFactory): CryptoProviderFactory;
-    default_: CryptoProviderFactory;
+    default: CryptoProviderFactory;
     defaultCacheSignatureProviders: boolean;
     defaultSignatureProviderObjectPoolCacheSize: int;
 };
@@ -1459,7 +1459,7 @@ export type UniqueId = UniqueId$instance;
 
 export abstract class Utility$instance {
     static readonly empty: string;
-    static readonly null_: string;
+    static readonly null: string;
     static areEqual(a: byte[], b: byte[]): boolean;
     static cloneByteArray(src: byte[]): byte[];
     static isHttps(address: string): boolean;
@@ -1477,7 +1477,7 @@ export abstract class Validators$instance {
     static validateLifetime(notBefore: Nullable<DateTime>, expires: Nullable<DateTime>, securityToken: SecurityToken, validationParameters: TokenValidationParameters): void;
     static validateTokenReplay(expirationTime: Nullable<DateTime>, securityToken: string, validationParameters: TokenValidationParameters): void;
     static validateTokenReplay(securityToken: string, expirationTime: Nullable<DateTime>, validationParameters: TokenValidationParameters): void;
-    static validateTokenType(type_: string, securityToken: SecurityToken, validationParameters: TokenValidationParameters): string;
+    static validateTokenType(type: string, securityToken: SecurityToken, validationParameters: TokenValidationParameters): string;
 }
 
 

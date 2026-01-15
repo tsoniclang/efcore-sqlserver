@@ -567,7 +567,7 @@
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.SqlBulkCopyOptions::DefaultMicrosoft.Data.SqlClient.SqlBulkCopyOptions",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 67108896,
           "normalizedSignature": "Default|Microsoft.Data.SqlClient.SqlBulkCopyOptions|static=true|const=true",
           "isStatic": true,
@@ -667,7 +667,7 @@
           }
         },
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|Microsoft.Data.SqlClient.SqlBulkCopyOptions|static=true|const=true",
           "target": {
@@ -1277,7 +1277,7 @@
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.SqlNotificationInfo::UnknownMicrosoft.Data.SqlClient.SqlNotificationInfo",
           "clrName": "Unknown",
-          "tsEmitName": "unknown_",
+          "tsEmitName": "unknown",
           "metadataToken": 67108945,
           "normalizedSignature": "Unknown|Microsoft.Data.SqlClient.SqlNotificationInfo|static=true|const=true",
           "isStatic": true,
@@ -1321,7 +1321,7 @@
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.SqlNotificationInfo::DeleteMicrosoft.Data.SqlClient.SqlNotificationInfo",
           "clrName": "Delete",
-          "tsEmitName": "delete_",
+          "tsEmitName": "delete",
           "metadataToken": 67108949,
           "normalizedSignature": "Delete|Microsoft.Data.SqlClient.SqlNotificationInfo|static=true|const=true",
           "isStatic": true,
@@ -1497,7 +1497,7 @@
           }
         },
         {
-          "tsName": "unknown_",
+          "tsName": "unknown",
           "isStatic": true,
           "tsSignatureId": "Unknown|Microsoft.Data.SqlClient.SqlNotificationInfo|static=true|const=true",
           "target": {
@@ -1537,7 +1537,7 @@
           }
         },
         {
-          "tsName": "delete_",
+          "tsName": "delete",
           "isStatic": true,
           "tsSignatureId": "Delete|Microsoft.Data.SqlClient.SqlNotificationInfo|static=true|const=true",
           "target": {
@@ -1712,7 +1712,7 @@
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.SqlNotificationSource::UnknownMicrosoft.Data.SqlClient.SqlNotificationSource",
           "clrName": "Unknown",
-          "tsEmitName": "unknown_",
+          "tsEmitName": "unknown",
           "metadataToken": 67108965,
           "normalizedSignature": "Unknown|Microsoft.Data.SqlClient.SqlNotificationSource|static=true|const=true",
           "isStatic": true,
@@ -1745,7 +1745,7 @@
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.SqlNotificationSource::ObjectMicrosoft.Data.SqlClient.SqlNotificationSource",
           "clrName": "Object",
-          "tsEmitName": "object_",
+          "tsEmitName": "object",
           "metadataToken": 67108968,
           "normalizedSignature": "Object|Microsoft.Data.SqlClient.SqlNotificationSource|static=true|const=true",
           "isStatic": true,
@@ -1844,7 +1844,7 @@
           }
         },
         {
-          "tsName": "unknown_",
+          "tsName": "unknown",
           "isStatic": true,
           "tsSignatureId": "Unknown|Microsoft.Data.SqlClient.SqlNotificationSource|static=true|const=true",
           "target": {
@@ -1874,7 +1874,7 @@
           }
         },
         {
-          "tsName": "object_",
+          "tsName": "object",
           "isStatic": true,
           "tsSignatureId": "Object|Microsoft.Data.SqlClient.SqlNotificationSource|static=true|const=true",
           "target": {
@@ -1968,7 +1968,7 @@
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.SqlNotificationType::UnknownMicrosoft.Data.SqlClient.SqlNotificationType",
           "clrName": "Unknown",
-          "tsEmitName": "unknown_",
+          "tsEmitName": "unknown",
           "metadataToken": 67108976,
           "normalizedSignature": "Unknown|Microsoft.Data.SqlClient.SqlNotificationType|static=true|const=true",
           "isStatic": true,
@@ -2013,7 +2013,7 @@
           }
         },
         {
-          "tsName": "unknown_",
+          "tsName": "unknown",
           "isStatic": true,
           "tsSignatureId": "Unknown|Microsoft.Data.SqlClient.SqlNotificationType|static=true|const=true",
           "target": {
@@ -13838,7 +13838,7 @@
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.SqlError::Class:System.Byte",
           "clrName": "Class",
-          "tsEmitName": "class_",
+          "tsEmitName": "class",
           "metadataToken": 385877697,
           "canonicalSignature": ":System.Byte",
           "normalizedSignature": "Class|:System.Byte|static=false|accessor=get",
@@ -13880,7 +13880,7 @@
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.SqlError::Number:System.Int32",
           "clrName": "Number",
-          "tsEmitName": "number_",
+          "tsEmitName": "number",
           "metadataToken": 385877700,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Number|:System.Int32|static=false|accessor=get",
@@ -13965,7 +13965,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "class_",
+          "tsName": "class",
           "isStatic": false,
           "tsSignatureId": "Class|:System.Byte|static=false|accessor=get",
           "target": {
@@ -13995,7 +13995,7 @@
           }
         },
         {
-          "tsName": "number_",
+          "tsName": "number",
           "isStatic": false,
           "tsSignatureId": "Number|:System.Int32|static=false|accessor=get",
           "target": {
@@ -14238,7 +14238,7 @@
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.SqlException::Class:System.Byte",
           "clrName": "Class",
-          "tsEmitName": "class_",
+          "tsEmitName": "class",
           "metadataToken": 385877710,
           "canonicalSignature": ":System.Byte",
           "normalizedSignature": "Class|:System.Byte|static=false|accessor=get",
@@ -14294,7 +14294,7 @@
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.SqlException::Number:System.Int32",
           "clrName": "Number",
-          "tsEmitName": "number_",
+          "tsEmitName": "number",
           "metadataToken": 385877715,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Number|:System.Int32|static=false|accessor=get",
@@ -14399,7 +14399,7 @@
           }
         },
         {
-          "tsName": "class_",
+          "tsName": "class",
           "isStatic": false,
           "tsSignatureId": "Class|:System.Byte|static=false|accessor=get",
           "target": {
@@ -14439,7 +14439,7 @@
           }
         },
         {
-          "tsName": "number_",
+          "tsName": "number",
           "isStatic": false,
           "tsSignatureId": "Number|:System.Int32|static=false|accessor=get",
           "target": {
@@ -14643,7 +14643,7 @@
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.SqlNotificationEventArgs::Type:Microsoft.Data.SqlClient.SqlNotificationType",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385877725,
           "canonicalSignature": ":Microsoft.Data.SqlClient.SqlNotificationType",
           "normalizedSignature": "Type|:Microsoft.Data.SqlClient.SqlNotificationType|static=false|accessor=get",
@@ -14691,7 +14691,7 @@
           }
         },
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:Microsoft.Data.SqlClient.SqlNotificationType|static=false|accessor=get",
           "target": {

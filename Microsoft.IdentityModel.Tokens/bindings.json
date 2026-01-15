@@ -46,7 +46,7 @@
         {
           "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.PrivateKeyStatus::UnknownMicrosoft.IdentityModel.Tokens.PrivateKeyStatus",
           "clrName": "Unknown",
-          "tsEmitName": "unknown_",
+          "tsEmitName": "unknown",
           "metadataToken": 67108893,
           "normalizedSignature": "Unknown|Microsoft.IdentityModel.Tokens.PrivateKeyStatus|static=true|const=true",
           "isStatic": true,
@@ -89,7 +89,7 @@
           }
         },
         {
-          "tsName": "unknown_",
+          "tsName": "unknown",
           "isStatic": true,
           "tsSignatureId": "Unknown|Microsoft.IdentityModel.Tokens.PrivateKeyStatus|static=true|const=true",
           "target": {
@@ -4178,7 +4178,7 @@
         {
           "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.CompressionProviderFactory::Default:Microsoft.IdentityModel.Tokens.CompressionProviderFactory",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 385875998,
           "canonicalSignature": ":Microsoft.IdentityModel.Tokens.CompressionProviderFactory",
           "normalizedSignature": "Default|:Microsoft.IdentityModel.Tokens.CompressionProviderFactory|static=true|accessor=getset",
@@ -4262,7 +4262,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Microsoft.IdentityModel.Tokens.CompressionProviderFactory|static=true|accessor=getset",
           "target": {
@@ -4717,7 +4717,7 @@
         {
           "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.CryptoProviderFactory::Default:Microsoft.IdentityModel.Tokens.CryptoProviderFactory",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 385876001,
           "canonicalSignature": ":Microsoft.IdentityModel.Tokens.CryptoProviderFactory",
           "normalizedSignature": "Default|:Microsoft.IdentityModel.Tokens.CryptoProviderFactory|static=true|accessor=getset",
@@ -5011,7 +5011,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Microsoft.IdentityModel.Tokens.CryptoProviderFactory|static=true|accessor=getset",
           "target": {
@@ -18111,7 +18111,7 @@
         {
           "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.Utility::NullSystem.String",
           "clrName": "Null",
-          "tsEmitName": "null_",
+          "tsEmitName": "null",
           "metadataToken": 67109519,
           "normalizedSignature": "Null|System.String|static=true|const=true",
           "isStatic": true,
@@ -18176,7 +18176,7 @@
           }
         },
         {
-          "tsName": "null_",
+          "tsName": "null",
           "isStatic": true,
           "tsSignatureId": "Null|System.String|static=true|const=true",
           "target": {
