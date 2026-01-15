@@ -73,7 +73,7 @@
         {
           "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.Format::UnknownMicrosoft.SqlServer.Server.Format",
           "clrName": "Unknown",
-          "tsEmitName": "unknown_",
+          "tsEmitName": "unknown",
           "normalizedSignature": "Unknown|Microsoft.SqlServer.Server.Format|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,

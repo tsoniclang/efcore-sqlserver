@@ -23,7 +23,7 @@ export interface SqlVector_1$instance<T extends unknown> {
 
 export const SqlVector_1: {
     new<T extends unknown>(memory: ReadOnlyMemory<T>): SqlVector_1<T>;
-    readonly null_: unknown;
+    readonly null: unknown;
     createNull<T extends unknown>(length: int): SqlVector_1<T>;
 };
 
@@ -74,7 +74,7 @@ export const SqlJson: {
     new(): SqlJson;
     new(jsonString: string): SqlJson;
     new(jsonDoc: JsonDocument): SqlJson;
-    readonly null_: SqlJson;
+    readonly null: SqlJson;
 };
 
 

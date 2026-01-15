@@ -38,7 +38,7 @@
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Cache.CacheLevel::UnknownMicrosoft.Identity.Client.Cache.CacheLevel",
           "clrName": "Unknown",
-          "tsEmitName": "unknown_",
+          "tsEmitName": "unknown",
           "normalizedSignature": "Unknown|Microsoft.Identity.Client.Cache.CacheLevel|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,

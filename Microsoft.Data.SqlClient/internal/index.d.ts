@@ -71,7 +71,7 @@ export enum SqlAuthenticationMethod {
 
 
 export enum SqlBulkCopyOptions {
-    default_ = 0,
+    default = 0,
     keepIdentity = 1,
     checkConstraints = 2,
     tableLock = 4,
@@ -119,11 +119,11 @@ export enum SqlConnectionOverrides {
 
 export enum SqlNotificationInfo {
     alreadyChanged = -2,
-    unknown_ = -1,
+    unknown = -1,
     truncate = 0,
     insert = 1,
     update = 2,
-    delete_ = 3,
+    delete = 3,
     drop = 4,
     alter = 5,
     restart = 6,
@@ -142,10 +142,10 @@ export enum SqlNotificationInfo {
 
 export enum SqlNotificationSource {
     client = -2,
-    unknown_ = -1,
+    unknown = -1,
     data = 0,
     timeout = 1,
-    object_ = 2,
+    object = 2,
     database = 3,
     system = 4,
     statement = 5,
@@ -156,7 +156,7 @@ export enum SqlNotificationSource {
 
 
 export enum SqlNotificationType {
-    unknown_ = -1,
+    unknown = -1,
     change = 0,
     subscribe = 1
 }
@@ -471,10 +471,10 @@ export type SqlClientFactory = SqlClientFactory$instance;
 
 export interface SqlClientLogger$instance {
     readonly isLoggingEnabled: boolean;
-    logAssert(value: boolean, type_: string, method: string, message: string): boolean;
-    logError(type_: string, method: string, message: string): void;
-    logInfo(type_: string, method: string, message: string): void;
-    logWarning(type_: string, method: string, message: string): void;
+    logAssert(value: boolean, type: string, method: string, message: string): boolean;
+    logError(type: string, method: string, message: string): void;
+    logInfo(type: string, method: string, message: string): void;
+    logWarning(type: string, method: string, message: string): void;
 }
 
 
@@ -918,10 +918,10 @@ export const SqlDependency: {
 export type SqlDependency = SqlDependency$instance;
 
 export interface SqlError$instance {
-    readonly class_: byte;
+    readonly class: byte;
     readonly lineNumber: int;
     readonly message: string | undefined;
-    readonly number_: int;
+    readonly number: int;
     readonly procedure: string;
     readonly server: string;
     readonly source: string;
@@ -955,11 +955,11 @@ export type SqlErrorCollection = SqlErrorCollection$instance;
 
 export interface SqlException$instance extends DbException {
     readonly batchCommand: SqlBatchCommand;
-    readonly class_: byte;
+    readonly class: byte;
     readonly clientConnectionId: Guid;
     readonly errors: SqlErrorCollection;
     readonly lineNumber: int;
-    readonly number_: int;
+    readonly number: int;
     readonly procedure: string;
     readonly server: string;
     readonly source: string;
@@ -994,12 +994,12 @@ export type SqlInfoMessageEventArgs = SqlInfoMessageEventArgs$instance;
 export interface SqlNotificationEventArgs$instance extends EventArgs {
     readonly info: SqlNotificationInfo;
     readonly source: SqlNotificationSource;
-    readonly type_: SqlNotificationType;
+    readonly type: SqlNotificationType;
 }
 
 
 export const SqlNotificationEventArgs: {
-    new(type_: SqlNotificationType, info: SqlNotificationInfo, source: SqlNotificationSource): SqlNotificationEventArgs;
+    new(type: SqlNotificationType, info: SqlNotificationInfo, source: SqlNotificationSource): SqlNotificationEventArgs;
 };
 
 

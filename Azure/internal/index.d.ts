@@ -31,7 +31,7 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export enum ErrorOptions {
-    default_ = 0,
+    default = 0,
     noThrow = 1
 }
 
@@ -149,8 +149,8 @@ export type HttpAuthorization = HttpAuthorization$instance;
 export interface JsonPatchDocument$instance {
     appendAdd<T>(path: string, value: T): void;
     appendAddRaw(path: string, rawJsonValue: string): void;
-    appendCopy(from_: string, path: string): void;
-    appendMove(from_: string, path: string): void;
+    appendCopy(from: string, path: string): void;
+    appendMove(from: string, path: string): void;
     appendRemove(path: string): void;
     appendReplace<T>(path: string, value: T): void;
     appendReplaceRaw(path: string, rawJsonValue: string): void;

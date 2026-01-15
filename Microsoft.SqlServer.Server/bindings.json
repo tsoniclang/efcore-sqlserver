@@ -102,7 +102,7 @@
         {
           "stableId": "Microsoft.SqlServer.Server:Microsoft.SqlServer.Server.Format::UnknownMicrosoft.SqlServer.Server.Format",
           "clrName": "Unknown",
-          "tsEmitName": "unknown_",
+          "tsEmitName": "unknown",
           "metadataToken": 67108897,
           "normalizedSignature": "Unknown|Microsoft.SqlServer.Server.Format|static=true|const=true",
           "isStatic": true,
@@ -147,7 +147,7 @@
           }
         },
         {
-          "tsName": "unknown_",
+          "tsName": "unknown",
           "isStatic": true,
           "tsSignatureId": "Unknown|Microsoft.SqlServer.Server.Format|static=true|const=true",
           "target": {

@@ -41,7 +41,7 @@ export interface SqlServerBoolTypeMapping$instance extends BoolTypeMapping {
 
 export const SqlServerBoolTypeMapping: {
     new(storeType: string, dbType: Nullable<DbType>): SqlServerBoolTypeMapping;
-    readonly default_: SqlServerBoolTypeMapping;
+    readonly default: SqlServerBoolTypeMapping;
 };
 
 
@@ -53,7 +53,7 @@ export interface SqlServerByteArrayTypeMapping$instance extends ByteArrayTypeMap
 
 export const SqlServerByteArrayTypeMapping: {
     new(storeType: string, size: Nullable<System_Internal.Int32>, fixedLength: boolean, comparer: ValueComparer, sqlDbType: Nullable<SqlDbType>, storeTypePostfix: Nullable<StoreTypePostfix>): SqlServerByteArrayTypeMapping;
-    readonly default_: SqlServerByteArrayTypeMapping;
+    readonly default: SqlServerByteArrayTypeMapping;
 };
 
 
@@ -65,7 +65,7 @@ export interface SqlServerByteTypeMapping$instance extends ByteTypeMapping {
 
 export const SqlServerByteTypeMapping: {
     new(storeType: string, dbType: Nullable<DbType>): SqlServerByteTypeMapping;
-    readonly default_: SqlServerByteTypeMapping;
+    readonly default: SqlServerByteTypeMapping;
 };
 
 
@@ -98,7 +98,7 @@ export interface SqlServerDatabaseCreator$instance extends RelationalDatabaseCre
     retryTimeout: TimeSpan;
     create(): void;
     createAsync(cancellationToken?: CancellationToken): Task;
-    delete_(): void;
+    delete(): void;
     deleteAsync(cancellationToken?: CancellationToken): Task;
     exists(): boolean;
     existsAsync(cancellationToken?: CancellationToken): Task<System_Internal.Boolean>;
@@ -120,7 +120,7 @@ export interface SqlServerDateOnlyTypeMapping$instance extends DateOnlyTypeMappi
 
 export const SqlServerDateOnlyTypeMapping: {
     new(): SqlServerDateOnlyTypeMapping;
-    readonly default_: SqlServerDateOnlyTypeMapping;
+    readonly default: SqlServerDateOnlyTypeMapping;
 };
 
 
@@ -132,7 +132,7 @@ export interface SqlServerDateTimeOffsetTypeMapping$instance extends DateTimeOff
 
 export const SqlServerDateTimeOffsetTypeMapping: {
     new(storeType: string, dbType: Nullable<DbType>, storeTypePostfix: StoreTypePostfix): SqlServerDateTimeOffsetTypeMapping;
-    readonly default_: SqlServerDateTimeOffsetTypeMapping;
+    readonly default: SqlServerDateTimeOffsetTypeMapping;
 };
 
 
@@ -145,7 +145,7 @@ export interface SqlServerDateTimeTypeMapping$instance extends DateTimeTypeMappi
 
 export const SqlServerDateTimeTypeMapping: {
     new(storeType: string, dbType: Nullable<DbType>, sqlDbType: Nullable<SqlDbType>, storeTypePostfix: StoreTypePostfix): SqlServerDateTimeTypeMapping;
-    readonly default_: SqlServerDateTimeTypeMapping;
+    readonly default: SqlServerDateTimeTypeMapping;
 };
 
 
@@ -158,7 +158,7 @@ export interface SqlServerDecimalTypeMapping$instance extends DecimalTypeMapping
 
 export const SqlServerDecimalTypeMapping: {
     new(storeType: string, dbType: Nullable<DbType>, precision: Nullable<System_Internal.Int32>, scale: Nullable<System_Internal.Int32>, sqlDbType: Nullable<SqlDbType>, storeTypePostfix: StoreTypePostfix): SqlServerDecimalTypeMapping;
-    readonly default_: SqlServerDecimalTypeMapping;
+    readonly default: SqlServerDecimalTypeMapping;
 };
 
 
@@ -172,7 +172,7 @@ export interface SqlServerDoubleTypeMapping$instance extends DoubleTypeMapping {
 
 export const SqlServerDoubleTypeMapping: {
     new(storeType: string, dbType: Nullable<DbType>, storeTypePostfix: StoreTypePostfix): SqlServerDoubleTypeMapping;
-    readonly default_: SqlServerDoubleTypeMapping;
+    readonly default: SqlServerDoubleTypeMapping;
 };
 
 
@@ -221,7 +221,7 @@ export interface SqlServerFloatTypeMapping$instance extends FloatTypeMapping {
 
 export const SqlServerFloatTypeMapping: {
     new(storeType: string, dbType: Nullable<DbType>, storeTypePostfix: StoreTypePostfix): SqlServerFloatTypeMapping;
-    readonly default_: SqlServerFloatTypeMapping;
+    readonly default: SqlServerFloatTypeMapping;
 };
 
 
@@ -233,7 +233,7 @@ export interface SqlServerLongTypeMapping$instance extends LongTypeMapping {
 
 export const SqlServerLongTypeMapping: {
     new(storeType: string, converter: ValueConverter, comparer: ValueComparer, providerValueComparer: ValueComparer, dbType: Nullable<DbType>): SqlServerLongTypeMapping;
-    readonly default_: SqlServerLongTypeMapping;
+    readonly default: SqlServerLongTypeMapping;
 };
 
 
@@ -245,7 +245,7 @@ export interface SqlServerShortTypeMapping$instance extends ShortTypeMapping {
 
 export const SqlServerShortTypeMapping: {
     new(storeType: string, dbType: Nullable<DbType>): SqlServerShortTypeMapping;
-    readonly default_: SqlServerShortTypeMapping;
+    readonly default: SqlServerShortTypeMapping;
 };
 
 
@@ -278,7 +278,7 @@ export interface SqlServerSqlVariantTypeMapping$instance extends RelationalTypeM
 
 export const SqlServerSqlVariantTypeMapping: {
     new(storeType: string): SqlServerSqlVariantTypeMapping;
-    readonly default_: SqlServerSqlVariantTypeMapping;
+    readonly default: SqlServerSqlVariantTypeMapping;
 };
 
 
@@ -290,7 +290,7 @@ export interface SqlServerStringTypeMapping$instance extends StringTypeMapping {
 
 export const SqlServerStringTypeMapping: {
     new(storeType: string, unicode: boolean, size: Nullable<System_Internal.Int32>, fixedLength: boolean, sqlDbType: Nullable<SqlDbType>, storeTypePostfix: Nullable<StoreTypePostfix>, useKeyComparison: boolean): SqlServerStringTypeMapping;
-    readonly default_: SqlServerStringTypeMapping;
+    readonly default: SqlServerStringTypeMapping;
     readonly jsonTypeDefault: SqlServerStringTypeMapping;
     readonly unicodeDefault: SqlServerStringTypeMapping;
 };
@@ -306,7 +306,7 @@ export interface SqlServerStructuralJsonTypeMapping$instance extends JsonTypeMap
 
 export const SqlServerStructuralJsonTypeMapping: {
     new(storeType: string): SqlServerStructuralJsonTypeMapping;
-    readonly default_: SqlServerStructuralJsonTypeMapping;
+    readonly default: SqlServerStructuralJsonTypeMapping;
     readonly jsonTypeDefault: SqlServerStructuralJsonTypeMapping;
     readonly nvarcharMaxDefault: SqlServerStructuralJsonTypeMapping;
     createUtf8Stream(json: string): MemoryStream;
@@ -321,7 +321,7 @@ export interface SqlServerTimeOnlyTypeMapping$instance extends TimeOnlyTypeMappi
 
 export const SqlServerTimeOnlyTypeMapping: {
     new(): SqlServerTimeOnlyTypeMapping;
-    readonly default_: SqlServerTimeOnlyTypeMapping;
+    readonly default: SqlServerTimeOnlyTypeMapping;
 };
 
 
@@ -333,7 +333,7 @@ export interface SqlServerTimeSpanTypeMapping$instance extends TimeSpanTypeMappi
 
 export const SqlServerTimeSpanTypeMapping: {
     new(storeType: string, dbType: Nullable<DbType>, storeTypePostfix: StoreTypePostfix): SqlServerTimeSpanTypeMapping;
-    readonly default_: SqlServerTimeSpanTypeMapping;
+    readonly default: SqlServerTimeSpanTypeMapping;
 };
 
 
@@ -396,7 +396,7 @@ export interface SqlServerVectorTypeMapping$instance extends RelationalTypeMappi
 
 export const SqlServerVectorTypeMapping: {
     new(dimensions: Nullable<System_Internal.Int32>): SqlServerVectorTypeMapping;
-    readonly default_: SqlServerVectorTypeMapping;
+    readonly default: SqlServerVectorTypeMapping;
 };
 
 

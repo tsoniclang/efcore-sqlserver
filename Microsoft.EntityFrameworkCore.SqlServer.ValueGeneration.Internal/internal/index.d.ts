@@ -46,7 +46,7 @@ export const SqlServerSequenceHiLoValueGenerator_1: {
 export type SqlServerSequenceHiLoValueGenerator_1<TValue> = SqlServerSequenceHiLoValueGenerator_1$instance<TValue>;
 
 export interface SqlServerSequenceValueGeneratorFactory$instance {
-    tryCreate(property: IProperty, type_: Type, generatorState: SqlServerSequenceValueGeneratorState, connection: ISqlServerConnection, rawSqlCommandBuilder: IRawSqlCommandBuilder, commandLogger: IRelationalCommandDiagnosticsLogger): ValueGenerator | undefined;
+    tryCreate(property: IProperty, type: Type, generatorState: SqlServerSequenceValueGeneratorState, connection: ISqlServerConnection, rawSqlCommandBuilder: IRawSqlCommandBuilder, commandLogger: IRelationalCommandDiagnosticsLogger): ValueGenerator | undefined;
 }
 
 

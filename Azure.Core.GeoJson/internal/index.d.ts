@@ -107,7 +107,7 @@ export type GeoBoundingBox = GeoBoundingBox$instance;
 export interface GeoCollection$instance extends GeoObject {
     readonly count: int;
     readonly item: GeoObject;
-    readonly type_: GeoObjectType;
+    readonly type: GeoObjectType;
     getEnumerator(): IEnumerator__System_Collections_Generic<GeoObject>;
 }
 
@@ -134,7 +134,7 @@ export type GeoLinearRing = GeoLinearRing$instance;
 
 export interface GeoLineString$instance extends GeoObject {
     readonly coordinates: GeoArray_1<GeoPosition>;
-    readonly type_: GeoObjectType;
+    readonly type: GeoObjectType;
 }
 
 
@@ -150,7 +150,7 @@ export interface GeoLineStringCollection$instance extends GeoObject {
     readonly coordinates: GeoArray_1<GeoArray_1<GeoPosition>>;
     readonly count: int;
     readonly item: GeoLineString;
-    readonly type_: GeoObjectType;
+    readonly type: GeoObjectType;
     getEnumerator(): IEnumerator__System_Collections_Generic<GeoLineString>;
 }
 
@@ -165,7 +165,7 @@ export type GeoLineStringCollection = GeoLineStringCollection$instance;
 
 export interface GeoObject$instance {
     readonly boundingBox: GeoBoundingBox | undefined;
-    readonly type_: GeoObjectType;
+    readonly type: GeoObjectType;
     toString(): string;
     tryGetCustomProperty(name: string, value: unknown): boolean;
 }
@@ -180,7 +180,7 @@ export type GeoObject = GeoObject$instance;
 
 export interface GeoPoint$instance extends GeoObject {
     readonly coordinates: GeoPosition;
-    readonly type_: GeoObjectType;
+    readonly type: GeoObjectType;
 }
 
 
@@ -207,7 +207,7 @@ export interface GeoPointCollection$instance extends GeoObject {
     readonly coordinates: GeoArray_1<GeoPosition>;
     readonly count: int;
     readonly item: GeoPoint;
-    readonly type_: GeoObjectType;
+    readonly type: GeoObjectType;
     getEnumerator(): IEnumerator__System_Collections_Generic<GeoPoint>;
 }
 
@@ -224,7 +224,7 @@ export interface GeoPolygon$instance extends GeoObject {
     readonly coordinates: GeoArray_1<GeoArray_1<GeoPosition>>;
     readonly outerRing: GeoLinearRing;
     readonly rings: IReadOnlyList<GeoLinearRing>;
-    readonly type_: GeoObjectType;
+    readonly type: GeoObjectType;
 }
 
 
@@ -241,7 +241,7 @@ export interface GeoPolygonCollection$instance extends GeoObject {
     readonly coordinates: GeoArray_1<GeoArray_1<GeoArray_1<GeoPosition>>>;
     readonly count: int;
     readonly item: GeoPolygon;
-    readonly type_: GeoObjectType;
+    readonly type: GeoObjectType;
     getEnumerator(): IEnumerator__System_Collections_Generic<GeoPolygon>;
 }
 

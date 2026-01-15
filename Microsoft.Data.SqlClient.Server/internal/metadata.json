@@ -2063,7 +2063,7 @@
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::Type:System.Type",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "normalizedSignature": "Type|:System.Type|static=false|accessor=get",
           "provenance": "Original",
           "emitScope": "ClassSurface",

@@ -41,8 +41,8 @@ export interface BinaryData$instance {
 export const BinaryData: {
     new(data: byte[]): BinaryData;
     new(data: byte[], mediaType: string): BinaryData;
-    new(jsonSerializable: unknown, options: JsonSerializerOptions, type_: Type): BinaryData;
-    new(jsonSerializable: unknown, context: JsonSerializerContext, type_: Type): BinaryData;
+    new(jsonSerializable: unknown, options: JsonSerializerOptions, type: Type): BinaryData;
+    new(jsonSerializable: unknown, context: JsonSerializerContext, type: Type): BinaryData;
     new(data: ReadOnlyMemory<Byte>): BinaryData;
     new(data: ReadOnlyMemory<Byte>, mediaType: string): BinaryData;
     new(data: string): BinaryData;

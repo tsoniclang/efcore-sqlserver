@@ -2087,7 +2087,7 @@
         {
           "stableId": "Azure.Core:Azure.Core.RequestMethod::Get:Azure.Core.RequestMethod",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "normalizedSignature": "Get|:Azure.Core.RequestMethod|static=true|accessor=get",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -2147,7 +2147,7 @@
         {
           "stableId": "Azure.Core:Azure.Core.RequestMethod::Delete:Azure.Core.RequestMethod",
           "clrName": "Delete",
-          "tsEmitName": "delete_",
+          "tsEmitName": "delete",
           "normalizedSignature": "Delete|:Azure.Core.RequestMethod|static=true|accessor=get",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -2311,7 +2311,7 @@
         {
           "stableId": "Azure.Core:Azure.Core.ResourceType::Namespace:System.String",
           "clrName": "Namespace",
-          "tsEmitName": "namespace_",
+          "tsEmitName": "namespace",
           "normalizedSignature": "Namespace|:System.String|static=false|accessor=get",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -2326,7 +2326,7 @@
         {
           "stableId": "Azure.Core:Azure.Core.ResourceType::Type:System.String",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "normalizedSignature": "Type|:System.String|static=false|accessor=get",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -2726,7 +2726,7 @@
         {
           "stableId": "Azure.Core:Azure.Core.AzureCoreContext::Default:Azure.Core.AzureCoreContext",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "normalizedSignature": "Default|:Azure.Core.AzureCoreContext|static=true|accessor=get",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -2823,7 +2823,7 @@
         {
           "stableId": "Azure.Core:Azure.Core.ClientOptions::Default:Azure.Core.ClientOptions",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "normalizedSignature": "Default|:Azure.Core.ClientOptions|static=true|accessor=get",
           "provenance": "Original",
           "emitScope": "ClassSurface",

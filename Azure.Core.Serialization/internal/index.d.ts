@@ -59,7 +59,7 @@ export interface JsonObjectSerializer$instance extends ObjectSerializer {
 export const JsonObjectSerializer: {
     new(): JsonObjectSerializer;
     new(options: JsonSerializerOptions): JsonObjectSerializer;
-    readonly default_: JsonObjectSerializer;
+    readonly default: JsonObjectSerializer;
 };
 
 

@@ -864,7 +864,7 @@
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Configuration.PropertyValueOrigin::DefaultSystem.Configuration.PropertyValueOrigin",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 67109569,
           "normalizedSignature": "Default|System.Configuration.PropertyValueOrigin|static=true|const=true",
           "isStatic": true,
@@ -909,7 +909,7 @@
           }
         },
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|System.Configuration.PropertyValueOrigin|static=true|const=true",
           "target": {
@@ -1020,7 +1020,7 @@
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Configuration.SettingsSerializeAs::StringSystem.Configuration.SettingsSerializeAs",
           "clrName": "String",
-          "tsEmitName": "string_",
+          "tsEmitName": "string",
           "metadataToken": 67109792,
           "normalizedSignature": "String|System.Configuration.SettingsSerializeAs|static=true|const=true",
           "isStatic": true,
@@ -1076,7 +1076,7 @@
           }
         },
         {
-          "tsName": "string_",
+          "tsName": "string",
           "isStatic": true,
           "tsSignatureId": "String|System.Configuration.SettingsSerializeAs|static=true|const=true",
           "target": {
@@ -2464,7 +2464,7 @@
           }
         },
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.String|static=false|accessor=getset",
           "target": {
@@ -2874,7 +2874,7 @@
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Configuration.CallbackValidatorAttribute::Type:System.Type",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385876281,
           "canonicalSignature": ":System.Type",
           "normalizedSignature": "Type|:System.Type|static=false|accessor=getset",
@@ -2926,7 +2926,7 @@
           }
         },
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.Type|static=false|accessor=getset",
           "target": {
@@ -6304,7 +6304,7 @@
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Configuration.ConfigurationProperty::Type:System.Type",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385876392,
           "canonicalSignature": ":System.Type",
           "normalizedSignature": "Type|:System.Type|static=false|accessor=get",
@@ -6518,7 +6518,7 @@
           }
         },
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.Type|static=false|accessor=get",
           "target": {
@@ -7320,7 +7320,7 @@
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Configuration.ConfigurationSectionCollection::Get(System.Int32):System.Configuration.ConfigurationSection",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "metadataToken": 100664369,
           "canonicalSignature": "(System.Int32):System.Configuration.ConfigurationSection",
           "normalizedSignature": "Get|(System.Int32):System.Configuration.ConfigurationSection|static=false",
@@ -7334,7 +7334,7 @@
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Configuration.ConfigurationSectionCollection::Get(System.String):System.Configuration.ConfigurationSection",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "metadataToken": 100664370,
           "canonicalSignature": "(System.String):System.Configuration.ConfigurationSection",
           "normalizedSignature": "Get|(System.String):System.Configuration.ConfigurationSection|static=false",
@@ -7466,7 +7466,7 @@
           }
         },
         {
-          "tsName": "get_",
+          "tsName": "get",
           "isStatic": false,
           "tsSignatureId": "Get|(System.Int32):System.Configuration.ConfigurationSection|static=false",
           "target": {
@@ -7476,7 +7476,7 @@
           }
         },
         {
-          "tsName": "get_",
+          "tsName": "get",
           "isStatic": false,
           "tsSignatureId": "Get|(System.String):System.Configuration.ConfigurationSection|static=false",
           "target": {
@@ -7643,7 +7643,7 @@
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Configuration.ConfigurationSectionGroup::Type:System.String",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385876428,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Type|:System.String|static=false|accessor=getset",
@@ -7761,7 +7761,7 @@
           }
         },
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.String|static=false|accessor=getset",
           "target": {
@@ -7855,7 +7855,7 @@
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Configuration.ConfigurationSectionGroupCollection::Get(System.Int32):System.Configuration.ConfigurationSectionGroup",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "metadataToken": 100664407,
           "canonicalSignature": "(System.Int32):System.Configuration.ConfigurationSectionGroup",
           "normalizedSignature": "Get|(System.Int32):System.Configuration.ConfigurationSectionGroup|static=false",
@@ -7869,7 +7869,7 @@
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Configuration.ConfigurationSectionGroupCollection::Get(System.String):System.Configuration.ConfigurationSectionGroup",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "metadataToken": 100664408,
           "canonicalSignature": "(System.String):System.Configuration.ConfigurationSectionGroup",
           "normalizedSignature": "Get|(System.String):System.Configuration.ConfigurationSectionGroup|static=false",
@@ -8001,7 +8001,7 @@
           }
         },
         {
-          "tsName": "get_",
+          "tsName": "get",
           "isStatic": false,
           "tsSignatureId": "Get|(System.Int32):System.Configuration.ConfigurationSectionGroup|static=false",
           "target": {
@@ -8011,7 +8011,7 @@
           }
         },
         {
-          "tsName": "get_",
+          "tsName": "get",
           "isStatic": false,
           "tsSignatureId": "Get|(System.String):System.Configuration.ConfigurationSectionGroup|static=false",
           "target": {
@@ -10240,7 +10240,7 @@
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Configuration.ElementInformation::Type:System.Type",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385876490,
           "canonicalSignature": ":System.Type",
           "normalizedSignature": "Type|:System.Type|static=false|accessor=get",
@@ -10345,7 +10345,7 @@
           }
         },
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.Type|static=false|accessor=get",
           "target": {
@@ -13903,7 +13903,7 @@
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Configuration.PropertyInformation::Type:System.Type",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385876599,
           "canonicalSignature": ":System.Type",
           "normalizedSignature": "Type|:System.Type|static=false|accessor=get",
@@ -14062,7 +14062,7 @@
           }
         },
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.Type|static=false|accessor=get",
           "target": {
@@ -14851,7 +14851,7 @@
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Configuration.ProviderSettings::Type:System.String",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385876618,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Type|:System.String|static=false|accessor=getset",
@@ -14945,7 +14945,7 @@
           }
         },
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.String|static=false|accessor=getset",
           "target": {
@@ -16806,7 +16806,7 @@
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Configuration.SectionInformation::Type:System.String",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385876676,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Type|:System.String|static=false|accessor=getset",
@@ -17099,7 +17099,7 @@
           }
         },
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.String|static=false|accessor=getset",
           "target": {
@@ -17556,7 +17556,7 @@
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Configuration.SettingElementCollection::Get(System.String):System.Configuration.SettingElement",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "metadataToken": 100665262,
           "canonicalSignature": "(System.String):System.Configuration.SettingElement",
           "normalizedSignature": "Get|(System.String):System.Configuration.SettingElement|static=false",
@@ -17642,7 +17642,7 @@
       ],
       "exposedMethods": [
         {
-          "tsName": "get_",
+          "tsName": "get",
           "isStatic": false,
           "tsSignatureId": "Get|(System.String):System.Configuration.SettingElement|static=false",
           "target": {
@@ -22260,7 +22260,7 @@
           }
         },
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.String|static=false|accessor=getset",
           "target": {

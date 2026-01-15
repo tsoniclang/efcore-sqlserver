@@ -304,7 +304,7 @@
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.SqlBulkCopyOptions::DefaultMicrosoft.Data.SqlClient.SqlBulkCopyOptions",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "normalizedSignature": "Default|Microsoft.Data.SqlClient.SqlBulkCopyOptions|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -676,7 +676,7 @@
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.SqlNotificationInfo::UnknownMicrosoft.Data.SqlClient.SqlNotificationInfo",
           "clrName": "Unknown",
-          "tsEmitName": "unknown_",
+          "tsEmitName": "unknown",
           "normalizedSignature": "Unknown|Microsoft.Data.SqlClient.SqlNotificationInfo|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -712,7 +712,7 @@
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.SqlNotificationInfo::DeleteMicrosoft.Data.SqlClient.SqlNotificationInfo",
           "clrName": "Delete",
-          "tsEmitName": "delete_",
+          "tsEmitName": "delete",
           "normalizedSignature": "Delete|Microsoft.Data.SqlClient.SqlNotificationInfo|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -873,7 +873,7 @@
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.SqlNotificationSource::UnknownMicrosoft.Data.SqlClient.SqlNotificationSource",
           "clrName": "Unknown",
-          "tsEmitName": "unknown_",
+          "tsEmitName": "unknown",
           "normalizedSignature": "Unknown|Microsoft.Data.SqlClient.SqlNotificationSource|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -900,7 +900,7 @@
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.SqlNotificationSource::ObjectMicrosoft.Data.SqlClient.SqlNotificationSource",
           "clrName": "Object",
-          "tsEmitName": "object_",
+          "tsEmitName": "object",
           "normalizedSignature": "Object|Microsoft.Data.SqlClient.SqlNotificationSource|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -989,7 +989,7 @@
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.SqlNotificationType::UnknownMicrosoft.Data.SqlClient.SqlNotificationType",
           "clrName": "Unknown",
-          "tsEmitName": "unknown_",
+          "tsEmitName": "unknown",
           "normalizedSignature": "Unknown|Microsoft.Data.SqlClient.SqlNotificationType|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -8452,7 +8452,7 @@
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.SqlError::Class:System.Byte",
           "clrName": "Class",
-          "tsEmitName": "class_",
+          "tsEmitName": "class",
           "normalizedSignature": "Class|:System.Byte|static=false|accessor=get",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -8497,7 +8497,7 @@
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.SqlError::Number:System.Int32",
           "clrName": "Number",
-          "tsEmitName": "number_",
+          "tsEmitName": "number",
           "normalizedSignature": "Number|:System.Int32|static=false|accessor=get",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -8733,7 +8733,7 @@
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.SqlException::Class:System.Byte",
           "clrName": "Class",
-          "tsEmitName": "class_",
+          "tsEmitName": "class",
           "normalizedSignature": "Class|:System.Byte|static=false|accessor=get",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -8793,7 +8793,7 @@
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.SqlException::Number:System.Int32",
           "clrName": "Number",
-          "tsEmitName": "number_",
+          "tsEmitName": "number",
           "normalizedSignature": "Number|:System.Int32|static=false|accessor=get",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -8994,7 +8994,7 @@
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.SqlNotificationEventArgs::Type:Microsoft.Data.SqlClient.SqlNotificationType",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "normalizedSignature": "Type|:Microsoft.Data.SqlClient.SqlNotificationType|static=false|accessor=get",
           "provenance": "Original",
           "emitScope": "ClassSurface",

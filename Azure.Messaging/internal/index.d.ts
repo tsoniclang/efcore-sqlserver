@@ -31,13 +31,13 @@ export interface CloudEvent$instance {
     get subject(): string | undefined;
     set subject(value: string);
     time: Nullable<DateTimeOffset>;
-    type_: string;
+    type: string;
 }
 
 
 export const CloudEvent: {
-    new(source: string, type_: string, jsonSerializableData: unknown, dataSerializationType: Type): CloudEvent;
-    new(source: string, type_: string, data: BinaryData, dataContentType: string, dataFormat: CloudEventDataFormat): CloudEvent;
+    new(source: string, type: string, jsonSerializableData: unknown, dataSerializationType: Type): CloudEvent;
+    new(source: string, type: string, data: BinaryData, dataContentType: string, dataFormat: CloudEventDataFormat): CloudEvent;
     parse(json: BinaryData, skipValidation?: boolean): CloudEvent | undefined;
     parseMany(json: BinaryData, skipValidation?: boolean): CloudEvent[];
 };

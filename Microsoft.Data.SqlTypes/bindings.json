@@ -69,7 +69,7 @@
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlTypes.SqlVector\u00601::Null:Nullable_1",
           "clrName": "Null",
-          "tsEmitName": "null_",
+          "tsEmitName": "null",
           "metadataToken": 385877534,
           "canonicalSignature": ":Nullable_1",
           "normalizedSignature": "Null|:Nullable_1|static=true|accessor=get",
@@ -139,7 +139,7 @@
           }
         },
         {
-          "tsName": "null_",
+          "tsName": "null",
           "isStatic": true,
           "tsSignatureId": "Null|:Nullable_1|static=true|accessor=get",
           "target": {
@@ -764,7 +764,7 @@
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlTypes.SqlJson::Null:Microsoft.Data.SqlTypes.SqlJson",
           "clrName": "Null",
-          "tsEmitName": "null_",
+          "tsEmitName": "null",
           "metadataToken": 385877529,
           "canonicalSignature": ":Microsoft.Data.SqlTypes.SqlJson",
           "normalizedSignature": "Null|:Microsoft.Data.SqlTypes.SqlJson|static=true|accessor=get",
@@ -848,7 +848,7 @@
           }
         },
         {
-          "tsName": "null_",
+          "tsName": "null",
           "isStatic": true,
           "tsSignatureId": "Null|:Microsoft.Data.SqlTypes.SqlJson|static=true|accessor=get",
           "target": {

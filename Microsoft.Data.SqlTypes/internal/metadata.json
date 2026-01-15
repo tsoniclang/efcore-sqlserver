@@ -81,7 +81,7 @@
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlTypes.SqlVector\u00601::Null:Nullable_1",
           "clrName": "Null",
-          "tsEmitName": "null_",
+          "tsEmitName": "null",
           "normalizedSignature": "Null|:Nullable_1|static=true|accessor=get",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -506,7 +506,7 @@
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlTypes.SqlJson::Null:Microsoft.Data.SqlTypes.SqlJson",
           "clrName": "Null",
-          "tsEmitName": "null_",
+          "tsEmitName": "null",
           "normalizedSignature": "Null|:Microsoft.Data.SqlTypes.SqlJson|static=true|accessor=get",
           "provenance": "Original",
           "emitScope": "ClassSurface",

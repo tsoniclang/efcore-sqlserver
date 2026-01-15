@@ -24,7 +24,7 @@
         {
           "stableId": "Azure.Core:Azure.ErrorOptions::DefaultAzure.ErrorOptions",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 67108869,
           "normalizedSignature": "Default|Azure.ErrorOptions|static=true|const=true",
           "isStatic": true,
@@ -58,7 +58,7 @@
           }
         },
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|Azure.ErrorOptions|static=true|const=true",
           "target": {

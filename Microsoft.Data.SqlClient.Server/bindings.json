@@ -2641,7 +2641,7 @@
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Server.SqlMetaData::Type:System.Type",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385877798,
           "canonicalSignature": ":System.Type",
           "normalizedSignature": "Type|:System.Type|static=false|accessor=get",
@@ -3341,7 +3341,7 @@
           }
         },
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.Type|static=false|accessor=get",
           "target": {

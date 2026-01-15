@@ -1040,7 +1040,7 @@
         {
           "stableId": "Azure.Core:Azure.Core.GeoJson.GeoCollection::Type:Azure.Core.GeoJson.GeoObjectType",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385876347,
           "canonicalSignature": ":Azure.Core.GeoJson.GeoObjectType",
           "normalizedSignature": "Type|:Azure.Core.GeoJson.GeoObjectType|static=false|accessor=get",
@@ -1140,7 +1140,7 @@
           }
         },
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:Azure.Core.GeoJson.GeoObjectType|static=false|accessor=get",
           "target": {
@@ -1267,7 +1267,7 @@
         {
           "stableId": "Azure.Core:Azure.Core.GeoJson.GeoLineString::Type:Azure.Core.GeoJson.GeoObjectType",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385876350,
           "canonicalSignature": ":Azure.Core.GeoJson.GeoObjectType",
           "normalizedSignature": "Type|:Azure.Core.GeoJson.GeoObjectType|static=false|accessor=get",
@@ -1347,7 +1347,7 @@
           }
         },
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:Azure.Core.GeoJson.GeoObjectType|static=false|accessor=get",
           "target": {
@@ -1456,7 +1456,7 @@
         {
           "stableId": "Azure.Core:Azure.Core.GeoJson.GeoLineStringCollection::Type:Azure.Core.GeoJson.GeoObjectType",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385876355,
           "canonicalSignature": ":Azure.Core.GeoJson.GeoObjectType",
           "normalizedSignature": "Type|:Azure.Core.GeoJson.GeoObjectType|static=false|accessor=get",
@@ -1566,7 +1566,7 @@
           }
         },
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:Azure.Core.GeoJson.GeoObjectType|static=false|accessor=get",
           "target": {
@@ -1667,7 +1667,7 @@
         {
           "stableId": "Azure.Core:Azure.Core.GeoJson.GeoObject::Type:Azure.Core.GeoJson.GeoObjectType",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385876357,
           "canonicalSignature": ":Azure.Core.GeoJson.GeoObjectType",
           "normalizedSignature": "Type|:Azure.Core.GeoJson.GeoObjectType|static=false|accessor=get",
@@ -1730,7 +1730,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:Azure.Core.GeoJson.GeoObjectType|static=false|accessor=get",
           "target": {
@@ -1853,7 +1853,7 @@
         {
           "stableId": "Azure.Core:Azure.Core.GeoJson.GeoPoint::Type:Azure.Core.GeoJson.GeoObjectType",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385876360,
           "canonicalSignature": ":Azure.Core.GeoJson.GeoObjectType",
           "normalizedSignature": "Type|:Azure.Core.GeoJson.GeoObjectType|static=false|accessor=get",
@@ -2013,7 +2013,7 @@
           }
         },
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:Azure.Core.GeoJson.GeoObjectType|static=false|accessor=get",
           "target": {
@@ -2149,7 +2149,7 @@
         {
           "stableId": "Azure.Core:Azure.Core.GeoJson.GeoPointCollection::Type:Azure.Core.GeoJson.GeoObjectType",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385876365,
           "canonicalSignature": ":Azure.Core.GeoJson.GeoObjectType",
           "normalizedSignature": "Type|:Azure.Core.GeoJson.GeoObjectType|static=false|accessor=get",
@@ -2259,7 +2259,7 @@
           }
         },
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:Azure.Core.GeoJson.GeoObjectType|static=false|accessor=get",
           "target": {
@@ -2353,7 +2353,7 @@
         {
           "stableId": "Azure.Core:Azure.Core.GeoJson.GeoPolygon::Type:Azure.Core.GeoJson.GeoObjectType",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385876369,
           "canonicalSignature": ":Azure.Core.GeoJson.GeoObjectType",
           "normalizedSignature": "Type|:Azure.Core.GeoJson.GeoObjectType|static=false|accessor=get",
@@ -2463,7 +2463,7 @@
           }
         },
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:Azure.Core.GeoJson.GeoObjectType|static=false|accessor=get",
           "target": {
@@ -2581,7 +2581,7 @@
         {
           "stableId": "Azure.Core:Azure.Core.GeoJson.GeoPolygonCollection::Type:Azure.Core.GeoJson.GeoObjectType",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385876374,
           "canonicalSignature": ":Azure.Core.GeoJson.GeoObjectType",
           "normalizedSignature": "Type|:Azure.Core.GeoJson.GeoObjectType|static=false|accessor=get",
@@ -2691,7 +2691,7 @@
           }
         },
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:Azure.Core.GeoJson.GeoObjectType|static=false|accessor=get",
           "target": {

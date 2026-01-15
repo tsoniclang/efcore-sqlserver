@@ -86,7 +86,7 @@ export enum OverrideMode {
 
 
 export enum PropertyValueOrigin {
-    default_ = 0,
+    default = 0,
     inherited = 1,
     setHere = 2
 }
@@ -98,7 +98,7 @@ export enum SettingsManageability {
 
 
 export enum SettingsSerializeAs {
-    string_ = 0,
+    string = 0,
     xml = 1,
     binary = 2,
     providerSpecific = 3
@@ -207,7 +207,7 @@ export const ApplicationSettingsGroup: {
 export type ApplicationSettingsGroup = ApplicationSettingsGroup$instance;
 
 export interface AppSettingsReader$instance {
-    getValue(key: string, type_: Type): unknown;
+    getValue(key: string, type: Type): unknown;
 }
 
 
@@ -232,13 +232,13 @@ export const AppSettingsSection: {
 export type AppSettingsSection = AppSettingsSection$instance;
 
 export interface CallbackValidator$instance extends ConfigurationValidatorBase {
-    canValidate(type_: Type): boolean;
+    canValidate(type: Type): boolean;
     validate(value: unknown): void;
 }
 
 
 export const CallbackValidator: {
-    new(type_: Type, callback: ValidatorCallback): CallbackValidator;
+    new(type: Type, callback: ValidatorCallback): CallbackValidator;
 };
 
 
@@ -246,7 +246,7 @@ export type CallbackValidator = CallbackValidator$instance;
 
 export interface CallbackValidatorAttribute$instance extends ConfigurationValidatorAttribute {
     callbackMethodName: string;
-    type_: Type;
+    type: Type;
     readonly validatorInstance: ConfigurationValidatorBase;
 }
 
@@ -294,7 +294,7 @@ export type CommaDelimitedStringCollection = CommaDelimitedStringCollection$inst
 
 export interface CommaDelimitedStringCollectionConverter$instance extends ConfigurationConverterBase {
     convertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown): unknown;
-    convertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type_: Type): unknown;
+    convertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type): unknown;
 }
 
 
@@ -354,8 +354,8 @@ export const ConfigurationCollectionAttribute: {
 export type ConfigurationCollectionAttribute = ConfigurationCollectionAttribute$instance;
 
 export interface ConfigurationConverterBase$instance extends TypeConverter {
-    canConvertFrom(ctx: ITypeDescriptorContext, type_: Type): boolean;
-    canConvertTo(ctx: ITypeDescriptorContext, type_: Type): boolean;
+    canConvertFrom(ctx: ITypeDescriptorContext, type: Type): boolean;
+    canConvertTo(ctx: ITypeDescriptorContext, type: Type): boolean;
 }
 
 
@@ -544,17 +544,17 @@ export interface ConfigurationProperty$instance {
     readonly isTypeStringTransformationRequired: boolean;
     readonly isVersionCheckRequired: boolean;
     readonly name: string;
-    readonly type_: Type;
+    readonly type: Type;
     readonly validator: ConfigurationValidatorBase;
 }
 
 
 export const ConfigurationProperty: {
-    new(name: string, type_: Type): ConfigurationProperty;
-    new(name: string, type_: Type, defaultValue: unknown): ConfigurationProperty;
-    new(name: string, type_: Type, defaultValue: unknown, options: ConfigurationPropertyOptions): ConfigurationProperty;
-    new(name: string, type_: Type, defaultValue: unknown, typeConverter: TypeConverter, validator: ConfigurationValidatorBase, options: ConfigurationPropertyOptions): ConfigurationProperty;
-    new(name: string, type_: Type, defaultValue: unknown, typeConverter: TypeConverter, validator: ConfigurationValidatorBase, options: ConfigurationPropertyOptions, description: string): ConfigurationProperty;
+    new(name: string, type: Type): ConfigurationProperty;
+    new(name: string, type: Type, defaultValue: unknown): ConfigurationProperty;
+    new(name: string, type: Type, defaultValue: unknown, options: ConfigurationPropertyOptions): ConfigurationProperty;
+    new(name: string, type: Type, defaultValue: unknown, typeConverter: TypeConverter, validator: ConfigurationValidatorBase, options: ConfigurationPropertyOptions): ConfigurationProperty;
+    new(name: string, type: Type, defaultValue: unknown, typeConverter: TypeConverter, validator: ConfigurationValidatorBase, options: ConfigurationPropertyOptions, description: string): ConfigurationProperty;
 };
 
 
@@ -613,8 +613,8 @@ export interface ConfigurationSectionCollection$instance extends NameObjectColle
     add(name: string, section: ConfigurationSection): void;
     clear(): void;
     copyTo(array: ConfigurationSection[], index: int): void;
-    get_(index: int): ConfigurationSection;
-    get_(name: string): ConfigurationSection;
+    get(index: int): ConfigurationSection;
+    get(name: string): ConfigurationSection;
     get_Item(name: string): ConfigurationSection;
     get_Item(index: int): ConfigurationSection;
     getEnumerator(): IEnumerator;
@@ -638,7 +638,7 @@ export interface ConfigurationSectionGroup$instance {
     readonly sectionGroupName: string;
     readonly sectionGroups: ConfigurationSectionGroupCollection;
     readonly sections: ConfigurationSectionCollection;
-    type_: string;
+    type: string;
     forceDeclaration(): void;
     forceDeclaration(force: boolean): void;
 }
@@ -655,8 +655,8 @@ export interface ConfigurationSectionGroupCollection$instance extends NameObject
     add(name: string, sectionGroup: ConfigurationSectionGroup): void;
     clear(): void;
     copyTo(array: ConfigurationSectionGroup[], index: int): void;
-    get_(index: int): ConfigurationSectionGroup;
-    get_(name: string): ConfigurationSectionGroup;
+    get(index: int): ConfigurationSectionGroup;
+    get(name: string): ConfigurationSectionGroup;
     get_Item(name: string): ConfigurationSectionGroup;
     get_Item(index: int): ConfigurationSectionGroup;
     getEnumerator(): IEnumerator;
@@ -700,7 +700,7 @@ export const ConfigurationValidatorAttribute: {
 export type ConfigurationValidatorAttribute = ConfigurationValidatorAttribute$instance;
 
 export interface ConfigurationValidatorBase$instance {
-    canValidate(type_: Type): boolean;
+    canValidate(type: Type): boolean;
     validate(value: unknown): void;
 }
 
@@ -827,7 +827,7 @@ export const DefaultSettingValueAttribute: {
 export type DefaultSettingValueAttribute = DefaultSettingValueAttribute$instance;
 
 export interface DefaultValidator$instance extends ConfigurationValidatorBase {
-    canValidate(type_: Type): boolean;
+    canValidate(type: Type): boolean;
     validate(value: unknown): void;
 }
 
@@ -881,7 +881,7 @@ export interface ElementInformation$instance {
     readonly lineNumber: int;
     readonly properties: PropertyInformationCollection;
     readonly source: string;
-    readonly type_: Type;
+    readonly type: Type;
     readonly validator: ConfigurationValidatorBase;
 }
 
@@ -924,7 +924,7 @@ export type ExeContext = ExeContext$instance;
 
 export interface GenericEnumConverter$instance extends ConfigurationConverterBase {
     convertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown): unknown;
-    convertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type_: Type): unknown;
+    convertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type): unknown;
 }
 
 
@@ -979,7 +979,7 @@ export type IgnoreSectionHandler = IgnoreSectionHandler$instance & __IgnoreSecti
 
 export interface InfiniteIntConverter$instance extends ConfigurationConverterBase {
     convertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown): unknown;
-    convertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type_: Type): unknown;
+    convertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type): unknown;
 }
 
 
@@ -992,7 +992,7 @@ export type InfiniteIntConverter = InfiniteIntConverter$instance;
 
 export interface InfiniteTimeSpanConverter$instance extends ConfigurationConverterBase {
     convertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown): unknown;
-    convertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type_: Type): unknown;
+    convertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type): unknown;
 }
 
 
@@ -1004,7 +1004,7 @@ export const InfiniteTimeSpanConverter: {
 export type InfiniteTimeSpanConverter = InfiniteTimeSpanConverter$instance;
 
 export interface IntegerValidator$instance extends ConfigurationValidatorBase {
-    canValidate(type_: Type): boolean;
+    canValidate(type: Type): boolean;
     validate(value: unknown): void;
 }
 
@@ -1101,7 +1101,7 @@ export type LocalFileSettingsProvider = LocalFileSettingsProvider$instance & __L
 
 
 export interface LongValidator$instance extends ConfigurationValidatorBase {
-    canValidate(type_: Type): boolean;
+    canValidate(type: Type): boolean;
     validate(value: unknown): void;
 }
 
@@ -1210,7 +1210,7 @@ export const NoSettingsVersionUpgradeAttribute: {
 export type NoSettingsVersionUpgradeAttribute = NoSettingsVersionUpgradeAttribute$instance;
 
 export interface PositiveTimeSpanValidator$instance extends ConfigurationValidatorBase {
-    canValidate(type_: Type): boolean;
+    canValidate(type: Type): boolean;
     validate(value: unknown): void;
 }
 
@@ -1245,7 +1245,7 @@ export interface PropertyInformation$instance {
     readonly lineNumber: int;
     readonly name: string;
     readonly source: string;
-    readonly type_: Type;
+    readonly type: Type;
     readonly validator: ConfigurationValidatorBase;
     value: unknown;
     readonly valueOrigin: PropertyValueOrigin;
@@ -1326,13 +1326,13 @@ export type ProtectedProviderSettings = ProtectedProviderSettings$instance;
 export interface ProviderSettings$instance extends ConfigurationElement {
     name: string;
     readonly parameters: NameValueCollection;
-    type_: string;
+    type: string;
 }
 
 
 export const ProviderSettings: {
     new(): ProviderSettings;
-    new(name: string, type_: string): ProviderSettings;
+    new(name: string, type: string): ProviderSettings;
 };
 
 
@@ -1356,7 +1356,7 @@ export const ProviderSettingsCollection: {
 export type ProviderSettingsCollection = ProviderSettingsCollection$instance;
 
 export interface RegexStringValidator$instance extends ConfigurationValidatorBase {
-    canValidate(type_: Type): boolean;
+    canValidate(type: Type): boolean;
     validate(value: unknown): void;
 }
 
@@ -1452,7 +1452,7 @@ export interface SectionInformation$instance {
     requirePermission: boolean;
     restartOnExternalChanges: boolean;
     readonly sectionName: string;
-    type_: string;
+    type: string;
     forceDeclaration(): void;
     forceDeclaration(force: boolean): void;
     getParentSection(): ConfigurationSection;
@@ -1518,7 +1518,7 @@ export interface SettingElementCollection$instance extends ConfigurationElementC
     readonly collectionType: ConfigurationElementCollectionType;
     add(element: SettingElement): void;
     clear(): void;
-    get_(elementKey: string): SettingElement;
+    get(elementKey: string): SettingElement;
     remove(element: SettingElement): void;
 }
 
@@ -1853,7 +1853,7 @@ export const SpecialSettingAttribute: {
 export type SpecialSettingAttribute = SpecialSettingAttribute$instance;
 
 export interface StringValidator$instance extends ConfigurationValidatorBase {
-    canValidate(type_: Type): boolean;
+    canValidate(type: Type): boolean;
     validate(value: unknown): void;
 }
 
@@ -1883,7 +1883,7 @@ export const StringValidatorAttribute: {
 export type StringValidatorAttribute = StringValidatorAttribute$instance;
 
 export interface SubclassTypeValidator$instance extends ConfigurationValidatorBase {
-    canValidate(type_: Type): boolean;
+    canValidate(type: Type): boolean;
     validate(value: unknown): void;
 }
 
@@ -1910,7 +1910,7 @@ export type SubclassTypeValidatorAttribute = SubclassTypeValidatorAttribute$inst
 
 export interface TimeSpanMinutesConverter$instance extends ConfigurationConverterBase {
     convertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown): unknown;
-    convertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type_: Type): unknown;
+    convertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type): unknown;
 }
 
 
@@ -1923,7 +1923,7 @@ export type TimeSpanMinutesConverter = TimeSpanMinutesConverter$instance;
 
 export interface TimeSpanMinutesOrInfiniteConverter$instance extends TimeSpanMinutesConverter {
     convertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown): unknown;
-    convertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type_: Type): unknown;
+    convertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type): unknown;
 }
 
 
@@ -1936,7 +1936,7 @@ export type TimeSpanMinutesOrInfiniteConverter = TimeSpanMinutesOrInfiniteConver
 
 export interface TimeSpanSecondsConverter$instance extends ConfigurationConverterBase {
     convertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown): unknown;
-    convertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type_: Type): unknown;
+    convertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type): unknown;
 }
 
 
@@ -1949,7 +1949,7 @@ export type TimeSpanSecondsConverter = TimeSpanSecondsConverter$instance;
 
 export interface TimeSpanSecondsOrInfiniteConverter$instance extends TimeSpanSecondsConverter {
     convertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown): unknown;
-    convertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type_: Type): unknown;
+    convertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type): unknown;
 }
 
 
@@ -1961,7 +1961,7 @@ export const TimeSpanSecondsOrInfiniteConverter: {
 export type TimeSpanSecondsOrInfiniteConverter = TimeSpanSecondsOrInfiniteConverter$instance;
 
 export interface TimeSpanValidator$instance extends ConfigurationValidatorBase {
-    canValidate(type_: Type): boolean;
+    canValidate(type: Type): boolean;
     validate(value: unknown): void;
 }
 
@@ -1996,7 +1996,7 @@ export type TimeSpanValidatorAttribute = TimeSpanValidatorAttribute$instance;
 
 export interface TypeNameConverter$instance extends ConfigurationConverterBase {
     convertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown): unknown;
-    convertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type_: Type): unknown;
+    convertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type): unknown;
 }
 
 
@@ -2045,7 +2045,7 @@ export type UserSettingsGroup = UserSettingsGroup$instance;
 
 export interface WhiteSpaceTrimStringConverter$instance extends ConfigurationConverterBase {
     convertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown): unknown;
-    convertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type_: Type): unknown;
+    convertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type): unknown;
 }
 
 

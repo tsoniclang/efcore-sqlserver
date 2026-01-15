@@ -91,7 +91,7 @@ export interface SqlServerAggregateFunctionExpression$instance extends SqlExpres
 
 
 export const SqlServerAggregateFunctionExpression: {
-    new(name: string, arguments: IReadOnlyList<SqlExpression>, orderings: IReadOnlyList<OrderingExpression>, nullable: boolean, argumentsPropagateNullability: IEnumerable<System_Internal.Boolean>, type_: Type, typeMapping: RelationalTypeMapping): SqlServerAggregateFunctionExpression;
+    new(name: string, arguments: IReadOnlyList<SqlExpression>, orderings: IReadOnlyList<OrderingExpression>, nullable: boolean, argumentsPropagateNullability: IEnumerable<System_Internal.Boolean>, type: Type, typeMapping: RelationalTypeMapping): SqlServerAggregateFunctionExpression;
 };
 
 
@@ -132,7 +132,7 @@ export const SqlServerByteArrayMethodTranslator: {
 export type SqlServerByteArrayMethodTranslator = SqlServerByteArrayMethodTranslator$instance;
 
 export interface SqlServerCompiledQueryCacheKeyGenerator$instance extends RelationalCompiledQueryCacheKeyGenerator {
-    generateCacheKey(query: Expression, async_: boolean): unknown;
+    generateCacheKey(query: Expression, async: boolean): unknown;
 }
 
 
@@ -459,16 +459,16 @@ export interface SqlServerQueryCompilationContext$instance extends RelationalQue
 
 
 export const SqlServerQueryCompilationContext: {
-    new(dependencies: QueryCompilationContextDependencies, relationalDependencies: RelationalQueryCompilationContextDependencies, async_: boolean, multipleActiveResultSetsEnabled: boolean): SqlServerQueryCompilationContext;
-    new(dependencies: QueryCompilationContextDependencies, relationalDependencies: RelationalQueryCompilationContextDependencies, async_: boolean, multipleActiveResultSetsEnabled: boolean, precompiling: boolean): SqlServerQueryCompilationContext;
+    new(dependencies: QueryCompilationContextDependencies, relationalDependencies: RelationalQueryCompilationContextDependencies, async: boolean, multipleActiveResultSetsEnabled: boolean): SqlServerQueryCompilationContext;
+    new(dependencies: QueryCompilationContextDependencies, relationalDependencies: RelationalQueryCompilationContextDependencies, async: boolean, multipleActiveResultSetsEnabled: boolean, precompiling: boolean): SqlServerQueryCompilationContext;
 };
 
 
 export type SqlServerQueryCompilationContext = SqlServerQueryCompilationContext$instance;
 
 export interface SqlServerQueryCompilationContextFactory$instance {
-    create(async_: boolean): QueryCompilationContext;
-    createPrecompiled(async_: boolean): QueryCompilationContext;
+    create(async: boolean): QueryCompilationContext;
+    createPrecompiled(async: boolean): QueryCompilationContext;
 }
 
 
@@ -762,8 +762,8 @@ export interface TemporalBetweenQueryRootExpression$instance extends TemporalRan
 
 
 export const TemporalBetweenQueryRootExpression: {
-    new(entityType: IEntityType, from_: DateTime, to: DateTime): TemporalBetweenQueryRootExpression;
-    new(queryProvider: IAsyncQueryProvider, entityType: IEntityType, from_: DateTime, to: DateTime): TemporalBetweenQueryRootExpression;
+    new(entityType: IEntityType, from: DateTime, to: DateTime): TemporalBetweenQueryRootExpression;
+    new(queryProvider: IAsyncQueryProvider, entityType: IEntityType, from: DateTime, to: DateTime): TemporalBetweenQueryRootExpression;
 };
 
 
@@ -778,8 +778,8 @@ export interface TemporalContainedInQueryRootExpression$instance extends Tempora
 
 
 export const TemporalContainedInQueryRootExpression: {
-    new(entityType: IEntityType, from_: DateTime, to: DateTime): TemporalContainedInQueryRootExpression;
-    new(queryProvider: IAsyncQueryProvider, entityType: IEntityType, from_: DateTime, to: DateTime): TemporalContainedInQueryRootExpression;
+    new(entityType: IEntityType, from: DateTime, to: DateTime): TemporalContainedInQueryRootExpression;
+    new(queryProvider: IAsyncQueryProvider, entityType: IEntityType, from: DateTime, to: DateTime): TemporalContainedInQueryRootExpression;
 };
 
 
@@ -794,8 +794,8 @@ export interface TemporalFromToQueryRootExpression$instance extends TemporalRang
 
 
 export const TemporalFromToQueryRootExpression: {
-    new(entityType: IEntityType, from_: DateTime, to: DateTime): TemporalFromToQueryRootExpression;
-    new(queryProvider: IAsyncQueryProvider, entityType: IEntityType, from_: DateTime, to: DateTime): TemporalFromToQueryRootExpression;
+    new(entityType: IEntityType, from: DateTime, to: DateTime): TemporalFromToQueryRootExpression;
+    new(queryProvider: IAsyncQueryProvider, entityType: IEntityType, from: DateTime, to: DateTime): TemporalFromToQueryRootExpression;
 };
 
 
@@ -812,7 +812,7 @@ export const TemporalQueryRootExpression: {
 export type TemporalQueryRootExpression = TemporalQueryRootExpression$instance;
 
 export interface TemporalRangeQueryRootExpression$instance extends TemporalQueryRootExpression {
-    readonly from_: DateTime;
+    readonly from: DateTime;
     readonly to: DateTime;
     equals(obj: unknown): boolean;
     getHashCode(): int;

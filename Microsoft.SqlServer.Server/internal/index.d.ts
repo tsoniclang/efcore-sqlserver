@@ -19,7 +19,7 @@ export enum DataAccessKind {
 
 
 export enum Format {
-    unknown_ = 0,
+    unknown = 0,
     native = 1,
     userDefined = 2
 }

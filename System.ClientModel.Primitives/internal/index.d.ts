@@ -30,7 +30,7 @@ import type { ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
 
 export enum ClientErrorBehaviors {
-    default_ = 0,
+    default = 0,
     noThrow = 1
 }
 
@@ -259,7 +259,7 @@ export interface ClientRetryPolicy$instance extends PipelinePolicy {
 export const ClientRetryPolicy: {
     new(maxRetries: int): ClientRetryPolicy;
     new(maxRetries: int, enableLogging: boolean, loggerFactory: ILoggerFactory): ClientRetryPolicy;
-    readonly default_: ClientRetryPolicy;
+    readonly default: ClientRetryPolicy;
 };
 
 
@@ -332,7 +332,7 @@ export interface MessageLoggingPolicy$instance extends PipelinePolicy {
 
 export const MessageLoggingPolicy: {
     new(options: ClientLoggingOptions): MessageLoggingPolicy;
-    readonly default_: MessageLoggingPolicy;
+    readonly default: MessageLoggingPolicy;
 };
 
 
@@ -343,15 +343,15 @@ export interface ModelReaderWriterBuildableAttribute$instance extends Attribute 
 
 
 export const ModelReaderWriterBuildableAttribute: {
-    new(type_: Type): ModelReaderWriterBuildableAttribute;
+    new(type: Type): ModelReaderWriterBuildableAttribute;
 };
 
 
 export type ModelReaderWriterBuildableAttribute = ModelReaderWriterBuildableAttribute$instance;
 
 export interface ModelReaderWriterContext$instance {
-    getTypeBuilder(type_: Type): ModelReaderWriterTypeBuilder;
-    tryGetTypeBuilder(type_: Type, builder: ModelReaderWriterTypeBuilder): boolean;
+    getTypeBuilder(type: Type): ModelReaderWriterTypeBuilder;
+    tryGetTypeBuilder(type: Type, builder: ModelReaderWriterTypeBuilder): boolean;
 }
 
 
@@ -454,7 +454,7 @@ export interface PipelineMessageClassifier$instance {
 
 
 export const PipelineMessageClassifier: {
-    readonly default_: PipelineMessageClassifier;
+    readonly default: PipelineMessageClassifier;
     create(successStatusCodes: ReadOnlySpan<System_Internal.UInt16>): PipelineMessageClassifier;
 };
 
@@ -492,7 +492,7 @@ export interface PipelineRequestHeaders$instance {
     add(name: string, value: string): void;
     getEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, System_Internal.String>>;
     remove(name: string): boolean;
-    set_(name: string, value: string): void;
+    set(name: string, value: string): void;
     tryGetValue(name: string, value: string): boolean;
     tryGetValues(name: string, values: IEnumerable__System_Collections_Generic<System_Internal.String>): boolean;
 }

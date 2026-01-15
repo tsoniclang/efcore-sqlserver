@@ -78,7 +78,7 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerBoolTypeMapping::Default:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerBoolTypeMapping",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 385876103,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerBoolTypeMapping",
           "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerBoolTypeMapping|static=true|accessor=get",
@@ -106,7 +106,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerBoolTypeMapping|static=true|accessor=get",
           "target": {
@@ -139,7 +139,7 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerByteArrayTypeMapping::Default:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerByteArrayTypeMapping",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 385876104,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerByteArrayTypeMapping",
           "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerByteArrayTypeMapping|static=true|accessor=get",
@@ -167,7 +167,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerByteArrayTypeMapping|static=true|accessor=get",
           "target": {
@@ -200,7 +200,7 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerByteTypeMapping::Default:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerByteTypeMapping",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 385876105,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerByteTypeMapping",
           "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerByteTypeMapping|static=true|accessor=get",
@@ -228,7 +228,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerByteTypeMapping|static=true|accessor=get",
           "target": {
@@ -504,7 +504,7 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator::Delete():System.Void",
           "clrName": "Delete",
-          "tsEmitName": "delete_",
+          "tsEmitName": "delete",
           "metadataToken": 100664553,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Delete|():System.Void|static=false",
@@ -636,7 +636,7 @@
           }
         },
         {
-          "tsName": "delete_",
+          "tsName": "delete",
           "isStatic": false,
           "tsSignatureId": "Delete|():System.Void|static=false",
           "target": {
@@ -701,7 +701,7 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateOnlyTypeMapping::Default:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateOnlyTypeMapping",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 385876111,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateOnlyTypeMapping",
           "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateOnlyTypeMapping|static=true|accessor=get",
@@ -718,7 +718,7 @@
       "constructors": [],
       "exposedProperties": [
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateOnlyTypeMapping|static=true|accessor=get",
           "target": {
@@ -740,7 +740,7 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateTimeOffsetTypeMapping::Default:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateTimeOffsetTypeMapping",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 385876113,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateTimeOffsetTypeMapping",
           "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateTimeOffsetTypeMapping|static=true|accessor=get",
@@ -768,7 +768,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateTimeOffsetTypeMapping|static=true|accessor=get",
           "target": {
@@ -801,7 +801,7 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateTimeTypeMapping::Default:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateTimeTypeMapping",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 385876115,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateTimeTypeMapping",
           "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateTimeTypeMapping|static=true|accessor=get",
@@ -843,7 +843,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDateTimeTypeMapping|static=true|accessor=get",
           "target": {
@@ -886,7 +886,7 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDecimalTypeMapping::Default:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDecimalTypeMapping",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 385876118,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDecimalTypeMapping",
           "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDecimalTypeMapping|static=true|accessor=get",
@@ -928,7 +928,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDecimalTypeMapping|static=true|accessor=get",
           "target": {
@@ -1000,7 +1000,7 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDoubleTypeMapping::Default:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDoubleTypeMapping",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 385876120,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDoubleTypeMapping",
           "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDoubleTypeMapping|static=true|accessor=get",
@@ -1050,7 +1050,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDoubleTypeMapping|static=true|accessor=get",
           "target": {
@@ -1290,7 +1290,7 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerFloatTypeMapping::Default:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerFloatTypeMapping",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 385876123,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerFloatTypeMapping",
           "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerFloatTypeMapping|static=true|accessor=get",
@@ -1318,7 +1318,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerFloatTypeMapping|static=true|accessor=get",
           "target": {
@@ -1351,7 +1351,7 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerLongTypeMapping::Default:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerLongTypeMapping",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 385876124,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerLongTypeMapping",
           "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerLongTypeMapping|static=true|accessor=get",
@@ -1379,7 +1379,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerLongTypeMapping|static=true|accessor=get",
           "target": {
@@ -1412,7 +1412,7 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerShortTypeMapping::Default:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerShortTypeMapping",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 385876125,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerShortTypeMapping",
           "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerShortTypeMapping|static=true|accessor=get",
@@ -1440,7 +1440,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerShortTypeMapping|static=true|accessor=get",
           "target": {
@@ -1753,7 +1753,7 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlVariantTypeMapping::Default:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlVariantTypeMapping",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 385876128,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlVariantTypeMapping",
           "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlVariantTypeMapping|static=true|accessor=get",
@@ -1781,7 +1781,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerSqlVariantTypeMapping|static=true|accessor=get",
           "target": {
@@ -1814,7 +1814,7 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStringTypeMapping::Default:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStringTypeMapping",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 385876129,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStringTypeMapping",
           "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStringTypeMapping|static=true|accessor=get",
@@ -1870,7 +1870,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStringTypeMapping|static=true|accessor=get",
           "target": {
@@ -1966,7 +1966,7 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStructuralJsonTypeMapping::Default:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStructuralJsonTypeMapping",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 385876132,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStructuralJsonTypeMapping",
           "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStructuralJsonTypeMapping|static=true|accessor=get",
@@ -2054,7 +2054,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerStructuralJsonTypeMapping|static=true|accessor=get",
           "target": {
@@ -2107,7 +2107,7 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTimeOnlyTypeMapping::Default:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTimeOnlyTypeMapping",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 385876135,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTimeOnlyTypeMapping",
           "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTimeOnlyTypeMapping|static=true|accessor=get",
@@ -2124,7 +2124,7 @@
       "constructors": [],
       "exposedProperties": [
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTimeOnlyTypeMapping|static=true|accessor=get",
           "target": {
@@ -2146,7 +2146,7 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTimeSpanTypeMapping::Default:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTimeSpanTypeMapping",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 385876137,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTimeSpanTypeMapping",
           "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTimeSpanTypeMapping|static=true|accessor=get",
@@ -2174,7 +2174,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerTimeSpanTypeMapping|static=true|accessor=get",
           "target": {
@@ -2526,7 +2526,7 @@
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerVectorTypeMapping::Default:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerVectorTypeMapping",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 385876143,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerVectorTypeMapping",
           "normalizedSignature": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerVectorTypeMapping|static=true|accessor=get",
@@ -2554,7 +2554,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|:Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerVectorTypeMapping|static=true|accessor=get",
           "target": {
