@@ -16,324 +16,324 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Exception, Guid, Int32, Int64, Nullable, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
 
 export interface SqlClientCommandAfter$instance {
-    readonly command: SqlCommand;
-    readonly connectionId: Nullable<Guid>;
-    readonly count: int;
-    readonly item: KeyValuePair<System_Internal.String, unknown>;
-    readonly operation: string;
-    readonly operationId: Guid;
-    readonly statistics: IDictionary;
-    readonly timestamp: long;
-    readonly transactionId: Nullable<System_Internal.Int64>;
-    getEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, unknown>>;
+    readonly Command: SqlCommand;
+    readonly ConnectionId: Nullable<Guid>;
+    readonly Count: int;
+    readonly Item: KeyValuePair<System_Internal.String, unknown>;
+    readonly Operation: string;
+    readonly OperationId: Guid;
+    readonly Statistics: IDictionary;
+    readonly Timestamp: long;
+    readonly TransactionId: Nullable<System_Internal.Int64>;
+    GetEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, unknown>>;
 }
 
 
 export const SqlClientCommandAfter: {
     new(): SqlClientCommandAfter;
-    readonly name: string;
+    readonly Name: string;
 };
 
 
 export type SqlClientCommandAfter = SqlClientCommandAfter$instance;
 
 export interface SqlClientCommandBefore$instance {
-    readonly command: SqlCommand;
-    readonly connectionId: Nullable<Guid>;
-    readonly count: int;
-    readonly item: KeyValuePair<System_Internal.String, unknown>;
-    readonly operation: string;
-    readonly operationId: Guid;
-    readonly timestamp: long;
-    readonly transactionId: Nullable<System_Internal.Int64>;
-    getEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, unknown>>;
+    readonly Command: SqlCommand;
+    readonly ConnectionId: Nullable<Guid>;
+    readonly Count: int;
+    readonly Item: KeyValuePair<System_Internal.String, unknown>;
+    readonly Operation: string;
+    readonly OperationId: Guid;
+    readonly Timestamp: long;
+    readonly TransactionId: Nullable<System_Internal.Int64>;
+    GetEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, unknown>>;
 }
 
 
 export const SqlClientCommandBefore: {
     new(): SqlClientCommandBefore;
-    readonly name: string;
+    readonly Name: string;
 };
 
 
 export type SqlClientCommandBefore = SqlClientCommandBefore$instance;
 
 export interface SqlClientCommandError$instance {
-    readonly command: SqlCommand;
-    readonly connectionId: Nullable<Guid>;
-    readonly count: int;
-    readonly exception: Exception;
-    readonly item: KeyValuePair<System_Internal.String, unknown>;
-    readonly operation: string;
-    readonly operationId: Guid;
-    readonly timestamp: long;
-    readonly transactionId: Nullable<System_Internal.Int64>;
-    getEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, unknown>>;
+    readonly Command: SqlCommand;
+    readonly ConnectionId: Nullable<Guid>;
+    readonly Count: int;
+    readonly Exception: Exception;
+    readonly Item: KeyValuePair<System_Internal.String, unknown>;
+    readonly Operation: string;
+    readonly OperationId: Guid;
+    readonly Timestamp: long;
+    readonly TransactionId: Nullable<System_Internal.Int64>;
+    GetEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, unknown>>;
 }
 
 
 export const SqlClientCommandError: {
     new(): SqlClientCommandError;
-    readonly name: string;
+    readonly Name: string;
 };
 
 
 export type SqlClientCommandError = SqlClientCommandError$instance;
 
 export interface SqlClientConnectionCloseAfter$instance {
-    readonly connection: SqlConnection;
-    readonly connectionId: Nullable<Guid>;
-    readonly count: int;
-    readonly item: KeyValuePair<System_Internal.String, unknown>;
-    readonly operation: string;
-    readonly operationId: Guid;
-    readonly statistics: IDictionary;
-    readonly timestamp: long;
-    getEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, unknown>>;
+    readonly Connection: SqlConnection;
+    readonly ConnectionId: Nullable<Guid>;
+    readonly Count: int;
+    readonly Item: KeyValuePair<System_Internal.String, unknown>;
+    readonly Operation: string;
+    readonly OperationId: Guid;
+    readonly Statistics: IDictionary;
+    readonly Timestamp: long;
+    GetEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, unknown>>;
 }
 
 
 export const SqlClientConnectionCloseAfter: {
     new(): SqlClientConnectionCloseAfter;
-    readonly name: string;
+    readonly Name: string;
 };
 
 
 export type SqlClientConnectionCloseAfter = SqlClientConnectionCloseAfter$instance;
 
 export interface SqlClientConnectionCloseBefore$instance {
-    readonly connection: SqlConnection;
-    readonly connectionId: Nullable<Guid>;
-    readonly count: int;
-    readonly item: KeyValuePair<System_Internal.String, unknown>;
-    readonly operation: string;
-    readonly operationId: Guid;
-    readonly statistics: IDictionary;
-    readonly timestamp: long;
-    getEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, unknown>>;
+    readonly Connection: SqlConnection;
+    readonly ConnectionId: Nullable<Guid>;
+    readonly Count: int;
+    readonly Item: KeyValuePair<System_Internal.String, unknown>;
+    readonly Operation: string;
+    readonly OperationId: Guid;
+    readonly Statistics: IDictionary;
+    readonly Timestamp: long;
+    GetEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, unknown>>;
 }
 
 
 export const SqlClientConnectionCloseBefore: {
     new(): SqlClientConnectionCloseBefore;
-    readonly name: string;
+    readonly Name: string;
 };
 
 
 export type SqlClientConnectionCloseBefore = SqlClientConnectionCloseBefore$instance;
 
 export interface SqlClientConnectionCloseError$instance {
-    readonly connection: SqlConnection;
-    readonly connectionId: Nullable<Guid>;
-    readonly count: int;
-    readonly exception: Exception;
-    readonly item: KeyValuePair<System_Internal.String, unknown>;
-    readonly operation: string;
-    readonly operationId: Guid;
-    readonly statistics: IDictionary;
-    readonly timestamp: long;
-    getEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, unknown>>;
+    readonly Connection: SqlConnection;
+    readonly ConnectionId: Nullable<Guid>;
+    readonly Count: int;
+    readonly Exception: Exception;
+    readonly Item: KeyValuePair<System_Internal.String, unknown>;
+    readonly Operation: string;
+    readonly OperationId: Guid;
+    readonly Statistics: IDictionary;
+    readonly Timestamp: long;
+    GetEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, unknown>>;
 }
 
 
 export const SqlClientConnectionCloseError: {
     new(): SqlClientConnectionCloseError;
-    readonly name: string;
+    readonly Name: string;
 };
 
 
 export type SqlClientConnectionCloseError = SqlClientConnectionCloseError$instance;
 
 export interface SqlClientConnectionOpenAfter$instance {
-    readonly clientVersion: string;
-    readonly connection: SqlConnection;
-    readonly connectionId: Guid;
-    readonly count: int;
-    readonly item: KeyValuePair<System_Internal.String, unknown>;
-    readonly operation: string;
-    readonly operationId: Guid;
-    readonly statistics: IDictionary;
-    readonly timestamp: long;
-    getEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, unknown>>;
+    readonly ClientVersion: string;
+    readonly Connection: SqlConnection;
+    readonly ConnectionId: Guid;
+    readonly Count: int;
+    readonly Item: KeyValuePair<System_Internal.String, unknown>;
+    readonly Operation: string;
+    readonly OperationId: Guid;
+    readonly Statistics: IDictionary;
+    readonly Timestamp: long;
+    GetEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, unknown>>;
 }
 
 
 export const SqlClientConnectionOpenAfter: {
     new(): SqlClientConnectionOpenAfter;
-    readonly name: string;
+    readonly Name: string;
 };
 
 
 export type SqlClientConnectionOpenAfter = SqlClientConnectionOpenAfter$instance;
 
 export interface SqlClientConnectionOpenBefore$instance {
-    readonly clientVersion: string;
-    readonly connection: SqlConnection;
-    readonly count: int;
-    readonly item: KeyValuePair<System_Internal.String, unknown>;
-    readonly operation: string;
-    readonly operationId: Guid;
-    readonly timestamp: long;
-    getEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, unknown>>;
+    readonly ClientVersion: string;
+    readonly Connection: SqlConnection;
+    readonly Count: int;
+    readonly Item: KeyValuePair<System_Internal.String, unknown>;
+    readonly Operation: string;
+    readonly OperationId: Guid;
+    readonly Timestamp: long;
+    GetEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, unknown>>;
 }
 
 
 export const SqlClientConnectionOpenBefore: {
     new(): SqlClientConnectionOpenBefore;
-    readonly name: string;
+    readonly Name: string;
 };
 
 
 export type SqlClientConnectionOpenBefore = SqlClientConnectionOpenBefore$instance;
 
 export interface SqlClientConnectionOpenError$instance {
-    readonly clientVersion: string;
-    readonly connection: SqlConnection;
-    readonly connectionId: Guid;
-    readonly count: int;
-    readonly exception: Exception;
-    readonly item: KeyValuePair<System_Internal.String, unknown>;
-    readonly operation: string;
-    readonly operationId: Guid;
-    readonly timestamp: long;
-    getEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, unknown>>;
+    readonly ClientVersion: string;
+    readonly Connection: SqlConnection;
+    readonly ConnectionId: Guid;
+    readonly Count: int;
+    readonly Exception: Exception;
+    readonly Item: KeyValuePair<System_Internal.String, unknown>;
+    readonly Operation: string;
+    readonly OperationId: Guid;
+    readonly Timestamp: long;
+    GetEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, unknown>>;
 }
 
 
 export const SqlClientConnectionOpenError: {
     new(): SqlClientConnectionOpenError;
-    readonly name: string;
+    readonly Name: string;
 };
 
 
 export type SqlClientConnectionOpenError = SqlClientConnectionOpenError$instance;
 
 export interface SqlClientTransactionCommitAfter$instance {
-    readonly connection: SqlConnection;
-    readonly count: int;
-    readonly isolationLevel: IsolationLevel;
-    readonly item: KeyValuePair<System_Internal.String, unknown>;
-    readonly operation: string;
-    readonly operationId: Guid;
-    readonly timestamp: long;
-    readonly transactionId: Nullable<System_Internal.Int64>;
-    getEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, unknown>>;
+    readonly Connection: SqlConnection;
+    readonly Count: int;
+    readonly IsolationLevel: IsolationLevel;
+    readonly Item: KeyValuePair<System_Internal.String, unknown>;
+    readonly Operation: string;
+    readonly OperationId: Guid;
+    readonly Timestamp: long;
+    readonly TransactionId: Nullable<System_Internal.Int64>;
+    GetEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, unknown>>;
 }
 
 
 export const SqlClientTransactionCommitAfter: {
     new(): SqlClientTransactionCommitAfter;
-    readonly name: string;
+    readonly Name: string;
 };
 
 
 export type SqlClientTransactionCommitAfter = SqlClientTransactionCommitAfter$instance;
 
 export interface SqlClientTransactionCommitBefore$instance {
-    readonly connection: SqlConnection;
-    readonly count: int;
-    readonly isolationLevel: IsolationLevel;
-    readonly item: KeyValuePair<System_Internal.String, unknown>;
-    readonly operation: string;
-    readonly operationId: Guid;
-    readonly timestamp: long;
-    readonly transactionId: Nullable<System_Internal.Int64>;
-    getEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, unknown>>;
+    readonly Connection: SqlConnection;
+    readonly Count: int;
+    readonly IsolationLevel: IsolationLevel;
+    readonly Item: KeyValuePair<System_Internal.String, unknown>;
+    readonly Operation: string;
+    readonly OperationId: Guid;
+    readonly Timestamp: long;
+    readonly TransactionId: Nullable<System_Internal.Int64>;
+    GetEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, unknown>>;
 }
 
 
 export const SqlClientTransactionCommitBefore: {
     new(): SqlClientTransactionCommitBefore;
-    readonly name: string;
+    readonly Name: string;
 };
 
 
 export type SqlClientTransactionCommitBefore = SqlClientTransactionCommitBefore$instance;
 
 export interface SqlClientTransactionCommitError$instance {
-    readonly connection: SqlConnection;
-    readonly count: int;
-    readonly exception: Exception;
-    readonly isolationLevel: IsolationLevel;
-    readonly item: KeyValuePair<System_Internal.String, unknown>;
-    readonly operation: string;
-    readonly operationId: Guid;
-    readonly timestamp: long;
-    readonly transactionId: Nullable<System_Internal.Int64>;
-    getEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, unknown>>;
+    readonly Connection: SqlConnection;
+    readonly Count: int;
+    readonly Exception: Exception;
+    readonly IsolationLevel: IsolationLevel;
+    readonly Item: KeyValuePair<System_Internal.String, unknown>;
+    readonly Operation: string;
+    readonly OperationId: Guid;
+    readonly Timestamp: long;
+    readonly TransactionId: Nullable<System_Internal.Int64>;
+    GetEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, unknown>>;
 }
 
 
 export const SqlClientTransactionCommitError: {
     new(): SqlClientTransactionCommitError;
-    readonly name: string;
+    readonly Name: string;
 };
 
 
 export type SqlClientTransactionCommitError = SqlClientTransactionCommitError$instance;
 
 export interface SqlClientTransactionRollbackAfter$instance {
-    readonly connection: SqlConnection;
-    readonly count: int;
-    readonly isolationLevel: IsolationLevel;
-    readonly item: KeyValuePair<System_Internal.String, unknown>;
-    readonly operation: string;
-    readonly operationId: Guid;
-    readonly timestamp: long;
-    readonly transactionId: Nullable<System_Internal.Int64>;
-    readonly transactionName: string;
-    getEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, unknown>>;
+    readonly Connection: SqlConnection;
+    readonly Count: int;
+    readonly IsolationLevel: IsolationLevel;
+    readonly Item: KeyValuePair<System_Internal.String, unknown>;
+    readonly Operation: string;
+    readonly OperationId: Guid;
+    readonly Timestamp: long;
+    readonly TransactionId: Nullable<System_Internal.Int64>;
+    readonly TransactionName: string;
+    GetEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, unknown>>;
 }
 
 
 export const SqlClientTransactionRollbackAfter: {
     new(): SqlClientTransactionRollbackAfter;
-    readonly name: string;
+    readonly Name: string;
 };
 
 
 export type SqlClientTransactionRollbackAfter = SqlClientTransactionRollbackAfter$instance;
 
 export interface SqlClientTransactionRollbackBefore$instance {
-    readonly connection: SqlConnection;
-    readonly count: int;
-    readonly isolationLevel: IsolationLevel;
-    readonly item: KeyValuePair<System_Internal.String, unknown>;
-    readonly operation: string;
-    readonly operationId: Guid;
-    readonly timestamp: long;
-    readonly transactionId: Nullable<System_Internal.Int64>;
-    readonly transactionName: string;
-    getEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, unknown>>;
+    readonly Connection: SqlConnection;
+    readonly Count: int;
+    readonly IsolationLevel: IsolationLevel;
+    readonly Item: KeyValuePair<System_Internal.String, unknown>;
+    readonly Operation: string;
+    readonly OperationId: Guid;
+    readonly Timestamp: long;
+    readonly TransactionId: Nullable<System_Internal.Int64>;
+    readonly TransactionName: string;
+    GetEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, unknown>>;
 }
 
 
 export const SqlClientTransactionRollbackBefore: {
     new(): SqlClientTransactionRollbackBefore;
-    readonly name: string;
+    readonly Name: string;
 };
 
 
 export type SqlClientTransactionRollbackBefore = SqlClientTransactionRollbackBefore$instance;
 
 export interface SqlClientTransactionRollbackError$instance {
-    readonly connection: SqlConnection;
-    readonly count: int;
-    readonly exception: Exception;
-    readonly isolationLevel: IsolationLevel;
-    readonly item: KeyValuePair<System_Internal.String, unknown>;
-    readonly operation: string;
-    readonly operationId: Guid;
-    readonly timestamp: long;
-    readonly transactionId: Nullable<System_Internal.Int64>;
-    readonly transactionName: string;
-    getEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, unknown>>;
+    readonly Connection: SqlConnection;
+    readonly Count: int;
+    readonly Exception: Exception;
+    readonly IsolationLevel: IsolationLevel;
+    readonly Item: KeyValuePair<System_Internal.String, unknown>;
+    readonly Operation: string;
+    readonly OperationId: Guid;
+    readonly Timestamp: long;
+    readonly TransactionId: Nullable<System_Internal.Int64>;
+    readonly TransactionName: string;
+    GetEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, unknown>>;
 }
 
 
 export const SqlClientTransactionRollbackError: {
     new(): SqlClientTransactionRollbackError;
-    readonly name: string;
+    readonly Name: string;
 };
 
 

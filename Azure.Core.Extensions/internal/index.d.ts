@@ -17,15 +17,15 @@ export interface IAzureClientBuilder_2$instance<TClient, TOptions> {
 export type IAzureClientBuilder_2<TClient, TOptions> = IAzureClientBuilder_2$instance<TClient, TOptions>;
 
 export interface IAzureClientFactoryBuilder$instance {
-    registerClientFactory<TClient, TOptions>(clientFactory: Func<TOptions, TClient>): IAzureClientBuilder_2<TClient, TOptions>;
+    RegisterClientFactory<TClient, TOptions>(clientFactory: Func<TOptions, TClient>): IAzureClientBuilder_2<TClient, TOptions>;
 }
 
 
 export type IAzureClientFactoryBuilder = IAzureClientFactoryBuilder$instance;
 
 export interface IAzureClientFactoryBuilderWithConfiguration_1$instance<TConfiguration> extends IAzureClientFactoryBuilder {
-    registerClientFactory<TClient, TOptions>(clientFactory: Func<TOptions, TClient>): IAzureClientBuilder_2<TClient, TOptions>;
-    registerClientFactory<TClient, TOptions>(configuration: TConfiguration): IAzureClientBuilder_2<TClient, TOptions>;
+    RegisterClientFactory<TClient, TOptions>(clientFactory: Func<TOptions, TClient>): IAzureClientBuilder_2<TClient, TOptions>;
+    RegisterClientFactory<TClient, TOptions>(configuration: TConfiguration): IAzureClientBuilder_2<TClient, TOptions>;
 }
 
 
@@ -34,7 +34,7 @@ export interface IAzureClientFactoryBuilderWithConfiguration_1$instance<TConfigu
 export type IAzureClientFactoryBuilderWithConfiguration_1<TConfiguration> = IAzureClientFactoryBuilderWithConfiguration_1$instance<TConfiguration>;
 
 export interface IAzureClientFactoryBuilderWithCredential$instance {
-    registerClientFactory<TClient, TOptions>(clientFactory: Func<TOptions, TokenCredential, TClient>, requiresCredential?: boolean): IAzureClientBuilder_2<TClient, TOptions>;
+    RegisterClientFactory<TClient, TOptions>(clientFactory: Func<TOptions, TokenCredential, TClient>, requiresCredential?: boolean): IAzureClientBuilder_2<TClient, TOptions>;
 }
 
 

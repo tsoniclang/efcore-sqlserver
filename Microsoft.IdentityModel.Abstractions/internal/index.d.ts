@@ -11,41 +11,41 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Boolean as ClrBoolean, DateTime, Double, Enum, Guid, IComparable, IConvertible, IFormattable, Int32, Int64, ISpanFormattable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
 
 export enum EventLogLevel {
-    logAlways = 0,
-    critical = 1,
-    error = 2,
-    warning = 3,
-    informational = 4,
-    verbose = 5
+    LogAlways = 0,
+    Critical = 1,
+    Error = 2,
+    Warning = 3,
+    Informational = 4,
+    Verbose = 5
 }
 
 
 export interface IIdentityLogger$instance {
-    isEnabled(eventLogLevel: EventLogLevel): boolean;
-    log(entry: LogEntry): void;
+    IsEnabled(eventLogLevel: EventLogLevel): boolean;
+    Log(entry: LogEntry): void;
 }
 
 
 export type IIdentityLogger = IIdentityLogger$instance;
 
 export interface ITelemetryClient$instance {
-    clientId: string;
-    initialize(): void;
-    isEnabled(): boolean;
-    isEnabled(eventName: string): boolean;
-    trackEvent(eventDetails: TelemetryEventDetails): void;
-    trackEvent(eventName: string, stringProperties?: IDictionary<System_Internal.String, System_Internal.String>, longProperties?: IDictionary<System_Internal.String, System_Internal.Int64>, boolProperties?: IDictionary<System_Internal.String, System_Internal.Boolean>, dateTimeProperties?: IDictionary<System_Internal.String, DateTime>, doubleProperties?: IDictionary<System_Internal.String, System_Internal.Double>, guidProperties?: IDictionary<System_Internal.String, Guid>): void;
+    ClientId: string;
+    Initialize(): void;
+    IsEnabled(): boolean;
+    IsEnabled(eventName: string): boolean;
+    TrackEvent(eventDetails: TelemetryEventDetails): void;
+    TrackEvent(eventName: string, stringProperties?: IDictionary<System_Internal.String, System_Internal.String>, longProperties?: IDictionary<System_Internal.String, System_Internal.Int64>, boolProperties?: IDictionary<System_Internal.String, System_Internal.Boolean>, dateTimeProperties?: IDictionary<System_Internal.String, DateTime>, doubleProperties?: IDictionary<System_Internal.String, System_Internal.Double>, guidProperties?: IDictionary<System_Internal.String, Guid>): void;
 }
 
 
 export type ITelemetryClient = ITelemetryClient$instance;
 
 export interface LogEntry$instance {
-    get correlationId(): string | undefined;
-    set correlationId(value: string);
-    eventLogLevel: EventLogLevel;
-    get message(): string | undefined;
-    set message(value: string);
+    get CorrelationId(): string | undefined;
+    set CorrelationId(value: string);
+    EventLogLevel: EventLogLevel;
+    get Message(): string | undefined;
+    set Message(value: string);
 }
 
 
@@ -57,14 +57,14 @@ export const LogEntry: {
 export type LogEntry = LogEntry$instance;
 
 export interface NullIdentityModelLogger$instance {
-    isEnabled(eventLogLevel: EventLogLevel): boolean;
-    log(entry: LogEntry): void;
+    IsEnabled(eventLogLevel: EventLogLevel): boolean;
+    Log(entry: LogEntry): void;
 }
 
 
 export const NullIdentityModelLogger: {
     new(): NullIdentityModelLogger;
-    readonly instance: NullIdentityModelLogger;
+    readonly Instance: NullIdentityModelLogger;
 };
 
 
@@ -78,18 +78,18 @@ export type NullIdentityModelLogger = NullIdentityModelLogger$instance & __NullI
 
 
 export interface NullTelemetryClient$instance {
-    clientId: string;
-    initialize(): void;
-    isEnabled(): boolean;
-    isEnabled(eventName: string): boolean;
-    trackEvent(eventDetails: TelemetryEventDetails): void;
-    trackEvent(eventName: string, stringProperties?: IDictionary<System_Internal.String, System_Internal.String>, longProperties?: IDictionary<System_Internal.String, System_Internal.Int64>, boolProperties?: IDictionary<System_Internal.String, System_Internal.Boolean>, dateTimeProperties?: IDictionary<System_Internal.String, DateTime>, doubleProperties?: IDictionary<System_Internal.String, System_Internal.Double>, guidProperties?: IDictionary<System_Internal.String, Guid>): void;
+    ClientId: string;
+    Initialize(): void;
+    IsEnabled(): boolean;
+    IsEnabled(eventName: string): boolean;
+    TrackEvent(eventDetails: TelemetryEventDetails): void;
+    TrackEvent(eventName: string, stringProperties?: IDictionary<System_Internal.String, System_Internal.String>, longProperties?: IDictionary<System_Internal.String, System_Internal.Int64>, boolProperties?: IDictionary<System_Internal.String, System_Internal.Boolean>, dateTimeProperties?: IDictionary<System_Internal.String, DateTime>, doubleProperties?: IDictionary<System_Internal.String, System_Internal.Double>, guidProperties?: IDictionary<System_Internal.String, Guid>): void;
 }
 
 
 export const NullTelemetryClient: {
     new(): NullTelemetryClient;
-    readonly instance: NullTelemetryClient;
+    readonly Instance: NullTelemetryClient;
 };
 
 
@@ -103,14 +103,14 @@ export type NullTelemetryClient = NullTelemetryClient$instance & __NullTelemetry
 
 
 export interface TelemetryEventDetails$instance {
-    name: string;
-    readonly properties: IReadOnlyDictionary<System_Internal.String, unknown>;
-    setProperty(key: string, value: string): void;
-    setProperty(key: string, value: long): void;
-    setProperty(key: string, value: boolean): void;
-    setProperty(key: string, value: DateTime): void;
-    setProperty(key: string, value: double): void;
-    setProperty(key: string, value: Guid): void;
+    Name: string;
+    readonly Properties: IReadOnlyDictionary<System_Internal.String, unknown>;
+    SetProperty(key: string, value: string): void;
+    SetProperty(key: string, value: long): void;
+    SetProperty(key: string, value: boolean): void;
+    SetProperty(key: string, value: DateTime): void;
+    SetProperty(key: string, value: double): void;
+    SetProperty(key: string, value: Guid): void;
 }
 
 
@@ -121,10 +121,10 @@ export const TelemetryEventDetails: {
 export type TelemetryEventDetails = TelemetryEventDetails$instance;
 
 export abstract class ObservabilityConstants$instance {
-    static readonly succeeded: string;
-    static readonly duration: string;
-    static readonly activityId: string;
-    static readonly clientId: string;
+    static readonly Succeeded: string;
+    static readonly Duration: string;
+    static readonly ActivityId: string;
+    static readonly ClientId: string;
 }
 
 

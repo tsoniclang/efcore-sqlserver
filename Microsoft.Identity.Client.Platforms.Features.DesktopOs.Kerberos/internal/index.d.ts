@@ -14,7 +14,7 @@ export interface Credential$instance {
 
 
 export const Credential: {
-    current(): Credential;
+    Current(): Credential;
 };
 
 

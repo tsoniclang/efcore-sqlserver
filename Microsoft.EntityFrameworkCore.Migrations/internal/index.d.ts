@@ -16,7 +16,7 @@ import type { MigrationOperation } from "@tsonic/efcore/Microsoft.EntityFramewor
 import type { ICommandBatchPreparer } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Update.js";
 
 export interface SqlServerMigrationsSqlGenerator$instance extends MigrationsSqlGenerator {
-    generate(operations: IReadOnlyList<MigrationOperation>, model?: IModel, options?: MigrationsSqlGenerationOptions): IReadOnlyList<MigrationCommand>;
+    Generate(operations: IReadOnlyList<MigrationOperation>, model?: IModel, options?: MigrationsSqlGenerationOptions): IReadOnlyList<MigrationCommand>;
 }
 
 
@@ -28,7 +28,7 @@ export const SqlServerMigrationsSqlGenerator: {
 export type SqlServerMigrationsSqlGenerator = SqlServerMigrationsSqlGenerator$instance;
 
 export abstract class SqlServerMigrationBuilderExtensions$instance {
-    static isSqlServer(migrationBuilder: MigrationBuilder): boolean;
+    static IsSqlServer(migrationBuilder: MigrationBuilder): boolean;
 }
 
 

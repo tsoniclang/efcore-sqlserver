@@ -27,8 +27,8 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface ApiKeyCredential$instance {
-    deconstruct(key: string): void;
-    update(key: string): void;
+    Deconstruct(key: string): void;
+    Update(key: string): void;
 }
 
 
@@ -40,7 +40,7 @@ export const ApiKeyCredential: {
 export type ApiKeyCredential = ApiKeyCredential$instance;
 
 export interface AsyncCollectionResult_1$instance<T> extends AsyncCollectionResult {
-    getAsyncEnumerator(cancellationToken?: CancellationToken): IAsyncEnumerator<T>;
+    GetAsyncEnumerator(cancellationToken?: CancellationToken): IAsyncEnumerator<T>;
 }
 
 
@@ -51,9 +51,9 @@ export const AsyncCollectionResult_1: {
 export type AsyncCollectionResult_1<T> = AsyncCollectionResult_1$instance<T>;
 
 export interface AuthenticationTokenProvider$instance {
-    createTokenOptions(properties: IReadOnlyDictionary<System_Internal.String, unknown>): GetTokenOptions | undefined;
-    getToken(options: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
-    getTokenAsync(options: GetTokenOptions, cancellationToken: CancellationToken): ValueTask<AuthenticationToken>;
+    CreateTokenOptions(properties: IReadOnlyDictionary<System_Internal.String, unknown>): GetTokenOptions | undefined;
+    GetToken(options: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
+    GetTokenAsync(options: GetTokenOptions, cancellationToken: CancellationToken): ValueTask<AuthenticationToken>;
 }
 
 
@@ -64,43 +64,43 @@ export const AuthenticationTokenProvider: {
 export type AuthenticationTokenProvider = AuthenticationTokenProvider$instance;
 
 export interface BinaryContent$instance {
-    readonly mediaType: string | undefined;
-    dispose(): void;
-    tryComputeLength(length: long): boolean;
-    writeTo(stream: Stream, cancellationToken?: CancellationToken): void;
-    writeToAsync(stream: Stream, cancellationToken?: CancellationToken): Task;
+    readonly MediaType: string | undefined;
+    Dispose(): void;
+    TryComputeLength(length: long): boolean;
+    WriteTo(stream: Stream, cancellationToken?: CancellationToken): void;
+    WriteToAsync(stream: Stream, cancellationToken?: CancellationToken): Task;
 }
 
 
 export const BinaryContent: {
-    create(value: BinaryData): BinaryContent;
-    create(stream: Stream): BinaryContent;
-    create<T extends IPersistableModel_1<T>>(model: T, options?: ModelReaderWriterOptions): BinaryContent;
-    createJson(jsonString: string, validate?: boolean): BinaryContent;
-    createJson<T>(jsonSerializable: T, jsonTypeInfo: JsonTypeInfo<T>): BinaryContent;
-    createJson<T>(jsonSerializable: T, options?: JsonSerializerOptions): BinaryContent;
+    Create(value: BinaryData): BinaryContent;
+    Create(stream: Stream): BinaryContent;
+    Create<T extends IPersistableModel_1<T>>(model: T, options?: ModelReaderWriterOptions): BinaryContent;
+    CreateJson(jsonString: string, validate?: boolean): BinaryContent;
+    CreateJson<T>(jsonSerializable: T, jsonTypeInfo: JsonTypeInfo<T>): BinaryContent;
+    CreateJson<T>(jsonSerializable: T, options?: JsonSerializerOptions): BinaryContent;
 };
 
 
 export type BinaryContent = BinaryContent$instance;
 
 export interface ClientResult$instance {
-    getRawResponse(): PipelineResponse;
+    GetRawResponse(): PipelineResponse;
 }
 
 
 export const ClientResult: {
     new(): ClientResult;
-    fromOptionalValue<T>(value: T, response: PipelineResponse): ClientResult_1<T | undefined>;
-    fromResponse(response: PipelineResponse): ClientResult;
-    fromValue<T>(value: T, response: PipelineResponse): ClientResult_1<T>;
+    FromOptionalValue<T>(value: T, response: PipelineResponse): ClientResult_1<T | undefined>;
+    FromResponse(response: PipelineResponse): ClientResult;
+    FromValue<T>(value: T, response: PipelineResponse): ClientResult_1<T>;
 };
 
 
 export type ClientResult = ClientResult$instance;
 
 export interface ClientResult_1$instance<T> extends ClientResult {
-    readonly value: T;
+    readonly Value: T;
 }
 
 
@@ -112,22 +112,22 @@ export const ClientResult_1: {
 export type ClientResult_1<T> = ClientResult_1$instance<T>;
 
 export interface ClientResultException$instance extends Exception {
-    readonly status: int;
-    getRawResponse(): PipelineResponse | undefined;
+    readonly Status: int;
+    GetRawResponse(): PipelineResponse | undefined;
 }
 
 
 export const ClientResultException: {
     new(response: PipelineResponse, innerException: Exception): ClientResultException;
     new(message: string, response: PipelineResponse, innerException: Exception): ClientResultException;
-    createAsync(response: PipelineResponse, innerException?: Exception): Task<ClientResultException>;
+    CreateAsync(response: PipelineResponse, innerException?: Exception): Task<ClientResultException>;
 };
 
 
 export type ClientResultException = ClientResultException$instance;
 
 export interface CollectionResult_1$instance<T> extends CollectionResult {
-    getEnumerator(): IEnumerator<T>;
+    GetEnumerator(): IEnumerator<T>;
 }
 
 
@@ -138,13 +138,13 @@ export const CollectionResult_1: {
 export type CollectionResult_1<T> = CollectionResult_1$instance<T>;
 
 export interface ContinuationToken$instance {
-    toBytes(): BinaryData;
+    ToBytes(): BinaryData;
 }
 
 
 export const ContinuationToken: {
     new(): ContinuationToken;
-    fromBytes(bytes: BinaryData): ContinuationToken;
+    FromBytes(bytes: BinaryData): ContinuationToken;
 };
 
 

@@ -1,39 +1,56 @@
 {
   "namespace": "Microsoft.EntityFrameworkCore.Migrations.Operations",
+  "contributingAssemblies": [
+    "Microsoft.EntityFrameworkCore.Relational",
+    "Microsoft.EntityFrameworkCore.SqlServer"
+  ],
   "types": [
     {
       "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Migrations.Operations.SqlServerCreateDatabaseOperation",
       "clrName": "Microsoft.EntityFrameworkCore.Migrations.Operations.SqlServerCreateDatabaseOperation",
-      "tsEmitName": "SqlServerCreateDatabaseOperation",
       "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Migrations.Operations.SqlServerCreateDatabaseOperation::Name:System.String",
           "clrName": "Name",
-          "tsEmitName": "name",
           "metadataToken": 385876090,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Name|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Migrations.Operations.SqlServerCreateDatabaseOperation",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Migrations.Operations.SqlServerCreateDatabaseOperation::FileName:System.String",
           "clrName": "FileName",
-          "tsEmitName": "fileName",
           "metadataToken": 385876091,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "FileName|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Migrations.Operations.SqlServerCreateDatabaseOperation",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }
@@ -51,60 +68,36 @@
           "declaringClrType": "Microsoft.EntityFrameworkCore.Migrations.Operations.SqlServerCreateDatabaseOperation",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "name",
-          "isStatic": false,
-          "tsSignatureId": "Name|:System.String|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Migrations.Operations.SqlServerCreateDatabaseOperation",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
-            "metadataToken": 385876090
-          }
-        },
-        {
-          "tsName": "fileName",
-          "isStatic": false,
-          "tsSignatureId": "FileName|:System.String|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Migrations.Operations.SqlServerCreateDatabaseOperation",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
-            "metadataToken": 385876091
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Migrations.Operations.SqlServerCreateDatabaseOperation",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
-            "metadataToken": 100664417
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Migrations.Operations.SqlServerDropDatabaseOperation",
       "clrName": "Microsoft.EntityFrameworkCore.Migrations.Operations.SqlServerDropDatabaseOperation",
-      "tsEmitName": "SqlServerDropDatabaseOperation",
       "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Migrations.Operations.SqlServerDropDatabaseOperation::Name:System.String",
           "clrName": "Name",
-          "tsEmitName": "name",
           "metadataToken": 385876092,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Name|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Migrations.Operations.SqlServerDropDatabaseOperation",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }
@@ -121,29 +114,6 @@
           "parameterCount": 0,
           "declaringClrType": "Microsoft.EntityFrameworkCore.Migrations.Operations.SqlServerDropDatabaseOperation",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "name",
-          "isStatic": false,
-          "tsSignatureId": "Name|:System.String|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Migrations.Operations.SqlServerDropDatabaseOperation",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
-            "metadataToken": 385876092
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.EntityFrameworkCore.Migrations.Operations.SqlServerDropDatabaseOperation",
-            "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
-            "metadataToken": 100664420
-          }
         }
       ]
     }

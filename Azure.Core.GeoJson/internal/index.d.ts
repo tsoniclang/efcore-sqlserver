@@ -21,20 +21,20 @@ import type { Boolean as ClrBoolean, Double, Enum, IComparable, IConvertible, ID
 import type { Utf8JsonReader, Utf8JsonWriter } from "@tsonic/dotnet/System.Text.Json.js";
 
 export enum GeoObjectType {
-    point = 0,
-    multiPoint = 1,
-    polygon = 2,
-    multiPolygon = 3,
-    lineString = 4,
-    multiLineString = 5,
-    geometryCollection = 6
+    Point = 0,
+    MultiPoint = 1,
+    Polygon = 2,
+    MultiPolygon = 3,
+    LineString = 4,
+    MultiLineString = 5,
+    GeometryCollection = 6
 }
 
 
 export interface GeoArray_1$instance<T> {
-    readonly count: int;
-    readonly item: T;
-    getEnumerator(): GeoArray_1_Enumerator<T>;
+    readonly Count: int;
+    readonly Item: T;
+    GetEnumerator(): GeoArray_1_Enumerator<T>;
 }
 
 
@@ -46,10 +46,10 @@ export const GeoArray_1: {
 export type GeoArray_1<T> = GeoArray_1$instance<T>;
 
 export interface GeoArray_1_Enumerator$instance<T> {
-    readonly current: T;
-    dispose(): void;
-    moveNext(): boolean;
-    reset(): void;
+    readonly Current: T;
+    Dispose(): void;
+    MoveNext(): boolean;
+    Reset(): void;
 }
 
 
@@ -61,15 +61,15 @@ export const GeoArray_1_Enumerator: {
 export type GeoArray_1_Enumerator<T> = GeoArray_1_Enumerator$instance<T>;
 
 export interface GeoPosition$instance {
-    readonly altitude: Nullable<System_Internal.Double>;
-    readonly count: int;
-    readonly item: double;
-    readonly latitude: double;
-    readonly longitude: double;
-    equals(other: GeoPosition): boolean;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    toString(): string;
+    readonly Altitude: Nullable<System_Internal.Double>;
+    readonly Count: int;
+    readonly Item: double;
+    readonly Latitude: double;
+    readonly Longitude: double;
+    Equals(other: GeoPosition): boolean;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    ToString(): string;
 }
 
 
@@ -82,17 +82,17 @@ export const GeoPosition: {
 export type GeoPosition = GeoPosition$instance;
 
 export interface GeoBoundingBox$instance {
-    readonly east: double;
-    readonly item: double;
-    readonly maxAltitude: Nullable<System_Internal.Double>;
-    readonly minAltitude: Nullable<System_Internal.Double>;
-    readonly north: double;
-    readonly south: double;
-    readonly west: double;
-    equals(other: GeoBoundingBox): boolean;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    toString(): string;
+    readonly East: double;
+    readonly Item: double;
+    readonly MaxAltitude: Nullable<System_Internal.Double>;
+    readonly MinAltitude: Nullable<System_Internal.Double>;
+    readonly North: double;
+    readonly South: double;
+    readonly West: double;
+    Equals(other: GeoBoundingBox): boolean;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    ToString(): string;
 }
 
 
@@ -105,10 +105,10 @@ export const GeoBoundingBox: {
 export type GeoBoundingBox = GeoBoundingBox$instance;
 
 export interface GeoCollection$instance extends GeoObject {
-    readonly count: int;
-    readonly item: GeoObject;
-    readonly type: GeoObjectType;
-    getEnumerator(): IEnumerator__System_Collections_Generic<GeoObject>;
+    readonly Count: int;
+    readonly Item: GeoObject;
+    readonly Type: GeoObjectType;
+    GetEnumerator(): IEnumerator__System_Collections_Generic<GeoObject>;
 }
 
 
@@ -121,7 +121,7 @@ export const GeoCollection: {
 export type GeoCollection = GeoCollection$instance;
 
 export interface GeoLinearRing$instance {
-    readonly coordinates: GeoArray_1<GeoPosition>;
+    readonly Coordinates: GeoArray_1<GeoPosition>;
 }
 
 
@@ -133,8 +133,8 @@ export const GeoLinearRing: {
 export type GeoLinearRing = GeoLinearRing$instance;
 
 export interface GeoLineString$instance extends GeoObject {
-    readonly coordinates: GeoArray_1<GeoPosition>;
-    readonly type: GeoObjectType;
+    readonly Coordinates: GeoArray_1<GeoPosition>;
+    readonly Type: GeoObjectType;
 }
 
 
@@ -147,11 +147,11 @@ export const GeoLineString: {
 export type GeoLineString = GeoLineString$instance;
 
 export interface GeoLineStringCollection$instance extends GeoObject {
-    readonly coordinates: GeoArray_1<GeoArray_1<GeoPosition>>;
-    readonly count: int;
-    readonly item: GeoLineString;
-    readonly type: GeoObjectType;
-    getEnumerator(): IEnumerator__System_Collections_Generic<GeoLineString>;
+    readonly Coordinates: GeoArray_1<GeoArray_1<GeoPosition>>;
+    readonly Count: int;
+    readonly Item: GeoLineString;
+    readonly Type: GeoObjectType;
+    GetEnumerator(): IEnumerator__System_Collections_Generic<GeoLineString>;
 }
 
 
@@ -164,23 +164,23 @@ export const GeoLineStringCollection: {
 export type GeoLineStringCollection = GeoLineStringCollection$instance;
 
 export interface GeoObject$instance {
-    readonly boundingBox: GeoBoundingBox | undefined;
-    readonly type: GeoObjectType;
-    toString(): string;
-    tryGetCustomProperty(name: string, value: unknown): boolean;
+    readonly BoundingBox: GeoBoundingBox | undefined;
+    readonly Type: GeoObjectType;
+    ToString(): string;
+    TryGetCustomProperty(name: string, value: unknown): boolean;
 }
 
 
 export const GeoObject: {
-    parse(json: string): GeoObject;
+    Parse(json: string): GeoObject;
 };
 
 
 export type GeoObject = GeoObject$instance;
 
 export interface GeoPoint$instance extends GeoObject {
-    readonly coordinates: GeoPosition;
-    readonly type: GeoObjectType;
+    readonly Coordinates: GeoPosition;
+    readonly Type: GeoObjectType;
 }
 
 
@@ -204,11 +204,11 @@ export type GeoPoint = GeoPoint$instance & __GeoPoint$views;
 
 
 export interface GeoPointCollection$instance extends GeoObject {
-    readonly coordinates: GeoArray_1<GeoPosition>;
-    readonly count: int;
-    readonly item: GeoPoint;
-    readonly type: GeoObjectType;
-    getEnumerator(): IEnumerator__System_Collections_Generic<GeoPoint>;
+    readonly Coordinates: GeoArray_1<GeoPosition>;
+    readonly Count: int;
+    readonly Item: GeoPoint;
+    readonly Type: GeoObjectType;
+    GetEnumerator(): IEnumerator__System_Collections_Generic<GeoPoint>;
 }
 
 
@@ -221,10 +221,10 @@ export const GeoPointCollection: {
 export type GeoPointCollection = GeoPointCollection$instance;
 
 export interface GeoPolygon$instance extends GeoObject {
-    readonly coordinates: GeoArray_1<GeoArray_1<GeoPosition>>;
-    readonly outerRing: GeoLinearRing;
-    readonly rings: IReadOnlyList<GeoLinearRing>;
-    readonly type: GeoObjectType;
+    readonly Coordinates: GeoArray_1<GeoArray_1<GeoPosition>>;
+    readonly OuterRing: GeoLinearRing;
+    readonly Rings: IReadOnlyList<GeoLinearRing>;
+    readonly Type: GeoObjectType;
 }
 
 
@@ -238,11 +238,11 @@ export const GeoPolygon: {
 export type GeoPolygon = GeoPolygon$instance;
 
 export interface GeoPolygonCollection$instance extends GeoObject {
-    readonly coordinates: GeoArray_1<GeoArray_1<GeoArray_1<GeoPosition>>>;
-    readonly count: int;
-    readonly item: GeoPolygon;
-    readonly type: GeoObjectType;
-    getEnumerator(): IEnumerator__System_Collections_Generic<GeoPolygon>;
+    readonly Coordinates: GeoArray_1<GeoArray_1<GeoArray_1<GeoPosition>>>;
+    readonly Count: int;
+    readonly Item: GeoPolygon;
+    readonly Type: GeoObjectType;
+    GetEnumerator(): IEnumerator__System_Collections_Generic<GeoPolygon>;
 }
 
 

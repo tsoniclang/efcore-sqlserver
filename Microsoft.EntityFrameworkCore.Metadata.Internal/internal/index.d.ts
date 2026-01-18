@@ -14,14 +14,14 @@ import type { Boolean as ClrBoolean, Object as ClrObject } from "@tsonic/dotnet/
 import type { IReadOnlyIndex, IReadOnlyKey, StoreObjectIdentifier } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
 
 export abstract class SqlServerIndexExtensions$instance {
-    static areCompatibleForSqlServer(index: IReadOnlyIndex, duplicateIndex: IReadOnlyIndex, storeObject: StoreObjectIdentifier, shouldThrow: boolean): boolean;
+    static AreCompatibleForSqlServer(index: IReadOnlyIndex, duplicateIndex: IReadOnlyIndex, storeObject: StoreObjectIdentifier, shouldThrow: boolean): boolean;
 }
 
 
 export type SqlServerIndexExtensions = SqlServerIndexExtensions$instance;
 
 export abstract class SqlServerKeyExtensions$instance {
-    static areCompatibleForSqlServer(key: IReadOnlyKey, duplicateKey: IReadOnlyKey, storeObject: StoreObjectIdentifier, shouldThrow: boolean): boolean;
+    static AreCompatibleForSqlServer(key: IReadOnlyKey, duplicateKey: IReadOnlyKey, storeObject: StoreObjectIdentifier, shouldThrow: boolean): boolean;
 }
 
 

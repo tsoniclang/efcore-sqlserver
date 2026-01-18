@@ -10,12 +10,12 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable } from "@tsonic/dotnet/System.js";
 
 export enum RegionOutcome {
-    none = 0,
-    userProvidedValid = 1,
-    userProvidedAutodetectionFailed = 2,
-    userProvidedInvalid = 3,
-    autodetectSuccess = 4,
-    fallbackToGlobal = 5
+    None = 0,
+    UserProvidedValid = 1,
+    UserProvidedAutodetectionFailed = 2,
+    UserProvidedInvalid = 3,
+    AutodetectSuccess = 4,
+    FallbackToGlobal = 5
 }
 
 

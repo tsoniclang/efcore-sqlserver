@@ -29,16 +29,16 @@ import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 import type { XmlReader, XmlWriter } from "@tsonic/dotnet/System.Xml.js";
 
 export enum PrivateKeyStatus {
-    exists = 0,
-    doesNotExist = 1,
-    unknown = 2
+    Exists = 0,
+    DoesNotExist = 1,
+    Unknown = 2
 }
 
 
 export enum ValidationFailure {
-    none = 0,
-    invalidLifetime = 1,
-    invalidIssuer = 2
+    None = 0,
+    InvalidLifetime = 1,
+    InvalidIssuer = 2
 }
 
 
@@ -91,44 +91,44 @@ export type TypeValidator = (type: string, securityToken: SecurityToken, validat
 
 
 export interface ICompressionProvider$instance {
-    readonly algorithm: string;
-    decompress(value: byte[]): byte[];
-    isSupportedAlgorithm(algorithm: string): boolean;
+    readonly Algorithm: string;
+    Decompress(value: byte[]): byte[];
+    IsSupportedAlgorithm(algorithm: string): boolean;
 }
 
 
 export type ICompressionProvider = ICompressionProvider$instance;
 
 export interface ICryptoProvider$instance {
-    create(algorithm: string, ...args: unknown[]): unknown;
-    isSupportedAlgorithm(algorithm: string, ...args: unknown[]): boolean;
-    release(cryptoInstance: unknown): void;
+    Create(algorithm: string, ...args: unknown[]): unknown;
+    IsSupportedAlgorithm(algorithm: string, ...args: unknown[]): boolean;
+    Release(cryptoInstance: unknown): void;
 }
 
 
 export type ICryptoProvider = ICryptoProvider$instance;
 
 export interface ISecurityTokenValidator$instance {
-    readonly canValidateToken: boolean;
-    maximumTokenSizeInBytes: int;
-    canReadToken(securityToken: string): boolean;
-    validateToken(securityToken: string, validationParameters: TokenValidationParameters, validatedToken: SecurityToken): ClaimsPrincipal;
+    readonly CanValidateToken: boolean;
+    MaximumTokenSizeInBytes: int;
+    CanReadToken(securityToken: string): boolean;
+    ValidateToken(securityToken: string, validationParameters: TokenValidationParameters, validatedToken: SecurityToken): ClaimsPrincipal;
 }
 
 
 export type ISecurityTokenValidator = ISecurityTokenValidator$instance;
 
 export interface ITokenReplayCache$instance {
-    tryAdd(securityToken: string, expiresOn: DateTime): boolean;
-    tryFind(securityToken: string): boolean;
+    TryAdd(securityToken: string, expiresOn: DateTime): boolean;
+    TryFind(securityToken: string): boolean;
 }
 
 
 export type ITokenReplayCache = ITokenReplayCache$instance;
 
 export interface AsymmetricSecurityKey$instance extends SecurityKey {
-    readonly hasPrivateKey: boolean;
-    readonly privateKeyStatus: PrivateKeyStatus;
+    readonly HasPrivateKey: boolean;
+    readonly PrivateKeyStatus: PrivateKeyStatus;
 }
 
 
@@ -140,36 +140,36 @@ export const AsymmetricSecurityKey: {
 export type AsymmetricSecurityKey = AsymmetricSecurityKey$instance;
 
 export interface AsymmetricSignatureProvider$instance extends SignatureProvider {
-    readonly minimumAsymmetricKeySizeInBitsForSigningMap: IReadOnlyDictionary<System_Internal.String, System_Internal.Int32>;
-    readonly minimumAsymmetricKeySizeInBitsForVerifyingMap: IReadOnlyDictionary<System_Internal.String, System_Internal.Int32>;
-    sign(input: ReadOnlySpan<System_Internal.Byte>, signature: Span<System_Internal.Byte>, bytesWritten: int): boolean;
-    sign(input: byte[]): byte[];
-    sign(input: byte[], offset: int, count: int): byte[];
-    sign(data: ReadOnlySpan<System_Internal.Byte>, destination: Span<System_Internal.Byte>, bytesWritten: int): boolean;
-    validateAsymmetricSecurityKeySize(key: SecurityKey, algorithm: string, willCreateSignatures: boolean): void;
-    verify(input: byte[], signature: byte[]): boolean;
-    verify(input: byte[], inputOffset: int, inputLength: int, signature: byte[], signatureOffset: int, signatureLength: int): boolean;
+    readonly MinimumAsymmetricKeySizeInBitsForSigningMap: IReadOnlyDictionary<System_Internal.String, System_Internal.Int32>;
+    readonly MinimumAsymmetricKeySizeInBitsForVerifyingMap: IReadOnlyDictionary<System_Internal.String, System_Internal.Int32>;
+    Sign(input: ReadOnlySpan<System_Internal.Byte>, signature: Span<System_Internal.Byte>, bytesWritten: int): boolean;
+    Sign(input: byte[]): byte[];
+    Sign(input: byte[], offset: int, count: int): byte[];
+    Sign(data: ReadOnlySpan<System_Internal.Byte>, destination: Span<System_Internal.Byte>, bytesWritten: int): boolean;
+    ValidateAsymmetricSecurityKeySize(key: SecurityKey, algorithm: string, willCreateSignatures: boolean): void;
+    Verify(input: byte[], signature: byte[]): boolean;
+    Verify(input: byte[], inputOffset: int, inputLength: int, signature: byte[], signatureOffset: int, signatureLength: int): boolean;
 }
 
 
 export const AsymmetricSignatureProvider: {
     new(key: SecurityKey, algorithm: string): AsymmetricSignatureProvider;
     new(key: SecurityKey, algorithm: string, willCreateSignatures: boolean): AsymmetricSignatureProvider;
-    readonly defaultMinimumAsymmetricKeySizeInBitsForSigningMap: Dictionary<System_Internal.String, System_Internal.Int32>;
-    readonly defaultMinimumAsymmetricKeySizeInBitsForVerifyingMap: Dictionary<System_Internal.String, System_Internal.Int32>;
+    readonly DefaultMinimumAsymmetricKeySizeInBitsForSigningMap: Dictionary<System_Internal.String, System_Internal.Int32>;
+    readonly DefaultMinimumAsymmetricKeySizeInBitsForVerifyingMap: Dictionary<System_Internal.String, System_Internal.Int32>;
 };
 
 
 export type AsymmetricSignatureProvider = AsymmetricSignatureProvider$instance;
 
 export interface AuthenticatedEncryptionProvider$instance {
-    readonly algorithm: string;
-    context: string;
-    readonly key: SecurityKey;
-    decrypt(ciphertext: byte[], authenticatedData: byte[], iv: byte[], authenticationTag: byte[]): byte[];
-    dispose(): void;
-    encrypt(plaintext: byte[], authenticatedData: byte[]): AuthenticatedEncryptionResult;
-    encrypt(plaintext: byte[], authenticatedData: byte[], iv: byte[]): AuthenticatedEncryptionResult;
+    readonly Algorithm: string;
+    Context: string;
+    readonly Key: SecurityKey;
+    Decrypt(ciphertext: byte[], authenticatedData: byte[], iv: byte[], authenticationTag: byte[]): byte[];
+    Dispose(): void;
+    Encrypt(plaintext: byte[], authenticatedData: byte[]): AuthenticatedEncryptionResult;
+    Encrypt(plaintext: byte[], authenticatedData: byte[], iv: byte[]): AuthenticatedEncryptionResult;
 }
 
 
@@ -181,10 +181,10 @@ export const AuthenticatedEncryptionProvider: {
 export type AuthenticatedEncryptionProvider = AuthenticatedEncryptionProvider$instance;
 
 export interface AuthenticatedEncryptionResult$instance {
-    readonly authenticationTag: byte[];
-    readonly ciphertext: byte[];
+    readonly AuthenticationTag: byte[];
+    readonly Ciphertext: byte[];
     readonly IV: byte[];
-    readonly key: SecurityKey;
+    readonly Key: SecurityKey;
 }
 
 
@@ -196,11 +196,11 @@ export const AuthenticatedEncryptionResult: {
 export type AuthenticatedEncryptionResult = AuthenticatedEncryptionResult$instance;
 
 export interface BaseConfiguration$instance {
-    activeTokenEndpoint: string;
-    issuer: string;
-    readonly signingKeys: ICollection<SecurityKey>;
-    readonly tokenDecryptionKeys: ICollection<SecurityKey>;
-    tokenEndpoint: string;
+    ActiveTokenEndpoint: string;
+    Issuer: string;
+    readonly SigningKeys: ICollection<SecurityKey>;
+    readonly TokenDecryptionKeys: ICollection<SecurityKey>;
+    TokenEndpoint: string;
 }
 
 
@@ -211,26 +211,26 @@ export const BaseConfiguration: {
 export type BaseConfiguration = BaseConfiguration$instance;
 
 export interface BaseConfigurationManager$instance {
-    automaticRefreshInterval: TimeSpan;
-    readonly isLastKnownGoodValid: boolean;
-    lastKnownGoodConfiguration: BaseConfiguration;
-    lastKnownGoodLifetime: TimeSpan;
-    metadataAddress: string;
-    refreshInterval: TimeSpan;
-    useLastKnownGoodConfiguration: boolean;
-    getBaseConfigurationAsync(cancel: CancellationToken): Task<BaseConfiguration>;
-    requestRefresh(): void;
+    AutomaticRefreshInterval: TimeSpan;
+    readonly IsLastKnownGoodValid: boolean;
+    LastKnownGoodConfiguration: BaseConfiguration;
+    LastKnownGoodLifetime: TimeSpan;
+    MetadataAddress: string;
+    RefreshInterval: TimeSpan;
+    UseLastKnownGoodConfiguration: boolean;
+    GetBaseConfigurationAsync(cancel: CancellationToken): Task<BaseConfiguration>;
+    RequestRefresh(): void;
 }
 
 
 export const BaseConfigurationManager: {
     new(): BaseConfigurationManager;
     new(options: LKGConfigurationCacheOptions): BaseConfigurationManager;
-    readonly defaultAutomaticRefreshInterval: TimeSpan;
-    readonly defaultLastKnownGoodConfigurationLifetime: TimeSpan;
-    readonly defaultRefreshInterval: TimeSpan;
-    readonly minimumAutomaticRefreshInterval: TimeSpan;
-    readonly minimumRefreshInterval: TimeSpan;
+    readonly DefaultAutomaticRefreshInterval: TimeSpan;
+    readonly DefaultLastKnownGoodConfigurationLifetime: TimeSpan;
+    readonly DefaultRefreshInterval: TimeSpan;
+    readonly MinimumAutomaticRefreshInterval: TimeSpan;
+    readonly MinimumRefreshInterval: TimeSpan;
 };
 
 
@@ -249,10 +249,10 @@ export const CallContext: {
 export type CallContext = CallContext$instance;
 
 export interface CaseSensitiveClaimsIdentity$instance extends ClaimsIdentity {
-    readonly securityToken: SecurityToken;
-    findAll(type: string): IEnumerable<Claim>;
-    findFirst(type: string): Claim;
-    hasClaim(type: string, value: string): boolean;
+    readonly SecurityToken: SecurityToken;
+    FindAll(type: string): IEnumerable<Claim>;
+    FindFirst(type: string): Claim;
+    HasClaim(type: string, value: string): boolean;
 }
 
 
@@ -275,33 +275,33 @@ export interface CompressionAlgorithms$instance {
 
 export const CompressionAlgorithms: {
     new(): CompressionAlgorithms;
-    readonly deflate: string;
+    readonly Deflate: string;
 };
 
 
 export type CompressionAlgorithms = CompressionAlgorithms$instance;
 
 export interface CompressionProviderFactory$instance {
-    customCompressionProvider: ICompressionProvider;
-    createCompressionProvider(algorithm: string): ICompressionProvider;
-    createCompressionProvider(algorithm: string, maximumDeflateSize: int): ICompressionProvider;
-    isSupportedAlgorithm(algorithm: string): boolean;
+    CustomCompressionProvider: ICompressionProvider;
+    CreateCompressionProvider(algorithm: string): ICompressionProvider;
+    CreateCompressionProvider(algorithm: string, maximumDeflateSize: int): ICompressionProvider;
+    IsSupportedAlgorithm(algorithm: string): boolean;
 }
 
 
 export const CompressionProviderFactory: {
     new(): CompressionProviderFactory;
     new(other: CompressionProviderFactory): CompressionProviderFactory;
-    default: CompressionProviderFactory;
+    Default: CompressionProviderFactory;
 };
 
 
 export type CompressionProviderFactory = CompressionProviderFactory$instance;
 
 export interface CryptoProviderCache$instance {
-    tryAdd(signatureProvider: SignatureProvider): boolean;
-    tryGetSignatureProvider(securityKey: SecurityKey, algorithm: string, typeofProvider: string, willCreateSignatures: boolean, signatureProvider: SignatureProvider): boolean;
-    tryRemove(signatureProvider: SignatureProvider): boolean;
+    TryAdd(signatureProvider: SignatureProvider): boolean;
+    TryGetSignatureProvider(securityKey: SecurityKey, algorithm: string, typeofProvider: string, willCreateSignatures: boolean, signatureProvider: SignatureProvider): boolean;
+    TryRemove(signatureProvider: SignatureProvider): boolean;
 }
 
 
@@ -312,39 +312,39 @@ export const CryptoProviderCache: {
 export type CryptoProviderCache = CryptoProviderCache$instance;
 
 export interface CryptoProviderCacheOptions$instance {
-    sizeLimit: int;
+    SizeLimit: int;
 }
 
 
 export const CryptoProviderCacheOptions: {
     new(): CryptoProviderCacheOptions;
-    readonly defaultSizeLimit: int;
+    readonly DefaultSizeLimit: int;
 };
 
 
 export type CryptoProviderCacheOptions = CryptoProviderCacheOptions$instance;
 
 export interface CryptoProviderFactory$instance {
-    cacheSignatureProviders: boolean;
-    readonly cryptoProviderCache: CryptoProviderCache;
-    customCryptoProvider: ICryptoProvider;
-    signatureProviderObjectPoolCacheSize: int;
-    createAuthenticatedEncryptionProvider(key: SecurityKey, algorithm: string): AuthenticatedEncryptionProvider;
-    createForSigning(key: SecurityKey, algorithm: string): SignatureProvider;
-    createForSigning(key: SecurityKey, algorithm: string, cacheProvider: boolean): SignatureProvider;
-    createForVerifying(key: SecurityKey, algorithm: string): SignatureProvider;
-    createForVerifying(key: SecurityKey, algorithm: string, cacheProvider: boolean): SignatureProvider;
-    createHashAlgorithm(algorithm: HashAlgorithmName): HashAlgorithm;
-    createHashAlgorithm(algorithm: string): HashAlgorithm;
-    createKeyedHashAlgorithm(keyBytes: byte[], algorithm: string): KeyedHashAlgorithm;
-    createKeyWrapProvider(key: SecurityKey, algorithm: string): KeyWrapProvider;
-    createKeyWrapProviderForUnwrap(key: SecurityKey, algorithm: string): KeyWrapProvider;
-    isSupportedAlgorithm(algorithm: string): boolean;
-    isSupportedAlgorithm(algorithm: string, key: SecurityKey): boolean;
-    releaseHashAlgorithm(hashAlgorithm: HashAlgorithm): void;
-    releaseKeyWrapProvider(provider: KeyWrapProvider): void;
-    releaseRsaKeyWrapProvider(provider: RsaKeyWrapProvider): void;
-    releaseSignatureProvider(signatureProvider: SignatureProvider): void;
+    CacheSignatureProviders: boolean;
+    readonly CryptoProviderCache: CryptoProviderCache;
+    CustomCryptoProvider: ICryptoProvider;
+    SignatureProviderObjectPoolCacheSize: int;
+    CreateAuthenticatedEncryptionProvider(key: SecurityKey, algorithm: string): AuthenticatedEncryptionProvider;
+    CreateForSigning(key: SecurityKey, algorithm: string): SignatureProvider;
+    CreateForSigning(key: SecurityKey, algorithm: string, cacheProvider: boolean): SignatureProvider;
+    CreateForVerifying(key: SecurityKey, algorithm: string): SignatureProvider;
+    CreateForVerifying(key: SecurityKey, algorithm: string, cacheProvider: boolean): SignatureProvider;
+    CreateHashAlgorithm(algorithm: HashAlgorithmName): HashAlgorithm;
+    CreateHashAlgorithm(algorithm: string): HashAlgorithm;
+    CreateKeyedHashAlgorithm(keyBytes: byte[], algorithm: string): KeyedHashAlgorithm;
+    CreateKeyWrapProvider(key: SecurityKey, algorithm: string): KeyWrapProvider;
+    CreateKeyWrapProviderForUnwrap(key: SecurityKey, algorithm: string): KeyWrapProvider;
+    IsSupportedAlgorithm(algorithm: string): boolean;
+    IsSupportedAlgorithm(algorithm: string, key: SecurityKey): boolean;
+    ReleaseHashAlgorithm(hashAlgorithm: HashAlgorithm): void;
+    ReleaseKeyWrapProvider(provider: KeyWrapProvider): void;
+    ReleaseRsaKeyWrapProvider(provider: RsaKeyWrapProvider): void;
+    ReleaseSignatureProvider(signatureProvider: SignatureProvider): void;
 }
 
 
@@ -352,21 +352,21 @@ export const CryptoProviderFactory: {
     new(): CryptoProviderFactory;
     new(cache: CryptoProviderCache): CryptoProviderFactory;
     new(other: CryptoProviderFactory): CryptoProviderFactory;
-    default: CryptoProviderFactory;
-    defaultCacheSignatureProviders: boolean;
-    defaultSignatureProviderObjectPoolCacheSize: int;
+    Default: CryptoProviderFactory;
+    DefaultCacheSignatureProviders: boolean;
+    DefaultSignatureProviderObjectPoolCacheSize: int;
 };
 
 
 export type CryptoProviderFactory = CryptoProviderFactory$instance;
 
 export interface DeflateCompressionProvider$instance {
-    readonly algorithm: string;
-    readonly compressionLevel: CompressionLevel;
-    maximumDeflateSize: int;
-    compress(value: byte[]): byte[];
-    decompress(value: byte[]): byte[];
-    isSupportedAlgorithm(algorithm: string): boolean;
+    readonly Algorithm: string;
+    readonly CompressionLevel: CompressionLevel;
+    MaximumDeflateSize: int;
+    Compress(value: byte[]): byte[];
+    Decompress(value: byte[]): byte[];
+    IsSupportedAlgorithm(algorithm: string): boolean;
 }
 
 
@@ -386,8 +386,8 @@ export type DeflateCompressionProvider = DeflateCompressionProvider$instance & _
 
 
 export interface EcdhKeyExchangeProvider$instance {
-    keyDataLen: int;
-    generateKdf(apu?: string, apv?: string): SecurityKey;
+    KeyDataLen: int;
+    GenerateKdf(apu?: string, apv?: string): SecurityKey;
 }
 
 
@@ -399,12 +399,12 @@ export const EcdhKeyExchangeProvider: {
 export type EcdhKeyExchangeProvider = EcdhKeyExchangeProvider$instance;
 
 export interface ECDsaSecurityKey$instance extends AsymmetricSecurityKey {
-    readonly ecDsa: ECDsa;
-    readonly hasPrivateKey: boolean;
-    readonly keySize: int;
-    readonly privateKeyStatus: PrivateKeyStatus;
-    canComputeJwkThumbprint(): boolean;
-    computeJwkThumbprint(): byte[];
+    readonly ECDsa: ECDsa;
+    readonly HasPrivateKey: boolean;
+    readonly KeySize: int;
+    readonly PrivateKeyStatus: PrivateKeyStatus;
+    CanComputeJwkThumbprint(): boolean;
+    ComputeJwkThumbprint(): byte[];
 }
 
 
@@ -416,12 +416,12 @@ export const ECDsaSecurityKey: {
 export type ECDsaSecurityKey = ECDsaSecurityKey$instance;
 
 export interface EncryptingCredentials$instance {
-    readonly alg: string;
-    cryptoProviderFactory: CryptoProviderFactory;
-    readonly enc: string;
-    readonly key: SecurityKey;
-    keyExchangePublicKey: SecurityKey;
-    setDefaultCtyClaim: boolean;
+    readonly Alg: string;
+    CryptoProviderFactory: CryptoProviderFactory;
+    readonly Enc: string;
+    readonly Key: SecurityKey;
+    KeyExchangePublicKey: SecurityKey;
+    SetDefaultCtyClaim: boolean;
 }
 
 
@@ -434,10 +434,10 @@ export const EncryptingCredentials: {
 export type EncryptingCredentials = EncryptingCredentials$instance;
 
 export interface InMemoryCryptoProviderCache$instance extends CryptoProviderCache {
-    dispose(): void;
-    tryAdd(signatureProvider: SignatureProvider): boolean;
-    tryGetSignatureProvider(securityKey: SecurityKey, algorithm: string, typeofProvider: string, willCreateSignatures: boolean, signatureProvider: SignatureProvider): boolean;
-    tryRemove(signatureProvider: SignatureProvider): boolean;
+    Dispose(): void;
+    TryAdd(signatureProvider: SignatureProvider): boolean;
+    TryGetSignatureProvider(securityKey: SecurityKey, algorithm: string, typeofProvider: string, willCreateSignatures: boolean, signatureProvider: SignatureProvider): boolean;
+    TryRemove(signatureProvider: SignatureProvider): boolean;
 }
 
 
@@ -450,42 +450,42 @@ export const InMemoryCryptoProviderCache: {
 export type InMemoryCryptoProviderCache = InMemoryCryptoProviderCache$instance;
 
 export interface JsonWebKey$instance extends SecurityKey {
-    readonly additionalData: IDictionary<System_Internal.String, unknown>;
-    alg: string;
-    crv: string;
+    readonly AdditionalData: IDictionary<System_Internal.String, unknown>;
+    Alg: string;
+    Crv: string;
     D: string;
     DP: string;
     DQ: string;
     E: string;
-    readonly hasPrivateKey: boolean;
+    readonly HasPrivateKey: boolean;
     K: string;
-    keyId: string;
-    readonly keyOps: IList<System_Internal.String>;
-    readonly keySize: int;
-    kid: string;
-    kty: string;
+    KeyId: string;
+    readonly KeyOps: IList<System_Internal.String>;
+    readonly KeySize: int;
+    Kid: string;
+    Kty: string;
     N: string;
-    readonly oth: IList<System_Internal.String>;
+    readonly Oth: IList<System_Internal.String>;
     P: string;
     Q: string;
     QI: string;
-    use: string;
+    Use: string;
     X: string;
-    readonly x5c: IList<System_Internal.String>;
-    x5t: string;
-    x5tS256: string;
-    x5u: string;
+    readonly X5c: IList<System_Internal.String>;
+    X5t: string;
+    X5tS256: string;
+    X5u: string;
     Y: string;
-    canComputeJwkThumbprint(): boolean;
-    computeJwkThumbprint(): byte[];
-    toString(): string | undefined;
+    CanComputeJwkThumbprint(): boolean;
+    ComputeJwkThumbprint(): byte[];
+    ToString(): string | undefined;
 }
 
 
 export const JsonWebKey: {
     new(): JsonWebKey;
     new(json: string): JsonWebKey;
-    create(json: string): JsonWebKey;
+    Create(json: string): JsonWebKey;
 };
 
 
@@ -497,42 +497,42 @@ export interface JsonWebKeyConverter$instance {
 
 export const JsonWebKeyConverter: {
     new(): JsonWebKeyConverter;
-    convertFromECDsaSecurityKey(key: ECDsaSecurityKey): JsonWebKey;
-    convertFromRSASecurityKey(key: RsaSecurityKey): JsonWebKey;
-    convertFromSecurityKey(key: SecurityKey): JsonWebKey;
-    convertFromSymmetricSecurityKey(key: SymmetricSecurityKey): JsonWebKey;
-    convertFromX509SecurityKey(key: X509SecurityKey, representAsRsaKey: boolean): JsonWebKey;
-    convertFromX509SecurityKey(key: X509SecurityKey): JsonWebKey;
+    ConvertFromECDsaSecurityKey(key: ECDsaSecurityKey): JsonWebKey;
+    ConvertFromRSASecurityKey(key: RsaSecurityKey): JsonWebKey;
+    ConvertFromSecurityKey(key: SecurityKey): JsonWebKey;
+    ConvertFromSymmetricSecurityKey(key: SymmetricSecurityKey): JsonWebKey;
+    ConvertFromX509SecurityKey(key: X509SecurityKey, representAsRsaKey: boolean): JsonWebKey;
+    ConvertFromX509SecurityKey(key: X509SecurityKey): JsonWebKey;
 };
 
 
 export type JsonWebKeyConverter = JsonWebKeyConverter$instance;
 
 export interface JsonWebKeySet$instance {
-    readonly additionalData: IDictionary<System_Internal.String, unknown>;
-    readonly keys: IList<JsonWebKey>;
-    skipUnresolvedJsonWebKeys: boolean;
-    getSigningKeys(): IList<SecurityKey>;
+    readonly AdditionalData: IDictionary<System_Internal.String, unknown>;
+    readonly Keys: IList<JsonWebKey>;
+    SkipUnresolvedJsonWebKeys: boolean;
+    GetSigningKeys(): IList<SecurityKey>;
 }
 
 
 export const JsonWebKeySet: {
     new(): JsonWebKeySet;
     new(json: string): JsonWebKeySet;
-    defaultSkipUnresolvedJsonWebKeys: boolean;
-    create(json: string): JsonWebKeySet;
+    DefaultSkipUnresolvedJsonWebKeys: boolean;
+    Create(json: string): JsonWebKeySet;
 };
 
 
 export type JsonWebKeySet = JsonWebKeySet$instance;
 
 export interface KeyWrapProvider$instance {
-    readonly algorithm: string;
-    context: string;
-    readonly key: SecurityKey;
-    dispose(): void;
-    unwrapKey(keyBytes: byte[]): byte[];
-    wrapKey(keyBytes: byte[]): byte[];
+    readonly Algorithm: string;
+    Context: string;
+    readonly Key: SecurityKey;
+    Dispose(): void;
+    UnwrapKey(keyBytes: byte[]): byte[];
+    WrapKey(keyBytes: byte[]): byte[];
 }
 
 
@@ -543,11 +543,11 @@ export const KeyWrapProvider: {
 export type KeyWrapProvider = KeyWrapProvider$instance;
 
 export interface RsaKeyWrapProvider$instance extends KeyWrapProvider {
-    readonly algorithm: string;
-    context: string;
-    readonly key: SecurityKey;
-    unwrapKey(keyBytes: byte[]): byte[];
-    wrapKey(keyBytes: byte[]): byte[];
+    readonly Algorithm: string;
+    Context: string;
+    readonly Key: SecurityKey;
+    UnwrapKey(keyBytes: byte[]): byte[];
+    WrapKey(keyBytes: byte[]): byte[];
 }
 
 
@@ -559,13 +559,13 @@ export const RsaKeyWrapProvider: {
 export type RsaKeyWrapProvider = RsaKeyWrapProvider$instance;
 
 export interface RsaSecurityKey$instance extends AsymmetricSecurityKey {
-    readonly hasPrivateKey: boolean;
-    readonly keySize: int;
-    readonly parameters: RSAParameters;
-    readonly privateKeyStatus: PrivateKeyStatus;
-    readonly rsa: RSA;
-    canComputeJwkThumbprint(): boolean;
-    computeJwkThumbprint(): byte[];
+    readonly HasPrivateKey: boolean;
+    readonly KeySize: int;
+    readonly Parameters: RSAParameters;
+    readonly PrivateKeyStatus: PrivateKeyStatus;
+    readonly Rsa: RSA;
+    CanComputeJwkThumbprint(): boolean;
+    ComputeJwkThumbprint(): byte[];
 }
 
 
@@ -578,13 +578,13 @@ export const RsaSecurityKey: {
 export type RsaSecurityKey = RsaSecurityKey$instance;
 
 export interface SecurityKey$instance {
-    cryptoProviderFactory: CryptoProviderFactory;
-    keyId: string;
-    readonly keySize: int;
-    canComputeJwkThumbprint(): boolean;
-    computeJwkThumbprint(): byte[];
-    isSupportedAlgorithm(algorithm: string): boolean;
-    toString(): string | undefined;
+    CryptoProviderFactory: CryptoProviderFactory;
+    KeyId: string;
+    readonly KeySize: int;
+    CanComputeJwkThumbprint(): boolean;
+    ComputeJwkThumbprint(): byte[];
+    IsSupportedAlgorithm(algorithm: string): boolean;
+    ToString(): string | undefined;
 }
 
 
@@ -607,13 +607,13 @@ export const SecurityKeyIdentifierClause: {
 export type SecurityKeyIdentifierClause = SecurityKeyIdentifierClause$instance;
 
 export interface SecurityToken$instance {
-    readonly id: string;
-    readonly issuer: string;
-    readonly securityKey: SecurityKey;
-    signingKey: SecurityKey;
-    readonly validFrom: DateTime;
-    readonly validTo: DateTime;
-    unsafeToString(): string;
+    readonly Id: string;
+    readonly Issuer: string;
+    readonly SecurityKey: SecurityKey;
+    SigningKey: SecurityKey;
+    readonly ValidFrom: DateTime;
+    readonly ValidTo: DateTime;
+    UnsafeToString(): string;
 }
 
 
@@ -683,20 +683,20 @@ export const SecurityTokenDecryptionFailedException: {
 export type SecurityTokenDecryptionFailedException = SecurityTokenDecryptionFailedException$instance;
 
 export interface SecurityTokenDescriptor$instance {
-    additionalHeaderClaims: IDictionary<System_Internal.String, unknown>;
-    additionalInnerHeaderClaims: IDictionary<System_Internal.String, unknown>;
-    audience: string;
-    claims: IDictionary<System_Internal.String, unknown>;
-    compressionAlgorithm: string;
-    encryptingCredentials: EncryptingCredentials;
-    expires: Nullable<DateTime>;
-    issuedAt: Nullable<DateTime>;
-    issuer: string;
-    notBefore: Nullable<DateTime>;
-    signingCredentials: SigningCredentials;
-    get subject(): ClaimsIdentity | undefined;
-    set subject(value: ClaimsIdentity);
-    tokenType: string;
+    AdditionalHeaderClaims: IDictionary<System_Internal.String, unknown>;
+    AdditionalInnerHeaderClaims: IDictionary<System_Internal.String, unknown>;
+    Audience: string;
+    Claims: IDictionary<System_Internal.String, unknown>;
+    CompressionAlgorithm: string;
+    EncryptingCredentials: EncryptingCredentials;
+    Expires: Nullable<DateTime>;
+    IssuedAt: Nullable<DateTime>;
+    Issuer: string;
+    NotBefore: Nullable<DateTime>;
+    SigningCredentials: SigningCredentials;
+    get Subject(): ClaimsIdentity | undefined;
+    set Subject(value: ClaimsIdentity);
+    TokenType: string;
 }
 
 
@@ -734,7 +734,7 @@ export const SecurityTokenEncryptionKeyNotFoundException: {
 export type SecurityTokenEncryptionKeyNotFoundException = SecurityTokenEncryptionKeyNotFoundException$instance;
 
 export interface SecurityTokenException$instance extends Exception {
-    getObjectData(info: SerializationInfo, context: StreamingContext): void;
+    GetObjectData(info: SerializationInfo, context: StreamingContext): void;
 }
 
 
@@ -748,8 +748,8 @@ export const SecurityTokenException: {
 export type SecurityTokenException = SecurityTokenException$instance;
 
 export interface SecurityTokenExpiredException$instance extends SecurityTokenValidationException {
-    expires: DateTime;
-    getObjectData(info: SerializationInfo, context: StreamingContext): void;
+    Expires: DateTime;
+    GetObjectData(info: SerializationInfo, context: StreamingContext): void;
 }
 
 
@@ -763,18 +763,18 @@ export const SecurityTokenExpiredException: {
 export type SecurityTokenExpiredException = SecurityTokenExpiredException$instance;
 
 export interface SecurityTokenHandler$instance extends TokenHandler {
-    readonly canValidateToken: boolean;
-    readonly canWriteToken: boolean;
-    readonly tokenType: Type;
-    canReadToken(reader: XmlReader): boolean;
-    canReadToken(tokenString: string): boolean;
-    createSecurityTokenReference(token: SecurityToken, attached: boolean): SecurityKeyIdentifierClause;
-    createToken(tokenDescriptor: SecurityTokenDescriptor): SecurityToken;
-    readToken(token: string): SecurityToken;
-    validateToken(securityToken: string, validationParameters: TokenValidationParameters, validatedToken: SecurityToken): ClaimsPrincipal;
-    validateToken(reader: XmlReader, validationParameters: TokenValidationParameters, validatedToken: SecurityToken): ClaimsPrincipal;
-    writeToken(token: SecurityToken): string;
-    writeToken(writer: XmlWriter, token: SecurityToken): void;
+    readonly CanValidateToken: boolean;
+    readonly CanWriteToken: boolean;
+    readonly TokenType: Type;
+    CanReadToken(reader: XmlReader): boolean;
+    CanReadToken(tokenString: string): boolean;
+    CreateSecurityTokenReference(token: SecurityToken, attached: boolean): SecurityKeyIdentifierClause;
+    CreateToken(tokenDescriptor: SecurityTokenDescriptor): SecurityToken;
+    ReadToken(token: string): SecurityToken;
+    ValidateToken(securityToken: string, validationParameters: TokenValidationParameters, validatedToken: SecurityToken): ClaimsPrincipal;
+    ValidateToken(reader: XmlReader, validationParameters: TokenValidationParameters, validatedToken: SecurityToken): ClaimsPrincipal;
+    WriteToken(token: SecurityToken): string;
+    WriteToken(writer: XmlWriter, token: SecurityToken): void;
 }
 
 
@@ -792,8 +792,8 @@ export type SecurityTokenHandler = SecurityTokenHandler$instance & __SecurityTok
 
 
 export interface SecurityTokenInvalidAlgorithmException$instance extends SecurityTokenValidationException {
-    invalidAlgorithm: string;
-    getObjectData(info: SerializationInfo, context: StreamingContext): void;
+    InvalidAlgorithm: string;
+    GetObjectData(info: SerializationInfo, context: StreamingContext): void;
 }
 
 
@@ -807,8 +807,8 @@ export const SecurityTokenInvalidAlgorithmException: {
 export type SecurityTokenInvalidAlgorithmException = SecurityTokenInvalidAlgorithmException$instance;
 
 export interface SecurityTokenInvalidAudienceException$instance extends SecurityTokenValidationException {
-    invalidAudience: string;
-    getObjectData(info: SerializationInfo, context: StreamingContext): void;
+    InvalidAudience: string;
+    GetObjectData(info: SerializationInfo, context: StreamingContext): void;
 }
 
 
@@ -822,8 +822,8 @@ export const SecurityTokenInvalidAudienceException: {
 export type SecurityTokenInvalidAudienceException = SecurityTokenInvalidAudienceException$instance;
 
 export interface SecurityTokenInvalidIssuerException$instance extends SecurityTokenValidationException {
-    invalidIssuer: string;
-    getObjectData(info: SerializationInfo, context: StreamingContext): void;
+    InvalidIssuer: string;
+    GetObjectData(info: SerializationInfo, context: StreamingContext): void;
 }
 
 
@@ -837,9 +837,9 @@ export const SecurityTokenInvalidIssuerException: {
 export type SecurityTokenInvalidIssuerException = SecurityTokenInvalidIssuerException$instance;
 
 export interface SecurityTokenInvalidLifetimeException$instance extends SecurityTokenValidationException {
-    expires: Nullable<DateTime>;
-    notBefore: Nullable<DateTime>;
-    getObjectData(info: SerializationInfo, context: StreamingContext): void;
+    Expires: Nullable<DateTime>;
+    NotBefore: Nullable<DateTime>;
+    GetObjectData(info: SerializationInfo, context: StreamingContext): void;
 }
 
 
@@ -866,7 +866,7 @@ export const SecurityTokenInvalidSignatureException: {
 export type SecurityTokenInvalidSignatureException = SecurityTokenInvalidSignatureException$instance;
 
 export interface SecurityTokenInvalidSigningKeyException$instance extends SecurityTokenValidationException {
-    signingKey: SecurityKey;
+    SigningKey: SecurityKey;
 }
 
 
@@ -880,8 +880,8 @@ export const SecurityTokenInvalidSigningKeyException: {
 export type SecurityTokenInvalidSigningKeyException = SecurityTokenInvalidSigningKeyException$instance;
 
 export interface SecurityTokenInvalidTypeException$instance extends SecurityTokenValidationException {
-    invalidType: string;
-    getObjectData(info: SerializationInfo, context: StreamingContext): void;
+    InvalidType: string;
+    GetObjectData(info: SerializationInfo, context: StreamingContext): void;
 }
 
 
@@ -934,8 +934,8 @@ export const SecurityTokenNoExpirationException: {
 export type SecurityTokenNoExpirationException = SecurityTokenNoExpirationException$instance;
 
 export interface SecurityTokenNotYetValidException$instance extends SecurityTokenValidationException {
-    notBefore: DateTime;
-    getObjectData(info: SerializationInfo, context: StreamingContext): void;
+    NotBefore: DateTime;
+    GetObjectData(info: SerializationInfo, context: StreamingContext): void;
 }
 
 
@@ -988,8 +988,8 @@ export const SecurityTokenSignatureKeyNotFoundException: {
 export type SecurityTokenSignatureKeyNotFoundException = SecurityTokenSignatureKeyNotFoundException$instance;
 
 export interface SecurityTokenUnableToValidateException$instance extends SecurityTokenInvalidSignatureException {
-    validationFailure: ValidationFailure;
-    getObjectData(info: SerializationInfo, context: StreamingContext): void;
+    ValidationFailure: ValidationFailure;
+    GetObjectData(info: SerializationInfo, context: StreamingContext): void;
 }
 
 
@@ -1017,17 +1017,17 @@ export const SecurityTokenValidationException: {
 export type SecurityTokenValidationException = SecurityTokenValidationException$instance;
 
 export interface SignatureProvider$instance {
-    readonly algorithm: string;
-    context: string;
-    cryptoProviderCache: CryptoProviderCache;
-    readonly key: SecurityKey;
-    readonly willCreateSignatures: boolean;
-    dispose(): void;
-    sign(input: byte[]): byte[];
-    sign(input: byte[], offset: int, count: int): byte[];
-    sign(data: ReadOnlySpan<System_Internal.Byte>, destination: Span<System_Internal.Byte>, bytesWritten: int): boolean;
-    verify(input: byte[], signature: byte[]): boolean;
-    verify(input: byte[], inputOffset: int, inputLength: int, signature: byte[], signatureOffset: int, signatureLength: int): boolean;
+    readonly Algorithm: string;
+    Context: string;
+    CryptoProviderCache: CryptoProviderCache;
+    readonly Key: SecurityKey;
+    readonly WillCreateSignatures: boolean;
+    Dispose(): void;
+    Sign(input: byte[]): byte[];
+    Sign(input: byte[], offset: int, count: int): byte[];
+    Sign(data: ReadOnlySpan<System_Internal.Byte>, destination: Span<System_Internal.Byte>, bytesWritten: int): boolean;
+    Verify(input: byte[], signature: byte[]): boolean;
+    Verify(input: byte[], inputOffset: int, inputLength: int, signature: byte[], signatureOffset: int, signatureLength: int): boolean;
 }
 
 
@@ -1038,11 +1038,11 @@ export const SignatureProvider: {
 export type SignatureProvider = SignatureProvider$instance;
 
 export interface SigningCredentials$instance {
-    readonly algorithm: string;
-    cryptoProviderFactory: CryptoProviderFactory;
-    readonly digest: string;
-    readonly key: SecurityKey;
-    readonly kid: string;
+    readonly Algorithm: string;
+    CryptoProviderFactory: CryptoProviderFactory;
+    readonly Digest: string;
+    readonly Key: SecurityKey;
+    readonly Kid: string;
 }
 
 
@@ -1055,11 +1055,11 @@ export const SigningCredentials: {
 export type SigningCredentials = SigningCredentials$instance;
 
 export interface SymmetricKeyWrapProvider$instance extends KeyWrapProvider {
-    readonly algorithm: string;
-    context: string;
-    readonly key: SecurityKey;
-    unwrapKey(keyBytes: byte[]): byte[];
-    wrapKey(keyBytes: byte[]): byte[];
+    readonly Algorithm: string;
+    Context: string;
+    readonly Key: SecurityKey;
+    UnwrapKey(keyBytes: byte[]): byte[];
+    WrapKey(keyBytes: byte[]): byte[];
 }
 
 
@@ -1071,10 +1071,10 @@ export const SymmetricKeyWrapProvider: {
 export type SymmetricKeyWrapProvider = SymmetricKeyWrapProvider$instance;
 
 export interface SymmetricSecurityKey$instance extends SecurityKey {
-    readonly key: byte[];
-    readonly keySize: int;
-    canComputeJwkThumbprint(): boolean;
-    computeJwkThumbprint(): byte[];
+    readonly Key: byte[];
+    readonly KeySize: int;
+    CanComputeJwkThumbprint(): boolean;
+    ComputeJwkThumbprint(): byte[];
 }
 
 
@@ -1086,21 +1086,21 @@ export const SymmetricSecurityKey: {
 export type SymmetricSecurityKey = SymmetricSecurityKey$instance;
 
 export interface SymmetricSignatureProvider$instance extends SignatureProvider {
-    minimumSymmetricKeySizeInBits: int;
-    sign(input: byte[]): byte[];
-    sign(input: ReadOnlySpan<System_Internal.Byte>, signature: Span<System_Internal.Byte>, bytesWritten: int): boolean;
-    sign(input: byte[], offset: int, count: int): byte[];
-    sign(data: ReadOnlySpan<System_Internal.Byte>, destination: Span<System_Internal.Byte>, bytesWritten: int): boolean;
-    verify(input: byte[], signature: byte[]): boolean;
-    verify(input: byte[], signature: byte[], length: int): boolean;
-    verify(input: byte[], inputOffset: int, inputLength: int, signature: byte[], signatureOffset: int, signatureLength: int): boolean;
+    MinimumSymmetricKeySizeInBits: int;
+    Sign(input: byte[]): byte[];
+    Sign(input: ReadOnlySpan<System_Internal.Byte>, signature: Span<System_Internal.Byte>, bytesWritten: int): boolean;
+    Sign(input: byte[], offset: int, count: int): byte[];
+    Sign(data: ReadOnlySpan<System_Internal.Byte>, destination: Span<System_Internal.Byte>, bytesWritten: int): boolean;
+    Verify(input: byte[], signature: byte[]): boolean;
+    Verify(input: byte[], signature: byte[], length: int): boolean;
+    Verify(input: byte[], inputOffset: int, inputLength: int, signature: byte[], signatureOffset: int, signatureLength: int): boolean;
 }
 
 
 export const SymmetricSignatureProvider: {
     new(key: SecurityKey, algorithm: string): SymmetricSignatureProvider;
     new(key: SecurityKey, algorithm: string, willCreateSignatures: boolean): SymmetricSignatureProvider;
-    readonly defaultMinimumSymmetricKeySizeInBits: int;
+    readonly DefaultMinimumSymmetricKeySizeInBits: int;
 };
 
 
@@ -1119,107 +1119,107 @@ export const TokenContext: {
 export type TokenContext = TokenContext$instance;
 
 export interface TokenHandler$instance {
-    maximumTokenSizeInBytes: int;
-    setDefaultTimesOnTokenCreation: boolean;
-    tokenLifetimeInMinutes: int;
-    readToken(token: string): SecurityToken;
-    validateTokenAsync(token: string, validationParameters: TokenValidationParameters): Task<TokenValidationResult>;
-    validateTokenAsync(token: SecurityToken, validationParameters: TokenValidationParameters): Task<TokenValidationResult>;
+    MaximumTokenSizeInBytes: int;
+    SetDefaultTimesOnTokenCreation: boolean;
+    TokenLifetimeInMinutes: int;
+    ReadToken(token: string): SecurityToken;
+    ValidateTokenAsync(token: string, validationParameters: TokenValidationParameters): Task<TokenValidationResult>;
+    ValidateTokenAsync(token: SecurityToken, validationParameters: TokenValidationParameters): Task<TokenValidationResult>;
 }
 
 
 export const TokenHandler: {
-    readonly defaultTokenLifetimeInMinutes: int;
+    readonly DefaultTokenLifetimeInMinutes: int;
 };
 
 
 export type TokenHandler = TokenHandler$instance;
 
 export interface TokenValidationParameters$instance {
-    actorValidationParameters: TokenValidationParameters;
-    algorithmValidator: AlgorithmValidator;
-    audienceValidator: AudienceValidator;
-    authenticationType: string;
-    clockSkew: TimeSpan;
-    configurationManager: BaseConfigurationManager;
-    cryptoProviderFactory: CryptoProviderFactory;
-    debugId: string;
-    ignoreTrailingSlashWhenValidatingAudience: boolean;
-    includeTokenOnFailedValidation: boolean;
-    readonly instancePropertyBag: IDictionary<System_Internal.String, unknown>;
-    readonly isClone: boolean;
-    issuerSigningKey: SecurityKey;
-    issuerSigningKeyResolver: IssuerSigningKeyResolver;
-    issuerSigningKeyResolverUsingConfiguration: IssuerSigningKeyResolverUsingConfiguration;
-    issuerSigningKeys: IEnumerable<SecurityKey>;
-    issuerSigningKeyValidator: IssuerSigningKeyValidator;
-    issuerSigningKeyValidatorUsingConfiguration: IssuerSigningKeyValidatorUsingConfiguration;
-    issuerValidator: IssuerValidator;
-    issuerValidatorUsingConfiguration: IssuerValidatorUsingConfiguration;
-    lifetimeValidator: LifetimeValidator;
-    logTokenId: boolean;
-    logValidationExceptions: boolean;
-    nameClaimType: string;
-    nameClaimTypeRetriever: Func<SecurityToken, System_Internal.String, System_Internal.String>;
-    propertyBag: IDictionary<System_Internal.String, unknown>;
-    refreshBeforeValidation: boolean;
-    requireAudience: boolean;
-    requireExpirationTime: boolean;
-    requireSignedTokens: boolean;
-    roleClaimType: string;
-    roleClaimTypeRetriever: Func<SecurityToken, System_Internal.String, System_Internal.String>;
-    saveSigninToken: boolean;
-    signatureValidator: SignatureValidator;
-    signatureValidatorUsingConfiguration: SignatureValidatorUsingConfiguration;
-    tokenDecryptionKey: SecurityKey;
-    tokenDecryptionKeyResolver: TokenDecryptionKeyResolver;
-    tokenDecryptionKeys: IEnumerable<SecurityKey>;
-    tokenReader: TokenReader;
-    tokenReplayCache: ITokenReplayCache;
-    tokenReplayValidator: TokenReplayValidator;
-    transformBeforeSignatureValidation: TransformBeforeSignatureValidation;
-    tryAllIssuerSigningKeys: boolean;
-    typeValidator: TypeValidator;
-    validAlgorithms: IEnumerable<System_Internal.String>;
-    validateActor: boolean;
-    validateAudience: boolean;
-    validateIssuer: boolean;
-    validateIssuerSigningKey: boolean;
-    validateLifetime: boolean;
-    validateSignatureLast: boolean;
-    validateTokenReplay: boolean;
-    validateWithLKG: boolean;
-    validAudience: string;
-    validAudiences: IEnumerable<System_Internal.String>;
-    validIssuer: string;
-    validIssuers: IEnumerable<System_Internal.String>;
-    validTypes: IEnumerable<System_Internal.String>;
-    clone(): TokenValidationParameters;
-    createClaimsIdentity(securityToken: SecurityToken, issuer: string): ClaimsIdentity;
+    ActorValidationParameters: TokenValidationParameters;
+    AlgorithmValidator: AlgorithmValidator;
+    AudienceValidator: AudienceValidator;
+    AuthenticationType: string;
+    ClockSkew: TimeSpan;
+    ConfigurationManager: BaseConfigurationManager;
+    CryptoProviderFactory: CryptoProviderFactory;
+    DebugId: string;
+    IgnoreTrailingSlashWhenValidatingAudience: boolean;
+    IncludeTokenOnFailedValidation: boolean;
+    readonly InstancePropertyBag: IDictionary<System_Internal.String, unknown>;
+    readonly IsClone: boolean;
+    IssuerSigningKey: SecurityKey;
+    IssuerSigningKeyResolver: IssuerSigningKeyResolver;
+    IssuerSigningKeyResolverUsingConfiguration: IssuerSigningKeyResolverUsingConfiguration;
+    IssuerSigningKeys: IEnumerable<SecurityKey>;
+    IssuerSigningKeyValidator: IssuerSigningKeyValidator;
+    IssuerSigningKeyValidatorUsingConfiguration: IssuerSigningKeyValidatorUsingConfiguration;
+    IssuerValidator: IssuerValidator;
+    IssuerValidatorUsingConfiguration: IssuerValidatorUsingConfiguration;
+    LifetimeValidator: LifetimeValidator;
+    LogTokenId: boolean;
+    LogValidationExceptions: boolean;
+    NameClaimType: string;
+    NameClaimTypeRetriever: Func<SecurityToken, System_Internal.String, System_Internal.String>;
+    PropertyBag: IDictionary<System_Internal.String, unknown>;
+    RefreshBeforeValidation: boolean;
+    RequireAudience: boolean;
+    RequireExpirationTime: boolean;
+    RequireSignedTokens: boolean;
+    RoleClaimType: string;
+    RoleClaimTypeRetriever: Func<SecurityToken, System_Internal.String, System_Internal.String>;
+    SaveSigninToken: boolean;
+    SignatureValidator: SignatureValidator;
+    SignatureValidatorUsingConfiguration: SignatureValidatorUsingConfiguration;
+    TokenDecryptionKey: SecurityKey;
+    TokenDecryptionKeyResolver: TokenDecryptionKeyResolver;
+    TokenDecryptionKeys: IEnumerable<SecurityKey>;
+    TokenReader: TokenReader;
+    TokenReplayCache: ITokenReplayCache;
+    TokenReplayValidator: TokenReplayValidator;
+    TransformBeforeSignatureValidation: TransformBeforeSignatureValidation;
+    TryAllIssuerSigningKeys: boolean;
+    TypeValidator: TypeValidator;
+    ValidAlgorithms: IEnumerable<System_Internal.String>;
+    ValidateActor: boolean;
+    ValidateAudience: boolean;
+    ValidateIssuer: boolean;
+    ValidateIssuerSigningKey: boolean;
+    ValidateLifetime: boolean;
+    ValidateSignatureLast: boolean;
+    ValidateTokenReplay: boolean;
+    ValidateWithLKG: boolean;
+    ValidAudience: string;
+    ValidAudiences: IEnumerable<System_Internal.String>;
+    ValidIssuer: string;
+    ValidIssuers: IEnumerable<System_Internal.String>;
+    ValidTypes: IEnumerable<System_Internal.String>;
+    Clone(): TokenValidationParameters;
+    CreateClaimsIdentity(securityToken: SecurityToken, issuer: string): ClaimsIdentity;
 }
 
 
 export const TokenValidationParameters: {
     new(): TokenValidationParameters;
-    readonly defaultAuthenticationType: string;
-    readonly defaultClockSkew: TimeSpan;
-    readonly defaultMaximumTokenSizeInBytes: int;
+    readonly DefaultAuthenticationType: string;
+    readonly DefaultClockSkew: TimeSpan;
+    readonly DefaultMaximumTokenSizeInBytes: int;
 };
 
 
 export type TokenValidationParameters = TokenValidationParameters$instance;
 
 export interface TokenValidationResult$instance {
-    readonly claims: IDictionary<System_Internal.String, unknown>;
-    claimsIdentity: ClaimsIdentity;
-    exception: Exception;
-    issuer: string;
-    isValid: boolean;
-    readonly propertyBag: IDictionary<System_Internal.String, unknown>;
-    securityToken: SecurityToken;
-    tokenContext: CallContext;
-    readonly tokenOnFailedValidation: SecurityToken;
-    tokenType: string;
+    readonly Claims: IDictionary<System_Internal.String, unknown>;
+    ClaimsIdentity: ClaimsIdentity;
+    Exception: Exception;
+    Issuer: string;
+    IsValid: boolean;
+    readonly PropertyBag: IDictionary<System_Internal.String, unknown>;
+    SecurityToken: SecurityToken;
+    TokenContext: CallContext;
+    readonly TokenOnFailedValidation: SecurityToken;
+    TokenType: string;
 }
 
 
@@ -1231,7 +1231,7 @@ export const TokenValidationResult: {
 export type TokenValidationResult = TokenValidationResult$instance;
 
 export interface X509EncryptingCredentials$instance extends EncryptingCredentials {
-    readonly certificate: X509Certificate2 | undefined;
+    readonly Certificate: X509Certificate2 | undefined;
 }
 
 
@@ -1244,17 +1244,17 @@ export const X509EncryptingCredentials: {
 export type X509EncryptingCredentials = X509EncryptingCredentials$instance;
 
 export interface X509SecurityKey$instance extends AsymmetricSecurityKey {
-    readonly certificate: X509Certificate2 | undefined;
-    readonly hasPrivateKey: boolean;
-    readonly keySize: int;
-    readonly privateKey: AsymmetricAlgorithm;
-    readonly privateKeyStatus: PrivateKeyStatus;
-    readonly publicKey: AsymmetricAlgorithm;
-    readonly x5t: string;
-    canComputeJwkThumbprint(): boolean;
-    computeJwkThumbprint(): byte[];
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
+    readonly Certificate: X509Certificate2 | undefined;
+    readonly HasPrivateKey: boolean;
+    readonly KeySize: int;
+    readonly PrivateKey: AsymmetricAlgorithm;
+    readonly PrivateKeyStatus: PrivateKeyStatus;
+    readonly PublicKey: AsymmetricAlgorithm;
+    readonly X5t: string;
+    CanComputeJwkThumbprint(): boolean;
+    ComputeJwkThumbprint(): byte[];
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
 }
 
 
@@ -1267,7 +1267,7 @@ export const X509SecurityKey: {
 export type X509SecurityKey = X509SecurityKey$instance;
 
 export interface X509SigningCredentials$instance extends SigningCredentials {
-    readonly certificate: X509Certificate2 | undefined;
+    readonly Certificate: X509Certificate2 | undefined;
 }
 
 
@@ -1280,48 +1280,48 @@ export const X509SigningCredentials: {
 export type X509SigningCredentials = X509SigningCredentials$instance;
 
 export abstract class Base64UrlEncoder$instance {
-    static decode(arg: string): string;
-    static decodeBytes(str: string): byte[];
-    static encode(inArray: byte[], offset: int, length: int): string;
-    static encode(inArray: byte[]): string;
-    static encode(inArray: ReadOnlySpan<System_Internal.Byte>, output: Span<System_Internal.Char>): int;
-    static encode(arg: string): string;
+    static Decode(arg: string): string;
+    static DecodeBytes(str: string): byte[];
+    static Encode(inArray: byte[], offset: int, length: int): string;
+    static Encode(inArray: byte[]): string;
+    static Encode(inArray: ReadOnlySpan<System_Internal.Byte>, output: Span<System_Internal.Char>): int;
+    static Encode(arg: string): string;
 }
 
 
 export type Base64UrlEncoder = Base64UrlEncoder$instance;
 
 export abstract class CollectionUtilities$instance {
-    static isNullOrEmpty<T>(enumerable: IEnumerable<T>): boolean;
+    static IsNullOrEmpty<T>(enumerable: IEnumerable<T>): boolean;
 }
 
 
 export type CollectionUtilities = CollectionUtilities$instance;
 
 export abstract class DateTimeUtil$instance {
-    static add(time: DateTime, timespan: TimeSpan): DateTime;
-    static getMaxValue(kind: DateTimeKind): DateTime;
-    static getMinValue(kind: DateTimeKind): DateTime;
-    static toUniversalTime(value: DateTime): DateTime;
-    static toUniversalTime(value: Nullable<DateTime>): Nullable<DateTime>;
+    static Add(time: DateTime, timespan: TimeSpan): DateTime;
+    static GetMaxValue(kind: DateTimeKind): DateTime;
+    static GetMinValue(kind: DateTimeKind): DateTime;
+    static ToUniversalTime(value: DateTime): DateTime;
+    static ToUniversalTime(value: Nullable<DateTime>): Nullable<DateTime>;
 }
 
 
 export type DateTimeUtil = DateTimeUtil$instance;
 
 export abstract class EpochTime$instance {
-    static readonly unixEpoch: DateTime;
-    static dateTime(secondsSinceUnixEpoch: long): DateTime;
-    static getIntDate(datetime: DateTime): long;
+    static readonly UnixEpoch: DateTime;
+    static DateTime(secondsSinceUnixEpoch: long): DateTime;
+    static GetIntDate(datetime: DateTime): long;
 }
 
 
 export type EpochTime = EpochTime$instance;
 
 export abstract class JsonWebAlgorithmsKeyTypes$instance {
-    static readonly ellipticCurve: string;
+    static readonly EllipticCurve: string;
     static readonly RSA: string;
-    static readonly octet: string;
+    static readonly Octet: string;
 }
 
 
@@ -1338,28 +1338,28 @@ export abstract class JsonWebKeyECTypes$instance {
 export type JsonWebKeyECTypes = JsonWebKeyECTypes$instance;
 
 export abstract class JsonWebKeyParameterNames$instance {
-    static readonly alg: string;
-    static readonly crv: string;
+    static readonly Alg: string;
+    static readonly Crv: string;
     static readonly D: string;
     static readonly DP: string;
     static readonly DQ: string;
     static readonly E: string;
     static readonly K: string;
-    static readonly keyOps: string;
-    static readonly keys: string;
-    static readonly kid: string;
-    static readonly kty: string;
+    static readonly KeyOps: string;
+    static readonly Keys: string;
+    static readonly Kid: string;
+    static readonly Kty: string;
     static readonly N: string;
-    static readonly oth: string;
+    static readonly Oth: string;
     static readonly P: string;
     static readonly Q: string;
     static readonly QI: string;
-    static readonly use: string;
+    static readonly Use: string;
     static readonly X: string;
-    static readonly x5c: string;
-    static readonly x5t: string;
-    static readonly x5tS256: string;
-    static readonly x5u: string;
+    static readonly X5c: string;
+    static readonly X5t: string;
+    static readonly X5tS256: string;
+    static readonly X5u: string;
     static readonly Y: string;
 }
 
@@ -1367,117 +1367,117 @@ export abstract class JsonWebKeyParameterNames$instance {
 export type JsonWebKeyParameterNames = JsonWebKeyParameterNames$instance;
 
 export abstract class JsonWebKeySetParameterNames$instance {
-    static readonly keys: string;
+    static readonly Keys: string;
 }
 
 
 export type JsonWebKeySetParameterNames = JsonWebKeySetParameterNames$instance;
 
 export abstract class JsonWebKeyUseNames$instance {
-    static readonly sig: string;
-    static readonly enc: string;
+    static readonly Sig: string;
+    static readonly Enc: string;
 }
 
 
 export type JsonWebKeyUseNames = JsonWebKeyUseNames$instance;
 
 export abstract class SecurityAlgorithms$instance {
-    static readonly aes128Encryption: string;
-    static readonly aes192Encryption: string;
-    static readonly aes256Encryption: string;
-    static readonly desEncryption: string;
-    static readonly aes128KeyWrap: string;
-    static readonly aes192KeyWrap: string;
-    static readonly aes256KeyWrap: string;
-    static readonly rsaV15KeyWrap: string;
-    static readonly ripemd160Digest: string;
-    static readonly rsaOaepKeyWrap: string;
-    static readonly aes128KW: string;
-    static readonly aes192KW: string;
-    static readonly aes256KW: string;
-    static readonly rsaPKCS1: string;
-    static readonly rsaOAEP: string;
-    static readonly exclusiveC14n: string;
-    static readonly exclusiveC14nWithComments: string;
-    static readonly envelopedSignature: string;
-    static readonly sha256Digest: string;
-    static readonly sha384Digest: string;
-    static readonly sha512Digest: string;
-    static readonly sha256: string;
-    static readonly sha384: string;
-    static readonly sha512: string;
-    static readonly ecdsaSha256Signature: string;
-    static readonly ecdsaSha384Signature: string;
-    static readonly ecdsaSha512Signature: string;
-    static readonly hmacSha256Signature: string;
-    static readonly hmacSha384Signature: string;
-    static readonly hmacSha512Signature: string;
-    static readonly rsaSha256Signature: string;
-    static readonly rsaSha384Signature: string;
-    static readonly rsaSha512Signature: string;
-    static readonly rsaSsaPssSha256Signature: string;
-    static readonly rsaSsaPssSha384Signature: string;
-    static readonly rsaSsaPssSha512Signature: string;
-    static readonly ecdsaSha256: string;
-    static readonly ecdsaSha384: string;
-    static readonly ecdsaSha512: string;
-    static readonly hmacSha256: string;
-    static readonly hmacSha384: string;
-    static readonly hmacSha512: string;
-    static readonly none: string;
-    static readonly rsaSha256: string;
-    static readonly rsaSha384: string;
-    static readonly rsaSha512: string;
-    static readonly rsaSsaPssSha256: string;
-    static readonly rsaSsaPssSha384: string;
-    static readonly rsaSsaPssSha512: string;
-    static readonly aes128CbcHmacSha256: string;
-    static readonly aes192CbcHmacSha384: string;
-    static readonly aes256CbcHmacSha512: string;
-    static readonly aes128Gcm: string;
-    static readonly aes192Gcm: string;
-    static readonly aes256Gcm: string;
-    static readonly ecdhEsA128kw: string;
-    static readonly ecdhEsA192kw: string;
-    static readonly ecdhEsA256kw: string;
-    static readonly ecdhEs: string;
+    static readonly Aes128Encryption: string;
+    static readonly Aes192Encryption: string;
+    static readonly Aes256Encryption: string;
+    static readonly DesEncryption: string;
+    static readonly Aes128KeyWrap: string;
+    static readonly Aes192KeyWrap: string;
+    static readonly Aes256KeyWrap: string;
+    static readonly RsaV15KeyWrap: string;
+    static readonly Ripemd160Digest: string;
+    static readonly RsaOaepKeyWrap: string;
+    static readonly Aes128KW: string;
+    static readonly Aes192KW: string;
+    static readonly Aes256KW: string;
+    static readonly RsaPKCS1: string;
+    static readonly RsaOAEP: string;
+    static readonly ExclusiveC14n: string;
+    static readonly ExclusiveC14nWithComments: string;
+    static readonly EnvelopedSignature: string;
+    static readonly Sha256Digest: string;
+    static readonly Sha384Digest: string;
+    static readonly Sha512Digest: string;
+    static readonly Sha256: string;
+    static readonly Sha384: string;
+    static readonly Sha512: string;
+    static readonly EcdsaSha256Signature: string;
+    static readonly EcdsaSha384Signature: string;
+    static readonly EcdsaSha512Signature: string;
+    static readonly HmacSha256Signature: string;
+    static readonly HmacSha384Signature: string;
+    static readonly HmacSha512Signature: string;
+    static readonly RsaSha256Signature: string;
+    static readonly RsaSha384Signature: string;
+    static readonly RsaSha512Signature: string;
+    static readonly RsaSsaPssSha256Signature: string;
+    static readonly RsaSsaPssSha384Signature: string;
+    static readonly RsaSsaPssSha512Signature: string;
+    static readonly EcdsaSha256: string;
+    static readonly EcdsaSha384: string;
+    static readonly EcdsaSha512: string;
+    static readonly HmacSha256: string;
+    static readonly HmacSha384: string;
+    static readonly HmacSha512: string;
+    static readonly None: string;
+    static readonly RsaSha256: string;
+    static readonly RsaSha384: string;
+    static readonly RsaSha512: string;
+    static readonly RsaSsaPssSha256: string;
+    static readonly RsaSsaPssSha384: string;
+    static readonly RsaSsaPssSha512: string;
+    static readonly Aes128CbcHmacSha256: string;
+    static readonly Aes192CbcHmacSha384: string;
+    static readonly Aes256CbcHmacSha512: string;
+    static readonly Aes128Gcm: string;
+    static readonly Aes192Gcm: string;
+    static readonly Aes256Gcm: string;
+    static readonly EcdhEsA128kw: string;
+    static readonly EcdhEsA192kw: string;
+    static readonly EcdhEsA256kw: string;
+    static readonly EcdhEs: string;
 }
 
 
 export type SecurityAlgorithms = SecurityAlgorithms$instance;
 
 export abstract class UniqueId$instance {
-    static createRandomId(): string;
-    static createRandomId(prefix: string): string;
-    static createRandomUri(): Uri;
-    static createUniqueId(): string;
-    static createUniqueId(prefix: string): string;
+    static CreateRandomId(): string;
+    static CreateRandomId(prefix: string): string;
+    static CreateRandomUri(): Uri;
+    static CreateUniqueId(): string;
+    static CreateUniqueId(prefix: string): string;
 }
 
 
 export type UniqueId = UniqueId$instance;
 
 export abstract class Utility$instance {
-    static readonly empty: string;
-    static readonly null: string;
-    static areEqual(a: byte[], b: byte[]): boolean;
-    static cloneByteArray(src: byte[]): byte[];
-    static isHttps(address: string): boolean;
-    static isHttps(uri: Uri): boolean;
+    static readonly Empty: string;
+    static readonly Null: string;
+    static AreEqual(a: byte[], b: byte[]): boolean;
+    static CloneByteArray(src: byte[]): byte[];
+    static IsHttps(address: string): boolean;
+    static IsHttps(uri: Uri): boolean;
 }
 
 
 export type Utility = Utility$instance;
 
 export abstract class Validators$instance {
-    static validateAlgorithm(algorithm: string, securityKey: SecurityKey, securityToken: SecurityToken, validationParameters: TokenValidationParameters): void;
-    static validateAudience(audiences: IEnumerable<System_Internal.String>, securityToken: SecurityToken, validationParameters: TokenValidationParameters): void;
-    static validateIssuer(issuer: string, securityToken: SecurityToken, validationParameters: TokenValidationParameters): string;
-    static validateIssuerSecurityKey(securityKey: SecurityKey, securityToken: SecurityToken, validationParameters: TokenValidationParameters): void;
-    static validateLifetime(notBefore: Nullable<DateTime>, expires: Nullable<DateTime>, securityToken: SecurityToken, validationParameters: TokenValidationParameters): void;
-    static validateTokenReplay(expirationTime: Nullable<DateTime>, securityToken: string, validationParameters: TokenValidationParameters): void;
-    static validateTokenReplay(securityToken: string, expirationTime: Nullable<DateTime>, validationParameters: TokenValidationParameters): void;
-    static validateTokenType(type: string, securityToken: SecurityToken, validationParameters: TokenValidationParameters): string;
+    static ValidateAlgorithm(algorithm: string, securityKey: SecurityKey, securityToken: SecurityToken, validationParameters: TokenValidationParameters): void;
+    static ValidateAudience(audiences: IEnumerable<System_Internal.String>, securityToken: SecurityToken, validationParameters: TokenValidationParameters): void;
+    static ValidateIssuer(issuer: string, securityToken: SecurityToken, validationParameters: TokenValidationParameters): string;
+    static ValidateIssuerSecurityKey(securityKey: SecurityKey, securityToken: SecurityToken, validationParameters: TokenValidationParameters): void;
+    static ValidateLifetime(notBefore: Nullable<DateTime>, expires: Nullable<DateTime>, securityToken: SecurityToken, validationParameters: TokenValidationParameters): void;
+    static ValidateTokenReplay(expirationTime: Nullable<DateTime>, securityToken: string, validationParameters: TokenValidationParameters): void;
+    static ValidateTokenReplay(securityToken: string, expirationTime: Nullable<DateTime>, validationParameters: TokenValidationParameters): void;
+    static ValidateTokenType(type: string, securityToken: SecurityToken, validationParameters: TokenValidationParameters): string;
 }
 
 

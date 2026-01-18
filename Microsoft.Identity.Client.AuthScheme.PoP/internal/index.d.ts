@@ -10,9 +10,9 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Byte, String as ClrString } from "@tsonic/dotnet/System.js";
 
 export interface IPoPCryptoProvider$instance {
-    readonly cannonicalPublicKeyJwk: string;
-    readonly cryptographicAlgorithm: string;
-    sign(data: byte[]): byte[];
+    readonly CannonicalPublicKeyJwk: string;
+    readonly CryptographicAlgorithm: string;
+    Sign(data: byte[]): byte[];
 }
 
 

@@ -14,11 +14,11 @@ import * as Microsoft_EntityFrameworkCore_Metadata_Builders_Internal from "@tson
 import type { EntityTypeBuilder, OwnedNavigationBuilder, PropertyBuilder } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.Builders.js";
 
 export interface OwnedNavigationTemporalPeriodPropertyBuilder$instance {
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    hasColumnName(name: string): OwnedNavigationTemporalPeriodPropertyBuilder;
-    hasPrecision(precision: int): OwnedNavigationTemporalPeriodPropertyBuilder;
-    toString(): string | undefined;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    HasColumnName(name: string): OwnedNavigationTemporalPeriodPropertyBuilder;
+    HasPrecision(precision: int): OwnedNavigationTemporalPeriodPropertyBuilder;
+    ToString(): string | undefined;
 }
 
 
@@ -30,13 +30,13 @@ export const OwnedNavigationTemporalPeriodPropertyBuilder: {
 export type OwnedNavigationTemporalPeriodPropertyBuilder = OwnedNavigationTemporalPeriodPropertyBuilder$instance;
 
 export interface OwnedNavigationTemporalTableBuilder$instance {
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    hasPeriodEnd(propertyName: string): OwnedNavigationTemporalPeriodPropertyBuilder;
-    hasPeriodStart(propertyName: string): OwnedNavigationTemporalPeriodPropertyBuilder;
-    toString(): string | undefined;
-    useHistoryTable(name: string): OwnedNavigationTemporalTableBuilder;
-    useHistoryTable(name: string, schema: string): OwnedNavigationTemporalTableBuilder;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    HasPeriodEnd(propertyName: string): OwnedNavigationTemporalPeriodPropertyBuilder;
+    HasPeriodStart(propertyName: string): OwnedNavigationTemporalPeriodPropertyBuilder;
+    ToString(): string | undefined;
+    UseHistoryTable(name: string): OwnedNavigationTemporalTableBuilder;
+    UseHistoryTable(name: string, schema: string): OwnedNavigationTemporalTableBuilder;
 }
 
 
@@ -48,10 +48,10 @@ export const OwnedNavigationTemporalTableBuilder: {
 export type OwnedNavigationTemporalTableBuilder = OwnedNavigationTemporalTableBuilder$instance;
 
 export interface OwnedNavigationTemporalTableBuilder_2$instance<TOwnerEntity, TDependentEntity> extends OwnedNavigationTemporalTableBuilder {
-    useHistoryTable(name: string): OwnedNavigationTemporalTableBuilder_2<TOwnerEntity, TDependentEntity>;
-    useHistoryTable(name: string, schema: string): OwnedNavigationTemporalTableBuilder_2<TOwnerEntity, TDependentEntity>;
-    useHistoryTable(name: string): OwnedNavigationTemporalTableBuilder;
-    useHistoryTable(name: string, schema: string): OwnedNavigationTemporalTableBuilder;
+    UseHistoryTable(name: string): OwnedNavigationTemporalTableBuilder_2<TOwnerEntity, TDependentEntity>;
+    UseHistoryTable(name: string, schema: string): OwnedNavigationTemporalTableBuilder_2<TOwnerEntity, TDependentEntity>;
+    UseHistoryTable(name: string): OwnedNavigationTemporalTableBuilder;
+    UseHistoryTable(name: string, schema: string): OwnedNavigationTemporalTableBuilder;
 }
 
 
@@ -63,11 +63,11 @@ export const OwnedNavigationTemporalTableBuilder_2: {
 export type OwnedNavigationTemporalTableBuilder_2<TOwnerEntity, TDependentEntity> = OwnedNavigationTemporalTableBuilder_2$instance<TOwnerEntity, TDependentEntity>;
 
 export interface TemporalPeriodPropertyBuilder$instance {
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    hasColumnName(name: string): TemporalPeriodPropertyBuilder;
-    hasPrecision(precision: int): TemporalPeriodPropertyBuilder;
-    toString(): string | undefined;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    HasColumnName(name: string): TemporalPeriodPropertyBuilder;
+    HasPrecision(precision: int): TemporalPeriodPropertyBuilder;
+    ToString(): string | undefined;
 }
 
 
@@ -79,13 +79,13 @@ export const TemporalPeriodPropertyBuilder: {
 export type TemporalPeriodPropertyBuilder = TemporalPeriodPropertyBuilder$instance;
 
 export interface TemporalTableBuilder$instance {
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    hasPeriodEnd(propertyName: string): TemporalPeriodPropertyBuilder;
-    hasPeriodStart(propertyName: string): TemporalPeriodPropertyBuilder;
-    toString(): string | undefined;
-    useHistoryTable(name: string): TemporalTableBuilder;
-    useHistoryTable(name: string, schema: string): TemporalTableBuilder;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    HasPeriodEnd(propertyName: string): TemporalPeriodPropertyBuilder;
+    HasPeriodStart(propertyName: string): TemporalPeriodPropertyBuilder;
+    ToString(): string | undefined;
+    UseHistoryTable(name: string): TemporalTableBuilder;
+    UseHistoryTable(name: string, schema: string): TemporalTableBuilder;
 }
 
 
@@ -97,10 +97,10 @@ export const TemporalTableBuilder: {
 export type TemporalTableBuilder = TemporalTableBuilder$instance;
 
 export interface TemporalTableBuilder_1$instance<TEntity> extends TemporalTableBuilder {
-    useHistoryTable(name: string): TemporalTableBuilder_1<TEntity>;
-    useHistoryTable(name: string, schema: string): TemporalTableBuilder_1<TEntity>;
-    useHistoryTable(name: string): TemporalTableBuilder;
-    useHistoryTable(name: string, schema: string): TemporalTableBuilder;
+    UseHistoryTable(name: string): TemporalTableBuilder_1<TEntity>;
+    UseHistoryTable(name: string, schema: string): TemporalTableBuilder_1<TEntity>;
+    UseHistoryTable(name: string): TemporalTableBuilder;
+    UseHistoryTable(name: string, schema: string): TemporalTableBuilder;
 }
 
 

@@ -35,7 +35,7 @@ export interface LastKnownGoodConfigurationCacheOptions$instance extends LKGConf
 
 export const LastKnownGoodConfigurationCacheOptions: {
     new(): LastKnownGoodConfigurationCacheOptions;
-    readonly defaultLastKnownGoodConfigurationSizeLimit: int;
+    readonly DefaultLastKnownGoodConfigurationSizeLimit: int;
 };
 
 

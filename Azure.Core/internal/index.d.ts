@@ -33,15 +33,15 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export enum HttpPipelinePosition {
-    perCall = 0,
-    perRetry = 1,
-    beforeTransport = 2
+    PerCall = 0,
+    PerRetry = 1,
+    BeforeTransport = 2
 }
 
 
 export enum RetryMode {
-    fixed = 0,
-    exponential = 1
+    Fixed = 0,
+    Exponential = 1
 }
 
 
@@ -49,12 +49,12 @@ export type SyncAsyncEventHandler_1<T extends SyncAsyncEventArgs> = (e: T) => Ta
 
 
 export interface AccessToken$instance {
-    readonly expiresOn: DateTimeOffset;
-    readonly refreshOn: Nullable<DateTimeOffset>;
-    readonly token: string;
-    readonly tokenType: string;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
+    readonly ExpiresOn: DateTimeOffset;
+    readonly RefreshOn: Nullable<DateTimeOffset>;
+    readonly Token: string;
+    readonly TokenType: string;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
 }
 
 
@@ -68,113 +68,113 @@ export const AccessToken: {
 export type AccessToken = AccessToken$instance;
 
 export interface AzureLocation$instance {
-    readonly displayName: string | undefined;
-    readonly name: string;
-    equals(other: AzureLocation): boolean;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    toString(): string;
+    readonly DisplayName: string | undefined;
+    readonly Name: string;
+    Equals(other: AzureLocation): boolean;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    ToString(): string;
 }
 
 
 export const AzureLocation: {
     new(location: string): AzureLocation;
     new(name: string, displayName: string): AzureLocation;
-    readonly eastAsia: AzureLocation;
-    readonly southeastAsia: AzureLocation;
-    readonly centralUS: AzureLocation;
-    readonly eastUS: AzureLocation;
-    readonly eastUS2: AzureLocation;
-    readonly westUS: AzureLocation;
-    readonly westUS2: AzureLocation;
-    readonly westUS3: AzureLocation;
-    readonly northCentralUS: AzureLocation;
-    readonly southCentralUS: AzureLocation;
-    readonly northEurope: AzureLocation;
-    readonly westEurope: AzureLocation;
-    readonly japanWest: AzureLocation;
-    readonly japanEast: AzureLocation;
-    readonly brazilSouth: AzureLocation;
-    readonly australiaEast: AzureLocation;
-    readonly australiaSoutheast: AzureLocation;
-    readonly southIndia: AzureLocation;
-    readonly centralIndia: AzureLocation;
-    readonly westIndia: AzureLocation;
-    readonly canadaCentral: AzureLocation;
-    readonly canadaEast: AzureLocation;
-    readonly ukSouth: AzureLocation;
-    readonly ukWest: AzureLocation;
-    readonly westCentralUS: AzureLocation;
-    readonly koreaCentral: AzureLocation;
-    readonly koreaSouth: AzureLocation;
-    readonly franceCentral: AzureLocation;
-    readonly franceSouth: AzureLocation;
-    readonly australiaCentral: AzureLocation;
-    readonly australiaCentral2: AzureLocation;
-    readonly uaeCentral: AzureLocation;
-    readonly uaeNorth: AzureLocation;
-    readonly southAfricaNorth: AzureLocation;
-    readonly southAfricaWest: AzureLocation;
-    readonly swedenCentral: AzureLocation;
-    readonly swedenSouth: AzureLocation;
-    readonly switzerlandNorth: AzureLocation;
-    readonly switzerlandWest: AzureLocation;
-    readonly germanyNorth: AzureLocation;
-    readonly germanyWestCentral: AzureLocation;
-    readonly germanyCentral: AzureLocation;
-    readonly germanyNorthEast: AzureLocation;
-    readonly norwayWest: AzureLocation;
-    readonly norwayEast: AzureLocation;
-    readonly brazilSoutheast: AzureLocation;
-    readonly chinaNorth: AzureLocation;
-    readonly chinaEast: AzureLocation;
-    readonly chinaNorth2: AzureLocation;
-    readonly chinaNorth3: AzureLocation;
-    readonly chinaEast2: AzureLocation;
-    readonly chinaEast3: AzureLocation;
-    readonly qatarCentral: AzureLocation;
-    readonly usDoDCentral: AzureLocation;
-    readonly usDoDEast: AzureLocation;
-    readonly usGovArizona: AzureLocation;
-    readonly usGovTexas: AzureLocation;
-    readonly usGovVirginia: AzureLocation;
-    readonly usGovIowa: AzureLocation;
-    readonly israelCentral: AzureLocation;
-    readonly italyNorth: AzureLocation;
-    readonly polandCentral: AzureLocation;
-    readonly mexicoCentral: AzureLocation;
-    readonly spainCentral: AzureLocation;
+    readonly EastAsia: AzureLocation;
+    readonly SoutheastAsia: AzureLocation;
+    readonly CentralUS: AzureLocation;
+    readonly EastUS: AzureLocation;
+    readonly EastUS2: AzureLocation;
+    readonly WestUS: AzureLocation;
+    readonly WestUS2: AzureLocation;
+    readonly WestUS3: AzureLocation;
+    readonly NorthCentralUS: AzureLocation;
+    readonly SouthCentralUS: AzureLocation;
+    readonly NorthEurope: AzureLocation;
+    readonly WestEurope: AzureLocation;
+    readonly JapanWest: AzureLocation;
+    readonly JapanEast: AzureLocation;
+    readonly BrazilSouth: AzureLocation;
+    readonly AustraliaEast: AzureLocation;
+    readonly AustraliaSoutheast: AzureLocation;
+    readonly SouthIndia: AzureLocation;
+    readonly CentralIndia: AzureLocation;
+    readonly WestIndia: AzureLocation;
+    readonly CanadaCentral: AzureLocation;
+    readonly CanadaEast: AzureLocation;
+    readonly UKSouth: AzureLocation;
+    readonly UKWest: AzureLocation;
+    readonly WestCentralUS: AzureLocation;
+    readonly KoreaCentral: AzureLocation;
+    readonly KoreaSouth: AzureLocation;
+    readonly FranceCentral: AzureLocation;
+    readonly FranceSouth: AzureLocation;
+    readonly AustraliaCentral: AzureLocation;
+    readonly AustraliaCentral2: AzureLocation;
+    readonly UAECentral: AzureLocation;
+    readonly UAENorth: AzureLocation;
+    readonly SouthAfricaNorth: AzureLocation;
+    readonly SouthAfricaWest: AzureLocation;
+    readonly SwedenCentral: AzureLocation;
+    readonly SwedenSouth: AzureLocation;
+    readonly SwitzerlandNorth: AzureLocation;
+    readonly SwitzerlandWest: AzureLocation;
+    readonly GermanyNorth: AzureLocation;
+    readonly GermanyWestCentral: AzureLocation;
+    readonly GermanyCentral: AzureLocation;
+    readonly GermanyNorthEast: AzureLocation;
+    readonly NorwayWest: AzureLocation;
+    readonly NorwayEast: AzureLocation;
+    readonly BrazilSoutheast: AzureLocation;
+    readonly ChinaNorth: AzureLocation;
+    readonly ChinaEast: AzureLocation;
+    readonly ChinaNorth2: AzureLocation;
+    readonly ChinaNorth3: AzureLocation;
+    readonly ChinaEast2: AzureLocation;
+    readonly ChinaEast3: AzureLocation;
+    readonly QatarCentral: AzureLocation;
+    readonly USDoDCentral: AzureLocation;
+    readonly USDoDEast: AzureLocation;
+    readonly USGovArizona: AzureLocation;
+    readonly USGovTexas: AzureLocation;
+    readonly USGovVirginia: AzureLocation;
+    readonly USGovIowa: AzureLocation;
+    readonly IsraelCentral: AzureLocation;
+    readonly ItalyNorth: AzureLocation;
+    readonly PolandCentral: AzureLocation;
+    readonly MexicoCentral: AzureLocation;
+    readonly SpainCentral: AzureLocation;
 };
 
 
 export type AzureLocation = AzureLocation$instance;
 
 export interface ContentType$instance {
-    equals(other: ContentType): boolean;
-    equals(other: string): boolean;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    toString(): string;
+    Equals(other: ContentType): boolean;
+    Equals(other: string): boolean;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    ToString(): string;
 }
 
 
 export const ContentType: {
     new(contentType: string): ContentType;
-    readonly applicationJson: ContentType;
-    readonly applicationOctetStream: ContentType;
-    readonly textPlain: ContentType;
+    readonly ApplicationJson: ContentType;
+    readonly ApplicationOctetStream: ContentType;
+    readonly TextPlain: ContentType;
 };
 
 
 export type ContentType = ContentType$instance;
 
 export interface HttpHeader$instance {
-    readonly name: string;
-    readonly value: string;
-    equals(obj: unknown): boolean;
-    equals(other: HttpHeader): boolean;
-    getHashCode(): int;
-    toString(): string;
+    readonly Name: string;
+    readonly Value: string;
+    Equals(obj: unknown): boolean;
+    Equals(other: HttpHeader): boolean;
+    GetHashCode(): int;
+    ToString(): string;
 }
 
 
@@ -186,8 +186,8 @@ export const HttpHeader: {
 export type HttpHeader = HttpHeader$instance;
 
 export interface MessageProcessingContext$instance {
-    retryNumber: int;
-    readonly startTime: DateTimeOffset;
+    RetryNumber: int;
+    readonly StartTime: DateTimeOffset;
 }
 
 
@@ -199,7 +199,7 @@ export const MessageProcessingContext: {
 export type MessageProcessingContext = MessageProcessingContext$instance;
 
 export interface RehydrationToken$instance {
-    readonly id: string;
+    readonly Id: string;
 }
 
 
@@ -219,14 +219,14 @@ export type RehydrationToken = RehydrationToken$instance & __RehydrationToken$vi
 
 
 export interface RequestHeaders$instance {
-    add(header: HttpHeader): void;
-    add(name: string, value: string): void;
-    contains(name: string): boolean;
-    getEnumerator(): IEnumerator<HttpHeader>;
-    remove(name: string): boolean;
-    setValue(name: string, value: string): void;
-    tryGetValue(name: string, value: string): boolean;
-    tryGetValues(name: string, values: IEnumerable__System_Collections_Generic<System_Internal.String>): boolean;
+    Add(header: HttpHeader): void;
+    Add(name: string, value: string): void;
+    Contains(name: string): boolean;
+    GetEnumerator(): IEnumerator<HttpHeader>;
+    Remove(name: string): boolean;
+    SetValue(name: string, value: string): void;
+    TryGetValue(name: string, value: string): boolean;
+    TryGetValues(name: string, values: IEnumerable__System_Collections_Generic<System_Internal.String>): boolean;
 }
 
 
@@ -238,38 +238,38 @@ export const RequestHeaders: {
 export type RequestHeaders = RequestHeaders$instance;
 
 export interface RequestMethod$instance {
-    readonly method: string;
-    equals(other: RequestMethod): boolean;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    toString(): string;
+    readonly Method: string;
+    Equals(other: RequestMethod): boolean;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    ToString(): string;
 }
 
 
 export const RequestMethod: {
     new(method: string): RequestMethod;
-    readonly get: RequestMethod;
-    readonly post: RequestMethod;
-    readonly put: RequestMethod;
-    readonly patch: RequestMethod;
-    readonly delete: RequestMethod;
-    readonly head: RequestMethod;
-    readonly options: RequestMethod;
-    readonly trace: RequestMethod;
-    parse(method: string): RequestMethod;
+    readonly Get: RequestMethod;
+    readonly Post: RequestMethod;
+    readonly Put: RequestMethod;
+    readonly Patch: RequestMethod;
+    readonly Delete: RequestMethod;
+    readonly Head: RequestMethod;
+    readonly Options: RequestMethod;
+    readonly Trace: RequestMethod;
+    Parse(method: string): RequestMethod;
 };
 
 
 export type RequestMethod = RequestMethod$instance;
 
 export interface ResourceType$instance {
-    readonly namespace: string;
-    readonly type: string;
-    equals(other: ResourceType): boolean;
-    equals(other: unknown): boolean;
-    getHashCode(): int;
-    getLastType(): string;
-    toString(): string;
+    readonly Namespace: string;
+    readonly Type: string;
+    Equals(other: ResourceType): boolean;
+    Equals(other: unknown): boolean;
+    GetHashCode(): int;
+    GetLastType(): string;
+    ToString(): string;
 }
 
 
@@ -281,16 +281,16 @@ export const ResourceType: {
 export type ResourceType = ResourceType$instance;
 
 export interface ResponseHeaders$instance {
-    readonly contentLength: Nullable<System_Internal.Int32>;
-    readonly contentLengthLong: Nullable<System_Internal.Int64>;
-    readonly contentType: string | undefined;
-    readonly date: Nullable<DateTimeOffset>;
-    readonly eTag: Nullable<ETag>;
-    readonly requestId: string | undefined;
-    contains(name: string): boolean;
-    getEnumerator(): IEnumerator<HttpHeader>;
-    tryGetValue(name: string, value: string): boolean;
-    tryGetValues(name: string, values: IEnumerable__System_Collections_Generic<System_Internal.String>): boolean;
+    readonly ContentLength: Nullable<System_Internal.Int32>;
+    readonly ContentLengthLong: Nullable<System_Internal.Int64>;
+    readonly ContentType: string | undefined;
+    readonly Date: Nullable<DateTimeOffset>;
+    readonly ETag: Nullable<ETag>;
+    readonly RequestId: string | undefined;
+    Contains(name: string): boolean;
+    GetEnumerator(): IEnumerator<HttpHeader>;
+    TryGetValue(name: string, value: string): boolean;
+    TryGetValues(name: string, values: IEnumerable__System_Collections_Generic<System_Internal.String>): boolean;
 }
 
 
@@ -302,15 +302,15 @@ export const ResponseHeaders: {
 export type ResponseHeaders = ResponseHeaders$instance;
 
 export interface TokenRequestContext$instance {
-    readonly claims: string | undefined;
-    readonly isCaeEnabled: boolean;
-    readonly isProofOfPossessionEnabled: boolean;
-    readonly parentRequestId: string | undefined;
-    readonly proofOfPossessionNonce: string | undefined;
-    readonly resourceRequestMethod: string | undefined;
-    readonly resourceRequestUri: Uri | undefined;
-    readonly scopes: string[];
-    readonly tenantId: string | undefined;
+    readonly Claims: string | undefined;
+    readonly IsCaeEnabled: boolean;
+    readonly IsProofOfPossessionEnabled: boolean;
+    readonly ParentRequestId: string | undefined;
+    readonly ProofOfPossessionNonce: string | undefined;
+    readonly ResourceRequestMethod: string | undefined;
+    readonly ResourceRequestUri: Uri | undefined;
+    readonly Scopes: string[];
+    readonly TenantId: string | undefined;
 }
 
 
@@ -331,82 +331,82 @@ export interface AzureCoreContext$instance extends ModelReaderWriterContext {
 
 export const AzureCoreContext: {
     new(): AzureCoreContext;
-    readonly default: AzureCoreContext;
+    readonly Default: AzureCoreContext;
 };
 
 
 export type AzureCoreContext = AzureCoreContext$instance;
 
 export interface ClientOptions$instance {
-    readonly diagnostics: DiagnosticsOptions | TokenCredentialDiagnosticsOptions;
-    readonly retry: RetryOptions;
-    get retryPolicy(): HttpPipelinePolicy | undefined;
-    set retryPolicy(value: HttpPipelinePolicy);
-    transport: HttpPipelineTransport;
-    addPolicy(policy: HttpPipelinePolicy, position: HttpPipelinePosition): void;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    toString(): string | undefined;
+    readonly Diagnostics: DiagnosticsOptions | TokenCredentialDiagnosticsOptions;
+    readonly Retry: RetryOptions;
+    get RetryPolicy(): HttpPipelinePolicy | undefined;
+    set RetryPolicy(value: HttpPipelinePolicy);
+    Transport: HttpPipelineTransport;
+    AddPolicy(policy: HttpPipelinePolicy, position: HttpPipelinePosition): void;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    ToString(): string | undefined;
 }
 
 
 export const ClientOptions: {
-    readonly default: ClientOptions;
+    readonly Default: ClientOptions;
 };
 
 
 export type ClientOptions = ClientOptions$instance;
 
 export interface DelayStrategy$instance {
-    getNextDelay(response: Response, retryNumber: int): TimeSpan;
+    GetNextDelay(response: Response, retryNumber: int): TimeSpan;
 }
 
 
 export const DelayStrategy: {
-    createExponentialDelayStrategy(initialDelay?: Nullable<TimeSpan>, maxDelay?: Nullable<TimeSpan>): DelayStrategy;
-    createFixedDelayStrategy(delay?: Nullable<TimeSpan>): DelayStrategy;
+    CreateExponentialDelayStrategy(initialDelay?: Nullable<TimeSpan>, maxDelay?: Nullable<TimeSpan>): DelayStrategy;
+    CreateFixedDelayStrategy(delay?: Nullable<TimeSpan>): DelayStrategy;
 };
 
 
 export type DelayStrategy = DelayStrategy$instance;
 
 export interface DiagnosticsOptions$instance {
-    get applicationId(): string | undefined;
-    set applicationId(value: string);
-    isDistributedTracingEnabled: boolean;
-    isLoggingContentEnabled: boolean;
-    isLoggingEnabled: boolean;
-    isTelemetryEnabled: boolean;
-    loggedContentSizeLimit: int;
-    readonly loggedHeaderNames: IList<System_Internal.String>;
-    readonly loggedQueryParameters: IList<System_Internal.String>;
+    get ApplicationId(): string | undefined;
+    set ApplicationId(value: string);
+    IsDistributedTracingEnabled: boolean;
+    IsLoggingContentEnabled: boolean;
+    IsLoggingEnabled: boolean;
+    IsTelemetryEnabled: boolean;
+    LoggedContentSizeLimit: int;
+    readonly LoggedHeaderNames: IList<System_Internal.String>;
+    readonly LoggedQueryParameters: IList<System_Internal.String>;
 }
 
 
 export const DiagnosticsOptions: {
     new(): DiagnosticsOptions;
-    get defaultApplicationId(): string | undefined;
-    set defaultApplicationId(value: string);
+    get DefaultApplicationId(): string | undefined;
+    set DefaultApplicationId(value: string);
 };
 
 
 export type DiagnosticsOptions = DiagnosticsOptions$instance;
 
 export interface HttpMessage$instance {
-    bufferResponse: boolean;
-    readonly cancellationToken: CancellationToken;
-    readonly hasResponse: boolean;
-    networkTimeout: Nullable<TimeSpan>;
-    readonly processingContext: MessageProcessingContext;
-    readonly request: Request;
-    response: Response;
-    responseClassifier: ResponseClassifier;
-    dispose(): void;
-    extractResponseContent(): Stream | undefined;
-    setProperty(name: string, value: unknown): void;
-    setProperty(type: Type, value: unknown): void;
-    tryGetProperty(name: string, value: unknown): boolean;
-    tryGetProperty(type: Type, value: unknown): boolean;
+    BufferResponse: boolean;
+    readonly CancellationToken: CancellationToken;
+    readonly HasResponse: boolean;
+    NetworkTimeout: Nullable<TimeSpan>;
+    readonly ProcessingContext: MessageProcessingContext;
+    readonly Request: Request;
+    Response: Response;
+    ResponseClassifier: ResponseClassifier;
+    Dispose(): void;
+    ExtractResponseContent(): Stream | undefined;
+    SetProperty(name: string, value: unknown): void;
+    SetProperty(type: Type, value: unknown): void;
+    TryGetProperty(name: string, value: unknown): boolean;
+    TryGetProperty(type: Type, value: unknown): boolean;
 }
 
 
@@ -418,12 +418,12 @@ export const HttpMessage: {
 export type HttpMessage = HttpMessage$instance;
 
 export interface Request$instance {
-    clientRequestId: string;
-    content: RequestContent;
-    readonly headers: RequestHeaders;
-    method: RequestMethod;
-    uri: RequestUriBuilder;
-    dispose(): void;
+    ClientRequestId: string;
+    Content: RequestContent;
+    readonly Headers: RequestHeaders;
+    Method: RequestMethod;
+    Uri: RequestUriBuilder;
+    Dispose(): void;
 }
 
 
@@ -434,33 +434,33 @@ export const Request: {
 export type Request = Request$instance;
 
 export interface RequestContent$instance {
-    dispose(): void;
-    tryComputeLength(length: long): boolean;
-    writeTo(stream: Stream, cancellation: CancellationToken): void;
-    writeToAsync(stream: Stream, cancellation: CancellationToken): Task;
+    Dispose(): void;
+    TryComputeLength(length: long): boolean;
+    WriteTo(stream: Stream, cancellation: CancellationToken): void;
+    WriteToAsync(stream: Stream, cancellation: CancellationToken): Task;
 }
 
 
 export const RequestContent: {
-    create(content: DynamicData): RequestContent;
-    create(content: BinaryData): RequestContent;
-    create(bytes: ReadOnlySequence<System_Internal.Byte>): RequestContent;
-    create(bytes: byte[], index: int, length: int): RequestContent;
-    create(bytes: byte[]): RequestContent;
-    create(stream: Stream): RequestContent;
-    create(serializable: unknown, propertyNameFormat: JsonPropertyNames, dateTimeFormat?: string): RequestContent;
-    create(serializable: unknown, serializer: ObjectSerializer): RequestContent;
-    create(serializable: unknown): RequestContent;
-    create(bytes: ReadOnlyMemory<System_Internal.Byte>): RequestContent;
-    create(content: string): RequestContent;
-    create<T extends IPersistableModel_1<T>>(model: T, options?: ModelReaderWriterOptions): RequestContent;
+    Create(content: DynamicData): RequestContent;
+    Create(content: BinaryData): RequestContent;
+    Create(bytes: ReadOnlySequence<System_Internal.Byte>): RequestContent;
+    Create(bytes: byte[], index: int, length: int): RequestContent;
+    Create(bytes: byte[]): RequestContent;
+    Create(stream: Stream): RequestContent;
+    Create(serializable: unknown, propertyNameFormat: JsonPropertyNames, dateTimeFormat?: string): RequestContent;
+    Create(serializable: unknown, serializer: ObjectSerializer): RequestContent;
+    Create(serializable: unknown): RequestContent;
+    Create(bytes: ReadOnlyMemory<System_Internal.Byte>): RequestContent;
+    Create(content: string): RequestContent;
+    Create<T extends IPersistableModel_1<T>>(model: T, options?: ModelReaderWriterOptions): RequestContent;
 };
 
 
 export type RequestContent = RequestContent$instance;
 
 export interface RequestFailedDetailsParser$instance {
-    tryParse(response: Response, error: ResponseError, data: IDictionary<System_Internal.String, System_Internal.String>): boolean;
+    TryParse(response: Response, error: ResponseError, data: IDictionary<System_Internal.String, System_Internal.String>): boolean;
 }
 
 
@@ -471,22 +471,22 @@ export const RequestFailedDetailsParser: {
 export type RequestFailedDetailsParser = RequestFailedDetailsParser$instance;
 
 export interface RequestUriBuilder$instance {
-    get host(): string | undefined;
-    set host(value: string);
-    path: string;
-    readonly pathAndQuery: string;
-    port: int;
-    query: string;
-    scheme: string;
-    appendPath(value: string): void;
-    appendPath(value: string, escape: boolean): void;
-    appendPath(value: ReadOnlySpan<System_Internal.Char>, escape: boolean): void;
-    appendQuery(name: string, value: string): void;
-    appendQuery(name: string, value: string, escapeValue: boolean): void;
-    appendQuery(name: ReadOnlySpan<System_Internal.Char>, value: ReadOnlySpan<System_Internal.Char>, escapeValue: boolean): void;
-    reset(value: Uri): void;
-    toString(): string;
-    toUri(): Uri;
+    get Host(): string | undefined;
+    set Host(value: string);
+    Path: string;
+    readonly PathAndQuery: string;
+    Port: int;
+    Query: string;
+    Scheme: string;
+    AppendPath(value: string): void;
+    AppendPath(value: string, escape: boolean): void;
+    AppendPath(value: ReadOnlySpan<System_Internal.Char>, escape: boolean): void;
+    AppendQuery(name: string, value: string): void;
+    AppendQuery(name: string, value: string, escapeValue: boolean): void;
+    AppendQuery(name: ReadOnlySpan<System_Internal.Char>, value: ReadOnlySpan<System_Internal.Char>, escapeValue: boolean): void;
+    Reset(value: Uri): void;
+    ToString(): string;
+    ToUri(): Uri;
 }
 
 
@@ -498,35 +498,35 @@ export const RequestUriBuilder: {
 export type RequestUriBuilder = RequestUriBuilder$instance;
 
 export interface ResourceIdentifier$instance {
-    readonly location: Nullable<AzureLocation>;
-    readonly name: string;
-    readonly parent: ResourceIdentifier | undefined;
-    readonly provider: string | undefined;
-    readonly resourceGroupName: string | undefined;
-    readonly resourceType: ResourceType;
-    readonly subscriptionId: string | undefined;
-    appendChildResource(childResourceType: string, childResourceName: string): ResourceIdentifier;
-    appendProviderResource(providerNamespace: string, resourceType: string, resourceName: string): ResourceIdentifier;
-    compareTo(other: ResourceIdentifier): int;
-    equals(other: ResourceIdentifier): boolean;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    toString(): string;
+    readonly Location: Nullable<AzureLocation>;
+    readonly Name: string;
+    readonly Parent: ResourceIdentifier | undefined;
+    readonly Provider: string | undefined;
+    readonly ResourceGroupName: string | undefined;
+    readonly ResourceType: ResourceType;
+    readonly SubscriptionId: string | undefined;
+    AppendChildResource(childResourceType: string, childResourceName: string): ResourceIdentifier;
+    AppendProviderResource(providerNamespace: string, resourceType: string, resourceName: string): ResourceIdentifier;
+    CompareTo(other: ResourceIdentifier): int;
+    Equals(other: ResourceIdentifier): boolean;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    ToString(): string;
 }
 
 
 export const ResourceIdentifier: {
     new(resourceId: string): ResourceIdentifier;
-    readonly root: ResourceIdentifier;
-    parse(input: string): ResourceIdentifier;
-    tryParse(input: string, result: ResourceIdentifier): boolean;
+    readonly Root: ResourceIdentifier;
+    Parse(input: string): ResourceIdentifier;
+    TryParse(input: string, result: ResourceIdentifier): boolean;
 };
 
 
 export type ResourceIdentifier = ResourceIdentifier$instance;
 
 export interface ResponseClassificationHandler$instance {
-    tryClassify(message: HttpMessage, isError: boolean): boolean;
+    TryClassify(message: HttpMessage, isError: boolean): boolean;
 }
 
 
@@ -537,10 +537,10 @@ export const ResponseClassificationHandler: {
 export type ResponseClassificationHandler = ResponseClassificationHandler$instance;
 
 export interface ResponseClassifier$instance {
-    isErrorResponse(message: HttpMessage): boolean;
-    isRetriable(message: HttpMessage, exception: Exception): boolean;
-    isRetriableException(exception: Exception): boolean;
-    isRetriableResponse(message: HttpMessage): boolean;
+    IsErrorResponse(message: HttpMessage): boolean;
+    IsRetriable(message: HttpMessage, exception: Exception): boolean;
+    IsRetriableException(exception: Exception): boolean;
+    IsRetriableResponse(message: HttpMessage): boolean;
 }
 
 
@@ -552,11 +552,11 @@ export const ResponseClassifier: {
 export type ResponseClassifier = ResponseClassifier$instance;
 
 export interface RetryOptions$instance {
-    delay: TimeSpan;
-    maxDelay: TimeSpan;
-    maxRetries: int;
-    mode: RetryMode;
-    networkTimeout: TimeSpan;
+    Delay: TimeSpan;
+    MaxDelay: TimeSpan;
+    MaxRetries: int;
+    Mode: RetryMode;
+    NetworkTimeout: TimeSpan;
 }
 
 
@@ -568,7 +568,7 @@ export const RetryOptions: {
 export type RetryOptions = RetryOptions$instance;
 
 export interface StatusCodeClassifier$instance extends ResponseClassifier {
-    isErrorResponse(message: HttpMessage): boolean;
+    IsErrorResponse(message: HttpMessage): boolean;
 }
 
 
@@ -580,10 +580,10 @@ export const StatusCodeClassifier: {
 export type StatusCodeClassifier = StatusCodeClassifier$instance;
 
 export interface TelemetryDetails$instance {
-    readonly applicationId: string | undefined;
-    readonly assembly: Assembly;
-    apply(message: HttpMessage): void;
-    toString(): string;
+    readonly ApplicationId: string | undefined;
+    readonly Assembly: Assembly;
+    Apply(message: HttpMessage): void;
+    ToString(): string;
 }
 
 
@@ -595,13 +595,13 @@ export const TelemetryDetails: {
 export type TelemetryDetails = TelemetryDetails$instance;
 
 export interface TokenCredential$instance extends AuthenticationTokenProvider {
-    createTokenOptions(properties: IReadOnlyDictionary<System_Internal.String, unknown>): GetTokenOptions | undefined;
-    createTokenOptions(properties: IReadOnlyDictionary<System_Internal.String, unknown>): GetTokenOptions | undefined;
-    getToken(requestContext: TokenRequestContext, cancellationToken: CancellationToken): AccessToken;
-    getToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
-    getTokenAsync(requestContext: TokenRequestContext, cancellationToken: CancellationToken): ValueTask<AccessToken>;
-    getTokenAsync(properties: GetTokenOptions, cancellationToken: CancellationToken): ValueTask<AuthenticationToken>;
-    getTokenAsync(options: GetTokenOptions, cancellationToken: CancellationToken): ValueTask<AuthenticationToken>;
+    CreateTokenOptions(properties: IReadOnlyDictionary<System_Internal.String, unknown>): GetTokenOptions | undefined;
+    CreateTokenOptions(properties: IReadOnlyDictionary<System_Internal.String, unknown>): GetTokenOptions | undefined;
+    GetToken(requestContext: TokenRequestContext, cancellationToken: CancellationToken): AccessToken;
+    GetToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
+    GetTokenAsync(requestContext: TokenRequestContext, cancellationToken: CancellationToken): ValueTask<AccessToken>;
+    GetTokenAsync(properties: GetTokenOptions, cancellationToken: CancellationToken): ValueTask<AuthenticationToken>;
+    GetTokenAsync(options: GetTokenOptions, cancellationToken: CancellationToken): ValueTask<AuthenticationToken>;
 }
 
 
@@ -612,52 +612,52 @@ export const TokenCredential: {
 export type TokenCredential = TokenCredential$instance;
 
 export abstract class DelegatedTokenCredential$instance {
-    static create(getToken: Func<TokenRequestContext, CancellationToken, AccessToken>, getTokenAsync: Func<TokenRequestContext, CancellationToken, ValueTask<AccessToken>>): TokenCredential;
-    static create(getToken: Func<TokenRequestContext, CancellationToken, AccessToken>): TokenCredential;
+    static Create(getToken: Func<TokenRequestContext, CancellationToken, AccessToken>, getTokenAsync: Func<TokenRequestContext, CancellationToken, ValueTask<AccessToken>>): TokenCredential;
+    static Create(getToken: Func<TokenRequestContext, CancellationToken, AccessToken>): TokenCredential;
 }
 
 
 export type DelegatedTokenCredential = DelegatedTokenCredential$instance;
 
 export abstract class HttpHeader_Common$instance {
-    static readonly jsonContentType: HttpHeader;
-    static readonly jsonAccept: HttpHeader;
-    static readonly octetStreamContentType: HttpHeader;
-    static readonly formUrlEncodedContentType: HttpHeader;
+    static readonly JsonContentType: HttpHeader;
+    static readonly JsonAccept: HttpHeader;
+    static readonly OctetStreamContentType: HttpHeader;
+    static readonly FormUrlEncodedContentType: HttpHeader;
 }
 
 
 export type HttpHeader_Common = HttpHeader_Common$instance;
 
 export abstract class HttpHeader_Names$instance {
-    static readonly date: string;
-    static readonly xMsDate: string;
-    static readonly contentType: string;
-    static readonly contentLength: string;
-    static readonly eTag: string;
-    static readonly xMsRequestId: string;
-    static readonly userAgent: string;
-    static readonly accept: string;
-    static readonly authorization: string;
-    static readonly range: string;
-    static readonly xMsRange: string;
-    static readonly ifMatch: string;
-    static readonly ifNoneMatch: string;
-    static readonly ifModifiedSince: string;
-    static readonly ifUnmodifiedSince: string;
-    static readonly prefer: string;
-    static readonly referer: string;
-    static readonly host: string;
-    static readonly contentDisposition: string;
-    static readonly wwwAuthenticate: string;
+    static readonly Date: string;
+    static readonly XMsDate: string;
+    static readonly ContentType: string;
+    static readonly ContentLength: string;
+    static readonly ETag: string;
+    static readonly XMsRequestId: string;
+    static readonly UserAgent: string;
+    static readonly Accept: string;
+    static readonly Authorization: string;
+    static readonly Range: string;
+    static readonly XMsRange: string;
+    static readonly IfMatch: string;
+    static readonly IfNoneMatch: string;
+    static readonly IfModifiedSince: string;
+    static readonly IfUnmodifiedSince: string;
+    static readonly Prefer: string;
+    static readonly Referer: string;
+    static readonly Host: string;
+    static readonly ContentDisposition: string;
+    static readonly WwwAuthenticate: string;
 }
 
 
 export type HttpHeader_Names = HttpHeader_Names$instance;
 
 export abstract class MultipartResponse$instance {
-    static parse(response: Response, expectCrLf: boolean, cancellationToken: CancellationToken): Response[];
-    static parseAsync(response: Response, expectCrLf: boolean, cancellationToken: CancellationToken): Task<Response[]>;
+    static Parse(response: Response, expectCrLf: boolean, cancellationToken: CancellationToken): Response[];
+    static ParseAsync(response: Response, expectCrLf: boolean, cancellationToken: CancellationToken): Task<Response[]>;
 }
 
 

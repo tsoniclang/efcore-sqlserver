@@ -17,22 +17,22 @@ export interface ManagedIdentityId$instance {
 
 export const ManagedIdentityId: {
     new(): ManagedIdentityId;
-    readonly systemAssigned: ManagedIdentityId;
-    withUserAssignedClientId(clientId: string): ManagedIdentityId;
-    withUserAssignedObjectId(objectId: string): ManagedIdentityId;
-    withUserAssignedResourceId(resourceId: string): ManagedIdentityId;
+    readonly SystemAssigned: ManagedIdentityId;
+    WithUserAssignedClientId(clientId: string): ManagedIdentityId;
+    WithUserAssignedObjectId(objectId: string): ManagedIdentityId;
+    WithUserAssignedResourceId(resourceId: string): ManagedIdentityId;
 };
 
 
 export type ManagedIdentityId = ManagedIdentityId$instance;
 
 export interface PoPAuthenticationConfiguration$instance {
-    httpHost: string;
-    httpMethod: HttpMethod;
-    httpPath: string;
-    nonce: string;
-    popCryptoProvider: IPoPCryptoProvider;
-    signHttpRequest: boolean;
+    HttpHost: string;
+    HttpMethod: HttpMethod;
+    HttpPath: string;
+    Nonce: string;
+    PopCryptoProvider: IPoPCryptoProvider;
+    SignHttpRequest: boolean;
 }
 
 

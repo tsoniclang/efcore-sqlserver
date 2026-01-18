@@ -11,17 +11,17 @@ import type { Boolean as ClrBoolean, Func, Object as ClrObject, Void } from "@ts
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface MacMainThreadScheduler$instance {
-    isCurrentlyOnMainThread(): boolean;
-    isRunning(): boolean;
-    runOnMainThreadAsync(asyncAction: Func<Task>): Task;
-    startMessageLoop(): void;
-    stop(): void;
+    IsCurrentlyOnMainThread(): boolean;
+    IsRunning(): boolean;
+    RunOnMainThreadAsync(asyncAction: Func<Task>): Task;
+    StartMessageLoop(): void;
+    Stop(): void;
 }
 
 
 export const MacMainThreadScheduler: {
     new(): MacMainThreadScheduler;
-    instance(): MacMainThreadScheduler;
+    Instance(): MacMainThreadScheduler;
 };
 
 

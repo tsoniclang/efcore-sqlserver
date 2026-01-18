@@ -17,10 +17,10 @@ import type { SqlExpression, SqlFunctionExpression } from "@tsonic/efcore/Micros
 import type { RelationalTypeMapping } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
 
 export interface SqlServerJsonObjectExpression$instance extends SqlFunctionExpression {
-    readonly propertyNames: IReadOnlyList<System_Internal.String>;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    quote(): Expression;
+    readonly PropertyNames: IReadOnlyList<System_Internal.String>;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    Quote(): Expression;
 }
 
 

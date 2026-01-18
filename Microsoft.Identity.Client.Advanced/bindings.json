@@ -1,23 +1,36 @@
 {
   "namespace": "Microsoft.Identity.Client.Advanced",
+  "contributingAssemblies": [
+    "Microsoft.Identity.Client"
+  ],
   "types": [
     {
       "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Advanced.AcquireTokenParameterBuilderExtensions",
       "clrName": "Microsoft.Identity.Client.Advanced.AcquireTokenParameterBuilderExtensions",
-      "tsEmitName": "AcquireTokenParameterBuilderExtensions",
       "assemblyName": "Microsoft.Identity.Client",
       "metadataToken": 0,
+      "kind": "StaticNamespace",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": true,
+      "isStatic": true,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Advanced.AcquireTokenParameterBuilderExtensions::WithExtraHttpHeaders(AbstractAcquireTokenParameterBuilder_1,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):T",
           "clrName": "WithExtraHttpHeaders",
-          "tsEmitName": "withExtraHttpHeaders",
           "metadataToken": 100666117,
           "canonicalSignature": "(AbstractAcquireTokenParameterBuilder_1,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):T",
           "normalizedSignature": "WithExtraHttpHeaders|(AbstractAcquireTokenParameterBuilder_1,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):T|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 1,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Identity.Client.Advanced.AcquireTokenParameterBuilderExtensions",
           "declaringAssemblyName": "Microsoft.Identity.Client",
           "isExtensionMethod": true
@@ -26,19 +39,7 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "withExtraHttpHeaders",
-          "isStatic": true,
-          "tsSignatureId": "WithExtraHttpHeaders|(AbstractAcquireTokenParameterBuilder_1,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):T|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Identity.Client.Advanced.AcquireTokenParameterBuilderExtensions",
-            "declaringAssemblyName": "Microsoft.Identity.Client",
-            "metadataToken": 100666117
-          }
-        }
-      ]
+      "constructors": []
     }
   ]
 }

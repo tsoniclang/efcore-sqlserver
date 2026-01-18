@@ -30,84 +30,84 @@ import * as System_Xml_XPath_Internal from "@tsonic/dotnet/System.Xml.XPath.js";
 import type { IXPathNavigable } from "@tsonic/dotnet/System.Xml.XPath.js";
 
 export enum ConfigurationAllowDefinition {
-    machineOnly = 0,
-    machineToWebRoot = 100,
-    machineToApplication = 200,
-    everywhere = 300
+    MachineOnly = 0,
+    MachineToWebRoot = 100,
+    MachineToApplication = 200,
+    Everywhere = 300
 }
 
 
 export enum ConfigurationAllowExeDefinition {
-    machineOnly = 0,
-    machineToApplication = 100,
-    machineToRoamingUser = 200,
-    machineToLocalUser = 300
+    MachineOnly = 0,
+    MachineToApplication = 100,
+    MachineToRoamingUser = 200,
+    MachineToLocalUser = 300
 }
 
 
 export enum ConfigurationElementCollectionType {
-    basicMap = 0,
-    addRemoveClearMap = 1,
-    basicMapAlternate = 2,
-    addRemoveClearMapAlternate = 3
+    BasicMap = 0,
+    AddRemoveClearMap = 1,
+    BasicMapAlternate = 2,
+    AddRemoveClearMapAlternate = 3
 }
 
 
 export enum ConfigurationPropertyOptions {
-    none = 0,
-    isDefaultCollection = 1,
-    isRequired = 2,
-    isKey = 4,
-    isTypeStringTransformationRequired = 8,
-    isAssemblyStringTransformationRequired = 16,
-    isVersionCheckRequired = 32
+    None = 0,
+    IsDefaultCollection = 1,
+    IsRequired = 2,
+    IsKey = 4,
+    IsTypeStringTransformationRequired = 8,
+    IsAssemblyStringTransformationRequired = 16,
+    IsVersionCheckRequired = 32
 }
 
 
 export enum ConfigurationSaveMode {
-    modified = 0,
-    minimal = 1,
-    full = 2
+    Modified = 0,
+    Minimal = 1,
+    Full = 2
 }
 
 
 export enum ConfigurationUserLevel {
-    none = 0,
-    perUserRoaming = 10,
-    perUserRoamingAndLocal = 20
+    None = 0,
+    PerUserRoaming = 10,
+    PerUserRoamingAndLocal = 20
 }
 
 
 export enum OverrideMode {
-    inherit = 0,
-    allow = 1,
-    deny = 2
+    Inherit = 0,
+    Allow = 1,
+    Deny = 2
 }
 
 
 export enum PropertyValueOrigin {
-    default = 0,
-    inherited = 1,
-    setHere = 2
+    Default = 0,
+    Inherited = 1,
+    SetHere = 2
 }
 
 
 export enum SettingsManageability {
-    roaming = 0
+    Roaming = 0
 }
 
 
 export enum SettingsSerializeAs {
-    string = 0,
-    xml = 1,
-    binary = 2,
-    providerSpecific = 3
+    String = 0,
+    Xml = 1,
+    Binary = 2,
+    ProviderSpecific = 3
 }
 
 
 export enum SpecialSetting {
-    connectionString = 0,
-    webServiceUrl = 1
+    ConnectionString = 0,
+    WebServiceUrl = 1
 }
 
 
@@ -124,40 +124,40 @@ export type ValidatorCallback = (value: unknown) => void;
 
 
 export interface IApplicationSettingsProvider$instance {
-    getPreviousVersion(context: SettingsContext, property: SettingsProperty): SettingsPropertyValue;
-    reset(context: SettingsContext): void;
-    upgrade(context: SettingsContext, properties: SettingsPropertyCollection): void;
+    GetPreviousVersion(context: SettingsContext, property: SettingsProperty): SettingsPropertyValue;
+    Reset(context: SettingsContext): void;
+    Upgrade(context: SettingsContext, properties: SettingsPropertyCollection): void;
 }
 
 
 export type IApplicationSettingsProvider = IApplicationSettingsProvider$instance;
 
 export interface IConfigurationSectionHandler$instance {
-    create(parent: unknown, configContext: unknown, section: XmlNode): unknown;
+    Create(parent: unknown, configContext: unknown, section: XmlNode): unknown;
 }
 
 
 export type IConfigurationSectionHandler = IConfigurationSectionHandler$instance;
 
 export interface IConfigurationSystem$instance {
-    getConfig(configKey: string): unknown;
-    init(): void;
+    GetConfig(configKey: string): unknown;
+    Init(): void;
 }
 
 
 export type IConfigurationSystem = IConfigurationSystem$instance;
 
 export interface IPersistComponentSettings$instance {
-    saveSettings: boolean;
-    settingsKey: string;
-    loadComponentSettings(): void;
+    SaveSettings: boolean;
+    SettingsKey: string;
+    LoadComponentSettings(): void;
 }
 
 
 export type IPersistComponentSettings = IPersistComponentSettings$instance;
 
 export interface ISettingsProviderService$instance {
-    getSettingsProvider(property: SettingsProperty): SettingsProvider;
+    GetSettingsProvider(property: SettingsProperty): SettingsProvider;
 }
 
 
@@ -175,17 +175,17 @@ export const ApplicationScopedSettingAttribute: {
 export type ApplicationScopedSettingAttribute = ApplicationScopedSettingAttribute$instance;
 
 export interface ApplicationSettingsBase$instance extends SettingsBase {
-    readonly context: SettingsContext;
-    item: unknown;
-    readonly properties: SettingsPropertyCollection;
-    readonly propertyValues: SettingsPropertyValueCollection;
-    readonly providers: SettingsProviderCollection;
-    settingsKey: string;
-    getPreviousVersion(propertyName: string): unknown;
-    reload(): void;
-    reset(): void;
-    save(): void;
-    upgrade(): void;
+    readonly Context: SettingsContext;
+    Item: unknown;
+    readonly Properties: SettingsPropertyCollection;
+    readonly PropertyValues: SettingsPropertyValueCollection;
+    readonly Providers: SettingsProviderCollection;
+    SettingsKey: string;
+    GetPreviousVersion(propertyName: string): unknown;
+    Reload(): void;
+    Reset(): void;
+    Save(): void;
+    Upgrade(): void;
 }
 
 
@@ -207,7 +207,7 @@ export const ApplicationSettingsGroup: {
 export type ApplicationSettingsGroup = ApplicationSettingsGroup$instance;
 
 export interface AppSettingsReader$instance {
-    getValue(key: string, type: Type): unknown;
+    GetValue(key: string, type: Type): unknown;
 }
 
 
@@ -219,8 +219,8 @@ export const AppSettingsReader: {
 export type AppSettingsReader = AppSettingsReader$instance;
 
 export interface AppSettingsSection$instance extends ConfigurationSection {
-    file: string;
-    readonly settings: KeyValueConfigurationCollection;
+    File: string;
+    readonly Settings: KeyValueConfigurationCollection;
 }
 
 
@@ -232,8 +232,8 @@ export const AppSettingsSection: {
 export type AppSettingsSection = AppSettingsSection$instance;
 
 export interface CallbackValidator$instance extends ConfigurationValidatorBase {
-    canValidate(type: Type): boolean;
-    validate(value: unknown): void;
+    CanValidate(type: Type): boolean;
+    Validate(value: unknown): void;
 }
 
 
@@ -245,9 +245,9 @@ export const CallbackValidator: {
 export type CallbackValidator = CallbackValidator$instance;
 
 export interface CallbackValidatorAttribute$instance extends ConfigurationValidatorAttribute {
-    callbackMethodName: string;
-    type: Type;
-    readonly validatorInstance: ConfigurationValidatorBase;
+    CallbackMethodName: string;
+    Type: Type;
+    readonly ValidatorInstance: ConfigurationValidatorBase;
 }
 
 
@@ -259,7 +259,7 @@ export const CallbackValidatorAttribute: {
 export type CallbackValidatorAttribute = CallbackValidatorAttribute$instance;
 
 export interface ClientSettingsSection$instance extends ConfigurationSection {
-    readonly settings: SettingElementCollection;
+    readonly Settings: SettingElementCollection;
 }
 
 
@@ -271,17 +271,17 @@ export const ClientSettingsSection: {
 export type ClientSettingsSection = ClientSettingsSection$instance;
 
 export interface CommaDelimitedStringCollection$instance extends StringCollection {
-    readonly isModified: boolean;
-    readonly isReadOnly: boolean;
-    item: string;
-    add(value: string): void;
-    addRange(range: string[]): void;
-    clear(): void;
-    clone(): CommaDelimitedStringCollection;
-    insert(index: int, value: string): void;
-    remove(value: string): void;
-    setReadOnly(): void;
-    toString(): string | undefined;
+    readonly IsModified: boolean;
+    readonly IsReadOnly: boolean;
+    Item: string;
+    Add(value: string): void;
+    AddRange(range: string[]): void;
+    Clear(): void;
+    Clone(): CommaDelimitedStringCollection;
+    Insert(index: int, value: string): void;
+    Remove(value: string): void;
+    SetReadOnly(): void;
+    ToString(): string | undefined;
 }
 
 
@@ -293,8 +293,8 @@ export const CommaDelimitedStringCollection: {
 export type CommaDelimitedStringCollection = CommaDelimitedStringCollection$instance;
 
 export interface CommaDelimitedStringCollectionConverter$instance extends ConfigurationConverterBase {
-    convertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown): unknown;
-    convertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type): unknown;
+    ConvertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown): unknown;
+    ConvertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type): unknown;
 }
 
 
@@ -306,27 +306,27 @@ export const CommaDelimitedStringCollectionConverter: {
 export type CommaDelimitedStringCollectionConverter = CommaDelimitedStringCollectionConverter$instance;
 
 export interface Configuration$instance {
-    readonly appSettings: AppSettingsSection;
-    assemblyStringTransformer: Func<System_Internal.String, System_Internal.String>;
-    readonly connectionStrings: ConnectionStringsSection;
-    readonly evaluationContext: ContextInformation;
-    readonly filePath: string;
-    readonly hasFile: boolean;
-    readonly locations: ConfigurationLocationCollection;
-    namespaceDeclared: boolean;
-    readonly rootSectionGroup: ConfigurationSectionGroup;
-    readonly sectionGroups: ConfigurationSectionGroupCollection;
-    readonly sections: ConfigurationSectionCollection;
-    targetFramework: FrameworkName;
-    typeStringTransformer: Func<System_Internal.String, System_Internal.String>;
-    getSection(sectionName: string): ConfigurationSection;
-    getSectionGroup(sectionGroupName: string): ConfigurationSectionGroup;
-    save(): void;
-    save(saveMode: ConfigurationSaveMode): void;
-    save(saveMode: ConfigurationSaveMode, forceSaveAll: boolean): void;
-    saveAs(filename: string): void;
-    saveAs(filename: string, saveMode: ConfigurationSaveMode): void;
-    saveAs(filename: string, saveMode: ConfigurationSaveMode, forceSaveAll: boolean): void;
+    readonly AppSettings: AppSettingsSection;
+    AssemblyStringTransformer: Func<System_Internal.String, System_Internal.String>;
+    readonly ConnectionStrings: ConnectionStringsSection;
+    readonly EvaluationContext: ContextInformation;
+    readonly FilePath: string;
+    readonly HasFile: boolean;
+    readonly Locations: ConfigurationLocationCollection;
+    NamespaceDeclared: boolean;
+    readonly RootSectionGroup: ConfigurationSectionGroup;
+    readonly SectionGroups: ConfigurationSectionGroupCollection;
+    readonly Sections: ConfigurationSectionCollection;
+    TargetFramework: FrameworkName;
+    TypeStringTransformer: Func<System_Internal.String, System_Internal.String>;
+    GetSection(sectionName: string): ConfigurationSection;
+    GetSectionGroup(sectionGroupName: string): ConfigurationSectionGroup;
+    Save(): void;
+    Save(saveMode: ConfigurationSaveMode): void;
+    Save(saveMode: ConfigurationSaveMode, forceSaveAll: boolean): void;
+    SaveAs(filename: string): void;
+    SaveAs(filename: string, saveMode: ConfigurationSaveMode): void;
+    SaveAs(filename: string, saveMode: ConfigurationSaveMode, forceSaveAll: boolean): void;
 }
 
 
@@ -338,11 +338,11 @@ export const Configuration: {
 export type Configuration = Configuration$instance;
 
 export interface ConfigurationCollectionAttribute$instance extends Attribute {
-    addItemName: string;
-    clearItemsName: string;
-    collectionType: ConfigurationElementCollectionType;
-    readonly itemType: Type;
-    removeItemName: string;
+    AddItemName: string;
+    ClearItemsName: string;
+    CollectionType: ConfigurationElementCollectionType;
+    readonly ItemType: Type;
+    RemoveItemName: string;
 }
 
 
@@ -354,8 +354,8 @@ export const ConfigurationCollectionAttribute: {
 export type ConfigurationCollectionAttribute = ConfigurationCollectionAttribute$instance;
 
 export interface ConfigurationConverterBase$instance extends TypeConverter {
-    canConvertFrom(ctx: ITypeDescriptorContext, type: Type): boolean;
-    canConvertTo(ctx: ITypeDescriptorContext, type: Type): boolean;
+    CanConvertFrom(ctx: ITypeDescriptorContext, type: Type): boolean;
+    CanConvertTo(ctx: ITypeDescriptorContext, type: Type): boolean;
 }
 
 
@@ -366,16 +366,16 @@ export const ConfigurationConverterBase: {
 export type ConfigurationConverterBase = ConfigurationConverterBase$instance;
 
 export interface ConfigurationElement$instance {
-    readonly currentConfiguration: Configuration;
-    readonly elementInformation: ElementInformation;
-    readonly lockAllAttributesExcept: ConfigurationLockCollection;
-    readonly lockAllElementsExcept: ConfigurationLockCollection;
-    readonly lockAttributes: ConfigurationLockCollection;
-    readonly lockElements: ConfigurationLockCollection;
-    lockItem: boolean;
-    equals(compareTo: unknown): boolean;
-    getHashCode(): int;
-    isReadOnly(): boolean;
+    readonly CurrentConfiguration: Configuration;
+    readonly ElementInformation: ElementInformation;
+    readonly LockAllAttributesExcept: ConfigurationLockCollection;
+    readonly LockAllElementsExcept: ConfigurationLockCollection;
+    readonly LockAttributes: ConfigurationLockCollection;
+    readonly LockElements: ConfigurationLockCollection;
+    LockItem: boolean;
+    Equals(compareTo: unknown): boolean;
+    GetHashCode(): int;
+    IsReadOnly(): boolean;
 }
 
 
@@ -386,16 +386,16 @@ export const ConfigurationElement: {
 export type ConfigurationElement = ConfigurationElement$instance;
 
 export interface ConfigurationElementCollection$instance extends ConfigurationElement {
-    readonly collectionType: ConfigurationElementCollectionType;
-    readonly count: int;
-    emitClear: boolean;
-    readonly isSynchronized: boolean;
-    readonly syncRoot: unknown;
-    copyTo(array: ConfigurationElement[], index: int): void;
-    equals(compareTo: unknown): boolean;
-    getEnumerator(): IEnumerator;
-    getHashCode(): int;
-    isReadOnly(): boolean;
+    readonly CollectionType: ConfigurationElementCollectionType;
+    readonly Count: int;
+    EmitClear: boolean;
+    readonly IsSynchronized: boolean;
+    readonly SyncRoot: unknown;
+    CopyTo(array: ConfigurationElement[], index: int): void;
+    Equals(compareTo: unknown): boolean;
+    GetEnumerator(): IEnumerator;
+    GetHashCode(): int;
+    IsReadOnly(): boolean;
 }
 
 
@@ -406,7 +406,7 @@ export const ConfigurationElementCollection: {
 export type ConfigurationElementCollection = ConfigurationElementCollection$instance;
 
 export interface ConfigurationElementProperty$instance {
-    readonly validator: ConfigurationValidatorBase;
+    readonly Validator: ConfigurationValidatorBase;
 }
 
 
@@ -418,11 +418,11 @@ export const ConfigurationElementProperty: {
 export type ConfigurationElementProperty = ConfigurationElementProperty$instance;
 
 export interface ConfigurationErrorsException$instance extends ConfigurationException {
-    readonly errors: ICollection;
-    readonly filename: string;
-    readonly line: int;
-    readonly message: string;
-    getObjectData(info: SerializationInfo, context: StreamingContext): void;
+    readonly Errors: ICollection;
+    readonly Filename: string;
+    readonly Line: int;
+    readonly Message: string;
+    GetObjectData(info: SerializationInfo, context: StreamingContext): void;
 }
 
 
@@ -436,21 +436,21 @@ export const ConfigurationErrorsException: {
     new(message: string, inner: Exception, node: XmlNode): ConfigurationErrorsException;
     new(message: string, reader: XmlReader): ConfigurationErrorsException;
     new(message: string, inner: Exception, reader: XmlReader): ConfigurationErrorsException;
-    getFilename(node: XmlNode): string;
-    getFilename(reader: XmlReader): string;
-    getLineNumber(node: XmlNode): int;
-    getLineNumber(reader: XmlReader): int;
+    GetFilename(node: XmlNode): string;
+    GetFilename(reader: XmlReader): string;
+    GetLineNumber(node: XmlNode): int;
+    GetLineNumber(reader: XmlReader): int;
 };
 
 
 export type ConfigurationErrorsException = ConfigurationErrorsException$instance;
 
 export interface ConfigurationException$instance extends SystemException {
-    readonly bareMessage: string;
-    readonly filename: string;
-    readonly line: int;
-    readonly message: string;
-    getObjectData(info: SerializationInfo, context: StreamingContext): void;
+    readonly BareMessage: string;
+    readonly Filename: string;
+    readonly Line: int;
+    readonly Message: string;
+    GetObjectData(info: SerializationInfo, context: StreamingContext): void;
 }
 
 
@@ -462,16 +462,16 @@ export const ConfigurationException: {
     new(message: string, inner: Exception, node: XmlNode): ConfigurationException;
     new(message: string, filename: string, line: int): ConfigurationException;
     new(message: string, inner: Exception, filename: string, line: int): ConfigurationException;
-    getXmlNodeFilename(node: XmlNode): string;
-    getXmlNodeLineNumber(node: XmlNode): int;
+    GetXmlNodeFilename(node: XmlNode): string;
+    GetXmlNodeLineNumber(node: XmlNode): int;
 };
 
 
 export type ConfigurationException = ConfigurationException$instance;
 
 export interface ConfigurationFileMap$instance {
-    machineConfigFilename: string;
-    clone(): unknown;
+    MachineConfigFilename: string;
+    Clone(): unknown;
 }
 
 
@@ -484,8 +484,8 @@ export const ConfigurationFileMap: {
 export type ConfigurationFileMap = ConfigurationFileMap$instance;
 
 export interface ConfigurationLocation$instance {
-    readonly path: string;
-    openConfiguration(): Configuration;
+    readonly Path: string;
+    OpenConfiguration(): Configuration;
 }
 
 
@@ -497,7 +497,7 @@ export const ConfigurationLocation: {
 export type ConfigurationLocation = ConfigurationLocation$instance;
 
 export interface ConfigurationLocationCollection$instance extends ReadOnlyCollectionBase {
-    readonly item: ConfigurationLocation;
+    readonly Item: ConfigurationLocation;
 }
 
 
@@ -509,20 +509,20 @@ export const ConfigurationLocationCollection: {
 export type ConfigurationLocationCollection = ConfigurationLocationCollection$instance;
 
 export interface ConfigurationLockCollection$instance {
-    readonly attributeList: string;
-    readonly count: int;
-    readonly hasParentElements: boolean;
-    readonly isModified: boolean;
-    readonly isSynchronized: boolean;
-    readonly syncRoot: unknown;
-    add(name: string): void;
-    clear(): void;
-    contains(name: string): boolean;
-    copyTo(array: string[], index: int): void;
-    getEnumerator(): IEnumerator;
-    isReadOnly(name: string): boolean;
-    remove(name: string): void;
-    setFromList(attributeList: string): void;
+    readonly AttributeList: string;
+    readonly Count: int;
+    readonly HasParentElements: boolean;
+    readonly IsModified: boolean;
+    readonly IsSynchronized: boolean;
+    readonly SyncRoot: unknown;
+    Add(name: string): void;
+    Clear(): void;
+    Contains(name: string): boolean;
+    CopyTo(array: string[], index: int): void;
+    GetEnumerator(): IEnumerator;
+    IsReadOnly(name: string): boolean;
+    Remove(name: string): void;
+    SetFromList(attributeList: string): void;
 }
 
 
@@ -534,18 +534,18 @@ export const ConfigurationLockCollection: {
 export type ConfigurationLockCollection = ConfigurationLockCollection$instance;
 
 export interface ConfigurationProperty$instance {
-    readonly converter: TypeConverter;
-    readonly defaultValue: unknown;
-    readonly description: string;
-    readonly isAssemblyStringTransformationRequired: boolean;
-    readonly isDefaultCollection: boolean;
-    readonly isKey: boolean;
-    readonly isRequired: boolean;
-    readonly isTypeStringTransformationRequired: boolean;
-    readonly isVersionCheckRequired: boolean;
-    readonly name: string;
-    readonly type: Type;
-    readonly validator: ConfigurationValidatorBase;
+    readonly Converter: TypeConverter;
+    readonly DefaultValue: unknown;
+    readonly Description: string;
+    readonly IsAssemblyStringTransformationRequired: boolean;
+    readonly IsDefaultCollection: boolean;
+    readonly IsKey: boolean;
+    readonly IsRequired: boolean;
+    readonly IsTypeStringTransformationRequired: boolean;
+    readonly IsVersionCheckRequired: boolean;
+    readonly Name: string;
+    readonly Type: Type;
+    readonly Validator: ConfigurationValidatorBase;
 }
 
 
@@ -561,12 +561,12 @@ export const ConfigurationProperty: {
 export type ConfigurationProperty = ConfigurationProperty$instance;
 
 export interface ConfigurationPropertyAttribute$instance extends Attribute {
-    defaultValue: unknown;
-    isDefaultCollection: boolean;
-    isKey: boolean;
-    isRequired: boolean;
-    readonly name: string;
-    options: ConfigurationPropertyOptions;
+    DefaultValue: unknown;
+    IsDefaultCollection: boolean;
+    IsKey: boolean;
+    IsRequired: boolean;
+    readonly Name: string;
+    Options: ConfigurationPropertyOptions;
 }
 
 
@@ -578,16 +578,16 @@ export const ConfigurationPropertyAttribute: {
 export type ConfigurationPropertyAttribute = ConfigurationPropertyAttribute$instance;
 
 export interface ConfigurationPropertyCollection$instance {
-    readonly count: int;
-    readonly isSynchronized: boolean;
-    readonly item: ConfigurationProperty;
-    readonly syncRoot: unknown;
-    add(property: ConfigurationProperty): void;
-    clear(): void;
-    contains(name: string): boolean;
-    copyTo(array: ConfigurationProperty[], index: int): void;
-    getEnumerator(): IEnumerator;
-    remove(name: string): boolean;
+    readonly Count: int;
+    readonly IsSynchronized: boolean;
+    readonly Item: ConfigurationProperty;
+    readonly SyncRoot: unknown;
+    Add(property: ConfigurationProperty): void;
+    Clear(): void;
+    Contains(name: string): boolean;
+    CopyTo(array: ConfigurationProperty[], index: int): void;
+    GetEnumerator(): IEnumerator;
+    Remove(name: string): boolean;
 }
 
 
@@ -599,7 +599,7 @@ export const ConfigurationPropertyCollection: {
 export type ConfigurationPropertyCollection = ConfigurationPropertyCollection$instance;
 
 export interface ConfigurationSection$instance extends ConfigurationElement {
-    readonly sectionInformation: SectionInformation;
+    readonly SectionInformation: SectionInformation;
 }
 
 
@@ -610,17 +610,17 @@ export const ConfigurationSection: {
 export type ConfigurationSection = ConfigurationSection$instance;
 
 export interface ConfigurationSectionCollection$instance extends NameObjectCollectionBase {
-    add(name: string, section: ConfigurationSection): void;
-    clear(): void;
-    copyTo(array: ConfigurationSection[], index: int): void;
-    get(index: int): ConfigurationSection;
-    get(name: string): ConfigurationSection;
+    Add(name: string, section: ConfigurationSection): void;
+    Clear(): void;
+    CopyTo(array: ConfigurationSection[], index: int): void;
+    Get(index: int): ConfigurationSection;
+    Get(name: string): ConfigurationSection;
     get_Item(name: string): ConfigurationSection;
     get_Item(index: int): ConfigurationSection;
-    getEnumerator(): IEnumerator;
-    getKey(index: int): string;
-    remove(name: string): void;
-    removeAt(index: int): void;
+    GetEnumerator(): IEnumerator;
+    GetKey(index: int): string;
+    Remove(name: string): void;
+    RemoveAt(index: int): void;
 }
 
 
@@ -632,15 +632,15 @@ export const ConfigurationSectionCollection: {
 export type ConfigurationSectionCollection = ConfigurationSectionCollection$instance;
 
 export interface ConfigurationSectionGroup$instance {
-    readonly isDeclarationRequired: boolean;
-    readonly isDeclared: boolean;
-    readonly name: string;
-    readonly sectionGroupName: string;
-    readonly sectionGroups: ConfigurationSectionGroupCollection;
-    readonly sections: ConfigurationSectionCollection;
-    type: string;
-    forceDeclaration(): void;
-    forceDeclaration(force: boolean): void;
+    readonly IsDeclarationRequired: boolean;
+    readonly IsDeclared: boolean;
+    readonly Name: string;
+    readonly SectionGroupName: string;
+    readonly SectionGroups: ConfigurationSectionGroupCollection;
+    readonly Sections: ConfigurationSectionCollection;
+    Type: string;
+    ForceDeclaration(): void;
+    ForceDeclaration(force: boolean): void;
 }
 
 
@@ -652,17 +652,17 @@ export const ConfigurationSectionGroup: {
 export type ConfigurationSectionGroup = ConfigurationSectionGroup$instance;
 
 export interface ConfigurationSectionGroupCollection$instance extends NameObjectCollectionBase {
-    add(name: string, sectionGroup: ConfigurationSectionGroup): void;
-    clear(): void;
-    copyTo(array: ConfigurationSectionGroup[], index: int): void;
-    get(index: int): ConfigurationSectionGroup;
-    get(name: string): ConfigurationSectionGroup;
+    Add(name: string, sectionGroup: ConfigurationSectionGroup): void;
+    Clear(): void;
+    CopyTo(array: ConfigurationSectionGroup[], index: int): void;
+    Get(index: int): ConfigurationSectionGroup;
+    Get(name: string): ConfigurationSectionGroup;
     get_Item(name: string): ConfigurationSectionGroup;
     get_Item(index: int): ConfigurationSectionGroup;
-    getEnumerator(): IEnumerator;
-    getKey(index: int): string;
-    remove(name: string): void;
-    removeAt(index: int): void;
+    GetEnumerator(): IEnumerator;
+    GetKey(index: int): string;
+    Remove(name: string): void;
+    RemoveAt(index: int): void;
 }
 
 
@@ -679,16 +679,16 @@ export interface ConfigurationSettings$instance {
 
 export const ConfigurationSettings: {
     new(): ConfigurationSettings;
-    readonly appSettings: NameValueCollection;
-    getConfig(sectionName: string): unknown;
+    readonly AppSettings: NameValueCollection;
+    GetConfig(sectionName: string): unknown;
 };
 
 
 export type ConfigurationSettings = ConfigurationSettings$instance;
 
 export interface ConfigurationValidatorAttribute$instance extends Attribute {
-    readonly validatorInstance: ConfigurationValidatorBase;
-    readonly validatorType: Type;
+    readonly ValidatorInstance: ConfigurationValidatorBase;
+    readonly ValidatorType: Type;
 }
 
 
@@ -700,8 +700,8 @@ export const ConfigurationValidatorAttribute: {
 export type ConfigurationValidatorAttribute = ConfigurationValidatorAttribute$instance;
 
 export interface ConfigurationValidatorBase$instance {
-    canValidate(type: Type): boolean;
-    validate(value: unknown): void;
+    CanValidate(type: Type): boolean;
+    Validate(value: unknown): void;
 }
 
 
@@ -712,17 +712,17 @@ export const ConfigurationValidatorBase: {
 export type ConfigurationValidatorBase = ConfigurationValidatorBase$instance;
 
 export interface ConfigXmlDocument$instance extends XmlDocument {
-    readonly filename: string;
-    readonly lineNumber: int;
-    createAttribute(prefix: string, localName: string, namespaceUri: string): XmlAttribute;
-    createCDataSection(data: string): XmlCDataSection;
-    createComment(data: string): XmlComment;
-    createElement(prefix: string, localName: string, namespaceUri: string): XmlElement;
-    createSignificantWhitespace(data: string): XmlSignificantWhitespace;
-    createTextNode(text: string): XmlText;
-    createWhitespace(data: string): XmlWhitespace;
-    load(filename: string): void;
-    loadSingleElement(filename: string, sourceReader: XmlTextReader): void;
+    readonly Filename: string;
+    readonly LineNumber: int;
+    CreateAttribute(prefix: string, localName: string, namespaceUri: string): XmlAttribute;
+    CreateCDataSection(data: string): XmlCDataSection;
+    CreateComment(data: string): XmlComment;
+    CreateElement(prefix: string, localName: string, namespaceUri: string): XmlElement;
+    CreateSignificantWhitespace(data: string): XmlSignificantWhitespace;
+    CreateTextNode(text: string): XmlText;
+    CreateWhitespace(data: string): XmlWhitespace;
+    Load(filename: string): void;
+    LoadSingleElement(filename: string, sourceReader: XmlTextReader): void;
 }
 
 
@@ -741,10 +741,10 @@ export type ConfigXmlDocument = ConfigXmlDocument$instance & __ConfigXmlDocument
 
 
 export interface ConnectionStringSettings$instance extends ConfigurationElement {
-    connectionString: string;
-    name: string;
-    providerName: string;
-    toString(): string | undefined;
+    ConnectionString: string;
+    Name: string;
+    ProviderName: string;
+    ToString(): string | undefined;
 }
 
 
@@ -758,14 +758,14 @@ export const ConnectionStringSettings: {
 export type ConnectionStringSettings = ConnectionStringSettings$instance;
 
 export interface ConnectionStringSettingsCollection$instance extends ConfigurationElementCollection {
-    add(settings: ConnectionStringSettings): void;
-    clear(): void;
+    Add(settings: ConnectionStringSettings): void;
+    Clear(): void;
     get_Item(index: int): ConnectionStringSettings;
     get_Item(name: string): ConnectionStringSettings;
-    indexOf(settings: ConnectionStringSettings): int;
-    remove(settings: ConnectionStringSettings): void;
-    remove(name: string): void;
-    removeAt(index: int): void;
+    IndexOf(settings: ConnectionStringSettings): int;
+    Remove(settings: ConnectionStringSettings): void;
+    Remove(name: string): void;
+    RemoveAt(index: int): void;
     set_Item(index: int, value: ConnectionStringSettings): void;
 }
 
@@ -778,7 +778,7 @@ export const ConnectionStringSettingsCollection: {
 export type ConnectionStringSettingsCollection = ConnectionStringSettingsCollection$instance;
 
 export interface ConnectionStringsSection$instance extends ConfigurationSection {
-    readonly connectionStrings: ConnectionStringSettingsCollection;
+    readonly ConnectionStrings: ConnectionStringSettingsCollection;
 }
 
 
@@ -790,9 +790,9 @@ export const ConnectionStringsSection: {
 export type ConnectionStringsSection = ConnectionStringsSection$instance;
 
 export interface ContextInformation$instance {
-    readonly hostingContext: unknown;
-    readonly isMachineLevel: boolean;
-    getSection(sectionName: string): unknown;
+    readonly HostingContext: unknown;
+    readonly IsMachineLevel: boolean;
+    GetSection(sectionName: string): unknown;
 }
 
 
@@ -815,7 +815,7 @@ export const DefaultSection: {
 export type DefaultSection = DefaultSection$instance;
 
 export interface DefaultSettingValueAttribute$instance extends Attribute {
-    readonly value: string;
+    readonly Value: string;
 }
 
 
@@ -827,8 +827,8 @@ export const DefaultSettingValueAttribute: {
 export type DefaultSettingValueAttribute = DefaultSettingValueAttribute$instance;
 
 export interface DefaultValidator$instance extends ConfigurationValidatorBase {
-    canValidate(type: Type): boolean;
-    validate(value: unknown): void;
+    CanValidate(type: Type): boolean;
+    Validate(value: unknown): void;
 }
 
 
@@ -840,7 +840,7 @@ export const DefaultValidator: {
 export type DefaultValidator = DefaultValidator$instance;
 
 export interface DictionarySectionHandler$instance {
-    create(parent: unknown, context: unknown, section: XmlNode): unknown;
+    Create(parent: unknown, context: unknown, section: XmlNode): unknown;
 }
 
 
@@ -859,10 +859,10 @@ export type DictionarySectionHandler = DictionarySectionHandler$instance & __Dic
 
 
 export interface DpapiProtectedConfigurationProvider$instance extends ProtectedConfigurationProvider {
-    readonly useMachineProtection: boolean;
-    decrypt(encryptedNode: XmlNode): XmlNode;
-    encrypt(node: XmlNode): XmlNode;
-    initialize(name: string, configurationValues: NameValueCollection): void;
+    readonly UseMachineProtection: boolean;
+    Decrypt(encryptedNode: XmlNode): XmlNode;
+    Encrypt(node: XmlNode): XmlNode;
+    Initialize(name: string, configurationValues: NameValueCollection): void;
 }
 
 
@@ -874,15 +874,15 @@ export const DpapiProtectedConfigurationProvider: {
 export type DpapiProtectedConfigurationProvider = DpapiProtectedConfigurationProvider$instance;
 
 export interface ElementInformation$instance {
-    readonly errors: ICollection;
-    readonly isCollection: boolean;
-    readonly isLocked: boolean;
-    readonly isPresent: boolean;
-    readonly lineNumber: int;
-    readonly properties: PropertyInformationCollection;
-    readonly source: string;
-    readonly type: Type;
-    readonly validator: ConfigurationValidatorBase;
+    readonly Errors: ICollection;
+    readonly IsCollection: boolean;
+    readonly IsLocked: boolean;
+    readonly IsPresent: boolean;
+    readonly LineNumber: int;
+    readonly Properties: PropertyInformationCollection;
+    readonly Source: string;
+    readonly Type: Type;
+    readonly Validator: ConfigurationValidatorBase;
 }
 
 
@@ -894,10 +894,10 @@ export const ElementInformation: {
 export type ElementInformation = ElementInformation$instance;
 
 export interface ExeConfigurationFileMap$instance extends ConfigurationFileMap {
-    exeConfigFilename: string;
-    localUserConfigFilename: string;
-    roamingUserConfigFilename: string;
-    clone(): unknown;
+    ExeConfigFilename: string;
+    LocalUserConfigFilename: string;
+    RoamingUserConfigFilename: string;
+    Clone(): unknown;
 }
 
 
@@ -910,8 +910,8 @@ export const ExeConfigurationFileMap: {
 export type ExeConfigurationFileMap = ExeConfigurationFileMap$instance;
 
 export interface ExeContext$instance {
-    readonly exePath: string;
-    readonly userLevel: ConfigurationUserLevel;
+    readonly ExePath: string;
+    readonly UserLevel: ConfigurationUserLevel;
 }
 
 
@@ -923,8 +923,8 @@ export const ExeContext: {
 export type ExeContext = ExeContext$instance;
 
 export interface GenericEnumConverter$instance extends ConfigurationConverterBase {
-    convertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown): unknown;
-    convertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type): unknown;
+    ConvertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown): unknown;
+    ConvertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type): unknown;
 }
 
 
@@ -936,7 +936,7 @@ export const GenericEnumConverter: {
 export type GenericEnumConverter = GenericEnumConverter$instance;
 
 export interface IdnElement$instance extends ConfigurationElement {
-    enabled: UriIdnScope;
+    Enabled: UriIdnScope;
 }
 
 
@@ -959,7 +959,7 @@ export const IgnoreSection: {
 export type IgnoreSection = IgnoreSection$instance;
 
 export interface IgnoreSectionHandler$instance {
-    create(parent: unknown, configContext: unknown, section: XmlNode): unknown;
+    Create(parent: unknown, configContext: unknown, section: XmlNode): unknown;
 }
 
 
@@ -978,8 +978,8 @@ export type IgnoreSectionHandler = IgnoreSectionHandler$instance & __IgnoreSecti
 
 
 export interface InfiniteIntConverter$instance extends ConfigurationConverterBase {
-    convertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown): unknown;
-    convertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type): unknown;
+    ConvertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown): unknown;
+    ConvertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type): unknown;
 }
 
 
@@ -991,8 +991,8 @@ export const InfiniteIntConverter: {
 export type InfiniteIntConverter = InfiniteIntConverter$instance;
 
 export interface InfiniteTimeSpanConverter$instance extends ConfigurationConverterBase {
-    convertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown): unknown;
-    convertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type): unknown;
+    ConvertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown): unknown;
+    ConvertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type): unknown;
 }
 
 
@@ -1004,8 +1004,8 @@ export const InfiniteTimeSpanConverter: {
 export type InfiniteTimeSpanConverter = InfiniteTimeSpanConverter$instance;
 
 export interface IntegerValidator$instance extends ConfigurationValidatorBase {
-    canValidate(type: Type): boolean;
-    validate(value: unknown): void;
+    CanValidate(type: Type): boolean;
+    Validate(value: unknown): void;
 }
 
 
@@ -1019,10 +1019,10 @@ export const IntegerValidator: {
 export type IntegerValidator = IntegerValidator$instance;
 
 export interface IntegerValidatorAttribute$instance extends ConfigurationValidatorAttribute {
-    excludeRange: boolean;
-    maxValue: int;
-    minValue: int;
-    readonly validatorInstance: ConfigurationValidatorBase;
+    ExcludeRange: boolean;
+    MaxValue: int;
+    MinValue: int;
+    readonly ValidatorInstance: ConfigurationValidatorBase;
 }
 
 
@@ -1034,7 +1034,7 @@ export const IntegerValidatorAttribute: {
 export type IntegerValidatorAttribute = IntegerValidatorAttribute$instance;
 
 export interface IriParsingElement$instance extends ConfigurationElement {
-    enabled: boolean;
+    Enabled: boolean;
 }
 
 
@@ -1046,12 +1046,12 @@ export const IriParsingElement: {
 export type IriParsingElement = IriParsingElement$instance;
 
 export interface KeyValueConfigurationCollection$instance extends ConfigurationElementCollection {
-    readonly allKeys: string[];
-    readonly item: KeyValueConfigurationElement;
-    add(keyValue: KeyValueConfigurationElement): void;
-    add(key: string, value: string): void;
-    clear(): void;
-    remove(key: string): void;
+    readonly AllKeys: string[];
+    readonly Item: KeyValueConfigurationElement;
+    Add(keyValue: KeyValueConfigurationElement): void;
+    Add(key: string, value: string): void;
+    Clear(): void;
+    Remove(key: string): void;
 }
 
 
@@ -1063,8 +1063,8 @@ export const KeyValueConfigurationCollection: {
 export type KeyValueConfigurationCollection = KeyValueConfigurationCollection$instance;
 
 export interface KeyValueConfigurationElement$instance extends ConfigurationElement {
-    readonly key: string;
-    value: string;
+    readonly Key: string;
+    Value: string;
 }
 
 
@@ -1076,13 +1076,13 @@ export const KeyValueConfigurationElement: {
 export type KeyValueConfigurationElement = KeyValueConfigurationElement$instance;
 
 export interface LocalFileSettingsProvider$instance extends SettingsProvider {
-    applicationName: string;
-    getPreviousVersion(context: SettingsContext, property: SettingsProperty): SettingsPropertyValue;
-    getPropertyValues(context: SettingsContext, properties: SettingsPropertyCollection): SettingsPropertyValueCollection;
-    initialize(name: string, values: NameValueCollection): void;
-    reset(context: SettingsContext): void;
-    setPropertyValues(context: SettingsContext, values: SettingsPropertyValueCollection): void;
-    upgrade(context: SettingsContext, properties: SettingsPropertyCollection): void;
+    ApplicationName: string;
+    GetPreviousVersion(context: SettingsContext, property: SettingsProperty): SettingsPropertyValue;
+    GetPropertyValues(context: SettingsContext, properties: SettingsPropertyCollection): SettingsPropertyValueCollection;
+    Initialize(name: string, values: NameValueCollection): void;
+    Reset(context: SettingsContext): void;
+    SetPropertyValues(context: SettingsContext, values: SettingsPropertyValueCollection): void;
+    Upgrade(context: SettingsContext, properties: SettingsPropertyCollection): void;
 }
 
 
@@ -1101,8 +1101,8 @@ export type LocalFileSettingsProvider = LocalFileSettingsProvider$instance & __L
 
 
 export interface LongValidator$instance extends ConfigurationValidatorBase {
-    canValidate(type: Type): boolean;
-    validate(value: unknown): void;
+    CanValidate(type: Type): boolean;
+    Validate(value: unknown): void;
 }
 
 
@@ -1116,10 +1116,10 @@ export const LongValidator: {
 export type LongValidator = LongValidator$instance;
 
 export interface LongValidatorAttribute$instance extends ConfigurationValidatorAttribute {
-    excludeRange: boolean;
-    maxValue: long;
-    minValue: long;
-    readonly validatorInstance: ConfigurationValidatorBase;
+    ExcludeRange: boolean;
+    MaxValue: long;
+    MinValue: long;
+    readonly ValidatorInstance: ConfigurationValidatorBase;
 }
 
 
@@ -1131,12 +1131,12 @@ export const LongValidatorAttribute: {
 export type LongValidatorAttribute = LongValidatorAttribute$instance;
 
 export interface NameValueConfigurationCollection$instance extends ConfigurationElementCollection {
-    readonly allKeys: string[];
-    item: NameValueConfigurationElement;
-    add(nameValue: NameValueConfigurationElement): void;
-    clear(): void;
-    remove(nameValue: NameValueConfigurationElement): void;
-    remove(name: string): void;
+    readonly AllKeys: string[];
+    Item: NameValueConfigurationElement;
+    Add(nameValue: NameValueConfigurationElement): void;
+    Clear(): void;
+    Remove(nameValue: NameValueConfigurationElement): void;
+    Remove(name: string): void;
 }
 
 
@@ -1148,8 +1148,8 @@ export const NameValueConfigurationCollection: {
 export type NameValueConfigurationCollection = NameValueConfigurationCollection$instance;
 
 export interface NameValueConfigurationElement$instance extends ConfigurationElement {
-    readonly name: string;
-    value: string;
+    readonly Name: string;
+    Value: string;
 }
 
 
@@ -1161,7 +1161,7 @@ export const NameValueConfigurationElement: {
 export type NameValueConfigurationElement = NameValueConfigurationElement$instance;
 
 export interface NameValueFileSectionHandler$instance {
-    create(parent: unknown, configContext: unknown, section: XmlNode): unknown;
+    Create(parent: unknown, configContext: unknown, section: XmlNode): unknown;
 }
 
 
@@ -1180,7 +1180,7 @@ export type NameValueFileSectionHandler = NameValueFileSectionHandler$instance &
 
 
 export interface NameValueSectionHandler$instance {
-    create(parent: unknown, context: unknown, section: XmlNode): unknown;
+    Create(parent: unknown, context: unknown, section: XmlNode): unknown;
 }
 
 
@@ -1210,8 +1210,8 @@ export const NoSettingsVersionUpgradeAttribute: {
 export type NoSettingsVersionUpgradeAttribute = NoSettingsVersionUpgradeAttribute$instance;
 
 export interface PositiveTimeSpanValidator$instance extends ConfigurationValidatorBase {
-    canValidate(type: Type): boolean;
-    validate(value: unknown): void;
+    CanValidate(type: Type): boolean;
+    Validate(value: unknown): void;
 }
 
 
@@ -1223,7 +1223,7 @@ export const PositiveTimeSpanValidator: {
 export type PositiveTimeSpanValidator = PositiveTimeSpanValidator$instance;
 
 export interface PositiveTimeSpanValidatorAttribute$instance extends ConfigurationValidatorAttribute {
-    readonly validatorInstance: ConfigurationValidatorBase;
+    readonly ValidatorInstance: ConfigurationValidatorBase;
 }
 
 
@@ -1235,20 +1235,20 @@ export const PositiveTimeSpanValidatorAttribute: {
 export type PositiveTimeSpanValidatorAttribute = PositiveTimeSpanValidatorAttribute$instance;
 
 export interface PropertyInformation$instance {
-    readonly converter: TypeConverter;
-    readonly defaultValue: unknown;
-    readonly description: string;
-    readonly isKey: boolean;
-    readonly isLocked: boolean;
-    readonly isModified: boolean;
-    readonly isRequired: boolean;
-    readonly lineNumber: int;
-    readonly name: string;
-    readonly source: string;
-    readonly type: Type;
-    readonly validator: ConfigurationValidatorBase;
-    value: unknown;
-    readonly valueOrigin: PropertyValueOrigin;
+    readonly Converter: TypeConverter;
+    readonly DefaultValue: unknown;
+    readonly Description: string;
+    readonly IsKey: boolean;
+    readonly IsLocked: boolean;
+    readonly IsModified: boolean;
+    readonly IsRequired: boolean;
+    readonly LineNumber: int;
+    readonly Name: string;
+    readonly Source: string;
+    readonly Type: Type;
+    readonly Validator: ConfigurationValidatorBase;
+    Value: unknown;
+    readonly ValueOrigin: PropertyValueOrigin;
 }
 
 
@@ -1260,9 +1260,9 @@ export const PropertyInformation: {
 export type PropertyInformation = PropertyInformation$instance;
 
 export interface PropertyInformationCollection$instance extends NameObjectCollectionBase {
-    readonly item: PropertyInformation;
-    copyTo(array: PropertyInformation[], index: int): void;
-    getEnumerator(): IEnumerator;
+    readonly Item: PropertyInformation;
+    CopyTo(array: PropertyInformation[], index: int): void;
+    GetEnumerator(): IEnumerator;
 }
 
 
@@ -1274,8 +1274,8 @@ export const PropertyInformationCollection: {
 export type PropertyInformationCollection = PropertyInformationCollection$instance;
 
 export interface ProtectedConfigurationProvider$instance extends ProviderBase {
-    decrypt(encryptedNode: XmlNode): XmlNode;
-    encrypt(node: XmlNode): XmlNode;
+    Decrypt(encryptedNode: XmlNode): XmlNode;
+    Encrypt(node: XmlNode): XmlNode;
 }
 
 
@@ -1286,8 +1286,8 @@ export const ProtectedConfigurationProvider: {
 export type ProtectedConfigurationProvider = ProtectedConfigurationProvider$instance;
 
 export interface ProtectedConfigurationProviderCollection$instance extends ProviderCollection {
-    readonly item: ProtectedConfigurationProvider | ProviderBase;
-    add(provider: ProviderBase): void;
+    readonly Item: ProtectedConfigurationProvider | ProviderBase;
+    Add(provider: ProviderBase): void;
 }
 
 
@@ -1299,8 +1299,8 @@ export const ProtectedConfigurationProviderCollection: {
 export type ProtectedConfigurationProviderCollection = ProtectedConfigurationProviderCollection$instance;
 
 export interface ProtectedConfigurationSection$instance extends ConfigurationSection {
-    defaultProvider: string;
-    readonly providers: ProviderSettingsCollection;
+    DefaultProvider: string;
+    readonly Providers: ProviderSettingsCollection;
 }
 
 
@@ -1312,7 +1312,7 @@ export const ProtectedConfigurationSection: {
 export type ProtectedConfigurationSection = ProtectedConfigurationSection$instance;
 
 export interface ProtectedProviderSettings$instance extends ConfigurationElement {
-    readonly providers: ProviderSettingsCollection;
+    readonly Providers: ProviderSettingsCollection;
 }
 
 
@@ -1324,9 +1324,9 @@ export const ProtectedProviderSettings: {
 export type ProtectedProviderSettings = ProtectedProviderSettings$instance;
 
 export interface ProviderSettings$instance extends ConfigurationElement {
-    name: string;
-    readonly parameters: NameValueCollection;
-    type: string;
+    Name: string;
+    readonly Parameters: NameValueCollection;
+    Type: string;
 }
 
 
@@ -1339,11 +1339,11 @@ export const ProviderSettings: {
 export type ProviderSettings = ProviderSettings$instance;
 
 export interface ProviderSettingsCollection$instance extends ConfigurationElementCollection {
-    add(provider: ProviderSettings): void;
-    clear(): void;
+    Add(provider: ProviderSettings): void;
+    Clear(): void;
     get_Item(key: string): ProviderSettings;
     get_Item(index: int): ProviderSettings;
-    remove(name: string): void;
+    Remove(name: string): void;
     set_Item(index: int, value: ProviderSettings): void;
 }
 
@@ -1356,8 +1356,8 @@ export const ProviderSettingsCollection: {
 export type ProviderSettingsCollection = ProviderSettingsCollection$instance;
 
 export interface RegexStringValidator$instance extends ConfigurationValidatorBase {
-    canValidate(type: Type): boolean;
-    validate(value: unknown): void;
+    CanValidate(type: Type): boolean;
+    Validate(value: unknown): void;
 }
 
 
@@ -1369,8 +1369,8 @@ export const RegexStringValidator: {
 export type RegexStringValidator = RegexStringValidator$instance;
 
 export interface RegexStringValidatorAttribute$instance extends ConfigurationValidatorAttribute {
-    readonly regex: string;
-    readonly validatorInstance: ConfigurationValidatorBase;
+    readonly Regex: string;
+    readonly ValidatorInstance: ConfigurationValidatorBase;
 }
 
 
@@ -1382,18 +1382,18 @@ export const RegexStringValidatorAttribute: {
 export type RegexStringValidatorAttribute = RegexStringValidatorAttribute$instance;
 
 export interface RsaProtectedConfigurationProvider$instance extends ProtectedConfigurationProvider {
-    readonly cspProviderName: string;
-    readonly keyContainerName: string;
-    readonly rsaPublicKey: RSAParameters;
-    readonly useFIPS: boolean;
-    readonly useMachineContainer: boolean;
-    readonly useOAEP: boolean;
-    addKey(keySize: int, exportable: boolean): void;
-    decrypt(encryptedNode: XmlNode): XmlNode;
-    deleteKey(): void;
-    encrypt(node: XmlNode): XmlNode;
-    exportKey(xmlFileName: string, includePrivateParameters: boolean): void;
-    importKey(xmlFileName: string, exportable: boolean): void;
+    readonly CspProviderName: string;
+    readonly KeyContainerName: string;
+    readonly RsaPublicKey: RSAParameters;
+    readonly UseFIPS: boolean;
+    readonly UseMachineContainer: boolean;
+    readonly UseOAEP: boolean;
+    AddKey(keySize: int, exportable: boolean): void;
+    Decrypt(encryptedNode: XmlNode): XmlNode;
+    DeleteKey(): void;
+    Encrypt(node: XmlNode): XmlNode;
+    ExportKey(xmlFileName: string, includePrivateParameters: boolean): void;
+    ImportKey(xmlFileName: string, exportable: boolean): void;
 }
 
 
@@ -1405,8 +1405,8 @@ export const RsaProtectedConfigurationProvider: {
 export type RsaProtectedConfigurationProvider = RsaProtectedConfigurationProvider$instance;
 
 export interface SchemeSettingElement$instance extends ConfigurationElement {
-    readonly genericUriParserOptions: GenericUriParserOptions;
-    readonly name: string;
+    readonly GenericUriParserOptions: GenericUriParserOptions;
+    readonly Name: string;
 }
 
 
@@ -1418,10 +1418,10 @@ export const SchemeSettingElement: {
 export type SchemeSettingElement = SchemeSettingElement$instance;
 
 export interface SchemeSettingElementCollection$instance extends ConfigurationElementCollection {
-    readonly collectionType: ConfigurationElementCollectionType;
+    readonly CollectionType: ConfigurationElementCollectionType;
     get_Item(index: int): SchemeSettingElement;
     get_Item(name: string): SchemeSettingElement;
-    indexOf(element: SchemeSettingElement): int;
+    IndexOf(element: SchemeSettingElement): int;
 }
 
 
@@ -1433,34 +1433,34 @@ export const SchemeSettingElementCollection: {
 export type SchemeSettingElementCollection = SchemeSettingElementCollection$instance;
 
 export interface SectionInformation$instance {
-    allowDefinition: ConfigurationAllowDefinition;
-    allowExeDefinition: ConfigurationAllowExeDefinition;
-    allowLocation: boolean;
-    allowOverride: boolean;
-    configSource: string;
-    forceSave: boolean;
-    inheritInChildApplications: boolean;
-    readonly isDeclarationRequired: boolean;
-    readonly isDeclared: boolean;
-    readonly isLocked: boolean;
-    readonly isProtected: boolean;
-    readonly name: string;
-    overrideMode: OverrideMode;
-    overrideModeDefault: OverrideMode;
-    readonly overrideModeEffective: OverrideMode;
-    readonly protectionProvider: ProtectedConfigurationProvider;
-    requirePermission: boolean;
-    restartOnExternalChanges: boolean;
-    readonly sectionName: string;
-    type: string;
-    forceDeclaration(): void;
-    forceDeclaration(force: boolean): void;
-    getParentSection(): ConfigurationSection;
-    getRawXml(): string;
-    protectSection(protectionProvider: string): void;
-    revertToParent(): void;
-    setRawXml(rawXml: string): void;
-    unprotectSection(): void;
+    AllowDefinition: ConfigurationAllowDefinition;
+    AllowExeDefinition: ConfigurationAllowExeDefinition;
+    AllowLocation: boolean;
+    AllowOverride: boolean;
+    ConfigSource: string;
+    ForceSave: boolean;
+    InheritInChildApplications: boolean;
+    readonly IsDeclarationRequired: boolean;
+    readonly IsDeclared: boolean;
+    readonly IsLocked: boolean;
+    readonly IsProtected: boolean;
+    readonly Name: string;
+    OverrideMode: OverrideMode;
+    OverrideModeDefault: OverrideMode;
+    readonly OverrideModeEffective: OverrideMode;
+    readonly ProtectionProvider: ProtectedConfigurationProvider;
+    RequirePermission: boolean;
+    RestartOnExternalChanges: boolean;
+    readonly SectionName: string;
+    Type: string;
+    ForceDeclaration(): void;
+    ForceDeclaration(force: boolean): void;
+    GetParentSection(): ConfigurationSection;
+    GetRawXml(): string;
+    ProtectSection(protectionProvider: string): void;
+    RevertToParent(): void;
+    SetRawXml(rawXml: string): void;
+    UnprotectSection(): void;
 }
 
 
@@ -1483,10 +1483,10 @@ export const SettingAttribute: {
 export type SettingAttribute = SettingAttribute$instance;
 
 export interface SettingChangingEventArgs$instance extends CancelEventArgs {
-    readonly newValue: unknown;
-    readonly settingClass: string;
-    readonly settingKey: string;
-    readonly settingName: string;
+    readonly NewValue: unknown;
+    readonly SettingClass: string;
+    readonly SettingKey: string;
+    readonly SettingName: string;
 }
 
 
@@ -1498,11 +1498,11 @@ export const SettingChangingEventArgs: {
 export type SettingChangingEventArgs = SettingChangingEventArgs$instance;
 
 export interface SettingElement$instance extends ConfigurationElement {
-    name: string;
-    serializeAs: SettingsSerializeAs;
-    value: SettingValueElement;
-    equals(settings: unknown): boolean;
-    getHashCode(): int;
+    Name: string;
+    SerializeAs: SettingsSerializeAs;
+    Value: SettingValueElement;
+    Equals(settings: unknown): boolean;
+    GetHashCode(): int;
 }
 
 
@@ -1515,11 +1515,11 @@ export const SettingElement: {
 export type SettingElement = SettingElement$instance;
 
 export interface SettingElementCollection$instance extends ConfigurationElementCollection {
-    readonly collectionType: ConfigurationElementCollectionType;
-    add(element: SettingElement): void;
-    clear(): void;
-    get(elementKey: string): SettingElement;
-    remove(element: SettingElement): void;
+    readonly CollectionType: ConfigurationElementCollectionType;
+    Add(element: SettingElement): void;
+    Clear(): void;
+    Get(elementKey: string): SettingElement;
+    Remove(element: SettingElement): void;
 }
 
 
@@ -1543,19 +1543,19 @@ export const SettingsAttributeDictionary: {
 export type SettingsAttributeDictionary = SettingsAttributeDictionary$instance;
 
 export interface SettingsBase$instance {
-    readonly context: SettingsContext;
-    readonly isSynchronized: boolean;
-    item: unknown;
-    readonly properties: SettingsPropertyCollection;
-    readonly propertyValues: SettingsPropertyValueCollection;
-    readonly providers: SettingsProviderCollection;
-    initialize(context: SettingsContext, properties: SettingsPropertyCollection, providers: SettingsProviderCollection): void;
-    save(): void;
+    readonly Context: SettingsContext;
+    readonly IsSynchronized: boolean;
+    Item: unknown;
+    readonly Properties: SettingsPropertyCollection;
+    readonly PropertyValues: SettingsPropertyValueCollection;
+    readonly Providers: SettingsProviderCollection;
+    Initialize(context: SettingsContext, properties: SettingsPropertyCollection, providers: SettingsProviderCollection): void;
+    Save(): void;
 }
 
 
 export const SettingsBase: {
-    synchronized(settingsBase: SettingsBase): SettingsBase;
+    Synchronized(settingsBase: SettingsBase): SettingsBase;
 };
 
 
@@ -1573,7 +1573,7 @@ export const SettingsContext: {
 export type SettingsContext = SettingsContext$instance;
 
 export interface SettingsDescriptionAttribute$instance extends Attribute {
-    readonly description: string;
+    readonly Description: string;
 }
 
 
@@ -1585,7 +1585,7 @@ export const SettingsDescriptionAttribute: {
 export type SettingsDescriptionAttribute = SettingsDescriptionAttribute$instance;
 
 export interface SettingsGroupDescriptionAttribute$instance extends Attribute {
-    readonly description: string;
+    readonly Description: string;
 }
 
 
@@ -1597,7 +1597,7 @@ export const SettingsGroupDescriptionAttribute: {
 export type SettingsGroupDescriptionAttribute = SettingsGroupDescriptionAttribute$instance;
 
 export interface SettingsGroupNameAttribute$instance extends Attribute {
-    readonly groupName: string;
+    readonly GroupName: string;
 }
 
 
@@ -1609,7 +1609,7 @@ export const SettingsGroupNameAttribute: {
 export type SettingsGroupNameAttribute = SettingsGroupNameAttribute$instance;
 
 export interface SettingsLoadedEventArgs$instance extends EventArgs {
-    readonly provider: SettingsProvider;
+    readonly Provider: SettingsProvider;
 }
 
 
@@ -1621,7 +1621,7 @@ export const SettingsLoadedEventArgs: {
 export type SettingsLoadedEventArgs = SettingsLoadedEventArgs$instance;
 
 export interface SettingsManageabilityAttribute$instance extends Attribute {
-    readonly manageability: SettingsManageability;
+    readonly Manageability: SettingsManageability;
 }
 
 
@@ -1633,16 +1633,16 @@ export const SettingsManageabilityAttribute: {
 export type SettingsManageabilityAttribute = SettingsManageabilityAttribute$instance;
 
 export interface SettingsProperty$instance {
-    readonly attributes: SettingsAttributeDictionary;
-    defaultValue: unknown;
-    isReadOnly: boolean;
-    name: string;
-    propertyType: Type;
-    get provider(): SettingsProvider | undefined;
-    set provider(value: SettingsProvider);
-    serializeAs: SettingsSerializeAs;
-    throwOnErrorDeserializing: boolean;
-    throwOnErrorSerializing: boolean;
+    readonly Attributes: SettingsAttributeDictionary;
+    DefaultValue: unknown;
+    IsReadOnly: boolean;
+    Name: string;
+    PropertyType: Type;
+    get Provider(): SettingsProvider | undefined;
+    set Provider(value: SettingsProvider);
+    SerializeAs: SettingsSerializeAs;
+    ThrowOnErrorDeserializing: boolean;
+    ThrowOnErrorSerializing: boolean;
 }
 
 
@@ -1656,17 +1656,17 @@ export const SettingsProperty: {
 export type SettingsProperty = SettingsProperty$instance;
 
 export interface SettingsPropertyCollection$instance {
-    readonly count: int;
-    readonly isSynchronized: boolean;
-    readonly item: SettingsProperty;
-    readonly syncRoot: unknown;
-    add(property: SettingsProperty): void;
-    clear(): void;
-    clone(): unknown;
-    copyTo(array: ClrArray, index: int): void;
-    getEnumerator(): IEnumerator;
-    remove(name: string): void;
-    setReadOnly(): void;
+    readonly Count: int;
+    readonly IsSynchronized: boolean;
+    readonly Item: SettingsProperty;
+    readonly SyncRoot: unknown;
+    Add(property: SettingsProperty): void;
+    Clear(): void;
+    Clone(): unknown;
+    CopyTo(array: ClrArray, index: int): void;
+    GetEnumerator(): IEnumerator;
+    Remove(name: string): void;
+    SetReadOnly(): void;
 }
 
 
@@ -1704,13 +1704,13 @@ export const SettingsPropertyNotFoundException: {
 export type SettingsPropertyNotFoundException = SettingsPropertyNotFoundException$instance;
 
 export interface SettingsPropertyValue$instance {
-    deserialized: boolean;
-    isDirty: boolean;
-    readonly name: string;
-    readonly property: SettingsProperty;
-    propertyValue: unknown;
-    serializedValue: unknown;
-    readonly usingDefaultValue: boolean;
+    Deserialized: boolean;
+    IsDirty: boolean;
+    readonly Name: string;
+    readonly Property: SettingsProperty;
+    PropertyValue: unknown;
+    SerializedValue: unknown;
+    readonly UsingDefaultValue: boolean;
 }
 
 
@@ -1722,17 +1722,17 @@ export const SettingsPropertyValue: {
 export type SettingsPropertyValue = SettingsPropertyValue$instance;
 
 export interface SettingsPropertyValueCollection$instance {
-    readonly count: int;
-    readonly isSynchronized: boolean;
-    readonly item: SettingsPropertyValue;
-    readonly syncRoot: unknown;
-    add(property: SettingsPropertyValue): void;
-    clear(): void;
-    clone(): unknown;
-    copyTo(array: ClrArray, index: int): void;
-    getEnumerator(): IEnumerator;
-    remove(name: string): void;
-    setReadOnly(): void;
+    readonly Count: int;
+    readonly IsSynchronized: boolean;
+    readonly Item: SettingsPropertyValue;
+    readonly SyncRoot: unknown;
+    Add(property: SettingsPropertyValue): void;
+    Clear(): void;
+    Clone(): unknown;
+    CopyTo(array: ClrArray, index: int): void;
+    GetEnumerator(): IEnumerator;
+    Remove(name: string): void;
+    SetReadOnly(): void;
 }
 
 
@@ -1757,9 +1757,9 @@ export const SettingsPropertyWrongTypeException: {
 export type SettingsPropertyWrongTypeException = SettingsPropertyWrongTypeException$instance;
 
 export interface SettingsProvider$instance extends ProviderBase {
-    applicationName: string;
-    getPropertyValues(context: SettingsContext, collection: SettingsPropertyCollection): SettingsPropertyValueCollection;
-    setPropertyValues(context: SettingsContext, collection: SettingsPropertyValueCollection): void;
+    ApplicationName: string;
+    GetPropertyValues(context: SettingsContext, collection: SettingsPropertyCollection): SettingsPropertyValueCollection;
+    SetPropertyValues(context: SettingsContext, collection: SettingsPropertyValueCollection): void;
 }
 
 
@@ -1770,7 +1770,7 @@ export const SettingsProvider: {
 export type SettingsProvider = SettingsProvider$instance;
 
 export interface SettingsProviderAttribute$instance extends Attribute {
-    readonly providerTypeName: string;
+    readonly ProviderTypeName: string;
 }
 
 
@@ -1783,8 +1783,8 @@ export const SettingsProviderAttribute: {
 export type SettingsProviderAttribute = SettingsProviderAttribute$instance;
 
 export interface SettingsProviderCollection$instance extends ProviderCollection {
-    readonly item: ProviderBase | SettingsProvider;
-    add(provider: ProviderBase): void;
+    readonly Item: ProviderBase | SettingsProvider;
+    Add(provider: ProviderBase): void;
 }
 
 
@@ -1796,7 +1796,7 @@ export const SettingsProviderCollection: {
 export type SettingsProviderCollection = SettingsProviderCollection$instance;
 
 export interface SettingsSerializeAsAttribute$instance extends Attribute {
-    readonly serializeAs: SettingsSerializeAs;
+    readonly SerializeAs: SettingsSerializeAs;
 }
 
 
@@ -1808,9 +1808,9 @@ export const SettingsSerializeAsAttribute: {
 export type SettingsSerializeAsAttribute = SettingsSerializeAsAttribute$instance;
 
 export interface SettingValueElement$instance extends ConfigurationElement {
-    valueXml: XmlNode;
-    equals(settingValue: unknown): boolean;
-    getHashCode(): int;
+    ValueXml: XmlNode;
+    Equals(settingValue: unknown): boolean;
+    GetHashCode(): int;
 }
 
 
@@ -1822,7 +1822,7 @@ export const SettingValueElement: {
 export type SettingValueElement = SettingValueElement$instance;
 
 export interface SingleTagSectionHandler$instance {
-    create(parent: unknown, context: unknown, section: XmlNode): unknown;
+    Create(parent: unknown, context: unknown, section: XmlNode): unknown;
 }
 
 
@@ -1841,7 +1841,7 @@ export type SingleTagSectionHandler = SingleTagSectionHandler$instance & __Singl
 
 
 export interface SpecialSettingAttribute$instance extends Attribute {
-    readonly specialSetting: SpecialSetting;
+    readonly SpecialSetting: SpecialSetting;
 }
 
 
@@ -1853,8 +1853,8 @@ export const SpecialSettingAttribute: {
 export type SpecialSettingAttribute = SpecialSettingAttribute$instance;
 
 export interface StringValidator$instance extends ConfigurationValidatorBase {
-    canValidate(type: Type): boolean;
-    validate(value: unknown): void;
+    CanValidate(type: Type): boolean;
+    Validate(value: unknown): void;
 }
 
 
@@ -1868,10 +1868,10 @@ export const StringValidator: {
 export type StringValidator = StringValidator$instance;
 
 export interface StringValidatorAttribute$instance extends ConfigurationValidatorAttribute {
-    invalidCharacters: string;
-    maxLength: int;
-    minLength: int;
-    readonly validatorInstance: ConfigurationValidatorBase;
+    InvalidCharacters: string;
+    MaxLength: int;
+    MinLength: int;
+    readonly ValidatorInstance: ConfigurationValidatorBase;
 }
 
 
@@ -1883,8 +1883,8 @@ export const StringValidatorAttribute: {
 export type StringValidatorAttribute = StringValidatorAttribute$instance;
 
 export interface SubclassTypeValidator$instance extends ConfigurationValidatorBase {
-    canValidate(type: Type): boolean;
-    validate(value: unknown): void;
+    CanValidate(type: Type): boolean;
+    Validate(value: unknown): void;
 }
 
 
@@ -1896,8 +1896,8 @@ export const SubclassTypeValidator: {
 export type SubclassTypeValidator = SubclassTypeValidator$instance;
 
 export interface SubclassTypeValidatorAttribute$instance extends ConfigurationValidatorAttribute {
-    readonly baseClass: Type;
-    readonly validatorInstance: ConfigurationValidatorBase;
+    readonly BaseClass: Type;
+    readonly ValidatorInstance: ConfigurationValidatorBase;
 }
 
 
@@ -1909,8 +1909,8 @@ export const SubclassTypeValidatorAttribute: {
 export type SubclassTypeValidatorAttribute = SubclassTypeValidatorAttribute$instance;
 
 export interface TimeSpanMinutesConverter$instance extends ConfigurationConverterBase {
-    convertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown): unknown;
-    convertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type): unknown;
+    ConvertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown): unknown;
+    ConvertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type): unknown;
 }
 
 
@@ -1922,8 +1922,8 @@ export const TimeSpanMinutesConverter: {
 export type TimeSpanMinutesConverter = TimeSpanMinutesConverter$instance;
 
 export interface TimeSpanMinutesOrInfiniteConverter$instance extends TimeSpanMinutesConverter {
-    convertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown): unknown;
-    convertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type): unknown;
+    ConvertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown): unknown;
+    ConvertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type): unknown;
 }
 
 
@@ -1935,8 +1935,8 @@ export const TimeSpanMinutesOrInfiniteConverter: {
 export type TimeSpanMinutesOrInfiniteConverter = TimeSpanMinutesOrInfiniteConverter$instance;
 
 export interface TimeSpanSecondsConverter$instance extends ConfigurationConverterBase {
-    convertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown): unknown;
-    convertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type): unknown;
+    ConvertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown): unknown;
+    ConvertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type): unknown;
 }
 
 
@@ -1948,8 +1948,8 @@ export const TimeSpanSecondsConverter: {
 export type TimeSpanSecondsConverter = TimeSpanSecondsConverter$instance;
 
 export interface TimeSpanSecondsOrInfiniteConverter$instance extends TimeSpanSecondsConverter {
-    convertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown): unknown;
-    convertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type): unknown;
+    ConvertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown): unknown;
+    ConvertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type): unknown;
 }
 
 
@@ -1961,8 +1961,8 @@ export const TimeSpanSecondsOrInfiniteConverter: {
 export type TimeSpanSecondsOrInfiniteConverter = TimeSpanSecondsOrInfiniteConverter$instance;
 
 export interface TimeSpanValidator$instance extends ConfigurationValidatorBase {
-    canValidate(type: Type): boolean;
-    validate(value: unknown): void;
+    CanValidate(type: Type): boolean;
+    Validate(value: unknown): void;
 }
 
 
@@ -1976,27 +1976,27 @@ export const TimeSpanValidator: {
 export type TimeSpanValidator = TimeSpanValidator$instance;
 
 export interface TimeSpanValidatorAttribute$instance extends ConfigurationValidatorAttribute {
-    excludeRange: boolean;
-    readonly maxValue: TimeSpan;
-    maxValueString: string;
-    readonly minValue: TimeSpan;
-    minValueString: string;
-    readonly validatorInstance: ConfigurationValidatorBase;
+    ExcludeRange: boolean;
+    readonly MaxValue: TimeSpan;
+    MaxValueString: string;
+    readonly MinValue: TimeSpan;
+    MinValueString: string;
+    readonly ValidatorInstance: ConfigurationValidatorBase;
 }
 
 
 export const TimeSpanValidatorAttribute: {
     new(): TimeSpanValidatorAttribute;
-    readonly timeSpanMinValue: string;
-    readonly timeSpanMaxValue: string;
+    readonly TimeSpanMinValue: string;
+    readonly TimeSpanMaxValue: string;
 };
 
 
 export type TimeSpanValidatorAttribute = TimeSpanValidatorAttribute$instance;
 
 export interface TypeNameConverter$instance extends ConfigurationConverterBase {
-    convertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown): unknown;
-    convertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type): unknown;
+    ConvertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown): unknown;
+    ConvertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type): unknown;
 }
 
 
@@ -2008,9 +2008,9 @@ export const TypeNameConverter: {
 export type TypeNameConverter = TypeNameConverter$instance;
 
 export interface UriSection$instance extends ConfigurationSection {
-    readonly idn: IdnElement;
-    readonly iriParsing: IriParsingElement;
-    readonly schemeSettings: SchemeSettingElementCollection;
+    readonly Idn: IdnElement;
+    readonly IriParsing: IriParsingElement;
+    readonly SchemeSettings: SchemeSettingElementCollection;
 }
 
 
@@ -2044,8 +2044,8 @@ export const UserSettingsGroup: {
 export type UserSettingsGroup = UserSettingsGroup$instance;
 
 export interface WhiteSpaceTrimStringConverter$instance extends ConfigurationConverterBase {
-    convertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown): unknown;
-    convertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type): unknown;
+    ConvertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown): unknown;
+    ConvertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type): unknown;
 }
 
 
@@ -2057,27 +2057,27 @@ export const WhiteSpaceTrimStringConverter: {
 export type WhiteSpaceTrimStringConverter = WhiteSpaceTrimStringConverter$instance;
 
 export abstract class ConfigurationManager$instance {
-    static readonly appSettings: NameValueCollection;
-    static readonly connectionStrings: ConnectionStringSettingsCollection;
-    static getSection(sectionName: string): unknown;
-    static openExeConfiguration(userLevel: ConfigurationUserLevel): Configuration;
-    static openExeConfiguration(exePath: string): Configuration;
-    static openMachineConfiguration(): Configuration;
-    static openMappedExeConfiguration(fileMap: ExeConfigurationFileMap, userLevel: ConfigurationUserLevel, preLoad: boolean): Configuration;
-    static openMappedExeConfiguration(fileMap: ExeConfigurationFileMap, userLevel: ConfigurationUserLevel): Configuration;
-    static openMappedMachineConfiguration(fileMap: ConfigurationFileMap): Configuration;
-    static refreshSection(sectionName: string): void;
+    static readonly AppSettings: NameValueCollection;
+    static readonly ConnectionStrings: ConnectionStringSettingsCollection;
+    static GetSection(sectionName: string): unknown;
+    static OpenExeConfiguration(userLevel: ConfigurationUserLevel): Configuration;
+    static OpenExeConfiguration(exePath: string): Configuration;
+    static OpenMachineConfiguration(): Configuration;
+    static OpenMappedExeConfiguration(fileMap: ExeConfigurationFileMap, userLevel: ConfigurationUserLevel, preLoad: boolean): Configuration;
+    static OpenMappedExeConfiguration(fileMap: ExeConfigurationFileMap, userLevel: ConfigurationUserLevel): Configuration;
+    static OpenMappedMachineConfiguration(fileMap: ConfigurationFileMap): Configuration;
+    static RefreshSection(sectionName: string): void;
 }
 
 
 export type ConfigurationManager = ConfigurationManager$instance;
 
 export abstract class ProtectedConfiguration$instance {
-    static readonly rsaProviderName: string;
-    static readonly dataProtectionProviderName: string;
-    static readonly protectedDataSectionName: string;
-    static readonly providers: ProtectedConfigurationProviderCollection;
-    static readonly defaultProvider: string;
+    static readonly RsaProviderName: string;
+    static readonly DataProtectionProviderName: string;
+    static readonly ProtectedDataSectionName: string;
+    static readonly Providers: ProtectedConfigurationProviderCollection;
+    static readonly DefaultProvider: string;
 }
 
 

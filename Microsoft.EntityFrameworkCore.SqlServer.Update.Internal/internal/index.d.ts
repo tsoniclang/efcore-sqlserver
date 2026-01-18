@@ -21,8 +21,8 @@ import * as Microsoft_EntityFrameworkCore_Update_Internal from "@tsonic/efcore/M
 import type { AffectedCountModificationCommandBatch, IModificationCommand, IModificationCommandBatchFactory, IModificationCommandFactory, INonTrackedModificationCommand, IReadOnlyModificationCommand, IUpdateSqlGenerator, ModificationCommand, ModificationCommandBatch, ModificationCommandBatchFactoryDependencies, ModificationCommandParameters, NonTrackedModificationCommandParameters, ResultSetMapping, UpdateAndSelectSqlGenerator, UpdateSqlGeneratorDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Update.js";
 
 export interface ISqlServerUpdateSqlGenerator$instance extends IUpdateSqlGenerator {
-    appendBulkInsertOperation(commandStringBuilder: StringBuilder, modificationCommands: IReadOnlyList<IReadOnlyModificationCommand>, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
-    appendBulkInsertOperation(commandStringBuilder: StringBuilder, modificationCommands: IReadOnlyList<IReadOnlyModificationCommand>, commandPosition: int): ResultSetMapping;
+    AppendBulkInsertOperation(commandStringBuilder: StringBuilder, modificationCommands: IReadOnlyList<IReadOnlyModificationCommand>, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
+    AppendBulkInsertOperation(commandStringBuilder: StringBuilder, modificationCommands: IReadOnlyList<IReadOnlyModificationCommand>, commandPosition: int): ResultSetMapping;
 }
 
 
@@ -41,10 +41,10 @@ export const SqlServerModificationCommand: {
 export type SqlServerModificationCommand = SqlServerModificationCommand$instance;
 
 export interface SqlServerModificationCommandBatch$instance extends AffectedCountModificationCommandBatch {
-    complete(moreBatchesExpected: boolean): void;
-    execute(connection: IRelationalConnection): void;
-    executeAsync(connection: IRelationalConnection, cancellationToken?: CancellationToken): Task;
-    tryAddCommand(modificationCommand: IReadOnlyModificationCommand): boolean;
+    Complete(moreBatchesExpected: boolean): void;
+    Execute(connection: IRelationalConnection): void;
+    ExecuteAsync(connection: IRelationalConnection, cancellationToken?: CancellationToken): Task;
+    TryAddCommand(modificationCommand: IReadOnlyModificationCommand): boolean;
 }
 
 
@@ -56,7 +56,7 @@ export const SqlServerModificationCommandBatch: {
 export type SqlServerModificationCommandBatch = SqlServerModificationCommandBatch$instance;
 
 export interface SqlServerModificationCommandBatchFactory$instance {
-    create(): ModificationCommandBatch;
+    Create(): ModificationCommandBatch;
 }
 
 
@@ -68,8 +68,8 @@ export const SqlServerModificationCommandBatchFactory: {
 export type SqlServerModificationCommandBatchFactory = SqlServerModificationCommandBatchFactory$instance;
 
 export interface SqlServerModificationCommandFactory$instance {
-    createModificationCommand(modificationCommandParameters: ModificationCommandParameters): IModificationCommand;
-    createNonTrackedModificationCommand(modificationCommandParameters: NonTrackedModificationCommandParameters): INonTrackedModificationCommand;
+    CreateModificationCommand(modificationCommandParameters: ModificationCommandParameters): IModificationCommand;
+    CreateNonTrackedModificationCommand(modificationCommandParameters: NonTrackedModificationCommandParameters): INonTrackedModificationCommand;
 }
 
 
@@ -81,13 +81,13 @@ export const SqlServerModificationCommandFactory: {
 export type SqlServerModificationCommandFactory = SqlServerModificationCommandFactory$instance;
 
 export interface SqlServerUpdateSqlGenerator$instance extends UpdateAndSelectSqlGenerator {
-    appendBatchHeader(commandStringBuilder: StringBuilder): void;
-    appendBulkInsertOperation(commandStringBuilder: StringBuilder, modificationCommands: IReadOnlyList<IReadOnlyModificationCommand>, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
-    appendDeleteOperation(commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
-    appendInsertOperation(commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
-    appendStoredProcedureCall(commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
-    appendUpdateOperation(commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
-    prependEnsureAutocommit(commandStringBuilder: StringBuilder): void;
+    AppendBatchHeader(commandStringBuilder: StringBuilder): void;
+    AppendBulkInsertOperation(commandStringBuilder: StringBuilder, modificationCommands: IReadOnlyList<IReadOnlyModificationCommand>, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
+    AppendDeleteOperation(commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
+    AppendInsertOperation(commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
+    AppendStoredProcedureCall(commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
+    AppendUpdateOperation(commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
+    PrependEnsureAutocommit(commandStringBuilder: StringBuilder): void;
 }
 
 

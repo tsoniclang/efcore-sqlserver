@@ -18,9 +18,9 @@ import type { IColumn, IEntityType, IIndex, IKey, IModel, IProperty, IRelational
 import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection.js";
 
 export interface SqlServerAnnotationCodeGenerator$instance extends AnnotationCodeGenerator {
-    generateFluentApiCalls(model: IModel, annotations: IDictionary<System_Internal.String, IAnnotation>): IReadOnlyList<MethodCallCodeFragment>;
-    generateFluentApiCalls(property: IProperty, annotations: IDictionary<System_Internal.String, IAnnotation>): IReadOnlyList<MethodCallCodeFragment>;
-    generateFluentApiCalls(entityType: IEntityType, annotations: IDictionary<System_Internal.String, IAnnotation>): IReadOnlyList<MethodCallCodeFragment>;
+    GenerateFluentApiCalls(model: IModel, annotations: IDictionary<System_Internal.String, IAnnotation>): IReadOnlyList<MethodCallCodeFragment>;
+    GenerateFluentApiCalls(property: IProperty, annotations: IDictionary<System_Internal.String, IAnnotation>): IReadOnlyList<MethodCallCodeFragment>;
+    GenerateFluentApiCalls(entityType: IEntityType, annotations: IDictionary<System_Internal.String, IAnnotation>): IReadOnlyList<MethodCallCodeFragment>;
 }
 
 
@@ -32,17 +32,17 @@ export const SqlServerAnnotationCodeGenerator: {
 export type SqlServerAnnotationCodeGenerator = SqlServerAnnotationCodeGenerator$instance;
 
 export interface SqlServerCSharpRuntimeAnnotationCodeGenerator$instance extends RelationalCSharpRuntimeAnnotationCodeGenerator {
-    generate(model: IModel, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
-    generate(model: IRelationalModel, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
-    generate(property: IProperty, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
-    generate(column: IColumn, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
-    generate(index: IIndex, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
-    generate(index: ITableIndex, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
-    generate(key: IKey, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
-    generate(uniqueConstraint: IUniqueConstraint, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
-    generate(entityType: IEntityType, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
-    generate(table: ITable, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
-    generate(overrides: IRelationalPropertyOverrides, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
+    Generate(model: IModel, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
+    Generate(model: IRelationalModel, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
+    Generate(property: IProperty, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
+    Generate(column: IColumn, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
+    Generate(index: IIndex, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
+    Generate(index: ITableIndex, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
+    Generate(key: IKey, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
+    Generate(uniqueConstraint: IUniqueConstraint, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
+    Generate(entityType: IEntityType, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
+    Generate(table: ITable, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
+    Generate(overrides: IRelationalPropertyOverrides, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
 }
 
 
@@ -54,7 +54,7 @@ export const SqlServerCSharpRuntimeAnnotationCodeGenerator: {
 export type SqlServerCSharpRuntimeAnnotationCodeGenerator = SqlServerCSharpRuntimeAnnotationCodeGenerator$instance;
 
 export interface SqlServerDesignTimeServices$instance {
-    configureDesignTimeServices(serviceCollection: IServiceCollection): void;
+    ConfigureDesignTimeServices(serviceCollection: IServiceCollection): void;
 }
 
 

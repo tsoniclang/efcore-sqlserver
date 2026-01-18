@@ -21,13 +21,13 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface DeviceCodeInfo$instance {
-    readonly clientId: string;
-    readonly deviceCode: string;
-    readonly expiresOn: DateTimeOffset;
-    readonly message: string;
-    readonly scopes: IReadOnlyCollection<System_Internal.String>;
-    readonly userCode: string;
-    readonly verificationUri: Uri;
+    readonly ClientId: string;
+    readonly DeviceCode: string;
+    readonly ExpiresOn: DateTimeOffset;
+    readonly Message: string;
+    readonly Scopes: IReadOnlyCollection<System_Internal.String>;
+    readonly UserCode: string;
+    readonly VerificationUri: Uri;
 }
 
 
@@ -39,7 +39,7 @@ export const DeviceCodeInfo: {
 export type DeviceCodeInfo = DeviceCodeInfo$instance;
 
 export interface TokenCacheData$instance {
-    readonly cacheBytes: ReadOnlyMemory<System_Internal.Byte>;
+    readonly CacheBytes: ReadOnlyMemory<System_Internal.Byte>;
 }
 
 
@@ -63,27 +63,27 @@ export const AuthenticationFailedException: {
 export type AuthenticationFailedException = AuthenticationFailedException$instance;
 
 export interface AuthenticationRecord$instance {
-    readonly authority: string;
-    readonly clientId: string;
-    readonly homeAccountId: string;
-    readonly tenantId: string;
-    readonly username: string;
-    serialize(stream: Stream, cancellationToken?: CancellationToken): void;
-    serializeAsync(stream: Stream, cancellationToken?: CancellationToken): Task;
+    readonly Authority: string;
+    readonly ClientId: string;
+    readonly HomeAccountId: string;
+    readonly TenantId: string;
+    readonly Username: string;
+    Serialize(stream: Stream, cancellationToken?: CancellationToken): void;
+    SerializeAsync(stream: Stream, cancellationToken?: CancellationToken): Task;
 }
 
 
 export const AuthenticationRecord: {
     new(): AuthenticationRecord;
-    deserialize(stream: Stream, cancellationToken?: CancellationToken): AuthenticationRecord;
-    deserializeAsync(stream: Stream, cancellationToken?: CancellationToken): Task<AuthenticationRecord>;
+    Deserialize(stream: Stream, cancellationToken?: CancellationToken): AuthenticationRecord;
+    DeserializeAsync(stream: Stream, cancellationToken?: CancellationToken): Task<AuthenticationRecord>;
 };
 
 
 export type AuthenticationRecord = AuthenticationRecord$instance;
 
 export interface AuthenticationRequiredException$instance extends CredentialUnavailableException {
-    readonly tokenRequestContext: TokenRequestContext;
+    readonly TokenRequestContext: TokenRequestContext;
 }
 
 
@@ -96,10 +96,10 @@ export const AuthenticationRequiredException: {
 export type AuthenticationRequiredException = AuthenticationRequiredException$instance;
 
 export interface AuthorizationCodeCredential$instance extends TokenCredential {
-    getToken(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): AccessToken;
-    getToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
-    getTokenAsync(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): ValueTask<AccessToken>;
-    getTokenAsync(properties: GetTokenOptions, cancellationToken: CancellationToken): ValueTask<AuthenticationToken>;
+    GetToken(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): AccessToken;
+    GetToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
+    GetTokenAsync(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): ValueTask<AccessToken>;
+    GetTokenAsync(properties: GetTokenOptions, cancellationToken: CancellationToken): ValueTask<AuthenticationToken>;
 }
 
 
@@ -113,9 +113,9 @@ export const AuthorizationCodeCredential: {
 export type AuthorizationCodeCredential = AuthorizationCodeCredential$instance;
 
 export interface AuthorizationCodeCredentialOptions$instance extends TokenCredentialOptions {
-    readonly additionallyAllowedTenants: IList<System_Internal.String>;
-    disableInstanceDiscovery: boolean;
-    redirectUri: Uri;
+    readonly AdditionallyAllowedTenants: IList<System_Internal.String>;
+    DisableInstanceDiscovery: boolean;
+    RedirectUri: Uri;
 }
 
 
@@ -127,10 +127,10 @@ export const AuthorizationCodeCredentialOptions: {
 export type AuthorizationCodeCredentialOptions = AuthorizationCodeCredentialOptions$instance;
 
 export interface AzureCliCredential$instance extends TokenCredential {
-    getToken(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): AccessToken;
-    getToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
-    getTokenAsync(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): ValueTask<AccessToken>;
-    getTokenAsync(properties: GetTokenOptions, cancellationToken: CancellationToken): ValueTask<AuthenticationToken>;
+    GetToken(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): AccessToken;
+    GetToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
+    GetTokenAsync(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): ValueTask<AccessToken>;
+    GetTokenAsync(properties: GetTokenOptions, cancellationToken: CancellationToken): ValueTask<AuthenticationToken>;
 }
 
 
@@ -143,10 +143,10 @@ export const AzureCliCredential: {
 export type AzureCliCredential = AzureCliCredential$instance;
 
 export interface AzureCliCredentialOptions$instance extends TokenCredentialOptions {
-    readonly additionallyAllowedTenants: IList<System_Internal.String>;
-    processTimeout: Nullable<TimeSpan>;
-    subscription: string;
-    tenantId: string;
+    readonly AdditionallyAllowedTenants: IList<System_Internal.String>;
+    ProcessTimeout: Nullable<TimeSpan>;
+    Subscription: string;
+    TenantId: string;
 }
 
 
@@ -158,10 +158,10 @@ export const AzureCliCredentialOptions: {
 export type AzureCliCredentialOptions = AzureCliCredentialOptions$instance;
 
 export interface AzureDeveloperCliCredential$instance extends TokenCredential {
-    getToken(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): AccessToken;
-    getToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
-    getTokenAsync(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): ValueTask<AccessToken>;
-    getTokenAsync(properties: GetTokenOptions, cancellationToken: CancellationToken): ValueTask<AuthenticationToken>;
+    GetToken(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): AccessToken;
+    GetToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
+    GetTokenAsync(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): ValueTask<AccessToken>;
+    GetTokenAsync(properties: GetTokenOptions, cancellationToken: CancellationToken): ValueTask<AuthenticationToken>;
 }
 
 
@@ -174,9 +174,9 @@ export const AzureDeveloperCliCredential: {
 export type AzureDeveloperCliCredential = AzureDeveloperCliCredential$instance;
 
 export interface AzureDeveloperCliCredentialOptions$instance extends TokenCredentialOptions {
-    readonly additionallyAllowedTenants: IList<System_Internal.String>;
-    processTimeout: Nullable<TimeSpan>;
-    tenantId: string;
+    readonly AdditionallyAllowedTenants: IList<System_Internal.String>;
+    ProcessTimeout: Nullable<TimeSpan>;
+    TenantId: string;
 }
 
 
@@ -188,10 +188,10 @@ export const AzureDeveloperCliCredentialOptions: {
 export type AzureDeveloperCliCredentialOptions = AzureDeveloperCliCredentialOptions$instance;
 
 export interface AzurePipelinesCredential$instance extends TokenCredential {
-    getToken(requestContext: TokenRequestContext, cancellationToken: CancellationToken): AccessToken;
-    getToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
-    getTokenAsync(requestContext: TokenRequestContext, cancellationToken: CancellationToken): ValueTask<AccessToken>;
-    getTokenAsync(properties: GetTokenOptions, cancellationToken: CancellationToken): ValueTask<AuthenticationToken>;
+    GetToken(requestContext: TokenRequestContext, cancellationToken: CancellationToken): AccessToken;
+    GetToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
+    GetTokenAsync(requestContext: TokenRequestContext, cancellationToken: CancellationToken): ValueTask<AccessToken>;
+    GetTokenAsync(properties: GetTokenOptions, cancellationToken: CancellationToken): ValueTask<AuthenticationToken>;
 }
 
 
@@ -203,9 +203,9 @@ export const AzurePipelinesCredential: {
 export type AzurePipelinesCredential = AzurePipelinesCredential$instance;
 
 export interface AzurePipelinesCredentialOptions$instance extends TokenCredentialOptions {
-    readonly additionallyAllowedTenants: IList<System_Internal.String>;
-    disableInstanceDiscovery: boolean;
-    tokenCachePersistenceOptions: TokenCachePersistenceOptions;
+    readonly AdditionallyAllowedTenants: IList<System_Internal.String>;
+    DisableInstanceDiscovery: boolean;
+    TokenCachePersistenceOptions: TokenCachePersistenceOptions;
 }
 
 
@@ -217,10 +217,10 @@ export const AzurePipelinesCredentialOptions: {
 export type AzurePipelinesCredentialOptions = AzurePipelinesCredentialOptions$instance;
 
 export interface AzurePowerShellCredential$instance extends TokenCredential {
-    getToken(requestContext: TokenRequestContext, cancellationToken: CancellationToken): AccessToken;
-    getToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
-    getTokenAsync(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): ValueTask<AccessToken>;
-    getTokenAsync(properties: GetTokenOptions, cancellationToken: CancellationToken): ValueTask<AuthenticationToken>;
+    GetToken(requestContext: TokenRequestContext, cancellationToken: CancellationToken): AccessToken;
+    GetToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
+    GetTokenAsync(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): ValueTask<AccessToken>;
+    GetTokenAsync(properties: GetTokenOptions, cancellationToken: CancellationToken): ValueTask<AuthenticationToken>;
 }
 
 
@@ -233,9 +233,9 @@ export const AzurePowerShellCredential: {
 export type AzurePowerShellCredential = AzurePowerShellCredential$instance;
 
 export interface AzurePowerShellCredentialOptions$instance extends TokenCredentialOptions {
-    readonly additionallyAllowedTenants: IList<System_Internal.String>;
-    processTimeout: Nullable<TimeSpan>;
-    tenantId: string;
+    readonly AdditionallyAllowedTenants: IList<System_Internal.String>;
+    ProcessTimeout: Nullable<TimeSpan>;
+    TenantId: string;
 }
 
 
@@ -247,9 +247,9 @@ export const AzurePowerShellCredentialOptions: {
 export type AzurePowerShellCredentialOptions = AzurePowerShellCredentialOptions$instance;
 
 export interface BrowserCustomizationOptions$instance {
-    errorMessage: string;
-    successMessage: string;
-    useEmbeddedWebView: Nullable<System_Internal.Boolean>;
+    ErrorMessage: string;
+    SuccessMessage: string;
+    UseEmbeddedWebView: Nullable<System_Internal.Boolean>;
 }
 
 
@@ -261,10 +261,10 @@ export const BrowserCustomizationOptions: {
 export type BrowserCustomizationOptions = BrowserCustomizationOptions$instance;
 
 export interface ChainedTokenCredential$instance extends TokenCredential {
-    getToken(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): AccessToken;
-    getToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
-    getTokenAsync(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): ValueTask<AccessToken>;
-    getTokenAsync(properties: GetTokenOptions, cancellationToken: CancellationToken): ValueTask<AuthenticationToken>;
+    GetToken(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): AccessToken;
+    GetToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
+    GetTokenAsync(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): ValueTask<AccessToken>;
+    GetTokenAsync(properties: GetTokenOptions, cancellationToken: CancellationToken): ValueTask<AuthenticationToken>;
 }
 
 
@@ -276,10 +276,10 @@ export const ChainedTokenCredential: {
 export type ChainedTokenCredential = ChainedTokenCredential$instance;
 
 export interface ClientAssertionCredential$instance extends TokenCredential {
-    getToken(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): AccessToken;
-    getToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
-    getTokenAsync(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): ValueTask<AccessToken>;
-    getTokenAsync(properties: GetTokenOptions, cancellationToken: CancellationToken): ValueTask<AuthenticationToken>;
+    GetToken(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): AccessToken;
+    GetToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
+    GetTokenAsync(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): ValueTask<AccessToken>;
+    GetTokenAsync(properties: GetTokenOptions, cancellationToken: CancellationToken): ValueTask<AuthenticationToken>;
 }
 
 
@@ -292,9 +292,9 @@ export const ClientAssertionCredential: {
 export type ClientAssertionCredential = ClientAssertionCredential$instance;
 
 export interface ClientAssertionCredentialOptions$instance extends TokenCredentialOptions {
-    readonly additionallyAllowedTenants: IList<System_Internal.String>;
-    disableInstanceDiscovery: boolean;
-    tokenCachePersistenceOptions: TokenCachePersistenceOptions;
+    readonly AdditionallyAllowedTenants: IList<System_Internal.String>;
+    DisableInstanceDiscovery: boolean;
+    TokenCachePersistenceOptions: TokenCachePersistenceOptions;
 }
 
 
@@ -306,10 +306,10 @@ export const ClientAssertionCredentialOptions: {
 export type ClientAssertionCredentialOptions = ClientAssertionCredentialOptions$instance;
 
 export interface ClientCertificateCredential$instance extends TokenCredential {
-    getToken(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): AccessToken;
-    getToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
-    getTokenAsync(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): ValueTask<AccessToken>;
-    getTokenAsync(properties: GetTokenOptions, cancellationToken: CancellationToken): ValueTask<AuthenticationToken>;
+    GetToken(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): AccessToken;
+    GetToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
+    GetTokenAsync(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): ValueTask<AccessToken>;
+    GetTokenAsync(properties: GetTokenOptions, cancellationToken: CancellationToken): ValueTask<AuthenticationToken>;
 }
 
 
@@ -326,10 +326,10 @@ export const ClientCertificateCredential: {
 export type ClientCertificateCredential = ClientCertificateCredential$instance;
 
 export interface ClientCertificateCredentialOptions$instance extends TokenCredentialOptions {
-    readonly additionallyAllowedTenants: IList<System_Internal.String>;
-    disableInstanceDiscovery: boolean;
-    sendCertificateChain: boolean;
-    tokenCachePersistenceOptions: TokenCachePersistenceOptions;
+    readonly AdditionallyAllowedTenants: IList<System_Internal.String>;
+    DisableInstanceDiscovery: boolean;
+    SendCertificateChain: boolean;
+    TokenCachePersistenceOptions: TokenCachePersistenceOptions;
 }
 
 
@@ -341,10 +341,10 @@ export const ClientCertificateCredentialOptions: {
 export type ClientCertificateCredentialOptions = ClientCertificateCredentialOptions$instance;
 
 export interface ClientSecretCredential$instance extends TokenCredential {
-    getToken(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): AccessToken;
-    getToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
-    getTokenAsync(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): ValueTask<AccessToken>;
-    getTokenAsync(properties: GetTokenOptions, cancellationToken: CancellationToken): ValueTask<AuthenticationToken>;
+    GetToken(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): AccessToken;
+    GetToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
+    GetTokenAsync(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): ValueTask<AccessToken>;
+    GetTokenAsync(properties: GetTokenOptions, cancellationToken: CancellationToken): ValueTask<AuthenticationToken>;
 }
 
 
@@ -358,9 +358,9 @@ export const ClientSecretCredential: {
 export type ClientSecretCredential = ClientSecretCredential$instance;
 
 export interface ClientSecretCredentialOptions$instance extends TokenCredentialOptions {
-    readonly additionallyAllowedTenants: IList<System_Internal.String>;
-    disableInstanceDiscovery: boolean;
-    tokenCachePersistenceOptions: TokenCachePersistenceOptions;
+    readonly AdditionallyAllowedTenants: IList<System_Internal.String>;
+    DisableInstanceDiscovery: boolean;
+    TokenCachePersistenceOptions: TokenCachePersistenceOptions;
 }
 
 
@@ -384,10 +384,10 @@ export const CredentialUnavailableException: {
 export type CredentialUnavailableException = CredentialUnavailableException$instance;
 
 export interface DefaultAzureCredential$instance extends TokenCredential {
-    getToken(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): AccessToken;
-    getToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
-    getTokenAsync(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): ValueTask<AccessToken>;
-    getTokenAsync(properties: GetTokenOptions, cancellationToken: CancellationToken): ValueTask<AuthenticationToken>;
+    GetToken(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): AccessToken;
+    GetToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
+    GetTokenAsync(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): ValueTask<AccessToken>;
+    GetTokenAsync(properties: GetTokenOptions, cancellationToken: CancellationToken): ValueTask<AuthenticationToken>;
 }
 
 
@@ -400,29 +400,29 @@ export const DefaultAzureCredential: {
 export type DefaultAzureCredential = DefaultAzureCredential$instance;
 
 export interface DefaultAzureCredentialOptions$instance extends TokenCredentialOptions {
-    readonly additionallyAllowedTenants: IList<System_Internal.String>;
-    credentialProcessTimeout: Nullable<TimeSpan>;
-    disableInstanceDiscovery: boolean;
-    excludeAzureCliCredential: boolean;
-    excludeAzureDeveloperCliCredential: boolean;
-    excludeAzurePowerShellCredential: boolean;
-    excludeEnvironmentCredential: boolean;
-    excludeInteractiveBrowserCredential: boolean;
-    excludeManagedIdentityCredential: boolean;
-    excludeSharedTokenCacheCredential: boolean;
-    excludeVisualStudioCodeCredential: boolean;
-    excludeVisualStudioCredential: boolean;
-    excludeWorkloadIdentityCredential: boolean;
-    interactiveBrowserCredentialClientId: string;
-    interactiveBrowserTenantId: string;
-    managedIdentityClientId: string;
-    managedIdentityResourceId: ResourceIdentifier;
-    sharedTokenCacheTenantId: string;
-    sharedTokenCacheUsername: string;
-    tenantId: string;
-    visualStudioCodeTenantId: string;
-    visualStudioTenantId: string;
-    workloadIdentityClientId: string;
+    readonly AdditionallyAllowedTenants: IList<System_Internal.String>;
+    CredentialProcessTimeout: Nullable<TimeSpan>;
+    DisableInstanceDiscovery: boolean;
+    ExcludeAzureCliCredential: boolean;
+    ExcludeAzureDeveloperCliCredential: boolean;
+    ExcludeAzurePowerShellCredential: boolean;
+    ExcludeEnvironmentCredential: boolean;
+    ExcludeInteractiveBrowserCredential: boolean;
+    ExcludeManagedIdentityCredential: boolean;
+    ExcludeSharedTokenCacheCredential: boolean;
+    ExcludeVisualStudioCodeCredential: boolean;
+    ExcludeVisualStudioCredential: boolean;
+    ExcludeWorkloadIdentityCredential: boolean;
+    InteractiveBrowserCredentialClientId: string;
+    InteractiveBrowserTenantId: string;
+    ManagedIdentityClientId: string;
+    ManagedIdentityResourceId: ResourceIdentifier;
+    SharedTokenCacheTenantId: string;
+    SharedTokenCacheUsername: string;
+    TenantId: string;
+    VisualStudioCodeTenantId: string;
+    VisualStudioTenantId: string;
+    WorkloadIdentityClientId: string;
 }
 
 
@@ -434,14 +434,14 @@ export const DefaultAzureCredentialOptions: {
 export type DefaultAzureCredentialOptions = DefaultAzureCredentialOptions$instance;
 
 export interface DeviceCodeCredential$instance extends TokenCredential {
-    authenticate(cancellationToken?: CancellationToken): AuthenticationRecord;
-    authenticate(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): AuthenticationRecord;
-    authenticateAsync(cancellationToken?: CancellationToken): Task<AuthenticationRecord>;
-    authenticateAsync(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): Task<AuthenticationRecord>;
-    getToken(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): AccessToken;
-    getToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
-    getTokenAsync(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): ValueTask<AccessToken>;
-    getTokenAsync(properties: GetTokenOptions, cancellationToken: CancellationToken): ValueTask<AuthenticationToken>;
+    Authenticate(cancellationToken?: CancellationToken): AuthenticationRecord;
+    Authenticate(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): AuthenticationRecord;
+    AuthenticateAsync(cancellationToken?: CancellationToken): Task<AuthenticationRecord>;
+    AuthenticateAsync(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): Task<AuthenticationRecord>;
+    GetToken(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): AccessToken;
+    GetToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
+    GetTokenAsync(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): ValueTask<AccessToken>;
+    GetTokenAsync(properties: GetTokenOptions, cancellationToken: CancellationToken): ValueTask<AuthenticationToken>;
 }
 
 
@@ -456,14 +456,14 @@ export const DeviceCodeCredential: {
 export type DeviceCodeCredential = DeviceCodeCredential$instance;
 
 export interface DeviceCodeCredentialOptions$instance extends TokenCredentialOptions {
-    readonly additionallyAllowedTenants: IList<System_Internal.String>;
-    authenticationRecord: AuthenticationRecord;
-    clientId: string;
-    deviceCodeCallback: Func<DeviceCodeInfo, CancellationToken, Task>;
-    disableAutomaticAuthentication: boolean;
-    disableInstanceDiscovery: boolean;
-    tenantId: string;
-    tokenCachePersistenceOptions: TokenCachePersistenceOptions;
+    readonly AdditionallyAllowedTenants: IList<System_Internal.String>;
+    AuthenticationRecord: AuthenticationRecord;
+    ClientId: string;
+    DeviceCodeCallback: Func<DeviceCodeInfo, CancellationToken, Task>;
+    DisableAutomaticAuthentication: boolean;
+    DisableInstanceDiscovery: boolean;
+    TenantId: string;
+    TokenCachePersistenceOptions: TokenCachePersistenceOptions;
 }
 
 
@@ -475,10 +475,10 @@ export const DeviceCodeCredentialOptions: {
 export type DeviceCodeCredentialOptions = DeviceCodeCredentialOptions$instance;
 
 export interface EnvironmentCredential$instance extends TokenCredential {
-    getToken(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): AccessToken;
-    getToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
-    getTokenAsync(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): ValueTask<AccessToken>;
-    getTokenAsync(properties: GetTokenOptions, cancellationToken: CancellationToken): ValueTask<AuthenticationToken>;
+    GetToken(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): AccessToken;
+    GetToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
+    GetTokenAsync(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): ValueTask<AccessToken>;
+    GetTokenAsync(properties: GetTokenOptions, cancellationToken: CancellationToken): ValueTask<AuthenticationToken>;
 }
 
 
@@ -492,8 +492,8 @@ export const EnvironmentCredential: {
 export type EnvironmentCredential = EnvironmentCredential$instance;
 
 export interface EnvironmentCredentialOptions$instance extends TokenCredentialOptions {
-    readonly additionallyAllowedTenants: IList<System_Internal.String>;
-    disableInstanceDiscovery: boolean;
+    readonly AdditionallyAllowedTenants: IList<System_Internal.String>;
+    DisableInstanceDiscovery: boolean;
 }
 
 
@@ -505,14 +505,14 @@ export const EnvironmentCredentialOptions: {
 export type EnvironmentCredentialOptions = EnvironmentCredentialOptions$instance;
 
 export interface InteractiveBrowserCredential$instance extends TokenCredential {
-    authenticate(cancellationToken?: CancellationToken): AuthenticationRecord;
-    authenticate(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): AuthenticationRecord;
-    authenticateAsync(cancellationToken?: CancellationToken): Task<AuthenticationRecord>;
-    authenticateAsync(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): Task<AuthenticationRecord>;
-    getToken(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): AccessToken;
-    getToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
-    getTokenAsync(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): ValueTask<AccessToken>;
-    getTokenAsync(properties: GetTokenOptions, cancellationToken: CancellationToken): ValueTask<AuthenticationToken>;
+    Authenticate(cancellationToken?: CancellationToken): AuthenticationRecord;
+    Authenticate(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): AuthenticationRecord;
+    AuthenticateAsync(cancellationToken?: CancellationToken): Task<AuthenticationRecord>;
+    AuthenticateAsync(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): Task<AuthenticationRecord>;
+    GetToken(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): AccessToken;
+    GetToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
+    GetTokenAsync(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): ValueTask<AccessToken>;
+    GetTokenAsync(properties: GetTokenOptions, cancellationToken: CancellationToken): ValueTask<AuthenticationToken>;
 }
 
 
@@ -527,16 +527,16 @@ export const InteractiveBrowserCredential: {
 export type InteractiveBrowserCredential = InteractiveBrowserCredential$instance;
 
 export interface InteractiveBrowserCredentialOptions$instance extends TokenCredentialOptions {
-    readonly additionallyAllowedTenants: IList<System_Internal.String>;
-    authenticationRecord: AuthenticationRecord;
-    browserCustomization: BrowserCustomizationOptions;
-    clientId: string;
-    disableAutomaticAuthentication: boolean;
-    disableInstanceDiscovery: boolean;
-    loginHint: string;
-    redirectUri: Uri;
-    tenantId: string;
-    tokenCachePersistenceOptions: TokenCachePersistenceOptions;
+    readonly AdditionallyAllowedTenants: IList<System_Internal.String>;
+    AuthenticationRecord: AuthenticationRecord;
+    BrowserCustomization: BrowserCustomizationOptions;
+    ClientId: string;
+    DisableAutomaticAuthentication: boolean;
+    DisableInstanceDiscovery: boolean;
+    LoginHint: string;
+    RedirectUri: Uri;
+    TenantId: string;
+    TokenCachePersistenceOptions: TokenCachePersistenceOptions;
 }
 
 
@@ -548,10 +548,10 @@ export const InteractiveBrowserCredentialOptions: {
 export type InteractiveBrowserCredentialOptions = InteractiveBrowserCredentialOptions$instance;
 
 export interface ManagedIdentityCredential$instance extends TokenCredential {
-    getToken(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): AccessToken;
-    getToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
-    getTokenAsync(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): ValueTask<AccessToken>;
-    getTokenAsync(properties: GetTokenOptions, cancellationToken: CancellationToken): ValueTask<AuthenticationToken>;
+    GetToken(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): AccessToken;
+    GetToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
+    GetTokenAsync(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): ValueTask<AccessToken>;
+    GetTokenAsync(properties: GetTokenOptions, cancellationToken: CancellationToken): ValueTask<AuthenticationToken>;
 }
 
 
@@ -577,26 +577,26 @@ export const ManagedIdentityCredentialOptions: {
 export type ManagedIdentityCredentialOptions = ManagedIdentityCredentialOptions$instance;
 
 export interface ManagedIdentityId$instance {
-    toString(): string | undefined;
+    ToString(): string | undefined;
 }
 
 
 export const ManagedIdentityId: {
     new(): ManagedIdentityId;
-    readonly systemAssigned: ManagedIdentityId;
-    fromUserAssignedClientId(id: string): ManagedIdentityId;
-    fromUserAssignedObjectId(id: string): ManagedIdentityId;
-    fromUserAssignedResourceId(id: ResourceIdentifier): ManagedIdentityId;
+    readonly SystemAssigned: ManagedIdentityId;
+    FromUserAssignedClientId(id: string): ManagedIdentityId;
+    FromUserAssignedObjectId(id: string): ManagedIdentityId;
+    FromUserAssignedResourceId(id: ResourceIdentifier): ManagedIdentityId;
 };
 
 
 export type ManagedIdentityId = ManagedIdentityId$instance;
 
 export interface OnBehalfOfCredential$instance extends TokenCredential {
-    getToken(requestContext: TokenRequestContext, cancellationToken: CancellationToken): AccessToken;
-    getToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
-    getTokenAsync(requestContext: TokenRequestContext, cancellationToken: CancellationToken): ValueTask<AccessToken>;
-    getTokenAsync(properties: GetTokenOptions, cancellationToken: CancellationToken): ValueTask<AuthenticationToken>;
+    GetToken(requestContext: TokenRequestContext, cancellationToken: CancellationToken): AccessToken;
+    GetToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
+    GetTokenAsync(requestContext: TokenRequestContext, cancellationToken: CancellationToken): ValueTask<AccessToken>;
+    GetTokenAsync(properties: GetTokenOptions, cancellationToken: CancellationToken): ValueTask<AuthenticationToken>;
 }
 
 
@@ -613,10 +613,10 @@ export const OnBehalfOfCredential: {
 export type OnBehalfOfCredential = OnBehalfOfCredential$instance;
 
 export interface OnBehalfOfCredentialOptions$instance extends TokenCredentialOptions {
-    readonly additionallyAllowedTenants: IList<System_Internal.String>;
-    disableInstanceDiscovery: boolean;
-    sendCertificateChain: boolean;
-    tokenCachePersistenceOptions: TokenCachePersistenceOptions;
+    readonly AdditionallyAllowedTenants: IList<System_Internal.String>;
+    DisableInstanceDiscovery: boolean;
+    SendCertificateChain: boolean;
+    TokenCachePersistenceOptions: TokenCachePersistenceOptions;
 }
 
 
@@ -628,10 +628,10 @@ export const OnBehalfOfCredentialOptions: {
 export type OnBehalfOfCredentialOptions = OnBehalfOfCredentialOptions$instance;
 
 export interface SharedTokenCacheCredential$instance extends TokenCredential {
-    getToken(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): AccessToken;
-    getToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
-    getTokenAsync(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): ValueTask<AccessToken>;
-    getTokenAsync(properties: GetTokenOptions, cancellationToken: CancellationToken): ValueTask<AuthenticationToken>;
+    GetToken(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): AccessToken;
+    GetToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
+    GetTokenAsync(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): ValueTask<AccessToken>;
+    GetTokenAsync(properties: GetTokenOptions, cancellationToken: CancellationToken): ValueTask<AuthenticationToken>;
 }
 
 
@@ -645,13 +645,13 @@ export const SharedTokenCacheCredential: {
 export type SharedTokenCacheCredential = SharedTokenCacheCredential$instance;
 
 export interface SharedTokenCacheCredentialOptions$instance extends TokenCredentialOptions {
-    authenticationRecord: AuthenticationRecord;
-    clientId: string;
-    disableInstanceDiscovery: boolean;
-    enableGuestTenantAuthentication: boolean;
-    tenantId: string;
-    tokenCachePersistenceOptions: TokenCachePersistenceOptions;
-    username: string;
+    AuthenticationRecord: AuthenticationRecord;
+    ClientId: string;
+    DisableInstanceDiscovery: boolean;
+    EnableGuestTenantAuthentication: boolean;
+    TenantId: string;
+    TokenCachePersistenceOptions: TokenCachePersistenceOptions;
+    Username: string;
 }
 
 
@@ -664,8 +664,8 @@ export const SharedTokenCacheCredentialOptions: {
 export type SharedTokenCacheCredentialOptions = SharedTokenCacheCredentialOptions$instance;
 
 export interface TokenCachePersistenceOptions$instance {
-    name: string;
-    unsafeAllowUnencryptedStorage: boolean;
+    Name: string;
+    UnsafeAllowUnencryptedStorage: boolean;
 }
 
 
@@ -677,8 +677,8 @@ export const TokenCachePersistenceOptions: {
 export type TokenCachePersistenceOptions = TokenCachePersistenceOptions$instance;
 
 export interface TokenCacheRefreshArgs$instance {
-    readonly isCaeEnabled: boolean;
-    readonly suggestedCacheKey: string;
+    readonly IsCaeEnabled: boolean;
+    readonly SuggestedCacheKey: string;
 }
 
 
@@ -690,8 +690,8 @@ export const TokenCacheRefreshArgs: {
 export type TokenCacheRefreshArgs = TokenCacheRefreshArgs$instance;
 
 export interface TokenCacheUpdatedArgs$instance {
-    readonly isCaeEnabled: boolean;
-    readonly unsafeCacheData: ReadOnlyMemory<System_Internal.Byte>;
+    readonly IsCaeEnabled: boolean;
+    readonly UnsafeCacheData: ReadOnlyMemory<System_Internal.Byte>;
 }
 
 
@@ -703,7 +703,7 @@ export const TokenCacheUpdatedArgs: {
 export type TokenCacheUpdatedArgs = TokenCacheUpdatedArgs$instance;
 
 export interface TokenCredentialDiagnosticsOptions$instance extends DiagnosticsOptions {
-    isAccountIdentifierLoggingEnabled: boolean;
+    IsAccountIdentifierLoggingEnabled: boolean;
 }
 
 
@@ -715,9 +715,9 @@ export const TokenCredentialDiagnosticsOptions: {
 export type TokenCredentialDiagnosticsOptions = TokenCredentialDiagnosticsOptions$instance;
 
 export interface TokenCredentialOptions$instance extends ClientOptions {
-    authorityHost: Uri;
-    readonly diagnostics: DiagnosticsOptions | TokenCredentialDiagnosticsOptions;
-    isUnsafeSupportLoggingEnabled: boolean;
+    AuthorityHost: Uri;
+    readonly Diagnostics: DiagnosticsOptions | TokenCredentialDiagnosticsOptions;
+    IsUnsafeSupportLoggingEnabled: boolean;
 }
 
 
@@ -739,14 +739,14 @@ export const UnsafeTokenCacheOptions: {
 export type UnsafeTokenCacheOptions = UnsafeTokenCacheOptions$instance;
 
 export interface UsernamePasswordCredential$instance extends TokenCredential {
-    authenticate(cancellationToken?: CancellationToken): AuthenticationRecord;
-    authenticate(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): AuthenticationRecord;
-    authenticateAsync(cancellationToken?: CancellationToken): Task<AuthenticationRecord>;
-    authenticateAsync(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): Task<AuthenticationRecord>;
-    getToken(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): AccessToken;
-    getToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
-    getTokenAsync(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): ValueTask<AccessToken>;
-    getTokenAsync(properties: GetTokenOptions, cancellationToken: CancellationToken): ValueTask<AuthenticationToken>;
+    Authenticate(cancellationToken?: CancellationToken): AuthenticationRecord;
+    Authenticate(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): AuthenticationRecord;
+    AuthenticateAsync(cancellationToken?: CancellationToken): Task<AuthenticationRecord>;
+    AuthenticateAsync(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): Task<AuthenticationRecord>;
+    GetToken(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): AccessToken;
+    GetToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
+    GetTokenAsync(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): ValueTask<AccessToken>;
+    GetTokenAsync(properties: GetTokenOptions, cancellationToken: CancellationToken): ValueTask<AuthenticationToken>;
 }
 
 
@@ -760,9 +760,9 @@ export const UsernamePasswordCredential: {
 export type UsernamePasswordCredential = UsernamePasswordCredential$instance;
 
 export interface UsernamePasswordCredentialOptions$instance extends TokenCredentialOptions {
-    readonly additionallyAllowedTenants: IList<System_Internal.String>;
-    disableInstanceDiscovery: boolean;
-    tokenCachePersistenceOptions: TokenCachePersistenceOptions;
+    readonly AdditionallyAllowedTenants: IList<System_Internal.String>;
+    DisableInstanceDiscovery: boolean;
+    TokenCachePersistenceOptions: TokenCachePersistenceOptions;
 }
 
 
@@ -774,10 +774,10 @@ export const UsernamePasswordCredentialOptions: {
 export type UsernamePasswordCredentialOptions = UsernamePasswordCredentialOptions$instance;
 
 export interface VisualStudioCodeCredential$instance extends TokenCredential {
-    getToken(requestContext: TokenRequestContext, cancellationToken: CancellationToken): AccessToken;
-    getToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
-    getTokenAsync(requestContext: TokenRequestContext, cancellationToken: CancellationToken): ValueTask<AccessToken>;
-    getTokenAsync(properties: GetTokenOptions, cancellationToken: CancellationToken): ValueTask<AuthenticationToken>;
+    GetToken(requestContext: TokenRequestContext, cancellationToken: CancellationToken): AccessToken;
+    GetToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
+    GetTokenAsync(requestContext: TokenRequestContext, cancellationToken: CancellationToken): ValueTask<AccessToken>;
+    GetTokenAsync(properties: GetTokenOptions, cancellationToken: CancellationToken): ValueTask<AuthenticationToken>;
 }
 
 
@@ -790,8 +790,8 @@ export const VisualStudioCodeCredential: {
 export type VisualStudioCodeCredential = VisualStudioCodeCredential$instance;
 
 export interface VisualStudioCodeCredentialOptions$instance extends TokenCredentialOptions {
-    readonly additionallyAllowedTenants: IList<System_Internal.String>;
-    tenantId: string;
+    readonly AdditionallyAllowedTenants: IList<System_Internal.String>;
+    TenantId: string;
 }
 
 
@@ -803,10 +803,10 @@ export const VisualStudioCodeCredentialOptions: {
 export type VisualStudioCodeCredentialOptions = VisualStudioCodeCredentialOptions$instance;
 
 export interface VisualStudioCredential$instance extends TokenCredential {
-    getToken(requestContext: TokenRequestContext, cancellationToken: CancellationToken): AccessToken;
-    getToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
-    getTokenAsync(requestContext: TokenRequestContext, cancellationToken: CancellationToken): ValueTask<AccessToken>;
-    getTokenAsync(properties: GetTokenOptions, cancellationToken: CancellationToken): ValueTask<AuthenticationToken>;
+    GetToken(requestContext: TokenRequestContext, cancellationToken: CancellationToken): AccessToken;
+    GetToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
+    GetTokenAsync(requestContext: TokenRequestContext, cancellationToken: CancellationToken): ValueTask<AccessToken>;
+    GetTokenAsync(properties: GetTokenOptions, cancellationToken: CancellationToken): ValueTask<AuthenticationToken>;
 }
 
 
@@ -819,9 +819,9 @@ export const VisualStudioCredential: {
 export type VisualStudioCredential = VisualStudioCredential$instance;
 
 export interface VisualStudioCredentialOptions$instance extends TokenCredentialOptions {
-    readonly additionallyAllowedTenants: IList<System_Internal.String>;
-    processTimeout: Nullable<TimeSpan>;
-    tenantId: string;
+    readonly AdditionallyAllowedTenants: IList<System_Internal.String>;
+    ProcessTimeout: Nullable<TimeSpan>;
+    TenantId: string;
 }
 
 
@@ -833,10 +833,10 @@ export const VisualStudioCredentialOptions: {
 export type VisualStudioCredentialOptions = VisualStudioCredentialOptions$instance;
 
 export interface WorkloadIdentityCredential$instance extends TokenCredential {
-    getToken(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): AccessToken;
-    getToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
-    getTokenAsync(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): ValueTask<AccessToken>;
-    getTokenAsync(properties: GetTokenOptions, cancellationToken: CancellationToken): ValueTask<AuthenticationToken>;
+    GetToken(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): AccessToken;
+    GetToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
+    GetTokenAsync(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): ValueTask<AccessToken>;
+    GetTokenAsync(properties: GetTokenOptions, cancellationToken: CancellationToken): ValueTask<AuthenticationToken>;
 }
 
 
@@ -849,11 +849,11 @@ export const WorkloadIdentityCredential: {
 export type WorkloadIdentityCredential = WorkloadIdentityCredential$instance;
 
 export interface WorkloadIdentityCredentialOptions$instance extends TokenCredentialOptions {
-    readonly additionallyAllowedTenants: IList<System_Internal.String>;
-    clientId: string;
-    disableInstanceDiscovery: boolean;
-    tenantId: string;
-    tokenFilePath: string;
+    readonly AdditionallyAllowedTenants: IList<System_Internal.String>;
+    ClientId: string;
+    DisableInstanceDiscovery: boolean;
+    TenantId: string;
+    TokenFilePath: string;
 }
 
 
@@ -865,18 +865,18 @@ export const WorkloadIdentityCredentialOptions: {
 export type WorkloadIdentityCredentialOptions = WorkloadIdentityCredentialOptions$instance;
 
 export abstract class AzureAuthorityHosts$instance {
-    static readonly azurePublicCloud: Uri;
-    static readonly azureChina: Uri;
-    static readonly azureGermany: Uri;
-    static readonly azureGovernment: Uri;
+    static readonly AzurePublicCloud: Uri;
+    static readonly AzureChina: Uri;
+    static readonly AzureGermany: Uri;
+    static readonly AzureGovernment: Uri;
 }
 
 
 export type AzureAuthorityHosts = AzureAuthorityHosts$instance;
 
 export abstract class IdentityModelFactory$instance {
-    static authenticationRecord(username: string, authority: string, homeAccountId: string, tenantId: string, clientId: string): AuthenticationRecord;
-    static deviceCodeInfo(userCode: string, deviceCode: string, verificationUri: Uri, expiresOn: DateTimeOffset, message: string, clientId: string, scopes: IReadOnlyCollection<System_Internal.String>): DeviceCodeInfo;
+    static AuthenticationRecord(username: string, authority: string, homeAccountId: string, tenantId: string, clientId: string): AuthenticationRecord;
+    static DeviceCodeInfo(userCode: string, deviceCode: string, verificationUri: Uri, expiresOn: DateTimeOffset, message: string, clientId: string, scopes: IReadOnlyCollection<System_Internal.String>): DeviceCodeInfo;
 }
 
 

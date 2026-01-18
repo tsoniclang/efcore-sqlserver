@@ -11,29 +11,29 @@ import * as Microsoft_EntityFrameworkCore_Diagnostics_Internal from "@tsonic/efc
 import type { EventDefinitionBase, RelationalLoggingDefinitions } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics.js";
 
 export interface SqlServerLoggingDefinitions$instance extends RelationalLoggingDefinitions {
-    logDecimalTypeKey: EventDefinitionBase | undefined;
-    logDefaultDecimalTypeColumn: EventDefinitionBase | undefined;
-    logByteIdentityColumn: EventDefinitionBase | undefined;
-    logColumnWithoutType: EventDefinitionBase | undefined;
-    logFoundDefaultSchema: EventDefinitionBase | undefined;
-    logFoundTypeAlias: EventDefinitionBase | undefined;
-    logFoundColumn: EventDefinitionBase | undefined;
-    logFoundForeignKey: EventDefinitionBase | undefined;
-    logPrincipalTableNotInSelectionSet: EventDefinitionBase | undefined;
-    logMissingSchema: EventDefinitionBase | undefined;
-    logMissingTable: EventDefinitionBase | undefined;
-    logFoundSequence: EventDefinitionBase | undefined;
-    logFoundTable: EventDefinitionBase | undefined;
-    logFoundIndex: EventDefinitionBase | undefined;
-    logFoundPrimaryKey: EventDefinitionBase | undefined;
-    logFoundUniqueConstraint: EventDefinitionBase | undefined;
-    logPrincipalColumnNotFound: EventDefinitionBase | undefined;
-    logReflexiveConstraintIgnored: EventDefinitionBase | undefined;
-    logDuplicateForeignKeyConstraintIgnored: EventDefinitionBase | undefined;
-    logPrincipalTableInformationNotFound: EventDefinitionBase | undefined;
-    logSavepointsDisabledBecauseOfMARS: EventDefinitionBase | undefined;
-    logConflictingValueGenerationStrategies: EventDefinitionBase | undefined;
-    logMissingViewDefinitionRights: EventDefinitionBase | undefined;
+    LogDecimalTypeKey: EventDefinitionBase | undefined;
+    LogDefaultDecimalTypeColumn: EventDefinitionBase | undefined;
+    LogByteIdentityColumn: EventDefinitionBase | undefined;
+    LogColumnWithoutType: EventDefinitionBase | undefined;
+    LogFoundDefaultSchema: EventDefinitionBase | undefined;
+    LogFoundTypeAlias: EventDefinitionBase | undefined;
+    LogFoundColumn: EventDefinitionBase | undefined;
+    LogFoundForeignKey: EventDefinitionBase | undefined;
+    LogPrincipalTableNotInSelectionSet: EventDefinitionBase | undefined;
+    LogMissingSchema: EventDefinitionBase | undefined;
+    LogMissingTable: EventDefinitionBase | undefined;
+    LogFoundSequence: EventDefinitionBase | undefined;
+    LogFoundTable: EventDefinitionBase | undefined;
+    LogFoundIndex: EventDefinitionBase | undefined;
+    LogFoundPrimaryKey: EventDefinitionBase | undefined;
+    LogFoundUniqueConstraint: EventDefinitionBase | undefined;
+    LogPrincipalColumnNotFound: EventDefinitionBase | undefined;
+    LogReflexiveConstraintIgnored: EventDefinitionBase | undefined;
+    LogDuplicateForeignKeyConstraintIgnored: EventDefinitionBase | undefined;
+    LogPrincipalTableInformationNotFound: EventDefinitionBase | undefined;
+    LogSavepointsDisabledBecauseOfMARS: EventDefinitionBase | undefined;
+    LogConflictingValueGenerationStrategies: EventDefinitionBase | undefined;
+    LogMissingViewDefinitionRights: EventDefinitionBase | undefined;
 }
 
 

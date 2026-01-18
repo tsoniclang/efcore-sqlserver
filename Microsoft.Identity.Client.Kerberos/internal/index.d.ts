@@ -10,29 +10,29 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Byte, Enum, IComparable, IConvertible, IFormattable, Int32, Int64, ISpanFormattable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
 
 export enum KerberosKeyTypes {
-    none = 0,
-    decCbcCrc = 1,
-    desCbcMd5 = 3,
-    aes128CtsHmacSha196 = 17,
-    aes256CtsHmacSha196 = 18
+    None = 0,
+    DecCbcCrc = 1,
+    DesCbcMd5 = 3,
+    Aes128CtsHmacSha196 = 17,
+    Aes256CtsHmacSha196 = 18
 }
 
 
 export enum KerberosTicketContainer {
-    idToken = 0,
-    accessToken = 1
+    IdToken = 0,
+    AccessToken = 1
 }
 
 
 export interface KerberosSupplementalTicket$instance {
-    clientKey: string;
-    clientName: string;
-    errorMessage: string;
-    kerberosMessageBuffer: string;
-    keyType: KerberosKeyTypes;
-    realm: string;
-    servicePrincipalName: string;
-    toString(): string | undefined;
+    ClientKey: string;
+    ClientName: string;
+    ErrorMessage: string;
+    KerberosMessageBuffer: string;
+    KeyType: KerberosKeyTypes;
+    Realm: string;
+    ServicePrincipalName: string;
+    ToString(): string | undefined;
 }
 
 
@@ -45,12 +45,12 @@ export const KerberosSupplementalTicket: {
 export type KerberosSupplementalTicket = KerberosSupplementalTicket$instance;
 
 export abstract class KerberosSupplementalTicketManager$instance {
-    static fromIdToken(idToken: string): KerberosSupplementalTicket;
-    static getKerberosTicketFromWindowsTicketCache(servicePrincipalName: string, logonId: long): byte[];
-    static getKerberosTicketFromWindowsTicketCache(servicePrincipalName: string): byte[];
-    static getKrbCred(ticket: KerberosSupplementalTicket): byte[];
-    static saveToWindowsTicketCache(ticket: KerberosSupplementalTicket, logonId: long): void;
-    static saveToWindowsTicketCache(ticket: KerberosSupplementalTicket): void;
+    static FromIdToken(idToken: string): KerberosSupplementalTicket;
+    static GetKerberosTicketFromWindowsTicketCache(servicePrincipalName: string, logonId: long): byte[];
+    static GetKerberosTicketFromWindowsTicketCache(servicePrincipalName: string): byte[];
+    static GetKrbCred(ticket: KerberosSupplementalTicket): byte[];
+    static SaveToWindowsTicketCache(ticket: KerberosSupplementalTicket, logonId: long): void;
+    static SaveToWindowsTicketCache(ticket: KerberosSupplementalTicket): void;
 }
 
 

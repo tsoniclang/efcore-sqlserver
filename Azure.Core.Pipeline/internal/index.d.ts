@@ -18,8 +18,8 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface BearerTokenAuthenticationPolicy$instance extends HttpPipelinePolicy {
-    process(message: HttpMessage, pipeline: ReadOnlyMemory<HttpPipelinePolicy>): void;
-    processAsync(message: HttpMessage, pipeline: ReadOnlyMemory<HttpPipelinePolicy>): ValueTask;
+    Process(message: HttpMessage, pipeline: ReadOnlyMemory<HttpPipelinePolicy>): void;
+    ProcessAsync(message: HttpMessage, pipeline: ReadOnlyMemory<HttpPipelinePolicy>): ValueTask;
 }
 
 
@@ -32,7 +32,7 @@ export const BearerTokenAuthenticationPolicy: {
 export type BearerTokenAuthenticationPolicy = BearerTokenAuthenticationPolicy$instance;
 
 export interface DisposableHttpPipeline$instance extends HttpPipeline {
-    dispose(): void;
+    Dispose(): void;
 }
 
 
@@ -44,10 +44,10 @@ export const DisposableHttpPipeline: {
 export type DisposableHttpPipeline = DisposableHttpPipeline$instance;
 
 export interface HttpClientTransport$instance extends HttpPipelineTransport {
-    createRequest(): Request;
-    dispose(): void;
-    process(message: HttpMessage): void;
-    processAsync(message: HttpMessage): ValueTask;
+    CreateRequest(): Request;
+    Dispose(): void;
+    Process(message: HttpMessage): void;
+    ProcessAsync(message: HttpMessage): ValueTask;
 }
 
 
@@ -55,40 +55,40 @@ export const HttpClientTransport: {
     new(): HttpClientTransport;
     new(messageHandler: HttpMessageHandler): HttpClientTransport;
     new(client: HttpClient): HttpClientTransport;
-    readonly shared: HttpClientTransport;
+    readonly Shared: HttpClientTransport;
 };
 
 
 export type HttpClientTransport = HttpClientTransport$instance;
 
 export interface HttpPipeline$instance {
-    readonly responseClassifier: ResponseClassifier;
-    createMessage(): HttpMessage;
-    createMessage(context: RequestContext): HttpMessage;
-    createMessage(context: RequestContext, classifier?: ResponseClassifier): HttpMessage;
-    createRequest(): Request;
-    send(message: HttpMessage, cancellationToken: CancellationToken): void;
-    sendAsync(message: HttpMessage, cancellationToken: CancellationToken): ValueTask;
-    sendRequest(request: Request, cancellationToken: CancellationToken): Response;
-    sendRequestAsync(request: Request, cancellationToken: CancellationToken): ValueTask<Response>;
+    readonly ResponseClassifier: ResponseClassifier;
+    CreateMessage(): HttpMessage;
+    CreateMessage(context: RequestContext): HttpMessage;
+    CreateMessage(context: RequestContext, classifier?: ResponseClassifier): HttpMessage;
+    CreateRequest(): Request;
+    Send(message: HttpMessage, cancellationToken: CancellationToken): void;
+    SendAsync(message: HttpMessage, cancellationToken: CancellationToken): ValueTask;
+    SendRequest(request: Request, cancellationToken: CancellationToken): Response;
+    SendRequestAsync(request: Request, cancellationToken: CancellationToken): ValueTask<Response>;
 }
 
 
 export const HttpPipeline: {
     new(transport: HttpPipelineTransport, policies: HttpPipelinePolicy[], responseClassifier: ResponseClassifier): HttpPipeline;
-    createClientRequestIdScope(clientRequestId: string): IDisposable;
-    createHttpMessagePropertiesScope(messageProperties: IDictionary<System_Internal.String, unknown>): IDisposable;
+    CreateClientRequestIdScope(clientRequestId: string): IDisposable;
+    CreateHttpMessagePropertiesScope(messageProperties: IDictionary<System_Internal.String, unknown>): IDisposable;
 };
 
 
 export type HttpPipeline = HttpPipeline$instance;
 
 export interface HttpPipelineOptions$instance {
-    readonly clientOptions: ClientOptions;
-    readonly perCallPolicies: IList<HttpPipelinePolicy>;
-    readonly perRetryPolicies: IList<HttpPipelinePolicy>;
-    requestFailedDetailsParser: RequestFailedDetailsParser;
-    responseClassifier: ResponseClassifier;
+    readonly ClientOptions: ClientOptions;
+    readonly PerCallPolicies: IList<HttpPipelinePolicy>;
+    readonly PerRetryPolicies: IList<HttpPipelinePolicy>;
+    RequestFailedDetailsParser: RequestFailedDetailsParser;
+    ResponseClassifier: ResponseClassifier;
 }
 
 
@@ -100,8 +100,8 @@ export const HttpPipelineOptions: {
 export type HttpPipelineOptions = HttpPipelineOptions$instance;
 
 export interface HttpPipelinePolicy$instance {
-    process(message: HttpMessage, pipeline: ReadOnlyMemory<HttpPipelinePolicy>): void;
-    processAsync(message: HttpMessage, pipeline: ReadOnlyMemory<HttpPipelinePolicy>): ValueTask;
+    Process(message: HttpMessage, pipeline: ReadOnlyMemory<HttpPipelinePolicy>): void;
+    ProcessAsync(message: HttpMessage, pipeline: ReadOnlyMemory<HttpPipelinePolicy>): ValueTask;
 }
 
 
@@ -112,12 +112,12 @@ export const HttpPipelinePolicy: {
 export type HttpPipelinePolicy = HttpPipelinePolicy$instance;
 
 export interface HttpPipelineSynchronousPolicy$instance extends HttpPipelinePolicy {
-    onReceivedResponse(message: HttpMessage): void;
-    onSendingRequest(message: HttpMessage): void;
-    process(message: HttpMessage, pipeline: ReadOnlyMemory<HttpPipelinePolicy>): void;
-    process(message: HttpMessage, pipeline: ReadOnlyMemory<HttpPipelinePolicy>): void;
-    processAsync(message: HttpMessage, pipeline: ReadOnlyMemory<HttpPipelinePolicy>): ValueTask;
-    processAsync(message: HttpMessage, pipeline: ReadOnlyMemory<HttpPipelinePolicy>): ValueTask;
+    OnReceivedResponse(message: HttpMessage): void;
+    OnSendingRequest(message: HttpMessage): void;
+    Process(message: HttpMessage, pipeline: ReadOnlyMemory<HttpPipelinePolicy>): void;
+    Process(message: HttpMessage, pipeline: ReadOnlyMemory<HttpPipelinePolicy>): void;
+    ProcessAsync(message: HttpMessage, pipeline: ReadOnlyMemory<HttpPipelinePolicy>): ValueTask;
+    ProcessAsync(message: HttpMessage, pipeline: ReadOnlyMemory<HttpPipelinePolicy>): ValueTask;
 }
 
 
@@ -128,9 +128,9 @@ export const HttpPipelineSynchronousPolicy: {
 export type HttpPipelineSynchronousPolicy = HttpPipelineSynchronousPolicy$instance;
 
 export interface HttpPipelineTransport$instance {
-    createRequest(): Request;
-    process(message: HttpMessage): void;
-    processAsync(message: HttpMessage): ValueTask;
+    CreateRequest(): Request;
+    Process(message: HttpMessage): void;
+    ProcessAsync(message: HttpMessage): ValueTask;
 }
 
 
@@ -141,10 +141,10 @@ export const HttpPipelineTransport: {
 export type HttpPipelineTransport = HttpPipelineTransport$instance;
 
 export interface HttpPipelineTransportOptions$instance {
-    readonly clientCertificates: IList<X509Certificate2>;
-    isClientRedirectEnabled: boolean;
-    get serverCertificateCustomValidationCallback(): Func<ServerCertificateCustomValidationArgs, System_Internal.Boolean> | undefined;
-    set serverCertificateCustomValidationCallback(value: Func<ServerCertificateCustomValidationArgs, System_Internal.Boolean>);
+    readonly ClientCertificates: IList<X509Certificate2>;
+    IsClientRedirectEnabled: boolean;
+    get ServerCertificateCustomValidationCallback(): Func<ServerCertificateCustomValidationArgs, System_Internal.Boolean> | undefined;
+    set ServerCertificateCustomValidationCallback(value: Func<ServerCertificateCustomValidationArgs, System_Internal.Boolean>);
 }
 
 
@@ -156,22 +156,22 @@ export const HttpPipelineTransportOptions: {
 export type HttpPipelineTransportOptions = HttpPipelineTransportOptions$instance;
 
 export interface RedirectPolicy$instance extends HttpPipelinePolicy {
-    process(message: HttpMessage, pipeline: ReadOnlyMemory<HttpPipelinePolicy>): void;
-    processAsync(message: HttpMessage, pipeline: ReadOnlyMemory<HttpPipelinePolicy>): ValueTask;
+    Process(message: HttpMessage, pipeline: ReadOnlyMemory<HttpPipelinePolicy>): void;
+    ProcessAsync(message: HttpMessage, pipeline: ReadOnlyMemory<HttpPipelinePolicy>): ValueTask;
 }
 
 
 export const RedirectPolicy: {
     new(): RedirectPolicy;
-    setAllowAutoRedirect(message: HttpMessage, allowAutoRedirect: boolean): void;
+    SetAllowAutoRedirect(message: HttpMessage, allowAutoRedirect: boolean): void;
 };
 
 
 export type RedirectPolicy = RedirectPolicy$instance;
 
 export interface RetryPolicy$instance extends HttpPipelinePolicy {
-    process(message: HttpMessage, pipeline: ReadOnlyMemory<HttpPipelinePolicy>): void;
-    processAsync(message: HttpMessage, pipeline: ReadOnlyMemory<HttpPipelinePolicy>): ValueTask;
+    Process(message: HttpMessage, pipeline: ReadOnlyMemory<HttpPipelinePolicy>): void;
+    ProcessAsync(message: HttpMessage, pipeline: ReadOnlyMemory<HttpPipelinePolicy>): ValueTask;
 }
 
 
@@ -183,9 +183,9 @@ export const RetryPolicy: {
 export type RetryPolicy = RetryPolicy$instance;
 
 export interface ServerCertificateCustomValidationArgs$instance {
-    readonly certificate: X509Certificate2 | undefined;
-    readonly certificateAuthorityChain: X509Chain | undefined;
-    readonly sslPolicyErrors: SslPolicyErrors;
+    readonly Certificate: X509Certificate2 | undefined;
+    readonly CertificateAuthorityChain: X509Chain | undefined;
+    readonly SslPolicyErrors: SslPolicyErrors;
 }
 
 
@@ -197,11 +197,11 @@ export const ServerCertificateCustomValidationArgs: {
 export type ServerCertificateCustomValidationArgs = ServerCertificateCustomValidationArgs$instance;
 
 export abstract class HttpPipelineBuilder$instance {
-    static build(options: ClientOptions, perCallPolicies: HttpPipelinePolicy[], perRetryPolicies: HttpPipelinePolicy[], transportOptions: HttpPipelineTransportOptions, responseClassifier: ResponseClassifier): DisposableHttpPipeline;
-    static build(options: ClientOptions, perCallPolicies: HttpPipelinePolicy[], perRetryPolicies: HttpPipelinePolicy[], responseClassifier: ResponseClassifier): HttpPipeline;
-    static build(options: ClientOptions, ...perRetryPolicies: HttpPipelinePolicy[]): HttpPipeline;
-    static build(options: HttpPipelineOptions, transportOptions: HttpPipelineTransportOptions): DisposableHttpPipeline;
-    static build(options: HttpPipelineOptions): HttpPipeline;
+    static Build(options: ClientOptions, perCallPolicies: HttpPipelinePolicy[], perRetryPolicies: HttpPipelinePolicy[], transportOptions: HttpPipelineTransportOptions, responseClassifier: ResponseClassifier): DisposableHttpPipeline;
+    static Build(options: ClientOptions, perCallPolicies: HttpPipelinePolicy[], perRetryPolicies: HttpPipelinePolicy[], responseClassifier: ResponseClassifier): HttpPipeline;
+    static Build(options: ClientOptions, ...perRetryPolicies: HttpPipelinePolicy[]): HttpPipeline;
+    static Build(options: HttpPipelineOptions, transportOptions: HttpPipelineTransportOptions): DisposableHttpPipeline;
+    static Build(options: HttpPipelineOptions): HttpPipeline;
 }
 
 

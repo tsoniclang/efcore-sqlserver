@@ -13,51 +13,51 @@ import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Ru
 import type { ISerializable, SerializationInfo, StreamingContext } from "@tsonic/dotnet/System.Runtime.Serialization.js";
 
 export enum DataAccessKind {
-    none = 0,
-    read = 1
+    None = 0,
+    Read = 1
 }
 
 
 export enum Format {
-    unknown = 0,
-    native = 1,
-    userDefined = 2
+    Unknown = 0,
+    Native = 1,
+    UserDefined = 2
 }
 
 
 export enum SystemDataAccessKind {
-    none = 0,
-    read = 1
+    None = 0,
+    Read = 1
 }
 
 
 export interface IBinarySerialize$instance {
-    read(r: BinaryReader): void;
-    write(w: BinaryWriter): void;
+    Read(r: BinaryReader): void;
+    Write(w: BinaryWriter): void;
 }
 
 
 export type IBinarySerialize = IBinarySerialize$instance;
 
 export interface InvalidUdtException$instance extends SystemException {
-    getObjectData(si: SerializationInfo, context: StreamingContext): void;
+    GetObjectData(si: SerializationInfo, context: StreamingContext): void;
 }
 
 
 export const InvalidUdtException: {
     new(): InvalidUdtException;
-    create(udtType: Type, resourceReason?: string): InvalidUdtException;
+    Create(udtType: Type, resourceReason?: string): InvalidUdtException;
 };
 
 
 export type InvalidUdtException = InvalidUdtException$instance;
 
 export interface SqlFacetAttribute$instance extends Attribute {
-    isFixedLength: boolean;
-    isNullable: boolean;
-    maxSize: int;
-    precision: int;
-    scale: int;
+    IsFixedLength: boolean;
+    IsNullable: boolean;
+    MaxSize: int;
+    Precision: int;
+    Scale: int;
 }
 
 
@@ -69,13 +69,13 @@ export const SqlFacetAttribute: {
 export type SqlFacetAttribute = SqlFacetAttribute$instance;
 
 export interface SqlFunctionAttribute$instance extends Attribute {
-    dataAccess: DataAccessKind;
-    fillRowMethodName: string;
-    isDeterministic: boolean;
-    isPrecise: boolean;
-    name: string;
-    systemDataAccess: SystemDataAccessKind;
-    tableDefinition: string;
+    DataAccess: DataAccessKind;
+    FillRowMethodName: string;
+    IsDeterministic: boolean;
+    IsPrecise: boolean;
+    Name: string;
+    SystemDataAccess: SystemDataAccessKind;
+    TableDefinition: string;
 }
 
 
@@ -87,9 +87,9 @@ export const SqlFunctionAttribute: {
 export type SqlFunctionAttribute = SqlFunctionAttribute$instance;
 
 export interface SqlMethodAttribute$instance extends SqlFunctionAttribute {
-    invokeIfReceiverIsNull: boolean;
-    isMutator: boolean;
-    onNullCall: boolean;
+    InvokeIfReceiverIsNull: boolean;
+    IsMutator: boolean;
+    OnNullCall: boolean;
 }
 
 
@@ -101,31 +101,31 @@ export const SqlMethodAttribute: {
 export type SqlMethodAttribute = SqlMethodAttribute$instance;
 
 export interface SqlUserDefinedAggregateAttribute$instance extends Attribute {
-    readonly format: Format;
-    isInvariantToDuplicates: boolean;
-    isInvariantToNulls: boolean;
-    isInvariantToOrder: boolean;
-    isNullIfEmpty: boolean;
-    maxByteSize: int;
-    name: string;
+    readonly Format: Format;
+    IsInvariantToDuplicates: boolean;
+    IsInvariantToNulls: boolean;
+    IsInvariantToOrder: boolean;
+    IsNullIfEmpty: boolean;
+    MaxByteSize: int;
+    Name: string;
 }
 
 
 export const SqlUserDefinedAggregateAttribute: {
     new(format: Format): SqlUserDefinedAggregateAttribute;
-    readonly maxByteSizeValue: int;
+    readonly MaxByteSizeValue: int;
 };
 
 
 export type SqlUserDefinedAggregateAttribute = SqlUserDefinedAggregateAttribute$instance;
 
 export interface SqlUserDefinedTypeAttribute$instance extends Attribute {
-    readonly format: Format;
-    isByteOrdered: boolean;
-    isFixedLength: boolean;
-    maxByteSize: int;
-    name: string;
-    validationMethodName: string;
+    readonly Format: Format;
+    IsByteOrdered: boolean;
+    IsFixedLength: boolean;
+    MaxByteSize: int;
+    Name: string;
+    ValidationMethodName: string;
 }
 
 

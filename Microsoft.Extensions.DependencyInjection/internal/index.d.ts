@@ -13,12 +13,12 @@ import type { DbContext, DbContextOptionsBuilder } from "@tsonic/efcore/Microsof
 import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection.js";
 
 export abstract class SqlServerServiceCollectionExtensions$instance {
-    static addAzureSql<TContext extends DbContext>(serviceCollection: IServiceCollection, connectionString: string, azureSqlOptionsAction?: Action<AzureSqlDbContextOptionsBuilder>, optionsAction?: Action<DbContextOptionsBuilder>): IServiceCollection;
-    static addAzureSynapse<TContext extends DbContext>(serviceCollection: IServiceCollection, connectionString: string, azureSynapseOptionsAction?: Action<AzureSynapseDbContextOptionsBuilder>, optionsAction?: Action<DbContextOptionsBuilder>): IServiceCollection;
-    static addEntityFrameworkAzureSql(serviceCollection: IServiceCollection): IServiceCollection;
-    static addEntityFrameworkAzureSynapse(serviceCollection: IServiceCollection): IServiceCollection;
-    static addEntityFrameworkSqlServer(serviceCollection: IServiceCollection): IServiceCollection;
-    static addSqlServer<TContext extends DbContext>(serviceCollection: IServiceCollection, connectionString: string, sqlServerOptionsAction?: Action<SqlServerDbContextOptionsBuilder>, optionsAction?: Action<DbContextOptionsBuilder>): IServiceCollection;
+    static AddAzureSql<TContext extends DbContext>(serviceCollection: IServiceCollection, connectionString: string, azureSqlOptionsAction?: Action<AzureSqlDbContextOptionsBuilder>, optionsAction?: Action<DbContextOptionsBuilder>): IServiceCollection;
+    static AddAzureSynapse<TContext extends DbContext>(serviceCollection: IServiceCollection, connectionString: string, azureSynapseOptionsAction?: Action<AzureSynapseDbContextOptionsBuilder>, optionsAction?: Action<DbContextOptionsBuilder>): IServiceCollection;
+    static AddEntityFrameworkAzureSql(serviceCollection: IServiceCollection): IServiceCollection;
+    static AddEntityFrameworkAzureSynapse(serviceCollection: IServiceCollection): IServiceCollection;
+    static AddEntityFrameworkSqlServer(serviceCollection: IServiceCollection): IServiceCollection;
+    static AddSqlServer<TContext extends DbContext>(serviceCollection: IServiceCollection, connectionString: string, sqlServerOptionsAction?: Action<SqlServerDbContextOptionsBuilder>, optionsAction?: Action<DbContextOptionsBuilder>): IServiceCollection;
 }
 
 

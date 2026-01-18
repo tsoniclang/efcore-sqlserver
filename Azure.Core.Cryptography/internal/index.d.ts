@@ -12,17 +12,17 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface IKeyEncryptionKey$instance {
-    readonly keyId: string;
-    wrapKey(algorithm: string, key: ReadOnlyMemory<System_Internal.Byte>, cancellationToken?: CancellationToken): byte[];
-    wrapKeyAsync(algorithm: string, key: ReadOnlyMemory<System_Internal.Byte>, cancellationToken?: CancellationToken): Task<byte[]>;
+    readonly KeyId: string;
+    WrapKey(algorithm: string, key: ReadOnlyMemory<System_Internal.Byte>, cancellationToken?: CancellationToken): byte[];
+    WrapKeyAsync(algorithm: string, key: ReadOnlyMemory<System_Internal.Byte>, cancellationToken?: CancellationToken): Task<byte[]>;
 }
 
 
 export type IKeyEncryptionKey = IKeyEncryptionKey$instance;
 
 export interface IKeyEncryptionKeyResolver$instance {
-    resolve(keyId: string, cancellationToken?: CancellationToken): IKeyEncryptionKey;
-    resolveAsync(keyId: string, cancellationToken?: CancellationToken): Task<IKeyEncryptionKey>;
+    Resolve(keyId: string, cancellationToken?: CancellationToken): IKeyEncryptionKey;
+    ResolveAsync(keyId: string, cancellationToken?: CancellationToken): Task<IKeyEncryptionKey>;
 }
 
 

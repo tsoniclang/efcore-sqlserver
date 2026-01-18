@@ -18,10 +18,10 @@ export interface AzureEventSourceListener$instance extends EventListener {
 export const AzureEventSourceListener: {
     new(log: Action<EventWrittenEventArgs>, level: EventLevel): AzureEventSourceListener;
     new(log: Action<EventWrittenEventArgs, System_Internal.String>, level: EventLevel): AzureEventSourceListener;
-    readonly traitName: string;
-    readonly traitValue: string;
-    createConsoleLogger(level?: EventLevel): AzureEventSourceListener;
-    createTraceLogger(level?: EventLevel): AzureEventSourceListener;
+    readonly TraitName: string;
+    readonly TraitValue: string;
+    CreateConsoleLogger(level?: EventLevel): AzureEventSourceListener;
+    CreateTraceLogger(level?: EventLevel): AzureEventSourceListener;
 };
 
 

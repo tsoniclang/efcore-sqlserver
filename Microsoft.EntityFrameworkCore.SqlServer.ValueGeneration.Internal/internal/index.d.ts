@@ -20,21 +20,21 @@ import * as Microsoft_EntityFrameworkCore_ValueGeneration_Internal from "@tsonic
 import type { HiLoValueGenerator, HiLoValueGeneratorState, IValueGeneratorCache, IValueGeneratorSelector, RelationalValueGeneratorSelector, ValueGenerator, ValueGeneratorCache, ValueGeneratorCacheDependencies, ValueGeneratorSelectorDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.ValueGeneration.js";
 
 export interface ISqlServerSequenceValueGeneratorFactory$instance {
-    tryCreate(property: IProperty, clrType: Type, generatorState: SqlServerSequenceValueGeneratorState, connection: ISqlServerConnection, rawSqlCommandBuilder: IRawSqlCommandBuilder, commandLogger: IRelationalCommandDiagnosticsLogger): ValueGenerator | undefined;
+    TryCreate(property: IProperty, clrType: Type, generatorState: SqlServerSequenceValueGeneratorState, connection: ISqlServerConnection, rawSqlCommandBuilder: IRawSqlCommandBuilder, commandLogger: IRelationalCommandDiagnosticsLogger): ValueGenerator | undefined;
 }
 
 
 export type ISqlServerSequenceValueGeneratorFactory = ISqlServerSequenceValueGeneratorFactory$instance;
 
 export interface ISqlServerValueGeneratorCache$instance extends IValueGeneratorCache {
-    getOrAddSequenceState(property: IProperty, connection: IRelationalConnection): SqlServerSequenceValueGeneratorState;
+    GetOrAddSequenceState(property: IProperty, connection: IRelationalConnection): SqlServerSequenceValueGeneratorState;
 }
 
 
 export type ISqlServerValueGeneratorCache = ISqlServerValueGeneratorCache$instance;
 
 export interface SqlServerSequenceHiLoValueGenerator_1$instance<TValue> extends HiLoValueGenerator<TValue> {
-    readonly generatesTemporaryValues: boolean;
+    readonly GeneratesTemporaryValues: boolean;
 }
 
 
@@ -46,7 +46,7 @@ export const SqlServerSequenceHiLoValueGenerator_1: {
 export type SqlServerSequenceHiLoValueGenerator_1<TValue> = SqlServerSequenceHiLoValueGenerator_1$instance<TValue>;
 
 export interface SqlServerSequenceValueGeneratorFactory$instance {
-    tryCreate(property: IProperty, type: Type, generatorState: SqlServerSequenceValueGeneratorState, connection: ISqlServerConnection, rawSqlCommandBuilder: IRawSqlCommandBuilder, commandLogger: IRelationalCommandDiagnosticsLogger): ValueGenerator | undefined;
+    TryCreate(property: IProperty, type: Type, generatorState: SqlServerSequenceValueGeneratorState, connection: ISqlServerConnection, rawSqlCommandBuilder: IRawSqlCommandBuilder, commandLogger: IRelationalCommandDiagnosticsLogger): ValueGenerator | undefined;
 }
 
 
@@ -65,7 +65,7 @@ export type SqlServerSequenceValueGeneratorFactory = SqlServerSequenceValueGener
 
 
 export interface SqlServerSequenceValueGeneratorState$instance extends HiLoValueGeneratorState {
-    readonly sequence: ISequence;
+    readonly Sequence: ISequence;
 }
 
 
@@ -77,7 +77,7 @@ export const SqlServerSequenceValueGeneratorState: {
 export type SqlServerSequenceValueGeneratorState = SqlServerSequenceValueGeneratorState$instance;
 
 export interface SqlServerValueGeneratorCache$instance extends ValueGeneratorCache {
-    getOrAddSequenceState(property: IProperty, connection: IRelationalConnection): SqlServerSequenceValueGeneratorState;
+    GetOrAddSequenceState(property: IProperty, connection: IRelationalConnection): SqlServerSequenceValueGeneratorState;
 }
 
 
@@ -96,9 +96,9 @@ export type SqlServerValueGeneratorCache = SqlServerValueGeneratorCache$instance
 
 
 export interface SqlServerValueGeneratorSelector$instance extends RelationalValueGeneratorSelector {
-    readonly cache: ISqlServerValueGeneratorCache;
-    select(property: IProperty, typeBase: ITypeBase): ValueGenerator | undefined;
-    trySelect(property: IProperty, typeBase: ITypeBase, valueGenerator: ValueGenerator): boolean;
+    readonly Cache: ISqlServerValueGeneratorCache;
+    Select(property: IProperty, typeBase: ITypeBase): ValueGenerator | undefined;
+    TrySelect(property: IProperty, typeBase: ITypeBase, valueGenerator: ValueGenerator): boolean;
 }
 
 

@@ -12,7 +12,7 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
 
 export abstract class AcquireTokenParameterBuilderExtensions$instance {
-    static withExtraHttpHeaders<T extends AbstractAcquireTokenParameterBuilder_1<T>>(builder: AbstractAcquireTokenParameterBuilder_1<T>, extraHttpHeaders: IDictionary<System_Internal.String, System_Internal.String>): T;
+    static WithExtraHttpHeaders<T extends AbstractAcquireTokenParameterBuilder_1<T>>(builder: AbstractAcquireTokenParameterBuilder_1<T>, extraHttpHeaders: IDictionary<System_Internal.String, System_Internal.String>): T;
 }
 
 

@@ -16,9 +16,9 @@ import * as Microsoft_EntityFrameworkCore_Migrations_Operations_Internal from "@
 import type { DatabaseOperation, MigrationOperation } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations.Operations.js";
 
 export interface SqlServerCreateDatabaseOperation$instance extends DatabaseOperation {
-    get fileName(): string | undefined;
-    set fileName(value: string);
-    name: string;
+    get FileName(): string | undefined;
+    set FileName(value: string);
+    Name: string;
 }
 
 
@@ -30,7 +30,7 @@ export const SqlServerCreateDatabaseOperation: {
 export type SqlServerCreateDatabaseOperation = SqlServerCreateDatabaseOperation$instance;
 
 export interface SqlServerDropDatabaseOperation$instance extends MigrationOperation {
-    name: string;
+    Name: string;
 }
 
 

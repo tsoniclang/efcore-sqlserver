@@ -10,14 +10,14 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Byte, Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Object as ClrObject } from "@tsonic/dotnet/System.js";
 
 export enum DataProtectionScope {
-    currentUser = 0,
-    localMachine = 1
+    CurrentUser = 0,
+    LocalMachine = 1
 }
 
 
 export abstract class ProtectedData$instance {
-    static protect(userData: byte[], optionalEntropy: byte[], scope: DataProtectionScope): byte[];
-    static unprotect(encryptedData: byte[], optionalEntropy: byte[], scope: DataProtectionScope): byte[];
+    static Protect(userData: byte[], optionalEntropy: byte[], scope: DataProtectionScope): byte[];
+    static Unprotect(encryptedData: byte[], optionalEntropy: byte[], scope: DataProtectionScope): byte[];
 }
 
 

@@ -22,7 +22,7 @@ export enum SensitivityRank {
 
 
 export interface ColumnSensitivity$instance {
-    readonly sensitivityProperties: ReadOnlyCollection<SensitivityProperty>;
+    readonly SensitivityProperties: ReadOnlyCollection<SensitivityProperty>;
 }
 
 
@@ -34,8 +34,8 @@ export const ColumnSensitivity: {
 export type ColumnSensitivity = ColumnSensitivity$instance;
 
 export interface InformationType$instance {
-    readonly id: string;
-    readonly name: string;
+    readonly Id: string;
+    readonly Name: string;
 }
 
 
@@ -47,8 +47,8 @@ export const InformationType: {
 export type InformationType = InformationType$instance;
 
 export interface Label$instance {
-    readonly id: string;
-    readonly name: string;
+    readonly Id: string;
+    readonly Name: string;
 }
 
 
@@ -60,10 +60,10 @@ export const Label: {
 export type Label = Label$instance;
 
 export interface SensitivityClassification$instance {
-    readonly columnSensitivities: ReadOnlyCollection<ColumnSensitivity>;
-    readonly informationTypes: ReadOnlyCollection<InformationType>;
-    readonly labels: ReadOnlyCollection<Label>;
-    readonly sensitivityRank: SensitivityRank;
+    readonly ColumnSensitivities: ReadOnlyCollection<ColumnSensitivity>;
+    readonly InformationTypes: ReadOnlyCollection<InformationType>;
+    readonly Labels: ReadOnlyCollection<Label>;
+    readonly SensitivityRank: SensitivityRank;
 }
 
 
@@ -75,9 +75,9 @@ export const SensitivityClassification: {
 export type SensitivityClassification = SensitivityClassification$instance;
 
 export interface SensitivityProperty$instance {
-    readonly informationType: InformationType;
-    readonly label: Label;
-    readonly sensitivityRank: SensitivityRank;
+    readonly InformationType: InformationType;
+    readonly Label: Label;
+    readonly SensitivityRank: SensitivityRank;
 }
 
 

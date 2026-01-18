@@ -10,7 +10,7 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Object as ClrObject, Void } from "@tsonic/dotnet/System.js";
 
 export abstract class TraceConfiguration$instance {
-    static register(): void;
+    static Register(): void;
 }
 
 
