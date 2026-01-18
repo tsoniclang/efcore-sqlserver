@@ -10,8 +10,8 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Boolean as ClrBoolean, Object as ClrObject, Void } from "@tsonic/dotnet/System.js";
 
 export abstract class WindowsNativeUtils$instance {
-    static initializeProcessSecurity(): void;
-    static isElevatedUser(): boolean;
+    static InitializeProcessSecurity(): void;
+    static IsElevatedUser(): boolean;
 }
 
 

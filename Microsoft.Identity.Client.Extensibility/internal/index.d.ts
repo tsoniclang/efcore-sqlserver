@@ -15,18 +15,18 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface ICustomWebUi$instance {
-    acquireAuthorizationCodeAsync(authorizationUri: Uri, redirectUri: Uri, cancellationToken: CancellationToken): Task<Uri>;
+    AcquireAuthorizationCodeAsync(authorizationUri: Uri, redirectUri: Uri, cancellationToken: CancellationToken): Task<Uri>;
 }
 
 
 export type ICustomWebUi = ICustomWebUi$instance;
 
 export interface AppTokenProviderParameters$instance {
-    readonly cancellationToken: CancellationToken;
-    readonly claims: string;
-    readonly correlationId: string | undefined;
-    readonly scopes: IEnumerable<System_Internal.String>;
-    readonly tenantId: string;
+    readonly CancellationToken: CancellationToken;
+    readonly Claims: string;
+    readonly CorrelationId: string | undefined;
+    readonly Scopes: IEnumerable<System_Internal.String>;
+    readonly TenantId: string;
 }
 
 
@@ -38,9 +38,9 @@ export const AppTokenProviderParameters: {
 export type AppTokenProviderParameters = AppTokenProviderParameters$instance;
 
 export interface AppTokenProviderResult$instance {
-    accessToken: string;
-    expiresInSeconds: long;
-    refreshInSeconds: Nullable<System_Internal.Int64>;
+    AccessToken: string;
+    ExpiresInSeconds: long;
+    RefreshInSeconds: Nullable<System_Internal.Int64>;
 }
 
 
@@ -52,9 +52,9 @@ export const AppTokenProviderResult: {
 export type AppTokenProviderResult = AppTokenProviderResult$instance;
 
 export interface MsalAuthenticationExtension$instance {
-    additionalCacheParameters: IEnumerable<System_Internal.String>;
-    authenticationOperation: IAuthenticationOperation;
-    onBeforeTokenRequestHandler: Func<OnBeforeTokenRequestData, Task>;
+    AdditionalCacheParameters: IEnumerable<System_Internal.String>;
+    AuthenticationOperation: IAuthenticationOperation;
+    OnBeforeTokenRequestHandler: Func<OnBeforeTokenRequestData, Task>;
 }
 
 
@@ -66,10 +66,10 @@ export const MsalAuthenticationExtension: {
 export type MsalAuthenticationExtension = MsalAuthenticationExtension$instance;
 
 export interface OnBeforeTokenRequestData$instance {
-    readonly bodyParameters: IDictionary<System_Internal.String, System_Internal.String>;
-    readonly cancellationToken: CancellationToken;
-    readonly headers: IDictionary<System_Internal.String, System_Internal.String>;
-    requestUri: Uri;
+    readonly BodyParameters: IDictionary<System_Internal.String, System_Internal.String>;
+    readonly CancellationToken: CancellationToken;
+    readonly Headers: IDictionary<System_Internal.String, System_Internal.String>;
+    RequestUri: Uri;
 }
 
 
@@ -81,46 +81,46 @@ export const OnBeforeTokenRequestData: {
 export type OnBeforeTokenRequestData = OnBeforeTokenRequestData$instance;
 
 export abstract class AbstractConfidentialClientAcquireTokenParameterBuilderExtension$instance {
-    static onBeforeTokenRequest<T extends AbstractAcquireTokenParameterBuilder_1<T>>(builder: AbstractAcquireTokenParameterBuilder_1<T>, onBeforeTokenRequestHandler: Func<OnBeforeTokenRequestData, Task>): AbstractAcquireTokenParameterBuilder_1<T>;
-    static withAdditionalCacheParameters<T extends AbstractAcquireTokenParameterBuilder_1<T>>(builder: AbstractAcquireTokenParameterBuilder_1<T>, cacheParameters: IEnumerable<System_Internal.String>): AbstractAcquireTokenParameterBuilder_1<T>;
-    static withAuthenticationExtension<T extends AbstractAcquireTokenParameterBuilder_1<T>>(builder: AbstractAcquireTokenParameterBuilder_1<T>, authenticationExtension: MsalAuthenticationExtension): AbstractAcquireTokenParameterBuilder_1<T>;
-    static withFmiPathForClientAssertion<T extends AbstractAcquireTokenParameterBuilder_1<T>>(builder: AbstractAcquireTokenParameterBuilder_1<T>, fmiPath: string): AbstractAcquireTokenParameterBuilder_1<T>;
-    static withProofOfPosessionKeyId<T extends AbstractAcquireTokenParameterBuilder_1<T>>(builder: AbstractAcquireTokenParameterBuilder_1<T>, keyId: string, expectedTokenTypeFromAad?: string): AbstractAcquireTokenParameterBuilder_1<T>;
+    static OnBeforeTokenRequest<T extends AbstractAcquireTokenParameterBuilder_1<T>>(builder: AbstractAcquireTokenParameterBuilder_1<T>, onBeforeTokenRequestHandler: Func<OnBeforeTokenRequestData, Task>): AbstractAcquireTokenParameterBuilder_1<T>;
+    static WithAdditionalCacheParameters<T extends AbstractAcquireTokenParameterBuilder_1<T>>(builder: AbstractAcquireTokenParameterBuilder_1<T>, cacheParameters: IEnumerable<System_Internal.String>): AbstractAcquireTokenParameterBuilder_1<T>;
+    static WithAuthenticationExtension<T extends AbstractAcquireTokenParameterBuilder_1<T>>(builder: AbstractAcquireTokenParameterBuilder_1<T>, authenticationExtension: MsalAuthenticationExtension): AbstractAcquireTokenParameterBuilder_1<T>;
+    static WithFmiPathForClientAssertion<T extends AbstractAcquireTokenParameterBuilder_1<T>>(builder: AbstractAcquireTokenParameterBuilder_1<T>, fmiPath: string): AbstractAcquireTokenParameterBuilder_1<T>;
+    static WithProofOfPosessionKeyId<T extends AbstractAcquireTokenParameterBuilder_1<T>>(builder: AbstractAcquireTokenParameterBuilder_1<T>, keyId: string, expectedTokenTypeFromAad?: string): AbstractAcquireTokenParameterBuilder_1<T>;
 }
 
 
 export type AbstractConfidentialClientAcquireTokenParameterBuilderExtension = AbstractConfidentialClientAcquireTokenParameterBuilderExtension$instance;
 
 export abstract class AcquireTokenForClientBuilderExtensions$instance {
-    static withProofOfPosessionKeyId(builder: AcquireTokenForClientParameterBuilder, keyId: string, expectedTokenTypeFromAad?: string): AcquireTokenForClientParameterBuilder;
+    static WithProofOfPosessionKeyId(builder: AcquireTokenForClientParameterBuilder, keyId: string, expectedTokenTypeFromAad?: string): AcquireTokenForClientParameterBuilder;
 }
 
 
 export type AcquireTokenForClientBuilderExtensions = AcquireTokenForClientBuilderExtensions$instance;
 
 export abstract class AcquireTokenInteractiveParameterBuilderExtensions$instance {
-    static withCustomWebUi(builder: AcquireTokenInteractiveParameterBuilder, customWebUi: ICustomWebUi): AcquireTokenInteractiveParameterBuilder;
+    static WithCustomWebUi(builder: AcquireTokenInteractiveParameterBuilder, customWebUi: ICustomWebUi): AcquireTokenInteractiveParameterBuilder;
 }
 
 
 export type AcquireTokenInteractiveParameterBuilderExtensions = AcquireTokenInteractiveParameterBuilderExtensions$instance;
 
 export abstract class AcquireTokenOnBehalfOfParameterBuilderExtensions$instance {
-    static withSearchInCacheForLongRunningProcess(builder: AcquireTokenOnBehalfOfParameterBuilder, searchInCache?: boolean): AcquireTokenOnBehalfOfParameterBuilder;
+    static WithSearchInCacheForLongRunningProcess(builder: AcquireTokenOnBehalfOfParameterBuilder, searchInCache?: boolean): AcquireTokenOnBehalfOfParameterBuilder;
 }
 
 
 export type AcquireTokenOnBehalfOfParameterBuilderExtensions = AcquireTokenOnBehalfOfParameterBuilderExtensions$instance;
 
 export abstract class ConfidentialClientApplicationBuilderExtensions$instance {
-    static withAppTokenProvider(builder: ConfidentialClientApplicationBuilder, appTokenProvider: Func<AppTokenProviderParameters, Task<AppTokenProviderResult>>): ConfidentialClientApplicationBuilder;
+    static WithAppTokenProvider(builder: ConfidentialClientApplicationBuilder, appTokenProvider: Func<AppTokenProviderParameters, Task<AppTokenProviderResult>>): ConfidentialClientApplicationBuilder;
 }
 
 
 export type ConfidentialClientApplicationBuilderExtensions = ConfidentialClientApplicationBuilderExtensions$instance;
 
 export abstract class ConfidentialClientApplicationExtensions$instance {
-    static stopLongRunningProcessInWebApiAsync(clientApp: ILongRunningWebApi, longRunningProcessSessionKey: string, cancellationToken?: CancellationToken): Task<System_Internal.Boolean>;
+    static StopLongRunningProcessInWebApiAsync(clientApp: ILongRunningWebApi, longRunningProcessSessionKey: string, cancellationToken?: CancellationToken): Task<System_Internal.Boolean>;
 }
 
 

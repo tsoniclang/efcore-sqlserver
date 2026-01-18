@@ -16,11 +16,11 @@ import type { IRelationalDbContextOptionsBuilderInfrastructure, RelationalDbCont
 import type { DbContextOptionsBuilder } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.js";
 
 export interface AzureSqlDbContextOptionsBuilder$instance extends SqlEngineDbContextOptionsBuilderBase_1<AzureSqlDbContextOptionsBuilder> {
-    enableRetryOnFailure(): AzureSqlDbContextOptionsBuilder;
-    enableRetryOnFailure(maxRetryCount: int): AzureSqlDbContextOptionsBuilder;
-    enableRetryOnFailure(errorNumbersToAdd: ICollection<System_Internal.Int32>): AzureSqlDbContextOptionsBuilder;
-    enableRetryOnFailure(maxRetryCount: int, maxRetryDelay: TimeSpan, errorNumbersToAdd: IEnumerable<System_Internal.Int32>): AzureSqlDbContextOptionsBuilder;
-    useCompatibilityLevel(compatibilityLevel: int): AzureSqlDbContextOptionsBuilder;
+    EnableRetryOnFailure(): AzureSqlDbContextOptionsBuilder;
+    EnableRetryOnFailure(maxRetryCount: int): AzureSqlDbContextOptionsBuilder;
+    EnableRetryOnFailure(errorNumbersToAdd: ICollection<System_Internal.Int32>): AzureSqlDbContextOptionsBuilder;
+    EnableRetryOnFailure(maxRetryCount: int, maxRetryDelay: TimeSpan, errorNumbersToAdd: IEnumerable<System_Internal.Int32>): AzureSqlDbContextOptionsBuilder;
+    UseCompatibilityLevel(compatibilityLevel: int): AzureSqlDbContextOptionsBuilder;
 }
 
 
@@ -32,11 +32,11 @@ export const AzureSqlDbContextOptionsBuilder: {
 export type AzureSqlDbContextOptionsBuilder = AzureSqlDbContextOptionsBuilder$instance;
 
 export interface AzureSynapseDbContextOptionsBuilder$instance extends SqlEngineDbContextOptionsBuilderBase_1<AzureSynapseDbContextOptionsBuilder> {
-    enableRetryOnFailure(): AzureSynapseDbContextOptionsBuilder;
-    enableRetryOnFailure(maxRetryCount: int): AzureSynapseDbContextOptionsBuilder;
-    enableRetryOnFailure(errorNumbersToAdd: ICollection<System_Internal.Int32>): AzureSynapseDbContextOptionsBuilder;
-    enableRetryOnFailure(maxRetryCount: int, maxRetryDelay: TimeSpan, errorNumbersToAdd: IEnumerable<System_Internal.Int32>): AzureSynapseDbContextOptionsBuilder;
-    useCompatibilityLevel(compatibilityLevel: int): AzureSynapseDbContextOptionsBuilder;
+    EnableRetryOnFailure(): AzureSynapseDbContextOptionsBuilder;
+    EnableRetryOnFailure(maxRetryCount: int): AzureSynapseDbContextOptionsBuilder;
+    EnableRetryOnFailure(errorNumbersToAdd: ICollection<System_Internal.Int32>): AzureSynapseDbContextOptionsBuilder;
+    EnableRetryOnFailure(maxRetryCount: int, maxRetryDelay: TimeSpan, errorNumbersToAdd: IEnumerable<System_Internal.Int32>): AzureSynapseDbContextOptionsBuilder;
+    UseCompatibilityLevel(compatibilityLevel: int): AzureSynapseDbContextOptionsBuilder;
 }
 
 
@@ -48,11 +48,11 @@ export const AzureSynapseDbContextOptionsBuilder: {
 export type AzureSynapseDbContextOptionsBuilder = AzureSynapseDbContextOptionsBuilder$instance;
 
 export interface SqlEngineDbContextOptionsBuilder$instance extends SqlEngineDbContextOptionsBuilderBase_1<SqlEngineDbContextOptionsBuilder> {
-    enableRetryOnFailure(): SqlEngineDbContextOptionsBuilder;
-    enableRetryOnFailure(maxRetryCount: int): SqlEngineDbContextOptionsBuilder;
-    enableRetryOnFailure(errorNumbersToAdd: ICollection<System_Internal.Int32>): SqlEngineDbContextOptionsBuilder;
-    enableRetryOnFailure(maxRetryCount: int, maxRetryDelay: TimeSpan, errorNumbersToAdd: IEnumerable<System_Internal.Int32>): SqlEngineDbContextOptionsBuilder;
-    enableRetryOnFailureByDefault(): SqlEngineDbContextOptionsBuilder;
+    EnableRetryOnFailure(): SqlEngineDbContextOptionsBuilder;
+    EnableRetryOnFailure(maxRetryCount: int): SqlEngineDbContextOptionsBuilder;
+    EnableRetryOnFailure(errorNumbersToAdd: ICollection<System_Internal.Int32>): SqlEngineDbContextOptionsBuilder;
+    EnableRetryOnFailure(maxRetryCount: int, maxRetryDelay: TimeSpan, errorNumbersToAdd: IEnumerable<System_Internal.Int32>): SqlEngineDbContextOptionsBuilder;
+    EnableRetryOnFailureByDefault(): SqlEngineDbContextOptionsBuilder;
 }
 
 
@@ -74,12 +74,12 @@ export const SqlEngineDbContextOptionsBuilderBase_1: {
 export type SqlEngineDbContextOptionsBuilderBase_1<TSelf extends SqlEngineDbContextOptionsBuilderBase_1<TSelf>> = SqlEngineDbContextOptionsBuilderBase_1$instance<TSelf>;
 
 export interface SqlServerDbContextOptionsBuilder$instance extends SqlEngineDbContextOptionsBuilderBase_1<SqlServerDbContextOptionsBuilder> {
-    enableRetryOnFailure(): SqlServerDbContextOptionsBuilder;
-    enableRetryOnFailure(maxRetryCount: int): SqlServerDbContextOptionsBuilder;
-    enableRetryOnFailure(errorNumbersToAdd: ICollection<System_Internal.Int32>): SqlServerDbContextOptionsBuilder;
-    enableRetryOnFailure(maxRetryCount: int, maxRetryDelay: TimeSpan, errorNumbersToAdd: IEnumerable<System_Internal.Int32>): SqlServerDbContextOptionsBuilder;
-    useAzureSqlDefaults(enable?: boolean): SqlServerDbContextOptionsBuilder;
-    useCompatibilityLevel(compatibilityLevel: int): SqlServerDbContextOptionsBuilder;
+    EnableRetryOnFailure(): SqlServerDbContextOptionsBuilder;
+    EnableRetryOnFailure(maxRetryCount: int): SqlServerDbContextOptionsBuilder;
+    EnableRetryOnFailure(errorNumbersToAdd: ICollection<System_Internal.Int32>): SqlServerDbContextOptionsBuilder;
+    EnableRetryOnFailure(maxRetryCount: int, maxRetryDelay: TimeSpan, errorNumbersToAdd: IEnumerable<System_Internal.Int32>): SqlServerDbContextOptionsBuilder;
+    UseAzureSqlDefaults(enable?: boolean): SqlServerDbContextOptionsBuilder;
+    UseCompatibilityLevel(compatibilityLevel: int): SqlServerDbContextOptionsBuilder;
 }
 
 

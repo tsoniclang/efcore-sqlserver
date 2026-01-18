@@ -11,8 +11,8 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
 
 export abstract class SSHExtensions$instance {
-    static withSSHCertificateAuthenticationScheme(builder: AcquireTokenInteractiveParameterBuilder, publicKeyJwk: string, keyId: string): AcquireTokenInteractiveParameterBuilder;
-    static withSSHCertificateAuthenticationScheme(builder: AcquireTokenSilentParameterBuilder, publicKeyJwk: string, keyId: string): AcquireTokenSilentParameterBuilder;
+    static WithSSHCertificateAuthenticationScheme(builder: AcquireTokenInteractiveParameterBuilder, publicKeyJwk: string, keyId: string): AcquireTokenInteractiveParameterBuilder;
+    static WithSSHCertificateAuthenticationScheme(builder: AcquireTokenSilentParameterBuilder, publicKeyJwk: string, keyId: string): AcquireTokenSilentParameterBuilder;
 }
 
 

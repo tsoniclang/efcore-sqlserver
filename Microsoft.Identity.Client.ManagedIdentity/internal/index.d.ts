@@ -10,14 +10,14 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable } from "@tsonic/dotnet/System.js";
 
 export enum ManagedIdentitySource {
-    none = 0,
-    imds = 1,
-    appService = 2,
-    azureArc = 3,
-    cloudShell = 4,
-    serviceFabric = 5,
-    defaultToImds = 6,
-    machineLearning = 7
+    None = 0,
+    Imds = 1,
+    AppService = 2,
+    AzureArc = 3,
+    CloudShell = 4,
+    ServiceFabric = 5,
+    DefaultToImds = 6,
+    MachineLearning = 7
 }
 
 

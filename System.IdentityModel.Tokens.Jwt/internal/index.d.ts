@@ -32,21 +32,21 @@ export interface JwtHeaderParameterNames$instance {
 
 export const JwtHeaderParameterNames: {
     new(): JwtHeaderParameterNames;
-    readonly alg: string;
-    readonly cty: string;
-    readonly enc: string;
+    readonly Alg: string;
+    readonly Cty: string;
+    readonly Enc: string;
     readonly IV: string;
-    readonly jku: string;
-    readonly jwk: string;
-    readonly kid: string;
-    readonly typ: string;
-    readonly x5c: string;
-    readonly x5t: string;
-    readonly x5u: string;
-    readonly zip: string;
-    readonly epk: string;
-    readonly apu: string;
-    readonly apv: string;
+    readonly Jku: string;
+    readonly Jwk: string;
+    readonly Kid: string;
+    readonly Typ: string;
+    readonly X5c: string;
+    readonly X5t: string;
+    readonly X5u: string;
+    readonly Zip: string;
+    readonly Epk: string;
+    readonly Apu: string;
+    readonly Apv: string;
 };
 
 
@@ -58,64 +58,64 @@ export interface JwtRegisteredClaimNames$instance {
 
 export const JwtRegisteredClaimNames: {
     new(): JwtRegisteredClaimNames;
-    readonly actort: string;
-    readonly acr: string;
-    readonly amr: string;
-    readonly address: string;
-    readonly atHash: string;
-    readonly aud: string;
-    readonly authTime: string;
-    readonly azp: string;
-    readonly birthdate: string;
-    readonly cHash: string;
-    readonly email: string;
-    readonly emailVerified: string;
-    readonly exp: string;
-    readonly gender: string;
-    readonly familyName: string;
-    readonly givenName: string;
-    readonly iat: string;
-    readonly iss: string;
-    readonly jti: string;
-    readonly locale: string;
-    readonly middleName: string;
-    readonly name: string;
-    readonly nameId: string;
-    readonly nickname: string;
-    readonly nonce: string;
-    readonly nbf: string;
-    readonly phoneNumber: string;
-    readonly phoneNumberVerified: string;
-    readonly picture: string;
-    readonly prn: string;
-    readonly preferredUsername: string;
-    readonly profile: string;
-    readonly sid: string;
-    readonly sub: string;
-    readonly typ: string;
-    readonly uniqueName: string;
-    readonly updatedAt: string;
-    readonly website: string;
-    readonly zoneInfo: string;
+    readonly Actort: string;
+    readonly Acr: string;
+    readonly Amr: string;
+    readonly Address: string;
+    readonly AtHash: string;
+    readonly Aud: string;
+    readonly AuthTime: string;
+    readonly Azp: string;
+    readonly Birthdate: string;
+    readonly CHash: string;
+    readonly Email: string;
+    readonly EmailVerified: string;
+    readonly Exp: string;
+    readonly Gender: string;
+    readonly FamilyName: string;
+    readonly GivenName: string;
+    readonly Iat: string;
+    readonly Iss: string;
+    readonly Jti: string;
+    readonly Locale: string;
+    readonly MiddleName: string;
+    readonly Name: string;
+    readonly NameId: string;
+    readonly Nickname: string;
+    readonly Nonce: string;
+    readonly Nbf: string;
+    readonly PhoneNumber: string;
+    readonly PhoneNumberVerified: string;
+    readonly Picture: string;
+    readonly Prn: string;
+    readonly PreferredUsername: string;
+    readonly Profile: string;
+    readonly Sid: string;
+    readonly Sub: string;
+    readonly Typ: string;
+    readonly UniqueName: string;
+    readonly UpdatedAt: string;
+    readonly Website: string;
+    readonly ZoneInfo: string;
 };
 
 
 export type JwtRegisteredClaimNames = JwtRegisteredClaimNames$instance;
 
 export interface JwtHeader$instance extends Dictionary<System_Internal.String, unknown> {
-    readonly alg: string;
-    readonly cty: string;
-    readonly enc: string;
-    readonly encryptingCredentials: EncryptingCredentials;
+    readonly Alg: string;
+    readonly Cty: string;
+    readonly Enc: string;
+    readonly EncryptingCredentials: EncryptingCredentials;
     readonly IV: string;
-    readonly kid: string;
-    readonly signingCredentials: SigningCredentials;
-    readonly typ: string;
-    readonly x5c: string;
-    readonly x5t: string;
-    readonly zip: string;
-    base64UrlEncode(): string;
-    serializeToJson(): string;
+    readonly Kid: string;
+    readonly SigningCredentials: SigningCredentials;
+    readonly Typ: string;
+    readonly X5c: string;
+    readonly X5t: string;
+    readonly Zip: string;
+    Base64UrlEncode(): string;
+    SerializeToJson(): string;
 }
 
 
@@ -129,37 +129,37 @@ export const JwtHeader: {
     new(encryptingCredentials: EncryptingCredentials, outboundAlgorithmMap: IDictionary__System_Collections_Generic<System_Internal.String, System_Internal.String>): JwtHeader;
     new(encryptingCredentials: EncryptingCredentials, outboundAlgorithmMap: IDictionary__System_Collections_Generic<System_Internal.String, System_Internal.String>, tokenType: string): JwtHeader;
     new(encryptingCredentials: EncryptingCredentials, outboundAlgorithmMap: IDictionary__System_Collections_Generic<System_Internal.String, System_Internal.String>, tokenType: string, additionalHeaderClaims: IDictionary__System_Collections_Generic<System_Internal.String, unknown>): JwtHeader;
-    base64UrlDeserialize(base64UrlEncodedJsonString: string): JwtHeader;
+    Base64UrlDeserialize(base64UrlEncodedJsonString: string): JwtHeader;
 };
 
 
 export type JwtHeader = JwtHeader$instance;
 
 export interface JwtPayload$instance extends Dictionary<System_Internal.String, unknown> {
-    readonly acr: string;
-    readonly actort: string;
-    readonly amr: IList<System_Internal.String>;
-    readonly aud: IList<System_Internal.String>;
-    readonly authTime: Nullable<System_Internal.Int32>;
-    readonly azp: string;
-    readonly cHash: string;
-    readonly claims: IEnumerable__System_Collections_Generic<Claim>;
-    readonly exp: Nullable<System_Internal.Int32>;
-    readonly expiration: Nullable<System_Internal.Int64>;
-    readonly iat: Nullable<System_Internal.Int32>;
-    readonly iss: string;
-    readonly issuedAt: DateTime;
-    readonly jti: string;
-    readonly nbf: Nullable<System_Internal.Int32>;
-    readonly nonce: string;
-    readonly notBefore: Nullable<System_Internal.Int64>;
-    readonly sub: string;
-    readonly validFrom: DateTime;
-    readonly validTo: DateTime;
-    addClaim(claim: Claim): void;
-    addClaims(claims: IEnumerable__System_Collections_Generic<Claim>): void;
-    base64UrlEncode(): string;
-    serializeToJson(): string;
+    readonly Acr: string;
+    readonly Actort: string;
+    readonly Amr: IList<System_Internal.String>;
+    readonly Aud: IList<System_Internal.String>;
+    readonly AuthTime: Nullable<System_Internal.Int32>;
+    readonly Azp: string;
+    readonly CHash: string;
+    readonly Claims: IEnumerable__System_Collections_Generic<Claim>;
+    readonly Exp: Nullable<System_Internal.Int32>;
+    readonly Expiration: Nullable<System_Internal.Int64>;
+    readonly Iat: Nullable<System_Internal.Int32>;
+    readonly Iss: string;
+    readonly IssuedAt: DateTime;
+    readonly Jti: string;
+    readonly Nbf: Nullable<System_Internal.Int32>;
+    readonly Nonce: string;
+    readonly NotBefore: Nullable<System_Internal.Int64>;
+    readonly Sub: string;
+    readonly ValidFrom: DateTime;
+    readonly ValidTo: DateTime;
+    AddClaim(claim: Claim): void;
+    AddClaims(claims: IEnumerable__System_Collections_Generic<Claim>): void;
+    Base64UrlEncode(): string;
+    SerializeToJson(): string;
 }
 
 
@@ -169,43 +169,43 @@ export const JwtPayload: {
     new(issuer: string, audience: string, claims: IEnumerable__System_Collections_Generic<Claim>, notBefore: Nullable<DateTime>, expires: Nullable<DateTime>): JwtPayload;
     new(issuer: string, audience: string, claims: IEnumerable__System_Collections_Generic<Claim>, notBefore: Nullable<DateTime>, expires: Nullable<DateTime>, issuedAt: Nullable<DateTime>): JwtPayload;
     new(issuer: string, audience: string, claims: IEnumerable__System_Collections_Generic<Claim>, claimsCollection: IDictionary__System_Collections_Generic<System_Internal.String, unknown>, notBefore: Nullable<DateTime>, expires: Nullable<DateTime>, issuedAt: Nullable<DateTime>): JwtPayload;
-    base64UrlDeserialize(base64UrlEncodedJsonString: string): JwtPayload;
-    deserialize(jsonString: string): JwtPayload;
+    Base64UrlDeserialize(base64UrlEncodedJsonString: string): JwtPayload;
+    Deserialize(jsonString: string): JwtPayload;
 };
 
 
 export type JwtPayload = JwtPayload$instance;
 
 export interface JwtSecurityToken$instance extends SecurityToken {
-    readonly actor: string;
-    readonly audiences: IEnumerable__System_Collections_Generic<System_Internal.String>;
-    readonly claims: IEnumerable__System_Collections_Generic<Claim>;
-    readonly encodedHeader: string;
-    readonly encodedPayload: string;
-    readonly encryptingCredentials: EncryptingCredentials;
-    readonly header: JwtHeader;
-    readonly id: string;
-    readonly innerToken: JwtSecurityToken;
-    readonly issuedAt: DateTime;
-    readonly issuer: string;
-    readonly payload: JwtPayload;
-    readonly rawAuthenticationTag: string;
-    readonly rawCiphertext: string;
-    readonly rawData: string;
-    readonly rawEncryptedKey: string;
-    readonly rawHeader: string;
-    readonly rawInitializationVector: string;
-    readonly rawPayload: string;
-    readonly rawSignature: string;
-    readonly securityKey: SecurityKey;
-    readonly signatureAlgorithm: string;
-    readonly signingCredentials: SigningCredentials;
-    signingKey: SecurityKey;
-    readonly subject: string | undefined;
-    readonly validFrom: DateTime;
-    readonly validTo: DateTime;
-    toString(): string | undefined;
-    unsafeToString(): string;
+    readonly Actor: string;
+    readonly Audiences: IEnumerable__System_Collections_Generic<System_Internal.String>;
+    readonly Claims: IEnumerable__System_Collections_Generic<Claim>;
+    readonly EncodedHeader: string;
+    readonly EncodedPayload: string;
+    readonly EncryptingCredentials: EncryptingCredentials;
+    readonly Header: JwtHeader;
+    readonly Id: string;
+    readonly InnerToken: JwtSecurityToken;
+    readonly IssuedAt: DateTime;
+    readonly Issuer: string;
+    readonly Payload: JwtPayload;
+    readonly RawAuthenticationTag: string;
+    readonly RawCiphertext: string;
+    readonly RawData: string;
+    readonly RawEncryptedKey: string;
+    readonly RawHeader: string;
+    readonly RawInitializationVector: string;
+    readonly RawPayload: string;
+    readonly RawSignature: string;
+    readonly SecurityKey: SecurityKey;
+    readonly SignatureAlgorithm: string;
+    readonly SigningCredentials: SigningCredentials;
+    SigningKey: SecurityKey;
+    readonly Subject: string | undefined;
+    readonly ValidFrom: DateTime;
+    readonly ValidTo: DateTime;
+    ToString(): string | undefined;
+    UnsafeToString(): string;
 }
 
 
@@ -226,48 +226,48 @@ export type JwtSecurityToken = JwtSecurityToken$instance & __JwtSecurityToken$vi
 
 
 export interface JwtSecurityTokenHandler$instance extends SecurityTokenHandler {
-    readonly canValidateToken: boolean;
-    readonly canWriteToken: boolean;
-    inboundClaimFilter: ISet<System_Internal.String>;
-    inboundClaimTypeMap: IDictionary__System_Collections_Generic<System_Internal.String, System_Internal.String>;
-    mapInboundClaims: boolean;
-    readonly outboundAlgorithmMap: IDictionary__System_Collections_Generic<System_Internal.String, System_Internal.String>;
-    outboundClaimTypeMap: IDictionary__System_Collections_Generic<System_Internal.String, System_Internal.String>;
-    readonly tokenType: Type;
-    canReadToken(token: string): boolean;
-    canReadToken(reader: XmlReader): boolean;
-    createEncodedJwt(tokenDescriptor: SecurityTokenDescriptor): string;
-    createEncodedJwt(issuer: string, audience: string, subject: ClaimsIdentity, notBefore: Nullable<DateTime>, expires: Nullable<DateTime>, issuedAt: Nullable<DateTime>, signingCredentials: SigningCredentials): string;
-    createEncodedJwt(issuer: string, audience: string, subject: ClaimsIdentity, notBefore: Nullable<DateTime>, expires: Nullable<DateTime>, issuedAt: Nullable<DateTime>, signingCredentials: SigningCredentials, encryptingCredentials: EncryptingCredentials): string;
-    createEncodedJwt(issuer: string, audience: string, subject: ClaimsIdentity, notBefore: Nullable<DateTime>, expires: Nullable<DateTime>, issuedAt: Nullable<DateTime>, signingCredentials: SigningCredentials, encryptingCredentials: EncryptingCredentials, claimCollection: IDictionary__System_Collections_Generic<System_Internal.String, unknown>): string;
-    createJwtSecurityToken(tokenDescriptor: SecurityTokenDescriptor): JwtSecurityToken;
-    createJwtSecurityToken(issuer: string, audience: string, subject: ClaimsIdentity, notBefore: Nullable<DateTime>, expires: Nullable<DateTime>, issuedAt: Nullable<DateTime>, signingCredentials: SigningCredentials, encryptingCredentials: EncryptingCredentials): JwtSecurityToken;
-    createJwtSecurityToken(issuer: string, audience: string, subject: ClaimsIdentity, notBefore: Nullable<DateTime>, expires: Nullable<DateTime>, issuedAt: Nullable<DateTime>, signingCredentials: SigningCredentials, encryptingCredentials: EncryptingCredentials, claimCollection: IDictionary__System_Collections_Generic<System_Internal.String, unknown>): JwtSecurityToken;
-    createJwtSecurityToken(issuer?: string, audience?: string, subject?: ClaimsIdentity, notBefore?: Nullable<DateTime>, expires?: Nullable<DateTime>, issuedAt?: Nullable<DateTime>, signingCredentials?: SigningCredentials): JwtSecurityToken;
-    createToken(tokenDescriptor: SecurityTokenDescriptor): SecurityToken;
-    readJwtToken(token: string): JwtSecurityToken;
-    readToken(token: string): SecurityToken;
-    readToken(reader: XmlReader, validationParameters: TokenValidationParameters): SecurityToken;
-    readToken(reader: XmlReader): SecurityToken;
-    validateToken(token: string, validationParameters: TokenValidationParameters, validatedToken: SecurityToken): ClaimsPrincipal;
-    validateToken(reader: XmlReader, validationParameters: TokenValidationParameters, validatedToken: SecurityToken): ClaimsPrincipal;
-    validateTokenAsync(token: string, validationParameters: TokenValidationParameters): Task<TokenValidationResult>;
-    validateTokenAsync(token: string, validationParameters: TokenValidationParameters): Task<TokenValidationResult>;
-    validateTokenAsync(token: SecurityToken, validationParameters: TokenValidationParameters): Task<TokenValidationResult>;
-    writeToken(token: SecurityToken): string;
-    writeToken(writer: XmlWriter, token: SecurityToken): void;
+    readonly CanValidateToken: boolean;
+    readonly CanWriteToken: boolean;
+    InboundClaimFilter: ISet<System_Internal.String>;
+    InboundClaimTypeMap: IDictionary__System_Collections_Generic<System_Internal.String, System_Internal.String>;
+    MapInboundClaims: boolean;
+    readonly OutboundAlgorithmMap: IDictionary__System_Collections_Generic<System_Internal.String, System_Internal.String>;
+    OutboundClaimTypeMap: IDictionary__System_Collections_Generic<System_Internal.String, System_Internal.String>;
+    readonly TokenType: Type;
+    CanReadToken(token: string): boolean;
+    CanReadToken(reader: XmlReader): boolean;
+    CreateEncodedJwt(tokenDescriptor: SecurityTokenDescriptor): string;
+    CreateEncodedJwt(issuer: string, audience: string, subject: ClaimsIdentity, notBefore: Nullable<DateTime>, expires: Nullable<DateTime>, issuedAt: Nullable<DateTime>, signingCredentials: SigningCredentials): string;
+    CreateEncodedJwt(issuer: string, audience: string, subject: ClaimsIdentity, notBefore: Nullable<DateTime>, expires: Nullable<DateTime>, issuedAt: Nullable<DateTime>, signingCredentials: SigningCredentials, encryptingCredentials: EncryptingCredentials): string;
+    CreateEncodedJwt(issuer: string, audience: string, subject: ClaimsIdentity, notBefore: Nullable<DateTime>, expires: Nullable<DateTime>, issuedAt: Nullable<DateTime>, signingCredentials: SigningCredentials, encryptingCredentials: EncryptingCredentials, claimCollection: IDictionary__System_Collections_Generic<System_Internal.String, unknown>): string;
+    CreateJwtSecurityToken(tokenDescriptor: SecurityTokenDescriptor): JwtSecurityToken;
+    CreateJwtSecurityToken(issuer: string, audience: string, subject: ClaimsIdentity, notBefore: Nullable<DateTime>, expires: Nullable<DateTime>, issuedAt: Nullable<DateTime>, signingCredentials: SigningCredentials, encryptingCredentials: EncryptingCredentials): JwtSecurityToken;
+    CreateJwtSecurityToken(issuer: string, audience: string, subject: ClaimsIdentity, notBefore: Nullable<DateTime>, expires: Nullable<DateTime>, issuedAt: Nullable<DateTime>, signingCredentials: SigningCredentials, encryptingCredentials: EncryptingCredentials, claimCollection: IDictionary__System_Collections_Generic<System_Internal.String, unknown>): JwtSecurityToken;
+    CreateJwtSecurityToken(issuer?: string, audience?: string, subject?: ClaimsIdentity, notBefore?: Nullable<DateTime>, expires?: Nullable<DateTime>, issuedAt?: Nullable<DateTime>, signingCredentials?: SigningCredentials): JwtSecurityToken;
+    CreateToken(tokenDescriptor: SecurityTokenDescriptor): SecurityToken;
+    ReadJwtToken(token: string): JwtSecurityToken;
+    ReadToken(token: string): SecurityToken;
+    ReadToken(reader: XmlReader, validationParameters: TokenValidationParameters): SecurityToken;
+    ReadToken(reader: XmlReader): SecurityToken;
+    ValidateToken(token: string, validationParameters: TokenValidationParameters, validatedToken: SecurityToken): ClaimsPrincipal;
+    ValidateToken(reader: XmlReader, validationParameters: TokenValidationParameters, validatedToken: SecurityToken): ClaimsPrincipal;
+    ValidateTokenAsync(token: string, validationParameters: TokenValidationParameters): Task<TokenValidationResult>;
+    ValidateTokenAsync(token: string, validationParameters: TokenValidationParameters): Task<TokenValidationResult>;
+    ValidateTokenAsync(token: SecurityToken, validationParameters: TokenValidationParameters): Task<TokenValidationResult>;
+    WriteToken(token: SecurityToken): string;
+    WriteToken(writer: XmlWriter, token: SecurityToken): void;
 }
 
 
 export const JwtSecurityTokenHandler: {
     new(): JwtSecurityTokenHandler;
-    defaultInboundClaimTypeMap: IDictionary__System_Collections_Generic<System_Internal.String, System_Internal.String>;
-    defaultMapInboundClaims: boolean;
-    defaultOutboundClaimTypeMap: IDictionary__System_Collections_Generic<System_Internal.String, System_Internal.String>;
-    defaultInboundClaimFilter: ISet<System_Internal.String>;
-    defaultOutboundAlgorithmMap: IDictionary__System_Collections_Generic<System_Internal.String, System_Internal.String>;
-    shortClaimTypeProperty: string;
-    jsonClaimTypeProperty: string;
+    DefaultInboundClaimTypeMap: IDictionary__System_Collections_Generic<System_Internal.String, System_Internal.String>;
+    DefaultMapInboundClaims: boolean;
+    DefaultOutboundClaimTypeMap: IDictionary__System_Collections_Generic<System_Internal.String, System_Internal.String>;
+    DefaultInboundClaimFilter: ISet<System_Internal.String>;
+    DefaultOutboundAlgorithmMap: IDictionary__System_Collections_Generic<System_Internal.String, System_Internal.String>;
+    ShortClaimTypeProperty: string;
+    JsonClaimTypeProperty: string;
 };
 
 
@@ -279,29 +279,29 @@ export type JwtSecurityTokenHandler = JwtSecurityTokenHandler$instance & __JwtSe
 
 
 export abstract class JsonClaimValueTypes$instance {
-    static readonly json: string;
-    static readonly jsonArray: string;
-    static readonly jsonNull: string;
+    static readonly Json: string;
+    static readonly JsonArray: string;
+    static readonly JsonNull: string;
 }
 
 
 export type JsonClaimValueTypes = JsonClaimValueTypes$instance;
 
 export abstract class JwtConstants$instance {
-    static readonly headerType: string;
-    static readonly headerTypeAlt: string;
-    static readonly tokenType: string;
-    static readonly tokenTypeAlt: string;
-    static readonly jsonCompactSerializationRegex: string;
-    static readonly jweCompactSerializationRegex: string;
-    static readonly directKeyUseAlg: string;
+    static readonly HeaderType: string;
+    static readonly HeaderTypeAlt: string;
+    static readonly TokenType: string;
+    static readonly TokenTypeAlt: string;
+    static readonly JsonCompactSerializationRegex: string;
+    static readonly JweCompactSerializationRegex: string;
+    static readonly DirectKeyUseAlg: string;
 }
 
 
 export type JwtConstants = JwtConstants$instance;
 
 export abstract class JwtSecurityTokenConverter$instance {
-    static convert(token: JsonWebToken): JwtSecurityToken;
+    static Convert(token: JsonWebToken): JwtSecurityToken;
 }
 
 

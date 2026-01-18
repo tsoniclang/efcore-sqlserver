@@ -15,9 +15,9 @@ import type { IReadOnlyProperty } from "@tsonic/efcore/Microsoft.EntityFramework
 import type { EventId } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
 
 export interface ConflictingValueGenerationStrategiesEventData$instance extends EventData {
-    readonly otherValueGenerationStrategy: string;
-    readonly property: IReadOnlyProperty;
-    readonly sqlServerValueGenerationStrategy: SqlServerValueGenerationStrategy;
+    readonly OtherValueGenerationStrategy: string;
+    readonly Property: IReadOnlyProperty;
+    readonly SqlServerValueGenerationStrategy: SqlServerValueGenerationStrategy;
 }
 
 
@@ -29,29 +29,29 @@ export const ConflictingValueGenerationStrategiesEventData: {
 export type ConflictingValueGenerationStrategiesEventData = ConflictingValueGenerationStrategiesEventData$instance;
 
 export abstract class SqlServerEventId$instance {
-    static readonly decimalTypeKeyWarning: EventId;
-    static readonly decimalTypeDefaultWarning: EventId;
-    static readonly byteIdentityColumnWarning: EventId;
-    static readonly conflictingValueGenerationStrategiesWarning: EventId;
-    static readonly savepointsDisabledBecauseOfMARS: EventId;
-    static readonly columnFound: EventId;
-    static readonly defaultSchemaFound: EventId;
-    static readonly typeAliasFound: EventId;
-    static readonly missingSchemaWarning: EventId;
-    static readonly missingTableWarning: EventId;
-    static readonly foreignKeyReferencesMissingPrincipalTableWarning: EventId;
-    static readonly foreignKeyReferencesUnknownPrincipalTableWarning: EventId;
-    static readonly tableFound: EventId;
-    static readonly sequenceFound: EventId;
-    static readonly primaryKeyFound: EventId;
-    static readonly uniqueConstraintFound: EventId;
-    static readonly indexFound: EventId;
-    static readonly foreignKeyFound: EventId;
-    static readonly foreignKeyPrincipalColumnMissingWarning: EventId;
-    static readonly reflexiveConstraintIgnored: EventId;
-    static readonly duplicateForeignKeyConstraintIgnored: EventId;
-    static readonly columnWithoutTypeWarning: EventId;
-    static readonly missingViewDefinitionRightsWarning: EventId;
+    static readonly DecimalTypeKeyWarning: EventId;
+    static readonly DecimalTypeDefaultWarning: EventId;
+    static readonly ByteIdentityColumnWarning: EventId;
+    static readonly ConflictingValueGenerationStrategiesWarning: EventId;
+    static readonly SavepointsDisabledBecauseOfMARS: EventId;
+    static readonly ColumnFound: EventId;
+    static readonly DefaultSchemaFound: EventId;
+    static readonly TypeAliasFound: EventId;
+    static readonly MissingSchemaWarning: EventId;
+    static readonly MissingTableWarning: EventId;
+    static readonly ForeignKeyReferencesMissingPrincipalTableWarning: EventId;
+    static readonly ForeignKeyReferencesUnknownPrincipalTableWarning: EventId;
+    static readonly TableFound: EventId;
+    static readonly SequenceFound: EventId;
+    static readonly PrimaryKeyFound: EventId;
+    static readonly UniqueConstraintFound: EventId;
+    static readonly IndexFound: EventId;
+    static readonly ForeignKeyFound: EventId;
+    static readonly ForeignKeyPrincipalColumnMissingWarning: EventId;
+    static readonly ReflexiveConstraintIgnored: EventId;
+    static readonly DuplicateForeignKeyConstraintIgnored: EventId;
+    static readonly ColumnWithoutTypeWarning: EventId;
+    static readonly MissingViewDefinitionRightsWarning: EventId;
 }
 
 

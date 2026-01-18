@@ -13,16 +13,16 @@ import type { Boolean as ClrBoolean, Int32, Object as ClrObject } from "@tsonic/
 import type { TaskCreationOptions } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface LKGConfigurationCacheOptions$instance {
-    baseConfigurationComparer: IEqualityComparer<BaseConfiguration>;
-    lastKnownGoodConfigurationSizeLimit: int;
-    removeExpiredValues: boolean;
-    taskCreationOptions: TaskCreationOptions;
+    BaseConfigurationComparer: IEqualityComparer<BaseConfiguration>;
+    LastKnownGoodConfigurationSizeLimit: int;
+    RemoveExpiredValues: boolean;
+    TaskCreationOptions: TaskCreationOptions;
 }
 
 
 export const LKGConfigurationCacheOptions: {
     new(): LKGConfigurationCacheOptions;
-    readonly defaultLKGConfigurationSizeLimit: int;
+    readonly DefaultLKGConfigurationSizeLimit: int;
 };
 
 

@@ -16,8 +16,8 @@ import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization.
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface CacheChangedEventArgs$instance extends EventArgs {
-    readonly accountsAdded: IEnumerable<System_Internal.String>;
-    readonly accountsRemoved: IEnumerable<System_Internal.String>;
+    readonly AccountsAdded: IEnumerable<System_Internal.String>;
+    readonly AccountsRemoved: IEnumerable<System_Internal.String>;
 }
 
 
@@ -29,7 +29,7 @@ export const CacheChangedEventArgs: {
 export type CacheChangedEventArgs = CacheChangedEventArgs$instance;
 
 export interface CrossPlatLock$instance {
-    dispose(): void;
+    Dispose(): void;
 }
 
 
@@ -41,21 +41,21 @@ export const CrossPlatLock: {
 export type CrossPlatLock = CrossPlatLock$instance;
 
 export interface MsalCacheHelper$instance {
-    clear(): void;
-    loadUnencryptedTokenCache(): byte[];
-    registerCache(tokenCache: ITokenCache): void;
-    saveUnencryptedTokenCache(tokenCache: byte[]): void;
-    unregisterCache(tokenCache: ITokenCache): void;
-    verifyPersistence(): void;
+    Clear(): void;
+    LoadUnencryptedTokenCache(): byte[];
+    RegisterCache(tokenCache: ITokenCache): void;
+    SaveUnencryptedTokenCache(tokenCache: byte[]): void;
+    UnregisterCache(tokenCache: ITokenCache): void;
+    VerifyPersistence(): void;
 }
 
 
 export const MsalCacheHelper: {
     new(): MsalCacheHelper;
-    readonly linuxKeyRingDefaultCollection: string;
-    readonly linuxKeyRingSessionCollection: string;
-    readonly userRootDirectory: string;
-    createAsync(storageCreationProperties: StorageCreationProperties, logger?: TraceSource): Task<MsalCacheHelper>;
+    readonly LinuxKeyRingDefaultCollection: string;
+    readonly LinuxKeyRingSessionCollection: string;
+    readonly UserRootDirectory: string;
+    CreateAsync(storageCreationProperties: StorageCreationProperties, logger?: TraceSource): Task<MsalCacheHelper>;
 };
 
 
@@ -75,38 +75,38 @@ export const MsalCachePersistenceException: {
 export type MsalCachePersistenceException = MsalCachePersistenceException$instance;
 
 export interface Storage$instance {
-    clear(ignoreExceptions?: boolean): void;
-    readData(): byte[];
-    verifyPersistence(): void;
-    writeData(data: byte[]): void;
+    Clear(ignoreExceptions?: boolean): void;
+    ReadData(): byte[];
+    VerifyPersistence(): void;
+    WriteData(data: byte[]): void;
 }
 
 
 export const Storage: {
     new(): Storage;
-    create(creationProperties: StorageCreationProperties, logger?: TraceSource): Storage;
+    Create(creationProperties: StorageCreationProperties, logger?: TraceSource): Storage;
 };
 
 
 export type Storage = Storage$instance;
 
 export interface StorageCreationProperties$instance {
-    readonly cacheFileName: string;
-    readonly cacheDirectory: string;
-    readonly macKeyChainServiceName: string;
-    readonly macKeyChainAccountName: string;
-    readonly keyringSchemaName: string;
-    readonly keyringCollection: string;
-    readonly keyringSecretLabel: string;
-    readonly keyringAttribute1: KeyValuePair<System_Internal.String, System_Internal.String>;
-    readonly keyringAttribute2: KeyValuePair<System_Internal.String, System_Internal.String>;
-    readonly lockRetryDelay: int;
-    readonly useLinuxUnencryptedFallback: boolean;
-    readonly useUnencryptedFallback: boolean;
-    readonly lockRetryCount: int;
-    readonly authority: string;
-    readonly cacheFilePath: string;
-    readonly clientId: string;
+    readonly CacheFileName: string;
+    readonly CacheDirectory: string;
+    readonly MacKeyChainServiceName: string;
+    readonly MacKeyChainAccountName: string;
+    readonly KeyringSchemaName: string;
+    readonly KeyringCollection: string;
+    readonly KeyringSecretLabel: string;
+    readonly KeyringAttribute1: KeyValuePair<System_Internal.String, System_Internal.String>;
+    readonly KeyringAttribute2: KeyValuePair<System_Internal.String, System_Internal.String>;
+    readonly LockRetryDelay: int;
+    readonly UseLinuxUnencryptedFallback: boolean;
+    readonly UseUnencryptedFallback: boolean;
+    readonly LockRetryCount: int;
+    readonly Authority: string;
+    readonly CacheFilePath: string;
+    readonly ClientId: string;
 }
 
 
@@ -118,13 +118,13 @@ export const StorageCreationProperties: {
 export type StorageCreationProperties = StorageCreationProperties$instance;
 
 export interface StorageCreationPropertiesBuilder$instance {
-    build(): StorageCreationProperties;
-    customizeLockRetry(lockRetryDelay: int, lockRetryCount: int): StorageCreationPropertiesBuilder;
-    withCacheChangedEvent(clientId: string, authority?: string): StorageCreationPropertiesBuilder;
-    withLinuxKeyring(schemaName: string, collection: string, secretLabel: string, attribute1: KeyValuePair<System_Internal.String, System_Internal.String>, attribute2: KeyValuePair<System_Internal.String, System_Internal.String>): StorageCreationPropertiesBuilder;
-    withLinuxUnprotectedFile(): StorageCreationPropertiesBuilder;
-    withMacKeyChain(serviceName: string, accountName: string): StorageCreationPropertiesBuilder;
-    withUnprotectedFile(): StorageCreationPropertiesBuilder;
+    Build(): StorageCreationProperties;
+    CustomizeLockRetry(lockRetryDelay: int, lockRetryCount: int): StorageCreationPropertiesBuilder;
+    WithCacheChangedEvent(clientId: string, authority?: string): StorageCreationPropertiesBuilder;
+    WithLinuxKeyring(schemaName: string, collection: string, secretLabel: string, attribute1: KeyValuePair<System_Internal.String, System_Internal.String>, attribute2: KeyValuePair<System_Internal.String, System_Internal.String>): StorageCreationPropertiesBuilder;
+    WithLinuxUnprotectedFile(): StorageCreationPropertiesBuilder;
+    WithMacKeyChain(serviceName: string, accountName: string): StorageCreationPropertiesBuilder;
+    WithUnprotectedFile(): StorageCreationPropertiesBuilder;
 }
 
 
@@ -137,10 +137,10 @@ export const StorageCreationPropertiesBuilder: {
 export type StorageCreationPropertiesBuilder = StorageCreationPropertiesBuilder$instance;
 
 export interface TraceSourceLogger$instance {
-    readonly source: TraceSource;
-    logError(message: string): void;
-    logInformation(message: string): void;
-    logWarning(message: string): void;
+    readonly Source: TraceSource;
+    LogError(message: string): void;
+    LogInformation(message: string): void;
+    LogWarning(message: string): void;
 }
 
 
@@ -152,10 +152,10 @@ export const TraceSourceLogger: {
 export type TraceSourceLogger = TraceSourceLogger$instance;
 
 export abstract class SharedUtilities$instance {
-    static getUserRootDirectory(): string;
-    static isLinuxPlatform(): boolean;
-    static isMacPlatform(): boolean;
-    static isWindowsPlatform(): boolean;
+    static GetUserRootDirectory(): string;
+    static IsLinuxPlatform(): boolean;
+    static IsMacPlatform(): boolean;
+    static IsWindowsPlatform(): boolean;
 }
 
 

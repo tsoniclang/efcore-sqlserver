@@ -16,28 +16,28 @@ import type { IModel } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metada
 import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection.js";
 
 export enum SqlServerEngineType {
-    unknown = 0,
-    sqlServer = 1,
-    azureSql = 2,
-    azureSynapse = 3
+    Unknown = 0,
+    SqlServer = 1,
+    AzureSql = 2,
+    AzureSynapse = 3
 }
 
 
 export interface ISqlServerSingletonOptions$instance extends ISingletonOptions {
-    readonly engineType: SqlServerEngineType;
-    readonly sqlServerCompatibilityLevel: int;
-    readonly azureSqlCompatibilityLevel: int;
-    readonly azureSynapseCompatibilityLevel: int;
-    readonly supportsJsonFunctions: boolean;
-    readonly supportsJsonObjectArray: boolean;
-    readonly supportsJsonType: boolean;
+    readonly EngineType: SqlServerEngineType;
+    readonly SqlServerCompatibilityLevel: int;
+    readonly AzureSqlCompatibilityLevel: int;
+    readonly AzureSynapseCompatibilityLevel: int;
+    readonly SupportsJsonFunctions: boolean;
+    readonly SupportsJsonObjectArray: boolean;
+    readonly SupportsJsonType: boolean;
 }
 
 
 export type ISqlServerSingletonOptions = ISqlServerSingletonOptions$instance;
 
 export interface SqlServerModelValidator$instance extends RelationalModelValidator {
-    validate(model: IModel, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
+    Validate(model: IModel, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
 }
 
 
@@ -49,44 +49,44 @@ export const SqlServerModelValidator: {
 export type SqlServerModelValidator = SqlServerModelValidator$instance;
 
 export interface SqlServerOptionsExtension$instance extends RelationalOptionsExtension {
-    readonly azureSqlCompatibilityLevel: int;
-    readonly azureSynapseCompatibilityLevel: int;
-    readonly engineType: SqlServerEngineType;
-    readonly info: DbContextOptionsExtensionInfo;
-    readonly sqlServerCompatibilityLevel: int;
-    readonly useRetryingStrategyByDefault: boolean;
-    applyDefaults(options: IDbContextOptions): IDbContextOptionsExtension;
-    applyServices(services: IServiceCollection): void;
-    validate(options: IDbContextOptions): void;
-    withAzureSqlCompatibilityLevel(azureSqlCompatibilityLevel: Nullable<System_Internal.Int32>): SqlServerOptionsExtension;
-    withAzureSynapseCompatibilityLevel(azureSynapseCompatibilityLevel: Nullable<System_Internal.Int32>): SqlServerOptionsExtension;
-    withEngineType(engineType: SqlServerEngineType): SqlServerOptionsExtension;
-    withLegacyAzureSql(enable: boolean): SqlServerOptionsExtension;
-    withSqlServerCompatibilityLevel(sqlServerCompatibilityLevel: Nullable<System_Internal.Int32>): SqlServerOptionsExtension;
-    withUseRetryingStrategyByDefault(enable: boolean): SqlServerOptionsExtension;
+    readonly AzureSqlCompatibilityLevel: int;
+    readonly AzureSynapseCompatibilityLevel: int;
+    readonly EngineType: SqlServerEngineType;
+    readonly Info: DbContextOptionsExtensionInfo;
+    readonly SqlServerCompatibilityLevel: int;
+    readonly UseRetryingStrategyByDefault: boolean;
+    ApplyDefaults(options: IDbContextOptions): IDbContextOptionsExtension;
+    ApplyServices(services: IServiceCollection): void;
+    Validate(options: IDbContextOptions): void;
+    WithAzureSqlCompatibilityLevel(azureSqlCompatibilityLevel: Nullable<System_Internal.Int32>): SqlServerOptionsExtension;
+    WithAzureSynapseCompatibilityLevel(azureSynapseCompatibilityLevel: Nullable<System_Internal.Int32>): SqlServerOptionsExtension;
+    WithEngineType(engineType: SqlServerEngineType): SqlServerOptionsExtension;
+    WithLegacyAzureSql(enable: boolean): SqlServerOptionsExtension;
+    WithSqlServerCompatibilityLevel(sqlServerCompatibilityLevel: Nullable<System_Internal.Int32>): SqlServerOptionsExtension;
+    WithUseRetryingStrategyByDefault(enable: boolean): SqlServerOptionsExtension;
 }
 
 
 export const SqlServerOptionsExtension: {
     new(): SqlServerOptionsExtension;
-    readonly sqlServerDefaultCompatibilityLevel: int;
-    readonly azureSqlDefaultCompatibilityLevel: int;
-    readonly azureSynapseDefaultCompatibilityLevel: int;
+    readonly SqlServerDefaultCompatibilityLevel: int;
+    readonly AzureSqlDefaultCompatibilityLevel: int;
+    readonly AzureSynapseDefaultCompatibilityLevel: int;
 };
 
 
 export type SqlServerOptionsExtension = SqlServerOptionsExtension$instance;
 
 export interface SqlServerSingletonOptions$instance {
-    readonly azureSqlCompatibilityLevel: int;
-    readonly azureSynapseCompatibilityLevel: int;
-    readonly engineType: SqlServerEngineType;
-    readonly sqlServerCompatibilityLevel: int;
-    readonly supportsJsonFunctions: boolean;
-    readonly supportsJsonObjectArray: boolean;
-    readonly supportsJsonType: boolean;
-    initialize(options: IDbContextOptions): void;
-    validate(options: IDbContextOptions): void;
+    readonly AzureSqlCompatibilityLevel: int;
+    readonly AzureSynapseCompatibilityLevel: int;
+    readonly EngineType: SqlServerEngineType;
+    readonly SqlServerCompatibilityLevel: int;
+    readonly SupportsJsonFunctions: boolean;
+    readonly SupportsJsonObjectArray: boolean;
+    readonly SupportsJsonType: boolean;
+    Initialize(options: IDbContextOptions): void;
+    Validate(options: IDbContextOptions): void;
 }
 
 

@@ -12,14 +12,14 @@ import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString } 
 import type { X509Certificate2 } from "@tsonic/dotnet/System.Security.Cryptography.X509Certificates.js";
 
 export abstract class AcquireTokenForClientParameterBuilderForResourceProviders$instance {
-    static withAccessTokenSha256ToRefresh(builder: AcquireTokenForClientParameterBuilder, hash: string): AcquireTokenForClientParameterBuilder;
+    static WithAccessTokenSha256ToRefresh(builder: AcquireTokenForClientParameterBuilder, hash: string): AcquireTokenForClientParameterBuilder;
 }
 
 
 export type AcquireTokenForClientParameterBuilderForResourceProviders = AcquireTokenForClientParameterBuilderForResourceProviders$instance;
 
 export abstract class ConfidentialClientApplicationBuilderForResourceProviders$instance {
-    static withCertificate(builder: ConfidentialClientApplicationBuilder, certificate: X509Certificate2, sendX5C: boolean, associateTokensWithCertificateSerialNumber: boolean): ConfidentialClientApplicationBuilder;
+    static WithCertificate(builder: ConfidentialClientApplicationBuilder, certificate: X509Certificate2, sendX5C: boolean, associateTokensWithCertificateSerialNumber: boolean): ConfidentialClientApplicationBuilder;
 }
 
 

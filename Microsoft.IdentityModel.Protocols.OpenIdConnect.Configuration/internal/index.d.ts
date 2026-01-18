@@ -14,8 +14,8 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Int32, Object as ClrObject } from "@tsonic/dotnet/System.js";
 
 export interface OpenIdConnectConfigurationValidator$instance {
-    minimumNumberOfKeys: int;
-    validate(openIdConnectConfiguration: OpenIdConnectConfiguration): ConfigurationValidationResult;
+    MinimumNumberOfKeys: int;
+    Validate(openIdConnectConfiguration: OpenIdConnectConfiguration): ConfigurationValidationResult;
 }
 
 

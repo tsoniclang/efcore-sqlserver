@@ -15,50 +15,50 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { ArgumentException, ArgumentNullException, Boolean as ClrBoolean, Exception, Func, Guid, IDisposable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
 
 export interface ISafeLogSecurityArtifact$instance {
-    unsafeToString(): string;
+    UnsafeToString(): string;
 }
 
 
 export type ISafeLogSecurityArtifact = ISafeLogSecurityArtifact$instance;
 
 export interface IdentityModelEventSource$instance extends EventSource {
-    logLevel: EventLevel;
-    write(level: EventLevel, innerException: Exception, message: string): void;
-    write(level: EventLevel, innerException: Exception, message: string, ...args: unknown[]): void;
-    writeAlways(message: string): void;
-    writeAlways(message: string, ...args: unknown[]): void;
-    writeCritical(message: string): void;
-    writeCritical(message: string, ...args: unknown[]): void;
-    writeError(message: string): void;
-    writeError(message: string, ...args: unknown[]): void;
-    writeInformation(message: string): void;
-    writeInformation(message: string, ...args: unknown[]): void;
-    writeVerbose(message: string): void;
-    writeVerbose(message: string, ...args: unknown[]): void;
-    writeWarning(message: string): void;
-    writeWarning(message: string, ...args: unknown[]): void;
+    LogLevel: EventLevel;
+    Write(level: EventLevel, innerException: Exception, message: string): void;
+    Write(level: EventLevel, innerException: Exception, message: string, ...args: unknown[]): void;
+    WriteAlways(message: string): void;
+    WriteAlways(message: string, ...args: unknown[]): void;
+    WriteCritical(message: string): void;
+    WriteCritical(message: string, ...args: unknown[]): void;
+    WriteError(message: string): void;
+    WriteError(message: string, ...args: unknown[]): void;
+    WriteInformation(message: string): void;
+    WriteInformation(message: string, ...args: unknown[]): void;
+    WriteVerbose(message: string): void;
+    WriteVerbose(message: string, ...args: unknown[]): void;
+    WriteWarning(message: string): void;
+    WriteWarning(message: string, ...args: unknown[]): void;
 }
 
 
 export const IdentityModelEventSource: {
     new(): IdentityModelEventSource;
-    readonly logger: IdentityModelEventSource;
-    showPII: boolean;
-    logCompleteSecurityArtifact: boolean;
-    readonly hiddenPIIString: string;
-    readonly hiddenSecurityArtifactString: string;
-    headerWritten: boolean;
+    readonly Logger: IdentityModelEventSource;
+    ShowPII: boolean;
+    LogCompleteSecurityArtifact: boolean;
+    readonly HiddenPIIString: string;
+    readonly HiddenSecurityArtifactString: string;
+    HeaderWritten: boolean;
 };
 
 
 export type IdentityModelEventSource = IdentityModelEventSource$instance;
 
 export interface LoggerContext$instance {
-    activityId: Guid;
-    captureLogs: boolean;
-    debugId: string;
-    readonly logs: ICollection<System_Internal.String>;
-    propertyBag: IDictionary<System_Internal.String, unknown>;
+    ActivityId: Guid;
+    CaptureLogs: boolean;
+    DebugId: string;
+    readonly Logs: ICollection<System_Internal.String>;
+    PropertyBag: IDictionary<System_Internal.String, unknown>;
 }
 
 
@@ -76,42 +76,42 @@ export interface LogHelper$instance {
 
 export const LogHelper: {
     new(): LogHelper;
-    logger: IIdentityLogger;
-    formatInvariant(format: string, ...args: unknown[]): string;
-    isEnabled(level: EventLogLevel): boolean;
-    logArgumentException<T extends ArgumentException>(eventLevel: EventLevel, argumentName: string, innerException: Exception, format: string, ...args: unknown[]): T;
-    logArgumentException<T extends ArgumentException>(eventLevel: EventLevel, argumentName: string, innerException: Exception, message: string): T;
-    logArgumentException<T extends ArgumentException>(eventLevel: EventLevel, argumentName: string, format: string, ...args: unknown[]): T;
-    logArgumentException<T extends ArgumentException>(eventLevel: EventLevel, argumentName: string, message: string): T;
-    logArgumentException<T extends ArgumentException>(argumentName: string, innerException: Exception, format: string, ...args: unknown[]): T;
-    logArgumentException<T extends ArgumentException>(argumentName: string, innerException: Exception, message: string): T;
-    logArgumentException<T extends ArgumentException>(argumentName: string, format: string, ...args: unknown[]): T;
-    logArgumentException<T extends ArgumentException>(argumentName: string, message: string): T;
-    logArgumentNullException(argument: string): ArgumentNullException;
-    logException<T extends Exception>(eventLevel: EventLevel, innerException: Exception, format: string, ...args: unknown[]): T;
-    logException<T extends Exception>(eventLevel: EventLevel, innerException: Exception, message: string): T;
-    logException<T extends Exception>(eventLevel: EventLevel, format: string, ...args: unknown[]): T;
-    logException<T extends Exception>(eventLevel: EventLevel, message: string): T;
-    logException<T extends Exception>(innerException: Exception, format: string, ...args: unknown[]): T;
-    logException<T extends Exception>(innerException: Exception, message: string): T;
-    logException<T extends Exception>(format: string, ...args: unknown[]): T;
-    logException<T extends Exception>(message: string): T;
-    logExceptionMessage(eventLevel: EventLevel, exception: Exception): Exception;
-    logExceptionMessage(exception: Exception): Exception;
-    logInformation(message: string, ...args: unknown[]): void;
-    logVerbose(message: string, ...args: unknown[]): void;
-    logWarning(message: string, ...args: unknown[]): void;
-    markAsNonPII(arg: unknown): unknown;
-    markAsSecurityArtifact(arg: unknown, callback: Func<unknown, System_Internal.String>, callbackUnsafe: Func<unknown, System_Internal.String>): unknown;
-    markAsSecurityArtifact(arg: unknown, callback: Func<unknown, System_Internal.String>): unknown;
-    markAsUnsafeSecurityArtifact(arg: unknown, callbackUnsafe: Func<unknown, System_Internal.String>): unknown;
+    Logger: IIdentityLogger;
+    FormatInvariant(format: string, ...args: unknown[]): string;
+    IsEnabled(level: EventLogLevel): boolean;
+    LogArgumentException<T extends ArgumentException>(eventLevel: EventLevel, argumentName: string, innerException: Exception, format: string, ...args: unknown[]): T;
+    LogArgumentException<T extends ArgumentException>(eventLevel: EventLevel, argumentName: string, innerException: Exception, message: string): T;
+    LogArgumentException<T extends ArgumentException>(eventLevel: EventLevel, argumentName: string, format: string, ...args: unknown[]): T;
+    LogArgumentException<T extends ArgumentException>(eventLevel: EventLevel, argumentName: string, message: string): T;
+    LogArgumentException<T extends ArgumentException>(argumentName: string, innerException: Exception, format: string, ...args: unknown[]): T;
+    LogArgumentException<T extends ArgumentException>(argumentName: string, innerException: Exception, message: string): T;
+    LogArgumentException<T extends ArgumentException>(argumentName: string, format: string, ...args: unknown[]): T;
+    LogArgumentException<T extends ArgumentException>(argumentName: string, message: string): T;
+    LogArgumentNullException(argument: string): ArgumentNullException;
+    LogException<T extends Exception>(eventLevel: EventLevel, innerException: Exception, format: string, ...args: unknown[]): T;
+    LogException<T extends Exception>(eventLevel: EventLevel, innerException: Exception, message: string): T;
+    LogException<T extends Exception>(eventLevel: EventLevel, format: string, ...args: unknown[]): T;
+    LogException<T extends Exception>(eventLevel: EventLevel, message: string): T;
+    LogException<T extends Exception>(innerException: Exception, format: string, ...args: unknown[]): T;
+    LogException<T extends Exception>(innerException: Exception, message: string): T;
+    LogException<T extends Exception>(format: string, ...args: unknown[]): T;
+    LogException<T extends Exception>(message: string): T;
+    LogExceptionMessage(eventLevel: EventLevel, exception: Exception): Exception;
+    LogExceptionMessage(exception: Exception): Exception;
+    LogInformation(message: string, ...args: unknown[]): void;
+    LogVerbose(message: string, ...args: unknown[]): void;
+    LogWarning(message: string, ...args: unknown[]): void;
+    MarkAsNonPII(arg: unknown): unknown;
+    MarkAsSecurityArtifact(arg: unknown, callback: Func<unknown, System_Internal.String>, callbackUnsafe: Func<unknown, System_Internal.String>): unknown;
+    MarkAsSecurityArtifact(arg: unknown, callback: Func<unknown, System_Internal.String>): unknown;
+    MarkAsUnsafeSecurityArtifact(arg: unknown, callbackUnsafe: Func<unknown, System_Internal.String>): unknown;
 };
 
 
 export type LogHelper = LogHelper$instance;
 
 export interface TextWriterEventListener$instance extends EventListener {
-    dispose(): void;
+    Dispose(): void;
 }
 
 
@@ -119,17 +119,17 @@ export const TextWriterEventListener: {
     new(): TextWriterEventListener;
     new(filePath: string): TextWriterEventListener;
     new(streamWriter: StreamWriter): TextWriterEventListener;
-    readonly defaultLogFileName: string;
+    readonly DefaultLogFileName: string;
 };
 
 
 export type TextWriterEventListener = TextWriterEventListener$instance;
 
 export abstract class IdentityModelTelemetryUtil$instance {
-    static readonly clientSku: string;
-    static readonly clientVer: string;
-    static addTelemetryData(key: string, value: string): boolean;
-    static removeTelemetryData(key: string): boolean;
+    static readonly ClientSku: string;
+    static readonly ClientVer: string;
+    static AddTelemetryData(key: string, value: string): boolean;
+    static RemoveTelemetryData(key: string): boolean;
 }
 
 

@@ -21,21 +21,21 @@ import type { IConventionAnnotation, IConventionEntityType, IConventionForeignKe
 import type { ISqlGenerationHelper } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
 
 export interface SqlServerConventionSetBuilder$instance extends RelationalConventionSetBuilder {
-    createConventionSet(): ConventionSet;
+    CreateConventionSet(): ConventionSet;
 }
 
 
 export const SqlServerConventionSetBuilder: {
     new(dependencies: ProviderConventionSetBuilderDependencies, relationalDependencies: RelationalConventionSetBuilderDependencies, sqlGenerationHelper: ISqlGenerationHelper): SqlServerConventionSetBuilder;
-    build(): ConventionSet;
-    createModelBuilder(): ModelBuilder;
+    Build(): ConventionSet;
+    CreateModelBuilder(): ModelBuilder;
 };
 
 
 export type SqlServerConventionSetBuilder = SqlServerConventionSetBuilder$instance;
 
 export interface SqlServerDbFunctionConvention$instance {
-    processModelFinalizing(modelBuilder: IConventionModelBuilder, context: IConventionContext<IConventionModelBuilder>): void;
+    ProcessModelFinalizing(modelBuilder: IConventionModelBuilder, context: IConventionContext<IConventionModelBuilder>): void;
 }
 
 
@@ -47,12 +47,12 @@ export const SqlServerDbFunctionConvention: {
 export type SqlServerDbFunctionConvention = SqlServerDbFunctionConvention$instance;
 
 export interface SqlServerIndexConvention$instance {
-    processEntityTypeBaseTypeChanged(entityTypeBuilder: IConventionEntityTypeBuilder, newBaseType: IConventionEntityType, oldBaseType: IConventionEntityType, context: IConventionContext<IConventionEntityType>): void;
-    processIndexAdded(indexBuilder: IConventionIndexBuilder, context: IConventionContext<IConventionIndexBuilder>): void;
-    processIndexAnnotationChanged(indexBuilder: IConventionIndexBuilder, name: string, annotation: IConventionAnnotation, oldAnnotation: IConventionAnnotation, context: IConventionContext<IConventionAnnotation>): void;
-    processIndexUniquenessChanged(indexBuilder: IConventionIndexBuilder, context: IConventionContext<Nullable<System_Internal.Boolean>>): void;
-    processPropertyAnnotationChanged(propertyBuilder: IConventionPropertyBuilder, name: string, annotation: IConventionAnnotation, oldAnnotation: IConventionAnnotation, context: IConventionContext<IConventionAnnotation>): void;
-    processPropertyNullabilityChanged(propertyBuilder: IConventionPropertyBuilder, context: IConventionContext<Nullable<System_Internal.Boolean>>): void;
+    ProcessEntityTypeBaseTypeChanged(entityTypeBuilder: IConventionEntityTypeBuilder, newBaseType: IConventionEntityType, oldBaseType: IConventionEntityType, context: IConventionContext<IConventionEntityType>): void;
+    ProcessIndexAdded(indexBuilder: IConventionIndexBuilder, context: IConventionContext<IConventionIndexBuilder>): void;
+    ProcessIndexAnnotationChanged(indexBuilder: IConventionIndexBuilder, name: string, annotation: IConventionAnnotation, oldAnnotation: IConventionAnnotation, context: IConventionContext<IConventionAnnotation>): void;
+    ProcessIndexUniquenessChanged(indexBuilder: IConventionIndexBuilder, context: IConventionContext<Nullable<System_Internal.Boolean>>): void;
+    ProcessPropertyAnnotationChanged(propertyBuilder: IConventionPropertyBuilder, name: string, annotation: IConventionAnnotation, oldAnnotation: IConventionAnnotation, context: IConventionContext<IConventionAnnotation>): void;
+    ProcessPropertyNullabilityChanged(propertyBuilder: IConventionPropertyBuilder, context: IConventionContext<Nullable<System_Internal.Boolean>>): void;
 }
 
 
@@ -64,9 +64,9 @@ export const SqlServerIndexConvention: {
 export type SqlServerIndexConvention = SqlServerIndexConvention$instance;
 
 export interface SqlServerMemoryOptimizedTablesConvention$instance {
-    processEntityTypeAnnotationChanged(entityTypeBuilder: IConventionEntityTypeBuilder, name: string, annotation: IConventionAnnotation, oldAnnotation: IConventionAnnotation, context: IConventionContext<IConventionAnnotation>): void;
-    processIndexAdded(indexBuilder: IConventionIndexBuilder, context: IConventionContext<IConventionIndexBuilder>): void;
-    processKeyAdded(keyBuilder: IConventionKeyBuilder, context: IConventionContext<IConventionKeyBuilder>): void;
+    ProcessEntityTypeAnnotationChanged(entityTypeBuilder: IConventionEntityTypeBuilder, name: string, annotation: IConventionAnnotation, oldAnnotation: IConventionAnnotation, context: IConventionContext<IConventionAnnotation>): void;
+    ProcessIndexAdded(indexBuilder: IConventionIndexBuilder, context: IConventionContext<IConventionIndexBuilder>): void;
+    ProcessKeyAdded(keyBuilder: IConventionKeyBuilder, context: IConventionContext<IConventionKeyBuilder>): void;
 }
 
 
@@ -78,8 +78,8 @@ export const SqlServerMemoryOptimizedTablesConvention: {
 export type SqlServerMemoryOptimizedTablesConvention = SqlServerMemoryOptimizedTablesConvention$instance;
 
 export interface SqlServerOnDeleteConvention$instance extends CascadeDeleteConvention {
-    processEntityTypeAnnotationChanged(entityTypeBuilder: IConventionEntityTypeBuilder, name: string, annotation: IConventionAnnotation, oldAnnotation: IConventionAnnotation, context: IConventionContext<IConventionAnnotation>): void;
-    processSkipNavigationForeignKeyChanged(skipNavigationBuilder: IConventionSkipNavigationBuilder, foreignKey: IConventionForeignKey, oldForeignKey: IConventionForeignKey, context: IConventionContext<IConventionForeignKey>): void;
+    ProcessEntityTypeAnnotationChanged(entityTypeBuilder: IConventionEntityTypeBuilder, name: string, annotation: IConventionAnnotation, oldAnnotation: IConventionAnnotation, context: IConventionContext<IConventionAnnotation>): void;
+    ProcessSkipNavigationForeignKeyChanged(skipNavigationBuilder: IConventionSkipNavigationBuilder, foreignKey: IConventionForeignKey, oldForeignKey: IConventionForeignKey, context: IConventionContext<IConventionForeignKey>): void;
 }
 
 
@@ -91,8 +91,8 @@ export const SqlServerOnDeleteConvention: {
 export type SqlServerOnDeleteConvention = SqlServerOnDeleteConvention$instance;
 
 export interface SqlServerOutputClauseConvention$instance {
-    processTriggerAdded(triggerBuilder: IConventionTriggerBuilder, context: IConventionContext<IConventionTriggerBuilder>): void;
-    processTriggerRemoved(entityTypeBuilder: IConventionEntityTypeBuilder, trigger: IConventionTrigger, context: IConventionContext<IConventionTrigger>): void;
+    ProcessTriggerAdded(triggerBuilder: IConventionTriggerBuilder, context: IConventionContext<IConventionTriggerBuilder>): void;
+    ProcessTriggerRemoved(entityTypeBuilder: IConventionEntityTypeBuilder, trigger: IConventionTrigger, context: IConventionContext<IConventionTrigger>): void;
 }
 
 
@@ -126,7 +126,7 @@ export const SqlServerSharedTableConvention: {
 export type SqlServerSharedTableConvention = SqlServerSharedTableConvention$instance;
 
 export interface SqlServerStoreGenerationConvention$instance extends StoreGenerationConvention {
-    processPropertyAnnotationChanged(propertyBuilder: IConventionPropertyBuilder, name: string, annotation: IConventionAnnotation, oldAnnotation: IConventionAnnotation, context: IConventionContext<IConventionAnnotation>): void;
+    ProcessPropertyAnnotationChanged(propertyBuilder: IConventionPropertyBuilder, name: string, annotation: IConventionAnnotation, oldAnnotation: IConventionAnnotation, context: IConventionContext<IConventionAnnotation>): void;
 }
 
 
@@ -138,9 +138,9 @@ export const SqlServerStoreGenerationConvention: {
 export type SqlServerStoreGenerationConvention = SqlServerStoreGenerationConvention$instance;
 
 export interface SqlServerTemporalConvention$instance {
-    processEntityTypeAnnotationChanged(entityTypeBuilder: IConventionEntityTypeBuilder, name: string, annotation: IConventionAnnotation, oldAnnotation: IConventionAnnotation, context: IConventionContext<IConventionAnnotation>): void;
-    processModelFinalizing(modelBuilder: IConventionModelBuilder, context: IConventionContext<IConventionModelBuilder>): void;
-    processSkipNavigationForeignKeyChanged(skipNavigationBuilder: IConventionSkipNavigationBuilder, foreignKey: IConventionForeignKey, oldForeignKey: IConventionForeignKey, context: IConventionContext<IConventionForeignKey>): void;
+    ProcessEntityTypeAnnotationChanged(entityTypeBuilder: IConventionEntityTypeBuilder, name: string, annotation: IConventionAnnotation, oldAnnotation: IConventionAnnotation, context: IConventionContext<IConventionAnnotation>): void;
+    ProcessModelFinalizing(modelBuilder: IConventionModelBuilder, context: IConventionContext<IConventionModelBuilder>): void;
+    ProcessSkipNavigationForeignKeyChanged(skipNavigationBuilder: IConventionSkipNavigationBuilder, foreignKey: IConventionForeignKey, oldForeignKey: IConventionForeignKey, context: IConventionContext<IConventionForeignKey>): void;
 }
 
 
@@ -152,22 +152,22 @@ export const SqlServerTemporalConvention: {
 export type SqlServerTemporalConvention = SqlServerTemporalConvention$instance;
 
 export interface SqlServerValueGenerationConvention$instance extends RelationalValueGenerationConvention {
-    processEntityTypeAnnotationChanged(entityTypeBuilder: IConventionEntityTypeBuilder, name: string, annotation: IConventionAnnotation, oldAnnotation: IConventionAnnotation, context: IConventionContext<IConventionAnnotation>): void;
-    processPropertyAnnotationChanged(propertyBuilder: IConventionPropertyBuilder, name: string, annotation: IConventionAnnotation, oldAnnotation: IConventionAnnotation, context: IConventionContext<IConventionAnnotation>): void;
+    ProcessEntityTypeAnnotationChanged(entityTypeBuilder: IConventionEntityTypeBuilder, name: string, annotation: IConventionAnnotation, oldAnnotation: IConventionAnnotation, context: IConventionContext<IConventionAnnotation>): void;
+    ProcessPropertyAnnotationChanged(propertyBuilder: IConventionPropertyBuilder, name: string, annotation: IConventionAnnotation, oldAnnotation: IConventionAnnotation, context: IConventionContext<IConventionAnnotation>): void;
 }
 
 
 export const SqlServerValueGenerationConvention: {
     new(dependencies: ProviderConventionSetBuilderDependencies, relationalDependencies: RelationalConventionSetBuilderDependencies): SqlServerValueGenerationConvention;
-    getValueGenerated(property: IReadOnlyProperty, storeObject: StoreObjectIdentifier): Nullable<ValueGenerated>;
+    GetValueGenerated(property: IReadOnlyProperty, storeObject: StoreObjectIdentifier): Nullable<ValueGenerated>;
 };
 
 
 export type SqlServerValueGenerationConvention = SqlServerValueGenerationConvention$instance;
 
 export interface SqlServerValueGenerationStrategyConvention$instance {
-    processModelFinalizing(modelBuilder: IConventionModelBuilder, context: IConventionContext<IConventionModelBuilder>): void;
-    processModelInitialized(modelBuilder: IConventionModelBuilder, context: IConventionContext<IConventionModelBuilder>): void;
+    ProcessModelFinalizing(modelBuilder: IConventionModelBuilder, context: IConventionContext<IConventionModelBuilder>): void;
+    ProcessModelInitialized(modelBuilder: IConventionModelBuilder, context: IConventionContext<IConventionModelBuilder>): void;
 }
 
 

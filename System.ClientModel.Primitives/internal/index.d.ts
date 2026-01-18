@@ -30,53 +30,53 @@ import type { ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
 
 export enum ClientErrorBehaviors {
-    default = 0,
-    noThrow = 1
+    Default = 0,
+    NoThrow = 1
 }
 
 
 export enum CredentialKind {
-    none = 0,
-    apiKeyString = 1,
-    tokenCredential = 2
+    None = 0,
+    ApiKeyString = 1,
+    TokenCredential = 2
 }
 
 
 export enum PipelinePosition {
-    perCall = 0,
-    perTry = 1,
-    beforeTransport = 2
+    PerCall = 0,
+    PerTry = 1,
+    BeforeTransport = 2
 }
 
 
 export interface IJsonModel_1$instance<T> extends IPersistableModel_1<T> {
-    create(reader: Utf8JsonReader, options: ModelReaderWriterOptions): T | undefined;
-    create(data: BinaryData, options: ModelReaderWriterOptions): T | undefined;
-    create(data: BinaryData, options: ModelReaderWriterOptions): T;
-    getFormatFromOptions(options: ModelReaderWriterOptions): string;
-    write(writer: Utf8JsonWriter, options: ModelReaderWriterOptions): void;
-    write(options: ModelReaderWriterOptions): BinaryData;
+    Create(reader: Utf8JsonReader, options: ModelReaderWriterOptions): T | undefined;
+    Create(data: BinaryData, options: ModelReaderWriterOptions): T | undefined;
+    Create(data: BinaryData, options: ModelReaderWriterOptions): T;
+    GetFormatFromOptions(options: ModelReaderWriterOptions): string;
+    Write(writer: Utf8JsonWriter, options: ModelReaderWriterOptions): void;
+    Write(options: ModelReaderWriterOptions): BinaryData;
 }
 
 
 export type IJsonModel_1<T> = IJsonModel_1$instance<T>;
 
 export interface IPersistableModel_1$instance<T> {
-    create(data: BinaryData, options: ModelReaderWriterOptions): T | undefined;
-    getFormatFromOptions(options: ModelReaderWriterOptions): string;
-    write(options: ModelReaderWriterOptions): BinaryData;
+    Create(data: BinaryData, options: ModelReaderWriterOptions): T | undefined;
+    GetFormatFromOptions(options: ModelReaderWriterOptions): string;
+    Write(options: ModelReaderWriterOptions): BinaryData;
 }
 
 
 export type IPersistableModel_1<T> = IPersistableModel_1$instance<T>;
 
 export interface ClientConnection$instance {
-    readonly credential: unknown | undefined;
-    readonly credentialKind: CredentialKind;
-    readonly id: string;
-    readonly locator: string;
-    toString(): string;
-    tryGetLocatorAsUri(uri: Uri): boolean;
+    readonly Credential: unknown | undefined;
+    readonly CredentialKind: CredentialKind;
+    readonly Id: string;
+    readonly Locator: string;
+    ToString(): string;
+    TryGetLocatorAsUri(uri: Uri): boolean;
 }
 
 
@@ -89,24 +89,24 @@ export const ClientConnection: {
 export type ClientConnection = ClientConnection$instance;
 
 export interface ApiKeyAuthenticationPolicy$instance extends AuthenticationPolicy {
-    process(message: PipelineMessage, pipeline: IReadOnlyList<PipelinePolicy>, currentIndex: int): void;
-    processAsync(message: PipelineMessage, pipeline: IReadOnlyList<PipelinePolicy>, currentIndex: int): ValueTask;
+    Process(message: PipelineMessage, pipeline: IReadOnlyList<PipelinePolicy>, currentIndex: int): void;
+    ProcessAsync(message: PipelineMessage, pipeline: IReadOnlyList<PipelinePolicy>, currentIndex: int): ValueTask;
 }
 
 
 export const ApiKeyAuthenticationPolicy: {
     new(): ApiKeyAuthenticationPolicy;
-    createBasicAuthorizationPolicy(credential: ApiKeyCredential): ApiKeyAuthenticationPolicy;
-    createBearerAuthorizationPolicy(credential: ApiKeyCredential): ApiKeyAuthenticationPolicy;
-    createHeaderApiKeyPolicy(credential: ApiKeyCredential, headerName: string, keyPrefix?: string): ApiKeyAuthenticationPolicy;
+    CreateBasicAuthorizationPolicy(credential: ApiKeyCredential): ApiKeyAuthenticationPolicy;
+    CreateBearerAuthorizationPolicy(credential: ApiKeyCredential): ApiKeyAuthenticationPolicy;
+    CreateHeaderApiKeyPolicy(credential: ApiKeyCredential, headerName: string, keyPrefix?: string): ApiKeyAuthenticationPolicy;
 };
 
 
 export type ApiKeyAuthenticationPolicy = ApiKeyAuthenticationPolicy$instance;
 
 export interface AsyncCollectionResult$instance {
-    getContinuationToken(page: ClientResult): ContinuationToken | undefined;
-    getRawPagesAsync(): IAsyncEnumerable<ClientResult>;
+    GetContinuationToken(page: ClientResult): ContinuationToken | undefined;
+    GetRawPagesAsync(): IAsyncEnumerable<ClientResult>;
 }
 
 
@@ -127,10 +127,10 @@ export const AuthenticationPolicy: {
 export type AuthenticationPolicy = AuthenticationPolicy$instance;
 
 export interface AuthenticationToken$instance {
-    readonly expiresOn: Nullable<DateTimeOffset>;
-    readonly refreshOn: Nullable<DateTimeOffset>;
-    readonly tokenType: string;
-    readonly tokenValue: string;
+    readonly ExpiresOn: Nullable<DateTimeOffset>;
+    readonly RefreshOn: Nullable<DateTimeOffset>;
+    readonly TokenType: string;
+    readonly TokenValue: string;
 }
 
 
@@ -142,8 +142,8 @@ export const AuthenticationToken: {
 export type AuthenticationToken = AuthenticationToken$instance;
 
 export interface BearerTokenPolicy$instance extends AuthenticationPolicy {
-    process(message: PipelineMessage, pipeline: IReadOnlyList<PipelinePolicy>, currentIndex: int): void;
-    processAsync(message: PipelineMessage, pipeline: IReadOnlyList<PipelinePolicy>, currentIndex: int): ValueTask;
+    Process(message: PipelineMessage, pipeline: IReadOnlyList<PipelinePolicy>, currentIndex: int): void;
+    ProcessAsync(message: PipelineMessage, pipeline: IReadOnlyList<PipelinePolicy>, currentIndex: int): ValueTask;
 }
 
 
@@ -156,7 +156,7 @@ export const BearerTokenPolicy: {
 export type BearerTokenPolicy = BearerTokenPolicy$instance;
 
 export interface ClientCache$instance {
-    getClient<T>(clientId: unknown, createClient: Func<T>): T;
+    GetClient<T>(clientId: unknown, createClient: Func<T>): T;
 }
 
 
@@ -168,7 +168,7 @@ export const ClientCache: {
 export type ClientCache = ClientCache$instance;
 
 export interface ClientConnectionCollection$instance extends KeyedCollection<System_Internal.String, ClientConnection> {
-    addRange(connections: IEnumerable__System_Collections_Generic<ClientConnection>): void;
+    AddRange(connections: IEnumerable__System_Collections_Generic<ClientConnection>): void;
 }
 
 
@@ -180,9 +180,9 @@ export const ClientConnectionCollection: {
 export type ClientConnectionCollection = ClientConnectionCollection$instance;
 
 export interface ClientConnectionProvider$instance {
-    readonly subclients: ClientCache;
-    getAllConnections(): IEnumerable__System_Collections_Generic<ClientConnection>;
-    getConnection(connectionId: string): ClientConnection;
+    readonly Subclients: ClientCache;
+    GetAllConnections(): IEnumerable__System_Collections_Generic<ClientConnection>;
+    GetConnection(connectionId: string): ClientConnection;
 }
 
 
@@ -193,15 +193,15 @@ export const ClientConnectionProvider: {
 export type ClientConnectionProvider = ClientConnectionProvider$instance;
 
 export interface ClientLoggingOptions$instance {
-    readonly allowedHeaderNames: IList__System_Collections_Generic<System_Internal.String>;
-    readonly allowedQueryParameters: IList__System_Collections_Generic<System_Internal.String>;
-    enableLogging: Nullable<System_Internal.Boolean>;
-    enableMessageContentLogging: Nullable<System_Internal.Boolean>;
-    enableMessageLogging: Nullable<System_Internal.Boolean>;
-    get loggerFactory(): ILoggerFactory | undefined;
-    set loggerFactory(value: ILoggerFactory);
-    messageContentSizeLimit: Nullable<System_Internal.Int32>;
-    freeze(): void;
+    readonly AllowedHeaderNames: IList__System_Collections_Generic<System_Internal.String>;
+    readonly AllowedQueryParameters: IList__System_Collections_Generic<System_Internal.String>;
+    EnableLogging: Nullable<System_Internal.Boolean>;
+    EnableMessageContentLogging: Nullable<System_Internal.Boolean>;
+    EnableMessageLogging: Nullable<System_Internal.Boolean>;
+    get LoggerFactory(): ILoggerFactory | undefined;
+    set LoggerFactory(value: ILoggerFactory);
+    MessageContentSizeLimit: Nullable<System_Internal.Int32>;
+    Freeze(): void;
 }
 
 
@@ -213,33 +213,33 @@ export const ClientLoggingOptions: {
 export type ClientLoggingOptions = ClientLoggingOptions$instance;
 
 export interface ClientPipeline$instance {
-    createMessage(): PipelineMessage;
-    send(message: PipelineMessage): void;
-    sendAsync(message: PipelineMessage): ValueTask;
+    CreateMessage(): PipelineMessage;
+    Send(message: PipelineMessage): void;
+    SendAsync(message: PipelineMessage): ValueTask;
 }
 
 
 export const ClientPipeline: {
     new(): ClientPipeline;
-    create(options: ClientPipelineOptions, perCallPolicies: ReadOnlySpan<PipelinePolicy>, perTryPolicies: ReadOnlySpan<PipelinePolicy>, beforeTransportPolicies: ReadOnlySpan<PipelinePolicy>): ClientPipeline;
-    create(options?: ClientPipelineOptions): ClientPipeline;
+    Create(options: ClientPipelineOptions, perCallPolicies: ReadOnlySpan<PipelinePolicy>, perTryPolicies: ReadOnlySpan<PipelinePolicy>, beforeTransportPolicies: ReadOnlySpan<PipelinePolicy>): ClientPipeline;
+    Create(options?: ClientPipelineOptions): ClientPipeline;
 };
 
 
 export type ClientPipeline = ClientPipeline$instance;
 
 export interface ClientPipelineOptions$instance {
-    get clientLoggingOptions(): ClientLoggingOptions | undefined;
-    set clientLoggingOptions(value: ClientLoggingOptions);
-    enableDistributedTracing: Nullable<System_Internal.Boolean>;
-    get messageLoggingPolicy(): PipelinePolicy | undefined;
-    set messageLoggingPolicy(value: PipelinePolicy);
-    networkTimeout: Nullable<TimeSpan>;
-    get retryPolicy(): PipelinePolicy | undefined;
-    set retryPolicy(value: PipelinePolicy);
-    transport: PipelineTransport;
-    addPolicy(policy: PipelinePolicy, position: PipelinePosition): void;
-    freeze(): void;
+    get ClientLoggingOptions(): ClientLoggingOptions | undefined;
+    set ClientLoggingOptions(value: ClientLoggingOptions);
+    EnableDistributedTracing: Nullable<System_Internal.Boolean>;
+    get MessageLoggingPolicy(): PipelinePolicy | undefined;
+    set MessageLoggingPolicy(value: PipelinePolicy);
+    NetworkTimeout: Nullable<TimeSpan>;
+    get RetryPolicy(): PipelinePolicy | undefined;
+    set RetryPolicy(value: PipelinePolicy);
+    Transport: PipelineTransport;
+    AddPolicy(policy: PipelinePolicy, position: PipelinePosition): void;
+    Freeze(): void;
 }
 
 
@@ -251,23 +251,23 @@ export const ClientPipelineOptions: {
 export type ClientPipelineOptions = ClientPipelineOptions$instance;
 
 export interface ClientRetryPolicy$instance extends PipelinePolicy {
-    process(message: PipelineMessage, pipeline: IReadOnlyList<PipelinePolicy>, currentIndex: int): void;
-    processAsync(message: PipelineMessage, pipeline: IReadOnlyList<PipelinePolicy>, currentIndex: int): ValueTask;
+    Process(message: PipelineMessage, pipeline: IReadOnlyList<PipelinePolicy>, currentIndex: int): void;
+    ProcessAsync(message: PipelineMessage, pipeline: IReadOnlyList<PipelinePolicy>, currentIndex: int): ValueTask;
 }
 
 
 export const ClientRetryPolicy: {
     new(maxRetries: int): ClientRetryPolicy;
     new(maxRetries: int, enableLogging: boolean, loggerFactory: ILoggerFactory): ClientRetryPolicy;
-    readonly default: ClientRetryPolicy;
+    readonly Default: ClientRetryPolicy;
 };
 
 
 export type ClientRetryPolicy = ClientRetryPolicy$instance;
 
 export interface CollectionResult$instance {
-    getContinuationToken(page: ClientResult): ContinuationToken | undefined;
-    getRawPages(): IEnumerable__System_Collections_Generic<ClientResult>;
+    GetContinuationToken(page: ClientResult): ContinuationToken | undefined;
+    GetRawPages(): IEnumerable__System_Collections_Generic<ClientResult>;
 }
 
 
@@ -278,23 +278,23 @@ export const CollectionResult: {
 export type CollectionResult = CollectionResult$instance;
 
 export interface GetTokenOptions$instance {
-    readonly properties: IReadOnlyDictionary<System_Internal.String, unknown>;
+    readonly Properties: IReadOnlyDictionary<System_Internal.String, unknown>;
 }
 
 
 export const GetTokenOptions: {
     new(properties: IReadOnlyDictionary<System_Internal.String, unknown>): GetTokenOptions;
-    readonly scopesPropertyName: string;
-    readonly tokenUrlPropertyName: string;
-    readonly authorizationUrlPropertyName: string;
-    readonly refreshUrlPropertyName: string;
+    readonly ScopesPropertyName: string;
+    readonly TokenUrlPropertyName: string;
+    readonly AuthorizationUrlPropertyName: string;
+    readonly RefreshUrlPropertyName: string;
 };
 
 
 export type GetTokenOptions = GetTokenOptions$instance;
 
 export interface HttpClientPipelineTransport$instance extends PipelineTransport {
-    dispose(): void;
+    Dispose(): void;
 }
 
 
@@ -302,16 +302,16 @@ export const HttpClientPipelineTransport: {
     new(): HttpClientPipelineTransport;
     new(client: HttpClient): HttpClientPipelineTransport;
     new(client: HttpClient, enableLogging: boolean, loggerFactory: ILoggerFactory): HttpClientPipelineTransport;
-    readonly shared: HttpClientPipelineTransport;
+    readonly Shared: HttpClientPipelineTransport;
 };
 
 
 export type HttpClientPipelineTransport = HttpClientPipelineTransport$instance;
 
 export interface JsonModelConverter$instance extends JsonConverter<IJsonModel_1<unknown>> {
-    canConvert(typeToConvert: Type): boolean;
-    read(reader: Utf8JsonReader, typeToConvert: Type, options: JsonSerializerOptions): IJsonModel_1<unknown> | undefined;
-    write(writer: Utf8JsonWriter, value: IJsonModel_1<unknown>, options: JsonSerializerOptions): void;
+    CanConvert(typeToConvert: Type): boolean;
+    Read(reader: Utf8JsonReader, typeToConvert: Type, options: JsonSerializerOptions): IJsonModel_1<unknown> | undefined;
+    Write(writer: Utf8JsonWriter, value: IJsonModel_1<unknown>, options: JsonSerializerOptions): void;
 }
 
 
@@ -325,14 +325,14 @@ export const JsonModelConverter: {
 export type JsonModelConverter = JsonModelConverter$instance;
 
 export interface MessageLoggingPolicy$instance extends PipelinePolicy {
-    process(message: PipelineMessage, pipeline: IReadOnlyList<PipelinePolicy>, currentIndex: int): void;
-    processAsync(message: PipelineMessage, pipeline: IReadOnlyList<PipelinePolicy>, currentIndex: int): ValueTask;
+    Process(message: PipelineMessage, pipeline: IReadOnlyList<PipelinePolicy>, currentIndex: int): void;
+    ProcessAsync(message: PipelineMessage, pipeline: IReadOnlyList<PipelinePolicy>, currentIndex: int): ValueTask;
 }
 
 
 export const MessageLoggingPolicy: {
     new(options: ClientLoggingOptions): MessageLoggingPolicy;
-    readonly default: MessageLoggingPolicy;
+    readonly Default: MessageLoggingPolicy;
 };
 
 
@@ -350,8 +350,8 @@ export const ModelReaderWriterBuildableAttribute: {
 export type ModelReaderWriterBuildableAttribute = ModelReaderWriterBuildableAttribute$instance;
 
 export interface ModelReaderWriterContext$instance {
-    getTypeBuilder(type: Type): ModelReaderWriterTypeBuilder;
-    tryGetTypeBuilder(type: Type, builder: ModelReaderWriterTypeBuilder): boolean;
+    GetTypeBuilder(type: Type): ModelReaderWriterTypeBuilder;
+    TryGetTypeBuilder(type: Type, builder: ModelReaderWriterTypeBuilder): boolean;
 }
 
 
@@ -373,14 +373,14 @@ export const ModelReaderWriterContextTypeAttribute: {
 export type ModelReaderWriterContextTypeAttribute = ModelReaderWriterContextTypeAttribute$instance;
 
 export interface ModelReaderWriterOptions$instance {
-    readonly format: string;
+    readonly Format: string;
 }
 
 
 export const ModelReaderWriterOptions: {
     new(format: string): ModelReaderWriterOptions;
-    readonly json: ModelReaderWriterOptions;
-    readonly xml: ModelReaderWriterOptions;
+    readonly Json: ModelReaderWriterOptions;
+    readonly Xml: ModelReaderWriterOptions;
 };
 
 
@@ -397,13 +397,13 @@ export const ModelReaderWriterTypeBuilder: {
 export type ModelReaderWriterTypeBuilder = ModelReaderWriterTypeBuilder$instance;
 
 export interface OperationResult$instance {
-    readonly hasCompleted: boolean;
-    readonly rehydrationToken: ContinuationToken | undefined;
-    getRawResponse(): PipelineResponse;
-    updateStatus(options?: RequestOptions): ClientResult;
-    updateStatusAsync(options?: RequestOptions): ValueTask<ClientResult>;
-    waitForCompletion(cancellationToken?: CancellationToken): void;
-    waitForCompletionAsync(cancellationToken?: CancellationToken): ValueTask;
+    readonly HasCompleted: boolean;
+    readonly RehydrationToken: ContinuationToken | undefined;
+    GetRawResponse(): PipelineResponse;
+    UpdateStatus(options?: RequestOptions): ClientResult;
+    UpdateStatusAsync(options?: RequestOptions): ValueTask<ClientResult>;
+    WaitForCompletion(cancellationToken?: CancellationToken): void;
+    WaitForCompletionAsync(cancellationToken?: CancellationToken): ValueTask;
 }
 
 
@@ -414,7 +414,7 @@ export const OperationResult: {
 export type OperationResult = OperationResult$instance;
 
 export interface PersistableModelProxyAttribute$instance extends Attribute {
-    readonly proxyType: Type;
+    readonly ProxyType: Type;
 }
 
 
@@ -426,17 +426,17 @@ export const PersistableModelProxyAttribute: {
 export type PersistableModelProxyAttribute = PersistableModelProxyAttribute$instance;
 
 export interface PipelineMessage$instance {
-    bufferResponse: boolean;
-    readonly cancellationToken: CancellationToken;
-    networkTimeout: Nullable<TimeSpan>;
-    readonly request: PipelineRequest;
-    readonly response: PipelineResponse;
-    responseClassifier: PipelineMessageClassifier;
-    apply(options: RequestOptions): void;
-    dispose(): void;
-    extractResponse(): PipelineResponse | undefined;
-    setProperty(key: Type, value: unknown): void;
-    tryGetProperty(key: Type, value: unknown): boolean;
+    BufferResponse: boolean;
+    readonly CancellationToken: CancellationToken;
+    NetworkTimeout: Nullable<TimeSpan>;
+    readonly Request: PipelineRequest;
+    readonly Response: PipelineResponse;
+    ResponseClassifier: PipelineMessageClassifier;
+    Apply(options: RequestOptions): void;
+    Dispose(): void;
+    ExtractResponse(): PipelineResponse | undefined;
+    SetProperty(key: Type, value: unknown): void;
+    TryGetProperty(key: Type, value: unknown): boolean;
 }
 
 
@@ -448,22 +448,22 @@ export const PipelineMessage: {
 export type PipelineMessage = PipelineMessage$instance;
 
 export interface PipelineMessageClassifier$instance {
-    tryClassify(message: PipelineMessage, isError: boolean): boolean;
-    tryClassify(message: PipelineMessage, exception: Exception, isRetriable: boolean): boolean;
+    TryClassify(message: PipelineMessage, isError: boolean): boolean;
+    TryClassify(message: PipelineMessage, exception: Exception, isRetriable: boolean): boolean;
 }
 
 
 export const PipelineMessageClassifier: {
-    readonly default: PipelineMessageClassifier;
-    create(successStatusCodes: ReadOnlySpan<System_Internal.UInt16>): PipelineMessageClassifier;
+    readonly Default: PipelineMessageClassifier;
+    Create(successStatusCodes: ReadOnlySpan<System_Internal.UInt16>): PipelineMessageClassifier;
 };
 
 
 export type PipelineMessageClassifier = PipelineMessageClassifier$instance;
 
 export interface PipelinePolicy$instance {
-    process(message: PipelineMessage, pipeline: IReadOnlyList<PipelinePolicy>, currentIndex: int): void;
-    processAsync(message: PipelineMessage, pipeline: IReadOnlyList<PipelinePolicy>, currentIndex: int): ValueTask;
+    Process(message: PipelineMessage, pipeline: IReadOnlyList<PipelinePolicy>, currentIndex: int): void;
+    ProcessAsync(message: PipelineMessage, pipeline: IReadOnlyList<PipelinePolicy>, currentIndex: int): ValueTask;
 }
 
 
@@ -474,11 +474,11 @@ export const PipelinePolicy: {
 export type PipelinePolicy = PipelinePolicy$instance;
 
 export interface PipelineRequest$instance {
-    content: BinaryContent;
-    readonly headers: PipelineRequestHeaders;
-    method: string;
-    uri: Uri;
-    dispose(): void;
+    Content: BinaryContent;
+    readonly Headers: PipelineRequestHeaders;
+    Method: string;
+    Uri: Uri;
+    Dispose(): void;
 }
 
 
@@ -489,12 +489,12 @@ export const PipelineRequest: {
 export type PipelineRequest = PipelineRequest$instance;
 
 export interface PipelineRequestHeaders$instance {
-    add(name: string, value: string): void;
-    getEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, System_Internal.String>>;
-    remove(name: string): boolean;
-    set(name: string, value: string): void;
-    tryGetValue(name: string, value: string): boolean;
-    tryGetValues(name: string, values: IEnumerable__System_Collections_Generic<System_Internal.String>): boolean;
+    Add(name: string, value: string): void;
+    GetEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, System_Internal.String>>;
+    Remove(name: string): boolean;
+    Set(name: string, value: string): void;
+    TryGetValue(name: string, value: string): boolean;
+    TryGetValues(name: string, values: IEnumerable__System_Collections_Generic<System_Internal.String>): boolean;
 }
 
 
@@ -505,16 +505,16 @@ export const PipelineRequestHeaders: {
 export type PipelineRequestHeaders = PipelineRequestHeaders$instance;
 
 export interface PipelineResponse$instance {
-    readonly content: BinaryData;
-    get contentStream(): Stream | undefined;
-    set contentStream(value: Stream);
-    readonly headers: PipelineResponseHeaders;
-    readonly isError: boolean;
-    readonly reasonPhrase: string;
-    readonly status: int;
-    bufferContent(cancellationToken?: CancellationToken): BinaryData;
-    bufferContentAsync(cancellationToken?: CancellationToken): ValueTask<BinaryData>;
-    dispose(): void;
+    readonly Content: BinaryData;
+    get ContentStream(): Stream | undefined;
+    set ContentStream(value: Stream);
+    readonly Headers: PipelineResponseHeaders;
+    readonly IsError: boolean;
+    readonly ReasonPhrase: string;
+    readonly Status: int;
+    BufferContent(cancellationToken?: CancellationToken): BinaryData;
+    BufferContentAsync(cancellationToken?: CancellationToken): ValueTask<BinaryData>;
+    Dispose(): void;
 }
 
 
@@ -525,9 +525,9 @@ export const PipelineResponse: {
 export type PipelineResponse = PipelineResponse$instance;
 
 export interface PipelineResponseHeaders$instance {
-    getEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, System_Internal.String>>;
-    tryGetValue(name: string, value: string): boolean;
-    tryGetValues(name: string, values: IEnumerable__System_Collections_Generic<System_Internal.String>): boolean;
+    GetEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, System_Internal.String>>;
+    TryGetValue(name: string, value: string): boolean;
+    TryGetValues(name: string, values: IEnumerable__System_Collections_Generic<System_Internal.String>): boolean;
 }
 
 
@@ -538,13 +538,13 @@ export const PipelineResponseHeaders: {
 export type PipelineResponseHeaders = PipelineResponseHeaders$instance;
 
 export interface PipelineTransport$instance extends PipelinePolicy {
-    createMessage(): PipelineMessage;
-    process(message: PipelineMessage): void;
-    process(message: PipelineMessage, pipeline: IReadOnlyList<PipelinePolicy>, currentIndex: int): void;
-    process(message: PipelineMessage, pipeline: IReadOnlyList<PipelinePolicy>, currentIndex: int): void;
-    processAsync(message: PipelineMessage): ValueTask;
-    processAsync(message: PipelineMessage, pipeline: IReadOnlyList<PipelinePolicy>, currentIndex: int): ValueTask;
-    processAsync(message: PipelineMessage, pipeline: IReadOnlyList<PipelinePolicy>, currentIndex: int): ValueTask;
+    CreateMessage(): PipelineMessage;
+    Process(message: PipelineMessage): void;
+    Process(message: PipelineMessage, pipeline: IReadOnlyList<PipelinePolicy>, currentIndex: int): void;
+    Process(message: PipelineMessage, pipeline: IReadOnlyList<PipelinePolicy>, currentIndex: int): void;
+    ProcessAsync(message: PipelineMessage): ValueTask;
+    ProcessAsync(message: PipelineMessage, pipeline: IReadOnlyList<PipelinePolicy>, currentIndex: int): ValueTask;
+    ProcessAsync(message: PipelineMessage, pipeline: IReadOnlyList<PipelinePolicy>, currentIndex: int): ValueTask;
 }
 
 
@@ -555,13 +555,13 @@ export const PipelineTransport: {
 export type PipelineTransport = PipelineTransport$instance;
 
 export interface RequestOptions$instance {
-    bufferResponse: boolean;
-    cancellationToken: CancellationToken;
-    errorOptions: ClientErrorBehaviors;
-    addHeader(name: string, value: string): void;
-    addPolicy(policy: PipelinePolicy, position: PipelinePosition): void;
-    freeze(): void;
-    setHeader(name: string, value: string): void;
+    BufferResponse: boolean;
+    CancellationToken: CancellationToken;
+    ErrorOptions: ClientErrorBehaviors;
+    AddHeader(name: string, value: string): void;
+    AddPolicy(policy: PipelinePolicy, position: PipelinePosition): void;
+    Freeze(): void;
+    SetHeader(name: string, value: string): void;
 }
 
 
@@ -573,22 +573,22 @@ export const RequestOptions: {
 export type RequestOptions = RequestOptions$instance;
 
 export abstract class ActivityExtensions$instance {
-    static markClientActivityFailed(activity: Activity, exception: Exception): Activity;
-    static startClientActivity(activitySource: ActivitySource, options: ClientPipelineOptions, name: string, kind?: ActivityKind, parentContext?: ActivityContext, tags?: IEnumerable__System_Collections_Generic<KeyValuePair<System_Internal.String, unknown>>): Activity | undefined;
+    static MarkClientActivityFailed(activity: Activity, exception: Exception): Activity;
+    static StartClientActivity(activitySource: ActivitySource, options: ClientPipelineOptions, name: string, kind?: ActivityKind, parentContext?: ActivityContext, tags?: IEnumerable__System_Collections_Generic<KeyValuePair<System_Internal.String, unknown>>): Activity | undefined;
 }
 
 
 export type ActivityExtensions = ActivityExtensions$instance;
 
 export abstract class ModelReaderWriter$instance {
-    static read<T>(data: BinaryData, options: ModelReaderWriterOptions, context: ModelReaderWriterContext): T | undefined;
-    static read<T extends IPersistableModel_1<T>>(data: BinaryData, options?: ModelReaderWriterOptions): T | undefined;
-    static read(data: BinaryData, returnType: Type, options: ModelReaderWriterOptions, context: ModelReaderWriterContext): unknown | undefined;
-    static read(data: BinaryData, returnType: Type, options?: ModelReaderWriterOptions): unknown | undefined;
-    static write(model: unknown, options: ModelReaderWriterOptions, context: ModelReaderWriterContext): BinaryData;
-    static write(model: unknown, options?: ModelReaderWriterOptions): BinaryData;
-    static write<T>(model: T, options: ModelReaderWriterOptions, context: ModelReaderWriterContext): BinaryData;
-    static write<T extends IPersistableModel_1<T>>(model: T, options?: ModelReaderWriterOptions): BinaryData;
+    static Read<T>(data: BinaryData, options: ModelReaderWriterOptions, context: ModelReaderWriterContext): T | undefined;
+    static Read<T extends IPersistableModel_1<T>>(data: BinaryData, options?: ModelReaderWriterOptions): T | undefined;
+    static Read(data: BinaryData, returnType: Type, options: ModelReaderWriterOptions, context: ModelReaderWriterContext): unknown | undefined;
+    static Read(data: BinaryData, returnType: Type, options?: ModelReaderWriterOptions): unknown | undefined;
+    static Write(model: unknown, options: ModelReaderWriterOptions, context: ModelReaderWriterContext): BinaryData;
+    static Write(model: unknown, options?: ModelReaderWriterOptions): BinaryData;
+    static Write<T>(model: T, options: ModelReaderWriterOptions, context: ModelReaderWriterContext): BinaryData;
+    static Write<T extends IPersistableModel_1<T>>(model: T, options?: ModelReaderWriterOptions): BinaryData;
 }
 
 

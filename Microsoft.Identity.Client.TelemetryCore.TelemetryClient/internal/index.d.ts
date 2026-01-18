@@ -11,7 +11,7 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Object as ClrObject } from "@tsonic/dotnet/System.js";
 
 export interface TelemetryData$instance {
-    cacheLevel: CacheLevel;
+    CacheLevel: CacheLevel;
 }
 
 

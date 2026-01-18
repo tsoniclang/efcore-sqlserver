@@ -14,11 +14,11 @@ import * as Microsoft_EntityFrameworkCore_Metadata_Internal from "@tsonic/efcore
 import type { IColumn, IRelationalAnnotationProvider, IRelationalModel, ITable, ITableIndex, IUniqueConstraint, RelationalAnnotationProvider, RelationalAnnotationProviderDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
 
 export interface SqlServerAnnotationProvider$instance extends RelationalAnnotationProvider {
-    for(model: IRelationalModel, designTime: boolean): IEnumerable<IAnnotation>;
-    for(table: ITable, designTime: boolean): IEnumerable<IAnnotation>;
-    for(constraint: IUniqueConstraint, designTime: boolean): IEnumerable<IAnnotation>;
-    for(index: ITableIndex, designTime: boolean): IEnumerable<IAnnotation>;
-    for(column: IColumn, designTime: boolean): IEnumerable<IAnnotation>;
+    For(model: IRelationalModel, designTime: boolean): IEnumerable<IAnnotation>;
+    For(table: ITable, designTime: boolean): IEnumerable<IAnnotation>;
+    For(constraint: IUniqueConstraint, designTime: boolean): IEnumerable<IAnnotation>;
+    For(index: ITableIndex, designTime: boolean): IEnumerable<IAnnotation>;
+    For(column: IColumn, designTime: boolean): IEnumerable<IAnnotation>;
 }
 
 
@@ -30,42 +30,42 @@ export const SqlServerAnnotationProvider: {
 export type SqlServerAnnotationProvider = SqlServerAnnotationProvider$instance;
 
 export abstract class SqlServerAnnotationNames$instance {
-    static readonly prefix: string;
-    static readonly clustered: string;
-    static readonly createdOnline: string;
-    static readonly editionOptions: string;
-    static readonly fillFactor: string;
-    static readonly sortInTempDb: string;
-    static readonly dataCompression: string;
-    static readonly hiLoSequenceName: string;
-    static readonly hiLoSequenceSchema: string;
-    static readonly sequenceNameSuffix: string;
-    static readonly sequenceName: string;
-    static readonly sequenceSchema: string;
-    static readonly identity: string;
-    static readonly identityIncrement: string;
-    static readonly identitySeed: string;
-    static readonly include: string;
-    static readonly maxDatabaseSize: string;
-    static readonly memoryOptimized: string;
-    static readonly performanceLevelSql: string;
-    static readonly serviceTierSql: string;
-    static readonly sparse: string;
-    static readonly isTemporal: string;
-    static readonly temporalHistoryTableName: string;
-    static readonly temporalHistoryTableSchema: string;
-    static readonly temporalPeriodStartPropertyName: string;
-    static readonly temporalPeriodStartColumnName: string;
-    static readonly temporalPeriodEndPropertyName: string;
-    static readonly temporalPeriodEndColumnName: string;
-    static readonly temporalOperationType: string;
-    static readonly temporalAsOfPointInTime: string;
-    static readonly temporalRangeOperationFrom: string;
-    static readonly temporalRangeOperationTo: string;
-    static readonly valueGenerationStrategy: string;
-    static readonly useSqlOutputClause: string;
-    static readonly temporalIsPeriodStartColumn: string;
-    static readonly temporalIsPeriodEndColumn: string;
+    static readonly Prefix: string;
+    static readonly Clustered: string;
+    static readonly CreatedOnline: string;
+    static readonly EditionOptions: string;
+    static readonly FillFactor: string;
+    static readonly SortInTempDb: string;
+    static readonly DataCompression: string;
+    static readonly HiLoSequenceName: string;
+    static readonly HiLoSequenceSchema: string;
+    static readonly SequenceNameSuffix: string;
+    static readonly SequenceName: string;
+    static readonly SequenceSchema: string;
+    static readonly Identity: string;
+    static readonly IdentityIncrement: string;
+    static readonly IdentitySeed: string;
+    static readonly Include: string;
+    static readonly MaxDatabaseSize: string;
+    static readonly MemoryOptimized: string;
+    static readonly PerformanceLevelSql: string;
+    static readonly ServiceTierSql: string;
+    static readonly Sparse: string;
+    static readonly IsTemporal: string;
+    static readonly TemporalHistoryTableName: string;
+    static readonly TemporalHistoryTableSchema: string;
+    static readonly TemporalPeriodStartPropertyName: string;
+    static readonly TemporalPeriodStartColumnName: string;
+    static readonly TemporalPeriodEndPropertyName: string;
+    static readonly TemporalPeriodEndColumnName: string;
+    static readonly TemporalOperationType: string;
+    static readonly TemporalAsOfPointInTime: string;
+    static readonly TemporalRangeOperationFrom: string;
+    static readonly TemporalRangeOperationTo: string;
+    static readonly ValueGenerationStrategy: string;
+    static readonly UseSqlOutputClause: string;
+    static readonly TemporalIsPeriodStartColumn: string;
+    static readonly TemporalIsPeriodEndColumn: string;
 }
 
 

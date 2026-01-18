@@ -31,42 +31,42 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export enum ErrorOptions {
-    default = 0,
-    noThrow = 1
+    Default = 0,
+    NoThrow = 1
 }
 
 
 export enum WaitUntil {
-    completed = 0,
-    started = 1
+    Completed = 0,
+    Started = 1
 }
 
 
 export interface ETag$instance {
-    equals(other: ETag): boolean;
-    equals(other: string): boolean;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    toString(): string;
-    toString(format: string): string;
+    Equals(other: ETag): boolean;
+    Equals(other: string): boolean;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    ToString(): string;
+    ToString(format: string): string;
 }
 
 
 export const ETag: {
     new(etag: string): ETag;
-    readonly all: ETag;
+    readonly All: ETag;
 };
 
 
 export type ETag = ETag$instance;
 
 export interface HttpRange$instance {
-    readonly length: Nullable<System_Internal.Int64>;
-    readonly offset: long;
-    equals(other: HttpRange): boolean;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    toString(): string;
+    readonly Length: Nullable<System_Internal.Int64>;
+    readonly Offset: long;
+    Equals(other: HttpRange): boolean;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    ToString(): string;
 }
 
 
@@ -78,23 +78,23 @@ export const HttpRange: {
 export type HttpRange = HttpRange$instance;
 
 export interface AsyncPageable_1$instance<T> {
-    asPages(continuationToken?: string, pageSizeHint?: Nullable<System_Internal.Int32>): IAsyncEnumerable<Page_1<T>>;
-    equals(obj: unknown): boolean;
-    getAsyncEnumerator(cancellationToken?: CancellationToken): IAsyncEnumerator<T>;
-    getHashCode(): int;
-    toString(): string | undefined;
+    AsPages(continuationToken?: string, pageSizeHint?: Nullable<System_Internal.Int32>): IAsyncEnumerable<Page_1<T>>;
+    Equals(obj: unknown): boolean;
+    GetAsyncEnumerator(cancellationToken?: CancellationToken): IAsyncEnumerator<T>;
+    GetHashCode(): int;
+    ToString(): string | undefined;
 }
 
 
 export const AsyncPageable_1: {
-    fromPages<T>(pages: IEnumerable__System_Collections_Generic<Page_1<T>>): AsyncPageable_1<T>;
+    FromPages<T>(pages: IEnumerable__System_Collections_Generic<Page_1<T>>): AsyncPageable_1<T>;
 };
 
 
 export type AsyncPageable_1<T> = AsyncPageable_1$instance<T>;
 
 export interface AzureKeyCredential$instance extends ApiKeyCredential {
-    readonly key: string;
+    readonly Key: string;
 }
 
 
@@ -106,9 +106,9 @@ export const AzureKeyCredential: {
 export type AzureKeyCredential = AzureKeyCredential$instance;
 
 export interface AzureNamedKeyCredential$instance {
-    readonly name: string;
-    deconstruct(name: string, key: string): void;
-    update(name: string, key: string): void;
+    readonly Name: string;
+    Deconstruct(name: string, key: string): void;
+    Update(name: string, key: string): void;
 }
 
 
@@ -120,8 +120,8 @@ export const AzureNamedKeyCredential: {
 export type AzureNamedKeyCredential = AzureNamedKeyCredential$instance;
 
 export interface AzureSasCredential$instance {
-    readonly signature: string;
-    update(signature: string): void;
+    readonly Signature: string;
+    Update(signature: string): void;
 }
 
 
@@ -133,9 +133,9 @@ export const AzureSasCredential: {
 export type AzureSasCredential = AzureSasCredential$instance;
 
 export interface HttpAuthorization$instance {
-    readonly parameter: string;
-    readonly scheme: string;
-    toString(): string;
+    readonly Parameter: string;
+    readonly Scheme: string;
+    ToString(): string;
 }
 
 
@@ -147,17 +147,17 @@ export const HttpAuthorization: {
 export type HttpAuthorization = HttpAuthorization$instance;
 
 export interface JsonPatchDocument$instance {
-    appendAdd<T>(path: string, value: T): void;
-    appendAddRaw(path: string, rawJsonValue: string): void;
-    appendCopy(from: string, path: string): void;
-    appendMove(from: string, path: string): void;
-    appendRemove(path: string): void;
-    appendReplace<T>(path: string, value: T): void;
-    appendReplaceRaw(path: string, rawJsonValue: string): void;
-    appendTest<T>(path: string, value: T): void;
-    appendTestRaw(path: string, rawJsonValue: string): void;
-    toBytes(): ReadOnlyMemory<System_Internal.Byte>;
-    toString(): string;
+    AppendAdd<T>(path: string, value: T): void;
+    AppendAddRaw(path: string, rawJsonValue: string): void;
+    AppendCopy(from: string, path: string): void;
+    AppendMove(from: string, path: string): void;
+    AppendRemove(path: string): void;
+    AppendReplace<T>(path: string, value: T): void;
+    AppendReplaceRaw(path: string, rawJsonValue: string): void;
+    AppendTest<T>(path: string, value: T): void;
+    AppendTestRaw(path: string, rawJsonValue: string): void;
+    ToBytes(): ReadOnlyMemory<System_Internal.Byte>;
+    ToString(): string;
 }
 
 
@@ -172,8 +172,8 @@ export const JsonPatchDocument: {
 export type JsonPatchDocument = JsonPatchDocument$instance;
 
 export interface MatchConditions$instance {
-    ifMatch: Nullable<ETag>;
-    ifNoneMatch: Nullable<ETag>;
+    IfMatch: Nullable<ETag>;
+    IfNoneMatch: Nullable<ETag>;
 }
 
 
@@ -185,12 +185,12 @@ export const MatchConditions: {
 export type MatchConditions = MatchConditions$instance;
 
 export interface NullableResponse_1$instance<T> {
-    readonly hasValue: boolean;
-    readonly value: T;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    getRawResponse(): Response;
-    toString(): string;
+    readonly HasValue: boolean;
+    readonly Value: T;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    GetRawResponse(): Response;
+    ToString(): string;
 }
 
 
@@ -201,48 +201,48 @@ export const NullableResponse_1: {
 export type NullableResponse_1<T> = NullableResponse_1$instance<T>;
 
 export interface Operation$instance {
-    readonly hasCompleted: boolean;
-    readonly id: string;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    getRawResponse(): Response;
-    getRehydrationToken(): Nullable<RehydrationToken>;
-    toString(): string | undefined;
-    updateStatus(cancellationToken?: CancellationToken): Response;
-    updateStatusAsync(cancellationToken?: CancellationToken): ValueTask<Response>;
-    waitForCompletionResponse(cancellationToken?: CancellationToken): Response;
-    waitForCompletionResponse(pollingInterval: TimeSpan, cancellationToken?: CancellationToken): Response;
-    waitForCompletionResponse(delayStrategy: DelayStrategy, cancellationToken?: CancellationToken): Response;
-    waitForCompletionResponseAsync(cancellationToken?: CancellationToken): ValueTask<Response>;
-    waitForCompletionResponseAsync(pollingInterval: TimeSpan, cancellationToken?: CancellationToken): ValueTask<Response>;
-    waitForCompletionResponseAsync(delayStrategy: DelayStrategy, cancellationToken?: CancellationToken): ValueTask<Response>;
+    readonly HasCompleted: boolean;
+    readonly Id: string;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    GetRawResponse(): Response;
+    GetRehydrationToken(): Nullable<RehydrationToken>;
+    ToString(): string | undefined;
+    UpdateStatus(cancellationToken?: CancellationToken): Response;
+    UpdateStatusAsync(cancellationToken?: CancellationToken): ValueTask<Response>;
+    WaitForCompletionResponse(cancellationToken?: CancellationToken): Response;
+    WaitForCompletionResponse(pollingInterval: TimeSpan, cancellationToken?: CancellationToken): Response;
+    WaitForCompletionResponse(delayStrategy: DelayStrategy, cancellationToken?: CancellationToken): Response;
+    WaitForCompletionResponseAsync(cancellationToken?: CancellationToken): ValueTask<Response>;
+    WaitForCompletionResponseAsync(pollingInterval: TimeSpan, cancellationToken?: CancellationToken): ValueTask<Response>;
+    WaitForCompletionResponseAsync(delayStrategy: DelayStrategy, cancellationToken?: CancellationToken): ValueTask<Response>;
 }
 
 
 export const Operation: {
-    rehydrate(pipeline: HttpPipeline, rehydrationToken: RehydrationToken, options?: ClientOptions): Operation;
-    rehydrate<T extends IPersistableModel_1<T>>(pipeline: HttpPipeline, rehydrationToken: RehydrationToken, options?: ClientOptions): Operation_1<T>;
-    rehydrateAsync(pipeline: HttpPipeline, rehydrationToken: RehydrationToken, options?: ClientOptions): Task<Operation>;
-    rehydrateAsync<T extends IPersistableModel_1<T>>(pipeline: HttpPipeline, rehydrationToken: RehydrationToken, options?: ClientOptions): Task<Operation_1<T>>;
+    Rehydrate(pipeline: HttpPipeline, rehydrationToken: RehydrationToken, options?: ClientOptions): Operation;
+    Rehydrate<T extends IPersistableModel_1<T>>(pipeline: HttpPipeline, rehydrationToken: RehydrationToken, options?: ClientOptions): Operation_1<T>;
+    RehydrateAsync(pipeline: HttpPipeline, rehydrationToken: RehydrationToken, options?: ClientOptions): Task<Operation>;
+    RehydrateAsync<T extends IPersistableModel_1<T>>(pipeline: HttpPipeline, rehydrationToken: RehydrationToken, options?: ClientOptions): Task<Operation_1<T>>;
 };
 
 
 export type Operation = Operation$instance;
 
 export interface Operation_1$instance<T> extends Operation {
-    readonly hasValue: boolean;
-    readonly value: T;
-    waitForCompletion(cancellationToken?: CancellationToken): Response_1<T>;
-    waitForCompletion(pollingInterval: TimeSpan, cancellationToken: CancellationToken): Response_1<T>;
-    waitForCompletion(delayStrategy: DelayStrategy, cancellationToken: CancellationToken): Response_1<T>;
-    waitForCompletionAsync(cancellationToken?: CancellationToken): ValueTask<Response_1<T>>;
-    waitForCompletionAsync(pollingInterval: TimeSpan, cancellationToken: CancellationToken): ValueTask<Response_1<T>>;
-    waitForCompletionAsync(delayStrategy: DelayStrategy, cancellationToken: CancellationToken): ValueTask<Response_1<T>>;
-    waitForCompletionResponseAsync(cancellationToken?: CancellationToken): ValueTask<Response>;
-    waitForCompletionResponseAsync(pollingInterval: TimeSpan, cancellationToken?: CancellationToken): ValueTask<Response>;
-    waitForCompletionResponseAsync(cancellationToken?: CancellationToken): ValueTask<Response>;
-    waitForCompletionResponseAsync(pollingInterval: TimeSpan, cancellationToken?: CancellationToken): ValueTask<Response>;
-    waitForCompletionResponseAsync(delayStrategy: DelayStrategy, cancellationToken?: CancellationToken): ValueTask<Response>;
+    readonly HasValue: boolean;
+    readonly Value: T;
+    WaitForCompletion(cancellationToken?: CancellationToken): Response_1<T>;
+    WaitForCompletion(pollingInterval: TimeSpan, cancellationToken: CancellationToken): Response_1<T>;
+    WaitForCompletion(delayStrategy: DelayStrategy, cancellationToken: CancellationToken): Response_1<T>;
+    WaitForCompletionAsync(cancellationToken?: CancellationToken): ValueTask<Response_1<T>>;
+    WaitForCompletionAsync(pollingInterval: TimeSpan, cancellationToken: CancellationToken): ValueTask<Response_1<T>>;
+    WaitForCompletionAsync(delayStrategy: DelayStrategy, cancellationToken: CancellationToken): ValueTask<Response_1<T>>;
+    WaitForCompletionResponseAsync(cancellationToken?: CancellationToken): ValueTask<Response>;
+    WaitForCompletionResponseAsync(pollingInterval: TimeSpan, cancellationToken?: CancellationToken): ValueTask<Response>;
+    WaitForCompletionResponseAsync(cancellationToken?: CancellationToken): ValueTask<Response>;
+    WaitForCompletionResponseAsync(pollingInterval: TimeSpan, cancellationToken?: CancellationToken): ValueTask<Response>;
+    WaitForCompletionResponseAsync(delayStrategy: DelayStrategy, cancellationToken?: CancellationToken): ValueTask<Response>;
 }
 
 
@@ -253,42 +253,42 @@ export const Operation_1: {
 export type Operation_1<T> = Operation_1$instance<T>;
 
 export interface Page_1$instance<T> {
-    readonly continuationToken: string | undefined;
-    readonly values: IReadOnlyList<T>;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    getRawResponse(): Response;
-    toString(): string | undefined;
+    readonly ContinuationToken: string | undefined;
+    readonly Values: IReadOnlyList<T>;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    GetRawResponse(): Response;
+    ToString(): string | undefined;
 }
 
 
 export const Page_1: {
-    fromValues<T>(values: IReadOnlyList<T>, continuationToken: string, response: Response): Page_1<T>;
+    FromValues<T>(values: IReadOnlyList<T>, continuationToken: string, response: Response): Page_1<T>;
 };
 
 
 export type Page_1<T> = Page_1$instance<T>;
 
 export interface Pageable_1$instance<T> {
-    asPages(continuationToken?: string, pageSizeHint?: Nullable<System_Internal.Int32>): IEnumerable__System_Collections_Generic<Page_1<T>>;
-    equals(obj: unknown): boolean;
-    getEnumerator(): IEnumerator<T>;
-    getHashCode(): int;
-    toString(): string | undefined;
+    AsPages(continuationToken?: string, pageSizeHint?: Nullable<System_Internal.Int32>): IEnumerable__System_Collections_Generic<Page_1<T>>;
+    Equals(obj: unknown): boolean;
+    GetEnumerator(): IEnumerator<T>;
+    GetHashCode(): int;
+    ToString(): string | undefined;
 }
 
 
 export const Pageable_1: {
-    fromPages<T>(pages: IEnumerable__System_Collections_Generic<Page_1<T>>): Pageable_1<T>;
+    FromPages<T>(pages: IEnumerable__System_Collections_Generic<Page_1<T>>): Pageable_1<T>;
 };
 
 
 export type Pageable_1<T> = Pageable_1$instance<T>;
 
 export interface PageableOperation_1$instance<T> extends Operation_1<AsyncPageable_1<T>> {
-    readonly value: AsyncPageable_1<T>;
-    getValues(cancellationToken?: CancellationToken): Pageable_1<T>;
-    getValuesAsync(cancellationToken?: CancellationToken): AsyncPageable_1<T>;
+    readonly Value: AsyncPageable_1<T>;
+    GetValues(cancellationToken?: CancellationToken): Pageable_1<T>;
+    GetValuesAsync(cancellationToken?: CancellationToken): AsyncPageable_1<T>;
 }
 
 
@@ -299,8 +299,8 @@ export const PageableOperation_1: {
 export type PageableOperation_1<T> = PageableOperation_1$instance<T>;
 
 export interface RequestConditions$instance extends MatchConditions {
-    ifModifiedSince: Nullable<DateTimeOffset>;
-    ifUnmodifiedSince: Nullable<DateTimeOffset>;
+    IfModifiedSince: Nullable<DateTimeOffset>;
+    IfUnmodifiedSince: Nullable<DateTimeOffset>;
 }
 
 
@@ -312,11 +312,11 @@ export const RequestConditions: {
 export type RequestConditions = RequestConditions$instance;
 
 export interface RequestContext$instance {
-    cancellationToken: CancellationToken;
-    errorOptions: ErrorOptions;
-    addClassifier(statusCode: int, isError: boolean): void;
-    addClassifier(classifier: ResponseClassificationHandler): void;
-    addPolicy(policy: HttpPipelinePolicy, position: HttpPipelinePosition): void;
+    CancellationToken: CancellationToken;
+    ErrorOptions: ErrorOptions;
+    AddClassifier(statusCode: int, isError: boolean): void;
+    AddClassifier(classifier: ResponseClassificationHandler): void;
+    AddPolicy(policy: HttpPipelinePolicy, position: HttpPipelinePosition): void;
 }
 
 
@@ -328,10 +328,10 @@ export const RequestContext: {
 export type RequestContext = RequestContext$instance;
 
 export interface RequestFailedException$instance extends Exception {
-    readonly errorCode: string | undefined;
-    readonly status: int;
-    getObjectData(info: SerializationInfo, context: StreamingContext): void;
-    getRawResponse(): Response | undefined;
+    readonly ErrorCode: string | undefined;
+    readonly Status: int;
+    GetObjectData(info: SerializationInfo, context: StreamingContext): void;
+    GetRawResponse(): Response | undefined;
 }
 
 
@@ -350,31 +350,31 @@ export const RequestFailedException: {
 export type RequestFailedException = RequestFailedException$instance;
 
 export interface Response$instance {
-    clientRequestId: string;
-    readonly content: BinaryData;
-    get contentStream(): Stream | undefined;
-    set contentStream(value: Stream);
-    readonly headers: ResponseHeaders;
-    readonly isError: boolean;
-    readonly reasonPhrase: string;
-    readonly status: int;
-    dispose(): void;
-    toString(): string;
+    ClientRequestId: string;
+    readonly Content: BinaryData;
+    get ContentStream(): Stream | undefined;
+    set ContentStream(value: Stream);
+    readonly Headers: ResponseHeaders;
+    readonly IsError: boolean;
+    readonly ReasonPhrase: string;
+    readonly Status: int;
+    Dispose(): void;
+    ToString(): string;
 }
 
 
 export const Response: {
-    fromValue<T>(value: T, response: Response): Response_1<T>;
+    FromValue<T>(value: T, response: Response): Response_1<T>;
 };
 
 
 export type Response = Response$instance;
 
 export interface Response_1$instance<T> extends NullableResponse_1<T> {
-    readonly hasValue: boolean;
-    readonly value: T;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
+    readonly HasValue: boolean;
+    readonly Value: T;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
 }
 
 
@@ -385,9 +385,9 @@ export const Response_1: {
 export type Response_1<T> = Response_1$instance<T>;
 
 export interface ResponseError$instance {
-    readonly code: string | undefined;
-    readonly message: string | undefined;
-    toString(): string;
+    readonly Code: string | undefined;
+    readonly Message: string | undefined;
+    ToString(): string;
 }
 
 
@@ -408,8 +408,8 @@ export type ResponseError = ResponseError$instance & __ResponseError$views;
 
 
 export interface SyncAsyncEventArgs$instance extends EventArgs {
-    readonly cancellationToken: CancellationToken;
-    readonly isRunningSynchronously: boolean;
+    readonly CancellationToken: CancellationToken;
+    readonly IsRunningSynchronously: boolean;
 }
 
 
@@ -421,11 +421,11 @@ export const SyncAsyncEventArgs: {
 export type SyncAsyncEventArgs = SyncAsyncEventArgs$instance;
 
 export abstract class AzureCoreExtensions$instance {
-    static toDynamicFromJson(utf8Json: BinaryData, propertyNameFormat: JsonPropertyNames, dateTimeFormat?: string): unknown;
-    static toDynamicFromJson(utf8Json: BinaryData): unknown;
-    static toObject<T>(data: BinaryData, serializer: ObjectSerializer, cancellationToken?: CancellationToken): T | undefined;
-    static toObjectAsync<T>(data: BinaryData, serializer: ObjectSerializer, cancellationToken?: CancellationToken): ValueTask<T>;
-    static toObjectFromJson(data: BinaryData): unknown | undefined;
+    static ToDynamicFromJson(utf8Json: BinaryData, propertyNameFormat: JsonPropertyNames, dateTimeFormat?: string): unknown;
+    static ToDynamicFromJson(utf8Json: BinaryData): unknown;
+    static ToObject<T>(data: BinaryData, serializer: ObjectSerializer, cancellationToken?: CancellationToken): T | undefined;
+    static ToObjectAsync<T>(data: BinaryData, serializer: ObjectSerializer, cancellationToken?: CancellationToken): ValueTask<T>;
+    static ToObjectFromJson(data: BinaryData): unknown | undefined;
 }
 
 

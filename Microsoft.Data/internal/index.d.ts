@@ -24,8 +24,8 @@ export const OperationAbortedException: {
 export type OperationAbortedException = OperationAbortedException$instance;
 
 export abstract class SqlDbTypeExtensions$instance {
-    static readonly json: SqlDbType;
-    static readonly vector: SqlDbType;
+    static readonly Json: SqlDbType;
+    static readonly Vector: SqlDbType;
 }
 
 

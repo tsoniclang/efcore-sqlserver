@@ -10,16 +10,16 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Byte, Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Object as ClrObject } from "@tsonic/dotnet/System.js";
 
 export enum CacheLevel {
-    none = 0,
-    unknown = 1,
-    l1Cache = 2,
-    l2Cache = 3
+    None = 0,
+    Unknown = 1,
+    L1Cache = 2,
+    L2Cache = 3
 }
 
 
 export interface CacheData$instance {
-    adalV3State: byte[];
-    unifiedState: byte[];
+    AdalV3State: byte[];
+    UnifiedState: byte[];
 }
 
 

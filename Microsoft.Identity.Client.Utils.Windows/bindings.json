@@ -1,23 +1,36 @@
 {
   "namespace": "Microsoft.Identity.Client.Utils.Windows",
+  "contributingAssemblies": [
+    "Microsoft.Identity.Client"
+  ],
   "types": [
     {
       "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Utils.Windows.WindowsNativeUtils",
       "clrName": "Microsoft.Identity.Client.Utils.Windows.WindowsNativeUtils",
-      "tsEmitName": "WindowsNativeUtils",
       "assemblyName": "Microsoft.Identity.Client",
       "metadataToken": 0,
+      "kind": "StaticNamespace",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": true,
+      "isStatic": true,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Utils.Windows.WindowsNativeUtils::IsElevatedUser():System.Boolean",
           "clrName": "IsElevatedUser",
-          "tsEmitName": "isElevatedUser",
           "metadataToken": 100664907,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "IsElevatedUser|():System.Boolean|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Identity.Client.Utils.Windows.WindowsNativeUtils",
           "declaringAssemblyName": "Microsoft.Identity.Client",
           "isExtensionMethod": false
@@ -25,13 +38,18 @@
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Utils.Windows.WindowsNativeUtils::InitializeProcessSecurity():System.Void",
           "clrName": "InitializeProcessSecurity",
-          "tsEmitName": "initializeProcessSecurity",
           "metadataToken": 100664908,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "InitializeProcessSecurity|():System.Void|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Identity.Client.Utils.Windows.WindowsNativeUtils",
           "declaringAssemblyName": "Microsoft.Identity.Client",
           "isExtensionMethod": false
@@ -40,29 +58,7 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "isElevatedUser",
-          "isStatic": true,
-          "tsSignatureId": "IsElevatedUser|():System.Boolean|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Identity.Client.Utils.Windows.WindowsNativeUtils",
-            "declaringAssemblyName": "Microsoft.Identity.Client",
-            "metadataToken": 100664907
-          }
-        },
-        {
-          "tsName": "initializeProcessSecurity",
-          "isStatic": true,
-          "tsSignatureId": "InitializeProcessSecurity|():System.Void|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Identity.Client.Utils.Windows.WindowsNativeUtils",
-            "declaringAssemblyName": "Microsoft.Identity.Client",
-            "metadataToken": 100664908
-          }
-        }
-      ]
+      "constructors": []
     }
   ]
 }

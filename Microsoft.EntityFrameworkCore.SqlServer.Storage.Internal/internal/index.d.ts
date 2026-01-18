@@ -28,8 +28,8 @@ import type { BoolTypeMapping, ByteArrayTypeMapping, ByteTypeMapping, DateOnlyTy
 import type { ValueConverter } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.ValueConversion.js";
 
 export interface ISqlServerConnection$instance extends IRelationalConnection, IRelationalTransactionManager, IDbContextTransactionManager, IResettableService, IDisposable, IAsyncDisposable {
-    readonly isMultipleActiveResultSetsEnabled: boolean;
-    createMasterConnection(): ISqlServerConnection;
+    readonly IsMultipleActiveResultSetsEnabled: boolean;
+    CreateMasterConnection(): ISqlServerConnection;
 }
 
 
@@ -41,7 +41,7 @@ export interface SqlServerBoolTypeMapping$instance extends BoolTypeMapping {
 
 export const SqlServerBoolTypeMapping: {
     new(storeType: string, dbType: Nullable<DbType>): SqlServerBoolTypeMapping;
-    readonly default: SqlServerBoolTypeMapping;
+    readonly Default: SqlServerBoolTypeMapping;
 };
 
 
@@ -53,7 +53,7 @@ export interface SqlServerByteArrayTypeMapping$instance extends ByteArrayTypeMap
 
 export const SqlServerByteArrayTypeMapping: {
     new(storeType: string, size: Nullable<System_Internal.Int32>, fixedLength: boolean, comparer: ValueComparer, sqlDbType: Nullable<SqlDbType>, storeTypePostfix: Nullable<StoreTypePostfix>): SqlServerByteArrayTypeMapping;
-    readonly default: SqlServerByteArrayTypeMapping;
+    readonly Default: SqlServerByteArrayTypeMapping;
 };
 
 
@@ -65,17 +65,17 @@ export interface SqlServerByteTypeMapping$instance extends ByteTypeMapping {
 
 export const SqlServerByteTypeMapping: {
     new(storeType: string, dbType: Nullable<DbType>): SqlServerByteTypeMapping;
-    readonly default: SqlServerByteTypeMapping;
+    readonly Default: SqlServerByteTypeMapping;
 };
 
 
 export type SqlServerByteTypeMapping = SqlServerByteTypeMapping$instance;
 
 export interface SqlServerConnection$instance extends RelationalConnection {
-    get connectionString(): string | undefined;
-    set connectionString(value: string);
-    readonly isMultipleActiveResultSetsEnabled: boolean;
-    createMasterConnection(): ISqlServerConnection;
+    get ConnectionString(): string | undefined;
+    set ConnectionString(value: string);
+    readonly IsMultipleActiveResultSetsEnabled: boolean;
+    CreateMasterConnection(): ISqlServerConnection;
 }
 
 
@@ -94,16 +94,16 @@ export type SqlServerConnection = SqlServerConnection$instance & __SqlServerConn
 
 
 export interface SqlServerDatabaseCreator$instance extends RelationalDatabaseCreator {
-    retryDelay: TimeSpan;
-    retryTimeout: TimeSpan;
-    create(): void;
-    createAsync(cancellationToken?: CancellationToken): Task;
-    delete(): void;
-    deleteAsync(cancellationToken?: CancellationToken): Task;
-    exists(): boolean;
-    existsAsync(cancellationToken?: CancellationToken): Task<System_Internal.Boolean>;
-    hasTables(): boolean;
-    hasTablesAsync(cancellationToken?: CancellationToken): Task<System_Internal.Boolean>;
+    RetryDelay: TimeSpan;
+    RetryTimeout: TimeSpan;
+    Create(): void;
+    CreateAsync(cancellationToken?: CancellationToken): Task;
+    Delete(): void;
+    DeleteAsync(cancellationToken?: CancellationToken): Task;
+    Exists(): boolean;
+    ExistsAsync(cancellationToken?: CancellationToken): Task<System_Internal.Boolean>;
+    HasTables(): boolean;
+    HasTablesAsync(cancellationToken?: CancellationToken): Task<System_Internal.Boolean>;
 }
 
 
@@ -120,7 +120,7 @@ export interface SqlServerDateOnlyTypeMapping$instance extends DateOnlyTypeMappi
 
 export const SqlServerDateOnlyTypeMapping: {
     new(): SqlServerDateOnlyTypeMapping;
-    readonly default: SqlServerDateOnlyTypeMapping;
+    readonly Default: SqlServerDateOnlyTypeMapping;
 };
 
 
@@ -132,54 +132,54 @@ export interface SqlServerDateTimeOffsetTypeMapping$instance extends DateTimeOff
 
 export const SqlServerDateTimeOffsetTypeMapping: {
     new(storeType: string, dbType: Nullable<DbType>, storeTypePostfix: StoreTypePostfix): SqlServerDateTimeOffsetTypeMapping;
-    readonly default: SqlServerDateTimeOffsetTypeMapping;
+    readonly Default: SqlServerDateTimeOffsetTypeMapping;
 };
 
 
 export type SqlServerDateTimeOffsetTypeMapping = SqlServerDateTimeOffsetTypeMapping$instance;
 
 export interface SqlServerDateTimeTypeMapping$instance extends DateTimeTypeMapping {
-    readonly sqlType: Nullable<SqlDbType>;
+    readonly SqlType: Nullable<SqlDbType>;
 }
 
 
 export const SqlServerDateTimeTypeMapping: {
     new(storeType: string, dbType: Nullable<DbType>, sqlDbType: Nullable<SqlDbType>, storeTypePostfix: StoreTypePostfix): SqlServerDateTimeTypeMapping;
-    readonly default: SqlServerDateTimeTypeMapping;
+    readonly Default: SqlServerDateTimeTypeMapping;
 };
 
 
 export type SqlServerDateTimeTypeMapping = SqlServerDateTimeTypeMapping$instance;
 
 export interface SqlServerDecimalTypeMapping$instance extends DecimalTypeMapping {
-    readonly sqlType: Nullable<SqlDbType>;
+    readonly SqlType: Nullable<SqlDbType>;
 }
 
 
 export const SqlServerDecimalTypeMapping: {
     new(storeType: string, dbType: Nullable<DbType>, precision: Nullable<System_Internal.Int32>, scale: Nullable<System_Internal.Int32>, sqlDbType: Nullable<SqlDbType>, storeTypePostfix: StoreTypePostfix): SqlServerDecimalTypeMapping;
-    readonly default: SqlServerDecimalTypeMapping;
+    readonly Default: SqlServerDecimalTypeMapping;
 };
 
 
 export type SqlServerDecimalTypeMapping = SqlServerDecimalTypeMapping$instance;
 
 export interface SqlServerDoubleTypeMapping$instance extends DoubleTypeMapping {
-    customizeDataReaderExpression(expression: Expression): Expression;
-    getDataReaderMethod(): MethodInfo;
+    CustomizeDataReaderExpression(expression: Expression): Expression;
+    GetDataReaderMethod(): MethodInfo;
 }
 
 
 export const SqlServerDoubleTypeMapping: {
     new(storeType: string, dbType: Nullable<DbType>, storeTypePostfix: StoreTypePostfix): SqlServerDoubleTypeMapping;
-    readonly default: SqlServerDoubleTypeMapping;
+    readonly Default: SqlServerDoubleTypeMapping;
 };
 
 
 export type SqlServerDoubleTypeMapping = SqlServerDoubleTypeMapping$instance;
 
 export interface SqlServerExceptionDetector$instance {
-    isCancellation(exception: Exception, cancellationToken?: CancellationToken): boolean;
+    IsCancellation(exception: Exception, cancellationToken?: CancellationToken): boolean;
 }
 
 
@@ -191,9 +191,9 @@ export const SqlServerExceptionDetector: {
 export type SqlServerExceptionDetector = SqlServerExceptionDetector$instance;
 
 export interface SqlServerExecutionStrategy$instance {
-    readonly retriesOnFailure: boolean;
-    execute<TState, TResult>(state: TState, operation: Func<DbContext, TState, TResult>, verifySucceeded: Func<DbContext, TState, ExecutionResult<TResult>>): TResult;
-    executeAsync<TState, TResult>(state: TState, operation: Func<DbContext, TState, CancellationToken, Task<TResult>>, verifySucceeded: Func<DbContext, TState, CancellationToken, Task<ExecutionResult<TResult>>>, cancellationToken: CancellationToken): Task<TResult>;
+    readonly RetriesOnFailure: boolean;
+    Execute<TState, TResult>(state: TState, operation: Func<DbContext, TState, TResult>, verifySucceeded: Func<DbContext, TState, ExecutionResult<TResult>>): TResult;
+    ExecuteAsync<TState, TResult>(state: TState, operation: Func<DbContext, TState, CancellationToken, Task<TResult>>, verifySucceeded: Func<DbContext, TState, CancellationToken, Task<ExecutionResult<TResult>>>, cancellationToken: CancellationToken): Task<TResult>;
 }
 
 
@@ -221,7 +221,7 @@ export interface SqlServerFloatTypeMapping$instance extends FloatTypeMapping {
 
 export const SqlServerFloatTypeMapping: {
     new(storeType: string, dbType: Nullable<DbType>, storeTypePostfix: StoreTypePostfix): SqlServerFloatTypeMapping;
-    readonly default: SqlServerFloatTypeMapping;
+    readonly Default: SqlServerFloatTypeMapping;
 };
 
 
@@ -233,7 +233,7 @@ export interface SqlServerLongTypeMapping$instance extends LongTypeMapping {
 
 export const SqlServerLongTypeMapping: {
     new(storeType: string, converter: ValueConverter, comparer: ValueComparer, providerValueComparer: ValueComparer, dbType: Nullable<DbType>): SqlServerLongTypeMapping;
-    readonly default: SqlServerLongTypeMapping;
+    readonly Default: SqlServerLongTypeMapping;
 };
 
 
@@ -245,23 +245,23 @@ export interface SqlServerShortTypeMapping$instance extends ShortTypeMapping {
 
 export const SqlServerShortTypeMapping: {
     new(storeType: string, dbType: Nullable<DbType>): SqlServerShortTypeMapping;
-    readonly default: SqlServerShortTypeMapping;
+    readonly Default: SqlServerShortTypeMapping;
 };
 
 
 export type SqlServerShortTypeMapping = SqlServerShortTypeMapping$instance;
 
 export interface SqlServerSqlGenerationHelper$instance extends RelationalSqlGenerationHelper {
-    readonly batchTerminator: string;
-    readonly startTransactionStatement: string;
-    delimitIdentifier(identifier: string): string;
-    delimitIdentifier(builder: StringBuilder, identifier: string): void;
-    delimitJsonPathElement(pathElement: string): string;
-    escapeIdentifier(identifier: string): string;
-    escapeIdentifier(builder: StringBuilder, identifier: string): void;
-    generateCreateSavepointStatement(name: string): string;
-    generateReleaseSavepointStatement(name: string): string;
-    generateRollbackToSavepointStatement(name: string): string;
+    readonly BatchTerminator: string;
+    readonly StartTransactionStatement: string;
+    DelimitIdentifier(identifier: string): string;
+    DelimitIdentifier(builder: StringBuilder, identifier: string): void;
+    DelimitJsonPathElement(pathElement: string): string;
+    EscapeIdentifier(identifier: string): string;
+    EscapeIdentifier(builder: StringBuilder, identifier: string): void;
+    GenerateCreateSavepointStatement(name: string): string;
+    GenerateReleaseSavepointStatement(name: string): string;
+    GenerateRollbackToSavepointStatement(name: string): string;
 }
 
 
@@ -278,7 +278,7 @@ export interface SqlServerSqlVariantTypeMapping$instance extends RelationalTypeM
 
 export const SqlServerSqlVariantTypeMapping: {
     new(storeType: string): SqlServerSqlVariantTypeMapping;
-    readonly default: SqlServerSqlVariantTypeMapping;
+    readonly Default: SqlServerSqlVariantTypeMapping;
 };
 
 
@@ -290,26 +290,26 @@ export interface SqlServerStringTypeMapping$instance extends StringTypeMapping {
 
 export const SqlServerStringTypeMapping: {
     new(storeType: string, unicode: boolean, size: Nullable<System_Internal.Int32>, fixedLength: boolean, sqlDbType: Nullable<SqlDbType>, storeTypePostfix: Nullable<StoreTypePostfix>, useKeyComparison: boolean): SqlServerStringTypeMapping;
-    readonly default: SqlServerStringTypeMapping;
-    readonly jsonTypeDefault: SqlServerStringTypeMapping;
-    readonly unicodeDefault: SqlServerStringTypeMapping;
+    readonly Default: SqlServerStringTypeMapping;
+    readonly JsonTypeDefault: SqlServerStringTypeMapping;
+    readonly UnicodeDefault: SqlServerStringTypeMapping;
 };
 
 
 export type SqlServerStringTypeMapping = SqlServerStringTypeMapping$instance;
 
 export interface SqlServerStructuralJsonTypeMapping$instance extends JsonTypeMapping {
-    customizeDataReaderExpression(expression: Expression): Expression;
-    getDataReaderMethod(): MethodInfo;
+    CustomizeDataReaderExpression(expression: Expression): Expression;
+    GetDataReaderMethod(): MethodInfo;
 }
 
 
 export const SqlServerStructuralJsonTypeMapping: {
     new(storeType: string): SqlServerStructuralJsonTypeMapping;
-    readonly default: SqlServerStructuralJsonTypeMapping;
-    readonly jsonTypeDefault: SqlServerStructuralJsonTypeMapping;
-    readonly nvarcharMaxDefault: SqlServerStructuralJsonTypeMapping;
-    createUtf8Stream(json: string): MemoryStream;
+    readonly Default: SqlServerStructuralJsonTypeMapping;
+    readonly JsonTypeDefault: SqlServerStructuralJsonTypeMapping;
+    readonly NvarcharMaxDefault: SqlServerStructuralJsonTypeMapping;
+    CreateUtf8Stream(json: string): MemoryStream;
 };
 
 
@@ -321,7 +321,7 @@ export interface SqlServerTimeOnlyTypeMapping$instance extends TimeOnlyTypeMappi
 
 export const SqlServerTimeOnlyTypeMapping: {
     new(): SqlServerTimeOnlyTypeMapping;
-    readonly default: SqlServerTimeOnlyTypeMapping;
+    readonly Default: SqlServerTimeOnlyTypeMapping;
 };
 
 
@@ -333,16 +333,16 @@ export interface SqlServerTimeSpanTypeMapping$instance extends TimeSpanTypeMappi
 
 export const SqlServerTimeSpanTypeMapping: {
     new(storeType: string, dbType: Nullable<DbType>, storeTypePostfix: StoreTypePostfix): SqlServerTimeSpanTypeMapping;
-    readonly default: SqlServerTimeSpanTypeMapping;
+    readonly Default: SqlServerTimeSpanTypeMapping;
 };
 
 
 export type SqlServerTimeSpanTypeMapping = SqlServerTimeSpanTypeMapping$instance;
 
 export interface SqlServerTransaction$instance extends RelationalTransaction {
-    readonly supportsSavepoints: boolean;
-    releaseSavepoint(name: string): void;
-    releaseSavepointAsync(name: string, cancellationToken?: CancellationToken): Task;
+    readonly SupportsSavepoints: boolean;
+    ReleaseSavepoint(name: string): void;
+    ReleaseSavepointAsync(name: string, cancellationToken?: CancellationToken): Task;
 }
 
 
@@ -354,7 +354,7 @@ export const SqlServerTransaction: {
 export type SqlServerTransaction = SqlServerTransaction$instance;
 
 export interface SqlServerTransactionFactory$instance {
-    create(connection: IRelationalConnection, transaction: DbTransaction, transactionId: Guid, logger: IDiagnosticsLogger<DbLoggerCategory$Database$Transaction>, transactionOwned: boolean): RelationalTransaction;
+    Create(connection: IRelationalConnection, transaction: DbTransaction, transactionId: Guid, logger: IDiagnosticsLogger<DbLoggerCategory$Database$Transaction>, transactionOwned: boolean): RelationalTransaction;
 }
 
 
@@ -377,9 +377,9 @@ export const SqlServerTypeMappingSource: {
 export type SqlServerTypeMappingSource = SqlServerTypeMappingSource$instance;
 
 export interface SqlServerUdtTypeMapping$instance extends RelationalTypeMapping {
-    readonly literalGenerator: Func<unknown, Expression>;
-    readonly udtTypeName: string;
-    generateCodeLiteral(value: unknown): Expression;
+    readonly LiteralGenerator: Func<unknown, Expression>;
+    readonly UdtTypeName: string;
+    GenerateCodeLiteral(value: unknown): Expression;
 }
 
 
@@ -396,14 +396,14 @@ export interface SqlServerVectorTypeMapping$instance extends RelationalTypeMappi
 
 export const SqlServerVectorTypeMapping: {
     new(dimensions: Nullable<System_Internal.Int32>): SqlServerVectorTypeMapping;
-    readonly default: SqlServerVectorTypeMapping;
+    readonly Default: SqlServerVectorTypeMapping;
 };
 
 
 export type SqlServerVectorTypeMapping = SqlServerVectorTypeMapping$instance;
 
 export abstract class SqlServerTransientExceptionDetector$instance {
-    static shouldRetryOn(ex: Exception): boolean;
+    static ShouldRetryOn(ex: Exception): boolean;
 }
 
 

@@ -19,78 +19,78 @@ import * as System_Internal from "../../System/internal/index.js";
 import type { ptr } from '@tsonic/core/types.js';
 
 export interface __Ext_Azure_BinaryData {
-  toObject<T>(serializer: Azure_Core_Serialization.ObjectSerializer, cancellationToken: CancellationToken): ExtensionMethods_Azure<T | undefined>;
-  toObjectAsync<T>(serializer: Azure_Core_Serialization.ObjectSerializer, cancellationToken: CancellationToken): ExtensionMethods_Azure<ValueTask_1<T>>;
-  toObjectFromJson(): ExtensionMethods_Azure<unknown | undefined>;
-  toDynamicFromJson(): ExtensionMethods_Azure<unknown>;
-  toDynamicFromJson(propertyNameFormat: Azure_Core_Serialization.JsonPropertyNames, dateTimeFormat: string): ExtensionMethods_Azure<unknown>;
+  ToObject<T>(serializer: Azure_Core_Serialization.ObjectSerializer, cancellationToken: CancellationToken): ExtensionMethods_Azure<T | undefined>;
+  ToObjectAsync<T>(serializer: Azure_Core_Serialization.ObjectSerializer, cancellationToken: CancellationToken): ExtensionMethods_Azure<ValueTask_1<T>>;
+  ToObjectFromJson(): ExtensionMethods_Azure<unknown | undefined>;
+  ToDynamicFromJson(): ExtensionMethods_Azure<unknown>;
+  ToDynamicFromJson(propertyNameFormat: Azure_Core_Serialization.JsonPropertyNames, dateTimeFormat: string): ExtensionMethods_Azure<unknown>;
 }
 
 export interface __Ext_Microsoft_Identity_Client_IAccount {
-  getTenantProfiles(): ExtensionMethods_Microsoft_Identity_Client<IEnumerable_1<Microsoft_Identity_Client.TenantProfile>>;
+  GetTenantProfiles(): ExtensionMethods_Microsoft_Identity_Client<IEnumerable_1<Microsoft_Identity_Client.TenantProfile>>;
 }
 
 export interface __Ext_Microsoft_Identity_Client_IConfidentialClientApplication {
-  getCertificate(): ExtensionMethods_Microsoft_Identity_Client<X509Certificate2>;
+  GetCertificate(): ExtensionMethods_Microsoft_Identity_Client<X509Certificate2>;
 }
 
 export interface __Ext_Microsoft_Identity_Client_IPublicClientApplication {
-  isProofOfPossessionSupportedByClient(): ExtensionMethods_Microsoft_Identity_Client<boolean>;
-  isSystemWebViewAvailable(): ExtensionMethods_Microsoft_Identity_Client<boolean>;
-  isEmbeddedWebViewAvailable(): ExtensionMethods_Microsoft_Identity_Client<boolean>;
-  isUserInteractive(): ExtensionMethods_Microsoft_Identity_Client<boolean>;
+  IsProofOfPossessionSupportedByClient(): ExtensionMethods_Microsoft_Identity_Client<boolean>;
+  IsSystemWebViewAvailable(): ExtensionMethods_Microsoft_Identity_Client<boolean>;
+  IsEmbeddedWebViewAvailable(): ExtensionMethods_Microsoft_Identity_Client<boolean>;
+  IsUserInteractive(): ExtensionMethods_Microsoft_Identity_Client<boolean>;
 }
 
 export interface __Ext_Microsoft_Identity_Client_ITokenCache {
-  setCacheOptions(options: Microsoft_Identity_Client.CacheOptions): ExtensionMethods_Microsoft_Identity_Client<void>;
+  SetCacheOptions(options: Microsoft_Identity_Client.CacheOptions): ExtensionMethods_Microsoft_Identity_Client<void>;
 }
 
 export interface __Ext_Microsoft_Identity_Client_Advanced_AbstractAcquireTokenParameterBuilder_1<T> {
-  withExtraHttpHeaders(extraHttpHeaders: IDictionary_2<System_Internal.String, System_Internal.String>): ExtensionMethods_Microsoft_Identity_Client_Advanced<T>;
+  WithExtraHttpHeaders(extraHttpHeaders: IDictionary_2<System_Internal.String, System_Internal.String>): ExtensionMethods_Microsoft_Identity_Client_Advanced<T>;
 }
 
 export interface __Ext_Microsoft_Identity_Client_Extensibility_AbstractAcquireTokenParameterBuilder_1<T> {
-  onBeforeTokenRequest(onBeforeTokenRequestHandler: Func_2<Microsoft_Identity_Client_Extensibility.OnBeforeTokenRequestData, Task>): ExtensionMethods_Microsoft_Identity_Client_Extensibility<Microsoft_Identity_Client.AbstractAcquireTokenParameterBuilder_1<T>>;
-  withProofOfPosessionKeyId(keyId: string, expectedTokenTypeFromAad: string): ExtensionMethods_Microsoft_Identity_Client_Extensibility<Microsoft_Identity_Client.AbstractAcquireTokenParameterBuilder_1<T>>;
-  withAuthenticationExtension(authenticationExtension: Microsoft_Identity_Client_Extensibility.MsalAuthenticationExtension): ExtensionMethods_Microsoft_Identity_Client_Extensibility<Microsoft_Identity_Client.AbstractAcquireTokenParameterBuilder_1<T>>;
-  withAdditionalCacheParameters(cacheParameters: IEnumerable_1<System_Internal.String>): ExtensionMethods_Microsoft_Identity_Client_Extensibility<Microsoft_Identity_Client.AbstractAcquireTokenParameterBuilder_1<T>>;
-  withFmiPathForClientAssertion(fmiPath: string): ExtensionMethods_Microsoft_Identity_Client_Extensibility<Microsoft_Identity_Client.AbstractAcquireTokenParameterBuilder_1<T>>;
+  OnBeforeTokenRequest(onBeforeTokenRequestHandler: Func_2<Microsoft_Identity_Client_Extensibility.OnBeforeTokenRequestData, Task>): ExtensionMethods_Microsoft_Identity_Client_Extensibility<Microsoft_Identity_Client.AbstractAcquireTokenParameterBuilder_1<T>>;
+  WithProofOfPosessionKeyId(keyId: string, expectedTokenTypeFromAad: string): ExtensionMethods_Microsoft_Identity_Client_Extensibility<Microsoft_Identity_Client.AbstractAcquireTokenParameterBuilder_1<T>>;
+  WithAuthenticationExtension(authenticationExtension: Microsoft_Identity_Client_Extensibility.MsalAuthenticationExtension): ExtensionMethods_Microsoft_Identity_Client_Extensibility<Microsoft_Identity_Client.AbstractAcquireTokenParameterBuilder_1<T>>;
+  WithAdditionalCacheParameters(cacheParameters: IEnumerable_1<System_Internal.String>): ExtensionMethods_Microsoft_Identity_Client_Extensibility<Microsoft_Identity_Client.AbstractAcquireTokenParameterBuilder_1<T>>;
+  WithFmiPathForClientAssertion(fmiPath: string): ExtensionMethods_Microsoft_Identity_Client_Extensibility<Microsoft_Identity_Client.AbstractAcquireTokenParameterBuilder_1<T>>;
 }
 
 export interface __Ext_Microsoft_Identity_Client_Extensibility_AcquireTokenForClientParameterBuilder {
-  withProofOfPosessionKeyId(keyId: string, expectedTokenTypeFromAad: string): ExtensionMethods_Microsoft_Identity_Client_Extensibility<Microsoft_Identity_Client.AcquireTokenForClientParameterBuilder>;
+  WithProofOfPosessionKeyId(keyId: string, expectedTokenTypeFromAad: string): ExtensionMethods_Microsoft_Identity_Client_Extensibility<Microsoft_Identity_Client.AcquireTokenForClientParameterBuilder>;
 }
 
 export interface __Ext_Microsoft_Identity_Client_Extensibility_AcquireTokenInteractiveParameterBuilder {
-  withCustomWebUi(customWebUi: Microsoft_Identity_Client_Extensibility.ICustomWebUi): ExtensionMethods_Microsoft_Identity_Client_Extensibility<Microsoft_Identity_Client.AcquireTokenInteractiveParameterBuilder>;
+  WithCustomWebUi(customWebUi: Microsoft_Identity_Client_Extensibility.ICustomWebUi): ExtensionMethods_Microsoft_Identity_Client_Extensibility<Microsoft_Identity_Client.AcquireTokenInteractiveParameterBuilder>;
 }
 
 export interface __Ext_Microsoft_Identity_Client_Extensibility_AcquireTokenOnBehalfOfParameterBuilder {
-  withSearchInCacheForLongRunningProcess(searchInCache: boolean): ExtensionMethods_Microsoft_Identity_Client_Extensibility<Microsoft_Identity_Client.AcquireTokenOnBehalfOfParameterBuilder>;
+  WithSearchInCacheForLongRunningProcess(searchInCache: boolean): ExtensionMethods_Microsoft_Identity_Client_Extensibility<Microsoft_Identity_Client.AcquireTokenOnBehalfOfParameterBuilder>;
 }
 
 export interface __Ext_Microsoft_Identity_Client_Extensibility_ConfidentialClientApplicationBuilder {
-  withAppTokenProvider(appTokenProvider: Func_2<Microsoft_Identity_Client_Extensibility.AppTokenProviderParameters, Task_1<Microsoft_Identity_Client_Extensibility.AppTokenProviderResult>>): ExtensionMethods_Microsoft_Identity_Client_Extensibility<Microsoft_Identity_Client.ConfidentialClientApplicationBuilder>;
+  WithAppTokenProvider(appTokenProvider: Func_2<Microsoft_Identity_Client_Extensibility.AppTokenProviderParameters, Task_1<Microsoft_Identity_Client_Extensibility.AppTokenProviderResult>>): ExtensionMethods_Microsoft_Identity_Client_Extensibility<Microsoft_Identity_Client.ConfidentialClientApplicationBuilder>;
 }
 
 export interface __Ext_Microsoft_Identity_Client_Extensibility_ILongRunningWebApi {
-  stopLongRunningProcessInWebApiAsync(longRunningProcessSessionKey: string, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_Identity_Client_Extensibility<Task_1<System_Internal.Boolean>>;
+  StopLongRunningProcessInWebApiAsync(longRunningProcessSessionKey: string, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_Identity_Client_Extensibility<Task_1<System_Internal.Boolean>>;
 }
 
 export interface __Ext_Microsoft_Identity_Client_RP_AcquireTokenForClientParameterBuilder {
-  withAccessTokenSha256ToRefresh(hash: string): ExtensionMethods_Microsoft_Identity_Client_RP<Microsoft_Identity_Client.AcquireTokenForClientParameterBuilder>;
+  WithAccessTokenSha256ToRefresh(hash: string): ExtensionMethods_Microsoft_Identity_Client_RP<Microsoft_Identity_Client.AcquireTokenForClientParameterBuilder>;
 }
 
 export interface __Ext_Microsoft_Identity_Client_RP_ConfidentialClientApplicationBuilder {
-  withCertificate(certificate: X509Certificate2, sendX5C: boolean, associateTokensWithCertificateSerialNumber: boolean): ExtensionMethods_Microsoft_Identity_Client_RP<Microsoft_Identity_Client.ConfidentialClientApplicationBuilder>;
+  WithCertificate(certificate: X509Certificate2, sendX5C: boolean, associateTokensWithCertificateSerialNumber: boolean): ExtensionMethods_Microsoft_Identity_Client_RP<Microsoft_Identity_Client.ConfidentialClientApplicationBuilder>;
 }
 
 export interface __Ext_Microsoft_Identity_Client_SSHCertificates_AcquireTokenInteractiveParameterBuilder {
-  withSSHCertificateAuthenticationScheme(publicKeyJwk: string, keyId: string): ExtensionMethods_Microsoft_Identity_Client_SSHCertificates<Microsoft_Identity_Client.AcquireTokenInteractiveParameterBuilder>;
+  WithSSHCertificateAuthenticationScheme(publicKeyJwk: string, keyId: string): ExtensionMethods_Microsoft_Identity_Client_SSHCertificates<Microsoft_Identity_Client.AcquireTokenInteractiveParameterBuilder>;
 }
 
 export interface __Ext_Microsoft_Identity_Client_SSHCertificates_AcquireTokenSilentParameterBuilder {
-  withSSHCertificateAuthenticationScheme(publicKeyJwk: string, keyId: string): ExtensionMethods_Microsoft_Identity_Client_SSHCertificates<Microsoft_Identity_Client.AcquireTokenSilentParameterBuilder>;
+  WithSSHCertificateAuthenticationScheme(publicKeyJwk: string, keyId: string): ExtensionMethods_Microsoft_Identity_Client_SSHCertificates<Microsoft_Identity_Client.AcquireTokenSilentParameterBuilder>;
 }
 
 // Generic helper type for extension methods in namespace: Azure

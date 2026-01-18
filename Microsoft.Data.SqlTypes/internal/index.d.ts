@@ -15,43 +15,43 @@ import type { AsyncCallback, Boolean as ClrBoolean, Byte, IAsyncDisposable, IAsy
 import type { JsonDocument } from "@tsonic/dotnet/System.Text.Json.js";
 
 export interface SqlVector_1$instance<T extends unknown> {
-    readonly isNull: boolean;
-    readonly length: int;
-    readonly memory: ReadOnlyMemory<T>;
+    readonly IsNull: boolean;
+    readonly Length: int;
+    readonly Memory: ReadOnlyMemory<T>;
 }
 
 
 export const SqlVector_1: {
     new<T extends unknown>(memory: ReadOnlyMemory<T>): SqlVector_1<T>;
-    readonly null: unknown;
-    createNull<T extends unknown>(length: int): SqlVector_1<T>;
+    readonly Null: unknown;
+    CreateNull<T extends unknown>(length: int): SqlVector_1<T>;
 };
 
 
 export type SqlVector_1<T> = SqlVector_1$instance<T>;
 
 export interface SqlFileStream$instance extends Stream {
-    readonly canRead: boolean;
-    readonly canSeek: boolean;
-    readonly canTimeout: boolean;
-    readonly canWrite: boolean;
-    readonly length: long;
-    readonly name: string;
-    position: long;
-    readonly readTimeout: int;
-    readonly transactionContext: byte[];
-    readonly writeTimeout: int;
-    beginRead(buffer: byte[], offset: int, count: int, callback: AsyncCallback, state: unknown): IAsyncResult;
-    beginWrite(buffer: byte[], offset: int, count: int, callback: AsyncCallback, state: unknown): IAsyncResult;
-    endRead(asyncResult: IAsyncResult): int;
-    endWrite(asyncResult: IAsyncResult): void;
-    flush(): void;
-    read(buffer: byte[], offset: int, count: int): int;
-    readByte(): int;
-    seek(offset: long, origin: SeekOrigin): long;
-    setLength(value: long): void;
-    write(buffer: byte[], offset: int, count: int): void;
-    writeByte(value: byte): void;
+    readonly CanRead: boolean;
+    readonly CanSeek: boolean;
+    readonly CanTimeout: boolean;
+    readonly CanWrite: boolean;
+    readonly Length: long;
+    readonly Name: string;
+    Position: long;
+    readonly ReadTimeout: int;
+    readonly TransactionContext: byte[];
+    readonly WriteTimeout: int;
+    BeginRead(buffer: byte[], offset: int, count: int, callback: AsyncCallback, state: unknown): IAsyncResult;
+    BeginWrite(buffer: byte[], offset: int, count: int, callback: AsyncCallback, state: unknown): IAsyncResult;
+    EndRead(asyncResult: IAsyncResult): int;
+    EndWrite(asyncResult: IAsyncResult): void;
+    Flush(): void;
+    Read(buffer: byte[], offset: int, count: int): int;
+    ReadByte(): int;
+    Seek(offset: long, origin: SeekOrigin): long;
+    SetLength(value: long): void;
+    Write(buffer: byte[], offset: int, count: int): void;
+    WriteByte(value: byte): void;
 }
 
 
@@ -64,9 +64,9 @@ export const SqlFileStream: {
 export type SqlFileStream = SqlFileStream$instance;
 
 export interface SqlJson$instance {
-    readonly isNull: boolean;
-    readonly value: string;
-    toString(): string | undefined;
+    readonly IsNull: boolean;
+    readonly Value: string;
+    ToString(): string | undefined;
 }
 
 
@@ -74,7 +74,7 @@ export const SqlJson: {
     new(): SqlJson;
     new(jsonString: string): SqlJson;
     new(jsonDoc: JsonDocument): SqlJson;
-    readonly null: SqlJson;
+    readonly Null: SqlJson;
 };
 
 

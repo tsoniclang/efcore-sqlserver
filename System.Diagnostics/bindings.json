@@ -1,23 +1,43 @@
 {
   "namespace": "System.Diagnostics",
+  "contributingAssemblies": [
+    "System.Configuration.ConfigurationManager",
+    "System.Diagnostics.DiagnosticSource",
+    "System.Diagnostics.EventLog",
+    "System.Diagnostics.FileVersionInfo",
+    "System.Diagnostics.Process",
+    "System.Diagnostics.TextWriterTraceListener",
+    "System.Diagnostics.TraceSource",
+    "System.Private.CoreLib"
+  ],
   "types": [
     {
       "stableId": "System.Configuration.ConfigurationManager:System.Diagnostics.TraceConfiguration",
       "clrName": "System.Diagnostics.TraceConfiguration",
-      "tsEmitName": "TraceConfiguration",
       "assemblyName": "System.Configuration.ConfigurationManager",
       "metadataToken": 0,
+      "kind": "StaticNamespace",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": true,
+      "isStatic": true,
+      "arity": 0,
       "methods": [
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Diagnostics.TraceConfiguration::Register():System.Void",
           "clrName": "Register",
-          "tsEmitName": "register",
           "metadataToken": 100663618,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Register|():System.Void|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "System.Diagnostics.TraceConfiguration",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -26,19 +46,7 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "register",
-          "isStatic": true,
-          "tsSignatureId": "Register|():System.Void|static=true",
-          "target": {
-            "declaringClrType": "System.Diagnostics.TraceConfiguration",
-            "declaringAssemblyName": "System.Configuration.ConfigurationManager",
-            "metadataToken": 100663618
-          }
-        }
-      ]
+      "constructors": []
     }
   ]
 }

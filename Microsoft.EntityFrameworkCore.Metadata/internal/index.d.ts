@@ -10,10 +10,10 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable } from "@tsonic/dotnet/System.js";
 
 export enum SqlServerValueGenerationStrategy {
-    none = 0,
-    sequenceHiLo = 1,
-    identityColumn = 2,
-    sequence = 3
+    None = 0,
+    SequenceHiLo = 1,
+    IdentityColumn = 2,
+    Sequence = 3
 }
 
 

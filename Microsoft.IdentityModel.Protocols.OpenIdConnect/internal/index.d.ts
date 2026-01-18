@@ -23,9 +23,9 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export enum OpenIdConnectRequestType {
-    authentication = 0,
-    logout = 1,
-    token = 2
+    Authentication = 0,
+    Logout = 1,
+    Token = 2
 }
 
 
@@ -33,100 +33,100 @@ export type IdTokenValidator = (idToken: JwtSecurityToken, context: OpenIdConnec
 
 
 export interface OpenIdConnectConfiguration$instance extends BaseConfiguration {
-    readonly acrValuesSupported: ICollection<System_Internal.String>;
-    activeTokenEndpoint: string;
-    readonly additionalData: IDictionary<System_Internal.String, unknown>;
-    authorizationEndpoint: string;
-    authorizationResponseIssParameterSupported: boolean;
-    backchannelAuthenticationEndpoint: string;
-    readonly backchannelAuthenticationRequestSigningAlgValuesSupported: ICollection<System_Internal.String>;
-    readonly backchannelTokenDeliveryModesSupported: ICollection<System_Internal.String>;
-    backchannelUserCodeParameterSupported: boolean;
-    checkSessionIframe: string;
-    readonly claimsLocalesSupported: ICollection<System_Internal.String>;
-    claimsParameterSupported: boolean;
-    readonly claimsSupported: ICollection<System_Internal.String>;
-    readonly claimTypesSupported: ICollection<System_Internal.String>;
-    readonly displayValuesSupported: ICollection<System_Internal.String>;
-    readonly dPoPSigningAlgValuesSupported: ICollection<System_Internal.String>;
-    endSessionEndpoint: string;
-    frontchannelLogoutSessionSupported: string;
-    frontchannelLogoutSupported: string;
-    readonly grantTypesSupported: ICollection<System_Internal.String>;
-    httpLogoutSupported: boolean;
-    readonly idTokenEncryptionAlgValuesSupported: ICollection<System_Internal.String>;
-    readonly idTokenEncryptionEncValuesSupported: ICollection<System_Internal.String>;
-    readonly idTokenSigningAlgValuesSupported: ICollection<System_Internal.String>;
-    introspectionEndpoint: string;
-    readonly introspectionEndpointAuthMethodsSupported: ICollection<System_Internal.String>;
-    readonly introspectionEndpointAuthSigningAlgValuesSupported: ICollection<System_Internal.String>;
-    issuer: string;
-    jsonWebKeySet: JsonWebKeySet;
-    jwksUri: string;
-    logoutSessionSupported: boolean;
-    opPolicyUri: string;
-    opTosUri: string;
-    readonly promptValuesSupported: ICollection<System_Internal.String>;
-    pushedAuthorizationRequestEndpoint: string;
-    registrationEndpoint: string;
-    readonly requestObjectEncryptionAlgValuesSupported: ICollection<System_Internal.String>;
-    readonly requestObjectEncryptionEncValuesSupported: ICollection<System_Internal.String>;
-    readonly requestObjectSigningAlgValuesSupported: ICollection<System_Internal.String>;
-    requestParameterSupported: boolean;
-    requestUriParameterSupported: boolean;
-    requirePushedAuthorizationRequests: boolean;
-    requireRequestUriRegistration: boolean;
-    readonly responseModesSupported: ICollection<System_Internal.String>;
-    readonly responseTypesSupported: ICollection<System_Internal.String>;
-    readonly scopesSupported: ICollection<System_Internal.String>;
-    serviceDocumentation: string;
-    readonly signingKeys: ICollection<SecurityKey>;
-    readonly subjectTypesSupported: ICollection<System_Internal.String>;
-    tokenEndpoint: string;
-    readonly tokenEndpointAuthMethodsSupported: ICollection<System_Internal.String>;
-    readonly tokenEndpointAuthSigningAlgValuesSupported: ICollection<System_Internal.String>;
-    readonly uiLocalesSupported: ICollection<System_Internal.String>;
-    userInfoEndpoint: string;
-    readonly userInfoEndpointEncryptionAlgValuesSupported: ICollection<System_Internal.String>;
-    readonly userInfoEndpointEncryptionEncValuesSupported: ICollection<System_Internal.String>;
-    readonly userInfoEndpointSigningAlgValuesSupported: ICollection<System_Internal.String>;
-    shouldSerializeAcrValuesSupported(): boolean;
-    shouldSerializeBackchannelAuthenticationRequestSigningAlgValuesSupported(): boolean;
-    shouldSerializeBackchannelTokenDeliveryModesSupported(): boolean;
-    shouldSerializeClaimsLocalesSupported(): boolean;
-    shouldSerializeClaimsSupported(): boolean;
-    shouldSerializeClaimTypesSupported(): boolean;
-    shouldSerializeDisplayValuesSupported(): boolean;
-    shouldSerializeDPoPSigningAlgValuesSupported(): boolean;
-    shouldSerializeGrantTypesSupported(): boolean;
-    shouldSerializeIdTokenEncryptionAlgValuesSupported(): boolean;
-    shouldSerializeIdTokenEncryptionEncValuesSupported(): boolean;
-    shouldSerializeIdTokenSigningAlgValuesSupported(): boolean;
-    shouldSerializeIntrospectionEndpointAuthMethodsSupported(): boolean;
-    shouldSerializeIntrospectionEndpointAuthSigningAlgValuesSupported(): boolean;
-    shouldSerializePromptValuesSupported(): boolean;
-    shouldSerializeRequestObjectEncryptionAlgValuesSupported(): boolean;
-    shouldSerializeRequestObjectEncryptionEncValuesSupported(): boolean;
-    shouldSerializeRequestObjectSigningAlgValuesSupported(): boolean;
-    shouldSerializeResponseModesSupported(): boolean;
-    shouldSerializeResponseTypesSupported(): boolean;
-    shouldSerializeScopesSupported(): boolean;
-    shouldSerializeSigningKeys(): boolean;
-    shouldSerializeSubjectTypesSupported(): boolean;
-    shouldSerializeTokenEndpointAuthMethodsSupported(): boolean;
-    shouldSerializeTokenEndpointAuthSigningAlgValuesSupported(): boolean;
-    shouldSerializeUILocalesSupported(): boolean;
-    shouldSerializeUserInfoEndpointEncryptionAlgValuesSupported(): boolean;
-    shouldSerializeUserInfoEndpointEncryptionEncValuesSupported(): boolean;
-    shouldSerializeUserInfoEndpointSigningAlgValuesSupported(): boolean;
+    readonly AcrValuesSupported: ICollection<System_Internal.String>;
+    ActiveTokenEndpoint: string;
+    readonly AdditionalData: IDictionary<System_Internal.String, unknown>;
+    AuthorizationEndpoint: string;
+    AuthorizationResponseIssParameterSupported: boolean;
+    BackchannelAuthenticationEndpoint: string;
+    readonly BackchannelAuthenticationRequestSigningAlgValuesSupported: ICollection<System_Internal.String>;
+    readonly BackchannelTokenDeliveryModesSupported: ICollection<System_Internal.String>;
+    BackchannelUserCodeParameterSupported: boolean;
+    CheckSessionIframe: string;
+    readonly ClaimsLocalesSupported: ICollection<System_Internal.String>;
+    ClaimsParameterSupported: boolean;
+    readonly ClaimsSupported: ICollection<System_Internal.String>;
+    readonly ClaimTypesSupported: ICollection<System_Internal.String>;
+    readonly DisplayValuesSupported: ICollection<System_Internal.String>;
+    readonly DPoPSigningAlgValuesSupported: ICollection<System_Internal.String>;
+    EndSessionEndpoint: string;
+    FrontchannelLogoutSessionSupported: string;
+    FrontchannelLogoutSupported: string;
+    readonly GrantTypesSupported: ICollection<System_Internal.String>;
+    HttpLogoutSupported: boolean;
+    readonly IdTokenEncryptionAlgValuesSupported: ICollection<System_Internal.String>;
+    readonly IdTokenEncryptionEncValuesSupported: ICollection<System_Internal.String>;
+    readonly IdTokenSigningAlgValuesSupported: ICollection<System_Internal.String>;
+    IntrospectionEndpoint: string;
+    readonly IntrospectionEndpointAuthMethodsSupported: ICollection<System_Internal.String>;
+    readonly IntrospectionEndpointAuthSigningAlgValuesSupported: ICollection<System_Internal.String>;
+    Issuer: string;
+    JsonWebKeySet: JsonWebKeySet;
+    JwksUri: string;
+    LogoutSessionSupported: boolean;
+    OpPolicyUri: string;
+    OpTosUri: string;
+    readonly PromptValuesSupported: ICollection<System_Internal.String>;
+    PushedAuthorizationRequestEndpoint: string;
+    RegistrationEndpoint: string;
+    readonly RequestObjectEncryptionAlgValuesSupported: ICollection<System_Internal.String>;
+    readonly RequestObjectEncryptionEncValuesSupported: ICollection<System_Internal.String>;
+    readonly RequestObjectSigningAlgValuesSupported: ICollection<System_Internal.String>;
+    RequestParameterSupported: boolean;
+    RequestUriParameterSupported: boolean;
+    RequirePushedAuthorizationRequests: boolean;
+    RequireRequestUriRegistration: boolean;
+    readonly ResponseModesSupported: ICollection<System_Internal.String>;
+    readonly ResponseTypesSupported: ICollection<System_Internal.String>;
+    readonly ScopesSupported: ICollection<System_Internal.String>;
+    ServiceDocumentation: string;
+    readonly SigningKeys: ICollection<SecurityKey>;
+    readonly SubjectTypesSupported: ICollection<System_Internal.String>;
+    TokenEndpoint: string;
+    readonly TokenEndpointAuthMethodsSupported: ICollection<System_Internal.String>;
+    readonly TokenEndpointAuthSigningAlgValuesSupported: ICollection<System_Internal.String>;
+    readonly UILocalesSupported: ICollection<System_Internal.String>;
+    UserInfoEndpoint: string;
+    readonly UserInfoEndpointEncryptionAlgValuesSupported: ICollection<System_Internal.String>;
+    readonly UserInfoEndpointEncryptionEncValuesSupported: ICollection<System_Internal.String>;
+    readonly UserInfoEndpointSigningAlgValuesSupported: ICollection<System_Internal.String>;
+    ShouldSerializeAcrValuesSupported(): boolean;
+    ShouldSerializeBackchannelAuthenticationRequestSigningAlgValuesSupported(): boolean;
+    ShouldSerializeBackchannelTokenDeliveryModesSupported(): boolean;
+    ShouldSerializeClaimsLocalesSupported(): boolean;
+    ShouldSerializeClaimsSupported(): boolean;
+    ShouldSerializeClaimTypesSupported(): boolean;
+    ShouldSerializeDisplayValuesSupported(): boolean;
+    ShouldSerializeDPoPSigningAlgValuesSupported(): boolean;
+    ShouldSerializeGrantTypesSupported(): boolean;
+    ShouldSerializeIdTokenEncryptionAlgValuesSupported(): boolean;
+    ShouldSerializeIdTokenEncryptionEncValuesSupported(): boolean;
+    ShouldSerializeIdTokenSigningAlgValuesSupported(): boolean;
+    ShouldSerializeIntrospectionEndpointAuthMethodsSupported(): boolean;
+    ShouldSerializeIntrospectionEndpointAuthSigningAlgValuesSupported(): boolean;
+    ShouldSerializePromptValuesSupported(): boolean;
+    ShouldSerializeRequestObjectEncryptionAlgValuesSupported(): boolean;
+    ShouldSerializeRequestObjectEncryptionEncValuesSupported(): boolean;
+    ShouldSerializeRequestObjectSigningAlgValuesSupported(): boolean;
+    ShouldSerializeResponseModesSupported(): boolean;
+    ShouldSerializeResponseTypesSupported(): boolean;
+    ShouldSerializeScopesSupported(): boolean;
+    ShouldSerializeSigningKeys(): boolean;
+    ShouldSerializeSubjectTypesSupported(): boolean;
+    ShouldSerializeTokenEndpointAuthMethodsSupported(): boolean;
+    ShouldSerializeTokenEndpointAuthSigningAlgValuesSupported(): boolean;
+    ShouldSerializeUILocalesSupported(): boolean;
+    ShouldSerializeUserInfoEndpointEncryptionAlgValuesSupported(): boolean;
+    ShouldSerializeUserInfoEndpointEncryptionEncValuesSupported(): boolean;
+    ShouldSerializeUserInfoEndpointSigningAlgValuesSupported(): boolean;
 }
 
 
 export const OpenIdConnectConfiguration: {
     new(): OpenIdConnectConfiguration;
     new(json: string): OpenIdConnectConfiguration;
-    create(json: string): OpenIdConnectConfiguration;
-    write(configuration: OpenIdConnectConfiguration): string;
+    Create(json: string): OpenIdConnectConfiguration;
+    Write(configuration: OpenIdConnectConfiguration): string;
 };
 
 
@@ -138,9 +138,9 @@ export interface OpenIdConnectConfigurationRetriever$instance {
 
 export const OpenIdConnectConfigurationRetriever: {
     new(): OpenIdConnectConfigurationRetriever;
-    getAsync(address: string, retriever: IDocumentRetriever, cancel: CancellationToken): Task<OpenIdConnectConfiguration>;
-    getAsync(address: string, httpClient: HttpClient, cancel: CancellationToken): Task<OpenIdConnectConfiguration>;
-    getAsync(address: string, cancel: CancellationToken): Task<OpenIdConnectConfiguration>;
+    GetAsync(address: string, retriever: IDocumentRetriever, cancel: CancellationToken): Task<OpenIdConnectConfiguration>;
+    GetAsync(address: string, httpClient: HttpClient, cancel: CancellationToken): Task<OpenIdConnectConfiguration>;
+    GetAsync(address: string, cancel: CancellationToken): Task<OpenIdConnectConfiguration>;
 };
 
 
@@ -154,55 +154,55 @@ export type OpenIdConnectConfigurationRetriever = OpenIdConnectConfigurationRetr
 
 
 export interface OpenIdConnectMessage$instance extends AuthenticationProtocolMessage {
-    accessToken: string;
-    acrValues: string;
-    authorizationEndpoint: string;
-    claimsLocales: string;
-    clientAssertion: string;
-    clientAssertionType: string;
-    clientId: string;
-    clientSecret: string;
-    get code(): string | undefined;
-    set code(value: string);
-    display: string;
-    domainHint: string;
-    enableTelemetryParameters: boolean;
-    error: string;
-    errorDescription: string;
-    errorUri: string;
-    expiresIn: string;
-    grantType: string;
-    identityProvider: string;
-    idToken: string;
-    idTokenHint: string;
-    iss: string;
-    loginHint: string;
-    maxAge: string;
-    nonce: string;
-    password: string;
-    postLogoutRedirectUri: string;
-    prompt: string;
-    redirectUri: string;
-    refreshToken: string;
-    requestType: OpenIdConnectRequestType;
-    requestUri: string;
-    resource: string;
-    responseMode: string;
-    responseType: string;
-    scope: string;
-    sessionState: string;
-    sid: string;
-    skuTelemetryValue: string;
-    state: string;
-    targetLinkUri: string;
-    tokenEndpoint: string;
-    tokenType: string;
-    uiLocales: string;
-    userId: string;
-    username: string;
-    clone(): OpenIdConnectMessage;
-    createAuthenticationRequestUrl(): string;
-    createLogoutRequestUrl(): string;
+    AccessToken: string;
+    AcrValues: string;
+    AuthorizationEndpoint: string;
+    ClaimsLocales: string;
+    ClientAssertion: string;
+    ClientAssertionType: string;
+    ClientId: string;
+    ClientSecret: string;
+    get Code(): string | undefined;
+    set Code(value: string);
+    Display: string;
+    DomainHint: string;
+    EnableTelemetryParameters: boolean;
+    Error: string;
+    ErrorDescription: string;
+    ErrorUri: string;
+    ExpiresIn: string;
+    GrantType: string;
+    IdentityProvider: string;
+    IdToken: string;
+    IdTokenHint: string;
+    Iss: string;
+    LoginHint: string;
+    MaxAge: string;
+    Nonce: string;
+    Password: string;
+    PostLogoutRedirectUri: string;
+    Prompt: string;
+    RedirectUri: string;
+    RefreshToken: string;
+    RequestType: OpenIdConnectRequestType;
+    RequestUri: string;
+    Resource: string;
+    ResponseMode: string;
+    ResponseType: string;
+    Scope: string;
+    SessionState: string;
+    Sid: string;
+    SkuTelemetryValue: string;
+    State: string;
+    TargetLinkUri: string;
+    TokenEndpoint: string;
+    TokenType: string;
+    UiLocales: string;
+    UserId: string;
+    Username: string;
+    Clone(): OpenIdConnectMessage;
+    CreateAuthenticationRequestUrl(): string;
+    CreateLogoutRequestUrl(): string;
 }
 
 
@@ -211,7 +211,7 @@ export const OpenIdConnectMessage: {
     new(json: string): OpenIdConnectMessage;
     new(nameValueCollection: NameValueCollection): OpenIdConnectMessage;
     new(parameters: IEnumerable<KeyValuePair<System_Internal.String, string[]>>): OpenIdConnectMessage;
-    enableTelemetryParametersByDefault: boolean;
+    EnableTelemetryParametersByDefault: boolean;
 };
 
 
@@ -283,12 +283,12 @@ export const OpenIdConnectProtocolInvalidStateException: {
 export type OpenIdConnectProtocolInvalidStateException = OpenIdConnectProtocolInvalidStateException$instance;
 
 export interface OpenIdConnectProtocolValidationContext$instance {
-    clientId: string;
-    nonce: string;
-    protocolMessage: OpenIdConnectMessage;
-    state: string;
-    userInfoEndpointResponse: string;
-    validatedIdToken: JwtSecurityToken;
+    ClientId: string;
+    Nonce: string;
+    ProtocolMessage: OpenIdConnectMessage;
+    State: string;
+    UserInfoEndpointResponse: string;
+    ValidatedIdToken: JwtSecurityToken;
 }
 
 
@@ -300,214 +300,214 @@ export const OpenIdConnectProtocolValidationContext: {
 export type OpenIdConnectProtocolValidationContext = OpenIdConnectProtocolValidationContext$instance;
 
 export interface OpenIdConnectProtocolValidator$instance {
-    cryptoProviderFactory: CryptoProviderFactory;
-    readonly hashAlgorithmMap: IDictionary<System_Internal.String, System_Internal.String>;
-    idTokenValidator: IdTokenValidator;
-    nonceLifetime: TimeSpan;
-    requireAcr: boolean;
-    requireAmr: boolean;
-    requireAuthTime: boolean;
-    requireAzp: boolean;
-    requireNonce: boolean;
-    requireState: boolean;
-    requireStateValidation: boolean;
-    requireSub: boolean;
-    requireTimeStampInNonce: boolean;
-    generateNonce(): string;
-    getHashAlgorithm(algorithm: string): HashAlgorithm;
-    validateAuthenticationResponse(validationContext: OpenIdConnectProtocolValidationContext): void;
-    validateTokenResponse(validationContext: OpenIdConnectProtocolValidationContext): void;
-    validateUserInfoResponse(validationContext: OpenIdConnectProtocolValidationContext): void;
+    CryptoProviderFactory: CryptoProviderFactory;
+    readonly HashAlgorithmMap: IDictionary<System_Internal.String, System_Internal.String>;
+    IdTokenValidator: IdTokenValidator;
+    NonceLifetime: TimeSpan;
+    RequireAcr: boolean;
+    RequireAmr: boolean;
+    RequireAuthTime: boolean;
+    RequireAzp: boolean;
+    RequireNonce: boolean;
+    RequireState: boolean;
+    RequireStateValidation: boolean;
+    RequireSub: boolean;
+    RequireTimeStampInNonce: boolean;
+    GenerateNonce(): string;
+    GetHashAlgorithm(algorithm: string): HashAlgorithm;
+    ValidateAuthenticationResponse(validationContext: OpenIdConnectProtocolValidationContext): void;
+    ValidateTokenResponse(validationContext: OpenIdConnectProtocolValidationContext): void;
+    ValidateUserInfoResponse(validationContext: OpenIdConnectProtocolValidationContext): void;
 }
 
 
 export const OpenIdConnectProtocolValidator: {
     new(): OpenIdConnectProtocolValidator;
-    readonly defaultNonceLifetime: TimeSpan;
-    requireSubByDefault: boolean;
+    readonly DefaultNonceLifetime: TimeSpan;
+    RequireSubByDefault: boolean;
 };
 
 
 export type OpenIdConnectProtocolValidator = OpenIdConnectProtocolValidator$instance;
 
 export abstract class ActiveDirectoryOpenIdConnectEndpoints$instance {
-    static readonly authorize: string;
-    static readonly logout: string;
-    static readonly token: string;
+    static readonly Authorize: string;
+    static readonly Logout: string;
+    static readonly Token: string;
 }
 
 
 export type ActiveDirectoryOpenIdConnectEndpoints = ActiveDirectoryOpenIdConnectEndpoints$instance;
 
 export abstract class OpenIdConnectGrantTypes$instance {
-    static readonly authorizationCode: string;
-    static readonly refreshToken: string;
-    static readonly password: string;
-    static readonly clientCredentials: string;
+    static readonly AuthorizationCode: string;
+    static readonly RefreshToken: string;
+    static readonly Password: string;
+    static readonly ClientCredentials: string;
 }
 
 
 export type OpenIdConnectGrantTypes = OpenIdConnectGrantTypes$instance;
 
 export abstract class OpenIdConnectParameterNames$instance {
-    static readonly accessToken: string;
-    static readonly acrValues: string;
-    static readonly claimsLocales: string;
-    static readonly clientAssertion: string;
-    static readonly clientAssertionType: string;
-    static readonly clientId: string;
-    static readonly clientSecret: string;
-    static readonly code: string;
-    static readonly display: string;
-    static readonly domainHint: string;
-    static readonly error: string;
-    static readonly errorDescription: string;
-    static readonly errorUri: string;
-    static readonly expiresIn: string;
-    static readonly grantType: string;
-    static readonly iss: string;
-    static readonly idToken: string;
-    static readonly idTokenHint: string;
-    static readonly identityProvider: string;
-    static readonly loginHint: string;
-    static readonly maxAge: string;
-    static readonly nonce: string;
-    static readonly password: string;
-    static readonly postLogoutRedirectUri: string;
-    static readonly prompt: string;
-    static readonly redirectUri: string;
-    static readonly refreshToken: string;
-    static readonly requestUri: string;
-    static readonly resource: string;
-    static readonly responseMode: string;
-    static readonly responseType: string;
-    static readonly scope: string;
-    static readonly skuTelemetry: string;
-    static readonly sessionState: string;
-    static readonly sid: string;
-    static readonly state: string;
-    static readonly targetLinkUri: string;
-    static readonly tokenType: string;
-    static readonly uiLocales: string;
-    static readonly userId: string;
-    static readonly username: string;
-    static readonly versionTelemetry: string;
+    static readonly AccessToken: string;
+    static readonly AcrValues: string;
+    static readonly ClaimsLocales: string;
+    static readonly ClientAssertion: string;
+    static readonly ClientAssertionType: string;
+    static readonly ClientId: string;
+    static readonly ClientSecret: string;
+    static readonly Code: string;
+    static readonly Display: string;
+    static readonly DomainHint: string;
+    static readonly Error: string;
+    static readonly ErrorDescription: string;
+    static readonly ErrorUri: string;
+    static readonly ExpiresIn: string;
+    static readonly GrantType: string;
+    static readonly Iss: string;
+    static readonly IdToken: string;
+    static readonly IdTokenHint: string;
+    static readonly IdentityProvider: string;
+    static readonly LoginHint: string;
+    static readonly MaxAge: string;
+    static readonly Nonce: string;
+    static readonly Password: string;
+    static readonly PostLogoutRedirectUri: string;
+    static readonly Prompt: string;
+    static readonly RedirectUri: string;
+    static readonly RefreshToken: string;
+    static readonly RequestUri: string;
+    static readonly Resource: string;
+    static readonly ResponseMode: string;
+    static readonly ResponseType: string;
+    static readonly Scope: string;
+    static readonly SkuTelemetry: string;
+    static readonly SessionState: string;
+    static readonly Sid: string;
+    static readonly State: string;
+    static readonly TargetLinkUri: string;
+    static readonly TokenType: string;
+    static readonly UiLocales: string;
+    static readonly UserId: string;
+    static readonly Username: string;
+    static readonly VersionTelemetry: string;
 }
 
 
 export type OpenIdConnectParameterNames = OpenIdConnectParameterNames$instance;
 
 export abstract class OpenIdConnectPrompt$instance {
-    static readonly none: string;
-    static readonly login: string;
-    static readonly consent: string;
-    static readonly selectAccount: string;
+    static readonly None: string;
+    static readonly Login: string;
+    static readonly Consent: string;
+    static readonly SelectAccount: string;
 }
 
 
 export type OpenIdConnectPrompt = OpenIdConnectPrompt$instance;
 
 export abstract class OpenIdConnectResponseMode$instance {
-    static readonly query: string;
-    static readonly formPost: string;
-    static readonly fragment: string;
+    static readonly Query: string;
+    static readonly FormPost: string;
+    static readonly Fragment: string;
 }
 
 
 export type OpenIdConnectResponseMode = OpenIdConnectResponseMode$instance;
 
 export abstract class OpenIdConnectResponseType$instance {
-    static readonly code: string;
-    static readonly codeIdToken: string;
-    static readonly codeIdTokenToken: string;
-    static readonly codeToken: string;
-    static readonly idToken: string;
-    static readonly idTokenToken: string;
-    static readonly none: string;
-    static readonly token: string;
+    static readonly Code: string;
+    static readonly CodeIdToken: string;
+    static readonly CodeIdTokenToken: string;
+    static readonly CodeToken: string;
+    static readonly IdToken: string;
+    static readonly IdTokenToken: string;
+    static readonly None: string;
+    static readonly Token: string;
 }
 
 
 export type OpenIdConnectResponseType = OpenIdConnectResponseType$instance;
 
 export abstract class OpenIdConnectScope$instance {
-    static readonly address: string;
-    static readonly email: string;
-    static readonly offlineAccess: string;
-    static readonly openId: string;
-    static readonly openIdProfile: string;
-    static readonly phone: string;
-    static readonly userImpersonation: string;
+    static readonly Address: string;
+    static readonly Email: string;
+    static readonly OfflineAccess: string;
+    static readonly OpenId: string;
+    static readonly OpenIdProfile: string;
+    static readonly Phone: string;
+    static readonly UserImpersonation: string;
 }
 
 
 export type OpenIdConnectScope = OpenIdConnectScope$instance;
 
 export abstract class OpenIdConnectSessionProperties$instance {
-    static readonly checkSessionIFrame: string;
-    static readonly redirectUri: string;
-    static readonly sessionState: string;
+    static readonly CheckSessionIFrame: string;
+    static readonly RedirectUri: string;
+    static readonly SessionState: string;
 }
 
 
 export type OpenIdConnectSessionProperties = OpenIdConnectSessionProperties$instance;
 
 export abstract class OpenIdProviderMetadataNames$instance {
-    static readonly acrValuesSupported: string;
-    static readonly authorizationEndpoint: string;
-    static readonly authorizationResponseIssParameterSupported: string;
-    static readonly backchannelAuthenticationEndpoint: string;
-    static readonly backchannelAuthenticationRequestSigningAlgValuesSupported: string;
-    static readonly backchannelTokenDeliveryModesSupported: string;
-    static readonly backchannelUserCodeParameterSupported: string;
-    static readonly checkSessionIframe: string;
-    static readonly claimsLocalesSupported: string;
-    static readonly claimsParameterSupported: string;
-    static readonly claimsSupported: string;
-    static readonly claimTypesSupported: string;
-    static readonly discovery: string;
-    static readonly displayValuesSupported: string;
-    static readonly dPoPSigningAlgValuesSupported: string;
-    static readonly endSessionEndpoint: string;
-    static readonly frontchannelLogoutSessionSupported: string;
-    static readonly frontchannelLogoutSupported: string;
-    static readonly httpLogoutSupported: string;
-    static readonly grantTypesSupported: string;
-    static readonly idTokenEncryptionAlgValuesSupported: string;
-    static readonly idTokenEncryptionEncValuesSupported: string;
-    static readonly idTokenSigningAlgValuesSupported: string;
-    static readonly introspectionEndpoint: string;
-    static readonly introspectionEndpointAuthMethodsSupported: string;
-    static readonly introspectionEndpointAuthSigningAlgValuesSupported: string;
-    static readonly jwksUri: string;
-    static readonly issuer: string;
-    static readonly logoutSessionSupported: string;
-    static readonly microsoftMultiRefreshToken: string;
-    static readonly opPolicyUri: string;
-    static readonly opTosUri: string;
-    static readonly promptValuesSupported: string;
-    static readonly pushedAuthorizationRequestEndpoint: string;
-    static readonly registrationEndpoint: string;
-    static readonly requestObjectEncryptionAlgValuesSupported: string;
-    static readonly requestObjectEncryptionEncValuesSupported: string;
-    static readonly requestObjectSigningAlgValuesSupported: string;
-    static readonly requestParameterSupported: string;
-    static readonly requestUriParameterSupported: string;
-    static readonly requirePushedAuthorizationRequests: string;
-    static readonly requireRequestUriRegistration: string;
-    static readonly responseModesSupported: string;
-    static readonly responseTypesSupported: string;
-    static readonly serviceDocumentation: string;
-    static readonly scopesSupported: string;
-    static readonly subjectTypesSupported: string;
-    static readonly tokenEndpoint: string;
-    static readonly tokenEndpointAuthMethodsSupported: string;
-    static readonly tokenEndpointAuthSigningAlgValuesSupported: string;
-    static readonly uiLocalesSupported: string;
-    static readonly userInfoEndpoint: string;
-    static readonly userInfoEncryptionAlgValuesSupported: string;
-    static readonly userInfoEncryptionEncValuesSupported: string;
-    static readonly userInfoSigningAlgValuesSupported: string;
+    static readonly AcrValuesSupported: string;
+    static readonly AuthorizationEndpoint: string;
+    static readonly AuthorizationResponseIssParameterSupported: string;
+    static readonly BackchannelAuthenticationEndpoint: string;
+    static readonly BackchannelAuthenticationRequestSigningAlgValuesSupported: string;
+    static readonly BackchannelTokenDeliveryModesSupported: string;
+    static readonly BackchannelUserCodeParameterSupported: string;
+    static readonly CheckSessionIframe: string;
+    static readonly ClaimsLocalesSupported: string;
+    static readonly ClaimsParameterSupported: string;
+    static readonly ClaimsSupported: string;
+    static readonly ClaimTypesSupported: string;
+    static readonly Discovery: string;
+    static readonly DisplayValuesSupported: string;
+    static readonly DPoPSigningAlgValuesSupported: string;
+    static readonly EndSessionEndpoint: string;
+    static readonly FrontchannelLogoutSessionSupported: string;
+    static readonly FrontchannelLogoutSupported: string;
+    static readonly HttpLogoutSupported: string;
+    static readonly GrantTypesSupported: string;
+    static readonly IdTokenEncryptionAlgValuesSupported: string;
+    static readonly IdTokenEncryptionEncValuesSupported: string;
+    static readonly IdTokenSigningAlgValuesSupported: string;
+    static readonly IntrospectionEndpoint: string;
+    static readonly IntrospectionEndpointAuthMethodsSupported: string;
+    static readonly IntrospectionEndpointAuthSigningAlgValuesSupported: string;
+    static readonly JwksUri: string;
+    static readonly Issuer: string;
+    static readonly LogoutSessionSupported: string;
+    static readonly MicrosoftMultiRefreshToken: string;
+    static readonly OpPolicyUri: string;
+    static readonly OpTosUri: string;
+    static readonly PromptValuesSupported: string;
+    static readonly PushedAuthorizationRequestEndpoint: string;
+    static readonly RegistrationEndpoint: string;
+    static readonly RequestObjectEncryptionAlgValuesSupported: string;
+    static readonly RequestObjectEncryptionEncValuesSupported: string;
+    static readonly RequestObjectSigningAlgValuesSupported: string;
+    static readonly RequestParameterSupported: string;
+    static readonly RequestUriParameterSupported: string;
+    static readonly RequirePushedAuthorizationRequests: string;
+    static readonly RequireRequestUriRegistration: string;
+    static readonly ResponseModesSupported: string;
+    static readonly ResponseTypesSupported: string;
+    static readonly ServiceDocumentation: string;
+    static readonly ScopesSupported: string;
+    static readonly SubjectTypesSupported: string;
+    static readonly TokenEndpoint: string;
+    static readonly TokenEndpointAuthMethodsSupported: string;
+    static readonly TokenEndpointAuthSigningAlgValuesSupported: string;
+    static readonly UILocalesSupported: string;
+    static readonly UserInfoEndpoint: string;
+    static readonly UserInfoEncryptionAlgValuesSupported: string;
+    static readonly UserInfoEncryptionEncValuesSupported: string;
+    static readonly UserInfoSigningAlgValuesSupported: string;
 }
 
 

@@ -24,186 +24,186 @@ export type StreamChangeCallback = (streamName: string) => void;
 
 
 export interface IConfigErrorInfo$instance {
-    readonly filename: string;
-    readonly lineNumber: int;
+    readonly Filename: string;
+    readonly LineNumber: int;
 }
 
 
 export type IConfigErrorInfo = IConfigErrorInfo$instance;
 
 export interface IConfigSystem$instance {
-    readonly host: IInternalConfigHost;
-    readonly root: IInternalConfigRoot;
-    init(typeConfigHost: Type, ...hostInitParams: unknown[]): void;
+    readonly Host: IInternalConfigHost;
+    readonly Root: IInternalConfigRoot;
+    Init(typeConfigHost: Type, ...hostInitParams: unknown[]): void;
 }
 
 
 export type IConfigSystem = IConfigSystem$instance;
 
 export interface IConfigurationManagerHelper$instance {
-    ensureNetConfigLoaded(): void;
+    EnsureNetConfigLoaded(): void;
 }
 
 
 export type IConfigurationManagerHelper = IConfigurationManagerHelper$instance;
 
 export interface IConfigurationManagerInternal$instance {
-    readonly supportsUserConfig: boolean;
-    readonly setConfigurationSystemInProgress: boolean;
-    readonly machineConfigPath: string;
-    readonly applicationConfigUri: string;
-    readonly exeProductName: string;
-    readonly exeProductVersion: string;
-    readonly exeRoamingConfigDirectory: string;
-    readonly exeRoamingConfigPath: string;
-    readonly exeLocalConfigDirectory: string;
-    readonly exeLocalConfigPath: string;
-    readonly userConfigFilename: string;
+    readonly SupportsUserConfig: boolean;
+    readonly SetConfigurationSystemInProgress: boolean;
+    readonly MachineConfigPath: string;
+    readonly ApplicationConfigUri: string;
+    readonly ExeProductName: string;
+    readonly ExeProductVersion: string;
+    readonly ExeRoamingConfigDirectory: string;
+    readonly ExeRoamingConfigPath: string;
+    readonly ExeLocalConfigDirectory: string;
+    readonly ExeLocalConfigPath: string;
+    readonly UserConfigFilename: string;
 }
 
 
 export type IConfigurationManagerInternal = IConfigurationManagerInternal$instance;
 
 export interface IInternalConfigClientHost$instance {
-    getExeConfigPath(): string;
-    isExeConfig(configPath: string): boolean;
+    GetExeConfigPath(): string;
+    IsExeConfig(configPath: string): boolean;
 }
 
 
 export type IInternalConfigClientHost = IInternalConfigClientHost$instance;
 
 export interface IInternalConfigConfigurationFactory$instance {
-    create(typeConfigHost: Type, ...hostInitConfigurationParams: unknown[]): Configuration;
-    normalizeLocationSubPath(subPath: string, errorInfo: IConfigErrorInfo): string;
+    Create(typeConfigHost: Type, ...hostInitConfigurationParams: unknown[]): Configuration;
+    NormalizeLocationSubPath(subPath: string, errorInfo: IConfigErrorInfo): string;
 }
 
 
 export type IInternalConfigConfigurationFactory = IInternalConfigConfigurationFactory$instance;
 
 export interface IInternalConfigHost$instance {
-    readonly supportsChangeNotifications: boolean;
-    readonly supportsRefresh: boolean;
-    readonly supportsPath: boolean;
-    readonly supportsLocation: boolean;
-    readonly isRemote: boolean;
-    createConfigurationContext(configPath: string, locationSubPath: string): unknown;
-    decryptSection(encryptedXml: string, protectionProvider: ProtectedConfigurationProvider, protectedConfigSection: ProtectedConfigurationSection): string;
-    deleteStream(streamName: string): void;
-    getConfigType(typeName: string, throwOnError: boolean): Type;
-    getConfigTypeName(t: Type): string;
-    getRestrictedPermissions(configRecord: IInternalConfigRecord, permissionSet: PermissionSet, isHostReady: boolean): void;
-    getStreamName(configPath: string): string;
-    getStreamNameForConfigSource(streamName: string, configSource: string): string;
-    getStreamVersion(streamName: string): unknown;
-    impersonate(): IDisposable;
-    init(configRoot: IInternalConfigRoot, ...hostInitParams: unknown[]): void;
-    initForConfiguration(locationSubPath: string, configPath: string, locationConfigPath: string, configRoot: IInternalConfigRoot, ...hostInitConfigurationParams: unknown[]): void;
-    isConfigRecordRequired(configPath: string): boolean;
-    isDefinitionAllowed(configPath: string, allowDefinition: ConfigurationAllowDefinition, allowExeDefinition: ConfigurationAllowExeDefinition): boolean;
-    isInitDelayed(configRecord: IInternalConfigRecord): boolean;
-    openStreamForRead(streamName: string, assertPermissions: boolean): Stream;
-    openStreamForRead(streamName: string): Stream;
-    openStreamForWrite(streamName: string, templateStreamName: string, writeContext: unknown, assertPermissions: boolean): Stream;
-    openStreamForWrite(streamName: string, templateStreamName: string, writeContext: unknown): Stream;
-    prefetchAll(configPath: string, streamName: string): boolean;
-    requireCompleteInit(configRecord: IInternalConfigRecord): void;
-    startMonitoringStreamForChanges(streamName: string, callback: StreamChangeCallback): unknown;
-    stopMonitoringStreamForChanges(streamName: string, callback: StreamChangeCallback): void;
-    verifyDefinitionAllowed(configPath: string, allowDefinition: ConfigurationAllowDefinition, allowExeDefinition: ConfigurationAllowExeDefinition, errorInfo: IConfigErrorInfo): void;
-    writeCompleted(streamName: string, success: boolean, writeContext: unknown, assertPermissions: boolean): void;
-    writeCompleted(streamName: string, success: boolean, writeContext: unknown): void;
+    readonly SupportsChangeNotifications: boolean;
+    readonly SupportsRefresh: boolean;
+    readonly SupportsPath: boolean;
+    readonly SupportsLocation: boolean;
+    readonly IsRemote: boolean;
+    CreateConfigurationContext(configPath: string, locationSubPath: string): unknown;
+    DecryptSection(encryptedXml: string, protectionProvider: ProtectedConfigurationProvider, protectedConfigSection: ProtectedConfigurationSection): string;
+    DeleteStream(streamName: string): void;
+    GetConfigType(typeName: string, throwOnError: boolean): Type;
+    GetConfigTypeName(t: Type): string;
+    GetRestrictedPermissions(configRecord: IInternalConfigRecord, permissionSet: PermissionSet, isHostReady: boolean): void;
+    GetStreamName(configPath: string): string;
+    GetStreamNameForConfigSource(streamName: string, configSource: string): string;
+    GetStreamVersion(streamName: string): unknown;
+    Impersonate(): IDisposable;
+    Init(configRoot: IInternalConfigRoot, ...hostInitParams: unknown[]): void;
+    InitForConfiguration(locationSubPath: string, configPath: string, locationConfigPath: string, configRoot: IInternalConfigRoot, ...hostInitConfigurationParams: unknown[]): void;
+    IsConfigRecordRequired(configPath: string): boolean;
+    IsDefinitionAllowed(configPath: string, allowDefinition: ConfigurationAllowDefinition, allowExeDefinition: ConfigurationAllowExeDefinition): boolean;
+    IsInitDelayed(configRecord: IInternalConfigRecord): boolean;
+    OpenStreamForRead(streamName: string, assertPermissions: boolean): Stream;
+    OpenStreamForRead(streamName: string): Stream;
+    OpenStreamForWrite(streamName: string, templateStreamName: string, writeContext: unknown, assertPermissions: boolean): Stream;
+    OpenStreamForWrite(streamName: string, templateStreamName: string, writeContext: unknown): Stream;
+    PrefetchAll(configPath: string, streamName: string): boolean;
+    RequireCompleteInit(configRecord: IInternalConfigRecord): void;
+    StartMonitoringStreamForChanges(streamName: string, callback: StreamChangeCallback): unknown;
+    StopMonitoringStreamForChanges(streamName: string, callback: StreamChangeCallback): void;
+    VerifyDefinitionAllowed(configPath: string, allowDefinition: ConfigurationAllowDefinition, allowExeDefinition: ConfigurationAllowExeDefinition, errorInfo: IConfigErrorInfo): void;
+    WriteCompleted(streamName: string, success: boolean, writeContext: unknown, assertPermissions: boolean): void;
+    WriteCompleted(streamName: string, success: boolean, writeContext: unknown): void;
 }
 
 
 export type IInternalConfigHost = IInternalConfigHost$instance;
 
 export interface IInternalConfigRecord$instance {
-    readonly configPath: string;
-    readonly streamName: string;
-    readonly hasInitErrors: boolean;
-    getSection(configKey: string): unknown;
-    refreshSection(configKey: string): void;
-    throwIfInitErrors(): void;
+    readonly ConfigPath: string;
+    readonly StreamName: string;
+    readonly HasInitErrors: boolean;
+    GetSection(configKey: string): unknown;
+    RefreshSection(configKey: string): void;
+    ThrowIfInitErrors(): void;
 }
 
 
 export type IInternalConfigRecord = IInternalConfigRecord$instance;
 
 export interface IInternalConfigRoot$instance {
-    readonly isDesignTime: boolean;
-    getSection(section: string, configPath: string): unknown;
-    getUniqueConfigPath(configPath: string): string;
-    getUniqueConfigRecord(configPath: string): IInternalConfigRecord;
-    init(host: IInternalConfigHost, isDesignTime: boolean): void;
-    removeConfig(configPath: string): void;
+    readonly IsDesignTime: boolean;
+    GetSection(section: string, configPath: string): unknown;
+    GetUniqueConfigPath(configPath: string): string;
+    GetUniqueConfigRecord(configPath: string): IInternalConfigRecord;
+    Init(host: IInternalConfigHost, isDesignTime: boolean): void;
+    RemoveConfig(configPath: string): void;
 }
 
 
 export type IInternalConfigRoot = IInternalConfigRoot$instance;
 
 export interface IInternalConfigSettingsFactory$instance {
-    completeInit(): void;
-    setConfigurationSystem(internalConfigSystem: IInternalConfigSystem, initComplete: boolean): void;
+    CompleteInit(): void;
+    SetConfigurationSystem(internalConfigSystem: IInternalConfigSystem, initComplete: boolean): void;
 }
 
 
 export type IInternalConfigSettingsFactory = IInternalConfigSettingsFactory$instance;
 
 export interface IInternalConfigSystem$instance {
-    readonly supportsUserConfig: boolean;
-    getSection(configKey: string): unknown;
-    refreshConfig(sectionName: string): void;
+    readonly SupportsUserConfig: boolean;
+    GetSection(configKey: string): unknown;
+    RefreshConfig(sectionName: string): void;
 }
 
 
 export type IInternalConfigSystem = IInternalConfigSystem$instance;
 
 export interface DelegatingConfigHost$instance {
-    readonly hasLocalConfig: boolean;
-    readonly hasRoamingConfig: boolean;
-    readonly isAppConfigHttp: boolean;
-    readonly isRemote: boolean;
-    readonly supportsChangeNotifications: boolean;
-    readonly supportsLocation: boolean;
-    readonly supportsPath: boolean;
-    readonly supportsRefresh: boolean;
-    createConfigurationContext(configPath: string, locationSubPath: string): unknown;
-    createDeprecatedConfigContext(configPath: string): unknown;
-    decryptSection(encryptedXml: string, protectionProvider: ProtectedConfigurationProvider, protectedConfigSection: ProtectedConfigurationSection): string;
-    deleteStream(streamName: string): void;
-    encryptSection(clearTextXml: string, protectionProvider: ProtectedConfigurationProvider, protectedConfigSection: ProtectedConfigurationSection): string;
-    getConfigPathFromLocationSubPath(configPath: string, locationSubPath: string): string;
-    getConfigType(typeName: string, throwOnError: boolean): Type;
-    getConfigTypeName(t: Type): string;
-    getRestrictedPermissions(configRecord: IInternalConfigRecord, permissionSet: PermissionSet, isHostReady: boolean): void;
-    getStreamName(configPath: string): string;
-    getStreamNameForConfigSource(streamName: string, configSource: string): string;
-    getStreamVersion(streamName: string): unknown;
-    impersonate(): IDisposable;
-    init(configRoot: IInternalConfigRoot, ...hostInitParams: unknown[]): void;
-    initForConfiguration(locationSubPath: string, configPath: string, locationConfigPath: string, configRoot: IInternalConfigRoot, ...hostInitConfigurationParams: unknown[]): void;
-    isAboveApplication(configPath: string): boolean;
-    isConfigRecordRequired(configPath: string): boolean;
-    isDefinitionAllowed(configPath: string, allowDefinition: ConfigurationAllowDefinition, allowExeDefinition: ConfigurationAllowExeDefinition): boolean;
-    isFile(streamName: string): boolean;
-    isFullTrustSectionWithoutAptcaAllowed(configRecord: IInternalConfigRecord): boolean;
-    isInitDelayed(configRecord: IInternalConfigRecord): boolean;
-    isLocationApplicable(configPath: string): boolean;
-    isSecondaryRoot(configPath: string): boolean;
-    isTrustedConfigPath(configPath: string): boolean;
-    openStreamForRead(streamName: string): Stream;
-    openStreamForRead(streamName: string, assertPermissions: boolean): Stream;
-    openStreamForWrite(streamName: string, templateStreamName: string, writeContext: unknown): Stream;
-    openStreamForWrite(streamName: string, templateStreamName: string, writeContext: unknown, assertPermissions: boolean): Stream;
-    prefetchAll(configPath: string, streamName: string): boolean;
-    prefetchSection(sectionGroupName: string, sectionName: string): boolean;
-    refreshConfigPaths(): void;
-    requireCompleteInit(configRecord: IInternalConfigRecord): void;
-    startMonitoringStreamForChanges(streamName: string, callback: StreamChangeCallback): unknown;
-    stopMonitoringStreamForChanges(streamName: string, callback: StreamChangeCallback): void;
-    verifyDefinitionAllowed(configPath: string, allowDefinition: ConfigurationAllowDefinition, allowExeDefinition: ConfigurationAllowExeDefinition, errorInfo: IConfigErrorInfo): void;
-    writeCompleted(streamName: string, success: boolean, writeContext: unknown): void;
-    writeCompleted(streamName: string, success: boolean, writeContext: unknown, assertPermissions: boolean): void;
+    readonly HasLocalConfig: boolean;
+    readonly HasRoamingConfig: boolean;
+    readonly IsAppConfigHttp: boolean;
+    readonly IsRemote: boolean;
+    readonly SupportsChangeNotifications: boolean;
+    readonly SupportsLocation: boolean;
+    readonly SupportsPath: boolean;
+    readonly SupportsRefresh: boolean;
+    CreateConfigurationContext(configPath: string, locationSubPath: string): unknown;
+    CreateDeprecatedConfigContext(configPath: string): unknown;
+    DecryptSection(encryptedXml: string, protectionProvider: ProtectedConfigurationProvider, protectedConfigSection: ProtectedConfigurationSection): string;
+    DeleteStream(streamName: string): void;
+    EncryptSection(clearTextXml: string, protectionProvider: ProtectedConfigurationProvider, protectedConfigSection: ProtectedConfigurationSection): string;
+    GetConfigPathFromLocationSubPath(configPath: string, locationSubPath: string): string;
+    GetConfigType(typeName: string, throwOnError: boolean): Type;
+    GetConfigTypeName(t: Type): string;
+    GetRestrictedPermissions(configRecord: IInternalConfigRecord, permissionSet: PermissionSet, isHostReady: boolean): void;
+    GetStreamName(configPath: string): string;
+    GetStreamNameForConfigSource(streamName: string, configSource: string): string;
+    GetStreamVersion(streamName: string): unknown;
+    Impersonate(): IDisposable;
+    Init(configRoot: IInternalConfigRoot, ...hostInitParams: unknown[]): void;
+    InitForConfiguration(locationSubPath: string, configPath: string, locationConfigPath: string, configRoot: IInternalConfigRoot, ...hostInitConfigurationParams: unknown[]): void;
+    IsAboveApplication(configPath: string): boolean;
+    IsConfigRecordRequired(configPath: string): boolean;
+    IsDefinitionAllowed(configPath: string, allowDefinition: ConfigurationAllowDefinition, allowExeDefinition: ConfigurationAllowExeDefinition): boolean;
+    IsFile(streamName: string): boolean;
+    IsFullTrustSectionWithoutAptcaAllowed(configRecord: IInternalConfigRecord): boolean;
+    IsInitDelayed(configRecord: IInternalConfigRecord): boolean;
+    IsLocationApplicable(configPath: string): boolean;
+    IsSecondaryRoot(configPath: string): boolean;
+    IsTrustedConfigPath(configPath: string): boolean;
+    OpenStreamForRead(streamName: string): Stream;
+    OpenStreamForRead(streamName: string, assertPermissions: boolean): Stream;
+    OpenStreamForWrite(streamName: string, templateStreamName: string, writeContext: unknown): Stream;
+    OpenStreamForWrite(streamName: string, templateStreamName: string, writeContext: unknown, assertPermissions: boolean): Stream;
+    PrefetchAll(configPath: string, streamName: string): boolean;
+    PrefetchSection(sectionGroupName: string, sectionName: string): boolean;
+    RefreshConfigPaths(): void;
+    RequireCompleteInit(configRecord: IInternalConfigRecord): void;
+    StartMonitoringStreamForChanges(streamName: string, callback: StreamChangeCallback): unknown;
+    StopMonitoringStreamForChanges(streamName: string, callback: StreamChangeCallback): void;
+    VerifyDefinitionAllowed(configPath: string, allowDefinition: ConfigurationAllowDefinition, allowExeDefinition: ConfigurationAllowExeDefinition, errorInfo: IConfigErrorInfo): void;
+    WriteCompleted(streamName: string, success: boolean, writeContext: unknown): void;
+    WriteCompleted(streamName: string, success: boolean, writeContext: unknown, assertPermissions: boolean): void;
 }
 
 
@@ -215,7 +215,7 @@ export const DelegatingConfigHost: {
 export type DelegatingConfigHost = DelegatingConfigHost$instance;
 
 export interface InternalConfigEventArgs$instance extends EventArgs {
-    configPath: string;
+    ConfigPath: string;
 }
 
 

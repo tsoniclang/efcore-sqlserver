@@ -20,47 +20,47 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface IConfigurationManager_1$instance<T> {
-    getConfigurationAsync(cancel: CancellationToken): Task<T>;
-    requestRefresh(): void;
+    GetConfigurationAsync(cancel: CancellationToken): Task<T>;
+    RequestRefresh(): void;
 }
 
 
 export type IConfigurationManager_1<T> = IConfigurationManager_1$instance<T>;
 
 export interface IConfigurationRetriever_1$instance<T> {
-    getConfigurationAsync(address: string, retriever: IDocumentRetriever, cancel: CancellationToken): Task<T>;
+    GetConfigurationAsync(address: string, retriever: IDocumentRetriever, cancel: CancellationToken): Task<T>;
 }
 
 
 export type IConfigurationRetriever_1<T> = IConfigurationRetriever_1$instance<T>;
 
 export interface IConfigurationValidator_1$instance<T> {
-    validate(configuration: T): ConfigurationValidationResult;
+    Validate(configuration: T): ConfigurationValidationResult;
 }
 
 
 export type IConfigurationValidator_1<T> = IConfigurationValidator_1$instance<T>;
 
 export interface IDocumentRetriever$instance {
-    getDocumentAsync(address: string, cancel: CancellationToken): Task<System_Internal.String>;
+    GetDocumentAsync(address: string, cancel: CancellationToken): Task<System_Internal.String>;
 }
 
 
 export type IDocumentRetriever = IDocumentRetriever$instance;
 
 export interface AuthenticationProtocolMessage$instance {
-    issuerAddress: string;
-    readonly parameters: IDictionary<System_Internal.String, System_Internal.String>;
-    postTitle: string;
-    script: string;
-    scriptButtonText: string;
-    scriptDisabledText: string;
-    buildFormPost(): string;
-    buildRedirectUrl(): string;
-    getParameter(parameter: string): string;
-    removeParameter(parameter: string): void;
-    setParameter(parameter: string, value: string): void;
-    setParameters(nameValueCollection: NameValueCollection): void;
+    IssuerAddress: string;
+    readonly Parameters: IDictionary<System_Internal.String, System_Internal.String>;
+    PostTitle: string;
+    Script: string;
+    ScriptButtonText: string;
+    ScriptDisabledText: string;
+    BuildFormPost(): string;
+    BuildRedirectUrl(): string;
+    GetParameter(parameter: string): string;
+    RemoveParameter(parameter: string): void;
+    SetParameter(parameter: string, value: string): void;
+    SetParameters(nameValueCollection: NameValueCollection): void;
 }
 
 
@@ -71,11 +71,11 @@ export const AuthenticationProtocolMessage: {
 export type AuthenticationProtocolMessage = AuthenticationProtocolMessage$instance;
 
 export interface ConfigurationManager_1$instance<T> extends BaseConfigurationManager {
-    getBaseConfigurationAsync(cancel: CancellationToken): Task<BaseConfiguration>;
-    getBaseConfigurationAsync(cancel: CancellationToken): Task<BaseConfiguration>;
-    getConfigurationAsync(): Task<T>;
-    getConfigurationAsync(cancel: CancellationToken): Task<T>;
-    requestRefresh(): void;
+    GetBaseConfigurationAsync(cancel: CancellationToken): Task<BaseConfiguration>;
+    GetBaseConfigurationAsync(cancel: CancellationToken): Task<BaseConfiguration>;
+    GetConfigurationAsync(): Task<T>;
+    GetConfigurationAsync(cancel: CancellationToken): Task<T>;
+    RequestRefresh(): void;
 }
 
 
@@ -86,10 +86,10 @@ export const ConfigurationManager_1: {
     new<T>(metadataAddress: string, configRetriever: IConfigurationRetriever_1<T>, docRetriever: IDocumentRetriever, lkgCacheOptions: LastKnownGoodConfigurationCacheOptions): ConfigurationManager_1<T>;
     new<T>(metadataAddress: string, configRetriever: IConfigurationRetriever_1<T>, docRetriever: IDocumentRetriever, configValidator: IConfigurationValidator_1<T>): ConfigurationManager_1<T>;
     new<T>(metadataAddress: string, configRetriever: IConfigurationRetriever_1<T>, docRetriever: IDocumentRetriever, configValidator: IConfigurationValidator_1<T>, lkgCacheOptions: LastKnownGoodConfigurationCacheOptions): ConfigurationManager_1<T>;
-    readonly defaultAutomaticRefreshInterval: TimeSpan;
-    readonly defaultRefreshInterval: TimeSpan;
-    readonly minimumAutomaticRefreshInterval: TimeSpan;
-    readonly minimumRefreshInterval: TimeSpan;
+    readonly DefaultAutomaticRefreshInterval: TimeSpan;
+    readonly DefaultRefreshInterval: TimeSpan;
+    readonly MinimumAutomaticRefreshInterval: TimeSpan;
+    readonly MinimumRefreshInterval: TimeSpan;
 };
 
 
@@ -101,8 +101,8 @@ export type ConfigurationManager_1<T> = ConfigurationManager_1$instance<T> & __C
 
 
 export interface ConfigurationValidationResult$instance {
-    errorMessage: string;
-    succeeded: boolean;
+    ErrorMessage: string;
+    Succeeded: boolean;
 }
 
 
@@ -114,7 +114,7 @@ export const ConfigurationValidationResult: {
 export type ConfigurationValidationResult = ConfigurationValidationResult$instance;
 
 export interface FileDocumentRetriever$instance {
-    getDocumentAsync(address: string, cancel: CancellationToken): Task<System_Internal.String>;
+    GetDocumentAsync(address: string, cancel: CancellationToken): Task<System_Internal.String>;
 }
 
 
@@ -133,18 +133,18 @@ export type FileDocumentRetriever = FileDocumentRetriever$instance & __FileDocum
 
 
 export interface HttpDocumentRetriever$instance {
-    requireHttps: boolean;
-    sendAdditionalHeaderData: boolean;
-    getDocumentAsync(address: string, cancel: CancellationToken): Task<System_Internal.String>;
+    RequireHttps: boolean;
+    SendAdditionalHeaderData: boolean;
+    GetDocumentAsync(address: string, cancel: CancellationToken): Task<System_Internal.String>;
 }
 
 
 export const HttpDocumentRetriever: {
     new(): HttpDocumentRetriever;
     new(httpClient: HttpClient): HttpDocumentRetriever;
-    readonly statusCode: string;
-    readonly responseContent: string;
-    defaultSendAdditionalHeaderData: boolean;
+    readonly StatusCode: string;
+    readonly ResponseContent: string;
+    DefaultSendAdditionalHeaderData: boolean;
 };
 
 
@@ -158,13 +158,13 @@ export type HttpDocumentRetriever = HttpDocumentRetriever$instance & __HttpDocum
 
 
 export interface HttpRequestData$instance {
-    body: byte[];
-    readonly clientCertificates: X509Certificate2Collection;
-    headers: IDictionary<System_Internal.String, IEnumerable<System_Internal.String>>;
-    method: string;
-    propertyBag: IDictionary<System_Internal.String, unknown>;
-    uri: Uri;
-    appendHeaders(headers: HttpHeaders): void;
+    Body: byte[];
+    readonly ClientCertificates: X509Certificate2Collection;
+    Headers: IDictionary<System_Internal.String, IEnumerable<System_Internal.String>>;
+    Method: string;
+    PropertyBag: IDictionary<System_Internal.String, unknown>;
+    Uri: Uri;
+    AppendHeaders(headers: HttpHeaders): void;
 }
 
 
@@ -176,10 +176,10 @@ export const HttpRequestData: {
 export type HttpRequestData = HttpRequestData$instance;
 
 export interface StaticConfigurationManager_1$instance<T> extends BaseConfigurationManager {
-    getBaseConfigurationAsync(cancel: CancellationToken): Task<BaseConfiguration>;
-    getBaseConfigurationAsync(cancel: CancellationToken): Task<BaseConfiguration>;
-    getConfigurationAsync(cancel: CancellationToken): Task<T>;
-    requestRefresh(): void;
+    GetBaseConfigurationAsync(cancel: CancellationToken): Task<BaseConfiguration>;
+    GetBaseConfigurationAsync(cancel: CancellationToken): Task<BaseConfiguration>;
+    GetConfigurationAsync(cancel: CancellationToken): Task<T>;
+    RequestRefresh(): void;
 }
 
 

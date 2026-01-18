@@ -12,12 +12,12 @@ import type { IReadOnlyDictionary } from "@tsonic/dotnet/System.Collections.Gene
 import type { Int32, String as ClrString, Void } from "@tsonic/dotnet/System.js";
 
 export interface IAuthenticationOperation$instance {
-    readonly telemetryTokenType: int;
-    readonly authorizationHeaderPrefix: string;
-    readonly keyId: string;
-    readonly accessTokenType: string;
-    formatResult(authenticationResult: AuthenticationResult): void;
-    getTokenRequestParams(): IReadOnlyDictionary<System_Internal.String, System_Internal.String>;
+    readonly TelemetryTokenType: int;
+    readonly AuthorizationHeaderPrefix: string;
+    readonly KeyId: string;
+    readonly AccessTokenType: string;
+    FormatResult(authenticationResult: AuthenticationResult): void;
+    GetTokenRequestParams(): IReadOnlyDictionary<System_Internal.String, System_Internal.String>;
 }
 
 

@@ -26,21 +26,21 @@ export interface JwtHeaderParameterNames$instance {
 
 export const JwtHeaderParameterNames: {
     new(): JwtHeaderParameterNames;
-    readonly alg: string;
-    readonly apu: string;
-    readonly apv: string;
-    readonly epk: string;
-    readonly cty: string;
-    readonly enc: string;
+    readonly Alg: string;
+    readonly Apu: string;
+    readonly Apv: string;
+    readonly Epk: string;
+    readonly Cty: string;
+    readonly Enc: string;
     readonly IV: string;
-    readonly jku: string;
-    readonly jwk: string;
-    readonly kid: string;
-    readonly typ: string;
-    readonly x5c: string;
-    readonly x5t: string;
-    readonly x5u: string;
-    readonly zip: string;
+    readonly Jku: string;
+    readonly Jwk: string;
+    readonly Kid: string;
+    readonly Typ: string;
+    readonly X5c: string;
+    readonly X5t: string;
+    readonly X5u: string;
+    readonly Zip: string;
 };
 
 
@@ -52,90 +52,90 @@ export interface JwtRegisteredClaimNames$instance {
 
 export const JwtRegisteredClaimNames: {
     new(): JwtRegisteredClaimNames;
-    readonly actort: string;
-    readonly acr: string;
-    readonly address: string;
-    readonly amr: string;
-    readonly aud: string;
-    readonly authTime: string;
-    readonly azp: string;
-    readonly birthdate: string;
-    readonly cHash: string;
-    readonly atHash: string;
-    readonly email: string;
-    readonly emailVerified: string;
-    readonly exp: string;
-    readonly gender: string;
-    readonly familyName: string;
-    readonly givenName: string;
-    readonly iat: string;
-    readonly iss: string;
-    readonly jti: string;
-    readonly locale: string;
-    readonly middleName: string;
-    readonly name: string;
-    readonly nameId: string;
-    readonly nickname: string;
-    readonly nonce: string;
-    readonly nbf: string;
-    readonly phoneNumber: string;
-    readonly phoneNumberVerified: string;
-    readonly picture: string;
-    readonly prn: string;
-    readonly preferredUsername: string;
-    readonly profile: string;
-    readonly sid: string;
-    readonly sub: string;
-    readonly typ: string;
-    readonly uniqueName: string;
-    readonly updatedAt: string;
-    readonly website: string;
-    readonly zoneInfo: string;
+    readonly Actort: string;
+    readonly Acr: string;
+    readonly Address: string;
+    readonly Amr: string;
+    readonly Aud: string;
+    readonly AuthTime: string;
+    readonly Azp: string;
+    readonly Birthdate: string;
+    readonly CHash: string;
+    readonly AtHash: string;
+    readonly Email: string;
+    readonly EmailVerified: string;
+    readonly Exp: string;
+    readonly Gender: string;
+    readonly FamilyName: string;
+    readonly GivenName: string;
+    readonly Iat: string;
+    readonly Iss: string;
+    readonly Jti: string;
+    readonly Locale: string;
+    readonly MiddleName: string;
+    readonly Name: string;
+    readonly NameId: string;
+    readonly Nickname: string;
+    readonly Nonce: string;
+    readonly Nbf: string;
+    readonly PhoneNumber: string;
+    readonly PhoneNumberVerified: string;
+    readonly Picture: string;
+    readonly Prn: string;
+    readonly PreferredUsername: string;
+    readonly Profile: string;
+    readonly Sid: string;
+    readonly Sub: string;
+    readonly Typ: string;
+    readonly UniqueName: string;
+    readonly UpdatedAt: string;
+    readonly Website: string;
+    readonly ZoneInfo: string;
 };
 
 
 export type JwtRegisteredClaimNames = JwtRegisteredClaimNames$instance;
 
 export interface JsonWebToken$instance extends SecurityToken {
-    readonly actor: string;
-    readonly alg: string;
-    readonly audiences: IEnumerable<System_Internal.String>;
-    readonly authenticationTag: string;
-    readonly azp: string;
-    readonly ciphertext: string;
-    readonly claims: IEnumerable<Claim>;
-    readonly cty: string;
-    readonly enc: string;
-    readonly encodedHeader: string;
-    readonly encodedPayload: string;
-    readonly encodedSignature: string;
-    readonly encodedToken: string;
-    readonly encryptedKey: string;
-    readonly id: string;
-    readonly initializationVector: string;
-    readonly innerToken: JsonWebToken;
-    readonly isEncrypted: boolean;
-    readonly isSigned: boolean;
-    readonly issuedAt: DateTime;
-    readonly issuer: string;
-    readonly kid: string;
-    readonly securityKey: SecurityKey;
-    signingKey: SecurityKey;
-    readonly subject: string | undefined;
-    readonly typ: string;
-    readonly validFrom: DateTime;
-    readonly validTo: DateTime;
-    readonly x5t: string;
-    readonly zip: string;
-    getClaim(key: string): Claim;
-    getHeaderValue<T>(key: string): T;
-    getPayloadValue<T>(key: string): T;
-    toString(): string | undefined;
-    tryGetClaim(key: string, value: Claim): boolean;
-    tryGetHeaderValue<T>(key: string, value: T): boolean;
-    tryGetPayloadValue<T>(key: string, value: T): boolean;
-    tryGetValue<T>(key: string, value: T): boolean;
-    unsafeToString(): string;
+    readonly Actor: string;
+    readonly Alg: string;
+    readonly Audiences: IEnumerable<System_Internal.String>;
+    readonly AuthenticationTag: string;
+    readonly Azp: string;
+    readonly Ciphertext: string;
+    readonly Claims: IEnumerable<Claim>;
+    readonly Cty: string;
+    readonly Enc: string;
+    readonly EncodedHeader: string;
+    readonly EncodedPayload: string;
+    readonly EncodedSignature: string;
+    readonly EncodedToken: string;
+    readonly EncryptedKey: string;
+    readonly Id: string;
+    readonly InitializationVector: string;
+    readonly InnerToken: JsonWebToken;
+    readonly IsEncrypted: boolean;
+    readonly IsSigned: boolean;
+    readonly IssuedAt: DateTime;
+    readonly Issuer: string;
+    readonly Kid: string;
+    readonly SecurityKey: SecurityKey;
+    SigningKey: SecurityKey;
+    readonly Subject: string | undefined;
+    readonly Typ: string;
+    readonly ValidFrom: DateTime;
+    readonly ValidTo: DateTime;
+    readonly X5t: string;
+    readonly Zip: string;
+    GetClaim(key: string): Claim;
+    GetHeaderValue<T>(key: string): T;
+    GetPayloadValue<T>(key: string): T;
+    ToString(): string | undefined;
+    TryGetClaim(key: string, value: Claim): boolean;
+    TryGetHeaderValue<T>(key: string, value: T): boolean;
+    TryGetPayloadValue<T>(key: string, value: T): boolean;
+    TryGetValue<T>(key: string, value: T): boolean;
+    UnsafeToString(): string;
 }
 
 
@@ -154,45 +154,45 @@ export type JsonWebToken = JsonWebToken$instance & __JsonWebToken$views;
 
 
 export interface JsonWebTokenHandler$instance extends TokenHandler {
-    readonly canValidateToken: boolean;
-    inboundClaimTypeMap: IDictionary<System_Internal.String, System_Internal.String>;
-    mapInboundClaims: boolean;
-    readonly tokenType: Type;
-    canReadToken(token: string): boolean;
-    createToken(payload: string): string;
-    createToken(payload: string, additionalHeaderClaims: IDictionary<System_Internal.String, unknown>): string;
-    createToken(payload: string, signingCredentials: SigningCredentials): string;
-    createToken(payload: string, signingCredentials: SigningCredentials, additionalHeaderClaims: IDictionary<System_Internal.String, unknown>): string;
-    createToken(tokenDescriptor: SecurityTokenDescriptor): string;
-    createToken(payload: string, encryptingCredentials: EncryptingCredentials): string;
-    createToken(payload: string, encryptingCredentials: EncryptingCredentials, additionalHeaderClaims: IDictionary<System_Internal.String, unknown>): string;
-    createToken(payload: string, signingCredentials: SigningCredentials, encryptingCredentials: EncryptingCredentials): string;
-    createToken(payload: string, signingCredentials: SigningCredentials, encryptingCredentials: EncryptingCredentials, additionalHeaderClaims: IDictionary<System_Internal.String, unknown>): string;
-    createToken(payload: string, encryptingCredentials: EncryptingCredentials, compressionAlgorithm: string): string;
-    createToken(payload: string, signingCredentials: SigningCredentials, encryptingCredentials: EncryptingCredentials, compressionAlgorithm: string): string;
-    createToken(payload: string, signingCredentials: SigningCredentials, encryptingCredentials: EncryptingCredentials, compressionAlgorithm: string, additionalHeaderClaims: IDictionary<System_Internal.String, unknown>, additionalInnerHeaderClaims: IDictionary<System_Internal.String, unknown>): string;
-    createToken(payload: string, signingCredentials: SigningCredentials, encryptingCredentials: EncryptingCredentials, compressionAlgorithm: string, additionalHeaderClaims: IDictionary<System_Internal.String, unknown>): string;
-    decryptToken(jwtToken: JsonWebToken, validationParameters: TokenValidationParameters): string;
-    encryptToken(innerJwt: string, encryptingCredentials: EncryptingCredentials): string;
-    encryptToken(innerJwt: string, encryptingCredentials: EncryptingCredentials, additionalHeaderClaims: IDictionary<System_Internal.String, unknown>): string;
-    encryptToken(innerJwt: string, encryptingCredentials: EncryptingCredentials, algorithm: string): string;
-    encryptToken(innerJwt: string, encryptingCredentials: EncryptingCredentials, algorithm: string, additionalHeaderClaims: IDictionary<System_Internal.String, unknown>): string;
-    readJsonWebToken(token: string): JsonWebToken;
-    readToken(token: string): SecurityToken;
-    validateToken(token: string, validationParameters: TokenValidationParameters): TokenValidationResult;
-    validateTokenAsync(token: string, validationParameters: TokenValidationParameters): Task<TokenValidationResult>;
-    validateTokenAsync(token: SecurityToken, validationParameters: TokenValidationParameters): Task<TokenValidationResult>;
-    validateTokenAsync(token: string, validationParameters: TokenValidationParameters): Task<TokenValidationResult>;
-    validateTokenAsync(token: SecurityToken, validationParameters: TokenValidationParameters): Task<TokenValidationResult>;
+    readonly CanValidateToken: boolean;
+    InboundClaimTypeMap: IDictionary<System_Internal.String, System_Internal.String>;
+    MapInboundClaims: boolean;
+    readonly TokenType: Type;
+    CanReadToken(token: string): boolean;
+    CreateToken(payload: string): string;
+    CreateToken(payload: string, additionalHeaderClaims: IDictionary<System_Internal.String, unknown>): string;
+    CreateToken(payload: string, signingCredentials: SigningCredentials): string;
+    CreateToken(payload: string, signingCredentials: SigningCredentials, additionalHeaderClaims: IDictionary<System_Internal.String, unknown>): string;
+    CreateToken(tokenDescriptor: SecurityTokenDescriptor): string;
+    CreateToken(payload: string, encryptingCredentials: EncryptingCredentials): string;
+    CreateToken(payload: string, encryptingCredentials: EncryptingCredentials, additionalHeaderClaims: IDictionary<System_Internal.String, unknown>): string;
+    CreateToken(payload: string, signingCredentials: SigningCredentials, encryptingCredentials: EncryptingCredentials): string;
+    CreateToken(payload: string, signingCredentials: SigningCredentials, encryptingCredentials: EncryptingCredentials, additionalHeaderClaims: IDictionary<System_Internal.String, unknown>): string;
+    CreateToken(payload: string, encryptingCredentials: EncryptingCredentials, compressionAlgorithm: string): string;
+    CreateToken(payload: string, signingCredentials: SigningCredentials, encryptingCredentials: EncryptingCredentials, compressionAlgorithm: string): string;
+    CreateToken(payload: string, signingCredentials: SigningCredentials, encryptingCredentials: EncryptingCredentials, compressionAlgorithm: string, additionalHeaderClaims: IDictionary<System_Internal.String, unknown>, additionalInnerHeaderClaims: IDictionary<System_Internal.String, unknown>): string;
+    CreateToken(payload: string, signingCredentials: SigningCredentials, encryptingCredentials: EncryptingCredentials, compressionAlgorithm: string, additionalHeaderClaims: IDictionary<System_Internal.String, unknown>): string;
+    DecryptToken(jwtToken: JsonWebToken, validationParameters: TokenValidationParameters): string;
+    EncryptToken(innerJwt: string, encryptingCredentials: EncryptingCredentials): string;
+    EncryptToken(innerJwt: string, encryptingCredentials: EncryptingCredentials, additionalHeaderClaims: IDictionary<System_Internal.String, unknown>): string;
+    EncryptToken(innerJwt: string, encryptingCredentials: EncryptingCredentials, algorithm: string): string;
+    EncryptToken(innerJwt: string, encryptingCredentials: EncryptingCredentials, algorithm: string, additionalHeaderClaims: IDictionary<System_Internal.String, unknown>): string;
+    ReadJsonWebToken(token: string): JsonWebToken;
+    ReadToken(token: string): SecurityToken;
+    ValidateToken(token: string, validationParameters: TokenValidationParameters): TokenValidationResult;
+    ValidateTokenAsync(token: string, validationParameters: TokenValidationParameters): Task<TokenValidationResult>;
+    ValidateTokenAsync(token: SecurityToken, validationParameters: TokenValidationParameters): Task<TokenValidationResult>;
+    ValidateTokenAsync(token: string, validationParameters: TokenValidationParameters): Task<TokenValidationResult>;
+    ValidateTokenAsync(token: SecurityToken, validationParameters: TokenValidationParameters): Task<TokenValidationResult>;
 }
 
 
 export const JsonWebTokenHandler: {
     new(): JsonWebTokenHandler;
-    defaultInboundClaimTypeMap: IDictionary<System_Internal.String, System_Internal.String>;
-    defaultMapInboundClaims: boolean;
-    readonly base64UrlEncodedUnsignedJWSHeader: string;
-    shortClaimTypeProperty: string;
+    DefaultInboundClaimTypeMap: IDictionary<System_Internal.String, System_Internal.String>;
+    DefaultMapInboundClaims: boolean;
+    readonly Base64UrlEncodedUnsignedJWSHeader: string;
+    ShortClaimTypeProperty: string;
 };
 
 
@@ -204,37 +204,37 @@ export interface JwtTokenUtilities$instance {
 
 export const JwtTokenUtilities: {
     new(): JwtTokenUtilities;
-    regexJws: Regex;
-    regexJwe: Regex;
-    createEncodedSignature(input: string, signingCredentials: SigningCredentials, cacheProvider: boolean): string;
-    createEncodedSignature(input: string, signingCredentials: SigningCredentials): string;
-    generateKeyBytes(sizeInBits: int): byte[];
-    getAllDecryptionKeys(validationParameters: TokenValidationParameters): IEnumerable<SecurityKey>;
+    RegexJws: Regex;
+    RegexJwe: Regex;
+    CreateEncodedSignature(input: string, signingCredentials: SigningCredentials, cacheProvider: boolean): string;
+    CreateEncodedSignature(input: string, signingCredentials: SigningCredentials): string;
+    GenerateKeyBytes(sizeInBits: int): byte[];
+    GetAllDecryptionKeys(validationParameters: TokenValidationParameters): IEnumerable<SecurityKey>;
 };
 
 
 export type JwtTokenUtilities = JwtTokenUtilities$instance;
 
 export abstract class JsonClaimValueTypes$instance {
-    static readonly json: string;
-    static readonly jsonArray: string;
-    static readonly jsonNull: string;
+    static readonly Json: string;
+    static readonly JsonArray: string;
+    static readonly JsonNull: string;
 }
 
 
 export type JsonClaimValueTypes = JsonClaimValueTypes$instance;
 
 export abstract class JwtConstants$instance {
-    static readonly headerType: string;
-    static readonly headerTypeAlt: string;
-    static readonly tokenType: string;
-    static readonly tokenTypeAlt: string;
-    static readonly jsonCompactSerializationRegex: string;
-    static readonly jweCompactSerializationRegex: string;
-    static readonly jweSegmentCount: int;
-    static readonly jwsSegmentCount: int;
-    static readonly maxJwtSegmentCount: int;
-    static readonly directKeyUseAlg: string;
+    static readonly HeaderType: string;
+    static readonly HeaderTypeAlt: string;
+    static readonly TokenType: string;
+    static readonly TokenTypeAlt: string;
+    static readonly JsonCompactSerializationRegex: string;
+    static readonly JweCompactSerializationRegex: string;
+    static readonly JweSegmentCount: int;
+    static readonly JwsSegmentCount: int;
+    static readonly MaxJwtSegmentCount: int;
+    static readonly DirectKeyUseAlg: string;
 }
 
 

@@ -18,13 +18,13 @@ import type { HistoryRepository, HistoryRepositoryDependencies, IHistoryReposito
 import type { IRelationalCommand, RelationalCommandParameterObject } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
 
 export interface SqlServerHistoryRepository$instance extends HistoryRepository {
-    readonly lockReleaseBehavior: LockReleaseBehavior;
-    acquireDatabaseLock(): IMigrationsDatabaseLock;
-    acquireDatabaseLockAsync(cancellationToken?: CancellationToken): Task<IMigrationsDatabaseLock>;
-    getBeginIfExistsScript(migrationId: string): string;
-    getBeginIfNotExistsScript(migrationId: string): string;
-    getCreateIfNotExistsScript(): string;
-    getEndIfScript(): string;
+    readonly LockReleaseBehavior: LockReleaseBehavior;
+    AcquireDatabaseLock(): IMigrationsDatabaseLock;
+    AcquireDatabaseLockAsync(cancellationToken?: CancellationToken): Task<IMigrationsDatabaseLock>;
+    GetBeginIfExistsScript(migrationId: string): string;
+    GetBeginIfNotExistsScript(migrationId: string): string;
+    GetCreateIfNotExistsScript(): string;
+    GetEndIfScript(): string;
 }
 
 
@@ -36,9 +36,9 @@ export const SqlServerHistoryRepository: {
 export type SqlServerHistoryRepository = SqlServerHistoryRepository$instance;
 
 export interface SqlServerMigrationDatabaseLock$instance {
-    readonly historyRepository: IHistoryRepository;
-    dispose(): void;
-    disposeAsync(): ValueTask;
+    readonly HistoryRepository: IHistoryRepository;
+    Dispose(): void;
+    DisposeAsync(): ValueTask;
 }
 
 
@@ -50,11 +50,11 @@ export const SqlServerMigrationDatabaseLock: {
 export type SqlServerMigrationDatabaseLock = SqlServerMigrationDatabaseLock$instance;
 
 export interface SqlServerMigrationsAnnotationProvider$instance extends MigrationsAnnotationProvider {
-    forRemove(model: IRelationalModel): IEnumerable<IAnnotation>;
-    forRemove(table: ITable): IEnumerable<IAnnotation>;
-    forRemove(column: IColumn): IEnumerable<IAnnotation>;
-    forRename(table: ITable): IEnumerable<IAnnotation>;
-    forRename(column: IColumn): IEnumerable<IAnnotation>;
+    ForRemove(model: IRelationalModel): IEnumerable<IAnnotation>;
+    ForRemove(table: ITable): IEnumerable<IAnnotation>;
+    ForRemove(column: IColumn): IEnumerable<IAnnotation>;
+    ForRename(table: ITable): IEnumerable<IAnnotation>;
+    ForRename(column: IColumn): IEnumerable<IAnnotation>;
 }
 
 

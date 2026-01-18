@@ -12,7 +12,7 @@ import type { Configuration, ConfigurationLockCollection, ConfigurationSection, 
 import type { Boolean as ClrBoolean, Int32, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
 
 export interface SystemDrawingSection$instance extends ConfigurationSection {
-    bitmapSuffix: string;
+    BitmapSuffix: string;
 }
 
 

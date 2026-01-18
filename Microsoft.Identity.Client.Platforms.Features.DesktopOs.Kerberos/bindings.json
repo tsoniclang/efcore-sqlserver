@@ -1,23 +1,36 @@
 {
   "namespace": "Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos",
+  "contributingAssemblies": [
+    "Microsoft.Identity.Client"
+  ],
   "types": [
     {
       "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos.Credential",
       "clrName": "Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos.Credential",
-      "tsEmitName": "Credential",
       "assemblyName": "Microsoft.Identity.Client",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos.Credential::Current():Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos.Credential",
           "clrName": "Current",
-          "tsEmitName": "current",
           "metadataToken": 100664439,
           "canonicalSignature": "():Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos.Credential",
           "normalizedSignature": "Current|():Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos.Credential|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos.Credential",
           "declaringAssemblyName": "Microsoft.Identity.Client",
           "isExtensionMethod": false
@@ -26,19 +39,7 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "current",
-          "isStatic": true,
-          "tsSignatureId": "Current|():Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos.Credential|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos.Credential",
-            "declaringAssemblyName": "Microsoft.Identity.Client",
-            "metadataToken": 100664439
-          }
-        }
-      ]
+      "constructors": []
     }
   ]
 }

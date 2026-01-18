@@ -13,43 +13,43 @@ import * as System_Lib from "@tsonic/dotnet/System.js";
 import type { Boolean as ClrBoolean, DateTimeOffset, Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Nullable, Object as ClrObject, String as ClrString, Type } from "@tsonic/dotnet/System.js";
 
 export enum CloudEventDataFormat {
-    binary = 0,
-    json = 1
+    Binary = 0,
+    Json = 1
 }
 
 
 export interface CloudEvent$instance {
-    get data(): BinaryData | undefined;
-    set data(value: BinaryData);
-    get dataContentType(): string | undefined;
-    set dataContentType(value: string);
-    get dataSchema(): string | undefined;
-    set dataSchema(value: string);
-    readonly extensionAttributes: IDictionary<System_Internal.String, unknown>;
-    id: string;
-    source: string;
-    get subject(): string | undefined;
-    set subject(value: string);
-    time: Nullable<DateTimeOffset>;
-    type: string;
+    get Data(): BinaryData | undefined;
+    set Data(value: BinaryData);
+    get DataContentType(): string | undefined;
+    set DataContentType(value: string);
+    get DataSchema(): string | undefined;
+    set DataSchema(value: string);
+    readonly ExtensionAttributes: IDictionary<System_Internal.String, unknown>;
+    Id: string;
+    Source: string;
+    get Subject(): string | undefined;
+    set Subject(value: string);
+    Time: Nullable<DateTimeOffset>;
+    Type: string;
 }
 
 
 export const CloudEvent: {
     new(source: string, type: string, jsonSerializableData: unknown, dataSerializationType: Type): CloudEvent;
     new(source: string, type: string, data: BinaryData, dataContentType: string, dataFormat: CloudEventDataFormat): CloudEvent;
-    parse(json: BinaryData, skipValidation?: boolean): CloudEvent | undefined;
-    parseMany(json: BinaryData, skipValidation?: boolean): CloudEvent[];
+    Parse(json: BinaryData, skipValidation?: boolean): CloudEvent | undefined;
+    ParseMany(json: BinaryData, skipValidation?: boolean): CloudEvent[];
 };
 
 
 export type CloudEvent = CloudEvent$instance;
 
 export interface MessageContent$instance {
-    contentType: Nullable<ContentType>;
-    get data(): BinaryData | undefined;
-    set data(value: BinaryData);
-    readonly isReadOnly: boolean;
+    ContentType: Nullable<ContentType>;
+    get Data(): BinaryData | undefined;
+    set Data(value: BinaryData);
+    readonly IsReadOnly: boolean;
 }
 
 

@@ -16,7 +16,8 @@ set -e
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 PROJECT_DIR="$(cd "$SCRIPT_DIR/../.." && pwd)"
 TSBINDGEN_DIR="$PROJECT_DIR/../tsbindgen"
-DOTNET_LIB="$PROJECT_DIR/../dotnet"
+DOTNET_MAJOR="${DOTNET_MAJOR:-10}"
+DOTNET_LIB="$PROJECT_DIR/../dotnet/versions/$DOTNET_MAJOR"
 EXT_LIB="$PROJECT_DIR/../microsoft-extensions"
 EFCORE_LIB="$PROJECT_DIR/../efcore"
 REF_DIR="$PROJECT_DIR/__build/ref"
@@ -37,7 +38,7 @@ echo "  EF Core Library:    $EFCORE_LIB (external reference)"
 echo "  tsbindgen:          $TSBINDGEN_DIR"
 echo "  Ref project:        $REF_DIR"
 echo "  Output:             $PROJECT_DIR"
-echo "  Naming:             JS (camelCase)"
+echo "  Naming:             CLR (no transforms)"
 echo ""
 
 if [ ! -d "$NETCORE_RUNTIME_PATH" ]; then
@@ -104,8 +105,7 @@ dotnet run --project src/tsbindgen/tsbindgen.csproj --no-build -c Release -- \
     --allow-constructor-constraint-loss \
     --lib "$DOTNET_LIB" \
     --lib "$EXT_LIB" \
-    --lib "$EFCORE_LIB" \
-    --naming js
+    --lib "$EFCORE_LIB"
 
 echo ""
 echo "================================================================"

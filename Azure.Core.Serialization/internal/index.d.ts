@@ -18,23 +18,23 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export enum JsonPropertyNames {
-    useExact = 0,
-    camelCase = 1
+    UseExact = 0,
+    CamelCase = 1
 }
 
 
 export interface IMemberNameConverter$instance {
-    convertMemberName(member: MemberInfo): string | undefined;
+    ConvertMemberName(member: MemberInfo): string | undefined;
 }
 
 
 export type IMemberNameConverter = IMemberNameConverter$instance;
 
 export interface DynamicData$instance {
-    dispose(): void;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    toString(): string;
+    Dispose(): void;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    ToString(): string;
 }
 
 
@@ -46,20 +46,20 @@ export const DynamicData: {
 export type DynamicData = DynamicData$instance;
 
 export interface JsonObjectSerializer$instance extends ObjectSerializer {
-    deserialize(stream: Stream, returnType: Type, cancellationToken: CancellationToken): unknown | undefined;
-    deserializeAsync(stream: Stream, returnType: Type, cancellationToken: CancellationToken): ValueTask<unknown>;
-    serialize(stream: Stream, value: unknown, inputType: Type, cancellationToken: CancellationToken): void;
-    serialize(value: unknown, inputType?: Type, cancellationToken?: CancellationToken): BinaryData;
-    serializeAsync(stream: Stream, value: unknown, inputType: Type, cancellationToken: CancellationToken): ValueTask;
-    serializeAsync(value: unknown, inputType?: Type, cancellationToken?: CancellationToken): ValueTask<BinaryData>;
-    serializeAsync(value: unknown, inputType?: Type, cancellationToken?: CancellationToken): ValueTask<BinaryData>;
+    Deserialize(stream: Stream, returnType: Type, cancellationToken: CancellationToken): unknown | undefined;
+    DeserializeAsync(stream: Stream, returnType: Type, cancellationToken: CancellationToken): ValueTask<unknown>;
+    Serialize(stream: Stream, value: unknown, inputType: Type, cancellationToken: CancellationToken): void;
+    Serialize(value: unknown, inputType?: Type, cancellationToken?: CancellationToken): BinaryData;
+    SerializeAsync(stream: Stream, value: unknown, inputType: Type, cancellationToken: CancellationToken): ValueTask;
+    SerializeAsync(value: unknown, inputType?: Type, cancellationToken?: CancellationToken): ValueTask<BinaryData>;
+    SerializeAsync(value: unknown, inputType?: Type, cancellationToken?: CancellationToken): ValueTask<BinaryData>;
 }
 
 
 export const JsonObjectSerializer: {
     new(): JsonObjectSerializer;
     new(options: JsonSerializerOptions): JsonObjectSerializer;
-    readonly default: JsonObjectSerializer;
+    readonly Default: JsonObjectSerializer;
 };
 
 
@@ -73,12 +73,12 @@ export type JsonObjectSerializer = JsonObjectSerializer$instance & __JsonObjectS
 
 
 export interface ObjectSerializer$instance {
-    deserialize(stream: Stream, returnType: Type, cancellationToken: CancellationToken): unknown | undefined;
-    deserializeAsync(stream: Stream, returnType: Type, cancellationToken: CancellationToken): ValueTask<unknown>;
-    serialize(stream: Stream, value: unknown, inputType: Type, cancellationToken: CancellationToken): void;
-    serialize(value: unknown, inputType?: Type, cancellationToken?: CancellationToken): BinaryData;
-    serializeAsync(stream: Stream, value: unknown, inputType: Type, cancellationToken: CancellationToken): ValueTask;
-    serializeAsync(value: unknown, inputType?: Type, cancellationToken?: CancellationToken): ValueTask<BinaryData>;
+    Deserialize(stream: Stream, returnType: Type, cancellationToken: CancellationToken): unknown | undefined;
+    DeserializeAsync(stream: Stream, returnType: Type, cancellationToken: CancellationToken): ValueTask<unknown>;
+    Serialize(stream: Stream, value: unknown, inputType: Type, cancellationToken: CancellationToken): void;
+    Serialize(value: unknown, inputType?: Type, cancellationToken?: CancellationToken): BinaryData;
+    SerializeAsync(stream: Stream, value: unknown, inputType: Type, cancellationToken: CancellationToken): ValueTask;
+    SerializeAsync(value: unknown, inputType?: Type, cancellationToken?: CancellationToken): ValueTask<BinaryData>;
 }
 
 

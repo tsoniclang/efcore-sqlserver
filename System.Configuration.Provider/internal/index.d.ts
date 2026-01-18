@@ -15,9 +15,9 @@ import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Ru
 import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization.js";
 
 export interface ProviderBase$instance {
-    readonly description: string;
-    readonly name: string;
-    initialize(name: string, config: NameValueCollection): void;
+    readonly Description: string;
+    readonly Name: string;
+    Initialize(name: string, config: NameValueCollection): void;
 }
 
 
@@ -28,16 +28,16 @@ export const ProviderBase: {
 export type ProviderBase = ProviderBase$instance;
 
 export interface ProviderCollection$instance {
-    readonly count: int;
-    readonly isSynchronized: boolean;
-    readonly item: ProtectedConfigurationProvider | ProviderBase;
-    readonly syncRoot: unknown;
-    add(provider: ProviderBase): void;
-    clear(): void;
-    copyTo(array: ProviderBase[], index: int): void;
-    getEnumerator(): IEnumerator;
-    remove(name: string): void;
-    setReadOnly(): void;
+    readonly Count: int;
+    readonly IsSynchronized: boolean;
+    readonly Item: ProviderBase | SettingsProvider;
+    readonly SyncRoot: unknown;
+    Add(provider: ProviderBase): void;
+    Clear(): void;
+    CopyTo(array: ProviderBase[], index: int): void;
+    GetEnumerator(): IEnumerator;
+    Remove(name: string): void;
+    SetReadOnly(): void;
 }
 
 

@@ -18,7 +18,7 @@ import type { DatabaseModel } from "@tsonic/efcore/Microsoft.EntityFrameworkCore
 import type { IRelationalTypeMappingSource } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
 
 export interface SqlServerCodeGenerator$instance extends ProviderCodeGenerator {
-    generateUseProvider(connectionString: string, providerOptions: MethodCallCodeFragment): MethodCallCodeFragment;
+    GenerateUseProvider(connectionString: string, providerOptions: MethodCallCodeFragment): MethodCallCodeFragment;
 }
 
 
@@ -30,8 +30,8 @@ export const SqlServerCodeGenerator: {
 export type SqlServerCodeGenerator = SqlServerCodeGenerator$instance;
 
 export interface SqlServerDatabaseModelFactory$instance extends DatabaseModelFactory {
-    create(connectionString: string, options: DatabaseModelFactoryOptions): DatabaseModel;
-    create(connection: DbConnection, options: DatabaseModelFactoryOptions): DatabaseModel;
+    Create(connectionString: string, options: DatabaseModelFactoryOptions): DatabaseModel;
+    Create(connection: DbConnection, options: DatabaseModelFactoryOptions): DatabaseModel;
 }
 
 
@@ -43,9 +43,9 @@ export const SqlServerDatabaseModelFactory: {
 export type SqlServerDatabaseModelFactory = SqlServerDatabaseModelFactory$instance;
 
 export abstract class SqlDataReaderExtension$instance {
-    static getFieldValue<T>(record: DbDataRecord, name: string): T;
-    static getValueOrDefault<T>(reader: DbDataReader, name: string): T | undefined;
-    static getValueOrDefault<T>(record: DbDataRecord, name: string): T | undefined;
+    static GetFieldValue<T>(record: DbDataRecord, name: string): T;
+    static GetValueOrDefault<T>(reader: DbDataReader, name: string): T | undefined;
+    static GetValueOrDefault<T>(record: DbDataRecord, name: string): T | undefined;
 }
 
 
