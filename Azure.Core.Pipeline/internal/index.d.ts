@@ -6,18 +6,26 @@
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 // Import types from other namespaces
-import type { ClientOptions, DelayStrategy, HttpMessage, Request, RequestFailedDetailsParser, ResponseClassifier, TokenCredential } from "../../Azure.Core/internal/index.js";
+import type { ClientOptions, DelayStrategy, HttpMessage, Request, RequestFailedDetailsParser, ResponseClassifier, TokenCredential, TokenRequestContext } from "../../Azure.Core/internal/index.js";
 import type { RequestContext, Response } from "../../Azure/internal/index.js";
 import type { IDictionary, IEnumerable, IList } from "@tsonic/dotnet/System.Collections.Generic.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Func, IDisposable, Int32, Object as ClrObject, ReadOnlyMemory, String as ClrString, Void } from "@tsonic/dotnet/System.js";
+import type { Boolean as ClrBoolean, Exception, Func, IDisposable, Int32, Object as ClrObject, ReadOnlyMemory, String as ClrString, Void } from "@tsonic/dotnet/System.js";
 import type { HttpClient, HttpMessageHandler } from "@tsonic/dotnet/System.Net.Http.js";
 import type { SslPolicyErrors } from "@tsonic/dotnet/System.Net.Security.js";
 import type { X509Certificate2, X509Chain } from "@tsonic/dotnet/System.Security.Cryptography.X509Certificates.js";
 import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
-export interface BearerTokenAuthenticationPolicy$instance extends HttpPipelinePolicy {
+export abstract class BearerTokenAuthenticationPolicy$protected {
+    protected AuthorizeRequest(message: HttpMessage): void;
+    protected AuthorizeRequestAsync(message: HttpMessage): ValueTask;
+    protected AuthorizeRequestOnChallenge(message: HttpMessage): boolean;
+    protected AuthorizeRequestOnChallengeAsync(message: HttpMessage): ValueTask<System_Internal.Boolean>;
+}
+
+
+export interface BearerTokenAuthenticationPolicy$instance extends BearerTokenAuthenticationPolicy$protected, HttpPipelinePolicy {
     Process(message: HttpMessage, pipeline: ReadOnlyMemory<HttpPipelinePolicy>): void;
     ProcessAsync(message: HttpMessage, pipeline: ReadOnlyMemory<HttpPipelinePolicy>): ValueTask;
 }
@@ -106,6 +114,9 @@ export interface HttpPipelinePolicy$instance {
 
 
 export const HttpPipelinePolicy: {
+    new(): HttpPipelinePolicy;
+    ProcessNext(message: HttpMessage, pipeline: ReadOnlyMemory<HttpPipelinePolicy>): void;
+    ProcessNextAsync(message: HttpMessage, pipeline: ReadOnlyMemory<HttpPipelinePolicy>): ValueTask;
 };
 
 
@@ -122,6 +133,7 @@ export interface HttpPipelineSynchronousPolicy$instance extends HttpPipelinePoli
 
 
 export const HttpPipelineSynchronousPolicy: {
+    new(): HttpPipelineSynchronousPolicy;
 };
 
 
@@ -135,6 +147,7 @@ export interface HttpPipelineTransport$instance {
 
 
 export const HttpPipelineTransport: {
+    new(): HttpPipelineTransport;
 };
 
 
@@ -169,7 +182,17 @@ export const RedirectPolicy: {
 
 export type RedirectPolicy = RedirectPolicy$instance;
 
-export interface RetryPolicy$instance extends HttpPipelinePolicy {
+export abstract class RetryPolicy$protected {
+    protected OnRequestSent(message: HttpMessage): void;
+    protected OnRequestSentAsync(message: HttpMessage): ValueTask;
+    protected OnSendingRequest(message: HttpMessage): void;
+    protected OnSendingRequestAsync(message: HttpMessage): ValueTask;
+    protected ShouldRetry(message: HttpMessage, exception: Exception): boolean;
+    protected ShouldRetryAsync(message: HttpMessage, exception: Exception): ValueTask<System_Internal.Boolean>;
+}
+
+
+export interface RetryPolicy$instance extends RetryPolicy$protected, HttpPipelinePolicy {
     Process(message: HttpMessage, pipeline: ReadOnlyMemory<HttpPipelinePolicy>): void;
     ProcessAsync(message: HttpMessage, pipeline: ReadOnlyMemory<HttpPipelinePolicy>): ValueTask;
 }

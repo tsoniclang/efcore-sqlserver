@@ -18,6 +18,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Diagnostics.EventData",
+        "clrName": "Microsoft.EntityFrameworkCore.Diagnostics.EventData"
+      },
       "methods": [],
       "properties": [
         {
@@ -35,6 +39,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.ConflictingValueGenerationStrategiesEventData",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         },
@@ -53,6 +58,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.ConflictingValueGenerationStrategiesEventData",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         },
@@ -71,6 +77,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.ConflictingValueGenerationStrategiesEventData",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }
@@ -85,6 +92,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase,System.Func_3[[Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.EntityFrameworkCore.Diagnostics.EventData,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.EntityFrameworkCore.Metadata.SqlServerValueGenerationStrategy,System.String,Microsoft.EntityFrameworkCore.Metadata.IReadOnlyProperty):void|static=false",
           "isStatic": false,
           "parameterCount": 5,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.ConflictingValueGenerationStrategiesEventData",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }
@@ -101,6 +109,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [],
       "fields": [
@@ -112,6 +124,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         },
@@ -123,6 +136,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         },
@@ -134,6 +148,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         },
@@ -145,6 +160,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         },
@@ -156,6 +172,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         },
@@ -167,6 +184,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         },
@@ -178,6 +196,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         },
@@ -189,6 +208,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         },
@@ -200,6 +220,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         },
@@ -211,6 +232,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         },
@@ -222,6 +244,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         },
@@ -233,6 +256,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         },
@@ -244,6 +268,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         },
@@ -255,6 +280,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         },
@@ -266,6 +292,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         },
@@ -277,6 +304,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         },
@@ -288,6 +316,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         },
@@ -299,6 +328,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         },
@@ -310,6 +340,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         },
@@ -321,6 +352,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         },
@@ -332,6 +364,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         },
@@ -343,6 +376,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         },
@@ -354,6 +388,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.SqlServerEventId",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }

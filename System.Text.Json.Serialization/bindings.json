@@ -16,6 +16,13 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Text.Json:System.Text.Json.Serialization.JsonConverter\u00601",
+        "clrName": "System.Text.Json.Serialization.JsonConverter\u00601",
+        "typeArguments": [
+          "BinaryData"
+        ]
+      },
       "methods": [
         {
           "stableId": "System.Memory.Data:System.Text.Json.Serialization.BinaryDataJsonConverter::Read(System.Text.Json.Utf8JsonReader\u0026,System.Type,System.Text.Json.JsonSerializerOptions):System.BinaryData",
@@ -32,6 +39,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Text.Json.Serialization.BinaryDataJsonConverter",
           "declaringAssemblyName": "System.Memory.Data",
           "isExtensionMethod": false,
@@ -57,6 +65,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Text.Json.Serialization.BinaryDataJsonConverter",
           "declaringAssemblyName": "System.Memory.Data",
           "isExtensionMethod": false
@@ -73,6 +82,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Text.Json.Serialization.BinaryDataJsonConverter",
           "declaringAssemblyName": "System.Memory.Data"
         }

@@ -18,6 +18,19 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilderBase\u00601",
+        "clrName": "Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilderBase\u00601",
+        "typeArguments": [
+          "AzureSqlDbContextOptionsBuilder"
+        ]
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Infrastructure.IRelationalDbContextOptionsBuilderInfrastructure",
+          "clrName": "Microsoft.EntityFrameworkCore.Infrastructure.IRelationalDbContextOptionsBuilderInfrastructure"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder::EnableRetryOnFailure():Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder",
@@ -34,6 +47,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -53,6 +67,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -72,6 +87,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -91,6 +107,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -110,6 +127,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -126,6 +144,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.AzureSqlDbContextOptionsBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }
@@ -142,6 +161,19 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilderBase\u00601",
+        "clrName": "Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilderBase\u00601",
+        "typeArguments": [
+          "AzureSynapseDbContextOptionsBuilder"
+        ]
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Infrastructure.IRelationalDbContextOptionsBuilderInfrastructure",
+          "clrName": "Microsoft.EntityFrameworkCore.Infrastructure.IRelationalDbContextOptionsBuilderInfrastructure"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder::EnableRetryOnFailure():Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder",
@@ -158,6 +190,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -177,6 +210,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -196,6 +230,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -215,6 +250,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -234,6 +270,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -250,6 +287,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.AzureSynapseDbContextOptionsBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }
@@ -266,6 +304,19 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilderBase\u00601",
+        "clrName": "Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilderBase\u00601",
+        "typeArguments": [
+          "SqlEngineDbContextOptionsBuilder"
+        ]
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Infrastructure.IRelationalDbContextOptionsBuilderInfrastructure",
+          "clrName": "Microsoft.EntityFrameworkCore.Infrastructure.IRelationalDbContextOptionsBuilderInfrastructure"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilder::EnableRetryOnFailure():Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilder",
@@ -282,6 +333,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -301,6 +353,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -320,6 +373,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -339,6 +393,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -358,6 +413,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -374,6 +430,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }
@@ -390,11 +447,40 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 1,
+      "baseType": {
+        "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Infrastructure.RelationalDbContextOptionsBuilder\u00602",
+        "clrName": "Microsoft.EntityFrameworkCore.Infrastructure.RelationalDbContextOptionsBuilder\u00602",
+        "typeArguments": [
+          "TSelf",
+          "SqlServerOptionsExtension"
+        ]
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Infrastructure.IRelationalDbContextOptionsBuilderInfrastructure",
+          "clrName": "Microsoft.EntityFrameworkCore.Infrastructure.IRelationalDbContextOptionsBuilderInfrastructure"
+        }
+      ],
+      "typeParameters": [
+        "TSelf"
+      ],
       "methods": [],
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilderBase\u00601::.ctor(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder):void",
+          "metadataToken": 100664323,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilderBase\u00601",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder",
@@ -407,6 +493,19 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilderBase\u00601",
+        "clrName": "Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilderBase\u00601",
+        "typeArguments": [
+          "SqlServerDbContextOptionsBuilder"
+        ]
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Infrastructure.IRelationalDbContextOptionsBuilderInfrastructure",
+          "clrName": "Microsoft.EntityFrameworkCore.Infrastructure.IRelationalDbContextOptionsBuilderInfrastructure"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder::EnableRetryOnFailure():Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder",
@@ -423,6 +522,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -442,6 +542,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -461,6 +562,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -480,6 +582,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -499,6 +602,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -518,6 +622,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -534,6 +639,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }

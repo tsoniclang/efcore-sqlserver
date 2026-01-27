@@ -7,7 +7,7 @@ import * as Internal from './Microsoft.EntityFrameworkCore.SqlServer.Design.Inte
 
 // Cross-namespace type imports for constraints
 import type { IDictionary, IReadOnlyList } from '@tsonic/dotnet/System.Collections.Generic.js';
-import type { Object as ClrObject, String as ClrString, Void } from '@tsonic/dotnet/System.js';
+import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString, Void } from '@tsonic/dotnet/System.js';
 import type { CSharpRuntimeAnnotationCodeGeneratorDependencies, CSharpRuntimeAnnotationCodeGeneratorParameters, RelationalCSharpRuntimeAnnotationCodeGenerator, RelationalCSharpRuntimeAnnotationCodeGeneratorDependencies } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Design.Internal.js';
 import type { AnnotationCodeGenerator, AnnotationCodeGeneratorDependencies, IAnnotationCodeGenerator, IDesignTimeServices, MethodCallCodeFragment } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Design.js';
 import type { IAnnotation } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure.js';

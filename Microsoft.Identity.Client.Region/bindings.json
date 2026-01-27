@@ -15,6 +15,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -26,6 +48,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Region.RegionOutcome",
           "declaringAssemblyName": "Microsoft.Identity.Client"
         },
@@ -37,6 +60,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Region.RegionOutcome",
           "declaringAssemblyName": "Microsoft.Identity.Client"
         },
@@ -48,6 +72,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Region.RegionOutcome",
           "declaringAssemblyName": "Microsoft.Identity.Client"
         },
@@ -59,6 +84,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Region.RegionOutcome",
           "declaringAssemblyName": "Microsoft.Identity.Client"
         },
@@ -70,6 +96,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Region.RegionOutcome",
           "declaringAssemblyName": "Microsoft.Identity.Client"
         },
@@ -81,6 +108,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Region.RegionOutcome",
           "declaringAssemblyName": "Microsoft.Identity.Client"
         },
@@ -92,6 +120,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Region.RegionOutcome",
           "declaringAssemblyName": "Microsoft.Identity.Client"
         }

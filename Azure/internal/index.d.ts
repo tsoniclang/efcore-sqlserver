@@ -11,7 +11,7 @@ import type { ptr } from "@tsonic/core/types.js";
 // Import types from other namespaces
 import type { HttpPipeline, HttpPipelinePolicy } from "../../Azure.Core.Pipeline/internal/index.js";
 import type { JsonPropertyNames, ObjectSerializer } from "../../Azure.Core.Serialization/internal/index.js";
-import type { ClientOptions, DelayStrategy, HttpPipelinePosition, RehydrationToken, RequestFailedDetailsParser, ResponseClassificationHandler, ResponseHeaders } from "../../Azure.Core/internal/index.js";
+import type { ClientOptions, DelayStrategy, HttpHeader, HttpPipelinePosition, RehydrationToken, RequestFailedDetailsParser, ResponseClassificationHandler, ResponseHeaders } from "../../Azure.Core/internal/index.js";
 import * as System_ClientModel_Primitives_Internal from "../../System.ClientModel.Primitives/internal/index.js";
 import type { IJsonModel_1, IPersistableModel_1, ModelReaderWriterOptions } from "../../System.ClientModel.Primitives/internal/index.js";
 import * as System_ClientModel_Internal from "../../System.ClientModel/internal/index.js";
@@ -77,7 +77,12 @@ export const HttpRange: {
 
 export type HttpRange = HttpRange$instance;
 
-export interface AsyncPageable_1$instance<T> {
+export abstract class AsyncPageable_1$protected<T> {
+    protected readonly CancellationToken: CancellationToken;
+}
+
+
+export interface AsyncPageable_1$instance<T> extends AsyncPageable_1$protected<T> {
     AsPages(continuationToken?: string, pageSizeHint?: Nullable<System_Internal.Int32>): IAsyncEnumerable<Page_1<T>>;
     Equals(obj: unknown): boolean;
     GetAsyncEnumerator(cancellationToken?: CancellationToken): IAsyncEnumerator<T>;
@@ -87,6 +92,8 @@ export interface AsyncPageable_1$instance<T> {
 
 
 export const AsyncPageable_1: {
+    new<T>(): AsyncPageable_1<T>;
+    new<T>(cancellationToken: CancellationToken): AsyncPageable_1<T>;
     FromPages<T>(pages: IEnumerable__System_Collections_Generic<Page_1<T>>): AsyncPageable_1<T>;
 };
 
@@ -94,7 +101,7 @@ export const AsyncPageable_1: {
 export type AsyncPageable_1<T> = AsyncPageable_1$instance<T>;
 
 export interface AzureKeyCredential$instance extends ApiKeyCredential {
-    readonly Key: string;
+    Key: string;
 }
 
 
@@ -120,7 +127,7 @@ export const AzureNamedKeyCredential: {
 export type AzureNamedKeyCredential = AzureNamedKeyCredential$instance;
 
 export interface AzureSasCredential$instance {
-    readonly Signature: string;
+    Signature: string;
     Update(signature: string): void;
 }
 
@@ -195,6 +202,7 @@ export interface NullableResponse_1$instance<T> {
 
 
 export const NullableResponse_1: {
+    new<T>(): NullableResponse_1<T>;
 };
 
 
@@ -220,6 +228,7 @@ export interface Operation$instance {
 
 
 export const Operation: {
+    new(): Operation;
     Rehydrate(pipeline: HttpPipeline, rehydrationToken: RehydrationToken, options?: ClientOptions): Operation;
     Rehydrate<T extends IPersistableModel_1<T>>(pipeline: HttpPipeline, rehydrationToken: RehydrationToken, options?: ClientOptions): Operation_1<T>;
     RehydrateAsync(pipeline: HttpPipeline, rehydrationToken: RehydrationToken, options?: ClientOptions): Task<Operation>;
@@ -247,6 +256,7 @@ export interface Operation_1$instance<T> extends Operation {
 
 
 export const Operation_1: {
+    new<T>(): Operation_1<T>;
 };
 
 
@@ -263,13 +273,19 @@ export interface Page_1$instance<T> {
 
 
 export const Page_1: {
+    new<T>(): Page_1<T>;
     FromValues<T>(values: IReadOnlyList<T>, continuationToken: string, response: Response): Page_1<T>;
 };
 
 
 export type Page_1<T> = Page_1$instance<T>;
 
-export interface Pageable_1$instance<T> {
+export abstract class Pageable_1$protected<T> {
+    protected readonly CancellationToken: CancellationToken;
+}
+
+
+export interface Pageable_1$instance<T> extends Pageable_1$protected<T> {
     AsPages(continuationToken?: string, pageSizeHint?: Nullable<System_Internal.Int32>): IEnumerable__System_Collections_Generic<Page_1<T>>;
     Equals(obj: unknown): boolean;
     GetEnumerator(): IEnumerator<T>;
@@ -279,6 +295,8 @@ export interface Pageable_1$instance<T> {
 
 
 export const Pageable_1: {
+    new<T>(): Pageable_1<T>;
+    new<T>(cancellationToken: CancellationToken): Pageable_1<T>;
     FromPages<T>(pages: IEnumerable__System_Collections_Generic<Page_1<T>>): Pageable_1<T>;
 };
 
@@ -293,6 +311,7 @@ export interface PageableOperation_1$instance<T> extends Operation_1<AsyncPageab
 
 
 export const PageableOperation_1: {
+    new<T>(): PageableOperation_1<T>;
 };
 
 
@@ -344,18 +363,27 @@ export const RequestFailedException: {
     new(response: Response): RequestFailedException;
     new(response: Response, innerException: Exception): RequestFailedException;
     new(response: Response, innerException: Exception, detailsParser: RequestFailedDetailsParser): RequestFailedException;
+    new(info: SerializationInfo, context: StreamingContext): RequestFailedException;
 };
 
 
 export type RequestFailedException = RequestFailedException$instance;
 
-export interface Response$instance {
+export abstract class Response$protected {
+    protected abstract ContainsHeader(name: string): boolean;
+    protected abstract EnumerateHeaders(): IEnumerable__System_Collections_Generic<HttpHeader>;
+    protected abstract TryGetHeader(name: string, value: string): boolean;
+    protected abstract TryGetHeaderValues(name: string, values: IEnumerable__System_Collections_Generic<System_Internal.String>): boolean;
+}
+
+
+export interface Response$instance extends Response$protected {
     ClientRequestId: string;
     readonly Content: BinaryData;
     get ContentStream(): Stream | undefined;
     set ContentStream(value: Stream);
     readonly Headers: ResponseHeaders;
-    readonly IsError: boolean;
+    IsError: boolean;
     readonly ReasonPhrase: string;
     readonly Status: int;
     Dispose(): void;
@@ -364,6 +392,7 @@ export interface Response$instance {
 
 
 export const Response: {
+    new(): Response;
     FromValue<T>(value: T, response: Response): Response_1<T>;
 };
 
@@ -379,6 +408,7 @@ export interface Response_1$instance<T> extends NullableResponse_1<T> {
 
 
 export const Response_1: {
+    new<T>(): Response_1<T>;
 };
 
 

@@ -20,7 +20,7 @@ import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Ru
 import type { ISerializable, SerializationInfo, StreamingContext } from "@tsonic/dotnet/System.Runtime.Serialization.js";
 import * as System_Security_Claims_Internal from "@tsonic/dotnet/System.Security.Claims.js";
 import type { Claim, ClaimsIdentity, ClaimsPrincipal } from "@tsonic/dotnet/System.Security.Claims.js";
-import type { AsymmetricAlgorithm, ECDsa, HashAlgorithm, HashAlgorithmName, KeyedHashAlgorithm, RSA, RSAParameters } from "@tsonic/dotnet/System.Security.Cryptography.js";
+import type { AsymmetricAlgorithm, ECDsa, HashAlgorithm, HashAlgorithmName, KeyedHashAlgorithm, RSA, RSAParameters, SymmetricAlgorithm } from "@tsonic/dotnet/System.Security.Cryptography.js";
 import type { X509Certificate2 } from "@tsonic/dotnet/System.Security.Cryptography.X509Certificates.js";
 import * as System_Security_Principal_Internal from "@tsonic/dotnet/System.Security.Principal.js";
 import type { IIdentity } from "@tsonic/dotnet/System.Security.Principal.js";
@@ -139,9 +139,16 @@ export const AsymmetricSecurityKey: {
 
 export type AsymmetricSecurityKey = AsymmetricSecurityKey$instance;
 
-export interface AsymmetricSignatureProvider$instance extends SignatureProvider {
+export abstract class AsymmetricSignatureProvider$protected {
+    protected Dispose2(disposing: boolean): void;
+    protected GetHashAlgorithmName(algorithm: string): HashAlgorithmName;
+}
+
+
+export interface AsymmetricSignatureProvider$instance extends AsymmetricSignatureProvider$protected, SignatureProvider {
     readonly MinimumAsymmetricKeySizeInBitsForSigningMap: IReadOnlyDictionary<System_Internal.String, System_Internal.Int32>;
     readonly MinimumAsymmetricKeySizeInBitsForVerifyingMap: IReadOnlyDictionary<System_Internal.String, System_Internal.Int32>;
+    Dispose(): void;
     Sign(input: ReadOnlySpan<System_Internal.Byte>, signature: Span<System_Internal.Byte>, bytesWritten: int): boolean;
     Sign(input: byte[]): byte[];
     Sign(input: byte[], offset: int, count: int): byte[];
@@ -162,7 +169,15 @@ export const AsymmetricSignatureProvider: {
 
 export type AsymmetricSignatureProvider = AsymmetricSignatureProvider$instance;
 
-export interface AuthenticatedEncryptionProvider$instance {
+export abstract class AuthenticatedEncryptionProvider$protected {
+    protected Dispose(disposing: boolean): void;
+    protected GetKeyBytes(key: SecurityKey): byte[];
+    protected IsSupportedAlgorithm(key: SecurityKey, algorithm: string): boolean;
+    protected ValidateKeySize(key: SecurityKey, algorithm: string): void;
+}
+
+
+export interface AuthenticatedEncryptionProvider$instance extends AuthenticatedEncryptionProvider$protected {
     readonly Algorithm: string;
     Context: string;
     readonly Key: SecurityKey;
@@ -181,10 +196,10 @@ export const AuthenticatedEncryptionProvider: {
 export type AuthenticatedEncryptionProvider = AuthenticatedEncryptionProvider$instance;
 
 export interface AuthenticatedEncryptionResult$instance {
-    readonly AuthenticationTag: byte[];
-    readonly Ciphertext: byte[];
-    readonly IV: byte[];
-    readonly Key: SecurityKey;
+    AuthenticationTag: byte[];
+    Ciphertext: byte[];
+    IV: byte[];
+    Key: SecurityKey;
 }
 
 
@@ -205,6 +220,7 @@ export interface BaseConfiguration$instance {
 
 
 export const BaseConfiguration: {
+    new(): BaseConfiguration;
 };
 
 
@@ -249,7 +265,7 @@ export const CallContext: {
 export type CallContext = CallContext$instance;
 
 export interface CaseSensitiveClaimsIdentity$instance extends ClaimsIdentity {
-    readonly SecurityToken: SecurityToken;
+    SecurityToken: SecurityToken;
     FindAll(type: string): IEnumerable<Claim>;
     FindFirst(type: string): Claim;
     HasClaim(type: string, value: string): boolean;
@@ -298,7 +314,13 @@ export const CompressionProviderFactory: {
 
 export type CompressionProviderFactory = CompressionProviderFactory$instance;
 
-export interface CryptoProviderCache$instance {
+export abstract class CryptoProviderCache$protected {
+    protected abstract GetCacheKey(signatureProvider: SignatureProvider): string;
+    protected abstract GetCacheKey(securityKey: SecurityKey, algorithm: string, typeofProvider: string): string;
+}
+
+
+export interface CryptoProviderCache$instance extends CryptoProviderCache$protected {
     TryAdd(signatureProvider: SignatureProvider): boolean;
     TryGetSignatureProvider(securityKey: SecurityKey, algorithm: string, typeofProvider: string, willCreateSignatures: boolean, signatureProvider: SignatureProvider): boolean;
     TryRemove(signatureProvider: SignatureProvider): boolean;
@@ -306,6 +328,7 @@ export interface CryptoProviderCache$instance {
 
 
 export const CryptoProviderCache: {
+    new(): CryptoProviderCache;
 };
 
 
@@ -326,7 +349,7 @@ export type CryptoProviderCacheOptions = CryptoProviderCacheOptions$instance;
 
 export interface CryptoProviderFactory$instance {
     CacheSignatureProviders: boolean;
-    readonly CryptoProviderCache: CryptoProviderCache;
+    CryptoProviderCache: CryptoProviderCache;
     CustomCryptoProvider: ICryptoProvider;
     SignatureProviderObjectPoolCacheSize: int;
     CreateAuthenticatedEncryptionProvider(key: SecurityKey, algorithm: string): AuthenticatedEncryptionProvider;
@@ -362,7 +385,7 @@ export type CryptoProviderFactory = CryptoProviderFactory$instance;
 
 export interface DeflateCompressionProvider$instance {
     readonly Algorithm: string;
-    readonly CompressionLevel: CompressionLevel;
+    CompressionLevel: CompressionLevel;
     MaximumDeflateSize: int;
     Compress(value: byte[]): byte[];
     Decompress(value: byte[]): byte[];
@@ -399,7 +422,7 @@ export const EcdhKeyExchangeProvider: {
 export type EcdhKeyExchangeProvider = EcdhKeyExchangeProvider$instance;
 
 export interface ECDsaSecurityKey$instance extends AsymmetricSecurityKey {
-    readonly ECDsa: ECDsa;
+    ECDsa: ECDsa;
     readonly HasPrivateKey: boolean;
     readonly KeySize: int;
     readonly PrivateKeyStatus: PrivateKeyStatus;
@@ -416,16 +439,17 @@ export const ECDsaSecurityKey: {
 export type ECDsaSecurityKey = ECDsaSecurityKey$instance;
 
 export interface EncryptingCredentials$instance {
-    readonly Alg: string;
+    Alg: string;
     CryptoProviderFactory: CryptoProviderFactory;
-    readonly Enc: string;
-    readonly Key: SecurityKey;
+    Enc: string;
+    Key: SecurityKey;
     KeyExchangePublicKey: SecurityKey;
     SetDefaultCtyClaim: boolean;
 }
 
 
 export const EncryptingCredentials: {
+    new(certificate: X509Certificate2, alg: string, enc: string): EncryptingCredentials;
     new(key: SecurityKey, alg: string, enc: string): EncryptingCredentials;
     new(key: SymmetricSecurityKey, enc: string): EncryptingCredentials;
 };
@@ -433,7 +457,14 @@ export const EncryptingCredentials: {
 
 export type EncryptingCredentials = EncryptingCredentials$instance;
 
-export interface InMemoryCryptoProviderCache$instance extends CryptoProviderCache {
+export abstract class InMemoryCryptoProviderCache$protected {
+    protected Dispose(disposing: boolean): void;
+    protected GetCacheKey(signatureProvider: SignatureProvider): string;
+    protected GetCacheKey(securityKey: SecurityKey, algorithm: string, typeofProvider: string): string;
+}
+
+
+export interface InMemoryCryptoProviderCache$instance extends InMemoryCryptoProviderCache$protected, CryptoProviderCache {
     Dispose(): void;
     TryAdd(signatureProvider: SignatureProvider): boolean;
     TryGetSignatureProvider(securityKey: SecurityKey, algorithm: string, typeofProvider: string, willCreateSignatures: boolean, signatureProvider: SignatureProvider): boolean;
@@ -510,7 +541,7 @@ export type JsonWebKeyConverter = JsonWebKeyConverter$instance;
 
 export interface JsonWebKeySet$instance {
     readonly AdditionalData: IDictionary<System_Internal.String, unknown>;
-    readonly Keys: IList<JsonWebKey>;
+    Keys: IList<JsonWebKey>;
     SkipUnresolvedJsonWebKeys: boolean;
     GetSigningKeys(): IList<SecurityKey>;
 }
@@ -526,7 +557,12 @@ export const JsonWebKeySet: {
 
 export type JsonWebKeySet = JsonWebKeySet$instance;
 
-export interface KeyWrapProvider$instance {
+export abstract class KeyWrapProvider$protected {
+    protected abstract Dispose(disposing: boolean): void;
+}
+
+
+export interface KeyWrapProvider$instance extends KeyWrapProvider$protected {
     readonly Algorithm: string;
     Context: string;
     readonly Key: SecurityKey;
@@ -537,15 +573,23 @@ export interface KeyWrapProvider$instance {
 
 
 export const KeyWrapProvider: {
+    new(): KeyWrapProvider;
 };
 
 
 export type KeyWrapProvider = KeyWrapProvider$instance;
 
-export interface RsaKeyWrapProvider$instance extends KeyWrapProvider {
+export abstract class RsaKeyWrapProvider$protected {
+    protected Dispose2(disposing: boolean): void;
+    protected IsSupportedAlgorithm(key: SecurityKey, algorithm: string): boolean;
+}
+
+
+export interface RsaKeyWrapProvider$instance extends RsaKeyWrapProvider$protected, KeyWrapProvider {
     readonly Algorithm: string;
     Context: string;
     readonly Key: SecurityKey;
+    Dispose(): void;
     UnwrapKey(keyBytes: byte[]): byte[];
     WrapKey(keyBytes: byte[]): byte[];
 }
@@ -561,9 +605,9 @@ export type RsaKeyWrapProvider = RsaKeyWrapProvider$instance;
 export interface RsaSecurityKey$instance extends AsymmetricSecurityKey {
     readonly HasPrivateKey: boolean;
     readonly KeySize: int;
-    readonly Parameters: RSAParameters;
+    Parameters: RSAParameters;
     readonly PrivateKeyStatus: PrivateKeyStatus;
-    readonly Rsa: RSA;
+    Rsa: RSA;
     CanComputeJwkThumbprint(): boolean;
     ComputeJwkThumbprint(): byte[];
 }
@@ -618,6 +662,7 @@ export interface SecurityToken$instance {
 
 
 export const SecurityToken: {
+    new(): SecurityToken;
 };
 
 
@@ -638,6 +683,7 @@ export const SecurityTokenArgumentException: {
     new(): SecurityTokenArgumentException;
     new(message: string): SecurityTokenArgumentException;
     new(message: string, innerException: Exception): SecurityTokenArgumentException;
+    new(info: SerializationInfo, context: StreamingContext): SecurityTokenArgumentException;
 };
 
 
@@ -651,6 +697,7 @@ export const SecurityTokenCompressionFailedException: {
     new(): SecurityTokenCompressionFailedException;
     new(message: string): SecurityTokenCompressionFailedException;
     new(message: string, inner: Exception): SecurityTokenCompressionFailedException;
+    new(info: SerializationInfo, context: StreamingContext): SecurityTokenCompressionFailedException;
 };
 
 
@@ -664,6 +711,7 @@ export const SecurityTokenDecompressionFailedException: {
     new(): SecurityTokenDecompressionFailedException;
     new(message: string): SecurityTokenDecompressionFailedException;
     new(message: string, inner: Exception): SecurityTokenDecompressionFailedException;
+    new(info: SerializationInfo, context: StreamingContext): SecurityTokenDecompressionFailedException;
 };
 
 
@@ -677,6 +725,7 @@ export const SecurityTokenDecryptionFailedException: {
     new(): SecurityTokenDecryptionFailedException;
     new(message: string): SecurityTokenDecryptionFailedException;
     new(message: string, innerException: Exception): SecurityTokenDecryptionFailedException;
+    new(info: SerializationInfo, context: StreamingContext): SecurityTokenDecryptionFailedException;
 };
 
 
@@ -715,6 +764,7 @@ export const SecurityTokenEncryptionFailedException: {
     new(): SecurityTokenEncryptionFailedException;
     new(message: string): SecurityTokenEncryptionFailedException;
     new(message: string, innerException: Exception): SecurityTokenEncryptionFailedException;
+    new(info: SerializationInfo, context: StreamingContext): SecurityTokenEncryptionFailedException;
 };
 
 
@@ -728,6 +778,7 @@ export const SecurityTokenEncryptionKeyNotFoundException: {
     new(): SecurityTokenEncryptionKeyNotFoundException;
     new(message: string): SecurityTokenEncryptionKeyNotFoundException;
     new(message: string, innerException: Exception): SecurityTokenEncryptionKeyNotFoundException;
+    new(info: SerializationInfo, context: StreamingContext): SecurityTokenEncryptionKeyNotFoundException;
 };
 
 
@@ -742,6 +793,7 @@ export const SecurityTokenException: {
     new(): SecurityTokenException;
     new(message: string): SecurityTokenException;
     new(message: string, innerException: Exception): SecurityTokenException;
+    new(info: SerializationInfo, context: StreamingContext): SecurityTokenException;
 };
 
 
@@ -757,6 +809,7 @@ export const SecurityTokenExpiredException: {
     new(): SecurityTokenExpiredException;
     new(message: string): SecurityTokenExpiredException;
     new(message: string, inner: Exception): SecurityTokenExpiredException;
+    new(info: SerializationInfo, context: StreamingContext): SecurityTokenExpiredException;
 };
 
 
@@ -779,6 +832,7 @@ export interface SecurityTokenHandler$instance extends TokenHandler {
 
 
 export const SecurityTokenHandler: {
+    new(): SecurityTokenHandler;
 };
 
 
@@ -801,6 +855,7 @@ export const SecurityTokenInvalidAlgorithmException: {
     new(): SecurityTokenInvalidAlgorithmException;
     new(message: string): SecurityTokenInvalidAlgorithmException;
     new(message: string, innerException: Exception): SecurityTokenInvalidAlgorithmException;
+    new(info: SerializationInfo, context: StreamingContext): SecurityTokenInvalidAlgorithmException;
 };
 
 
@@ -816,6 +871,7 @@ export const SecurityTokenInvalidAudienceException: {
     new(): SecurityTokenInvalidAudienceException;
     new(message: string): SecurityTokenInvalidAudienceException;
     new(message: string, innerException: Exception): SecurityTokenInvalidAudienceException;
+    new(info: SerializationInfo, context: StreamingContext): SecurityTokenInvalidAudienceException;
 };
 
 
@@ -831,6 +887,7 @@ export const SecurityTokenInvalidIssuerException: {
     new(): SecurityTokenInvalidIssuerException;
     new(message: string): SecurityTokenInvalidIssuerException;
     new(message: string, innerException: Exception): SecurityTokenInvalidIssuerException;
+    new(info: SerializationInfo, context: StreamingContext): SecurityTokenInvalidIssuerException;
 };
 
 
@@ -847,6 +904,7 @@ export const SecurityTokenInvalidLifetimeException: {
     new(): SecurityTokenInvalidLifetimeException;
     new(message: string): SecurityTokenInvalidLifetimeException;
     new(message: string, innerException: Exception): SecurityTokenInvalidLifetimeException;
+    new(info: SerializationInfo, context: StreamingContext): SecurityTokenInvalidLifetimeException;
 };
 
 
@@ -860,6 +918,7 @@ export const SecurityTokenInvalidSignatureException: {
     new(): SecurityTokenInvalidSignatureException;
     new(message: string): SecurityTokenInvalidSignatureException;
     new(message: string, innerException: Exception): SecurityTokenInvalidSignatureException;
+    new(info: SerializationInfo, context: StreamingContext): SecurityTokenInvalidSignatureException;
 };
 
 
@@ -874,6 +933,7 @@ export const SecurityTokenInvalidSigningKeyException: {
     new(): SecurityTokenInvalidSigningKeyException;
     new(message: string): SecurityTokenInvalidSigningKeyException;
     new(message: string, inner: Exception): SecurityTokenInvalidSigningKeyException;
+    new(info: SerializationInfo, context: StreamingContext): SecurityTokenInvalidSigningKeyException;
 };
 
 
@@ -889,6 +949,7 @@ export const SecurityTokenInvalidTypeException: {
     new(): SecurityTokenInvalidTypeException;
     new(message: string): SecurityTokenInvalidTypeException;
     new(message: string, innerException: Exception): SecurityTokenInvalidTypeException;
+    new(info: SerializationInfo, context: StreamingContext): SecurityTokenInvalidTypeException;
 };
 
 
@@ -902,6 +963,7 @@ export const SecurityTokenKeyWrapException: {
     new(): SecurityTokenKeyWrapException;
     new(message: string): SecurityTokenKeyWrapException;
     new(message: string, innerException: Exception): SecurityTokenKeyWrapException;
+    new(info: SerializationInfo, context: StreamingContext): SecurityTokenKeyWrapException;
 };
 
 
@@ -915,6 +977,7 @@ export const SecurityTokenMalformedException: {
     new(): SecurityTokenMalformedException;
     new(message: string): SecurityTokenMalformedException;
     new(message: string, innerException: Exception): SecurityTokenMalformedException;
+    new(info: SerializationInfo, context: StreamingContext): SecurityTokenMalformedException;
 };
 
 
@@ -928,6 +991,7 @@ export const SecurityTokenNoExpirationException: {
     new(): SecurityTokenNoExpirationException;
     new(message: string): SecurityTokenNoExpirationException;
     new(message: string, innerException: Exception): SecurityTokenNoExpirationException;
+    new(info: SerializationInfo, context: StreamingContext): SecurityTokenNoExpirationException;
 };
 
 
@@ -943,6 +1007,7 @@ export const SecurityTokenNotYetValidException: {
     new(): SecurityTokenNotYetValidException;
     new(message: string): SecurityTokenNotYetValidException;
     new(message: string, inner: Exception): SecurityTokenNotYetValidException;
+    new(info: SerializationInfo, context: StreamingContext): SecurityTokenNotYetValidException;
 };
 
 
@@ -956,6 +1021,7 @@ export const SecurityTokenReplayAddFailedException: {
     new(): SecurityTokenReplayAddFailedException;
     new(message: string): SecurityTokenReplayAddFailedException;
     new(message: string, innerException: Exception): SecurityTokenReplayAddFailedException;
+    new(info: SerializationInfo, context: StreamingContext): SecurityTokenReplayAddFailedException;
 };
 
 
@@ -969,6 +1035,7 @@ export const SecurityTokenReplayDetectedException: {
     new(): SecurityTokenReplayDetectedException;
     new(message: string): SecurityTokenReplayDetectedException;
     new(message: string, inner: Exception): SecurityTokenReplayDetectedException;
+    new(info: SerializationInfo, context: StreamingContext): SecurityTokenReplayDetectedException;
 };
 
 
@@ -982,6 +1049,7 @@ export const SecurityTokenSignatureKeyNotFoundException: {
     new(): SecurityTokenSignatureKeyNotFoundException;
     new(message: string): SecurityTokenSignatureKeyNotFoundException;
     new(message: string, innerException: Exception): SecurityTokenSignatureKeyNotFoundException;
+    new(info: SerializationInfo, context: StreamingContext): SecurityTokenSignatureKeyNotFoundException;
 };
 
 
@@ -998,6 +1066,7 @@ export const SecurityTokenUnableToValidateException: {
     new(validationFailure: ValidationFailure, message: string): SecurityTokenUnableToValidateException;
     new(message: string): SecurityTokenUnableToValidateException;
     new(message: string, innerException: Exception): SecurityTokenUnableToValidateException;
+    new(info: SerializationInfo, context: StreamingContext): SecurityTokenUnableToValidateException;
 };
 
 
@@ -1011,17 +1080,23 @@ export const SecurityTokenValidationException: {
     new(): SecurityTokenValidationException;
     new(message: string): SecurityTokenValidationException;
     new(message: string, innerException: Exception): SecurityTokenValidationException;
+    new(info: SerializationInfo, context: StreamingContext): SecurityTokenValidationException;
 };
 
 
 export type SecurityTokenValidationException = SecurityTokenValidationException$instance;
 
-export interface SignatureProvider$instance {
-    readonly Algorithm: string;
+export abstract class SignatureProvider$protected {
+    protected abstract Dispose(disposing: boolean): void;
+}
+
+
+export interface SignatureProvider$instance extends SignatureProvider$protected {
+    Algorithm: string;
     Context: string;
     CryptoProviderCache: CryptoProviderCache;
-    readonly Key: SecurityKey;
-    readonly WillCreateSignatures: boolean;
+    Key: SecurityKey;
+    WillCreateSignatures: boolean;
     Dispose(): void;
     Sign(input: byte[]): byte[];
     Sign(input: byte[], offset: int, count: int): byte[];
@@ -1032,21 +1107,24 @@ export interface SignatureProvider$instance {
 
 
 export const SignatureProvider: {
+    new(key: SecurityKey, algorithm: string): SignatureProvider;
 };
 
 
 export type SignatureProvider = SignatureProvider$instance;
 
 export interface SigningCredentials$instance {
-    readonly Algorithm: string;
+    Algorithm: string;
     CryptoProviderFactory: CryptoProviderFactory;
-    readonly Digest: string;
-    readonly Key: SecurityKey;
+    Digest: string;
+    Key: SecurityKey;
     readonly Kid: string;
 }
 
 
 export const SigningCredentials: {
+    new(certificate: X509Certificate2): SigningCredentials;
+    new(certificate: X509Certificate2, algorithm: string): SigningCredentials;
     new(key: SecurityKey, algorithm: string): SigningCredentials;
     new(key: SecurityKey, algorithm: string, digest: string): SigningCredentials;
 };
@@ -1054,10 +1132,18 @@ export const SigningCredentials: {
 
 export type SigningCredentials = SigningCredentials$instance;
 
-export interface SymmetricKeyWrapProvider$instance extends KeyWrapProvider {
+export abstract class SymmetricKeyWrapProvider$protected {
+    protected Dispose2(disposing: boolean): void;
+    protected GetSymmetricAlgorithm(key: SecurityKey, algorithm: string): SymmetricAlgorithm;
+    protected IsSupportedAlgorithm(key: SecurityKey, algorithm: string): boolean;
+}
+
+
+export interface SymmetricKeyWrapProvider$instance extends SymmetricKeyWrapProvider$protected, KeyWrapProvider {
     readonly Algorithm: string;
     Context: string;
     readonly Key: SecurityKey;
+    Dispose(): void;
     UnwrapKey(keyBytes: byte[]): byte[];
     WrapKey(keyBytes: byte[]): byte[];
 }
@@ -1085,8 +1171,17 @@ export const SymmetricSecurityKey: {
 
 export type SymmetricSecurityKey = SymmetricSecurityKey$instance;
 
-export interface SymmetricSignatureProvider$instance extends SignatureProvider {
+export abstract class SymmetricSignatureProvider$protected {
+    protected Dispose2(disposing: boolean): void;
+    protected GetKeyBytes(key: SecurityKey): byte[];
+    protected GetKeyedHashAlgorithm(keyBytes: byte[], algorithm: string): KeyedHashAlgorithm;
+    protected ReleaseKeyedHashAlgorithm(keyedHashAlgorithm: KeyedHashAlgorithm): void;
+}
+
+
+export interface SymmetricSignatureProvider$instance extends SymmetricSignatureProvider$protected, SignatureProvider {
     MinimumSymmetricKeySizeInBits: int;
+    Dispose(): void;
     Sign(input: byte[]): byte[];
     Sign(input: ReadOnlySpan<System_Internal.Byte>, signature: Span<System_Internal.Byte>, bytesWritten: int): boolean;
     Sign(input: byte[], offset: int, count: int): byte[];
@@ -1129,6 +1224,7 @@ export interface TokenHandler$instance {
 
 
 export const TokenHandler: {
+    new(): TokenHandler;
     readonly DefaultTokenLifetimeInMinutes: int;
 };
 
@@ -1147,7 +1243,7 @@ export interface TokenValidationParameters$instance {
     IgnoreTrailingSlashWhenValidatingAudience: boolean;
     IncludeTokenOnFailedValidation: boolean;
     readonly InstancePropertyBag: IDictionary<System_Internal.String, unknown>;
-    readonly IsClone: boolean;
+    IsClone: boolean;
     IssuerSigningKey: SecurityKey;
     IssuerSigningKeyResolver: IssuerSigningKeyResolver;
     IssuerSigningKeyResolverUsingConfiguration: IssuerSigningKeyResolverUsingConfiguration;
@@ -1200,6 +1296,7 @@ export interface TokenValidationParameters$instance {
 
 
 export const TokenValidationParameters: {
+    new(other: TokenValidationParameters): TokenValidationParameters;
     new(): TokenValidationParameters;
     readonly DefaultAuthenticationType: string;
     readonly DefaultClockSkew: TimeSpan;
@@ -1218,7 +1315,7 @@ export interface TokenValidationResult$instance {
     readonly PropertyBag: IDictionary<System_Internal.String, unknown>;
     SecurityToken: SecurityToken;
     TokenContext: CallContext;
-    readonly TokenOnFailedValidation: SecurityToken;
+    TokenOnFailedValidation: SecurityToken;
     TokenType: string;
 }
 
@@ -1231,7 +1328,8 @@ export const TokenValidationResult: {
 export type TokenValidationResult = TokenValidationResult$instance;
 
 export interface X509EncryptingCredentials$instance extends EncryptingCredentials {
-    readonly Certificate: X509Certificate2 | undefined;
+    get Certificate(): X509Certificate2 | undefined;
+    set Certificate(value: X509Certificate2);
 }
 
 
@@ -1244,7 +1342,8 @@ export const X509EncryptingCredentials: {
 export type X509EncryptingCredentials = X509EncryptingCredentials$instance;
 
 export interface X509SecurityKey$instance extends AsymmetricSecurityKey {
-    readonly Certificate: X509Certificate2 | undefined;
+    get Certificate(): X509Certificate2 | undefined;
+    set Certificate(value: X509Certificate2);
     readonly HasPrivateKey: boolean;
     readonly KeySize: int;
     readonly PrivateKey: AsymmetricAlgorithm;
@@ -1267,7 +1366,8 @@ export const X509SecurityKey: {
 export type X509SecurityKey = X509SecurityKey$instance;
 
 export interface X509SigningCredentials$instance extends SigningCredentials {
-    readonly Certificate: X509Certificate2 | undefined;
+    get Certificate(): X509Certificate2 | undefined;
+    set Certificate(value: X509Certificate2);
 }
 
 

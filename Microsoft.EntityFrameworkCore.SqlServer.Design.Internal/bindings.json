@@ -15,6 +15,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Design.AnnotationCodeGenerator",
+        "clrName": "Microsoft.EntityFrameworkCore.Design.AnnotationCodeGenerator"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Design.IAnnotationCodeGenerator",
+          "clrName": "Microsoft.EntityFrameworkCore.Design.IAnnotationCodeGenerator"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerAnnotationCodeGenerator::GenerateFluentApiCalls(Microsoft.EntityFrameworkCore.Metadata.IModel,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Design.MethodCallCodeFragment,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
@@ -31,6 +41,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerAnnotationCodeGenerator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -50,6 +61,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerAnnotationCodeGenerator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -69,6 +81,87 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerAnnotationCodeGenerator",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerAnnotationCodeGenerator::IsHandledByConvention(Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation):System.Boolean",
+          "clrName": "IsHandledByConvention",
+          "metadataToken": 100665263,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation):System.Boolean",
+          "normalizedSignature": "IsHandledByConvention|(Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerAnnotationCodeGenerator",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerAnnotationCodeGenerator::IsHandledByConvention(Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation):System.Boolean",
+          "clrName": "IsHandledByConvention",
+          "metadataToken": 100665264,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation):System.Boolean",
+          "normalizedSignature": "IsHandledByConvention|(Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerAnnotationCodeGenerator",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerAnnotationCodeGenerator::GenerateFluentApi(Microsoft.EntityFrameworkCore.Metadata.IKey,Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation):Microsoft.EntityFrameworkCore.Design.MethodCallCodeFragment",
+          "clrName": "GenerateFluentApi",
+          "metadataToken": 100665265,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IKey,Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation):Microsoft.EntityFrameworkCore.Design.MethodCallCodeFragment",
+          "normalizedSignature": "GenerateFluentApi|(Microsoft.EntityFrameworkCore.Metadata.IKey,Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation):Microsoft.EntityFrameworkCore.Design.MethodCallCodeFragment|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerAnnotationCodeGenerator",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerAnnotationCodeGenerator::GenerateFluentApi(Microsoft.EntityFrameworkCore.Metadata.IIndex,Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation):Microsoft.EntityFrameworkCore.Design.MethodCallCodeFragment",
+          "clrName": "GenerateFluentApi",
+          "metadataToken": 100665266,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IIndex,Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation):Microsoft.EntityFrameworkCore.Design.MethodCallCodeFragment",
+          "normalizedSignature": "GenerateFluentApi|(Microsoft.EntityFrameworkCore.Metadata.IIndex,Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation):Microsoft.EntityFrameworkCore.Design.MethodCallCodeFragment|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerAnnotationCodeGenerator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -85,6 +178,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Design.AnnotationCodeGeneratorDependencies):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerAnnotationCodeGenerator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }
@@ -101,6 +195,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Design.Internal.RelationalCSharpRuntimeAnnotationCodeGenerator",
+        "clrName": "Microsoft.EntityFrameworkCore.Design.Internal.RelationalCSharpRuntimeAnnotationCodeGenerator"
+      },
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerCSharpRuntimeAnnotationCodeGenerator::Generate(Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Design.Internal.CSharpRuntimeAnnotationCodeGeneratorParameters):System.Void",
@@ -117,6 +215,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerCSharpRuntimeAnnotationCodeGenerator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -136,6 +235,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerCSharpRuntimeAnnotationCodeGenerator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -155,6 +255,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerCSharpRuntimeAnnotationCodeGenerator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -174,6 +275,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerCSharpRuntimeAnnotationCodeGenerator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -193,6 +295,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerCSharpRuntimeAnnotationCodeGenerator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -212,6 +315,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerCSharpRuntimeAnnotationCodeGenerator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -231,6 +335,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerCSharpRuntimeAnnotationCodeGenerator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -250,6 +355,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerCSharpRuntimeAnnotationCodeGenerator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -269,6 +375,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerCSharpRuntimeAnnotationCodeGenerator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -288,6 +395,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerCSharpRuntimeAnnotationCodeGenerator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -307,6 +415,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerCSharpRuntimeAnnotationCodeGenerator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -323,6 +432,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Design.Internal.CSharpRuntimeAnnotationCodeGeneratorDependencies,Microsoft.EntityFrameworkCore.Design.Internal.RelationalCSharpRuntimeAnnotationCodeGeneratorDependencies):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerCSharpRuntimeAnnotationCodeGenerator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }
@@ -339,6 +449,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Design.IDesignTimeServices",
+          "clrName": "Microsoft.EntityFrameworkCore.Design.IDesignTimeServices"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerDesignTimeServices::ConfigureDesignTimeServices(Microsoft.Extensions.DependencyInjection.IServiceCollection):System.Void",
@@ -355,6 +475,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerDesignTimeServices",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -371,6 +492,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerDesignTimeServices",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }

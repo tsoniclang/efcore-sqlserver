@@ -15,6 +15,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -26,6 +48,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ClientErrorBehaviors",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -37,6 +60,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ClientErrorBehaviors",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -48,6 +72,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ClientErrorBehaviors",
           "declaringAssemblyName": "System.ClientModel"
         }
@@ -66,6 +91,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -77,6 +124,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.CredentialKind",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -88,6 +136,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.CredentialKind",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -99,6 +148,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.CredentialKind",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -110,6 +160,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.CredentialKind",
           "declaringAssemblyName": "System.ClientModel"
         }
@@ -128,6 +179,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -139,6 +212,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.PipelinePosition",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -150,6 +224,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.PipelinePosition",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -161,6 +236,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.PipelinePosition",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -172,6 +248,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.PipelinePosition",
           "declaringAssemblyName": "System.ClientModel"
         }
@@ -190,6 +267,18 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 1,
+      "interfaces": [
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.IPersistableModel\u00601",
+          "clrName": "System.ClientModel.Primitives.IPersistableModel\u00601",
+          "typeArguments": [
+            "T"
+          ]
+        }
+      ],
+      "typeParameters": [
+        "T"
+      ],
       "methods": [
         {
           "stableId": "System.ClientModel:System.ClientModel.Primitives.IJsonModel\u00601::Write(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions):System.Void",
@@ -206,6 +295,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.IJsonModel\u00601",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -225,6 +315,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.IJsonModel\u00601",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false,
@@ -250,6 +341,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.IPersistableModel\u00601",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -269,6 +361,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.IPersistableModel\u00601",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -288,6 +381,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.IPersistableModel\u00601",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -309,6 +403,9 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 1,
+      "typeParameters": [
+        "T"
+      ],
       "methods": [
         {
           "stableId": "System.ClientModel:System.ClientModel.Primitives.IPersistableModel\u00601::Write(System.ClientModel.Primitives.ModelReaderWriterOptions):System.BinaryData",
@@ -325,6 +422,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.IPersistableModel\u00601",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -344,6 +442,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.IPersistableModel\u00601",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -363,6 +462,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.IPersistableModel\u00601",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -384,6 +484,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
       "methods": [
         {
           "stableId": "System.ClientModel:System.ClientModel.Primitives.ClientConnection::TryGetLocatorAsUri(System.Uri\u0026):System.Boolean",
@@ -400,6 +504,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ClientConnection",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false,
@@ -425,6 +530,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ClientConnection",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -446,6 +552,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ClientConnection",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -464,6 +571,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ClientConnection",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -482,6 +590,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ClientConnection",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -500,6 +609,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ClientConnection",
           "declaringAssemblyName": "System.ClientModel"
         }
@@ -514,6 +624,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.Object,System.ClientModel.Primitives.CredentialKind):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ClientConnection",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -524,6 +635,7 @@
           "normalizedSignature": "constructor|(System.String,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ClientConnection",
           "declaringAssemblyName": "System.ClientModel"
         }
@@ -540,6 +652,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.ClientModel:System.ClientModel.Primitives.AuthenticationPolicy",
+        "clrName": "System.ClientModel.Primitives.AuthenticationPolicy"
+      },
       "methods": [
         {
           "stableId": "System.ClientModel:System.ClientModel.Primitives.ApiKeyAuthenticationPolicy::CreateHeaderApiKeyPolicy(System.ClientModel.ApiKeyCredential,System.String,System.String):System.ClientModel.Primitives.ApiKeyAuthenticationPolicy",
@@ -556,6 +672,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ApiKeyAuthenticationPolicy",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -575,6 +692,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ApiKeyAuthenticationPolicy",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -594,6 +712,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ApiKeyAuthenticationPolicy",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -613,6 +732,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ApiKeyAuthenticationPolicy",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -632,6 +752,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ApiKeyAuthenticationPolicy",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -651,6 +772,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ApiKeyAuthenticationPolicy",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -670,6 +792,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ApiKeyAuthenticationPolicy",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -691,6 +814,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "System.ClientModel:System.ClientModel.Primitives.AsyncCollectionResult::GetRawPagesAsync():System.Collections.Generic.IAsyncEnumerable_1[[System.ClientModel.ClientResult,System.ClientModel,Version=1.5.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
@@ -707,6 +834,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.AsyncCollectionResult",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -726,6 +854,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.AsyncCollectionResult",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -734,7 +863,19 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.AsyncCollectionResult::.ctor():void",
+          "metadataToken": 100663543,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "System.ClientModel.Primitives.AsyncCollectionResult",
+          "declaringAssemblyName": "System.ClientModel"
+        }
+      ]
     },
     {
       "stableId": "System.ClientModel:System.ClientModel.Primitives.AuthenticationPolicy",
@@ -747,11 +888,27 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelinePolicy",
+        "clrName": "System.ClientModel.Primitives.PipelinePolicy"
+      },
       "methods": [],
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.AuthenticationPolicy::.ctor():void",
+          "metadataToken": 100663845,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "System.ClientModel.Primitives.AuthenticationPolicy",
+          "declaringAssemblyName": "System.ClientModel"
+        }
+      ]
     },
     {
       "stableId": "System.ClientModel:System.ClientModel.Primitives.AuthenticationToken",
@@ -764,6 +921,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -781,6 +942,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.AuthenticationToken",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -799,6 +961,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.AuthenticationToken",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -817,6 +980,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.AuthenticationToken",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -835,6 +999,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.AuthenticationToken",
           "declaringAssemblyName": "System.ClientModel"
         }
@@ -849,6 +1014,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.DateTimeOffset,System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.AuthenticationToken",
           "declaringAssemblyName": "System.ClientModel"
         }
@@ -865,6 +1031,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.ClientModel:System.ClientModel.Primitives.AuthenticationPolicy",
+        "clrName": "System.ClientModel.Primitives.AuthenticationPolicy"
+      },
       "methods": [
         {
           "stableId": "System.ClientModel:System.ClientModel.Primitives.BearerTokenPolicy::Process(System.ClientModel.Primitives.PipelineMessage,System.Collections.Generic.IReadOnlyList_1[[System.ClientModel.Primitives.PipelinePolicy,System.ClientModel,Version=1.5.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]],System.Int32):System.Void",
@@ -881,6 +1051,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.BearerTokenPolicy",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -900,6 +1071,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.BearerTokenPolicy",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -919,6 +1091,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.BearerTokenPolicy",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -938,6 +1111,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.BearerTokenPolicy",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -954,6 +1128,7 @@
           "normalizedSignature": "constructor|(System.ClientModel.AuthenticationTokenProvider,System.Collections.Generic.IEnumerable_1[[System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.BearerTokenPolicy",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -964,6 +1139,7 @@
           "normalizedSignature": "constructor|(System.ClientModel.AuthenticationTokenProvider,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.BearerTokenPolicy",
           "declaringAssemblyName": "System.ClientModel"
         }
@@ -980,6 +1156,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "System.ClientModel:System.ClientModel.Primitives.ClientCache::GetClient(System.Object,Func_1):T",
@@ -996,6 +1176,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ClientCache",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -1012,6 +1193,7 @@
           "normalizedSignature": "constructor|(System.Int32):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ClientCache",
           "declaringAssemblyName": "System.ClientModel"
         }
@@ -1028,7 +1210,84 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.ObjectModel:System.Collections.ObjectModel.KeyedCollection\u00602",
+        "clrName": "System.Collections.ObjectModel.KeyedCollection\u00602",
+        "typeArguments": [
+          "String",
+          "ClientConnection"
+        ]
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IList\u00601",
+          "clrName": "System.Collections.Generic.IList\u00601",
+          "typeArguments": [
+            "ClientConnection"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.ICollection\u00601",
+          "clrName": "System.Collections.Generic.ICollection\u00601",
+          "typeArguments": [
+            "ClientConnection"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable\u00601",
+          "clrName": "System.Collections.Generic.IEnumerable\u00601",
+          "typeArguments": [
+            "ClientConnection"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+          "clrName": "System.Collections.IEnumerable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IList",
+          "clrName": "System.Collections.IList"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.ICollection",
+          "clrName": "System.Collections.ICollection"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyList\u00601",
+          "clrName": "System.Collections.Generic.IReadOnlyList\u00601",
+          "typeArguments": [
+            "ClientConnection"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyCollection\u00601",
+          "clrName": "System.Collections.Generic.IReadOnlyCollection\u00601",
+          "typeArguments": [
+            "ClientConnection"
+          ]
+        }
+      ],
       "methods": [
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.ClientConnectionCollection::GetKeyForItem(System.ClientModel.Primitives.ClientConnection):System.String",
+          "clrName": "GetKeyForItem",
+          "metadataToken": 100663562,
+          "canonicalSignature": "(System.ClientModel.Primitives.ClientConnection):System.String",
+          "normalizedSignature": "GetKeyForItem|(System.ClientModel.Primitives.ClientConnection):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "System.ClientModel.Primitives.ClientConnectionCollection",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        },
         {
           "stableId": "System.ClientModel:System.ClientModel.Primitives.ClientConnectionCollection::AddRange(System.Collections.Generic.IEnumerable_1[[System.ClientModel.Primitives.ClientConnection,System.ClientModel,Version=1.5.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):System.Void",
           "clrName": "AddRange",
@@ -1044,6 +1303,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ClientConnectionCollection",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -1060,6 +1320,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ClientConnectionCollection",
           "declaringAssemblyName": "System.ClientModel"
         }
@@ -1076,6 +1337,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "System.ClientModel:System.ClientModel.Primitives.ClientConnectionProvider::GetConnection(System.String):System.ClientModel.Primitives.ClientConnection",
@@ -1092,6 +1357,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ClientConnectionProvider",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -1111,6 +1377,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ClientConnectionProvider",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -1132,13 +1399,26 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ClientConnectionProvider",
           "declaringAssemblyName": "System.ClientModel"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.ClientConnectionProvider::.ctor(System.Int32):void",
+          "metadataToken": 100663570,
+          "canonicalSignature": "(System.Int32):void",
+          "normalizedSignature": "constructor|(System.Int32):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "visibility": "Protected",
+          "declaringClrType": "System.ClientModel.Primitives.ClientConnectionProvider",
+          "declaringAssemblyName": "System.ClientModel"
+        }
+      ]
     },
     {
       "stableId": "System.ClientModel:System.ClientModel.Primitives.ClientLoggingOptions",
@@ -1151,6 +1431,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "System.ClientModel:System.ClientModel.Primitives.ClientLoggingOptions::Freeze():System.Void",
@@ -1167,6 +1451,27 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "System.ClientModel.Primitives.ClientLoggingOptions",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.ClientLoggingOptions::AssertNotFrozen():System.Void",
+          "clrName": "AssertNotFrozen",
+          "metadataToken": 100663774,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "AssertNotFrozen|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "System.ClientModel.Primitives.ClientLoggingOptions",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -1188,6 +1493,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ClientLoggingOptions",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -1206,6 +1512,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ClientLoggingOptions",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -1224,6 +1531,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ClientLoggingOptions",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -1242,6 +1550,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ClientLoggingOptions",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -1260,6 +1569,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ClientLoggingOptions",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -1278,6 +1588,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ClientLoggingOptions",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -1296,6 +1607,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ClientLoggingOptions",
           "declaringAssemblyName": "System.ClientModel"
         }
@@ -1310,6 +1622,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ClientLoggingOptions",
           "declaringAssemblyName": "System.ClientModel"
         }
@@ -1326,6 +1639,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "System.ClientModel:System.ClientModel.Primitives.ClientPipeline::Create(System.ClientModel.Primitives.ClientPipelineOptions):System.ClientModel.Primitives.ClientPipeline",
@@ -1342,6 +1659,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ClientPipeline",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -1361,6 +1679,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ClientPipeline",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -1380,6 +1699,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ClientPipeline",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -1399,6 +1719,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ClientPipeline",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -1418,6 +1739,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ClientPipeline",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -1439,6 +1761,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "System.ClientModel:System.ClientModel.Primitives.ClientPipelineOptions::AddPolicy(System.ClientModel.Primitives.PipelinePolicy,System.ClientModel.Primitives.PipelinePosition):System.Void",
@@ -1455,6 +1781,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ClientPipelineOptions",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -1474,6 +1801,27 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "System.ClientModel.Primitives.ClientPipelineOptions",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.ClientPipelineOptions::AssertNotFrozen():System.Void",
+          "clrName": "AssertNotFrozen",
+          "metadataToken": 100663806,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "AssertNotFrozen|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "System.ClientModel.Primitives.ClientPipelineOptions",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -1495,6 +1843,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ClientPipelineOptions",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -1513,6 +1862,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ClientPipelineOptions",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -1531,6 +1881,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ClientPipelineOptions",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -1549,6 +1900,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ClientPipelineOptions",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -1567,6 +1919,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ClientPipelineOptions",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -1585,6 +1938,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ClientPipelineOptions",
           "declaringAssemblyName": "System.ClientModel"
         }
@@ -1599,6 +1953,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ClientPipelineOptions",
           "declaringAssemblyName": "System.ClientModel"
         }
@@ -1615,6 +1970,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelinePolicy",
+        "clrName": "System.ClientModel.Primitives.PipelinePolicy"
+      },
       "methods": [
         {
           "stableId": "System.ClientModel:System.ClientModel.Primitives.ClientRetryPolicy::Process(System.ClientModel.Primitives.PipelineMessage,System.Collections.Generic.IReadOnlyList_1[[System.ClientModel.Primitives.PipelinePolicy,System.ClientModel,Version=1.5.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]],System.Int32):System.Void",
@@ -1631,6 +1990,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ClientRetryPolicy",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -1650,6 +2010,207 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "System.ClientModel.Primitives.ClientRetryPolicy",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.ClientRetryPolicy::OnSendingRequest(System.ClientModel.Primitives.PipelineMessage):System.Void",
+          "clrName": "OnSendingRequest",
+          "metadataToken": 100663867,
+          "canonicalSignature": "(System.ClientModel.Primitives.PipelineMessage):System.Void",
+          "normalizedSignature": "OnSendingRequest|(System.ClientModel.Primitives.PipelineMessage):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "System.ClientModel.Primitives.ClientRetryPolicy",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.ClientRetryPolicy::OnSendingRequestAsync(System.ClientModel.Primitives.PipelineMessage):System.Threading.Tasks.ValueTask",
+          "clrName": "OnSendingRequestAsync",
+          "metadataToken": 100663868,
+          "canonicalSignature": "(System.ClientModel.Primitives.PipelineMessage):System.Threading.Tasks.ValueTask",
+          "normalizedSignature": "OnSendingRequestAsync|(System.ClientModel.Primitives.PipelineMessage):System.Threading.Tasks.ValueTask|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "System.ClientModel.Primitives.ClientRetryPolicy",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.ClientRetryPolicy::OnRequestSent(System.ClientModel.Primitives.PipelineMessage):System.Void",
+          "clrName": "OnRequestSent",
+          "metadataToken": 100663869,
+          "canonicalSignature": "(System.ClientModel.Primitives.PipelineMessage):System.Void",
+          "normalizedSignature": "OnRequestSent|(System.ClientModel.Primitives.PipelineMessage):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "System.ClientModel.Primitives.ClientRetryPolicy",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.ClientRetryPolicy::OnRequestSentAsync(System.ClientModel.Primitives.PipelineMessage):System.Threading.Tasks.ValueTask",
+          "clrName": "OnRequestSentAsync",
+          "metadataToken": 100663870,
+          "canonicalSignature": "(System.ClientModel.Primitives.PipelineMessage):System.Threading.Tasks.ValueTask",
+          "normalizedSignature": "OnRequestSentAsync|(System.ClientModel.Primitives.PipelineMessage):System.Threading.Tasks.ValueTask|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "System.ClientModel.Primitives.ClientRetryPolicy",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.ClientRetryPolicy::OnTryComplete(System.ClientModel.Primitives.PipelineMessage):System.Void",
+          "clrName": "OnTryComplete",
+          "metadataToken": 100663871,
+          "canonicalSignature": "(System.ClientModel.Primitives.PipelineMessage):System.Void",
+          "normalizedSignature": "OnTryComplete|(System.ClientModel.Primitives.PipelineMessage):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "System.ClientModel.Primitives.ClientRetryPolicy",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.ClientRetryPolicy::ShouldRetry(System.ClientModel.Primitives.PipelineMessage,System.Exception):System.Boolean",
+          "clrName": "ShouldRetry",
+          "metadataToken": 100663875,
+          "canonicalSignature": "(System.ClientModel.Primitives.PipelineMessage,System.Exception):System.Boolean",
+          "normalizedSignature": "ShouldRetry|(System.ClientModel.Primitives.PipelineMessage,System.Exception):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "System.ClientModel.Primitives.ClientRetryPolicy",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.ClientRetryPolicy::ShouldRetryAsync(System.ClientModel.Primitives.PipelineMessage,System.Exception):System.Threading.Tasks.ValueTask_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "ShouldRetryAsync",
+          "metadataToken": 100663876,
+          "canonicalSignature": "(System.ClientModel.Primitives.PipelineMessage,System.Exception):System.Threading.Tasks.ValueTask_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "ShouldRetryAsync|(System.ClientModel.Primitives.PipelineMessage,System.Exception):System.Threading.Tasks.ValueTask_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "System.ClientModel.Primitives.ClientRetryPolicy",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.ClientRetryPolicy::GetNextDelay(System.ClientModel.Primitives.PipelineMessage,System.Int32):System.TimeSpan",
+          "clrName": "GetNextDelay",
+          "metadataToken": 100663877,
+          "canonicalSignature": "(System.ClientModel.Primitives.PipelineMessage,System.Int32):System.TimeSpan",
+          "normalizedSignature": "GetNextDelay|(System.ClientModel.Primitives.PipelineMessage,System.Int32):System.TimeSpan|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "System.ClientModel.Primitives.ClientRetryPolicy",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.ClientRetryPolicy::WaitAsync(System.TimeSpan,System.Threading.CancellationToken):System.Threading.Tasks.Task",
+          "clrName": "WaitAsync",
+          "metadataToken": 100663878,
+          "canonicalSignature": "(System.TimeSpan,System.Threading.CancellationToken):System.Threading.Tasks.Task",
+          "normalizedSignature": "WaitAsync|(System.TimeSpan,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "System.ClientModel.Primitives.ClientRetryPolicy",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.ClientRetryPolicy::Wait(System.TimeSpan,System.Threading.CancellationToken):System.Void",
+          "clrName": "Wait",
+          "metadataToken": 100663879,
+          "canonicalSignature": "(System.TimeSpan,System.Threading.CancellationToken):System.Void",
+          "normalizedSignature": "Wait|(System.TimeSpan,System.Threading.CancellationToken):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "System.ClientModel.Primitives.ClientRetryPolicy",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -1669,6 +2230,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ClientRetryPolicy",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -1688,6 +2250,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ClientRetryPolicy",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -1709,6 +2272,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ClientRetryPolicy",
           "declaringAssemblyName": "System.ClientModel"
         }
@@ -1723,6 +2287,7 @@
           "normalizedSignature": "constructor|(System.Int32):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ClientRetryPolicy",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -1733,6 +2298,7 @@
           "normalizedSignature": "constructor|(System.Int32,System.Boolean,Microsoft.Extensions.Logging.ILoggerFactory):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ClientRetryPolicy",
           "declaringAssemblyName": "System.ClientModel"
         }
@@ -1749,6 +2315,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "System.ClientModel:System.ClientModel.Primitives.CollectionResult::GetRawPages():System.Collections.Generic.IEnumerable_1[[System.ClientModel.ClientResult,System.ClientModel,Version=1.5.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
@@ -1765,6 +2335,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.CollectionResult",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -1784,6 +2355,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.CollectionResult",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -1792,7 +2364,19 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.CollectionResult::.ctor():void",
+          "metadataToken": 100663574,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "System.ClientModel.Primitives.CollectionResult",
+          "declaringAssemblyName": "System.ClientModel"
+        }
+      ]
     },
     {
       "stableId": "System.ClientModel:System.ClientModel.Primitives.GetTokenOptions",
@@ -1805,6 +2389,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -1822,6 +2410,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.GetTokenOptions",
           "declaringAssemblyName": "System.ClientModel"
         }
@@ -1835,6 +2424,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.GetTokenOptions",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -1846,6 +2436,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.GetTokenOptions",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -1857,6 +2448,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.GetTokenOptions",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -1868,6 +2460,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.GetTokenOptions",
           "declaringAssemblyName": "System.ClientModel"
         }
@@ -1881,6 +2474,7 @@
           "normalizedSignature": "constructor|(System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.GetTokenOptions",
           "declaringAssemblyName": "System.ClientModel"
         }
@@ -1897,7 +2491,117 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelineTransport",
+        "clrName": "System.ClientModel.Primitives.PipelineTransport"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
       "methods": [
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.HttpClientPipelineTransport::CreateMessageCore():System.ClientModel.Primitives.PipelineMessage",
+          "clrName": "CreateMessageCore",
+          "metadataToken": 100663886,
+          "canonicalSignature": "():System.ClientModel.Primitives.PipelineMessage",
+          "normalizedSignature": "CreateMessageCore|():System.ClientModel.Primitives.PipelineMessage|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "System.ClientModel.Primitives.HttpClientPipelineTransport",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.HttpClientPipelineTransport::ProcessCore(System.ClientModel.Primitives.PipelineMessage):System.Void",
+          "clrName": "ProcessCore",
+          "metadataToken": 100663887,
+          "canonicalSignature": "(System.ClientModel.Primitives.PipelineMessage):System.Void",
+          "normalizedSignature": "ProcessCore|(System.ClientModel.Primitives.PipelineMessage):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": true,
+          "visibility": "Protected",
+          "declaringClrType": "System.ClientModel.Primitives.HttpClientPipelineTransport",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.HttpClientPipelineTransport::ProcessCoreAsync(System.ClientModel.Primitives.PipelineMessage):System.Threading.Tasks.ValueTask",
+          "clrName": "ProcessCoreAsync",
+          "metadataToken": 100663888,
+          "canonicalSignature": "(System.ClientModel.Primitives.PipelineMessage):System.Threading.Tasks.ValueTask",
+          "normalizedSignature": "ProcessCoreAsync|(System.ClientModel.Primitives.PipelineMessage):System.Threading.Tasks.ValueTask|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": true,
+          "visibility": "Protected",
+          "declaringClrType": "System.ClientModel.Primitives.HttpClientPipelineTransport",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.HttpClientPipelineTransport::OnSendingRequest(System.ClientModel.Primitives.PipelineMessage,System.Net.Http.HttpRequestMessage):System.Void",
+          "clrName": "OnSendingRequest",
+          "metadataToken": 100663890,
+          "canonicalSignature": "(System.ClientModel.Primitives.PipelineMessage,System.Net.Http.HttpRequestMessage):System.Void",
+          "normalizedSignature": "OnSendingRequest|(System.ClientModel.Primitives.PipelineMessage,System.Net.Http.HttpRequestMessage):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "System.ClientModel.Primitives.HttpClientPipelineTransport",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.HttpClientPipelineTransport::OnReceivedResponse(System.ClientModel.Primitives.PipelineMessage,System.Net.Http.HttpResponseMessage):System.Void",
+          "clrName": "OnReceivedResponse",
+          "metadataToken": 100663891,
+          "canonicalSignature": "(System.ClientModel.Primitives.PipelineMessage,System.Net.Http.HttpResponseMessage):System.Void",
+          "normalizedSignature": "OnReceivedResponse|(System.ClientModel.Primitives.PipelineMessage,System.Net.Http.HttpResponseMessage):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "System.ClientModel.Primitives.HttpClientPipelineTransport",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        },
         {
           "stableId": "System.ClientModel:System.ClientModel.Primitives.HttpClientPipelineTransport::Dispose():System.Void",
           "clrName": "Dispose",
@@ -1913,6 +2617,27 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "System.ClientModel.Primitives.HttpClientPipelineTransport",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.HttpClientPipelineTransport::Dispose(System.Boolean):System.Void",
+          "clrName": "Dispose",
+          "metadataToken": 100663893,
+          "canonicalSignature": "(System.Boolean):System.Void",
+          "normalizedSignature": "Dispose|(System.Boolean):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "System.ClientModel.Primitives.HttpClientPipelineTransport",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -1934,6 +2659,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.HttpClientPipelineTransport",
           "declaringAssemblyName": "System.ClientModel"
         }
@@ -1948,6 +2674,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.HttpClientPipelineTransport",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -1958,6 +2685,7 @@
           "normalizedSignature": "constructor|(System.Net.Http.HttpClient):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.HttpClientPipelineTransport",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -1968,6 +2696,7 @@
           "normalizedSignature": "constructor|(System.Net.Http.HttpClient,System.Boolean,Microsoft.Extensions.Logging.ILoggerFactory):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.HttpClientPipelineTransport",
           "declaringAssemblyName": "System.ClientModel"
         }
@@ -1984,6 +2713,13 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Text.Json:System.Text.Json.Serialization.JsonConverter\u00601",
+        "clrName": "System.Text.Json.Serialization.JsonConverter\u00601",
+        "typeArguments": [
+          "IJsonModel_1[[Object]]"
+        ]
+      },
       "methods": [
         {
           "stableId": "System.ClientModel:System.ClientModel.Primitives.JsonModelConverter::CanConvert(System.Type):System.Boolean",
@@ -2000,6 +2736,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.JsonModelConverter",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -2019,6 +2756,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.JsonModelConverter",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false,
@@ -2044,6 +2782,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.JsonModelConverter",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -2060,6 +2799,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.JsonModelConverter",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -2070,6 +2810,7 @@
           "normalizedSignature": "constructor|(System.ClientModel.Primitives.ModelReaderWriterOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.JsonModelConverter",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -2080,6 +2821,7 @@
           "normalizedSignature": "constructor|(System.ClientModel.Primitives.ModelReaderWriterOptions,System.ClientModel.Primitives.ModelReaderWriterContext):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.JsonModelConverter",
           "declaringAssemblyName": "System.ClientModel"
         }
@@ -2096,6 +2838,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelinePolicy",
+        "clrName": "System.ClientModel.Primitives.PipelinePolicy"
+      },
       "methods": [
         {
           "stableId": "System.ClientModel:System.ClientModel.Primitives.MessageLoggingPolicy::Process(System.ClientModel.Primitives.PipelineMessage,System.Collections.Generic.IReadOnlyList_1[[System.ClientModel.Primitives.PipelinePolicy,System.ClientModel,Version=1.5.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]],System.Int32):System.Void",
@@ -2112,6 +2858,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.MessageLoggingPolicy",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -2131,6 +2878,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.MessageLoggingPolicy",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -2150,6 +2898,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.MessageLoggingPolicy",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -2169,6 +2918,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.MessageLoggingPolicy",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -2190,6 +2940,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.MessageLoggingPolicy",
           "declaringAssemblyName": "System.ClientModel"
         }
@@ -2204,6 +2955,7 @@
           "normalizedSignature": "constructor|(System.ClientModel.Primitives.ClientLoggingOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.MessageLoggingPolicy",
           "declaringAssemblyName": "System.ClientModel"
         }
@@ -2220,6 +2972,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Attribute",
+        "clrName": "System.Attribute"
+      },
       "methods": [],
       "properties": [],
       "fields": [],
@@ -2232,6 +2988,7 @@
           "normalizedSignature": "constructor|(System.Type):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ModelReaderWriterBuildableAttribute",
           "declaringAssemblyName": "System.ClientModel"
         }
@@ -2248,6 +3005,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "System.ClientModel:System.ClientModel.Primitives.ModelReaderWriterContext::GetTypeBuilder(System.Type):System.ClientModel.Primitives.ModelReaderWriterTypeBuilder",
@@ -2264,6 +3025,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ModelReaderWriterContext",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -2283,6 +3045,33 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "System.ClientModel.Primitives.ModelReaderWriterContext",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false,
+          "parameterModifiers": [
+            {
+              "index": 1,
+              "modifier": "out"
+            }
+          ]
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.ModelReaderWriterContext::TryGetTypeBuilderCore(System.Type,System.ClientModel.Primitives.ModelReaderWriterTypeBuilder\u0026):System.Boolean",
+          "clrName": "TryGetTypeBuilderCore",
+          "metadataToken": 100663729,
+          "canonicalSignature": "(System.Type,System.ClientModel.Primitives.ModelReaderWriterTypeBuilder\u0026):System.Boolean",
+          "normalizedSignature": "TryGetTypeBuilderCore|(System.Type,System.ClientModel.Primitives.ModelReaderWriterTypeBuilder\u0026):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "System.ClientModel.Primitives.ModelReaderWriterContext",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false,
@@ -2297,7 +3086,19 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.ModelReaderWriterContext::.ctor():void",
+          "metadataToken": 100663730,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "System.ClientModel.Primitives.ModelReaderWriterContext",
+          "declaringAssemblyName": "System.ClientModel"
+        }
+      ]
     },
     {
       "stableId": "System.ClientModel:System.ClientModel.Primitives.ModelReaderWriterContextTypeAttribute",
@@ -2310,6 +3111,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Attribute",
+        "clrName": "System.Attribute"
+      },
       "methods": [],
       "properties": [],
       "fields": [],
@@ -2322,6 +3127,7 @@
           "normalizedSignature": "constructor|(System.Type):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ModelReaderWriterContextTypeAttribute",
           "declaringAssemblyName": "System.ClientModel"
         }
@@ -2338,6 +3144,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -2355,6 +3165,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ModelReaderWriterOptions",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -2373,6 +3184,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ModelReaderWriterOptions",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -2391,6 +3203,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ModelReaderWriterOptions",
           "declaringAssemblyName": "System.ClientModel"
         }
@@ -2405,6 +3218,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ModelReaderWriterOptions",
           "declaringAssemblyName": "System.ClientModel"
         }
@@ -2421,11 +3235,167 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
-      "methods": [],
-      "properties": [],
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "methods": [
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.ModelReaderWriterTypeBuilder::GetItems(System.Object):System.Collections.IEnumerable",
+          "clrName": "GetItems",
+          "metadataToken": 100663745,
+          "canonicalSignature": "(System.Object):System.Collections.IEnumerable",
+          "normalizedSignature": "GetItems|(System.Object):System.Collections.IEnumerable|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "System.ClientModel.Primitives.ModelReaderWriterTypeBuilder",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.ModelReaderWriterTypeBuilder::CreateInstance():System.Object",
+          "clrName": "CreateInstance",
+          "metadataToken": 100663746,
+          "canonicalSignature": "():System.Object",
+          "normalizedSignature": "CreateInstance|():System.Object|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "System.ClientModel.Primitives.ModelReaderWriterTypeBuilder",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.ModelReaderWriterTypeBuilder::ConvertCollectionBuilder(System.Object):System.Object",
+          "clrName": "ConvertCollectionBuilder",
+          "metadataToken": 100663747,
+          "canonicalSignature": "(System.Object):System.Object",
+          "normalizedSignature": "ConvertCollectionBuilder|(System.Object):System.Object|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "System.ClientModel.Primitives.ModelReaderWriterTypeBuilder",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.ModelReaderWriterTypeBuilder::AddItem(System.Object,System.Object):System.Void",
+          "clrName": "AddItem",
+          "metadataToken": 100663748,
+          "canonicalSignature": "(System.Object,System.Object):System.Void",
+          "normalizedSignature": "AddItem|(System.Object,System.Object):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "System.ClientModel.Primitives.ModelReaderWriterTypeBuilder",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.ModelReaderWriterTypeBuilder::AddItemWithKey(System.Object,System.String,System.Object):System.Void",
+          "clrName": "AddItemWithKey",
+          "metadataToken": 100663749,
+          "canonicalSignature": "(System.Object,System.String,System.Object):System.Void",
+          "normalizedSignature": "AddItemWithKey|(System.Object,System.String,System.Object):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 3,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "System.ClientModel.Primitives.ModelReaderWriterTypeBuilder",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.ModelReaderWriterTypeBuilder::BuilderType:System.Type",
+          "clrName": "BuilderType",
+          "metadataToken": 385876037,
+          "canonicalSignature": ":System.Type",
+          "normalizedSignature": "BuilderType|:System.Type|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "visibility": "Protected",
+          "declaringClrType": "System.ClientModel.Primitives.ModelReaderWriterTypeBuilder",
+          "declaringAssemblyName": "System.ClientModel"
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.ModelReaderWriterTypeBuilder::ItemType:System.Type",
+          "clrName": "ItemType",
+          "metadataToken": 385876038,
+          "canonicalSignature": ":System.Type",
+          "normalizedSignature": "ItemType|:System.Type|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "visibility": "Protected",
+          "declaringClrType": "System.ClientModel.Primitives.ModelReaderWriterTypeBuilder",
+          "declaringAssemblyName": "System.ClientModel"
+        }
+      ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.ModelReaderWriterTypeBuilder::.ctor():void",
+          "metadataToken": 100663750,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "System.ClientModel.Primitives.ModelReaderWriterTypeBuilder",
+          "declaringAssemblyName": "System.ClientModel"
+        }
+      ]
     },
     {
       "stableId": "System.ClientModel:System.ClientModel.Primitives.OperationResult",
@@ -2438,6 +3408,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "System.ClientModel:System.ClientModel.Primitives.OperationResult::UpdateStatusAsync(System.ClientModel.Primitives.RequestOptions):System.Threading.Tasks.ValueTask_1[[System.ClientModel.ClientResult,System.ClientModel,Version=1.5.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
@@ -2454,6 +3428,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.OperationResult",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -2473,6 +3448,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.OperationResult",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -2492,6 +3468,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.OperationResult",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -2511,6 +3488,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.OperationResult",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -2530,6 +3508,27 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "System.ClientModel.Primitives.OperationResult",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.OperationResult::SetRawResponse(System.ClientModel.Primitives.PipelineResponse):System.Void",
+          "clrName": "SetRawResponse",
+          "metadataToken": 100663587,
+          "canonicalSignature": "(System.ClientModel.Primitives.PipelineResponse):System.Void",
+          "normalizedSignature": "SetRawResponse|(System.ClientModel.Primitives.PipelineResponse):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "System.ClientModel.Primitives.OperationResult",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -2541,16 +3540,17 @@
           "clrName": "HasCompleted",
           "metadataToken": 385876001,
           "canonicalSignature": ":System.Boolean",
-          "normalizedSignature": "HasCompleted|:System.Boolean|static=false|accessor=get",
+          "normalizedSignature": "HasCompleted|:System.Boolean|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.OperationResult",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -2559,23 +3559,36 @@
           "clrName": "RehydrationToken",
           "metadataToken": 385876002,
           "canonicalSignature": ":System.ClientModel.ContinuationToken",
-          "normalizedSignature": "RehydrationToken|:System.ClientModel.ContinuationToken|static=false|accessor=get",
+          "normalizedSignature": "RehydrationToken|:System.ClientModel.ContinuationToken|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.OperationResult",
           "declaringAssemblyName": "System.ClientModel"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.OperationResult::.ctor(System.ClientModel.Primitives.PipelineResponse):void",
+          "metadataToken": 100663577,
+          "canonicalSignature": "(System.ClientModel.Primitives.PipelineResponse):void",
+          "normalizedSignature": "constructor|(System.ClientModel.Primitives.PipelineResponse):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "visibility": "Protected",
+          "declaringClrType": "System.ClientModel.Primitives.OperationResult",
+          "declaringAssemblyName": "System.ClientModel"
+        }
+      ]
     },
     {
       "stableId": "System.ClientModel:System.ClientModel.Primitives.PersistableModelProxyAttribute",
@@ -2588,6 +3601,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Attribute",
+        "clrName": "System.Attribute"
+      },
       "methods": [],
       "properties": [
         {
@@ -2605,6 +3622,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.PersistableModelProxyAttribute",
           "declaringAssemblyName": "System.ClientModel"
         }
@@ -2619,6 +3637,7 @@
           "normalizedSignature": "constructor|(System.Type):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.PersistableModelProxyAttribute",
           "declaringAssemblyName": "System.ClientModel"
         }
@@ -2635,6 +3654,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelineMessage::ExtractResponse():System.ClientModel.Primitives.PipelineResponse",
@@ -2651,6 +3680,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.PipelineMessage",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -2670,6 +3700,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.PipelineMessage",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -2689,6 +3720,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.PipelineMessage",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false,
@@ -2714,6 +3746,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.PipelineMessage",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -2733,6 +3766,27 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "System.ClientModel.Primitives.PipelineMessage",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelineMessage::Dispose(System.Boolean):System.Void",
+          "clrName": "Dispose",
+          "metadataToken": 100663634,
+          "canonicalSignature": "(System.Boolean):System.Void",
+          "normalizedSignature": "Dispose|(System.Boolean):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "System.ClientModel.Primitives.PipelineMessage",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -2754,6 +3808,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.PipelineMessage",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -2762,16 +3817,17 @@
           "clrName": "Response",
           "metadataToken": 385876004,
           "canonicalSignature": ":System.ClientModel.Primitives.PipelineResponse",
-          "normalizedSignature": "Response|:System.ClientModel.Primitives.PipelineResponse|static=false|accessor=get",
+          "normalizedSignature": "Response|:System.ClientModel.Primitives.PipelineResponse|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.PipelineMessage",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -2780,16 +3836,17 @@
           "clrName": "CancellationToken",
           "metadataToken": 385876005,
           "canonicalSignature": ":System.Threading.CancellationToken",
-          "normalizedSignature": "CancellationToken|:System.Threading.CancellationToken|static=false|accessor=get",
+          "normalizedSignature": "CancellationToken|:System.Threading.CancellationToken|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.PipelineMessage",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -2808,6 +3865,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.PipelineMessage",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -2826,6 +3884,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.PipelineMessage",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -2844,13 +3903,26 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.PipelineMessage",
           "declaringAssemblyName": "System.ClientModel"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelineMessage::.ctor(System.ClientModel.Primitives.PipelineRequest):void",
+          "metadataToken": 100663607,
+          "canonicalSignature": "(System.ClientModel.Primitives.PipelineRequest):void",
+          "normalizedSignature": "constructor|(System.ClientModel.Primitives.PipelineRequest):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "visibility": "ProtectedInternal",
+          "declaringClrType": "System.ClientModel.Primitives.PipelineMessage",
+          "declaringAssemblyName": "System.ClientModel"
+        }
+      ]
     },
     {
       "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelineMessageClassifier",
@@ -2863,6 +3935,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelineMessageClassifier::Create(System.ReadOnlySpan_1[[System.UInt16,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.ClientModel.Primitives.PipelineMessageClassifier",
@@ -2879,6 +3955,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.PipelineMessageClassifier",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -2898,6 +3975,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.PipelineMessageClassifier",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false,
@@ -2923,6 +4001,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.PipelineMessageClassifier",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false,
@@ -2950,13 +4029,26 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.PipelineMessageClassifier",
           "declaringAssemblyName": "System.ClientModel"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelineMessageClassifier::.ctor():void",
+          "metadataToken": 100663817,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "System.ClientModel.Primitives.PipelineMessageClassifier",
+          "declaringAssemblyName": "System.ClientModel"
+        }
+      ]
     },
     {
       "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelinePolicy",
@@ -2969,6 +4061,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelinePolicy::Process(System.ClientModel.Primitives.PipelineMessage,System.Collections.Generic.IReadOnlyList_1[[System.ClientModel.Primitives.PipelinePolicy,System.ClientModel,Version=1.5.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]],System.Int32):System.Void",
@@ -2985,6 +4081,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.PipelinePolicy",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -3004,6 +4101,47 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "System.ClientModel.Primitives.PipelinePolicy",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelinePolicy::ProcessNext(System.ClientModel.Primitives.PipelineMessage,System.Collections.Generic.IReadOnlyList_1[[System.ClientModel.Primitives.PipelinePolicy,System.ClientModel,Version=1.5.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]],System.Int32):System.Void",
+          "clrName": "ProcessNext",
+          "metadataToken": 100663905,
+          "canonicalSignature": "(System.ClientModel.Primitives.PipelineMessage,System.Collections.Generic.IReadOnlyList_1[[System.ClientModel.Primitives.PipelinePolicy,System.ClientModel,Version=1.5.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]],System.Int32):System.Void",
+          "normalizedSignature": "ProcessNext|(System.ClientModel.Primitives.PipelineMessage,System.Collections.Generic.IReadOnlyList_1[[System.ClientModel.Primitives.PipelinePolicy,System.ClientModel,Version=1.5.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]],System.Int32):System.Void|static=true",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 3,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "System.ClientModel.Primitives.PipelinePolicy",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelinePolicy::ProcessNextAsync(System.ClientModel.Primitives.PipelineMessage,System.Collections.Generic.IReadOnlyList_1[[System.ClientModel.Primitives.PipelinePolicy,System.ClientModel,Version=1.5.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]],System.Int32):System.Threading.Tasks.ValueTask",
+          "clrName": "ProcessNextAsync",
+          "metadataToken": 100663906,
+          "canonicalSignature": "(System.ClientModel.Primitives.PipelineMessage,System.Collections.Generic.IReadOnlyList_1[[System.ClientModel.Primitives.PipelinePolicy,System.ClientModel,Version=1.5.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]],System.Int32):System.Threading.Tasks.ValueTask",
+          "normalizedSignature": "ProcessNextAsync|(System.ClientModel.Primitives.PipelineMessage,System.Collections.Generic.IReadOnlyList_1[[System.ClientModel.Primitives.PipelinePolicy,System.ClientModel,Version=1.5.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]],System.Int32):System.Threading.Tasks.ValueTask|static=true",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 3,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "System.ClientModel.Primitives.PipelinePolicy",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -3012,7 +4150,19 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelinePolicy::.ctor():void",
+          "metadataToken": 100663907,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "System.ClientModel.Primitives.PipelinePolicy",
+          "declaringAssemblyName": "System.ClientModel"
+        }
+      ]
     },
     {
       "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelineRequest",
@@ -3025,6 +4175,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelineRequest::Dispose():System.Void",
@@ -3041,6 +4201,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.PipelineRequest",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -3062,6 +4223,26 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
+          "declaringClrType": "System.ClientModel.Primitives.PipelineRequest",
+          "declaringAssemblyName": "System.ClientModel"
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelineRequest::MethodCore:System.String",
+          "clrName": "MethodCore",
+          "metadataToken": 385876015,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "MethodCore|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "visibility": "Protected",
           "declaringClrType": "System.ClientModel.Primitives.PipelineRequest",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -3080,6 +4261,26 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
+          "declaringClrType": "System.ClientModel.Primitives.PipelineRequest",
+          "declaringAssemblyName": "System.ClientModel"
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelineRequest::UriCore:System.Uri",
+          "clrName": "UriCore",
+          "metadataToken": 385876017,
+          "canonicalSignature": ":System.Uri",
+          "normalizedSignature": "UriCore|:System.Uri|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "visibility": "Protected",
           "declaringClrType": "System.ClientModel.Primitives.PipelineRequest",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -3098,6 +4299,26 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
+          "declaringClrType": "System.ClientModel.Primitives.PipelineRequest",
+          "declaringAssemblyName": "System.ClientModel"
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelineRequest::HeadersCore:System.ClientModel.Primitives.PipelineRequestHeaders",
+          "clrName": "HeadersCore",
+          "metadataToken": 385876019,
+          "canonicalSignature": ":System.ClientModel.Primitives.PipelineRequestHeaders",
+          "normalizedSignature": "HeadersCore|:System.ClientModel.Primitives.PipelineRequestHeaders|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "visibility": "Protected",
           "declaringClrType": "System.ClientModel.Primitives.PipelineRequest",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -3116,13 +4337,45 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
+          "declaringClrType": "System.ClientModel.Primitives.PipelineRequest",
+          "declaringAssemblyName": "System.ClientModel"
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelineRequest::ContentCore:System.ClientModel.BinaryContent",
+          "clrName": "ContentCore",
+          "metadataToken": 385876021,
+          "canonicalSignature": ":System.ClientModel.BinaryContent",
+          "normalizedSignature": "ContentCore|:System.ClientModel.BinaryContent|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "visibility": "Protected",
           "declaringClrType": "System.ClientModel.Primitives.PipelineRequest",
           "declaringAssemblyName": "System.ClientModel"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelineRequest::.ctor():void",
+          "metadataToken": 100663652,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "System.ClientModel.Primitives.PipelineRequest",
+          "declaringAssemblyName": "System.ClientModel"
+        }
+      ]
     },
     {
       "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelineRequestHeaders",
@@ -3135,6 +4388,23 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable\u00601",
+          "clrName": "System.Collections.Generic.IEnumerable\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,String]]"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+          "clrName": "System.Collections.IEnumerable"
+        }
+      ],
       "methods": [
         {
           "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelineRequestHeaders::Add(System.String,System.String):System.Void",
@@ -3151,6 +4421,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.PipelineRequestHeaders",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -3170,6 +4441,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.PipelineRequestHeaders",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -3189,6 +4461,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.PipelineRequestHeaders",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -3208,6 +4481,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.PipelineRequestHeaders",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false,
@@ -3233,6 +4507,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.PipelineRequestHeaders",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false,
@@ -3258,6 +4533,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.PipelineRequestHeaders",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -3266,7 +4542,19 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelineRequestHeaders::.ctor():void",
+          "metadataToken": 100663660,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "System.ClientModel.Primitives.PipelineRequestHeaders",
+          "declaringAssemblyName": "System.ClientModel"
+        }
+      ]
     },
     {
       "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelineResponse",
@@ -3279,6 +4567,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelineResponse::BufferContent(System.Threading.CancellationToken):System.BinaryData",
@@ -3295,6 +4593,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.PipelineResponse",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -3314,6 +4613,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.PipelineResponse",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -3333,6 +4633,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.PipelineResponse",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -3354,6 +4655,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.PipelineResponse",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -3372,6 +4674,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.PipelineResponse",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -3390,6 +4693,26 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
+          "declaringClrType": "System.ClientModel.Primitives.PipelineResponse",
+          "declaringAssemblyName": "System.ClientModel"
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelineResponse::HeadersCore:System.ClientModel.Primitives.PipelineResponseHeaders",
+          "clrName": "HeadersCore",
+          "metadataToken": 385876026,
+          "canonicalSignature": ":System.ClientModel.Primitives.PipelineResponseHeaders",
+          "normalizedSignature": "HeadersCore|:System.ClientModel.Primitives.PipelineResponseHeaders|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "visibility": "Protected",
           "declaringClrType": "System.ClientModel.Primitives.PipelineResponse",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -3408,6 +4731,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.PipelineResponse",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -3426,6 +4750,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.PipelineResponse",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -3444,13 +4769,45 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
+          "declaringClrType": "System.ClientModel.Primitives.PipelineResponse",
+          "declaringAssemblyName": "System.ClientModel"
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelineResponse::IsErrorCore:System.Boolean",
+          "clrName": "IsErrorCore",
+          "metadataToken": 385876030,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "IsErrorCore|:System.Boolean|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "visibility": "ProtectedInternal",
           "declaringClrType": "System.ClientModel.Primitives.PipelineResponse",
           "declaringAssemblyName": "System.ClientModel"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelineResponse::.ctor():void",
+          "metadataToken": 100663674,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "System.ClientModel.Primitives.PipelineResponse",
+          "declaringAssemblyName": "System.ClientModel"
+        }
+      ]
     },
     {
       "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelineResponseHeaders",
@@ -3463,6 +4820,23 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable\u00601",
+          "clrName": "System.Collections.Generic.IEnumerable\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,String]]"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+          "clrName": "System.Collections.IEnumerable"
+        }
+      ],
       "methods": [
         {
           "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelineResponseHeaders::TryGetValue(System.String,System.String\u0026):System.Boolean",
@@ -3479,6 +4853,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.PipelineResponseHeaders",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false,
@@ -3504,6 +4879,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.PipelineResponseHeaders",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false,
@@ -3529,6 +4905,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.PipelineResponseHeaders",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -3537,7 +4914,19 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelineResponseHeaders::.ctor():void",
+          "metadataToken": 100663680,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "System.ClientModel.Primitives.PipelineResponseHeaders",
+          "declaringAssemblyName": "System.ClientModel"
+        }
+      ]
     },
     {
       "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelineTransport",
@@ -3550,6 +4939,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelinePolicy",
+        "clrName": "System.ClientModel.Primitives.PipelinePolicy"
+      },
       "methods": [
         {
           "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelineTransport::CreateMessage():System.ClientModel.Primitives.PipelineMessage",
@@ -3566,6 +4959,27 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "System.ClientModel.Primitives.PipelineTransport",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelineTransport::CreateMessageCore():System.ClientModel.Primitives.PipelineMessage",
+          "clrName": "CreateMessageCore",
+          "metadataToken": 100663911,
+          "canonicalSignature": "():System.ClientModel.Primitives.PipelineMessage",
+          "normalizedSignature": "CreateMessageCore|():System.ClientModel.Primitives.PipelineMessage|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "System.ClientModel.Primitives.PipelineTransport",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -3585,6 +4999,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.PipelineTransport",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -3604,6 +5019,47 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "System.ClientModel.Primitives.PipelineTransport",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelineTransport::ProcessCore(System.ClientModel.Primitives.PipelineMessage):System.Void",
+          "clrName": "ProcessCore",
+          "metadataToken": 100663915,
+          "canonicalSignature": "(System.ClientModel.Primitives.PipelineMessage):System.Void",
+          "normalizedSignature": "ProcessCore|(System.ClientModel.Primitives.PipelineMessage):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "System.ClientModel.Primitives.PipelineTransport",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelineTransport::ProcessCoreAsync(System.ClientModel.Primitives.PipelineMessage):System.Threading.Tasks.ValueTask",
+          "clrName": "ProcessCoreAsync",
+          "metadataToken": 100663916,
+          "canonicalSignature": "(System.ClientModel.Primitives.PipelineMessage):System.Threading.Tasks.ValueTask",
+          "normalizedSignature": "ProcessCoreAsync|(System.ClientModel.Primitives.PipelineMessage):System.Threading.Tasks.ValueTask|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "System.ClientModel.Primitives.PipelineTransport",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -3623,6 +5079,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.PipelineTransport",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -3642,6 +5099,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.PipelineTransport",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -3661,6 +5119,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.PipelineTransport",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -3680,6 +5139,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.PipelineTransport",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -3688,7 +5148,30 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelineTransport::.ctor():void",
+          "metadataToken": 100663908,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "System.ClientModel.Primitives.PipelineTransport",
+          "declaringAssemblyName": "System.ClientModel"
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelineTransport::.ctor(System.Boolean,Microsoft.Extensions.Logging.ILoggerFactory):void",
+          "metadataToken": 100663909,
+          "canonicalSignature": "(System.Boolean,Microsoft.Extensions.Logging.ILoggerFactory):void",
+          "normalizedSignature": "constructor|(System.Boolean,Microsoft.Extensions.Logging.ILoggerFactory):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "visibility": "Protected",
+          "declaringClrType": "System.ClientModel.Primitives.PipelineTransport",
+          "declaringAssemblyName": "System.ClientModel"
+        }
+      ]
     },
     {
       "stableId": "System.ClientModel:System.ClientModel.Primitives.RequestOptions",
@@ -3701,6 +5184,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "System.ClientModel:System.ClientModel.Primitives.RequestOptions::AddHeader(System.String,System.String):System.Void",
@@ -3717,6 +5204,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.RequestOptions",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -3736,6 +5224,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.RequestOptions",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -3755,6 +5244,27 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "System.ClientModel.Primitives.RequestOptions",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.RequestOptions::Apply(System.ClientModel.Primitives.PipelineMessage):System.Void",
+          "clrName": "Apply",
+          "metadataToken": 100663830,
+          "canonicalSignature": "(System.ClientModel.Primitives.PipelineMessage):System.Void",
+          "normalizedSignature": "Apply|(System.ClientModel.Primitives.PipelineMessage):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "ProtectedInternal",
           "declaringClrType": "System.ClientModel.Primitives.RequestOptions",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -3774,6 +5284,27 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "System.ClientModel.Primitives.RequestOptions",
+          "declaringAssemblyName": "System.ClientModel",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.RequestOptions::AssertNotFrozen():System.Void",
+          "clrName": "AssertNotFrozen",
+          "metadataToken": 100663832,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "AssertNotFrozen|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "System.ClientModel.Primitives.RequestOptions",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -3795,6 +5326,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.RequestOptions",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -3813,6 +5345,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.RequestOptions",
           "declaringAssemblyName": "System.ClientModel"
         },
@@ -3831,6 +5364,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.RequestOptions",
           "declaringAssemblyName": "System.ClientModel"
         }
@@ -3845,6 +5379,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.RequestOptions",
           "declaringAssemblyName": "System.ClientModel"
         }
@@ -3861,6 +5396,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "System.ClientModel:System.ClientModel.Primitives.ActivityExtensions::StartClientActivity(System.Diagnostics.ActivitySource,System.ClientModel.Primitives.ClientPipelineOptions,System.String,System.Diagnostics.ActivityKind,System.Diagnostics.ActivityContext,System.Collections.Generic.IEnumerable_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Diagnostics.Activity",
@@ -3877,6 +5416,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ActivityExtensions",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": true
@@ -3896,6 +5436,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ActivityExtensions",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": true
@@ -3917,6 +5458,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "System.ClientModel:System.ClientModel.Primitives.ModelReaderWriter::Write(T,System.ClientModel.Primitives.ModelReaderWriterOptions):System.BinaryData",
@@ -3933,6 +5478,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ModelReaderWriter",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -3952,6 +5498,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ModelReaderWriter",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -3971,6 +5518,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ModelReaderWriter",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -3990,6 +5538,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ModelReaderWriter",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -4009,6 +5558,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ModelReaderWriter",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -4028,6 +5578,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ModelReaderWriter",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -4047,6 +5598,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ModelReaderWriter",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false
@@ -4066,6 +5618,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.ModelReaderWriter",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false

@@ -15,6 +15,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Data.Common:System.Data.Common.DbDataSourceEnumerator",
+        "clrName": "System.Data.Common.DbDataSourceEnumerator"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.Sql.SqlDataSourceEnumerator::GetDataSources():System.Data.DataTable",
@@ -31,6 +35,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sql.SqlDataSourceEnumerator",
           "declaringAssemblyName": "Microsoft.Data.SqlClient",
           "isExtensionMethod": false
@@ -52,6 +57,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sql.SqlDataSourceEnumerator",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -66,6 +72,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sql.SqlDataSourceEnumerator",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -82,6 +89,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -99,6 +110,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sql.SqlNotificationRequest",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -117,6 +129,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sql.SqlNotificationRequest",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -135,6 +148,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sql.SqlNotificationRequest",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -149,6 +163,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sql.SqlNotificationRequest",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -159,6 +174,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.Int32):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.Sql.SqlNotificationRequest",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }

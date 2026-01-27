@@ -15,6 +15,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -32,6 +36,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.TelemetryCore.TelemetryClient.TelemetryData",
           "declaringAssemblyName": "Microsoft.Identity.Client"
         }
@@ -46,6 +51,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.TelemetryCore.TelemetryClient.TelemetryData",
           "declaringAssemblyName": "Microsoft.Identity.Client"
         }

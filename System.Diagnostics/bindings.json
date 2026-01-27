@@ -22,6 +22,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Diagnostics.TraceConfiguration::Register():System.Void",
@@ -38,6 +42,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.TraceConfiguration",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false

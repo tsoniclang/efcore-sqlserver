@@ -9,15 +9,15 @@ import * as Internal from './System.Configuration/internal/index.js';
 import type { IConfigErrorInfo } from './System.Configuration.Internal/internal/index.js';
 import type { ProviderBase, ProviderCollection } from './System.Configuration.Provider/internal/index.js';
 import type { UriIdnScope } from './System/internal/index.js';
-import type { Hashtable, ICollection, IDictionary, IEnumerable, IEnumerator, IList, ReadOnlyCollectionBase } from '@tsonic/dotnet/System.Collections.js';
+import type { Hashtable, ICollection, IComparer, IDictionary, IEnumerable, IEnumerator, IList, ReadOnlyCollectionBase } from '@tsonic/dotnet/System.Collections.js';
 import type { NameObjectCollectionBase, NameValueCollection, StringCollection } from '@tsonic/dotnet/System.Collections.Specialized.js';
-import type { CancelEventArgs, INotifyPropertyChanged, ITypeDescriptorContext, PropertyChangedEventHandler, TypeConverter } from '@tsonic/dotnet/System.ComponentModel.js';
+import type { CancelEventArgs, IComponent, INotifyPropertyChanged, ITypeDescriptorContext, PropertyChangedEventArgs, PropertyChangedEventHandler, TypeConverter } from '@tsonic/dotnet/System.ComponentModel.js';
 import type { CultureInfo } from '@tsonic/dotnet/System.Globalization.js';
 import type { Array as ClrArray, AsyncCallback, Attribute, Boolean as ClrBoolean, Enum, EventArgs, Exception, Func, GenericUriParserOptions, IAsyncResult, ICloneable, IComparable, IConvertible, IFormattable, Int32, Int64, IntPtr, ISpanFormattable, MulticastDelegate, Object as ClrObject, String as ClrString, SystemException, TimeSpan, Type, Void } from '@tsonic/dotnet/System.js';
 import type { IDeserializationCallback, ISerializable, SerializationInfo, StreamingContext } from '@tsonic/dotnet/System.Runtime.Serialization.js';
 import type { FrameworkName } from '@tsonic/dotnet/System.Runtime.Versioning.js';
 import type { RSAParameters } from '@tsonic/dotnet/System.Security.Cryptography.js';
-import type { XmlAttribute, XmlCDataSection, XmlComment, XmlDocument, XmlElement, XmlNode, XmlReader, XmlSignificantWhitespace, XmlText, XmlTextReader, XmlWhitespace } from '@tsonic/dotnet/System.Xml.js';
+import type { XmlAttribute, XmlCDataSection, XmlComment, XmlDocument, XmlElement, XmlNode, XmlReader, XmlSignificantWhitespace, XmlText, XmlTextReader, XmlWhitespace, XmlWriter } from '@tsonic/dotnet/System.Xml.js';
 import type { IXPathNavigable } from '@tsonic/dotnet/System.Xml.XPath.js';
 
 // Public API exports (curated - no internal $instance/$views leakage)

@@ -15,6 +15,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -32,6 +36,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
           "declaringAssemblyName": "Microsoft.IdentityModel.Tokens"
         },
@@ -50,6 +55,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
           "declaringAssemblyName": "Microsoft.IdentityModel.Tokens"
         },
@@ -68,6 +74,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
           "declaringAssemblyName": "Microsoft.IdentityModel.Tokens"
         },
@@ -86,6 +93,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
           "declaringAssemblyName": "Microsoft.IdentityModel.Tokens"
         }
@@ -99,6 +107,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
           "declaringAssemblyName": "Microsoft.IdentityModel.Tokens"
         }
@@ -112,6 +121,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
           "declaringAssemblyName": "Microsoft.IdentityModel.Tokens"
         }

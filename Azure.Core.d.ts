@@ -16,7 +16,7 @@ import type { ReadOnlySequence } from '@tsonic/dotnet/System.Buffers.js';
 import type { IDictionary, IEnumerable as IEnumerable__System_Collections_Generic, IEnumerator, IList, IReadOnlyDictionary } from '@tsonic/dotnet/System.Collections.Generic.js';
 import type { IEnumerable } from '@tsonic/dotnet/System.Collections.js';
 import type { Stream } from '@tsonic/dotnet/System.IO.js';
-import type { AsyncCallback, Boolean as ClrBoolean, Byte, Char, DateTimeOffset, Enum, Exception, Func, IAsyncResult, ICloneable, IComparable, IConvertible, IDisposable, IEquatable, IFormattable, Int32, Int64, IntPtr, ISpanFormattable, MulticastDelegate, Nullable, Object as ClrObject, ReadOnlyMemory, ReadOnlySpan, String as ClrString, TimeSpan, Type, UInt16, Uri, ValueType, Void } from '@tsonic/dotnet/System.js';
+import type { AsyncCallback, Boolean as ClrBoolean, Byte, Char, DateTimeOffset, Double, Enum, Exception, Func, IAsyncResult, ICloneable, IComparable, IConvertible, IDisposable, IEquatable, IFormattable, Int32, Int64, IntPtr, ISpanFormattable, MulticastDelegate, Nullable, Object as ClrObject, ReadOnlyMemory, ReadOnlySpan, String as ClrString, TimeSpan, Type, UInt16, Uri, ValueType, Void } from '@tsonic/dotnet/System.js';
 import type { Assembly } from '@tsonic/dotnet/System.Reflection.js';
 import type { ISerializable } from '@tsonic/dotnet/System.Runtime.Serialization.js';
 import type { Utf8JsonReader, Utf8JsonWriter } from '@tsonic/dotnet/System.Text.Json.js';

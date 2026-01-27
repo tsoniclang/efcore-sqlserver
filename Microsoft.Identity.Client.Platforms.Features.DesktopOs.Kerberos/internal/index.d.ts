@@ -14,6 +14,7 @@ export interface Credential$instance {
 
 
 export const Credential: {
+    new(): Credential;
     Current(): Credential;
 };
 

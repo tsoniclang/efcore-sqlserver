@@ -6,10 +6,10 @@
 import * as Internal from './Azure.Core.Pipeline/internal/index.js';
 
 // Cross-namespace type imports for constraints
-import type { ClientOptions, DelayStrategy, HttpMessage, Request, RequestFailedDetailsParser, ResponseClassifier, TokenCredential } from './Azure.Core/internal/index.js';
+import type { ClientOptions, DelayStrategy, HttpMessage, Request, RequestFailedDetailsParser, ResponseClassifier, TokenCredential, TokenRequestContext } from './Azure.Core/internal/index.js';
 import type { RequestContext, Response } from './Azure/internal/index.js';
 import type { IDictionary, IEnumerable, IList } from '@tsonic/dotnet/System.Collections.Generic.js';
-import type { Boolean as ClrBoolean, Func, IDisposable, Int32, Object as ClrObject, ReadOnlyMemory, String as ClrString, Void } from '@tsonic/dotnet/System.js';
+import type { Boolean as ClrBoolean, Exception, Func, IDisposable, Int32, Object as ClrObject, ReadOnlyMemory, String as ClrString, Void } from '@tsonic/dotnet/System.js';
 import type { HttpClient, HttpMessageHandler } from '@tsonic/dotnet/System.Net.Http.js';
 import type { SslPolicyErrors } from '@tsonic/dotnet/System.Net.Security.js';
 import type { X509Certificate2, X509Chain } from '@tsonic/dotnet/System.Security.Cryptography.X509Certificates.js';

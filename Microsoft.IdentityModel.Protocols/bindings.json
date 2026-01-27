@@ -15,6 +15,9 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 1,
+      "typeParameters": [
+        "T"
+      ],
       "methods": [
         {
           "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.IConfigurationManager\u00601::GetConfigurationAsync(System.Threading.CancellationToken):Task_1",
@@ -31,6 +34,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.IConfigurationManager\u00601",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols",
           "isExtensionMethod": false
@@ -50,6 +54,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.IConfigurationManager\u00601",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols",
           "isExtensionMethod": false
@@ -71,6 +76,9 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 1,
+      "typeParameters": [
+        "T"
+      ],
       "methods": [
         {
           "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.IConfigurationRetriever\u00601::GetConfigurationAsync(System.String,Microsoft.IdentityModel.Protocols.IDocumentRetriever,System.Threading.CancellationToken):Task_1",
@@ -87,6 +95,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.IConfigurationRetriever\u00601",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols",
           "isExtensionMethod": false
@@ -108,6 +117,9 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 1,
+      "typeParameters": [
+        "T"
+      ],
       "methods": [
         {
           "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.IConfigurationValidator\u00601::Validate(T):Microsoft.IdentityModel.Protocols.ConfigurationValidationResult",
@@ -124,6 +136,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.IConfigurationValidator\u00601",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols",
           "isExtensionMethod": false
@@ -161,6 +174,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.IDocumentRetriever",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols",
           "isExtensionMethod": false
@@ -182,6 +196,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.AuthenticationProtocolMessage::BuildFormPost():System.String",
@@ -198,6 +216,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.AuthenticationProtocolMessage",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols",
           "isExtensionMethod": false
@@ -217,6 +236,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.AuthenticationProtocolMessage",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols",
           "isExtensionMethod": false
@@ -236,6 +256,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.AuthenticationProtocolMessage",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols",
           "isExtensionMethod": false
@@ -255,6 +276,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.AuthenticationProtocolMessage",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols",
           "isExtensionMethod": false
@@ -274,6 +296,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.AuthenticationProtocolMessage",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols",
           "isExtensionMethod": false
@@ -293,6 +316,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.AuthenticationProtocolMessage",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols",
           "isExtensionMethod": false
@@ -314,6 +338,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.AuthenticationProtocolMessage",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
         },
@@ -332,6 +357,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.AuthenticationProtocolMessage",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
         },
@@ -350,6 +376,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.AuthenticationProtocolMessage",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
         },
@@ -368,6 +395,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.AuthenticationProtocolMessage",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
         },
@@ -386,6 +414,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.AuthenticationProtocolMessage",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
         },
@@ -404,13 +433,26 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.AuthenticationProtocolMessage",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.AuthenticationProtocolMessage::.ctor():void",
+          "metadataToken": 100663297,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.IdentityModel.Protocols.AuthenticationProtocolMessage",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
+        }
+      ]
     },
     {
       "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.ConfigurationManager\u00601",
@@ -423,6 +465,22 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 1,
+      "baseType": {
+        "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.BaseConfigurationManager",
+        "clrName": "Microsoft.IdentityModel.Tokens.BaseConfigurationManager"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.IConfigurationManager\u00601",
+          "clrName": "Microsoft.IdentityModel.Protocols.IConfigurationManager\u00601",
+          "typeArguments": [
+            "T"
+          ]
+        }
+      ],
+      "typeParameters": [
+        "T"
+      ],
       "methods": [
         {
           "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.ConfigurationManager\u00601::GetConfigurationAsync():Task_1",
@@ -439,6 +497,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.ConfigurationManager\u00601",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols",
           "isExtensionMethod": false
@@ -458,6 +517,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.ConfigurationManager\u00601",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols",
           "isExtensionMethod": false
@@ -477,6 +537,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.ConfigurationManager\u00601",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols",
           "isExtensionMethod": false
@@ -496,6 +557,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.ConfigurationManager\u00601",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols",
           "isExtensionMethod": false
@@ -515,6 +577,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.IConfigurationManager\u00601",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols",
           "isExtensionMethod": false,
@@ -535,6 +598,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.IConfigurationManager\u00601",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols",
           "isExtensionMethod": false,
@@ -555,6 +619,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.ConfigurationManager\u00601",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols",
           "isExtensionMethod": false
@@ -570,6 +635,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.ConfigurationManager\u00601",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
         },
@@ -581,6 +647,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.ConfigurationManager\u00601",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
         },
@@ -592,6 +659,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.ConfigurationManager\u00601",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
         },
@@ -603,6 +671,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.ConfigurationManager\u00601",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
         }
@@ -616,6 +685,7 @@
           "normalizedSignature": "constructor|(System.String,IConfigurationRetriever_1):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.ConfigurationManager\u00601",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
         },
@@ -626,6 +696,7 @@
           "normalizedSignature": "constructor|(System.String,IConfigurationRetriever_1,System.Net.Http.HttpClient):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.ConfigurationManager\u00601",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
         },
@@ -636,6 +707,7 @@
           "normalizedSignature": "constructor|(System.String,IConfigurationRetriever_1,Microsoft.IdentityModel.Protocols.IDocumentRetriever):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.ConfigurationManager\u00601",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
         },
@@ -646,6 +718,7 @@
           "normalizedSignature": "constructor|(System.String,IConfigurationRetriever_1,Microsoft.IdentityModel.Protocols.IDocumentRetriever,Microsoft.IdentityModel.Protocols.Configuration.LastKnownGoodConfigurationCacheOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.ConfigurationManager\u00601",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
         },
@@ -656,6 +729,7 @@
           "normalizedSignature": "constructor|(System.String,IConfigurationRetriever_1,Microsoft.IdentityModel.Protocols.IDocumentRetriever,IConfigurationValidator_1):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.ConfigurationManager\u00601",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
         },
@@ -666,6 +740,7 @@
           "normalizedSignature": "constructor|(System.String,IConfigurationRetriever_1,Microsoft.IdentityModel.Protocols.IDocumentRetriever,IConfigurationValidator_1,Microsoft.IdentityModel.Protocols.Configuration.LastKnownGoodConfigurationCacheOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 5,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.ConfigurationManager\u00601",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
         }
@@ -682,6 +757,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -699,6 +778,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.ConfigurationValidationResult",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
         },
@@ -717,6 +797,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.ConfigurationValidationResult",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
         }
@@ -731,6 +812,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.ConfigurationValidationResult",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
         }
@@ -747,6 +829,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.IDocumentRetriever",
+          "clrName": "Microsoft.IdentityModel.Protocols.IDocumentRetriever"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.FileDocumentRetriever::GetDocumentAsync(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
@@ -763,6 +855,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.FileDocumentRetriever",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols",
           "isExtensionMethod": false
@@ -782,6 +875,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.IDocumentRetriever",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols",
           "isExtensionMethod": false,
@@ -799,6 +893,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.FileDocumentRetriever",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
         }
@@ -815,6 +910,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.IDocumentRetriever",
+          "clrName": "Microsoft.IdentityModel.Protocols.IDocumentRetriever"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.HttpDocumentRetriever::GetDocumentAsync(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
@@ -831,6 +936,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.HttpDocumentRetriever",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols",
           "isExtensionMethod": false
@@ -850,6 +956,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.IDocumentRetriever",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols",
           "isExtensionMethod": false,
@@ -872,6 +979,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.HttpDocumentRetriever",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
         },
@@ -890,6 +998,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.HttpDocumentRetriever",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
         },
@@ -908,6 +1017,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.HttpDocumentRetriever",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
         }
@@ -921,6 +1031,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.HttpDocumentRetriever",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
         },
@@ -932,6 +1043,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.HttpDocumentRetriever",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
         }
@@ -945,6 +1057,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.HttpDocumentRetriever",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
         },
@@ -955,6 +1068,7 @@
           "normalizedSignature": "constructor|(System.Net.Http.HttpClient):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.HttpDocumentRetriever",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
         }
@@ -971,6 +1085,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.HttpRequestData::AppendHeaders(System.Net.Http.Headers.HttpHeaders):System.Void",
@@ -987,6 +1105,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.HttpRequestData",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols",
           "isExtensionMethod": false
@@ -1008,6 +1127,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.HttpRequestData",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
         },
@@ -1026,6 +1146,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.HttpRequestData",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
         },
@@ -1044,6 +1165,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.HttpRequestData",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
         },
@@ -1062,6 +1184,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.HttpRequestData",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
         },
@@ -1080,6 +1203,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.HttpRequestData",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
         },
@@ -1098,6 +1222,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.HttpRequestData",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
         }
@@ -1112,6 +1237,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.HttpRequestData",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
         }
@@ -1128,6 +1254,22 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 1,
+      "baseType": {
+        "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.BaseConfigurationManager",
+        "clrName": "Microsoft.IdentityModel.Tokens.BaseConfigurationManager"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.IConfigurationManager\u00601",
+          "clrName": "Microsoft.IdentityModel.Protocols.IConfigurationManager\u00601",
+          "typeArguments": [
+            "T"
+          ]
+        }
+      ],
+      "typeParameters": [
+        "T"
+      ],
       "methods": [
         {
           "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.StaticConfigurationManager\u00601::GetConfigurationAsync(System.Threading.CancellationToken):Task_1",
@@ -1144,6 +1286,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.StaticConfigurationManager\u00601",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols",
           "isExtensionMethod": false
@@ -1163,6 +1306,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.StaticConfigurationManager\u00601",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols",
           "isExtensionMethod": false
@@ -1182,6 +1326,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.StaticConfigurationManager\u00601",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols",
           "isExtensionMethod": false
@@ -1201,6 +1346,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.IConfigurationManager\u00601",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols",
           "isExtensionMethod": false,
@@ -1221,6 +1367,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.IConfigurationManager\u00601",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols",
           "isExtensionMethod": false,
@@ -1241,6 +1388,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.StaticConfigurationManager\u00601",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols",
           "isExtensionMethod": false
@@ -1257,6 +1405,7 @@
           "normalizedSignature": "constructor|(T):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.StaticConfigurationManager\u00601",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
         }
@@ -1273,6 +1422,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [],
       "fields": [],
@@ -1285,6 +1438,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.X509CertificateValidationMode",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
         }

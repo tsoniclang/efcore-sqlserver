@@ -45,7 +45,12 @@ export const CloudEvent: {
 
 export type CloudEvent = CloudEvent$instance;
 
-export interface MessageContent$instance {
+export abstract class MessageContent$protected {
+    protected ContentTypeCore: Nullable<ContentType>;
+}
+
+
+export interface MessageContent$instance extends MessageContent$protected {
     ContentType: Nullable<ContentType>;
     get Data(): BinaryData | undefined;
     set Data(value: BinaryData);

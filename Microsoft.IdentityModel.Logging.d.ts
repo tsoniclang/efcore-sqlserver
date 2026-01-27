@@ -8,7 +8,7 @@ import * as Internal from './Microsoft.IdentityModel.Logging/internal/index.js';
 // Cross-namespace type imports for constraints
 import type { EventLogLevel, IIdentityLogger } from './Microsoft.IdentityModel.Abstractions/internal/index.js';
 import type { ICollection, IDictionary } from '@tsonic/dotnet/System.Collections.Generic.js';
-import type { EventLevel, EventListener, EventSource } from '@tsonic/dotnet/System.Diagnostics.Tracing.js';
+import type { EventLevel, EventListener, EventSource, EventWrittenEventArgs } from '@tsonic/dotnet/System.Diagnostics.Tracing.js';
 import type { StreamWriter } from '@tsonic/dotnet/System.IO.js';
 import type { ArgumentException, ArgumentNullException, Boolean as ClrBoolean, Exception, Func, Guid, IDisposable, Object as ClrObject, String as ClrString, Void } from '@tsonic/dotnet/System.js';
 

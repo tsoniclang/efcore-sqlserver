@@ -15,6 +15,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -26,6 +48,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Kerberos.KerberosKeyTypes",
           "declaringAssemblyName": "Microsoft.Identity.Client"
         },
@@ -37,6 +60,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Kerberos.KerberosKeyTypes",
           "declaringAssemblyName": "Microsoft.Identity.Client"
         },
@@ -48,6 +72,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Kerberos.KerberosKeyTypes",
           "declaringAssemblyName": "Microsoft.Identity.Client"
         },
@@ -59,6 +84,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Kerberos.KerberosKeyTypes",
           "declaringAssemblyName": "Microsoft.Identity.Client"
         },
@@ -70,6 +96,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Kerberos.KerberosKeyTypes",
           "declaringAssemblyName": "Microsoft.Identity.Client"
         },
@@ -81,6 +108,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Kerberos.KerberosKeyTypes",
           "declaringAssemblyName": "Microsoft.Identity.Client"
         }
@@ -99,6 +127,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -110,6 +160,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Kerberos.KerberosTicketContainer",
           "declaringAssemblyName": "Microsoft.Identity.Client"
         },
@@ -121,6 +172,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Kerberos.KerberosTicketContainer",
           "declaringAssemblyName": "Microsoft.Identity.Client"
         },
@@ -132,6 +184,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Kerberos.KerberosTicketContainer",
           "declaringAssemblyName": "Microsoft.Identity.Client"
         }
@@ -150,6 +203,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket::ToString():System.String",
@@ -166,6 +223,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket",
           "declaringAssemblyName": "Microsoft.Identity.Client",
           "isExtensionMethod": false
@@ -187,6 +245,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket",
           "declaringAssemblyName": "Microsoft.Identity.Client"
         },
@@ -205,6 +264,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket",
           "declaringAssemblyName": "Microsoft.Identity.Client"
         },
@@ -223,6 +283,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket",
           "declaringAssemblyName": "Microsoft.Identity.Client"
         },
@@ -241,6 +302,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket",
           "declaringAssemblyName": "Microsoft.Identity.Client"
         },
@@ -259,6 +321,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket",
           "declaringAssemblyName": "Microsoft.Identity.Client"
         },
@@ -277,6 +340,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket",
           "declaringAssemblyName": "Microsoft.Identity.Client"
         },
@@ -295,6 +359,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket",
           "declaringAssemblyName": "Microsoft.Identity.Client"
         }
@@ -309,6 +374,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket",
           "declaringAssemblyName": "Microsoft.Identity.Client"
         },
@@ -319,6 +385,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket",
           "declaringAssemblyName": "Microsoft.Identity.Client"
         }
@@ -335,6 +402,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicketManager::FromIdToken(System.String):Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket",
@@ -351,6 +422,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicketManager",
           "declaringAssemblyName": "Microsoft.Identity.Client",
           "isExtensionMethod": false
@@ -370,6 +442,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicketManager",
           "declaringAssemblyName": "Microsoft.Identity.Client",
           "isExtensionMethod": false
@@ -389,6 +462,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicketManager",
           "declaringAssemblyName": "Microsoft.Identity.Client",
           "isExtensionMethod": false
@@ -408,6 +482,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicketManager",
           "declaringAssemblyName": "Microsoft.Identity.Client",
           "isExtensionMethod": false
@@ -427,6 +502,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicketManager",
           "declaringAssemblyName": "Microsoft.Identity.Client",
           "isExtensionMethod": false
@@ -446,6 +522,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicketManager",
           "declaringAssemblyName": "Microsoft.Identity.Client",
           "isExtensionMethod": false

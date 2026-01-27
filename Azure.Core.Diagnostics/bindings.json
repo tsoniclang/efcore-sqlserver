@@ -15,7 +15,57 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Diagnostics.Tracing.EventListener",
+        "clrName": "System.Diagnostics.Tracing.EventListener"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
       "methods": [
+        {
+          "stableId": "Azure.Core:Azure.Core.Diagnostics.AzureEventSourceListener::OnEventSourceCreated(System.Diagnostics.Tracing.EventSource):System.Void",
+          "clrName": "OnEventSourceCreated",
+          "metadataToken": 100665121,
+          "canonicalSignature": "(System.Diagnostics.Tracing.EventSource):System.Void",
+          "normalizedSignature": "OnEventSourceCreated|(System.Diagnostics.Tracing.EventSource):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": true,
+          "visibility": "Protected",
+          "declaringClrType": "Azure.Core.Diagnostics.AzureEventSourceListener",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Core.Diagnostics.AzureEventSourceListener::OnEventWritten(System.Diagnostics.Tracing.EventWrittenEventArgs):System.Void",
+          "clrName": "OnEventWritten",
+          "metadataToken": 100665122,
+          "canonicalSignature": "(System.Diagnostics.Tracing.EventWrittenEventArgs):System.Void",
+          "normalizedSignature": "OnEventWritten|(System.Diagnostics.Tracing.EventWrittenEventArgs):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": true,
+          "visibility": "Protected",
+          "declaringClrType": "Azure.Core.Diagnostics.AzureEventSourceListener",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false
+        },
         {
           "stableId": "Azure.Core:Azure.Core.Diagnostics.AzureEventSourceListener::CreateConsoleLogger(System.Diagnostics.Tracing.EventLevel):Azure.Core.Diagnostics.AzureEventSourceListener",
           "clrName": "CreateConsoleLogger",
@@ -31,6 +81,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.Diagnostics.AzureEventSourceListener",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -50,6 +101,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.Diagnostics.AzureEventSourceListener",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -65,6 +117,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.Diagnostics.AzureEventSourceListener",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -76,6 +129,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.Diagnostics.AzureEventSourceListener",
           "declaringAssemblyName": "Azure.Core"
         }
@@ -89,6 +143,7 @@
           "normalizedSignature": "constructor|(System.Action_1[[System.Diagnostics.Tracing.EventWrittenEventArgs,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Diagnostics.Tracing.EventLevel):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.Diagnostics.AzureEventSourceListener",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -99,6 +154,7 @@
           "normalizedSignature": "constructor|(System.Action_2[[System.Diagnostics.Tracing.EventWrittenEventArgs,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Diagnostics.Tracing.EventLevel):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.Diagnostics.AzureEventSourceListener",
           "declaringAssemblyName": "Azure.Core"
         }

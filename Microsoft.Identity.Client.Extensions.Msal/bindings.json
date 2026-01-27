@@ -15,6 +15,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.EventArgs",
+        "clrName": "System.EventArgs"
+      },
       "methods": [],
       "properties": [],
       "fields": [
@@ -26,6 +30,7 @@
           "isStatic": false,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.CacheChangedEventArgs",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
         },
@@ -37,6 +42,7 @@
           "isStatic": false,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.CacheChangedEventArgs",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
         }
@@ -50,6 +56,7 @@
           "normalizedSignature": "constructor|(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.CacheChangedEventArgs",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
         }
@@ -66,6 +73,16 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.CrossPlatLock::Dispose():System.Void",
@@ -82,6 +99,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.CrossPlatLock",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
           "isExtensionMethod": false
@@ -98,6 +116,7 @@
           "normalizedSignature": "constructor|(System.String,System.Int32,System.Int32):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.CrossPlatLock",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
         }
@@ -114,6 +133,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper::CreateAsync(Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties,System.Diagnostics.TraceSource):System.Threading.Tasks.Task_1[[Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper,Microsoft.Identity.Client.Extensions.Msal,Version=4.73.1.0,Culture=neutral,PublicKeyToken=0a613f4dd989e8ae]]",
@@ -130,6 +153,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
           "isExtensionMethod": false
@@ -149,6 +173,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
           "isExtensionMethod": false
@@ -168,6 +193,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
           "isExtensionMethod": false
@@ -187,6 +213,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
           "isExtensionMethod": false
@@ -206,6 +233,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
           "isExtensionMethod": false
@@ -225,6 +253,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
           "isExtensionMethod": false
@@ -244,6 +273,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
           "isExtensionMethod": false
@@ -265,6 +295,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
         }
@@ -278,6 +309,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
         },
@@ -289,6 +321,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
         }
@@ -300,6 +333,7 @@
           "metadataToken": 335544321,
           "normalizedSignature": "CacheChanged|System.EventHandler\u00601[[Microsoft.Identity.Client.Extensions.Msal.CacheChangedEventArgs, Microsoft.Identity.Client.Extensions.Msal, Version=4.73.1.0, Culture=neutral, PublicKeyToken=0a613f4dd989e8ae]]|static=false",
           "isStatic": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.MsalCacheHelper",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
         }
@@ -317,6 +351,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Exception",
+        "clrName": "System.Exception"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Runtime.Serialization.ISerializable",
+          "clrName": "System.Runtime.Serialization.ISerializable"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [],
@@ -329,6 +373,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.MsalCachePersistenceException",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
         },
@@ -339,6 +384,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.MsalCachePersistenceException",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
         },
@@ -349,6 +395,18 @@
           "normalizedSignature": "constructor|(System.String,System.Exception):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.MsalCachePersistenceException",
+          "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
+        },
+        {
+          "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.MsalCachePersistenceException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
+          "metadataToken": 100663403,
+          "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
+          "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.MsalCachePersistenceException",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
         }
@@ -365,6 +423,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.Storage::Create(Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties,System.Diagnostics.TraceSource):Microsoft.Identity.Client.Extensions.Msal.Storage",
@@ -381,6 +443,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.Storage",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
           "isExtensionMethod": false
@@ -400,6 +463,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.Storage",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
           "isExtensionMethod": false
@@ -419,6 +483,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.Storage",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
           "isExtensionMethod": false
@@ -438,6 +503,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.Storage",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
           "isExtensionMethod": false
@@ -457,6 +523,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.Storage",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
           "isExtensionMethod": false
@@ -478,6 +545,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -495,6 +566,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
         },
@@ -513,6 +585,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
         },
@@ -531,6 +604,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
         }
@@ -544,6 +618,7 @@
           "isStatic": false,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
         },
@@ -555,6 +630,7 @@
           "isStatic": false,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
         },
@@ -566,6 +642,7 @@
           "isStatic": false,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
         },
@@ -577,6 +654,7 @@
           "isStatic": false,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
         },
@@ -588,6 +666,7 @@
           "isStatic": false,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
         },
@@ -599,6 +678,7 @@
           "isStatic": false,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
         },
@@ -610,6 +690,7 @@
           "isStatic": false,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
         },
@@ -621,6 +702,7 @@
           "isStatic": false,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
         },
@@ -632,6 +714,7 @@
           "isStatic": false,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
         },
@@ -643,6 +726,7 @@
           "isStatic": false,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
         },
@@ -654,6 +738,7 @@
           "isStatic": false,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
         },
@@ -665,6 +750,7 @@
           "isStatic": false,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
         },
@@ -676,6 +762,7 @@
           "isStatic": false,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
         }
@@ -694,6 +781,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder::Build():Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties",
@@ -710,6 +801,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
           "isExtensionMethod": false
@@ -729,6 +821,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
           "isExtensionMethod": false
@@ -748,6 +841,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
           "isExtensionMethod": false
@@ -767,6 +861,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
           "isExtensionMethod": false
@@ -786,6 +881,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
           "isExtensionMethod": false
@@ -805,6 +901,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
           "isExtensionMethod": false
@@ -824,6 +921,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
           "isExtensionMethod": false
@@ -840,6 +938,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
         },
@@ -850,6 +949,7 @@
           "normalizedSignature": "constructor|(System.String,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.StorageCreationPropertiesBuilder",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
         }
@@ -866,6 +966,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.TraceSourceLogger::LogInformation(System.String):System.Void",
@@ -882,6 +986,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.TraceSourceLogger",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
           "isExtensionMethod": false
@@ -901,6 +1006,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.TraceSourceLogger",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
           "isExtensionMethod": false
@@ -920,6 +1026,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.TraceSourceLogger",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
           "isExtensionMethod": false
@@ -941,6 +1048,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.TraceSourceLogger",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
         }
@@ -955,6 +1063,7 @@
           "normalizedSignature": "constructor|(System.Diagnostics.TraceSource):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.TraceSourceLogger",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal"
         }
@@ -971,6 +1080,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.SharedUtilities::IsWindowsPlatform():System.Boolean",
@@ -987,6 +1100,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.SharedUtilities",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
           "isExtensionMethod": false
@@ -1006,6 +1120,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.SharedUtilities",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
           "isExtensionMethod": false
@@ -1025,6 +1140,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.SharedUtilities",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
           "isExtensionMethod": false
@@ -1044,6 +1160,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.Extensions.Msal.SharedUtilities",
           "declaringAssemblyName": "Microsoft.Identity.Client.Extensions.Msal",
           "isExtensionMethod": false

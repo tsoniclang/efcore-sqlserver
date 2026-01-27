@@ -10,7 +10,7 @@ import type { ISafeLogSecurityArtifact } from './Microsoft.IdentityModel.Logging
 import type { EncryptingCredentials, SecurityKey, SecurityToken, SecurityTokenDescriptor, SigningCredentials, TokenHandler, TokenValidationParameters, TokenValidationResult } from './Microsoft.IdentityModel.Tokens/internal/index.js';
 import type { IDictionary, IEnumerable } from '@tsonic/dotnet/System.Collections.Generic.js';
 import type { Boolean as ClrBoolean, Byte, Char, DateTime, Int32, Object as ClrObject, ReadOnlyMemory, String as ClrString, Type, ValueType } from '@tsonic/dotnet/System.js';
-import type { Claim } from '@tsonic/dotnet/System.Security.Claims.js';
+import type { Claim, ClaimsIdentity } from '@tsonic/dotnet/System.Security.Claims.js';
 import type { Regex } from '@tsonic/dotnet/System.Text.RegularExpressions.js';
 import type { Task } from '@tsonic/dotnet/System.Threading.Tasks.js';
 

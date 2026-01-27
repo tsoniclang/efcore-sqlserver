@@ -5,14 +5,18 @@
 // Primitive type aliases from @tsonic/core
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
+// Import support types from @tsonic/core
+import type { ptr } from "@tsonic/core/types.js";
+
 // Import types from other namespaces
+import type { IReadOnlyList } from "@tsonic/dotnet/System.Collections.Generic.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Nullable, Object as ClrObject, Void } from "@tsonic/dotnet/System.js";
+import type { Boolean as ClrBoolean, Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Nullable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
 import type { IDiagnosticsLogger } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics.js";
 import * as Microsoft_EntityFrameworkCore_Infrastructure_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure.js";
 import type { DbContextOptionsExtensionInfo, IDbContextOptions, IDbContextOptionsExtension, IModelValidator, ISingletonOptions, ModelValidatorDependencies, RelationalModelValidator, RelationalModelValidatorDependencies, RelationalOptionsExtension } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure.js";
 import type { DbLoggerCategory$Model$Validation } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.js";
-import type { IModel } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
+import type { IEntityType, IIndex, IKey, IModel, IProperty, StoreObjectIdentifier } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
 import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection.js";
 
 export enum SqlServerEngineType {
@@ -36,7 +40,23 @@ export interface ISqlServerSingletonOptions$instance extends ISingletonOptions {
 
 export type ISqlServerSingletonOptions = ISqlServerSingletonOptions$instance;
 
-export interface SqlServerModelValidator$instance extends RelationalModelValidator {
+export abstract class SqlServerModelValidator$protected {
+    protected ValidateByteIdentityMapping(model: IModel, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
+    protected ValidateCompatible(property: IProperty, duplicateProperty: IProperty, columnName: string, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
+    protected ValidateCompatible(key: IKey, duplicateKey: IKey, keyName: string, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
+    protected ValidateCompatible(index: IIndex, duplicateIndex: IIndex, indexName: string, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
+    protected ValidateDecimalColumns(model: IModel, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
+    protected ValidateIndexIncludeProperties(model: IModel, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
+    protected ValidateSharedColumnsCompatibility(mappedTypes: IReadOnlyList<IEntityType>, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
+    protected ValidateSharedTableCompatibility(mappedTypes: IReadOnlyList<IEntityType>, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
+    protected ValidateTemporalTables(model: IModel, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
+    protected ValidateTypeMappings(model: IModel, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
+    protected ValidateValueGeneration(entityType: IEntityType, key: IKey, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
+    protected ValidateVectorColumns(model: IModel, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
+}
+
+
+export interface SqlServerModelValidator$instance extends SqlServerModelValidator$protected, RelationalModelValidator {
     Validate(model: IModel, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
 }
 
@@ -48,7 +68,12 @@ export const SqlServerModelValidator: {
 
 export type SqlServerModelValidator = SqlServerModelValidator$instance;
 
-export interface SqlServerOptionsExtension$instance extends RelationalOptionsExtension {
+export abstract class SqlServerOptionsExtension$protected {
+    protected Clone(): RelationalOptionsExtension;
+}
+
+
+export interface SqlServerOptionsExtension$instance extends SqlServerOptionsExtension$protected, RelationalOptionsExtension {
     readonly AzureSqlCompatibilityLevel: int;
     readonly AzureSynapseCompatibilityLevel: int;
     readonly EngineType: SqlServerEngineType;
@@ -69,6 +94,7 @@ export interface SqlServerOptionsExtension$instance extends RelationalOptionsExt
 
 export const SqlServerOptionsExtension: {
     new(): SqlServerOptionsExtension;
+    new(copyFrom: SqlServerOptionsExtension): SqlServerOptionsExtension;
     readonly SqlServerDefaultCompatibilityLevel: int;
     readonly AzureSqlDefaultCompatibilityLevel: int;
     readonly AzureSynapseDefaultCompatibilityLevel: int;
@@ -78,10 +104,10 @@ export const SqlServerOptionsExtension: {
 export type SqlServerOptionsExtension = SqlServerOptionsExtension$instance;
 
 export interface SqlServerSingletonOptions$instance {
-    readonly AzureSqlCompatibilityLevel: int;
-    readonly AzureSynapseCompatibilityLevel: int;
-    readonly EngineType: SqlServerEngineType;
-    readonly SqlServerCompatibilityLevel: int;
+    AzureSqlCompatibilityLevel: int;
+    AzureSynapseCompatibilityLevel: int;
+    EngineType: SqlServerEngineType;
+    SqlServerCompatibilityLevel: int;
     readonly SupportsJsonFunctions: boolean;
     readonly SupportsJsonObjectArray: boolean;
     readonly SupportsJsonType: boolean;
@@ -98,8 +124,6 @@ export const SqlServerSingletonOptions: {
 export interface __SqlServerSingletonOptions$views {
     As_ISqlServerSingletonOptions(): ISqlServerSingletonOptions$instance;
 }
-
-export interface SqlServerSingletonOptions$instance extends ISqlServerSingletonOptions$instance {}
 
 export type SqlServerSingletonOptions = SqlServerSingletonOptions$instance & __SqlServerSingletonOptions$views;
 

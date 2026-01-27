@@ -7,11 +7,17 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 
 // Import types from other namespaces
 import * as System_Diagnostics_Tracing_Internal from "@tsonic/dotnet/System.Diagnostics.Tracing.js";
-import type { EventLevel, EventListener, EventWrittenEventArgs } from "@tsonic/dotnet/System.Diagnostics.Tracing.js";
+import type { EventLevel, EventListener, EventSource, EventWrittenEventArgs } from "@tsonic/dotnet/System.Diagnostics.Tracing.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Action, IDisposable, String as ClrString } from "@tsonic/dotnet/System.js";
+import type { Action, IDisposable, String as ClrString, Void } from "@tsonic/dotnet/System.js";
 
-export interface AzureEventSourceListener$instance extends EventListener {
+export abstract class AzureEventSourceListener$protected {
+    protected OnEventSourceCreated(eventSource: EventSource): void;
+    protected OnEventWritten(eventData: EventWrittenEventArgs): void;
+}
+
+
+export interface AzureEventSourceListener$instance extends AzureEventSourceListener$protected, EventListener {
 }
 
 

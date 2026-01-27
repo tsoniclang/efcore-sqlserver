@@ -15,6 +15,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -26,6 +48,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoObjectType",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -37,6 +60,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoObjectType",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -48,6 +72,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoObjectType",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -59,6 +84,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoObjectType",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -70,6 +96,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoObjectType",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -81,6 +108,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoObjectType",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -92,6 +120,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoObjectType",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -103,6 +132,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoObjectType",
           "declaringAssemblyName": "Azure.Core"
         }
@@ -121,6 +151,40 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 1,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyList\u00601",
+          "clrName": "System.Collections.Generic.IReadOnlyList\u00601",
+          "typeArguments": [
+            "T"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable\u00601",
+          "clrName": "System.Collections.Generic.IEnumerable\u00601",
+          "typeArguments": [
+            "T"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+          "clrName": "System.Collections.IEnumerable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyCollection\u00601",
+          "clrName": "System.Collections.Generic.IReadOnlyCollection\u00601",
+          "typeArguments": [
+            "T"
+          ]
+        }
+      ],
+      "typeParameters": [
+        "T"
+      ],
       "methods": [
         {
           "stableId": "Azure.Core:Azure.Core.GeoJson.GeoArray\u00601::GetEnumerator():Enumerator",
@@ -137,6 +201,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoArray\u00601",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -158,6 +223,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoArray\u00601",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -176,6 +242,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoArray\u00601",
           "declaringAssemblyName": "Azure.Core"
         }
@@ -195,6 +262,30 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 1,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerator\u00601",
+          "clrName": "System.Collections.Generic.IEnumerator\u00601",
+          "typeArguments": [
+            "T"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerator",
+          "clrName": "System.Collections.IEnumerator"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
+      "typeParameters": [
+        "T"
+      ],
       "methods": [
         {
           "stableId": "Azure.Core:Azure.Core.GeoJson.GeoArray\u00601\u002BEnumerator::MoveNext():System.Boolean",
@@ -211,6 +302,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoArray\u00601\u002BEnumerator",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -230,6 +322,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoArray\u00601\u002BEnumerator",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -249,6 +342,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoArray\u00601\u002BEnumerator",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -270,6 +364,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoArray\u00601\u002BEnumerator",
           "declaringAssemblyName": "Azure.Core"
         }
@@ -289,6 +384,19 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IEquatable\u00601",
+          "clrName": "System.IEquatable\u00601",
+          "typeArguments": [
+            "GeoPosition"
+          ]
+        }
+      ],
       "methods": [
         {
           "stableId": "Azure.Core:Azure.Core.GeoJson.GeoPosition::Equals(Azure.Core.GeoJson.GeoPosition):System.Boolean",
@@ -305,6 +413,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoPosition",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -324,6 +433,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoPosition",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -343,6 +453,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoPosition",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -362,6 +473,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoPosition",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -383,6 +495,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoPosition",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -401,6 +514,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoPosition",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -419,6 +533,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoPosition",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -437,6 +552,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoPosition",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -455,6 +571,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoPosition",
           "declaringAssemblyName": "Azure.Core"
         }
@@ -469,6 +586,7 @@
           "normalizedSignature": "constructor|(System.Double,System.Double):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoPosition",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -479,6 +597,7 @@
           "normalizedSignature": "constructor|(System.Double,System.Double,System.Nullable_1[[System.Double,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoPosition",
           "declaringAssemblyName": "Azure.Core"
         }
@@ -495,6 +614,19 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IEquatable\u00601",
+          "clrName": "System.IEquatable\u00601",
+          "typeArguments": [
+            "GeoBoundingBox"
+          ]
+        }
+      ],
       "methods": [
         {
           "stableId": "Azure.Core:Azure.Core.GeoJson.GeoBoundingBox::Equals(Azure.Core.GeoJson.GeoBoundingBox):System.Boolean",
@@ -511,6 +643,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoBoundingBox",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -530,6 +663,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoBoundingBox",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -549,6 +683,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoBoundingBox",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -568,6 +703,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoBoundingBox",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -589,6 +725,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoBoundingBox",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -607,6 +744,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoBoundingBox",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -625,6 +763,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoBoundingBox",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -643,6 +782,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoBoundingBox",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -661,6 +801,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoBoundingBox",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -679,6 +820,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoBoundingBox",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -697,6 +839,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoBoundingBox",
           "declaringAssemblyName": "Azure.Core"
         }
@@ -711,6 +854,7 @@
           "normalizedSignature": "constructor|(System.Double,System.Double,System.Double,System.Double):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoBoundingBox",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -721,6 +865,7 @@
           "normalizedSignature": "constructor|(System.Double,System.Double,System.Double,System.Double,System.Nullable_1[[System.Double,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.Double,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 6,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoBoundingBox",
           "declaringAssemblyName": "Azure.Core"
         }
@@ -737,6 +882,37 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Azure.Core:Azure.Core.GeoJson.GeoObject",
+        "clrName": "Azure.Core.GeoJson.GeoObject"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyList\u00601",
+          "clrName": "System.Collections.Generic.IReadOnlyList\u00601",
+          "typeArguments": [
+            "GeoObject"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable\u00601",
+          "clrName": "System.Collections.Generic.IEnumerable\u00601",
+          "typeArguments": [
+            "GeoObject"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+          "clrName": "System.Collections.IEnumerable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyCollection\u00601",
+          "clrName": "System.Collections.Generic.IReadOnlyCollection\u00601",
+          "typeArguments": [
+            "GeoObject"
+          ]
+        }
+      ],
       "methods": [
         {
           "stableId": "Azure.Core:Azure.Core.GeoJson.GeoCollection::GetEnumerator():System.Collections.Generic.IEnumerator_1[[Azure.Core.GeoJson.GeoObject,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
@@ -753,6 +929,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoCollection",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -774,6 +951,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoCollection",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -792,6 +970,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoCollection",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -810,6 +989,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoCollection",
           "declaringAssemblyName": "Azure.Core"
         }
@@ -824,6 +1004,7 @@
           "normalizedSignature": "constructor|(System.Collections.Generic.IEnumerable_1[[Azure.Core.GeoJson.GeoObject,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoCollection",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -834,6 +1015,7 @@
           "normalizedSignature": "constructor|(System.Collections.Generic.IEnumerable_1[[Azure.Core.GeoJson.GeoObject,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]],Azure.Core.GeoJson.GeoBoundingBox,System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoCollection",
           "declaringAssemblyName": "Azure.Core"
         }
@@ -850,6 +1032,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -867,6 +1053,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoLinearRing",
           "declaringAssemblyName": "Azure.Core"
         }
@@ -881,6 +1068,7 @@
           "normalizedSignature": "constructor|(System.Collections.Generic.IEnumerable_1[[Azure.Core.GeoJson.GeoPosition,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoLinearRing",
           "declaringAssemblyName": "Azure.Core"
         }
@@ -897,6 +1085,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Azure.Core:Azure.Core.GeoJson.GeoObject",
+        "clrName": "Azure.Core.GeoJson.GeoObject"
+      },
       "methods": [],
       "properties": [
         {
@@ -914,6 +1106,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoLineString",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -932,6 +1125,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoLineString",
           "declaringAssemblyName": "Azure.Core"
         }
@@ -946,6 +1140,7 @@
           "normalizedSignature": "constructor|(System.Collections.Generic.IEnumerable_1[[Azure.Core.GeoJson.GeoPosition,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoLineString",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -956,6 +1151,7 @@
           "normalizedSignature": "constructor|(System.Collections.Generic.IEnumerable_1[[Azure.Core.GeoJson.GeoPosition,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]],Azure.Core.GeoJson.GeoBoundingBox,System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoLineString",
           "declaringAssemblyName": "Azure.Core"
         }
@@ -972,6 +1168,37 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Azure.Core:Azure.Core.GeoJson.GeoObject",
+        "clrName": "Azure.Core.GeoJson.GeoObject"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyList\u00601",
+          "clrName": "System.Collections.Generic.IReadOnlyList\u00601",
+          "typeArguments": [
+            "GeoLineString"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable\u00601",
+          "clrName": "System.Collections.Generic.IEnumerable\u00601",
+          "typeArguments": [
+            "GeoLineString"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+          "clrName": "System.Collections.IEnumerable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyCollection\u00601",
+          "clrName": "System.Collections.Generic.IReadOnlyCollection\u00601",
+          "typeArguments": [
+            "GeoLineString"
+          ]
+        }
+      ],
       "methods": [
         {
           "stableId": "Azure.Core:Azure.Core.GeoJson.GeoLineStringCollection::GetEnumerator():System.Collections.Generic.IEnumerator_1[[Azure.Core.GeoJson.GeoLineString,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
@@ -988,6 +1215,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoLineStringCollection",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -1009,6 +1237,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoLineStringCollection",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -1027,6 +1256,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoLineStringCollection",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -1045,6 +1275,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoLineStringCollection",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -1063,6 +1294,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoLineStringCollection",
           "declaringAssemblyName": "Azure.Core"
         }
@@ -1077,6 +1309,7 @@
           "normalizedSignature": "constructor|(System.Collections.Generic.IEnumerable_1[[Azure.Core.GeoJson.GeoLineString,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoLineStringCollection",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -1087,6 +1320,7 @@
           "normalizedSignature": "constructor|(System.Collections.Generic.IEnumerable_1[[Azure.Core.GeoJson.GeoLineString,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]],Azure.Core.GeoJson.GeoBoundingBox,System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoLineStringCollection",
           "declaringAssemblyName": "Azure.Core"
         }
@@ -1103,6 +1337,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Azure.Core:Azure.Core.GeoJson.GeoObject::TryGetCustomProperty(System.String,System.Object\u0026):System.Boolean",
@@ -1119,6 +1357,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoObject",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false,
@@ -1144,6 +1383,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoObject",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -1163,6 +1403,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoObject",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -1184,6 +1425,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoObject",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -1202,6 +1444,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoObject",
           "declaringAssemblyName": "Azure.Core"
         }
@@ -1221,6 +1464,26 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Azure.Core:Azure.Core.GeoJson.GeoObject",
+        "clrName": "Azure.Core.GeoJson.GeoObject"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.IJsonModel\u00601",
+          "clrName": "System.ClientModel.Primitives.IJsonModel\u00601",
+          "typeArguments": [
+            "GeoPoint"
+          ]
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.IPersistableModel\u00601",
+          "clrName": "System.ClientModel.Primitives.IPersistableModel\u00601",
+          "typeArguments": [
+            "GeoPoint"
+          ]
+        }
+      ],
       "methods": [
         {
           "stableId": "System.ClientModel:System.ClientModel.Primitives.IJsonModel\u00601::Write(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions):System.Void",
@@ -1237,6 +1500,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.IJsonModel\u00601",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false,
@@ -1257,6 +1521,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.IJsonModel\u00601",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false,
@@ -1283,6 +1548,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.IPersistableModel\u00601",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false,
@@ -1303,6 +1569,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.IPersistableModel\u00601",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false,
@@ -1323,6 +1590,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.IPersistableModel\u00601",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false,
@@ -1345,6 +1613,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoPoint",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -1363,6 +1632,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoPoint",
           "declaringAssemblyName": "Azure.Core"
         }
@@ -1377,6 +1647,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoPoint",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -1387,6 +1658,7 @@
           "normalizedSignature": "constructor|(System.Double,System.Double):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoPoint",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -1397,6 +1669,7 @@
           "normalizedSignature": "constructor|(System.Double,System.Double,System.Nullable_1[[System.Double,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoPoint",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -1407,6 +1680,7 @@
           "normalizedSignature": "constructor|(Azure.Core.GeoJson.GeoPosition):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoPoint",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -1417,6 +1691,7 @@
           "normalizedSignature": "constructor|(Azure.Core.GeoJson.GeoPosition,Azure.Core.GeoJson.GeoBoundingBox,System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoPoint",
           "declaringAssemblyName": "Azure.Core"
         }
@@ -1433,6 +1708,37 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Azure.Core:Azure.Core.GeoJson.GeoObject",
+        "clrName": "Azure.Core.GeoJson.GeoObject"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyList\u00601",
+          "clrName": "System.Collections.Generic.IReadOnlyList\u00601",
+          "typeArguments": [
+            "GeoPoint"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable\u00601",
+          "clrName": "System.Collections.Generic.IEnumerable\u00601",
+          "typeArguments": [
+            "GeoPoint"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+          "clrName": "System.Collections.IEnumerable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyCollection\u00601",
+          "clrName": "System.Collections.Generic.IReadOnlyCollection\u00601",
+          "typeArguments": [
+            "GeoPoint"
+          ]
+        }
+      ],
       "methods": [
         {
           "stableId": "Azure.Core:Azure.Core.GeoJson.GeoPointCollection::GetEnumerator():System.Collections.Generic.IEnumerator_1[[Azure.Core.GeoJson.GeoPoint,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
@@ -1449,6 +1755,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoPointCollection",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -1470,6 +1777,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoPointCollection",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -1488,6 +1796,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoPointCollection",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -1506,6 +1815,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoPointCollection",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -1524,6 +1834,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoPointCollection",
           "declaringAssemblyName": "Azure.Core"
         }
@@ -1538,6 +1849,7 @@
           "normalizedSignature": "constructor|(System.Collections.Generic.IEnumerable_1[[Azure.Core.GeoJson.GeoPoint,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoPointCollection",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -1548,6 +1860,7 @@
           "normalizedSignature": "constructor|(System.Collections.Generic.IEnumerable_1[[Azure.Core.GeoJson.GeoPoint,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]],Azure.Core.GeoJson.GeoBoundingBox,System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoPointCollection",
           "declaringAssemblyName": "Azure.Core"
         }
@@ -1564,6 +1877,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Azure.Core:Azure.Core.GeoJson.GeoObject",
+        "clrName": "Azure.Core.GeoJson.GeoObject"
+      },
       "methods": [],
       "properties": [
         {
@@ -1581,6 +1898,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoPolygon",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -1599,6 +1917,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoPolygon",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -1617,6 +1936,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoPolygon",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -1635,6 +1955,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoPolygon",
           "declaringAssemblyName": "Azure.Core"
         }
@@ -1649,6 +1970,7 @@
           "normalizedSignature": "constructor|(System.Collections.Generic.IEnumerable_1[[Azure.Core.GeoJson.GeoPosition,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoPolygon",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -1659,6 +1981,7 @@
           "normalizedSignature": "constructor|(System.Collections.Generic.IEnumerable_1[[Azure.Core.GeoJson.GeoLinearRing,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoPolygon",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -1669,6 +1992,7 @@
           "normalizedSignature": "constructor|(System.Collections.Generic.IEnumerable_1[[Azure.Core.GeoJson.GeoLinearRing,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]],Azure.Core.GeoJson.GeoBoundingBox,System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoPolygon",
           "declaringAssemblyName": "Azure.Core"
         }
@@ -1685,6 +2009,37 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Azure.Core:Azure.Core.GeoJson.GeoObject",
+        "clrName": "Azure.Core.GeoJson.GeoObject"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyList\u00601",
+          "clrName": "System.Collections.Generic.IReadOnlyList\u00601",
+          "typeArguments": [
+            "GeoPolygon"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable\u00601",
+          "clrName": "System.Collections.Generic.IEnumerable\u00601",
+          "typeArguments": [
+            "GeoPolygon"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+          "clrName": "System.Collections.IEnumerable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyCollection\u00601",
+          "clrName": "System.Collections.Generic.IReadOnlyCollection\u00601",
+          "typeArguments": [
+            "GeoPolygon"
+          ]
+        }
+      ],
       "methods": [
         {
           "stableId": "Azure.Core:Azure.Core.GeoJson.GeoPolygonCollection::GetEnumerator():System.Collections.Generic.IEnumerator_1[[Azure.Core.GeoJson.GeoPolygon,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
@@ -1701,6 +2056,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoPolygonCollection",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -1722,6 +2078,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoPolygonCollection",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -1740,6 +2097,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoPolygonCollection",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -1758,6 +2116,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoPolygonCollection",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -1776,6 +2135,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoPolygonCollection",
           "declaringAssemblyName": "Azure.Core"
         }
@@ -1790,6 +2150,7 @@
           "normalizedSignature": "constructor|(System.Collections.Generic.IEnumerable_1[[Azure.Core.GeoJson.GeoPolygon,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoPolygonCollection",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -1800,6 +2161,7 @@
           "normalizedSignature": "constructor|(System.Collections.Generic.IEnumerable_1[[Azure.Core.GeoJson.GeoPolygon,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]],Azure.Core.GeoJson.GeoBoundingBox,System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.GeoJson.GeoPolygonCollection",
           "declaringAssemblyName": "Azure.Core"
         }

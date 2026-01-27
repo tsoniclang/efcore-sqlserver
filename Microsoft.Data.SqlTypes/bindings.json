@@ -15,6 +15,19 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 1,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Data.Common:System.Data.SqlTypes.INullable",
+          "clrName": "System.Data.SqlTypes.INullable"
+        }
+      ],
+      "typeParameters": [
+        "T"
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlTypes.SqlVector\u00601::CreateNull(System.Int32):SqlVector_1",
@@ -31,6 +44,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlTypes.SqlVector\u00601",
           "declaringAssemblyName": "Microsoft.Data.SqlClient",
           "isExtensionMethod": false
@@ -52,6 +66,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlTypes.SqlVector\u00601",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -70,6 +85,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlTypes.SqlVector\u00601",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -88,6 +104,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlTypes.SqlVector\u00601",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -106,6 +123,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlTypes.SqlVector\u00601",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -120,6 +138,7 @@
           "normalizedSignature": "constructor|(ReadOnlyMemory_1):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlTypes.SqlVector\u00601",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -136,6 +155,20 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.IO.Stream",
+        "clrName": "System.IO.Stream"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IAsyncDisposable",
+          "clrName": "System.IAsyncDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlTypes.SqlFileStream::BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object):System.IAsyncResult",
@@ -152,6 +185,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlTypes.SqlFileStream",
           "declaringAssemblyName": "Microsoft.Data.SqlClient",
           "isExtensionMethod": false
@@ -171,6 +205,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlTypes.SqlFileStream",
           "declaringAssemblyName": "Microsoft.Data.SqlClient",
           "isExtensionMethod": false
@@ -190,6 +225,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlTypes.SqlFileStream",
           "declaringAssemblyName": "Microsoft.Data.SqlClient",
           "isExtensionMethod": false
@@ -209,6 +245,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlTypes.SqlFileStream",
           "declaringAssemblyName": "Microsoft.Data.SqlClient",
           "isExtensionMethod": false
@@ -228,6 +265,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlTypes.SqlFileStream",
           "declaringAssemblyName": "Microsoft.Data.SqlClient",
           "isExtensionMethod": false
@@ -247,6 +285,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlTypes.SqlFileStream",
           "declaringAssemblyName": "Microsoft.Data.SqlClient",
           "isExtensionMethod": false
@@ -266,6 +305,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlTypes.SqlFileStream",
           "declaringAssemblyName": "Microsoft.Data.SqlClient",
           "isExtensionMethod": false
@@ -285,6 +325,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlTypes.SqlFileStream",
           "declaringAssemblyName": "Microsoft.Data.SqlClient",
           "isExtensionMethod": false
@@ -304,6 +345,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlTypes.SqlFileStream",
           "declaringAssemblyName": "Microsoft.Data.SqlClient",
           "isExtensionMethod": false
@@ -323,6 +365,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlTypes.SqlFileStream",
           "declaringAssemblyName": "Microsoft.Data.SqlClient",
           "isExtensionMethod": false
@@ -342,6 +385,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlTypes.SqlFileStream",
           "declaringAssemblyName": "Microsoft.Data.SqlClient",
           "isExtensionMethod": false
@@ -363,6 +407,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlTypes.SqlFileStream",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -381,6 +426,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlTypes.SqlFileStream",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -399,6 +445,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlTypes.SqlFileStream",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -417,6 +464,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlTypes.SqlFileStream",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -435,6 +483,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlTypes.SqlFileStream",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -453,6 +502,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlTypes.SqlFileStream",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -471,6 +521,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlTypes.SqlFileStream",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -489,6 +540,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlTypes.SqlFileStream",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -507,6 +559,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlTypes.SqlFileStream",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -525,6 +578,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlTypes.SqlFileStream",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -539,6 +593,7 @@
           "normalizedSignature": "constructor|(System.String,System.Byte[],System.IO.FileAccess):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlTypes.SqlFileStream",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -549,6 +604,7 @@
           "normalizedSignature": "constructor|(System.String,System.Byte[],System.IO.FileAccess,System.IO.FileOptions,System.Int64):void|static=false",
           "isStatic": false,
           "parameterCount": 5,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlTypes.SqlFileStream",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -565,6 +621,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Data.Common:System.Data.SqlTypes.INullable",
+          "clrName": "System.Data.SqlTypes.INullable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlTypes.SqlJson::ToString():System.String",
@@ -581,6 +647,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlTypes.SqlJson",
           "declaringAssemblyName": "Microsoft.Data.SqlClient",
           "isExtensionMethod": false
@@ -602,6 +669,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlTypes.SqlJson",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -620,6 +688,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlTypes.SqlJson",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -638,6 +707,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlTypes.SqlJson",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -652,6 +722,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlTypes.SqlJson",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -662,6 +733,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlTypes.SqlJson",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -672,6 +744,7 @@
           "normalizedSignature": "constructor|(System.Text.Json.JsonDocument):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlTypes.SqlJson",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }

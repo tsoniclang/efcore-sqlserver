@@ -17,7 +17,7 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { AsyncCallback, Boolean as ClrBoolean, Enum, Exception, IAsyncResult, ICloneable, IComparable, IConvertible, IFormattable, Int32, IntPtr, ISpanFormattable, MulticastDelegate, Object as ClrObject, String as ClrString, TimeSpan, Void } from "@tsonic/dotnet/System.js";
 import type { HttpClient } from "@tsonic/dotnet/System.Net.Http.js";
 import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization.js";
+import type { ISerializable, SerializationInfo, StreamingContext } from "@tsonic/dotnet/System.Runtime.Serialization.js";
 import type { HashAlgorithm } from "@tsonic/dotnet/System.Security.Cryptography.js";
 import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
@@ -209,6 +209,7 @@ export interface OpenIdConnectMessage$instance extends AuthenticationProtocolMes
 export const OpenIdConnectMessage: {
     new(): OpenIdConnectMessage;
     new(json: string): OpenIdConnectMessage;
+    new(other: OpenIdConnectMessage): OpenIdConnectMessage;
     new(nameValueCollection: NameValueCollection): OpenIdConnectMessage;
     new(parameters: IEnumerable<KeyValuePair<System_Internal.String, string[]>>): OpenIdConnectMessage;
     EnableTelemetryParametersByDefault: boolean;
@@ -225,6 +226,7 @@ export const OpenIdConnectProtocolException: {
     new(): OpenIdConnectProtocolException;
     new(message: string): OpenIdConnectProtocolException;
     new(message: string, innerException: Exception): OpenIdConnectProtocolException;
+    new(info: SerializationInfo, context: StreamingContext): OpenIdConnectProtocolException;
 };
 
 
@@ -238,6 +240,7 @@ export const OpenIdConnectProtocolInvalidAtHashException: {
     new(): OpenIdConnectProtocolInvalidAtHashException;
     new(message: string): OpenIdConnectProtocolInvalidAtHashException;
     new(message: string, innerException: Exception): OpenIdConnectProtocolInvalidAtHashException;
+    new(info: SerializationInfo, context: StreamingContext): OpenIdConnectProtocolInvalidAtHashException;
 };
 
 
@@ -251,6 +254,7 @@ export const OpenIdConnectProtocolInvalidCHashException: {
     new(): OpenIdConnectProtocolInvalidCHashException;
     new(message: string): OpenIdConnectProtocolInvalidCHashException;
     new(message: string, innerException: Exception): OpenIdConnectProtocolInvalidCHashException;
+    new(info: SerializationInfo, context: StreamingContext): OpenIdConnectProtocolInvalidCHashException;
 };
 
 
@@ -264,6 +268,7 @@ export const OpenIdConnectProtocolInvalidNonceException: {
     new(): OpenIdConnectProtocolInvalidNonceException;
     new(message: string): OpenIdConnectProtocolInvalidNonceException;
     new(message: string, innerException: Exception): OpenIdConnectProtocolInvalidNonceException;
+    new(info: SerializationInfo, context: StreamingContext): OpenIdConnectProtocolInvalidNonceException;
 };
 
 
@@ -277,6 +282,7 @@ export const OpenIdConnectProtocolInvalidStateException: {
     new(): OpenIdConnectProtocolInvalidStateException;
     new(message: string): OpenIdConnectProtocolInvalidStateException;
     new(message: string, innerException: Exception): OpenIdConnectProtocolInvalidStateException;
+    new(info: SerializationInfo, context: StreamingContext): OpenIdConnectProtocolInvalidStateException;
 };
 
 
@@ -299,7 +305,16 @@ export const OpenIdConnectProtocolValidationContext: {
 
 export type OpenIdConnectProtocolValidationContext = OpenIdConnectProtocolValidationContext$instance;
 
-export interface OpenIdConnectProtocolValidator$instance {
+export abstract class OpenIdConnectProtocolValidator$protected {
+    protected ValidateAtHash(validationContext: OpenIdConnectProtocolValidationContext): void;
+    protected ValidateCHash(validationContext: OpenIdConnectProtocolValidationContext): void;
+    protected ValidateIdToken(validationContext: OpenIdConnectProtocolValidationContext): void;
+    protected ValidateNonce(validationContext: OpenIdConnectProtocolValidationContext): void;
+    protected ValidateState(validationContext: OpenIdConnectProtocolValidationContext): void;
+}
+
+
+export interface OpenIdConnectProtocolValidator$instance extends OpenIdConnectProtocolValidator$protected {
     CryptoProviderFactory: CryptoProviderFactory;
     readonly HashAlgorithmMap: IDictionary<System_Internal.String, System_Internal.String>;
     IdTokenValidator: IdTokenValidator;

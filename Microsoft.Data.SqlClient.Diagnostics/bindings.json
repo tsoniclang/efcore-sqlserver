@@ -15,6 +15,37 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable\u00601",
+          "clrName": "System.Collections.Generic.IEnumerable\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,Object]]"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+          "clrName": "System.Collections.IEnumerable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyCollection\u00601",
+          "clrName": "System.Collections.Generic.IReadOnlyCollection\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,Object]]"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyList\u00601",
+          "clrName": "System.Collections.Generic.IReadOnlyList\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,Object]]"
+          ]
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Diagnostics.SqlClientCommandAfter::GetEnumerator():System.Collections.Generic.IEnumerator_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
@@ -31,6 +62,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientCommandAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient",
           "isExtensionMethod": false
@@ -52,6 +84,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientCommandAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -70,6 +103,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientCommandAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -88,6 +122,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientCommandAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -106,6 +141,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientCommandAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -124,6 +160,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientCommandAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -142,6 +179,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientCommandAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -160,6 +198,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientCommandAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -178,6 +217,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientCommandAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -196,6 +236,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientCommandAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -209,6 +250,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientCommandAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -222,6 +264,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientCommandAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -238,6 +281,37 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable\u00601",
+          "clrName": "System.Collections.Generic.IEnumerable\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,Object]]"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+          "clrName": "System.Collections.IEnumerable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyCollection\u00601",
+          "clrName": "System.Collections.Generic.IReadOnlyCollection\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,Object]]"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyList\u00601",
+          "clrName": "System.Collections.Generic.IReadOnlyList\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,Object]]"
+          ]
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Diagnostics.SqlClientCommandBefore::GetEnumerator():System.Collections.Generic.IEnumerator_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
@@ -254,6 +328,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientCommandBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient",
           "isExtensionMethod": false
@@ -275,6 +350,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientCommandBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -293,6 +369,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientCommandBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -311,6 +388,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientCommandBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -329,6 +407,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientCommandBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -347,6 +426,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientCommandBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -365,6 +445,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientCommandBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -383,6 +464,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientCommandBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -401,6 +483,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientCommandBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -414,6 +497,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientCommandBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -427,6 +511,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientCommandBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -443,6 +528,37 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable\u00601",
+          "clrName": "System.Collections.Generic.IEnumerable\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,Object]]"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+          "clrName": "System.Collections.IEnumerable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyCollection\u00601",
+          "clrName": "System.Collections.Generic.IReadOnlyCollection\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,Object]]"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyList\u00601",
+          "clrName": "System.Collections.Generic.IReadOnlyList\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,Object]]"
+          ]
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Diagnostics.SqlClientCommandError::GetEnumerator():System.Collections.Generic.IEnumerator_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
@@ -459,6 +575,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientCommandError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient",
           "isExtensionMethod": false
@@ -480,6 +597,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientCommandError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -498,6 +616,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientCommandError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -516,6 +635,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientCommandError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -534,6 +654,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientCommandError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -552,6 +673,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientCommandError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -570,6 +692,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientCommandError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -588,6 +711,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientCommandError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -606,6 +730,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientCommandError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -624,6 +749,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientCommandError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -637,6 +763,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientCommandError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -650,6 +777,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientCommandError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -666,6 +794,37 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable\u00601",
+          "clrName": "System.Collections.Generic.IEnumerable\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,Object]]"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+          "clrName": "System.Collections.IEnumerable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyCollection\u00601",
+          "clrName": "System.Collections.Generic.IReadOnlyCollection\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,Object]]"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyList\u00601",
+          "clrName": "System.Collections.Generic.IReadOnlyList\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,Object]]"
+          ]
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionCloseAfter::GetEnumerator():System.Collections.Generic.IEnumerator_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
@@ -682,6 +841,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionCloseAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient",
           "isExtensionMethod": false
@@ -703,6 +863,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionCloseAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -721,6 +882,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionCloseAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -739,6 +901,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionCloseAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -757,6 +920,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionCloseAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -775,6 +939,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionCloseAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -793,6 +958,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionCloseAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -811,6 +977,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionCloseAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -829,6 +996,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionCloseAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -842,6 +1010,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionCloseAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -855,6 +1024,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionCloseAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -871,6 +1041,37 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable\u00601",
+          "clrName": "System.Collections.Generic.IEnumerable\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,Object]]"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+          "clrName": "System.Collections.IEnumerable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyCollection\u00601",
+          "clrName": "System.Collections.Generic.IReadOnlyCollection\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,Object]]"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyList\u00601",
+          "clrName": "System.Collections.Generic.IReadOnlyList\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,Object]]"
+          ]
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionCloseBefore::GetEnumerator():System.Collections.Generic.IEnumerator_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
@@ -887,6 +1088,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionCloseBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient",
           "isExtensionMethod": false
@@ -908,6 +1110,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionCloseBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -926,6 +1129,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionCloseBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -944,6 +1148,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionCloseBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -962,6 +1167,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionCloseBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -980,6 +1186,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionCloseBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -998,6 +1205,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionCloseBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -1016,6 +1224,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionCloseBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -1034,6 +1243,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionCloseBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -1047,6 +1257,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionCloseBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -1060,6 +1271,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionCloseBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -1076,6 +1288,37 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable\u00601",
+          "clrName": "System.Collections.Generic.IEnumerable\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,Object]]"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+          "clrName": "System.Collections.IEnumerable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyCollection\u00601",
+          "clrName": "System.Collections.Generic.IReadOnlyCollection\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,Object]]"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyList\u00601",
+          "clrName": "System.Collections.Generic.IReadOnlyList\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,Object]]"
+          ]
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionCloseError::GetEnumerator():System.Collections.Generic.IEnumerator_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
@@ -1092,6 +1335,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionCloseError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient",
           "isExtensionMethod": false
@@ -1113,6 +1357,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionCloseError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -1131,6 +1376,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionCloseError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -1149,6 +1395,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionCloseError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -1167,6 +1414,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionCloseError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -1185,6 +1433,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionCloseError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -1203,6 +1452,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionCloseError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -1221,6 +1471,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionCloseError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -1239,6 +1490,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionCloseError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -1257,6 +1509,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionCloseError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -1270,6 +1523,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionCloseError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -1283,6 +1537,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionCloseError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -1299,6 +1554,37 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable\u00601",
+          "clrName": "System.Collections.Generic.IEnumerable\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,Object]]"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+          "clrName": "System.Collections.IEnumerable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyCollection\u00601",
+          "clrName": "System.Collections.Generic.IReadOnlyCollection\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,Object]]"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyList\u00601",
+          "clrName": "System.Collections.Generic.IReadOnlyList\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,Object]]"
+          ]
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionOpenAfter::GetEnumerator():System.Collections.Generic.IEnumerator_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
@@ -1315,6 +1601,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionOpenAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient",
           "isExtensionMethod": false
@@ -1336,6 +1623,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionOpenAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -1354,6 +1642,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionOpenAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -1372,6 +1661,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionOpenAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -1390,6 +1680,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionOpenAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -1408,6 +1699,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionOpenAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -1426,6 +1718,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionOpenAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -1444,6 +1737,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionOpenAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -1462,6 +1756,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionOpenAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -1480,6 +1775,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionOpenAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -1493,6 +1789,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionOpenAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -1506,6 +1803,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionOpenAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -1522,6 +1820,37 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable\u00601",
+          "clrName": "System.Collections.Generic.IEnumerable\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,Object]]"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+          "clrName": "System.Collections.IEnumerable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyCollection\u00601",
+          "clrName": "System.Collections.Generic.IReadOnlyCollection\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,Object]]"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyList\u00601",
+          "clrName": "System.Collections.Generic.IReadOnlyList\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,Object]]"
+          ]
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionOpenBefore::GetEnumerator():System.Collections.Generic.IEnumerator_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
@@ -1538,6 +1867,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionOpenBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient",
           "isExtensionMethod": false
@@ -1559,6 +1889,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionOpenBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -1577,6 +1908,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionOpenBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -1595,6 +1927,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionOpenBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -1613,6 +1946,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionOpenBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -1631,6 +1965,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionOpenBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -1649,6 +1984,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionOpenBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -1667,6 +2003,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionOpenBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -1680,6 +2017,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionOpenBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -1693,6 +2031,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionOpenBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -1709,6 +2048,37 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable\u00601",
+          "clrName": "System.Collections.Generic.IEnumerable\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,Object]]"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+          "clrName": "System.Collections.IEnumerable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyCollection\u00601",
+          "clrName": "System.Collections.Generic.IReadOnlyCollection\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,Object]]"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyList\u00601",
+          "clrName": "System.Collections.Generic.IReadOnlyList\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,Object]]"
+          ]
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionOpenError::GetEnumerator():System.Collections.Generic.IEnumerator_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
@@ -1725,6 +2095,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionOpenError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient",
           "isExtensionMethod": false
@@ -1746,6 +2117,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionOpenError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -1764,6 +2136,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionOpenError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -1782,6 +2155,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionOpenError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -1800,6 +2174,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionOpenError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -1818,6 +2193,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionOpenError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -1836,6 +2212,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionOpenError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -1854,6 +2231,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionOpenError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -1872,6 +2250,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionOpenError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -1890,6 +2269,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionOpenError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -1903,6 +2283,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionOpenError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -1916,6 +2297,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientConnectionOpenError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -1932,6 +2314,37 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable\u00601",
+          "clrName": "System.Collections.Generic.IEnumerable\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,Object]]"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+          "clrName": "System.Collections.IEnumerable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyCollection\u00601",
+          "clrName": "System.Collections.Generic.IReadOnlyCollection\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,Object]]"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyList\u00601",
+          "clrName": "System.Collections.Generic.IReadOnlyList\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,Object]]"
+          ]
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionCommitAfter::GetEnumerator():System.Collections.Generic.IEnumerator_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
@@ -1948,6 +2361,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionCommitAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient",
           "isExtensionMethod": false
@@ -1969,6 +2383,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionCommitAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -1987,6 +2402,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionCommitAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -2005,6 +2421,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionCommitAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -2023,6 +2440,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionCommitAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -2041,6 +2459,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionCommitAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -2059,6 +2478,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionCommitAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -2077,6 +2497,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionCommitAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -2095,6 +2516,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionCommitAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -2108,6 +2530,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionCommitAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -2121,6 +2544,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionCommitAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -2137,6 +2561,37 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable\u00601",
+          "clrName": "System.Collections.Generic.IEnumerable\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,Object]]"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+          "clrName": "System.Collections.IEnumerable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyCollection\u00601",
+          "clrName": "System.Collections.Generic.IReadOnlyCollection\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,Object]]"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyList\u00601",
+          "clrName": "System.Collections.Generic.IReadOnlyList\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,Object]]"
+          ]
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionCommitBefore::GetEnumerator():System.Collections.Generic.IEnumerator_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
@@ -2153,6 +2608,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionCommitBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient",
           "isExtensionMethod": false
@@ -2174,6 +2630,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionCommitBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -2192,6 +2649,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionCommitBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -2210,6 +2668,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionCommitBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -2228,6 +2687,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionCommitBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -2246,6 +2706,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionCommitBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -2264,6 +2725,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionCommitBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -2282,6 +2744,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionCommitBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -2300,6 +2763,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionCommitBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -2313,6 +2777,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionCommitBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -2326,6 +2791,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionCommitBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -2342,6 +2808,37 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable\u00601",
+          "clrName": "System.Collections.Generic.IEnumerable\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,Object]]"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+          "clrName": "System.Collections.IEnumerable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyCollection\u00601",
+          "clrName": "System.Collections.Generic.IReadOnlyCollection\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,Object]]"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyList\u00601",
+          "clrName": "System.Collections.Generic.IReadOnlyList\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,Object]]"
+          ]
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionCommitError::GetEnumerator():System.Collections.Generic.IEnumerator_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
@@ -2358,6 +2855,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionCommitError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient",
           "isExtensionMethod": false
@@ -2379,6 +2877,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionCommitError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -2397,6 +2896,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionCommitError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -2415,6 +2915,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionCommitError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -2433,6 +2934,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionCommitError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -2451,6 +2953,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionCommitError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -2469,6 +2972,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionCommitError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -2487,6 +2991,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionCommitError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -2505,6 +3010,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionCommitError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -2523,6 +3029,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionCommitError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -2536,6 +3043,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionCommitError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -2549,6 +3057,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionCommitError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -2565,6 +3074,37 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable\u00601",
+          "clrName": "System.Collections.Generic.IEnumerable\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,Object]]"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+          "clrName": "System.Collections.IEnumerable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyCollection\u00601",
+          "clrName": "System.Collections.Generic.IReadOnlyCollection\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,Object]]"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyList\u00601",
+          "clrName": "System.Collections.Generic.IReadOnlyList\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,Object]]"
+          ]
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionRollbackAfter::GetEnumerator():System.Collections.Generic.IEnumerator_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
@@ -2581,6 +3121,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionRollbackAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient",
           "isExtensionMethod": false
@@ -2602,6 +3143,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionRollbackAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -2620,6 +3162,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionRollbackAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -2638,6 +3181,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionRollbackAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -2656,6 +3200,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionRollbackAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -2674,6 +3219,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionRollbackAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -2692,6 +3238,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionRollbackAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -2710,6 +3257,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionRollbackAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -2728,6 +3276,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionRollbackAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -2746,6 +3295,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionRollbackAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -2759,6 +3309,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionRollbackAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -2772,6 +3323,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionRollbackAfter",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -2788,6 +3340,37 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable\u00601",
+          "clrName": "System.Collections.Generic.IEnumerable\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,Object]]"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+          "clrName": "System.Collections.IEnumerable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyCollection\u00601",
+          "clrName": "System.Collections.Generic.IReadOnlyCollection\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,Object]]"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyList\u00601",
+          "clrName": "System.Collections.Generic.IReadOnlyList\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,Object]]"
+          ]
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionRollbackBefore::GetEnumerator():System.Collections.Generic.IEnumerator_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
@@ -2804,6 +3387,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionRollbackBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient",
           "isExtensionMethod": false
@@ -2825,6 +3409,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionRollbackBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -2843,6 +3428,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionRollbackBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -2861,6 +3447,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionRollbackBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -2879,6 +3466,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionRollbackBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -2897,6 +3485,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionRollbackBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -2915,6 +3504,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionRollbackBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -2933,6 +3523,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionRollbackBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -2951,6 +3542,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionRollbackBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -2969,6 +3561,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionRollbackBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -2982,6 +3575,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionRollbackBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -2995,6 +3589,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionRollbackBefore",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -3011,6 +3606,37 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable\u00601",
+          "clrName": "System.Collections.Generic.IEnumerable\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,Object]]"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+          "clrName": "System.Collections.IEnumerable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyCollection\u00601",
+          "clrName": "System.Collections.Generic.IReadOnlyCollection\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,Object]]"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyList\u00601",
+          "clrName": "System.Collections.Generic.IReadOnlyList\u00601",
+          "typeArguments": [
+            "KeyValuePair_2[[String,Object]]"
+          ]
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionRollbackError::GetEnumerator():System.Collections.Generic.IEnumerator_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
@@ -3027,6 +3653,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionRollbackError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient",
           "isExtensionMethod": false
@@ -3048,6 +3675,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionRollbackError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -3066,6 +3694,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionRollbackError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -3084,6 +3713,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionRollbackError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -3102,6 +3732,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionRollbackError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -3120,6 +3751,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionRollbackError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -3138,6 +3770,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionRollbackError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -3156,6 +3789,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionRollbackError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -3174,6 +3808,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionRollbackError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -3192,6 +3827,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionRollbackError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -3210,6 +3846,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionRollbackError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -3223,6 +3860,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionRollbackError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -3236,6 +3874,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.Diagnostics.SqlClientTransactionRollbackError",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }

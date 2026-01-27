@@ -12,7 +12,9 @@ import type { ptr } from "@tsonic/core/types.js";
 import type { ISqlServerConnection } from "../../Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal/internal/index.js";
 import type { ISqlServerUpdateSqlGenerator } from "../../Microsoft.EntityFrameworkCore.SqlServer.Update.Internal/internal/index.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, IDisposable, Object as ClrObject, Type } from "@tsonic/dotnet/System.js";
+import type { Boolean as ClrBoolean, IDisposable, Int64, Object as ClrObject, Type } from "@tsonic/dotnet/System.js";
+import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
+import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 import type { IRelationalCommandDiagnosticsLogger } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics.js";
 import type { IProperty, ISequence, ITypeBase } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
 import type { IRawSqlCommandBuilder, IRelationalConnection } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
@@ -33,7 +35,13 @@ export interface ISqlServerValueGeneratorCache$instance extends IValueGeneratorC
 
 export type ISqlServerValueGeneratorCache = ISqlServerValueGeneratorCache$instance;
 
-export interface SqlServerSequenceHiLoValueGenerator_1$instance<TValue> extends HiLoValueGenerator<TValue> {
+export abstract class SqlServerSequenceHiLoValueGenerator_1$protected<TValue> {
+    protected GetNewLowValue(): long;
+    protected GetNewLowValueAsync(cancellationToken?: CancellationToken): Task<System_Internal.Int64>;
+}
+
+
+export interface SqlServerSequenceHiLoValueGenerator_1$instance<TValue> extends SqlServerSequenceHiLoValueGenerator_1$protected<TValue>, HiLoValueGenerator<TValue> {
     readonly GeneratesTemporaryValues: boolean;
 }
 
@@ -95,7 +103,12 @@ export interface SqlServerValueGeneratorCache$instance extends ISqlServerValueGe
 export type SqlServerValueGeneratorCache = SqlServerValueGeneratorCache$instance & __SqlServerValueGeneratorCache$views;
 
 
-export interface SqlServerValueGeneratorSelector$instance extends RelationalValueGeneratorSelector {
+export abstract class SqlServerValueGeneratorSelector$protected {
+    protected FindForType(property: IProperty, typeBase: ITypeBase, clrType: Type): ValueGenerator | undefined;
+}
+
+
+export interface SqlServerValueGeneratorSelector$instance extends SqlServerValueGeneratorSelector$protected, RelationalValueGeneratorSelector {
     readonly Cache: ISqlServerValueGeneratorCache;
     Select(property: IProperty, typeBase: ITypeBase): ValueGenerator | undefined;
     TrySelect(property: IProperty, typeBase: ITypeBase, valueGenerator: ValueGenerator): boolean;

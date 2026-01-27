@@ -6,8 +6,11 @@
 import * as Internal from './System.Drawing.Configuration/internal/index.js';
 
 // Cross-namespace type imports for constraints
-import type { Configuration, ConfigurationLockCollection, ConfigurationSection, ElementInformation, SectionInformation } from './System.Configuration/internal/index.js';
-import type { Boolean as ClrBoolean, Int32, Object as ClrObject, String as ClrString } from '@tsonic/dotnet/System.js';
+import type { Configuration, ConfigurationElement, ConfigurationElementProperty, ConfigurationLockCollection, ConfigurationProperty, ConfigurationPropertyCollection, ConfigurationSaveMode, ConfigurationSection, ContextInformation, ElementInformation, SectionInformation } from './System.Configuration/internal/index.js';
+import type { IList } from '@tsonic/dotnet/System.Collections.js';
+import type { Boolean as ClrBoolean, Int32, Object as ClrObject, String as ClrString, Void } from '@tsonic/dotnet/System.js';
+import type { FrameworkName } from '@tsonic/dotnet/System.Runtime.Versioning.js';
+import type { XmlReader, XmlWriter } from '@tsonic/dotnet/System.Xml.js';
 
 // Public API exports (curated - no internal $instance/$views leakage)
 export { SystemDrawingSection as SystemDrawingSection } from './System.Drawing.Configuration/internal/index.js';

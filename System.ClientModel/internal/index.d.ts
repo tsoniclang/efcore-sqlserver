@@ -39,12 +39,18 @@ export const ApiKeyCredential: {
 
 export type ApiKeyCredential = ApiKeyCredential$instance;
 
-export interface AsyncCollectionResult_1$instance<T> extends AsyncCollectionResult {
+export abstract class AsyncCollectionResult_1$protected<T> {
+    protected abstract GetValuesFromPageAsync(page: ClientResult): IAsyncEnumerable<T>;
+}
+
+
+export interface AsyncCollectionResult_1$instance<T> extends AsyncCollectionResult_1$protected<T>, AsyncCollectionResult {
     GetAsyncEnumerator(cancellationToken?: CancellationToken): IAsyncEnumerator<T>;
 }
 
 
 export const AsyncCollectionResult_1: {
+    new<T>(): AsyncCollectionResult_1<T>;
 };
 
 
@@ -58,13 +64,15 @@ export interface AuthenticationTokenProvider$instance {
 
 
 export const AuthenticationTokenProvider: {
+    new(): AuthenticationTokenProvider;
 };
 
 
 export type AuthenticationTokenProvider = AuthenticationTokenProvider$instance;
 
 export interface BinaryContent$instance {
-    readonly MediaType: string | undefined;
+    get MediaType(): string | undefined;
+    set MediaType(value: string);
     Dispose(): void;
     TryComputeLength(length: long): boolean;
     WriteTo(stream: Stream, cancellationToken?: CancellationToken): void;
@@ -73,6 +81,7 @@ export interface BinaryContent$instance {
 
 
 export const BinaryContent: {
+    new(): BinaryContent;
     Create(value: BinaryData): BinaryContent;
     Create(stream: Stream): BinaryContent;
     Create<T extends IPersistableModel_1<T>>(model: T, options?: ModelReaderWriterOptions): BinaryContent;
@@ -90,7 +99,7 @@ export interface ClientResult$instance {
 
 
 export const ClientResult: {
-    new(): ClientResult;
+    new(response: PipelineResponse): ClientResult;
     FromOptionalValue<T>(value: T, response: PipelineResponse): ClientResult_1<T | undefined>;
     FromResponse(response: PipelineResponse): ClientResult;
     FromValue<T>(value: T, response: PipelineResponse): ClientResult_1<T>;
@@ -105,14 +114,14 @@ export interface ClientResult_1$instance<T> extends ClientResult {
 
 
 export const ClientResult_1: {
-    new<T>(): ClientResult_1<T>;
+    new<T>(value: T, response: PipelineResponse): ClientResult_1<T>;
 };
 
 
 export type ClientResult_1<T> = ClientResult_1$instance<T>;
 
 export interface ClientResultException$instance extends Exception {
-    readonly Status: int;
+    Status: int;
     GetRawResponse(): PipelineResponse | undefined;
 }
 
@@ -126,12 +135,18 @@ export const ClientResultException: {
 
 export type ClientResultException = ClientResultException$instance;
 
-export interface CollectionResult_1$instance<T> extends CollectionResult {
+export abstract class CollectionResult_1$protected<T> {
+    protected abstract GetValuesFromPage(page: ClientResult): IEnumerable__System_Collections_Generic<T>;
+}
+
+
+export interface CollectionResult_1$instance<T> extends CollectionResult_1$protected<T>, CollectionResult {
     GetEnumerator(): IEnumerator<T>;
 }
 
 
 export const CollectionResult_1: {
+    new<T>(): CollectionResult_1<T>;
 };
 
 
@@ -144,6 +159,7 @@ export interface ContinuationToken$instance {
 
 export const ContinuationToken: {
     new(): ContinuationToken;
+    new(bytes: BinaryData): ContinuationToken;
     FromBytes(bytes: BinaryData): ContinuationToken;
 };
 

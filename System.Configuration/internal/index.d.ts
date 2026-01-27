@@ -12,11 +12,11 @@ import * as System_Configuration_Provider_Internal from "../../System.Configurat
 import type { ProviderBase, ProviderCollection } from "../../System.Configuration.Provider/internal/index.js";
 import type { UriIdnScope } from "../../System/internal/index.js";
 import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections.js";
-import type { Hashtable, ICollection, IDictionary, IEnumerable, IEnumerator, IList, ReadOnlyCollectionBase } from "@tsonic/dotnet/System.Collections.js";
+import type { Hashtable, ICollection, IComparer, IDictionary, IEnumerable, IEnumerator, IList, ReadOnlyCollectionBase } from "@tsonic/dotnet/System.Collections.js";
 import * as System_Collections_Specialized_Internal from "@tsonic/dotnet/System.Collections.Specialized.js";
 import type { NameObjectCollectionBase, NameValueCollection, StringCollection } from "@tsonic/dotnet/System.Collections.Specialized.js";
 import * as System_ComponentModel_Internal from "@tsonic/dotnet/System.ComponentModel.js";
-import type { CancelEventArgs, INotifyPropertyChanged, ITypeDescriptorContext, PropertyChangedEventHandler, TypeConverter } from "@tsonic/dotnet/System.ComponentModel.js";
+import type { CancelEventArgs, IComponent, INotifyPropertyChanged, ITypeDescriptorContext, PropertyChangedEventArgs, PropertyChangedEventHandler, TypeConverter } from "@tsonic/dotnet/System.ComponentModel.js";
 import type { CultureInfo } from "@tsonic/dotnet/System.Globalization.js";
 import * as System_Lib from "@tsonic/dotnet/System.js";
 import type { Array as ClrArray, AsyncCallback, Attribute, Boolean as ClrBoolean, Enum, EventArgs, Exception, Func, GenericUriParserOptions, IAsyncResult, ICloneable, IComparable, IConvertible, IFormattable, Int32, Int64, IntPtr, ISpanFormattable, MulticastDelegate, Object as ClrObject, String as ClrString, SystemException, TimeSpan, Type, Void } from "@tsonic/dotnet/System.js";
@@ -25,7 +25,7 @@ import type { IDeserializationCallback, ISerializable, SerializationInfo, Stream
 import type { FrameworkName } from "@tsonic/dotnet/System.Runtime.Versioning.js";
 import type { RSAParameters } from "@tsonic/dotnet/System.Security.Cryptography.js";
 import * as System_Xml_Internal from "@tsonic/dotnet/System.Xml.js";
-import type { XmlAttribute, XmlCDataSection, XmlComment, XmlDocument, XmlElement, XmlNode, XmlReader, XmlSignificantWhitespace, XmlText, XmlTextReader, XmlWhitespace } from "@tsonic/dotnet/System.Xml.js";
+import type { XmlAttribute, XmlCDataSection, XmlComment, XmlDocument, XmlElement, XmlNode, XmlReader, XmlSignificantWhitespace, XmlText, XmlTextReader, XmlWhitespace, XmlWriter } from "@tsonic/dotnet/System.Xml.js";
 import * as System_Xml_XPath_Internal from "@tsonic/dotnet/System.Xml.XPath.js";
 import type { IXPathNavigable } from "@tsonic/dotnet/System.Xml.XPath.js";
 
@@ -174,7 +174,15 @@ export const ApplicationScopedSettingAttribute: {
 
 export type ApplicationScopedSettingAttribute = ApplicationScopedSettingAttribute$instance;
 
-export interface ApplicationSettingsBase$instance extends SettingsBase {
+export abstract class ApplicationSettingsBase$protected {
+    protected OnPropertyChanged(sender: unknown, e: PropertyChangedEventArgs): void;
+    protected OnSettingChanging(sender: unknown, e: SettingChangingEventArgs): void;
+    protected OnSettingsLoaded(sender: unknown, e: SettingsLoadedEventArgs): void;
+    protected OnSettingsSaving(sender: unknown, e: CancelEventArgs): void;
+}
+
+
+export interface ApplicationSettingsBase$instance extends ApplicationSettingsBase$protected, SettingsBase {
     readonly Context: SettingsContext;
     Item: unknown;
     readonly Properties: SettingsPropertyCollection;
@@ -190,6 +198,10 @@ export interface ApplicationSettingsBase$instance extends SettingsBase {
 
 
 export const ApplicationSettingsBase: {
+    new(): ApplicationSettingsBase;
+    new(owner: IComponent): ApplicationSettingsBase;
+    new(settingsKey: string): ApplicationSettingsBase;
+    new(owner: IComponent, settingsKey: string): ApplicationSettingsBase;
 };
 
 
@@ -218,7 +230,15 @@ export const AppSettingsReader: {
 
 export type AppSettingsReader = AppSettingsReader$instance;
 
-export interface AppSettingsSection$instance extends ConfigurationSection {
+export abstract class AppSettingsSection$protected {
+    protected readonly Properties: ConfigurationPropertyCollection;
+    protected DeserializeElement(reader: XmlReader, serializeCollectionKey: boolean): void;
+    protected GetRuntimeObject(): unknown;
+    protected Reset(parentSection: ConfigurationElement): void;
+}
+
+
+export interface AppSettingsSection$instance extends AppSettingsSection$protected, ConfigurationSection {
     File: string;
     readonly Settings: KeyValueConfigurationCollection;
 }
@@ -258,7 +278,12 @@ export const CallbackValidatorAttribute: {
 
 export type CallbackValidatorAttribute = CallbackValidatorAttribute$instance;
 
-export interface ClientSettingsSection$instance extends ConfigurationSection {
+export abstract class ClientSettingsSection$protected {
+    protected readonly Properties: ConfigurationPropertyCollection;
+}
+
+
+export interface ClientSettingsSection$instance extends ClientSettingsSection$protected, ConfigurationSection {
     readonly Settings: SettingElementCollection;
 }
 
@@ -272,7 +297,7 @@ export type ClientSettingsSection = ClientSettingsSection$instance;
 
 export interface CommaDelimitedStringCollection$instance extends StringCollection {
     readonly IsModified: boolean;
-    readonly IsReadOnly: boolean;
+    IsReadOnly: boolean;
     Item: string;
     Add(value: string): void;
     AddRange(range: string[]): void;
@@ -360,12 +385,37 @@ export interface ConfigurationConverterBase$instance extends TypeConverter {
 
 
 export const ConfigurationConverterBase: {
+    new(): ConfigurationConverterBase;
 };
 
 
 export type ConfigurationConverterBase = ConfigurationConverterBase$instance;
 
-export interface ConfigurationElement$instance {
+export abstract class ConfigurationElement$protected {
+    protected readonly ElementProperty: ConfigurationElementProperty;
+    protected readonly Properties: ConfigurationPropertyCollection;
+    protected DeserializeElement(reader: XmlReader, serializeCollectionKey: boolean): void;
+    protected GetTransformedAssemblyString(assemblyName: string): string;
+    protected GetTransformedTypeString(typeName: string): string;
+    protected Init(): void;
+    protected InitializeDefault(): void;
+    protected IsModified(): boolean;
+    protected ListErrors(errorList: IList): void;
+    protected OnDeserializeUnrecognizedAttribute(name: string, value: string): boolean;
+    protected OnDeserializeUnrecognizedElement(elementName: string, reader: XmlReader): boolean;
+    protected OnRequiredPropertyNotFound(name: string): unknown;
+    protected PostDeserialize(): void;
+    protected PreSerialize(writer: XmlWriter): void;
+    protected Reset(parentElement: ConfigurationElement): void;
+    protected ResetModified(): void;
+    protected SerializeElement(writer: XmlWriter, serializeCollectionKey: boolean): boolean;
+    protected SerializeToXmlElement(writer: XmlWriter, elementName: string): boolean;
+    protected SetReadOnly(): void;
+    protected Unmerge(sourceElement: ConfigurationElement, parentElement: ConfigurationElement, saveMode: ConfigurationSaveMode): void;
+}
+
+
+export interface ConfigurationElement$instance extends ConfigurationElement$protected {
     readonly CurrentConfiguration: Configuration;
     readonly ElementInformation: ElementInformation;
     readonly LockAllAttributesExcept: ConfigurationLockCollection;
@@ -380,12 +430,33 @@ export interface ConfigurationElement$instance {
 
 
 export const ConfigurationElement: {
+    new(): ConfigurationElement;
 };
 
 
 export type ConfigurationElement = ConfigurationElement$instance;
 
-export interface ConfigurationElementCollection$instance extends ConfigurationElement {
+export abstract class ConfigurationElementCollection$protected {
+    protected readonly ElementName: string;
+    protected readonly ThrowOnDuplicate: boolean;
+    protected BaseAdd(element: ConfigurationElement): void;
+    protected BaseAdd(index: int, element: ConfigurationElement): void;
+    protected abstract CreateNewElement(): ConfigurationElement;
+    protected CreateNewElement(elementName: string): ConfigurationElement;
+    protected abstract GetElementKey(element: ConfigurationElement): unknown;
+    protected IsElementName(elementName: string): boolean;
+    protected IsElementRemovable(element: ConfigurationElement): boolean;
+    protected IsModified(): boolean;
+    protected OnDeserializeUnrecognizedElement(elementName: string, reader: XmlReader): boolean;
+    protected Reset(parentElement: ConfigurationElement): void;
+    protected ResetModified(): void;
+    protected SerializeElement(writer: XmlWriter, serializeCollectionKey: boolean): boolean;
+    protected SetReadOnly(): void;
+    protected Unmerge(sourceElement: ConfigurationElement, parentElement: ConfigurationElement, saveMode: ConfigurationSaveMode): void;
+}
+
+
+export interface ConfigurationElementCollection$instance extends ConfigurationElementCollection$protected, ConfigurationElement {
     readonly CollectionType: ConfigurationElementCollectionType;
     readonly Count: int;
     EmitClear: boolean;
@@ -400,6 +471,8 @@ export interface ConfigurationElementCollection$instance extends ConfigurationEl
 
 
 export const ConfigurationElementCollection: {
+    new(): ConfigurationElementCollection;
+    new(comparer: IComparer): ConfigurationElementCollection;
 };
 
 
@@ -436,6 +509,7 @@ export const ConfigurationErrorsException: {
     new(message: string, inner: Exception, node: XmlNode): ConfigurationErrorsException;
     new(message: string, reader: XmlReader): ConfigurationErrorsException;
     new(message: string, inner: Exception, reader: XmlReader): ConfigurationErrorsException;
+    new(info: SerializationInfo, context: StreamingContext): ConfigurationErrorsException;
     GetFilename(node: XmlNode): string;
     GetFilename(reader: XmlReader): string;
     GetLineNumber(node: XmlNode): int;
@@ -455,6 +529,7 @@ export interface ConfigurationException$instance extends SystemException {
 
 
 export const ConfigurationException: {
+    new(info: SerializationInfo, context: StreamingContext): ConfigurationException;
     new(): ConfigurationException;
     new(message: string): ConfigurationException;
     new(message: string, inner: Exception): ConfigurationException;
@@ -512,7 +587,7 @@ export interface ConfigurationLockCollection$instance {
     readonly AttributeList: string;
     readonly Count: int;
     readonly HasParentElements: boolean;
-    readonly IsModified: boolean;
+    IsModified: boolean;
     readonly IsSynchronized: boolean;
     readonly SyncRoot: unknown;
     Add(name: string): void;
@@ -535,17 +610,17 @@ export type ConfigurationLockCollection = ConfigurationLockCollection$instance;
 
 export interface ConfigurationProperty$instance {
     readonly Converter: TypeConverter;
-    readonly DefaultValue: unknown;
-    readonly Description: string;
+    DefaultValue: unknown;
+    Description: string;
     readonly IsAssemblyStringTransformationRequired: boolean;
     readonly IsDefaultCollection: boolean;
     readonly IsKey: boolean;
     readonly IsRequired: boolean;
     readonly IsTypeStringTransformationRequired: boolean;
     readonly IsVersionCheckRequired: boolean;
-    readonly Name: string;
-    readonly Type: Type;
-    readonly Validator: ConfigurationValidatorBase;
+    Name: string;
+    Type: Type;
+    Validator: ConfigurationValidatorBase;
 }
 
 
@@ -598,12 +673,25 @@ export const ConfigurationPropertyCollection: {
 
 export type ConfigurationPropertyCollection = ConfigurationPropertyCollection$instance;
 
-export interface ConfigurationSection$instance extends ConfigurationElement {
+export abstract class ConfigurationSection$protected {
+    protected DeserializeSection(reader: XmlReader): void;
+    protected GetRuntimeObject(): unknown;
+    protected IsModified(): boolean;
+    protected ResetModified(): void;
+    protected SerializeSection(parentElement: ConfigurationElement, name: string, saveMode: ConfigurationSaveMode): string;
+    protected ShouldSerializeElementInTargetVersion(element: ConfigurationElement, elementName: string, targetFramework: FrameworkName): boolean;
+    protected ShouldSerializePropertyInTargetVersion(property: ConfigurationProperty, propertyName: string, targetFramework: FrameworkName, parentConfigurationElement: ConfigurationElement): boolean;
+    protected ShouldSerializeSectionInTargetVersion(targetFramework: FrameworkName): boolean;
+}
+
+
+export interface ConfigurationSection$instance extends ConfigurationSection$protected, ConfigurationElement {
     readonly SectionInformation: SectionInformation;
 }
 
 
 export const ConfigurationSection: {
+    new(): ConfigurationSection;
 };
 
 
@@ -631,11 +719,16 @@ export const ConfigurationSectionCollection: {
 
 export type ConfigurationSectionCollection = ConfigurationSectionCollection$instance;
 
-export interface ConfigurationSectionGroup$instance {
-    readonly IsDeclarationRequired: boolean;
-    readonly IsDeclared: boolean;
-    readonly Name: string;
-    readonly SectionGroupName: string;
+export abstract class ConfigurationSectionGroup$protected {
+    protected ShouldSerializeSectionGroupInTargetVersion(targetFramework: FrameworkName): boolean;
+}
+
+
+export interface ConfigurationSectionGroup$instance extends ConfigurationSectionGroup$protected {
+    IsDeclarationRequired: boolean;
+    IsDeclared: boolean;
+    Name: string;
+    SectionGroupName: string;
     readonly SectionGroups: ConfigurationSectionGroupCollection;
     readonly Sections: ConfigurationSectionCollection;
     Type: string;
@@ -693,6 +786,7 @@ export interface ConfigurationValidatorAttribute$instance extends Attribute {
 
 
 export const ConfigurationValidatorAttribute: {
+    new(): ConfigurationValidatorAttribute;
     new(validator: Type): ConfigurationValidatorAttribute;
 };
 
@@ -706,6 +800,7 @@ export interface ConfigurationValidatorBase$instance {
 
 
 export const ConfigurationValidatorBase: {
+    new(): ConfigurationValidatorBase;
 };
 
 
@@ -740,7 +835,12 @@ export interface ConfigXmlDocument$instance extends System_Configuration_Interna
 export type ConfigXmlDocument = ConfigXmlDocument$instance & __ConfigXmlDocument$views;
 
 
-export interface ConnectionStringSettings$instance extends ConfigurationElement {
+export abstract class ConnectionStringSettings$protected {
+    protected readonly Properties: ConfigurationPropertyCollection;
+}
+
+
+export interface ConnectionStringSettings$instance extends ConnectionStringSettings$protected, ConfigurationElement {
     ConnectionString: string;
     Name: string;
     ProviderName: string;
@@ -757,7 +857,17 @@ export const ConnectionStringSettings: {
 
 export type ConnectionStringSettings = ConnectionStringSettings$instance;
 
-export interface ConnectionStringSettingsCollection$instance extends ConfigurationElementCollection {
+export abstract class ConnectionStringSettingsCollection$protected {
+    protected readonly Properties: ConfigurationPropertyCollection;
+    protected BaseAdd(element: ConfigurationElement): void;
+    protected BaseAdd3(index: int, element: ConfigurationElement): void;
+    protected CreateNewElement2(): ConfigurationElement;
+    protected CreateNewElement(elementName: string): ConfigurationElement;
+    protected GetElementKey(element: ConfigurationElement): unknown;
+}
+
+
+export interface ConnectionStringSettingsCollection$instance extends ConnectionStringSettingsCollection$protected, ConfigurationElementCollection {
     Add(settings: ConnectionStringSettings): void;
     Clear(): void;
     get_Item(index: int): ConnectionStringSettings;
@@ -777,7 +887,13 @@ export const ConnectionStringSettingsCollection: {
 
 export type ConnectionStringSettingsCollection = ConnectionStringSettingsCollection$instance;
 
-export interface ConnectionStringsSection$instance extends ConfigurationSection {
+export abstract class ConnectionStringsSection$protected {
+    protected readonly Properties: ConfigurationPropertyCollection;
+    protected GetRuntimeObject(): unknown;
+}
+
+
+export interface ConnectionStringsSection$instance extends ConnectionStringsSection$protected, ConfigurationSection {
     readonly ConnectionStrings: ConnectionStringSettingsCollection;
 }
 
@@ -803,7 +919,17 @@ export const ContextInformation: {
 
 export type ContextInformation = ContextInformation$instance;
 
-export interface DefaultSection$instance extends ConfigurationSection {
+export abstract class DefaultSection$protected {
+    protected readonly Properties: ConfigurationPropertyCollection;
+    protected DeserializeSection(xmlReader: XmlReader): void;
+    protected IsModified(): boolean;
+    protected Reset(parentSection: ConfigurationElement): void;
+    protected ResetModified(): void;
+    protected SerializeSection(parentSection: ConfigurationElement, name: string, saveMode: ConfigurationSaveMode): string;
+}
+
+
+export interface DefaultSection$instance extends DefaultSection$protected, ConfigurationSection {
 }
 
 
@@ -839,7 +965,13 @@ export const DefaultValidator: {
 
 export type DefaultValidator = DefaultValidator$instance;
 
-export interface DictionarySectionHandler$instance {
+export abstract class DictionarySectionHandler$protected {
+    protected readonly KeyAttributeName: string;
+    protected readonly ValueAttributeName: string;
+}
+
+
+export interface DictionarySectionHandler$instance extends DictionarySectionHandler$protected {
     Create(parent: unknown, context: unknown, section: XmlNode): unknown;
 }
 
@@ -935,7 +1067,12 @@ export const GenericEnumConverter: {
 
 export type GenericEnumConverter = GenericEnumConverter$instance;
 
-export interface IdnElement$instance extends ConfigurationElement {
+export abstract class IdnElement$protected {
+    protected readonly Properties: ConfigurationPropertyCollection;
+}
+
+
+export interface IdnElement$instance extends IdnElement$protected, ConfigurationElement {
     Enabled: UriIdnScope;
 }
 
@@ -947,7 +1084,17 @@ export const IdnElement: {
 
 export type IdnElement = IdnElement$instance;
 
-export interface IgnoreSection$instance extends ConfigurationSection {
+export abstract class IgnoreSection$protected {
+    protected readonly Properties: ConfigurationPropertyCollection;
+    protected DeserializeSection(xmlReader: XmlReader): void;
+    protected IsModified(): boolean;
+    protected Reset(parentSection: ConfigurationElement): void;
+    protected ResetModified(): void;
+    protected SerializeSection(parentSection: ConfigurationElement, name: string, saveMode: ConfigurationSaveMode): string;
+}
+
+
+export interface IgnoreSection$instance extends IgnoreSection$protected, ConfigurationSection {
 }
 
 
@@ -1033,7 +1180,12 @@ export const IntegerValidatorAttribute: {
 
 export type IntegerValidatorAttribute = IntegerValidatorAttribute$instance;
 
-export interface IriParsingElement$instance extends ConfigurationElement {
+export abstract class IriParsingElement$protected {
+    protected readonly Properties: ConfigurationPropertyCollection;
+}
+
+
+export interface IriParsingElement$instance extends IriParsingElement$protected, ConfigurationElement {
     Enabled: boolean;
 }
 
@@ -1045,7 +1197,16 @@ export const IriParsingElement: {
 
 export type IriParsingElement = IriParsingElement$instance;
 
-export interface KeyValueConfigurationCollection$instance extends ConfigurationElementCollection {
+export abstract class KeyValueConfigurationCollection$protected {
+    protected readonly Properties: ConfigurationPropertyCollection;
+    protected readonly ThrowOnDuplicate: boolean;
+    protected CreateNewElement2(): ConfigurationElement;
+    protected CreateNewElement(elementName: string): ConfigurationElement;
+    protected GetElementKey(element: ConfigurationElement): unknown;
+}
+
+
+export interface KeyValueConfigurationCollection$instance extends KeyValueConfigurationCollection$protected, ConfigurationElementCollection {
     readonly AllKeys: string[];
     readonly Item: KeyValueConfigurationElement;
     Add(keyValue: KeyValueConfigurationElement): void;
@@ -1062,7 +1223,13 @@ export const KeyValueConfigurationCollection: {
 
 export type KeyValueConfigurationCollection = KeyValueConfigurationCollection$instance;
 
-export interface KeyValueConfigurationElement$instance extends ConfigurationElement {
+export abstract class KeyValueConfigurationElement$protected {
+    protected readonly Properties: ConfigurationPropertyCollection;
+    protected Init(): void;
+}
+
+
+export interface KeyValueConfigurationElement$instance extends KeyValueConfigurationElement$protected, ConfigurationElement {
     readonly Key: string;
     Value: string;
 }
@@ -1130,7 +1297,15 @@ export const LongValidatorAttribute: {
 
 export type LongValidatorAttribute = LongValidatorAttribute$instance;
 
-export interface NameValueConfigurationCollection$instance extends ConfigurationElementCollection {
+export abstract class NameValueConfigurationCollection$protected {
+    protected readonly Properties: ConfigurationPropertyCollection;
+    protected CreateNewElement2(): ConfigurationElement;
+    protected CreateNewElement(elementName: string): ConfigurationElement;
+    protected GetElementKey(element: ConfigurationElement): unknown;
+}
+
+
+export interface NameValueConfigurationCollection$instance extends NameValueConfigurationCollection$protected, ConfigurationElementCollection {
     readonly AllKeys: string[];
     Item: NameValueConfigurationElement;
     Add(nameValue: NameValueConfigurationElement): void;
@@ -1147,7 +1322,12 @@ export const NameValueConfigurationCollection: {
 
 export type NameValueConfigurationCollection = NameValueConfigurationCollection$instance;
 
-export interface NameValueConfigurationElement$instance extends ConfigurationElement {
+export abstract class NameValueConfigurationElement$protected {
+    protected readonly Properties: ConfigurationPropertyCollection;
+}
+
+
+export interface NameValueConfigurationElement$instance extends NameValueConfigurationElement$protected, ConfigurationElement {
     readonly Name: string;
     Value: string;
 }
@@ -1179,7 +1359,13 @@ export interface NameValueFileSectionHandler$instance extends IConfigurationSect
 export type NameValueFileSectionHandler = NameValueFileSectionHandler$instance & __NameValueFileSectionHandler$views;
 
 
-export interface NameValueSectionHandler$instance {
+export abstract class NameValueSectionHandler$protected {
+    protected readonly KeyAttributeName: string;
+    protected readonly ValueAttributeName: string;
+}
+
+
+export interface NameValueSectionHandler$instance extends NameValueSectionHandler$protected {
     Create(parent: unknown, context: unknown, section: XmlNode): unknown;
 }
 
@@ -1280,6 +1466,7 @@ export interface ProtectedConfigurationProvider$instance extends ProviderBase {
 
 
 export const ProtectedConfigurationProvider: {
+    new(): ProtectedConfigurationProvider;
 };
 
 
@@ -1298,7 +1485,12 @@ export const ProtectedConfigurationProviderCollection: {
 
 export type ProtectedConfigurationProviderCollection = ProtectedConfigurationProviderCollection$instance;
 
-export interface ProtectedConfigurationSection$instance extends ConfigurationSection {
+export abstract class ProtectedConfigurationSection$protected {
+    protected readonly Properties: ConfigurationPropertyCollection;
+}
+
+
+export interface ProtectedConfigurationSection$instance extends ProtectedConfigurationSection$protected, ConfigurationSection {
     DefaultProvider: string;
     readonly Providers: ProviderSettingsCollection;
 }
@@ -1311,7 +1503,12 @@ export const ProtectedConfigurationSection: {
 
 export type ProtectedConfigurationSection = ProtectedConfigurationSection$instance;
 
-export interface ProtectedProviderSettings$instance extends ConfigurationElement {
+export abstract class ProtectedProviderSettings$protected {
+    protected readonly Properties: ConfigurationPropertyCollection;
+}
+
+
+export interface ProtectedProviderSettings$instance extends ProtectedProviderSettings$protected, ConfigurationElement {
     readonly Providers: ProviderSettingsCollection;
 }
 
@@ -1323,7 +1520,16 @@ export const ProtectedProviderSettings: {
 
 export type ProtectedProviderSettings = ProtectedProviderSettings$instance;
 
-export interface ProviderSettings$instance extends ConfigurationElement {
+export abstract class ProviderSettings$protected {
+    protected readonly Properties: ConfigurationPropertyCollection;
+    protected IsModified(): boolean;
+    protected OnDeserializeUnrecognizedAttribute(name: string, value: string): boolean;
+    protected Reset(parentElement: ConfigurationElement): void;
+    protected Unmerge(sourceElement: ConfigurationElement, parentElement: ConfigurationElement, saveMode: ConfigurationSaveMode): void;
+}
+
+
+export interface ProviderSettings$instance extends ProviderSettings$protected, ConfigurationElement {
     Name: string;
     readonly Parameters: NameValueCollection;
     Type: string;
@@ -1338,7 +1544,15 @@ export const ProviderSettings: {
 
 export type ProviderSettings = ProviderSettings$instance;
 
-export interface ProviderSettingsCollection$instance extends ConfigurationElementCollection {
+export abstract class ProviderSettingsCollection$protected {
+    protected readonly Properties: ConfigurationPropertyCollection;
+    protected CreateNewElement2(): ConfigurationElement;
+    protected CreateNewElement(elementName: string): ConfigurationElement;
+    protected GetElementKey(element: ConfigurationElement): unknown;
+}
+
+
+export interface ProviderSettingsCollection$instance extends ProviderSettingsCollection$protected, ConfigurationElementCollection {
     Add(provider: ProviderSettings): void;
     Clear(): void;
     get_Item(key: string): ProviderSettings;
@@ -1404,7 +1618,12 @@ export const RsaProtectedConfigurationProvider: {
 
 export type RsaProtectedConfigurationProvider = RsaProtectedConfigurationProvider$instance;
 
-export interface SchemeSettingElement$instance extends ConfigurationElement {
+export abstract class SchemeSettingElement$protected {
+    protected readonly Properties: ConfigurationPropertyCollection;
+}
+
+
+export interface SchemeSettingElement$instance extends SchemeSettingElement$protected, ConfigurationElement {
     readonly GenericUriParserOptions: GenericUriParserOptions;
     readonly Name: string;
 }
@@ -1417,7 +1636,14 @@ export const SchemeSettingElement: {
 
 export type SchemeSettingElement = SchemeSettingElement$instance;
 
-export interface SchemeSettingElementCollection$instance extends ConfigurationElementCollection {
+export abstract class SchemeSettingElementCollection$protected {
+    protected CreateNewElement2(): ConfigurationElement;
+    protected CreateNewElement(elementName: string): ConfigurationElement;
+    protected GetElementKey(element: ConfigurationElement): unknown;
+}
+
+
+export interface SchemeSettingElementCollection$instance extends SchemeSettingElementCollection$protected, ConfigurationElementCollection {
     readonly CollectionType: ConfigurationElementCollectionType;
     get_Item(index: int): SchemeSettingElement;
     get_Item(name: string): SchemeSettingElement;
@@ -1444,7 +1670,7 @@ export interface SectionInformation$instance {
     readonly IsDeclared: boolean;
     readonly IsLocked: boolean;
     readonly IsProtected: boolean;
-    readonly Name: string;
+    Name: string;
     OverrideMode: OverrideMode;
     OverrideModeDefault: OverrideMode;
     readonly OverrideModeEffective: OverrideMode;
@@ -1497,7 +1723,12 @@ export const SettingChangingEventArgs: {
 
 export type SettingChangingEventArgs = SettingChangingEventArgs$instance;
 
-export interface SettingElement$instance extends ConfigurationElement {
+export abstract class SettingElement$protected {
+    protected readonly Properties: ConfigurationPropertyCollection;
+}
+
+
+export interface SettingElement$instance extends SettingElement$protected, ConfigurationElement {
     Name: string;
     SerializeAs: SettingsSerializeAs;
     Value: SettingValueElement;
@@ -1514,7 +1745,15 @@ export const SettingElement: {
 
 export type SettingElement = SettingElement$instance;
 
-export interface SettingElementCollection$instance extends ConfigurationElementCollection {
+export abstract class SettingElementCollection$protected {
+    protected readonly ElementName: string;
+    protected CreateNewElement2(): ConfigurationElement;
+    protected CreateNewElement(elementName: string): ConfigurationElement;
+    protected GetElementKey(element: ConfigurationElement): unknown;
+}
+
+
+export interface SettingElementCollection$instance extends SettingElementCollection$protected, ConfigurationElementCollection {
     readonly CollectionType: ConfigurationElementCollectionType;
     Add(element: SettingElement): void;
     Clear(): void;
@@ -1537,6 +1776,7 @@ export interface SettingsAttributeDictionary$instance extends Hashtable {
 export const SettingsAttributeDictionary: {
     new(): SettingsAttributeDictionary;
     new(attributes: SettingsAttributeDictionary): SettingsAttributeDictionary;
+    new(serializationInfo: SerializationInfo, streamingContext: StreamingContext): SettingsAttributeDictionary;
 };
 
 
@@ -1555,6 +1795,7 @@ export interface SettingsBase$instance {
 
 
 export const SettingsBase: {
+    new(): SettingsBase;
     Synchronized(settingsBase: SettingsBase): SettingsBase;
 };
 
@@ -1567,6 +1808,7 @@ export interface SettingsContext$instance extends Hashtable {
 
 export const SettingsContext: {
     new(): SettingsContext;
+    new(serializationInfo: SerializationInfo, streamingContext: StreamingContext): SettingsContext;
 };
 
 
@@ -1633,7 +1875,7 @@ export const SettingsManageabilityAttribute: {
 export type SettingsManageabilityAttribute = SettingsManageabilityAttribute$instance;
 
 export interface SettingsProperty$instance {
-    readonly Attributes: SettingsAttributeDictionary;
+    Attributes: SettingsAttributeDictionary;
     DefaultValue: unknown;
     IsReadOnly: boolean;
     Name: string;
@@ -1655,7 +1897,17 @@ export const SettingsProperty: {
 
 export type SettingsProperty = SettingsProperty$instance;
 
-export interface SettingsPropertyCollection$instance {
+export abstract class SettingsPropertyCollection$protected {
+    protected OnAdd(property: SettingsProperty): void;
+    protected OnAddComplete(property: SettingsProperty): void;
+    protected OnClear(): void;
+    protected OnClearComplete(): void;
+    protected OnRemove(property: SettingsProperty): void;
+    protected OnRemoveComplete(property: SettingsProperty): void;
+}
+
+
+export interface SettingsPropertyCollection$instance extends SettingsPropertyCollection$protected {
     readonly Count: int;
     readonly IsSynchronized: boolean;
     readonly Item: SettingsProperty;
@@ -1684,6 +1936,7 @@ export interface SettingsPropertyIsReadOnlyException$instance extends Exception 
 export const SettingsPropertyIsReadOnlyException: {
     new(message: string): SettingsPropertyIsReadOnlyException;
     new(message: string, innerException: Exception): SettingsPropertyIsReadOnlyException;
+    new(info: SerializationInfo, context: StreamingContext): SettingsPropertyIsReadOnlyException;
     new(): SettingsPropertyIsReadOnlyException;
 };
 
@@ -1697,6 +1950,7 @@ export interface SettingsPropertyNotFoundException$instance extends Exception {
 export const SettingsPropertyNotFoundException: {
     new(message: string): SettingsPropertyNotFoundException;
     new(message: string, innerException: Exception): SettingsPropertyNotFoundException;
+    new(info: SerializationInfo, context: StreamingContext): SettingsPropertyNotFoundException;
     new(): SettingsPropertyNotFoundException;
 };
 
@@ -1707,10 +1961,10 @@ export interface SettingsPropertyValue$instance {
     Deserialized: boolean;
     IsDirty: boolean;
     readonly Name: string;
-    readonly Property: SettingsProperty;
+    Property: SettingsProperty;
     PropertyValue: unknown;
     SerializedValue: unknown;
-    readonly UsingDefaultValue: boolean;
+    UsingDefaultValue: boolean;
 }
 
 
@@ -1750,6 +2004,7 @@ export interface SettingsPropertyWrongTypeException$instance extends Exception {
 export const SettingsPropertyWrongTypeException: {
     new(message: string): SettingsPropertyWrongTypeException;
     new(message: string, innerException: Exception): SettingsPropertyWrongTypeException;
+    new(info: SerializationInfo, context: StreamingContext): SettingsPropertyWrongTypeException;
     new(): SettingsPropertyWrongTypeException;
 };
 
@@ -1764,6 +2019,7 @@ export interface SettingsProvider$instance extends ProviderBase {
 
 
 export const SettingsProvider: {
+    new(): SettingsProvider;
 };
 
 
@@ -1807,7 +2063,18 @@ export const SettingsSerializeAsAttribute: {
 
 export type SettingsSerializeAsAttribute = SettingsSerializeAsAttribute$instance;
 
-export interface SettingValueElement$instance extends ConfigurationElement {
+export abstract class SettingValueElement$protected {
+    protected readonly Properties: ConfigurationPropertyCollection;
+    protected DeserializeElement(reader: XmlReader, serializeCollectionKey: boolean): void;
+    protected IsModified(): boolean;
+    protected Reset(parentElement: ConfigurationElement): void;
+    protected ResetModified(): void;
+    protected SerializeToXmlElement(writer: XmlWriter, elementName: string): boolean;
+    protected Unmerge(sourceElement: ConfigurationElement, parentElement: ConfigurationElement, saveMode: ConfigurationSaveMode): void;
+}
+
+
+export interface SettingValueElement$instance extends SettingValueElement$protected, ConfigurationElement {
     ValueXml: XmlNode;
     Equals(settingValue: unknown): boolean;
     GetHashCode(): int;
@@ -1977,9 +2244,9 @@ export type TimeSpanValidator = TimeSpanValidator$instance;
 
 export interface TimeSpanValidatorAttribute$instance extends ConfigurationValidatorAttribute {
     ExcludeRange: boolean;
-    readonly MaxValue: TimeSpan;
+    MaxValue: TimeSpan;
     MaxValueString: string;
-    readonly MinValue: TimeSpan;
+    MinValue: TimeSpan;
     MinValueString: string;
     readonly ValidatorInstance: ConfigurationValidatorBase;
 }
@@ -2007,7 +2274,12 @@ export const TypeNameConverter: {
 
 export type TypeNameConverter = TypeNameConverter$instance;
 
-export interface UriSection$instance extends ConfigurationSection {
+export abstract class UriSection$protected {
+    protected readonly Properties: ConfigurationPropertyCollection;
+}
+
+
+export interface UriSection$instance extends UriSection$protected, ConfigurationSection {
     readonly Idn: IdnElement;
     readonly IriParsing: IriParsingElement;
     readonly SchemeSettings: SchemeSettingElementCollection;

@@ -17,6 +17,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilder",
+        "clrName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilder"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.IProviderConventionSetBuilder",
+          "clrName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.IProviderConventionSetBuilder"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerConventionSetBuilder::CreateConventionSet():Microsoft.EntityFrameworkCore.Metadata.Conventions.ConventionSet",
@@ -33,6 +43,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerConventionSetBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -52,6 +63,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerConventionSetBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -71,6 +83,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerConventionSetBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -87,6 +100,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Storage.ISqlGenerationHelper):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerConventionSetBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }
@@ -103,6 +117,20 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IModelFinalizingConvention",
+          "clrName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IModelFinalizingConvention"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IConvention",
+          "clrName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IConvention"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerDbFunctionConvention::ProcessModelFinalizing(Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder,Microsoft.EntityFrameworkCore.Metadata.Conventions.IConventionContext_1[[Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
@@ -119,12 +147,52 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerDbFunctionConvention",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
         }
       ],
-      "properties": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerDbFunctionConvention::Dependencies:Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies",
+          "clrName": "Dependencies",
+          "metadataToken": 385876074,
+          "canonicalSignature": ":Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies",
+          "normalizedSignature": "Dependencies|:Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerDbFunctionConvention",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerDbFunctionConvention::RelationalDependencies:Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies",
+          "clrName": "RelationalDependencies",
+          "metadataToken": 385876075,
+          "canonicalSignature": ":Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies",
+          "normalizedSignature": "RelationalDependencies|:Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerDbFunctionConvention",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
       "fields": [],
       "events": [],
       "constructors": [
@@ -135,6 +203,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerDbFunctionConvention",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }
@@ -151,6 +220,40 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IEntityTypeBaseTypeChangedConvention",
+          "clrName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IEntityTypeBaseTypeChangedConvention"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IConvention",
+          "clrName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IConvention"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IIndexAddedConvention",
+          "clrName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IIndexAddedConvention"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IIndexUniquenessChangedConvention",
+          "clrName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IIndexUniquenessChangedConvention"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IIndexAnnotationChangedConvention",
+          "clrName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IIndexAnnotationChangedConvention"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IPropertyNullabilityChangedConvention",
+          "clrName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IPropertyNullabilityChangedConvention"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IPropertyAnnotationChangedConvention",
+          "clrName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IPropertyAnnotationChangedConvention"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerIndexConvention::ProcessEntityTypeBaseTypeChanged(Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionEntityTypeBuilder,Microsoft.EntityFrameworkCore.Metadata.IConventionEntityType,Microsoft.EntityFrameworkCore.Metadata.IConventionEntityType,Microsoft.EntityFrameworkCore.Metadata.Conventions.IConventionContext_1[[Microsoft.EntityFrameworkCore.Metadata.IConventionEntityType,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
@@ -167,6 +270,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerIndexConvention",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -186,6 +290,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerIndexConvention",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -205,6 +310,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerIndexConvention",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -224,6 +330,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerIndexConvention",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -243,6 +350,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerIndexConvention",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -262,12 +370,52 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerIndexConvention",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
         }
       ],
-      "properties": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerIndexConvention::Dependencies:Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies",
+          "clrName": "Dependencies",
+          "metadataToken": 385876076,
+          "canonicalSignature": ":Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies",
+          "normalizedSignature": "Dependencies|:Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerIndexConvention",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerIndexConvention::RelationalDependencies:Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies",
+          "clrName": "RelationalDependencies",
+          "metadataToken": 385876077,
+          "canonicalSignature": ":Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies",
+          "normalizedSignature": "RelationalDependencies|:Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerIndexConvention",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
       "fields": [],
       "events": [],
       "constructors": [
@@ -278,6 +426,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Storage.ISqlGenerationHelper):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerIndexConvention",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }
@@ -294,6 +443,28 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IEntityTypeAnnotationChangedConvention",
+          "clrName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IEntityTypeAnnotationChangedConvention"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IConvention",
+          "clrName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IConvention"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IKeyAddedConvention",
+          "clrName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IKeyAddedConvention"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IIndexAddedConvention",
+          "clrName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IIndexAddedConvention"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerMemoryOptimizedTablesConvention::ProcessEntityTypeAnnotationChanged(Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionEntityTypeBuilder,System.String,Microsoft.EntityFrameworkCore.Metadata.IConventionAnnotation,Microsoft.EntityFrameworkCore.Metadata.IConventionAnnotation,Microsoft.EntityFrameworkCore.Metadata.Conventions.IConventionContext_1[[Microsoft.EntityFrameworkCore.Metadata.IConventionAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
@@ -310,6 +481,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerMemoryOptimizedTablesConvention",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -329,6 +501,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerMemoryOptimizedTablesConvention",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -348,12 +521,52 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerMemoryOptimizedTablesConvention",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
         }
       ],
-      "properties": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerMemoryOptimizedTablesConvention::Dependencies:Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies",
+          "clrName": "Dependencies",
+          "metadataToken": 385876078,
+          "canonicalSignature": ":Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies",
+          "normalizedSignature": "Dependencies|:Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerMemoryOptimizedTablesConvention",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerMemoryOptimizedTablesConvention::RelationalDependencies:Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies",
+          "clrName": "RelationalDependencies",
+          "metadataToken": 385876079,
+          "canonicalSignature": ":Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies",
+          "normalizedSignature": "RelationalDependencies|:Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerMemoryOptimizedTablesConvention",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
       "fields": [],
       "events": [],
       "constructors": [
@@ -364,6 +577,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerMemoryOptimizedTablesConvention",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }
@@ -380,6 +594,32 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.CascadeDeleteConvention",
+        "clrName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.CascadeDeleteConvention"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IForeignKeyAddedConvention",
+          "clrName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IForeignKeyAddedConvention"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IConvention",
+          "clrName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IConvention"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IForeignKeyRequirednessChangedConvention",
+          "clrName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IForeignKeyRequirednessChangedConvention"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.ISkipNavigationForeignKeyChangedConvention",
+          "clrName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.ISkipNavigationForeignKeyChangedConvention"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IEntityTypeAnnotationChangedConvention",
+          "clrName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IEntityTypeAnnotationChangedConvention"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerOnDeleteConvention::ProcessSkipNavigationForeignKeyChanged(Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionSkipNavigationBuilder,Microsoft.EntityFrameworkCore.Metadata.IConventionForeignKey,Microsoft.EntityFrameworkCore.Metadata.IConventionForeignKey,Microsoft.EntityFrameworkCore.Metadata.Conventions.IConventionContext_1[[Microsoft.EntityFrameworkCore.Metadata.IConventionForeignKey,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
@@ -396,6 +636,27 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerOnDeleteConvention",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerOnDeleteConvention::GetTargetDeleteBehavior(Microsoft.EntityFrameworkCore.Metadata.IConventionForeignKey):Microsoft.EntityFrameworkCore.DeleteBehavior",
+          "clrName": "GetTargetDeleteBehavior",
+          "metadataToken": 100664222,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IConventionForeignKey):Microsoft.EntityFrameworkCore.DeleteBehavior",
+          "normalizedSignature": "GetTargetDeleteBehavior|(Microsoft.EntityFrameworkCore.Metadata.IConventionForeignKey):Microsoft.EntityFrameworkCore.DeleteBehavior|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerOnDeleteConvention",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -415,12 +676,33 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerOnDeleteConvention",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
         }
       ],
-      "properties": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerOnDeleteConvention::RelationalDependencies:Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies",
+          "clrName": "RelationalDependencies",
+          "metadataToken": 385876080,
+          "canonicalSignature": ":Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies",
+          "normalizedSignature": "RelationalDependencies|:Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerOnDeleteConvention",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
       "fields": [],
       "events": [],
       "constructors": [
@@ -431,6 +713,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerOnDeleteConvention",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }
@@ -447,6 +730,24 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.ITriggerAddedConvention",
+          "clrName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.ITriggerAddedConvention"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IConvention",
+          "clrName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IConvention"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.ITriggerRemovedConvention",
+          "clrName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.ITriggerRemovedConvention"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerOutputClauseConvention::ProcessTriggerAdded(Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionTriggerBuilder,Microsoft.EntityFrameworkCore.Metadata.Conventions.IConventionContext_1[[Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionTriggerBuilder,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
@@ -463,6 +764,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerOutputClauseConvention",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -482,12 +784,52 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerOutputClauseConvention",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
         }
       ],
-      "properties": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerOutputClauseConvention::Dependencies:Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies",
+          "clrName": "Dependencies",
+          "metadataToken": 385876081,
+          "canonicalSignature": ":Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies",
+          "normalizedSignature": "Dependencies|:Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerOutputClauseConvention",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerOutputClauseConvention::RelationalDependencies:Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies",
+          "clrName": "RelationalDependencies",
+          "metadataToken": 385876082,
+          "canonicalSignature": ":Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies",
+          "normalizedSignature": "RelationalDependencies|:Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerOutputClauseConvention",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
       "fields": [],
       "events": [],
       "constructors": [
@@ -498,6 +840,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerOutputClauseConvention",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }
@@ -514,7 +857,142 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
-      "methods": [],
+      "baseType": {
+        "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Metadata.Conventions.RelationalRuntimeModelConvention",
+        "clrName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.RelationalRuntimeModelConvention"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IModelFinalizedConvention",
+          "clrName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IModelFinalizedConvention"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IConvention",
+          "clrName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IConvention"
+        }
+      ],
+      "methods": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerRuntimeModelConvention::ProcessModelAnnotations(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Metadata.RuntimeModel,System.Boolean):System.Void",
+          "clrName": "ProcessModelAnnotations",
+          "metadataToken": 100664234,
+          "canonicalSignature": "(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Metadata.RuntimeModel,System.Boolean):System.Void",
+          "normalizedSignature": "ProcessModelAnnotations|(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Metadata.RuntimeModel,System.Boolean):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 4,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerRuntimeModelConvention",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerRuntimeModelConvention::ProcessPropertyAnnotations(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Metadata.RuntimeProperty,System.Boolean):System.Void",
+          "clrName": "ProcessPropertyAnnotations",
+          "metadataToken": 100664235,
+          "canonicalSignature": "(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Metadata.RuntimeProperty,System.Boolean):System.Void",
+          "normalizedSignature": "ProcessPropertyAnnotations|(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Metadata.RuntimeProperty,System.Boolean):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 4,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerRuntimeModelConvention",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerRuntimeModelConvention::ProcessPropertyOverridesAnnotations(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.EntityFrameworkCore.Metadata.IRelationalPropertyOverrides,Microsoft.EntityFrameworkCore.Metadata.RuntimeRelationalPropertyOverrides,System.Boolean):System.Void",
+          "clrName": "ProcessPropertyOverridesAnnotations",
+          "metadataToken": 100664236,
+          "canonicalSignature": "(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.EntityFrameworkCore.Metadata.IRelationalPropertyOverrides,Microsoft.EntityFrameworkCore.Metadata.RuntimeRelationalPropertyOverrides,System.Boolean):System.Void",
+          "normalizedSignature": "ProcessPropertyOverridesAnnotations|(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.EntityFrameworkCore.Metadata.IRelationalPropertyOverrides,Microsoft.EntityFrameworkCore.Metadata.RuntimeRelationalPropertyOverrides,System.Boolean):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 4,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerRuntimeModelConvention",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerRuntimeModelConvention::ProcessIndexAnnotations(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.EntityFrameworkCore.Metadata.IIndex,Microsoft.EntityFrameworkCore.Metadata.RuntimeIndex,System.Boolean):System.Void",
+          "clrName": "ProcessIndexAnnotations",
+          "metadataToken": 100664237,
+          "canonicalSignature": "(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.EntityFrameworkCore.Metadata.IIndex,Microsoft.EntityFrameworkCore.Metadata.RuntimeIndex,System.Boolean):System.Void",
+          "normalizedSignature": "ProcessIndexAnnotations|(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.EntityFrameworkCore.Metadata.IIndex,Microsoft.EntityFrameworkCore.Metadata.RuntimeIndex,System.Boolean):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 4,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerRuntimeModelConvention",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerRuntimeModelConvention::ProcessKeyAnnotations(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.EntityFrameworkCore.Metadata.IKey,Microsoft.EntityFrameworkCore.Metadata.RuntimeKey,System.Boolean):System.Void",
+          "clrName": "ProcessKeyAnnotations",
+          "metadataToken": 100664238,
+          "canonicalSignature": "(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.EntityFrameworkCore.Metadata.IKey,Microsoft.EntityFrameworkCore.Metadata.RuntimeKey,System.Boolean):System.Void",
+          "normalizedSignature": "ProcessKeyAnnotations|(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.EntityFrameworkCore.Metadata.IKey,Microsoft.EntityFrameworkCore.Metadata.RuntimeKey,System.Boolean):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 4,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerRuntimeModelConvention",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerRuntimeModelConvention::ProcessEntityTypeAnnotations(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.EntityFrameworkCore.Metadata.IEntityType,Microsoft.EntityFrameworkCore.Metadata.RuntimeEntityType,System.Boolean):System.Void",
+          "clrName": "ProcessEntityTypeAnnotations",
+          "metadataToken": 100664239,
+          "canonicalSignature": "(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.EntityFrameworkCore.Metadata.IEntityType,Microsoft.EntityFrameworkCore.Metadata.RuntimeEntityType,System.Boolean):System.Void",
+          "normalizedSignature": "ProcessEntityTypeAnnotations|(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.EntityFrameworkCore.Metadata.IEntityType,Microsoft.EntityFrameworkCore.Metadata.RuntimeEntityType,System.Boolean):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 4,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerRuntimeModelConvention",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        }
+      ],
       "properties": [],
       "fields": [],
       "events": [],
@@ -526,6 +1004,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerRuntimeModelConvention",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }
@@ -542,8 +1021,114 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
-      "methods": [],
-      "properties": [],
+      "baseType": {
+        "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Metadata.Conventions.SharedTableConvention",
+        "clrName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SharedTableConvention"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IModelFinalizingConvention",
+          "clrName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IModelFinalizingConvention"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IConvention",
+          "clrName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IConvention"
+        }
+      ],
+      "methods": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerSharedTableConvention::AreCompatible(Microsoft.EntityFrameworkCore.Metadata.IReadOnlyKey,Microsoft.EntityFrameworkCore.Metadata.IReadOnlyKey,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier\u0026):System.Boolean",
+          "clrName": "AreCompatible",
+          "metadataToken": 100664243,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IReadOnlyKey,Microsoft.EntityFrameworkCore.Metadata.IReadOnlyKey,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier\u0026):System.Boolean",
+          "normalizedSignature": "AreCompatible|(Microsoft.EntityFrameworkCore.Metadata.IReadOnlyKey,Microsoft.EntityFrameworkCore.Metadata.IReadOnlyKey,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier\u0026):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 3,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerSharedTableConvention",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false,
+          "parameterModifiers": [
+            {
+              "index": 2,
+              "modifier": "in"
+            }
+          ]
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerSharedTableConvention::AreCompatible(Microsoft.EntityFrameworkCore.Metadata.IReadOnlyIndex,Microsoft.EntityFrameworkCore.Metadata.IReadOnlyIndex,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier\u0026):System.Boolean",
+          "clrName": "AreCompatible",
+          "metadataToken": 100664244,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IReadOnlyIndex,Microsoft.EntityFrameworkCore.Metadata.IReadOnlyIndex,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier\u0026):System.Boolean",
+          "normalizedSignature": "AreCompatible|(Microsoft.EntityFrameworkCore.Metadata.IReadOnlyIndex,Microsoft.EntityFrameworkCore.Metadata.IReadOnlyIndex,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier\u0026):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 3,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerSharedTableConvention",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false,
+          "parameterModifiers": [
+            {
+              "index": 2,
+              "modifier": "in"
+            }
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerSharedTableConvention::IndexesUniqueAcrossTables:System.Boolean",
+          "clrName": "IndexesUniqueAcrossTables",
+          "metadataToken": 385876083,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "IndexesUniqueAcrossTables|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerSharedTableConvention",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerSharedTableConvention::DefaultConstraintsUniqueAcrossTables:System.Boolean",
+          "clrName": "DefaultConstraintsUniqueAcrossTables",
+          "metadataToken": 385876084,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "DefaultConstraintsUniqueAcrossTables|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerSharedTableConvention",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
       "fields": [],
       "events": [],
       "constructors": [
@@ -554,6 +1139,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerSharedTableConvention",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }
@@ -570,6 +1156,24 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Metadata.Conventions.StoreGenerationConvention",
+        "clrName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.StoreGenerationConvention"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IPropertyAnnotationChangedConvention",
+          "clrName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IPropertyAnnotationChangedConvention"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IConvention",
+          "clrName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IConvention"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IModelFinalizingConvention",
+          "clrName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IModelFinalizingConvention"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerStoreGenerationConvention::ProcessPropertyAnnotationChanged(Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionPropertyBuilder,System.String,Microsoft.EntityFrameworkCore.Metadata.IConventionAnnotation,Microsoft.EntityFrameworkCore.Metadata.IConventionAnnotation,Microsoft.EntityFrameworkCore.Metadata.Conventions.IConventionContext_1[[Microsoft.EntityFrameworkCore.Metadata.IConventionAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
@@ -586,9 +1190,36 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerStoreGenerationConvention",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerStoreGenerationConvention::Validate(Microsoft.EntityFrameworkCore.Metadata.IConventionProperty,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier\u0026):System.Void",
+          "clrName": "Validate",
+          "metadataToken": 100664247,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IConventionProperty,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier\u0026):System.Void",
+          "normalizedSignature": "Validate|(Microsoft.EntityFrameworkCore.Metadata.IConventionProperty,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier\u0026):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerStoreGenerationConvention",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false,
+          "parameterModifiers": [
+            {
+              "index": 1,
+              "modifier": "in"
+            }
+          ]
         }
       ],
       "properties": [],
@@ -602,6 +1233,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerStoreGenerationConvention",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }
@@ -618,6 +1250,28 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IEntityTypeAnnotationChangedConvention",
+          "clrName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IEntityTypeAnnotationChangedConvention"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IConvention",
+          "clrName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IConvention"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.ISkipNavigationForeignKeyChangedConvention",
+          "clrName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.ISkipNavigationForeignKeyChangedConvention"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IModelFinalizingConvention",
+          "clrName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IModelFinalizingConvention"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerTemporalConvention::ProcessEntityTypeAnnotationChanged(Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionEntityTypeBuilder,System.String,Microsoft.EntityFrameworkCore.Metadata.IConventionAnnotation,Microsoft.EntityFrameworkCore.Metadata.IConventionAnnotation,Microsoft.EntityFrameworkCore.Metadata.Conventions.IConventionContext_1[[Microsoft.EntityFrameworkCore.Metadata.IConventionAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
@@ -634,6 +1288,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerTemporalConvention",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -653,6 +1308,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerTemporalConvention",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -672,12 +1328,52 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerTemporalConvention",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
         }
       ],
-      "properties": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerTemporalConvention::Dependencies:Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies",
+          "clrName": "Dependencies",
+          "metadataToken": 385876085,
+          "canonicalSignature": ":Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies",
+          "normalizedSignature": "Dependencies|:Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerTemporalConvention",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerTemporalConvention::RelationalDependencies:Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies",
+          "clrName": "RelationalDependencies",
+          "metadataToken": 385876086,
+          "canonicalSignature": ":Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies",
+          "normalizedSignature": "RelationalDependencies|:Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerTemporalConvention",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
       "fields": [],
       "events": [],
       "constructors": [
@@ -688,6 +1384,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerTemporalConvention",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }
@@ -704,6 +1401,48 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Metadata.Conventions.RelationalValueGenerationConvention",
+        "clrName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.RelationalValueGenerationConvention"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IEntityTypePrimaryKeyChangedConvention",
+          "clrName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IEntityTypePrimaryKeyChangedConvention"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IConvention",
+          "clrName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IConvention"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IForeignKeyAddedConvention",
+          "clrName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IForeignKeyAddedConvention"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IForeignKeyRemovedConvention",
+          "clrName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IForeignKeyRemovedConvention"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IForeignKeyPropertiesChangedConvention",
+          "clrName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IForeignKeyPropertiesChangedConvention"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IEntityTypeBaseTypeChangedConvention",
+          "clrName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IEntityTypeBaseTypeChangedConvention"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IForeignKeyOwnershipChangedConvention",
+          "clrName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IForeignKeyOwnershipChangedConvention"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IPropertyAnnotationChangedConvention",
+          "clrName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IPropertyAnnotationChangedConvention"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IEntityTypeAnnotationChangedConvention",
+          "clrName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IEntityTypeAnnotationChangedConvention"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerValueGenerationConvention::ProcessPropertyAnnotationChanged(Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionPropertyBuilder,System.String,Microsoft.EntityFrameworkCore.Metadata.IConventionAnnotation,Microsoft.EntityFrameworkCore.Metadata.IConventionAnnotation,Microsoft.EntityFrameworkCore.Metadata.Conventions.IConventionContext_1[[Microsoft.EntityFrameworkCore.Metadata.IConventionAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
@@ -720,6 +1459,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerValueGenerationConvention",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -739,6 +1479,47 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerValueGenerationConvention",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerValueGenerationConvention::GetValueGenerated(Microsoft.EntityFrameworkCore.Metadata.IConventionProperty):System.Nullable_1[[Microsoft.EntityFrameworkCore.Metadata.ValueGenerated,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "GetValueGenerated",
+          "metadataToken": 100664257,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IConventionProperty):System.Nullable_1[[Microsoft.EntityFrameworkCore.Metadata.ValueGenerated,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "GetValueGenerated|(Microsoft.EntityFrameworkCore.Metadata.IConventionProperty):System.Nullable_1[[Microsoft.EntityFrameworkCore.Metadata.ValueGenerated,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerValueGenerationConvention",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerValueGenerationConvention::MappingStrategyAllowsValueGeneration(Microsoft.EntityFrameworkCore.Metadata.IConventionProperty,System.String):System.Boolean",
+          "clrName": "MappingStrategyAllowsValueGeneration",
+          "metadataToken": 100664258,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IConventionProperty,System.String):System.Boolean",
+          "normalizedSignature": "MappingStrategyAllowsValueGeneration|(Microsoft.EntityFrameworkCore.Metadata.IConventionProperty,System.String):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerValueGenerationConvention",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -758,6 +1539,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerValueGenerationConvention",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false,
@@ -780,6 +1562,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerValueGenerationConvention",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }
@@ -796,6 +1579,24 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IModelInitializedConvention",
+          "clrName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IModelInitializedConvention"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IConvention",
+          "clrName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IConvention"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IModelFinalizingConvention",
+          "clrName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IModelFinalizingConvention"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerValueGenerationStrategyConvention::ProcessModelInitialized(Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder,Microsoft.EntityFrameworkCore.Metadata.Conventions.IConventionContext_1[[Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
@@ -812,6 +1613,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerValueGenerationStrategyConvention",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -831,12 +1633,52 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerValueGenerationStrategyConvention",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
         }
       ],
-      "properties": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerValueGenerationStrategyConvention::Dependencies:Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies",
+          "clrName": "Dependencies",
+          "metadataToken": 385876087,
+          "canonicalSignature": ":Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies",
+          "normalizedSignature": "Dependencies|:Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerValueGenerationStrategyConvention",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerValueGenerationStrategyConvention::RelationalDependencies:Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies",
+          "clrName": "RelationalDependencies",
+          "metadataToken": 385876088,
+          "canonicalSignature": ":Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies",
+          "normalizedSignature": "RelationalDependencies|:Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerValueGenerationStrategyConvention",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
       "fields": [],
       "events": [],
       "constructors": [
@@ -847,6 +1689,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SqlServerValueGenerationStrategyConvention",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }

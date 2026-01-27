@@ -18,6 +18,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -29,6 +51,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.DataProtectionScope",
           "declaringAssemblyName": "System.Security.Cryptography.ProtectedData"
         },
@@ -40,6 +63,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.DataProtectionScope",
           "declaringAssemblyName": "System.Security.Cryptography.ProtectedData"
         },
@@ -51,6 +75,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.DataProtectionScope",
           "declaringAssemblyName": "System.Security.Cryptography.ProtectedData"
         }
@@ -69,6 +94,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.ProtectedData:System.Security.Cryptography.ProtectedData::Protect(System.Byte[],System.Byte[],System.Security.Cryptography.DataProtectionScope):System.Byte[]",
@@ -85,6 +114,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.ProtectedData",
           "declaringAssemblyName": "System.Security.Cryptography.ProtectedData",
           "isExtensionMethod": false
@@ -104,6 +134,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.ProtectedData",
           "declaringAssemblyName": "System.Security.Cryptography.ProtectedData",
           "isExtensionMethod": false

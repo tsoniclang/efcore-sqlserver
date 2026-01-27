@@ -8,7 +8,7 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 // Import types from other namespaces
 import type { IEnumerable } from "@tsonic/dotnet/System.Collections.Generic.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { IAsyncDisposable, IDisposable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
+import type { Boolean as ClrBoolean, IAsyncDisposable, IDisposable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
 import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 import type { IAnnotation } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure.js";
@@ -17,7 +17,13 @@ import * as Microsoft_EntityFrameworkCore_Migrations_Internal from "@tsonic/efco
 import type { HistoryRepository, HistoryRepositoryDependencies, IHistoryRepository, IMigrationsAnnotationProvider, IMigrationsDatabaseLock, LockReleaseBehavior, MigrationsAnnotationProvider, MigrationsAnnotationProviderDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations.js";
 import type { IRelationalCommand, RelationalCommandParameterObject } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
 
-export interface SqlServerHistoryRepository$instance extends HistoryRepository {
+export abstract class SqlServerHistoryRepository$protected {
+    protected readonly ExistsSql: string;
+    protected InterpretExistsResult(value: unknown): boolean;
+}
+
+
+export interface SqlServerHistoryRepository$instance extends SqlServerHistoryRepository$protected, HistoryRepository {
     readonly LockReleaseBehavior: LockReleaseBehavior;
     AcquireDatabaseLock(): IMigrationsDatabaseLock;
     AcquireDatabaseLockAsync(cancellationToken?: CancellationToken): Task<IMigrationsDatabaseLock>;

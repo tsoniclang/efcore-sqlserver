@@ -68,6 +68,7 @@ export interface SqlEngineDbContextOptionsBuilderBase_1$instance<TSelf extends S
 
 
 export const SqlEngineDbContextOptionsBuilderBase_1: {
+    new<TSelf extends SqlEngineDbContextOptionsBuilderBase_1<TSelf>>(optionsBuilder: DbContextOptionsBuilder): SqlEngineDbContextOptionsBuilderBase_1<TSelf>;
 };
 
 

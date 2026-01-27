@@ -13,7 +13,7 @@ import type { CompressionLevel } from '@tsonic/dotnet/System.IO.Compression.js';
 import type { ArgumentException, AsyncCallback, Boolean as ClrBoolean, Byte, Char, DateTime, DateTimeKind, Enum, Exception, Func, Guid, IAsyncResult, ICloneable, IComparable, IConvertible, IDisposable, IFormattable, Int32, Int64, IntPtr, ISpanFormattable, MulticastDelegate, Nullable, Object as ClrObject, ReadOnlySpan, Span, String as ClrString, TimeSpan, Type, Uri, Void } from '@tsonic/dotnet/System.js';
 import type { ISerializable, SerializationInfo, StreamingContext } from '@tsonic/dotnet/System.Runtime.Serialization.js';
 import type { Claim, ClaimsIdentity, ClaimsPrincipal } from '@tsonic/dotnet/System.Security.Claims.js';
-import type { AsymmetricAlgorithm, ECDsa, HashAlgorithm, HashAlgorithmName, KeyedHashAlgorithm, RSA, RSAParameters } from '@tsonic/dotnet/System.Security.Cryptography.js';
+import type { AsymmetricAlgorithm, ECDsa, HashAlgorithm, HashAlgorithmName, KeyedHashAlgorithm, RSA, RSAParameters, SymmetricAlgorithm } from '@tsonic/dotnet/System.Security.Cryptography.js';
 import type { X509Certificate2 } from '@tsonic/dotnet/System.Security.Cryptography.X509Certificates.js';
 import type { IIdentity } from '@tsonic/dotnet/System.Security.Principal.js';
 import type { CancellationToken } from '@tsonic/dotnet/System.Threading.js';

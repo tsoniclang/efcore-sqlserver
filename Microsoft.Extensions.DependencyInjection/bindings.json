@@ -21,6 +21,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.Extensions.DependencyInjection.SqlServerServiceCollectionExtensions::AddSqlServer(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Action_1[[Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder,Microsoft.EntityFrameworkCore.SqlServer,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Action_1[[Microsoft.EntityFrameworkCore.DbContextOptionsBuilder,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServiceCollection",
@@ -37,6 +41,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.SqlServerServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": true
@@ -56,6 +61,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.SqlServerServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": true
@@ -75,6 +81,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.SqlServerServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": true
@@ -94,6 +101,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.SqlServerServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": true
@@ -113,6 +121,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.SqlServerServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": true
@@ -132,6 +141,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.SqlServerServiceCollectionExtensions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": true

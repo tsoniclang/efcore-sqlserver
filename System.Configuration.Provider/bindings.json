@@ -15,6 +15,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderBase::Initialize(System.String,System.Collections.Specialized.NameValueCollection):System.Void",
@@ -31,6 +35,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Provider.ProviderBase",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -52,6 +57,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Provider.ProviderBase",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         },
@@ -70,13 +76,26 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Provider.ProviderBase",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderBase::.ctor():void",
+          "metadataToken": 100665642,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "System.Configuration.Provider.ProviderBase",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+        }
+      ]
     },
     {
       "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderCollection",
@@ -89,6 +108,20 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.ICollection",
+          "clrName": "System.Collections.ICollection"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+          "clrName": "System.Collections.IEnumerable"
+        }
+      ],
       "methods": [
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderCollection::GetEnumerator():System.Collections.IEnumerator",
@@ -105,6 +138,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Provider.ProviderCollection",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -124,6 +158,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Provider.ProviderCollection",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -143,6 +178,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Provider.ProviderCollection",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -162,6 +198,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Provider.ProviderCollection",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -181,6 +218,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Provider.ProviderCollection",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -200,6 +238,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Provider.ProviderCollection",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -221,6 +260,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Provider.ProviderCollection",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         },
@@ -239,6 +279,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Provider.ProviderCollection",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         },
@@ -257,6 +298,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Provider.ProviderCollection",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         },
@@ -275,6 +317,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Provider.ProviderCollection",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         }
@@ -289,6 +332,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Provider.ProviderCollection",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         }
@@ -305,6 +349,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Exception",
+        "clrName": "System.Exception"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Runtime.Serialization.ISerializable",
+          "clrName": "System.Runtime.Serialization.ISerializable"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [],
@@ -317,6 +371,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Provider.ProviderException",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         },
@@ -327,6 +382,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Provider.ProviderException",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         },
@@ -337,6 +393,18 @@
           "normalizedSignature": "constructor|(System.String,System.Exception):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
+          "declaringClrType": "System.Configuration.Provider.ProviderException",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
+          "metadataToken": 100665658,
+          "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
+          "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "visibility": "Protected",
           "declaringClrType": "System.Configuration.Provider.ProviderException",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         }

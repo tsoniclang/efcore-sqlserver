@@ -321,6 +321,7 @@ export interface AbstractAcquireTokenParameterBuilder_1$instance<T extends BaseA
 
 
 export const AbstractAcquireTokenParameterBuilder_1: {
+    new<T extends BaseAbstractAcquireTokenParameterBuilder_1<T>>(): AbstractAcquireTokenParameterBuilder_1<T>;
 };
 
 
@@ -373,7 +374,12 @@ export const AbstractClientAppBaseAcquireTokenParameterBuilder_1: {
 
 export type AbstractClientAppBaseAcquireTokenParameterBuilder_1<T extends AbstractAcquireTokenParameterBuilder_1<T>> = AbstractClientAppBaseAcquireTokenParameterBuilder_1$instance<T>;
 
-export interface AbstractConfidentialClientAcquireTokenParameterBuilder_1$instance<T extends AbstractAcquireTokenParameterBuilder_1<T>> extends AbstractAcquireTokenParameterBuilder_1<T> {
+export abstract class AbstractConfidentialClientAcquireTokenParameterBuilder_1$protected<T extends AbstractAcquireTokenParameterBuilder_1<T>> {
+    protected Validate(): void;
+}
+
+
+export interface AbstractConfidentialClientAcquireTokenParameterBuilder_1$instance<T extends AbstractAcquireTokenParameterBuilder_1<T>> extends AbstractConfidentialClientAcquireTokenParameterBuilder_1$protected<T>, AbstractAcquireTokenParameterBuilder_1<T> {
     ExecuteAsync(cancellationToken: CancellationToken): Task<AuthenticationResult>;
     ExecuteAsync(cancellationToken: CancellationToken): Task<AuthenticationResult>;
     ExecuteAsync(): Task<AuthenticationResult>;
@@ -396,6 +402,7 @@ export interface AbstractManagedIdentityAcquireTokenParameterBuilder_1$instance<
 
 
 export const AbstractManagedIdentityAcquireTokenParameterBuilder_1: {
+    new<T extends BaseAbstractAcquireTokenParameterBuilder_1<T>>(): AbstractManagedIdentityAcquireTokenParameterBuilder_1<T>;
 };
 
 
@@ -432,7 +439,12 @@ export const AccountId: {
 
 export type AccountId = AccountId$instance;
 
-export interface AcquireTokenByAuthorizationCodeParameterBuilder$instance extends AbstractConfidentialClientAcquireTokenParameterBuilder_1<AcquireTokenByAuthorizationCodeParameterBuilder> {
+export abstract class AcquireTokenByAuthorizationCodeParameterBuilder$protected {
+    protected Validate(): void;
+}
+
+
+export interface AcquireTokenByAuthorizationCodeParameterBuilder$instance extends AcquireTokenByAuthorizationCodeParameterBuilder$protected, AbstractConfidentialClientAcquireTokenParameterBuilder_1<AcquireTokenByAuthorizationCodeParameterBuilder> {
     WithCcsRoutingHint(userObjectIdentifier: string, tenantIdentifier: string): AcquireTokenByAuthorizationCodeParameterBuilder;
     WithCcsRoutingHint(userName: string): AcquireTokenByAuthorizationCodeParameterBuilder;
     WithPkceCodeVerifier(pkceCodeVerifier: string): AcquireTokenByAuthorizationCodeParameterBuilder;
@@ -461,7 +473,12 @@ export const AcquireTokenByIntegratedWindowsAuthParameterBuilder: {
 
 export type AcquireTokenByIntegratedWindowsAuthParameterBuilder = AcquireTokenByIntegratedWindowsAuthParameterBuilder$instance;
 
-export interface AcquireTokenByRefreshTokenParameterBuilder$instance extends AbstractClientAppBaseAcquireTokenParameterBuilder_1<AcquireTokenByRefreshTokenParameterBuilder> {
+export abstract class AcquireTokenByRefreshTokenParameterBuilder$protected {
+    protected Validate(): void;
+}
+
+
+export interface AcquireTokenByRefreshTokenParameterBuilder$instance extends AcquireTokenByRefreshTokenParameterBuilder$protected, AbstractClientAppBaseAcquireTokenParameterBuilder_1<AcquireTokenByRefreshTokenParameterBuilder> {
     WithSendX5C(withSendX5C: boolean): AcquireTokenByRefreshTokenParameterBuilder;
 }
 
@@ -473,7 +490,12 @@ export const AcquireTokenByRefreshTokenParameterBuilder: {
 
 export type AcquireTokenByRefreshTokenParameterBuilder = AcquireTokenByRefreshTokenParameterBuilder$instance;
 
-export interface AcquireTokenByUsernameAndPasswordConfidentialParameterBuilder$instance extends AbstractConfidentialClientAcquireTokenParameterBuilder_1<AcquireTokenByUsernameAndPasswordConfidentialParameterBuilder> {
+export abstract class AcquireTokenByUsernameAndPasswordConfidentialParameterBuilder$protected {
+    protected Validate(): void;
+}
+
+
+export interface AcquireTokenByUsernameAndPasswordConfidentialParameterBuilder$instance extends AcquireTokenByUsernameAndPasswordConfidentialParameterBuilder$protected, AbstractConfidentialClientAcquireTokenParameterBuilder_1<AcquireTokenByUsernameAndPasswordConfidentialParameterBuilder> {
 }
 
 
@@ -497,7 +519,12 @@ export const AcquireTokenByUsernamePasswordParameterBuilder: {
 
 export type AcquireTokenByUsernamePasswordParameterBuilder = AcquireTokenByUsernamePasswordParameterBuilder$instance;
 
-export interface AcquireTokenForClientParameterBuilder$instance extends AbstractConfidentialClientAcquireTokenParameterBuilder_1<AcquireTokenForClientParameterBuilder> {
+export abstract class AcquireTokenForClientParameterBuilder$protected {
+    protected Validate(): void;
+}
+
+
+export interface AcquireTokenForClientParameterBuilder$instance extends AcquireTokenForClientParameterBuilder$protected, AbstractConfidentialClientAcquireTokenParameterBuilder_1<AcquireTokenForClientParameterBuilder> {
     WithAzureRegion(useAzureRegion: boolean): AcquireTokenForClientParameterBuilder;
     WithFmiPath(pathSuffix: string): AcquireTokenForClientParameterBuilder;
     WithForceRefresh(forceRefresh: boolean): AcquireTokenForClientParameterBuilder;
@@ -527,7 +554,12 @@ export const AcquireTokenForManagedIdentityParameterBuilder: {
 
 export type AcquireTokenForManagedIdentityParameterBuilder = AcquireTokenForManagedIdentityParameterBuilder$instance;
 
-export interface AcquireTokenInteractiveParameterBuilder$instance extends AbstractPublicClientAcquireTokenParameterBuilder_1<AcquireTokenInteractiveParameterBuilder> {
+export abstract class AcquireTokenInteractiveParameterBuilder$protected {
+    protected Validate(): void;
+}
+
+
+export interface AcquireTokenInteractiveParameterBuilder$instance extends AcquireTokenInteractiveParameterBuilder$protected, AbstractPublicClientAcquireTokenParameterBuilder_1<AcquireTokenInteractiveParameterBuilder> {
     WithAccount(account: IAccount): AcquireTokenInteractiveParameterBuilder;
     WithEmbeddedWebViewOptions(options: EmbeddedWebViewOptions): AcquireTokenInteractiveParameterBuilder;
     WithExtraScopesToConsent(extraScopesToConsent: IEnumerable<System_Internal.String>): AcquireTokenInteractiveParameterBuilder;
@@ -548,7 +580,12 @@ export const AcquireTokenInteractiveParameterBuilder: {
 
 export type AcquireTokenInteractiveParameterBuilder = AcquireTokenInteractiveParameterBuilder$instance;
 
-export interface AcquireTokenOnBehalfOfParameterBuilder$instance extends AbstractConfidentialClientAcquireTokenParameterBuilder_1<AcquireTokenOnBehalfOfParameterBuilder> {
+export abstract class AcquireTokenOnBehalfOfParameterBuilder$protected {
+    protected Validate(): void;
+}
+
+
+export interface AcquireTokenOnBehalfOfParameterBuilder$instance extends AcquireTokenOnBehalfOfParameterBuilder$protected, AbstractConfidentialClientAcquireTokenParameterBuilder_1<AcquireTokenOnBehalfOfParameterBuilder> {
     WithCcsRoutingHint(userObjectIdentifier: string, tenantIdentifier: string): AcquireTokenOnBehalfOfParameterBuilder;
     WithCcsRoutingHint(userName: string): AcquireTokenOnBehalfOfParameterBuilder;
     WithForceRefresh(forceRefresh: boolean): AcquireTokenOnBehalfOfParameterBuilder;
@@ -563,7 +600,12 @@ export const AcquireTokenOnBehalfOfParameterBuilder: {
 
 export type AcquireTokenOnBehalfOfParameterBuilder = AcquireTokenOnBehalfOfParameterBuilder$instance;
 
-export interface AcquireTokenSilentParameterBuilder$instance extends AbstractClientAppBaseAcquireTokenParameterBuilder_1<AcquireTokenSilentParameterBuilder> {
+export abstract class AcquireTokenSilentParameterBuilder$protected {
+    protected Validate(): void;
+}
+
+
+export interface AcquireTokenSilentParameterBuilder$instance extends AcquireTokenSilentParameterBuilder$protected, AbstractClientAppBaseAcquireTokenParameterBuilder_1<AcquireTokenSilentParameterBuilder> {
     WithForceRefresh(forceRefresh: boolean): AcquireTokenSilentParameterBuilder;
     WithProofOfPossession(popAuthenticationConfiguration: PoPAuthenticationConfiguration): AcquireTokenSilentParameterBuilder;
     WithProofOfPossession(nonce: string, httpMethod: HttpMethod, requestUri: Uri): AcquireTokenSilentParameterBuilder;
@@ -578,7 +620,12 @@ export const AcquireTokenSilentParameterBuilder: {
 
 export type AcquireTokenSilentParameterBuilder = AcquireTokenSilentParameterBuilder$instance;
 
-export interface AcquireTokenWithDeviceCodeParameterBuilder$instance extends AbstractPublicClientAcquireTokenParameterBuilder_1<AcquireTokenWithDeviceCodeParameterBuilder> {
+export abstract class AcquireTokenWithDeviceCodeParameterBuilder$protected {
+    protected Validate(): void;
+}
+
+
+export interface AcquireTokenWithDeviceCodeParameterBuilder$instance extends AcquireTokenWithDeviceCodeParameterBuilder$protected, AbstractPublicClientAcquireTokenParameterBuilder_1<AcquireTokenWithDeviceCodeParameterBuilder> {
     WithDeviceCodeResultCallback(deviceCodeResultCallback: Func<DeviceCodeResult, Task>): AcquireTokenWithDeviceCodeParameterBuilder;
 }
 
@@ -617,6 +664,7 @@ export interface ApplicationOptions$instance extends BaseApplicationOptions {
 
 
 export const ApplicationOptions: {
+    new(): ApplicationOptions;
 };
 
 
@@ -640,9 +688,9 @@ export const AssertionRequestOptions: {
 export type AssertionRequestOptions = AssertionRequestOptions$instance;
 
 export interface AuthenticationHeaderParser$instance {
-    readonly AuthenticationInfoParameters: AuthenticationInfoParameters;
-    readonly PopNonce: string;
-    readonly WwwAuthenticateParameters: IReadOnlyList<WwwAuthenticateParameters>;
+    AuthenticationInfoParameters: AuthenticationInfoParameters;
+    PopNonce: string;
+    WwwAuthenticateParameters: IReadOnlyList<WwwAuthenticateParameters>;
 }
 
 
@@ -658,7 +706,7 @@ export type AuthenticationHeaderParser = AuthenticationHeaderParser$instance;
 
 export interface AuthenticationInfoParameters$instance {
     readonly Item: string;
-    readonly NextNonce: string;
+    NextNonce: string;
 }
 
 
@@ -721,7 +769,12 @@ export const AuthenticationResultMetadata: {
 
 export type AuthenticationResultMetadata = AuthenticationResultMetadata$instance;
 
-export interface BaseAbstractAcquireTokenParameterBuilder_1$instance<T extends BaseAbstractAcquireTokenParameterBuilder_1<T>> {
+export abstract class BaseAbstractAcquireTokenParameterBuilder_1$protected<T extends BaseAbstractAcquireTokenParameterBuilder_1<T>> {
+    protected Validate(): void;
+}
+
+
+export interface BaseAbstractAcquireTokenParameterBuilder_1$instance<T extends BaseAbstractAcquireTokenParameterBuilder_1<T>> extends BaseAbstractAcquireTokenParameterBuilder_1$protected<T> {
     ExecuteAsync(cancellationToken: CancellationToken): Task<AuthenticationResult>;
     ExecuteAsync(): Task<AuthenticationResult>;
     WithCorrelationId(correlationId: Guid): T;
@@ -730,6 +783,7 @@ export interface BaseAbstractAcquireTokenParameterBuilder_1$instance<T extends B
 
 
 export const BaseAbstractAcquireTokenParameterBuilder_1: {
+    new<T extends BaseAbstractAcquireTokenParameterBuilder_1<T>>(): BaseAbstractAcquireTokenParameterBuilder_1<T>;
 };
 
 
@@ -761,6 +815,7 @@ export interface BaseApplicationOptions$instance {
 
 
 export const BaseApplicationOptions: {
+    new(): BaseApplicationOptions;
 };
 
 
@@ -1017,10 +1072,10 @@ export interface Metrics$instance {
 
 export const Metrics: {
     new(): Metrics;
-    readonly TotalAccessTokensFromIdP: long;
-    readonly TotalAccessTokensFromCache: long;
-    readonly TotalAccessTokensFromBroker: long;
-    readonly TotalDurationInMs: long;
+    TotalAccessTokensFromIdP: long;
+    TotalAccessTokensFromCache: long;
+    TotalAccessTokensFromBroker: long;
+    TotalDurationInMs: long;
 };
 
 
@@ -1055,7 +1110,8 @@ export type MsalClientException = MsalClientException$instance;
 export interface MsalException$instance extends Exception {
     AdditionalExceptionData: IReadOnlyDictionary<System_Internal.String, System_Internal.String>;
     CorrelationId: string;
-    readonly ErrorCode: string | undefined;
+    get ErrorCode(): string | undefined;
+    set ErrorCode(value: string);
     IsRetryable: boolean;
     ToJsonString(): string;
     ToString(): string;
@@ -1079,7 +1135,12 @@ export const MsalException: {
 
 export type MsalException = MsalException$instance;
 
-export interface MsalManagedIdentityException$instance extends MsalServiceException {
+export abstract class MsalManagedIdentityException$protected {
+    protected UpdateIsRetryable(): void;
+}
+
+
+export interface MsalManagedIdentityException$instance extends MsalManagedIdentityException$protected, MsalServiceException {
     readonly ManagedIdentitySource: ManagedIdentitySource;
 }
 
@@ -1094,11 +1155,16 @@ export const MsalManagedIdentityException: {
 
 export type MsalManagedIdentityException = MsalManagedIdentityException$instance;
 
-export interface MsalServiceException$instance extends MsalException {
-    readonly Claims: string;
+export abstract class MsalServiceException$protected {
+    protected UpdateIsRetryable(): void;
+}
+
+
+export interface MsalServiceException$instance extends MsalServiceException$protected, MsalException {
+    Claims: string;
     Headers: HttpResponseHeaders;
     ResponseBody: string;
-    readonly StatusCode: int;
+    StatusCode: int;
     ToString(): string;
 }
 
@@ -1307,7 +1373,7 @@ export interface TokenCacheNotificationArgs$instance {
     readonly CancellationToken: CancellationToken;
     readonly ClientId: string;
     readonly CorrelationId: Guid;
-    readonly HasStateChanged: boolean;
+    HasStateChanged: boolean;
     readonly HasTokens: boolean;
     readonly IdentityLogger: IIdentityLogger;
     readonly IsApplicationCache: boolean;
@@ -1355,8 +1421,8 @@ export type TraceTelemetryConfig = TraceTelemetryConfig$instance & __TraceTeleme
 
 
 export interface UserAssertion$instance {
-    readonly Assertion: string;
-    readonly AssertionType: string;
+    Assertion: string;
+    AssertionType: string;
 }
 
 
@@ -1383,12 +1449,12 @@ export const WindowsBrokerOptions: {
 export type WindowsBrokerOptions = WindowsBrokerOptions$instance;
 
 export interface WwwAuthenticateParameters$instance {
-    readonly AuthenticationScheme: string;
+    AuthenticationScheme: string;
     Authority: string;
     Claims: string;
     Error: string;
     readonly Item: string;
-    readonly Nonce: string;
+    Nonce: string;
     Resource: string;
     Scopes: IEnumerable<System_Internal.String>;
     GetTenantId(): string;

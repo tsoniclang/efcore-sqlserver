@@ -15,6 +15,20 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlFunctionExpression",
+        "clrName": "Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlFunctionExpression"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Query.IRelationalQuotableExpression",
+          "clrName": "Microsoft.EntityFrameworkCore.Query.IRelationalQuotableExpression"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Query.IPrintableExpression",
+          "clrName": "Microsoft.EntityFrameworkCore.Query.IPrintableExpression"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlExpressions.SqlServerJsonObjectExpression::Quote():System.Linq.Expressions.Expression",
@@ -31,6 +45,27 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlExpressions.SqlServerJsonObjectExpression",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlExpressions.SqlServerJsonObjectExpression::Print(Microsoft.EntityFrameworkCore.Query.ExpressionPrinter):System.Void",
+          "clrName": "Print",
+          "metadataToken": 100665061,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.ExpressionPrinter):System.Void",
+          "normalizedSignature": "Print|(Microsoft.EntityFrameworkCore.Query.ExpressionPrinter):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlExpressions.SqlServerJsonObjectExpression",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -50,6 +85,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlExpressions.SqlServerJsonObjectExpression",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -69,6 +105,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlExpressions.SqlServerJsonObjectExpression",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -90,6 +127,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlExpressions.SqlServerJsonObjectExpression",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }
@@ -104,6 +142,7 @@
           "normalizedSignature": "constructor|(System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlExpressions.SqlServerJsonObjectExpression",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }

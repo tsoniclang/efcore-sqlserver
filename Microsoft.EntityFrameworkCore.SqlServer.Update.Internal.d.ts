@@ -7,13 +7,13 @@ import * as Internal from './Microsoft.EntityFrameworkCore.SqlServer.Update.Inte
 
 // Cross-namespace type imports for constraints
 import type { IReadOnlyList } from '@tsonic/dotnet/System.Collections.Generic.js';
-import type { Boolean as ClrBoolean, Int32, Object as ClrObject, Void } from '@tsonic/dotnet/System.js';
+import type { Boolean as ClrBoolean, Int32, Object as ClrObject, String as ClrString, Void } from '@tsonic/dotnet/System.js';
 import type { StringBuilder } from '@tsonic/dotnet/System.Text.js';
 import type { CancellationToken } from '@tsonic/dotnet/System.Threading.js';
 import type { Task } from '@tsonic/dotnet/System.Threading.Tasks.js';
 import type { IDbContextOptions } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure.js';
-import type { IRelationalConnection } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js';
-import type { AffectedCountModificationCommandBatch, IModificationCommand, IModificationCommandBatchFactory, IModificationCommandFactory, INonTrackedModificationCommand, IReadOnlyModificationCommand, IUpdateSqlGenerator, ModificationCommand, ModificationCommandBatch, ModificationCommandBatchFactoryDependencies, ModificationCommandParameters, NonTrackedModificationCommandParameters, ResultSetMapping, UpdateAndSelectSqlGenerator, UpdateSqlGeneratorDependencies } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Update.js';
+import type { IRelationalConnection, ISqlGenerationHelper } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js';
+import type { AffectedCountModificationCommandBatch, ColumnModificationParameters, IColumnModification, IModificationCommand, IModificationCommandBatchFactory, IModificationCommandFactory, INonTrackedModificationCommand, IReadOnlyModificationCommand, IUpdateSqlGenerator, ModificationCommand, ModificationCommandBatch, ModificationCommandBatchFactoryDependencies, ModificationCommandParameters, NonTrackedModificationCommandParameters, ResultSetMapping, UpdateAndSelectSqlGenerator, UpdateSqlGeneratorDependencies } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Update.js';
 
 // Public API exports (curated - no internal $instance/$views leakage)
 export type ISqlServerUpdateSqlGenerator = Internal.ISqlServerUpdateSqlGenerator;

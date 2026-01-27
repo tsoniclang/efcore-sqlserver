@@ -15,6 +15,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -26,6 +48,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.ErrorOptions",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -37,6 +60,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Azure.ErrorOptions",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -48,6 +72,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Azure.ErrorOptions",
           "declaringAssemblyName": "Azure.Core"
         }
@@ -66,6 +91,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -77,6 +124,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.WaitUntil",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -88,6 +136,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Azure.WaitUntil",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -99,6 +148,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Azure.WaitUntil",
           "declaringAssemblyName": "Azure.Core"
         }
@@ -117,6 +167,19 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IEquatable\u00601",
+          "clrName": "System.IEquatable\u00601",
+          "typeArguments": [
+            "ETag"
+          ]
+        }
+      ],
       "methods": [
         {
           "stableId": "Azure.Core:Azure.ETag::Equals(Azure.ETag):System.Boolean",
@@ -133,6 +196,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Azure.ETag",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -152,6 +216,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.ETag",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -171,6 +236,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.ETag",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -190,6 +256,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.ETag",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -209,6 +276,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.ETag",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -228,6 +296,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.ETag",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -243,6 +312,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.ETag",
           "declaringAssemblyName": "Azure.Core"
         }
@@ -256,6 +326,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Azure.ETag",
           "declaringAssemblyName": "Azure.Core"
         }
@@ -272,6 +343,19 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IEquatable\u00601",
+          "clrName": "System.IEquatable\u00601",
+          "typeArguments": [
+            "HttpRange"
+          ]
+        }
+      ],
       "methods": [
         {
           "stableId": "Azure.Core:Azure.HttpRange::ToString():System.String",
@@ -288,6 +372,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.HttpRange",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -307,6 +392,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Azure.HttpRange",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -326,6 +412,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.HttpRange",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -345,6 +432,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.HttpRange",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -366,6 +454,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.HttpRange",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -384,6 +473,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.HttpRange",
           "declaringAssemblyName": "Azure.Core"
         }
@@ -398,6 +488,7 @@
           "normalizedSignature": "constructor|(System.Int64,System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Azure.HttpRange",
           "declaringAssemblyName": "Azure.Core"
         }
@@ -414,6 +505,22 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 1,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IAsyncEnumerable\u00601",
+          "clrName": "System.Collections.Generic.IAsyncEnumerable\u00601",
+          "typeArguments": [
+            "T"
+          ]
+        }
+      ],
+      "typeParameters": [
+        "T"
+      ],
       "methods": [
         {
           "stableId": "Azure.Core:Azure.AsyncPageable\u00601::AsPages(System.String,System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):IAsyncEnumerable_1",
@@ -430,6 +537,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.AsyncPageable\u00601",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -449,6 +557,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.AsyncPageable\u00601",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -468,6 +577,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.AsyncPageable\u00601",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -487,6 +597,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.AsyncPageable\u00601",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -506,6 +617,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.AsyncPageable\u00601",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -525,15 +637,59 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.AsyncPageable\u00601",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
         }
       ],
-      "properties": [],
+      "properties": [
+        {
+          "stableId": "Azure.Core:Azure.AsyncPageable\u00601::CancellationToken:System.Threading.CancellationToken",
+          "clrName": "CancellationToken",
+          "metadataToken": 385875969,
+          "canonicalSignature": ":System.Threading.CancellationToken",
+          "normalizedSignature": "CancellationToken|:System.Threading.CancellationToken|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "visibility": "Protected",
+          "declaringClrType": "Azure.AsyncPageable\u00601",
+          "declaringAssemblyName": "Azure.Core"
+        }
+      ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Azure.Core:Azure.AsyncPageable\u00601::.ctor():void",
+          "metadataToken": 100663298,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Azure.AsyncPageable\u00601",
+          "declaringAssemblyName": "Azure.Core"
+        },
+        {
+          "stableId": "Azure.Core:Azure.AsyncPageable\u00601::.ctor(System.Threading.CancellationToken):void",
+          "metadataToken": 100663299,
+          "canonicalSignature": "(System.Threading.CancellationToken):void",
+          "normalizedSignature": "constructor|(System.Threading.CancellationToken):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "visibility": "Protected",
+          "declaringClrType": "Azure.AsyncPageable\u00601",
+          "declaringAssemblyName": "Azure.Core"
+        }
+      ]
     },
     {
       "stableId": "Azure.Core:Azure.AzureKeyCredential",
@@ -546,6 +702,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.ClientModel:System.ClientModel.ApiKeyCredential",
+        "clrName": "System.ClientModel.ApiKeyCredential"
+      },
       "methods": [],
       "properties": [
         {
@@ -553,16 +713,17 @@
           "clrName": "Key",
           "metadataToken": 385875970,
           "canonicalSignature": ":System.String",
-          "normalizedSignature": "Key|:System.String|static=false|accessor=get",
+          "normalizedSignature": "Key|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.AzureKeyCredential",
           "declaringAssemblyName": "Azure.Core"
         }
@@ -577,6 +738,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Azure.AzureKeyCredential",
           "declaringAssemblyName": "Azure.Core"
         }
@@ -593,6 +755,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Azure.Core:Azure.AzureNamedKeyCredential::Update(System.String,System.String):System.Void",
@@ -609,6 +775,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.AzureNamedKeyCredential",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -628,6 +795,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.AzureNamedKeyCredential",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false,
@@ -659,6 +827,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.AzureNamedKeyCredential",
           "declaringAssemblyName": "Azure.Core"
         }
@@ -673,6 +842,7 @@
           "normalizedSignature": "constructor|(System.String,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Azure.AzureNamedKeyCredential",
           "declaringAssemblyName": "Azure.Core"
         }
@@ -689,6 +859,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Azure.Core:Azure.AzureSasCredential::Update(System.String):System.Void",
@@ -705,6 +879,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.AzureSasCredential",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -716,16 +891,17 @@
           "clrName": "Signature",
           "metadataToken": 385875972,
           "canonicalSignature": ":System.String",
-          "normalizedSignature": "Signature|:System.String|static=false|accessor=get",
+          "normalizedSignature": "Signature|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.AzureSasCredential",
           "declaringAssemblyName": "Azure.Core"
         }
@@ -740,6 +916,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Azure.AzureSasCredential",
           "declaringAssemblyName": "Azure.Core"
         }
@@ -756,6 +933,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Azure.Core:Azure.HttpAuthorization::ToString():System.String",
@@ -772,6 +953,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.HttpAuthorization",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -793,6 +975,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.HttpAuthorization",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -811,6 +994,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.HttpAuthorization",
           "declaringAssemblyName": "Azure.Core"
         }
@@ -825,6 +1009,7 @@
           "normalizedSignature": "constructor|(System.String,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Azure.HttpAuthorization",
           "declaringAssemblyName": "Azure.Core"
         }
@@ -841,6 +1026,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Azure.Core:Azure.JsonPatchDocument::AppendAddRaw(System.String,System.String):System.Void",
@@ -857,6 +1046,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.JsonPatchDocument",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -876,6 +1066,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.JsonPatchDocument",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -895,6 +1086,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.JsonPatchDocument",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -914,6 +1106,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.JsonPatchDocument",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -933,6 +1126,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.JsonPatchDocument",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -952,6 +1146,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.JsonPatchDocument",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -971,6 +1166,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.JsonPatchDocument",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -990,6 +1186,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.JsonPatchDocument",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -1009,6 +1206,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.JsonPatchDocument",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -1028,6 +1226,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.JsonPatchDocument",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -1047,6 +1246,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.JsonPatchDocument",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -1063,6 +1263,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Azure.JsonPatchDocument",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -1073,6 +1274,7 @@
           "normalizedSignature": "constructor|(Azure.Core.Serialization.ObjectSerializer):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Azure.JsonPatchDocument",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -1083,6 +1285,7 @@
           "normalizedSignature": "constructor|(System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Azure.JsonPatchDocument",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -1093,6 +1296,7 @@
           "normalizedSignature": "constructor|(System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Azure.Core.Serialization.ObjectSerializer):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Azure.JsonPatchDocument",
           "declaringAssemblyName": "Azure.Core"
         }
@@ -1109,6 +1313,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -1126,6 +1334,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.MatchConditions",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -1144,6 +1353,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.MatchConditions",
           "declaringAssemblyName": "Azure.Core"
         }
@@ -1158,6 +1368,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Azure.MatchConditions",
           "declaringAssemblyName": "Azure.Core"
         }
@@ -1174,6 +1385,13 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 1,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "typeParameters": [
+        "T"
+      ],
       "methods": [
         {
           "stableId": "Azure.Core:Azure.NullableResponse\u00601::GetRawResponse():Azure.Response",
@@ -1190,6 +1408,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.NullableResponse\u00601",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -1209,6 +1428,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.NullableResponse\u00601",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -1228,6 +1448,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.NullableResponse\u00601",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -1247,6 +1468,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.NullableResponse\u00601",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -1268,6 +1490,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.NullableResponse\u00601",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -1286,13 +1509,26 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.NullableResponse\u00601",
           "declaringAssemblyName": "Azure.Core"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Azure.Core:Azure.NullableResponse\u00601::.ctor():void",
+          "metadataToken": 100663379,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Azure.NullableResponse\u00601",
+          "declaringAssemblyName": "Azure.Core"
+        }
+      ]
     },
     {
       "stableId": "Azure.Core:Azure.Operation",
@@ -1305,6 +1541,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Azure.Core:Azure.Operation::Rehydrate(Azure.Core.Pipeline.HttpPipeline,Azure.Core.RehydrationToken,Azure.Core.ClientOptions):Operation_1",
@@ -1321,6 +1561,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Operation",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -1340,6 +1581,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Operation",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -1359,6 +1601,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Operation",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -1378,6 +1621,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Operation",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -1397,6 +1641,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Operation",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -1416,6 +1661,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Operation",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -1435,6 +1681,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Operation",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -1454,6 +1701,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Operation",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -1473,6 +1721,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Operation",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -1492,6 +1741,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Operation",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -1511,6 +1761,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Operation",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -1530,6 +1781,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Operation",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -1549,6 +1801,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Operation",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -1568,6 +1821,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Operation",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -1587,6 +1841,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Operation",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -1606,6 +1861,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Operation",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -1625,6 +1881,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Operation",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -1646,6 +1903,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Operation",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -1664,13 +1922,26 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Operation",
           "declaringAssemblyName": "Azure.Core"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Azure.Core:Azure.Operation::.ctor():void",
+          "metadataToken": 100663401,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Azure.Operation",
+          "declaringAssemblyName": "Azure.Core"
+        }
+      ]
     },
     {
       "stableId": "Azure.Core:Azure.Operation\u00601",
@@ -1683,6 +1954,13 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 1,
+      "baseType": {
+        "stableId": "Azure.Core:Azure.Operation",
+        "clrName": "Azure.Operation"
+      },
+      "typeParameters": [
+        "T"
+      ],
       "methods": [
         {
           "stableId": "Azure.Core:Azure.Operation\u00601::WaitForCompletion(System.Threading.CancellationToken):Response_1",
@@ -1699,6 +1977,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Operation\u00601",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -1718,6 +1997,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Operation\u00601",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -1737,6 +2017,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Operation\u00601",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -1756,6 +2037,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Operation\u00601",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -1775,6 +2057,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Operation\u00601",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -1794,6 +2077,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Operation\u00601",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -1813,6 +2097,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Operation\u00601",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -1832,6 +2117,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Operation\u00601",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -1851,6 +2137,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Operation\u00601",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -1870,6 +2157,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Operation\u00601",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -1889,6 +2177,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Operation\u00601",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -1910,6 +2199,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Operation\u00601",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -1928,13 +2218,26 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Operation\u00601",
           "declaringAssemblyName": "Azure.Core"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Azure.Core:Azure.Operation\u00601::.ctor():void",
+          "metadataToken": 100663412,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Azure.Operation\u00601",
+          "declaringAssemblyName": "Azure.Core"
+        }
+      ]
     },
     {
       "stableId": "Azure.Core:Azure.Page\u00601",
@@ -1947,6 +2250,13 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 1,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "typeParameters": [
+        "T"
+      ],
       "methods": [
         {
           "stableId": "Azure.Core:Azure.Page\u00601::GetRawResponse():Azure.Response",
@@ -1963,6 +2273,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Page\u00601",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -1982,6 +2293,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Page\u00601",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -2001,6 +2313,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Page\u00601",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -2020,6 +2333,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Page\u00601",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -2039,6 +2353,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Page\u00601",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -2060,6 +2375,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Page\u00601",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -2078,13 +2394,26 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Page\u00601",
           "declaringAssemblyName": "Azure.Core"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Azure.Core:Azure.Page\u00601::.ctor():void",
+          "metadataToken": 100663420,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Azure.Page\u00601",
+          "declaringAssemblyName": "Azure.Core"
+        }
+      ]
     },
     {
       "stableId": "Azure.Core:Azure.Pageable\u00601",
@@ -2097,6 +2426,26 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 1,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable\u00601",
+          "clrName": "System.Collections.Generic.IEnumerable\u00601",
+          "typeArguments": [
+            "T"
+          ]
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+          "clrName": "System.Collections.IEnumerable"
+        }
+      ],
+      "typeParameters": [
+        "T"
+      ],
       "methods": [
         {
           "stableId": "Azure.Core:Azure.Pageable\u00601::AsPages(System.String,System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):IEnumerable_1",
@@ -2113,6 +2462,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Pageable\u00601",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -2132,6 +2482,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Pageable\u00601",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -2151,6 +2502,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Pageable\u00601",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -2170,6 +2522,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Pageable\u00601",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -2189,6 +2542,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Pageable\u00601",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -2208,15 +2562,59 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Pageable\u00601",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
         }
       ],
-      "properties": [],
+      "properties": [
+        {
+          "stableId": "Azure.Core:Azure.Pageable\u00601::CancellationToken:System.Threading.CancellationToken",
+          "clrName": "CancellationToken",
+          "metadataToken": 385875990,
+          "canonicalSignature": ":System.Threading.CancellationToken",
+          "normalizedSignature": "CancellationToken|:System.Threading.CancellationToken|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "visibility": "Protected",
+          "declaringClrType": "Azure.Pageable\u00601",
+          "declaringAssemblyName": "Azure.Core"
+        }
+      ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Azure.Core:Azure.Pageable\u00601::.ctor():void",
+          "metadataToken": 100663422,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Azure.Pageable\u00601",
+          "declaringAssemblyName": "Azure.Core"
+        },
+        {
+          "stableId": "Azure.Core:Azure.Pageable\u00601::.ctor(System.Threading.CancellationToken):void",
+          "metadataToken": 100663423,
+          "canonicalSignature": "(System.Threading.CancellationToken):void",
+          "normalizedSignature": "constructor|(System.Threading.CancellationToken):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "visibility": "Protected",
+          "declaringClrType": "Azure.Pageable\u00601",
+          "declaringAssemblyName": "Azure.Core"
+        }
+      ]
     },
     {
       "stableId": "Azure.Core:Azure.PageableOperation\u00601",
@@ -2229,6 +2627,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 1,
+      "baseType": {
+        "stableId": "Azure.Core:Azure.Operation\u00601",
+        "clrName": "Azure.Operation\u00601",
+        "typeArguments": [
+          "AsyncPageable_1[[T]]"
+        ]
+      },
+      "typeParameters": [
+        "T"
+      ],
       "methods": [
         {
           "stableId": "Azure.Core:Azure.PageableOperation\u00601::GetValuesAsync(System.Threading.CancellationToken):AsyncPageable_1",
@@ -2245,6 +2653,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.PageableOperation\u00601",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -2264,6 +2673,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.PageableOperation\u00601",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -2285,13 +2695,26 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Azure.PageableOperation\u00601",
           "declaringAssemblyName": "Azure.Core"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Azure.Core:Azure.PageableOperation\u00601::.ctor():void",
+          "metadataToken": 100663434,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Azure.PageableOperation\u00601",
+          "declaringAssemblyName": "Azure.Core"
+        }
+      ]
     },
     {
       "stableId": "Azure.Core:Azure.RequestConditions",
@@ -2304,6 +2727,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Azure.Core:Azure.MatchConditions",
+        "clrName": "Azure.MatchConditions"
+      },
       "methods": [],
       "properties": [
         {
@@ -2321,6 +2748,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.RequestConditions",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -2339,6 +2767,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.RequestConditions",
           "declaringAssemblyName": "Azure.Core"
         }
@@ -2353,6 +2782,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Azure.RequestConditions",
           "declaringAssemblyName": "Azure.Core"
         }
@@ -2369,6 +2799,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Azure.Core:Azure.RequestContext::AddPolicy(Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core.HttpPipelinePosition):System.Void",
@@ -2385,6 +2819,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.RequestContext",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -2404,6 +2839,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.RequestContext",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -2423,6 +2859,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.RequestContext",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -2444,6 +2881,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.RequestContext",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -2462,6 +2900,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.RequestContext",
           "declaringAssemblyName": "Azure.Core"
         }
@@ -2476,6 +2915,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Azure.RequestContext",
           "declaringAssemblyName": "Azure.Core"
         }
@@ -2492,6 +2932,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Exception",
+        "clrName": "System.Exception"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Runtime.Serialization.ISerializable",
+          "clrName": "System.Runtime.Serialization.ISerializable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Azure.Core:Azure.RequestFailedException::GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):System.Void",
@@ -2508,6 +2958,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.RequestFailedException",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -2527,6 +2978,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.RequestFailedException",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -2548,6 +3000,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.RequestFailedException",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -2566,6 +3019,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.RequestFailedException",
           "declaringAssemblyName": "Azure.Core"
         }
@@ -2580,6 +3034,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Azure.RequestFailedException",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -2590,6 +3045,7 @@
           "normalizedSignature": "constructor|(System.String,System.Exception):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Azure.RequestFailedException",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -2600,6 +3056,7 @@
           "normalizedSignature": "constructor|(System.Int32,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Azure.RequestFailedException",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -2610,6 +3067,7 @@
           "normalizedSignature": "constructor|(System.Int32,System.String,System.Exception):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Azure.RequestFailedException",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -2620,6 +3078,7 @@
           "normalizedSignature": "constructor|(System.Int32,System.String,System.String,System.Exception):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Azure.RequestFailedException",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -2630,6 +3089,7 @@
           "normalizedSignature": "constructor|(Azure.Response):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Azure.RequestFailedException",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -2640,6 +3100,7 @@
           "normalizedSignature": "constructor|(Azure.Response,System.Exception):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Azure.RequestFailedException",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -2650,6 +3111,18 @@
           "normalizedSignature": "constructor|(Azure.Response,System.Exception,Azure.Core.RequestFailedDetailsParser):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
+          "declaringClrType": "Azure.RequestFailedException",
+          "declaringAssemblyName": "Azure.Core"
+        },
+        {
+          "stableId": "Azure.Core:Azure.RequestFailedException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
+          "metadataToken": 100663467,
+          "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
+          "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "visibility": "Protected",
           "declaringClrType": "Azure.RequestFailedException",
           "declaringAssemblyName": "Azure.Core"
         }
@@ -2666,6 +3139,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Azure.Core:Azure.Response::Dispose():System.Void",
@@ -2682,6 +3165,99 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Azure.Response",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Response::TryGetHeader(System.String,System.String\u0026):System.Boolean",
+          "clrName": "TryGetHeader",
+          "metadataToken": 100663490,
+          "canonicalSignature": "(System.String,System.String\u0026):System.Boolean",
+          "normalizedSignature": "TryGetHeader|(System.String,System.String\u0026):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "ProtectedInternal",
+          "declaringClrType": "Azure.Response",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false,
+          "parameterModifiers": [
+            {
+              "index": 1,
+              "modifier": "out"
+            }
+          ]
+        },
+        {
+          "stableId": "Azure.Core:Azure.Response::TryGetHeaderValues(System.String,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]\u0026):System.Boolean",
+          "clrName": "TryGetHeaderValues",
+          "metadataToken": 100663491,
+          "canonicalSignature": "(System.String,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]\u0026):System.Boolean",
+          "normalizedSignature": "TryGetHeaderValues|(System.String,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]\u0026):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "ProtectedInternal",
+          "declaringClrType": "Azure.Response",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false,
+          "parameterModifiers": [
+            {
+              "index": 1,
+              "modifier": "out"
+            }
+          ]
+        },
+        {
+          "stableId": "Azure.Core:Azure.Response::ContainsHeader(System.String):System.Boolean",
+          "clrName": "ContainsHeader",
+          "metadataToken": 100663492,
+          "canonicalSignature": "(System.String):System.Boolean",
+          "normalizedSignature": "ContainsHeader|(System.String):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "ProtectedInternal",
+          "declaringClrType": "Azure.Response",
+          "declaringAssemblyName": "Azure.Core",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Core:Azure.Response::EnumerateHeaders():System.Collections.Generic.IEnumerable_1[[Azure.Core.HttpHeader,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
+          "clrName": "EnumerateHeaders",
+          "metadataToken": 100663493,
+          "canonicalSignature": "():System.Collections.Generic.IEnumerable_1[[Azure.Core.HttpHeader,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
+          "normalizedSignature": "EnumerateHeaders|():System.Collections.Generic.IEnumerable_1[[Azure.Core.HttpHeader,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "ProtectedInternal",
           "declaringClrType": "Azure.Response",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -2701,6 +3277,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Response",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -2720,6 +3297,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Response",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -2741,6 +3319,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Response",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -2759,6 +3338,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Response",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -2777,6 +3357,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Response",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -2795,6 +3376,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Response",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -2813,6 +3395,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Response",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -2831,6 +3414,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Response",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -2839,23 +3423,36 @@
           "clrName": "IsError",
           "metadataToken": 385876007,
           "canonicalSignature": ":System.Boolean",
-          "normalizedSignature": "IsError|:System.Boolean|static=false|accessor=get",
+          "normalizedSignature": "IsError|:System.Boolean|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Response",
           "declaringAssemblyName": "Azure.Core"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Azure.Core:Azure.Response::.ctor():void",
+          "metadataToken": 100663497,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Azure.Response",
+          "declaringAssemblyName": "Azure.Core"
+        }
+      ]
     },
     {
       "stableId": "Azure.Core:Azure.Response\u00601",
@@ -2868,6 +3465,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 1,
+      "baseType": {
+        "stableId": "Azure.Core:Azure.NullableResponse\u00601",
+        "clrName": "Azure.NullableResponse\u00601",
+        "typeArguments": [
+          "T"
+        ]
+      },
+      "typeParameters": [
+        "T"
+      ],
       "methods": [
         {
           "stableId": "Azure.Core:Azure.Response\u00601::Equals(System.Object):System.Boolean",
@@ -2884,6 +3491,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Response\u00601",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -2903,6 +3511,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Response\u00601",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -2924,6 +3533,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Azure.Response\u00601",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -2942,13 +3552,26 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Azure.Response\u00601",
           "declaringAssemblyName": "Azure.Core"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Azure.Core:Azure.Response\u00601::.ctor():void",
+          "metadataToken": 100663565,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Azure.Response\u00601",
+          "declaringAssemblyName": "Azure.Core"
+        }
+      ]
     },
     {
       "stableId": "Azure.Core:Azure.ResponseError",
@@ -2961,6 +3584,26 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.IJsonModel\u00601",
+          "clrName": "System.ClientModel.Primitives.IJsonModel\u00601",
+          "typeArguments": [
+            "ResponseError"
+          ]
+        },
+        {
+          "stableId": "System.ClientModel:System.ClientModel.Primitives.IPersistableModel\u00601",
+          "clrName": "System.ClientModel.Primitives.IPersistableModel\u00601",
+          "typeArguments": [
+            "ResponseError"
+          ]
+        }
+      ],
       "methods": [
         {
           "stableId": "Azure.Core:Azure.ResponseError::ToString():System.String",
@@ -2977,6 +3620,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.ResponseError",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -2996,6 +3640,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.IJsonModel\u00601",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false,
@@ -3016,6 +3661,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.IJsonModel\u00601",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false,
@@ -3042,6 +3688,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.IPersistableModel\u00601",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false,
@@ -3062,6 +3709,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.IPersistableModel\u00601",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false,
@@ -3082,6 +3730,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.ClientModel.Primitives.IPersistableModel\u00601",
           "declaringAssemblyName": "System.ClientModel",
           "isExtensionMethod": false,
@@ -3104,6 +3753,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.ResponseError",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -3122,6 +3772,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.ResponseError",
           "declaringAssemblyName": "Azure.Core"
         }
@@ -3136,6 +3787,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Azure.ResponseError",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -3146,6 +3798,7 @@
           "normalizedSignature": "constructor|(System.String,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Azure.ResponseError",
           "declaringAssemblyName": "Azure.Core"
         }
@@ -3162,6 +3815,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.EventArgs",
+        "clrName": "System.EventArgs"
+      },
       "methods": [],
       "properties": [
         {
@@ -3179,6 +3836,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.SyncAsyncEventArgs",
           "declaringAssemblyName": "Azure.Core"
         },
@@ -3197,6 +3855,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.SyncAsyncEventArgs",
           "declaringAssemblyName": "Azure.Core"
         }
@@ -3211,6 +3870,7 @@
           "normalizedSignature": "constructor|(System.Boolean,System.Threading.CancellationToken):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Azure.SyncAsyncEventArgs",
           "declaringAssemblyName": "Azure.Core"
         }
@@ -3227,6 +3887,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Azure.Core:Azure.AzureCoreExtensions::ToObject(System.BinaryData,Azure.Core.Serialization.ObjectSerializer,System.Threading.CancellationToken):T",
@@ -3243,6 +3907,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.AzureCoreExtensions",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": true
@@ -3262,6 +3927,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.AzureCoreExtensions",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": true
@@ -3281,6 +3947,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.AzureCoreExtensions",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": true
@@ -3300,6 +3967,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.AzureCoreExtensions",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": true
@@ -3319,6 +3987,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.AzureCoreExtensions",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": true

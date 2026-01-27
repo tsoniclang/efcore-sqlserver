@@ -7,9 +7,9 @@ import * as Internal from './Microsoft.EntityFrameworkCore.SqlServer.Query.Inter
 
 // Cross-namespace type imports for constraints
 import type { IReadOnlyList } from '@tsonic/dotnet/System.Collections.Generic.js';
-import type { Boolean as ClrBoolean, Int32, Object as ClrObject, String as ClrString } from '@tsonic/dotnet/System.js';
+import type { Boolean as ClrBoolean, Int32, Object as ClrObject, String as ClrString, Void } from '@tsonic/dotnet/System.js';
 import type { Expression } from '@tsonic/dotnet/System.Linq.Expressions.js';
-import type { IPrintableExpression, IRelationalQuotableExpression } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Query.js';
+import type { ExpressionPrinter, IPrintableExpression, IRelationalQuotableExpression } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Query.js';
 import type { SqlExpression, SqlFunctionExpression } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Query.SqlExpressions.js';
 import type { RelationalTypeMapping } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js';
 

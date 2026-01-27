@@ -5,10 +5,13 @@
 // Primitive type aliases from @tsonic/core
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
+// Import support types from @tsonic/core
+import type { ptr } from "@tsonic/core/types.js";
+
 // Import types from other namespaces
 import type { ISqlServerSingletonOptions } from "../../Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal/internal/index.js";
 import * as System_Data_Common_Internal from "@tsonic/dotnet/System.Data.Common.js";
-import type { DbTransaction } from "@tsonic/dotnet/System.Data.Common.js";
+import type { DbConnection, DbParameter, DbTransaction } from "@tsonic/dotnet/System.Data.Common.js";
 import type { DbType, SqlDbType } from "@tsonic/dotnet/System.Data.js";
 import type { MemoryStream } from "@tsonic/dotnet/System.IO.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
@@ -24,7 +27,7 @@ import * as Microsoft_EntityFrameworkCore_Infrastructure_Internal from "@tsonic/
 import type { IInfrastructure, IResettableService } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure.js";
 import type { DbContext, DbLoggerCategory$Database$Transaction } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.js";
 import * as Microsoft_EntityFrameworkCore_Storage_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
-import type { BoolTypeMapping, ByteArrayTypeMapping, ByteTypeMapping, DateOnlyTypeMapping, DateTimeOffsetTypeMapping, DateTimeTypeMapping, DecimalTypeMapping, DoubleTypeMapping, ExecutionResult, ExecutionStrategyDependencies, FloatTypeMapping, IDatabaseCreator, IDbContextTransaction, IDbContextTransactionManager, IExceptionDetector, IExecutionStrategy, IExecutionStrategyFactory, IRawSqlCommandBuilder, IRelationalConnection, IRelationalDatabaseCreator, IRelationalTransactionFactory, IRelationalTransactionManager, IRelationalTypeMappingSource, ISqlGenerationHelper, ITransactionEnlistmentManager, ITypeMappingSource, JsonTypeMapping, LongTypeMapping, RelationalConnection, RelationalConnectionDependencies, RelationalDatabaseCreator, RelationalDatabaseCreatorDependencies, RelationalExecutionStrategyFactory, RelationalSqlGenerationHelper, RelationalSqlGenerationHelperDependencies, RelationalTransaction, RelationalTransactionFactoryDependencies, RelationalTypeMapping, RelationalTypeMappingSource, RelationalTypeMappingSourceDependencies, ShortTypeMapping, StoreTypePostfix, StringTypeMapping, TimeOnlyTypeMapping, TimeSpanTypeMapping, TypeMappingSourceDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
+import type { BoolTypeMapping, ByteArrayTypeMapping, ByteTypeMapping, CoreTypeMapping, DateOnlyTypeMapping, DateTimeOffsetTypeMapping, DateTimeTypeMapping, DecimalTypeMapping, DoubleTypeMapping, ExecutionResult, ExecutionStrategyDependencies, FloatTypeMapping, IDatabaseCreator, IDbContextTransaction, IDbContextTransactionManager, IExceptionDetector, IExecutionStrategy, IExecutionStrategyFactory, IRawSqlCommandBuilder, IRelationalConnection, IRelationalDatabaseCreator, IRelationalTransactionFactory, IRelationalTransactionManager, IRelationalTypeMappingSource, ISqlGenerationHelper, ITransactionEnlistmentManager, ITypeMappingSource, JsonTypeMapping, LongTypeMapping, RelationalConnection, RelationalConnectionDependencies, RelationalDatabaseCreator, RelationalDatabaseCreatorDependencies, RelationalExecutionStrategyFactory, RelationalSqlGenerationHelper, RelationalSqlGenerationHelperDependencies, RelationalTransaction, RelationalTransactionFactoryDependencies, RelationalTypeMapping, RelationalTypeMappingInfo, RelationalTypeMappingSource, RelationalTypeMappingSourceDependencies, ShortTypeMapping, StoreTypePostfix, StringTypeMapping, TimeOnlyTypeMapping, TimeSpanTypeMapping, TypeMappingSourceDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
 import type { ValueConverter } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.ValueConversion.js";
 
 export interface ISqlServerConnection$instance extends IRelationalConnection, IRelationalTransactionManager, IDbContextTransactionManager, IResettableService, IDisposable, IAsyncDisposable {
@@ -35,43 +38,74 @@ export interface ISqlServerConnection$instance extends IRelationalConnection, IR
 
 export type ISqlServerConnection = ISqlServerConnection$instance;
 
-export interface SqlServerBoolTypeMapping$instance extends BoolTypeMapping {
+export abstract class SqlServerBoolTypeMapping$protected {
+    protected Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
+    protected GenerateNonNullSqlLiteral(value: unknown): string;
+}
+
+
+export interface SqlServerBoolTypeMapping$instance extends SqlServerBoolTypeMapping$protected, BoolTypeMapping {
 }
 
 
 export const SqlServerBoolTypeMapping: {
     new(storeType: string, dbType: Nullable<DbType>): SqlServerBoolTypeMapping;
+    new(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): SqlServerBoolTypeMapping;
     readonly Default: SqlServerBoolTypeMapping;
 };
 
 
 export type SqlServerBoolTypeMapping = SqlServerBoolTypeMapping$instance;
 
-export interface SqlServerByteArrayTypeMapping$instance extends ByteArrayTypeMapping {
+export abstract class SqlServerByteArrayTypeMapping$protected {
+    protected Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
+    protected ConfigureParameter(parameter: DbParameter): void;
+    protected GenerateNonNullSqlLiteral(value: unknown): string;
+}
+
+
+export interface SqlServerByteArrayTypeMapping$instance extends SqlServerByteArrayTypeMapping$protected, ByteArrayTypeMapping {
 }
 
 
 export const SqlServerByteArrayTypeMapping: {
     new(storeType: string, size: Nullable<System_Internal.Int32>, fixedLength: boolean, comparer: ValueComparer, sqlDbType: Nullable<SqlDbType>, storeTypePostfix: Nullable<StoreTypePostfix>): SqlServerByteArrayTypeMapping;
+    new(parameters: RelationalTypeMapping_RelationalTypeMappingParameters, sqlDbType: Nullable<SqlDbType>): SqlServerByteArrayTypeMapping;
     readonly Default: SqlServerByteArrayTypeMapping;
 };
 
 
 export type SqlServerByteArrayTypeMapping = SqlServerByteArrayTypeMapping$instance;
 
-export interface SqlServerByteTypeMapping$instance extends ByteTypeMapping {
+export abstract class SqlServerByteTypeMapping$protected {
+    protected Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
+    protected GenerateNonNullSqlLiteral(value: unknown): string;
+}
+
+
+export interface SqlServerByteTypeMapping$instance extends SqlServerByteTypeMapping$protected, ByteTypeMapping {
 }
 
 
 export const SqlServerByteTypeMapping: {
     new(storeType: string, dbType: Nullable<DbType>): SqlServerByteTypeMapping;
+    new(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): SqlServerByteTypeMapping;
     readonly Default: SqlServerByteTypeMapping;
 };
 
 
 export type SqlServerByteTypeMapping = SqlServerByteTypeMapping$instance;
 
-export interface SqlServerConnection$instance extends RelationalConnection {
+export abstract class SqlServerConnection$protected {
+    protected readonly SupportsAmbientTransactions: boolean;
+    protected CreateDbConnection(): DbConnection;
+    protected ModifyConnectionString(userProvidedConnectionString: string): string;
+    protected OpenDbConnection(errorsExpected: boolean): void;
+    protected OpenDbConnectionAsync(errorsExpected: boolean, cancellationToken: CancellationToken): Task;
+}
+
+
+export interface SqlServerConnection$instance extends SqlServerConnection$protected, RelationalConnection {
     get ConnectionString(): string | undefined;
     set ConnectionString(value: string);
     readonly IsMultipleActiveResultSetsEnabled: boolean;
@@ -114,57 +148,94 @@ export const SqlServerDatabaseCreator: {
 
 export type SqlServerDatabaseCreator = SqlServerDatabaseCreator$instance;
 
-export interface SqlServerDateOnlyTypeMapping$instance extends DateOnlyTypeMapping {
+export abstract class SqlServerDateOnlyTypeMapping$protected {
+    protected readonly SqlLiteralFormatString: string;
+    protected Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
+    protected ConfigureParameter(parameter: DbParameter): void;
+}
+
+
+export interface SqlServerDateOnlyTypeMapping$instance extends SqlServerDateOnlyTypeMapping$protected, DateOnlyTypeMapping {
 }
 
 
 export const SqlServerDateOnlyTypeMapping: {
-    new(): SqlServerDateOnlyTypeMapping;
+    new(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): SqlServerDateOnlyTypeMapping;
     readonly Default: SqlServerDateOnlyTypeMapping;
 };
 
 
 export type SqlServerDateOnlyTypeMapping = SqlServerDateOnlyTypeMapping$instance;
 
-export interface SqlServerDateTimeOffsetTypeMapping$instance extends DateTimeOffsetTypeMapping {
+export abstract class SqlServerDateTimeOffsetTypeMapping$protected {
+    protected readonly SqlLiteralFormatString: string;
+    protected Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
+    protected ConfigureParameter(parameter: DbParameter): void;
+}
+
+
+export interface SqlServerDateTimeOffsetTypeMapping$instance extends SqlServerDateTimeOffsetTypeMapping$protected, DateTimeOffsetTypeMapping {
 }
 
 
 export const SqlServerDateTimeOffsetTypeMapping: {
     new(storeType: string, dbType: Nullable<DbType>, storeTypePostfix: StoreTypePostfix): SqlServerDateTimeOffsetTypeMapping;
+    new(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): SqlServerDateTimeOffsetTypeMapping;
     readonly Default: SqlServerDateTimeOffsetTypeMapping;
 };
 
 
 export type SqlServerDateTimeOffsetTypeMapping = SqlServerDateTimeOffsetTypeMapping$instance;
 
-export interface SqlServerDateTimeTypeMapping$instance extends DateTimeTypeMapping {
+export abstract class SqlServerDateTimeTypeMapping$protected {
+    protected readonly SqlLiteralFormatString: string;
+    protected Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
+    protected ConfigureParameter(parameter: DbParameter): void;
+}
+
+
+export interface SqlServerDateTimeTypeMapping$instance extends SqlServerDateTimeTypeMapping$protected, DateTimeTypeMapping {
     readonly SqlType: Nullable<SqlDbType>;
 }
 
 
 export const SqlServerDateTimeTypeMapping: {
     new(storeType: string, dbType: Nullable<DbType>, sqlDbType: Nullable<SqlDbType>, storeTypePostfix: StoreTypePostfix): SqlServerDateTimeTypeMapping;
+    new(parameters: RelationalTypeMapping_RelationalTypeMappingParameters, sqlDbType: Nullable<SqlDbType>): SqlServerDateTimeTypeMapping;
     readonly Default: SqlServerDateTimeTypeMapping;
 };
 
 
 export type SqlServerDateTimeTypeMapping = SqlServerDateTimeTypeMapping$instance;
 
-export interface SqlServerDecimalTypeMapping$instance extends DecimalTypeMapping {
+export abstract class SqlServerDecimalTypeMapping$protected {
+    protected Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
+    protected ConfigureParameter(parameter: DbParameter): void;
+}
+
+
+export interface SqlServerDecimalTypeMapping$instance extends SqlServerDecimalTypeMapping$protected, DecimalTypeMapping {
     readonly SqlType: Nullable<SqlDbType>;
 }
 
 
 export const SqlServerDecimalTypeMapping: {
     new(storeType: string, dbType: Nullable<DbType>, precision: Nullable<System_Internal.Int32>, scale: Nullable<System_Internal.Int32>, sqlDbType: Nullable<SqlDbType>, storeTypePostfix: StoreTypePostfix): SqlServerDecimalTypeMapping;
+    new(parameters: RelationalTypeMapping_RelationalTypeMappingParameters, sqlDbType: Nullable<SqlDbType>): SqlServerDecimalTypeMapping;
     readonly Default: SqlServerDecimalTypeMapping;
 };
 
 
 export type SqlServerDecimalTypeMapping = SqlServerDecimalTypeMapping$instance;
 
-export interface SqlServerDoubleTypeMapping$instance extends DoubleTypeMapping {
+export abstract class SqlServerDoubleTypeMapping$protected {
+    protected Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
+    protected ConfigureParameter(parameter: DbParameter): void;
+    protected GenerateNonNullSqlLiteral(value: unknown): string;
+}
+
+
+export interface SqlServerDoubleTypeMapping$instance extends SqlServerDoubleTypeMapping$protected, DoubleTypeMapping {
     CustomizeDataReaderExpression(expression: Expression): Expression;
     GetDataReaderMethod(): MethodInfo;
 }
@@ -172,6 +243,7 @@ export interface SqlServerDoubleTypeMapping$instance extends DoubleTypeMapping {
 
 export const SqlServerDoubleTypeMapping: {
     new(storeType: string, dbType: Nullable<DbType>, storeTypePostfix: StoreTypePostfix): SqlServerDoubleTypeMapping;
+    new(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): SqlServerDoubleTypeMapping;
     readonly Default: SqlServerDoubleTypeMapping;
 };
 
@@ -190,7 +262,12 @@ export const SqlServerExceptionDetector: {
 
 export type SqlServerExceptionDetector = SqlServerExceptionDetector$instance;
 
-export interface SqlServerExecutionStrategy$instance {
+export abstract class SqlServerExecutionStrategy$protected {
+    protected readonly Dependencies: ExecutionStrategyDependencies;
+}
+
+
+export interface SqlServerExecutionStrategy$instance extends SqlServerExecutionStrategy$protected {
     readonly RetriesOnFailure: boolean;
     Execute<TState, TResult>(state: TState, operation: Func<DbContext, TState, TResult>, verifySucceeded: Func<DbContext, TState, ExecutionResult<TResult>>): TResult;
     ExecuteAsync<TState, TResult>(state: TState, operation: Func<DbContext, TState, CancellationToken, Task<TResult>>, verifySucceeded: Func<DbContext, TState, CancellationToken, Task<ExecutionResult<TResult>>>, cancellationToken: CancellationToken): Task<TResult>;
@@ -204,7 +281,12 @@ export const SqlServerExecutionStrategy: {
 
 export type SqlServerExecutionStrategy = SqlServerExecutionStrategy$instance;
 
-export interface SqlServerExecutionStrategyFactory$instance extends RelationalExecutionStrategyFactory {
+export abstract class SqlServerExecutionStrategyFactory$protected {
+    protected CreateDefaultStrategy(dependencies: ExecutionStrategyDependencies): IExecutionStrategy;
+}
+
+
+export interface SqlServerExecutionStrategyFactory$instance extends SqlServerExecutionStrategyFactory$protected, RelationalExecutionStrategyFactory {
 }
 
 
@@ -215,36 +297,58 @@ export const SqlServerExecutionStrategyFactory: {
 
 export type SqlServerExecutionStrategyFactory = SqlServerExecutionStrategyFactory$instance;
 
-export interface SqlServerFloatTypeMapping$instance extends FloatTypeMapping {
+export abstract class SqlServerFloatTypeMapping$protected {
+    protected Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
+    protected ConfigureParameter(parameter: DbParameter): void;
+    protected GenerateNonNullSqlLiteral(value: unknown): string;
+}
+
+
+export interface SqlServerFloatTypeMapping$instance extends SqlServerFloatTypeMapping$protected, FloatTypeMapping {
 }
 
 
 export const SqlServerFloatTypeMapping: {
     new(storeType: string, dbType: Nullable<DbType>, storeTypePostfix: StoreTypePostfix): SqlServerFloatTypeMapping;
+    new(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): SqlServerFloatTypeMapping;
     readonly Default: SqlServerFloatTypeMapping;
 };
 
 
 export type SqlServerFloatTypeMapping = SqlServerFloatTypeMapping$instance;
 
-export interface SqlServerLongTypeMapping$instance extends LongTypeMapping {
+export abstract class SqlServerLongTypeMapping$protected {
+    protected Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
+    protected GenerateNonNullSqlLiteral(value: unknown): string;
+}
+
+
+export interface SqlServerLongTypeMapping$instance extends SqlServerLongTypeMapping$protected, LongTypeMapping {
 }
 
 
 export const SqlServerLongTypeMapping: {
     new(storeType: string, converter: ValueConverter, comparer: ValueComparer, providerValueComparer: ValueComparer, dbType: Nullable<DbType>): SqlServerLongTypeMapping;
+    new(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): SqlServerLongTypeMapping;
     readonly Default: SqlServerLongTypeMapping;
 };
 
 
 export type SqlServerLongTypeMapping = SqlServerLongTypeMapping$instance;
 
-export interface SqlServerShortTypeMapping$instance extends ShortTypeMapping {
+export abstract class SqlServerShortTypeMapping$protected {
+    protected Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
+    protected GenerateNonNullSqlLiteral(value: unknown): string;
+}
+
+
+export interface SqlServerShortTypeMapping$instance extends SqlServerShortTypeMapping$protected, ShortTypeMapping {
 }
 
 
 export const SqlServerShortTypeMapping: {
     new(storeType: string, dbType: Nullable<DbType>): SqlServerShortTypeMapping;
+    new(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): SqlServerShortTypeMapping;
     readonly Default: SqlServerShortTypeMapping;
 };
 
@@ -272,24 +376,38 @@ export const SqlServerSqlGenerationHelper: {
 
 export type SqlServerSqlGenerationHelper = SqlServerSqlGenerationHelper$instance;
 
-export interface SqlServerSqlVariantTypeMapping$instance extends RelationalTypeMapping {
+export abstract class SqlServerSqlVariantTypeMapping$protected {
+    protected Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
+}
+
+
+export interface SqlServerSqlVariantTypeMapping$instance extends SqlServerSqlVariantTypeMapping$protected, RelationalTypeMapping {
 }
 
 
 export const SqlServerSqlVariantTypeMapping: {
     new(storeType: string): SqlServerSqlVariantTypeMapping;
+    new(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): SqlServerSqlVariantTypeMapping;
     readonly Default: SqlServerSqlVariantTypeMapping;
 };
 
 
 export type SqlServerSqlVariantTypeMapping = SqlServerSqlVariantTypeMapping$instance;
 
-export interface SqlServerStringTypeMapping$instance extends StringTypeMapping {
+export abstract class SqlServerStringTypeMapping$protected {
+    protected Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
+    protected ConfigureParameter(parameter: DbParameter): void;
+    protected GenerateNonNullSqlLiteral(value: unknown): string;
+}
+
+
+export interface SqlServerStringTypeMapping$instance extends SqlServerStringTypeMapping$protected, StringTypeMapping {
 }
 
 
 export const SqlServerStringTypeMapping: {
     new(storeType: string, unicode: boolean, size: Nullable<System_Internal.Int32>, fixedLength: boolean, sqlDbType: Nullable<SqlDbType>, storeTypePostfix: Nullable<StoreTypePostfix>, useKeyComparison: boolean): SqlServerStringTypeMapping;
+    new(parameters: RelationalTypeMapping_RelationalTypeMappingParameters, sqlDbType: Nullable<SqlDbType>): SqlServerStringTypeMapping;
     readonly Default: SqlServerStringTypeMapping;
     readonly JsonTypeDefault: SqlServerStringTypeMapping;
     readonly UnicodeDefault: SqlServerStringTypeMapping;
@@ -298,7 +416,15 @@ export const SqlServerStringTypeMapping: {
 
 export type SqlServerStringTypeMapping = SqlServerStringTypeMapping$instance;
 
-export interface SqlServerStructuralJsonTypeMapping$instance extends JsonTypeMapping {
+export abstract class SqlServerStructuralJsonTypeMapping$protected {
+    protected Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
+    protected ConfigureParameter(parameter: DbParameter): void;
+    protected EscapeSqlLiteral(literal: string): string;
+    protected GenerateNonNullSqlLiteral(value: unknown): string;
+}
+
+
+export interface SqlServerStructuralJsonTypeMapping$instance extends SqlServerStructuralJsonTypeMapping$protected, JsonTypeMapping {
     CustomizeDataReaderExpression(expression: Expression): Expression;
     GetDataReaderMethod(): MethodInfo;
 }
@@ -306,6 +432,7 @@ export interface SqlServerStructuralJsonTypeMapping$instance extends JsonTypeMap
 
 export const SqlServerStructuralJsonTypeMapping: {
     new(storeType: string): SqlServerStructuralJsonTypeMapping;
+    new(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): SqlServerStructuralJsonTypeMapping;
     readonly Default: SqlServerStructuralJsonTypeMapping;
     readonly JsonTypeDefault: SqlServerStructuralJsonTypeMapping;
     readonly NvarcharMaxDefault: SqlServerStructuralJsonTypeMapping;
@@ -315,24 +442,41 @@ export const SqlServerStructuralJsonTypeMapping: {
 
 export type SqlServerStructuralJsonTypeMapping = SqlServerStructuralJsonTypeMapping$instance;
 
-export interface SqlServerTimeOnlyTypeMapping$instance extends TimeOnlyTypeMapping {
+export abstract class SqlServerTimeOnlyTypeMapping$protected {
+    protected readonly SqlLiteralFormatString: string;
+    protected Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
+    protected ConfigureParameter(parameter: DbParameter): void;
+    protected GenerateNonNullSqlLiteral(value: unknown): string;
+}
+
+
+export interface SqlServerTimeOnlyTypeMapping$instance extends SqlServerTimeOnlyTypeMapping$protected, TimeOnlyTypeMapping {
 }
 
 
 export const SqlServerTimeOnlyTypeMapping: {
-    new(): SqlServerTimeOnlyTypeMapping;
+    new(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): SqlServerTimeOnlyTypeMapping;
     readonly Default: SqlServerTimeOnlyTypeMapping;
 };
 
 
 export type SqlServerTimeOnlyTypeMapping = SqlServerTimeOnlyTypeMapping$instance;
 
-export interface SqlServerTimeSpanTypeMapping$instance extends TimeSpanTypeMapping {
+export abstract class SqlServerTimeSpanTypeMapping$protected {
+    protected readonly SqlLiteralFormatString: string;
+    protected Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
+    protected ConfigureParameter(parameter: DbParameter): void;
+    protected GenerateNonNullSqlLiteral(value: unknown): string;
+}
+
+
+export interface SqlServerTimeSpanTypeMapping$instance extends SqlServerTimeSpanTypeMapping$protected, TimeSpanTypeMapping {
 }
 
 
 export const SqlServerTimeSpanTypeMapping: {
     new(storeType: string, dbType: Nullable<DbType>, storeTypePostfix: StoreTypePostfix): SqlServerTimeSpanTypeMapping;
+    new(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): SqlServerTimeSpanTypeMapping;
     readonly Default: SqlServerTimeSpanTypeMapping;
 };
 
@@ -353,7 +497,12 @@ export const SqlServerTransaction: {
 
 export type SqlServerTransaction = SqlServerTransaction$instance;
 
-export interface SqlServerTransactionFactory$instance {
+export abstract class SqlServerTransactionFactory$protected {
+    protected readonly Dependencies: RelationalTransactionFactoryDependencies;
+}
+
+
+export interface SqlServerTransactionFactory$instance extends SqlServerTransactionFactory$protected {
     Create(connection: IRelationalConnection, transaction: DbTransaction, transactionId: Guid, logger: IDiagnosticsLogger<DbLoggerCategory$Database$Transaction>, transactionOwned: boolean): RelationalTransaction;
 }
 
@@ -365,7 +514,14 @@ export const SqlServerTransactionFactory: {
 
 export type SqlServerTransactionFactory = SqlServerTransactionFactory$instance;
 
-export interface SqlServerTypeMappingSource$instance extends RelationalTypeMappingSource {
+export abstract class SqlServerTypeMappingSource$protected {
+    protected FindCollectionMapping(info: RelationalTypeMappingInfo, modelType: Type, providerType: Type, elementMapping: CoreTypeMapping): RelationalTypeMapping | undefined;
+    protected FindMapping(mappingInfo: RelationalTypeMappingInfo): RelationalTypeMapping | undefined;
+    protected ParseStoreTypeName(storeTypeName: string, unicode: Nullable<System_Internal.Boolean>, size: Nullable<System_Internal.Int32>, precision: Nullable<System_Internal.Int32>, scale: Nullable<System_Internal.Int32>): string | undefined;
+}
+
+
+export interface SqlServerTypeMappingSource$instance extends SqlServerTypeMappingSource$protected, RelationalTypeMappingSource {
 }
 
 
@@ -376,7 +532,13 @@ export const SqlServerTypeMappingSource: {
 
 export type SqlServerTypeMappingSource = SqlServerTypeMappingSource$instance;
 
-export interface SqlServerUdtTypeMapping$instance extends RelationalTypeMapping {
+export abstract class SqlServerUdtTypeMapping$protected {
+    protected Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
+    protected ConfigureParameter(parameter: DbParameter): void;
+}
+
+
+export interface SqlServerUdtTypeMapping$instance extends SqlServerUdtTypeMapping$protected, RelationalTypeMapping {
     readonly LiteralGenerator: Func<unknown, Expression>;
     readonly UdtTypeName: string;
     GenerateCodeLiteral(value: unknown): Expression;
@@ -385,17 +547,25 @@ export interface SqlServerUdtTypeMapping$instance extends RelationalTypeMapping 
 
 export const SqlServerUdtTypeMapping: {
     new(clrType: Type, storeType: string, literalGenerator: Func<unknown, Expression>, storeTypePostfix: StoreTypePostfix, udtTypeName: string, converter: ValueConverter, comparer: ValueComparer, keyComparer: ValueComparer, dbType: Nullable<DbType>, unicode: boolean, size: Nullable<System_Internal.Int32>, fixedLength: boolean, precision: Nullable<System_Internal.Int32>, scale: Nullable<System_Internal.Int32>): SqlServerUdtTypeMapping;
+    new(parameters: RelationalTypeMapping_RelationalTypeMappingParameters, literalGenerator: Func<unknown, Expression>, udtTypeName: string): SqlServerUdtTypeMapping;
 };
 
 
 export type SqlServerUdtTypeMapping = SqlServerUdtTypeMapping$instance;
 
-export interface SqlServerVectorTypeMapping$instance extends RelationalTypeMapping {
+export abstract class SqlServerVectorTypeMapping$protected {
+    protected Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
+    protected GenerateNonNullSqlLiteral(value: unknown): string;
+}
+
+
+export interface SqlServerVectorTypeMapping$instance extends SqlServerVectorTypeMapping$protected, RelationalTypeMapping {
 }
 
 
 export const SqlServerVectorTypeMapping: {
     new(dimensions: Nullable<System_Internal.Int32>): SqlServerVectorTypeMapping;
+    new(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): SqlServerVectorTypeMapping;
     readonly Default: SqlServerVectorTypeMapping;
 };
 

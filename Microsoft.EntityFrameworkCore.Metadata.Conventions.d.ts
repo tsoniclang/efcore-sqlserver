@@ -6,12 +6,13 @@
 import * as Internal from './Microsoft.EntityFrameworkCore.Metadata.Conventions/internal/index.js';
 
 // Cross-namespace type imports for constraints
+import type { Dictionary } from '@tsonic/dotnet/System.Collections.Generic.js';
 import type { Boolean as ClrBoolean, Nullable, Object as ClrObject, String as ClrString, Void } from '@tsonic/dotnet/System.js';
-import type { ModelBuilder } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.js';
+import type { DeleteBehavior, ModelBuilder } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.js';
 import type { IConventionEntityTypeBuilder, IConventionIndexBuilder, IConventionKeyBuilder, IConventionModelBuilder, IConventionPropertyBuilder, IConventionSkipNavigationBuilder, IConventionTriggerBuilder } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.Builders.js';
 import type { IProviderConventionSetBuilder, ProviderConventionSetBuilderDependencies, RelationalConventionSetBuilder, RelationalConventionSetBuilderDependencies } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.js';
 import type { CascadeDeleteConvention, ConventionSet, IConvention, IConventionContext, IEntityTypeAnnotationChangedConvention, IEntityTypeBaseTypeChangedConvention, IEntityTypePrimaryKeyChangedConvention, IForeignKeyAddedConvention, IForeignKeyOwnershipChangedConvention, IForeignKeyPropertiesChangedConvention, IForeignKeyRemovedConvention, IForeignKeyRequirednessChangedConvention, IIndexAddedConvention, IIndexAnnotationChangedConvention, IIndexUniquenessChangedConvention, IKeyAddedConvention, IModelFinalizedConvention, IModelFinalizingConvention, IModelInitializedConvention, IPropertyAnnotationChangedConvention, IPropertyNullabilityChangedConvention, ISkipNavigationForeignKeyChangedConvention, ITriggerAddedConvention, ITriggerRemovedConvention, RelationalRuntimeModelConvention, RelationalValueGenerationConvention, SharedTableConvention, StoreGenerationConvention } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.Conventions.js';
-import type { IConventionAnnotation, IConventionEntityType, IConventionForeignKey, IConventionTrigger, IReadOnlyProperty, StoreObjectIdentifier, ValueGenerated } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js';
+import type { IConventionAnnotation, IConventionEntityType, IConventionForeignKey, IConventionProperty, IConventionTrigger, IEntityType, IIndex, IKey, IModel, IProperty, IReadOnlyIndex, IReadOnlyKey, IReadOnlyProperty, IRelationalPropertyOverrides, RuntimeEntityType, RuntimeIndex, RuntimeKey, RuntimeModel, RuntimeProperty, RuntimeRelationalPropertyOverrides, StoreObjectIdentifier, ValueGenerated } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js';
 import type { ISqlGenerationHelper } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js';
 
 // Public API exports (curated - no internal $instance/$views leakage)

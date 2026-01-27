@@ -15,6 +15,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.SSHCertificates.SSHExtensions::WithSSHCertificateAuthenticationScheme(Microsoft.Identity.Client.AcquireTokenInteractiveParameterBuilder,System.String,System.String):Microsoft.Identity.Client.AcquireTokenInteractiveParameterBuilder",
@@ -31,6 +35,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.SSHCertificates.SSHExtensions",
           "declaringAssemblyName": "Microsoft.Identity.Client",
           "isExtensionMethod": true
@@ -50,6 +55,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.SSHCertificates.SSHExtensions",
           "declaringAssemblyName": "Microsoft.Identity.Client",
           "isExtensionMethod": true

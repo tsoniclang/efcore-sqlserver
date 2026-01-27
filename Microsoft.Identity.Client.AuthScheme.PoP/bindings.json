@@ -31,6 +31,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.AuthScheme.PoP.IPoPCryptoProvider",
           "declaringAssemblyName": "Microsoft.Identity.Client",
           "isExtensionMethod": false
@@ -52,6 +53,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.AuthScheme.PoP.IPoPCryptoProvider",
           "declaringAssemblyName": "Microsoft.Identity.Client"
         },
@@ -70,6 +72,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Identity.Client.AuthScheme.PoP.IPoPCryptoProvider",
           "declaringAssemblyName": "Microsoft.Identity.Client"
         }

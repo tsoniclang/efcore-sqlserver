@@ -14,17 +14,17 @@ import type { ISqlServerConnection } from "../../Microsoft.EntityFrameworkCore.S
 import type { IEnumerable, IReadOnlyList } from "@tsonic/dotnet/System.Collections.Generic.js";
 import type { DbCommand } from "@tsonic/dotnet/System.Data.Common.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, DateTime, Enum, IComparable, IConvertible, IEquatable, IFormattable, Int32, ISpanFormattable, Object as ClrObject, String as ClrString, Type, ValueType, Void } from "@tsonic/dotnet/System.js";
+import type { Boolean as ClrBoolean, Char, DateTime, Enum, IComparable, IConvertible, IEquatable, IFormattable, Int32, ISpanFormattable, Object as ClrObject, ReadOnlySpan, String as ClrString, Type, ValueType, Void } from "@tsonic/dotnet/System.js";
 import * as System_Linq_Expressions_Internal from "@tsonic/dotnet/System.Linq.Expressions.js";
-import type { Expression, ExpressionVisitor } from "@tsonic/dotnet/System.Linq.Expressions.js";
+import type { BinaryExpression, Expression, ExpressionVisitor, MethodCallExpression, UnaryExpression } from "@tsonic/dotnet/System.Linq.Expressions.js";
 import type { MemberInfo, MethodInfo } from "@tsonic/dotnet/System.Reflection.js";
 import type { IDiagnosticsLogger } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics.js";
 import type { DbLoggerCategory$Query } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.js";
-import type { IEntityType, IModel } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
+import type { IEntityType, IModel, IProperty } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
 import * as Microsoft_EntityFrameworkCore_Query_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query.js";
-import type { CompiledQueryCacheKeyGeneratorDependencies, EntityQueryRootExpression, EnumerableExpression, EvaluatableExpressionFilterDependencies, IAggregateMethodCallTranslator, IAggregateMethodCallTranslatorProvider, IAsyncQueryProvider, ICompiledQueryCacheKeyGenerator, IEvaluatableExpressionFilter, IMemberTranslator, IMemberTranslatorProvider, IMethodCallTranslator, IMethodCallTranslatorProvider, INavigationExpansionExtensibilityHelper, IPrintableExpression, IQueryableMethodTranslatingExpressionVisitorFactory, IQueryCompilationContextFactory, IQuerySqlGeneratorFactory, IQueryTranslationPostprocessorFactory, IRelationalParameterBasedSqlProcessorFactory, IRelationalQueryStringFactory, IRelationalQuotableExpression, IRelationalSqlTranslatingExpressionVisitorFactory, ISqlExpressionFactory, NavigationExpansionExtensibilityHelper, NavigationExpansionExtensibilityHelperDependencies, ParametersCacheDecorator, PathSegment, QueryableMethodTranslatingExpressionVisitor, QueryableMethodTranslatingExpressionVisitorDependencies, QueryCompilationContext, QueryCompilationContextDependencies, QueryContext, QuerySqlGenerator, QuerySqlGeneratorDependencies, QueryTranslationPostprocessor, QueryTranslationPostprocessorDependencies, RelationalAggregateMethodCallTranslatorProvider, RelationalAggregateMethodCallTranslatorProviderDependencies, RelationalCompiledQueryCacheKeyGenerator, RelationalCompiledQueryCacheKeyGeneratorDependencies, RelationalEvaluatableExpressionFilter, RelationalEvaluatableExpressionFilterDependencies, RelationalMemberTranslatorProvider, RelationalMemberTranslatorProviderDependencies, RelationalMethodCallTranslatorProvider, RelationalMethodCallTranslatorProviderDependencies, RelationalParameterBasedSqlProcessor, RelationalParameterBasedSqlProcessorDependencies, RelationalParameterBasedSqlProcessorParameters, RelationalQueryableMethodTranslatingExpressionVisitor, RelationalQueryableMethodTranslatingExpressionVisitorDependencies, RelationalQueryCompilationContext, RelationalQueryCompilationContextDependencies, RelationalQueryTranslationPostprocessor, RelationalQueryTranslationPostprocessorDependencies, RelationalSqlTranslatingExpressionVisitor, RelationalSqlTranslatingExpressionVisitorDependencies, RelationalTypeMappingPostprocessor, SqlAliasManager, SqlExpressionFactory, SqlExpressionFactoryDependencies, SqlNullabilityProcessor, SqlTreePruner } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query.js";
+import type { CompiledQueryCacheKeyGeneratorDependencies, EntityQueryRootExpression, EnumerableExpression, EvaluatableExpressionFilterDependencies, ExpressionPrinter, IAggregateMethodCallTranslator, IAggregateMethodCallTranslatorProvider, IAsyncQueryProvider, ICompiledQueryCacheKeyGenerator, IEvaluatableExpressionFilter, IMemberTranslator, IMemberTranslatorProvider, IMethodCallTranslator, IMethodCallTranslatorProvider, INavigationExpansionExtensibilityHelper, IPrintableExpression, IQueryableMethodTranslatingExpressionVisitorFactory, IQueryCompilationContextFactory, IQuerySqlGeneratorFactory, IQueryTranslationPostprocessorFactory, IRelationalParameterBasedSqlProcessorFactory, IRelationalQueryStringFactory, IRelationalQuotableExpression, IRelationalSqlTranslatingExpressionVisitorFactory, ISqlExpressionFactory, JsonQueryExpression, NavigationExpansionExtensibilityHelper, NavigationExpansionExtensibilityHelperDependencies, ParametersCacheDecorator, PathSegment, QueryableMethodTranslatingExpressionVisitor, QueryableMethodTranslatingExpressionVisitor$ExecuteUpdateSetter, QueryableMethodTranslatingExpressionVisitorDependencies, QueryCompilationContext, QueryCompilationContextDependencies, QueryContext, QuerySqlGenerator, QuerySqlGeneratorDependencies, QueryTranslationPostprocessor, QueryTranslationPostprocessorDependencies, RelationalAggregateMethodCallTranslatorProvider, RelationalAggregateMethodCallTranslatorProviderDependencies, RelationalCompiledQueryCacheKeyGenerator, RelationalCompiledQueryCacheKeyGeneratorDependencies, RelationalEvaluatableExpressionFilter, RelationalEvaluatableExpressionFilterDependencies, RelationalMemberTranslatorProvider, RelationalMemberTranslatorProviderDependencies, RelationalMethodCallTranslatorProvider, RelationalMethodCallTranslatorProviderDependencies, RelationalParameterBasedSqlProcessor, RelationalParameterBasedSqlProcessorDependencies, RelationalParameterBasedSqlProcessorParameters, RelationalQueryableMethodTranslatingExpressionVisitor, RelationalQueryableMethodTranslatingExpressionVisitorDependencies, RelationalQueryCompilationContext, RelationalQueryCompilationContextDependencies, RelationalQueryTranslationPostprocessor, RelationalQueryTranslationPostprocessorDependencies, RelationalSqlTranslatingExpressionVisitor, RelationalSqlTranslatingExpressionVisitorDependencies, RelationalTypeMappingPostprocessor, ShapedQueryExpression, SqlAliasManager, SqlExpressionFactory, SqlExpressionFactoryDependencies, SqlNullabilityProcessor, SqlTreePruner } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query.js";
 import * as Microsoft_EntityFrameworkCore_Query_SqlExpressions_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query.SqlExpressions.js";
-import type { ITableBasedExpression, OrderingExpression, SqlExpression, SqlFunctionExpression, TableExpressionBase, TableValuedFunctionExpression } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query.SqlExpressions.js";
+import type { CaseExpression, ColumnValueSetter, DeleteExpression, InExpression, ITableBasedExpression, JsonScalarExpression, OrderingExpression, PredicateJoinExpressionBase, SelectExpression, SqlBinaryExpression, SqlConstantExpression, SqlExpression, SqlFunctionExpression, SqlParameterExpression, SqlUnaryExpression, TableExpression, TableExpressionBase, TableValuedFunctionExpression, UpdateExpression, ValuesExpression } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query.SqlExpressions.js";
 import type { IRelationalTypeMappingSource, RelationalTypeMapping } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
 
 export enum SqlServerSqlTranslatingExpressionVisitor_StartsEndsWithContains {
@@ -64,7 +64,17 @@ export const SqlServerOpenJsonExpression_ColumnInfo: {
 
 export type SqlServerOpenJsonExpression_ColumnInfo = SqlServerOpenJsonExpression_ColumnInfo$instance;
 
-export interface SearchConditionConverter$instance extends ExpressionVisitor {
+export abstract class SearchConditionConverter$protected {
+    protected Visit(expression: Expression, inSearchConditionContext: boolean, allowNullFalseEquivalence: boolean): Expression | undefined;
+    protected VisitCase(caseExpression: CaseExpression, inSearchConditionContext: boolean, allowNullFalseEquivalence: boolean): Expression;
+    protected VisitPredicateJoin(join: PredicateJoinExpressionBase): Expression;
+    protected VisitSelect(select: SelectExpression): Expression;
+    protected VisitSqlBinary(binary: SqlBinaryExpression, inSearchConditionContext: boolean, allowNullFalseEquivalence: boolean): Expression;
+    protected VisitSqlUnary(sqlUnaryExpression: SqlUnaryExpression, inSearchConditionContext: boolean): Expression;
+}
+
+
+export interface SearchConditionConverter$instance extends SearchConditionConverter$protected, ExpressionVisitor {
     Visit(expression: Expression): Expression | undefined;
 }
 
@@ -76,7 +86,13 @@ export const SearchConditionConverter: {
 
 export type SearchConditionConverter = SearchConditionConverter$instance;
 
-export interface SqlServerAggregateFunctionExpression$instance extends SqlExpression {
+export abstract class SqlServerAggregateFunctionExpression$protected {
+    protected Print(expressionPrinter: ExpressionPrinter): void;
+    protected VisitChildren(visitor: ExpressionVisitor): Expression;
+}
+
+
+export interface SqlServerAggregateFunctionExpression$instance extends SqlServerAggregateFunctionExpression$protected, SqlExpression {
     readonly Arguments: IReadOnlyList<SqlExpression>;
     readonly ArgumentsPropagateNullability: IReadOnlyList<System_Internal.Boolean>;
     readonly IsNullable: boolean;
@@ -108,7 +124,12 @@ export const SqlServerAggregateMethodCallTranslatorProvider: {
 
 export type SqlServerAggregateMethodCallTranslatorProvider = SqlServerAggregateMethodCallTranslatorProvider$instance;
 
-export interface SqlServerAggregateOverSubqueryPostprocessor$instance extends ExpressionVisitor {
+export abstract class SqlServerAggregateOverSubqueryPostprocessor$protected {
+    protected VisitExtension(node: Expression): Expression;
+}
+
+
+export interface SqlServerAggregateOverSubqueryPostprocessor$instance extends SqlServerAggregateOverSubqueryPostprocessor$protected, ExpressionVisitor {
 }
 
 
@@ -384,7 +405,13 @@ export const SqlServerObjectToStringTranslator: {
 
 export type SqlServerObjectToStringTranslator = SqlServerObjectToStringTranslator$instance;
 
-export interface SqlServerOpenJsonExpression$instance extends TableValuedFunctionExpression {
+export abstract class SqlServerOpenJsonExpression$protected {
+    protected Print(expressionPrinter: ExpressionPrinter): void;
+    protected VisitChildren(visitor: ExpressionVisitor): Expression;
+}
+
+
+export interface SqlServerOpenJsonExpression$instance extends SqlServerOpenJsonExpression$protected, TableValuedFunctionExpression {
     readonly ColumnInfos: IReadOnlyList<SqlServerOpenJsonExpression_ColumnInfo> | undefined;
     readonly JsonExpression: SqlExpression;
     readonly Path: IReadOnlyList<PathSegment> | undefined;
@@ -405,7 +432,12 @@ export const SqlServerOpenJsonExpression: {
 
 export type SqlServerOpenJsonExpression = SqlServerOpenJsonExpression$instance;
 
-export interface SqlServerParameterBasedSqlProcessor$instance extends RelationalParameterBasedSqlProcessor {
+export abstract class SqlServerParameterBasedSqlProcessor$protected {
+    protected ProcessSqlNullability(selectExpression: Expression, Decorator: ParametersCacheDecorator): Expression;
+}
+
+
+export interface SqlServerParameterBasedSqlProcessor$instance extends SqlServerParameterBasedSqlProcessor$protected, RelationalParameterBasedSqlProcessor {
     Process(queryExpression: Expression, parametersDecorator: ParametersCacheDecorator): Expression;
 }
 
@@ -417,7 +449,12 @@ export const SqlServerParameterBasedSqlProcessor: {
 
 export type SqlServerParameterBasedSqlProcessor = SqlServerParameterBasedSqlProcessor$instance;
 
-export interface SqlServerParameterBasedSqlProcessorFactory$instance {
+export abstract class SqlServerParameterBasedSqlProcessorFactory$protected {
+    protected readonly Dependencies: RelationalParameterBasedSqlProcessorDependencies;
+}
+
+
+export interface SqlServerParameterBasedSqlProcessorFactory$instance extends SqlServerParameterBasedSqlProcessorFactory$protected {
     Create(parameters: RelationalParameterBasedSqlProcessorParameters): RelationalParameterBasedSqlProcessor;
 }
 
@@ -429,18 +466,40 @@ export const SqlServerParameterBasedSqlProcessorFactory: {
 
 export type SqlServerParameterBasedSqlProcessorFactory = SqlServerParameterBasedSqlProcessorFactory$instance;
 
-export interface SqlServerQueryableMethodTranslatingExpressionVisitor$instance extends RelationalQueryableMethodTranslatingExpressionVisitor {
+export abstract class SqlServerQueryableMethodTranslatingExpressionVisitor$protected {
+    protected CreateSubqueryVisitor(): QueryableMethodTranslatingExpressionVisitor;
+    protected GenerateJsonPartialUpdateSetter(target: Expression, value: SqlExpression, existingSetterValue: SqlExpression): SqlExpression | undefined;
+    protected IsNaturallyOrdered(selectExpression: SelectExpression): boolean;
+    protected IsValidSelectExpressionForExecuteDelete(selectExpression: SelectExpression): boolean;
+    protected IsValidSelectExpressionForExecuteUpdate(selectExpression: SelectExpression, table: TableExpressionBase, tableExpression: TableExpression): boolean;
+    protected TransformJsonQueryToTable(jsonQueryExpression: JsonQueryExpression): ShapedQueryExpression;
+    protected TranslateElementAtOrDefault(source: ShapedQueryExpression, index: Expression, returnDefault: boolean): ShapedQueryExpression | undefined;
+    protected TranslatePrimitiveCollection(sqlExpression: SqlExpression, property: IProperty, tableAlias: string): ShapedQueryExpression | undefined;
+    protected TrySerializeScalarToJson(target: JsonScalarExpression, value: SqlExpression, jsonValue: SqlExpression): boolean;
+    protected TryTranslateSetters(source: ShapedQueryExpression, setters: IReadOnlyList<QueryableMethodTranslatingExpressionVisitor$ExecuteUpdateSetter>, columnSetters: IReadOnlyList<ColumnValueSetter>, targetTable: TableExpressionBase): boolean;
+    protected VisitExtension(extensionExpression: Expression): Expression;
+}
+
+
+export interface SqlServerQueryableMethodTranslatingExpressionVisitor$instance extends SqlServerQueryableMethodTranslatingExpressionVisitor$protected, RelationalQueryableMethodTranslatingExpressionVisitor {
 }
 
 
 export const SqlServerQueryableMethodTranslatingExpressionVisitor: {
     new(dependencies: QueryableMethodTranslatingExpressionVisitorDependencies, relationalDependencies: RelationalQueryableMethodTranslatingExpressionVisitorDependencies, queryCompilationContext: SqlServerQueryCompilationContext, sqlServerSingletonOptions: ISqlServerSingletonOptions): SqlServerQueryableMethodTranslatingExpressionVisitor;
+    new(parentVisitor: SqlServerQueryableMethodTranslatingExpressionVisitor): SqlServerQueryableMethodTranslatingExpressionVisitor;
 };
 
 
 export type SqlServerQueryableMethodTranslatingExpressionVisitor = SqlServerQueryableMethodTranslatingExpressionVisitor$instance;
 
-export interface SqlServerQueryableMethodTranslatingExpressionVisitorFactory$instance {
+export abstract class SqlServerQueryableMethodTranslatingExpressionVisitorFactory$protected {
+    protected readonly Dependencies: QueryableMethodTranslatingExpressionVisitorDependencies;
+    protected readonly RelationalDependencies: RelationalQueryableMethodTranslatingExpressionVisitorDependencies;
+}
+
+
+export interface SqlServerQueryableMethodTranslatingExpressionVisitorFactory$instance extends SqlServerQueryableMethodTranslatingExpressionVisitorFactory$protected {
     Create(queryCompilationContext: QueryCompilationContext): QueryableMethodTranslatingExpressionVisitor;
 }
 
@@ -466,7 +525,13 @@ export const SqlServerQueryCompilationContext: {
 
 export type SqlServerQueryCompilationContext = SqlServerQueryCompilationContext$instance;
 
-export interface SqlServerQueryCompilationContextFactory$instance {
+export abstract class SqlServerQueryCompilationContextFactory$protected {
+    protected readonly Dependencies: QueryCompilationContextDependencies;
+    protected readonly RelationalDependencies: RelationalQueryCompilationContextDependencies;
+}
+
+
+export interface SqlServerQueryCompilationContextFactory$instance extends SqlServerQueryCompilationContextFactory$protected {
     Create(async: boolean): QueryCompilationContext;
     CreatePrecompiled(async: boolean): QueryCompilationContext;
 }
@@ -479,7 +544,30 @@ export const SqlServerQueryCompilationContextFactory: {
 
 export type SqlServerQueryCompilationContextFactory = SqlServerQueryCompilationContextFactory$instance;
 
-export interface SqlServerQuerySqlGenerator$instance extends QuerySqlGenerator {
+export abstract class SqlServerQuerySqlGenerator$protected {
+    protected CheckComposableSqlTrimmed(sql: ReadOnlySpan<System_Internal.Char>): void;
+    protected GenerateFrom(selectExpression: SelectExpression): void;
+    protected GenerateLimitOffset(selectExpression: SelectExpression): void;
+    protected GenerateOrderings(selectExpression: SelectExpression): void;
+    protected GenerateProjection(selectExpression: SelectExpression): void;
+    protected GenerateTop(selectExpression: SelectExpression): void;
+    protected GenerateValues(valuesExpression: ValuesExpression): void;
+    protected TryGenerateWithoutWrappingSelect(selectExpression: SelectExpression): boolean;
+    protected TryGetOperatorInfo(expression: SqlExpression, precedence: int, isAssociative: boolean): boolean;
+    protected VisitDelete(deleteExpression: DeleteExpression): Expression;
+    protected VisitExtension(extensionExpression: Expression): Expression;
+    protected VisitJsonScalar(jsonScalarExpression: JsonScalarExpression): Expression;
+    protected VisitOpenJsonExpression(openJsonExpression: SqlServerOpenJsonExpression): Expression;
+    protected VisitSelect(selectExpression: SelectExpression): Expression;
+    protected VisitSqlConstant(sqlConstantExpression: SqlConstantExpression): Expression;
+    protected VisitSqlFunction(sqlFunctionExpression: SqlFunctionExpression): Expression;
+    protected VisitSqlServerAggregateFunction(aggregateFunctionExpression: SqlServerAggregateFunctionExpression): Expression;
+    protected VisitUpdate(updateExpression: UpdateExpression): Expression;
+    protected VisitValues(valuesExpression: ValuesExpression): Expression;
+}
+
+
+export interface SqlServerQuerySqlGenerator$instance extends SqlServerQuerySqlGenerator$protected, QuerySqlGenerator {
 }
 
 
@@ -490,7 +578,12 @@ export const SqlServerQuerySqlGenerator: {
 
 export type SqlServerQuerySqlGenerator = SqlServerQuerySqlGenerator$instance;
 
-export interface SqlServerQuerySqlGeneratorFactory$instance {
+export abstract class SqlServerQuerySqlGeneratorFactory$protected {
+    protected readonly Dependencies: QuerySqlGeneratorDependencies;
+}
+
+
+export interface SqlServerQuerySqlGeneratorFactory$instance extends SqlServerQuerySqlGeneratorFactory$protected {
     Create(): QuerySqlGenerator;
 }
 
@@ -514,7 +607,13 @@ export const SqlServerQueryStringFactory: {
 
 export type SqlServerQueryStringFactory = SqlServerQueryStringFactory$instance;
 
-export interface SqlServerQueryTranslationPostprocessor$instance extends RelationalQueryTranslationPostprocessor {
+export abstract class SqlServerQueryTranslationPostprocessor$protected {
+    protected ProcessTypeMappings(expression: Expression): Expression;
+    protected Prune(query: Expression): Expression;
+}
+
+
+export interface SqlServerQueryTranslationPostprocessor$instance extends SqlServerQueryTranslationPostprocessor$protected, RelationalQueryTranslationPostprocessor {
     Process(query: Expression): Expression;
 }
 
@@ -526,7 +625,13 @@ export const SqlServerQueryTranslationPostprocessor: {
 
 export type SqlServerQueryTranslationPostprocessor = SqlServerQueryTranslationPostprocessor$instance;
 
-export interface SqlServerQueryTranslationPostprocessorFactory$instance {
+export abstract class SqlServerQueryTranslationPostprocessorFactory$protected {
+    protected readonly Dependencies: QueryTranslationPostprocessorDependencies;
+    protected readonly RelationalDependencies: RelationalQueryTranslationPostprocessorDependencies;
+}
+
+
+export interface SqlServerQueryTranslationPostprocessorFactory$instance extends SqlServerQueryTranslationPostprocessorFactory$protected {
     Create(queryCompilationContext: QueryCompilationContext): QueryTranslationPostprocessor;
 }
 
@@ -550,7 +655,19 @@ export const SqlServerSqlExpressionFactory: {
 
 export type SqlServerSqlExpressionFactory = SqlServerSqlExpressionFactory$instance;
 
-export interface SqlServerSqlNullabilityProcessor$instance extends SqlNullabilityProcessor {
+export abstract class SqlServerSqlNullabilityProcessor$protected {
+    protected readonly PreferExistsToInWithCoalesce: boolean;
+    protected CalculateParameterBucketSize(count: int, elementTypeMapping: RelationalTypeMapping): int;
+    protected IsCollectionTable(table: TableExpressionBase, collection: Expression): boolean;
+    protected UpdateParameterCollection(table: TableExpressionBase, newCollectionParameter: SqlParameterExpression): TableExpressionBase;
+    protected VisitCustomSqlExpression(sqlExpression: SqlExpression, allowOptimizedExpansion: boolean, nullable: boolean): SqlExpression;
+    protected VisitExtension(node: Expression): Expression;
+    protected VisitIn(inExpression: InExpression, allowOptimizedExpansion: boolean, nullable: boolean): SqlExpression;
+    protected VisitSqlServerAggregateFunction(aggregateFunctionExpression: SqlServerAggregateFunctionExpression, allowOptimizedExpansion: boolean, nullable: boolean): SqlExpression;
+}
+
+
+export interface SqlServerSqlNullabilityProcessor$instance extends SqlServerSqlNullabilityProcessor$protected, SqlNullabilityProcessor {
     Process(queryExpression: Expression, parametersDecorator: ParametersCacheDecorator): Expression;
 }
 
@@ -563,7 +680,14 @@ export const SqlServerSqlNullabilityProcessor: {
 
 export type SqlServerSqlNullabilityProcessor = SqlServerSqlNullabilityProcessor$instance;
 
-export interface SqlServerSqlTranslatingExpressionVisitor$instance extends RelationalSqlTranslatingExpressionVisitor {
+export abstract class SqlServerSqlTranslatingExpressionVisitor$protected {
+    protected VisitBinary(binaryExpression: BinaryExpression): Expression;
+    protected VisitMethodCall(methodCallExpression: MethodCallExpression): Expression;
+    protected VisitUnary(unaryExpression: UnaryExpression): Expression;
+}
+
+
+export interface SqlServerSqlTranslatingExpressionVisitor$instance extends SqlServerSqlTranslatingExpressionVisitor$protected, RelationalSqlTranslatingExpressionVisitor {
     GenerateGreatest(expressions: IReadOnlyList<SqlExpression>, resultType: Type): SqlExpression | undefined;
     GenerateLeast(expressions: IReadOnlyList<SqlExpression>, resultType: Type): SqlExpression | undefined;
 }
@@ -577,7 +701,12 @@ export const SqlServerSqlTranslatingExpressionVisitor: {
 
 export type SqlServerSqlTranslatingExpressionVisitor = SqlServerSqlTranslatingExpressionVisitor$instance;
 
-export interface SqlServerSqlTranslatingExpressionVisitorFactory$instance {
+export abstract class SqlServerSqlTranslatingExpressionVisitorFactory$protected {
+    protected readonly Dependencies: RelationalSqlTranslatingExpressionVisitorDependencies;
+}
+
+
+export interface SqlServerSqlTranslatingExpressionVisitorFactory$instance extends SqlServerSqlTranslatingExpressionVisitorFactory$protected {
     Create(queryCompilationContext: QueryCompilationContext, queryableMethodTranslatingExpressionVisitor: QueryableMethodTranslatingExpressionVisitor): RelationalSqlTranslatingExpressionVisitor;
 }
 
@@ -589,7 +718,12 @@ export const SqlServerSqlTranslatingExpressionVisitorFactory: {
 
 export type SqlServerSqlTranslatingExpressionVisitorFactory = SqlServerSqlTranslatingExpressionVisitorFactory$instance;
 
-export interface SqlServerSqlTreePruner$instance extends SqlTreePruner {
+export abstract class SqlServerSqlTreePruner$protected {
+    protected VisitExtension(node: Expression): Expression;
+}
+
+
+export interface SqlServerSqlTreePruner$instance extends SqlServerSqlTreePruner$protected, SqlTreePruner {
 }
 
 
@@ -684,7 +818,13 @@ export const SqlServerTimeSpanMemberTranslator: {
 
 export type SqlServerTimeSpanMemberTranslator = SqlServerTimeSpanMemberTranslator$instance;
 
-export interface SqlServerTypeMappingPostprocessor$instance extends RelationalTypeMappingPostprocessor {
+export abstract class SqlServerTypeMappingPostprocessor$protected {
+    protected ApplyTypeMappingsOnOpenJsonExpression(openJsonExpression: SqlServerOpenJsonExpression, typeMappings: IReadOnlyList<RelationalTypeMapping>): SqlServerOpenJsonExpression;
+    protected VisitExtension(expression: Expression): Expression;
+}
+
+
+export interface SqlServerTypeMappingPostprocessor$instance extends SqlServerTypeMappingPostprocessor$protected, RelationalTypeMappingPostprocessor {
 }
 
 
@@ -708,7 +848,12 @@ export const SqlServerVectorTranslator: {
 
 export type SqlServerVectorTranslator = SqlServerVectorTranslator$instance;
 
-export interface SqlServerZeroLimitConverter$instance extends ExpressionVisitor {
+export abstract class SqlServerZeroLimitConverter$protected {
+    protected VisitExtension(extensionExpression: Expression): Expression;
+}
+
+
+export interface SqlServerZeroLimitConverter$instance extends SqlServerZeroLimitConverter$protected, ExpressionVisitor {
     Process(queryExpression: Expression, parametersDecorator: ParametersCacheDecorator): Expression;
 }
 
@@ -720,7 +865,12 @@ export const SqlServerZeroLimitConverter: {
 
 export type SqlServerZeroLimitConverter = SqlServerZeroLimitConverter$instance;
 
-export interface TemporalAllQueryRootExpression$instance extends TemporalQueryRootExpression {
+export abstract class TemporalAllQueryRootExpression$protected {
+    protected Print(expressionPrinter: ExpressionPrinter): void;
+}
+
+
+export interface TemporalAllQueryRootExpression$instance extends TemporalAllQueryRootExpression$protected, TemporalQueryRootExpression {
     DetachQueryProvider(): Expression;
     Equals(obj: unknown): boolean;
     GetHashCode(): int;
@@ -736,7 +886,12 @@ export const TemporalAllQueryRootExpression: {
 
 export type TemporalAllQueryRootExpression = TemporalAllQueryRootExpression$instance;
 
-export interface TemporalAsOfQueryRootExpression$instance extends TemporalQueryRootExpression {
+export abstract class TemporalAsOfQueryRootExpression$protected {
+    protected Print(expressionPrinter: ExpressionPrinter): void;
+}
+
+
+export interface TemporalAsOfQueryRootExpression$instance extends TemporalAsOfQueryRootExpression$protected, TemporalQueryRootExpression {
     readonly PointInTime: DateTime;
     DetachQueryProvider(): Expression;
     Equals(obj: unknown): boolean;
@@ -753,7 +908,12 @@ export const TemporalAsOfQueryRootExpression: {
 
 export type TemporalAsOfQueryRootExpression = TemporalAsOfQueryRootExpression$instance;
 
-export interface TemporalBetweenQueryRootExpression$instance extends TemporalRangeQueryRootExpression {
+export abstract class TemporalBetweenQueryRootExpression$protected {
+    protected Print(expressionPrinter: ExpressionPrinter): void;
+}
+
+
+export interface TemporalBetweenQueryRootExpression$instance extends TemporalBetweenQueryRootExpression$protected, TemporalRangeQueryRootExpression {
     DetachQueryProvider(): Expression;
     Equals(obj: unknown): boolean;
     GetHashCode(): int;
@@ -769,7 +929,12 @@ export const TemporalBetweenQueryRootExpression: {
 
 export type TemporalBetweenQueryRootExpression = TemporalBetweenQueryRootExpression$instance;
 
-export interface TemporalContainedInQueryRootExpression$instance extends TemporalRangeQueryRootExpression {
+export abstract class TemporalContainedInQueryRootExpression$protected {
+    protected Print(expressionPrinter: ExpressionPrinter): void;
+}
+
+
+export interface TemporalContainedInQueryRootExpression$instance extends TemporalContainedInQueryRootExpression$protected, TemporalRangeQueryRootExpression {
     DetachQueryProvider(): Expression;
     Equals(obj: unknown): boolean;
     GetHashCode(): int;
@@ -785,7 +950,12 @@ export const TemporalContainedInQueryRootExpression: {
 
 export type TemporalContainedInQueryRootExpression = TemporalContainedInQueryRootExpression$instance;
 
-export interface TemporalFromToQueryRootExpression$instance extends TemporalRangeQueryRootExpression {
+export abstract class TemporalFromToQueryRootExpression$protected {
+    protected Print(expressionPrinter: ExpressionPrinter): void;
+}
+
+
+export interface TemporalFromToQueryRootExpression$instance extends TemporalFromToQueryRootExpression$protected, TemporalRangeQueryRootExpression {
     DetachQueryProvider(): Expression;
     Equals(obj: unknown): boolean;
     GetHashCode(): int;
@@ -801,11 +971,18 @@ export const TemporalFromToQueryRootExpression: {
 
 export type TemporalFromToQueryRootExpression = TemporalFromToQueryRootExpression$instance;
 
-export interface TemporalQueryRootExpression$instance extends EntityQueryRootExpression {
+export abstract class TemporalQueryRootExpression$protected {
+    protected VisitChildren(visitor: ExpressionVisitor): Expression;
+}
+
+
+export interface TemporalQueryRootExpression$instance extends TemporalQueryRootExpression$protected, EntityQueryRootExpression {
 }
 
 
 export const TemporalQueryRootExpression: {
+    new(entityType: IEntityType): TemporalQueryRootExpression;
+    new(asyncQueryProvider: IAsyncQueryProvider, entityType: IEntityType): TemporalQueryRootExpression;
 };
 
 
@@ -820,6 +997,8 @@ export interface TemporalRangeQueryRootExpression$instance extends TemporalQuery
 
 
 export const TemporalRangeQueryRootExpression: {
+    new(entityType: IEntityType, from: DateTime, to: DateTime): TemporalRangeQueryRootExpression;
+    new(queryProvider: IAsyncQueryProvider, entityType: IEntityType, from: DateTime, to: DateTime): TemporalRangeQueryRootExpression;
 };
 
 

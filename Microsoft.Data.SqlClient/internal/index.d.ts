@@ -203,6 +203,7 @@ export interface SqlAuthenticationInitializer$instance {
 
 
 export const SqlAuthenticationInitializer: {
+    new(): SqlAuthenticationInitializer;
 };
 
 
@@ -222,7 +223,7 @@ export interface SqlAuthenticationParameters$instance {
 
 
 export const SqlAuthenticationParameters: {
-    new(): SqlAuthenticationParameters;
+    new(authenticationMethod: SqlAuthenticationMethod, serverName: string, databaseName: string, resource: string, authority: string, userId: string, password: string, connectionId: Guid, connectionTimeout: int): SqlAuthenticationParameters;
 };
 
 
@@ -237,6 +238,7 @@ export interface SqlAuthenticationProvider$instance {
 
 
 export const SqlAuthenticationProvider: {
+    new(): SqlAuthenticationProvider;
     GetProvider(authenticationMethod: SqlAuthenticationMethod): SqlAuthenticationProvider;
     SetProvider(authenticationMethod: SqlAuthenticationMethod, provider: SqlAuthenticationProvider): boolean;
 };
@@ -257,7 +259,17 @@ export const SqlAuthenticationToken: {
 
 export type SqlAuthenticationToken = SqlAuthenticationToken$instance;
 
-export interface SqlBatch$instance extends DbBatch {
+export abstract class SqlBatch$protected {
+    protected readonly DbBatchCommands: DbBatchCommandCollection;
+    protected DbConnection: DbConnection;
+    protected DbTransaction: DbTransaction;
+    protected CreateDbBatchCommand(): DbBatchCommand;
+    protected ExecuteDbDataReader(behavior: CommandBehavior): DbDataReader;
+    protected ExecuteDbDataReaderAsync(behavior: CommandBehavior, cancellationToken: CancellationToken): Task<DbDataReader>;
+}
+
+
+export interface SqlBatch$instance extends SqlBatch$protected, DbBatch {
     readonly BatchCommands: SqlBatchCommandCollection;
     readonly Commands: List<SqlBatchCommand>;
     Connection: SqlConnection;
@@ -284,7 +296,12 @@ export const SqlBatch: {
 
 export type SqlBatch = SqlBatch$instance;
 
-export interface SqlBatchCommand$instance extends DbBatchCommand {
+export abstract class SqlBatchCommand$protected {
+    protected readonly DbParameterCollection: DbParameterCollection;
+}
+
+
+export interface SqlBatchCommand$instance extends SqlBatchCommand$protected, DbBatchCommand {
     ColumnEncryptionSetting: SqlCommandColumnEncryptionSetting;
     CommandBehavior: CommandBehavior;
     CommandText: string;
@@ -302,7 +319,13 @@ export const SqlBatchCommand: {
 
 export type SqlBatchCommand = SqlBatchCommand$instance;
 
-export interface SqlBatchCommandCollection$instance extends DbBatchCommandCollection {
+export abstract class SqlBatchCommandCollection$protected {
+    protected GetBatchCommand(index: int): DbBatchCommand;
+    protected SetBatchCommand(index: int, batchCommand: DbBatchCommand): void;
+}
+
+
+export interface SqlBatchCommandCollection$instance extends SqlBatchCommandCollection$protected, DbBatchCommandCollection {
     readonly Count: int;
     readonly IsReadOnly: boolean;
     Item: SqlBatchCommand;
@@ -543,12 +566,24 @@ export interface SqlColumnEncryptionKeyStoreProvider$instance {
 
 
 export const SqlColumnEncryptionKeyStoreProvider: {
+    new(): SqlColumnEncryptionKeyStoreProvider;
 };
 
 
 export type SqlColumnEncryptionKeyStoreProvider = SqlColumnEncryptionKeyStoreProvider$instance;
 
-export interface SqlCommand$instance extends DbCommand {
+export abstract class SqlCommand$protected {
+    protected DbConnection: DbConnection;
+    protected readonly DbParameterCollection: DbParameterCollection;
+    protected DbTransaction: DbTransaction;
+    protected CreateDbParameter(): DbParameter;
+    protected Dispose(disposing: boolean): void;
+    protected ExecuteDbDataReader(behavior: CommandBehavior): DbDataReader;
+    protected ExecuteDbDataReaderAsync(behavior: CommandBehavior, cancellationToken: CancellationToken): Task<DbDataReader>;
+}
+
+
+export interface SqlCommand$instance extends SqlCommand$protected, DbCommand {
     readonly ColumnEncryptionSetting: SqlCommandColumnEncryptionSetting;
     CommandText: string;
     CommandTimeout: int;
@@ -605,7 +640,18 @@ export const SqlCommand: {
 
 export type SqlCommand = SqlCommand$instance;
 
-export interface SqlCommandBuilder$instance extends DbCommandBuilder {
+export abstract class SqlCommandBuilder$protected {
+    protected ApplyParameterInfo(parameter: DbParameter, datarow: DataRow, statementType: StatementType, whereClause: boolean): void;
+    protected GetParameterName(parameterOrdinal: int): string;
+    protected GetParameterName(parameterName: string): string;
+    protected GetParameterPlaceholder(parameterOrdinal: int): string;
+    protected GetSchemaTable(srcCommand: DbCommand): DataTable;
+    protected InitializeCommand(command: DbCommand): DbCommand;
+    protected SetRowUpdatingHandler(adapter: DbDataAdapter): void;
+}
+
+
+export interface SqlCommandBuilder$instance extends SqlCommandBuilder$protected, DbCommandBuilder {
     CatalogLocation: CatalogLocation;
     CatalogSeparator: string;
     DataAdapter: SqlDataAdapter;
@@ -647,7 +693,15 @@ export const SqlConfigurableRetryFactory: {
 
 export type SqlConfigurableRetryFactory = SqlConfigurableRetryFactory$instance;
 
-export interface SqlConnection$instance extends DbConnection {
+export abstract class SqlConnection$protected {
+    protected BeginDbTransaction(isolationLevel: IsolationLevel): DbTransaction;
+    protected CreateDbBatch(): DbBatch;
+    protected CreateDbCommand(): DbCommand;
+    protected Dispose(disposing: boolean): void;
+}
+
+
+export interface SqlConnection$instance extends SqlConnection$protected, DbConnection {
     AccessToken: string;
     AccessTokenCallback: Func<SqlAuthenticationParameters, CancellationToken, Task<SqlAuthenticationToken>>;
     readonly CanCreateBatch: boolean;
@@ -798,7 +852,13 @@ export const SqlCredential: {
 
 export type SqlCredential = SqlCredential$instance;
 
-export interface SqlDataAdapter$instance extends DbDataAdapter {
+export abstract class SqlDataAdapter$protected {
+    protected OnRowUpdated(value: RowUpdatedEventArgs): void;
+    protected OnRowUpdating(value: RowUpdatingEventArgs): void;
+}
+
+
+export interface SqlDataAdapter$instance extends SqlDataAdapter$protected, DbDataAdapter {
     DeleteCommand: SqlCommand;
     InsertCommand: SqlCommand;
     SelectCommand: SqlCommand;
@@ -953,7 +1013,12 @@ export const SqlErrorCollection: {
 
 export type SqlErrorCollection = SqlErrorCollection$instance;
 
-export interface SqlException$instance extends DbException {
+export abstract class SqlException$protected {
+    protected readonly DbBatchCommand: DbBatchCommand;
+}
+
+
+export interface SqlException$instance extends SqlException$protected, DbException {
     readonly BatchCommand: SqlBatchCommand;
     readonly Class: byte;
     readonly ClientConnectionId: Guid;
@@ -1047,7 +1112,15 @@ export const SqlParameter: {
 
 export type SqlParameter = SqlParameter$instance;
 
-export interface SqlParameterCollection$instance extends DbParameterCollection {
+export abstract class SqlParameterCollection$protected {
+    protected GetParameter(index: int): DbParameter;
+    protected GetParameter(parameterName: string): DbParameter;
+    protected SetParameter(index: int, value: DbParameter): void;
+    protected SetParameter(parameterName: string, value: DbParameter): void;
+}
+
+
+export interface SqlParameterCollection$instance extends SqlParameterCollection$protected, DbParameterCollection {
     readonly Count: int;
     readonly IsFixedSize: boolean;
     readonly IsReadOnly: boolean;
@@ -1105,11 +1178,17 @@ export const SqlRetryingEventArgs: {
 
 export type SqlRetryingEventArgs = SqlRetryingEventArgs$instance;
 
-export interface SqlRetryIntervalBaseEnumerator$instance {
-    readonly Current: TimeSpan;
-    readonly GapTimeInterval: TimeSpan;
-    readonly MaxTimeInterval: TimeSpan;
-    readonly MinTimeInterval: TimeSpan;
+export abstract class SqlRetryIntervalBaseEnumerator$protected {
+    protected abstract GetNextInterval(): TimeSpan;
+    protected Validate(timeInterval: TimeSpan, maxTimeInterval: TimeSpan, minTimeInterval: TimeSpan): void;
+}
+
+
+export interface SqlRetryIntervalBaseEnumerator$instance extends SqlRetryIntervalBaseEnumerator$protected {
+    Current: TimeSpan;
+    GapTimeInterval: TimeSpan;
+    MaxTimeInterval: TimeSpan;
+    MinTimeInterval: TimeSpan;
     Clone(): unknown;
     Dispose(): void;
     MoveNext(): boolean;
@@ -1126,10 +1205,10 @@ export const SqlRetryIntervalBaseEnumerator: {
 export type SqlRetryIntervalBaseEnumerator = SqlRetryIntervalBaseEnumerator$instance;
 
 export interface SqlRetryLogicBase$instance {
-    readonly Current: int;
-    readonly NumberOfTries: int;
-    readonly RetryIntervalEnumerator: SqlRetryIntervalBaseEnumerator;
-    readonly TransientPredicate: Predicate<Exception>;
+    Current: int;
+    NumberOfTries: int;
+    RetryIntervalEnumerator: SqlRetryIntervalBaseEnumerator;
+    TransientPredicate: Predicate<Exception>;
     Clone(): unknown;
     Reset(): void;
     RetryCondition(sender: unknown): boolean;
@@ -1138,6 +1217,7 @@ export interface SqlRetryLogicBase$instance {
 
 
 export const SqlRetryLogicBase: {
+    new(): SqlRetryLogicBase;
 };
 
 
@@ -1145,7 +1225,7 @@ export type SqlRetryLogicBase = SqlRetryLogicBase$instance;
 
 export interface SqlRetryLogicBaseProvider$instance {
     Retrying: EventHandler<SqlRetryingEventArgs>;
-    readonly RetryLogic: SqlRetryLogicBase;
+    RetryLogic: SqlRetryLogicBase;
     Execute<TResult>(sender: unknown, function_: Func<TResult>): TResult;
     ExecuteAsync(sender: unknown, function_: Func<Task>, cancellationToken?: CancellationToken): Task;
     ExecuteAsync<TResult>(sender: unknown, function_: Func<Task<TResult>>, cancellationToken?: CancellationToken): Task<TResult>;
@@ -1153,6 +1233,7 @@ export interface SqlRetryLogicBaseProvider$instance {
 
 
 export const SqlRetryLogicBaseProvider: {
+    new(): SqlRetryLogicBaseProvider;
 };
 
 
@@ -1200,7 +1281,12 @@ export const SqlRowUpdatedEventArgs: {
 
 export type SqlRowUpdatedEventArgs = SqlRowUpdatedEventArgs$instance;
 
-export interface SqlRowUpdatingEventArgs$instance extends RowUpdatingEventArgs {
+export abstract class SqlRowUpdatingEventArgs$protected {
+    protected BaseCommand: IDbCommand;
+}
+
+
+export interface SqlRowUpdatingEventArgs$instance extends SqlRowUpdatingEventArgs$protected, RowUpdatingEventArgs {
     Command: SqlCommand;
 }
 
@@ -1212,7 +1298,13 @@ export const SqlRowUpdatingEventArgs: {
 
 export type SqlRowUpdatingEventArgs = SqlRowUpdatingEventArgs$instance;
 
-export interface SqlTransaction$instance extends DbTransaction {
+export abstract class SqlTransaction$protected {
+    protected readonly DbConnection: DbConnection;
+    protected Dispose(disposing: boolean): void;
+}
+
+
+export interface SqlTransaction$instance extends SqlTransaction$protected, DbTransaction {
     readonly Connection: SqlConnection;
     readonly IsolationLevel: IsolationLevel;
     Commit(): void;

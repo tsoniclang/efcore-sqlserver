@@ -15,6 +15,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Exception",
+        "clrName": "System.Exception"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Runtime.Serialization.ISerializable",
+          "clrName": "System.Runtime.Serialization.ISerializable"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [],
@@ -27,6 +37,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
         },
@@ -37,6 +48,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
         },
@@ -47,6 +59,18 @@
           "normalizedSignature": "constructor|(System.String,System.Exception):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
+          "metadataToken": 100663372,
+          "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
+          "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
         }
@@ -63,6 +87,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
+        "clrName": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions"
+      },
       "methods": [],
       "properties": [],
       "fields": [
@@ -74,6 +102,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.Configuration.LastKnownGoodConfigurationCacheOptions",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
         }
@@ -87,6 +116,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.Configuration.LastKnownGoodConfigurationCacheOptions",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
         }
