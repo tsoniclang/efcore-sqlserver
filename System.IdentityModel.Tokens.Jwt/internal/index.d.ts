@@ -103,14 +103,14 @@ export const JwtRegisteredClaimNames: {
 export type JwtRegisteredClaimNames = JwtRegisteredClaimNames$instance;
 
 export interface JwtHeader$instance extends Dictionary<System_Internal.String, unknown> {
-    readonly Alg: string;
-    readonly Cty: string;
-    readonly Enc: string;
-    readonly EncryptingCredentials: EncryptingCredentials;
+    Alg: string;
+    Cty: string;
+    Enc: string;
+    EncryptingCredentials: EncryptingCredentials;
     readonly IV: string;
-    readonly Kid: string;
-    readonly SigningCredentials: SigningCredentials;
-    readonly Typ: string;
+    Kid: string;
+    SigningCredentials: SigningCredentials;
+    Typ: string;
     readonly X5c: string;
     readonly X5t: string;
     readonly Zip: string;
@@ -183,20 +183,20 @@ export interface JwtSecurityToken$instance extends SecurityToken {
     readonly EncodedHeader: string;
     readonly EncodedPayload: string;
     readonly EncryptingCredentials: EncryptingCredentials;
-    readonly Header: JwtHeader;
+    Header: JwtHeader;
     readonly Id: string;
-    readonly InnerToken: JwtSecurityToken;
+    InnerToken: JwtSecurityToken;
     readonly IssuedAt: DateTime;
     readonly Issuer: string;
-    readonly Payload: JwtPayload;
-    readonly RawAuthenticationTag: string;
-    readonly RawCiphertext: string;
-    readonly RawData: string;
-    readonly RawEncryptedKey: string;
-    readonly RawHeader: string;
-    readonly RawInitializationVector: string;
-    readonly RawPayload: string;
-    readonly RawSignature: string;
+    Payload: JwtPayload;
+    RawAuthenticationTag: string;
+    RawCiphertext: string;
+    RawData: string;
+    RawEncryptedKey: string;
+    RawHeader: string;
+    RawInitializationVector: string;
+    RawPayload: string;
+    RawSignature: string;
     readonly SecurityKey: SecurityKey;
     readonly SignatureAlgorithm: string;
     readonly SigningCredentials: SigningCredentials;
@@ -225,7 +225,21 @@ export interface __JwtSecurityToken$views {
 export type JwtSecurityToken = JwtSecurityToken$instance & __JwtSecurityToken$views;
 
 
-export interface JwtSecurityTokenHandler$instance extends SecurityTokenHandler {
+export abstract class JwtSecurityTokenHandler$protected {
+    protected CreateActorValue(actor: ClaimsIdentity): string;
+    protected CreateClaimsIdentity(jwtToken: JwtSecurityToken, issuer: string, validationParameters: TokenValidationParameters): ClaimsIdentity;
+    protected ResolveIssuerSigningKey(token: string, jwtToken: JwtSecurityToken, validationParameters: TokenValidationParameters): SecurityKey;
+    protected ResolveTokenDecryptionKey(token: string, jwtToken: JwtSecurityToken, validationParameters: TokenValidationParameters): SecurityKey;
+    protected ValidateAudience(audiences: IEnumerable__System_Collections_Generic<System_Internal.String>, jwtToken: JwtSecurityToken, validationParameters: TokenValidationParameters): void;
+    protected ValidateIssuer(issuer: string, jwtToken: JwtSecurityToken, validationParameters: TokenValidationParameters): string;
+    protected ValidateIssuerSecurityKey(key: SecurityKey, securityToken: JwtSecurityToken, validationParameters: TokenValidationParameters): void;
+    protected ValidateLifetime(notBefore: Nullable<DateTime>, expires: Nullable<DateTime>, jwtToken: JwtSecurityToken, validationParameters: TokenValidationParameters): void;
+    protected ValidateSignature(token: string, validationParameters: TokenValidationParameters): JwtSecurityToken;
+    protected ValidateTokenReplay(expires: Nullable<DateTime>, securityToken: string, validationParameters: TokenValidationParameters): void;
+}
+
+
+export interface JwtSecurityTokenHandler$instance extends JwtSecurityTokenHandler$protected, SecurityTokenHandler {
     readonly CanValidateToken: boolean;
     readonly CanWriteToken: boolean;
     InboundClaimFilter: ISet<System_Internal.String>;

@@ -15,6 +15,16 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.SystemException",
+        "clrName": "System.SystemException"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Runtime.Serialization.ISerializable",
+          "clrName": "System.Runtime.Serialization.ISerializable"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [],
@@ -32,6 +42,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [],
       "fields": [
@@ -43,6 +57,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlDbTypeExtensions",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -54,6 +69,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlDbTypeExtensions",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }

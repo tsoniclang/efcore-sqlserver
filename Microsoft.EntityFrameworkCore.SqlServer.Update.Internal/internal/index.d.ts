@@ -11,14 +11,14 @@ import type { ptr } from "@tsonic/core/types.js";
 // Import types from other namespaces
 import type { IReadOnlyList } from "@tsonic/dotnet/System.Collections.Generic.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Int32, Object as ClrObject, Void } from "@tsonic/dotnet/System.js";
+import type { Boolean as ClrBoolean, Int32, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
 import type { StringBuilder } from "@tsonic/dotnet/System.Text.js";
 import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 import type { IDbContextOptions } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure.js";
-import type { IRelationalConnection } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
+import type { IRelationalConnection, ISqlGenerationHelper } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
 import * as Microsoft_EntityFrameworkCore_Update_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Update.js";
-import type { AffectedCountModificationCommandBatch, IModificationCommand, IModificationCommandBatchFactory, IModificationCommandFactory, INonTrackedModificationCommand, IReadOnlyModificationCommand, IUpdateSqlGenerator, ModificationCommand, ModificationCommandBatch, ModificationCommandBatchFactoryDependencies, ModificationCommandParameters, NonTrackedModificationCommandParameters, ResultSetMapping, UpdateAndSelectSqlGenerator, UpdateSqlGeneratorDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Update.js";
+import type { AffectedCountModificationCommandBatch, ColumnModificationParameters, IColumnModification, IModificationCommand, IModificationCommandBatchFactory, IModificationCommandFactory, INonTrackedModificationCommand, IReadOnlyModificationCommand, IUpdateSqlGenerator, ModificationCommand, ModificationCommandBatch, ModificationCommandBatchFactoryDependencies, ModificationCommandParameters, NonTrackedModificationCommandParameters, ResultSetMapping, UpdateAndSelectSqlGenerator, UpdateSqlGeneratorDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Update.js";
 
 export interface ISqlServerUpdateSqlGenerator$instance extends IUpdateSqlGenerator {
     AppendBulkInsertOperation(commandStringBuilder: StringBuilder, modificationCommands: IReadOnlyList<IReadOnlyModificationCommand>, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
@@ -28,7 +28,12 @@ export interface ISqlServerUpdateSqlGenerator$instance extends IUpdateSqlGenerat
 
 export type ISqlServerUpdateSqlGenerator = ISqlServerUpdateSqlGenerator$instance;
 
-export interface SqlServerModificationCommand$instance extends ModificationCommand {
+export abstract class SqlServerModificationCommand$protected {
+    protected ProcessSinglePropertyJsonUpdate(parameters: ColumnModificationParameters): void;
+}
+
+
+export interface SqlServerModificationCommand$instance extends SqlServerModificationCommand$protected, ModificationCommand {
 }
 
 
@@ -40,7 +45,15 @@ export const SqlServerModificationCommand: {
 
 export type SqlServerModificationCommand = SqlServerModificationCommand$instance;
 
-export interface SqlServerModificationCommandBatch$instance extends AffectedCountModificationCommandBatch {
+export abstract class SqlServerModificationCommandBatch$protected {
+    protected readonly UpdateSqlGenerator: ISqlServerUpdateSqlGenerator;
+    protected AddCommand(modificationCommand: IReadOnlyModificationCommand): void;
+    protected IsValid(): boolean;
+    protected RollbackLastCommand(modificationCommand: IReadOnlyModificationCommand): void;
+}
+
+
+export interface SqlServerModificationCommandBatch$instance extends SqlServerModificationCommandBatch$protected, AffectedCountModificationCommandBatch {
     Complete(moreBatchesExpected: boolean): void;
     Execute(connection: IRelationalConnection): void;
     ExecuteAsync(connection: IRelationalConnection, cancellationToken?: CancellationToken): Task;
@@ -55,7 +68,12 @@ export const SqlServerModificationCommandBatch: {
 
 export type SqlServerModificationCommandBatch = SqlServerModificationCommandBatch$instance;
 
-export interface SqlServerModificationCommandBatchFactory$instance {
+export abstract class SqlServerModificationCommandBatchFactory$protected {
+    protected readonly Dependencies: ModificationCommandBatchFactoryDependencies;
+}
+
+
+export interface SqlServerModificationCommandBatchFactory$instance extends SqlServerModificationCommandBatchFactory$protected {
     Create(): ModificationCommandBatch;
 }
 
@@ -80,7 +98,20 @@ export const SqlServerModificationCommandFactory: {
 
 export type SqlServerModificationCommandFactory = SqlServerModificationCommandFactory$instance;
 
-export interface SqlServerUpdateSqlGenerator$instance extends UpdateAndSelectSqlGenerator {
+export abstract class SqlServerUpdateSqlGenerator$protected {
+    protected readonly MergeIntoMinimumThreshold: int;
+    protected AppendDeleteCommand(commandStringBuilder: StringBuilder, name: string, schema: string, readOperations: IReadOnlyList<IColumnModification>, conditionOperations: IReadOnlyList<IColumnModification>, appendReturningOneClause?: boolean): void;
+    protected AppendIdentityWhereCondition(commandStringBuilder: StringBuilder, columnModification: IColumnModification): void;
+    protected AppendInsertCommand(commandStringBuilder: StringBuilder, name: string, schema: string, writeOperations: IReadOnlyList<IColumnModification>, readOperations: IReadOnlyList<IColumnModification>): void;
+    protected AppendReturningClause(commandStringBuilder: StringBuilder, operations: IReadOnlyList<IColumnModification>, additionalValues?: string): void;
+    protected AppendRowsAffectedWhereCondition(commandStringBuilder: StringBuilder, expectedRowsAffected: int): void;
+    protected AppendSelectAffectedCountCommand(commandStringBuilder: StringBuilder, name: string, schema: string, commandPosition: int): ResultSetMapping;
+    protected AppendUpdateColumnValue(updateSqlGeneratorHelper: ISqlGenerationHelper, columnModification: IColumnModification, stringBuilder: StringBuilder, name: string, schema: string): void;
+    protected AppendUpdateCommand(commandStringBuilder: StringBuilder, name: string, schema: string, writeOperations: IReadOnlyList<IColumnModification>, readOperations: IReadOnlyList<IColumnModification>, conditionOperations: IReadOnlyList<IColumnModification>, appendReturningOneClause?: boolean): void;
+}
+
+
+export interface SqlServerUpdateSqlGenerator$instance extends SqlServerUpdateSqlGenerator$protected, UpdateAndSelectSqlGenerator {
     AppendBatchHeader(commandStringBuilder: StringBuilder): void;
     AppendBulkInsertOperation(commandStringBuilder: StringBuilder, modificationCommands: IReadOnlyList<IReadOnlyModificationCommand>, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
     AppendDeleteOperation(commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;

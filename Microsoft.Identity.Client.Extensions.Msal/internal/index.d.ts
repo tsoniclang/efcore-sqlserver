@@ -12,7 +12,7 @@ import type { TraceSource } from "@tsonic/dotnet/System.Diagnostics.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Boolean as ClrBoolean, Byte, EventArgs, EventHandler, Exception, IDisposable, Int32, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
 import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization.js";
+import type { ISerializable, SerializationInfo, StreamingContext } from "@tsonic/dotnet/System.Runtime.Serialization.js";
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface CacheChangedEventArgs$instance extends EventArgs {
@@ -69,6 +69,7 @@ export const MsalCachePersistenceException: {
     new(): MsalCachePersistenceException;
     new(message: string): MsalCachePersistenceException;
     new(message: string, innerException: Exception): MsalCachePersistenceException;
+    new(info: SerializationInfo, context: StreamingContext): MsalCachePersistenceException;
 };
 
 

@@ -8,7 +8,7 @@ import * as Internal from './Azure/internal/index.js';
 // Cross-namespace type imports for constraints
 import type { HttpPipeline, HttpPipelinePolicy } from './Azure.Core.Pipeline/internal/index.js';
 import type { JsonPropertyNames, ObjectSerializer } from './Azure.Core.Serialization/internal/index.js';
-import type { ClientOptions, DelayStrategy, HttpPipelinePosition, RehydrationToken, RequestFailedDetailsParser, ResponseClassificationHandler, ResponseHeaders } from './Azure.Core/internal/index.js';
+import type { ClientOptions, DelayStrategy, HttpHeader, HttpPipelinePosition, RehydrationToken, RequestFailedDetailsParser, ResponseClassificationHandler, ResponseHeaders } from './Azure.Core/internal/index.js';
 import type { IJsonModel_1, IPersistableModel_1, ModelReaderWriterOptions } from './System.ClientModel.Primitives/internal/index.js';
 import type { ApiKeyCredential } from './System.ClientModel/internal/index.js';
 import type { BinaryData } from './System/internal/index.js';

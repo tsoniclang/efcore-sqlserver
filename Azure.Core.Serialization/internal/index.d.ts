@@ -83,6 +83,7 @@ export interface ObjectSerializer$instance {
 
 
 export const ObjectSerializer: {
+    new(): ObjectSerializer;
 };
 
 

@@ -24,7 +24,7 @@ import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections.
 import type { IEnumerable } from "@tsonic/dotnet/System.Collections.js";
 import type { Stream } from "@tsonic/dotnet/System.IO.js";
 import * as System_Lib from "@tsonic/dotnet/System.js";
-import type { AsyncCallback, Boolean as ClrBoolean, Byte, Char, DateTimeOffset, Enum, Exception, Func, IAsyncResult, ICloneable, IComparable, IConvertible, IDisposable, IEquatable, IFormattable, Int32, Int64, IntPtr, ISpanFormattable, MulticastDelegate, Nullable, Object as ClrObject, ReadOnlyMemory, ReadOnlySpan, String as ClrString, TimeSpan, Type, UInt16, Uri, ValueType, Void } from "@tsonic/dotnet/System.js";
+import type { AsyncCallback, Boolean as ClrBoolean, Byte, Char, DateTimeOffset, Double, Enum, Exception, Func, IAsyncResult, ICloneable, IComparable, IConvertible, IDisposable, IEquatable, IFormattable, Int32, Int64, IntPtr, ISpanFormattable, MulticastDelegate, Nullable, Object as ClrObject, ReadOnlyMemory, ReadOnlySpan, String as ClrString, TimeSpan, Type, UInt16, Uri, ValueType, Void } from "@tsonic/dotnet/System.js";
 import type { Assembly } from "@tsonic/dotnet/System.Reflection.js";
 import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization.js";
 import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization.js";
@@ -187,7 +187,7 @@ export type HttpHeader = HttpHeader$instance;
 
 export interface MessageProcessingContext$instance {
     RetryNumber: int;
-    readonly StartTime: DateTimeOffset;
+    StartTime: DateTimeOffset;
 }
 
 
@@ -325,7 +325,12 @@ export const TokenRequestContext: {
 
 export type TokenRequestContext = TokenRequestContext$instance;
 
-export interface AzureCoreContext$instance extends ModelReaderWriterContext {
+export abstract class AzureCoreContext$protected {
+    protected TryGetTypeBuilderCore(type: Type, builder: ModelReaderWriterTypeBuilder): boolean;
+}
+
+
+export interface AzureCoreContext$instance extends AzureCoreContext$protected, ModelReaderWriterContext {
 }
 
 
@@ -351,20 +356,30 @@ export interface ClientOptions$instance {
 
 
 export const ClientOptions: {
-    readonly Default: ClientOptions;
+    new(): ClientOptions;
+    new(diagnostics: DiagnosticsOptions): ClientOptions;
+    Default: ClientOptions;
 };
 
 
 export type ClientOptions = ClientOptions$instance;
 
-export interface DelayStrategy$instance {
+export abstract class DelayStrategy$protected {
+    protected abstract GetNextDelayCore(response: Response, retryNumber: int): TimeSpan;
+}
+
+
+export interface DelayStrategy$instance extends DelayStrategy$protected {
     GetNextDelay(response: Response, retryNumber: int): TimeSpan;
 }
 
 
 export const DelayStrategy: {
+    new(maxDelay: Nullable<TimeSpan>, jitterFactor: double): DelayStrategy;
     CreateExponentialDelayStrategy(initialDelay?: Nullable<TimeSpan>, maxDelay?: Nullable<TimeSpan>): DelayStrategy;
     CreateFixedDelayStrategy(delay?: Nullable<TimeSpan>): DelayStrategy;
+    Max(val1: TimeSpan, val2: TimeSpan): TimeSpan;
+    Min(val1: TimeSpan, val2: TimeSpan): TimeSpan;
 };
 
 
@@ -378,8 +393,8 @@ export interface DiagnosticsOptions$instance {
     IsLoggingEnabled: boolean;
     IsTelemetryEnabled: boolean;
     LoggedContentSizeLimit: int;
-    readonly LoggedHeaderNames: IList<System_Internal.String>;
-    readonly LoggedQueryParameters: IList<System_Internal.String>;
+    LoggedHeaderNames: IList<System_Internal.String>;
+    LoggedQueryParameters: IList<System_Internal.String>;
 }
 
 
@@ -394,7 +409,7 @@ export type DiagnosticsOptions = DiagnosticsOptions$instance;
 
 export interface HttpMessage$instance {
     BufferResponse: boolean;
-    readonly CancellationToken: CancellationToken;
+    CancellationToken: CancellationToken;
     readonly HasResponse: boolean;
     NetworkTimeout: Nullable<TimeSpan>;
     readonly ProcessingContext: MessageProcessingContext;
@@ -417,7 +432,18 @@ export const HttpMessage: {
 
 export type HttpMessage = HttpMessage$instance;
 
-export interface Request$instance {
+export abstract class Request$protected {
+    protected abstract AddHeader(name: string, value: string): void;
+    protected abstract ContainsHeader(name: string): boolean;
+    protected abstract EnumerateHeaders(): IEnumerable__System_Collections_Generic<HttpHeader>;
+    protected abstract RemoveHeader(name: string): boolean;
+    protected SetHeader(name: string, value: string): void;
+    protected abstract TryGetHeader(name: string, value: string): boolean;
+    protected abstract TryGetHeaderValues(name: string, values: IEnumerable__System_Collections_Generic<System_Internal.String>): boolean;
+}
+
+
+export interface Request$instance extends Request$protected {
     ClientRequestId: string;
     Content: RequestContent;
     readonly Headers: RequestHeaders;
@@ -428,6 +454,7 @@ export interface Request$instance {
 
 
 export const Request: {
+    new(): Request;
 };
 
 
@@ -442,6 +469,7 @@ export interface RequestContent$instance {
 
 
 export const RequestContent: {
+    new(): RequestContent;
     Create(content: DynamicData): RequestContent;
     Create(content: BinaryData): RequestContent;
     Create(bytes: ReadOnlySequence<System_Internal.Byte>): RequestContent;
@@ -465,6 +493,7 @@ export interface RequestFailedDetailsParser$instance {
 
 
 export const RequestFailedDetailsParser: {
+    new(): RequestFailedDetailsParser;
 };
 
 
@@ -531,6 +560,7 @@ export interface ResponseClassificationHandler$instance {
 
 
 export const ResponseClassificationHandler: {
+    new(): ResponseClassificationHandler;
 };
 
 
@@ -606,6 +636,7 @@ export interface TokenCredential$instance extends AuthenticationTokenProvider {
 
 
 export const TokenCredential: {
+    new(): TokenCredential;
 };
 
 

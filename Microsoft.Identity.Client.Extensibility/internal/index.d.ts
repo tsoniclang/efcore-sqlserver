@@ -22,11 +22,12 @@ export interface ICustomWebUi$instance {
 export type ICustomWebUi = ICustomWebUi$instance;
 
 export interface AppTokenProviderParameters$instance {
-    readonly CancellationToken: CancellationToken;
-    readonly Claims: string;
-    readonly CorrelationId: string | undefined;
-    readonly Scopes: IEnumerable<System_Internal.String>;
-    readonly TenantId: string;
+    CancellationToken: CancellationToken;
+    Claims: string;
+    get CorrelationId(): string | undefined;
+    set CorrelationId(value: string);
+    Scopes: IEnumerable<System_Internal.String>;
+    TenantId: string;
 }
 
 

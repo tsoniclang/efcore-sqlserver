@@ -15,6 +15,20 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.MulticastDelegate",
+        "clrName": "System.MulticastDelegate"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.ICloneable",
+          "clrName": "System.ICloneable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Runtime.Serialization.ISerializable",
+          "clrName": "System.Runtime.Serialization.ISerializable"
+        }
+      ],
       "methods": [
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.InternalConfigEventHandler::Invoke(System.Object,System.Configuration.Internal.InternalConfigEventArgs):System.Void",
@@ -31,6 +45,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.InternalConfigEventHandler",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -50,6 +65,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.InternalConfigEventHandler",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -69,6 +85,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.InternalConfigEventHandler",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -85,6 +102,7 @@
           "normalizedSignature": "constructor|(System.Object,System.IntPtr):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.InternalConfigEventHandler",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         }
@@ -101,6 +119,20 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.MulticastDelegate",
+        "clrName": "System.MulticastDelegate"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.ICloneable",
+          "clrName": "System.ICloneable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Runtime.Serialization.ISerializable",
+          "clrName": "System.Runtime.Serialization.ISerializable"
+        }
+      ],
       "methods": [
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.StreamChangeCallback::Invoke(System.String):System.Void",
@@ -117,6 +149,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.StreamChangeCallback",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -136,6 +169,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.StreamChangeCallback",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -155,6 +189,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.StreamChangeCallback",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -171,6 +206,7 @@
           "normalizedSignature": "constructor|(System.Object,System.IntPtr):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.StreamChangeCallback",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         }
@@ -204,6 +240,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IConfigErrorInfo",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         },
@@ -222,6 +259,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IConfigErrorInfo",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         }
@@ -257,6 +295,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IConfigSystem",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -278,6 +317,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IConfigSystem",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         },
@@ -296,6 +336,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IConfigSystem",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         }
@@ -331,6 +372,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IConfigurationManagerHelper",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -369,6 +411,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IConfigurationManagerInternal",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         },
@@ -387,6 +430,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IConfigurationManagerInternal",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         },
@@ -405,6 +449,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IConfigurationManagerInternal",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         },
@@ -423,6 +468,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IConfigurationManagerInternal",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         },
@@ -441,6 +487,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IConfigurationManagerInternal",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         },
@@ -459,6 +506,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IConfigurationManagerInternal",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         },
@@ -477,6 +525,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IConfigurationManagerInternal",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         },
@@ -495,6 +544,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IConfigurationManagerInternal",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         },
@@ -513,6 +563,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IConfigurationManagerInternal",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         },
@@ -531,6 +582,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IConfigurationManagerInternal",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         },
@@ -549,6 +601,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IConfigurationManagerInternal",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         }
@@ -584,6 +637,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigClientHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -603,6 +657,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigClientHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -640,6 +695,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigConfigurationFactory",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -659,6 +715,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigConfigurationFactory",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -696,6 +753,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -715,6 +773,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false,
@@ -748,6 +807,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -767,6 +827,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -786,6 +847,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -805,6 +867,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -824,6 +887,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -843,6 +907,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -862,6 +927,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -881,6 +947,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -900,6 +967,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false,
@@ -925,6 +993,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false,
@@ -950,6 +1019,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -969,6 +1039,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -988,6 +1059,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -1007,6 +1079,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -1026,6 +1099,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -1045,6 +1119,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -1064,6 +1139,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -1083,6 +1159,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -1102,6 +1179,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -1121,6 +1199,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -1140,6 +1219,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -1159,6 +1239,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -1178,6 +1259,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -1197,6 +1279,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false,
@@ -1228,6 +1311,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         },
@@ -1246,6 +1330,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         },
@@ -1264,6 +1349,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         },
@@ -1282,6 +1368,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         },
@@ -1300,6 +1387,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         }
@@ -1335,6 +1423,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigRecord",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -1354,6 +1443,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigRecord",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -1373,6 +1463,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigRecord",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -1394,6 +1485,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigRecord",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         },
@@ -1412,6 +1504,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigRecord",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         },
@@ -1430,6 +1523,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigRecord",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         }
@@ -1465,6 +1559,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigRoot",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -1484,6 +1579,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigRoot",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -1503,6 +1599,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigRoot",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -1522,6 +1619,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigRoot",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -1541,6 +1639,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigRoot",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -1562,6 +1661,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigRoot",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         }
@@ -1574,6 +1674,7 @@
           "metadataToken": 335544325,
           "normalizedSignature": "ConfigChanged|System.Configuration.Internal.InternalConfigEventHandler|static=false",
           "isStatic": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigRoot",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         }
@@ -1607,6 +1708,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigSettingsFactory",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -1626,6 +1728,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigSettingsFactory",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -1663,6 +1766,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigSystem",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -1682,6 +1786,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigSystem",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -1703,6 +1808,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.IInternalConfigSystem",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         }
@@ -1722,6 +1828,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::Init(System.Configuration.Internal.IInternalConfigRoot,System.Object[]):System.Void",
@@ -1738,6 +1848,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -1757,6 +1868,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false,
@@ -1790,6 +1902,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -1809,6 +1922,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -1828,6 +1942,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -1847,6 +1962,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -1866,6 +1982,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -1885,6 +2002,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -1904,6 +2022,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -1923,6 +2042,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -1942,6 +2062,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -1961,6 +2082,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false,
@@ -1986,6 +2108,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false,
@@ -2011,6 +2134,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -2030,6 +2154,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -2049,6 +2174,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -2068,6 +2194,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -2087,6 +2214,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -2106,6 +2234,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -2125,6 +2254,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -2144,6 +2274,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -2163,6 +2294,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -2182,6 +2314,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -2201,6 +2334,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -2220,6 +2354,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -2239,6 +2374,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -2258,6 +2394,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -2277,6 +2414,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -2296,6 +2434,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -2315,6 +2454,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -2334,6 +2474,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -2353,6 +2494,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -2372,6 +2514,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -2391,6 +2534,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -2410,6 +2554,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -2429,6 +2574,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
@@ -2448,6 +2594,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false,
@@ -2465,6 +2612,25 @@
       ],
       "properties": [
         {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::Host:System.Configuration.Internal.IInternalConfigHost",
+          "clrName": "Host",
+          "metadataToken": 385876839,
+          "canonicalSignature": ":System.Configuration.Internal.IInternalConfigHost",
+          "normalizedSignature": "Host|:System.Configuration.Internal.IInternalConfigHost|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "visibility": "Protected",
+          "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+        },
+        {
           "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::SupportsChangeNotifications:System.Boolean",
           "clrName": "SupportsChangeNotifications",
           "metadataToken": 385876840,
@@ -2479,6 +2645,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         },
@@ -2497,6 +2664,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         },
@@ -2515,6 +2683,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         },
@@ -2533,6 +2702,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         },
@@ -2551,6 +2721,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         },
@@ -2569,6 +2740,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         },
@@ -2587,6 +2759,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         },
@@ -2605,13 +2778,26 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::.ctor():void",
+          "metadataToken": 100665677,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "System.Configuration.Internal.DelegatingConfigHost",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+        }
+      ]
     },
     {
       "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.InternalConfigEventArgs",
@@ -2624,6 +2810,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.EventArgs",
+        "clrName": "System.EventArgs"
+      },
       "methods": [],
       "properties": [
         {
@@ -2641,6 +2831,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.InternalConfigEventArgs",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         }
@@ -2655,6 +2846,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Configuration.Internal.InternalConfigEventArgs",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         }

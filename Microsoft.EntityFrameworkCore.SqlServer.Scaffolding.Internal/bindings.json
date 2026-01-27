@@ -15,6 +15,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Scaffolding.ProviderCodeGenerator",
+        "clrName": "Microsoft.EntityFrameworkCore.Scaffolding.ProviderCodeGenerator"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Scaffolding.IProviderConfigurationCodeGenerator",
+          "clrName": "Microsoft.EntityFrameworkCore.Scaffolding.IProviderConfigurationCodeGenerator"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlServerCodeGenerator::GenerateUseProvider(System.String,Microsoft.EntityFrameworkCore.Design.MethodCallCodeFragment):Microsoft.EntityFrameworkCore.Design.MethodCallCodeFragment",
@@ -31,6 +41,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlServerCodeGenerator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -47,6 +58,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Scaffolding.ProviderCodeGeneratorDependencies):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlServerCodeGenerator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }
@@ -63,6 +75,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Scaffolding.DatabaseModelFactory",
+        "clrName": "Microsoft.EntityFrameworkCore.Scaffolding.DatabaseModelFactory"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Scaffolding.IDatabaseModelFactory",
+          "clrName": "Microsoft.EntityFrameworkCore.Scaffolding.IDatabaseModelFactory"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlServerDatabaseModelFactory::Create(System.String,Microsoft.EntityFrameworkCore.Scaffolding.DatabaseModelFactoryOptions):Microsoft.EntityFrameworkCore.Scaffolding.Metadata.DatabaseModel",
@@ -79,6 +101,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlServerDatabaseModelFactory",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -98,6 +121,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlServerDatabaseModelFactory",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -114,6 +138,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BScaffolding,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Storage.IRelationalTypeMappingSource):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlServerDatabaseModelFactory",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }
@@ -130,6 +155,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlDataReaderExtension::GetValueOrDefault(System.Data.Common.DbDataReader,System.String):T",
@@ -146,6 +175,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlDataReaderExtension",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": true
@@ -165,6 +195,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlDataReaderExtension",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": true
@@ -184,6 +215,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlDataReaderExtension",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": true

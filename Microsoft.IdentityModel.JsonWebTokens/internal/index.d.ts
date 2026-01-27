@@ -16,7 +16,7 @@ import type { EncryptingCredentials, SecurityKey, SecurityToken, SecurityTokenDe
 import type { IDictionary, IEnumerable } from "@tsonic/dotnet/System.Collections.Generic.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Boolean as ClrBoolean, Byte, Char, DateTime, Int32, Object as ClrObject, ReadOnlyMemory, String as ClrString, Type, ValueType } from "@tsonic/dotnet/System.js";
-import type { Claim } from "@tsonic/dotnet/System.Security.Claims.js";
+import type { Claim, ClaimsIdentity } from "@tsonic/dotnet/System.Security.Claims.js";
 import type { Regex } from "@tsonic/dotnet/System.Text.RegularExpressions.js";
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
@@ -113,16 +113,16 @@ export interface JsonWebToken$instance extends SecurityToken {
     readonly EncryptedKey: string;
     readonly Id: string;
     readonly InitializationVector: string;
-    readonly InnerToken: JsonWebToken;
+    InnerToken: JsonWebToken;
     readonly IsEncrypted: boolean;
-    readonly IsSigned: boolean;
+    IsSigned: boolean;
     readonly IssuedAt: DateTime;
     readonly Issuer: string;
     readonly Kid: string;
     readonly SecurityKey: SecurityKey;
     SigningKey: SecurityKey;
     readonly Subject: string | undefined;
-    readonly Typ: string;
+    Typ: string;
     readonly ValidFrom: DateTime;
     readonly ValidTo: DateTime;
     readonly X5t: string;
@@ -153,7 +153,14 @@ export interface __JsonWebToken$views {
 export type JsonWebToken = JsonWebToken$instance & __JsonWebToken$views;
 
 
-export interface JsonWebTokenHandler$instance extends TokenHandler {
+export abstract class JsonWebTokenHandler$protected {
+    protected CreateClaimsIdentity(jwtToken: JsonWebToken, validationParameters: TokenValidationParameters): ClaimsIdentity;
+    protected CreateClaimsIdentity(jwtToken: JsonWebToken, validationParameters: TokenValidationParameters, issuer: string): ClaimsIdentity;
+    protected ResolveTokenDecryptionKey(token: string, jwtToken: JsonWebToken, validationParameters: TokenValidationParameters): SecurityKey;
+}
+
+
+export interface JsonWebTokenHandler$instance extends JsonWebTokenHandler$protected, TokenHandler {
     readonly CanValidateToken: boolean;
     InboundClaimTypeMap: IDictionary<System_Internal.String, System_Internal.String>;
     MapInboundClaims: boolean;

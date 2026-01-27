@@ -15,6 +15,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Configuration.ConfigurationManager:System.Configuration.ConfigurationSection",
+        "clrName": "System.Configuration.ConfigurationSection"
+      },
       "methods": [],
       "properties": [
         {
@@ -32,6 +36,26 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
+          "declaringClrType": "System.Drawing.Configuration.SystemDrawingSection",
+          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+        },
+        {
+          "stableId": "System.Configuration.ConfigurationManager:System.Drawing.Configuration.SystemDrawingSection::Properties:System.Configuration.ConfigurationPropertyCollection",
+          "clrName": "Properties",
+          "metadataToken": 385876234,
+          "canonicalSignature": ":System.Configuration.ConfigurationPropertyCollection",
+          "normalizedSignature": "Properties|:System.Configuration.ConfigurationPropertyCollection|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "visibility": "ProtectedInternal",
           "declaringClrType": "System.Drawing.Configuration.SystemDrawingSection",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         }
@@ -46,6 +70,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Drawing.Configuration.SystemDrawingSection",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         }

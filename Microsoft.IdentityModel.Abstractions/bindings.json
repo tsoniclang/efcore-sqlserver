@@ -15,6 +15,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -26,6 +48,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Abstractions.EventLogLevel",
           "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions"
         },
@@ -37,6 +60,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Abstractions.EventLogLevel",
           "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions"
         },
@@ -48,6 +72,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Abstractions.EventLogLevel",
           "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions"
         },
@@ -59,6 +84,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Abstractions.EventLogLevel",
           "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions"
         },
@@ -70,6 +96,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Abstractions.EventLogLevel",
           "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions"
         },
@@ -81,6 +108,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Abstractions.EventLogLevel",
           "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions"
         },
@@ -92,6 +120,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Abstractions.EventLogLevel",
           "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions"
         }
@@ -126,6 +155,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Abstractions.IIdentityLogger",
           "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
           "isExtensionMethod": false
@@ -145,6 +175,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Abstractions.IIdentityLogger",
           "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
           "isExtensionMethod": false
@@ -182,6 +213,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Abstractions.ITelemetryClient",
           "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
           "isExtensionMethod": false
@@ -201,6 +233,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Abstractions.ITelemetryClient",
           "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
           "isExtensionMethod": false
@@ -220,6 +253,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Abstractions.ITelemetryClient",
           "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
           "isExtensionMethod": false
@@ -239,6 +273,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Abstractions.ITelemetryClient",
           "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
           "isExtensionMethod": false
@@ -258,6 +293,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Abstractions.ITelemetryClient",
           "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
           "isExtensionMethod": false
@@ -279,6 +315,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Abstractions.ITelemetryClient",
           "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions"
         }
@@ -298,6 +335,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -315,6 +356,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Abstractions.LogEntry",
           "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions"
         },
@@ -333,6 +375,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Abstractions.LogEntry",
           "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions"
         },
@@ -351,6 +394,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Abstractions.LogEntry",
           "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions"
         }
@@ -365,6 +409,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Abstractions.LogEntry",
           "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions"
         }
@@ -381,6 +426,16 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.IIdentityLogger",
+          "clrName": "Microsoft.IdentityModel.Abstractions.IIdentityLogger"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.NullIdentityModelLogger::IsEnabled(Microsoft.IdentityModel.Abstractions.EventLogLevel):System.Boolean",
@@ -397,6 +452,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Abstractions.NullIdentityModelLogger",
           "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
           "isExtensionMethod": false
@@ -416,6 +472,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Abstractions.NullIdentityModelLogger",
           "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
           "isExtensionMethod": false
@@ -435,6 +492,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Abstractions.IIdentityLogger",
           "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
           "isExtensionMethod": false,
@@ -455,6 +513,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Abstractions.IIdentityLogger",
           "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
           "isExtensionMethod": false,
@@ -477,6 +536,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Abstractions.NullIdentityModelLogger",
           "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions"
         }
@@ -496,6 +556,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.ITelemetryClient",
+          "clrName": "Microsoft.IdentityModel.Abstractions.ITelemetryClient"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.NullTelemetryClient::IsEnabled():System.Boolean",
@@ -512,6 +582,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Abstractions.NullTelemetryClient",
           "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
           "isExtensionMethod": false
@@ -531,6 +602,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Abstractions.NullTelemetryClient",
           "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
           "isExtensionMethod": false
@@ -550,6 +622,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Abstractions.NullTelemetryClient",
           "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
           "isExtensionMethod": false
@@ -569,6 +642,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Abstractions.NullTelemetryClient",
           "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
           "isExtensionMethod": false
@@ -588,6 +662,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Abstractions.NullTelemetryClient",
           "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
           "isExtensionMethod": false
@@ -607,6 +682,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Abstractions.ITelemetryClient",
           "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
           "isExtensionMethod": false,
@@ -627,6 +703,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Abstractions.ITelemetryClient",
           "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
           "isExtensionMethod": false,
@@ -647,6 +724,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Abstractions.ITelemetryClient",
           "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
           "isExtensionMethod": false,
@@ -667,6 +745,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Abstractions.ITelemetryClient",
           "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
           "isExtensionMethod": false,
@@ -687,6 +766,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Abstractions.ITelemetryClient",
           "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
           "isExtensionMethod": false,
@@ -709,6 +789,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Abstractions.NullTelemetryClient",
           "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions"
         },
@@ -727,6 +808,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Abstractions.NullTelemetryClient",
           "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions"
         },
@@ -745,6 +827,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.IdentityModel.Abstractions.ITelemetryClient",
           "declaringClrType": "Microsoft.IdentityModel.Abstractions.ITelemetryClient",
           "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions"
@@ -765,6 +848,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.TelemetryEventDetails::SetProperty(System.String,System.String):System.Void",
@@ -781,6 +868,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Abstractions.TelemetryEventDetails",
           "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
           "isExtensionMethod": false
@@ -800,6 +888,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Abstractions.TelemetryEventDetails",
           "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
           "isExtensionMethod": false
@@ -819,6 +908,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Abstractions.TelemetryEventDetails",
           "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
           "isExtensionMethod": false
@@ -838,6 +928,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Abstractions.TelemetryEventDetails",
           "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
           "isExtensionMethod": false
@@ -857,6 +948,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Abstractions.TelemetryEventDetails",
           "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
           "isExtensionMethod": false
@@ -876,12 +968,32 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Abstractions.TelemetryEventDetails",
           "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions",
           "isExtensionMethod": false
         }
       ],
       "properties": [
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.TelemetryEventDetails::PropertyValues:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "PropertyValues",
+          "metadataToken": 385875976,
+          "canonicalSignature": ":System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "PropertyValues|:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "visibility": "ProtectedInternal",
+          "declaringClrType": "Microsoft.IdentityModel.Abstractions.TelemetryEventDetails",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions"
+        },
         {
           "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.TelemetryEventDetails::Name:System.String",
           "clrName": "Name",
@@ -897,6 +1009,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Abstractions.TelemetryEventDetails",
           "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions"
         },
@@ -915,13 +1028,26 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Abstractions.TelemetryEventDetails",
           "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.TelemetryEventDetails::.ctor():void",
+          "metadataToken": 100663339,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.IdentityModel.Abstractions.TelemetryEventDetails",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions"
+        }
+      ]
     },
     {
       "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.ObservabilityConstants",
@@ -934,6 +1060,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [],
       "fields": [
@@ -945,6 +1075,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Abstractions.ObservabilityConstants",
           "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions"
         },
@@ -956,6 +1087,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Abstractions.ObservabilityConstants",
           "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions"
         },
@@ -967,6 +1099,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Abstractions.ObservabilityConstants",
           "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions"
         },
@@ -978,6 +1111,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Abstractions.ObservabilityConstants",
           "declaringAssemblyName": "Microsoft.IdentityModel.Abstractions"
         }

@@ -15,6 +15,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
       "methods": [],
       "properties": [],
       "fields": [
@@ -26,6 +30,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -37,6 +42,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -48,6 +54,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -59,6 +66,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -70,6 +78,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -81,6 +90,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -92,6 +102,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -103,6 +114,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -114,6 +126,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -125,6 +138,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -136,6 +150,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -147,6 +162,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -158,6 +174,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -169,6 +186,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -180,6 +198,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtHeaderParameterNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         }
@@ -198,6 +217,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
       "methods": [],
       "properties": [],
       "fields": [
@@ -209,6 +232,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -220,6 +244,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -231,6 +256,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -242,6 +268,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -253,6 +280,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -264,6 +292,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -275,6 +304,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -286,6 +316,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -297,6 +328,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -308,6 +340,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -319,6 +352,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -330,6 +364,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -341,6 +376,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -352,6 +388,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -363,6 +400,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -374,6 +412,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -385,6 +424,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -396,6 +436,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -407,6 +448,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -418,6 +460,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -429,6 +472,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -440,6 +484,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -451,6 +496,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -462,6 +508,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -473,6 +520,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -484,6 +532,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -495,6 +544,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -506,6 +556,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -517,6 +568,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -528,6 +580,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -539,6 +592,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -550,6 +604,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -561,6 +616,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -572,6 +628,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -583,6 +640,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -594,6 +652,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -605,6 +664,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -616,6 +676,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -627,6 +688,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         }
@@ -645,6 +707,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.SecurityToken",
+        "clrName": "Microsoft.IdentityModel.Tokens.SecurityToken"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.ISafeLogSecurityArtifact",
+          "clrName": "Microsoft.IdentityModel.Logging.ISafeLogSecurityArtifact"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken::ToString():System.String",
@@ -661,6 +733,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
           "isExtensionMethod": false
@@ -680,6 +753,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
           "isExtensionMethod": false
@@ -699,6 +773,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
           "isExtensionMethod": false
@@ -718,6 +793,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
           "isExtensionMethod": false,
@@ -743,6 +819,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
           "isExtensionMethod": false
@@ -762,6 +839,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
           "isExtensionMethod": false
@@ -781,6 +859,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
           "isExtensionMethod": false,
@@ -806,6 +885,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
           "isExtensionMethod": false,
@@ -831,6 +911,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
           "isExtensionMethod": false,
@@ -856,6 +937,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.ISafeLogSecurityArtifact",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false,
@@ -878,6 +960,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -896,6 +979,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -914,6 +998,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -932,6 +1017,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -950,6 +1036,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -968,6 +1055,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -986,6 +1074,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -1004,6 +1093,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -1012,16 +1102,17 @@
           "clrName": "InnerToken",
           "metadataToken": 385875992,
           "canonicalSignature": ":Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
-          "normalizedSignature": "InnerToken|:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken|static=false|accessor=get",
+          "normalizedSignature": "InnerToken|:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -1040,6 +1131,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -1048,16 +1140,17 @@
           "clrName": "IsSigned",
           "metadataToken": 385875994,
           "canonicalSignature": ":System.Boolean",
-          "normalizedSignature": "IsSigned|:System.Boolean|static=false|accessor=get",
+          "normalizedSignature": "IsSigned|:System.Boolean|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -1076,6 +1169,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -1094,6 +1188,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -1112,6 +1207,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -1130,6 +1226,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -1148,6 +1245,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -1166,6 +1264,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -1184,6 +1283,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -1192,16 +1292,17 @@
           "clrName": "Typ",
           "metadataToken": 385876007,
           "canonicalSignature": ":System.String",
-          "normalizedSignature": "Typ|:System.String|static=false|accessor=get",
+          "normalizedSignature": "Typ|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -1220,6 +1321,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -1238,6 +1340,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -1256,6 +1359,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -1274,6 +1378,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -1292,6 +1397,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -1310,6 +1416,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -1328,6 +1435,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -1346,6 +1454,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -1364,6 +1473,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -1382,6 +1492,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -1400,6 +1511,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         }
@@ -1414,6 +1526,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -1424,6 +1537,7 @@
           "normalizedSignature": "constructor|(System.ReadOnlyMemory_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -1434,6 +1548,7 @@
           "normalizedSignature": "constructor|(System.String,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebToken",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         }
@@ -1450,6 +1565,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.TokenHandler",
+        "clrName": "Microsoft.IdentityModel.Tokens.TokenHandler"
+      },
       "methods": [
         {
           "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler::CreateToken(System.String):System.String",
@@ -1466,6 +1585,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
           "isExtensionMethod": false
@@ -1485,6 +1605,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
           "isExtensionMethod": false
@@ -1504,6 +1625,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
           "isExtensionMethod": false
@@ -1523,6 +1645,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
           "isExtensionMethod": false
@@ -1542,6 +1665,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
           "isExtensionMethod": false
@@ -1561,6 +1685,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
           "isExtensionMethod": false
@@ -1580,6 +1705,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
           "isExtensionMethod": false
@@ -1599,6 +1725,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
           "isExtensionMethod": false
@@ -1618,6 +1745,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
           "isExtensionMethod": false
@@ -1637,6 +1765,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
           "isExtensionMethod": false
@@ -1656,6 +1785,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
           "isExtensionMethod": false
@@ -1675,6 +1805,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
           "isExtensionMethod": false
@@ -1694,6 +1825,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
           "isExtensionMethod": false
@@ -1713,6 +1845,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
           "isExtensionMethod": false
@@ -1732,6 +1865,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
           "isExtensionMethod": false
@@ -1751,6 +1885,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
           "isExtensionMethod": false
@@ -1770,6 +1905,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
           "isExtensionMethod": false
@@ -1789,6 +1925,47 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler::CreateClaimsIdentity(Microsoft.IdentityModel.JsonWebTokens.JsonWebToken,Microsoft.IdentityModel.Tokens.TokenValidationParameters):System.Security.Claims.ClaimsIdentity",
+          "clrName": "CreateClaimsIdentity",
+          "metadataToken": 100663435,
+          "canonicalSignature": "(Microsoft.IdentityModel.JsonWebTokens.JsonWebToken,Microsoft.IdentityModel.Tokens.TokenValidationParameters):System.Security.Claims.ClaimsIdentity",
+          "normalizedSignature": "CreateClaimsIdentity|(Microsoft.IdentityModel.JsonWebTokens.JsonWebToken,Microsoft.IdentityModel.Tokens.TokenValidationParameters):System.Security.Claims.ClaimsIdentity|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler::CreateClaimsIdentity(Microsoft.IdentityModel.JsonWebTokens.JsonWebToken,Microsoft.IdentityModel.Tokens.TokenValidationParameters,System.String):System.Security.Claims.ClaimsIdentity",
+          "clrName": "CreateClaimsIdentity",
+          "metadataToken": 100663436,
+          "canonicalSignature": "(Microsoft.IdentityModel.JsonWebTokens.JsonWebToken,Microsoft.IdentityModel.Tokens.TokenValidationParameters,System.String):System.Security.Claims.ClaimsIdentity",
+          "normalizedSignature": "CreateClaimsIdentity|(Microsoft.IdentityModel.JsonWebTokens.JsonWebToken,Microsoft.IdentityModel.Tokens.TokenValidationParameters,System.String):System.Security.Claims.ClaimsIdentity|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 3,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
           "isExtensionMethod": false
@@ -1808,6 +1985,27 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
+          "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler::ResolveTokenDecryptionKey(System.String,Microsoft.IdentityModel.JsonWebTokens.JsonWebToken,Microsoft.IdentityModel.Tokens.TokenValidationParameters):Microsoft.IdentityModel.Tokens.SecurityKey",
+          "clrName": "ResolveTokenDecryptionKey",
+          "metadataToken": 100663444,
+          "canonicalSignature": "(System.String,Microsoft.IdentityModel.JsonWebTokens.JsonWebToken,Microsoft.IdentityModel.Tokens.TokenValidationParameters):Microsoft.IdentityModel.Tokens.SecurityKey",
+          "normalizedSignature": "ResolveTokenDecryptionKey|(System.String,Microsoft.IdentityModel.JsonWebTokens.JsonWebToken,Microsoft.IdentityModel.Tokens.TokenValidationParameters):Microsoft.IdentityModel.Tokens.SecurityKey|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 3,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
           "isExtensionMethod": false
@@ -1827,6 +2025,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
           "isExtensionMethod": false
@@ -1846,6 +2045,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
           "isExtensionMethod": false
@@ -1865,6 +2065,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
           "isExtensionMethod": false
@@ -1884,6 +2085,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
           "isExtensionMethod": false
@@ -1903,6 +2105,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
           "isExtensionMethod": false
@@ -1922,6 +2125,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
           "isExtensionMethod": false
@@ -1941,6 +2145,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
           "isExtensionMethod": false
@@ -1962,6 +2167,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -1980,6 +2186,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -1998,6 +2205,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -2016,6 +2224,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -2034,6 +2243,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         }
@@ -2047,6 +2257,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -2058,6 +2269,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -2069,6 +2281,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         }
@@ -2082,6 +2295,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         }
@@ -2098,6 +2312,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.IdentityModel.JsonWebTokens:Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities::CreateEncodedSignature(System.String,Microsoft.IdentityModel.Tokens.SigningCredentials):System.String",
@@ -2114,6 +2332,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
           "isExtensionMethod": false
@@ -2133,6 +2352,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
           "isExtensionMethod": false
@@ -2152,6 +2372,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
           "isExtensionMethod": false
@@ -2171,6 +2392,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens",
           "isExtensionMethod": false
@@ -2186,6 +2408,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -2197,6 +2420,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         }
@@ -2210,6 +2434,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         }
@@ -2226,6 +2451,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [],
       "fields": [
@@ -2237,6 +2466,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonClaimValueTypes",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -2248,6 +2478,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonClaimValueTypes",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -2259,6 +2490,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JsonClaimValueTypes",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         }
@@ -2277,6 +2509,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [],
       "fields": [
@@ -2288,6 +2524,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtConstants",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -2299,6 +2536,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtConstants",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -2310,6 +2548,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtConstants",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -2321,6 +2560,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtConstants",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -2332,6 +2572,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtConstants",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -2343,6 +2584,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtConstants",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -2354,6 +2596,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtConstants",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -2365,6 +2608,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtConstants",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -2376,6 +2620,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtConstants",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         },
@@ -2387,6 +2632,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.JsonWebTokens.JwtConstants",
           "declaringAssemblyName": "Microsoft.IdentityModel.JsonWebTokens"
         }

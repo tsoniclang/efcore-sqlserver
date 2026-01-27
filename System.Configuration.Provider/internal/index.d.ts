@@ -12,7 +12,7 @@ import type { NameValueCollection } from "@tsonic/dotnet/System.Collections.Spec
 import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Boolean as ClrBoolean, Exception, Int32, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
 import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization.js";
+import type { ISerializable, SerializationInfo, StreamingContext } from "@tsonic/dotnet/System.Runtime.Serialization.js";
 
 export interface ProviderBase$instance {
     readonly Description: string;
@@ -22,6 +22,7 @@ export interface ProviderBase$instance {
 
 
 export const ProviderBase: {
+    new(): ProviderBase;
 };
 
 
@@ -56,6 +57,7 @@ export const ProviderException: {
     new(): ProviderException;
     new(message: string): ProviderException;
     new(message: string, innerException: Exception): ProviderException;
+    new(info: SerializationInfo, context: StreamingContext): ProviderException;
 };
 
 

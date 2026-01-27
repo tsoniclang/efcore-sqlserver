@@ -17,6 +17,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalPeriodPropertyBuilder::HasColumnName(System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalPeriodPropertyBuilder",
@@ -33,6 +37,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalPeriodPropertyBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -52,6 +57,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalPeriodPropertyBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -71,6 +77,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalPeriodPropertyBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -90,6 +97,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalPeriodPropertyBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -109,6 +117,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalPeriodPropertyBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -125,6 +134,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalPeriodPropertyBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }
@@ -141,6 +151,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder::UseHistoryTable(System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder",
@@ -157,6 +171,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -176,6 +191,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -195,6 +211,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -214,6 +231,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -233,6 +251,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -252,6 +271,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -271,6 +291,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -287,6 +308,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationBuilder):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }
@@ -303,6 +325,14 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 2,
+      "baseType": {
+        "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder",
+        "clrName": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder"
+      },
+      "typeParameters": [
+        "TOwnerEntity",
+        "TDependentEntity"
+      ],
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder\u00602::UseHistoryTable(System.String):OwnedNavigationTemporalTableBuilder_2",
@@ -319,6 +349,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder\u00602",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -338,6 +369,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder\u00602",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -357,6 +389,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder\u00602",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -376,6 +409,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder\u00602",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -392,6 +426,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationBuilder):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.OwnedNavigationTemporalTableBuilder\u00602",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }
@@ -408,6 +443,19 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure\u00601",
+          "clrName": "Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure\u00601",
+          "typeArguments": [
+            "PropertyBuilder"
+          ]
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalPeriodPropertyBuilder::HasColumnName(System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalPeriodPropertyBuilder",
@@ -424,6 +472,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalPeriodPropertyBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -443,6 +492,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalPeriodPropertyBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -462,6 +512,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalPeriodPropertyBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -481,6 +532,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalPeriodPropertyBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -500,6 +552,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalPeriodPropertyBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -516,6 +569,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalPeriodPropertyBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }
@@ -532,6 +586,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder::UseHistoryTable(System.String):Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder",
@@ -548,6 +606,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -567,6 +626,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -586,6 +646,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -605,6 +666,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -624,6 +686,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -643,6 +706,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -662,6 +726,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -678,6 +743,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }
@@ -694,6 +760,13 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 1,
+      "baseType": {
+        "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder",
+        "clrName": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder"
+      },
+      "typeParameters": [
+        "TEntity"
+      ],
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder\u00601::UseHistoryTable(System.String):TemporalTableBuilder_1",
@@ -710,6 +783,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder\u00601",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -729,6 +803,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder\u00601",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -748,6 +823,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder\u00601",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -767,6 +843,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder\u00601",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -783,6 +860,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Builders.TemporalTableBuilder\u00601",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }

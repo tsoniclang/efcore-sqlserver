@@ -14,11 +14,11 @@ import type { KeyedCollection } from '@tsonic/dotnet/System.Collections.ObjectMo
 import type { Activity, ActivityContext, ActivityKind, ActivitySource } from '@tsonic/dotnet/System.Diagnostics.js';
 import type { Stream } from '@tsonic/dotnet/System.IO.js';
 import type { Attribute, Boolean as ClrBoolean, DateTimeOffset, Enum, Exception, Func, IComparable, IConvertible, IDisposable, IFormattable, Int32, ISpanFormattable, Nullable, Object as ClrObject, ReadOnlySpan, String as ClrString, TimeSpan, Type, UInt16, Uri, ValueType, Void } from '@tsonic/dotnet/System.js';
-import type { HttpClient } from '@tsonic/dotnet/System.Net.Http.js';
+import type { HttpClient, HttpRequestMessage, HttpResponseMessage } from '@tsonic/dotnet/System.Net.Http.js';
 import type { JsonSerializerOptions, Utf8JsonReader, Utf8JsonWriter } from '@tsonic/dotnet/System.Text.Json.js';
 import type { JsonConverter } from '@tsonic/dotnet/System.Text.Json.Serialization.js';
 import type { CancellationToken } from '@tsonic/dotnet/System.Threading.js';
-import type { ValueTask } from '@tsonic/dotnet/System.Threading.Tasks.js';
+import type { Task, ValueTask } from '@tsonic/dotnet/System.Threading.Tasks.js';
 import type { ILoggerFactory } from '@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js';
 
 // Public API exports (curated - no internal $instance/$views leakage)

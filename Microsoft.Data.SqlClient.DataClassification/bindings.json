@@ -15,6 +15,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -26,6 +48,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.DataClassification.SensitivityRank",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -37,6 +60,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.DataClassification.SensitivityRank",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -48,6 +72,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.DataClassification.SensitivityRank",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -59,6 +84,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.DataClassification.SensitivityRank",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -70,6 +96,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.DataClassification.SensitivityRank",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -81,6 +108,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.DataClassification.SensitivityRank",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -92,6 +120,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.DataClassification.SensitivityRank",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -110,6 +139,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -127,6 +160,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.DataClassification.ColumnSensitivity",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -141,6 +175,7 @@
           "normalizedSignature": "constructor|(System.Collections.Generic.IList_1[[Microsoft.Data.SqlClient.DataClassification.SensitivityProperty,Microsoft.Data.SqlClient,Version=6.0.0.0,Culture=neutral,PublicKeyToken=23ec7fc2d6eaa4a5]]):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.DataClassification.ColumnSensitivity",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -157,6 +192,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -174,6 +213,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.DataClassification.InformationType",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -192,6 +232,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.DataClassification.InformationType",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -206,6 +247,7 @@
           "normalizedSignature": "constructor|(System.String,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.DataClassification.InformationType",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -222,6 +264,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -239,6 +285,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.DataClassification.Label",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -257,6 +304,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.DataClassification.Label",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -271,6 +319,7 @@
           "normalizedSignature": "constructor|(System.String,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.DataClassification.Label",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -287,6 +336,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -304,6 +357,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.DataClassification.SensitivityClassification",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -322,6 +376,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.DataClassification.SensitivityClassification",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -340,6 +395,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.DataClassification.SensitivityClassification",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -358,6 +414,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.DataClassification.SensitivityClassification",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -372,6 +429,7 @@
           "normalizedSignature": "constructor|(System.Collections.Generic.IList_1[[Microsoft.Data.SqlClient.DataClassification.Label,Microsoft.Data.SqlClient,Version=6.0.0.0,Culture=neutral,PublicKeyToken=23ec7fc2d6eaa4a5]],System.Collections.Generic.IList_1[[Microsoft.Data.SqlClient.DataClassification.InformationType,Microsoft.Data.SqlClient,Version=6.0.0.0,Culture=neutral,PublicKeyToken=23ec7fc2d6eaa4a5]],System.Collections.Generic.IList_1[[Microsoft.Data.SqlClient.DataClassification.ColumnSensitivity,Microsoft.Data.SqlClient,Version=6.0.0.0,Culture=neutral,PublicKeyToken=23ec7fc2d6eaa4a5]],Microsoft.Data.SqlClient.DataClassification.SensitivityRank):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.DataClassification.SensitivityClassification",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -388,6 +446,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -405,6 +467,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.DataClassification.SensitivityProperty",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -423,6 +486,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.DataClassification.SensitivityProperty",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         },
@@ -441,6 +505,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.DataClassification.SensitivityProperty",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }
@@ -455,6 +520,7 @@
           "normalizedSignature": "constructor|(Microsoft.Data.SqlClient.DataClassification.Label,Microsoft.Data.SqlClient.DataClassification.InformationType,Microsoft.Data.SqlClient.DataClassification.SensitivityRank):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlClient.DataClassification.SensitivityProperty",
           "declaringAssemblyName": "Microsoft.Data.SqlClient"
         }

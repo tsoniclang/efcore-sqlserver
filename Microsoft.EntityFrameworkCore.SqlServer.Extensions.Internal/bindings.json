@@ -15,6 +15,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Extensions.Internal.SqlServerLoggerExtensions::DecimalTypeKeyWarning(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BModel\u002BValidation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Metadata.IProperty):System.Void",
@@ -31,6 +35,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Extensions.Internal.SqlServerLoggerExtensions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": true
@@ -50,6 +55,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Extensions.Internal.SqlServerLoggerExtensions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": true
@@ -69,6 +75,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Extensions.Internal.SqlServerLoggerExtensions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": true
@@ -88,6 +95,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Extensions.Internal.SqlServerLoggerExtensions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": true
@@ -107,6 +115,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Extensions.Internal.SqlServerLoggerExtensions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": true
@@ -126,6 +135,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Extensions.Internal.SqlServerLoggerExtensions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": true
@@ -145,6 +155,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Extensions.Internal.SqlServerLoggerExtensions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": true
@@ -164,6 +175,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Extensions.Internal.SqlServerLoggerExtensions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": true
@@ -183,6 +195,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Extensions.Internal.SqlServerLoggerExtensions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": true
@@ -202,6 +215,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Extensions.Internal.SqlServerLoggerExtensions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": true
@@ -221,6 +235,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Extensions.Internal.SqlServerLoggerExtensions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": true
@@ -240,6 +255,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Extensions.Internal.SqlServerLoggerExtensions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": true
@@ -259,6 +275,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Extensions.Internal.SqlServerLoggerExtensions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": true
@@ -278,6 +295,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Extensions.Internal.SqlServerLoggerExtensions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": true
@@ -297,6 +315,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Extensions.Internal.SqlServerLoggerExtensions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": true
@@ -316,6 +335,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Extensions.Internal.SqlServerLoggerExtensions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": true
@@ -335,6 +355,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Extensions.Internal.SqlServerLoggerExtensions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": true
@@ -354,6 +375,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Extensions.Internal.SqlServerLoggerExtensions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": true
@@ -373,6 +395,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Extensions.Internal.SqlServerLoggerExtensions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": true
@@ -392,6 +415,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Extensions.Internal.SqlServerLoggerExtensions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": true
@@ -411,6 +435,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Extensions.Internal.SqlServerLoggerExtensions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": true
@@ -430,6 +455,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Extensions.Internal.SqlServerLoggerExtensions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": true
@@ -449,6 +475,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Extensions.Internal.SqlServerLoggerExtensions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": true

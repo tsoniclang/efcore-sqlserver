@@ -7,7 +7,7 @@ import * as Internal from './Microsoft.EntityFrameworkCore.SqlServer.Migrations.
 
 // Cross-namespace type imports for constraints
 import type { IEnumerable } from '@tsonic/dotnet/System.Collections.Generic.js';
-import type { IAsyncDisposable, IDisposable, Object as ClrObject, String as ClrString, Void } from '@tsonic/dotnet/System.js';
+import type { Boolean as ClrBoolean, IAsyncDisposable, IDisposable, Object as ClrObject, String as ClrString, Void } from '@tsonic/dotnet/System.js';
 import type { CancellationToken } from '@tsonic/dotnet/System.Threading.js';
 import type { Task, ValueTask } from '@tsonic/dotnet/System.Threading.Tasks.js';
 import type { IAnnotation } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure.js';

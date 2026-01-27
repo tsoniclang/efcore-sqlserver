@@ -65,6 +65,7 @@ export interface AuthenticationProtocolMessage$instance {
 
 
 export const AuthenticationProtocolMessage: {
+    new(): AuthenticationProtocolMessage;
 };
 
 

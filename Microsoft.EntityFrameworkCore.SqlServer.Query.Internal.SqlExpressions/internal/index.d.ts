@@ -8,15 +8,20 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 // Import types from other namespaces
 import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { IReadOnlyList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { Boolean as ClrBoolean, Int32, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
+import type { Boolean as ClrBoolean, Int32, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
 import type { Expression } from "@tsonic/dotnet/System.Linq.Expressions.js";
 import * as Microsoft_EntityFrameworkCore_Query_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query.js";
-import type { IPrintableExpression, IRelationalQuotableExpression } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query.js";
+import type { ExpressionPrinter, IPrintableExpression, IRelationalQuotableExpression } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query.js";
 import * as Microsoft_EntityFrameworkCore_Query_SqlExpressions_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query.SqlExpressions.js";
 import type { SqlExpression, SqlFunctionExpression } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query.SqlExpressions.js";
 import type { RelationalTypeMapping } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
 
-export interface SqlServerJsonObjectExpression$instance extends SqlFunctionExpression {
+export abstract class SqlServerJsonObjectExpression$protected {
+    protected Print(expressionPrinter: ExpressionPrinter): void;
+}
+
+
+export interface SqlServerJsonObjectExpression$instance extends SqlServerJsonObjectExpression$protected, SqlFunctionExpression {
     readonly PropertyNames: IReadOnlyList<System_Internal.String>;
     Equals(obj: unknown): boolean;
     GetHashCode(): int;

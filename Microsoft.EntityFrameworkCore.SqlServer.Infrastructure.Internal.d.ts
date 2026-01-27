@@ -6,11 +6,12 @@
 import * as Internal from './Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal/internal/index.js';
 
 // Cross-namespace type imports for constraints
-import type { Boolean as ClrBoolean, Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Nullable, Object as ClrObject, Void } from '@tsonic/dotnet/System.js';
+import type { IReadOnlyList } from '@tsonic/dotnet/System.Collections.Generic.js';
+import type { Boolean as ClrBoolean, Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Nullable, Object as ClrObject, String as ClrString, Void } from '@tsonic/dotnet/System.js';
 import type { IDiagnosticsLogger } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics.js';
 import type { DbContextOptionsExtensionInfo, IDbContextOptions, IDbContextOptionsExtension, IModelValidator, ISingletonOptions, ModelValidatorDependencies, RelationalModelValidator, RelationalModelValidatorDependencies, RelationalOptionsExtension } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure.js';
 import type { DbLoggerCategory$Model$Validation } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.js';
-import type { IModel } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js';
+import type { IEntityType, IIndex, IKey, IModel, IProperty, StoreObjectIdentifier } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js';
 import type { IServiceCollection } from '@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection.js';
 
 // Public API exports (curated - no internal $instance/$views leakage)

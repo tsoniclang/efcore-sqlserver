@@ -16,6 +16,24 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Migrations.Operations.DatabaseOperation",
+        "clrName": "Microsoft.EntityFrameworkCore.Migrations.Operations.DatabaseOperation"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Infrastructure.IAnnotatable",
+          "clrName": "Microsoft.EntityFrameworkCore.Infrastructure.IAnnotatable"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Infrastructure.IReadOnlyAnnotatable",
+          "clrName": "Microsoft.EntityFrameworkCore.Infrastructure.IReadOnlyAnnotatable"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.IMutableAnnotatable",
+          "clrName": "Microsoft.EntityFrameworkCore.Metadata.IMutableAnnotatable"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -33,6 +51,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Migrations.Operations.SqlServerCreateDatabaseOperation",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         },
@@ -51,6 +70,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Migrations.Operations.SqlServerCreateDatabaseOperation",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }
@@ -65,6 +85,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Migrations.Operations.SqlServerCreateDatabaseOperation",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }
@@ -81,6 +102,24 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Migrations.Operations.MigrationOperation",
+        "clrName": "Microsoft.EntityFrameworkCore.Migrations.Operations.MigrationOperation"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Infrastructure.IAnnotatable",
+          "clrName": "Microsoft.EntityFrameworkCore.Infrastructure.IAnnotatable"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Infrastructure.IReadOnlyAnnotatable",
+          "clrName": "Microsoft.EntityFrameworkCore.Infrastructure.IReadOnlyAnnotatable"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.IMutableAnnotatable",
+          "clrName": "Microsoft.EntityFrameworkCore.Metadata.IMutableAnnotatable"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -98,6 +137,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Migrations.Operations.SqlServerDropDatabaseOperation",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }
@@ -112,6 +152,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Migrations.Operations.SqlServerDropDatabaseOperation",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }

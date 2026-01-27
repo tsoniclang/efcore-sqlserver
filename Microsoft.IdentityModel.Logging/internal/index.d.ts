@@ -9,7 +9,7 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 import type { EventLogLevel, IIdentityLogger } from "../../Microsoft.IdentityModel.Abstractions/internal/index.js";
 import type { ICollection, IDictionary } from "@tsonic/dotnet/System.Collections.Generic.js";
 import * as System_Diagnostics_Tracing_Internal from "@tsonic/dotnet/System.Diagnostics.Tracing.js";
-import type { EventLevel, EventListener, EventSource } from "@tsonic/dotnet/System.Diagnostics.Tracing.js";
+import type { EventLevel, EventListener, EventSource, EventWrittenEventArgs } from "@tsonic/dotnet/System.Diagnostics.Tracing.js";
 import type { StreamWriter } from "@tsonic/dotnet/System.IO.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { ArgumentException, ArgumentNullException, Boolean as ClrBoolean, Exception, Func, Guid, IDisposable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
@@ -57,7 +57,7 @@ export interface LoggerContext$instance {
     ActivityId: Guid;
     CaptureLogs: boolean;
     DebugId: string;
-    readonly Logs: ICollection<System_Internal.String>;
+    Logs: ICollection<System_Internal.String>;
     PropertyBag: IDictionary<System_Internal.String, unknown>;
 }
 
@@ -110,7 +110,12 @@ export const LogHelper: {
 
 export type LogHelper = LogHelper$instance;
 
-export interface TextWriterEventListener$instance extends EventListener {
+export abstract class TextWriterEventListener$protected {
+    protected OnEventWritten(eventData: EventWrittenEventArgs): void;
+}
+
+
+export interface TextWriterEventListener$instance extends TextWriterEventListener$protected, EventListener {
     Dispose(): void;
 }
 

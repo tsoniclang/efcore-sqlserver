@@ -15,6 +15,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -26,6 +48,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         },
@@ -37,6 +60,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         },
@@ -48,6 +72,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         },
@@ -59,6 +84,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         },
@@ -70,6 +96,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }
@@ -88,6 +115,12 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Infrastructure.ISingletonOptions",
+          "clrName": "Microsoft.EntityFrameworkCore.Infrastructure.ISingletonOptions"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -105,6 +138,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         },
@@ -123,6 +157,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         },
@@ -141,6 +176,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         },
@@ -159,6 +195,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         },
@@ -177,6 +214,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         },
@@ -195,6 +233,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         },
@@ -213,6 +252,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }
@@ -232,6 +272,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Infrastructure.RelationalModelValidator",
+        "clrName": "Microsoft.EntityFrameworkCore.Infrastructure.RelationalModelValidator"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Infrastructure.IModelValidator",
+          "clrName": "Microsoft.EntityFrameworkCore.Infrastructure.IModelValidator"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerModelValidator::Validate(Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BModel\u002BValidation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
@@ -248,9 +298,280 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerModelValidator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerModelValidator::ValidateDecimalColumns(Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BModel\u002BValidation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
+          "clrName": "ValidateDecimalColumns",
+          "metadataToken": 100665185,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BModel\u002BValidation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
+          "normalizedSignature": "ValidateDecimalColumns|(Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BModel\u002BValidation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerModelValidator",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerModelValidator::ValidateVectorColumns(Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BModel\u002BValidation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
+          "clrName": "ValidateVectorColumns",
+          "metadataToken": 100665186,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BModel\u002BValidation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
+          "normalizedSignature": "ValidateVectorColumns|(Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BModel\u002BValidation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerModelValidator",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerModelValidator::ValidateByteIdentityMapping(Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BModel\u002BValidation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
+          "clrName": "ValidateByteIdentityMapping",
+          "metadataToken": 100665187,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BModel\u002BValidation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
+          "normalizedSignature": "ValidateByteIdentityMapping|(Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BModel\u002BValidation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerModelValidator",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerModelValidator::ValidateValueGeneration(Microsoft.EntityFrameworkCore.Metadata.IEntityType,Microsoft.EntityFrameworkCore.Metadata.IKey,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BModel\u002BValidation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
+          "clrName": "ValidateValueGeneration",
+          "metadataToken": 100665188,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IEntityType,Microsoft.EntityFrameworkCore.Metadata.IKey,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BModel\u002BValidation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
+          "normalizedSignature": "ValidateValueGeneration|(Microsoft.EntityFrameworkCore.Metadata.IEntityType,Microsoft.EntityFrameworkCore.Metadata.IKey,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BModel\u002BValidation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 3,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerModelValidator",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerModelValidator::ValidateTypeMappings(Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BModel\u002BValidation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
+          "clrName": "ValidateTypeMappings",
+          "metadataToken": 100665189,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BModel\u002BValidation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
+          "normalizedSignature": "ValidateTypeMappings|(Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BModel\u002BValidation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerModelValidator",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerModelValidator::ValidateIndexIncludeProperties(Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BModel\u002BValidation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
+          "clrName": "ValidateIndexIncludeProperties",
+          "metadataToken": 100665190,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BModel\u002BValidation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
+          "normalizedSignature": "ValidateIndexIncludeProperties|(Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BModel\u002BValidation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerModelValidator",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerModelValidator::ValidateTemporalTables(Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BModel\u002BValidation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
+          "clrName": "ValidateTemporalTables",
+          "metadataToken": 100665191,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BModel\u002BValidation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
+          "normalizedSignature": "ValidateTemporalTables|(Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BModel\u002BValidation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerModelValidator",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerModelValidator::ValidateSharedTableCompatibility(System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Metadata.IEntityType,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier\u0026,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BModel\u002BValidation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
+          "clrName": "ValidateSharedTableCompatibility",
+          "metadataToken": 100665193,
+          "canonicalSignature": "(System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Metadata.IEntityType,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier\u0026,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BModel\u002BValidation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
+          "normalizedSignature": "ValidateSharedTableCompatibility|(System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Metadata.IEntityType,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier\u0026,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BModel\u002BValidation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 3,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerModelValidator",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false,
+          "parameterModifiers": [
+            {
+              "index": 1,
+              "modifier": "in"
+            }
+          ]
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerModelValidator::ValidateSharedColumnsCompatibility(System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Metadata.IEntityType,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier\u0026,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BModel\u002BValidation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
+          "clrName": "ValidateSharedColumnsCompatibility",
+          "metadataToken": 100665194,
+          "canonicalSignature": "(System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Metadata.IEntityType,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier\u0026,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BModel\u002BValidation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
+          "normalizedSignature": "ValidateSharedColumnsCompatibility|(System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Metadata.IEntityType,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier\u0026,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BModel\u002BValidation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 3,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerModelValidator",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false,
+          "parameterModifiers": [
+            {
+              "index": 1,
+              "modifier": "in"
+            }
+          ]
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerModelValidator::ValidateCompatible(Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Metadata.IProperty,System.String,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier\u0026,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BModel\u002BValidation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
+          "clrName": "ValidateCompatible",
+          "metadataToken": 100665195,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Metadata.IProperty,System.String,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier\u0026,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BModel\u002BValidation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
+          "normalizedSignature": "ValidateCompatible|(Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Metadata.IProperty,System.String,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier\u0026,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BModel\u002BValidation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 5,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerModelValidator",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false,
+          "parameterModifiers": [
+            {
+              "index": 3,
+              "modifier": "in"
+            }
+          ]
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerModelValidator::ValidateCompatible(Microsoft.EntityFrameworkCore.Metadata.IKey,Microsoft.EntityFrameworkCore.Metadata.IKey,System.String,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier\u0026,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BModel\u002BValidation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
+          "clrName": "ValidateCompatible",
+          "metadataToken": 100665196,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IKey,Microsoft.EntityFrameworkCore.Metadata.IKey,System.String,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier\u0026,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BModel\u002BValidation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
+          "normalizedSignature": "ValidateCompatible|(Microsoft.EntityFrameworkCore.Metadata.IKey,Microsoft.EntityFrameworkCore.Metadata.IKey,System.String,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier\u0026,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BModel\u002BValidation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 5,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerModelValidator",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false,
+          "parameterModifiers": [
+            {
+              "index": 3,
+              "modifier": "in"
+            }
+          ]
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerModelValidator::ValidateCompatible(Microsoft.EntityFrameworkCore.Metadata.IIndex,Microsoft.EntityFrameworkCore.Metadata.IIndex,System.String,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier\u0026,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BModel\u002BValidation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
+          "clrName": "ValidateCompatible",
+          "metadataToken": 100665197,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IIndex,Microsoft.EntityFrameworkCore.Metadata.IIndex,System.String,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier\u0026,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BModel\u002BValidation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
+          "normalizedSignature": "ValidateCompatible|(Microsoft.EntityFrameworkCore.Metadata.IIndex,Microsoft.EntityFrameworkCore.Metadata.IIndex,System.String,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier\u0026,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BModel\u002BValidation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 5,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerModelValidator",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false,
+          "parameterModifiers": [
+            {
+              "index": 3,
+              "modifier": "in"
+            }
+          ]
         }
       ],
       "properties": [],
@@ -264,6 +585,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Infrastructure.ModelValidatorDependencies,Microsoft.EntityFrameworkCore.Infrastructure.RelationalModelValidatorDependencies):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerModelValidator",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }
@@ -280,7 +602,37 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Infrastructure.RelationalOptionsExtension",
+        "clrName": "Microsoft.EntityFrameworkCore.Infrastructure.RelationalOptionsExtension"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Infrastructure.IDbContextOptionsExtension",
+          "clrName": "Microsoft.EntityFrameworkCore.Infrastructure.IDbContextOptionsExtension"
+        }
+      ],
       "methods": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension::Clone():Microsoft.EntityFrameworkCore.Infrastructure.RelationalOptionsExtension",
+          "clrName": "Clone",
+          "metadataToken": 100665201,
+          "canonicalSignature": "():Microsoft.EntityFrameworkCore.Infrastructure.RelationalOptionsExtension",
+          "normalizedSignature": "Clone|():Microsoft.EntityFrameworkCore.Infrastructure.RelationalOptionsExtension|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension::WithEngineType(Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType):Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
           "clrName": "WithEngineType",
@@ -296,6 +648,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -315,6 +668,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -334,6 +688,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -353,6 +708,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -372,6 +728,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -391,6 +748,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -410,6 +768,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -429,6 +788,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -448,6 +808,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -469,6 +830,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         },
@@ -487,6 +849,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         },
@@ -505,6 +868,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         },
@@ -523,6 +887,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         },
@@ -541,6 +906,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         },
@@ -559,6 +925,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }
@@ -572,6 +939,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         },
@@ -583,6 +951,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         },
@@ -594,6 +963,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }
@@ -607,6 +977,18 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension::.ctor(Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension):void",
+          "metadataToken": 100665199,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerOptionsExtension",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }
@@ -623,6 +1005,20 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
+          "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Infrastructure.ISingletonOptions",
+          "clrName": "Microsoft.EntityFrameworkCore.Infrastructure.ISingletonOptions"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerSingletonOptions::Initialize(Microsoft.EntityFrameworkCore.Infrastructure.IDbContextOptions):System.Void",
@@ -639,6 +1035,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerSingletonOptions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -658,6 +1055,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerSingletonOptions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -669,16 +1067,17 @@
           "clrName": "EngineType",
           "metadataToken": 385876197,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType",
-          "normalizedSignature": "EngineType|:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType|static=false|accessor=get",
+          "normalizedSignature": "EngineType|:Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerEngineType|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerSingletonOptions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         },
@@ -687,16 +1086,17 @@
           "clrName": "SqlServerCompatibilityLevel",
           "metadataToken": 385876198,
           "canonicalSignature": ":System.Int32",
-          "normalizedSignature": "SqlServerCompatibilityLevel|:System.Int32|static=false|accessor=get",
+          "normalizedSignature": "SqlServerCompatibilityLevel|:System.Int32|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerSingletonOptions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         },
@@ -705,16 +1105,17 @@
           "clrName": "AzureSqlCompatibilityLevel",
           "metadataToken": 385876199,
           "canonicalSignature": ":System.Int32",
-          "normalizedSignature": "AzureSqlCompatibilityLevel|:System.Int32|static=false|accessor=get",
+          "normalizedSignature": "AzureSqlCompatibilityLevel|:System.Int32|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerSingletonOptions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         },
@@ -723,16 +1124,17 @@
           "clrName": "AzureSynapseCompatibilityLevel",
           "metadataToken": 385876200,
           "canonicalSignature": ":System.Int32",
-          "normalizedSignature": "AzureSynapseCompatibilityLevel|:System.Int32|static=false|accessor=get",
+          "normalizedSignature": "AzureSynapseCompatibilityLevel|:System.Int32|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerSingletonOptions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         },
@@ -751,6 +1153,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerSingletonOptions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         },
@@ -769,6 +1172,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerSingletonOptions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         },
@@ -787,6 +1191,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerSingletonOptions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         },
@@ -805,6 +1210,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
@@ -824,6 +1230,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
@@ -843,6 +1250,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
@@ -862,6 +1270,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
@@ -881,6 +1290,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
@@ -900,6 +1310,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
@@ -919,6 +1330,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.ISqlServerSingletonOptions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
@@ -934,6 +1346,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerSingletonOptions",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }

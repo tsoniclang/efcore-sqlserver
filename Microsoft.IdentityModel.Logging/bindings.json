@@ -31,6 +31,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.ISafeLogSecurityArtifact",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
@@ -52,6 +53,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Diagnostics.Tracing.EventSource",
+        "clrName": "System.Diagnostics.Tracing.EventSource"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.IdentityModelEventSource::WriteAlways(System.String):System.Void",
@@ -68,6 +79,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
@@ -87,6 +99,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
@@ -106,6 +119,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
@@ -125,6 +139,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
@@ -144,6 +159,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
@@ -163,6 +179,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
@@ -182,6 +199,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
@@ -201,6 +219,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
@@ -220,6 +239,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
@@ -239,6 +259,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
@@ -258,6 +279,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
@@ -277,6 +299,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
@@ -296,6 +319,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
@@ -315,6 +339,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
@@ -336,6 +361,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging"
         },
@@ -354,6 +380,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging"
         },
@@ -372,6 +399,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging"
         },
@@ -390,6 +418,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging"
         },
@@ -408,6 +437,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging"
         },
@@ -426,6 +456,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging"
         },
@@ -444,6 +475,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging"
         }
@@ -463,6 +495,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -480,6 +516,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.LoggerContext",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging"
         },
@@ -498,6 +535,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.LoggerContext",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging"
         },
@@ -516,6 +554,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.LoggerContext",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging"
         },
@@ -524,16 +563,17 @@
           "clrName": "Logs",
           "metadataToken": 385875981,
           "canonicalSignature": ":System.Collections.Generic.ICollection_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "normalizedSignature": "Logs|:System.Collections.Generic.ICollection_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "normalizedSignature": "Logs|:System.Collections.Generic.ICollection_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.LoggerContext",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging"
         },
@@ -552,6 +592,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.LoggerContext",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging"
         }
@@ -566,6 +607,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.LoggerContext",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging"
         },
@@ -576,6 +618,7 @@
           "normalizedSignature": "constructor|(System.Guid):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.LoggerContext",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging"
         }
@@ -592,6 +635,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.LogHelper::IsEnabled(Microsoft.IdentityModel.Abstractions.EventLogLevel):System.Boolean",
@@ -608,6 +655,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
@@ -627,6 +675,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
@@ -646,6 +695,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
@@ -665,6 +715,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
@@ -684,6 +735,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
@@ -703,6 +755,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
@@ -722,6 +775,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
@@ -741,6 +795,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
@@ -760,6 +815,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
@@ -779,6 +835,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
@@ -798,6 +855,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
@@ -817,6 +875,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
@@ -836,6 +895,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
@@ -855,6 +915,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
@@ -874,6 +935,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
@@ -893,6 +955,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
@@ -912,6 +975,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
@@ -931,6 +995,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
@@ -950,6 +1015,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
@@ -969,6 +1035,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
@@ -988,6 +1055,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
@@ -1007,6 +1075,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
@@ -1026,6 +1095,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
@@ -1045,6 +1115,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
@@ -1064,6 +1135,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
@@ -1083,6 +1155,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
@@ -1102,6 +1175,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
@@ -1121,6 +1195,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
@@ -1142,6 +1217,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging"
         }
@@ -1156,6 +1232,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging"
         }
@@ -1172,7 +1249,37 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Diagnostics.Tracing.EventListener",
+        "clrName": "System.Diagnostics.Tracing.EventListener"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
       "methods": [
+        {
+          "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.TextWriterEventListener::OnEventWritten(System.Diagnostics.Tracing.EventWrittenEventArgs):System.Void",
+          "clrName": "OnEventWritten",
+          "metadataToken": 100663400,
+          "canonicalSignature": "(System.Diagnostics.Tracing.EventWrittenEventArgs):System.Void",
+          "normalizedSignature": "OnEventWritten|(System.Diagnostics.Tracing.EventWrittenEventArgs):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.IdentityModel.Logging.TextWriterEventListener",
+          "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
+          "isExtensionMethod": false
+        },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.TextWriterEventListener::Dispose():System.Void",
           "clrName": "Dispose",
@@ -1188,6 +1295,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.TextWriterEventListener",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
@@ -1203,6 +1311,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.TextWriterEventListener",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging"
         }
@@ -1216,6 +1325,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.TextWriterEventListener",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging"
         },
@@ -1226,6 +1336,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.TextWriterEventListener",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging"
         },
@@ -1236,6 +1347,7 @@
           "normalizedSignature": "constructor|(System.IO.StreamWriter):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.TextWriterEventListener",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging"
         }
@@ -1252,6 +1364,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.IdentityModelTelemetryUtil::AddTelemetryData(System.String,System.String):System.Boolean",
@@ -1268,6 +1384,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.IdentityModelTelemetryUtil",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
@@ -1287,6 +1404,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.IdentityModelTelemetryUtil",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
@@ -1308,6 +1426,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.IdentityModelTelemetryUtil",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging"
         },
@@ -1326,6 +1445,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Logging.IdentityModelTelemetryUtil",
           "declaringAssemblyName": "Microsoft.IdentityModel.Logging"
         }

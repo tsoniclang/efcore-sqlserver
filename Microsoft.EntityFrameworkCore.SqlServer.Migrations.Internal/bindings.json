@@ -15,7 +15,37 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Migrations.HistoryRepository",
+        "clrName": "Microsoft.EntityFrameworkCore.Migrations.HistoryRepository"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Migrations.IHistoryRepository",
+          "clrName": "Microsoft.EntityFrameworkCore.Migrations.IHistoryRepository"
+        }
+      ],
       "methods": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerHistoryRepository::InterpretExistsResult(System.Object):System.Boolean",
+          "clrName": "InterpretExistsResult",
+          "metadataToken": 100665149,
+          "canonicalSignature": "(System.Object):System.Boolean",
+          "normalizedSignature": "InterpretExistsResult|(System.Object):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerHistoryRepository",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerHistoryRepository::AcquireDatabaseLock():Microsoft.EntityFrameworkCore.Migrations.IMigrationsDatabaseLock",
           "clrName": "AcquireDatabaseLock",
@@ -31,6 +61,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerHistoryRepository",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -50,6 +81,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerHistoryRepository",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -69,6 +101,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerHistoryRepository",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -88,6 +121,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerHistoryRepository",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -107,6 +141,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerHistoryRepository",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -126,12 +161,32 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerHistoryRepository",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
         }
       ],
       "properties": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerHistoryRepository::ExistsSql:System.String",
+          "clrName": "ExistsSql",
+          "metadataToken": 385876181,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "ExistsSql|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerHistoryRepository",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerHistoryRepository::LockReleaseBehavior:Microsoft.EntityFrameworkCore.Migrations.LockReleaseBehavior",
           "clrName": "LockReleaseBehavior",
@@ -147,6 +202,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerHistoryRepository",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }
@@ -161,6 +217,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Migrations.HistoryRepositoryDependencies):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerHistoryRepository",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }
@@ -177,6 +234,24 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Migrations.IMigrationsDatabaseLock",
+          "clrName": "Microsoft.EntityFrameworkCore.Migrations.IMigrationsDatabaseLock"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IAsyncDisposable",
+          "clrName": "System.IAsyncDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerMigrationDatabaseLock::Dispose():System.Void",
@@ -193,6 +268,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerMigrationDatabaseLock",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -212,6 +288,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerMigrationDatabaseLock",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -233,6 +310,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerMigrationDatabaseLock",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }
@@ -247,6 +325,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.IRelationalCommand,Microsoft.EntityFrameworkCore.Storage.RelationalCommandParameterObject,Microsoft.EntityFrameworkCore.Migrations.IHistoryRepository,System.Threading.CancellationToken):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerMigrationDatabaseLock",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }
@@ -263,6 +342,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Migrations.MigrationsAnnotationProvider",
+        "clrName": "Microsoft.EntityFrameworkCore.Migrations.MigrationsAnnotationProvider"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Migrations.IMigrationsAnnotationProvider",
+          "clrName": "Microsoft.EntityFrameworkCore.Migrations.IMigrationsAnnotationProvider"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerMigrationsAnnotationProvider::ForRemove(Microsoft.EntityFrameworkCore.Metadata.IRelationalModel):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
@@ -279,6 +368,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerMigrationsAnnotationProvider",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -298,6 +388,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerMigrationsAnnotationProvider",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -317,6 +408,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerMigrationsAnnotationProvider",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -336,6 +428,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerMigrationsAnnotationProvider",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -355,6 +448,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerMigrationsAnnotationProvider",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -371,6 +465,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Migrations.MigrationsAnnotationProviderDependencies):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal.SqlServerMigrationsAnnotationProvider",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }

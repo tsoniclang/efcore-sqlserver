@@ -12,7 +12,7 @@ import type { OwnedNavigationTemporalTableBuilder, OwnedNavigationTemporalTableB
 import type { SqlServerValueGenerationStrategy } from './Microsoft.EntityFrameworkCore.Metadata/internal/index.js';
 import type { IEnumerable, IReadOnlyList } from '@tsonic/dotnet/System.Collections.Generic.js';
 import type { DbConnection } from '@tsonic/dotnet/System.Data.Common.js';
-import type { Action, Boolean as ClrBoolean, Byte, DateOnly, DateTime, DateTimeOffset, Decimal, Double, Enum, Func, Guid, IComparable, IConvertible, IFormattable, Int16, Int32, Int64, ISpanFormattable, Nullable, Object as ClrObject, Single, String as ClrString, TimeOnly, TimeSpan, ValueType, Void } from '@tsonic/dotnet/System.js';
+import type { Action, Boolean as ClrBoolean, Byte, DateOnly, DateTime, DateTimeOffset, Decimal, Double, Enum, Exception, Func, Guid, IComparable, IConvertible, IFormattable, Int16, Int32, Int64, ISpanFormattable, Nullable, Object as ClrObject, Single, String as ClrString, TimeOnly, TimeSpan, ValueType, Void } from '@tsonic/dotnet/System.js';
 import type { Expression } from '@tsonic/dotnet/System.Linq.Expressions.js';
 import type { IQueryable } from '@tsonic/dotnet/System.Linq.js';
 import type { DatabaseFacade } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure.js';

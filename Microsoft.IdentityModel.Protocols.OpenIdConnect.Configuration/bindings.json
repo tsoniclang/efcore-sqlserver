@@ -15,6 +15,19 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.IConfigurationValidator\u00601",
+          "clrName": "Microsoft.IdentityModel.Protocols.IConfigurationValidator\u00601",
+          "typeArguments": [
+            "OpenIdConnectConfiguration"
+          ]
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.IdentityModel.Protocols.OpenIdConnect:Microsoft.IdentityModel.Protocols.OpenIdConnect.Configuration.OpenIdConnectConfigurationValidator::Validate(Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfiguration):Microsoft.IdentityModel.Protocols.ConfigurationValidationResult",
@@ -31,6 +44,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.OpenIdConnect.Configuration.OpenIdConnectConfigurationValidator",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols.OpenIdConnect",
           "isExtensionMethod": false
@@ -50,6 +64,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.IConfigurationValidator\u00601",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols",
           "isExtensionMethod": false,
@@ -72,6 +87,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.OpenIdConnect.Configuration.OpenIdConnectConfigurationValidator",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols.OpenIdConnect"
         }
@@ -86,6 +102,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Protocols.OpenIdConnect.Configuration.OpenIdConnectConfigurationValidator",
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols.OpenIdConnect"
         }

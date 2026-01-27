@@ -15,6 +15,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 2,
+      "typeParameters": [
+        "TClient",
+        "TOptions"
+      ],
       "methods": [],
       "properties": [],
       "fields": [],
@@ -48,6 +52,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.Extensions.IAzureClientFactoryBuilder",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -69,6 +74,15 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 1,
+      "interfaces": [
+        {
+          "stableId": "Azure.Core:Azure.Core.Extensions.IAzureClientFactoryBuilder",
+          "clrName": "Azure.Core.Extensions.IAzureClientFactoryBuilder"
+        }
+      ],
+      "typeParameters": [
+        "TConfiguration"
+      ],
       "methods": [
         {
           "stableId": "Azure.Core:Azure.Core.Extensions.IAzureClientFactoryBuilderWithConfiguration\u00601::RegisterClientFactory(TConfiguration):IAzureClientBuilder_2",
@@ -85,6 +99,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.Extensions.IAzureClientFactoryBuilderWithConfiguration\u00601",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -104,6 +119,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.Extensions.IAzureClientFactoryBuilder",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false
@@ -141,6 +157,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Core.Extensions.IAzureClientFactoryBuilderWithCredential",
           "declaringAssemblyName": "Azure.Core",
           "isExtensionMethod": false

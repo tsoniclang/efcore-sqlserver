@@ -22,6 +22,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -33,6 +55,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "System.UriIdnScope",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         },
@@ -44,6 +67,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.UriIdnScope",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         },
@@ -55,6 +79,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.UriIdnScope",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         },
@@ -66,6 +91,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.UriIdnScope",
           "declaringAssemblyName": "System.Configuration.ConfigurationManager"
         }
@@ -84,6 +110,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "System.Memory.Data:System.BinaryData::FromBytes(System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.BinaryData",
@@ -100,6 +130,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.BinaryData",
           "declaringAssemblyName": "System.Memory.Data",
           "isExtensionMethod": false
@@ -119,6 +150,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.BinaryData",
           "declaringAssemblyName": "System.Memory.Data",
           "isExtensionMethod": false
@@ -138,6 +170,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.BinaryData",
           "declaringAssemblyName": "System.Memory.Data",
           "isExtensionMethod": false
@@ -157,6 +190,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.BinaryData",
           "declaringAssemblyName": "System.Memory.Data",
           "isExtensionMethod": false
@@ -176,6 +210,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.BinaryData",
           "declaringAssemblyName": "System.Memory.Data",
           "isExtensionMethod": false
@@ -195,6 +230,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.BinaryData",
           "declaringAssemblyName": "System.Memory.Data",
           "isExtensionMethod": false
@@ -214,6 +250,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.BinaryData",
           "declaringAssemblyName": "System.Memory.Data",
           "isExtensionMethod": false
@@ -233,6 +270,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.BinaryData",
           "declaringAssemblyName": "System.Memory.Data",
           "isExtensionMethod": false
@@ -252,6 +290,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.BinaryData",
           "declaringAssemblyName": "System.Memory.Data",
           "isExtensionMethod": false
@@ -271,6 +310,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.BinaryData",
           "declaringAssemblyName": "System.Memory.Data",
           "isExtensionMethod": false
@@ -290,6 +330,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.BinaryData",
           "declaringAssemblyName": "System.Memory.Data",
           "isExtensionMethod": false
@@ -309,6 +350,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.BinaryData",
           "declaringAssemblyName": "System.Memory.Data",
           "isExtensionMethod": false
@@ -328,6 +370,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.BinaryData",
           "declaringAssemblyName": "System.Memory.Data",
           "isExtensionMethod": false
@@ -347,6 +390,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.BinaryData",
           "declaringAssemblyName": "System.Memory.Data",
           "isExtensionMethod": false
@@ -366,6 +410,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.BinaryData",
           "declaringAssemblyName": "System.Memory.Data",
           "isExtensionMethod": false
@@ -385,6 +430,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.BinaryData",
           "declaringAssemblyName": "System.Memory.Data",
           "isExtensionMethod": false
@@ -404,6 +450,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.BinaryData",
           "declaringAssemblyName": "System.Memory.Data",
           "isExtensionMethod": false
@@ -423,6 +470,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.BinaryData",
           "declaringAssemblyName": "System.Memory.Data",
           "isExtensionMethod": false
@@ -442,6 +490,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.BinaryData",
           "declaringAssemblyName": "System.Memory.Data",
           "isExtensionMethod": false
@@ -461,6 +510,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.BinaryData",
           "declaringAssemblyName": "System.Memory.Data",
           "isExtensionMethod": false
@@ -480,6 +530,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.BinaryData",
           "declaringAssemblyName": "System.Memory.Data",
           "isExtensionMethod": false
@@ -501,6 +552,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.BinaryData",
           "declaringAssemblyName": "System.Memory.Data"
         },
@@ -519,6 +571,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.BinaryData",
           "declaringAssemblyName": "System.Memory.Data"
         },
@@ -537,6 +590,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.BinaryData",
           "declaringAssemblyName": "System.Memory.Data"
         },
@@ -555,6 +609,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.BinaryData",
           "declaringAssemblyName": "System.Memory.Data"
         }
@@ -569,6 +624,7 @@
           "normalizedSignature": "constructor|(System.Byte[]):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.BinaryData",
           "declaringAssemblyName": "System.Memory.Data"
         },
@@ -579,6 +635,7 @@
           "normalizedSignature": "constructor|(System.Byte[],System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "System.BinaryData",
           "declaringAssemblyName": "System.Memory.Data"
         },
@@ -589,6 +646,7 @@
           "normalizedSignature": "constructor|(System.Object,System.Text.Json.JsonSerializerOptions,System.Type):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "System.BinaryData",
           "declaringAssemblyName": "System.Memory.Data"
         },
@@ -599,6 +657,7 @@
           "normalizedSignature": "constructor|(System.Object,System.Text.Json.Serialization.JsonSerializerContext,System.Type):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "System.BinaryData",
           "declaringAssemblyName": "System.Memory.Data"
         },
@@ -609,6 +668,7 @@
           "normalizedSignature": "constructor|(System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.BinaryData",
           "declaringAssemblyName": "System.Memory.Data"
         },
@@ -619,6 +679,7 @@
           "normalizedSignature": "constructor|(System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "System.BinaryData",
           "declaringAssemblyName": "System.Memory.Data"
         },
@@ -629,6 +690,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.BinaryData",
           "declaringAssemblyName": "System.Memory.Data"
         },
@@ -639,6 +701,7 @@
           "normalizedSignature": "constructor|(System.String,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "System.BinaryData",
           "declaringAssemblyName": "System.Memory.Data"
         }

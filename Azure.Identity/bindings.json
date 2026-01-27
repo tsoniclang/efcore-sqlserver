@@ -15,6 +15,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
       "methods": [],
       "properties": [
         {
@@ -22,16 +26,17 @@
           "clrName": "UserCode",
           "metadataToken": 385876213,
           "canonicalSignature": ":System.String",
-          "normalizedSignature": "UserCode|:System.String|static=false|accessor=get",
+          "normalizedSignature": "UserCode|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DeviceCodeInfo",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -40,16 +45,17 @@
           "clrName": "DeviceCode",
           "metadataToken": 385876214,
           "canonicalSignature": ":System.String",
-          "normalizedSignature": "DeviceCode|:System.String|static=false|accessor=get",
+          "normalizedSignature": "DeviceCode|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DeviceCodeInfo",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -58,16 +64,17 @@
           "clrName": "VerificationUri",
           "metadataToken": 385876215,
           "canonicalSignature": ":System.Uri",
-          "normalizedSignature": "VerificationUri|:System.Uri|static=false|accessor=get",
+          "normalizedSignature": "VerificationUri|:System.Uri|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DeviceCodeInfo",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -76,16 +83,17 @@
           "clrName": "ExpiresOn",
           "metadataToken": 385876216,
           "canonicalSignature": ":System.DateTimeOffset",
-          "normalizedSignature": "ExpiresOn|:System.DateTimeOffset|static=false|accessor=get",
+          "normalizedSignature": "ExpiresOn|:System.DateTimeOffset|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DeviceCodeInfo",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -94,16 +102,17 @@
           "clrName": "Message",
           "metadataToken": 385876217,
           "canonicalSignature": ":System.String",
-          "normalizedSignature": "Message|:System.String|static=false|accessor=get",
+          "normalizedSignature": "Message|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DeviceCodeInfo",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -112,16 +121,17 @@
           "clrName": "ClientId",
           "metadataToken": 385876218,
           "canonicalSignature": ":System.String",
-          "normalizedSignature": "ClientId|:System.String|static=false|accessor=get",
+          "normalizedSignature": "ClientId|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DeviceCodeInfo",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -130,16 +140,17 @@
           "clrName": "Scopes",
           "metadataToken": 385876219,
           "canonicalSignature": ":System.Collections.Generic.IReadOnlyCollection_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "normalizedSignature": "Scopes|:System.Collections.Generic.IReadOnlyCollection_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "normalizedSignature": "Scopes|:System.Collections.Generic.IReadOnlyCollection_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DeviceCodeInfo",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -159,6 +170,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
       "methods": [],
       "properties": [
         {
@@ -176,6 +191,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.TokenCacheData",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -190,6 +206,7 @@
           "normalizedSignature": "constructor|(System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.TokenCacheData",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -206,6 +223,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Exception",
+        "clrName": "System.Exception"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Runtime.Serialization.ISerializable",
+          "clrName": "System.Runtime.Serialization.ISerializable"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [],
@@ -218,6 +245,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AuthenticationFailedException",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -228,6 +256,18 @@
           "normalizedSignature": "constructor|(System.String,System.Exception):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
+          "declaringClrType": "Azure.Identity.AuthenticationFailedException",
+          "declaringAssemblyName": "Azure.Identity"
+        },
+        {
+          "stableId": "Azure.Identity:Azure.Identity.AuthenticationFailedException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
+          "metadataToken": 100663416,
+          "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
+          "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "visibility": "Protected",
           "declaringClrType": "Azure.Identity.AuthenticationFailedException",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -244,6 +284,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Azure.Identity:Azure.Identity.AuthenticationRecord::Serialize(System.IO.Stream,System.Threading.CancellationToken):System.Void",
@@ -260,6 +304,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AuthenticationRecord",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -279,6 +324,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AuthenticationRecord",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -298,6 +344,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AuthenticationRecord",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -317,6 +364,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AuthenticationRecord",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -328,16 +376,17 @@
           "clrName": "Username",
           "metadataToken": 385875983,
           "canonicalSignature": ":System.String",
-          "normalizedSignature": "Username|:System.String|static=false|accessor=get",
+          "normalizedSignature": "Username|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AuthenticationRecord",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -346,16 +395,17 @@
           "clrName": "Authority",
           "metadataToken": 385875984,
           "canonicalSignature": ":System.String",
-          "normalizedSignature": "Authority|:System.String|static=false|accessor=get",
+          "normalizedSignature": "Authority|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AuthenticationRecord",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -374,6 +424,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AuthenticationRecord",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -382,16 +433,17 @@
           "clrName": "TenantId",
           "metadataToken": 385875986,
           "canonicalSignature": ":System.String",
-          "normalizedSignature": "TenantId|:System.String|static=false|accessor=get",
+          "normalizedSignature": "TenantId|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AuthenticationRecord",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -400,16 +452,17 @@
           "clrName": "ClientId",
           "metadataToken": 385875987,
           "canonicalSignature": ":System.String",
-          "normalizedSignature": "ClientId|:System.String|static=false|accessor=get",
+          "normalizedSignature": "ClientId|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AuthenticationRecord",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -429,6 +482,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Azure.Identity:Azure.Identity.CredentialUnavailableException",
+        "clrName": "Azure.Identity.CredentialUnavailableException"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Runtime.Serialization.ISerializable",
+          "clrName": "System.Runtime.Serialization.ISerializable"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -446,6 +509,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AuthenticationRequiredException",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -460,6 +524,7 @@
           "normalizedSignature": "constructor|(System.String,Azure.Core.TokenRequestContext):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AuthenticationRequiredException",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -470,6 +535,18 @@
           "normalizedSignature": "constructor|(System.String,Azure.Core.TokenRequestContext,System.Exception):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
+          "declaringClrType": "Azure.Identity.AuthenticationRequiredException",
+          "declaringAssemblyName": "Azure.Identity"
+        },
+        {
+          "stableId": "Azure.Identity:Azure.Identity.AuthenticationRequiredException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
+          "metadataToken": 100663443,
+          "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
+          "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "visibility": "Protected",
           "declaringClrType": "Azure.Identity.AuthenticationRequiredException",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -486,6 +563,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Azure.Core:Azure.Core.TokenCredential",
+        "clrName": "Azure.Core.TokenCredential"
+      },
       "methods": [
         {
           "stableId": "Azure.Identity:Azure.Identity.AuthorizationCodeCredential::GetToken(Azure.Core.TokenRequestContext,System.Threading.CancellationToken):Azure.Core.AccessToken",
@@ -502,6 +583,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AuthorizationCodeCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -521,6 +603,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AuthorizationCodeCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -540,6 +623,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AuthorizationCodeCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -559,6 +643,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AuthorizationCodeCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -578,6 +663,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AuthorizationCodeCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -588,12 +674,24 @@
       "events": [],
       "constructors": [
         {
+          "stableId": "Azure.Identity:Azure.Identity.AuthorizationCodeCredential::.ctor():void",
+          "metadataToken": 100663519,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Azure.Identity.AuthorizationCodeCredential",
+          "declaringAssemblyName": "Azure.Identity"
+        },
+        {
           "stableId": "Azure.Identity:Azure.Identity.AuthorizationCodeCredential::.ctor(System.String,System.String,System.String,System.String):void",
           "metadataToken": 100663520,
           "canonicalSignature": "(System.String,System.String,System.String,System.String):void",
           "normalizedSignature": "constructor|(System.String,System.String,System.String,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AuthorizationCodeCredential",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -604,6 +702,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.String,System.String,Azure.Identity.AuthorizationCodeCredentialOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 5,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AuthorizationCodeCredential",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -614,6 +713,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.String,System.String,Azure.Identity.TokenCredentialOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 5,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AuthorizationCodeCredential",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -630,6 +730,20 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Azure.Identity:Azure.Identity.TokenCredentialOptions",
+        "clrName": "Azure.Identity.TokenCredentialOptions"
+      },
+      "interfaces": [
+        {
+          "stableId": "Azure.Identity:Azure.Identity.ISupportsDisableInstanceDiscovery",
+          "clrName": "Azure.Identity.ISupportsDisableInstanceDiscovery"
+        },
+        {
+          "stableId": "Azure.Identity:Azure.Identity.ISupportsAdditionallyAllowedTenants",
+          "clrName": "Azure.Identity.ISupportsAdditionallyAllowedTenants"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -647,6 +761,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AuthorizationCodeCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -655,16 +770,17 @@
           "clrName": "AdditionallyAllowedTenants",
           "metadataToken": 385876002,
           "canonicalSignature": ":System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "normalizedSignature": "AdditionallyAllowedTenants|:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "normalizedSignature": "AdditionallyAllowedTenants|:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AuthorizationCodeCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -683,6 +799,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AuthorizationCodeCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -697,6 +814,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AuthorizationCodeCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -713,6 +831,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Azure.Core:Azure.Core.TokenCredential",
+        "clrName": "Azure.Core.TokenCredential"
+      },
       "methods": [
         {
           "stableId": "Azure.Identity:Azure.Identity.AzureCliCredential::GetToken(Azure.Core.TokenRequestContext,System.Threading.CancellationToken):Azure.Core.AccessToken",
@@ -729,6 +851,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AzureCliCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -748,6 +871,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AzureCliCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -767,6 +891,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AzureCliCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -786,6 +911,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AzureCliCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -805,6 +931,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AzureCliCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -821,6 +948,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AzureCliCredential",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -831,6 +959,7 @@
           "normalizedSignature": "constructor|(Azure.Identity.AzureCliCredentialOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AzureCliCredential",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -847,6 +976,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Azure.Identity:Azure.Identity.TokenCredentialOptions",
+        "clrName": "Azure.Identity.TokenCredentialOptions"
+      },
+      "interfaces": [
+        {
+          "stableId": "Azure.Identity:Azure.Identity.ISupportsAdditionallyAllowedTenants",
+          "clrName": "Azure.Identity.ISupportsAdditionallyAllowedTenants"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -864,6 +1003,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AzureCliCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -872,16 +1012,17 @@
           "clrName": "AdditionallyAllowedTenants",
           "metadataToken": 385876011,
           "canonicalSignature": ":System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "normalizedSignature": "AdditionallyAllowedTenants|:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "normalizedSignature": "AdditionallyAllowedTenants|:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AzureCliCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -900,6 +1041,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AzureCliCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -918,6 +1060,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AzureCliCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -932,6 +1075,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AzureCliCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -948,6 +1092,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Azure.Core:Azure.Core.TokenCredential",
+        "clrName": "Azure.Core.TokenCredential"
+      },
       "methods": [
         {
           "stableId": "Azure.Identity:Azure.Identity.AzureDeveloperCliCredential::GetToken(Azure.Core.TokenRequestContext,System.Threading.CancellationToken):Azure.Core.AccessToken",
@@ -964,6 +1112,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AzureDeveloperCliCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -983,6 +1132,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AzureDeveloperCliCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -1002,6 +1152,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AzureDeveloperCliCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -1021,6 +1172,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AzureDeveloperCliCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -1040,6 +1192,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AzureDeveloperCliCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -1056,6 +1209,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AzureDeveloperCliCredential",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -1066,6 +1220,7 @@
           "normalizedSignature": "constructor|(Azure.Identity.AzureDeveloperCliCredentialOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AzureDeveloperCliCredential",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -1082,6 +1237,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Azure.Identity:Azure.Identity.TokenCredentialOptions",
+        "clrName": "Azure.Identity.TokenCredentialOptions"
+      },
+      "interfaces": [
+        {
+          "stableId": "Azure.Identity:Azure.Identity.ISupportsAdditionallyAllowedTenants",
+          "clrName": "Azure.Identity.ISupportsAdditionallyAllowedTenants"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -1099,6 +1264,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AzureDeveloperCliCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -1107,16 +1273,17 @@
           "clrName": "AdditionallyAllowedTenants",
           "metadataToken": 385876019,
           "canonicalSignature": ":System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "normalizedSignature": "AdditionallyAllowedTenants|:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "normalizedSignature": "AdditionallyAllowedTenants|:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AzureDeveloperCliCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -1135,6 +1302,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AzureDeveloperCliCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -1149,6 +1317,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AzureDeveloperCliCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -1165,6 +1334,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Azure.Core:Azure.Core.TokenCredential",
+        "clrName": "Azure.Core.TokenCredential"
+      },
       "methods": [
         {
           "stableId": "Azure.Identity:Azure.Identity.AzurePipelinesCredential::GetToken(Azure.Core.TokenRequestContext,System.Threading.CancellationToken):Azure.Core.AccessToken",
@@ -1181,6 +1354,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AzurePipelinesCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -1200,6 +1374,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AzurePipelinesCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -1219,6 +1394,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AzurePipelinesCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -1238,6 +1414,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AzurePipelinesCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -1257,6 +1434,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AzurePipelinesCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -1267,12 +1445,24 @@
       "events": [],
       "constructors": [
         {
+          "stableId": "Azure.Identity:Azure.Identity.AzurePipelinesCredential::.ctor():void",
+          "metadataToken": 100663600,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Azure.Identity.AzurePipelinesCredential",
+          "declaringAssemblyName": "Azure.Identity"
+        },
+        {
           "stableId": "Azure.Identity:Azure.Identity.AzurePipelinesCredential::.ctor(System.String,System.String,System.String,System.String,Azure.Identity.AzurePipelinesCredentialOptions):void",
           "metadataToken": 100663601,
           "canonicalSignature": "(System.String,System.String,System.String,System.String,Azure.Identity.AzurePipelinesCredentialOptions):void",
           "normalizedSignature": "constructor|(System.String,System.String,System.String,System.String,Azure.Identity.AzurePipelinesCredentialOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 5,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AzurePipelinesCredential",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -1289,6 +1479,24 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Azure.Identity:Azure.Identity.TokenCredentialOptions",
+        "clrName": "Azure.Identity.TokenCredentialOptions"
+      },
+      "interfaces": [
+        {
+          "stableId": "Azure.Identity:Azure.Identity.ISupportsDisableInstanceDiscovery",
+          "clrName": "Azure.Identity.ISupportsDisableInstanceDiscovery"
+        },
+        {
+          "stableId": "Azure.Identity:Azure.Identity.ISupportsAdditionallyAllowedTenants",
+          "clrName": "Azure.Identity.ISupportsAdditionallyAllowedTenants"
+        },
+        {
+          "stableId": "Azure.Identity:Azure.Identity.ISupportsTokenCachePersistenceOptions",
+          "clrName": "Azure.Identity.ISupportsTokenCachePersistenceOptions"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -1296,16 +1504,17 @@
           "clrName": "AdditionallyAllowedTenants",
           "metadataToken": 385876030,
           "canonicalSignature": ":System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "normalizedSignature": "AdditionallyAllowedTenants|:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "normalizedSignature": "AdditionallyAllowedTenants|:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AzurePipelinesCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -1324,6 +1533,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AzurePipelinesCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -1342,6 +1552,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AzurePipelinesCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -1356,6 +1567,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AzurePipelinesCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -1372,6 +1584,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Azure.Core:Azure.Core.TokenCredential",
+        "clrName": "Azure.Core.TokenCredential"
+      },
       "methods": [
         {
           "stableId": "Azure.Identity:Azure.Identity.AzurePowerShellCredential::GetToken(Azure.Core.TokenRequestContext,System.Threading.CancellationToken):Azure.Core.AccessToken",
@@ -1388,6 +1604,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AzurePowerShellCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -1407,6 +1624,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AzurePowerShellCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -1426,6 +1644,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AzurePowerShellCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -1445,6 +1664,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AzurePowerShellCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -1464,6 +1684,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AzurePowerShellCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -1480,6 +1701,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AzurePowerShellCredential",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -1490,6 +1712,7 @@
           "normalizedSignature": "constructor|(Azure.Identity.AzurePowerShellCredentialOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AzurePowerShellCredential",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -1506,6 +1729,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Azure.Identity:Azure.Identity.TokenCredentialOptions",
+        "clrName": "Azure.Identity.TokenCredentialOptions"
+      },
+      "interfaces": [
+        {
+          "stableId": "Azure.Identity:Azure.Identity.ISupportsAdditionallyAllowedTenants",
+          "clrName": "Azure.Identity.ISupportsAdditionallyAllowedTenants"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -1523,6 +1756,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AzurePowerShellCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -1531,16 +1765,17 @@
           "clrName": "AdditionallyAllowedTenants",
           "metadataToken": 385876039,
           "canonicalSignature": ":System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "normalizedSignature": "AdditionallyAllowedTenants|:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "normalizedSignature": "AdditionallyAllowedTenants|:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AzurePowerShellCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -1559,6 +1794,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AzurePowerShellCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -1573,6 +1809,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AzurePowerShellCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -1589,6 +1826,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -1606,6 +1847,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.BrowserCustomizationOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -1624,6 +1866,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.BrowserCustomizationOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -1642,6 +1885,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.BrowserCustomizationOptions",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -1656,6 +1900,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.BrowserCustomizationOptions",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -1672,6 +1917,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Azure.Core:Azure.Core.TokenCredential",
+        "clrName": "Azure.Core.TokenCredential"
+      },
       "methods": [
         {
           "stableId": "Azure.Identity:Azure.Identity.ChainedTokenCredential::GetToken(Azure.Core.TokenRequestContext,System.Threading.CancellationToken):Azure.Core.AccessToken",
@@ -1688,6 +1937,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ChainedTokenCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -1707,6 +1957,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ChainedTokenCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -1726,6 +1977,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ChainedTokenCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -1745,6 +1997,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ChainedTokenCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -1764,6 +2017,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ChainedTokenCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -1774,12 +2028,24 @@
       "events": [],
       "constructors": [
         {
+          "stableId": "Azure.Identity:Azure.Identity.ChainedTokenCredential::.ctor():void",
+          "metadataToken": 100663656,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Azure.Identity.ChainedTokenCredential",
+          "declaringAssemblyName": "Azure.Identity"
+        },
+        {
           "stableId": "Azure.Identity:Azure.Identity.ChainedTokenCredential::.ctor(Azure.Core.TokenCredential[]):void",
           "metadataToken": 100663657,
           "canonicalSignature": "(Azure.Core.TokenCredential[]):void",
           "normalizedSignature": "constructor|(Azure.Core.TokenCredential[]):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ChainedTokenCredential",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -1796,6 +2062,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Azure.Core:Azure.Core.TokenCredential",
+        "clrName": "Azure.Core.TokenCredential"
+      },
       "methods": [
         {
           "stableId": "Azure.Identity:Azure.Identity.ClientAssertionCredential::GetToken(Azure.Core.TokenRequestContext,System.Threading.CancellationToken):Azure.Core.AccessToken",
@@ -1812,6 +2082,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ClientAssertionCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -1831,6 +2102,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ClientAssertionCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -1850,6 +2122,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ClientAssertionCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -1869,6 +2142,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ClientAssertionCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -1888,6 +2162,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ClientAssertionCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -1898,12 +2173,24 @@
       "events": [],
       "constructors": [
         {
+          "stableId": "Azure.Identity:Azure.Identity.ClientAssertionCredential::.ctor():void",
+          "metadataToken": 100663666,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Azure.Identity.ClientAssertionCredential",
+          "declaringAssemblyName": "Azure.Identity"
+        },
+        {
           "stableId": "Azure.Identity:Azure.Identity.ClientAssertionCredential::.ctor(System.String,System.String,System.Func_2[[System.Threading.CancellationToken,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.Task_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Azure.Identity.ClientAssertionCredentialOptions):void",
           "metadataToken": 100663667,
           "canonicalSignature": "(System.String,System.String,System.Func_2[[System.Threading.CancellationToken,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.Task_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Azure.Identity.ClientAssertionCredentialOptions):void",
           "normalizedSignature": "constructor|(System.String,System.String,System.Func_2[[System.Threading.CancellationToken,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.Task_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Azure.Identity.ClientAssertionCredentialOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ClientAssertionCredential",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -1914,6 +2201,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.Func_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Azure.Identity.ClientAssertionCredentialOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ClientAssertionCredential",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -1930,6 +2218,24 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Azure.Identity:Azure.Identity.TokenCredentialOptions",
+        "clrName": "Azure.Identity.TokenCredentialOptions"
+      },
+      "interfaces": [
+        {
+          "stableId": "Azure.Identity:Azure.Identity.ISupportsDisableInstanceDiscovery",
+          "clrName": "Azure.Identity.ISupportsDisableInstanceDiscovery"
+        },
+        {
+          "stableId": "Azure.Identity:Azure.Identity.ISupportsAdditionallyAllowedTenants",
+          "clrName": "Azure.Identity.ISupportsAdditionallyAllowedTenants"
+        },
+        {
+          "stableId": "Azure.Identity:Azure.Identity.ISupportsTokenCachePersistenceOptions",
+          "clrName": "Azure.Identity.ISupportsTokenCachePersistenceOptions"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -1937,16 +2243,17 @@
           "clrName": "AdditionallyAllowedTenants",
           "metadataToken": 385876052,
           "canonicalSignature": ":System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "normalizedSignature": "AdditionallyAllowedTenants|:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "normalizedSignature": "AdditionallyAllowedTenants|:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ClientAssertionCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -1965,6 +2272,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ClientAssertionCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -1983,6 +2291,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ClientAssertionCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -1997,6 +2306,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ClientAssertionCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -2013,6 +2323,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Azure.Core:Azure.Core.TokenCredential",
+        "clrName": "Azure.Core.TokenCredential"
+      },
       "methods": [
         {
           "stableId": "Azure.Identity:Azure.Identity.ClientCertificateCredential::GetToken(Azure.Core.TokenRequestContext,System.Threading.CancellationToken):Azure.Core.AccessToken",
@@ -2029,6 +2343,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ClientCertificateCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -2048,6 +2363,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ClientCertificateCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -2067,6 +2383,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ClientCertificateCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -2086,6 +2403,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ClientCertificateCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -2105,6 +2423,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ClientCertificateCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -2115,12 +2434,24 @@
       "events": [],
       "constructors": [
         {
+          "stableId": "Azure.Identity:Azure.Identity.ClientCertificateCredential::.ctor():void",
+          "metadataToken": 100663687,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Azure.Identity.ClientCertificateCredential",
+          "declaringAssemblyName": "Azure.Identity"
+        },
+        {
           "stableId": "Azure.Identity:Azure.Identity.ClientCertificateCredential::.ctor(System.String,System.String,System.String):void",
           "metadataToken": 100663688,
           "canonicalSignature": "(System.String,System.String,System.String):void",
           "normalizedSignature": "constructor|(System.String,System.String,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ClientCertificateCredential",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -2131,6 +2462,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.String,Azure.Identity.TokenCredentialOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ClientCertificateCredential",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -2141,6 +2473,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.String,Azure.Identity.ClientCertificateCredentialOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ClientCertificateCredential",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -2151,6 +2484,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.Security.Cryptography.X509Certificates.X509Certificate2):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ClientCertificateCredential",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -2161,6 +2495,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.Security.Cryptography.X509Certificates.X509Certificate2,Azure.Identity.TokenCredentialOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ClientCertificateCredential",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -2171,6 +2506,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.Security.Cryptography.X509Certificates.X509Certificate2,Azure.Identity.ClientCertificateCredentialOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ClientCertificateCredential",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -2187,6 +2523,24 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Azure.Identity:Azure.Identity.TokenCredentialOptions",
+        "clrName": "Azure.Identity.TokenCredentialOptions"
+      },
+      "interfaces": [
+        {
+          "stableId": "Azure.Identity:Azure.Identity.ISupportsTokenCachePersistenceOptions",
+          "clrName": "Azure.Identity.ISupportsTokenCachePersistenceOptions"
+        },
+        {
+          "stableId": "Azure.Identity:Azure.Identity.ISupportsDisableInstanceDiscovery",
+          "clrName": "Azure.Identity.ISupportsDisableInstanceDiscovery"
+        },
+        {
+          "stableId": "Azure.Identity:Azure.Identity.ISupportsAdditionallyAllowedTenants",
+          "clrName": "Azure.Identity.ISupportsAdditionallyAllowedTenants"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -2204,6 +2558,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ClientCertificateCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -2222,6 +2577,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ClientCertificateCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -2230,16 +2586,17 @@
           "clrName": "AdditionallyAllowedTenants",
           "metadataToken": 385876062,
           "canonicalSignature": ":System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "normalizedSignature": "AdditionallyAllowedTenants|:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "normalizedSignature": "AdditionallyAllowedTenants|:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ClientCertificateCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -2258,6 +2615,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ClientCertificateCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -2272,6 +2630,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ClientCertificateCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -2288,6 +2647,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Azure.Core:Azure.Core.TokenCredential",
+        "clrName": "Azure.Core.TokenCredential"
+      },
       "methods": [
         {
           "stableId": "Azure.Identity:Azure.Identity.ClientSecretCredential::GetTokenAsync(Azure.Core.TokenRequestContext,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[Azure.Core.AccessToken,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
@@ -2304,6 +2667,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ClientSecretCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -2323,6 +2687,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ClientSecretCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -2342,6 +2707,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ClientSecretCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -2361,6 +2727,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ClientSecretCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -2380,6 +2747,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ClientSecretCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -2390,12 +2758,24 @@
       "events": [],
       "constructors": [
         {
+          "stableId": "Azure.Identity:Azure.Identity.ClientSecretCredential::.ctor():void",
+          "metadataToken": 100663713,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Azure.Identity.ClientSecretCredential",
+          "declaringAssemblyName": "Azure.Identity"
+        },
+        {
           "stableId": "Azure.Identity:Azure.Identity.ClientSecretCredential::.ctor(System.String,System.String,System.String):void",
           "metadataToken": 100663714,
           "canonicalSignature": "(System.String,System.String,System.String):void",
           "normalizedSignature": "constructor|(System.String,System.String,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ClientSecretCredential",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -2406,6 +2786,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.String,Azure.Identity.ClientSecretCredentialOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ClientSecretCredential",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -2416,6 +2797,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.String,Azure.Identity.TokenCredentialOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ClientSecretCredential",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -2432,6 +2814,24 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Azure.Identity:Azure.Identity.TokenCredentialOptions",
+        "clrName": "Azure.Identity.TokenCredentialOptions"
+      },
+      "interfaces": [
+        {
+          "stableId": "Azure.Identity:Azure.Identity.ISupportsTokenCachePersistenceOptions",
+          "clrName": "Azure.Identity.ISupportsTokenCachePersistenceOptions"
+        },
+        {
+          "stableId": "Azure.Identity:Azure.Identity.ISupportsDisableInstanceDiscovery",
+          "clrName": "Azure.Identity.ISupportsDisableInstanceDiscovery"
+        },
+        {
+          "stableId": "Azure.Identity:Azure.Identity.ISupportsAdditionallyAllowedTenants",
+          "clrName": "Azure.Identity.ISupportsAdditionallyAllowedTenants"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -2449,6 +2849,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ClientSecretCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -2457,16 +2858,17 @@
           "clrName": "AdditionallyAllowedTenants",
           "metadataToken": 385876070,
           "canonicalSignature": ":System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "normalizedSignature": "AdditionallyAllowedTenants|:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "normalizedSignature": "AdditionallyAllowedTenants|:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ClientSecretCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -2485,6 +2887,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ClientSecretCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -2499,6 +2902,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ClientSecretCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -2515,6 +2919,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Azure.Identity:Azure.Identity.AuthenticationFailedException",
+        "clrName": "Azure.Identity.AuthenticationFailedException"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Runtime.Serialization.ISerializable",
+          "clrName": "System.Runtime.Serialization.ISerializable"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [],
@@ -2527,6 +2941,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.CredentialUnavailableException",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -2537,6 +2952,18 @@
           "normalizedSignature": "constructor|(System.String,System.Exception):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
+          "declaringClrType": "Azure.Identity.CredentialUnavailableException",
+          "declaringAssemblyName": "Azure.Identity"
+        },
+        {
+          "stableId": "Azure.Identity:Azure.Identity.CredentialUnavailableException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
+          "metadataToken": 100664112,
+          "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
+          "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "visibility": "Protected",
           "declaringClrType": "Azure.Identity.CredentialUnavailableException",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -2553,6 +2980,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Azure.Core:Azure.Core.TokenCredential",
+        "clrName": "Azure.Core.TokenCredential"
+      },
       "methods": [
         {
           "stableId": "Azure.Identity:Azure.Identity.DefaultAzureCredential::GetToken(Azure.Core.TokenRequestContext,System.Threading.CancellationToken):Azure.Core.AccessToken",
@@ -2569,6 +3000,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DefaultAzureCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -2588,6 +3020,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DefaultAzureCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -2607,6 +3040,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DefaultAzureCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -2626,6 +3060,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DefaultAzureCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -2645,6 +3080,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DefaultAzureCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -2655,12 +3091,24 @@
       "events": [],
       "constructors": [
         {
+          "stableId": "Azure.Identity:Azure.Identity.DefaultAzureCredential::.ctor():void",
+          "metadataToken": 100663727,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Azure.Identity.DefaultAzureCredential",
+          "declaringAssemblyName": "Azure.Identity"
+        },
+        {
           "stableId": "Azure.Identity:Azure.Identity.DefaultAzureCredential::.ctor(System.Boolean):void",
           "metadataToken": 100663728,
           "canonicalSignature": "(System.Boolean):void",
           "normalizedSignature": "constructor|(System.Boolean):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DefaultAzureCredential",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -2671,6 +3119,7 @@
           "normalizedSignature": "constructor|(Azure.Identity.DefaultAzureCredentialOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DefaultAzureCredential",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -2687,6 +3136,20 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Azure.Identity:Azure.Identity.TokenCredentialOptions",
+        "clrName": "Azure.Identity.TokenCredentialOptions"
+      },
+      "interfaces": [
+        {
+          "stableId": "Azure.Identity:Azure.Identity.ISupportsDisableInstanceDiscovery",
+          "clrName": "Azure.Identity.ISupportsDisableInstanceDiscovery"
+        },
+        {
+          "stableId": "Azure.Identity:Azure.Identity.ISupportsAdditionallyAllowedTenants",
+          "clrName": "Azure.Identity.ISupportsAdditionallyAllowedTenants"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -2704,6 +3167,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DefaultAzureCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -2722,6 +3186,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DefaultAzureCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -2740,6 +3205,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DefaultAzureCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -2758,6 +3224,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DefaultAzureCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -2776,6 +3243,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DefaultAzureCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -2784,16 +3252,17 @@
           "clrName": "AdditionallyAllowedTenants",
           "metadataToken": 385876077,
           "canonicalSignature": ":System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "normalizedSignature": "AdditionallyAllowedTenants|:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "normalizedSignature": "AdditionallyAllowedTenants|:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DefaultAzureCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -2812,6 +3281,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DefaultAzureCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -2830,6 +3300,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DefaultAzureCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -2848,6 +3319,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DefaultAzureCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -2866,6 +3338,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DefaultAzureCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -2884,6 +3357,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DefaultAzureCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -2902,6 +3376,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DefaultAzureCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -2920,6 +3395,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DefaultAzureCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -2938,6 +3414,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DefaultAzureCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -2956,6 +3433,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DefaultAzureCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -2974,6 +3452,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DefaultAzureCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -2992,6 +3471,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DefaultAzureCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -3010,6 +3490,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DefaultAzureCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -3028,6 +3509,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DefaultAzureCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -3046,6 +3528,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DefaultAzureCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -3064,6 +3547,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DefaultAzureCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -3082,6 +3566,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DefaultAzureCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -3100,6 +3585,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DefaultAzureCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -3114,6 +3600,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DefaultAzureCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -3130,6 +3617,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Azure.Core:Azure.Core.TokenCredential",
+        "clrName": "Azure.Core.TokenCredential"
+      },
       "methods": [
         {
           "stableId": "Azure.Identity:Azure.Identity.DeviceCodeCredential::Authenticate(System.Threading.CancellationToken):Azure.Identity.AuthenticationRecord",
@@ -3146,6 +3637,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DeviceCodeCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -3165,6 +3657,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DeviceCodeCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -3184,6 +3677,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DeviceCodeCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -3203,6 +3697,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DeviceCodeCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -3222,6 +3717,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DeviceCodeCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -3241,6 +3737,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DeviceCodeCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -3260,6 +3757,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DeviceCodeCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -3279,6 +3777,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DeviceCodeCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -3298,6 +3797,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DeviceCodeCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -3314,6 +3814,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DeviceCodeCredential",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -3324,6 +3825,7 @@
           "normalizedSignature": "constructor|(Azure.Identity.DeviceCodeCredentialOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DeviceCodeCredential",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -3334,6 +3836,7 @@
           "normalizedSignature": "constructor|(System.Func_3[[Azure.Identity.DeviceCodeInfo,Azure.Identity,Version=1.14.2.0,Culture=neutral,PublicKeyToken=92742159e12e44c8],[System.Threading.CancellationToken,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String,Azure.Identity.TokenCredentialOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DeviceCodeCredential",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -3344,6 +3847,7 @@
           "normalizedSignature": "constructor|(System.Func_3[[Azure.Identity.DeviceCodeInfo,Azure.Identity,Version=1.14.2.0,Culture=neutral,PublicKeyToken=92742159e12e44c8],[System.Threading.CancellationToken,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String,System.String,Azure.Identity.TokenCredentialOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DeviceCodeCredential",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -3360,6 +3864,24 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Azure.Identity:Azure.Identity.TokenCredentialOptions",
+        "clrName": "Azure.Identity.TokenCredentialOptions"
+      },
+      "interfaces": [
+        {
+          "stableId": "Azure.Identity:Azure.Identity.ISupportsTokenCachePersistenceOptions",
+          "clrName": "Azure.Identity.ISupportsTokenCachePersistenceOptions"
+        },
+        {
+          "stableId": "Azure.Identity:Azure.Identity.ISupportsDisableInstanceDiscovery",
+          "clrName": "Azure.Identity.ISupportsDisableInstanceDiscovery"
+        },
+        {
+          "stableId": "Azure.Identity:Azure.Identity.ISupportsAdditionallyAllowedTenants",
+          "clrName": "Azure.Identity.ISupportsAdditionallyAllowedTenants"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -3377,6 +3899,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DeviceCodeCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -3395,6 +3918,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DeviceCodeCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -3403,16 +3927,17 @@
           "clrName": "AdditionallyAllowedTenants",
           "metadataToken": 385876110,
           "canonicalSignature": ":System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "normalizedSignature": "AdditionallyAllowedTenants|:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "normalizedSignature": "AdditionallyAllowedTenants|:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DeviceCodeCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -3431,6 +3956,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DeviceCodeCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -3449,6 +3975,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DeviceCodeCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -3467,6 +3994,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DeviceCodeCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -3485,6 +4013,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DeviceCodeCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -3503,6 +4032,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DeviceCodeCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -3517,6 +4047,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.DeviceCodeCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -3533,6 +4064,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Azure.Core:Azure.Core.TokenCredential",
+        "clrName": "Azure.Core.TokenCredential"
+      },
       "methods": [
         {
           "stableId": "Azure.Identity:Azure.Identity.EnvironmentCredential::GetToken(Azure.Core.TokenRequestContext,System.Threading.CancellationToken):Azure.Core.AccessToken",
@@ -3549,6 +4084,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.EnvironmentCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -3568,6 +4104,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.EnvironmentCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -3587,6 +4124,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.EnvironmentCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -3606,6 +4144,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.EnvironmentCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -3625,6 +4164,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.EnvironmentCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -3641,6 +4181,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.EnvironmentCredential",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -3651,6 +4192,7 @@
           "normalizedSignature": "constructor|(Azure.Identity.TokenCredentialOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.EnvironmentCredential",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -3661,6 +4203,7 @@
           "normalizedSignature": "constructor|(Azure.Identity.EnvironmentCredentialOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.EnvironmentCredential",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -3677,6 +4220,20 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Azure.Identity:Azure.Identity.TokenCredentialOptions",
+        "clrName": "Azure.Identity.TokenCredentialOptions"
+      },
+      "interfaces": [
+        {
+          "stableId": "Azure.Identity:Azure.Identity.ISupportsDisableInstanceDiscovery",
+          "clrName": "Azure.Identity.ISupportsDisableInstanceDiscovery"
+        },
+        {
+          "stableId": "Azure.Identity:Azure.Identity.ISupportsAdditionallyAllowedTenants",
+          "clrName": "Azure.Identity.ISupportsAdditionallyAllowedTenants"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -3694,6 +4251,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.EnvironmentCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -3702,16 +4260,17 @@
           "clrName": "AdditionallyAllowedTenants",
           "metadataToken": 385876128,
           "canonicalSignature": ":System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "normalizedSignature": "AdditionallyAllowedTenants|:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "normalizedSignature": "AdditionallyAllowedTenants|:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.EnvironmentCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -3726,6 +4285,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.EnvironmentCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -3742,6 +4302,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Azure.Core:Azure.Core.TokenCredential",
+        "clrName": "Azure.Core.TokenCredential"
+      },
       "methods": [
         {
           "stableId": "Azure.Identity:Azure.Identity.InteractiveBrowserCredential::Authenticate(System.Threading.CancellationToken):Azure.Identity.AuthenticationRecord",
@@ -3758,6 +4322,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.InteractiveBrowserCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -3777,6 +4342,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.InteractiveBrowserCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -3796,6 +4362,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.InteractiveBrowserCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -3815,6 +4382,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.InteractiveBrowserCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -3834,6 +4402,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.InteractiveBrowserCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -3853,6 +4422,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.InteractiveBrowserCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -3872,6 +4442,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.InteractiveBrowserCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -3891,6 +4462,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.InteractiveBrowserCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -3910,6 +4482,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.InteractiveBrowserCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -3926,6 +4499,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.InteractiveBrowserCredential",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -3936,6 +4510,7 @@
           "normalizedSignature": "constructor|(Azure.Identity.InteractiveBrowserCredentialOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.InteractiveBrowserCredential",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -3946,6 +4521,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.InteractiveBrowserCredential",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -3956,6 +4532,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,Azure.Identity.TokenCredentialOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.InteractiveBrowserCredential",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -3972,6 +4549,24 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Azure.Identity:Azure.Identity.TokenCredentialOptions",
+        "clrName": "Azure.Identity.TokenCredentialOptions"
+      },
+      "interfaces": [
+        {
+          "stableId": "Azure.Identity:Azure.Identity.ISupportsTokenCachePersistenceOptions",
+          "clrName": "Azure.Identity.ISupportsTokenCachePersistenceOptions"
+        },
+        {
+          "stableId": "Azure.Identity:Azure.Identity.ISupportsDisableInstanceDiscovery",
+          "clrName": "Azure.Identity.ISupportsDisableInstanceDiscovery"
+        },
+        {
+          "stableId": "Azure.Identity:Azure.Identity.ISupportsAdditionallyAllowedTenants",
+          "clrName": "Azure.Identity.ISupportsAdditionallyAllowedTenants"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -3989,6 +4584,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.InteractiveBrowserCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -4007,6 +4603,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.InteractiveBrowserCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -4015,16 +4612,17 @@
           "clrName": "AdditionallyAllowedTenants",
           "metadataToken": 385876144,
           "canonicalSignature": ":System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "normalizedSignature": "AdditionallyAllowedTenants|:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "normalizedSignature": "AdditionallyAllowedTenants|:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.InteractiveBrowserCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -4043,6 +4641,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.InteractiveBrowserCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -4061,6 +4660,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.InteractiveBrowserCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -4079,6 +4679,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.InteractiveBrowserCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -4097,6 +4698,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.InteractiveBrowserCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -4115,6 +4717,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.InteractiveBrowserCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -4133,6 +4736,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.InteractiveBrowserCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -4151,6 +4755,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.InteractiveBrowserCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -4165,6 +4770,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.InteractiveBrowserCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -4181,6 +4787,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Azure.Core:Azure.Core.TokenCredential",
+        "clrName": "Azure.Core.TokenCredential"
+      },
       "methods": [
         {
           "stableId": "Azure.Identity:Azure.Identity.ManagedIdentityCredential::GetTokenAsync(Azure.Core.TokenRequestContext,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[Azure.Core.AccessToken,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
@@ -4197,6 +4807,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ManagedIdentityCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -4216,6 +4827,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ManagedIdentityCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -4235,6 +4847,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ManagedIdentityCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -4254,6 +4867,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ManagedIdentityCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -4273,6 +4887,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ManagedIdentityCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -4283,12 +4898,24 @@
       "events": [],
       "constructors": [
         {
+          "stableId": "Azure.Identity:Azure.Identity.ManagedIdentityCredential::.ctor():void",
+          "metadataToken": 100663930,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Azure.Identity.ManagedIdentityCredential",
+          "declaringAssemblyName": "Azure.Identity"
+        },
+        {
           "stableId": "Azure.Identity:Azure.Identity.ManagedIdentityCredential::.ctor(System.String,Azure.Identity.TokenCredentialOptions):void",
           "metadataToken": 100663931,
           "canonicalSignature": "(System.String,Azure.Identity.TokenCredentialOptions):void",
           "normalizedSignature": "constructor|(System.String,Azure.Identity.TokenCredentialOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ManagedIdentityCredential",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -4299,6 +4926,7 @@
           "normalizedSignature": "constructor|(Azure.Core.ResourceIdentifier,Azure.Identity.TokenCredentialOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ManagedIdentityCredential",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -4309,6 +4937,7 @@
           "normalizedSignature": "constructor|(Azure.Identity.ManagedIdentityId):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ManagedIdentityCredential",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -4319,6 +4948,7 @@
           "normalizedSignature": "constructor|(Azure.Identity.ManagedIdentityCredentialOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ManagedIdentityCredential",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -4335,6 +4965,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Azure.Identity:Azure.Identity.TokenCredentialOptions",
+        "clrName": "Azure.Identity.TokenCredentialOptions"
+      },
       "methods": [],
       "properties": [],
       "fields": [],
@@ -4347,6 +4981,7 @@
           "normalizedSignature": "constructor|(Azure.Identity.ManagedIdentityId):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ManagedIdentityCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -4363,6 +4998,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Azure.Identity:Azure.Identity.ManagedIdentityId::FromUserAssignedClientId(System.String):Azure.Identity.ManagedIdentityId",
@@ -4379,6 +5018,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ManagedIdentityId",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -4398,6 +5038,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ManagedIdentityId",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -4417,6 +5058,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ManagedIdentityId",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -4436,6 +5078,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ManagedIdentityId",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -4457,6 +5100,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.ManagedIdentityId",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -4476,6 +5120,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Azure.Core:Azure.Core.TokenCredential",
+        "clrName": "Azure.Core.TokenCredential"
+      },
       "methods": [
         {
           "stableId": "Azure.Identity:Azure.Identity.OnBehalfOfCredential::GetToken(Azure.Core.TokenRequestContext,System.Threading.CancellationToken):Azure.Core.AccessToken",
@@ -4492,6 +5140,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.OnBehalfOfCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -4511,6 +5160,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.OnBehalfOfCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -4530,6 +5180,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.OnBehalfOfCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -4549,6 +5200,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.OnBehalfOfCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -4568,6 +5220,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.OnBehalfOfCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -4578,12 +5231,24 @@
       "events": [],
       "constructors": [
         {
+          "stableId": "Azure.Identity:Azure.Identity.OnBehalfOfCredential::.ctor():void",
+          "metadataToken": 100663946,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Azure.Identity.OnBehalfOfCredential",
+          "declaringAssemblyName": "Azure.Identity"
+        },
+        {
           "stableId": "Azure.Identity:Azure.Identity.OnBehalfOfCredential::.ctor(System.String,System.String,System.Security.Cryptography.X509Certificates.X509Certificate2,System.String):void",
           "metadataToken": 100663947,
           "canonicalSignature": "(System.String,System.String,System.Security.Cryptography.X509Certificates.X509Certificate2,System.String):void",
           "normalizedSignature": "constructor|(System.String,System.String,System.Security.Cryptography.X509Certificates.X509Certificate2,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.OnBehalfOfCredential",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -4594,6 +5259,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.Security.Cryptography.X509Certificates.X509Certificate2,System.String,Azure.Identity.OnBehalfOfCredentialOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 5,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.OnBehalfOfCredential",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -4604,6 +5270,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.String,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.OnBehalfOfCredential",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -4614,6 +5281,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.String,System.String,Azure.Identity.OnBehalfOfCredentialOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 5,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.OnBehalfOfCredential",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -4624,6 +5292,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.Func_2[[System.Threading.CancellationToken,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Threading.Tasks.Task_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String,Azure.Identity.OnBehalfOfCredentialOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 5,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.OnBehalfOfCredential",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -4634,6 +5303,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.Func_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String,Azure.Identity.OnBehalfOfCredentialOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 5,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.OnBehalfOfCredential",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -4650,6 +5320,24 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Azure.Identity:Azure.Identity.TokenCredentialOptions",
+        "clrName": "Azure.Identity.TokenCredentialOptions"
+      },
+      "interfaces": [
+        {
+          "stableId": "Azure.Identity:Azure.Identity.ISupportsTokenCachePersistenceOptions",
+          "clrName": "Azure.Identity.ISupportsTokenCachePersistenceOptions"
+        },
+        {
+          "stableId": "Azure.Identity:Azure.Identity.ISupportsDisableInstanceDiscovery",
+          "clrName": "Azure.Identity.ISupportsDisableInstanceDiscovery"
+        },
+        {
+          "stableId": "Azure.Identity:Azure.Identity.ISupportsAdditionallyAllowedTenants",
+          "clrName": "Azure.Identity.ISupportsAdditionallyAllowedTenants"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -4667,6 +5355,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.OnBehalfOfCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -4685,6 +5374,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.OnBehalfOfCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -4693,16 +5383,17 @@
           "clrName": "AdditionallyAllowedTenants",
           "metadataToken": 385876161,
           "canonicalSignature": ":System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "normalizedSignature": "AdditionallyAllowedTenants|:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "normalizedSignature": "AdditionallyAllowedTenants|:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.OnBehalfOfCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -4721,6 +5412,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.OnBehalfOfCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -4735,6 +5427,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.OnBehalfOfCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -4751,6 +5444,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Azure.Core:Azure.Core.TokenCredential",
+        "clrName": "Azure.Core.TokenCredential"
+      },
       "methods": [
         {
           "stableId": "Azure.Identity:Azure.Identity.SharedTokenCacheCredential::GetToken(Azure.Core.TokenRequestContext,System.Threading.CancellationToken):Azure.Core.AccessToken",
@@ -4767,6 +5464,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.SharedTokenCacheCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -4786,6 +5484,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.SharedTokenCacheCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -4805,6 +5504,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.SharedTokenCacheCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -4824,6 +5524,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.SharedTokenCacheCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -4843,6 +5544,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.SharedTokenCacheCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -4859,6 +5561,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.SharedTokenCacheCredential",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -4869,6 +5572,7 @@
           "normalizedSignature": "constructor|(Azure.Identity.SharedTokenCacheCredentialOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.SharedTokenCacheCredential",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -4879,6 +5583,7 @@
           "normalizedSignature": "constructor|(System.String,Azure.Identity.TokenCredentialOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.SharedTokenCacheCredential",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -4895,6 +5600,20 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Azure.Identity:Azure.Identity.TokenCredentialOptions",
+        "clrName": "Azure.Identity.TokenCredentialOptions"
+      },
+      "interfaces": [
+        {
+          "stableId": "Azure.Identity:Azure.Identity.ISupportsTokenCachePersistenceOptions",
+          "clrName": "Azure.Identity.ISupportsTokenCachePersistenceOptions"
+        },
+        {
+          "stableId": "Azure.Identity:Azure.Identity.ISupportsDisableInstanceDiscovery",
+          "clrName": "Azure.Identity.ISupportsDisableInstanceDiscovery"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -4912,6 +5631,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.SharedTokenCacheCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -4930,6 +5650,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.SharedTokenCacheCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -4948,6 +5669,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.SharedTokenCacheCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -4966,6 +5688,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.SharedTokenCacheCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -4984,6 +5707,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.SharedTokenCacheCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -5002,6 +5726,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.SharedTokenCacheCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -5020,6 +5745,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.SharedTokenCacheCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -5034,6 +5760,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.SharedTokenCacheCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -5044,6 +5771,7 @@
           "normalizedSignature": "constructor|(Azure.Identity.TokenCachePersistenceOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.SharedTokenCacheCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -5060,6 +5788,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -5077,6 +5809,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.TokenCachePersistenceOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -5095,6 +5828,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.TokenCachePersistenceOptions",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -5109,6 +5843,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.TokenCachePersistenceOptions",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -5125,6 +5860,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -5142,6 +5881,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.TokenCacheRefreshArgs",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -5160,6 +5900,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.TokenCacheRefreshArgs",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -5179,6 +5920,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -5196,6 +5941,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.TokenCacheUpdatedArgs",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -5214,6 +5960,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.TokenCacheUpdatedArgs",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -5233,6 +5980,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Azure.Core:Azure.Core.DiagnosticsOptions",
+        "clrName": "Azure.Core.DiagnosticsOptions"
+      },
       "methods": [],
       "properties": [
         {
@@ -5250,6 +6001,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.TokenCredentialDiagnosticsOptions",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -5264,6 +6016,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.TokenCredentialDiagnosticsOptions",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -5280,6 +6033,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Azure.Core:Azure.Core.ClientOptions",
+        "clrName": "Azure.Core.ClientOptions"
+      },
       "methods": [],
       "properties": [
         {
@@ -5297,6 +6054,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.TokenCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -5315,6 +6073,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.TokenCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -5333,6 +6092,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.TokenCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -5347,6 +6107,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.TokenCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -5363,11 +6124,88 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
-      "methods": [],
+      "baseType": {
+        "stableId": "Azure.Identity:Azure.Identity.TokenCachePersistenceOptions",
+        "clrName": "Azure.Identity.TokenCachePersistenceOptions"
+      },
+      "methods": [
+        {
+          "stableId": "Azure.Identity:Azure.Identity.UnsafeTokenCacheOptions::TokenCacheUpdatedAsync(Azure.Identity.TokenCacheUpdatedArgs):System.Threading.Tasks.Task",
+          "clrName": "TokenCacheUpdatedAsync",
+          "metadataToken": 100664467,
+          "canonicalSignature": "(Azure.Identity.TokenCacheUpdatedArgs):System.Threading.Tasks.Task",
+          "normalizedSignature": "TokenCacheUpdatedAsync|(Azure.Identity.TokenCacheUpdatedArgs):System.Threading.Tasks.Task|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "ProtectedInternal",
+          "declaringClrType": "Azure.Identity.UnsafeTokenCacheOptions",
+          "declaringAssemblyName": "Azure.Identity",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Identity:Azure.Identity.UnsafeTokenCacheOptions::RefreshCacheAsync():System.Threading.Tasks.Task_1[[System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "RefreshCacheAsync",
+          "metadataToken": 100664468,
+          "canonicalSignature": "():System.Threading.Tasks.Task_1[[System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "RefreshCacheAsync|():System.Threading.Tasks.Task_1[[System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "ProtectedInternal",
+          "declaringClrType": "Azure.Identity.UnsafeTokenCacheOptions",
+          "declaringAssemblyName": "Azure.Identity",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Azure.Identity:Azure.Identity.UnsafeTokenCacheOptions::RefreshCacheAsync(Azure.Identity.TokenCacheRefreshArgs,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Azure.Identity.TokenCacheData,Azure.Identity,Version=1.14.2.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
+          "clrName": "RefreshCacheAsync",
+          "metadataToken": 100664469,
+          "canonicalSignature": "(Azure.Identity.TokenCacheRefreshArgs,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Azure.Identity.TokenCacheData,Azure.Identity,Version=1.14.2.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
+          "normalizedSignature": "RefreshCacheAsync|(Azure.Identity.TokenCacheRefreshArgs,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Azure.Identity.TokenCacheData,Azure.Identity,Version=1.14.2.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "ProtectedInternal",
+          "declaringClrType": "Azure.Identity.UnsafeTokenCacheOptions",
+          "declaringAssemblyName": "Azure.Identity",
+          "isExtensionMethod": false
+        }
+      ],
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Azure.Identity:Azure.Identity.UnsafeTokenCacheOptions::.ctor():void",
+          "metadataToken": 100664470,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Azure.Identity.UnsafeTokenCacheOptions",
+          "declaringAssemblyName": "Azure.Identity"
+        }
+      ]
     },
     {
       "stableId": "Azure.Identity:Azure.Identity.UsernamePasswordCredential",
@@ -5380,6 +6218,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Azure.Core:Azure.Core.TokenCredential",
+        "clrName": "Azure.Core.TokenCredential"
+      },
       "methods": [
         {
           "stableId": "Azure.Identity:Azure.Identity.UsernamePasswordCredential::Authenticate(System.Threading.CancellationToken):Azure.Identity.AuthenticationRecord",
@@ -5396,6 +6238,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.UsernamePasswordCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -5415,6 +6258,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.UsernamePasswordCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -5434,6 +6278,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.UsernamePasswordCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -5453,6 +6298,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.UsernamePasswordCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -5472,6 +6318,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.UsernamePasswordCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -5491,6 +6338,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.UsernamePasswordCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -5510,6 +6358,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.UsernamePasswordCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -5529,6 +6378,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.UsernamePasswordCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -5548,6 +6398,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.UsernamePasswordCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -5558,12 +6409,24 @@
       "events": [],
       "constructors": [
         {
+          "stableId": "Azure.Identity:Azure.Identity.UsernamePasswordCredential::.ctor():void",
+          "metadataToken": 100664019,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Azure.Identity.UsernamePasswordCredential",
+          "declaringAssemblyName": "Azure.Identity"
+        },
+        {
           "stableId": "Azure.Identity:Azure.Identity.UsernamePasswordCredential::.ctor(System.String,System.String,System.String,System.String):void",
           "metadataToken": 100664020,
           "canonicalSignature": "(System.String,System.String,System.String,System.String):void",
           "normalizedSignature": "constructor|(System.String,System.String,System.String,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.UsernamePasswordCredential",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -5574,6 +6437,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.String,System.String,Azure.Identity.TokenCredentialOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 5,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.UsernamePasswordCredential",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -5584,6 +6448,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.String,System.String,Azure.Identity.UsernamePasswordCredentialOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 5,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.UsernamePasswordCredential",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -5600,6 +6465,24 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Azure.Identity:Azure.Identity.TokenCredentialOptions",
+        "clrName": "Azure.Identity.TokenCredentialOptions"
+      },
+      "interfaces": [
+        {
+          "stableId": "Azure.Identity:Azure.Identity.ISupportsTokenCachePersistenceOptions",
+          "clrName": "Azure.Identity.ISupportsTokenCachePersistenceOptions"
+        },
+        {
+          "stableId": "Azure.Identity:Azure.Identity.ISupportsDisableInstanceDiscovery",
+          "clrName": "Azure.Identity.ISupportsDisableInstanceDiscovery"
+        },
+        {
+          "stableId": "Azure.Identity:Azure.Identity.ISupportsAdditionallyAllowedTenants",
+          "clrName": "Azure.Identity.ISupportsAdditionallyAllowedTenants"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -5617,6 +6500,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.UsernamePasswordCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -5625,16 +6509,17 @@
           "clrName": "AdditionallyAllowedTenants",
           "metadataToken": 385876185,
           "canonicalSignature": ":System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "normalizedSignature": "AdditionallyAllowedTenants|:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "normalizedSignature": "AdditionallyAllowedTenants|:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.UsernamePasswordCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -5653,6 +6538,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.UsernamePasswordCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -5667,6 +6553,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.UsernamePasswordCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -5683,6 +6570,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Azure.Core:Azure.Core.TokenCredential",
+        "clrName": "Azure.Core.TokenCredential"
+      },
       "methods": [
         {
           "stableId": "Azure.Identity:Azure.Identity.VisualStudioCodeCredential::GetTokenAsync(Azure.Core.TokenRequestContext,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[Azure.Core.AccessToken,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
@@ -5699,6 +6590,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.VisualStudioCodeCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -5718,6 +6610,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.VisualStudioCodeCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -5737,6 +6630,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.VisualStudioCodeCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -5756,6 +6650,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.VisualStudioCodeCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -5775,6 +6670,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.VisualStudioCodeCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -5791,6 +6687,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.VisualStudioCodeCredential",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -5801,6 +6698,7 @@
           "normalizedSignature": "constructor|(Azure.Identity.VisualStudioCodeCredentialOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.VisualStudioCodeCredential",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -5817,6 +6715,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Azure.Identity:Azure.Identity.TokenCredentialOptions",
+        "clrName": "Azure.Identity.TokenCredentialOptions"
+      },
+      "interfaces": [
+        {
+          "stableId": "Azure.Identity:Azure.Identity.ISupportsAdditionallyAllowedTenants",
+          "clrName": "Azure.Identity.ISupportsAdditionallyAllowedTenants"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -5834,6 +6742,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.VisualStudioCodeCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -5842,16 +6751,17 @@
           "clrName": "AdditionallyAllowedTenants",
           "metadataToken": 385876193,
           "canonicalSignature": ":System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "normalizedSignature": "AdditionallyAllowedTenants|:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "normalizedSignature": "AdditionallyAllowedTenants|:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.VisualStudioCodeCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -5866,6 +6776,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.VisualStudioCodeCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -5882,6 +6793,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Azure.Core:Azure.Core.TokenCredential",
+        "clrName": "Azure.Core.TokenCredential"
+      },
       "methods": [
         {
           "stableId": "Azure.Identity:Azure.Identity.VisualStudioCredential::GetTokenAsync(Azure.Core.TokenRequestContext,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[Azure.Core.AccessToken,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
@@ -5898,6 +6813,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.VisualStudioCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -5917,6 +6833,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.VisualStudioCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -5936,6 +6853,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.VisualStudioCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -5955,6 +6873,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.VisualStudioCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -5974,6 +6893,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.VisualStudioCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -5990,6 +6910,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.VisualStudioCredential",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -6000,6 +6921,7 @@
           "normalizedSignature": "constructor|(Azure.Identity.VisualStudioCredentialOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.VisualStudioCredential",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -6016,6 +6938,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Azure.Identity:Azure.Identity.TokenCredentialOptions",
+        "clrName": "Azure.Identity.TokenCredentialOptions"
+      },
+      "interfaces": [
+        {
+          "stableId": "Azure.Identity:Azure.Identity.ISupportsAdditionallyAllowedTenants",
+          "clrName": "Azure.Identity.ISupportsAdditionallyAllowedTenants"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -6033,6 +6965,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.VisualStudioCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -6041,16 +6974,17 @@
           "clrName": "AdditionallyAllowedTenants",
           "metadataToken": 385876200,
           "canonicalSignature": ":System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "normalizedSignature": "AdditionallyAllowedTenants|:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "normalizedSignature": "AdditionallyAllowedTenants|:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.VisualStudioCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -6069,6 +7003,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.VisualStudioCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -6083,6 +7018,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.VisualStudioCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -6099,6 +7035,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Azure.Core:Azure.Core.TokenCredential",
+        "clrName": "Azure.Core.TokenCredential"
+      },
       "methods": [
         {
           "stableId": "Azure.Identity:Azure.Identity.WorkloadIdentityCredential::GetToken(Azure.Core.TokenRequestContext,System.Threading.CancellationToken):Azure.Core.AccessToken",
@@ -6115,6 +7055,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.WorkloadIdentityCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -6134,6 +7075,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.WorkloadIdentityCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -6153,6 +7095,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.WorkloadIdentityCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -6172,6 +7115,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.WorkloadIdentityCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -6191,6 +7135,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.WorkloadIdentityCredential",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -6207,6 +7152,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.WorkloadIdentityCredential",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -6217,6 +7163,7 @@
           "normalizedSignature": "constructor|(Azure.Identity.WorkloadIdentityCredentialOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.WorkloadIdentityCredential",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -6233,6 +7180,20 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Azure.Identity:Azure.Identity.TokenCredentialOptions",
+        "clrName": "Azure.Identity.TokenCredentialOptions"
+      },
+      "interfaces": [
+        {
+          "stableId": "Azure.Identity:Azure.Identity.ISupportsDisableInstanceDiscovery",
+          "clrName": "Azure.Identity.ISupportsDisableInstanceDiscovery"
+        },
+        {
+          "stableId": "Azure.Identity:Azure.Identity.ISupportsAdditionallyAllowedTenants",
+          "clrName": "Azure.Identity.ISupportsAdditionallyAllowedTenants"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -6250,6 +7211,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.WorkloadIdentityCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -6268,6 +7230,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.WorkloadIdentityCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -6286,6 +7249,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.WorkloadIdentityCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -6304,6 +7268,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.WorkloadIdentityCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -6312,16 +7277,17 @@
           "clrName": "AdditionallyAllowedTenants",
           "metadataToken": 385876208,
           "canonicalSignature": ":System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "normalizedSignature": "AdditionallyAllowedTenants|:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "normalizedSignature": "AdditionallyAllowedTenants|:System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.WorkloadIdentityCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -6336,6 +7302,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.WorkloadIdentityCredentialOptions",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -6352,6 +7319,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -6369,6 +7340,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AzureAuthorityHosts",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -6387,6 +7359,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AzureAuthorityHosts",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -6405,6 +7378,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AzureAuthorityHosts",
           "declaringAssemblyName": "Azure.Identity"
         },
@@ -6423,6 +7397,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.AzureAuthorityHosts",
           "declaringAssemblyName": "Azure.Identity"
         }
@@ -6442,6 +7417,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Azure.Identity:Azure.Identity.IdentityModelFactory::AuthenticationRecord(System.String,System.String,System.String,System.String,System.String):Azure.Identity.AuthenticationRecord",
@@ -6458,6 +7437,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.IdentityModelFactory",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false
@@ -6477,6 +7457,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Azure.Identity.IdentityModelFactory",
           "declaringAssemblyName": "Azure.Identity",
           "isExtensionMethod": false

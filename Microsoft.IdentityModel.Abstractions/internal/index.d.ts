@@ -115,6 +115,7 @@ export interface TelemetryEventDetails$instance {
 
 
 export const TelemetryEventDetails: {
+    new(): TelemetryEventDetails;
 };
 
 

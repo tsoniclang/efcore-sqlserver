@@ -31,6 +31,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.ValueGeneration.Internal.ISqlServerSequenceValueGeneratorFactory",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -52,6 +53,12 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.ValueGeneration.IValueGeneratorCache",
+          "clrName": "Microsoft.EntityFrameworkCore.ValueGeneration.IValueGeneratorCache"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.ValueGeneration.Internal.ISqlServerValueGeneratorCache::GetOrAddSequenceState(Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Storage.IRelationalConnection):Microsoft.EntityFrameworkCore.SqlServer.ValueGeneration.Internal.SqlServerSequenceValueGeneratorState",
@@ -68,6 +75,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.ValueGeneration.Internal.ISqlServerValueGeneratorCache",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -89,7 +97,58 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 1,
-      "methods": [],
+      "baseType": {
+        "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.ValueGeneration.HiLoValueGenerator\u00601",
+        "clrName": "Microsoft.EntityFrameworkCore.ValueGeneration.HiLoValueGenerator\u00601",
+        "typeArguments": [
+          "TValue"
+        ]
+      },
+      "typeParameters": [
+        "TValue"
+      ],
+      "methods": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.ValueGeneration.Internal.SqlServerSequenceHiLoValueGenerator\u00601::GetNewLowValue():System.Int64",
+          "clrName": "GetNewLowValue",
+          "metadataToken": 100664432,
+          "canonicalSignature": "():System.Int64",
+          "normalizedSignature": "GetNewLowValue|():System.Int64|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.ValueGeneration.Internal.SqlServerSequenceHiLoValueGenerator\u00601",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.ValueGeneration.Internal.SqlServerSequenceHiLoValueGenerator\u00601::GetNewLowValueAsync(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "GetNewLowValueAsync",
+          "metadataToken": 100664433,
+          "canonicalSignature": "(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "GetNewLowValueAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.ValueGeneration.Internal.SqlServerSequenceHiLoValueGenerator\u00601",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        }
+      ],
       "properties": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.ValueGeneration.Internal.SqlServerSequenceHiLoValueGenerator\u00601::GeneratesTemporaryValues:System.Boolean",
@@ -106,6 +165,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.ValueGeneration.Internal.SqlServerSequenceHiLoValueGenerator\u00601",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }
@@ -120,6 +180,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.IRawSqlCommandBuilder,Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.ISqlServerUpdateSqlGenerator,Microsoft.EntityFrameworkCore.SqlServer.ValueGeneration.Internal.SqlServerSequenceValueGeneratorState,Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.ISqlServerConnection,Microsoft.EntityFrameworkCore.Diagnostics.IRelationalCommandDiagnosticsLogger):void|static=false",
           "isStatic": false,
           "parameterCount": 5,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.ValueGeneration.Internal.SqlServerSequenceHiLoValueGenerator\u00601",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }
@@ -136,6 +197,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.ValueGeneration.Internal.ISqlServerSequenceValueGeneratorFactory",
+          "clrName": "Microsoft.EntityFrameworkCore.SqlServer.ValueGeneration.Internal.ISqlServerSequenceValueGeneratorFactory"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.ValueGeneration.Internal.SqlServerSequenceValueGeneratorFactory::TryCreate(Microsoft.EntityFrameworkCore.Metadata.IProperty,System.Type,Microsoft.EntityFrameworkCore.SqlServer.ValueGeneration.Internal.SqlServerSequenceValueGeneratorState,Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.ISqlServerConnection,Microsoft.EntityFrameworkCore.Storage.IRawSqlCommandBuilder,Microsoft.EntityFrameworkCore.Diagnostics.IRelationalCommandDiagnosticsLogger):Microsoft.EntityFrameworkCore.ValueGeneration.ValueGenerator",
@@ -152,6 +223,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.ValueGeneration.Internal.SqlServerSequenceValueGeneratorFactory",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -171,6 +243,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.ValueGeneration.Internal.ISqlServerSequenceValueGeneratorFactory",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false,
@@ -188,6 +261,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.ISqlServerUpdateSqlGenerator):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.ValueGeneration.Internal.SqlServerSequenceValueGeneratorFactory",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }
@@ -204,6 +278,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.ValueGeneration.HiLoValueGeneratorState",
+        "clrName": "Microsoft.EntityFrameworkCore.ValueGeneration.HiLoValueGeneratorState"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -221,6 +305,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.ValueGeneration.Internal.SqlServerSequenceValueGeneratorState",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }
@@ -235,6 +320,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Metadata.ISequence):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.ValueGeneration.Internal.SqlServerSequenceValueGeneratorState",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }
@@ -251,6 +337,20 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.ValueGeneration.ValueGeneratorCache",
+        "clrName": "Microsoft.EntityFrameworkCore.ValueGeneration.ValueGeneratorCache"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.ValueGeneration.IValueGeneratorCache",
+          "clrName": "Microsoft.EntityFrameworkCore.ValueGeneration.IValueGeneratorCache"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.ValueGeneration.Internal.ISqlServerValueGeneratorCache",
+          "clrName": "Microsoft.EntityFrameworkCore.SqlServer.ValueGeneration.Internal.ISqlServerValueGeneratorCache"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.ValueGeneration.Internal.SqlServerValueGeneratorCache::GetOrAddSequenceState(Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Storage.IRelationalConnection):Microsoft.EntityFrameworkCore.SqlServer.ValueGeneration.Internal.SqlServerSequenceValueGeneratorState",
@@ -267,6 +367,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.ValueGeneration.Internal.SqlServerValueGeneratorCache",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -286,6 +387,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.ValueGeneration.Internal.ISqlServerValueGeneratorCache",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false,
@@ -303,6 +405,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.ValueGeneration.ValueGeneratorCacheDependencies):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.ValueGeneration.Internal.SqlServerValueGeneratorCache",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }
@@ -319,6 +422,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.ValueGeneration.RelationalValueGeneratorSelector",
+        "clrName": "Microsoft.EntityFrameworkCore.ValueGeneration.RelationalValueGeneratorSelector"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.ValueGeneration.IValueGeneratorSelector",
+          "clrName": "Microsoft.EntityFrameworkCore.ValueGeneration.IValueGeneratorSelector"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.ValueGeneration.Internal.SqlServerValueGeneratorSelector::Select(Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Metadata.ITypeBase):Microsoft.EntityFrameworkCore.ValueGeneration.ValueGenerator",
@@ -335,6 +448,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.ValueGeneration.Internal.SqlServerValueGeneratorSelector",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
@@ -354,6 +468,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.ValueGeneration.Internal.SqlServerValueGeneratorSelector",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false,
@@ -363,6 +478,26 @@
               "modifier": "out"
             }
           ]
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.ValueGeneration.Internal.SqlServerValueGeneratorSelector::FindForType(Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Metadata.ITypeBase,System.Type):Microsoft.EntityFrameworkCore.ValueGeneration.ValueGenerator",
+          "clrName": "FindForType",
+          "metadataToken": 100664446,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Metadata.ITypeBase,System.Type):Microsoft.EntityFrameworkCore.ValueGeneration.ValueGenerator",
+          "normalizedSignature": "FindForType|(Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Metadata.ITypeBase,System.Type):Microsoft.EntityFrameworkCore.ValueGeneration.ValueGenerator|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 3,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.ValueGeneration.Internal.SqlServerValueGeneratorSelector",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
         }
       ],
       "properties": [
@@ -381,6 +516,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.ValueGeneration.Internal.SqlServerValueGeneratorSelector",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }
@@ -395,6 +531,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.ValueGeneration.ValueGeneratorSelectorDependencies,Microsoft.EntityFrameworkCore.SqlServer.ValueGeneration.Internal.ISqlServerSequenceValueGeneratorFactory,Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.ISqlServerConnection,Microsoft.EntityFrameworkCore.Storage.IRawSqlCommandBuilder,Microsoft.EntityFrameworkCore.Diagnostics.IRelationalCommandDiagnosticsLogger):void|static=false",
           "isStatic": false,
           "parameterCount": 5,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.ValueGeneration.Internal.SqlServerValueGeneratorSelector",
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }

@@ -8,7 +8,7 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 // Import types from other namespaces
 import type { IDictionary, IReadOnlyList } from "@tsonic/dotnet/System.Collections.Generic.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
+import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
 import * as Microsoft_EntityFrameworkCore_Design_Internal_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Design.Internal.js";
 import type { CSharpRuntimeAnnotationCodeGeneratorDependencies, CSharpRuntimeAnnotationCodeGeneratorParameters, RelationalCSharpRuntimeAnnotationCodeGenerator, RelationalCSharpRuntimeAnnotationCodeGeneratorDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Design.Internal.js";
 import * as Microsoft_EntityFrameworkCore_Design_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Design.js";
@@ -17,7 +17,15 @@ import type { IAnnotation } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.I
 import type { IColumn, IEntityType, IIndex, IKey, IModel, IProperty, IRelationalModel, IRelationalPropertyOverrides, ITable, ITableIndex, IUniqueConstraint } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
 import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection.js";
 
-export interface SqlServerAnnotationCodeGenerator$instance extends AnnotationCodeGenerator {
+export abstract class SqlServerAnnotationCodeGenerator$protected {
+    protected GenerateFluentApi(key: IKey, annotation: IAnnotation): MethodCallCodeFragment | undefined;
+    protected GenerateFluentApi(index: IIndex, annotation: IAnnotation): MethodCallCodeFragment | undefined;
+    protected IsHandledByConvention(model: IModel, annotation: IAnnotation): boolean;
+    protected IsHandledByConvention(property: IProperty, annotation: IAnnotation): boolean;
+}
+
+
+export interface SqlServerAnnotationCodeGenerator$instance extends SqlServerAnnotationCodeGenerator$protected, AnnotationCodeGenerator {
     GenerateFluentApiCalls(model: IModel, annotations: IDictionary<System_Internal.String, IAnnotation>): IReadOnlyList<MethodCallCodeFragment>;
     GenerateFluentApiCalls(property: IProperty, annotations: IDictionary<System_Internal.String, IAnnotation>): IReadOnlyList<MethodCallCodeFragment>;
     GenerateFluentApiCalls(entityType: IEntityType, annotations: IDictionary<System_Internal.String, IAnnotation>): IReadOnlyList<MethodCallCodeFragment>;

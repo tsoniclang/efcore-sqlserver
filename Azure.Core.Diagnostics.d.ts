@@ -6,8 +6,8 @@
 import * as Internal from './Azure.Core.Diagnostics/internal/index.js';
 
 // Cross-namespace type imports for constraints
-import type { EventLevel, EventListener, EventWrittenEventArgs } from '@tsonic/dotnet/System.Diagnostics.Tracing.js';
-import type { Action, IDisposable, String as ClrString } from '@tsonic/dotnet/System.js';
+import type { EventLevel, EventListener, EventSource, EventWrittenEventArgs } from '@tsonic/dotnet/System.Diagnostics.Tracing.js';
+import type { Action, IDisposable, String as ClrString, Void } from '@tsonic/dotnet/System.js';
 
 // Public API exports (curated - no internal $instance/$views leakage)
 export { AzureEventSourceListener as AzureEventSourceListener } from './Azure.Core.Diagnostics/internal/index.js';

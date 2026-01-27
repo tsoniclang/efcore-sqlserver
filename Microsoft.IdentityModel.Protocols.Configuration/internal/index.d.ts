@@ -13,7 +13,7 @@ import type { IEqualityComparer } from "@tsonic/dotnet/System.Collections.Generi
 import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Boolean as ClrBoolean, Exception, Int32, String as ClrString } from "@tsonic/dotnet/System.js";
 import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization.js";
+import type { ISerializable, SerializationInfo, StreamingContext } from "@tsonic/dotnet/System.Runtime.Serialization.js";
 import type { TaskCreationOptions } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface InvalidConfigurationException$instance extends Exception {
@@ -24,6 +24,7 @@ export const InvalidConfigurationException: {
     new(): InvalidConfigurationException;
     new(message: string): InvalidConfigurationException;
     new(message: string, innerException: Exception): InvalidConfigurationException;
+    new(info: SerializationInfo, context: StreamingContext): InvalidConfigurationException;
 };
 
 
