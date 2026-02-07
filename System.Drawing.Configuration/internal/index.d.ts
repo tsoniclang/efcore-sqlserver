@@ -14,13 +14,9 @@ import type { Boolean as ClrBoolean, Int32, Object as ClrObject, String as ClrSt
 import type { FrameworkName } from "@tsonic/dotnet/System.Runtime.Versioning.js";
 import type { XmlReader, XmlWriter } from "@tsonic/dotnet/System.Xml.js";
 
-export abstract class SystemDrawingSection$protected {
-    protected readonly Properties: ConfigurationPropertyCollection;
-}
-
-
-export interface SystemDrawingSection$instance extends SystemDrawingSection$protected, ConfigurationSection {
+export interface SystemDrawingSection$instance extends ConfigurationSection {
     BitmapSuffix: string;
+    readonly Properties: ConfigurationPropertyCollection;
 }
 
 

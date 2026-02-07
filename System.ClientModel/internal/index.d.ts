@@ -39,18 +39,15 @@ export const ApiKeyCredential: {
 
 export type ApiKeyCredential = ApiKeyCredential$instance;
 
-export abstract class AsyncCollectionResult_1$protected<T> {
-    protected abstract GetValuesFromPageAsync(page: ClientResult): IAsyncEnumerable<T>;
-}
+export interface AsyncCollectionResult_1$instance<T> extends AsyncCollectionResult {
+    readonly __tsonic_iface_System_Collections_Generic_IAsyncEnumerable_1: never;
 
-
-export interface AsyncCollectionResult_1$instance<T> extends AsyncCollectionResult_1$protected<T>, AsyncCollectionResult {
     GetAsyncEnumerator(cancellationToken?: CancellationToken): IAsyncEnumerator<T>;
+    GetValuesFromPageAsync(page: ClientResult): IAsyncEnumerable<T>;
 }
 
 
-export const AsyncCollectionResult_1: {
-    new<T>(): AsyncCollectionResult_1<T>;
+export const AsyncCollectionResult_1: (abstract new<T>() => AsyncCollectionResult_1<T>) & {
 };
 
 
@@ -63,16 +60,17 @@ export interface AuthenticationTokenProvider$instance {
 }
 
 
-export const AuthenticationTokenProvider: {
-    new(): AuthenticationTokenProvider;
+export const AuthenticationTokenProvider: (abstract new() => AuthenticationTokenProvider) & {
 };
 
 
 export type AuthenticationTokenProvider = AuthenticationTokenProvider$instance;
 
 export interface BinaryContent$instance {
+    readonly __tsonic_iface_System_IDisposable: never;
+
     get MediaType(): string | undefined;
-    set MediaType(value: string);
+    set MediaType(value: string | undefined);
     Dispose(): void;
     TryComputeLength(length: long): boolean;
     WriteTo(stream: Stream, cancellationToken?: CancellationToken): void;
@@ -80,8 +78,7 @@ export interface BinaryContent$instance {
 }
 
 
-export const BinaryContent: {
-    new(): BinaryContent;
+export const BinaryContent: (abstract new() => BinaryContent) & {
     Create(value: BinaryData): BinaryContent;
     Create(stream: Stream): BinaryContent;
     Create<T extends IPersistableModel_1<T>>(model: T, options?: ModelReaderWriterOptions): BinaryContent;
@@ -98,8 +95,7 @@ export interface ClientResult$instance {
 }
 
 
-export const ClientResult: {
-    new(response: PipelineResponse): ClientResult;
+export const ClientResult: (abstract new(response: PipelineResponse) => ClientResult) & {
     FromOptionalValue<T>(value: T, response: PipelineResponse): ClientResult_1<T | undefined>;
     FromResponse(response: PipelineResponse): ClientResult;
     FromValue<T>(value: T, response: PipelineResponse): ClientResult_1<T>;
@@ -113,14 +109,15 @@ export interface ClientResult_1$instance<T> extends ClientResult {
 }
 
 
-export const ClientResult_1: {
-    new<T>(value: T, response: PipelineResponse): ClientResult_1<T>;
+export const ClientResult_1: (abstract new<T>(value: T, response: PipelineResponse) => ClientResult_1<T>) & {
 };
 
 
 export type ClientResult_1<T> = ClientResult_1$instance<T>;
 
 export interface ClientResultException$instance extends Exception {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
     Status: int;
     GetRawResponse(): PipelineResponse | undefined;
 }
@@ -135,18 +132,16 @@ export const ClientResultException: {
 
 export type ClientResultException = ClientResultException$instance;
 
-export abstract class CollectionResult_1$protected<T> {
-    protected abstract GetValuesFromPage(page: ClientResult): IEnumerable__System_Collections_Generic<T>;
-}
+export interface CollectionResult_1$instance<T> extends CollectionResult {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
-
-export interface CollectionResult_1$instance<T> extends CollectionResult_1$protected<T>, CollectionResult {
     GetEnumerator(): IEnumerator<T>;
+    GetValuesFromPage(page: ClientResult): IEnumerable__System_Collections_Generic<T>;
 }
 
 
-export const CollectionResult_1: {
-    new<T>(): CollectionResult_1<T>;
+export const CollectionResult_1: (abstract new<T>() => CollectionResult_1<T>) & {
 };
 
 
@@ -157,9 +152,7 @@ export interface ContinuationToken$instance {
 }
 
 
-export const ContinuationToken: {
-    new(): ContinuationToken;
-    new(bytes: BinaryData): ContinuationToken;
+export const ContinuationToken: (abstract new() => ContinuationToken) & (abstract new(bytes: BinaryData) => ContinuationToken) & {
     FromBytes(bytes: BinaryData): ContinuationToken;
 };
 

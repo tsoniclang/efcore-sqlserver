@@ -17,13 +17,10 @@ import * as Microsoft_EntityFrameworkCore_Migrations_Internal from "@tsonic/efco
 import type { HistoryRepository, HistoryRepositoryDependencies, IHistoryRepository, IMigrationsAnnotationProvider, IMigrationsDatabaseLock, LockReleaseBehavior, MigrationsAnnotationProvider, MigrationsAnnotationProviderDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations.js";
 import type { IRelationalCommand, RelationalCommandParameterObject } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
 
-export abstract class SqlServerHistoryRepository$protected {
-    protected readonly ExistsSql: string;
-    protected InterpretExistsResult(value: unknown): boolean;
-}
+export interface SqlServerHistoryRepository$instance extends HistoryRepository {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Migrations_IHistoryRepository: never;
 
-
-export interface SqlServerHistoryRepository$instance extends SqlServerHistoryRepository$protected, HistoryRepository {
+    readonly ExistsSql: string;
     readonly LockReleaseBehavior: LockReleaseBehavior;
     AcquireDatabaseLock(): IMigrationsDatabaseLock;
     AcquireDatabaseLockAsync(cancellationToken?: CancellationToken): Task<IMigrationsDatabaseLock>;
@@ -31,6 +28,7 @@ export interface SqlServerHistoryRepository$instance extends SqlServerHistoryRep
     GetBeginIfNotExistsScript(migrationId: string): string;
     GetCreateIfNotExistsScript(): string;
     GetEndIfScript(): string;
+    InterpretExistsResult(value: unknown): boolean;
 }
 
 
@@ -42,6 +40,10 @@ export const SqlServerHistoryRepository: {
 export type SqlServerHistoryRepository = SqlServerHistoryRepository$instance;
 
 export interface SqlServerMigrationDatabaseLock$instance {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Migrations_IMigrationsDatabaseLock: never;
+    readonly __tsonic_iface_System_IAsyncDisposable: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     readonly HistoryRepository: IHistoryRepository;
     Dispose(): void;
     DisposeAsync(): ValueTask;
@@ -56,6 +58,8 @@ export const SqlServerMigrationDatabaseLock: {
 export type SqlServerMigrationDatabaseLock = SqlServerMigrationDatabaseLock$instance;
 
 export interface SqlServerMigrationsAnnotationProvider$instance extends MigrationsAnnotationProvider {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Migrations_IMigrationsAnnotationProvider: never;
+
     ForRemove(model: IRelationalModel): IEnumerable<IAnnotation>;
     ForRemove(table: ITable): IEnumerable<IAnnotation>;
     ForRemove(column: IColumn): IEnumerable<IAnnotation>;

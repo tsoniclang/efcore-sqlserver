@@ -17,3 +17,6 @@ import type { ICommandBatchPreparer } from '@tsonic/efcore/Microsoft.EntityFrame
 // Public API exports (curated - no internal $instance/$views leakage)
 export { SqlServerMigrationBuilderExtensions$instance as SqlServerMigrationBuilderExtensions } from './Microsoft.EntityFrameworkCore.Migrations/internal/index.js';
 export { SqlServerMigrationsSqlGenerator as SqlServerMigrationsSqlGenerator } from './Microsoft.EntityFrameworkCore.Migrations/internal/index.js';
+// Extension methods (C# using semantics)
+export type { ExtensionMethods_Microsoft_EntityFrameworkCore_Migrations as ExtensionMethods } from './__internal/extensions/index.js';
+

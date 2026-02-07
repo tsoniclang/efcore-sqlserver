@@ -22,6 +22,8 @@ import * as Microsoft_EntityFrameworkCore_ValueGeneration_Internal from "@tsonic
 import type { HiLoValueGenerator, HiLoValueGeneratorState, IValueGeneratorCache, IValueGeneratorSelector, RelationalValueGeneratorSelector, ValueGenerator, ValueGeneratorCache, ValueGeneratorCacheDependencies, ValueGeneratorSelectorDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.ValueGeneration.js";
 
 export interface ISqlServerSequenceValueGeneratorFactory$instance {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_SqlServer_ValueGeneration_Internal_ISqlServerSequenceValueGeneratorFactory: never;
+
     TryCreate(property: IProperty, clrType: Type, generatorState: SqlServerSequenceValueGeneratorState, connection: ISqlServerConnection, rawSqlCommandBuilder: IRawSqlCommandBuilder, commandLogger: IRelationalCommandDiagnosticsLogger): ValueGenerator | undefined;
 }
 
@@ -29,20 +31,20 @@ export interface ISqlServerSequenceValueGeneratorFactory$instance {
 export type ISqlServerSequenceValueGeneratorFactory = ISqlServerSequenceValueGeneratorFactory$instance;
 
 export interface ISqlServerValueGeneratorCache$instance extends IValueGeneratorCache {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_SqlServer_ValueGeneration_Internal_ISqlServerValueGeneratorCache: never;
+
     GetOrAddSequenceState(property: IProperty, connection: IRelationalConnection): SqlServerSequenceValueGeneratorState;
 }
 
 
+export interface ISqlServerValueGeneratorCache$instance extends Microsoft_EntityFrameworkCore_ValueGeneration_Internal.IValueGeneratorCache {}
+
 export type ISqlServerValueGeneratorCache = ISqlServerValueGeneratorCache$instance;
 
-export abstract class SqlServerSequenceHiLoValueGenerator_1$protected<TValue> {
-    protected GetNewLowValue(): long;
-    protected GetNewLowValueAsync(cancellationToken?: CancellationToken): Task<System_Internal.Int64>;
-}
-
-
-export interface SqlServerSequenceHiLoValueGenerator_1$instance<TValue> extends SqlServerSequenceHiLoValueGenerator_1$protected<TValue>, HiLoValueGenerator<TValue> {
+export interface SqlServerSequenceHiLoValueGenerator_1$instance<TValue> extends HiLoValueGenerator<TValue> {
     readonly GeneratesTemporaryValues: boolean;
+    GetNewLowValue(): long;
+    GetNewLowValueAsync(cancellationToken?: CancellationToken): Task<System_Internal.Int64>;
 }
 
 
@@ -54,6 +56,8 @@ export const SqlServerSequenceHiLoValueGenerator_1: {
 export type SqlServerSequenceHiLoValueGenerator_1<TValue> = SqlServerSequenceHiLoValueGenerator_1$instance<TValue>;
 
 export interface SqlServerSequenceValueGeneratorFactory$instance {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_SqlServer_ValueGeneration_Internal_ISqlServerSequenceValueGeneratorFactory: never;
+
     TryCreate(property: IProperty, type: Type, generatorState: SqlServerSequenceValueGeneratorState, connection: ISqlServerConnection, rawSqlCommandBuilder: IRawSqlCommandBuilder, commandLogger: IRelationalCommandDiagnosticsLogger): ValueGenerator | undefined;
 }
 
@@ -73,6 +77,8 @@ export type SqlServerSequenceValueGeneratorFactory = SqlServerSequenceValueGener
 
 
 export interface SqlServerSequenceValueGeneratorState$instance extends HiLoValueGeneratorState {
+    readonly __tsonic_iface_System_IDisposable: never;
+
     readonly Sequence: ISequence;
 }
 
@@ -85,6 +91,9 @@ export const SqlServerSequenceValueGeneratorState: {
 export type SqlServerSequenceValueGeneratorState = SqlServerSequenceValueGeneratorState$instance;
 
 export interface SqlServerValueGeneratorCache$instance extends ValueGeneratorCache {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_SqlServer_ValueGeneration_Internal_ISqlServerValueGeneratorCache: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_ValueGeneration_IValueGeneratorCache: never;
+
     GetOrAddSequenceState(property: IProperty, connection: IRelationalConnection): SqlServerSequenceValueGeneratorState;
 }
 
@@ -103,13 +112,11 @@ export interface SqlServerValueGeneratorCache$instance extends ISqlServerValueGe
 export type SqlServerValueGeneratorCache = SqlServerValueGeneratorCache$instance & __SqlServerValueGeneratorCache$views;
 
 
-export abstract class SqlServerValueGeneratorSelector$protected {
-    protected FindForType(property: IProperty, typeBase: ITypeBase, clrType: Type): ValueGenerator | undefined;
-}
+export interface SqlServerValueGeneratorSelector$instance extends RelationalValueGeneratorSelector {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_ValueGeneration_IValueGeneratorSelector: never;
 
-
-export interface SqlServerValueGeneratorSelector$instance extends SqlServerValueGeneratorSelector$protected, RelationalValueGeneratorSelector {
     readonly Cache: ISqlServerValueGeneratorCache;
+    FindForType(property: IProperty, typeBase: ITypeBase, clrType: Type): ValueGenerator | undefined;
     Select(property: IProperty, typeBase: ITypeBase): ValueGenerator | undefined;
     TrySelect(property: IProperty, typeBase: ITypeBase, valueGenerator: ValueGenerator): boolean;
 }

@@ -15,6 +15,8 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { ArgumentException, ArgumentNullException, Boolean as ClrBoolean, Exception, Func, Guid, IDisposable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
 
 export interface ISafeLogSecurityArtifact$instance {
+    readonly __tsonic_iface_Microsoft_IdentityModel_Logging_ISafeLogSecurityArtifact: never;
+
     UnsafeToString(): string;
 }
 
@@ -22,6 +24,8 @@ export interface ISafeLogSecurityArtifact$instance {
 export type ISafeLogSecurityArtifact = ISafeLogSecurityArtifact$instance;
 
 export interface IdentityModelEventSource$instance extends EventSource {
+    readonly __tsonic_iface_System_IDisposable: never;
+
     LogLevel: EventLevel;
     Write(level: EventLevel, innerException: Exception, message: string): void;
     Write(level: EventLevel, innerException: Exception, message: string, ...args: unknown[]): void;
@@ -41,7 +45,6 @@ export interface IdentityModelEventSource$instance extends EventSource {
 
 
 export const IdentityModelEventSource: {
-    new(): IdentityModelEventSource;
     readonly Logger: IdentityModelEventSource;
     ShowPII: boolean;
     LogCompleteSecurityArtifact: boolean;
@@ -110,13 +113,11 @@ export const LogHelper: {
 
 export type LogHelper = LogHelper$instance;
 
-export abstract class TextWriterEventListener$protected {
-    protected OnEventWritten(eventData: EventWrittenEventArgs): void;
-}
+export interface TextWriterEventListener$instance extends EventListener {
+    readonly __tsonic_iface_System_IDisposable: never;
 
-
-export interface TextWriterEventListener$instance extends TextWriterEventListener$protected, EventListener {
     Dispose(): void;
+    OnEventWritten(eventData: EventWrittenEventArgs): void;
 }
 
 

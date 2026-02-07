@@ -20,6 +20,8 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface IConfigurationManager_1$instance<T> {
+    readonly __tsonic_iface_Microsoft_IdentityModel_Protocols_IConfigurationManager_1: never;
+
     GetConfigurationAsync(cancel: CancellationToken): Task<T>;
     RequestRefresh(): void;
 }
@@ -28,6 +30,8 @@ export interface IConfigurationManager_1$instance<T> {
 export type IConfigurationManager_1<T> = IConfigurationManager_1$instance<T>;
 
 export interface IConfigurationRetriever_1$instance<T> {
+    readonly __tsonic_iface_Microsoft_IdentityModel_Protocols_IConfigurationRetriever_1: never;
+
     GetConfigurationAsync(address: string, retriever: IDocumentRetriever, cancel: CancellationToken): Task<T>;
 }
 
@@ -35,6 +39,8 @@ export interface IConfigurationRetriever_1$instance<T> {
 export type IConfigurationRetriever_1<T> = IConfigurationRetriever_1$instance<T>;
 
 export interface IConfigurationValidator_1$instance<T> {
+    readonly __tsonic_iface_Microsoft_IdentityModel_Protocols_IConfigurationValidator_1: never;
+
     Validate(configuration: T): ConfigurationValidationResult;
 }
 
@@ -42,6 +48,8 @@ export interface IConfigurationValidator_1$instance<T> {
 export type IConfigurationValidator_1<T> = IConfigurationValidator_1$instance<T>;
 
 export interface IDocumentRetriever$instance {
+    readonly __tsonic_iface_Microsoft_IdentityModel_Protocols_IDocumentRetriever: never;
+
     GetDocumentAsync(address: string, cancel: CancellationToken): Task<System_Internal.String>;
 }
 
@@ -64,14 +72,15 @@ export interface AuthenticationProtocolMessage$instance {
 }
 
 
-export const AuthenticationProtocolMessage: {
-    new(): AuthenticationProtocolMessage;
+export const AuthenticationProtocolMessage: (abstract new() => AuthenticationProtocolMessage) & {
 };
 
 
 export type AuthenticationProtocolMessage = AuthenticationProtocolMessage$instance;
 
 export interface ConfigurationManager_1$instance<T> extends BaseConfigurationManager {
+    readonly __tsonic_iface_Microsoft_IdentityModel_Protocols_IConfigurationManager_1: never;
+
     GetBaseConfigurationAsync(cancel: CancellationToken): Task<BaseConfiguration>;
     GetBaseConfigurationAsync(cancel: CancellationToken): Task<BaseConfiguration>;
     GetConfigurationAsync(): Task<T>;
@@ -115,6 +124,8 @@ export const ConfigurationValidationResult: {
 export type ConfigurationValidationResult = ConfigurationValidationResult$instance;
 
 export interface FileDocumentRetriever$instance {
+    readonly __tsonic_iface_Microsoft_IdentityModel_Protocols_IDocumentRetriever: never;
+
     GetDocumentAsync(address: string, cancel: CancellationToken): Task<System_Internal.String>;
 }
 
@@ -134,6 +145,8 @@ export type FileDocumentRetriever = FileDocumentRetriever$instance & __FileDocum
 
 
 export interface HttpDocumentRetriever$instance {
+    readonly __tsonic_iface_Microsoft_IdentityModel_Protocols_IDocumentRetriever: never;
+
     RequireHttps: boolean;
     SendAdditionalHeaderData: boolean;
     GetDocumentAsync(address: string, cancel: CancellationToken): Task<System_Internal.String>;
@@ -177,6 +190,8 @@ export const HttpRequestData: {
 export type HttpRequestData = HttpRequestData$instance;
 
 export interface StaticConfigurationManager_1$instance<T> extends BaseConfigurationManager {
+    readonly __tsonic_iface_Microsoft_IdentityModel_Protocols_IConfigurationManager_1: never;
+
     GetBaseConfigurationAsync(cancel: CancellationToken): Task<BaseConfiguration>;
     GetBaseConfigurationAsync(cancel: CancellationToken): Task<BaseConfiguration>;
     GetConfigurationAsync(cancel: CancellationToken): Task<T>;

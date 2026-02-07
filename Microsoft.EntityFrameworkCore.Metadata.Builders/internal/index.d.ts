@@ -63,6 +63,8 @@ export const OwnedNavigationTemporalTableBuilder_2: {
 export type OwnedNavigationTemporalTableBuilder_2<TOwnerEntity, TDependentEntity> = OwnedNavigationTemporalTableBuilder_2$instance<TOwnerEntity, TDependentEntity>;
 
 export interface TemporalPeriodPropertyBuilder$instance {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IInfrastructure_1: never;
+
     Equals(obj: unknown): boolean;
     GetHashCode(): int;
     HasColumnName(name: string): TemporalPeriodPropertyBuilder;

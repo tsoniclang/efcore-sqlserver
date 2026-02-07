@@ -12,6 +12,8 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface IKeyEncryptionKey$instance {
+    readonly __tsonic_iface_Azure_Core_Cryptography_IKeyEncryptionKey: never;
+
     readonly KeyId: string;
     WrapKey(algorithm: string, key: ReadOnlyMemory<System_Internal.Byte>, cancellationToken?: CancellationToken): byte[];
     WrapKeyAsync(algorithm: string, key: ReadOnlyMemory<System_Internal.Byte>, cancellationToken?: CancellationToken): Task<byte[]>;
@@ -21,6 +23,8 @@ export interface IKeyEncryptionKey$instance {
 export type IKeyEncryptionKey = IKeyEncryptionKey$instance;
 
 export interface IKeyEncryptionKeyResolver$instance {
+    readonly __tsonic_iface_Azure_Core_Cryptography_IKeyEncryptionKeyResolver: never;
+
     Resolve(keyId: string, cancellationToken?: CancellationToken): IKeyEncryptionKey;
     ResolveAsync(keyId: string, cancellationToken?: CancellationToken): Task<IKeyEncryptionKey>;
 }

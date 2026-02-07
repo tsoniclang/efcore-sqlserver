@@ -12,6 +12,8 @@ import type { IReadOnlyDictionary } from "@tsonic/dotnet/System.Collections.Gene
 import type { Int32, String as ClrString, Void } from "@tsonic/dotnet/System.js";
 
 export interface IAuthenticationOperation$instance {
+    readonly __tsonic_iface_Microsoft_Identity_Client_AuthScheme_IAuthenticationOperation: never;
+
     readonly TelemetryTokenType: int;
     readonly AuthorizationHeaderPrefix: string;
     readonly KeyId: string;

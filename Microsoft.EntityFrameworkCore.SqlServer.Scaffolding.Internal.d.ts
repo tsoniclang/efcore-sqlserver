@@ -19,3 +19,6 @@ import type { IRelationalTypeMappingSource } from '@tsonic/efcore/Microsoft.Enti
 export { SqlDataReaderExtension$instance as SqlDataReaderExtension } from './Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal/internal/index.js';
 export { SqlServerCodeGenerator as SqlServerCodeGenerator } from './Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal/internal/index.js';
 export { SqlServerDatabaseModelFactory as SqlServerDatabaseModelFactory } from './Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal/internal/index.js';
+// Extension methods (C# using semantics)
+export type { ExtensionMethods_Microsoft_EntityFrameworkCore_SqlServer_Scaffolding_Internal as ExtensionMethods } from './__internal/extensions/index.js';
+

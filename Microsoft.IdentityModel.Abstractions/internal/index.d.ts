@@ -21,6 +21,8 @@ export enum EventLogLevel {
 
 
 export interface IIdentityLogger$instance {
+    readonly __tsonic_iface_Microsoft_IdentityModel_Abstractions_IIdentityLogger: never;
+
     IsEnabled(eventLogLevel: EventLogLevel): boolean;
     Log(entry: LogEntry): void;
 }
@@ -29,6 +31,8 @@ export interface IIdentityLogger$instance {
 export type IIdentityLogger = IIdentityLogger$instance;
 
 export interface ITelemetryClient$instance {
+    readonly __tsonic_iface_Microsoft_IdentityModel_Abstractions_ITelemetryClient: never;
+
     ClientId: string;
     Initialize(): void;
     IsEnabled(): boolean;
@@ -42,10 +46,10 @@ export type ITelemetryClient = ITelemetryClient$instance;
 
 export interface LogEntry$instance {
     get CorrelationId(): string | undefined;
-    set CorrelationId(value: string);
+    set CorrelationId(value: string | undefined);
     EventLogLevel: EventLogLevel;
     get Message(): string | undefined;
-    set Message(value: string);
+    set Message(value: string | undefined);
 }
 
 
@@ -57,13 +61,14 @@ export const LogEntry: {
 export type LogEntry = LogEntry$instance;
 
 export interface NullIdentityModelLogger$instance {
+    readonly __tsonic_iface_Microsoft_IdentityModel_Abstractions_IIdentityLogger: never;
+
     IsEnabled(eventLogLevel: EventLogLevel): boolean;
     Log(entry: LogEntry): void;
 }
 
 
 export const NullIdentityModelLogger: {
-    new(): NullIdentityModelLogger;
     readonly Instance: NullIdentityModelLogger;
 };
 
@@ -78,6 +83,8 @@ export type NullIdentityModelLogger = NullIdentityModelLogger$instance & __NullI
 
 
 export interface NullTelemetryClient$instance {
+    readonly __tsonic_iface_Microsoft_IdentityModel_Abstractions_ITelemetryClient: never;
+
     ClientId: string;
     Initialize(): void;
     IsEnabled(): boolean;
@@ -88,7 +95,6 @@ export interface NullTelemetryClient$instance {
 
 
 export const NullTelemetryClient: {
-    new(): NullTelemetryClient;
     readonly Instance: NullTelemetryClient;
 };
 
@@ -103,7 +109,8 @@ export type NullTelemetryClient = NullTelemetryClient$instance & __NullTelemetry
 
 
 export interface TelemetryEventDetails$instance {
-    Name: string;
+    get Name(): string | undefined;
+    set Name(value: string | undefined);
     readonly Properties: IReadOnlyDictionary<System_Internal.String, unknown>;
     SetProperty(key: string, value: string): void;
     SetProperty(key: string, value: long): void;
@@ -114,8 +121,7 @@ export interface TelemetryEventDetails$instance {
 }
 
 
-export const TelemetryEventDetails: {
-    new(): TelemetryEventDetails;
+export const TelemetryEventDetails: (abstract new() => TelemetryEventDetails) & {
 };
 
 

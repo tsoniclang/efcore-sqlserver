@@ -24,6 +24,8 @@ export type StreamChangeCallback = (streamName: string) => void;
 
 
 export interface IConfigErrorInfo$instance {
+    readonly __tsonic_iface_System_Configuration_Internal_IConfigErrorInfo: never;
+
     readonly Filename: string;
     readonly LineNumber: int;
 }
@@ -32,6 +34,8 @@ export interface IConfigErrorInfo$instance {
 export type IConfigErrorInfo = IConfigErrorInfo$instance;
 
 export interface IConfigSystem$instance {
+    readonly __tsonic_iface_System_Configuration_Internal_IConfigSystem: never;
+
     readonly Host: IInternalConfigHost;
     readonly Root: IInternalConfigRoot;
     Init(typeConfigHost: Type, ...hostInitParams: unknown[]): void;
@@ -41,6 +45,8 @@ export interface IConfigSystem$instance {
 export type IConfigSystem = IConfigSystem$instance;
 
 export interface IConfigurationManagerHelper$instance {
+    readonly __tsonic_iface_System_Configuration_Internal_IConfigurationManagerHelper: never;
+
     EnsureNetConfigLoaded(): void;
 }
 
@@ -48,6 +54,8 @@ export interface IConfigurationManagerHelper$instance {
 export type IConfigurationManagerHelper = IConfigurationManagerHelper$instance;
 
 export interface IConfigurationManagerInternal$instance {
+    readonly __tsonic_iface_System_Configuration_Internal_IConfigurationManagerInternal: never;
+
     readonly SupportsUserConfig: boolean;
     readonly SetConfigurationSystemInProgress: boolean;
     readonly MachineConfigPath: string;
@@ -65,6 +73,8 @@ export interface IConfigurationManagerInternal$instance {
 export type IConfigurationManagerInternal = IConfigurationManagerInternal$instance;
 
 export interface IInternalConfigClientHost$instance {
+    readonly __tsonic_iface_System_Configuration_Internal_IInternalConfigClientHost: never;
+
     GetExeConfigPath(): string;
     IsExeConfig(configPath: string): boolean;
 }
@@ -73,6 +83,8 @@ export interface IInternalConfigClientHost$instance {
 export type IInternalConfigClientHost = IInternalConfigClientHost$instance;
 
 export interface IInternalConfigConfigurationFactory$instance {
+    readonly __tsonic_iface_System_Configuration_Internal_IInternalConfigConfigurationFactory: never;
+
     Create(typeConfigHost: Type, ...hostInitConfigurationParams: unknown[]): Configuration;
     NormalizeLocationSubPath(subPath: string, errorInfo: IConfigErrorInfo): string;
 }
@@ -81,6 +93,8 @@ export interface IInternalConfigConfigurationFactory$instance {
 export type IInternalConfigConfigurationFactory = IInternalConfigConfigurationFactory$instance;
 
 export interface IInternalConfigHost$instance {
+    readonly __tsonic_iface_System_Configuration_Internal_IInternalConfigHost: never;
+
     readonly SupportsChangeNotifications: boolean;
     readonly SupportsRefresh: boolean;
     readonly SupportsPath: boolean;
@@ -118,6 +132,8 @@ export interface IInternalConfigHost$instance {
 export type IInternalConfigHost = IInternalConfigHost$instance;
 
 export interface IInternalConfigRecord$instance {
+    readonly __tsonic_iface_System_Configuration_Internal_IInternalConfigRecord: never;
+
     readonly ConfigPath: string;
     readonly StreamName: string;
     readonly HasInitErrors: boolean;
@@ -130,6 +146,8 @@ export interface IInternalConfigRecord$instance {
 export type IInternalConfigRecord = IInternalConfigRecord$instance;
 
 export interface IInternalConfigRoot$instance {
+    readonly __tsonic_iface_System_Configuration_Internal_IInternalConfigRoot: never;
+
     readonly IsDesignTime: boolean;
     GetSection(section: string, configPath: string): unknown;
     GetUniqueConfigPath(configPath: string): string;
@@ -142,6 +160,8 @@ export interface IInternalConfigRoot$instance {
 export type IInternalConfigRoot = IInternalConfigRoot$instance;
 
 export interface IInternalConfigSettingsFactory$instance {
+    readonly __tsonic_iface_System_Configuration_Internal_IInternalConfigSettingsFactory: never;
+
     CompleteInit(): void;
     SetConfigurationSystem(internalConfigSystem: IInternalConfigSystem, initComplete: boolean): void;
 }
@@ -150,6 +170,8 @@ export interface IInternalConfigSettingsFactory$instance {
 export type IInternalConfigSettingsFactory = IInternalConfigSettingsFactory$instance;
 
 export interface IInternalConfigSystem$instance {
+    readonly __tsonic_iface_System_Configuration_Internal_IInternalConfigSystem: never;
+
     readonly SupportsUserConfig: boolean;
     GetSection(configKey: string): unknown;
     RefreshConfig(sectionName: string): void;
@@ -207,8 +229,7 @@ export interface DelegatingConfigHost$instance {
 }
 
 
-export const DelegatingConfigHost: {
-    new(): DelegatingConfigHost;
+export const DelegatingConfigHost: (abstract new() => DelegatingConfigHost) & {
 };
 
 

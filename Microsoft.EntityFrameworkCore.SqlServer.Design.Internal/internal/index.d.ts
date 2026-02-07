@@ -17,18 +17,16 @@ import type { IAnnotation } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.I
 import type { IColumn, IEntityType, IIndex, IKey, IModel, IProperty, IRelationalModel, IRelationalPropertyOverrides, ITable, ITableIndex, IUniqueConstraint } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
 import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection.js";
 
-export abstract class SqlServerAnnotationCodeGenerator$protected {
-    protected GenerateFluentApi(key: IKey, annotation: IAnnotation): MethodCallCodeFragment | undefined;
-    protected GenerateFluentApi(index: IIndex, annotation: IAnnotation): MethodCallCodeFragment | undefined;
-    protected IsHandledByConvention(model: IModel, annotation: IAnnotation): boolean;
-    protected IsHandledByConvention(property: IProperty, annotation: IAnnotation): boolean;
-}
+export interface SqlServerAnnotationCodeGenerator$instance extends AnnotationCodeGenerator {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Design_IAnnotationCodeGenerator: never;
 
-
-export interface SqlServerAnnotationCodeGenerator$instance extends SqlServerAnnotationCodeGenerator$protected, AnnotationCodeGenerator {
+    GenerateFluentApi(key: IKey, annotation: IAnnotation): MethodCallCodeFragment | undefined;
+    GenerateFluentApi(index: IIndex, annotation: IAnnotation): MethodCallCodeFragment | undefined;
     GenerateFluentApiCalls(model: IModel, annotations: IDictionary<System_Internal.String, IAnnotation>): IReadOnlyList<MethodCallCodeFragment>;
     GenerateFluentApiCalls(property: IProperty, annotations: IDictionary<System_Internal.String, IAnnotation>): IReadOnlyList<MethodCallCodeFragment>;
     GenerateFluentApiCalls(entityType: IEntityType, annotations: IDictionary<System_Internal.String, IAnnotation>): IReadOnlyList<MethodCallCodeFragment>;
+    IsHandledByConvention(model: IModel, annotation: IAnnotation): boolean;
+    IsHandledByConvention(property: IProperty, annotation: IAnnotation): boolean;
 }
 
 
@@ -62,6 +60,8 @@ export const SqlServerCSharpRuntimeAnnotationCodeGenerator: {
 export type SqlServerCSharpRuntimeAnnotationCodeGenerator = SqlServerCSharpRuntimeAnnotationCodeGenerator$instance;
 
 export interface SqlServerDesignTimeServices$instance {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Design_IDesignTimeServices: never;
+
     ConfigureDesignTimeServices(serviceCollection: IServiceCollection): void;
 }
 

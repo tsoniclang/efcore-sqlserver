@@ -16,15 +16,14 @@ import * as Microsoft_EntityFrameworkCore_Query_SqlExpressions_Internal from "@t
 import type { SqlExpression, SqlFunctionExpression } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query.SqlExpressions.js";
 import type { RelationalTypeMapping } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
 
-export abstract class SqlServerJsonObjectExpression$protected {
-    protected Print(expressionPrinter: ExpressionPrinter): void;
-}
+export interface SqlServerJsonObjectExpression$instance extends SqlFunctionExpression {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IPrintableExpression: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IRelationalQuotableExpression: never;
 
-
-export interface SqlServerJsonObjectExpression$instance extends SqlServerJsonObjectExpression$protected, SqlFunctionExpression {
     readonly PropertyNames: IReadOnlyList<System_Internal.String>;
     Equals(obj: unknown): boolean;
     GetHashCode(): int;
+    Print(expressionPrinter: ExpressionPrinter): void;
     Quote(): Expression;
 }
 

@@ -29,6 +29,8 @@ export const CacheChangedEventArgs: {
 export type CacheChangedEventArgs = CacheChangedEventArgs$instance;
 
 export interface CrossPlatLock$instance {
+    readonly __tsonic_iface_System_IDisposable: never;
+
     Dispose(): void;
 }
 
@@ -51,7 +53,6 @@ export interface MsalCacheHelper$instance {
 
 
 export const MsalCacheHelper: {
-    new(): MsalCacheHelper;
     readonly LinuxKeyRingDefaultCollection: string;
     readonly LinuxKeyRingSessionCollection: string;
     readonly UserRootDirectory: string;
@@ -62,6 +63,8 @@ export const MsalCacheHelper: {
 export type MsalCacheHelper = MsalCacheHelper$instance;
 
 export interface MsalCachePersistenceException$instance extends Exception {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
 }
 
 
@@ -69,7 +72,6 @@ export const MsalCachePersistenceException: {
     new(): MsalCachePersistenceException;
     new(message: string): MsalCachePersistenceException;
     new(message: string, innerException: Exception): MsalCachePersistenceException;
-    new(info: SerializationInfo, context: StreamingContext): MsalCachePersistenceException;
 };
 
 
@@ -84,7 +86,6 @@ export interface Storage$instance {
 
 
 export const Storage: {
-    new(): Storage;
     Create(creationProperties: StorageCreationProperties, logger?: TraceSource): Storage;
 };
 
@@ -112,7 +113,6 @@ export interface StorageCreationProperties$instance {
 
 
 export const StorageCreationProperties: {
-    new(): StorageCreationProperties;
 };
 
 

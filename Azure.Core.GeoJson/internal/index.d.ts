@@ -32,8 +32,13 @@ export enum GeoObjectType {
 
 
 export interface GeoArray_1$instance<T> {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly Count: int;
-    readonly Item: T;
+    readonly [index: number]: T;
     GetEnumerator(): GeoArray_1_Enumerator<T>;
 }
 
@@ -46,6 +51,10 @@ export const GeoArray_1: {
 export type GeoArray_1<T> = GeoArray_1$instance<T>;
 
 export interface GeoArray_1_Enumerator$instance<T> {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerator_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerator: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     readonly Current: T;
     Dispose(): void;
     MoveNext(): boolean;
@@ -61,9 +70,11 @@ export const GeoArray_1_Enumerator: {
 export type GeoArray_1_Enumerator<T> = GeoArray_1_Enumerator$instance<T>;
 
 export interface GeoPosition$instance {
+    readonly __tsonic_iface_System_IEquatable_1: never;
+
     readonly Altitude: Nullable<System_Internal.Double>;
     readonly Count: int;
-    readonly Item: double;
+    readonly [index: number]: double;
     readonly Latitude: double;
     readonly Longitude: double;
     Equals(other: GeoPosition): boolean;
@@ -82,8 +93,10 @@ export const GeoPosition: {
 export type GeoPosition = GeoPosition$instance;
 
 export interface GeoBoundingBox$instance {
+    readonly __tsonic_iface_System_IEquatable_1: never;
+
     readonly East: double;
-    readonly Item: double;
+    readonly [index: number]: double;
     readonly MaxAltitude: Nullable<System_Internal.Double>;
     readonly MinAltitude: Nullable<System_Internal.Double>;
     readonly North: double;
@@ -105,8 +118,13 @@ export const GeoBoundingBox: {
 export type GeoBoundingBox = GeoBoundingBox$instance;
 
 export interface GeoCollection$instance extends GeoObject {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly Count: int;
-    readonly Item: GeoObject;
+    readonly [index: number]: GeoObject;
     readonly Type: GeoObjectType;
     GetEnumerator(): IEnumerator__System_Collections_Generic<GeoObject>;
 }
@@ -147,9 +165,14 @@ export const GeoLineString: {
 export type GeoLineString = GeoLineString$instance;
 
 export interface GeoLineStringCollection$instance extends GeoObject {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly Coordinates: GeoArray_1<GeoArray_1<GeoPosition>>;
     readonly Count: int;
-    readonly Item: GeoLineString;
+    readonly [index: number]: GeoLineString;
     readonly Type: GeoObjectType;
     GetEnumerator(): IEnumerator__System_Collections_Generic<GeoLineString>;
 }
@@ -179,6 +202,9 @@ export const GeoObject: {
 export type GeoObject = GeoObject$instance;
 
 export interface GeoPoint$instance extends GeoObject {
+    readonly __tsonic_iface_System_ClientModel_Primitives_IJsonModel_1: never;
+    readonly __tsonic_iface_System_ClientModel_Primitives_IPersistableModel_1: never;
+
     readonly Coordinates: GeoPosition;
     readonly Type: GeoObjectType;
 }
@@ -204,9 +230,14 @@ export type GeoPoint = GeoPoint$instance & __GeoPoint$views;
 
 
 export interface GeoPointCollection$instance extends GeoObject {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly Coordinates: GeoArray_1<GeoPosition>;
     readonly Count: int;
-    readonly Item: GeoPoint;
+    readonly [index: number]: GeoPoint;
     readonly Type: GeoObjectType;
     GetEnumerator(): IEnumerator__System_Collections_Generic<GeoPoint>;
 }
@@ -238,9 +269,14 @@ export const GeoPolygon: {
 export type GeoPolygon = GeoPolygon$instance;
 
 export interface GeoPolygonCollection$instance extends GeoObject {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly Coordinates: GeoArray_1<GeoArray_1<GeoArray_1<GeoPosition>>>;
     readonly Count: int;
-    readonly Item: GeoPolygon;
+    readonly [index: number]: GeoPolygon;
     readonly Type: GeoObjectType;
     GetEnumerator(): IEnumerator__System_Collections_Generic<GeoPolygon>;
 }

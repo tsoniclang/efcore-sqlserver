@@ -44,3 +44,6 @@ export { SqlServerPropertyExtensions$instance as SqlServerPropertyExtensions } f
 export { SqlServerTableBuilderExtensions$instance as SqlServerTableBuilderExtensions } from './Microsoft.EntityFrameworkCore/internal/index.js';
 export { SqlServerTableExtensions$instance as SqlServerTableExtensions } from './Microsoft.EntityFrameworkCore/internal/index.js';
 export { SqlServerRetryingExecutionStrategy as SqlServerRetryingExecutionStrategy } from './Microsoft.EntityFrameworkCore/internal/index.js';
+// Extension methods (C# using semantics)
+export type { ExtensionMethods_Microsoft_EntityFrameworkCore as ExtensionMethods } from './__internal/extensions/index.js';
+

@@ -10,6 +10,8 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Byte, String as ClrString } from "@tsonic/dotnet/System.js";
 
 export interface IPoPCryptoProvider$instance {
+    readonly __tsonic_iface_Microsoft_Identity_Client_AuthScheme_PoP_IPoPCryptoProvider: never;
+
     readonly CannonicalPublicKeyJwk: string;
     readonly CryptographicAlgorithm: string;
     Sign(data: byte[]): byte[];

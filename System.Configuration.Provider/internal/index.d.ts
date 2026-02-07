@@ -21,17 +21,19 @@ export interface ProviderBase$instance {
 }
 
 
-export const ProviderBase: {
-    new(): ProviderBase;
+export const ProviderBase: (abstract new() => ProviderBase) & {
 };
 
 
 export type ProviderBase = ProviderBase$instance;
 
 export interface ProviderCollection$instance {
+    readonly __tsonic_iface_System_Collections_ICollection: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly Count: int;
     readonly IsSynchronized: boolean;
-    readonly Item: ProviderBase | SettingsProvider;
+    readonly [name: string]: ProtectedConfigurationProvider | ProviderBase;
     readonly SyncRoot: unknown;
     Add(provider: ProviderBase): void;
     Clear(): void;
@@ -50,6 +52,8 @@ export const ProviderCollection: {
 export type ProviderCollection = ProviderCollection$instance;
 
 export interface ProviderException$instance extends Exception {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
 }
 
 
@@ -57,7 +61,6 @@ export const ProviderException: {
     new(): ProviderException;
     new(message: string): ProviderException;
     new(message: string, innerException: Exception): ProviderException;
-    new(info: SerializationInfo, context: StreamingContext): ProviderException;
 };
 
 

@@ -5,9 +5,26 @@
 
 // Import namespace modules for cross-namespace type references
 import * as Azure_Core_Serialization from "../../Azure.Core.Serialization/internal/index.js";
+import * as Microsoft_Data_SqlTypes from "../../Microsoft.Data.SqlTypes/internal/index.js";
+import * as Microsoft_EntityFrameworkCore from "../../Microsoft.EntityFrameworkCore/internal/index.js";
+import * as Microsoft_EntityFrameworkCore_Diagnostics from "../../Microsoft.EntityFrameworkCore.Diagnostics/internal/index.js";
+import * as Microsoft_EntityFrameworkCore_Infrastructure from "../../Microsoft.EntityFrameworkCore.Infrastructure/internal/index.js";
+import * as Microsoft_EntityFrameworkCore_Metadata from "../../Microsoft.EntityFrameworkCore.Metadata/internal/index.js";
+import * as Microsoft_EntityFrameworkCore_Metadata_Builders from "../../Microsoft.EntityFrameworkCore.Metadata.Builders/internal/index.js";
+import * as Microsoft_EntityFrameworkCore_Migrations from "../../Microsoft.EntityFrameworkCore.Migrations/internal/index.js";
+import * as Microsoft_Extensions_DependencyInjection from "../../Microsoft.Extensions.DependencyInjection/internal/index.js";
 import * as Microsoft_Identity_Client from "../../Microsoft.Identity.Client/internal/index.js";
 import * as Microsoft_Identity_Client_Extensibility from "../../Microsoft.Identity.Client.Extensibility/internal/index.js";
 import * as System from "../../System/internal/index.js";
+import * as System_ClientModel_Primitives from "../../System.ClientModel.Primitives/internal/index.js";
+import * as System_Collections_Generic from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Data_Common from "@tsonic/dotnet/System.Data.Common/internal/index.js";
+import * as System_Diagnostics from "../../System.Diagnostics/internal/index.js";
+import * as System_Linq from "@tsonic/dotnet/System.Linq/internal/index.js";
+import * as System_Linq_Expressions from "@tsonic/dotnet/System.Linq.Expressions/internal/index.js";
+import * as System_Security_Cryptography_X509Certificates from "@tsonic/dotnet/System.Security.Cryptography.X509Certificates/internal/index.js";
+import * as System_Threading from "@tsonic/dotnet/System.Threading/internal/index.js";
+import * as System_Threading_Tasks from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
 
 // Import primitive type aliases
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
@@ -19,19 +36,766 @@ import * as System_Internal from "../../System/internal/index.js";
 import type { ptr } from '@tsonic/core/types.js';
 
 export interface __Ext_Azure_BinaryData {
-  ToObject<T>(serializer: Azure_Core_Serialization.ObjectSerializer, cancellationToken: CancellationToken): ExtensionMethods_Azure<T | undefined>;
-  ToObjectAsync<T>(serializer: Azure_Core_Serialization.ObjectSerializer, cancellationToken: CancellationToken): ExtensionMethods_Azure<ValueTask_1<T>>;
+  ToObject<T>(serializer: Azure_Core_Serialization.ObjectSerializer, cancellationToken?: System_Threading.CancellationToken): ExtensionMethods_Azure<T | undefined>;
+  ToObjectAsync<T>(serializer: Azure_Core_Serialization.ObjectSerializer, cancellationToken?: System_Threading.CancellationToken): ExtensionMethods_Azure<System_Threading_Tasks.ValueTask_1<T>>;
   ToObjectFromJson(): ExtensionMethods_Azure<unknown | undefined>;
   ToDynamicFromJson(): ExtensionMethods_Azure<unknown>;
-  ToDynamicFromJson(propertyNameFormat: Azure_Core_Serialization.JsonPropertyNames, dateTimeFormat: string): ExtensionMethods_Azure<unknown>;
+  ToDynamicFromJson(propertyNameFormat: Azure_Core_Serialization.JsonPropertyNames, dateTimeFormat?: string): ExtensionMethods_Azure<unknown>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_DbContextOptionsBuilder {
+  UseSqlServer(sqlServerOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqlServerDbContextOptionsBuilder>): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
+  UseSqlServer(connectionString: string, sqlServerOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqlServerDbContextOptionsBuilder>): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
+  UseSqlServer(connection: System_Data_Common.DbConnection, sqlServerOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqlServerDbContextOptionsBuilder>): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
+  UseSqlServer(connection: System_Data_Common.DbConnection, contextOwnsConnection: boolean, sqlServerOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqlServerDbContextOptionsBuilder>): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
+  UseAzureSql(azureSqlOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSqlDbContextOptionsBuilder>): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
+  UseAzureSql(connectionString: string, azureSqlOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSqlDbContextOptionsBuilder>): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
+  UseAzureSql(connection: System_Data_Common.DbConnection, azureSqlOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSqlDbContextOptionsBuilder>): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
+  UseAzureSql(connection: System_Data_Common.DbConnection, contextOwnsConnection: boolean, azureSqlOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSqlDbContextOptionsBuilder>): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
+  UseAzureSynapse(azureSynapseOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSynapseDbContextOptionsBuilder>): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
+  UseAzureSynapse(connectionString: string, azureSynapseOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSynapseDbContextOptionsBuilder>): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
+  UseAzureSynapse(connection: System_Data_Common.DbConnection, azureSynapseOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSynapseDbContextOptionsBuilder>): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
+  UseAzureSynapse(connection: System_Data_Common.DbConnection, contextOwnsConnection: boolean, azureSynapseOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSynapseDbContextOptionsBuilder>): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
+  ConfigureSqlEngine(sqlEngineOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqlEngineDbContextOptionsBuilder>): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_DbContextOptionsBuilder_1<T> {
+  UseSqlServer(sqlServerOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqlServerDbContextOptionsBuilder>): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<T>>;
+  UseSqlServer(connectionString: string, sqlServerOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqlServerDbContextOptionsBuilder>): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<T>>;
+  UseSqlServer(connection: System_Data_Common.DbConnection, sqlServerOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqlServerDbContextOptionsBuilder>): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<T>>;
+  UseSqlServer(connection: System_Data_Common.DbConnection, contextOwnsConnection: boolean, sqlServerOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqlServerDbContextOptionsBuilder>): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<T>>;
+  UseAzureSql(azureSqlOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSqlDbContextOptionsBuilder>): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<T>>;
+  UseAzureSql(connectionString: string, azureSqlOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSqlDbContextOptionsBuilder>): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<T>>;
+  UseAzureSql(connection: System_Data_Common.DbConnection, azureSqlOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSqlDbContextOptionsBuilder>): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<T>>;
+  UseAzureSql(connection: System_Data_Common.DbConnection, contextOwnsConnection: boolean, azureSqlOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSqlDbContextOptionsBuilder>): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<T>>;
+  UseAzureSynapse(azureSynapseOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSynapseDbContextOptionsBuilder>): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<T>>;
+  UseAzureSynapse(connectionString: string, azureSynapseOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSynapseDbContextOptionsBuilder>): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<T>>;
+  UseAzureSynapse(connection: System_Data_Common.DbConnection, azureSynapseOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSynapseDbContextOptionsBuilder>): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<T>>;
+  UseAzureSynapse(connection: System_Data_Common.DbConnection, contextOwnsConnection: boolean, azureSynapseOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSynapseDbContextOptionsBuilder>): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<T>>;
+  ConfigureSqlEngine(sqlEngineOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqlEngineDbContextOptionsBuilder>): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<T>>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_DbFunctions {
+  FreeText(propertyReference: unknown, freeText: string, languageTerm: int): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  FreeText(propertyReference: unknown, freeText: string): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  Contains(propertyReference: unknown, searchCondition: string, languageTerm: int): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  Contains(propertyReference: unknown, searchCondition: string): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  DateDiffYear(startDate: System.DateTime, endDate: System.DateTime): ExtensionMethods_Microsoft_EntityFrameworkCore<int>;
+  DateDiffYear(startDate: System.Nullable_1<System.DateTime>, endDate: System.Nullable_1<System.DateTime>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  DateDiffYear(startDate: System.DateTimeOffset, endDate: System.DateTimeOffset): ExtensionMethods_Microsoft_EntityFrameworkCore<int>;
+  DateDiffYear(startDate: System.Nullable_1<System.DateTimeOffset>, endDate: System.Nullable_1<System.DateTimeOffset>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  DateDiffYear(startDate: System.DateOnly, endDate: System.DateOnly): ExtensionMethods_Microsoft_EntityFrameworkCore<int>;
+  DateDiffYear(startDate: System.Nullable_1<System.DateOnly>, endDate: System.Nullable_1<System.DateOnly>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  DateDiffMonth(startDate: System.DateTime, endDate: System.DateTime): ExtensionMethods_Microsoft_EntityFrameworkCore<int>;
+  DateDiffMonth(startDate: System.Nullable_1<System.DateTime>, endDate: System.Nullable_1<System.DateTime>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  DateDiffMonth(startDate: System.DateTimeOffset, endDate: System.DateTimeOffset): ExtensionMethods_Microsoft_EntityFrameworkCore<int>;
+  DateDiffMonth(startDate: System.Nullable_1<System.DateTimeOffset>, endDate: System.Nullable_1<System.DateTimeOffset>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  DateDiffMonth(startDate: System.DateOnly, endDate: System.DateOnly): ExtensionMethods_Microsoft_EntityFrameworkCore<int>;
+  DateDiffMonth(startDate: System.Nullable_1<System.DateOnly>, endDate: System.Nullable_1<System.DateOnly>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  DateDiffDay(startDate: System.DateTime, endDate: System.DateTime): ExtensionMethods_Microsoft_EntityFrameworkCore<int>;
+  DateDiffDay(startDate: System.Nullable_1<System.DateTime>, endDate: System.Nullable_1<System.DateTime>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  DateDiffDay(startDate: System.DateTimeOffset, endDate: System.DateTimeOffset): ExtensionMethods_Microsoft_EntityFrameworkCore<int>;
+  DateDiffDay(startDate: System.Nullable_1<System.DateTimeOffset>, endDate: System.Nullable_1<System.DateTimeOffset>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  DateDiffDay(startDate: System.DateOnly, endDate: System.DateOnly): ExtensionMethods_Microsoft_EntityFrameworkCore<int>;
+  DateDiffDay(startDate: System.Nullable_1<System.DateOnly>, endDate: System.Nullable_1<System.DateOnly>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  DateDiffHour(startDate: System.DateTime, endDate: System.DateTime): ExtensionMethods_Microsoft_EntityFrameworkCore<int>;
+  DateDiffHour(startDate: System.Nullable_1<System.DateTime>, endDate: System.Nullable_1<System.DateTime>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  DateDiffHour(startDate: System.DateTimeOffset, endDate: System.DateTimeOffset): ExtensionMethods_Microsoft_EntityFrameworkCore<int>;
+  DateDiffHour(startDate: System.Nullable_1<System.DateTimeOffset>, endDate: System.Nullable_1<System.DateTimeOffset>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  DateDiffHour(startTimeSpan: System.TimeSpan, endTimeSpan: System.TimeSpan): ExtensionMethods_Microsoft_EntityFrameworkCore<int>;
+  DateDiffHour(startTimeSpan: System.Nullable_1<System.TimeSpan>, endTimeSpan: System.Nullable_1<System.TimeSpan>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  DateDiffHour(startTime: System.TimeOnly, endTime: System.TimeOnly): ExtensionMethods_Microsoft_EntityFrameworkCore<int>;
+  DateDiffHour(startTime: System.Nullable_1<System.TimeOnly>, endTime: System.Nullable_1<System.TimeOnly>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  DateDiffHour(startDate: System.DateOnly, endDate: System.DateOnly): ExtensionMethods_Microsoft_EntityFrameworkCore<int>;
+  DateDiffHour(startDate: System.Nullable_1<System.DateOnly>, endDate: System.Nullable_1<System.DateOnly>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  DateDiffMinute(startDate: System.DateTime, endDate: System.DateTime): ExtensionMethods_Microsoft_EntityFrameworkCore<int>;
+  DateDiffMinute(startDate: System.Nullable_1<System.DateTime>, endDate: System.Nullable_1<System.DateTime>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  DateDiffMinute(startDate: System.DateTimeOffset, endDate: System.DateTimeOffset): ExtensionMethods_Microsoft_EntityFrameworkCore<int>;
+  DateDiffMinute(startDate: System.Nullable_1<System.DateTimeOffset>, endDate: System.Nullable_1<System.DateTimeOffset>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  DateDiffMinute(startTimeSpan: System.TimeSpan, endTimeSpan: System.TimeSpan): ExtensionMethods_Microsoft_EntityFrameworkCore<int>;
+  DateDiffMinute(startTimeSpan: System.Nullable_1<System.TimeSpan>, endTimeSpan: System.Nullable_1<System.TimeSpan>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  DateDiffMinute(startTime: System.TimeOnly, endTime: System.TimeOnly): ExtensionMethods_Microsoft_EntityFrameworkCore<int>;
+  DateDiffMinute(startTime: System.Nullable_1<System.TimeOnly>, endTime: System.Nullable_1<System.TimeOnly>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  DateDiffMinute(startDate: System.DateOnly, endDate: System.DateOnly): ExtensionMethods_Microsoft_EntityFrameworkCore<int>;
+  DateDiffMinute(startDate: System.Nullable_1<System.DateOnly>, endDate: System.Nullable_1<System.DateOnly>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  DateDiffSecond(startDate: System.DateTime, endDate: System.DateTime): ExtensionMethods_Microsoft_EntityFrameworkCore<int>;
+  DateDiffSecond(startDate: System.Nullable_1<System.DateTime>, endDate: System.Nullable_1<System.DateTime>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  DateDiffSecond(startDate: System.DateTimeOffset, endDate: System.DateTimeOffset): ExtensionMethods_Microsoft_EntityFrameworkCore<int>;
+  DateDiffSecond(startDate: System.Nullable_1<System.DateTimeOffset>, endDate: System.Nullable_1<System.DateTimeOffset>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  DateDiffSecond(startTimeSpan: System.TimeSpan, endTimeSpan: System.TimeSpan): ExtensionMethods_Microsoft_EntityFrameworkCore<int>;
+  DateDiffSecond(startTimeSpan: System.Nullable_1<System.TimeSpan>, endTimeSpan: System.Nullable_1<System.TimeSpan>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  DateDiffSecond(startTime: System.TimeOnly, endTime: System.TimeOnly): ExtensionMethods_Microsoft_EntityFrameworkCore<int>;
+  DateDiffSecond(startTime: System.Nullable_1<System.TimeOnly>, endTime: System.Nullable_1<System.TimeOnly>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  DateDiffSecond(startDate: System.DateOnly, endDate: System.DateOnly): ExtensionMethods_Microsoft_EntityFrameworkCore<int>;
+  DateDiffSecond(startDate: System.Nullable_1<System.DateOnly>, endDate: System.Nullable_1<System.DateOnly>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  DateDiffMillisecond(startDate: System.DateTime, endDate: System.DateTime): ExtensionMethods_Microsoft_EntityFrameworkCore<int>;
+  DateDiffMillisecond(startDate: System.Nullable_1<System.DateTime>, endDate: System.Nullable_1<System.DateTime>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  DateDiffMillisecond(startDate: System.DateTimeOffset, endDate: System.DateTimeOffset): ExtensionMethods_Microsoft_EntityFrameworkCore<int>;
+  DateDiffMillisecond(startDate: System.Nullable_1<System.DateTimeOffset>, endDate: System.Nullable_1<System.DateTimeOffset>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  DateDiffMillisecond(startTimeSpan: System.TimeSpan, endTimeSpan: System.TimeSpan): ExtensionMethods_Microsoft_EntityFrameworkCore<int>;
+  DateDiffMillisecond(startTimeSpan: System.Nullable_1<System.TimeSpan>, endTimeSpan: System.Nullable_1<System.TimeSpan>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  DateDiffMillisecond(startTime: System.TimeOnly, endTime: System.TimeOnly): ExtensionMethods_Microsoft_EntityFrameworkCore<int>;
+  DateDiffMillisecond(startTime: System.Nullable_1<System.TimeOnly>, endTime: System.Nullable_1<System.TimeOnly>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  DateDiffMillisecond(startDate: System.DateOnly, endDate: System.DateOnly): ExtensionMethods_Microsoft_EntityFrameworkCore<int>;
+  DateDiffMillisecond(startDate: System.Nullable_1<System.DateOnly>, endDate: System.Nullable_1<System.DateOnly>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  DateDiffMicrosecond(startDate: System.DateTime, endDate: System.DateTime): ExtensionMethods_Microsoft_EntityFrameworkCore<int>;
+  DateDiffMicrosecond(startDate: System.Nullable_1<System.DateTime>, endDate: System.Nullable_1<System.DateTime>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  DateDiffMicrosecond(startDate: System.DateTimeOffset, endDate: System.DateTimeOffset): ExtensionMethods_Microsoft_EntityFrameworkCore<int>;
+  DateDiffMicrosecond(startDate: System.Nullable_1<System.DateTimeOffset>, endDate: System.Nullable_1<System.DateTimeOffset>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  DateDiffMicrosecond(startTimeSpan: System.TimeSpan, endTimeSpan: System.TimeSpan): ExtensionMethods_Microsoft_EntityFrameworkCore<int>;
+  DateDiffMicrosecond(startTimeSpan: System.Nullable_1<System.TimeSpan>, endTimeSpan: System.Nullable_1<System.TimeSpan>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  DateDiffMicrosecond(startTime: System.TimeOnly, endTime: System.TimeOnly): ExtensionMethods_Microsoft_EntityFrameworkCore<int>;
+  DateDiffMicrosecond(startTime: System.Nullable_1<System.TimeOnly>, endTime: System.Nullable_1<System.TimeOnly>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  DateDiffMicrosecond(startDate: System.DateOnly, endDate: System.DateOnly): ExtensionMethods_Microsoft_EntityFrameworkCore<int>;
+  DateDiffMicrosecond(startDate: System.Nullable_1<System.DateOnly>, endDate: System.Nullable_1<System.DateOnly>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  DateDiffNanosecond(startDate: System.DateTime, endDate: System.DateTime): ExtensionMethods_Microsoft_EntityFrameworkCore<int>;
+  DateDiffNanosecond(startDate: System.Nullable_1<System.DateTime>, endDate: System.Nullable_1<System.DateTime>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  DateDiffNanosecond(startDate: System.DateTimeOffset, endDate: System.DateTimeOffset): ExtensionMethods_Microsoft_EntityFrameworkCore<int>;
+  DateDiffNanosecond(startDate: System.Nullable_1<System.DateTimeOffset>, endDate: System.Nullable_1<System.DateTimeOffset>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  DateDiffNanosecond(startTimeSpan: System.TimeSpan, endTimeSpan: System.TimeSpan): ExtensionMethods_Microsoft_EntityFrameworkCore<int>;
+  DateDiffNanosecond(startTimeSpan: System.Nullable_1<System.TimeSpan>, endTimeSpan: System.Nullable_1<System.TimeSpan>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  DateDiffNanosecond(startTime: System.TimeOnly, endTime: System.TimeOnly): ExtensionMethods_Microsoft_EntityFrameworkCore<int>;
+  DateDiffNanosecond(startTime: System.Nullable_1<System.TimeOnly>, endTime: System.Nullable_1<System.TimeOnly>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  DateDiffNanosecond(startDate: System.DateOnly, endDate: System.DateOnly): ExtensionMethods_Microsoft_EntityFrameworkCore<int>;
+  DateDiffNanosecond(startDate: System.Nullable_1<System.DateOnly>, endDate: System.Nullable_1<System.DateOnly>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  DateDiffWeek(startDate: System.DateTime, endDate: System.DateTime): ExtensionMethods_Microsoft_EntityFrameworkCore<int>;
+  DateDiffWeek(startDate: System.Nullable_1<System.DateTime>, endDate: System.Nullable_1<System.DateTime>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  DateDiffWeek(startDate: System.DateTimeOffset, endDate: System.DateTimeOffset): ExtensionMethods_Microsoft_EntityFrameworkCore<int>;
+  DateDiffWeek(startDate: System.Nullable_1<System.DateTimeOffset>, endDate: System.Nullable_1<System.DateTimeOffset>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  DateDiffWeek(startDate: System.DateOnly, endDate: System.DateOnly): ExtensionMethods_Microsoft_EntityFrameworkCore<int>;
+  DateDiffWeek(startDate: System.Nullable_1<System.DateOnly>, endDate: System.Nullable_1<System.DateOnly>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  IsDate(expression: string): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  DateTimeFromParts(year: int, month: int, day: int, hour: int, minute: int, second: int, millisecond: int): ExtensionMethods_Microsoft_EntityFrameworkCore<System.DateTime>;
+  DateFromParts(year: int, month: int, day: int): ExtensionMethods_Microsoft_EntityFrameworkCore<System.DateTime>;
+  DateTime2FromParts(year: int, month: int, day: int, hour: int, minute: int, second: int, fractions: int, precision: int): ExtensionMethods_Microsoft_EntityFrameworkCore<System.DateTime>;
+  DateTimeOffsetFromParts(year: int, month: int, day: int, hour: int, minute: int, second: int, fractions: int, hourOffset: int, minuteOffset: int, precision: int): ExtensionMethods_Microsoft_EntityFrameworkCore<System.DateTimeOffset>;
+  SmallDateTimeFromParts(year: int, month: int, day: int, hour: int, minute: int): ExtensionMethods_Microsoft_EntityFrameworkCore<System.DateTime>;
+  TimeFromParts(hour: int, minute: int, second: int, fractions: int, precision: int): ExtensionMethods_Microsoft_EntityFrameworkCore<System.TimeSpan>;
+  DataLength(arg: string): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  DataLength(arg: System.Nullable_1<System_Internal.Boolean>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  DataLength(arg: System.Nullable_1<System_Internal.Double>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  DataLength(arg: System.Nullable_1<System_Internal.Decimal>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  DataLength(arg: System.Nullable_1<System.DateTime>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  DataLength(arg: System.Nullable_1<System.TimeSpan>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  DataLength(arg: System.Nullable_1<System.DateTimeOffset>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  DataLength(arg: byte[]): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  DataLength(arg: System.Nullable_1<System.Guid>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  IsNumeric(expression: string): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  AtTimeZone(dateTime: System.DateTime, timeZone: string): ExtensionMethods_Microsoft_EntityFrameworkCore<System.DateTimeOffset>;
+  AtTimeZone(dateTimeOffset: System.DateTimeOffset, timeZone: string): ExtensionMethods_Microsoft_EntityFrameworkCore<System.DateTimeOffset>;
+  PatIndex(pattern: string, expression: string): ExtensionMethods_Microsoft_EntityFrameworkCore<long>;
+  StandardDeviationSample(values: System_Collections_Generic.IEnumerable_1<System_Internal.Byte>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Double>>;
+  StandardDeviationSample(values: System_Collections_Generic.IEnumerable_1<System_Internal.Int16>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Double>>;
+  StandardDeviationSample(values: System_Collections_Generic.IEnumerable_1<System_Internal.Int32>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Double>>;
+  StandardDeviationSample(values: System_Collections_Generic.IEnumerable_1<System_Internal.Int64>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Double>>;
+  StandardDeviationSample(values: System_Collections_Generic.IEnumerable_1<System_Internal.Single>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Double>>;
+  StandardDeviationSample(values: System_Collections_Generic.IEnumerable_1<System_Internal.Double>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Double>>;
+  StandardDeviationSample(values: System_Collections_Generic.IEnumerable_1<System_Internal.Decimal>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Double>>;
+  StandardDeviationPopulation(values: System_Collections_Generic.IEnumerable_1<System_Internal.Byte>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Double>>;
+  StandardDeviationPopulation(values: System_Collections_Generic.IEnumerable_1<System_Internal.Int16>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Double>>;
+  StandardDeviationPopulation(values: System_Collections_Generic.IEnumerable_1<System_Internal.Int32>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Double>>;
+  StandardDeviationPopulation(values: System_Collections_Generic.IEnumerable_1<System_Internal.Int64>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Double>>;
+  StandardDeviationPopulation(values: System_Collections_Generic.IEnumerable_1<System_Internal.Single>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Double>>;
+  StandardDeviationPopulation(values: System_Collections_Generic.IEnumerable_1<System_Internal.Double>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Double>>;
+  StandardDeviationPopulation(values: System_Collections_Generic.IEnumerable_1<System_Internal.Decimal>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Double>>;
+  VarianceSample(values: System_Collections_Generic.IEnumerable_1<System_Internal.Byte>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Double>>;
+  VarianceSample(values: System_Collections_Generic.IEnumerable_1<System_Internal.Int16>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Double>>;
+  VarianceSample(values: System_Collections_Generic.IEnumerable_1<System_Internal.Int32>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Double>>;
+  VarianceSample(values: System_Collections_Generic.IEnumerable_1<System_Internal.Int64>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Double>>;
+  VarianceSample(values: System_Collections_Generic.IEnumerable_1<System_Internal.Single>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Double>>;
+  VarianceSample(values: System_Collections_Generic.IEnumerable_1<System_Internal.Double>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Double>>;
+  VarianceSample(values: System_Collections_Generic.IEnumerable_1<System_Internal.Decimal>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Double>>;
+  VariancePopulation(values: System_Collections_Generic.IEnumerable_1<System_Internal.Byte>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Double>>;
+  VariancePopulation(values: System_Collections_Generic.IEnumerable_1<System_Internal.Int16>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Double>>;
+  VariancePopulation(values: System_Collections_Generic.IEnumerable_1<System_Internal.Int32>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Double>>;
+  VariancePopulation(values: System_Collections_Generic.IEnumerable_1<System_Internal.Int64>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Double>>;
+  VariancePopulation(values: System_Collections_Generic.IEnumerable_1<System_Internal.Single>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Double>>;
+  VariancePopulation(values: System_Collections_Generic.IEnumerable_1<System_Internal.Double>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Double>>;
+  VariancePopulation(values: System_Collections_Generic.IEnumerable_1<System_Internal.Decimal>): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Double>>;
+  VectorDistance<T>(distanceMetric: string, vector1: Microsoft_Data_SqlTypes.SqlVector_1<T>, vector2: Microsoft_Data_SqlTypes.SqlVector_1<T>): ExtensionMethods_Microsoft_EntityFrameworkCore<double>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_DbSet_1<T> {
+  TemporalAsOf(utcPointInTime: System.DateTime): ExtensionMethods_Microsoft_EntityFrameworkCore<System_Linq.IQueryable_1<T>>;
+  TemporalFromTo(utcFrom: System.DateTime, utcTo: System.DateTime): ExtensionMethods_Microsoft_EntityFrameworkCore<System_Linq.IQueryable_1<T>>;
+  TemporalBetween(utcFrom: System.DateTime, utcTo: System.DateTime): ExtensionMethods_Microsoft_EntityFrameworkCore<System_Linq.IQueryable_1<T>>;
+  TemporalContainedIn(utcFrom: System.DateTime, utcTo: System.DateTime): ExtensionMethods_Microsoft_EntityFrameworkCore<System_Linq.IQueryable_1<T>>;
+  TemporalAll(): ExtensionMethods_Microsoft_EntityFrameworkCore<System_Linq.IQueryable_1<T>>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_DatabaseFacade {
+  IsSqlServer(): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_ColumnBuilder {
+  UseIdentityColumn(seed?: long, increment?: int): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.ColumnBuilder>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_ColumnBuilder_1<T> {
+  UseIdentityColumn(seed?: long, increment?: int): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.ColumnBuilder_1<T>>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_ComplexTypePrimitiveCollectionBuilder {
+  IsSparse(sparse?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePrimitiveCollectionBuilder>;
+  HasDefaultValue(value: unknown, defaultConstraintName: string): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePrimitiveCollectionBuilder>;
+  HasDefaultValueSql(sql: string, defaultConstraintName: string): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePrimitiveCollectionBuilder>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_ComplexTypePrimitiveCollectionBuilder_1<T> {
+  IsSparse(sparse?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePrimitiveCollectionBuilder_1<T>>;
+  HasDefaultValue(value: unknown, defaultConstraintName: string): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePrimitiveCollectionBuilder_1<T>>;
+  HasDefaultValueSql(sql: string, defaultConstraintName: string): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePrimitiveCollectionBuilder_1<T>>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_ComplexTypePropertyBuilder {
+  UseHiLo(name?: string, schema?: string): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder>;
+  UseSequence(name?: string, schema?: string): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder>;
+  UseIdentityColumn(seed?: long, increment?: int): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder>;
+  UseIdentityColumn(seed: int, increment?: int): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder>;
+  IsSparse(sparse?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder>;
+  HasDefaultValue(value: unknown, defaultConstraintName: string): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder>;
+  HasDefaultValueSql(sql: string, defaultConstraintName: string): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_ComplexTypePropertyBuilder_1<T> {
+  UseHiLo(name?: string, schema?: string): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder_1<T>>;
+  UseSequence(name?: string, schema?: string): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder_1<T>>;
+  UseIdentityColumn(seed?: long, increment?: int): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder_1<T>>;
+  UseIdentityColumn(seed: int, increment?: int): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder_1<T>>;
+  IsSparse(sparse?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder_1<T>>;
+  HasDefaultValue(value: unknown, defaultConstraintName: string): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder_1<T>>;
+  HasDefaultValueSql(sql: string, defaultConstraintName: string): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder_1<T>>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_EntityTypeBuilder {
+  IsMemoryOptimized(memoryOptimized?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.EntityTypeBuilder>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_EntityTypeBuilder_1<T> {
+  IsMemoryOptimized(memoryOptimized?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.EntityTypeBuilder_1<T>>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_IConventionEntityTypeBuilder {
+  IsMemoryOptimized(memoryOptimized: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder | undefined>;
+  CanSetIsMemoryOptimized(memoryOptimized: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  UseSqlOutputClause(useSqlOutputClause: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder | undefined>;
+  UseSqlOutputClause(useSqlOutputClause: System.Nullable_1<System_Internal.Boolean>, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder | undefined>;
+  CanUseSqlOutputClause(useSqlOutputClause: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  CanUseSqlOutputClause(useSqlOutputClause: System.Nullable_1<System_Internal.Boolean>, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  IsTemporal(temporal?: boolean, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder | undefined>;
+  CanSetIsTemporal(temporal?: boolean, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  UseHistoryTableName(name: string, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder | undefined>;
+  CanSetHistoryTableName(name: string, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  UseHistoryTableSchema(schema: string, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder | undefined>;
+  CanSetHistoryTableSchema(schema: string, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  HasPeriodStart(propertyName: string, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder | undefined>;
+  CanSetPeriodStart(propertyName: string, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  HasPeriodEnd(propertyName: string, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder | undefined>;
+  CanSetPeriodEnd(propertyName: string, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_IConventionIndexBuilder {
+  IsClustered(clustered: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder | undefined>;
+  CanSetIsClustered(clustered: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  IncludeProperties(propertyNames: System_Collections_Generic.IReadOnlyList_1<System_Internal.String>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder | undefined>;
+  CanSetIncludeProperties(propertyNames: System_Collections_Generic.IReadOnlyList_1<System_Internal.String>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  IsCreatedOnline(createdOnline: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder | undefined>;
+  CanSetIsCreatedOnline(createdOnline: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  HasFillFactor(fillFactor: System.Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder | undefined>;
+  CanSetFillFactor(fillFactor: System.Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  SortInTempDb(sortInTempDb: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder | undefined>;
+  CanSetSortInTempDb(sortInTempDb: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  UseDataCompression(dataCompressionType: System.Nullable_1<Microsoft_EntityFrameworkCore.DataCompressionType>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder | undefined>;
+  CanSetDataCompression(dataCompressionType: System.Nullable_1<Microsoft_EntityFrameworkCore.DataCompressionType>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_IConventionKeyBuilder {
+  IsClustered(clustered: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionKeyBuilder | undefined>;
+  CanSetIsClustered(clustered: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  HasFillFactor(fillFactor: System.Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionKeyBuilder | undefined>;
+  CanSetFillFactor(fillFactor: System.Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_IConventionModelBuilder {
+  HasHiLoSequence(name: string, schema: string, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionSequenceBuilder | undefined>;
+  CanSetHiLoSequence(name: string, schema: string, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  HasIdentityColumnSeed(seed: System.Nullable_1<System_Internal.Int64>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder | undefined>;
+  CanSetIdentityColumnSeed(seed: System.Nullable_1<System_Internal.Int64>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  HasIdentityColumnIncrement(increment: System.Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder | undefined>;
+  CanSetIdentityColumnIncrement(increment: System.Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  HasValueGenerationStrategy(valueGenerationStrategy: System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.SqlServerValueGenerationStrategy>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder | undefined>;
+  CanSetValueGenerationStrategy(valueGenerationStrategy: System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.SqlServerValueGenerationStrategy>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  HasDatabaseMaxSize(maxSize: string, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder | undefined>;
+  CanSetDatabaseMaxSize(maxSize: string, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  HasServiceTierSql(serviceTier: string, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder | undefined>;
+  CanSetServiceTierSql(serviceTier: string, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  HasPerformanceLevelSql(performanceLevel: string, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder | undefined>;
+  CanSetPerformanceLevelSql(performanceLevel: string, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  UseNamedDefaultConstraints(value: boolean, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder | undefined>;
+  CanUseNamedDefaultConstraints(value: boolean, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_IConventionPropertyBuilder {
+  HasHiLoSequence(name: string, schema: string, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionSequenceBuilder | undefined>;
+  CanSetHiLoSequence(name: string, schema: string, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  HasSequence(name: string, schema: string, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionSequenceBuilder | undefined>;
+  CanSetSequence(name: string, schema: string, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  HasIdentityColumnSeed(seed: System.Nullable_1<System_Internal.Int64>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder | undefined>;
+  HasIdentityColumnSeed(seed: System.Nullable_1<System_Internal.Int64>, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder | undefined>;
+  CanSetIdentityColumnSeed(seed: System.Nullable_1<System_Internal.Int64>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  CanSetIdentityColumnSeed(seed: System.Nullable_1<System_Internal.Int64>, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  HasIdentityColumnIncrement(increment: System.Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder | undefined>;
+  HasIdentityColumnIncrement(increment: System.Nullable_1<System_Internal.Int32>, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder | undefined>;
+  CanSetIdentityColumnIncrement(increment: System.Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  CanSetIdentityColumnIncrement(increment: System.Nullable_1<System_Internal.Int32>, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  HasValueGenerationStrategy(valueGenerationStrategy: System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.SqlServerValueGenerationStrategy>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder | undefined>;
+  HasValueGenerationStrategy(valueGenerationStrategy: System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.SqlServerValueGenerationStrategy>, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder | undefined>;
+  CanSetValueGenerationStrategy(valueGenerationStrategy: System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.SqlServerValueGenerationStrategy>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  CanSetValueGenerationStrategy(valueGenerationStrategy: System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.SqlServerValueGenerationStrategy>, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  IsSparse(sparse: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder | undefined>;
+  CanSetIsSparse(sparse: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  HasDefaultValue(value: unknown, defaultConstraintName: string, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder | undefined>;
+  CanSetDefaultValue(value: unknown, defaultConstraintName: string, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  HasDefaultValueSql(sql: string, defaultConstraintName: string, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder | undefined>;
+  CanSetDefaultValueSql(sql: string, defaultConstraintName: string, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_IndexBuilder {
+  IsClustered(clustered?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder>;
+  IncludeProperties(...propertyNames: string[]): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder>;
+  IsCreatedOnline(createdOnline?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder>;
+  HasFillFactor(fillFactor: int): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder>;
+  SortInTempDb(sortInTempDb?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder>;
+  UseDataCompression(dataCompressionType: Microsoft_EntityFrameworkCore.DataCompressionType): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_IndexBuilder_1<T> {
+  IsClustered(clustered?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<T>>;
+  IncludeProperties(...propertyNames: string[]): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<T>>;
+  IncludeProperties(includeExpression: System_Linq_Expressions.Expression_1<System.Func_2<T, unknown>>): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<T>>;
+  IsCreatedOnline(createdOnline?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<T>>;
+  HasFillFactor(fillFactor: int): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<T>>;
+  SortInTempDb(sortInTempDb?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<T>>;
+  UseDataCompression(dataCompressionType: Microsoft_EntityFrameworkCore.DataCompressionType): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<T>>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_KeyBuilder {
+  IsClustered(clustered?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.KeyBuilder>;
+  HasFillFactor(fillFactor: int): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.KeyBuilder>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_KeyBuilder_1<T> {
+  IsClustered(clustered?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.KeyBuilder_1<T>>;
+  HasFillFactor(fillFactor: int): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.KeyBuilder_1<T>>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_OwnedNavigationBuilder {
+  IsMemoryOptimized(memoryOptimized?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.OwnedNavigationBuilder>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_OwnedNavigationBuilder_2<T1, T2> {
+  IsMemoryOptimized(memoryOptimized?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.OwnedNavigationBuilder_2<T1, T2>>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_OwnedNavigationTableBuilder {
+  IsTemporal(temporal?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.OwnedNavigationTemporalTableBuilder>;
+  IsTemporal(buildAction: System.Action_1<Microsoft_EntityFrameworkCore_Metadata_Builders.OwnedNavigationTemporalTableBuilder>): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.OwnedNavigationTableBuilder>;
+  IsMemoryOptimized(memoryOptimized?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.OwnedNavigationTableBuilder>;
+  UseSqlOutputClause(useSqlOutputClause?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.OwnedNavigationTableBuilder>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_OwnedNavigationTableBuilder_2<T1, T2> {
+  IsTemporal(temporal?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.OwnedNavigationTemporalTableBuilder_2<T1, T2>>;
+  IsTemporal(buildAction: System.Action_1<Microsoft_EntityFrameworkCore_Metadata_Builders.OwnedNavigationTemporalTableBuilder_2<T1, T2>>): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.OwnedNavigationTableBuilder_2<T1, T2>>;
+  IsMemoryOptimized(memoryOptimized?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.OwnedNavigationTableBuilder_2<T1, T2>>;
+  UseSqlOutputClause(useSqlOutputClause?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.OwnedNavigationTableBuilder_2<T1, T2>>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_PrimitiveCollectionBuilder {
+  IsSparse(sparse?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.PrimitiveCollectionBuilder>;
+  HasDefaultValue(value: unknown, defaultConstraintName: string): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.PrimitiveCollectionBuilder>;
+  HasDefaultValueSql(sql: string, defaultConstraintName: string): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.PrimitiveCollectionBuilder>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_PrimitiveCollectionBuilder_1<T> {
+  IsSparse(sparse?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.PrimitiveCollectionBuilder_1<T>>;
+  HasDefaultValue(value: unknown, defaultConstraintName: string): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.PrimitiveCollectionBuilder_1<T>>;
+  HasDefaultValueSql(sql: string, defaultConstraintName: string): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.PrimitiveCollectionBuilder_1<T>>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_PropertyBuilder {
+  UseHiLo(name?: string, schema?: string): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder>;
+  UseSequence(name?: string, schema?: string): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder>;
+  UseIdentityColumn(seed?: long, increment?: int): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder>;
+  UseIdentityColumn(seed: int, increment?: int): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder>;
+  IsSparse(sparse?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder>;
+  HasDefaultValue(value: unknown, defaultConstraintName: string): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder>;
+  HasDefaultValueSql(sql: string, defaultConstraintName: string): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_PropertyBuilder_1<T> {
+  UseHiLo(name?: string, schema?: string): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<T>>;
+  UseSequence(name?: string, schema?: string): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<T>>;
+  UseIdentityColumn(seed?: long, increment?: int): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<T>>;
+  UseIdentityColumn(seed: int, increment?: int): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<T>>;
+  IsSparse(sparse?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<T>>;
+  HasDefaultValue(value: unknown, defaultConstraintName: string): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<T>>;
+  HasDefaultValueSql(sql: string, defaultConstraintName: string): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<T>>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_SplitTableBuilder {
+  UseSqlOutputClause(useSqlOutputClause?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.SplitTableBuilder>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_SplitTableBuilder_1<T> {
+  UseSqlOutputClause(useSqlOutputClause?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.SplitTableBuilder_1<T>>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_TableBuilder {
+  IsTemporal(temporal?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.TemporalTableBuilder>;
+  IsTemporal(buildAction: System.Action_1<Microsoft_EntityFrameworkCore_Metadata_Builders.TemporalTableBuilder>): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.TableBuilder>;
+  IsMemoryOptimized(memoryOptimized?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.TableBuilder>;
+  UseSqlOutputClause(useSqlOutputClause?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.TableBuilder>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_TableBuilder_1<T> {
+  IsTemporal(temporal?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.TemporalTableBuilder_1<T>>;
+  IsTemporal(buildAction: System.Action_1<Microsoft_EntityFrameworkCore_Metadata_Builders.TemporalTableBuilder_1<T>>): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.TableBuilder_1<T>>;
+  IsMemoryOptimized(memoryOptimized?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.TableBuilder_1<T>>;
+  UseSqlOutputClause(useSqlOutputClause?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata_Builders.TableBuilder_1<T>>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_IConventionEntityType {
+  SetIsMemoryOptimized(memoryOptimized: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Boolean>>;
+  GetIsMemoryOptimizedConfigurationSource(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
+  SetIsTemporal(temporal: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Boolean>>;
+  GetIsTemporalConfigurationSource(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
+  SetPeriodStartPropertyName(periodStartPropertyName: string, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<string | undefined>;
+  GetPeriodStartPropertyNameConfigurationSource(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
+  SetPeriodEndPropertyName(periodEndPropertyName: string, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<string | undefined>;
+  GetPeriodEndPropertyNameConfigurationSource(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
+  SetHistoryTableName(historyTableName: string, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<string | undefined>;
+  GetHistoryTableNameConfigurationSource(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
+  SetHistoryTableSchema(historyTableSchema: string, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<string | undefined>;
+  GetHistoryTableSchemaConfigurationSource(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
+  UseSqlOutputClause(useSqlOutputClause: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Boolean>>;
+  GetUseSqlOutputClauseConfigurationSource(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
+  GetUseSqlOutputClauseConfigurationSource(storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
+  UseSqlOutputClause(useSqlOutputClause: System.Nullable_1<System_Internal.Boolean>, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Boolean>>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_IConventionEntityTypeMappingFragment {
+  UseSqlOutputClause(useSqlOutputClause: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Boolean>>;
+  GetUseSqlOutputClauseConfigurationSource(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_IConventionIndex {
+  SetIsClustered(value: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Boolean>>;
+  GetIsClusteredConfigurationSource(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
+  SetIncludeProperties(properties: System_Collections_Generic.IReadOnlyList_1<System_Internal.String>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<System_Collections_Generic.IReadOnlyList_1<System_Internal.String> | undefined>;
+  GetIncludePropertiesConfigurationSource(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
+  SetIsCreatedOnline(createdOnline: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Boolean>>;
+  GetIsCreatedOnlineConfigurationSource(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
+  SetFillFactor(fillFactor: System.Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  GetFillFactorConfigurationSource(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
+  SetSortInTempDb(sortInTempDb: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Boolean>>;
+  GetSortInTempDbConfigurationSource(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
+  SetDataCompression(dataCompression: System.Nullable_1<Microsoft_EntityFrameworkCore.DataCompressionType>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore.DataCompressionType>>;
+  GetDataCompressionConfigurationSource(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_IConventionKey {
+  SetIsClustered(clustered: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Boolean>>;
+  GetIsClusteredConfigurationSource(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
+  SetFillFactor(fillFactor: System.Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  GetFillFactorConfigurationSource(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_IConventionModel {
+  SetHiLoSequenceName(name: string, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<string | undefined>;
+  GetHiLoSequenceNameConfigurationSource(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
+  SetHiLoSequenceSchema(value: string, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<string | undefined>;
+  GetHiLoSequenceSchemaConfigurationSource(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
+  SetSequenceNameSuffix(name: string, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<string | undefined>;
+  GetSequenceNameSuffixConfigurationSource(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
+  SetSequenceSchema(value: string, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<string | undefined>;
+  GetSequenceSchemaConfigurationSource(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
+  SetIdentitySeed(seed: System.Nullable_1<System_Internal.Int64>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int64>>;
+  GetIdentitySeedConfigurationSource(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
+  SetIdentityIncrement(increment: System.Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  GetIdentityIncrementConfigurationSource(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
+  SetValueGenerationStrategy(value: System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.SqlServerValueGenerationStrategy>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.SqlServerValueGenerationStrategy>>;
+  GetValueGenerationStrategyConfigurationSource(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
+  SetDatabaseMaxSize(value: string, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<string | undefined>;
+  GetDatabaseMaxSizeConfigurationSource(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
+  SetServiceTierSql(value: string, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<string | undefined>;
+  GetServiceTierSqlConfigurationSource(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
+  SetPerformanceLevelSql(value: string, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<string | undefined>;
+  GetPerformanceLevelSqlConfigurationSource(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_IConventionProperty {
+  SetHiLoSequenceName(name: string, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<string | undefined>;
+  GetHiLoSequenceNameConfigurationSource(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
+  SetHiLoSequenceSchema(schema: string, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<string | undefined>;
+  GetHiLoSequenceSchemaConfigurationSource(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
+  SetSequenceName(name: string, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<string | undefined>;
+  GetSequenceNameConfigurationSource(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
+  SetSequenceSchema(schema: string, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<string | undefined>;
+  GetSequenceSchemaConfigurationSource(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
+  SetIdentitySeed(seed: System.Nullable_1<System_Internal.Int64>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int64>>;
+  SetIdentitySeed(seed: System.Nullable_1<System_Internal.Int64>, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int64>>;
+  GetIdentitySeedConfigurationSource(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
+  GetIdentitySeedConfigurationSource(storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
+  SetIdentityIncrement(increment: System.Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  SetIdentityIncrement(increment: System.Nullable_1<System_Internal.Int32>, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  GetIdentityIncrementConfigurationSource(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
+  GetIdentityIncrementConfigurationSource(storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
+  SetValueGenerationStrategy(value: System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.SqlServerValueGenerationStrategy>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.SqlServerValueGenerationStrategy>>;
+  SetValueGenerationStrategy(value: System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.SqlServerValueGenerationStrategy>, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.SqlServerValueGenerationStrategy>>;
+  GetValueGenerationStrategyConfigurationSource(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
+  GetValueGenerationStrategyConfigurationSource(storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
+  SetIsSparse(sparse: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Boolean>>;
+  GetIsSparseConfigurationSource(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_IConventionRelationalPropertyOverrides {
+  SetIdentitySeed(seed: System.Nullable_1<System_Internal.Int64>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int64>>;
+  GetIdentitySeedConfigurationSource(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
+  SetIdentityIncrement(increment: System.Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  GetIdentityIncrementConfigurationSource(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
+  SetValueGenerationStrategy(value: System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.SqlServerValueGenerationStrategy>, fromDataAnnotation?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.SqlServerValueGenerationStrategy>>;
+  GetValueGenerationStrategyConfigurationSource(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_IMutableEntityType {
+  SetIsMemoryOptimized(memoryOptimized: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<void>;
+  SetIsTemporal(temporal: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<void>;
+  SetPeriodStartPropertyName(periodStartPropertyName: string): ExtensionMethods_Microsoft_EntityFrameworkCore<void>;
+  SetPeriodEndPropertyName(periodEndPropertyName: string): ExtensionMethods_Microsoft_EntityFrameworkCore<void>;
+  SetHistoryTableName(historyTableName: string): ExtensionMethods_Microsoft_EntityFrameworkCore<void>;
+  SetHistoryTableSchema(historyTableSchema: string): ExtensionMethods_Microsoft_EntityFrameworkCore<void>;
+  UseSqlOutputClause(useSqlOutputClause: System.Nullable_1<System_Internal.Boolean>): ExtensionMethods_Microsoft_EntityFrameworkCore<void>;
+  UseSqlOutputClause(useSqlOutputClause: System.Nullable_1<System_Internal.Boolean>, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): ExtensionMethods_Microsoft_EntityFrameworkCore<void>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_IMutableEntityTypeMappingFragment {
+  UseSqlOutputClause(useSqlOutputClause: System.Nullable_1<System_Internal.Boolean>): ExtensionMethods_Microsoft_EntityFrameworkCore<void>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_IMutableIndex {
+  SetIsClustered(value: System.Nullable_1<System_Internal.Boolean>): ExtensionMethods_Microsoft_EntityFrameworkCore<void>;
+  SetIncludeProperties(properties: System_Collections_Generic.IReadOnlyList_1<System_Internal.String>): ExtensionMethods_Microsoft_EntityFrameworkCore<void>;
+  SetIsCreatedOnline(createdOnline: System.Nullable_1<System_Internal.Boolean>): ExtensionMethods_Microsoft_EntityFrameworkCore<void>;
+  SetFillFactor(fillFactor: System.Nullable_1<System_Internal.Int32>): ExtensionMethods_Microsoft_EntityFrameworkCore<void>;
+  SetSortInTempDb(sortInTempDb: System.Nullable_1<System_Internal.Boolean>): ExtensionMethods_Microsoft_EntityFrameworkCore<void>;
+  SetDataCompression(dataCompression: System.Nullable_1<Microsoft_EntityFrameworkCore.DataCompressionType>): ExtensionMethods_Microsoft_EntityFrameworkCore<void>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_IMutableKey {
+  SetIsClustered(clustered: System.Nullable_1<System_Internal.Boolean>): ExtensionMethods_Microsoft_EntityFrameworkCore<void>;
+  SetFillFactor(fillFactor: System.Nullable_1<System_Internal.Int32>): ExtensionMethods_Microsoft_EntityFrameworkCore<void>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_IMutableModel {
+  SetHiLoSequenceName(name: string): ExtensionMethods_Microsoft_EntityFrameworkCore<void>;
+  SetHiLoSequenceSchema(value: string): ExtensionMethods_Microsoft_EntityFrameworkCore<void>;
+  SetSequenceNameSuffix(name: string): ExtensionMethods_Microsoft_EntityFrameworkCore<void>;
+  SetSequenceSchema(value: string): ExtensionMethods_Microsoft_EntityFrameworkCore<void>;
+  SetIdentitySeed(seed: System.Nullable_1<System_Internal.Int64>): ExtensionMethods_Microsoft_EntityFrameworkCore<void>;
+  SetIdentityIncrement(increment: System.Nullable_1<System_Internal.Int32>): ExtensionMethods_Microsoft_EntityFrameworkCore<void>;
+  SetValueGenerationStrategy(value: System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.SqlServerValueGenerationStrategy>): ExtensionMethods_Microsoft_EntityFrameworkCore<void>;
+  SetDatabaseMaxSize(value: string): ExtensionMethods_Microsoft_EntityFrameworkCore<void>;
+  SetServiceTierSql(value: string): ExtensionMethods_Microsoft_EntityFrameworkCore<void>;
+  SetPerformanceLevelSql(value: string): ExtensionMethods_Microsoft_EntityFrameworkCore<void>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_IMutableProperty {
+  SetHiLoSequenceName(name: string): ExtensionMethods_Microsoft_EntityFrameworkCore<void>;
+  SetHiLoSequenceSchema(schema: string): ExtensionMethods_Microsoft_EntityFrameworkCore<void>;
+  SetSequenceName(name: string): ExtensionMethods_Microsoft_EntityFrameworkCore<void>;
+  SetSequenceSchema(schema: string): ExtensionMethods_Microsoft_EntityFrameworkCore<void>;
+  SetIdentitySeed(seed: System.Nullable_1<System_Internal.Int64>): ExtensionMethods_Microsoft_EntityFrameworkCore<void>;
+  SetIdentitySeed(seed: System.Nullable_1<System_Internal.Int64>, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): ExtensionMethods_Microsoft_EntityFrameworkCore<void>;
+  SetIdentityIncrement(increment: System.Nullable_1<System_Internal.Int32>): ExtensionMethods_Microsoft_EntityFrameworkCore<void>;
+  SetIdentityIncrement(increment: System.Nullable_1<System_Internal.Int32>, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): ExtensionMethods_Microsoft_EntityFrameworkCore<void>;
+  SetValueGenerationStrategy(value: System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.SqlServerValueGenerationStrategy>): ExtensionMethods_Microsoft_EntityFrameworkCore<void>;
+  SetValueGenerationStrategy(value: System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.SqlServerValueGenerationStrategy>, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): ExtensionMethods_Microsoft_EntityFrameworkCore<void>;
+  SetIsSparse(sparse: System.Nullable_1<System_Internal.Boolean>): ExtensionMethods_Microsoft_EntityFrameworkCore<void>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_IMutableRelationalPropertyOverrides {
+  SetIdentitySeed(seed: System.Nullable_1<System_Internal.Int64>): ExtensionMethods_Microsoft_EntityFrameworkCore<void>;
+  SetIdentityIncrement(increment: System.Nullable_1<System_Internal.Int32>): ExtensionMethods_Microsoft_EntityFrameworkCore<void>;
+  SetValueGenerationStrategy(value: System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.SqlServerValueGenerationStrategy>): ExtensionMethods_Microsoft_EntityFrameworkCore<void>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_IProperty {
+  FindHiLoSequence(): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata.ISequence | undefined>;
+  FindHiLoSequence(storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata.ISequence | undefined>;
+  FindSequence(): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata.ISequence | undefined>;
+  FindSequence(storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata.ISequence | undefined>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_IReadOnlyEntityType {
+  IsMemoryOptimized(): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  IsTemporal(): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  GetPeriodStartPropertyName(): ExtensionMethods_Microsoft_EntityFrameworkCore<string | undefined>;
+  GetPeriodEndPropertyName(): ExtensionMethods_Microsoft_EntityFrameworkCore<string | undefined>;
+  GetHistoryTableName(): ExtensionMethods_Microsoft_EntityFrameworkCore<string | undefined>;
+  GetHistoryTableSchema(): ExtensionMethods_Microsoft_EntityFrameworkCore<string | undefined>;
+  GetSchemaQualifiedHistoryTableName(): ExtensionMethods_Microsoft_EntityFrameworkCore<string | undefined>;
+  IsSqlOutputClauseUsed(): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  IsSqlOutputClauseUsed(storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_IReadOnlyEntityTypeMappingFragment {
+  IsSqlOutputClauseUsed(): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_IReadOnlyIndex {
+  IsClustered(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Boolean>>;
+  IsClustered(storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Boolean>>;
+  GetIncludeProperties(): ExtensionMethods_Microsoft_EntityFrameworkCore<System_Collections_Generic.IReadOnlyList_1<System_Internal.String> | undefined>;
+  GetIncludeProperties(storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): ExtensionMethods_Microsoft_EntityFrameworkCore<System_Collections_Generic.IReadOnlyList_1<System_Internal.String> | undefined>;
+  IsCreatedOnline(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Boolean>>;
+  IsCreatedOnline(storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Boolean>>;
+  GetFillFactor(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  GetFillFactor(storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  GetSortInTempDb(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Boolean>>;
+  GetSortInTempDb(storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Boolean>>;
+  GetDataCompression(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore.DataCompressionType>>;
+  GetDataCompression(storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore.DataCompressionType>>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_IReadOnlyKey {
+  IsClustered(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Boolean>>;
+  IsClustered(storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Boolean>>;
+  GetFillFactor(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  GetFillFactor(storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_IReadOnlyModel {
+  GetHiLoSequenceName(): ExtensionMethods_Microsoft_EntityFrameworkCore<string>;
+  GetHiLoSequenceSchema(): ExtensionMethods_Microsoft_EntityFrameworkCore<string | undefined>;
+  GetSequenceNameSuffix(): ExtensionMethods_Microsoft_EntityFrameworkCore<string>;
+  GetSequenceSchema(): ExtensionMethods_Microsoft_EntityFrameworkCore<string | undefined>;
+  GetIdentitySeed(): ExtensionMethods_Microsoft_EntityFrameworkCore<long>;
+  GetIdentityIncrement(): ExtensionMethods_Microsoft_EntityFrameworkCore<int>;
+  GetValueGenerationStrategy(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.SqlServerValueGenerationStrategy>>;
+  GetDatabaseMaxSize(): ExtensionMethods_Microsoft_EntityFrameworkCore<string | undefined>;
+  GetServiceTierSql(): ExtensionMethods_Microsoft_EntityFrameworkCore<string | undefined>;
+  GetPerformanceLevelSql(): ExtensionMethods_Microsoft_EntityFrameworkCore<string | undefined>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_IReadOnlyProperty {
+  GetHiLoSequenceName(): ExtensionMethods_Microsoft_EntityFrameworkCore<string | undefined>;
+  GetHiLoSequenceName(storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): ExtensionMethods_Microsoft_EntityFrameworkCore<string | undefined>;
+  GetHiLoSequenceSchema(): ExtensionMethods_Microsoft_EntityFrameworkCore<string | undefined>;
+  GetHiLoSequenceSchema(storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): ExtensionMethods_Microsoft_EntityFrameworkCore<string | undefined>;
+  FindHiLoSequence(): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata.IReadOnlySequence | undefined>;
+  FindHiLoSequence(storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata.IReadOnlySequence | undefined>;
+  GetSequenceName(): ExtensionMethods_Microsoft_EntityFrameworkCore<string | undefined>;
+  GetSequenceName(storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): ExtensionMethods_Microsoft_EntityFrameworkCore<string | undefined>;
+  GetSequenceSchema(): ExtensionMethods_Microsoft_EntityFrameworkCore<string | undefined>;
+  GetSequenceSchema(storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): ExtensionMethods_Microsoft_EntityFrameworkCore<string | undefined>;
+  FindSequence(): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata.IReadOnlySequence | undefined>;
+  FindSequence(storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata.IReadOnlySequence | undefined>;
+  GetIdentitySeed(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int64>>;
+  GetIdentitySeed(storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int64>>;
+  GetIdentityIncrement(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  GetIdentityIncrement(storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  GetValueGenerationStrategy(): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata.SqlServerValueGenerationStrategy>;
+  GetValueGenerationStrategy(storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore_Metadata.SqlServerValueGenerationStrategy>;
+  IsSparse(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Boolean>>;
+  IsSparse(storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Boolean>>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_IReadOnlyRelationalPropertyOverrides {
+  GetIdentitySeed(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int64>>;
+  GetIdentityIncrement(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<System_Internal.Int32>>;
+  GetValueGenerationStrategy(): ExtensionMethods_Microsoft_EntityFrameworkCore<System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.SqlServerValueGenerationStrategy>>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_ITable {
+  IsSqlOutputClauseUsed(): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_ModelBuilder {
+  UseHiLo(name?: string, schema?: string): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore.ModelBuilder>;
+  UseKeySequences(nameSuffix?: string, schema?: string): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore.ModelBuilder>;
+  UseIdentityColumns(seed?: long, increment?: int): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore.ModelBuilder>;
+  UseIdentityColumns(seed: int, increment?: int): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore.ModelBuilder>;
+  HasDatabaseMaxSize(maxSize: string): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore.ModelBuilder>;
+  HasServiceTier(serviceTier: string): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore.ModelBuilder>;
+  HasServiceTierSql(serviceTier: string): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore.ModelBuilder>;
+  HasPerformanceLevel(performanceLevel: string): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore.ModelBuilder>;
+  HasPerformanceLevelSql(performanceLevel: string): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore.ModelBuilder>;
+  UseNamedDefaultConstraints(value?: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore<Microsoft_EntityFrameworkCore.ModelBuilder>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_Metadata_Internal_IReadOnlyIndex {
+  AreCompatibleForSqlServer(duplicateIndex: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyIndex, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier, shouldThrow: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore_Metadata_Internal<boolean>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_Metadata_Internal_IReadOnlyKey {
+  AreCompatibleForSqlServer(duplicateKey: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyKey, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier, shouldThrow: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore_Metadata_Internal<boolean>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_Migrations_MigrationBuilder {
+  IsSqlServer(): ExtensionMethods_Microsoft_EntityFrameworkCore_Migrations<boolean>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_SqlServer_Extensions_Internal_IDiagnosticsLogger_1<T> {
+  DecimalTypeKeyWarning(property: Microsoft_EntityFrameworkCore_Metadata.IProperty): ExtensionMethods_Microsoft_EntityFrameworkCore_SqlServer_Extensions_Internal<void>;
+  DecimalTypeDefaultWarning(property: Microsoft_EntityFrameworkCore_Metadata.IProperty): ExtensionMethods_Microsoft_EntityFrameworkCore_SqlServer_Extensions_Internal<void>;
+  ByteIdentityColumnWarning(property: Microsoft_EntityFrameworkCore_Metadata.IProperty): ExtensionMethods_Microsoft_EntityFrameworkCore_SqlServer_Extensions_Internal<void>;
+  ConflictingValueGenerationStrategiesWarning(sqlServerValueGenerationStrategy: Microsoft_EntityFrameworkCore_Metadata.SqlServerValueGenerationStrategy, otherValueGenerationStrategy: string, property: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty): ExtensionMethods_Microsoft_EntityFrameworkCore_SqlServer_Extensions_Internal<void>;
+  ColumnFound(tableName: string, columnName: string, ordinal: int, dataTypeName: string, maxLength: int, precision: int, scale: int, nullable: boolean, identity: boolean, defaultValue: string, computedValue: string, stored: System.Nullable_1<System_Internal.Boolean>): ExtensionMethods_Microsoft_EntityFrameworkCore_SqlServer_Extensions_Internal<void>;
+  ForeignKeyFound(foreignKeyName: string, tableName: string, principalTableName: string, onDeleteAction: string): ExtensionMethods_Microsoft_EntityFrameworkCore_SqlServer_Extensions_Internal<void>;
+  DefaultSchemaFound(schemaName: string): ExtensionMethods_Microsoft_EntityFrameworkCore_SqlServer_Extensions_Internal<void>;
+  TypeAliasFound(typeAliasName: string, systemTypeName: string): ExtensionMethods_Microsoft_EntityFrameworkCore_SqlServer_Extensions_Internal<void>;
+  PrimaryKeyFound(primaryKeyName: string, tableName: string): ExtensionMethods_Microsoft_EntityFrameworkCore_SqlServer_Extensions_Internal<void>;
+  UniqueConstraintFound(uniqueConstraintName: string, tableName: string): ExtensionMethods_Microsoft_EntityFrameworkCore_SqlServer_Extensions_Internal<void>;
+  IndexFound(indexName: string, tableName: string, unique: boolean): ExtensionMethods_Microsoft_EntityFrameworkCore_SqlServer_Extensions_Internal<void>;
+  ForeignKeyReferencesUnknownPrincipalTableWarning(foreignKeyName: string, tableName: string): ExtensionMethods_Microsoft_EntityFrameworkCore_SqlServer_Extensions_Internal<void>;
+  ForeignKeyReferencesMissingPrincipalTableWarning(foreignKeyName: string, tableName: string, principalTableName: string): ExtensionMethods_Microsoft_EntityFrameworkCore_SqlServer_Extensions_Internal<void>;
+  ForeignKeyPrincipalColumnMissingWarning(foreignKeyName: string, tableName: string, principalColumnName: string, principalTableName: string): ExtensionMethods_Microsoft_EntityFrameworkCore_SqlServer_Extensions_Internal<void>;
+  MissingSchemaWarning(schemaName: string): ExtensionMethods_Microsoft_EntityFrameworkCore_SqlServer_Extensions_Internal<void>;
+  MissingTableWarning(tableName: string): ExtensionMethods_Microsoft_EntityFrameworkCore_SqlServer_Extensions_Internal<void>;
+  ColumnWithoutTypeWarning(tableName: string, columnName: string): ExtensionMethods_Microsoft_EntityFrameworkCore_SqlServer_Extensions_Internal<void>;
+  SequenceFound(sequenceName: string, sequenceTypeName: string, cyclic: boolean, increment: int, start: long, min: long, max: long): ExtensionMethods_Microsoft_EntityFrameworkCore_SqlServer_Extensions_Internal<void>;
+  TableFound(tableName: string): ExtensionMethods_Microsoft_EntityFrameworkCore_SqlServer_Extensions_Internal<void>;
+  ReflexiveConstraintIgnored(foreignKeyName: string, tableName: string): ExtensionMethods_Microsoft_EntityFrameworkCore_SqlServer_Extensions_Internal<void>;
+  DuplicateForeignKeyConstraintIgnored(foreignKeyName: string, tableName: string, duplicateForeignKeyName: string): ExtensionMethods_Microsoft_EntityFrameworkCore_SqlServer_Extensions_Internal<void>;
+  SavepointsDisabledBecauseOfMARS(): ExtensionMethods_Microsoft_EntityFrameworkCore_SqlServer_Extensions_Internal<void>;
+  MissingViewDefinitionRightsWarning(): ExtensionMethods_Microsoft_EntityFrameworkCore_SqlServer_Extensions_Internal<void>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_SqlServer_Scaffolding_Internal_DbDataReader {
+  GetValueOrDefault<T>(name: string): ExtensionMethods_Microsoft_EntityFrameworkCore_SqlServer_Scaffolding_Internal<T | undefined>;
+}
+
+export interface __Ext_Microsoft_EntityFrameworkCore_SqlServer_Scaffolding_Internal_DbDataRecord {
+  GetValueOrDefault<T>(name: string): ExtensionMethods_Microsoft_EntityFrameworkCore_SqlServer_Scaffolding_Internal<T | undefined>;
+  GetFieldValue<T>(name: string): ExtensionMethods_Microsoft_EntityFrameworkCore_SqlServer_Scaffolding_Internal<T>;
+}
+
+export interface __Ext_Microsoft_Extensions_DependencyInjection_IServiceCollection {
+  AddSqlServer<TContext>(connectionString: string, sqlServerOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqlServerDbContextOptionsBuilder>, optionsAction?: System.Action_1<Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddEntityFrameworkSqlServer(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddAzureSql<TContext>(connectionString: string, azureSqlOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSqlDbContextOptionsBuilder>, optionsAction?: System.Action_1<Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddEntityFrameworkAzureSql(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddAzureSynapse<TContext>(connectionString: string, azureSynapseOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSynapseDbContextOptionsBuilder>, optionsAction?: System.Action_1<Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddEntityFrameworkAzureSynapse(): ExtensionMethods_Microsoft_Extensions_DependencyInjection<Microsoft_Extensions_DependencyInjection.IServiceCollection>;
 }
 
 export interface __Ext_Microsoft_Identity_Client_IAccount {
-  GetTenantProfiles(): ExtensionMethods_Microsoft_Identity_Client<IEnumerable_1<Microsoft_Identity_Client.TenantProfile>>;
+  GetTenantProfiles(): ExtensionMethods_Microsoft_Identity_Client<System_Collections_Generic.IEnumerable_1<Microsoft_Identity_Client.TenantProfile>>;
 }
 
 export interface __Ext_Microsoft_Identity_Client_IConfidentialClientApplication {
-  GetCertificate(): ExtensionMethods_Microsoft_Identity_Client<X509Certificate2>;
+  GetCertificate(): ExtensionMethods_Microsoft_Identity_Client<System_Security_Cryptography_X509Certificates.X509Certificate2>;
 }
 
 export interface __Ext_Microsoft_Identity_Client_IPublicClientApplication {
@@ -46,19 +810,19 @@ export interface __Ext_Microsoft_Identity_Client_ITokenCache {
 }
 
 export interface __Ext_Microsoft_Identity_Client_Advanced_AbstractAcquireTokenParameterBuilder_1<T> {
-  WithExtraHttpHeaders(extraHttpHeaders: IDictionary_2<System_Internal.String, System_Internal.String>): ExtensionMethods_Microsoft_Identity_Client_Advanced<T>;
+  WithExtraHttpHeaders(extraHttpHeaders: System_Collections_Generic.IDictionary_2<System_Internal.String, System_Internal.String>): ExtensionMethods_Microsoft_Identity_Client_Advanced<T>;
 }
 
 export interface __Ext_Microsoft_Identity_Client_Extensibility_AbstractAcquireTokenParameterBuilder_1<T> {
-  OnBeforeTokenRequest(onBeforeTokenRequestHandler: Func_2<Microsoft_Identity_Client_Extensibility.OnBeforeTokenRequestData, Task>): ExtensionMethods_Microsoft_Identity_Client_Extensibility<Microsoft_Identity_Client.AbstractAcquireTokenParameterBuilder_1<T>>;
-  WithProofOfPosessionKeyId(keyId: string, expectedTokenTypeFromAad: string): ExtensionMethods_Microsoft_Identity_Client_Extensibility<Microsoft_Identity_Client.AbstractAcquireTokenParameterBuilder_1<T>>;
+  OnBeforeTokenRequest(onBeforeTokenRequestHandler: System.Func_2<Microsoft_Identity_Client_Extensibility.OnBeforeTokenRequestData, System_Threading_Tasks.Task>): ExtensionMethods_Microsoft_Identity_Client_Extensibility<Microsoft_Identity_Client.AbstractAcquireTokenParameterBuilder_1<T>>;
+  WithProofOfPosessionKeyId(keyId: string, expectedTokenTypeFromAad?: string): ExtensionMethods_Microsoft_Identity_Client_Extensibility<Microsoft_Identity_Client.AbstractAcquireTokenParameterBuilder_1<T>>;
   WithAuthenticationExtension(authenticationExtension: Microsoft_Identity_Client_Extensibility.MsalAuthenticationExtension): ExtensionMethods_Microsoft_Identity_Client_Extensibility<Microsoft_Identity_Client.AbstractAcquireTokenParameterBuilder_1<T>>;
-  WithAdditionalCacheParameters(cacheParameters: IEnumerable_1<System_Internal.String>): ExtensionMethods_Microsoft_Identity_Client_Extensibility<Microsoft_Identity_Client.AbstractAcquireTokenParameterBuilder_1<T>>;
+  WithAdditionalCacheParameters(cacheParameters: System_Collections_Generic.IEnumerable_1<System_Internal.String>): ExtensionMethods_Microsoft_Identity_Client_Extensibility<Microsoft_Identity_Client.AbstractAcquireTokenParameterBuilder_1<T>>;
   WithFmiPathForClientAssertion(fmiPath: string): ExtensionMethods_Microsoft_Identity_Client_Extensibility<Microsoft_Identity_Client.AbstractAcquireTokenParameterBuilder_1<T>>;
 }
 
 export interface __Ext_Microsoft_Identity_Client_Extensibility_AcquireTokenForClientParameterBuilder {
-  WithProofOfPosessionKeyId(keyId: string, expectedTokenTypeFromAad: string): ExtensionMethods_Microsoft_Identity_Client_Extensibility<Microsoft_Identity_Client.AcquireTokenForClientParameterBuilder>;
+  WithProofOfPosessionKeyId(keyId: string, expectedTokenTypeFromAad?: string): ExtensionMethods_Microsoft_Identity_Client_Extensibility<Microsoft_Identity_Client.AcquireTokenForClientParameterBuilder>;
 }
 
 export interface __Ext_Microsoft_Identity_Client_Extensibility_AcquireTokenInteractiveParameterBuilder {
@@ -66,15 +830,15 @@ export interface __Ext_Microsoft_Identity_Client_Extensibility_AcquireTokenInter
 }
 
 export interface __Ext_Microsoft_Identity_Client_Extensibility_AcquireTokenOnBehalfOfParameterBuilder {
-  WithSearchInCacheForLongRunningProcess(searchInCache: boolean): ExtensionMethods_Microsoft_Identity_Client_Extensibility<Microsoft_Identity_Client.AcquireTokenOnBehalfOfParameterBuilder>;
+  WithSearchInCacheForLongRunningProcess(searchInCache?: boolean): ExtensionMethods_Microsoft_Identity_Client_Extensibility<Microsoft_Identity_Client.AcquireTokenOnBehalfOfParameterBuilder>;
 }
 
 export interface __Ext_Microsoft_Identity_Client_Extensibility_ConfidentialClientApplicationBuilder {
-  WithAppTokenProvider(appTokenProvider: Func_2<Microsoft_Identity_Client_Extensibility.AppTokenProviderParameters, Task_1<Microsoft_Identity_Client_Extensibility.AppTokenProviderResult>>): ExtensionMethods_Microsoft_Identity_Client_Extensibility<Microsoft_Identity_Client.ConfidentialClientApplicationBuilder>;
+  WithAppTokenProvider(appTokenProvider: System.Func_2<Microsoft_Identity_Client_Extensibility.AppTokenProviderParameters, System_Threading_Tasks.Task_1<Microsoft_Identity_Client_Extensibility.AppTokenProviderResult>>): ExtensionMethods_Microsoft_Identity_Client_Extensibility<Microsoft_Identity_Client.ConfidentialClientApplicationBuilder>;
 }
 
 export interface __Ext_Microsoft_Identity_Client_Extensibility_ILongRunningWebApi {
-  StopLongRunningProcessInWebApiAsync(longRunningProcessSessionKey: string, cancellationToken: CancellationToken): ExtensionMethods_Microsoft_Identity_Client_Extensibility<Task_1<System_Internal.Boolean>>;
+  StopLongRunningProcessInWebApiAsync(longRunningProcessSessionKey: string, cancellationToken?: System_Threading.CancellationToken): ExtensionMethods_Microsoft_Identity_Client_Extensibility<System_Threading_Tasks.Task_1<System_Internal.Boolean>>;
 }
 
 export interface __Ext_Microsoft_Identity_Client_RP_AcquireTokenForClientParameterBuilder {
@@ -82,7 +846,7 @@ export interface __Ext_Microsoft_Identity_Client_RP_AcquireTokenForClientParamet
 }
 
 export interface __Ext_Microsoft_Identity_Client_RP_ConfidentialClientApplicationBuilder {
-  WithCertificate(certificate: X509Certificate2, sendX5C: boolean, associateTokensWithCertificateSerialNumber: boolean): ExtensionMethods_Microsoft_Identity_Client_RP<Microsoft_Identity_Client.ConfidentialClientApplicationBuilder>;
+  WithCertificate(certificate: System_Security_Cryptography_X509Certificates.X509Certificate2, sendX5C: boolean, associateTokensWithCertificateSerialNumber: boolean): ExtensionMethods_Microsoft_Identity_Client_RP<Microsoft_Identity_Client.ConfidentialClientApplicationBuilder>;
 }
 
 export interface __Ext_Microsoft_Identity_Client_SSHCertificates_AcquireTokenInteractiveParameterBuilder {
@@ -93,12 +857,131 @@ export interface __Ext_Microsoft_Identity_Client_SSHCertificates_AcquireTokenSil
   WithSSHCertificateAuthenticationScheme(publicKeyJwk: string, keyId: string): ExtensionMethods_Microsoft_Identity_Client_SSHCertificates<Microsoft_Identity_Client.AcquireTokenSilentParameterBuilder>;
 }
 
+export interface __Ext_Microsoft_IdentityModel_Tokens_IEnumerable_1<T> {
+  IsNullOrEmpty(): ExtensionMethods_Microsoft_IdentityModel_Tokens<boolean>;
+}
+
+export interface __Ext_System_ClientModel_Primitives_Activity {
+  MarkClientActivityFailed(exception: System.Exception): ExtensionMethods_System_ClientModel_Primitives<System_Diagnostics.Activity>;
+}
+
+export interface __Ext_System_ClientModel_Primitives_ActivitySource {
+  StartClientActivity(options: System_ClientModel_Primitives.ClientPipelineOptions, name: string, kind?: System_Diagnostics.ActivityKind, parentContext?: System_Diagnostics.ActivityContext, tags?: System_Collections_Generic.IEnumerable_1<System_Collections_Generic.KeyValuePair_2<System_Internal.String, unknown>>): ExtensionMethods_System_ClientModel_Primitives<System_Diagnostics.Activity | undefined>;
+}
+
 // Generic helper type for extension methods in namespace: Azure
 export type ExtensionMethods_Azure<TShape> =
   TShape extends null | undefined ? TShape
   : TShape extends void ? void
   : TShape & (
     (TShape extends System.BinaryData ? __Ext_Azure_BinaryData : {})
+  );
+
+// Generic helper type for extension methods in namespace: Microsoft.EntityFrameworkCore
+export type ExtensionMethods_Microsoft_EntityFrameworkCore<TShape> =
+  TShape extends null | undefined ? TShape
+  : TShape extends void ? void
+  : TShape & (
+    (TShape extends Microsoft_EntityFrameworkCore.DbContextOptionsBuilder ? __Ext_Microsoft_EntityFrameworkCore_DbContextOptionsBuilder : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<infer T0> ? __Ext_Microsoft_EntityFrameworkCore_DbContextOptionsBuilder_1<T0> : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore.DbFunctions ? __Ext_Microsoft_EntityFrameworkCore_DbFunctions : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore.DbSet_1<infer T0> ? __Ext_Microsoft_EntityFrameworkCore_DbSet_1<T0> : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore.ModelBuilder ? __Ext_Microsoft_EntityFrameworkCore_ModelBuilder : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Infrastructure.DatabaseFacade ? __Ext_Microsoft_EntityFrameworkCore_DatabaseFacade : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata.IConventionEntityType ? __Ext_Microsoft_EntityFrameworkCore_IConventionEntityType : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata.IConventionEntityTypeMappingFragment ? __Ext_Microsoft_EntityFrameworkCore_IConventionEntityTypeMappingFragment : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata.IConventionIndex ? __Ext_Microsoft_EntityFrameworkCore_IConventionIndex : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata.IConventionKey ? __Ext_Microsoft_EntityFrameworkCore_IConventionKey : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata.IConventionModel ? __Ext_Microsoft_EntityFrameworkCore_IConventionModel : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata.IConventionProperty ? __Ext_Microsoft_EntityFrameworkCore_IConventionProperty : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata.IConventionRelationalPropertyOverrides ? __Ext_Microsoft_EntityFrameworkCore_IConventionRelationalPropertyOverrides : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata.IMutableEntityType ? __Ext_Microsoft_EntityFrameworkCore_IMutableEntityType : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata.IMutableEntityTypeMappingFragment ? __Ext_Microsoft_EntityFrameworkCore_IMutableEntityTypeMappingFragment : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata.IMutableIndex ? __Ext_Microsoft_EntityFrameworkCore_IMutableIndex : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata.IMutableKey ? __Ext_Microsoft_EntityFrameworkCore_IMutableKey : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata.IMutableModel ? __Ext_Microsoft_EntityFrameworkCore_IMutableModel : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata.IMutableProperty ? __Ext_Microsoft_EntityFrameworkCore_IMutableProperty : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata.IMutableRelationalPropertyOverrides ? __Ext_Microsoft_EntityFrameworkCore_IMutableRelationalPropertyOverrides : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata.IProperty ? __Ext_Microsoft_EntityFrameworkCore_IProperty : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata.IReadOnlyEntityType ? __Ext_Microsoft_EntityFrameworkCore_IReadOnlyEntityType : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata.IReadOnlyEntityTypeMappingFragment ? __Ext_Microsoft_EntityFrameworkCore_IReadOnlyEntityTypeMappingFragment : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata.IReadOnlyIndex ? __Ext_Microsoft_EntityFrameworkCore_IReadOnlyIndex : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata.IReadOnlyKey ? __Ext_Microsoft_EntityFrameworkCore_IReadOnlyKey : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata.IReadOnlyModel ? __Ext_Microsoft_EntityFrameworkCore_IReadOnlyModel : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty ? __Ext_Microsoft_EntityFrameworkCore_IReadOnlyProperty : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata.IReadOnlyRelationalPropertyOverrides ? __Ext_Microsoft_EntityFrameworkCore_IReadOnlyRelationalPropertyOverrides : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata.ITable ? __Ext_Microsoft_EntityFrameworkCore_ITable : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.ColumnBuilder ? __Ext_Microsoft_EntityFrameworkCore_ColumnBuilder : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.ColumnBuilder_1<infer T0> ? __Ext_Microsoft_EntityFrameworkCore_ColumnBuilder_1<T0> : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePrimitiveCollectionBuilder ? __Ext_Microsoft_EntityFrameworkCore_ComplexTypePrimitiveCollectionBuilder : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePrimitiveCollectionBuilder_1<infer T0> ? __Ext_Microsoft_EntityFrameworkCore_ComplexTypePrimitiveCollectionBuilder_1<T0> : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder ? __Ext_Microsoft_EntityFrameworkCore_ComplexTypePropertyBuilder : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder_1<infer T0> ? __Ext_Microsoft_EntityFrameworkCore_ComplexTypePropertyBuilder_1<T0> : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.EntityTypeBuilder ? __Ext_Microsoft_EntityFrameworkCore_EntityTypeBuilder : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.EntityTypeBuilder_1<infer T0> ? __Ext_Microsoft_EntityFrameworkCore_EntityTypeBuilder_1<T0> : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder ? __Ext_Microsoft_EntityFrameworkCore_IConventionEntityTypeBuilder : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder ? __Ext_Microsoft_EntityFrameworkCore_IConventionIndexBuilder : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionKeyBuilder ? __Ext_Microsoft_EntityFrameworkCore_IConventionKeyBuilder : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder ? __Ext_Microsoft_EntityFrameworkCore_IConventionModelBuilder : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder ? __Ext_Microsoft_EntityFrameworkCore_IConventionPropertyBuilder : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder ? __Ext_Microsoft_EntityFrameworkCore_IndexBuilder : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<infer T0> ? __Ext_Microsoft_EntityFrameworkCore_IndexBuilder_1<T0> : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.KeyBuilder ? __Ext_Microsoft_EntityFrameworkCore_KeyBuilder : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.KeyBuilder_1<infer T0> ? __Ext_Microsoft_EntityFrameworkCore_KeyBuilder_1<T0> : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.OwnedNavigationBuilder ? __Ext_Microsoft_EntityFrameworkCore_OwnedNavigationBuilder : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.OwnedNavigationBuilder_2<infer T0, infer T1> ? __Ext_Microsoft_EntityFrameworkCore_OwnedNavigationBuilder_2<T0, T1> : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.OwnedNavigationTableBuilder ? __Ext_Microsoft_EntityFrameworkCore_OwnedNavigationTableBuilder : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.OwnedNavigationTableBuilder_2<infer T0, infer T1> ? __Ext_Microsoft_EntityFrameworkCore_OwnedNavigationTableBuilder_2<T0, T1> : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.PrimitiveCollectionBuilder ? __Ext_Microsoft_EntityFrameworkCore_PrimitiveCollectionBuilder : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.PrimitiveCollectionBuilder_1<infer T0> ? __Ext_Microsoft_EntityFrameworkCore_PrimitiveCollectionBuilder_1<T0> : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder ? __Ext_Microsoft_EntityFrameworkCore_PropertyBuilder : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<infer T0> ? __Ext_Microsoft_EntityFrameworkCore_PropertyBuilder_1<T0> : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.SplitTableBuilder ? __Ext_Microsoft_EntityFrameworkCore_SplitTableBuilder : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.SplitTableBuilder_1<infer T0> ? __Ext_Microsoft_EntityFrameworkCore_SplitTableBuilder_1<T0> : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.TableBuilder ? __Ext_Microsoft_EntityFrameworkCore_TableBuilder : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata_Builders.TableBuilder_1<infer T0> ? __Ext_Microsoft_EntityFrameworkCore_TableBuilder_1<T0> : {})
+  );
+
+// Generic helper type for extension methods in namespace: Microsoft.EntityFrameworkCore.Metadata.Internal
+export type ExtensionMethods_Microsoft_EntityFrameworkCore_Metadata_Internal<TShape> =
+  TShape extends null | undefined ? TShape
+  : TShape extends void ? void
+  : TShape & (
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata.IReadOnlyIndex ? __Ext_Microsoft_EntityFrameworkCore_Metadata_Internal_IReadOnlyIndex : {}) &
+    (TShape extends Microsoft_EntityFrameworkCore_Metadata.IReadOnlyKey ? __Ext_Microsoft_EntityFrameworkCore_Metadata_Internal_IReadOnlyKey : {})
+  );
+
+// Generic helper type for extension methods in namespace: Microsoft.EntityFrameworkCore.Migrations
+export type ExtensionMethods_Microsoft_EntityFrameworkCore_Migrations<TShape> =
+  TShape extends null | undefined ? TShape
+  : TShape extends void ? void
+  : TShape & (
+    (TShape extends Microsoft_EntityFrameworkCore_Migrations.MigrationBuilder ? __Ext_Microsoft_EntityFrameworkCore_Migrations_MigrationBuilder : {})
+  );
+
+// Generic helper type for extension methods in namespace: Microsoft.EntityFrameworkCore.SqlServer.Extensions.Internal
+export type ExtensionMethods_Microsoft_EntityFrameworkCore_SqlServer_Extensions_Internal<TShape> =
+  TShape extends null | undefined ? TShape
+  : TShape extends void ? void
+  : TShape & (
+    (TShape extends Microsoft_EntityFrameworkCore_Diagnostics.IDiagnosticsLogger_1<infer T0> ? __Ext_Microsoft_EntityFrameworkCore_SqlServer_Extensions_Internal_IDiagnosticsLogger_1<T0> : {})
+  );
+
+// Generic helper type for extension methods in namespace: Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal
+export type ExtensionMethods_Microsoft_EntityFrameworkCore_SqlServer_Scaffolding_Internal<TShape> =
+  TShape extends null | undefined ? TShape
+  : TShape extends void ? void
+  : TShape & (
+    (TShape extends System_Data_Common.DbDataReader ? __Ext_Microsoft_EntityFrameworkCore_SqlServer_Scaffolding_Internal_DbDataReader : {}) &
+    (TShape extends System_Data_Common.DbDataRecord ? __Ext_Microsoft_EntityFrameworkCore_SqlServer_Scaffolding_Internal_DbDataRecord : {})
+  );
+
+// Generic helper type for extension methods in namespace: Microsoft.Extensions.DependencyInjection
+export type ExtensionMethods_Microsoft_Extensions_DependencyInjection<TShape> =
+  TShape extends null | undefined ? TShape
+  : TShape extends void ? void
+  : TShape & (
+    (TShape extends Microsoft_Extensions_DependencyInjection.IServiceCollection ? __Ext_Microsoft_Extensions_DependencyInjection_IServiceCollection : {})
   );
 
 // Generic helper type for extension methods in namespace: Microsoft.Identity.Client
@@ -149,5 +1032,23 @@ export type ExtensionMethods_Microsoft_Identity_Client_SSHCertificates<TShape> =
   : TShape & (
     (TShape extends Microsoft_Identity_Client.AcquireTokenInteractiveParameterBuilder ? __Ext_Microsoft_Identity_Client_SSHCertificates_AcquireTokenInteractiveParameterBuilder : {}) &
     (TShape extends Microsoft_Identity_Client.AcquireTokenSilentParameterBuilder ? __Ext_Microsoft_Identity_Client_SSHCertificates_AcquireTokenSilentParameterBuilder : {})
+  );
+
+// Generic helper type for extension methods in namespace: Microsoft.IdentityModel.Tokens
+export type ExtensionMethods_Microsoft_IdentityModel_Tokens<TShape> =
+  TShape extends null | undefined ? TShape
+  : TShape extends void ? void
+  : TShape & (
+    (TShape extends System_Collections_Generic.IEnumerable_1<infer T0> ? __Ext_Microsoft_IdentityModel_Tokens_IEnumerable_1<T0> : {}) &
+    (TShape extends (infer T)[] ? __Ext_Microsoft_IdentityModel_Tokens_IEnumerable_1<T> : {})
+  );
+
+// Generic helper type for extension methods in namespace: System.ClientModel.Primitives
+export type ExtensionMethods_System_ClientModel_Primitives<TShape> =
+  TShape extends null | undefined ? TShape
+  : TShape extends void ? void
+  : TShape & (
+    (TShape extends System_Diagnostics.Activity ? __Ext_System_ClientModel_Primitives_Activity : {}) &
+    (TShape extends System_Diagnostics.ActivitySource ? __Ext_System_ClientModel_Primitives_ActivitySource : {})
   );
 

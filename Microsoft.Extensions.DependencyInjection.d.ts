@@ -13,3 +13,6 @@ import type { IServiceCollection } from '@tsonic/microsoft-extensions/Microsoft.
 
 // Public API exports (curated - no internal $instance/$views leakage)
 export { SqlServerServiceCollectionExtensions$instance as SqlServerServiceCollectionExtensions } from './Microsoft.Extensions.DependencyInjection/internal/index.js';
+// Extension methods (C# using semantics)
+export type { ExtensionMethods_Microsoft_Extensions_DependencyInjection as ExtensionMethods } from './__internal/extensions/index.js';
+

@@ -14,6 +14,8 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Boolean as ClrBoolean, Byte, Char, DateTime, DateTimeOffset, Decimal, Double, Guid, Int16, Int32, Int64, Object as ClrObject, Single, String as ClrString, TimeSpan, Type, Void } from "@tsonic/dotnet/System.js";
 
 export interface SqlDataRecord$instance {
+    readonly __tsonic_iface_System_Data_IDataRecord: never;
+
     readonly FieldCount: int;
     get_Item(ordinal: int): unknown;
     get_Item(name: string): unknown;
