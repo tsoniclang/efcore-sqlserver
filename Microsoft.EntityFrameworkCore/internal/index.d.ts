@@ -33,14 +33,12 @@ export enum DataCompressionType {
 }
 
 
-export abstract class SqlServerRetryingExecutionStrategy$protected {
-    protected GetNextDelay(lastException: Exception): Nullable<TimeSpan>;
-    protected ShouldRetryOn(exception: Exception): boolean;
-}
+export interface SqlServerRetryingExecutionStrategy$instance extends ExecutionStrategy {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_IExecutionStrategy: never;
 
-
-export interface SqlServerRetryingExecutionStrategy$instance extends SqlServerRetryingExecutionStrategy$protected, ExecutionStrategy {
     readonly AdditionalErrorNumbers: IEnumerable<System_Internal.Int32> | undefined;
+    GetNextDelay(lastException: Exception): Nullable<TimeSpan>;
+    ShouldRetryOn(exception: Exception): boolean;
 }
 
 

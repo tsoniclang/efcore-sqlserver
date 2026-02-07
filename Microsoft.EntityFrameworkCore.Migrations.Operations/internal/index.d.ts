@@ -16,8 +16,12 @@ import * as Microsoft_EntityFrameworkCore_Migrations_Operations_Internal from "@
 import type { DatabaseOperation, MigrationOperation } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations.Operations.js";
 
 export interface SqlServerCreateDatabaseOperation$instance extends DatabaseOperation {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IAnnotatable: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IReadOnlyAnnotatable: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_IMutableAnnotatable: never;
+
     get FileName(): string | undefined;
-    set FileName(value: string);
+    set FileName(value: string | undefined);
     Name: string;
 }
 
@@ -30,6 +34,10 @@ export const SqlServerCreateDatabaseOperation: {
 export type SqlServerCreateDatabaseOperation = SqlServerCreateDatabaseOperation$instance;
 
 export interface SqlServerDropDatabaseOperation$instance extends MigrationOperation {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IAnnotatable: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IReadOnlyAnnotatable: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_IMutableAnnotatable: never;
+
     Name: string;
 }
 

@@ -11,12 +11,16 @@ import type { TokenCredential } from "../../Azure.Core/internal/index.js";
 import type { Boolean as ClrBoolean, Func } from "@tsonic/dotnet/System.js";
 
 export interface IAzureClientBuilder_2$instance<TClient, TOptions> {
+    readonly __tsonic_iface_Azure_Core_Extensions_IAzureClientBuilder_2: never;
+
 }
 
 
 export type IAzureClientBuilder_2<TClient, TOptions> = IAzureClientBuilder_2$instance<TClient, TOptions>;
 
 export interface IAzureClientFactoryBuilder$instance {
+    readonly __tsonic_iface_Azure_Core_Extensions_IAzureClientFactoryBuilder: never;
+
     RegisterClientFactory<TClient, TOptions>(clientFactory: Func<TOptions, TClient>): IAzureClientBuilder_2<TClient, TOptions>;
 }
 
@@ -24,6 +28,8 @@ export interface IAzureClientFactoryBuilder$instance {
 export type IAzureClientFactoryBuilder = IAzureClientFactoryBuilder$instance;
 
 export interface IAzureClientFactoryBuilderWithConfiguration_1$instance<TConfiguration> extends IAzureClientFactoryBuilder {
+    readonly __tsonic_iface_Azure_Core_Extensions_IAzureClientFactoryBuilderWithConfiguration_1: never;
+
     RegisterClientFactory<TClient, TOptions>(clientFactory: Func<TOptions, TClient>): IAzureClientBuilder_2<TClient, TOptions>;
     RegisterClientFactory<TClient, TOptions>(configuration: TConfiguration): IAzureClientBuilder_2<TClient, TOptions>;
 }
@@ -34,6 +40,8 @@ export interface IAzureClientFactoryBuilderWithConfiguration_1$instance<TConfigu
 export type IAzureClientFactoryBuilderWithConfiguration_1<TConfiguration> = IAzureClientFactoryBuilderWithConfiguration_1$instance<TConfiguration>;
 
 export interface IAzureClientFactoryBuilderWithCredential$instance {
+    readonly __tsonic_iface_Azure_Core_Extensions_IAzureClientFactoryBuilderWithCredential: never;
+
     RegisterClientFactory<TClient, TOptions>(clientFactory: Func<TOptions, TokenCredential, TClient>, requiresCredential?: boolean): IAzureClientBuilder_2<TClient, TOptions>;
 }
 

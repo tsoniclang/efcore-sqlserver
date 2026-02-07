@@ -68,6 +68,8 @@ export const AccessToken: {
 export type AccessToken = AccessToken$instance;
 
 export interface AzureLocation$instance {
+    readonly __tsonic_iface_System_IEquatable_1: never;
+
     readonly DisplayName: string | undefined;
     readonly Name: string;
     Equals(other: AzureLocation): boolean;
@@ -150,6 +152,8 @@ export const AzureLocation: {
 export type AzureLocation = AzureLocation$instance;
 
 export interface ContentType$instance {
+    readonly __tsonic_iface_System_IEquatable_1: never;
+
     Equals(other: ContentType): boolean;
     Equals(other: string): boolean;
     Equals(obj: unknown): boolean;
@@ -169,6 +173,8 @@ export const ContentType: {
 export type ContentType = ContentType$instance;
 
 export interface HttpHeader$instance {
+    readonly __tsonic_iface_System_IEquatable_1: never;
+
     readonly Name: string;
     readonly Value: string;
     Equals(obj: unknown): boolean;
@@ -199,6 +205,9 @@ export const MessageProcessingContext: {
 export type MessageProcessingContext = MessageProcessingContext$instance;
 
 export interface RehydrationToken$instance {
+    readonly __tsonic_iface_System_ClientModel_Primitives_IJsonModel_1: never;
+    readonly __tsonic_iface_System_ClientModel_Primitives_IPersistableModel_1: never;
+
     readonly Id: string;
 }
 
@@ -219,6 +228,9 @@ export type RehydrationToken = RehydrationToken$instance & __RehydrationToken$vi
 
 
 export interface RequestHeaders$instance {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     Add(header: HttpHeader): void;
     Add(name: string, value: string): void;
     Contains(name: string): boolean;
@@ -238,6 +250,8 @@ export const RequestHeaders: {
 export type RequestHeaders = RequestHeaders$instance;
 
 export interface RequestMethod$instance {
+    readonly __tsonic_iface_System_IEquatable_1: never;
+
     readonly Method: string;
     Equals(other: RequestMethod): boolean;
     Equals(obj: unknown): boolean;
@@ -263,6 +277,8 @@ export const RequestMethod: {
 export type RequestMethod = RequestMethod$instance;
 
 export interface ResourceType$instance {
+    readonly __tsonic_iface_System_IEquatable_1: never;
+
     readonly Namespace: string;
     readonly Type: string;
     Equals(other: ResourceType): boolean;
@@ -281,6 +297,9 @@ export const ResourceType: {
 export type ResourceType = ResourceType$instance;
 
 export interface ResponseHeaders$instance {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly ContentLength: Nullable<System_Internal.Int32>;
     readonly ContentLengthLong: Nullable<System_Internal.Int64>;
     readonly ContentType: string | undefined;
@@ -325,17 +344,12 @@ export const TokenRequestContext: {
 
 export type TokenRequestContext = TokenRequestContext$instance;
 
-export abstract class AzureCoreContext$protected {
-    protected TryGetTypeBuilderCore(type: Type, builder: ModelReaderWriterTypeBuilder): boolean;
-}
-
-
-export interface AzureCoreContext$instance extends AzureCoreContext$protected, ModelReaderWriterContext {
+export interface AzureCoreContext$instance extends ModelReaderWriterContext {
+    TryGetTypeBuilderCore(type: Type, builder: ModelReaderWriterTypeBuilder): boolean;
 }
 
 
 export const AzureCoreContext: {
-    new(): AzureCoreContext;
     readonly Default: AzureCoreContext;
 };
 
@@ -346,7 +360,7 @@ export interface ClientOptions$instance {
     readonly Diagnostics: DiagnosticsOptions | TokenCredentialDiagnosticsOptions;
     readonly Retry: RetryOptions;
     get RetryPolicy(): HttpPipelinePolicy | undefined;
-    set RetryPolicy(value: HttpPipelinePolicy);
+    set RetryPolicy(value: HttpPipelinePolicy | undefined);
     Transport: HttpPipelineTransport;
     AddPolicy(policy: HttpPipelinePolicy, position: HttpPipelinePosition): void;
     Equals(obj: unknown): boolean;
@@ -355,27 +369,20 @@ export interface ClientOptions$instance {
 }
 
 
-export const ClientOptions: {
-    new(): ClientOptions;
-    new(diagnostics: DiagnosticsOptions): ClientOptions;
+export const ClientOptions: (abstract new() => ClientOptions) & (abstract new(diagnostics: DiagnosticsOptions) => ClientOptions) & {
     Default: ClientOptions;
 };
 
 
 export type ClientOptions = ClientOptions$instance;
 
-export abstract class DelayStrategy$protected {
-    protected abstract GetNextDelayCore(response: Response, retryNumber: int): TimeSpan;
-}
-
-
-export interface DelayStrategy$instance extends DelayStrategy$protected {
+export interface DelayStrategy$instance {
     GetNextDelay(response: Response, retryNumber: int): TimeSpan;
+    GetNextDelayCore(response: Response, retryNumber: int): TimeSpan;
 }
 
 
-export const DelayStrategy: {
-    new(maxDelay: Nullable<TimeSpan>, jitterFactor: double): DelayStrategy;
+export const DelayStrategy: (abstract new(maxDelay: Nullable<TimeSpan>, jitterFactor: double) => DelayStrategy) & {
     CreateExponentialDelayStrategy(initialDelay?: Nullable<TimeSpan>, maxDelay?: Nullable<TimeSpan>): DelayStrategy;
     CreateFixedDelayStrategy(delay?: Nullable<TimeSpan>): DelayStrategy;
     Max(val1: TimeSpan, val2: TimeSpan): TimeSpan;
@@ -387,7 +394,7 @@ export type DelayStrategy = DelayStrategy$instance;
 
 export interface DiagnosticsOptions$instance {
     get ApplicationId(): string | undefined;
-    set ApplicationId(value: string);
+    set ApplicationId(value: string | undefined);
     IsDistributedTracingEnabled: boolean;
     IsLoggingContentEnabled: boolean;
     IsLoggingEnabled: boolean;
@@ -398,16 +405,17 @@ export interface DiagnosticsOptions$instance {
 }
 
 
-export const DiagnosticsOptions: {
-    new(): DiagnosticsOptions;
+export const DiagnosticsOptions: (abstract new() => DiagnosticsOptions) & {
     get DefaultApplicationId(): string | undefined;
-    set DefaultApplicationId(value: string);
+    set DefaultApplicationId(value: string | undefined);
 };
 
 
 export type DiagnosticsOptions = DiagnosticsOptions$instance;
 
 export interface HttpMessage$instance {
+    readonly __tsonic_iface_System_IDisposable: never;
+
     BufferResponse: boolean;
     CancellationToken: CancellationToken;
     readonly HasResponse: boolean;
@@ -432,35 +440,35 @@ export const HttpMessage: {
 
 export type HttpMessage = HttpMessage$instance;
 
-export abstract class Request$protected {
-    protected abstract AddHeader(name: string, value: string): void;
-    protected abstract ContainsHeader(name: string): boolean;
-    protected abstract EnumerateHeaders(): IEnumerable__System_Collections_Generic<HttpHeader>;
-    protected abstract RemoveHeader(name: string): boolean;
-    protected SetHeader(name: string, value: string): void;
-    protected abstract TryGetHeader(name: string, value: string): boolean;
-    protected abstract TryGetHeaderValues(name: string, values: IEnumerable__System_Collections_Generic<System_Internal.String>): boolean;
-}
+export interface Request$instance {
+    readonly __tsonic_iface_System_IDisposable: never;
 
-
-export interface Request$instance extends Request$protected {
     ClientRequestId: string;
-    Content: RequestContent;
+    get Content(): RequestContent | undefined;
+    set Content(value: RequestContent | undefined);
     readonly Headers: RequestHeaders;
     Method: RequestMethod;
     Uri: RequestUriBuilder;
+    AddHeader(name: string, value: string): void;
+    ContainsHeader(name: string): boolean;
     Dispose(): void;
+    EnumerateHeaders(): IEnumerable__System_Collections_Generic<HttpHeader>;
+    RemoveHeader(name: string): boolean;
+    SetHeader(name: string, value: string): void;
+    TryGetHeader(name: string, value: string): boolean;
+    TryGetHeaderValues(name: string, values: IEnumerable__System_Collections_Generic<System_Internal.String>): boolean;
 }
 
 
-export const Request: {
-    new(): Request;
+export const Request: (abstract new() => Request) & {
 };
 
 
 export type Request = Request$instance;
 
 export interface RequestContent$instance {
+    readonly __tsonic_iface_System_IDisposable: never;
+
     Dispose(): void;
     TryComputeLength(length: long): boolean;
     WriteTo(stream: Stream, cancellation: CancellationToken): void;
@@ -468,8 +476,7 @@ export interface RequestContent$instance {
 }
 
 
-export const RequestContent: {
-    new(): RequestContent;
+export const RequestContent: (abstract new() => RequestContent) & {
     Create(content: DynamicData): RequestContent;
     Create(content: BinaryData): RequestContent;
     Create(bytes: ReadOnlySequence<System_Internal.Byte>): RequestContent;
@@ -492,8 +499,7 @@ export interface RequestFailedDetailsParser$instance {
 }
 
 
-export const RequestFailedDetailsParser: {
-    new(): RequestFailedDetailsParser;
+export const RequestFailedDetailsParser: (abstract new() => RequestFailedDetailsParser) & {
 };
 
 
@@ -501,12 +507,13 @@ export type RequestFailedDetailsParser = RequestFailedDetailsParser$instance;
 
 export interface RequestUriBuilder$instance {
     get Host(): string | undefined;
-    set Host(value: string);
+    set Host(value: string | undefined);
     Path: string;
     readonly PathAndQuery: string;
     Port: int;
     Query: string;
-    Scheme: string;
+    get Scheme(): string | undefined;
+    set Scheme(value: string | undefined);
     AppendPath(value: string): void;
     AppendPath(value: string, escape: boolean): void;
     AppendPath(value: ReadOnlySpan<System_Internal.Char>, escape: boolean): void;
@@ -527,6 +534,9 @@ export const RequestUriBuilder: {
 export type RequestUriBuilder = RequestUriBuilder$instance;
 
 export interface ResourceIdentifier$instance {
+    readonly __tsonic_iface_System_IComparable_1: never;
+    readonly __tsonic_iface_System_IEquatable_1: never;
+
     readonly Location: Nullable<AzureLocation>;
     readonly Name: string;
     readonly Parent: ResourceIdentifier | undefined;
@@ -559,8 +569,7 @@ export interface ResponseClassificationHandler$instance {
 }
 
 
-export const ResponseClassificationHandler: {
-    new(): ResponseClassificationHandler;
+export const ResponseClassificationHandler: (abstract new() => ResponseClassificationHandler) & {
 };
 
 
@@ -591,7 +600,6 @@ export interface RetryOptions$instance {
 
 
 export const RetryOptions: {
-    new(): RetryOptions;
 };
 
 
@@ -635,8 +643,7 @@ export interface TokenCredential$instance extends AuthenticationTokenProvider {
 }
 
 
-export const TokenCredential: {
-    new(): TokenCredential;
+export const TokenCredential: (abstract new() => TokenCredential) & {
 };
 
 

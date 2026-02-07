@@ -28,6 +28,8 @@ export enum SqlServerEngineType {
 
 
 export interface ISqlServerSingletonOptions$instance extends ISingletonOptions {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_SqlServer_Infrastructure_Internal_ISqlServerSingletonOptions: never;
+
     readonly EngineType: SqlServerEngineType;
     readonly SqlServerCompatibilityLevel: int;
     readonly AzureSqlCompatibilityLevel: int;
@@ -38,26 +40,26 @@ export interface ISqlServerSingletonOptions$instance extends ISingletonOptions {
 }
 
 
+export interface ISqlServerSingletonOptions$instance extends Microsoft_EntityFrameworkCore_Infrastructure_Internal.ISingletonOptions {}
+
 export type ISqlServerSingletonOptions = ISqlServerSingletonOptions$instance;
 
-export abstract class SqlServerModelValidator$protected {
-    protected ValidateByteIdentityMapping(model: IModel, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
-    protected ValidateCompatible(property: IProperty, duplicateProperty: IProperty, columnName: string, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
-    protected ValidateCompatible(key: IKey, duplicateKey: IKey, keyName: string, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
-    protected ValidateCompatible(index: IIndex, duplicateIndex: IIndex, indexName: string, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
-    protected ValidateDecimalColumns(model: IModel, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
-    protected ValidateIndexIncludeProperties(model: IModel, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
-    protected ValidateSharedColumnsCompatibility(mappedTypes: IReadOnlyList<IEntityType>, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
-    protected ValidateSharedTableCompatibility(mappedTypes: IReadOnlyList<IEntityType>, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
-    protected ValidateTemporalTables(model: IModel, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
-    protected ValidateTypeMappings(model: IModel, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
-    protected ValidateValueGeneration(entityType: IEntityType, key: IKey, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
-    protected ValidateVectorColumns(model: IModel, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
-}
+export interface SqlServerModelValidator$instance extends RelationalModelValidator {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IModelValidator: never;
 
-
-export interface SqlServerModelValidator$instance extends SqlServerModelValidator$protected, RelationalModelValidator {
     Validate(model: IModel, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
+    ValidateByteIdentityMapping(model: IModel, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
+    ValidateCompatible(property: IProperty, duplicateProperty: IProperty, columnName: string, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
+    ValidateCompatible(key: IKey, duplicateKey: IKey, keyName: string, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
+    ValidateCompatible(index: IIndex, duplicateIndex: IIndex, indexName: string, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
+    ValidateDecimalColumns(model: IModel, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
+    ValidateIndexIncludeProperties(model: IModel, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
+    ValidateSharedColumnsCompatibility(mappedTypes: IReadOnlyList<IEntityType>, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
+    ValidateSharedTableCompatibility(mappedTypes: IReadOnlyList<IEntityType>, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
+    ValidateTemporalTables(model: IModel, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
+    ValidateTypeMappings(model: IModel, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
+    ValidateValueGeneration(entityType: IEntityType, key: IKey, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
+    ValidateVectorColumns(model: IModel, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
 }
 
 
@@ -68,12 +70,9 @@ export const SqlServerModelValidator: {
 
 export type SqlServerModelValidator = SqlServerModelValidator$instance;
 
-export abstract class SqlServerOptionsExtension$protected {
-    protected Clone(): RelationalOptionsExtension;
-}
+export interface SqlServerOptionsExtension$instance extends RelationalOptionsExtension {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IDbContextOptionsExtension: never;
 
-
-export interface SqlServerOptionsExtension$instance extends SqlServerOptionsExtension$protected, RelationalOptionsExtension {
     readonly AzureSqlCompatibilityLevel: int;
     readonly AzureSynapseCompatibilityLevel: int;
     readonly EngineType: SqlServerEngineType;
@@ -82,6 +81,7 @@ export interface SqlServerOptionsExtension$instance extends SqlServerOptionsExte
     readonly UseRetryingStrategyByDefault: boolean;
     ApplyDefaults(options: IDbContextOptions): IDbContextOptionsExtension;
     ApplyServices(services: IServiceCollection): void;
+    Clone(): RelationalOptionsExtension;
     Validate(options: IDbContextOptions): void;
     WithAzureSqlCompatibilityLevel(azureSqlCompatibilityLevel: Nullable<System_Internal.Int32>): SqlServerOptionsExtension;
     WithAzureSynapseCompatibilityLevel(azureSynapseCompatibilityLevel: Nullable<System_Internal.Int32>): SqlServerOptionsExtension;
@@ -94,7 +94,6 @@ export interface SqlServerOptionsExtension$instance extends SqlServerOptionsExte
 
 export const SqlServerOptionsExtension: {
     new(): SqlServerOptionsExtension;
-    new(copyFrom: SqlServerOptionsExtension): SqlServerOptionsExtension;
     readonly SqlServerDefaultCompatibilityLevel: int;
     readonly AzureSqlDefaultCompatibilityLevel: int;
     readonly AzureSynapseDefaultCompatibilityLevel: int;
@@ -104,6 +103,9 @@ export const SqlServerOptionsExtension: {
 export type SqlServerOptionsExtension = SqlServerOptionsExtension$instance;
 
 export interface SqlServerSingletonOptions$instance {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_ISingletonOptions: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_SqlServer_Infrastructure_Internal_ISqlServerSingletonOptions: never;
+
     AzureSqlCompatibilityLevel: int;
     AzureSynapseCompatibilityLevel: int;
     EngineType: SqlServerEngineType;

@@ -15,6 +15,8 @@ import type { AsyncCallback, Boolean as ClrBoolean, Byte, IAsyncDisposable, IAsy
 import type { JsonDocument } from "@tsonic/dotnet/System.Text.Json.js";
 
 export interface SqlVector_1$instance<T extends unknown> {
+    readonly __tsonic_iface_System_Data_SqlTypes_INullable: never;
+
     readonly IsNull: boolean;
     readonly Length: int;
     readonly Memory: ReadOnlyMemory<T>;
@@ -31,6 +33,9 @@ export const SqlVector_1: {
 export type SqlVector_1<T> = SqlVector_1$instance<T>;
 
 export interface SqlFileStream$instance extends Stream {
+    readonly __tsonic_iface_System_IAsyncDisposable: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     readonly CanRead: boolean;
     readonly CanSeek: boolean;
     readonly CanTimeout: boolean;
@@ -64,9 +69,11 @@ export const SqlFileStream: {
 export type SqlFileStream = SqlFileStream$instance;
 
 export interface SqlJson$instance {
+    readonly __tsonic_iface_System_Data_SqlTypes_INullable: never;
+
     readonly IsNull: boolean;
     readonly Value: string;
-    ToString(): string | undefined;
+    ToString(): string;
 }
 
 

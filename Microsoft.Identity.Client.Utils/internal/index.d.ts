@@ -20,7 +20,6 @@ export interface MacMainThreadScheduler$instance {
 
 
 export const MacMainThreadScheduler: {
-    new(): MacMainThreadScheduler;
     Instance(): MacMainThreadScheduler;
 };
 

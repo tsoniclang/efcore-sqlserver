@@ -133,6 +133,8 @@ export const OpenIdConnectConfiguration: {
 export type OpenIdConnectConfiguration = OpenIdConnectConfiguration$instance;
 
 export interface OpenIdConnectConfigurationRetriever$instance {
+    readonly __tsonic_iface_Microsoft_IdentityModel_Protocols_IConfigurationRetriever_1: never;
+
 }
 
 
@@ -162,8 +164,7 @@ export interface OpenIdConnectMessage$instance extends AuthenticationProtocolMes
     ClientAssertionType: string;
     ClientId: string;
     ClientSecret: string;
-    get Code(): string | undefined;
-    set Code(value: string);
+    Code: string;
     Display: string;
     DomainHint: string;
     EnableTelemetryParameters: boolean;
@@ -209,7 +210,6 @@ export interface OpenIdConnectMessage$instance extends AuthenticationProtocolMes
 export const OpenIdConnectMessage: {
     new(): OpenIdConnectMessage;
     new(json: string): OpenIdConnectMessage;
-    new(other: OpenIdConnectMessage): OpenIdConnectMessage;
     new(nameValueCollection: NameValueCollection): OpenIdConnectMessage;
     new(parameters: IEnumerable<KeyValuePair<System_Internal.String, string[]>>): OpenIdConnectMessage;
     EnableTelemetryParametersByDefault: boolean;
@@ -219,6 +219,8 @@ export const OpenIdConnectMessage: {
 export type OpenIdConnectMessage = OpenIdConnectMessage$instance;
 
 export interface OpenIdConnectProtocolException$instance extends Exception {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
 }
 
 
@@ -226,13 +228,14 @@ export const OpenIdConnectProtocolException: {
     new(): OpenIdConnectProtocolException;
     new(message: string): OpenIdConnectProtocolException;
     new(message: string, innerException: Exception): OpenIdConnectProtocolException;
-    new(info: SerializationInfo, context: StreamingContext): OpenIdConnectProtocolException;
 };
 
 
 export type OpenIdConnectProtocolException = OpenIdConnectProtocolException$instance;
 
 export interface OpenIdConnectProtocolInvalidAtHashException$instance extends OpenIdConnectProtocolException {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
 }
 
 
@@ -240,13 +243,14 @@ export const OpenIdConnectProtocolInvalidAtHashException: {
     new(): OpenIdConnectProtocolInvalidAtHashException;
     new(message: string): OpenIdConnectProtocolInvalidAtHashException;
     new(message: string, innerException: Exception): OpenIdConnectProtocolInvalidAtHashException;
-    new(info: SerializationInfo, context: StreamingContext): OpenIdConnectProtocolInvalidAtHashException;
 };
 
 
 export type OpenIdConnectProtocolInvalidAtHashException = OpenIdConnectProtocolInvalidAtHashException$instance;
 
 export interface OpenIdConnectProtocolInvalidCHashException$instance extends OpenIdConnectProtocolException {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
 }
 
 
@@ -254,13 +258,14 @@ export const OpenIdConnectProtocolInvalidCHashException: {
     new(): OpenIdConnectProtocolInvalidCHashException;
     new(message: string): OpenIdConnectProtocolInvalidCHashException;
     new(message: string, innerException: Exception): OpenIdConnectProtocolInvalidCHashException;
-    new(info: SerializationInfo, context: StreamingContext): OpenIdConnectProtocolInvalidCHashException;
 };
 
 
 export type OpenIdConnectProtocolInvalidCHashException = OpenIdConnectProtocolInvalidCHashException$instance;
 
 export interface OpenIdConnectProtocolInvalidNonceException$instance extends OpenIdConnectProtocolException {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
 }
 
 
@@ -268,13 +273,14 @@ export const OpenIdConnectProtocolInvalidNonceException: {
     new(): OpenIdConnectProtocolInvalidNonceException;
     new(message: string): OpenIdConnectProtocolInvalidNonceException;
     new(message: string, innerException: Exception): OpenIdConnectProtocolInvalidNonceException;
-    new(info: SerializationInfo, context: StreamingContext): OpenIdConnectProtocolInvalidNonceException;
 };
 
 
 export type OpenIdConnectProtocolInvalidNonceException = OpenIdConnectProtocolInvalidNonceException$instance;
 
 export interface OpenIdConnectProtocolInvalidStateException$instance extends OpenIdConnectProtocolException {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
 }
 
 
@@ -282,7 +288,6 @@ export const OpenIdConnectProtocolInvalidStateException: {
     new(): OpenIdConnectProtocolInvalidStateException;
     new(message: string): OpenIdConnectProtocolInvalidStateException;
     new(message: string, innerException: Exception): OpenIdConnectProtocolInvalidStateException;
-    new(info: SerializationInfo, context: StreamingContext): OpenIdConnectProtocolInvalidStateException;
 };
 
 
@@ -305,16 +310,7 @@ export const OpenIdConnectProtocolValidationContext: {
 
 export type OpenIdConnectProtocolValidationContext = OpenIdConnectProtocolValidationContext$instance;
 
-export abstract class OpenIdConnectProtocolValidator$protected {
-    protected ValidateAtHash(validationContext: OpenIdConnectProtocolValidationContext): void;
-    protected ValidateCHash(validationContext: OpenIdConnectProtocolValidationContext): void;
-    protected ValidateIdToken(validationContext: OpenIdConnectProtocolValidationContext): void;
-    protected ValidateNonce(validationContext: OpenIdConnectProtocolValidationContext): void;
-    protected ValidateState(validationContext: OpenIdConnectProtocolValidationContext): void;
-}
-
-
-export interface OpenIdConnectProtocolValidator$instance extends OpenIdConnectProtocolValidator$protected {
+export interface OpenIdConnectProtocolValidator$instance {
     CryptoProviderFactory: CryptoProviderFactory;
     readonly HashAlgorithmMap: IDictionary<System_Internal.String, System_Internal.String>;
     IdTokenValidator: IdTokenValidator;
@@ -330,7 +326,12 @@ export interface OpenIdConnectProtocolValidator$instance extends OpenIdConnectPr
     RequireTimeStampInNonce: boolean;
     GenerateNonce(): string;
     GetHashAlgorithm(algorithm: string): HashAlgorithm;
+    ValidateAtHash(validationContext: OpenIdConnectProtocolValidationContext): void;
     ValidateAuthenticationResponse(validationContext: OpenIdConnectProtocolValidationContext): void;
+    ValidateCHash(validationContext: OpenIdConnectProtocolValidationContext): void;
+    ValidateIdToken(validationContext: OpenIdConnectProtocolValidationContext): void;
+    ValidateNonce(validationContext: OpenIdConnectProtocolValidationContext): void;
+    ValidateState(validationContext: OpenIdConnectProtocolValidationContext): void;
     ValidateTokenResponse(validationContext: OpenIdConnectProtocolValidationContext): void;
     ValidateUserInfoResponse(validationContext: OpenIdConnectProtocolValidationContext): void;
 }

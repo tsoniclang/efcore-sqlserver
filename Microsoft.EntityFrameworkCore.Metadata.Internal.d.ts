@@ -12,3 +12,6 @@ import type { IReadOnlyIndex, IReadOnlyKey, StoreObjectIdentifier } from '@tsoni
 // Public API exports (curated - no internal $instance/$views leakage)
 export { SqlServerIndexExtensions$instance as SqlServerIndexExtensions } from './Microsoft.EntityFrameworkCore.Metadata.Internal/internal/index.js';
 export { SqlServerKeyExtensions$instance as SqlServerKeyExtensions } from './Microsoft.EntityFrameworkCore.Metadata.Internal/internal/index.js';
+// Extension methods (C# using semantics)
+export type { ExtensionMethods_Microsoft_EntityFrameworkCore_Metadata_Internal as ExtensionMethods } from './__internal/extensions/index.js';
+

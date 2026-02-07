@@ -11,13 +11,11 @@ import type { EventLevel, EventListener, EventSource, EventWrittenEventArgs } fr
 import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Action, IDisposable, String as ClrString, Void } from "@tsonic/dotnet/System.js";
 
-export abstract class AzureEventSourceListener$protected {
-    protected OnEventSourceCreated(eventSource: EventSource): void;
-    protected OnEventWritten(eventData: EventWrittenEventArgs): void;
-}
+export interface AzureEventSourceListener$instance extends EventListener {
+    readonly __tsonic_iface_System_IDisposable: never;
 
-
-export interface AzureEventSourceListener$instance extends AzureEventSourceListener$protected, EventListener {
+    OnEventSourceCreated(eventSource: EventSource): void;
+    OnEventWritten(eventData: EventWrittenEventArgs): void;
 }
 
 

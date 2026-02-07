@@ -32,6 +32,8 @@ export enum SystemDataAccessKind {
 
 
 export interface IBinarySerialize$instance {
+    readonly __tsonic_iface_Microsoft_SqlServer_Server_IBinarySerialize: never;
+
     Read(r: BinaryReader): void;
     Write(w: BinaryWriter): void;
 }
@@ -40,12 +42,13 @@ export interface IBinarySerialize$instance {
 export type IBinarySerialize = IBinarySerialize$instance;
 
 export interface InvalidUdtException$instance extends SystemException {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
     GetObjectData(si: SerializationInfo, context: StreamingContext): void;
 }
 
 
 export const InvalidUdtException: {
-    new(): InvalidUdtException;
     Create(udtType: Type, resourceReason?: string): InvalidUdtException;
 };
 

@@ -124,6 +124,8 @@ export type ValidatorCallback = (value: unknown) => void;
 
 
 export interface IApplicationSettingsProvider$instance {
+    readonly __tsonic_iface_System_Configuration_IApplicationSettingsProvider: never;
+
     GetPreviousVersion(context: SettingsContext, property: SettingsProperty): SettingsPropertyValue;
     Reset(context: SettingsContext): void;
     Upgrade(context: SettingsContext, properties: SettingsPropertyCollection): void;
@@ -133,6 +135,8 @@ export interface IApplicationSettingsProvider$instance {
 export type IApplicationSettingsProvider = IApplicationSettingsProvider$instance;
 
 export interface IConfigurationSectionHandler$instance {
+    readonly __tsonic_iface_System_Configuration_IConfigurationSectionHandler: never;
+
     Create(parent: unknown, configContext: unknown, section: XmlNode): unknown;
 }
 
@@ -140,6 +144,8 @@ export interface IConfigurationSectionHandler$instance {
 export type IConfigurationSectionHandler = IConfigurationSectionHandler$instance;
 
 export interface IConfigurationSystem$instance {
+    readonly __tsonic_iface_System_Configuration_IConfigurationSystem: never;
+
     GetConfig(configKey: string): unknown;
     Init(): void;
 }
@@ -148,6 +154,8 @@ export interface IConfigurationSystem$instance {
 export type IConfigurationSystem = IConfigurationSystem$instance;
 
 export interface IPersistComponentSettings$instance {
+    readonly __tsonic_iface_System_Configuration_IPersistComponentSettings: never;
+
     SaveSettings: boolean;
     SettingsKey: string;
     LoadComponentSettings(): void;
@@ -157,6 +165,8 @@ export interface IPersistComponentSettings$instance {
 export type IPersistComponentSettings = IPersistComponentSettings$instance;
 
 export interface ISettingsProviderService$instance {
+    readonly __tsonic_iface_System_Configuration_ISettingsProviderService: never;
+
     GetSettingsProvider(property: SettingsProperty): SettingsProvider;
 }
 
@@ -174,22 +184,20 @@ export const ApplicationScopedSettingAttribute: {
 
 export type ApplicationScopedSettingAttribute = ApplicationScopedSettingAttribute$instance;
 
-export abstract class ApplicationSettingsBase$protected {
-    protected OnPropertyChanged(sender: unknown, e: PropertyChangedEventArgs): void;
-    protected OnSettingChanging(sender: unknown, e: SettingChangingEventArgs): void;
-    protected OnSettingsLoaded(sender: unknown, e: SettingsLoadedEventArgs): void;
-    protected OnSettingsSaving(sender: unknown, e: CancelEventArgs): void;
-}
+export interface ApplicationSettingsBase$instance extends SettingsBase {
+    readonly __tsonic_iface_System_ComponentModel_INotifyPropertyChanged: never;
 
-
-export interface ApplicationSettingsBase$instance extends ApplicationSettingsBase$protected, SettingsBase {
     readonly Context: SettingsContext;
-    Item: unknown;
+    [propertyName: string]: unknown;
     readonly Properties: SettingsPropertyCollection;
     readonly PropertyValues: SettingsPropertyValueCollection;
     readonly Providers: SettingsProviderCollection;
     SettingsKey: string;
     GetPreviousVersion(propertyName: string): unknown;
+    OnPropertyChanged(sender: unknown, e: PropertyChangedEventArgs): void;
+    OnSettingChanging(sender: unknown, e: SettingChangingEventArgs): void;
+    OnSettingsLoaded(sender: unknown, e: SettingsLoadedEventArgs): void;
+    OnSettingsSaving(sender: unknown, e: CancelEventArgs): void;
     Reload(): void;
     Reset(): void;
     Save(): void;
@@ -197,11 +205,7 @@ export interface ApplicationSettingsBase$instance extends ApplicationSettingsBas
 }
 
 
-export const ApplicationSettingsBase: {
-    new(): ApplicationSettingsBase;
-    new(owner: IComponent): ApplicationSettingsBase;
-    new(settingsKey: string): ApplicationSettingsBase;
-    new(owner: IComponent, settingsKey: string): ApplicationSettingsBase;
+export const ApplicationSettingsBase: (abstract new() => ApplicationSettingsBase) & (abstract new(owner: IComponent) => ApplicationSettingsBase) & (abstract new(settingsKey: string) => ApplicationSettingsBase) & (abstract new(owner: IComponent, settingsKey: string) => ApplicationSettingsBase) & {
 };
 
 
@@ -230,17 +234,13 @@ export const AppSettingsReader: {
 
 export type AppSettingsReader = AppSettingsReader$instance;
 
-export abstract class AppSettingsSection$protected {
-    protected readonly Properties: ConfigurationPropertyCollection;
-    protected DeserializeElement(reader: XmlReader, serializeCollectionKey: boolean): void;
-    protected GetRuntimeObject(): unknown;
-    protected Reset(parentSection: ConfigurationElement): void;
-}
-
-
-export interface AppSettingsSection$instance extends AppSettingsSection$protected, ConfigurationSection {
+export interface AppSettingsSection$instance extends ConfigurationSection {
     File: string;
+    readonly Properties: ConfigurationPropertyCollection;
     readonly Settings: KeyValueConfigurationCollection;
+    DeserializeElement(reader: XmlReader, serializeCollectionKey: boolean): void;
+    GetRuntimeObject(): unknown;
+    Reset(parentSection: ConfigurationElement): void;
 }
 
 
@@ -278,12 +278,8 @@ export const CallbackValidatorAttribute: {
 
 export type CallbackValidatorAttribute = CallbackValidatorAttribute$instance;
 
-export abstract class ClientSettingsSection$protected {
-    protected readonly Properties: ConfigurationPropertyCollection;
-}
-
-
-export interface ClientSettingsSection$instance extends ClientSettingsSection$protected, ConfigurationSection {
+export interface ClientSettingsSection$instance extends ConfigurationSection {
+    readonly Properties: ConfigurationPropertyCollection;
     readonly Settings: SettingElementCollection;
 }
 
@@ -296,9 +292,13 @@ export const ClientSettingsSection: {
 export type ClientSettingsSection = ClientSettingsSection$instance;
 
 export interface CommaDelimitedStringCollection$instance extends StringCollection {
+    readonly __tsonic_iface_System_Collections_ICollection: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+    readonly __tsonic_iface_System_Collections_IList: never;
+
     readonly IsModified: boolean;
     IsReadOnly: boolean;
-    Item: string;
+    [index: number]: string;
     Add(value: string): void;
     AddRange(range: string[]): void;
     Clear(): void;
@@ -306,7 +306,7 @@ export interface CommaDelimitedStringCollection$instance extends StringCollectio
     Insert(index: int, value: string): void;
     Remove(value: string): void;
     SetReadOnly(): void;
-    ToString(): string | undefined;
+    ToString(): string;
 }
 
 
@@ -356,7 +356,6 @@ export interface Configuration$instance {
 
 
 export const Configuration: {
-    new(): Configuration;
 };
 
 
@@ -384,95 +383,86 @@ export interface ConfigurationConverterBase$instance extends TypeConverter {
 }
 
 
-export const ConfigurationConverterBase: {
-    new(): ConfigurationConverterBase;
+export const ConfigurationConverterBase: (abstract new() => ConfigurationConverterBase) & {
 };
 
 
 export type ConfigurationConverterBase = ConfigurationConverterBase$instance;
 
-export abstract class ConfigurationElement$protected {
-    protected readonly ElementProperty: ConfigurationElementProperty;
-    protected readonly Properties: ConfigurationPropertyCollection;
-    protected DeserializeElement(reader: XmlReader, serializeCollectionKey: boolean): void;
-    protected GetTransformedAssemblyString(assemblyName: string): string;
-    protected GetTransformedTypeString(typeName: string): string;
-    protected Init(): void;
-    protected InitializeDefault(): void;
-    protected IsModified(): boolean;
-    protected ListErrors(errorList: IList): void;
-    protected OnDeserializeUnrecognizedAttribute(name: string, value: string): boolean;
-    protected OnDeserializeUnrecognizedElement(elementName: string, reader: XmlReader): boolean;
-    protected OnRequiredPropertyNotFound(name: string): unknown;
-    protected PostDeserialize(): void;
-    protected PreSerialize(writer: XmlWriter): void;
-    protected Reset(parentElement: ConfigurationElement): void;
-    protected ResetModified(): void;
-    protected SerializeElement(writer: XmlWriter, serializeCollectionKey: boolean): boolean;
-    protected SerializeToXmlElement(writer: XmlWriter, elementName: string): boolean;
-    protected SetReadOnly(): void;
-    protected Unmerge(sourceElement: ConfigurationElement, parentElement: ConfigurationElement, saveMode: ConfigurationSaveMode): void;
-}
-
-
-export interface ConfigurationElement$instance extends ConfigurationElement$protected {
+export interface ConfigurationElement$instance {
     readonly CurrentConfiguration: Configuration;
     readonly ElementInformation: ElementInformation;
+    readonly ElementProperty: ConfigurationElementProperty;
     readonly LockAllAttributesExcept: ConfigurationLockCollection;
     readonly LockAllElementsExcept: ConfigurationLockCollection;
     readonly LockAttributes: ConfigurationLockCollection;
     readonly LockElements: ConfigurationLockCollection;
     LockItem: boolean;
+    readonly Properties: ConfigurationPropertyCollection;
+    DeserializeElement(reader: XmlReader, serializeCollectionKey: boolean): void;
     Equals(compareTo: unknown): boolean;
     GetHashCode(): int;
+    GetTransformedAssemblyString(assemblyName: string): string;
+    GetTransformedTypeString(typeName: string): string;
+    Init(): void;
+    InitializeDefault(): void;
+    IsModified(): boolean;
     IsReadOnly(): boolean;
+    ListErrors(errorList: IList): void;
+    OnDeserializeUnrecognizedAttribute(name: string, value: string): boolean;
+    OnDeserializeUnrecognizedElement(elementName: string, reader: XmlReader): boolean;
+    OnRequiredPropertyNotFound(name: string): unknown;
+    PostDeserialize(): void;
+    PreSerialize(writer: XmlWriter): void;
+    Reset(parentElement: ConfigurationElement): void;
+    ResetModified(): void;
+    SerializeElement(writer: XmlWriter, serializeCollectionKey: boolean): boolean;
+    SerializeToXmlElement(writer: XmlWriter, elementName: string): boolean;
+    SetReadOnly(): void;
+    Unmerge(sourceElement: ConfigurationElement, parentElement: ConfigurationElement, saveMode: ConfigurationSaveMode): void;
 }
 
 
-export const ConfigurationElement: {
-    new(): ConfigurationElement;
+export const ConfigurationElement: (abstract new() => ConfigurationElement) & {
 };
 
 
 export type ConfigurationElement = ConfigurationElement$instance;
 
-export abstract class ConfigurationElementCollection$protected {
-    protected readonly ElementName: string;
-    protected readonly ThrowOnDuplicate: boolean;
-    protected BaseAdd(element: ConfigurationElement): void;
-    protected BaseAdd(index: int, element: ConfigurationElement): void;
-    protected abstract CreateNewElement(): ConfigurationElement;
-    protected CreateNewElement(elementName: string): ConfigurationElement;
-    protected abstract GetElementKey(element: ConfigurationElement): unknown;
-    protected IsElementName(elementName: string): boolean;
-    protected IsElementRemovable(element: ConfigurationElement): boolean;
-    protected IsModified(): boolean;
-    protected OnDeserializeUnrecognizedElement(elementName: string, reader: XmlReader): boolean;
-    protected Reset(parentElement: ConfigurationElement): void;
-    protected ResetModified(): void;
-    protected SerializeElement(writer: XmlWriter, serializeCollectionKey: boolean): boolean;
-    protected SetReadOnly(): void;
-    protected Unmerge(sourceElement: ConfigurationElement, parentElement: ConfigurationElement, saveMode: ConfigurationSaveMode): void;
-}
+export interface ConfigurationElementCollection$instance extends ConfigurationElement {
+    readonly __tsonic_iface_System_Collections_ICollection: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
-
-export interface ConfigurationElementCollection$instance extends ConfigurationElementCollection$protected, ConfigurationElement {
     readonly CollectionType: ConfigurationElementCollectionType;
     readonly Count: int;
+    readonly ElementName: string;
     EmitClear: boolean;
     readonly IsSynchronized: boolean;
     readonly SyncRoot: unknown;
+    readonly ThrowOnDuplicate: boolean;
+    BaseAdd(element: ConfigurationElement): void;
+    BaseAdd(index: int, element: ConfigurationElement): void;
     CopyTo(array: ConfigurationElement[], index: int): void;
+    CreateNewElement(elementName: string): ConfigurationElement;
+    CreateNewElement(): ConfigurationElement;
     Equals(compareTo: unknown): boolean;
+    GetElementKey(element: ConfigurationElement): unknown;
     GetEnumerator(): IEnumerator;
     GetHashCode(): int;
+    IsElementName(elementName: string): boolean;
+    IsElementRemovable(element: ConfigurationElement): boolean;
+    IsModified(): boolean;
     IsReadOnly(): boolean;
+    OnDeserializeUnrecognizedElement(elementName: string, reader: XmlReader): boolean;
+    Reset(parentElement: ConfigurationElement): void;
+    ResetModified(): void;
+    SerializeElement(writer: XmlWriter, serializeCollectionKey: boolean): boolean;
+    SetReadOnly(): void;
+    Unmerge(sourceElement: ConfigurationElement, parentElement: ConfigurationElement, saveMode: ConfigurationSaveMode): void;
 }
 
 
-export const ConfigurationElementCollection: {
-    new(): ConfigurationElementCollection;
-    new(comparer: IComparer): ConfigurationElementCollection;
+export const ConfigurationElementCollection: (abstract new() => ConfigurationElementCollection) & (abstract new(comparer: IComparer) => ConfigurationElementCollection) & {
 };
 
 
@@ -491,6 +481,8 @@ export const ConfigurationElementProperty: {
 export type ConfigurationElementProperty = ConfigurationElementProperty$instance;
 
 export interface ConfigurationErrorsException$instance extends ConfigurationException {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
     readonly Errors: ICollection;
     readonly Filename: string;
     readonly Line: int;
@@ -509,7 +501,6 @@ export const ConfigurationErrorsException: {
     new(message: string, inner: Exception, node: XmlNode): ConfigurationErrorsException;
     new(message: string, reader: XmlReader): ConfigurationErrorsException;
     new(message: string, inner: Exception, reader: XmlReader): ConfigurationErrorsException;
-    new(info: SerializationInfo, context: StreamingContext): ConfigurationErrorsException;
     GetFilename(node: XmlNode): string;
     GetFilename(reader: XmlReader): string;
     GetLineNumber(node: XmlNode): int;
@@ -520,6 +511,8 @@ export const ConfigurationErrorsException: {
 export type ConfigurationErrorsException = ConfigurationErrorsException$instance;
 
 export interface ConfigurationException$instance extends SystemException {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
     readonly BareMessage: string;
     readonly Filename: string;
     readonly Line: int;
@@ -529,7 +522,6 @@ export interface ConfigurationException$instance extends SystemException {
 
 
 export const ConfigurationException: {
-    new(info: SerializationInfo, context: StreamingContext): ConfigurationException;
     new(): ConfigurationException;
     new(message: string): ConfigurationException;
     new(message: string, inner: Exception): ConfigurationException;
@@ -545,6 +537,8 @@ export const ConfigurationException: {
 export type ConfigurationException = ConfigurationException$instance;
 
 export interface ConfigurationFileMap$instance {
+    readonly __tsonic_iface_System_ICloneable: never;
+
     MachineConfigFilename: string;
     Clone(): unknown;
 }
@@ -565,25 +559,29 @@ export interface ConfigurationLocation$instance {
 
 
 export const ConfigurationLocation: {
-    new(): ConfigurationLocation;
 };
 
 
 export type ConfigurationLocation = ConfigurationLocation$instance;
 
 export interface ConfigurationLocationCollection$instance extends ReadOnlyCollectionBase {
-    readonly Item: ConfigurationLocation;
+    readonly __tsonic_iface_System_Collections_ICollection: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
+    readonly [index: number]: ConfigurationLocation;
 }
 
 
 export const ConfigurationLocationCollection: {
-    new(): ConfigurationLocationCollection;
 };
 
 
 export type ConfigurationLocationCollection = ConfigurationLocationCollection$instance;
 
 export interface ConfigurationLockCollection$instance {
+    readonly __tsonic_iface_System_Collections_ICollection: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly AttributeList: string;
     readonly Count: int;
     readonly HasParentElements: boolean;
@@ -602,7 +600,6 @@ export interface ConfigurationLockCollection$instance {
 
 
 export const ConfigurationLockCollection: {
-    new(): ConfigurationLockCollection;
 };
 
 
@@ -653,9 +650,12 @@ export const ConfigurationPropertyAttribute: {
 export type ConfigurationPropertyAttribute = ConfigurationPropertyAttribute$instance;
 
 export interface ConfigurationPropertyCollection$instance {
+    readonly __tsonic_iface_System_Collections_ICollection: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly Count: int;
     readonly IsSynchronized: boolean;
-    readonly Item: ConfigurationProperty;
+    readonly [name: string]: ConfigurationProperty;
     readonly SyncRoot: unknown;
     Add(property: ConfigurationProperty): void;
     Clear(): void;
@@ -673,31 +673,31 @@ export const ConfigurationPropertyCollection: {
 
 export type ConfigurationPropertyCollection = ConfigurationPropertyCollection$instance;
 
-export abstract class ConfigurationSection$protected {
-    protected DeserializeSection(reader: XmlReader): void;
-    protected GetRuntimeObject(): unknown;
-    protected IsModified(): boolean;
-    protected ResetModified(): void;
-    protected SerializeSection(parentElement: ConfigurationElement, name: string, saveMode: ConfigurationSaveMode): string;
-    protected ShouldSerializeElementInTargetVersion(element: ConfigurationElement, elementName: string, targetFramework: FrameworkName): boolean;
-    protected ShouldSerializePropertyInTargetVersion(property: ConfigurationProperty, propertyName: string, targetFramework: FrameworkName, parentConfigurationElement: ConfigurationElement): boolean;
-    protected ShouldSerializeSectionInTargetVersion(targetFramework: FrameworkName): boolean;
-}
-
-
-export interface ConfigurationSection$instance extends ConfigurationSection$protected, ConfigurationElement {
+export interface ConfigurationSection$instance extends ConfigurationElement {
     readonly SectionInformation: SectionInformation;
+    DeserializeSection(reader: XmlReader): void;
+    GetRuntimeObject(): unknown;
+    IsModified(): boolean;
+    ResetModified(): void;
+    SerializeSection(parentElement: ConfigurationElement, name: string, saveMode: ConfigurationSaveMode): string;
+    ShouldSerializeElementInTargetVersion(element: ConfigurationElement, elementName: string, targetFramework: FrameworkName): boolean;
+    ShouldSerializePropertyInTargetVersion(property: ConfigurationProperty, propertyName: string, targetFramework: FrameworkName, parentConfigurationElement: ConfigurationElement): boolean;
+    ShouldSerializeSectionInTargetVersion(targetFramework: FrameworkName): boolean;
 }
 
 
-export const ConfigurationSection: {
-    new(): ConfigurationSection;
+export const ConfigurationSection: (abstract new() => ConfigurationSection) & {
 };
 
 
 export type ConfigurationSection = ConfigurationSection$instance;
 
 export interface ConfigurationSectionCollection$instance extends NameObjectCollectionBase {
+    readonly __tsonic_iface_System_Collections_ICollection: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+    readonly __tsonic_iface_System_Runtime_Serialization_IDeserializationCallback: never;
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
     Add(name: string, section: ConfigurationSection): void;
     Clear(): void;
     CopyTo(array: ConfigurationSection[], index: int): void;
@@ -713,18 +713,12 @@ export interface ConfigurationSectionCollection$instance extends NameObjectColle
 
 
 export const ConfigurationSectionCollection: {
-    new(): ConfigurationSectionCollection;
 };
 
 
 export type ConfigurationSectionCollection = ConfigurationSectionCollection$instance;
 
-export abstract class ConfigurationSectionGroup$protected {
-    protected ShouldSerializeSectionGroupInTargetVersion(targetFramework: FrameworkName): boolean;
-}
-
-
-export interface ConfigurationSectionGroup$instance extends ConfigurationSectionGroup$protected {
+export interface ConfigurationSectionGroup$instance {
     IsDeclarationRequired: boolean;
     IsDeclared: boolean;
     Name: string;
@@ -734,6 +728,7 @@ export interface ConfigurationSectionGroup$instance extends ConfigurationSection
     Type: string;
     ForceDeclaration(): void;
     ForceDeclaration(force: boolean): void;
+    ShouldSerializeSectionGroupInTargetVersion(targetFramework: FrameworkName): boolean;
 }
 
 
@@ -745,6 +740,11 @@ export const ConfigurationSectionGroup: {
 export type ConfigurationSectionGroup = ConfigurationSectionGroup$instance;
 
 export interface ConfigurationSectionGroupCollection$instance extends NameObjectCollectionBase {
+    readonly __tsonic_iface_System_Collections_ICollection: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+    readonly __tsonic_iface_System_Runtime_Serialization_IDeserializationCallback: never;
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
     Add(name: string, sectionGroup: ConfigurationSectionGroup): void;
     Clear(): void;
     CopyTo(array: ConfigurationSectionGroup[], index: int): void;
@@ -760,7 +760,6 @@ export interface ConfigurationSectionGroupCollection$instance extends NameObject
 
 
 export const ConfigurationSectionGroupCollection: {
-    new(): ConfigurationSectionGroupCollection;
 };
 
 
@@ -771,7 +770,6 @@ export interface ConfigurationSettings$instance {
 
 
 export const ConfigurationSettings: {
-    new(): ConfigurationSettings;
     readonly AppSettings: NameValueCollection;
     GetConfig(sectionName: string): unknown;
 };
@@ -786,7 +784,6 @@ export interface ConfigurationValidatorAttribute$instance extends Attribute {
 
 
 export const ConfigurationValidatorAttribute: {
-    new(): ConfigurationValidatorAttribute;
     new(validator: Type): ConfigurationValidatorAttribute;
 };
 
@@ -799,14 +796,18 @@ export interface ConfigurationValidatorBase$instance {
 }
 
 
-export const ConfigurationValidatorBase: {
-    new(): ConfigurationValidatorBase;
+export const ConfigurationValidatorBase: (abstract new() => ConfigurationValidatorBase) & {
 };
 
 
 export type ConfigurationValidatorBase = ConfigurationValidatorBase$instance;
 
 export interface ConfigXmlDocument$instance extends XmlDocument {
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+    readonly __tsonic_iface_System_Configuration_Internal_IConfigErrorInfo: never;
+    readonly __tsonic_iface_System_ICloneable: never;
+    readonly __tsonic_iface_System_Xml_XPath_IXPathNavigable: never;
+
     readonly Filename: string;
     readonly LineNumber: int;
     CreateAttribute(prefix: string, localName: string, namespaceUri: string): XmlAttribute;
@@ -830,21 +831,17 @@ export interface __ConfigXmlDocument$views {
     As_IConfigErrorInfo(): System_Configuration_Internal_Internal.IConfigErrorInfo$instance;
 }
 
-export interface ConfigXmlDocument$instance extends System_Configuration_Internal_Internal.IConfigErrorInfo$instance {}
+export interface ConfigXmlDocument$instance extends System_Configuration_Internal_Internal.IConfigErrorInfo$instance, System_Lib.ICloneable, System_Xml_XPath_Internal.IXPathNavigable {}
 
 export type ConfigXmlDocument = ConfigXmlDocument$instance & __ConfigXmlDocument$views;
 
 
-export abstract class ConnectionStringSettings$protected {
-    protected readonly Properties: ConfigurationPropertyCollection;
-}
-
-
-export interface ConnectionStringSettings$instance extends ConnectionStringSettings$protected, ConfigurationElement {
+export interface ConnectionStringSettings$instance extends ConfigurationElement {
     ConnectionString: string;
     Name: string;
+    readonly Properties: ConfigurationPropertyCollection;
     ProviderName: string;
-    ToString(): string | undefined;
+    ToString(): string;
 }
 
 
@@ -857,21 +854,20 @@ export const ConnectionStringSettings: {
 
 export type ConnectionStringSettings = ConnectionStringSettings$instance;
 
-export abstract class ConnectionStringSettingsCollection$protected {
-    protected readonly Properties: ConfigurationPropertyCollection;
-    protected BaseAdd(element: ConfigurationElement): void;
-    protected BaseAdd3(index: int, element: ConfigurationElement): void;
-    protected CreateNewElement2(): ConfigurationElement;
-    protected CreateNewElement(elementName: string): ConfigurationElement;
-    protected GetElementKey(element: ConfigurationElement): unknown;
-}
+export interface ConnectionStringSettingsCollection$instance extends ConfigurationElementCollection {
+    readonly __tsonic_iface_System_Collections_ICollection: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
-
-export interface ConnectionStringSettingsCollection$instance extends ConnectionStringSettingsCollection$protected, ConfigurationElementCollection {
+    readonly Properties: ConfigurationPropertyCollection;
     Add(settings: ConnectionStringSettings): void;
+    BaseAdd(index: int, element: ConfigurationElement): void;
+    BaseAdd(element: ConfigurationElement): void;
     Clear(): void;
+    CreateNewElement(): ConfigurationElement;
+    CreateNewElement(elementName: string): ConfigurationElement;
     get_Item(index: int): ConnectionStringSettings;
     get_Item(name: string): ConnectionStringSettings;
+    GetElementKey(element: ConfigurationElement): unknown;
     IndexOf(settings: ConnectionStringSettings): int;
     Remove(settings: ConnectionStringSettings): void;
     Remove(name: string): void;
@@ -887,14 +883,10 @@ export const ConnectionStringSettingsCollection: {
 
 export type ConnectionStringSettingsCollection = ConnectionStringSettingsCollection$instance;
 
-export abstract class ConnectionStringsSection$protected {
-    protected readonly Properties: ConfigurationPropertyCollection;
-    protected GetRuntimeObject(): unknown;
-}
-
-
-export interface ConnectionStringsSection$instance extends ConnectionStringsSection$protected, ConfigurationSection {
+export interface ConnectionStringsSection$instance extends ConfigurationSection {
     readonly ConnectionStrings: ConnectionStringSettingsCollection;
+    readonly Properties: ConfigurationPropertyCollection;
+    GetRuntimeObject(): unknown;
 }
 
 
@@ -913,23 +905,18 @@ export interface ContextInformation$instance {
 
 
 export const ContextInformation: {
-    new(): ContextInformation;
 };
 
 
 export type ContextInformation = ContextInformation$instance;
 
-export abstract class DefaultSection$protected {
-    protected readonly Properties: ConfigurationPropertyCollection;
-    protected DeserializeSection(xmlReader: XmlReader): void;
-    protected IsModified(): boolean;
-    protected Reset(parentSection: ConfigurationElement): void;
-    protected ResetModified(): void;
-    protected SerializeSection(parentSection: ConfigurationElement, name: string, saveMode: ConfigurationSaveMode): string;
-}
-
-
-export interface DefaultSection$instance extends DefaultSection$protected, ConfigurationSection {
+export interface DefaultSection$instance extends ConfigurationSection {
+    readonly Properties: ConfigurationPropertyCollection;
+    DeserializeSection(xmlReader: XmlReader): void;
+    IsModified(): boolean;
+    Reset(parentSection: ConfigurationElement): void;
+    ResetModified(): void;
+    SerializeSection(parentSection: ConfigurationElement, name: string, saveMode: ConfigurationSaveMode): string;
 }
 
 
@@ -965,13 +952,11 @@ export const DefaultValidator: {
 
 export type DefaultValidator = DefaultValidator$instance;
 
-export abstract class DictionarySectionHandler$protected {
-    protected readonly KeyAttributeName: string;
-    protected readonly ValueAttributeName: string;
-}
+export interface DictionarySectionHandler$instance {
+    readonly __tsonic_iface_System_Configuration_IConfigurationSectionHandler: never;
 
-
-export interface DictionarySectionHandler$instance extends DictionarySectionHandler$protected {
+    readonly KeyAttributeName: string;
+    readonly ValueAttributeName: string;
     Create(parent: unknown, context: unknown, section: XmlNode): unknown;
 }
 
@@ -1019,13 +1004,14 @@ export interface ElementInformation$instance {
 
 
 export const ElementInformation: {
-    new(): ElementInformation;
 };
 
 
 export type ElementInformation = ElementInformation$instance;
 
 export interface ExeConfigurationFileMap$instance extends ConfigurationFileMap {
+    readonly __tsonic_iface_System_ICloneable: never;
+
     ExeConfigFilename: string;
     LocalUserConfigFilename: string;
     RoamingUserConfigFilename: string;
@@ -1048,7 +1034,6 @@ export interface ExeContext$instance {
 
 
 export const ExeContext: {
-    new(): ExeContext;
 };
 
 
@@ -1067,13 +1052,9 @@ export const GenericEnumConverter: {
 
 export type GenericEnumConverter = GenericEnumConverter$instance;
 
-export abstract class IdnElement$protected {
-    protected readonly Properties: ConfigurationPropertyCollection;
-}
-
-
-export interface IdnElement$instance extends IdnElement$protected, ConfigurationElement {
+export interface IdnElement$instance extends ConfigurationElement {
     Enabled: UriIdnScope;
+    readonly Properties: ConfigurationPropertyCollection;
 }
 
 
@@ -1084,17 +1065,13 @@ export const IdnElement: {
 
 export type IdnElement = IdnElement$instance;
 
-export abstract class IgnoreSection$protected {
-    protected readonly Properties: ConfigurationPropertyCollection;
-    protected DeserializeSection(xmlReader: XmlReader): void;
-    protected IsModified(): boolean;
-    protected Reset(parentSection: ConfigurationElement): void;
-    protected ResetModified(): void;
-    protected SerializeSection(parentSection: ConfigurationElement, name: string, saveMode: ConfigurationSaveMode): string;
-}
-
-
-export interface IgnoreSection$instance extends IgnoreSection$protected, ConfigurationSection {
+export interface IgnoreSection$instance extends ConfigurationSection {
+    readonly Properties: ConfigurationPropertyCollection;
+    DeserializeSection(xmlReader: XmlReader): void;
+    IsModified(): boolean;
+    Reset(parentSection: ConfigurationElement): void;
+    ResetModified(): void;
+    SerializeSection(parentSection: ConfigurationElement, name: string, saveMode: ConfigurationSaveMode): string;
 }
 
 
@@ -1106,6 +1083,8 @@ export const IgnoreSection: {
 export type IgnoreSection = IgnoreSection$instance;
 
 export interface IgnoreSectionHandler$instance {
+    readonly __tsonic_iface_System_Configuration_IConfigurationSectionHandler: never;
+
     Create(parent: unknown, configContext: unknown, section: XmlNode): unknown;
 }
 
@@ -1180,13 +1159,9 @@ export const IntegerValidatorAttribute: {
 
 export type IntegerValidatorAttribute = IntegerValidatorAttribute$instance;
 
-export abstract class IriParsingElement$protected {
-    protected readonly Properties: ConfigurationPropertyCollection;
-}
-
-
-export interface IriParsingElement$instance extends IriParsingElement$protected, ConfigurationElement {
+export interface IriParsingElement$instance extends ConfigurationElement {
     Enabled: boolean;
+    readonly Properties: ConfigurationPropertyCollection;
 }
 
 
@@ -1197,21 +1172,20 @@ export const IriParsingElement: {
 
 export type IriParsingElement = IriParsingElement$instance;
 
-export abstract class KeyValueConfigurationCollection$protected {
-    protected readonly Properties: ConfigurationPropertyCollection;
-    protected readonly ThrowOnDuplicate: boolean;
-    protected CreateNewElement2(): ConfigurationElement;
-    protected CreateNewElement(elementName: string): ConfigurationElement;
-    protected GetElementKey(element: ConfigurationElement): unknown;
-}
+export interface KeyValueConfigurationCollection$instance extends ConfigurationElementCollection {
+    readonly __tsonic_iface_System_Collections_ICollection: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
-
-export interface KeyValueConfigurationCollection$instance extends KeyValueConfigurationCollection$protected, ConfigurationElementCollection {
     readonly AllKeys: string[];
-    readonly Item: KeyValueConfigurationElement;
+    readonly [key: string]: KeyValueConfigurationElement;
+    readonly Properties: ConfigurationPropertyCollection;
+    readonly ThrowOnDuplicate: boolean;
     Add(keyValue: KeyValueConfigurationElement): void;
     Add(key: string, value: string): void;
     Clear(): void;
+    CreateNewElement(): ConfigurationElement;
+    CreateNewElement(elementName: string): ConfigurationElement;
+    GetElementKey(element: ConfigurationElement): unknown;
     Remove(key: string): void;
 }
 
@@ -1223,15 +1197,11 @@ export const KeyValueConfigurationCollection: {
 
 export type KeyValueConfigurationCollection = KeyValueConfigurationCollection$instance;
 
-export abstract class KeyValueConfigurationElement$protected {
-    protected readonly Properties: ConfigurationPropertyCollection;
-    protected Init(): void;
-}
-
-
-export interface KeyValueConfigurationElement$instance extends KeyValueConfigurationElement$protected, ConfigurationElement {
+export interface KeyValueConfigurationElement$instance extends ConfigurationElement {
     readonly Key: string;
+    readonly Properties: ConfigurationPropertyCollection;
     Value: string;
+    Init(): void;
 }
 
 
@@ -1243,6 +1213,8 @@ export const KeyValueConfigurationElement: {
 export type KeyValueConfigurationElement = KeyValueConfigurationElement$instance;
 
 export interface LocalFileSettingsProvider$instance extends SettingsProvider {
+    readonly __tsonic_iface_System_Configuration_IApplicationSettingsProvider: never;
+
     ApplicationName: string;
     GetPreviousVersion(context: SettingsContext, property: SettingsProperty): SettingsPropertyValue;
     GetPropertyValues(context: SettingsContext, properties: SettingsPropertyCollection): SettingsPropertyValueCollection;
@@ -1297,19 +1269,18 @@ export const LongValidatorAttribute: {
 
 export type LongValidatorAttribute = LongValidatorAttribute$instance;
 
-export abstract class NameValueConfigurationCollection$protected {
-    protected readonly Properties: ConfigurationPropertyCollection;
-    protected CreateNewElement2(): ConfigurationElement;
-    protected CreateNewElement(elementName: string): ConfigurationElement;
-    protected GetElementKey(element: ConfigurationElement): unknown;
-}
+export interface NameValueConfigurationCollection$instance extends ConfigurationElementCollection {
+    readonly __tsonic_iface_System_Collections_ICollection: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
-
-export interface NameValueConfigurationCollection$instance extends NameValueConfigurationCollection$protected, ConfigurationElementCollection {
     readonly AllKeys: string[];
-    Item: NameValueConfigurationElement;
+    [name: string]: NameValueConfigurationElement;
+    readonly Properties: ConfigurationPropertyCollection;
     Add(nameValue: NameValueConfigurationElement): void;
     Clear(): void;
+    CreateNewElement(): ConfigurationElement;
+    CreateNewElement(elementName: string): ConfigurationElement;
+    GetElementKey(element: ConfigurationElement): unknown;
     Remove(nameValue: NameValueConfigurationElement): void;
     Remove(name: string): void;
 }
@@ -1322,13 +1293,9 @@ export const NameValueConfigurationCollection: {
 
 export type NameValueConfigurationCollection = NameValueConfigurationCollection$instance;
 
-export abstract class NameValueConfigurationElement$protected {
-    protected readonly Properties: ConfigurationPropertyCollection;
-}
-
-
-export interface NameValueConfigurationElement$instance extends NameValueConfigurationElement$protected, ConfigurationElement {
+export interface NameValueConfigurationElement$instance extends ConfigurationElement {
     readonly Name: string;
+    readonly Properties: ConfigurationPropertyCollection;
     Value: string;
 }
 
@@ -1341,6 +1308,8 @@ export const NameValueConfigurationElement: {
 export type NameValueConfigurationElement = NameValueConfigurationElement$instance;
 
 export interface NameValueFileSectionHandler$instance {
+    readonly __tsonic_iface_System_Configuration_IConfigurationSectionHandler: never;
+
     Create(parent: unknown, configContext: unknown, section: XmlNode): unknown;
 }
 
@@ -1359,13 +1328,11 @@ export interface NameValueFileSectionHandler$instance extends IConfigurationSect
 export type NameValueFileSectionHandler = NameValueFileSectionHandler$instance & __NameValueFileSectionHandler$views;
 
 
-export abstract class NameValueSectionHandler$protected {
-    protected readonly KeyAttributeName: string;
-    protected readonly ValueAttributeName: string;
-}
+export interface NameValueSectionHandler$instance {
+    readonly __tsonic_iface_System_Configuration_IConfigurationSectionHandler: never;
 
-
-export interface NameValueSectionHandler$instance extends NameValueSectionHandler$protected {
+    readonly KeyAttributeName: string;
+    readonly ValueAttributeName: string;
     Create(parent: unknown, context: unknown, section: XmlNode): unknown;
 }
 
@@ -1439,21 +1406,24 @@ export interface PropertyInformation$instance {
 
 
 export const PropertyInformation: {
-    new(): PropertyInformation;
 };
 
 
 export type PropertyInformation = PropertyInformation$instance;
 
 export interface PropertyInformationCollection$instance extends NameObjectCollectionBase {
-    readonly Item: PropertyInformation;
+    readonly __tsonic_iface_System_Collections_ICollection: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+    readonly __tsonic_iface_System_Runtime_Serialization_IDeserializationCallback: never;
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
+    readonly [propertyName: string]: PropertyInformation;
     CopyTo(array: PropertyInformation[], index: int): void;
     GetEnumerator(): IEnumerator;
 }
 
 
 export const PropertyInformationCollection: {
-    new(): PropertyInformationCollection;
 };
 
 
@@ -1465,15 +1435,17 @@ export interface ProtectedConfigurationProvider$instance extends ProviderBase {
 }
 
 
-export const ProtectedConfigurationProvider: {
-    new(): ProtectedConfigurationProvider;
+export const ProtectedConfigurationProvider: (abstract new() => ProtectedConfigurationProvider) & {
 };
 
 
 export type ProtectedConfigurationProvider = ProtectedConfigurationProvider$instance;
 
 export interface ProtectedConfigurationProviderCollection$instance extends ProviderCollection {
-    readonly Item: ProtectedConfigurationProvider | ProviderBase;
+    readonly __tsonic_iface_System_Collections_ICollection: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
+    readonly [name: string]: ProtectedConfigurationProvider | ProviderBase;
     Add(provider: ProviderBase): void;
 }
 
@@ -1485,13 +1457,9 @@ export const ProtectedConfigurationProviderCollection: {
 
 export type ProtectedConfigurationProviderCollection = ProtectedConfigurationProviderCollection$instance;
 
-export abstract class ProtectedConfigurationSection$protected {
-    protected readonly Properties: ConfigurationPropertyCollection;
-}
-
-
-export interface ProtectedConfigurationSection$instance extends ProtectedConfigurationSection$protected, ConfigurationSection {
+export interface ProtectedConfigurationSection$instance extends ConfigurationSection {
     DefaultProvider: string;
+    readonly Properties: ConfigurationPropertyCollection;
     readonly Providers: ProviderSettingsCollection;
 }
 
@@ -1503,12 +1471,8 @@ export const ProtectedConfigurationSection: {
 
 export type ProtectedConfigurationSection = ProtectedConfigurationSection$instance;
 
-export abstract class ProtectedProviderSettings$protected {
-    protected readonly Properties: ConfigurationPropertyCollection;
-}
-
-
-export interface ProtectedProviderSettings$instance extends ProtectedProviderSettings$protected, ConfigurationElement {
+export interface ProtectedProviderSettings$instance extends ConfigurationElement {
+    readonly Properties: ConfigurationPropertyCollection;
     readonly Providers: ProviderSettingsCollection;
 }
 
@@ -1520,19 +1484,15 @@ export const ProtectedProviderSettings: {
 
 export type ProtectedProviderSettings = ProtectedProviderSettings$instance;
 
-export abstract class ProviderSettings$protected {
-    protected readonly Properties: ConfigurationPropertyCollection;
-    protected IsModified(): boolean;
-    protected OnDeserializeUnrecognizedAttribute(name: string, value: string): boolean;
-    protected Reset(parentElement: ConfigurationElement): void;
-    protected Unmerge(sourceElement: ConfigurationElement, parentElement: ConfigurationElement, saveMode: ConfigurationSaveMode): void;
-}
-
-
-export interface ProviderSettings$instance extends ProviderSettings$protected, ConfigurationElement {
+export interface ProviderSettings$instance extends ConfigurationElement {
     Name: string;
     readonly Parameters: NameValueCollection;
+    readonly Properties: ConfigurationPropertyCollection;
     Type: string;
+    IsModified(): boolean;
+    OnDeserializeUnrecognizedAttribute(name: string, value: string): boolean;
+    Reset(parentElement: ConfigurationElement): void;
+    Unmerge(sourceElement: ConfigurationElement, parentElement: ConfigurationElement, saveMode: ConfigurationSaveMode): void;
 }
 
 
@@ -1544,19 +1504,18 @@ export const ProviderSettings: {
 
 export type ProviderSettings = ProviderSettings$instance;
 
-export abstract class ProviderSettingsCollection$protected {
-    protected readonly Properties: ConfigurationPropertyCollection;
-    protected CreateNewElement2(): ConfigurationElement;
-    protected CreateNewElement(elementName: string): ConfigurationElement;
-    protected GetElementKey(element: ConfigurationElement): unknown;
-}
+export interface ProviderSettingsCollection$instance extends ConfigurationElementCollection {
+    readonly __tsonic_iface_System_Collections_ICollection: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
-
-export interface ProviderSettingsCollection$instance extends ProviderSettingsCollection$protected, ConfigurationElementCollection {
+    readonly Properties: ConfigurationPropertyCollection;
     Add(provider: ProviderSettings): void;
     Clear(): void;
+    CreateNewElement(): ConfigurationElement;
+    CreateNewElement(elementName: string): ConfigurationElement;
     get_Item(key: string): ProviderSettings;
     get_Item(index: int): ProviderSettings;
+    GetElementKey(element: ConfigurationElement): unknown;
     Remove(name: string): void;
     set_Item(index: int, value: ProviderSettings): void;
 }
@@ -1618,14 +1577,10 @@ export const RsaProtectedConfigurationProvider: {
 
 export type RsaProtectedConfigurationProvider = RsaProtectedConfigurationProvider$instance;
 
-export abstract class SchemeSettingElement$protected {
-    protected readonly Properties: ConfigurationPropertyCollection;
-}
-
-
-export interface SchemeSettingElement$instance extends SchemeSettingElement$protected, ConfigurationElement {
+export interface SchemeSettingElement$instance extends ConfigurationElement {
     readonly GenericUriParserOptions: GenericUriParserOptions;
     readonly Name: string;
+    readonly Properties: ConfigurationPropertyCollection;
 }
 
 
@@ -1636,17 +1591,16 @@ export const SchemeSettingElement: {
 
 export type SchemeSettingElement = SchemeSettingElement$instance;
 
-export abstract class SchemeSettingElementCollection$protected {
-    protected CreateNewElement2(): ConfigurationElement;
-    protected CreateNewElement(elementName: string): ConfigurationElement;
-    protected GetElementKey(element: ConfigurationElement): unknown;
-}
+export interface SchemeSettingElementCollection$instance extends ConfigurationElementCollection {
+    readonly __tsonic_iface_System_Collections_ICollection: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
-
-export interface SchemeSettingElementCollection$instance extends SchemeSettingElementCollection$protected, ConfigurationElementCollection {
     readonly CollectionType: ConfigurationElementCollectionType;
+    CreateNewElement(): ConfigurationElement;
+    CreateNewElement(elementName: string): ConfigurationElement;
     get_Item(index: int): SchemeSettingElement;
     get_Item(name: string): SchemeSettingElement;
+    GetElementKey(element: ConfigurationElement): unknown;
     IndexOf(element: SchemeSettingElement): int;
 }
 
@@ -1691,7 +1645,6 @@ export interface SectionInformation$instance {
 
 
 export const SectionInformation: {
-    new(): SectionInformation;
 };
 
 
@@ -1723,13 +1676,9 @@ export const SettingChangingEventArgs: {
 
 export type SettingChangingEventArgs = SettingChangingEventArgs$instance;
 
-export abstract class SettingElement$protected {
-    protected readonly Properties: ConfigurationPropertyCollection;
-}
-
-
-export interface SettingElement$instance extends SettingElement$protected, ConfigurationElement {
+export interface SettingElement$instance extends ConfigurationElement {
     Name: string;
+    readonly Properties: ConfigurationPropertyCollection;
     SerializeAs: SettingsSerializeAs;
     Value: SettingValueElement;
     Equals(settings: unknown): boolean;
@@ -1745,19 +1694,18 @@ export const SettingElement: {
 
 export type SettingElement = SettingElement$instance;
 
-export abstract class SettingElementCollection$protected {
-    protected readonly ElementName: string;
-    protected CreateNewElement2(): ConfigurationElement;
-    protected CreateNewElement(elementName: string): ConfigurationElement;
-    protected GetElementKey(element: ConfigurationElement): unknown;
-}
+export interface SettingElementCollection$instance extends ConfigurationElementCollection {
+    readonly __tsonic_iface_System_Collections_ICollection: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
-
-export interface SettingElementCollection$instance extends SettingElementCollection$protected, ConfigurationElementCollection {
     readonly CollectionType: ConfigurationElementCollectionType;
+    readonly ElementName: string;
     Add(element: SettingElement): void;
     Clear(): void;
+    CreateNewElement(): ConfigurationElement;
+    CreateNewElement(elementName: string): ConfigurationElement;
     Get(elementKey: string): SettingElement;
+    GetElementKey(element: ConfigurationElement): unknown;
     Remove(element: SettingElement): void;
 }
 
@@ -1770,13 +1718,19 @@ export const SettingElementCollection: {
 export type SettingElementCollection = SettingElementCollection$instance;
 
 export interface SettingsAttributeDictionary$instance extends Hashtable {
+    readonly __tsonic_iface_System_Collections_ICollection: never;
+    readonly __tsonic_iface_System_Collections_IDictionary: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+    readonly __tsonic_iface_System_ICloneable: never;
+    readonly __tsonic_iface_System_Runtime_Serialization_IDeserializationCallback: never;
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
 }
 
 
 export const SettingsAttributeDictionary: {
     new(): SettingsAttributeDictionary;
     new(attributes: SettingsAttributeDictionary): SettingsAttributeDictionary;
-    new(serializationInfo: SerializationInfo, streamingContext: StreamingContext): SettingsAttributeDictionary;
 };
 
 
@@ -1785,7 +1739,7 @@ export type SettingsAttributeDictionary = SettingsAttributeDictionary$instance;
 export interface SettingsBase$instance {
     readonly Context: SettingsContext;
     readonly IsSynchronized: boolean;
-    Item: unknown;
+    [propertyName: string]: unknown;
     readonly Properties: SettingsPropertyCollection;
     readonly PropertyValues: SettingsPropertyValueCollection;
     readonly Providers: SettingsProviderCollection;
@@ -1794,8 +1748,7 @@ export interface SettingsBase$instance {
 }
 
 
-export const SettingsBase: {
-    new(): SettingsBase;
+export const SettingsBase: (abstract new() => SettingsBase) & {
     Synchronized(settingsBase: SettingsBase): SettingsBase;
 };
 
@@ -1803,12 +1756,18 @@ export const SettingsBase: {
 export type SettingsBase = SettingsBase$instance;
 
 export interface SettingsContext$instance extends Hashtable {
+    readonly __tsonic_iface_System_Collections_ICollection: never;
+    readonly __tsonic_iface_System_Collections_IDictionary: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+    readonly __tsonic_iface_System_ICloneable: never;
+    readonly __tsonic_iface_System_Runtime_Serialization_IDeserializationCallback: never;
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
 }
 
 
 export const SettingsContext: {
     new(): SettingsContext;
-    new(serializationInfo: SerializationInfo, streamingContext: StreamingContext): SettingsContext;
 };
 
 
@@ -1880,8 +1839,7 @@ export interface SettingsProperty$instance {
     IsReadOnly: boolean;
     Name: string;
     PropertyType: Type;
-    get Provider(): SettingsProvider | undefined;
-    set Provider(value: SettingsProvider);
+    Provider: SettingsProvider;
     SerializeAs: SettingsSerializeAs;
     ThrowOnErrorDeserializing: boolean;
     ThrowOnErrorSerializing: boolean;
@@ -1897,26 +1855,26 @@ export const SettingsProperty: {
 
 export type SettingsProperty = SettingsProperty$instance;
 
-export abstract class SettingsPropertyCollection$protected {
-    protected OnAdd(property: SettingsProperty): void;
-    protected OnAddComplete(property: SettingsProperty): void;
-    protected OnClear(): void;
-    protected OnClearComplete(): void;
-    protected OnRemove(property: SettingsProperty): void;
-    protected OnRemoveComplete(property: SettingsProperty): void;
-}
+export interface SettingsPropertyCollection$instance {
+    readonly __tsonic_iface_System_Collections_ICollection: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+    readonly __tsonic_iface_System_ICloneable: never;
 
-
-export interface SettingsPropertyCollection$instance extends SettingsPropertyCollection$protected {
     readonly Count: int;
     readonly IsSynchronized: boolean;
-    readonly Item: SettingsProperty;
+    readonly [name: string]: SettingsProperty;
     readonly SyncRoot: unknown;
     Add(property: SettingsProperty): void;
     Clear(): void;
     Clone(): unknown;
     CopyTo(array: ClrArray, index: int): void;
     GetEnumerator(): IEnumerator;
+    OnAdd(property: SettingsProperty): void;
+    OnAddComplete(property: SettingsProperty): void;
+    OnClear(): void;
+    OnClearComplete(): void;
+    OnRemove(property: SettingsProperty): void;
+    OnRemoveComplete(property: SettingsProperty): void;
     Remove(name: string): void;
     SetReadOnly(): void;
 }
@@ -1930,13 +1888,14 @@ export const SettingsPropertyCollection: {
 export type SettingsPropertyCollection = SettingsPropertyCollection$instance;
 
 export interface SettingsPropertyIsReadOnlyException$instance extends Exception {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
 }
 
 
 export const SettingsPropertyIsReadOnlyException: {
     new(message: string): SettingsPropertyIsReadOnlyException;
     new(message: string, innerException: Exception): SettingsPropertyIsReadOnlyException;
-    new(info: SerializationInfo, context: StreamingContext): SettingsPropertyIsReadOnlyException;
     new(): SettingsPropertyIsReadOnlyException;
 };
 
@@ -1944,13 +1903,14 @@ export const SettingsPropertyIsReadOnlyException: {
 export type SettingsPropertyIsReadOnlyException = SettingsPropertyIsReadOnlyException$instance;
 
 export interface SettingsPropertyNotFoundException$instance extends Exception {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
 }
 
 
 export const SettingsPropertyNotFoundException: {
     new(message: string): SettingsPropertyNotFoundException;
     new(message: string, innerException: Exception): SettingsPropertyNotFoundException;
-    new(info: SerializationInfo, context: StreamingContext): SettingsPropertyNotFoundException;
     new(): SettingsPropertyNotFoundException;
 };
 
@@ -1976,9 +1936,13 @@ export const SettingsPropertyValue: {
 export type SettingsPropertyValue = SettingsPropertyValue$instance;
 
 export interface SettingsPropertyValueCollection$instance {
+    readonly __tsonic_iface_System_Collections_ICollection: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+    readonly __tsonic_iface_System_ICloneable: never;
+
     readonly Count: int;
     readonly IsSynchronized: boolean;
-    readonly Item: SettingsPropertyValue;
+    readonly [name: string]: SettingsPropertyValue;
     readonly SyncRoot: unknown;
     Add(property: SettingsPropertyValue): void;
     Clear(): void;
@@ -1998,13 +1962,14 @@ export const SettingsPropertyValueCollection: {
 export type SettingsPropertyValueCollection = SettingsPropertyValueCollection$instance;
 
 export interface SettingsPropertyWrongTypeException$instance extends Exception {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
 }
 
 
 export const SettingsPropertyWrongTypeException: {
     new(message: string): SettingsPropertyWrongTypeException;
     new(message: string, innerException: Exception): SettingsPropertyWrongTypeException;
-    new(info: SerializationInfo, context: StreamingContext): SettingsPropertyWrongTypeException;
     new(): SettingsPropertyWrongTypeException;
 };
 
@@ -2018,8 +1983,7 @@ export interface SettingsProvider$instance extends ProviderBase {
 }
 
 
-export const SettingsProvider: {
-    new(): SettingsProvider;
+export const SettingsProvider: (abstract new() => SettingsProvider) & {
 };
 
 
@@ -2039,7 +2003,10 @@ export const SettingsProviderAttribute: {
 export type SettingsProviderAttribute = SettingsProviderAttribute$instance;
 
 export interface SettingsProviderCollection$instance extends ProviderCollection {
-    readonly Item: ProviderBase | SettingsProvider;
+    readonly __tsonic_iface_System_Collections_ICollection: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
+    readonly [name: string]: ProviderBase | SettingsProvider;
     Add(provider: ProviderBase): void;
 }
 
@@ -2063,21 +2030,17 @@ export const SettingsSerializeAsAttribute: {
 
 export type SettingsSerializeAsAttribute = SettingsSerializeAsAttribute$instance;
 
-export abstract class SettingValueElement$protected {
-    protected readonly Properties: ConfigurationPropertyCollection;
-    protected DeserializeElement(reader: XmlReader, serializeCollectionKey: boolean): void;
-    protected IsModified(): boolean;
-    protected Reset(parentElement: ConfigurationElement): void;
-    protected ResetModified(): void;
-    protected SerializeToXmlElement(writer: XmlWriter, elementName: string): boolean;
-    protected Unmerge(sourceElement: ConfigurationElement, parentElement: ConfigurationElement, saveMode: ConfigurationSaveMode): void;
-}
-
-
-export interface SettingValueElement$instance extends SettingValueElement$protected, ConfigurationElement {
+export interface SettingValueElement$instance extends ConfigurationElement {
+    readonly Properties: ConfigurationPropertyCollection;
     ValueXml: XmlNode;
+    DeserializeElement(reader: XmlReader, serializeCollectionKey: boolean): void;
     Equals(settingValue: unknown): boolean;
     GetHashCode(): int;
+    IsModified(): boolean;
+    Reset(parentElement: ConfigurationElement): void;
+    ResetModified(): void;
+    SerializeToXmlElement(writer: XmlWriter, elementName: string): boolean;
+    Unmerge(sourceElement: ConfigurationElement, parentElement: ConfigurationElement, saveMode: ConfigurationSaveMode): void;
 }
 
 
@@ -2089,6 +2052,8 @@ export const SettingValueElement: {
 export type SettingValueElement = SettingValueElement$instance;
 
 export interface SingleTagSectionHandler$instance {
+    readonly __tsonic_iface_System_Configuration_IConfigurationSectionHandler: never;
+
     Create(parent: unknown, context: unknown, section: XmlNode): unknown;
 }
 
@@ -2274,14 +2239,10 @@ export const TypeNameConverter: {
 
 export type TypeNameConverter = TypeNameConverter$instance;
 
-export abstract class UriSection$protected {
-    protected readonly Properties: ConfigurationPropertyCollection;
-}
-
-
-export interface UriSection$instance extends UriSection$protected, ConfigurationSection {
+export interface UriSection$instance extends ConfigurationSection {
     readonly Idn: IdnElement;
     readonly IriParsing: IriParsingElement;
+    readonly Properties: ConfigurationPropertyCollection;
     readonly SchemeSettings: SchemeSettingElementCollection;
 }
 

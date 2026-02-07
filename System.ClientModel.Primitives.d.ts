@@ -63,3 +63,6 @@ export { MessageLoggingPolicy as MessageLoggingPolicy } from './System.ClientMod
 export { PipelinePolicy as PipelinePolicy } from './System.ClientModel.Primitives/internal/index.js';
 export { PipelinePosition as PipelinePosition } from './System.ClientModel.Primitives/internal/index.js';
 export { PipelineTransport as PipelineTransport } from './System.ClientModel.Primitives/internal/index.js';
+// Extension methods (C# using semantics)
+export type { ExtensionMethods_System_ClientModel_Primitives as ExtensionMethods } from './__internal/extensions/index.js';
+

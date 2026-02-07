@@ -16,7 +16,6 @@ export interface ManagedIdentityId$instance {
 
 
 export const ManagedIdentityId: {
-    new(): ManagedIdentityId;
     readonly SystemAssigned: ManagedIdentityId;
     WithUserAssignedClientId(clientId: string): ManagedIdentityId;
     WithUserAssignedObjectId(objectId: string): ManagedIdentityId;

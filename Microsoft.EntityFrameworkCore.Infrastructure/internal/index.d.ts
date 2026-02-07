@@ -16,6 +16,8 @@ import type { IRelationalDbContextOptionsBuilderInfrastructure, RelationalDbCont
 import type { DbContextOptionsBuilder } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.js";
 
 export interface AzureSqlDbContextOptionsBuilder$instance extends SqlEngineDbContextOptionsBuilderBase_1<AzureSqlDbContextOptionsBuilder> {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IRelationalDbContextOptionsBuilderInfrastructure: never;
+
     EnableRetryOnFailure(): AzureSqlDbContextOptionsBuilder;
     EnableRetryOnFailure(maxRetryCount: int): AzureSqlDbContextOptionsBuilder;
     EnableRetryOnFailure(errorNumbersToAdd: ICollection<System_Internal.Int32>): AzureSqlDbContextOptionsBuilder;
@@ -32,6 +34,8 @@ export const AzureSqlDbContextOptionsBuilder: {
 export type AzureSqlDbContextOptionsBuilder = AzureSqlDbContextOptionsBuilder$instance;
 
 export interface AzureSynapseDbContextOptionsBuilder$instance extends SqlEngineDbContextOptionsBuilderBase_1<AzureSynapseDbContextOptionsBuilder> {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IRelationalDbContextOptionsBuilderInfrastructure: never;
+
     EnableRetryOnFailure(): AzureSynapseDbContextOptionsBuilder;
     EnableRetryOnFailure(maxRetryCount: int): AzureSynapseDbContextOptionsBuilder;
     EnableRetryOnFailure(errorNumbersToAdd: ICollection<System_Internal.Int32>): AzureSynapseDbContextOptionsBuilder;
@@ -48,6 +52,8 @@ export const AzureSynapseDbContextOptionsBuilder: {
 export type AzureSynapseDbContextOptionsBuilder = AzureSynapseDbContextOptionsBuilder$instance;
 
 export interface SqlEngineDbContextOptionsBuilder$instance extends SqlEngineDbContextOptionsBuilderBase_1<SqlEngineDbContextOptionsBuilder> {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IRelationalDbContextOptionsBuilderInfrastructure: never;
+
     EnableRetryOnFailure(): SqlEngineDbContextOptionsBuilder;
     EnableRetryOnFailure(maxRetryCount: int): SqlEngineDbContextOptionsBuilder;
     EnableRetryOnFailure(errorNumbersToAdd: ICollection<System_Internal.Int32>): SqlEngineDbContextOptionsBuilder;
@@ -64,17 +70,20 @@ export const SqlEngineDbContextOptionsBuilder: {
 export type SqlEngineDbContextOptionsBuilder = SqlEngineDbContextOptionsBuilder$instance;
 
 export interface SqlEngineDbContextOptionsBuilderBase_1$instance<TSelf extends SqlEngineDbContextOptionsBuilderBase_1<TSelf>> extends RelationalDbContextOptionsBuilder<TSelf, SqlServerOptionsExtension> {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IRelationalDbContextOptionsBuilderInfrastructure: never;
+
 }
 
 
-export const SqlEngineDbContextOptionsBuilderBase_1: {
-    new<TSelf extends SqlEngineDbContextOptionsBuilderBase_1<TSelf>>(optionsBuilder: DbContextOptionsBuilder): SqlEngineDbContextOptionsBuilderBase_1<TSelf>;
+export const SqlEngineDbContextOptionsBuilderBase_1: (abstract new<TSelf extends SqlEngineDbContextOptionsBuilderBase_1<TSelf>>(optionsBuilder: DbContextOptionsBuilder) => SqlEngineDbContextOptionsBuilderBase_1<TSelf>) & {
 };
 
 
 export type SqlEngineDbContextOptionsBuilderBase_1<TSelf extends SqlEngineDbContextOptionsBuilderBase_1<TSelf>> = SqlEngineDbContextOptionsBuilderBase_1$instance<TSelf>;
 
 export interface SqlServerDbContextOptionsBuilder$instance extends SqlEngineDbContextOptionsBuilderBase_1<SqlServerDbContextOptionsBuilder> {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IRelationalDbContextOptionsBuilderInfrastructure: never;
+
     EnableRetryOnFailure(): SqlServerDbContextOptionsBuilder;
     EnableRetryOnFailure(maxRetryCount: int): SqlServerDbContextOptionsBuilder;
     EnableRetryOnFailure(errorNumbersToAdd: ICollection<System_Internal.Int32>): SqlServerDbContextOptionsBuilder;

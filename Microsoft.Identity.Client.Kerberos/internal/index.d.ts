@@ -32,7 +32,7 @@ export interface KerberosSupplementalTicket$instance {
     KeyType: KerberosKeyTypes;
     Realm: string;
     ServicePrincipalName: string;
-    ToString(): string | undefined;
+    ToString(): string;
 }
 
 

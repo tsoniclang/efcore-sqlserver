@@ -20,16 +20,16 @@ export enum CloudEventDataFormat {
 
 export interface CloudEvent$instance {
     get Data(): BinaryData | undefined;
-    set Data(value: BinaryData);
+    set Data(value: BinaryData | undefined);
     get DataContentType(): string | undefined;
-    set DataContentType(value: string);
+    set DataContentType(value: string | undefined);
     get DataSchema(): string | undefined;
-    set DataSchema(value: string);
+    set DataSchema(value: string | undefined);
     readonly ExtensionAttributes: IDictionary<System_Internal.String, unknown>;
     Id: string;
     Source: string;
     get Subject(): string | undefined;
-    set Subject(value: string);
+    set Subject(value: string | undefined);
     Time: Nullable<DateTimeOffset>;
     Type: string;
 }
@@ -45,15 +45,11 @@ export const CloudEvent: {
 
 export type CloudEvent = CloudEvent$instance;
 
-export abstract class MessageContent$protected {
-    protected ContentTypeCore: Nullable<ContentType>;
-}
-
-
-export interface MessageContent$instance extends MessageContent$protected {
+export interface MessageContent$instance {
     ContentType: Nullable<ContentType>;
+    ContentTypeCore: Nullable<ContentType>;
     get Data(): BinaryData | undefined;
-    set Data(value: BinaryData);
+    set Data(value: BinaryData | undefined);
     readonly IsReadOnly: boolean;
 }
 

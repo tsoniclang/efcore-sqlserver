@@ -121,3 +121,6 @@ export { Validators$instance as Validators } from './Microsoft.IdentityModel.Tok
 export { X509EncryptingCredentials as X509EncryptingCredentials } from './Microsoft.IdentityModel.Tokens/internal/index.js';
 export { X509SecurityKey as X509SecurityKey } from './Microsoft.IdentityModel.Tokens/internal/index.js';
 export { X509SigningCredentials as X509SigningCredentials } from './Microsoft.IdentityModel.Tokens/internal/index.js';
+// Extension methods (C# using semantics)
+export type { ExtensionMethods_Microsoft_IdentityModel_Tokens as ExtensionMethods } from './__internal/extensions/index.js';
+

@@ -202,8 +202,7 @@ export interface SqlAuthenticationInitializer$instance {
 }
 
 
-export const SqlAuthenticationInitializer: {
-    new(): SqlAuthenticationInitializer;
+export const SqlAuthenticationInitializer: (abstract new() => SqlAuthenticationInitializer) & {
 };
 
 
@@ -222,8 +221,7 @@ export interface SqlAuthenticationParameters$instance {
 }
 
 
-export const SqlAuthenticationParameters: {
-    new(authenticationMethod: SqlAuthenticationMethod, serverName: string, databaseName: string, resource: string, authority: string, userId: string, password: string, connectionId: Guid, connectionTimeout: int): SqlAuthenticationParameters;
+export const SqlAuthenticationParameters: (abstract new(authenticationMethod: SqlAuthenticationMethod, serverName: string, databaseName: string, resource: string, authority: string, userId: string, password: string, connectionId: Guid, connectionTimeout: int) => SqlAuthenticationParameters) & {
 };
 
 
@@ -237,8 +235,7 @@ export interface SqlAuthenticationProvider$instance {
 }
 
 
-export const SqlAuthenticationProvider: {
-    new(): SqlAuthenticationProvider;
+export const SqlAuthenticationProvider: (abstract new() => SqlAuthenticationProvider) & {
     GetProvider(authenticationMethod: SqlAuthenticationMethod): SqlAuthenticationProvider;
     SetProvider(authenticationMethod: SqlAuthenticationMethod, provider: SqlAuthenticationProvider): boolean;
 };
@@ -259,24 +256,23 @@ export const SqlAuthenticationToken: {
 
 export type SqlAuthenticationToken = SqlAuthenticationToken$instance;
 
-export abstract class SqlBatch$protected {
-    protected readonly DbBatchCommands: DbBatchCommandCollection;
-    protected DbConnection: DbConnection;
-    protected DbTransaction: DbTransaction;
-    protected CreateDbBatchCommand(): DbBatchCommand;
-    protected ExecuteDbDataReader(behavior: CommandBehavior): DbDataReader;
-    protected ExecuteDbDataReaderAsync(behavior: CommandBehavior, cancellationToken: CancellationToken): Task<DbDataReader>;
-}
+export interface SqlBatch$instance extends DbBatch {
+    readonly __tsonic_iface_System_IAsyncDisposable: never;
+    readonly __tsonic_iface_System_IDisposable: never;
 
-
-export interface SqlBatch$instance extends SqlBatch$protected, DbBatch {
     readonly BatchCommands: SqlBatchCommandCollection;
     readonly Commands: List<SqlBatchCommand>;
     Connection: SqlConnection;
+    readonly DbBatchCommands: DbBatchCommandCollection;
+    DbConnection: DbConnection;
+    DbTransaction: DbTransaction;
     Timeout: int;
     Transaction: SqlTransaction;
     Cancel(): void;
+    CreateDbBatchCommand(): DbBatchCommand;
     Dispose(): void;
+    ExecuteDbDataReader(behavior: CommandBehavior): DbDataReader;
+    ExecuteDbDataReaderAsync(behavior: CommandBehavior, cancellationToken: CancellationToken): Task<DbDataReader>;
     ExecuteNonQuery(): int;
     ExecuteNonQueryAsync(cancellationToken?: CancellationToken): Task<System_Internal.Int32>;
     ExecuteReader(): SqlDataReader;
@@ -296,16 +292,12 @@ export const SqlBatch: {
 
 export type SqlBatch = SqlBatch$instance;
 
-export abstract class SqlBatchCommand$protected {
-    protected readonly DbParameterCollection: DbParameterCollection;
-}
-
-
-export interface SqlBatchCommand$instance extends SqlBatchCommand$protected, DbBatchCommand {
+export interface SqlBatchCommand$instance extends DbBatchCommand {
     ColumnEncryptionSetting: SqlCommandColumnEncryptionSetting;
     CommandBehavior: CommandBehavior;
     CommandText: string;
     CommandType: CommandType;
+    readonly DbParameterCollection: DbParameterCollection;
     readonly Parameters: SqlParameterCollection;
     readonly RecordsAffected: int;
 }
@@ -319,16 +311,15 @@ export const SqlBatchCommand: {
 
 export type SqlBatchCommand = SqlBatchCommand$instance;
 
-export abstract class SqlBatchCommandCollection$protected {
-    protected GetBatchCommand(index: int): DbBatchCommand;
-    protected SetBatchCommand(index: int, batchCommand: DbBatchCommand): void;
-}
+export interface SqlBatchCommandCollection$instance extends DbBatchCommandCollection {
+    readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
-
-export interface SqlBatchCommandCollection$instance extends SqlBatchCommandCollection$protected, DbBatchCommandCollection {
     readonly Count: int;
     readonly IsReadOnly: boolean;
-    Item: SqlBatchCommand;
+    [index: number]: SqlBatchCommand;
     Add(item: SqlBatchCommand): void;
     Add(item: DbBatchCommand): void;
     Clear(): void;
@@ -336,6 +327,7 @@ export interface SqlBatchCommandCollection$instance extends SqlBatchCommandColle
     Contains(item: DbBatchCommand): boolean;
     CopyTo(array: SqlBatchCommand[], arrayIndex: int): void;
     CopyTo(array: DbBatchCommand[], arrayIndex: int): void;
+    GetBatchCommand(index: int): DbBatchCommand;
     GetEnumerator(): IEnumerator__System_Collections_Generic<DbBatchCommand>;
     IndexOf(item: SqlBatchCommand): int;
     IndexOf(item: DbBatchCommand): int;
@@ -344,6 +336,7 @@ export interface SqlBatchCommandCollection$instance extends SqlBatchCommandColle
     Remove(item: SqlBatchCommand): boolean;
     Remove(item: DbBatchCommand): boolean;
     RemoveAt(index: int): void;
+    SetBatchCommand(index: int, batchCommand: DbBatchCommand): void;
 }
 
 
@@ -355,6 +348,8 @@ export const SqlBatchCommandCollection: {
 export type SqlBatchCommandCollection = SqlBatchCommandCollection$instance;
 
 export interface SqlBulkCopy$instance {
+    readonly __tsonic_iface_System_IDisposable: never;
+
     BatchSize: int;
     BulkCopyTimeout: int;
     readonly ColumnMappings: SqlBulkCopyColumnMappingCollection;
@@ -413,7 +408,11 @@ export const SqlBulkCopyColumnMapping: {
 export type SqlBulkCopyColumnMapping = SqlBulkCopyColumnMapping$instance;
 
 export interface SqlBulkCopyColumnMappingCollection$instance extends CollectionBase {
-    readonly Item: SqlBulkCopyColumnMapping;
+    readonly __tsonic_iface_System_Collections_ICollection: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+    readonly __tsonic_iface_System_Collections_IList: never;
+
+    readonly [index: number]: SqlBulkCopyColumnMapping;
     Add(bulkCopyColumnMapping: SqlBulkCopyColumnMapping): SqlBulkCopyColumnMapping;
     Add(sourceColumnIndex: int, destinationColumnIndex: int): SqlBulkCopyColumnMapping;
     Add(sourceColumnIndex: int, destinationColumn: string): SqlBulkCopyColumnMapping;
@@ -430,7 +429,6 @@ export interface SqlBulkCopyColumnMappingCollection$instance extends CollectionB
 
 
 export const SqlBulkCopyColumnMappingCollection: {
-    new(): SqlBulkCopyColumnMappingCollection;
 };
 
 
@@ -450,7 +448,11 @@ export const SqlBulkCopyColumnOrderHint: {
 export type SqlBulkCopyColumnOrderHint = SqlBulkCopyColumnOrderHint$instance;
 
 export interface SqlBulkCopyColumnOrderHintCollection$instance extends CollectionBase {
-    readonly Item: SqlBulkCopyColumnOrderHint;
+    readonly __tsonic_iface_System_Collections_ICollection: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+    readonly __tsonic_iface_System_Collections_IList: never;
+
+    readonly [index: number]: SqlBulkCopyColumnOrderHint;
     Add(columnOrderHint: SqlBulkCopyColumnOrderHint): SqlBulkCopyColumnOrderHint;
     Add(column: string, sortOrder: SortOrder): SqlBulkCopyColumnOrderHint;
     Clear(): void;
@@ -485,7 +487,6 @@ export interface SqlClientFactory$instance extends DbProviderFactory {
 
 
 export const SqlClientFactory: {
-    new(): SqlClientFactory;
     readonly Instance: SqlClientFactory;
 };
 
@@ -565,30 +566,27 @@ export interface SqlColumnEncryptionKeyStoreProvider$instance {
 }
 
 
-export const SqlColumnEncryptionKeyStoreProvider: {
-    new(): SqlColumnEncryptionKeyStoreProvider;
+export const SqlColumnEncryptionKeyStoreProvider: (abstract new() => SqlColumnEncryptionKeyStoreProvider) & {
 };
 
 
 export type SqlColumnEncryptionKeyStoreProvider = SqlColumnEncryptionKeyStoreProvider$instance;
 
-export abstract class SqlCommand$protected {
-    protected DbConnection: DbConnection;
-    protected readonly DbParameterCollection: DbParameterCollection;
-    protected DbTransaction: DbTransaction;
-    protected CreateDbParameter(): DbParameter;
-    protected Dispose(disposing: boolean): void;
-    protected ExecuteDbDataReader(behavior: CommandBehavior): DbDataReader;
-    protected ExecuteDbDataReaderAsync(behavior: CommandBehavior, cancellationToken: CancellationToken): Task<DbDataReader>;
-}
+export interface SqlCommand$instance extends DbCommand {
+    readonly __tsonic_iface_System_ComponentModel_IComponent: never;
+    readonly __tsonic_iface_System_Data_IDbCommand: never;
+    readonly __tsonic_iface_System_IAsyncDisposable: never;
+    readonly __tsonic_iface_System_ICloneable: never;
+    readonly __tsonic_iface_System_IDisposable: never;
 
-
-export interface SqlCommand$instance extends SqlCommand$protected, DbCommand {
     readonly ColumnEncryptionSetting: SqlCommandColumnEncryptionSetting;
     CommandText: string;
     CommandTimeout: int;
     CommandType: CommandType;
     Connection: SqlConnection;
+    DbConnection: DbConnection;
+    readonly DbParameterCollection: DbParameterCollection;
+    DbTransaction: DbTransaction;
     DesignTimeVisible: boolean;
     EnableOptimizedParameterBinding: boolean;
     Notification: SqlNotificationRequest;
@@ -606,10 +604,14 @@ export interface SqlCommand$instance extends SqlCommand$protected, DbCommand {
     BeginExecuteXmlReader(callback: AsyncCallback, stateObject: unknown): IAsyncResult;
     Cancel(): void;
     Clone(): SqlCommand;
+    CreateDbParameter(): DbParameter;
     CreateParameter(): SqlParameter;
+    Dispose(disposing: boolean): void;
     EndExecuteNonQuery(asyncResult: IAsyncResult): int;
     EndExecuteReader(asyncResult: IAsyncResult): SqlDataReader;
     EndExecuteXmlReader(asyncResult: IAsyncResult): XmlReader;
+    ExecuteDbDataReader(behavior: CommandBehavior): DbDataReader;
+    ExecuteDbDataReaderAsync(behavior: CommandBehavior, cancellationToken: CancellationToken): Task<DbDataReader>;
     ExecuteNonQuery(): int;
     ExecuteNonQueryAsync(cancellationToken: CancellationToken): Task<System_Internal.Int32>;
     ExecuteReader(): SqlDataReader;
@@ -640,31 +642,30 @@ export const SqlCommand: {
 
 export type SqlCommand = SqlCommand$instance;
 
-export abstract class SqlCommandBuilder$protected {
-    protected ApplyParameterInfo(parameter: DbParameter, datarow: DataRow, statementType: StatementType, whereClause: boolean): void;
-    protected GetParameterName(parameterOrdinal: int): string;
-    protected GetParameterName(parameterName: string): string;
-    protected GetParameterPlaceholder(parameterOrdinal: int): string;
-    protected GetSchemaTable(srcCommand: DbCommand): DataTable;
-    protected InitializeCommand(command: DbCommand): DbCommand;
-    protected SetRowUpdatingHandler(adapter: DbDataAdapter): void;
-}
+export interface SqlCommandBuilder$instance extends DbCommandBuilder {
+    readonly __tsonic_iface_System_ComponentModel_IComponent: never;
+    readonly __tsonic_iface_System_IDisposable: never;
 
-
-export interface SqlCommandBuilder$instance extends SqlCommandBuilder$protected, DbCommandBuilder {
     CatalogLocation: CatalogLocation;
     CatalogSeparator: string;
     DataAdapter: SqlDataAdapter;
     QuotePrefix: string;
     QuoteSuffix: string;
     SchemaSeparator: string;
+    ApplyParameterInfo(parameter: DbParameter, datarow: DataRow, statementType: StatementType, whereClause: boolean): void;
     GetDeleteCommand(): SqlCommand;
     GetDeleteCommand(useColumnsForParameterNames: boolean): SqlCommand;
     GetInsertCommand(): SqlCommand;
     GetInsertCommand(useColumnsForParameterNames: boolean): SqlCommand;
+    GetParameterName(parameterOrdinal: int): string;
+    GetParameterName(parameterName: string): string;
+    GetParameterPlaceholder(parameterOrdinal: int): string;
+    GetSchemaTable(srcCommand: DbCommand): DataTable;
     GetUpdateCommand(): SqlCommand;
     GetUpdateCommand(useColumnsForParameterNames: boolean): SqlCommand;
+    InitializeCommand(command: DbCommand): DbCommand;
     QuoteIdentifier(unquotedIdentifier: string): string;
+    SetRowUpdatingHandler(adapter: DbDataAdapter): void;
     UnquoteIdentifier(quotedIdentifier: string): string;
 }
 
@@ -693,22 +694,19 @@ export const SqlConfigurableRetryFactory: {
 
 export type SqlConfigurableRetryFactory = SqlConfigurableRetryFactory$instance;
 
-export abstract class SqlConnection$protected {
-    protected BeginDbTransaction(isolationLevel: IsolationLevel): DbTransaction;
-    protected CreateDbBatch(): DbBatch;
-    protected CreateDbCommand(): DbCommand;
-    protected Dispose(disposing: boolean): void;
-}
+export interface SqlConnection$instance extends DbConnection {
+    readonly __tsonic_iface_System_ComponentModel_IComponent: never;
+    readonly __tsonic_iface_System_Data_IDbConnection: never;
+    readonly __tsonic_iface_System_IAsyncDisposable: never;
+    readonly __tsonic_iface_System_ICloneable: never;
+    readonly __tsonic_iface_System_IDisposable: never;
 
-
-export interface SqlConnection$instance extends SqlConnection$protected, DbConnection {
     AccessToken: string;
     AccessTokenCallback: Func<SqlAuthenticationParameters, CancellationToken, Task<SqlAuthenticationToken>>;
     readonly CanCreateBatch: boolean;
     readonly ClientConnectionId: Guid;
     readonly CommandTimeout: int;
-    get ConnectionString(): string | undefined;
-    set ConnectionString(value: string);
+    ConnectionString: string;
     readonly ConnectionTimeout: int;
     Credential: SqlCredential;
     readonly Database: string;
@@ -721,6 +719,7 @@ export interface SqlConnection$instance extends SqlConnection$protected, DbConne
     readonly State: ConnectionState;
     StatisticsEnabled: boolean;
     readonly WorkstationId: string;
+    BeginDbTransaction(isolationLevel: IsolationLevel): DbTransaction;
     BeginTransaction(): SqlTransaction;
     BeginTransaction(iso: IsolationLevel): SqlTransaction;
     BeginTransaction(iso: IsolationLevel, transactionName: string): SqlTransaction;
@@ -728,6 +727,9 @@ export interface SqlConnection$instance extends SqlConnection$protected, DbConne
     ChangeDatabase(database: string): void;
     Close(): void;
     CreateCommand(): SqlCommand;
+    CreateDbBatch(): DbBatch;
+    CreateDbCommand(): DbCommand;
+    Dispose(disposing: boolean): void;
     GetSchema(): DataTable;
     GetSchema(collectionName: string): DataTable;
     GetSchema(collectionName: string, restrictionValues: string[]): DataTable;
@@ -762,7 +764,7 @@ export type SqlConnection = SqlConnection$instance;
 export interface SqlConnectionEncryptOption$instance {
     Equals(obj: unknown): boolean;
     GetHashCode(): int;
-    ToString(): string | undefined;
+    ToString(): string;
 }
 
 
@@ -779,6 +781,11 @@ export const SqlConnectionEncryptOption: {
 export type SqlConnectionEncryptOption = SqlConnectionEncryptOption$instance;
 
 export interface SqlConnectionStringBuilder$instance extends DbConnectionStringBuilder {
+    readonly __tsonic_iface_System_Collections_ICollection: never;
+    readonly __tsonic_iface_System_Collections_IDictionary: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+    readonly __tsonic_iface_System_ComponentModel_ICustomTypeDescriptor: never;
+
     ApplicationIntent: ApplicationIntent;
     ApplicationName: string;
     AttachDBFilename: string;
@@ -801,7 +808,7 @@ export interface SqlConnectionStringBuilder$instance extends DbConnectionStringB
     IntegratedSecurity: boolean;
     IPAddressPreference: SqlConnectionIPAddressPreference;
     readonly IsFixedSize: boolean;
-    Item: unknown;
+    [keyword: string]: unknown;
     readonly Keys: ICollection;
     LoadBalanceTimeout: int;
     MaxPoolSize: int;
@@ -852,18 +859,20 @@ export const SqlCredential: {
 
 export type SqlCredential = SqlCredential$instance;
 
-export abstract class SqlDataAdapter$protected {
-    protected OnRowUpdated(value: RowUpdatedEventArgs): void;
-    protected OnRowUpdating(value: RowUpdatingEventArgs): void;
-}
+export interface SqlDataAdapter$instance extends DbDataAdapter {
+    readonly __tsonic_iface_System_ComponentModel_IComponent: never;
+    readonly __tsonic_iface_System_Data_IDataAdapter: never;
+    readonly __tsonic_iface_System_Data_IDbDataAdapter: never;
+    readonly __tsonic_iface_System_ICloneable: never;
+    readonly __tsonic_iface_System_IDisposable: never;
 
-
-export interface SqlDataAdapter$instance extends SqlDataAdapter$protected, DbDataAdapter {
     DeleteCommand: SqlCommand;
     InsertCommand: SqlCommand;
     SelectCommand: SqlCommand;
     UpdateBatchSize: int;
     UpdateCommand: SqlCommand;
+    OnRowUpdated(value: RowUpdatedEventArgs): void;
+    OnRowUpdating(value: RowUpdatingEventArgs): void;
 }
 
 
@@ -878,6 +887,13 @@ export const SqlDataAdapter: {
 export type SqlDataAdapter = SqlDataAdapter$instance;
 
 export interface SqlDataReader$instance extends DbDataReader {
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+    readonly __tsonic_iface_System_Data_Common_IDbColumnSchemaGenerator: never;
+    readonly __tsonic_iface_System_Data_IDataReader: never;
+    readonly __tsonic_iface_System_Data_IDataRecord: never;
+    readonly __tsonic_iface_System_IAsyncDisposable: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     readonly Depth: int;
     readonly FieldCount: int;
     readonly HasRows: boolean;
@@ -951,7 +967,6 @@ export interface SqlDataReader$instance extends DbDataReader {
 
 
 export const SqlDataReader: {
-    new(): SqlDataReader;
 };
 
 
@@ -980,26 +995,28 @@ export type SqlDependency = SqlDependency$instance;
 export interface SqlError$instance {
     readonly Class: byte;
     readonly LineNumber: int;
-    readonly Message: string | undefined;
+    readonly Message: string;
     readonly Number: int;
     readonly Procedure: string;
     readonly Server: string;
     readonly Source: string;
     readonly State: byte;
-    ToString(): string | undefined;
+    ToString(): string;
 }
 
 
 export const SqlError: {
-    new(): SqlError;
 };
 
 
 export type SqlError = SqlError$instance;
 
 export interface SqlErrorCollection$instance {
+    readonly __tsonic_iface_System_Collections_ICollection: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly Count: int;
-    readonly Item: SqlError;
+    readonly [index: number]: SqlError;
     CopyTo(array: SqlError[], index: int): void;
     CopyTo(array: ClrArray, index: int): void;
     GetEnumerator(): IEnumerator;
@@ -1007,21 +1024,18 @@ export interface SqlErrorCollection$instance {
 
 
 export const SqlErrorCollection: {
-    new(): SqlErrorCollection;
 };
 
 
 export type SqlErrorCollection = SqlErrorCollection$instance;
 
-export abstract class SqlException$protected {
-    protected readonly DbBatchCommand: DbBatchCommand;
-}
+export interface SqlException$instance extends DbException {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
-
-export interface SqlException$instance extends SqlException$protected, DbException {
     readonly BatchCommand: SqlBatchCommand;
     readonly Class: byte;
     readonly ClientConnectionId: Guid;
+    readonly DbBatchCommand: DbBatchCommand;
     readonly Errors: SqlErrorCollection;
     readonly LineNumber: int;
     readonly Number: int;
@@ -1035,7 +1049,6 @@ export interface SqlException$instance extends SqlException$protected, DbExcepti
 
 
 export const SqlException: {
-    new(): SqlException;
 };
 
 
@@ -1050,7 +1063,6 @@ export interface SqlInfoMessageEventArgs$instance extends EventArgs {
 
 
 export const SqlInfoMessageEventArgs: {
-    new(): SqlInfoMessageEventArgs;
 };
 
 
@@ -1071,6 +1083,10 @@ export const SqlNotificationEventArgs: {
 export type SqlNotificationEventArgs = SqlNotificationEventArgs$instance;
 
 export interface SqlParameter$instance extends DbParameter {
+    readonly __tsonic_iface_System_Data_IDataParameter: never;
+    readonly __tsonic_iface_System_Data_IDbDataParameter: never;
+    readonly __tsonic_iface_System_ICloneable: never;
+
     CompareInfo: SqlCompareOptions;
     DbType: DbType;
     Direction: ParameterDirection;
@@ -1112,15 +1128,12 @@ export const SqlParameter: {
 
 export type SqlParameter = SqlParameter$instance;
 
-export abstract class SqlParameterCollection$protected {
-    protected GetParameter(index: int): DbParameter;
-    protected GetParameter(parameterName: string): DbParameter;
-    protected SetParameter(index: int, value: DbParameter): void;
-    protected SetParameter(parameterName: string, value: DbParameter): void;
-}
+export interface SqlParameterCollection$instance extends DbParameterCollection {
+    readonly __tsonic_iface_System_Collections_ICollection: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+    readonly __tsonic_iface_System_Collections_IList: never;
+    readonly __tsonic_iface_System_Data_IDataParameterCollection: never;
 
-
-export interface SqlParameterCollection$instance extends SqlParameterCollection$protected, DbParameterCollection {
     readonly Count: int;
     readonly IsFixedSize: boolean;
     readonly IsReadOnly: boolean;
@@ -1142,6 +1155,8 @@ export interface SqlParameterCollection$instance extends SqlParameterCollection$
     get_Item(index: int): SqlParameter;
     get_Item(parameterName: string): SqlParameter;
     GetEnumerator(): IEnumerator;
+    GetParameter(index: int): DbParameter;
+    GetParameter(parameterName: string): DbParameter;
     IndexOf(value: SqlParameter): int;
     IndexOf(value: unknown): int;
     IndexOf(parameterName: string): int;
@@ -1153,11 +1168,12 @@ export interface SqlParameterCollection$instance extends SqlParameterCollection$
     RemoveAt(parameterName: string): void;
     set_Item(index: int, value: SqlParameter): void;
     set_Item(parameterName: string, value: SqlParameter): void;
+    SetParameter(index: int, value: DbParameter): void;
+    SetParameter(parameterName: string, value: DbParameter): void;
 }
 
 
 export const SqlParameterCollection: {
-    new(): SqlParameterCollection;
 };
 
 
@@ -1178,33 +1194,34 @@ export const SqlRetryingEventArgs: {
 
 export type SqlRetryingEventArgs = SqlRetryingEventArgs$instance;
 
-export abstract class SqlRetryIntervalBaseEnumerator$protected {
-    protected abstract GetNextInterval(): TimeSpan;
-    protected Validate(timeInterval: TimeSpan, maxTimeInterval: TimeSpan, minTimeInterval: TimeSpan): void;
-}
+export interface SqlRetryIntervalBaseEnumerator$instance {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerator_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerator: never;
+    readonly __tsonic_iface_System_ICloneable: never;
+    readonly __tsonic_iface_System_IDisposable: never;
 
-
-export interface SqlRetryIntervalBaseEnumerator$instance extends SqlRetryIntervalBaseEnumerator$protected {
     Current: TimeSpan;
     GapTimeInterval: TimeSpan;
     MaxTimeInterval: TimeSpan;
     MinTimeInterval: TimeSpan;
     Clone(): unknown;
     Dispose(): void;
+    GetNextInterval(): TimeSpan;
     MoveNext(): boolean;
     Reset(): void;
+    Validate(timeInterval: TimeSpan, maxTimeInterval: TimeSpan, minTimeInterval: TimeSpan): void;
 }
 
 
-export const SqlRetryIntervalBaseEnumerator: {
-    new(): SqlRetryIntervalBaseEnumerator;
-    new(timeInterval: TimeSpan, maxTime: TimeSpan, minTime: TimeSpan): SqlRetryIntervalBaseEnumerator;
+export const SqlRetryIntervalBaseEnumerator: (abstract new() => SqlRetryIntervalBaseEnumerator) & (abstract new(timeInterval: TimeSpan, maxTime: TimeSpan, minTime: TimeSpan) => SqlRetryIntervalBaseEnumerator) & {
 };
 
 
 export type SqlRetryIntervalBaseEnumerator = SqlRetryIntervalBaseEnumerator$instance;
 
 export interface SqlRetryLogicBase$instance {
+    readonly __tsonic_iface_System_ICloneable: never;
+
     Current: int;
     NumberOfTries: int;
     RetryIntervalEnumerator: SqlRetryIntervalBaseEnumerator;
@@ -1216,8 +1233,7 @@ export interface SqlRetryLogicBase$instance {
 }
 
 
-export const SqlRetryLogicBase: {
-    new(): SqlRetryLogicBase;
+export const SqlRetryLogicBase: (abstract new() => SqlRetryLogicBase) & {
 };
 
 
@@ -1232,8 +1248,7 @@ export interface SqlRetryLogicBaseProvider$instance {
 }
 
 
-export const SqlRetryLogicBaseProvider: {
-    new(): SqlRetryLogicBaseProvider;
+export const SqlRetryLogicBaseProvider: (abstract new() => SqlRetryLogicBaseProvider) & {
 };
 
 
@@ -1281,12 +1296,8 @@ export const SqlRowUpdatedEventArgs: {
 
 export type SqlRowUpdatedEventArgs = SqlRowUpdatedEventArgs$instance;
 
-export abstract class SqlRowUpdatingEventArgs$protected {
-    protected BaseCommand: IDbCommand;
-}
-
-
-export interface SqlRowUpdatingEventArgs$instance extends SqlRowUpdatingEventArgs$protected, RowUpdatingEventArgs {
+export interface SqlRowUpdatingEventArgs$instance extends RowUpdatingEventArgs {
+    BaseCommand: IDbCommand;
     Command: SqlCommand;
 }
 
@@ -1298,16 +1309,16 @@ export const SqlRowUpdatingEventArgs: {
 
 export type SqlRowUpdatingEventArgs = SqlRowUpdatingEventArgs$instance;
 
-export abstract class SqlTransaction$protected {
-    protected readonly DbConnection: DbConnection;
-    protected Dispose(disposing: boolean): void;
-}
+export interface SqlTransaction$instance extends DbTransaction {
+    readonly __tsonic_iface_System_Data_IDbTransaction: never;
+    readonly __tsonic_iface_System_IAsyncDisposable: never;
+    readonly __tsonic_iface_System_IDisposable: never;
 
-
-export interface SqlTransaction$instance extends SqlTransaction$protected, DbTransaction {
     readonly Connection: SqlConnection;
+    readonly DbConnection: DbConnection;
     readonly IsolationLevel: IsolationLevel;
     Commit(): void;
+    Dispose(disposing: boolean): void;
     Rollback(): void;
     Rollback(transactionName: string): void;
     Save(savePointName: string): void;
@@ -1315,7 +1326,6 @@ export interface SqlTransaction$instance extends SqlTransaction$protected, DbTra
 
 
 export const SqlTransaction: {
-    new(): SqlTransaction;
 };
 
 

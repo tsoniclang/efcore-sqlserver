@@ -43,6 +43,8 @@ export enum WaitUntil {
 
 
 export interface ETag$instance {
+    readonly __tsonic_iface_System_IEquatable_1: never;
+
     Equals(other: ETag): boolean;
     Equals(other: string): boolean;
     Equals(obj: unknown): boolean;
@@ -61,6 +63,8 @@ export const ETag: {
 export type ETag = ETag$instance;
 
 export interface HttpRange$instance {
+    readonly __tsonic_iface_System_IEquatable_1: never;
+
     readonly Length: Nullable<System_Internal.Int64>;
     readonly Offset: long;
     Equals(other: HttpRange): boolean;
@@ -77,12 +81,10 @@ export const HttpRange: {
 
 export type HttpRange = HttpRange$instance;
 
-export abstract class AsyncPageable_1$protected<T> {
-    protected readonly CancellationToken: CancellationToken;
-}
+export interface AsyncPageable_1$instance<T> {
+    readonly __tsonic_iface_System_Collections_Generic_IAsyncEnumerable_1: never;
 
-
-export interface AsyncPageable_1$instance<T> extends AsyncPageable_1$protected<T> {
+    readonly CancellationToken: CancellationToken;
     AsPages(continuationToken?: string, pageSizeHint?: Nullable<System_Internal.Int32>): IAsyncEnumerable<Page_1<T>>;
     Equals(obj: unknown): boolean;
     GetAsyncEnumerator(cancellationToken?: CancellationToken): IAsyncEnumerator<T>;
@@ -91,9 +93,7 @@ export interface AsyncPageable_1$instance<T> extends AsyncPageable_1$protected<T
 }
 
 
-export const AsyncPageable_1: {
-    new<T>(): AsyncPageable_1<T>;
-    new<T>(cancellationToken: CancellationToken): AsyncPageable_1<T>;
+export const AsyncPageable_1: (abstract new<T>() => AsyncPageable_1<T>) & (abstract new<T>(cancellationToken: CancellationToken) => AsyncPageable_1<T>) & {
     FromPages<T>(pages: IEnumerable__System_Collections_Generic<Page_1<T>>): AsyncPageable_1<T>;
 };
 
@@ -193,7 +193,7 @@ export type MatchConditions = MatchConditions$instance;
 
 export interface NullableResponse_1$instance<T> {
     readonly HasValue: boolean;
-    readonly Value: T;
+    readonly Value: T | undefined;
     Equals(obj: unknown): boolean;
     GetHashCode(): int;
     GetRawResponse(): Response;
@@ -201,8 +201,7 @@ export interface NullableResponse_1$instance<T> {
 }
 
 
-export const NullableResponse_1: {
-    new<T>(): NullableResponse_1<T>;
+export const NullableResponse_1: (abstract new<T>() => NullableResponse_1<T>) & {
 };
 
 
@@ -227,8 +226,7 @@ export interface Operation$instance {
 }
 
 
-export const Operation: {
-    new(): Operation;
+export const Operation: (abstract new() => Operation) & {
     Rehydrate(pipeline: HttpPipeline, rehydrationToken: RehydrationToken, options?: ClientOptions): Operation;
     Rehydrate<T extends IPersistableModel_1<T>>(pipeline: HttpPipeline, rehydrationToken: RehydrationToken, options?: ClientOptions): Operation_1<T>;
     RehydrateAsync(pipeline: HttpPipeline, rehydrationToken: RehydrationToken, options?: ClientOptions): Task<Operation>;
@@ -255,8 +253,7 @@ export interface Operation_1$instance<T> extends Operation {
 }
 
 
-export const Operation_1: {
-    new<T>(): Operation_1<T>;
+export const Operation_1: (abstract new<T>() => Operation_1<T>) & {
 };
 
 
@@ -272,20 +269,18 @@ export interface Page_1$instance<T> {
 }
 
 
-export const Page_1: {
-    new<T>(): Page_1<T>;
+export const Page_1: (abstract new<T>() => Page_1<T>) & {
     FromValues<T>(values: IReadOnlyList<T>, continuationToken: string, response: Response): Page_1<T>;
 };
 
 
 export type Page_1<T> = Page_1$instance<T>;
 
-export abstract class Pageable_1$protected<T> {
-    protected readonly CancellationToken: CancellationToken;
-}
+export interface Pageable_1$instance<T> {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
-
-export interface Pageable_1$instance<T> extends Pageable_1$protected<T> {
+    readonly CancellationToken: CancellationToken;
     AsPages(continuationToken?: string, pageSizeHint?: Nullable<System_Internal.Int32>): IEnumerable__System_Collections_Generic<Page_1<T>>;
     Equals(obj: unknown): boolean;
     GetEnumerator(): IEnumerator<T>;
@@ -294,9 +289,7 @@ export interface Pageable_1$instance<T> extends Pageable_1$protected<T> {
 }
 
 
-export const Pageable_1: {
-    new<T>(): Pageable_1<T>;
-    new<T>(cancellationToken: CancellationToken): Pageable_1<T>;
+export const Pageable_1: (abstract new<T>() => Pageable_1<T>) & (abstract new<T>(cancellationToken: CancellationToken) => Pageable_1<T>) & {
     FromPages<T>(pages: IEnumerable__System_Collections_Generic<Page_1<T>>): Pageable_1<T>;
 };
 
@@ -310,8 +303,7 @@ export interface PageableOperation_1$instance<T> extends Operation_1<AsyncPageab
 }
 
 
-export const PageableOperation_1: {
-    new<T>(): PageableOperation_1<T>;
+export const PageableOperation_1: (abstract new<T>() => PageableOperation_1<T>) & {
 };
 
 
@@ -347,6 +339,8 @@ export const RequestContext: {
 export type RequestContext = RequestContext$instance;
 
 export interface RequestFailedException$instance extends Exception {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
     readonly ErrorCode: string | undefined;
     readonly Status: int;
     GetObjectData(info: SerializationInfo, context: StreamingContext): void;
@@ -363,36 +357,32 @@ export const RequestFailedException: {
     new(response: Response): RequestFailedException;
     new(response: Response, innerException: Exception): RequestFailedException;
     new(response: Response, innerException: Exception, detailsParser: RequestFailedDetailsParser): RequestFailedException;
-    new(info: SerializationInfo, context: StreamingContext): RequestFailedException;
 };
 
 
 export type RequestFailedException = RequestFailedException$instance;
 
-export abstract class Response$protected {
-    protected abstract ContainsHeader(name: string): boolean;
-    protected abstract EnumerateHeaders(): IEnumerable__System_Collections_Generic<HttpHeader>;
-    protected abstract TryGetHeader(name: string, value: string): boolean;
-    protected abstract TryGetHeaderValues(name: string, values: IEnumerable__System_Collections_Generic<System_Internal.String>): boolean;
-}
+export interface Response$instance {
+    readonly __tsonic_iface_System_IDisposable: never;
 
-
-export interface Response$instance extends Response$protected {
     ClientRequestId: string;
     readonly Content: BinaryData;
     get ContentStream(): Stream | undefined;
-    set ContentStream(value: Stream);
+    set ContentStream(value: Stream | undefined);
     readonly Headers: ResponseHeaders;
     IsError: boolean;
     readonly ReasonPhrase: string;
     readonly Status: int;
+    ContainsHeader(name: string): boolean;
     Dispose(): void;
+    EnumerateHeaders(): IEnumerable__System_Collections_Generic<HttpHeader>;
     ToString(): string;
+    TryGetHeader(name: string, value: string): boolean;
+    TryGetHeaderValues(name: string, values: IEnumerable__System_Collections_Generic<System_Internal.String>): boolean;
 }
 
 
-export const Response: {
-    new(): Response;
+export const Response: (abstract new() => Response) & {
     FromValue<T>(value: T, response: Response): Response_1<T>;
 };
 
@@ -407,14 +397,16 @@ export interface Response_1$instance<T> extends NullableResponse_1<T> {
 }
 
 
-export const Response_1: {
-    new<T>(): Response_1<T>;
+export const Response_1: (abstract new<T>() => Response_1<T>) & {
 };
 
 
 export type Response_1<T> = Response_1$instance<T>;
 
 export interface ResponseError$instance {
+    readonly __tsonic_iface_System_ClientModel_Primitives_IJsonModel_1: never;
+    readonly __tsonic_iface_System_ClientModel_Primitives_IPersistableModel_1: never;
+
     readonly Code: string | undefined;
     readonly Message: string | undefined;
     ToString(): string;

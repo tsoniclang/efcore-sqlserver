@@ -17,6 +17,8 @@ import type { ISerializable, SerializationInfo, StreamingContext } from "@tsonic
 import type { TaskCreationOptions } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface InvalidConfigurationException$instance extends Exception {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
 }
 
 
@@ -24,7 +26,6 @@ export const InvalidConfigurationException: {
     new(): InvalidConfigurationException;
     new(message: string): InvalidConfigurationException;
     new(message: string, innerException: Exception): InvalidConfigurationException;
-    new(info: SerializationInfo, context: StreamingContext): InvalidConfigurationException;
 };
 
 

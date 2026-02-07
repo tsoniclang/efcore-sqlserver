@@ -14,3 +14,6 @@ import type { IProperty, IReadOnlyProperty } from '@tsonic/efcore/Microsoft.Enti
 
 // Public API exports (curated - no internal $instance/$views leakage)
 export { SqlServerLoggerExtensions$instance as SqlServerLoggerExtensions } from './Microsoft.EntityFrameworkCore.SqlServer.Extensions.Internal/internal/index.js';
+// Extension methods (C# using semantics)
+export type { ExtensionMethods_Microsoft_EntityFrameworkCore_SqlServer_Extensions_Internal as ExtensionMethods } from './__internal/extensions/index.js';
+

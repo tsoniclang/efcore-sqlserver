@@ -103,6 +103,17 @@ export const JwtRegisteredClaimNames: {
 export type JwtRegisteredClaimNames = JwtRegisteredClaimNames$instance;
 
 export interface JwtHeader$instance extends Dictionary<System_Internal.String, unknown> {
+    readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IDictionary_2: never;
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyDictionary_2: never;
+    readonly __tsonic_iface_System_Collections_ICollection: never;
+    readonly __tsonic_iface_System_Collections_IDictionary: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+    readonly __tsonic_iface_System_Runtime_Serialization_IDeserializationCallback: never;
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
     Alg: string;
     Cty: string;
     Enc: string;
@@ -136,6 +147,17 @@ export const JwtHeader: {
 export type JwtHeader = JwtHeader$instance;
 
 export interface JwtPayload$instance extends Dictionary<System_Internal.String, unknown> {
+    readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IDictionary_2: never;
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyDictionary_2: never;
+    readonly __tsonic_iface_System_Collections_ICollection: never;
+    readonly __tsonic_iface_System_Collections_IDictionary: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+    readonly __tsonic_iface_System_Runtime_Serialization_IDeserializationCallback: never;
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
     readonly Acr: string;
     readonly Actort: string;
     readonly Amr: IList<System_Internal.String>;
@@ -177,6 +199,8 @@ export const JwtPayload: {
 export type JwtPayload = JwtPayload$instance;
 
 export interface JwtSecurityToken$instance extends SecurityToken {
+    readonly __tsonic_iface_Microsoft_IdentityModel_Logging_ISafeLogSecurityArtifact: never;
+
     readonly Actor: string;
     readonly Audiences: IEnumerable__System_Collections_Generic<System_Internal.String>;
     readonly Claims: IEnumerable__System_Collections_Generic<Claim>;
@@ -201,10 +225,10 @@ export interface JwtSecurityToken$instance extends SecurityToken {
     readonly SignatureAlgorithm: string;
     readonly SigningCredentials: SigningCredentials;
     SigningKey: SecurityKey;
-    readonly Subject: string | undefined;
+    readonly Subject: string;
     readonly ValidFrom: DateTime;
     readonly ValidTo: DateTime;
-    ToString(): string | undefined;
+    ToString(): string;
     UnsafeToString(): string;
 }
 
@@ -225,21 +249,9 @@ export interface __JwtSecurityToken$views {
 export type JwtSecurityToken = JwtSecurityToken$instance & __JwtSecurityToken$views;
 
 
-export abstract class JwtSecurityTokenHandler$protected {
-    protected CreateActorValue(actor: ClaimsIdentity): string;
-    protected CreateClaimsIdentity(jwtToken: JwtSecurityToken, issuer: string, validationParameters: TokenValidationParameters): ClaimsIdentity;
-    protected ResolveIssuerSigningKey(token: string, jwtToken: JwtSecurityToken, validationParameters: TokenValidationParameters): SecurityKey;
-    protected ResolveTokenDecryptionKey(token: string, jwtToken: JwtSecurityToken, validationParameters: TokenValidationParameters): SecurityKey;
-    protected ValidateAudience(audiences: IEnumerable__System_Collections_Generic<System_Internal.String>, jwtToken: JwtSecurityToken, validationParameters: TokenValidationParameters): void;
-    protected ValidateIssuer(issuer: string, jwtToken: JwtSecurityToken, validationParameters: TokenValidationParameters): string;
-    protected ValidateIssuerSecurityKey(key: SecurityKey, securityToken: JwtSecurityToken, validationParameters: TokenValidationParameters): void;
-    protected ValidateLifetime(notBefore: Nullable<DateTime>, expires: Nullable<DateTime>, jwtToken: JwtSecurityToken, validationParameters: TokenValidationParameters): void;
-    protected ValidateSignature(token: string, validationParameters: TokenValidationParameters): JwtSecurityToken;
-    protected ValidateTokenReplay(expires: Nullable<DateTime>, securityToken: string, validationParameters: TokenValidationParameters): void;
-}
+export interface JwtSecurityTokenHandler$instance extends SecurityTokenHandler {
+    readonly __tsonic_iface_Microsoft_IdentityModel_Tokens_ISecurityTokenValidator: never;
 
-
-export interface JwtSecurityTokenHandler$instance extends JwtSecurityTokenHandler$protected, SecurityTokenHandler {
     readonly CanValidateToken: boolean;
     readonly CanWriteToken: boolean;
     InboundClaimFilter: ISet<System_Internal.String>;
@@ -250,6 +262,8 @@ export interface JwtSecurityTokenHandler$instance extends JwtSecurityTokenHandle
     readonly TokenType: Type;
     CanReadToken(token: string): boolean;
     CanReadToken(reader: XmlReader): boolean;
+    CreateActorValue(actor: ClaimsIdentity): string;
+    CreateClaimsIdentity(jwtToken: JwtSecurityToken, issuer: string, validationParameters: TokenValidationParameters): ClaimsIdentity;
     CreateEncodedJwt(tokenDescriptor: SecurityTokenDescriptor): string;
     CreateEncodedJwt(issuer: string, audience: string, subject: ClaimsIdentity, notBefore: Nullable<DateTime>, expires: Nullable<DateTime>, issuedAt: Nullable<DateTime>, signingCredentials: SigningCredentials): string;
     CreateEncodedJwt(issuer: string, audience: string, subject: ClaimsIdentity, notBefore: Nullable<DateTime>, expires: Nullable<DateTime>, issuedAt: Nullable<DateTime>, signingCredentials: SigningCredentials, encryptingCredentials: EncryptingCredentials): string;
@@ -263,11 +277,19 @@ export interface JwtSecurityTokenHandler$instance extends JwtSecurityTokenHandle
     ReadToken(token: string): SecurityToken;
     ReadToken(reader: XmlReader, validationParameters: TokenValidationParameters): SecurityToken;
     ReadToken(reader: XmlReader): SecurityToken;
+    ResolveIssuerSigningKey(token: string, jwtToken: JwtSecurityToken, validationParameters: TokenValidationParameters): SecurityKey;
+    ResolveTokenDecryptionKey(token: string, jwtToken: JwtSecurityToken, validationParameters: TokenValidationParameters): SecurityKey;
+    ValidateAudience(audiences: IEnumerable__System_Collections_Generic<System_Internal.String>, jwtToken: JwtSecurityToken, validationParameters: TokenValidationParameters): void;
+    ValidateIssuer(issuer: string, jwtToken: JwtSecurityToken, validationParameters: TokenValidationParameters): string;
+    ValidateIssuerSecurityKey(key: SecurityKey, securityToken: JwtSecurityToken, validationParameters: TokenValidationParameters): void;
+    ValidateLifetime(notBefore: Nullable<DateTime>, expires: Nullable<DateTime>, jwtToken: JwtSecurityToken, validationParameters: TokenValidationParameters): void;
+    ValidateSignature(token: string, validationParameters: TokenValidationParameters): JwtSecurityToken;
     ValidateToken(token: string, validationParameters: TokenValidationParameters, validatedToken: SecurityToken): ClaimsPrincipal;
     ValidateToken(reader: XmlReader, validationParameters: TokenValidationParameters, validatedToken: SecurityToken): ClaimsPrincipal;
     ValidateTokenAsync(token: string, validationParameters: TokenValidationParameters): Task<TokenValidationResult>;
     ValidateTokenAsync(token: string, validationParameters: TokenValidationParameters): Task<TokenValidationResult>;
     ValidateTokenAsync(token: SecurityToken, validationParameters: TokenValidationParameters): Task<TokenValidationResult>;
+    ValidateTokenReplay(expires: Nullable<DateTime>, securityToken: string, validationParameters: TokenValidationParameters): void;
     WriteToken(token: SecurityToken): string;
     WriteToken(writer: XmlWriter, token: SecurityToken): void;
 }

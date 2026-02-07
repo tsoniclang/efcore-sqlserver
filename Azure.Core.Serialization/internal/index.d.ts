@@ -24,6 +24,8 @@ export enum JsonPropertyNames {
 
 
 export interface IMemberNameConverter$instance {
+    readonly __tsonic_iface_Azure_Core_Serialization_IMemberNameConverter: never;
+
     ConvertMemberName(member: MemberInfo): string | undefined;
 }
 
@@ -31,6 +33,9 @@ export interface IMemberNameConverter$instance {
 export type IMemberNameConverter = IMemberNameConverter$instance;
 
 export interface DynamicData$instance {
+    readonly __tsonic_iface_System_Dynamic_IDynamicMetaObjectProvider: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     Dispose(): void;
     Equals(obj: unknown): boolean;
     GetHashCode(): int;
@@ -39,13 +44,14 @@ export interface DynamicData$instance {
 
 
 export const DynamicData: {
-    new(): DynamicData;
 };
 
 
 export type DynamicData = DynamicData$instance;
 
 export interface JsonObjectSerializer$instance extends ObjectSerializer {
+    readonly __tsonic_iface_Azure_Core_Serialization_IMemberNameConverter: never;
+
     Deserialize(stream: Stream, returnType: Type, cancellationToken: CancellationToken): unknown | undefined;
     DeserializeAsync(stream: Stream, returnType: Type, cancellationToken: CancellationToken): ValueTask<unknown>;
     Serialize(stream: Stream, value: unknown, inputType: Type, cancellationToken: CancellationToken): void;
@@ -82,8 +88,7 @@ export interface ObjectSerializer$instance {
 }
 
 
-export const ObjectSerializer: {
-    new(): ObjectSerializer;
+export const ObjectSerializer: (abstract new() => ObjectSerializer) & {
 };
 
 

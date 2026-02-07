@@ -15,6 +15,8 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface ICustomWebUi$instance {
+    readonly __tsonic_iface_Microsoft_Identity_Client_Extensibility_ICustomWebUi: never;
+
     AcquireAuthorizationCodeAsync(authorizationUri: Uri, redirectUri: Uri, cancellationToken: CancellationToken): Task<Uri>;
 }
 
@@ -24,8 +26,7 @@ export type ICustomWebUi = ICustomWebUi$instance;
 export interface AppTokenProviderParameters$instance {
     CancellationToken: CancellationToken;
     Claims: string;
-    get CorrelationId(): string | undefined;
-    set CorrelationId(value: string);
+    CorrelationId: string;
     Scopes: IEnumerable<System_Internal.String>;
     TenantId: string;
 }

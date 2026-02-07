@@ -91,6 +91,8 @@ export type TypeValidator = (type: string, securityToken: SecurityToken, validat
 
 
 export interface ICompressionProvider$instance {
+    readonly __tsonic_iface_Microsoft_IdentityModel_Tokens_ICompressionProvider: never;
+
     readonly Algorithm: string;
     Decompress(value: byte[]): byte[];
     IsSupportedAlgorithm(algorithm: string): boolean;
@@ -100,6 +102,8 @@ export interface ICompressionProvider$instance {
 export type ICompressionProvider = ICompressionProvider$instance;
 
 export interface ICryptoProvider$instance {
+    readonly __tsonic_iface_Microsoft_IdentityModel_Tokens_ICryptoProvider: never;
+
     Create(algorithm: string, ...args: unknown[]): unknown;
     IsSupportedAlgorithm(algorithm: string, ...args: unknown[]): boolean;
     Release(cryptoInstance: unknown): void;
@@ -109,6 +113,8 @@ export interface ICryptoProvider$instance {
 export type ICryptoProvider = ICryptoProvider$instance;
 
 export interface ISecurityTokenValidator$instance {
+    readonly __tsonic_iface_Microsoft_IdentityModel_Tokens_ISecurityTokenValidator: never;
+
     readonly CanValidateToken: boolean;
     MaximumTokenSizeInBytes: int;
     CanReadToken(securityToken: string): boolean;
@@ -119,6 +125,8 @@ export interface ISecurityTokenValidator$instance {
 export type ISecurityTokenValidator = ISecurityTokenValidator$instance;
 
 export interface ITokenReplayCache$instance {
+    readonly __tsonic_iface_Microsoft_IdentityModel_Tokens_ITokenReplayCache: never;
+
     TryAdd(securityToken: string, expiresOn: DateTime): boolean;
     TryFind(securityToken: string): boolean;
 }
@@ -132,23 +140,20 @@ export interface AsymmetricSecurityKey$instance extends SecurityKey {
 }
 
 
-export const AsymmetricSecurityKey: {
-    new(): AsymmetricSecurityKey;
+export const AsymmetricSecurityKey: (abstract new() => AsymmetricSecurityKey) & {
 };
 
 
 export type AsymmetricSecurityKey = AsymmetricSecurityKey$instance;
 
-export abstract class AsymmetricSignatureProvider$protected {
-    protected Dispose2(disposing: boolean): void;
-    protected GetHashAlgorithmName(algorithm: string): HashAlgorithmName;
-}
+export interface AsymmetricSignatureProvider$instance extends SignatureProvider {
+    readonly __tsonic_iface_System_IDisposable: never;
 
-
-export interface AsymmetricSignatureProvider$instance extends AsymmetricSignatureProvider$protected, SignatureProvider {
     readonly MinimumAsymmetricKeySizeInBitsForSigningMap: IReadOnlyDictionary<System_Internal.String, System_Internal.Int32>;
     readonly MinimumAsymmetricKeySizeInBitsForVerifyingMap: IReadOnlyDictionary<System_Internal.String, System_Internal.Int32>;
+    Dispose(disposing: boolean): void;
     Dispose(): void;
+    GetHashAlgorithmName(algorithm: string): HashAlgorithmName;
     Sign(input: ReadOnlySpan<System_Internal.Byte>, signature: Span<System_Internal.Byte>, bytesWritten: int): boolean;
     Sign(input: byte[]): byte[];
     Sign(input: byte[], offset: int, count: int): byte[];
@@ -169,22 +174,20 @@ export const AsymmetricSignatureProvider: {
 
 export type AsymmetricSignatureProvider = AsymmetricSignatureProvider$instance;
 
-export abstract class AuthenticatedEncryptionProvider$protected {
-    protected Dispose(disposing: boolean): void;
-    protected GetKeyBytes(key: SecurityKey): byte[];
-    protected IsSupportedAlgorithm(key: SecurityKey, algorithm: string): boolean;
-    protected ValidateKeySize(key: SecurityKey, algorithm: string): void;
-}
+export interface AuthenticatedEncryptionProvider$instance {
+    readonly __tsonic_iface_System_IDisposable: never;
 
-
-export interface AuthenticatedEncryptionProvider$instance extends AuthenticatedEncryptionProvider$protected {
     readonly Algorithm: string;
     Context: string;
     readonly Key: SecurityKey;
     Decrypt(ciphertext: byte[], authenticatedData: byte[], iv: byte[], authenticationTag: byte[]): byte[];
     Dispose(): void;
+    Dispose(disposing: boolean): void;
     Encrypt(plaintext: byte[], authenticatedData: byte[]): AuthenticatedEncryptionResult;
     Encrypt(plaintext: byte[], authenticatedData: byte[], iv: byte[]): AuthenticatedEncryptionResult;
+    GetKeyBytes(key: SecurityKey): byte[];
+    IsSupportedAlgorithm(key: SecurityKey, algorithm: string): boolean;
+    ValidateKeySize(key: SecurityKey, algorithm: string): void;
 }
 
 
@@ -219,8 +222,7 @@ export interface BaseConfiguration$instance {
 }
 
 
-export const BaseConfiguration: {
-    new(): BaseConfiguration;
+export const BaseConfiguration: (abstract new() => BaseConfiguration) & {
 };
 
 
@@ -239,9 +241,7 @@ export interface BaseConfigurationManager$instance {
 }
 
 
-export const BaseConfigurationManager: {
-    new(): BaseConfigurationManager;
-    new(options: LKGConfigurationCacheOptions): BaseConfigurationManager;
+export const BaseConfigurationManager: (abstract new() => BaseConfigurationManager) & (abstract new(options: LKGConfigurationCacheOptions) => BaseConfigurationManager) & {
     readonly DefaultAutomaticRefreshInterval: TimeSpan;
     readonly DefaultLastKnownGoodConfigurationLifetime: TimeSpan;
     readonly DefaultRefreshInterval: TimeSpan;
@@ -265,6 +265,8 @@ export const CallContext: {
 export type CallContext = CallContext$instance;
 
 export interface CaseSensitiveClaimsIdentity$instance extends ClaimsIdentity {
+    readonly __tsonic_iface_System_Security_Principal_IIdentity: never;
+
     SecurityToken: SecurityToken;
     FindAll(type: string): IEnumerable<Claim>;
     FindFirst(type: string): Claim;
@@ -314,21 +316,16 @@ export const CompressionProviderFactory: {
 
 export type CompressionProviderFactory = CompressionProviderFactory$instance;
 
-export abstract class CryptoProviderCache$protected {
-    protected abstract GetCacheKey(signatureProvider: SignatureProvider): string;
-    protected abstract GetCacheKey(securityKey: SecurityKey, algorithm: string, typeofProvider: string): string;
-}
-
-
-export interface CryptoProviderCache$instance extends CryptoProviderCache$protected {
+export interface CryptoProviderCache$instance {
+    GetCacheKey(signatureProvider: SignatureProvider): string;
+    GetCacheKey(securityKey: SecurityKey, algorithm: string, typeofProvider: string): string;
     TryAdd(signatureProvider: SignatureProvider): boolean;
     TryGetSignatureProvider(securityKey: SecurityKey, algorithm: string, typeofProvider: string, willCreateSignatures: boolean, signatureProvider: SignatureProvider): boolean;
     TryRemove(signatureProvider: SignatureProvider): boolean;
 }
 
 
-export const CryptoProviderCache: {
-    new(): CryptoProviderCache;
+export const CryptoProviderCache: (abstract new() => CryptoProviderCache) & {
 };
 
 
@@ -384,6 +381,8 @@ export const CryptoProviderFactory: {
 export type CryptoProviderFactory = CryptoProviderFactory$instance;
 
 export interface DeflateCompressionProvider$instance {
+    readonly __tsonic_iface_Microsoft_IdentityModel_Tokens_ICompressionProvider: never;
+
     readonly Algorithm: string;
     CompressionLevel: CompressionLevel;
     MaximumDeflateSize: int;
@@ -449,7 +448,6 @@ export interface EncryptingCredentials$instance {
 
 
 export const EncryptingCredentials: {
-    new(certificate: X509Certificate2, alg: string, enc: string): EncryptingCredentials;
     new(key: SecurityKey, alg: string, enc: string): EncryptingCredentials;
     new(key: SymmetricSecurityKey, enc: string): EncryptingCredentials;
 };
@@ -457,15 +455,13 @@ export const EncryptingCredentials: {
 
 export type EncryptingCredentials = EncryptingCredentials$instance;
 
-export abstract class InMemoryCryptoProviderCache$protected {
-    protected Dispose(disposing: boolean): void;
-    protected GetCacheKey(signatureProvider: SignatureProvider): string;
-    protected GetCacheKey(securityKey: SecurityKey, algorithm: string, typeofProvider: string): string;
-}
+export interface InMemoryCryptoProviderCache$instance extends CryptoProviderCache {
+    readonly __tsonic_iface_System_IDisposable: never;
 
-
-export interface InMemoryCryptoProviderCache$instance extends InMemoryCryptoProviderCache$protected, CryptoProviderCache {
     Dispose(): void;
+    Dispose(disposing: boolean): void;
+    GetCacheKey(signatureProvider: SignatureProvider): string;
+    GetCacheKey(securityKey: SecurityKey, algorithm: string, typeofProvider: string): string;
     TryAdd(signatureProvider: SignatureProvider): boolean;
     TryGetSignatureProvider(securityKey: SecurityKey, algorithm: string, typeofProvider: string, willCreateSignatures: boolean, signatureProvider: SignatureProvider): boolean;
     TryRemove(signatureProvider: SignatureProvider): boolean;
@@ -509,7 +505,7 @@ export interface JsonWebKey$instance extends SecurityKey {
     Y: string;
     CanComputeJwkThumbprint(): boolean;
     ComputeJwkThumbprint(): byte[];
-    ToString(): string | undefined;
+    ToString(): string;
 }
 
 
@@ -557,39 +553,34 @@ export const JsonWebKeySet: {
 
 export type JsonWebKeySet = JsonWebKeySet$instance;
 
-export abstract class KeyWrapProvider$protected {
-    protected abstract Dispose(disposing: boolean): void;
-}
+export interface KeyWrapProvider$instance {
+    readonly __tsonic_iface_System_IDisposable: never;
 
-
-export interface KeyWrapProvider$instance extends KeyWrapProvider$protected {
     readonly Algorithm: string;
     Context: string;
     readonly Key: SecurityKey;
     Dispose(): void;
+    Dispose(disposing: boolean): void;
     UnwrapKey(keyBytes: byte[]): byte[];
     WrapKey(keyBytes: byte[]): byte[];
 }
 
 
-export const KeyWrapProvider: {
-    new(): KeyWrapProvider;
+export const KeyWrapProvider: (abstract new() => KeyWrapProvider) & {
 };
 
 
 export type KeyWrapProvider = KeyWrapProvider$instance;
 
-export abstract class RsaKeyWrapProvider$protected {
-    protected Dispose2(disposing: boolean): void;
-    protected IsSupportedAlgorithm(key: SecurityKey, algorithm: string): boolean;
-}
+export interface RsaKeyWrapProvider$instance extends KeyWrapProvider {
+    readonly __tsonic_iface_System_IDisposable: never;
 
-
-export interface RsaKeyWrapProvider$instance extends RsaKeyWrapProvider$protected, KeyWrapProvider {
     readonly Algorithm: string;
     Context: string;
     readonly Key: SecurityKey;
+    Dispose(disposing: boolean): void;
     Dispose(): void;
+    IsSupportedAlgorithm(key: SecurityKey, algorithm: string): boolean;
     UnwrapKey(keyBytes: byte[]): byte[];
     WrapKey(keyBytes: byte[]): byte[];
 }
@@ -628,12 +619,11 @@ export interface SecurityKey$instance {
     CanComputeJwkThumbprint(): boolean;
     ComputeJwkThumbprint(): byte[];
     IsSupportedAlgorithm(algorithm: string): boolean;
-    ToString(): string | undefined;
+    ToString(): string;
 }
 
 
-export const SecurityKey: {
-    new(): SecurityKey;
+export const SecurityKey: (abstract new() => SecurityKey) & {
 };
 
 
@@ -651,6 +641,8 @@ export const SecurityKeyIdentifierClause: {
 export type SecurityKeyIdentifierClause = SecurityKeyIdentifierClause$instance;
 
 export interface SecurityToken$instance {
+    readonly __tsonic_iface_Microsoft_IdentityModel_Logging_ISafeLogSecurityArtifact: never;
+
     readonly Id: string;
     readonly Issuer: string;
     readonly SecurityKey: SecurityKey;
@@ -661,8 +653,7 @@ export interface SecurityToken$instance {
 }
 
 
-export const SecurityToken: {
-    new(): SecurityToken;
+export const SecurityToken: (abstract new() => SecurityToken) & {
 };
 
 
@@ -676,6 +667,8 @@ export type SecurityToken = SecurityToken$instance & __SecurityToken$views;
 
 
 export interface SecurityTokenArgumentException$instance extends ArgumentException {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
 }
 
 
@@ -683,13 +676,14 @@ export const SecurityTokenArgumentException: {
     new(): SecurityTokenArgumentException;
     new(message: string): SecurityTokenArgumentException;
     new(message: string, innerException: Exception): SecurityTokenArgumentException;
-    new(info: SerializationInfo, context: StreamingContext): SecurityTokenArgumentException;
 };
 
 
 export type SecurityTokenArgumentException = SecurityTokenArgumentException$instance;
 
 export interface SecurityTokenCompressionFailedException$instance extends SecurityTokenException {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
 }
 
 
@@ -697,13 +691,14 @@ export const SecurityTokenCompressionFailedException: {
     new(): SecurityTokenCompressionFailedException;
     new(message: string): SecurityTokenCompressionFailedException;
     new(message: string, inner: Exception): SecurityTokenCompressionFailedException;
-    new(info: SerializationInfo, context: StreamingContext): SecurityTokenCompressionFailedException;
 };
 
 
 export type SecurityTokenCompressionFailedException = SecurityTokenCompressionFailedException$instance;
 
 export interface SecurityTokenDecompressionFailedException$instance extends SecurityTokenException {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
 }
 
 
@@ -711,13 +706,14 @@ export const SecurityTokenDecompressionFailedException: {
     new(): SecurityTokenDecompressionFailedException;
     new(message: string): SecurityTokenDecompressionFailedException;
     new(message: string, inner: Exception): SecurityTokenDecompressionFailedException;
-    new(info: SerializationInfo, context: StreamingContext): SecurityTokenDecompressionFailedException;
 };
 
 
 export type SecurityTokenDecompressionFailedException = SecurityTokenDecompressionFailedException$instance;
 
 export interface SecurityTokenDecryptionFailedException$instance extends SecurityTokenException {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
 }
 
 
@@ -725,7 +721,6 @@ export const SecurityTokenDecryptionFailedException: {
     new(): SecurityTokenDecryptionFailedException;
     new(message: string): SecurityTokenDecryptionFailedException;
     new(message: string, innerException: Exception): SecurityTokenDecryptionFailedException;
-    new(info: SerializationInfo, context: StreamingContext): SecurityTokenDecryptionFailedException;
 };
 
 
@@ -743,8 +738,7 @@ export interface SecurityTokenDescriptor$instance {
     Issuer: string;
     NotBefore: Nullable<DateTime>;
     SigningCredentials: SigningCredentials;
-    get Subject(): ClaimsIdentity | undefined;
-    set Subject(value: ClaimsIdentity);
+    Subject: ClaimsIdentity;
     TokenType: string;
 }
 
@@ -757,6 +751,8 @@ export const SecurityTokenDescriptor: {
 export type SecurityTokenDescriptor = SecurityTokenDescriptor$instance;
 
 export interface SecurityTokenEncryptionFailedException$instance extends SecurityTokenException {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
 }
 
 
@@ -764,13 +760,14 @@ export const SecurityTokenEncryptionFailedException: {
     new(): SecurityTokenEncryptionFailedException;
     new(message: string): SecurityTokenEncryptionFailedException;
     new(message: string, innerException: Exception): SecurityTokenEncryptionFailedException;
-    new(info: SerializationInfo, context: StreamingContext): SecurityTokenEncryptionFailedException;
 };
 
 
 export type SecurityTokenEncryptionFailedException = SecurityTokenEncryptionFailedException$instance;
 
 export interface SecurityTokenEncryptionKeyNotFoundException$instance extends SecurityTokenDecryptionFailedException {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
 }
 
 
@@ -778,13 +775,14 @@ export const SecurityTokenEncryptionKeyNotFoundException: {
     new(): SecurityTokenEncryptionKeyNotFoundException;
     new(message: string): SecurityTokenEncryptionKeyNotFoundException;
     new(message: string, innerException: Exception): SecurityTokenEncryptionKeyNotFoundException;
-    new(info: SerializationInfo, context: StreamingContext): SecurityTokenEncryptionKeyNotFoundException;
 };
 
 
 export type SecurityTokenEncryptionKeyNotFoundException = SecurityTokenEncryptionKeyNotFoundException$instance;
 
 export interface SecurityTokenException$instance extends Exception {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
     GetObjectData(info: SerializationInfo, context: StreamingContext): void;
 }
 
@@ -793,13 +791,14 @@ export const SecurityTokenException: {
     new(): SecurityTokenException;
     new(message: string): SecurityTokenException;
     new(message: string, innerException: Exception): SecurityTokenException;
-    new(info: SerializationInfo, context: StreamingContext): SecurityTokenException;
 };
 
 
 export type SecurityTokenException = SecurityTokenException$instance;
 
 export interface SecurityTokenExpiredException$instance extends SecurityTokenValidationException {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
     Expires: DateTime;
     GetObjectData(info: SerializationInfo, context: StreamingContext): void;
 }
@@ -809,13 +808,14 @@ export const SecurityTokenExpiredException: {
     new(): SecurityTokenExpiredException;
     new(message: string): SecurityTokenExpiredException;
     new(message: string, inner: Exception): SecurityTokenExpiredException;
-    new(info: SerializationInfo, context: StreamingContext): SecurityTokenExpiredException;
 };
 
 
 export type SecurityTokenExpiredException = SecurityTokenExpiredException$instance;
 
 export interface SecurityTokenHandler$instance extends TokenHandler {
+    readonly __tsonic_iface_Microsoft_IdentityModel_Tokens_ISecurityTokenValidator: never;
+
     readonly CanValidateToken: boolean;
     readonly CanWriteToken: boolean;
     readonly TokenType: Type;
@@ -831,8 +831,7 @@ export interface SecurityTokenHandler$instance extends TokenHandler {
 }
 
 
-export const SecurityTokenHandler: {
-    new(): SecurityTokenHandler;
+export const SecurityTokenHandler: (abstract new() => SecurityTokenHandler) & {
 };
 
 
@@ -846,6 +845,8 @@ export type SecurityTokenHandler = SecurityTokenHandler$instance & __SecurityTok
 
 
 export interface SecurityTokenInvalidAlgorithmException$instance extends SecurityTokenValidationException {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
     InvalidAlgorithm: string;
     GetObjectData(info: SerializationInfo, context: StreamingContext): void;
 }
@@ -855,13 +856,14 @@ export const SecurityTokenInvalidAlgorithmException: {
     new(): SecurityTokenInvalidAlgorithmException;
     new(message: string): SecurityTokenInvalidAlgorithmException;
     new(message: string, innerException: Exception): SecurityTokenInvalidAlgorithmException;
-    new(info: SerializationInfo, context: StreamingContext): SecurityTokenInvalidAlgorithmException;
 };
 
 
 export type SecurityTokenInvalidAlgorithmException = SecurityTokenInvalidAlgorithmException$instance;
 
 export interface SecurityTokenInvalidAudienceException$instance extends SecurityTokenValidationException {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
     InvalidAudience: string;
     GetObjectData(info: SerializationInfo, context: StreamingContext): void;
 }
@@ -871,13 +873,14 @@ export const SecurityTokenInvalidAudienceException: {
     new(): SecurityTokenInvalidAudienceException;
     new(message: string): SecurityTokenInvalidAudienceException;
     new(message: string, innerException: Exception): SecurityTokenInvalidAudienceException;
-    new(info: SerializationInfo, context: StreamingContext): SecurityTokenInvalidAudienceException;
 };
 
 
 export type SecurityTokenInvalidAudienceException = SecurityTokenInvalidAudienceException$instance;
 
 export interface SecurityTokenInvalidIssuerException$instance extends SecurityTokenValidationException {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
     InvalidIssuer: string;
     GetObjectData(info: SerializationInfo, context: StreamingContext): void;
 }
@@ -887,13 +890,14 @@ export const SecurityTokenInvalidIssuerException: {
     new(): SecurityTokenInvalidIssuerException;
     new(message: string): SecurityTokenInvalidIssuerException;
     new(message: string, innerException: Exception): SecurityTokenInvalidIssuerException;
-    new(info: SerializationInfo, context: StreamingContext): SecurityTokenInvalidIssuerException;
 };
 
 
 export type SecurityTokenInvalidIssuerException = SecurityTokenInvalidIssuerException$instance;
 
 export interface SecurityTokenInvalidLifetimeException$instance extends SecurityTokenValidationException {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
     Expires: Nullable<DateTime>;
     NotBefore: Nullable<DateTime>;
     GetObjectData(info: SerializationInfo, context: StreamingContext): void;
@@ -904,13 +908,14 @@ export const SecurityTokenInvalidLifetimeException: {
     new(): SecurityTokenInvalidLifetimeException;
     new(message: string): SecurityTokenInvalidLifetimeException;
     new(message: string, innerException: Exception): SecurityTokenInvalidLifetimeException;
-    new(info: SerializationInfo, context: StreamingContext): SecurityTokenInvalidLifetimeException;
 };
 
 
 export type SecurityTokenInvalidLifetimeException = SecurityTokenInvalidLifetimeException$instance;
 
 export interface SecurityTokenInvalidSignatureException$instance extends SecurityTokenValidationException {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
 }
 
 
@@ -918,13 +923,14 @@ export const SecurityTokenInvalidSignatureException: {
     new(): SecurityTokenInvalidSignatureException;
     new(message: string): SecurityTokenInvalidSignatureException;
     new(message: string, innerException: Exception): SecurityTokenInvalidSignatureException;
-    new(info: SerializationInfo, context: StreamingContext): SecurityTokenInvalidSignatureException;
 };
 
 
 export type SecurityTokenInvalidSignatureException = SecurityTokenInvalidSignatureException$instance;
 
 export interface SecurityTokenInvalidSigningKeyException$instance extends SecurityTokenValidationException {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
     SigningKey: SecurityKey;
 }
 
@@ -933,13 +939,14 @@ export const SecurityTokenInvalidSigningKeyException: {
     new(): SecurityTokenInvalidSigningKeyException;
     new(message: string): SecurityTokenInvalidSigningKeyException;
     new(message: string, inner: Exception): SecurityTokenInvalidSigningKeyException;
-    new(info: SerializationInfo, context: StreamingContext): SecurityTokenInvalidSigningKeyException;
 };
 
 
 export type SecurityTokenInvalidSigningKeyException = SecurityTokenInvalidSigningKeyException$instance;
 
 export interface SecurityTokenInvalidTypeException$instance extends SecurityTokenValidationException {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
     InvalidType: string;
     GetObjectData(info: SerializationInfo, context: StreamingContext): void;
 }
@@ -949,13 +956,14 @@ export const SecurityTokenInvalidTypeException: {
     new(): SecurityTokenInvalidTypeException;
     new(message: string): SecurityTokenInvalidTypeException;
     new(message: string, innerException: Exception): SecurityTokenInvalidTypeException;
-    new(info: SerializationInfo, context: StreamingContext): SecurityTokenInvalidTypeException;
 };
 
 
 export type SecurityTokenInvalidTypeException = SecurityTokenInvalidTypeException$instance;
 
 export interface SecurityTokenKeyWrapException$instance extends SecurityTokenException {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
 }
 
 
@@ -963,13 +971,14 @@ export const SecurityTokenKeyWrapException: {
     new(): SecurityTokenKeyWrapException;
     new(message: string): SecurityTokenKeyWrapException;
     new(message: string, innerException: Exception): SecurityTokenKeyWrapException;
-    new(info: SerializationInfo, context: StreamingContext): SecurityTokenKeyWrapException;
 };
 
 
 export type SecurityTokenKeyWrapException = SecurityTokenKeyWrapException$instance;
 
 export interface SecurityTokenMalformedException$instance extends SecurityTokenArgumentException {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
 }
 
 
@@ -977,13 +986,14 @@ export const SecurityTokenMalformedException: {
     new(): SecurityTokenMalformedException;
     new(message: string): SecurityTokenMalformedException;
     new(message: string, innerException: Exception): SecurityTokenMalformedException;
-    new(info: SerializationInfo, context: StreamingContext): SecurityTokenMalformedException;
 };
 
 
 export type SecurityTokenMalformedException = SecurityTokenMalformedException$instance;
 
 export interface SecurityTokenNoExpirationException$instance extends SecurityTokenValidationException {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
 }
 
 
@@ -991,13 +1001,14 @@ export const SecurityTokenNoExpirationException: {
     new(): SecurityTokenNoExpirationException;
     new(message: string): SecurityTokenNoExpirationException;
     new(message: string, innerException: Exception): SecurityTokenNoExpirationException;
-    new(info: SerializationInfo, context: StreamingContext): SecurityTokenNoExpirationException;
 };
 
 
 export type SecurityTokenNoExpirationException = SecurityTokenNoExpirationException$instance;
 
 export interface SecurityTokenNotYetValidException$instance extends SecurityTokenValidationException {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
     NotBefore: DateTime;
     GetObjectData(info: SerializationInfo, context: StreamingContext): void;
 }
@@ -1007,13 +1018,14 @@ export const SecurityTokenNotYetValidException: {
     new(): SecurityTokenNotYetValidException;
     new(message: string): SecurityTokenNotYetValidException;
     new(message: string, inner: Exception): SecurityTokenNotYetValidException;
-    new(info: SerializationInfo, context: StreamingContext): SecurityTokenNotYetValidException;
 };
 
 
 export type SecurityTokenNotYetValidException = SecurityTokenNotYetValidException$instance;
 
 export interface SecurityTokenReplayAddFailedException$instance extends SecurityTokenValidationException {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
 }
 
 
@@ -1021,13 +1033,14 @@ export const SecurityTokenReplayAddFailedException: {
     new(): SecurityTokenReplayAddFailedException;
     new(message: string): SecurityTokenReplayAddFailedException;
     new(message: string, innerException: Exception): SecurityTokenReplayAddFailedException;
-    new(info: SerializationInfo, context: StreamingContext): SecurityTokenReplayAddFailedException;
 };
 
 
 export type SecurityTokenReplayAddFailedException = SecurityTokenReplayAddFailedException$instance;
 
 export interface SecurityTokenReplayDetectedException$instance extends SecurityTokenValidationException {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
 }
 
 
@@ -1035,13 +1048,14 @@ export const SecurityTokenReplayDetectedException: {
     new(): SecurityTokenReplayDetectedException;
     new(message: string): SecurityTokenReplayDetectedException;
     new(message: string, inner: Exception): SecurityTokenReplayDetectedException;
-    new(info: SerializationInfo, context: StreamingContext): SecurityTokenReplayDetectedException;
 };
 
 
 export type SecurityTokenReplayDetectedException = SecurityTokenReplayDetectedException$instance;
 
 export interface SecurityTokenSignatureKeyNotFoundException$instance extends SecurityTokenInvalidSignatureException {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
 }
 
 
@@ -1049,13 +1063,14 @@ export const SecurityTokenSignatureKeyNotFoundException: {
     new(): SecurityTokenSignatureKeyNotFoundException;
     new(message: string): SecurityTokenSignatureKeyNotFoundException;
     new(message: string, innerException: Exception): SecurityTokenSignatureKeyNotFoundException;
-    new(info: SerializationInfo, context: StreamingContext): SecurityTokenSignatureKeyNotFoundException;
 };
 
 
 export type SecurityTokenSignatureKeyNotFoundException = SecurityTokenSignatureKeyNotFoundException$instance;
 
 export interface SecurityTokenUnableToValidateException$instance extends SecurityTokenInvalidSignatureException {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
     ValidationFailure: ValidationFailure;
     GetObjectData(info: SerializationInfo, context: StreamingContext): void;
 }
@@ -1066,13 +1081,14 @@ export const SecurityTokenUnableToValidateException: {
     new(validationFailure: ValidationFailure, message: string): SecurityTokenUnableToValidateException;
     new(message: string): SecurityTokenUnableToValidateException;
     new(message: string, innerException: Exception): SecurityTokenUnableToValidateException;
-    new(info: SerializationInfo, context: StreamingContext): SecurityTokenUnableToValidateException;
 };
 
 
 export type SecurityTokenUnableToValidateException = SecurityTokenUnableToValidateException$instance;
 
 export interface SecurityTokenValidationException$instance extends SecurityTokenException {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
 }
 
 
@@ -1080,24 +1096,21 @@ export const SecurityTokenValidationException: {
     new(): SecurityTokenValidationException;
     new(message: string): SecurityTokenValidationException;
     new(message: string, innerException: Exception): SecurityTokenValidationException;
-    new(info: SerializationInfo, context: StreamingContext): SecurityTokenValidationException;
 };
 
 
 export type SecurityTokenValidationException = SecurityTokenValidationException$instance;
 
-export abstract class SignatureProvider$protected {
-    protected abstract Dispose(disposing: boolean): void;
-}
+export interface SignatureProvider$instance {
+    readonly __tsonic_iface_System_IDisposable: never;
 
-
-export interface SignatureProvider$instance extends SignatureProvider$protected {
     Algorithm: string;
     Context: string;
     CryptoProviderCache: CryptoProviderCache;
     Key: SecurityKey;
     WillCreateSignatures: boolean;
     Dispose(): void;
+    Dispose(disposing: boolean): void;
     Sign(input: byte[]): byte[];
     Sign(input: byte[], offset: int, count: int): byte[];
     Sign(data: ReadOnlySpan<System_Internal.Byte>, destination: Span<System_Internal.Byte>, bytesWritten: int): boolean;
@@ -1106,8 +1119,7 @@ export interface SignatureProvider$instance extends SignatureProvider$protected 
 }
 
 
-export const SignatureProvider: {
-    new(key: SecurityKey, algorithm: string): SignatureProvider;
+export const SignatureProvider: (abstract new(key: SecurityKey, algorithm: string) => SignatureProvider) & {
 };
 
 
@@ -1123,8 +1135,6 @@ export interface SigningCredentials$instance {
 
 
 export const SigningCredentials: {
-    new(certificate: X509Certificate2): SigningCredentials;
-    new(certificate: X509Certificate2, algorithm: string): SigningCredentials;
     new(key: SecurityKey, algorithm: string): SigningCredentials;
     new(key: SecurityKey, algorithm: string, digest: string): SigningCredentials;
 };
@@ -1132,18 +1142,16 @@ export const SigningCredentials: {
 
 export type SigningCredentials = SigningCredentials$instance;
 
-export abstract class SymmetricKeyWrapProvider$protected {
-    protected Dispose2(disposing: boolean): void;
-    protected GetSymmetricAlgorithm(key: SecurityKey, algorithm: string): SymmetricAlgorithm;
-    protected IsSupportedAlgorithm(key: SecurityKey, algorithm: string): boolean;
-}
+export interface SymmetricKeyWrapProvider$instance extends KeyWrapProvider {
+    readonly __tsonic_iface_System_IDisposable: never;
 
-
-export interface SymmetricKeyWrapProvider$instance extends SymmetricKeyWrapProvider$protected, KeyWrapProvider {
     readonly Algorithm: string;
     Context: string;
     readonly Key: SecurityKey;
+    Dispose(disposing: boolean): void;
     Dispose(): void;
+    GetSymmetricAlgorithm(key: SecurityKey, algorithm: string): SymmetricAlgorithm;
+    IsSupportedAlgorithm(key: SecurityKey, algorithm: string): boolean;
     UnwrapKey(keyBytes: byte[]): byte[];
     WrapKey(keyBytes: byte[]): byte[];
 }
@@ -1171,17 +1179,15 @@ export const SymmetricSecurityKey: {
 
 export type SymmetricSecurityKey = SymmetricSecurityKey$instance;
 
-export abstract class SymmetricSignatureProvider$protected {
-    protected Dispose2(disposing: boolean): void;
-    protected GetKeyBytes(key: SecurityKey): byte[];
-    protected GetKeyedHashAlgorithm(keyBytes: byte[], algorithm: string): KeyedHashAlgorithm;
-    protected ReleaseKeyedHashAlgorithm(keyedHashAlgorithm: KeyedHashAlgorithm): void;
-}
+export interface SymmetricSignatureProvider$instance extends SignatureProvider {
+    readonly __tsonic_iface_System_IDisposable: never;
 
-
-export interface SymmetricSignatureProvider$instance extends SymmetricSignatureProvider$protected, SignatureProvider {
     MinimumSymmetricKeySizeInBits: int;
+    Dispose(disposing: boolean): void;
     Dispose(): void;
+    GetKeyBytes(key: SecurityKey): byte[];
+    GetKeyedHashAlgorithm(keyBytes: byte[], algorithm: string): KeyedHashAlgorithm;
+    ReleaseKeyedHashAlgorithm(keyedHashAlgorithm: KeyedHashAlgorithm): void;
     Sign(input: byte[]): byte[];
     Sign(input: ReadOnlySpan<System_Internal.Byte>, signature: Span<System_Internal.Byte>, bytesWritten: int): boolean;
     Sign(input: byte[], offset: int, count: int): byte[];
@@ -1223,8 +1229,7 @@ export interface TokenHandler$instance {
 }
 
 
-export const TokenHandler: {
-    new(): TokenHandler;
+export const TokenHandler: (abstract new() => TokenHandler) & {
     readonly DefaultTokenLifetimeInMinutes: int;
 };
 
@@ -1296,7 +1301,6 @@ export interface TokenValidationParameters$instance {
 
 
 export const TokenValidationParameters: {
-    new(other: TokenValidationParameters): TokenValidationParameters;
     new(): TokenValidationParameters;
     readonly DefaultAuthenticationType: string;
     readonly DefaultClockSkew: TimeSpan;
@@ -1328,8 +1332,7 @@ export const TokenValidationResult: {
 export type TokenValidationResult = TokenValidationResult$instance;
 
 export interface X509EncryptingCredentials$instance extends EncryptingCredentials {
-    get Certificate(): X509Certificate2 | undefined;
-    set Certificate(value: X509Certificate2);
+    Certificate: X509Certificate2;
 }
 
 
@@ -1342,8 +1345,7 @@ export const X509EncryptingCredentials: {
 export type X509EncryptingCredentials = X509EncryptingCredentials$instance;
 
 export interface X509SecurityKey$instance extends AsymmetricSecurityKey {
-    get Certificate(): X509Certificate2 | undefined;
-    set Certificate(value: X509Certificate2);
+    Certificate: X509Certificate2;
     readonly HasPrivateKey: boolean;
     readonly KeySize: int;
     readonly PrivateKey: AsymmetricAlgorithm;
@@ -1366,8 +1368,7 @@ export const X509SecurityKey: {
 export type X509SecurityKey = X509SecurityKey$instance;
 
 export interface X509SigningCredentials$instance extends SigningCredentials {
-    get Certificate(): X509Certificate2 | undefined;
-    set Certificate(value: X509Certificate2);
+    Certificate: X509Certificate2;
 }
 
 

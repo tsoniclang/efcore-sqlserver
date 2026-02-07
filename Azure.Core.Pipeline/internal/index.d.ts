@@ -17,15 +17,11 @@ import type { X509Certificate2, X509Chain } from "@tsonic/dotnet/System.Security
 import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
-export abstract class BearerTokenAuthenticationPolicy$protected {
-    protected AuthorizeRequest(message: HttpMessage): void;
-    protected AuthorizeRequestAsync(message: HttpMessage): ValueTask;
-    protected AuthorizeRequestOnChallenge(message: HttpMessage): boolean;
-    protected AuthorizeRequestOnChallengeAsync(message: HttpMessage): ValueTask<System_Internal.Boolean>;
-}
-
-
-export interface BearerTokenAuthenticationPolicy$instance extends BearerTokenAuthenticationPolicy$protected, HttpPipelinePolicy {
+export interface BearerTokenAuthenticationPolicy$instance extends HttpPipelinePolicy {
+    AuthorizeRequest(message: HttpMessage): void;
+    AuthorizeRequestAsync(message: HttpMessage): ValueTask;
+    AuthorizeRequestOnChallenge(message: HttpMessage): boolean;
+    AuthorizeRequestOnChallengeAsync(message: HttpMessage): ValueTask<System_Internal.Boolean>;
     Process(message: HttpMessage, pipeline: ReadOnlyMemory<HttpPipelinePolicy>): void;
     ProcessAsync(message: HttpMessage, pipeline: ReadOnlyMemory<HttpPipelinePolicy>): ValueTask;
 }
@@ -40,18 +36,21 @@ export const BearerTokenAuthenticationPolicy: {
 export type BearerTokenAuthenticationPolicy = BearerTokenAuthenticationPolicy$instance;
 
 export interface DisposableHttpPipeline$instance extends HttpPipeline {
+    readonly __tsonic_iface_System_IDisposable: never;
+
     Dispose(): void;
 }
 
 
 export const DisposableHttpPipeline: {
-    new(): DisposableHttpPipeline;
 };
 
 
 export type DisposableHttpPipeline = DisposableHttpPipeline$instance;
 
 export interface HttpClientTransport$instance extends HttpPipelineTransport {
+    readonly __tsonic_iface_System_IDisposable: never;
+
     CreateRequest(): Request;
     Dispose(): void;
     Process(message: HttpMessage): void;
@@ -96,7 +95,8 @@ export interface HttpPipelineOptions$instance {
     readonly PerCallPolicies: IList<HttpPipelinePolicy>;
     readonly PerRetryPolicies: IList<HttpPipelinePolicy>;
     RequestFailedDetailsParser: RequestFailedDetailsParser;
-    ResponseClassifier: ResponseClassifier;
+    get ResponseClassifier(): ResponseClassifier | undefined;
+    set ResponseClassifier(value: ResponseClassifier | undefined);
 }
 
 
@@ -113,8 +113,7 @@ export interface HttpPipelinePolicy$instance {
 }
 
 
-export const HttpPipelinePolicy: {
-    new(): HttpPipelinePolicy;
+export const HttpPipelinePolicy: (abstract new() => HttpPipelinePolicy) & {
     ProcessNext(message: HttpMessage, pipeline: ReadOnlyMemory<HttpPipelinePolicy>): void;
     ProcessNextAsync(message: HttpMessage, pipeline: ReadOnlyMemory<HttpPipelinePolicy>): ValueTask;
 };
@@ -132,8 +131,7 @@ export interface HttpPipelineSynchronousPolicy$instance extends HttpPipelinePoli
 }
 
 
-export const HttpPipelineSynchronousPolicy: {
-    new(): HttpPipelineSynchronousPolicy;
+export const HttpPipelineSynchronousPolicy: (abstract new() => HttpPipelineSynchronousPolicy) & {
 };
 
 
@@ -146,8 +144,7 @@ export interface HttpPipelineTransport$instance {
 }
 
 
-export const HttpPipelineTransport: {
-    new(): HttpPipelineTransport;
+export const HttpPipelineTransport: (abstract new() => HttpPipelineTransport) & {
 };
 
 
@@ -157,7 +154,7 @@ export interface HttpPipelineTransportOptions$instance {
     readonly ClientCertificates: IList<X509Certificate2>;
     IsClientRedirectEnabled: boolean;
     get ServerCertificateCustomValidationCallback(): Func<ServerCertificateCustomValidationArgs, System_Internal.Boolean> | undefined;
-    set ServerCertificateCustomValidationCallback(value: Func<ServerCertificateCustomValidationArgs, System_Internal.Boolean>);
+    set ServerCertificateCustomValidationCallback(value: Func<ServerCertificateCustomValidationArgs, System_Internal.Boolean> | undefined);
 }
 
 
@@ -175,26 +172,21 @@ export interface RedirectPolicy$instance extends HttpPipelinePolicy {
 
 
 export const RedirectPolicy: {
-    new(): RedirectPolicy;
     SetAllowAutoRedirect(message: HttpMessage, allowAutoRedirect: boolean): void;
 };
 
 
 export type RedirectPolicy = RedirectPolicy$instance;
 
-export abstract class RetryPolicy$protected {
-    protected OnRequestSent(message: HttpMessage): void;
-    protected OnRequestSentAsync(message: HttpMessage): ValueTask;
-    protected OnSendingRequest(message: HttpMessage): void;
-    protected OnSendingRequestAsync(message: HttpMessage): ValueTask;
-    protected ShouldRetry(message: HttpMessage, exception: Exception): boolean;
-    protected ShouldRetryAsync(message: HttpMessage, exception: Exception): ValueTask<System_Internal.Boolean>;
-}
-
-
-export interface RetryPolicy$instance extends RetryPolicy$protected, HttpPipelinePolicy {
+export interface RetryPolicy$instance extends HttpPipelinePolicy {
+    OnRequestSent(message: HttpMessage): void;
+    OnRequestSentAsync(message: HttpMessage): ValueTask;
+    OnSendingRequest(message: HttpMessage): void;
+    OnSendingRequestAsync(message: HttpMessage): ValueTask;
     Process(message: HttpMessage, pipeline: ReadOnlyMemory<HttpPipelinePolicy>): void;
     ProcessAsync(message: HttpMessage, pipeline: ReadOnlyMemory<HttpPipelinePolicy>): ValueTask;
+    ShouldRetry(message: HttpMessage, exception: Exception): boolean;
+    ShouldRetryAsync(message: HttpMessage, exception: Exception): ValueTask<System_Internal.Boolean>;
 }
 
 

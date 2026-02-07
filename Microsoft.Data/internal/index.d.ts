@@ -13,11 +13,12 @@ import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Ru
 import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization.js";
 
 export interface OperationAbortedException$instance extends SystemException {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
 }
 
 
 export const OperationAbortedException: {
-    new(): OperationAbortedException;
 };
 
 

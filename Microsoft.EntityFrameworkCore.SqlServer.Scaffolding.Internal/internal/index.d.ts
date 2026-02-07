@@ -18,6 +18,8 @@ import type { DatabaseModel } from "@tsonic/efcore/Microsoft.EntityFrameworkCore
 import type { IRelationalTypeMappingSource } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
 
 export interface SqlServerCodeGenerator$instance extends ProviderCodeGenerator {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Scaffolding_IProviderConfigurationCodeGenerator: never;
+
     GenerateUseProvider(connectionString: string, providerOptions: MethodCallCodeFragment): MethodCallCodeFragment;
 }
 
@@ -30,6 +32,8 @@ export const SqlServerCodeGenerator: {
 export type SqlServerCodeGenerator = SqlServerCodeGenerator$instance;
 
 export interface SqlServerDatabaseModelFactory$instance extends DatabaseModelFactory {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Scaffolding_IDatabaseModelFactory: never;
+
     Create(connectionString: string, options: DatabaseModelFactoryOptions): DatabaseModel;
     Create(connection: DbConnection, options: DatabaseModelFactoryOptions): DatabaseModel;
 }
