@@ -9,19 +9,19 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 import * as System_Internal from "@tsonic/dotnet/System.js";
 import * as Microsoft_EntityFrameworkCore_SqlServer_Infrastructure_Internal_Internal from "../../Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal/internal/index.js";
 import type { SqlServerOptionsExtension } from "../../Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal/internal/index.js";
-import type { ICollection, IEnumerable } from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { Boolean as ClrBoolean, Int32, TimeSpan } from "@tsonic/dotnet/System.js";
-import * as Microsoft_EntityFrameworkCore_Infrastructure_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure.js";
-import type { IRelationalDbContextOptionsBuilderInfrastructure, RelationalDbContextOptionsBuilder } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure.js";
-import type { DbContextOptionsBuilder } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.js";
+import type { ICollection_1, IEnumerable_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { Boolean as ClrBoolean, Int32, TimeSpan } from "@tsonic/dotnet/System/internal/index.js";
+import * as Microsoft_EntityFrameworkCore_Infrastructure_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure/internal/index.js";
+import type { IRelationalDbContextOptionsBuilderInfrastructure, RelationalDbContextOptionsBuilder_2 } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure/internal/index.js";
+import type { DbContextOptionsBuilder } from "@tsonic/efcore/Microsoft.EntityFrameworkCore/internal/index.js";
 
 export interface AzureSqlDbContextOptionsBuilder$instance extends SqlEngineDbContextOptionsBuilderBase_1<AzureSqlDbContextOptionsBuilder> {
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IRelationalDbContextOptionsBuilderInfrastructure: never;
 
     EnableRetryOnFailure(): AzureSqlDbContextOptionsBuilder;
     EnableRetryOnFailure(maxRetryCount: int): AzureSqlDbContextOptionsBuilder;
-    EnableRetryOnFailure(errorNumbersToAdd: ICollection<System_Internal.Int32>): AzureSqlDbContextOptionsBuilder;
-    EnableRetryOnFailure(maxRetryCount: int, maxRetryDelay: TimeSpan, errorNumbersToAdd: IEnumerable<System_Internal.Int32>): AzureSqlDbContextOptionsBuilder;
+    EnableRetryOnFailure(errorNumbersToAdd: ICollection_1<System_Internal.Int32>): AzureSqlDbContextOptionsBuilder;
+    EnableRetryOnFailure(maxRetryCount: int, maxRetryDelay: TimeSpan, errorNumbersToAdd: IEnumerable_1<System_Internal.Int32>): AzureSqlDbContextOptionsBuilder;
     UseCompatibilityLevel(compatibilityLevel: int): AzureSqlDbContextOptionsBuilder;
 }
 
@@ -38,8 +38,8 @@ export interface AzureSynapseDbContextOptionsBuilder$instance extends SqlEngineD
 
     EnableRetryOnFailure(): AzureSynapseDbContextOptionsBuilder;
     EnableRetryOnFailure(maxRetryCount: int): AzureSynapseDbContextOptionsBuilder;
-    EnableRetryOnFailure(errorNumbersToAdd: ICollection<System_Internal.Int32>): AzureSynapseDbContextOptionsBuilder;
-    EnableRetryOnFailure(maxRetryCount: int, maxRetryDelay: TimeSpan, errorNumbersToAdd: IEnumerable<System_Internal.Int32>): AzureSynapseDbContextOptionsBuilder;
+    EnableRetryOnFailure(errorNumbersToAdd: ICollection_1<System_Internal.Int32>): AzureSynapseDbContextOptionsBuilder;
+    EnableRetryOnFailure(maxRetryCount: int, maxRetryDelay: TimeSpan, errorNumbersToAdd: IEnumerable_1<System_Internal.Int32>): AzureSynapseDbContextOptionsBuilder;
     UseCompatibilityLevel(compatibilityLevel: int): AzureSynapseDbContextOptionsBuilder;
 }
 
@@ -56,8 +56,8 @@ export interface SqlEngineDbContextOptionsBuilder$instance extends SqlEngineDbCo
 
     EnableRetryOnFailure(): SqlEngineDbContextOptionsBuilder;
     EnableRetryOnFailure(maxRetryCount: int): SqlEngineDbContextOptionsBuilder;
-    EnableRetryOnFailure(errorNumbersToAdd: ICollection<System_Internal.Int32>): SqlEngineDbContextOptionsBuilder;
-    EnableRetryOnFailure(maxRetryCount: int, maxRetryDelay: TimeSpan, errorNumbersToAdd: IEnumerable<System_Internal.Int32>): SqlEngineDbContextOptionsBuilder;
+    EnableRetryOnFailure(errorNumbersToAdd: ICollection_1<System_Internal.Int32>): SqlEngineDbContextOptionsBuilder;
+    EnableRetryOnFailure(maxRetryCount: int, maxRetryDelay: TimeSpan, errorNumbersToAdd: IEnumerable_1<System_Internal.Int32>): SqlEngineDbContextOptionsBuilder;
     EnableRetryOnFailureByDefault(): SqlEngineDbContextOptionsBuilder;
 }
 
@@ -69,7 +69,7 @@ export const SqlEngineDbContextOptionsBuilder: {
 
 export type SqlEngineDbContextOptionsBuilder = SqlEngineDbContextOptionsBuilder$instance;
 
-export interface SqlEngineDbContextOptionsBuilderBase_1$instance<TSelf extends SqlEngineDbContextOptionsBuilderBase_1<TSelf>> extends RelationalDbContextOptionsBuilder<TSelf, SqlServerOptionsExtension> {
+export interface SqlEngineDbContextOptionsBuilderBase_1$instance<TSelf extends SqlEngineDbContextOptionsBuilderBase_1<TSelf>> extends RelationalDbContextOptionsBuilder_2<TSelf, SqlServerOptionsExtension> {
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IRelationalDbContextOptionsBuilderInfrastructure: never;
 
 }
@@ -86,8 +86,8 @@ export interface SqlServerDbContextOptionsBuilder$instance extends SqlEngineDbCo
 
     EnableRetryOnFailure(): SqlServerDbContextOptionsBuilder;
     EnableRetryOnFailure(maxRetryCount: int): SqlServerDbContextOptionsBuilder;
-    EnableRetryOnFailure(errorNumbersToAdd: ICollection<System_Internal.Int32>): SqlServerDbContextOptionsBuilder;
-    EnableRetryOnFailure(maxRetryCount: int, maxRetryDelay: TimeSpan, errorNumbersToAdd: IEnumerable<System_Internal.Int32>): SqlServerDbContextOptionsBuilder;
+    EnableRetryOnFailure(errorNumbersToAdd: ICollection_1<System_Internal.Int32>): SqlServerDbContextOptionsBuilder;
+    EnableRetryOnFailure(maxRetryCount: int, maxRetryDelay: TimeSpan, errorNumbersToAdd: IEnumerable_1<System_Internal.Int32>): SqlServerDbContextOptionsBuilder;
     UseAzureSqlDefaults(enable?: boolean): SqlServerDbContextOptionsBuilder;
     UseCompatibilityLevel(compatibilityLevel: int): SqlServerDbContextOptionsBuilder;
 }

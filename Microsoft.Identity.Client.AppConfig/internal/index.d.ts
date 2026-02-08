@@ -7,9 +7,9 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 
 // Import types from other namespaces
 import type { IPoPCryptoProvider } from "../../Microsoft.Identity.Client.AuthScheme.PoP/internal/index.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString, Uri } from "@tsonic/dotnet/System.js";
-import type { HttpMethod, HttpRequestMessage } from "@tsonic/dotnet/System.Net.Http.js";
+import type { HttpMethod, HttpRequestMessage } from "@tsonic/dotnet/System.Net.Http/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString, Uri } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface ManagedIdentityId$instance {
 }

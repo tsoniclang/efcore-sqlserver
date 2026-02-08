@@ -7,12 +7,12 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 
 // Import types from other namespaces
 import type { EventLogLevel, IIdentityLogger } from "../../Microsoft.IdentityModel.Abstractions/internal/index.js";
-import type { ICollection, IDictionary } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Diagnostics_Tracing_Internal from "@tsonic/dotnet/System.Diagnostics.Tracing.js";
-import type { EventLevel, EventListener, EventSource, EventWrittenEventArgs } from "@tsonic/dotnet/System.Diagnostics.Tracing.js";
-import type { StreamWriter } from "@tsonic/dotnet/System.IO.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { ArgumentException, ArgumentNullException, Boolean as ClrBoolean, Exception, Func, Guid, IDisposable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
+import type { ICollection_1, IDictionary_2 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Diagnostics_Tracing_Internal from "@tsonic/dotnet/System.Diagnostics.Tracing/internal/index.js";
+import type { EventLevel, EventListener, EventSource, EventWrittenEventArgs } from "@tsonic/dotnet/System.Diagnostics.Tracing/internal/index.js";
+import type { StreamWriter } from "@tsonic/dotnet/System.IO/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { ArgumentException, ArgumentNullException, Boolean as ClrBoolean, Exception, Func_2, Guid, IDisposable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface ISafeLogSecurityArtifact$instance {
     readonly __tsonic_iface_Microsoft_IdentityModel_Logging_ISafeLogSecurityArtifact: never;
@@ -60,8 +60,8 @@ export interface LoggerContext$instance {
     ActivityId: Guid;
     CaptureLogs: boolean;
     DebugId: string;
-    Logs: ICollection<System_Internal.String>;
-    PropertyBag: IDictionary<System_Internal.String, unknown>;
+    Logs: ICollection_1<System_Internal.String>;
+    PropertyBag: IDictionary_2<System_Internal.String, unknown>;
 }
 
 
@@ -105,9 +105,9 @@ export const LogHelper: {
     LogVerbose(message: string, ...args: unknown[]): void;
     LogWarning(message: string, ...args: unknown[]): void;
     MarkAsNonPII(arg: unknown): unknown;
-    MarkAsSecurityArtifact(arg: unknown, callback: Func<unknown, System_Internal.String>, callbackUnsafe: Func<unknown, System_Internal.String>): unknown;
-    MarkAsSecurityArtifact(arg: unknown, callback: Func<unknown, System_Internal.String>): unknown;
-    MarkAsUnsafeSecurityArtifact(arg: unknown, callbackUnsafe: Func<unknown, System_Internal.String>): unknown;
+    MarkAsSecurityArtifact(arg: unknown, callback: Func_2<unknown, System_Internal.String>, callbackUnsafe: Func_2<unknown, System_Internal.String>): unknown;
+    MarkAsSecurityArtifact(arg: unknown, callback: Func_2<unknown, System_Internal.String>): unknown;
+    MarkAsUnsafeSecurityArtifact(arg: unknown, callbackUnsafe: Func_2<unknown, System_Internal.String>): unknown;
 };
 
 

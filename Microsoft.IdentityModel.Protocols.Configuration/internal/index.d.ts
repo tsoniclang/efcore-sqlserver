@@ -9,12 +9,12 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 import * as Microsoft_IdentityModel_Tokens_Configuration_Internal from "../../Microsoft.IdentityModel.Tokens.Configuration/internal/index.js";
 import type { LKGConfigurationCacheOptions } from "../../Microsoft.IdentityModel.Tokens.Configuration/internal/index.js";
 import type { BaseConfiguration } from "../../Microsoft.IdentityModel.Tokens/internal/index.js";
-import type { IEqualityComparer } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Exception, Int32, String as ClrString } from "@tsonic/dotnet/System.js";
-import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { ISerializable, SerializationInfo, StreamingContext } from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { TaskCreationOptions } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import type { IEqualityComparer_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { ISerializable, SerializationInfo, StreamingContext } from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { TaskCreationOptions } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Exception, Int32, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface InvalidConfigurationException$instance extends Exception {
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;

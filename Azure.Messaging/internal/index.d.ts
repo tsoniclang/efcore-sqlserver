@@ -8,9 +8,9 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 // Import types from other namespaces
 import type { ContentType } from "../../Azure.Core/internal/index.js";
 import type { BinaryData } from "../../System/internal/index.js";
-import type { IDictionary } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Lib from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, DateTimeOffset, Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Nullable, Object as ClrObject, String as ClrString, Type } from "@tsonic/dotnet/System.js";
+import type { IDictionary_2 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Lib from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, DateTimeOffset, Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Nullable_1, Object as ClrObject, String as ClrString, Type } from "@tsonic/dotnet/System/internal/index.js";
 
 export enum CloudEventDataFormat {
     Binary = 0,
@@ -25,12 +25,12 @@ export interface CloudEvent$instance {
     set DataContentType(value: string | undefined);
     get DataSchema(): string | undefined;
     set DataSchema(value: string | undefined);
-    readonly ExtensionAttributes: IDictionary<System_Internal.String, unknown>;
+    readonly ExtensionAttributes: IDictionary_2<System_Internal.String, unknown>;
     Id: string;
     Source: string;
     get Subject(): string | undefined;
     set Subject(value: string | undefined);
-    Time: Nullable<DateTimeOffset>;
+    Time: Nullable_1<DateTimeOffset>;
     Type: string;
 }
 
@@ -46,8 +46,8 @@ export const CloudEvent: {
 export type CloudEvent = CloudEvent$instance;
 
 export interface MessageContent$instance {
-    ContentType: Nullable<ContentType>;
-    ContentTypeCore: Nullable<ContentType>;
+    ContentType: Nullable_1<ContentType>;
+    ContentTypeCore: Nullable_1<ContentType>;
     get Data(): BinaryData | undefined;
     set Data(value: BinaryData | undefined);
     readonly IsReadOnly: boolean;

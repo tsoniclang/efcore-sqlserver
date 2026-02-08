@@ -8,28 +8,28 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 // Import types from other namespaces
 import type { ClientOptions, DelayStrategy, HttpMessage, Request, RequestFailedDetailsParser, ResponseClassifier, TokenCredential, TokenRequestContext } from "../../Azure.Core/internal/index.js";
 import type { RequestContext, Response } from "../../Azure/internal/index.js";
-import type { IDictionary, IEnumerable, IList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Exception, Func, IDisposable, Int32, Object as ClrObject, ReadOnlyMemory, String as ClrString, Void } from "@tsonic/dotnet/System.js";
-import type { HttpClient, HttpMessageHandler } from "@tsonic/dotnet/System.Net.Http.js";
-import type { SslPolicyErrors } from "@tsonic/dotnet/System.Net.Security.js";
-import type { X509Certificate2, X509Chain } from "@tsonic/dotnet/System.Security.Cryptography.X509Certificates.js";
-import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
-import type { ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import type { IDictionary_2, IEnumerable_1, IList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { HttpClient, HttpMessageHandler } from "@tsonic/dotnet/System.Net.Http/internal/index.js";
+import type { SslPolicyErrors } from "@tsonic/dotnet/System.Net.Security/internal/index.js";
+import type { X509Certificate2, X509Chain } from "@tsonic/dotnet/System.Security.Cryptography.X509Certificates/internal/index.js";
+import type { ValueTask, ValueTask_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Exception, Func_2, IDisposable, Int32, Object as ClrObject, ReadOnlyMemory_1, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface BearerTokenAuthenticationPolicy$instance extends HttpPipelinePolicy {
     AuthorizeRequest(message: HttpMessage): void;
     AuthorizeRequestAsync(message: HttpMessage): ValueTask;
     AuthorizeRequestOnChallenge(message: HttpMessage): boolean;
-    AuthorizeRequestOnChallengeAsync(message: HttpMessage): ValueTask<System_Internal.Boolean>;
-    Process(message: HttpMessage, pipeline: ReadOnlyMemory<HttpPipelinePolicy>): void;
-    ProcessAsync(message: HttpMessage, pipeline: ReadOnlyMemory<HttpPipelinePolicy>): ValueTask;
+    AuthorizeRequestOnChallengeAsync(message: HttpMessage): ValueTask_1<System_Internal.Boolean>;
+    Process(message: HttpMessage, pipeline: ReadOnlyMemory_1<HttpPipelinePolicy>): void;
+    ProcessAsync(message: HttpMessage, pipeline: ReadOnlyMemory_1<HttpPipelinePolicy>): ValueTask;
 }
 
 
 export const BearerTokenAuthenticationPolicy: {
     new(credential: TokenCredential, scope: string): BearerTokenAuthenticationPolicy;
-    new(credential: TokenCredential, scopes: IEnumerable<System_Internal.String>): BearerTokenAuthenticationPolicy;
+    new(credential: TokenCredential, scopes: IEnumerable_1<System_Internal.String>): BearerTokenAuthenticationPolicy;
 };
 
 
@@ -77,14 +77,14 @@ export interface HttpPipeline$instance {
     Send(message: HttpMessage, cancellationToken: CancellationToken): void;
     SendAsync(message: HttpMessage, cancellationToken: CancellationToken): ValueTask;
     SendRequest(request: Request, cancellationToken: CancellationToken): Response;
-    SendRequestAsync(request: Request, cancellationToken: CancellationToken): ValueTask<Response>;
+    SendRequestAsync(request: Request, cancellationToken: CancellationToken): ValueTask_1<Response>;
 }
 
 
 export const HttpPipeline: {
     new(transport: HttpPipelineTransport, policies: HttpPipelinePolicy[], responseClassifier: ResponseClassifier): HttpPipeline;
     CreateClientRequestIdScope(clientRequestId: string): IDisposable;
-    CreateHttpMessagePropertiesScope(messageProperties: IDictionary<System_Internal.String, unknown>): IDisposable;
+    CreateHttpMessagePropertiesScope(messageProperties: IDictionary_2<System_Internal.String, unknown>): IDisposable;
 };
 
 
@@ -92,8 +92,8 @@ export type HttpPipeline = HttpPipeline$instance;
 
 export interface HttpPipelineOptions$instance {
     readonly ClientOptions: ClientOptions;
-    readonly PerCallPolicies: IList<HttpPipelinePolicy>;
-    readonly PerRetryPolicies: IList<HttpPipelinePolicy>;
+    readonly PerCallPolicies: IList_1<HttpPipelinePolicy>;
+    readonly PerRetryPolicies: IList_1<HttpPipelinePolicy>;
     RequestFailedDetailsParser: RequestFailedDetailsParser;
     get ResponseClassifier(): ResponseClassifier | undefined;
     set ResponseClassifier(value: ResponseClassifier | undefined);
@@ -108,14 +108,14 @@ export const HttpPipelineOptions: {
 export type HttpPipelineOptions = HttpPipelineOptions$instance;
 
 export interface HttpPipelinePolicy$instance {
-    Process(message: HttpMessage, pipeline: ReadOnlyMemory<HttpPipelinePolicy>): void;
-    ProcessAsync(message: HttpMessage, pipeline: ReadOnlyMemory<HttpPipelinePolicy>): ValueTask;
+    Process(message: HttpMessage, pipeline: ReadOnlyMemory_1<HttpPipelinePolicy>): void;
+    ProcessAsync(message: HttpMessage, pipeline: ReadOnlyMemory_1<HttpPipelinePolicy>): ValueTask;
 }
 
 
 export const HttpPipelinePolicy: (abstract new() => HttpPipelinePolicy) & {
-    ProcessNext(message: HttpMessage, pipeline: ReadOnlyMemory<HttpPipelinePolicy>): void;
-    ProcessNextAsync(message: HttpMessage, pipeline: ReadOnlyMemory<HttpPipelinePolicy>): ValueTask;
+    ProcessNext(message: HttpMessage, pipeline: ReadOnlyMemory_1<HttpPipelinePolicy>): void;
+    ProcessNextAsync(message: HttpMessage, pipeline: ReadOnlyMemory_1<HttpPipelinePolicy>): ValueTask;
 };
 
 
@@ -124,10 +124,10 @@ export type HttpPipelinePolicy = HttpPipelinePolicy$instance;
 export interface HttpPipelineSynchronousPolicy$instance extends HttpPipelinePolicy {
     OnReceivedResponse(message: HttpMessage): void;
     OnSendingRequest(message: HttpMessage): void;
-    Process(message: HttpMessage, pipeline: ReadOnlyMemory<HttpPipelinePolicy>): void;
-    Process(message: HttpMessage, pipeline: ReadOnlyMemory<HttpPipelinePolicy>): void;
-    ProcessAsync(message: HttpMessage, pipeline: ReadOnlyMemory<HttpPipelinePolicy>): ValueTask;
-    ProcessAsync(message: HttpMessage, pipeline: ReadOnlyMemory<HttpPipelinePolicy>): ValueTask;
+    Process(message: HttpMessage, pipeline: ReadOnlyMemory_1<HttpPipelinePolicy>): void;
+    Process(message: HttpMessage, pipeline: ReadOnlyMemory_1<HttpPipelinePolicy>): void;
+    ProcessAsync(message: HttpMessage, pipeline: ReadOnlyMemory_1<HttpPipelinePolicy>): ValueTask;
+    ProcessAsync(message: HttpMessage, pipeline: ReadOnlyMemory_1<HttpPipelinePolicy>): ValueTask;
 }
 
 
@@ -151,10 +151,10 @@ export const HttpPipelineTransport: (abstract new() => HttpPipelineTransport) & 
 export type HttpPipelineTransport = HttpPipelineTransport$instance;
 
 export interface HttpPipelineTransportOptions$instance {
-    readonly ClientCertificates: IList<X509Certificate2>;
+    readonly ClientCertificates: IList_1<X509Certificate2>;
     IsClientRedirectEnabled: boolean;
-    get ServerCertificateCustomValidationCallback(): Func<ServerCertificateCustomValidationArgs, System_Internal.Boolean> | undefined;
-    set ServerCertificateCustomValidationCallback(value: Func<ServerCertificateCustomValidationArgs, System_Internal.Boolean> | undefined);
+    get ServerCertificateCustomValidationCallback(): Func_2<ServerCertificateCustomValidationArgs, System_Internal.Boolean> | undefined;
+    set ServerCertificateCustomValidationCallback(value: Func_2<ServerCertificateCustomValidationArgs, System_Internal.Boolean> | undefined);
 }
 
 
@@ -166,8 +166,8 @@ export const HttpPipelineTransportOptions: {
 export type HttpPipelineTransportOptions = HttpPipelineTransportOptions$instance;
 
 export interface RedirectPolicy$instance extends HttpPipelinePolicy {
-    Process(message: HttpMessage, pipeline: ReadOnlyMemory<HttpPipelinePolicy>): void;
-    ProcessAsync(message: HttpMessage, pipeline: ReadOnlyMemory<HttpPipelinePolicy>): ValueTask;
+    Process(message: HttpMessage, pipeline: ReadOnlyMemory_1<HttpPipelinePolicy>): void;
+    ProcessAsync(message: HttpMessage, pipeline: ReadOnlyMemory_1<HttpPipelinePolicy>): ValueTask;
 }
 
 
@@ -183,10 +183,10 @@ export interface RetryPolicy$instance extends HttpPipelinePolicy {
     OnRequestSentAsync(message: HttpMessage): ValueTask;
     OnSendingRequest(message: HttpMessage): void;
     OnSendingRequestAsync(message: HttpMessage): ValueTask;
-    Process(message: HttpMessage, pipeline: ReadOnlyMemory<HttpPipelinePolicy>): void;
-    ProcessAsync(message: HttpMessage, pipeline: ReadOnlyMemory<HttpPipelinePolicy>): ValueTask;
+    Process(message: HttpMessage, pipeline: ReadOnlyMemory_1<HttpPipelinePolicy>): void;
+    ProcessAsync(message: HttpMessage, pipeline: ReadOnlyMemory_1<HttpPipelinePolicy>): ValueTask;
     ShouldRetry(message: HttpMessage, exception: Exception): boolean;
-    ShouldRetryAsync(message: HttpMessage, exception: Exception): ValueTask<System_Internal.Boolean>;
+    ShouldRetryAsync(message: HttpMessage, exception: Exception): ValueTask_1<System_Internal.Boolean>;
 }
 
 

@@ -17,18 +17,18 @@ import type { IJsonModel_1, IPersistableModel_1, ModelReaderWriterOptions } from
 import * as System_ClientModel_Internal from "../../System.ClientModel/internal/index.js";
 import type { ApiKeyCredential } from "../../System.ClientModel/internal/index.js";
 import type { BinaryData } from "../../System/internal/index.js";
-import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { IAsyncEnumerable, IAsyncEnumerator, IEnumerable as IEnumerable__System_Collections_Generic, IEnumerator, IReadOnlyList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections.js";
-import type { IEnumerable } from "@tsonic/dotnet/System.Collections.js";
-import type { Stream } from "@tsonic/dotnet/System.IO.js";
-import * as System_Lib from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Byte, DateTimeOffset, Enum, EventArgs, Exception, IComparable, IConvertible, IDisposable, IEquatable, IFormattable, Int32, Int64, ISpanFormattable, Nullable, Object as ClrObject, ReadOnlyMemory, String as ClrString, TimeSpan, ValueType, Void } from "@tsonic/dotnet/System.js";
-import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { ISerializable, SerializationInfo, StreamingContext } from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { Utf8JsonReader, Utf8JsonWriter } from "@tsonic/dotnet/System.Text.Json.js";
-import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
-import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { IAsyncEnumerable_1, IAsyncEnumerator_1, IEnumerable_1, IEnumerator_1, IReadOnlyList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { IEnumerable } from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { Stream } from "@tsonic/dotnet/System.IO/internal/index.js";
+import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { ISerializable, SerializationInfo, StreamingContext } from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { Utf8JsonReader, Utf8JsonWriter } from "@tsonic/dotnet/System.Text.Json/internal/index.js";
+import type { Task_1, ValueTask_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
+import * as System_Lib from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Byte, DateTimeOffset, Enum, EventArgs, Exception, IComparable, IConvertible, IDisposable, IEquatable_1, IFormattable, Int32, Int64, ISpanFormattable, Nullable_1, Object as ClrObject, ReadOnlyMemory_1, String as ClrString, TimeSpan, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export enum ErrorOptions {
     Default = 0,
@@ -65,7 +65,7 @@ export type ETag = ETag$instance;
 export interface HttpRange$instance {
     readonly __tsonic_iface_System_IEquatable_1: never;
 
-    readonly Length: Nullable<System_Internal.Int64>;
+    readonly Length: Nullable_1<System_Internal.Int64>;
     readonly Offset: long;
     Equals(other: HttpRange): boolean;
     Equals(obj: unknown): boolean;
@@ -75,7 +75,7 @@ export interface HttpRange$instance {
 
 
 export const HttpRange: {
-    new(offset: long, length: Nullable<System_Internal.Int64>): HttpRange;
+    new(offset: long, length: Nullable_1<System_Internal.Int64>): HttpRange;
 };
 
 
@@ -85,16 +85,16 @@ export interface AsyncPageable_1$instance<T> {
     readonly __tsonic_iface_System_Collections_Generic_IAsyncEnumerable_1: never;
 
     readonly CancellationToken: CancellationToken;
-    AsPages(continuationToken?: string, pageSizeHint?: Nullable<System_Internal.Int32>): IAsyncEnumerable<Page_1<T>>;
+    AsPages(continuationToken?: string, pageSizeHint?: Nullable_1<System_Internal.Int32>): IAsyncEnumerable_1<Page_1<T>>;
     Equals(obj: unknown): boolean;
-    GetAsyncEnumerator(cancellationToken?: CancellationToken): IAsyncEnumerator<T>;
+    GetAsyncEnumerator(cancellationToken?: CancellationToken): IAsyncEnumerator_1<T>;
     GetHashCode(): int;
     ToString(): string | undefined;
 }
 
 
 export const AsyncPageable_1: (abstract new<T>() => AsyncPageable_1<T>) & (abstract new<T>(cancellationToken: CancellationToken) => AsyncPageable_1<T>) & {
-    FromPages<T>(pages: IEnumerable__System_Collections_Generic<Page_1<T>>): AsyncPageable_1<T>;
+    FromPages<T>(pages: IEnumerable_1<Page_1<T>>): AsyncPageable_1<T>;
 };
 
 
@@ -163,7 +163,7 @@ export interface JsonPatchDocument$instance {
     AppendReplaceRaw(path: string, rawJsonValue: string): void;
     AppendTest<T>(path: string, value: T): void;
     AppendTestRaw(path: string, rawJsonValue: string): void;
-    ToBytes(): ReadOnlyMemory<System_Internal.Byte>;
+    ToBytes(): ReadOnlyMemory_1<System_Internal.Byte>;
     ToString(): string;
 }
 
@@ -171,16 +171,16 @@ export interface JsonPatchDocument$instance {
 export const JsonPatchDocument: {
     new(): JsonPatchDocument;
     new(serializer: ObjectSerializer): JsonPatchDocument;
-    new(rawDocument: ReadOnlyMemory<System_Internal.Byte>): JsonPatchDocument;
-    new(rawDocument: ReadOnlyMemory<System_Internal.Byte>, serializer: ObjectSerializer): JsonPatchDocument;
+    new(rawDocument: ReadOnlyMemory_1<System_Internal.Byte>): JsonPatchDocument;
+    new(rawDocument: ReadOnlyMemory_1<System_Internal.Byte>, serializer: ObjectSerializer): JsonPatchDocument;
 };
 
 
 export type JsonPatchDocument = JsonPatchDocument$instance;
 
 export interface MatchConditions$instance {
-    IfMatch: Nullable<ETag>;
-    IfNoneMatch: Nullable<ETag>;
+    IfMatch: Nullable_1<ETag>;
+    IfNoneMatch: Nullable_1<ETag>;
 }
 
 
@@ -213,24 +213,24 @@ export interface Operation$instance {
     Equals(obj: unknown): boolean;
     GetHashCode(): int;
     GetRawResponse(): Response;
-    GetRehydrationToken(): Nullable<RehydrationToken>;
+    GetRehydrationToken(): Nullable_1<RehydrationToken>;
     ToString(): string | undefined;
     UpdateStatus(cancellationToken?: CancellationToken): Response;
-    UpdateStatusAsync(cancellationToken?: CancellationToken): ValueTask<Response>;
+    UpdateStatusAsync(cancellationToken?: CancellationToken): ValueTask_1<Response>;
     WaitForCompletionResponse(cancellationToken?: CancellationToken): Response;
     WaitForCompletionResponse(pollingInterval: TimeSpan, cancellationToken?: CancellationToken): Response;
     WaitForCompletionResponse(delayStrategy: DelayStrategy, cancellationToken?: CancellationToken): Response;
-    WaitForCompletionResponseAsync(cancellationToken?: CancellationToken): ValueTask<Response>;
-    WaitForCompletionResponseAsync(pollingInterval: TimeSpan, cancellationToken?: CancellationToken): ValueTask<Response>;
-    WaitForCompletionResponseAsync(delayStrategy: DelayStrategy, cancellationToken?: CancellationToken): ValueTask<Response>;
+    WaitForCompletionResponseAsync(cancellationToken?: CancellationToken): ValueTask_1<Response>;
+    WaitForCompletionResponseAsync(pollingInterval: TimeSpan, cancellationToken?: CancellationToken): ValueTask_1<Response>;
+    WaitForCompletionResponseAsync(delayStrategy: DelayStrategy, cancellationToken?: CancellationToken): ValueTask_1<Response>;
 }
 
 
 export const Operation: (abstract new() => Operation) & {
     Rehydrate(pipeline: HttpPipeline, rehydrationToken: RehydrationToken, options?: ClientOptions): Operation;
     Rehydrate<T extends IPersistableModel_1<T>>(pipeline: HttpPipeline, rehydrationToken: RehydrationToken, options?: ClientOptions): Operation_1<T>;
-    RehydrateAsync(pipeline: HttpPipeline, rehydrationToken: RehydrationToken, options?: ClientOptions): Task<Operation>;
-    RehydrateAsync<T extends IPersistableModel_1<T>>(pipeline: HttpPipeline, rehydrationToken: RehydrationToken, options?: ClientOptions): Task<Operation_1<T>>;
+    RehydrateAsync(pipeline: HttpPipeline, rehydrationToken: RehydrationToken, options?: ClientOptions): Task_1<Operation>;
+    RehydrateAsync<T extends IPersistableModel_1<T>>(pipeline: HttpPipeline, rehydrationToken: RehydrationToken, options?: ClientOptions): Task_1<Operation_1<T>>;
 };
 
 
@@ -242,14 +242,14 @@ export interface Operation_1$instance<T> extends Operation {
     WaitForCompletion(cancellationToken?: CancellationToken): Response_1<T>;
     WaitForCompletion(pollingInterval: TimeSpan, cancellationToken: CancellationToken): Response_1<T>;
     WaitForCompletion(delayStrategy: DelayStrategy, cancellationToken: CancellationToken): Response_1<T>;
-    WaitForCompletionAsync(cancellationToken?: CancellationToken): ValueTask<Response_1<T>>;
-    WaitForCompletionAsync(pollingInterval: TimeSpan, cancellationToken: CancellationToken): ValueTask<Response_1<T>>;
-    WaitForCompletionAsync(delayStrategy: DelayStrategy, cancellationToken: CancellationToken): ValueTask<Response_1<T>>;
-    WaitForCompletionResponseAsync(cancellationToken?: CancellationToken): ValueTask<Response>;
-    WaitForCompletionResponseAsync(pollingInterval: TimeSpan, cancellationToken?: CancellationToken): ValueTask<Response>;
-    WaitForCompletionResponseAsync(cancellationToken?: CancellationToken): ValueTask<Response>;
-    WaitForCompletionResponseAsync(pollingInterval: TimeSpan, cancellationToken?: CancellationToken): ValueTask<Response>;
-    WaitForCompletionResponseAsync(delayStrategy: DelayStrategy, cancellationToken?: CancellationToken): ValueTask<Response>;
+    WaitForCompletionAsync(cancellationToken?: CancellationToken): ValueTask_1<Response_1<T>>;
+    WaitForCompletionAsync(pollingInterval: TimeSpan, cancellationToken: CancellationToken): ValueTask_1<Response_1<T>>;
+    WaitForCompletionAsync(delayStrategy: DelayStrategy, cancellationToken: CancellationToken): ValueTask_1<Response_1<T>>;
+    WaitForCompletionResponseAsync(cancellationToken?: CancellationToken): ValueTask_1<Response>;
+    WaitForCompletionResponseAsync(pollingInterval: TimeSpan, cancellationToken?: CancellationToken): ValueTask_1<Response>;
+    WaitForCompletionResponseAsync(cancellationToken?: CancellationToken): ValueTask_1<Response>;
+    WaitForCompletionResponseAsync(pollingInterval: TimeSpan, cancellationToken?: CancellationToken): ValueTask_1<Response>;
+    WaitForCompletionResponseAsync(delayStrategy: DelayStrategy, cancellationToken?: CancellationToken): ValueTask_1<Response>;
 }
 
 
@@ -261,7 +261,7 @@ export type Operation_1<T> = Operation_1$instance<T>;
 
 export interface Page_1$instance<T> {
     readonly ContinuationToken: string | undefined;
-    readonly Values: IReadOnlyList<T>;
+    readonly Values: IReadOnlyList_1<T>;
     Equals(obj: unknown): boolean;
     GetHashCode(): int;
     GetRawResponse(): Response;
@@ -270,7 +270,7 @@ export interface Page_1$instance<T> {
 
 
 export const Page_1: (abstract new<T>() => Page_1<T>) & {
-    FromValues<T>(values: IReadOnlyList<T>, continuationToken: string, response: Response): Page_1<T>;
+    FromValues<T>(values: IReadOnlyList_1<T>, continuationToken: string, response: Response): Page_1<T>;
 };
 
 
@@ -281,16 +281,16 @@ export interface Pageable_1$instance<T> {
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly CancellationToken: CancellationToken;
-    AsPages(continuationToken?: string, pageSizeHint?: Nullable<System_Internal.Int32>): IEnumerable__System_Collections_Generic<Page_1<T>>;
+    AsPages(continuationToken?: string, pageSizeHint?: Nullable_1<System_Internal.Int32>): IEnumerable_1<Page_1<T>>;
     Equals(obj: unknown): boolean;
-    GetEnumerator(): IEnumerator<T>;
+    GetEnumerator(): IEnumerator_1<T>;
     GetHashCode(): int;
     ToString(): string | undefined;
 }
 
 
 export const Pageable_1: (abstract new<T>() => Pageable_1<T>) & (abstract new<T>(cancellationToken: CancellationToken) => Pageable_1<T>) & {
-    FromPages<T>(pages: IEnumerable__System_Collections_Generic<Page_1<T>>): Pageable_1<T>;
+    FromPages<T>(pages: IEnumerable_1<Page_1<T>>): Pageable_1<T>;
 };
 
 
@@ -310,8 +310,8 @@ export const PageableOperation_1: (abstract new<T>() => PageableOperation_1<T>) 
 export type PageableOperation_1<T> = PageableOperation_1$instance<T>;
 
 export interface RequestConditions$instance extends MatchConditions {
-    IfModifiedSince: Nullable<DateTimeOffset>;
-    IfUnmodifiedSince: Nullable<DateTimeOffset>;
+    IfModifiedSince: Nullable_1<DateTimeOffset>;
+    IfUnmodifiedSince: Nullable_1<DateTimeOffset>;
 }
 
 
@@ -375,10 +375,10 @@ export interface Response$instance {
     readonly Status: int;
     ContainsHeader(name: string): boolean;
     Dispose(): void;
-    EnumerateHeaders(): IEnumerable__System_Collections_Generic<HttpHeader>;
+    EnumerateHeaders(): IEnumerable_1<HttpHeader>;
     ToString(): string;
     TryGetHeader(name: string, value: string): boolean;
-    TryGetHeaderValues(name: string, values: IEnumerable__System_Collections_Generic<System_Internal.String>): boolean;
+    TryGetHeaderValues(name: string, values: IEnumerable_1<System_Internal.String>): boolean;
 }
 
 
@@ -424,8 +424,6 @@ export interface __ResponseError$views {
     As_IPersistableModel_1(): System_ClientModel_Primitives_Internal.IPersistableModel_1$instance<ResponseError>;
 }
 
-export interface ResponseError$instance extends System_ClientModel_Primitives_Internal.IJsonModel_1$instance<ResponseError> {}
-
 export type ResponseError = ResponseError$instance & __ResponseError$views;
 
 
@@ -446,7 +444,7 @@ export abstract class AzureCoreExtensions$instance {
     static ToDynamicFromJson(utf8Json: BinaryData, propertyNameFormat: JsonPropertyNames, dateTimeFormat?: string): unknown;
     static ToDynamicFromJson(utf8Json: BinaryData): unknown;
     static ToObject<T>(data: BinaryData, serializer: ObjectSerializer, cancellationToken?: CancellationToken): T | undefined;
-    static ToObjectAsync<T>(data: BinaryData, serializer: ObjectSerializer, cancellationToken?: CancellationToken): ValueTask<T>;
+    static ToObjectAsync<T>(data: BinaryData, serializer: ObjectSerializer, cancellationToken?: CancellationToken): ValueTask_1<T>;
     static ToObjectFromJson(data: BinaryData): unknown | undefined;
 }
 

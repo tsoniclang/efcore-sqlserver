@@ -17,20 +17,20 @@ import type { AuthenticationToken, GetTokenOptions, IJsonModel_1, IPersistableMo
 import * as System_ClientModel_Internal from "../../System.ClientModel/internal/index.js";
 import type { AuthenticationTokenProvider } from "../../System.ClientModel/internal/index.js";
 import type { BinaryData } from "../../System/internal/index.js";
-import type { ReadOnlySequence } from "@tsonic/dotnet/System.Buffers.js";
-import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { IDictionary, IEnumerable as IEnumerable__System_Collections_Generic, IEnumerator, IList, IReadOnlyDictionary } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections.js";
-import type { IEnumerable } from "@tsonic/dotnet/System.Collections.js";
-import type { Stream } from "@tsonic/dotnet/System.IO.js";
-import * as System_Lib from "@tsonic/dotnet/System.js";
-import type { AsyncCallback, Boolean as ClrBoolean, Byte, Char, DateTimeOffset, Double, Enum, Exception, Func, IAsyncResult, ICloneable, IComparable, IConvertible, IDisposable, IEquatable, IFormattable, Int32, Int64, IntPtr, ISpanFormattable, MulticastDelegate, Nullable, Object as ClrObject, ReadOnlyMemory, ReadOnlySpan, String as ClrString, TimeSpan, Type, UInt16, Uri, ValueType, Void } from "@tsonic/dotnet/System.js";
-import type { Assembly } from "@tsonic/dotnet/System.Reflection.js";
-import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { Utf8JsonReader, Utf8JsonWriter } from "@tsonic/dotnet/System.Text.Json.js";
-import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
-import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import type { ReadOnlySequence_1 } from "@tsonic/dotnet/System.Buffers/internal/index.js";
+import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { IDictionary_2, IEnumerable_1, IEnumerator_1, IList_1, IReadOnlyDictionary_2 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { IEnumerable } from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { Stream } from "@tsonic/dotnet/System.IO/internal/index.js";
+import type { Assembly } from "@tsonic/dotnet/System.Reflection/internal/index.js";
+import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { Utf8JsonReader, Utf8JsonWriter } from "@tsonic/dotnet/System.Text.Json/internal/index.js";
+import type { Task, Task_1, ValueTask_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
+import * as System_Lib from "@tsonic/dotnet/System/internal/index.js";
+import type { AsyncCallback, Boolean as ClrBoolean, Byte, Char, DateTimeOffset, Double, Enum, Exception, Func_3, IAsyncResult, ICloneable, IComparable, IComparable_1, IConvertible, IDisposable, IEquatable_1, IFormattable, Int32, Int64, IntPtr, ISpanFormattable, MulticastDelegate, Nullable_1, Object as ClrObject, ReadOnlyMemory_1, ReadOnlySpan_1, String as ClrString, TimeSpan, Type, UInt16, Uri, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export enum HttpPipelinePosition {
     PerCall = 0,
@@ -50,7 +50,7 @@ export type SyncAsyncEventHandler_1<T extends SyncAsyncEventArgs> = (e: T) => Ta
 
 export interface AccessToken$instance {
     readonly ExpiresOn: DateTimeOffset;
-    readonly RefreshOn: Nullable<DateTimeOffset>;
+    readonly RefreshOn: Nullable_1<DateTimeOffset>;
     readonly Token: string;
     readonly TokenType: string;
     Equals(obj: unknown): boolean;
@@ -60,8 +60,8 @@ export interface AccessToken$instance {
 
 export const AccessToken: {
     new(accessToken: string, expiresOn: DateTimeOffset): AccessToken;
-    new(accessToken: string, expiresOn: DateTimeOffset, refreshOn: Nullable<DateTimeOffset>): AccessToken;
-    new(accessToken: string, expiresOn: DateTimeOffset, refreshOn: Nullable<DateTimeOffset>, tokenType: string): AccessToken;
+    new(accessToken: string, expiresOn: DateTimeOffset, refreshOn: Nullable_1<DateTimeOffset>): AccessToken;
+    new(accessToken: string, expiresOn: DateTimeOffset, refreshOn: Nullable_1<DateTimeOffset>, tokenType: string): AccessToken;
 };
 
 
@@ -222,8 +222,6 @@ export interface __RehydrationToken$views {
     As_IPersistableModel_1(): System_ClientModel_Primitives_Internal.IPersistableModel_1$instance<RehydrationToken>;
 }
 
-export interface RehydrationToken$instance extends System_ClientModel_Primitives_Internal.IJsonModel_1$instance<RehydrationToken> {}
-
 export type RehydrationToken = RehydrationToken$instance & __RehydrationToken$views;
 
 
@@ -234,11 +232,11 @@ export interface RequestHeaders$instance {
     Add(header: HttpHeader): void;
     Add(name: string, value: string): void;
     Contains(name: string): boolean;
-    GetEnumerator(): IEnumerator<HttpHeader>;
+    GetEnumerator(): IEnumerator_1<HttpHeader>;
     Remove(name: string): boolean;
     SetValue(name: string, value: string): void;
     TryGetValue(name: string, value: string): boolean;
-    TryGetValues(name: string, values: IEnumerable__System_Collections_Generic<System_Internal.String>): boolean;
+    TryGetValues(name: string, values: IEnumerable_1<System_Internal.String>): boolean;
 }
 
 
@@ -300,16 +298,16 @@ export interface ResponseHeaders$instance {
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
-    readonly ContentLength: Nullable<System_Internal.Int32>;
-    readonly ContentLengthLong: Nullable<System_Internal.Int64>;
+    readonly ContentLength: Nullable_1<System_Internal.Int32>;
+    readonly ContentLengthLong: Nullable_1<System_Internal.Int64>;
     readonly ContentType: string | undefined;
-    readonly Date: Nullable<DateTimeOffset>;
-    readonly ETag: Nullable<ETag>;
+    readonly Date: Nullable_1<DateTimeOffset>;
+    readonly ETag: Nullable_1<ETag>;
     readonly RequestId: string | undefined;
     Contains(name: string): boolean;
-    GetEnumerator(): IEnumerator<HttpHeader>;
+    GetEnumerator(): IEnumerator_1<HttpHeader>;
     TryGetValue(name: string, value: string): boolean;
-    TryGetValues(name: string, values: IEnumerable__System_Collections_Generic<System_Internal.String>): boolean;
+    TryGetValues(name: string, values: IEnumerable_1<System_Internal.String>): boolean;
 }
 
 
@@ -382,9 +380,9 @@ export interface DelayStrategy$instance {
 }
 
 
-export const DelayStrategy: (abstract new(maxDelay: Nullable<TimeSpan>, jitterFactor: double) => DelayStrategy) & {
-    CreateExponentialDelayStrategy(initialDelay?: Nullable<TimeSpan>, maxDelay?: Nullable<TimeSpan>): DelayStrategy;
-    CreateFixedDelayStrategy(delay?: Nullable<TimeSpan>): DelayStrategy;
+export const DelayStrategy: (abstract new(maxDelay: Nullable_1<TimeSpan>, jitterFactor: double) => DelayStrategy) & {
+    CreateExponentialDelayStrategy(initialDelay?: Nullable_1<TimeSpan>, maxDelay?: Nullable_1<TimeSpan>): DelayStrategy;
+    CreateFixedDelayStrategy(delay?: Nullable_1<TimeSpan>): DelayStrategy;
     Max(val1: TimeSpan, val2: TimeSpan): TimeSpan;
     Min(val1: TimeSpan, val2: TimeSpan): TimeSpan;
 };
@@ -400,8 +398,8 @@ export interface DiagnosticsOptions$instance {
     IsLoggingEnabled: boolean;
     IsTelemetryEnabled: boolean;
     LoggedContentSizeLimit: int;
-    LoggedHeaderNames: IList<System_Internal.String>;
-    LoggedQueryParameters: IList<System_Internal.String>;
+    LoggedHeaderNames: IList_1<System_Internal.String>;
+    LoggedQueryParameters: IList_1<System_Internal.String>;
 }
 
 
@@ -419,7 +417,7 @@ export interface HttpMessage$instance {
     BufferResponse: boolean;
     CancellationToken: CancellationToken;
     readonly HasResponse: boolean;
-    NetworkTimeout: Nullable<TimeSpan>;
+    NetworkTimeout: Nullable_1<TimeSpan>;
     readonly ProcessingContext: MessageProcessingContext;
     readonly Request: Request;
     Response: Response;
@@ -452,11 +450,11 @@ export interface Request$instance {
     AddHeader(name: string, value: string): void;
     ContainsHeader(name: string): boolean;
     Dispose(): void;
-    EnumerateHeaders(): IEnumerable__System_Collections_Generic<HttpHeader>;
+    EnumerateHeaders(): IEnumerable_1<HttpHeader>;
     RemoveHeader(name: string): boolean;
     SetHeader(name: string, value: string): void;
     TryGetHeader(name: string, value: string): boolean;
-    TryGetHeaderValues(name: string, values: IEnumerable__System_Collections_Generic<System_Internal.String>): boolean;
+    TryGetHeaderValues(name: string, values: IEnumerable_1<System_Internal.String>): boolean;
 }
 
 
@@ -479,14 +477,14 @@ export interface RequestContent$instance {
 export const RequestContent: (abstract new() => RequestContent) & {
     Create(content: DynamicData): RequestContent;
     Create(content: BinaryData): RequestContent;
-    Create(bytes: ReadOnlySequence<System_Internal.Byte>): RequestContent;
+    Create(bytes: ReadOnlySequence_1<System_Internal.Byte>): RequestContent;
     Create(bytes: byte[], index: int, length: int): RequestContent;
     Create(bytes: byte[]): RequestContent;
     Create(stream: Stream): RequestContent;
     Create(serializable: unknown, propertyNameFormat: JsonPropertyNames, dateTimeFormat?: string): RequestContent;
     Create(serializable: unknown, serializer: ObjectSerializer): RequestContent;
     Create(serializable: unknown): RequestContent;
-    Create(bytes: ReadOnlyMemory<System_Internal.Byte>): RequestContent;
+    Create(bytes: ReadOnlyMemory_1<System_Internal.Byte>): RequestContent;
     Create(content: string): RequestContent;
     Create<T extends IPersistableModel_1<T>>(model: T, options?: ModelReaderWriterOptions): RequestContent;
 };
@@ -495,7 +493,7 @@ export const RequestContent: (abstract new() => RequestContent) & {
 export type RequestContent = RequestContent$instance;
 
 export interface RequestFailedDetailsParser$instance {
-    TryParse(response: Response, error: ResponseError, data: IDictionary<System_Internal.String, System_Internal.String>): boolean;
+    TryParse(response: Response, error: ResponseError, data: IDictionary_2<System_Internal.String, System_Internal.String>): boolean;
 }
 
 
@@ -516,10 +514,10 @@ export interface RequestUriBuilder$instance {
     set Scheme(value: string | undefined);
     AppendPath(value: string): void;
     AppendPath(value: string, escape: boolean): void;
-    AppendPath(value: ReadOnlySpan<System_Internal.Char>, escape: boolean): void;
+    AppendPath(value: ReadOnlySpan_1<System_Internal.Char>, escape: boolean): void;
     AppendQuery(name: string, value: string): void;
     AppendQuery(name: string, value: string, escapeValue: boolean): void;
-    AppendQuery(name: ReadOnlySpan<System_Internal.Char>, value: ReadOnlySpan<System_Internal.Char>, escapeValue: boolean): void;
+    AppendQuery(name: ReadOnlySpan_1<System_Internal.Char>, value: ReadOnlySpan_1<System_Internal.Char>, escapeValue: boolean): void;
     Reset(value: Uri): void;
     ToString(): string;
     ToUri(): Uri;
@@ -537,7 +535,7 @@ export interface ResourceIdentifier$instance {
     readonly __tsonic_iface_System_IComparable_1: never;
     readonly __tsonic_iface_System_IEquatable_1: never;
 
-    readonly Location: Nullable<AzureLocation>;
+    readonly Location: Nullable_1<AzureLocation>;
     readonly Name: string;
     readonly Parent: ResourceIdentifier | undefined;
     readonly Provider: string | undefined;
@@ -611,7 +609,7 @@ export interface StatusCodeClassifier$instance extends ResponseClassifier {
 
 
 export const StatusCodeClassifier: {
-    new(successStatusCodes: ReadOnlySpan<System_Internal.UInt16>): StatusCodeClassifier;
+    new(successStatusCodes: ReadOnlySpan_1<System_Internal.UInt16>): StatusCodeClassifier;
 };
 
 
@@ -633,13 +631,13 @@ export const TelemetryDetails: {
 export type TelemetryDetails = TelemetryDetails$instance;
 
 export interface TokenCredential$instance extends AuthenticationTokenProvider {
-    CreateTokenOptions(properties: IReadOnlyDictionary<System_Internal.String, unknown>): GetTokenOptions | undefined;
-    CreateTokenOptions(properties: IReadOnlyDictionary<System_Internal.String, unknown>): GetTokenOptions | undefined;
+    CreateTokenOptions(properties: IReadOnlyDictionary_2<System_Internal.String, unknown>): GetTokenOptions | undefined;
+    CreateTokenOptions(properties: IReadOnlyDictionary_2<System_Internal.String, unknown>): GetTokenOptions | undefined;
     GetToken(requestContext: TokenRequestContext, cancellationToken: CancellationToken): AccessToken;
     GetToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
-    GetTokenAsync(requestContext: TokenRequestContext, cancellationToken: CancellationToken): ValueTask<AccessToken>;
-    GetTokenAsync(properties: GetTokenOptions, cancellationToken: CancellationToken): ValueTask<AuthenticationToken>;
-    GetTokenAsync(options: GetTokenOptions, cancellationToken: CancellationToken): ValueTask<AuthenticationToken>;
+    GetTokenAsync(requestContext: TokenRequestContext, cancellationToken: CancellationToken): ValueTask_1<AccessToken>;
+    GetTokenAsync(properties: GetTokenOptions, cancellationToken: CancellationToken): ValueTask_1<AuthenticationToken>;
+    GetTokenAsync(options: GetTokenOptions, cancellationToken: CancellationToken): ValueTask_1<AuthenticationToken>;
 }
 
 
@@ -650,8 +648,8 @@ export const TokenCredential: (abstract new() => TokenCredential) & {
 export type TokenCredential = TokenCredential$instance;
 
 export abstract class DelegatedTokenCredential$instance {
-    static Create(getToken: Func<TokenRequestContext, CancellationToken, AccessToken>, getTokenAsync: Func<TokenRequestContext, CancellationToken, ValueTask<AccessToken>>): TokenCredential;
-    static Create(getToken: Func<TokenRequestContext, CancellationToken, AccessToken>): TokenCredential;
+    static Create(getToken: Func_3<TokenRequestContext, CancellationToken, AccessToken>, getTokenAsync: Func_3<TokenRequestContext, CancellationToken, ValueTask_1<AccessToken>>): TokenCredential;
+    static Create(getToken: Func_3<TokenRequestContext, CancellationToken, AccessToken>): TokenCredential;
 }
 
 
@@ -695,7 +693,7 @@ export type HttpHeader_Names = HttpHeader_Names$instance;
 
 export abstract class MultipartResponse$instance {
     static Parse(response: Response, expectCrLf: boolean, cancellationToken: CancellationToken): Response[];
-    static ParseAsync(response: Response, expectCrLf: boolean, cancellationToken: CancellationToken): Task<Response[]>;
+    static ParseAsync(response: Response, expectCrLf: boolean, cancellationToken: CancellationToken): Task_1<Response[]>;
 }
 
 

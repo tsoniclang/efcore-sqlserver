@@ -7,8 +7,8 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 
 // Import types from other namespaces
 import type { CacheLevel } from "../../Microsoft.Identity.Client.Cache/internal/index.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Object as ClrObject } from "@tsonic/dotnet/System.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Object as ClrObject } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface TelemetryData$instance {
     CacheLevel: CacheLevel;

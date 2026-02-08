@@ -9,20 +9,20 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 import type { LastKnownGoodConfigurationCacheOptions } from "../../Microsoft.IdentityModel.Protocols.Configuration/internal/index.js";
 import * as Microsoft_IdentityModel_Tokens_Internal from "../../Microsoft.IdentityModel.Tokens/internal/index.js";
 import type { BaseConfiguration, BaseConfigurationManager } from "../../Microsoft.IdentityModel.Tokens/internal/index.js";
-import type { IDictionary, IEnumerable } from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { NameValueCollection } from "@tsonic/dotnet/System.Collections.Specialized.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Byte, Object as ClrObject, String as ClrString, TimeSpan, Uri, Void } from "@tsonic/dotnet/System.js";
-import type { HttpHeaders } from "@tsonic/dotnet/System.Net.Http.Headers.js";
-import type { HttpClient } from "@tsonic/dotnet/System.Net.Http.js";
-import type { X509Certificate2Collection } from "@tsonic/dotnet/System.Security.Cryptography.X509Certificates.js";
-import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import type { IDictionary_2, IEnumerable_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { NameValueCollection } from "@tsonic/dotnet/System.Collections.Specialized/internal/index.js";
+import type { HttpHeaders } from "@tsonic/dotnet/System.Net.Http.Headers/internal/index.js";
+import type { HttpClient } from "@tsonic/dotnet/System.Net.Http/internal/index.js";
+import type { X509Certificate2Collection } from "@tsonic/dotnet/System.Security.Cryptography.X509Certificates/internal/index.js";
+import type { Task_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Byte, Object as ClrObject, String as ClrString, TimeSpan, Uri, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface IConfigurationManager_1$instance<T> {
     readonly __tsonic_iface_Microsoft_IdentityModel_Protocols_IConfigurationManager_1: never;
 
-    GetConfigurationAsync(cancel: CancellationToken): Task<T>;
+    GetConfigurationAsync(cancel: CancellationToken): Task_1<T>;
     RequestRefresh(): void;
 }
 
@@ -32,7 +32,7 @@ export type IConfigurationManager_1<T> = IConfigurationManager_1$instance<T>;
 export interface IConfigurationRetriever_1$instance<T> {
     readonly __tsonic_iface_Microsoft_IdentityModel_Protocols_IConfigurationRetriever_1: never;
 
-    GetConfigurationAsync(address: string, retriever: IDocumentRetriever, cancel: CancellationToken): Task<T>;
+    GetConfigurationAsync(address: string, retriever: IDocumentRetriever, cancel: CancellationToken): Task_1<T>;
 }
 
 
@@ -50,7 +50,7 @@ export type IConfigurationValidator_1<T> = IConfigurationValidator_1$instance<T>
 export interface IDocumentRetriever$instance {
     readonly __tsonic_iface_Microsoft_IdentityModel_Protocols_IDocumentRetriever: never;
 
-    GetDocumentAsync(address: string, cancel: CancellationToken): Task<System_Internal.String>;
+    GetDocumentAsync(address: string, cancel: CancellationToken): Task_1<System_Internal.String>;
 }
 
 
@@ -58,7 +58,7 @@ export type IDocumentRetriever = IDocumentRetriever$instance;
 
 export interface AuthenticationProtocolMessage$instance {
     IssuerAddress: string;
-    readonly Parameters: IDictionary<System_Internal.String, System_Internal.String>;
+    readonly Parameters: IDictionary_2<System_Internal.String, System_Internal.String>;
     PostTitle: string;
     Script: string;
     ScriptButtonText: string;
@@ -81,10 +81,10 @@ export type AuthenticationProtocolMessage = AuthenticationProtocolMessage$instan
 export interface ConfigurationManager_1$instance<T> extends BaseConfigurationManager {
     readonly __tsonic_iface_Microsoft_IdentityModel_Protocols_IConfigurationManager_1: never;
 
-    GetBaseConfigurationAsync(cancel: CancellationToken): Task<BaseConfiguration>;
-    GetBaseConfigurationAsync(cancel: CancellationToken): Task<BaseConfiguration>;
-    GetConfigurationAsync(): Task<T>;
-    GetConfigurationAsync(cancel: CancellationToken): Task<T>;
+    GetBaseConfigurationAsync(cancel: CancellationToken): Task_1<BaseConfiguration>;
+    GetBaseConfigurationAsync(cancel: CancellationToken): Task_1<BaseConfiguration>;
+    GetConfigurationAsync(): Task_1<T>;
+    GetConfigurationAsync(cancel: CancellationToken): Task_1<T>;
     RequestRefresh(): void;
 }
 
@@ -123,10 +123,10 @@ export const ConfigurationValidationResult: {
 
 export type ConfigurationValidationResult = ConfigurationValidationResult$instance;
 
-export interface FileDocumentRetriever$instance {
+export interface FileDocumentRetriever$instance extends IDocumentRetriever$instance {
     readonly __tsonic_iface_Microsoft_IdentityModel_Protocols_IDocumentRetriever: never;
 
-    GetDocumentAsync(address: string, cancel: CancellationToken): Task<System_Internal.String>;
+    GetDocumentAsync(address: string, cancel: CancellationToken): Task_1<System_Internal.String>;
 }
 
 
@@ -139,17 +139,15 @@ export interface __FileDocumentRetriever$views {
     As_IDocumentRetriever(): IDocumentRetriever$instance;
 }
 
-export interface FileDocumentRetriever$instance extends IDocumentRetriever$instance {}
-
 export type FileDocumentRetriever = FileDocumentRetriever$instance & __FileDocumentRetriever$views;
 
 
-export interface HttpDocumentRetriever$instance {
+export interface HttpDocumentRetriever$instance extends IDocumentRetriever$instance {
     readonly __tsonic_iface_Microsoft_IdentityModel_Protocols_IDocumentRetriever: never;
 
     RequireHttps: boolean;
     SendAdditionalHeaderData: boolean;
-    GetDocumentAsync(address: string, cancel: CancellationToken): Task<System_Internal.String>;
+    GetDocumentAsync(address: string, cancel: CancellationToken): Task_1<System_Internal.String>;
 }
 
 
@@ -166,17 +164,15 @@ export interface __HttpDocumentRetriever$views {
     As_IDocumentRetriever(): IDocumentRetriever$instance;
 }
 
-export interface HttpDocumentRetriever$instance extends IDocumentRetriever$instance {}
-
 export type HttpDocumentRetriever = HttpDocumentRetriever$instance & __HttpDocumentRetriever$views;
 
 
 export interface HttpRequestData$instance {
     Body: byte[];
     readonly ClientCertificates: X509Certificate2Collection;
-    Headers: IDictionary<System_Internal.String, IEnumerable<System_Internal.String>>;
+    Headers: IDictionary_2<System_Internal.String, IEnumerable_1<System_Internal.String>>;
     Method: string;
-    PropertyBag: IDictionary<System_Internal.String, unknown>;
+    PropertyBag: IDictionary_2<System_Internal.String, unknown>;
     Uri: Uri;
     AppendHeaders(headers: HttpHeaders): void;
 }
@@ -192,9 +188,9 @@ export type HttpRequestData = HttpRequestData$instance;
 export interface StaticConfigurationManager_1$instance<T> extends BaseConfigurationManager {
     readonly __tsonic_iface_Microsoft_IdentityModel_Protocols_IConfigurationManager_1: never;
 
-    GetBaseConfigurationAsync(cancel: CancellationToken): Task<BaseConfiguration>;
-    GetBaseConfigurationAsync(cancel: CancellationToken): Task<BaseConfiguration>;
-    GetConfigurationAsync(cancel: CancellationToken): Task<T>;
+    GetBaseConfigurationAsync(cancel: CancellationToken): Task_1<BaseConfiguration>;
+    GetBaseConfigurationAsync(cancel: CancellationToken): Task_1<BaseConfiguration>;
+    GetConfigurationAsync(cancel: CancellationToken): Task_1<T>;
     RequestRefresh(): void;
 }
 

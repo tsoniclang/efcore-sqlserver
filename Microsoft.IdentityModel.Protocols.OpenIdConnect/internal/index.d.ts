@@ -11,16 +11,16 @@ import type { AuthenticationProtocolMessage, IConfigurationRetriever_1, IDocumen
 import * as Microsoft_IdentityModel_Tokens_Internal from "../../Microsoft.IdentityModel.Tokens/internal/index.js";
 import type { BaseConfiguration, CryptoProviderFactory, JsonWebKeySet, SecurityKey } from "../../Microsoft.IdentityModel.Tokens/internal/index.js";
 import type { JwtSecurityToken } from "../../System.IdentityModel.Tokens.Jwt/internal/index.js";
-import type { ICollection, IDictionary, IEnumerable, KeyValuePair } from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { NameValueCollection } from "@tsonic/dotnet/System.Collections.Specialized.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { AsyncCallback, Boolean as ClrBoolean, Enum, Exception, IAsyncResult, ICloneable, IComparable, IConvertible, IFormattable, Int32, IntPtr, ISpanFormattable, MulticastDelegate, Object as ClrObject, String as ClrString, TimeSpan, Void } from "@tsonic/dotnet/System.js";
-import type { HttpClient } from "@tsonic/dotnet/System.Net.Http.js";
-import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { ISerializable, SerializationInfo, StreamingContext } from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { HashAlgorithm } from "@tsonic/dotnet/System.Security.Cryptography.js";
-import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import type { ICollection_1, IDictionary_2, IEnumerable_1, KeyValuePair_2 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { NameValueCollection } from "@tsonic/dotnet/System.Collections.Specialized/internal/index.js";
+import type { HttpClient } from "@tsonic/dotnet/System.Net.Http/internal/index.js";
+import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { ISerializable, SerializationInfo, StreamingContext } from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { HashAlgorithm } from "@tsonic/dotnet/System.Security.Cryptography/internal/index.js";
+import type { Task_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { AsyncCallback, Boolean as ClrBoolean, Enum, Exception, IAsyncResult, ICloneable, IComparable, IConvertible, IFormattable, Int32, IntPtr, ISpanFormattable, MulticastDelegate, Object as ClrObject, String as ClrString, TimeSpan, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export enum OpenIdConnectRequestType {
     Authentication = 0,
@@ -33,63 +33,63 @@ export type IdTokenValidator = (idToken: JwtSecurityToken, context: OpenIdConnec
 
 
 export interface OpenIdConnectConfiguration$instance extends BaseConfiguration {
-    readonly AcrValuesSupported: ICollection<System_Internal.String>;
+    readonly AcrValuesSupported: ICollection_1<System_Internal.String>;
     ActiveTokenEndpoint: string;
-    readonly AdditionalData: IDictionary<System_Internal.String, unknown>;
+    readonly AdditionalData: IDictionary_2<System_Internal.String, unknown>;
     AuthorizationEndpoint: string;
     AuthorizationResponseIssParameterSupported: boolean;
     BackchannelAuthenticationEndpoint: string;
-    readonly BackchannelAuthenticationRequestSigningAlgValuesSupported: ICollection<System_Internal.String>;
-    readonly BackchannelTokenDeliveryModesSupported: ICollection<System_Internal.String>;
+    readonly BackchannelAuthenticationRequestSigningAlgValuesSupported: ICollection_1<System_Internal.String>;
+    readonly BackchannelTokenDeliveryModesSupported: ICollection_1<System_Internal.String>;
     BackchannelUserCodeParameterSupported: boolean;
     CheckSessionIframe: string;
-    readonly ClaimsLocalesSupported: ICollection<System_Internal.String>;
+    readonly ClaimsLocalesSupported: ICollection_1<System_Internal.String>;
     ClaimsParameterSupported: boolean;
-    readonly ClaimsSupported: ICollection<System_Internal.String>;
-    readonly ClaimTypesSupported: ICollection<System_Internal.String>;
-    readonly DisplayValuesSupported: ICollection<System_Internal.String>;
-    readonly DPoPSigningAlgValuesSupported: ICollection<System_Internal.String>;
+    readonly ClaimsSupported: ICollection_1<System_Internal.String>;
+    readonly ClaimTypesSupported: ICollection_1<System_Internal.String>;
+    readonly DisplayValuesSupported: ICollection_1<System_Internal.String>;
+    readonly DPoPSigningAlgValuesSupported: ICollection_1<System_Internal.String>;
     EndSessionEndpoint: string;
     FrontchannelLogoutSessionSupported: string;
     FrontchannelLogoutSupported: string;
-    readonly GrantTypesSupported: ICollection<System_Internal.String>;
+    readonly GrantTypesSupported: ICollection_1<System_Internal.String>;
     HttpLogoutSupported: boolean;
-    readonly IdTokenEncryptionAlgValuesSupported: ICollection<System_Internal.String>;
-    readonly IdTokenEncryptionEncValuesSupported: ICollection<System_Internal.String>;
-    readonly IdTokenSigningAlgValuesSupported: ICollection<System_Internal.String>;
+    readonly IdTokenEncryptionAlgValuesSupported: ICollection_1<System_Internal.String>;
+    readonly IdTokenEncryptionEncValuesSupported: ICollection_1<System_Internal.String>;
+    readonly IdTokenSigningAlgValuesSupported: ICollection_1<System_Internal.String>;
     IntrospectionEndpoint: string;
-    readonly IntrospectionEndpointAuthMethodsSupported: ICollection<System_Internal.String>;
-    readonly IntrospectionEndpointAuthSigningAlgValuesSupported: ICollection<System_Internal.String>;
+    readonly IntrospectionEndpointAuthMethodsSupported: ICollection_1<System_Internal.String>;
+    readonly IntrospectionEndpointAuthSigningAlgValuesSupported: ICollection_1<System_Internal.String>;
     Issuer: string;
     JsonWebKeySet: JsonWebKeySet;
     JwksUri: string;
     LogoutSessionSupported: boolean;
     OpPolicyUri: string;
     OpTosUri: string;
-    readonly PromptValuesSupported: ICollection<System_Internal.String>;
+    readonly PromptValuesSupported: ICollection_1<System_Internal.String>;
     PushedAuthorizationRequestEndpoint: string;
     RegistrationEndpoint: string;
-    readonly RequestObjectEncryptionAlgValuesSupported: ICollection<System_Internal.String>;
-    readonly RequestObjectEncryptionEncValuesSupported: ICollection<System_Internal.String>;
-    readonly RequestObjectSigningAlgValuesSupported: ICollection<System_Internal.String>;
+    readonly RequestObjectEncryptionAlgValuesSupported: ICollection_1<System_Internal.String>;
+    readonly RequestObjectEncryptionEncValuesSupported: ICollection_1<System_Internal.String>;
+    readonly RequestObjectSigningAlgValuesSupported: ICollection_1<System_Internal.String>;
     RequestParameterSupported: boolean;
     RequestUriParameterSupported: boolean;
     RequirePushedAuthorizationRequests: boolean;
     RequireRequestUriRegistration: boolean;
-    readonly ResponseModesSupported: ICollection<System_Internal.String>;
-    readonly ResponseTypesSupported: ICollection<System_Internal.String>;
-    readonly ScopesSupported: ICollection<System_Internal.String>;
+    readonly ResponseModesSupported: ICollection_1<System_Internal.String>;
+    readonly ResponseTypesSupported: ICollection_1<System_Internal.String>;
+    readonly ScopesSupported: ICollection_1<System_Internal.String>;
     ServiceDocumentation: string;
-    readonly SigningKeys: ICollection<SecurityKey>;
-    readonly SubjectTypesSupported: ICollection<System_Internal.String>;
+    readonly SigningKeys: ICollection_1<SecurityKey>;
+    readonly SubjectTypesSupported: ICollection_1<System_Internal.String>;
     TokenEndpoint: string;
-    readonly TokenEndpointAuthMethodsSupported: ICollection<System_Internal.String>;
-    readonly TokenEndpointAuthSigningAlgValuesSupported: ICollection<System_Internal.String>;
-    readonly UILocalesSupported: ICollection<System_Internal.String>;
+    readonly TokenEndpointAuthMethodsSupported: ICollection_1<System_Internal.String>;
+    readonly TokenEndpointAuthSigningAlgValuesSupported: ICollection_1<System_Internal.String>;
+    readonly UILocalesSupported: ICollection_1<System_Internal.String>;
     UserInfoEndpoint: string;
-    readonly UserInfoEndpointEncryptionAlgValuesSupported: ICollection<System_Internal.String>;
-    readonly UserInfoEndpointEncryptionEncValuesSupported: ICollection<System_Internal.String>;
-    readonly UserInfoEndpointSigningAlgValuesSupported: ICollection<System_Internal.String>;
+    readonly UserInfoEndpointEncryptionAlgValuesSupported: ICollection_1<System_Internal.String>;
+    readonly UserInfoEndpointEncryptionEncValuesSupported: ICollection_1<System_Internal.String>;
+    readonly UserInfoEndpointSigningAlgValuesSupported: ICollection_1<System_Internal.String>;
     ShouldSerializeAcrValuesSupported(): boolean;
     ShouldSerializeBackchannelAuthenticationRequestSigningAlgValuesSupported(): boolean;
     ShouldSerializeBackchannelTokenDeliveryModesSupported(): boolean;
@@ -140,17 +140,15 @@ export interface OpenIdConnectConfigurationRetriever$instance {
 
 export const OpenIdConnectConfigurationRetriever: {
     new(): OpenIdConnectConfigurationRetriever;
-    GetAsync(address: string, retriever: IDocumentRetriever, cancel: CancellationToken): Task<OpenIdConnectConfiguration>;
-    GetAsync(address: string, httpClient: HttpClient, cancel: CancellationToken): Task<OpenIdConnectConfiguration>;
-    GetAsync(address: string, cancel: CancellationToken): Task<OpenIdConnectConfiguration>;
+    GetAsync(address: string, retriever: IDocumentRetriever, cancel: CancellationToken): Task_1<OpenIdConnectConfiguration>;
+    GetAsync(address: string, httpClient: HttpClient, cancel: CancellationToken): Task_1<OpenIdConnectConfiguration>;
+    GetAsync(address: string, cancel: CancellationToken): Task_1<OpenIdConnectConfiguration>;
 };
 
 
 export interface __OpenIdConnectConfigurationRetriever$views {
     As_IConfigurationRetriever_1(): Microsoft_IdentityModel_Protocols_Internal.IConfigurationRetriever_1$instance<OpenIdConnectConfiguration>;
 }
-
-export interface OpenIdConnectConfigurationRetriever$instance extends Microsoft_IdentityModel_Protocols_Internal.IConfigurationRetriever_1$instance<OpenIdConnectConfiguration> {}
 
 export type OpenIdConnectConfigurationRetriever = OpenIdConnectConfigurationRetriever$instance & __OpenIdConnectConfigurationRetriever$views;
 
@@ -211,7 +209,7 @@ export const OpenIdConnectMessage: {
     new(): OpenIdConnectMessage;
     new(json: string): OpenIdConnectMessage;
     new(nameValueCollection: NameValueCollection): OpenIdConnectMessage;
-    new(parameters: IEnumerable<KeyValuePair<System_Internal.String, string[]>>): OpenIdConnectMessage;
+    new(parameters: IEnumerable_1<KeyValuePair_2<System_Internal.String, string[]>>): OpenIdConnectMessage;
     EnableTelemetryParametersByDefault: boolean;
 };
 
@@ -312,7 +310,7 @@ export type OpenIdConnectProtocolValidationContext = OpenIdConnectProtocolValida
 
 export interface OpenIdConnectProtocolValidator$instance {
     CryptoProviderFactory: CryptoProviderFactory;
-    readonly HashAlgorithmMap: IDictionary<System_Internal.String, System_Internal.String>;
+    readonly HashAlgorithmMap: IDictionary_2<System_Internal.String, System_Internal.String>;
     IdTokenValidator: IdTokenValidator;
     NonceLifetime: TimeSpan;
     RequireAcr: boolean;

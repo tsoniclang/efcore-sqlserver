@@ -7,8 +7,8 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 
 // Import types from other namespaces
 import * as System_Internal from "@tsonic/dotnet/System.js";
-import * as Microsoft_EntityFrameworkCore_Diagnostics_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics.js";
-import type { EventDefinitionBase, RelationalLoggingDefinitions } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics.js";
+import * as Microsoft_EntityFrameworkCore_Diagnostics_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics/internal/index.js";
+import type { EventDefinitionBase, RelationalLoggingDefinitions } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics/internal/index.js";
 
 export interface SqlServerLoggingDefinitions$instance extends RelationalLoggingDefinitions {
     LogDecimalTypeKey: EventDefinitionBase | undefined;

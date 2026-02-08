@@ -7,18 +7,18 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 
 // Import types from other namespaces
 import type { AzureSqlDbContextOptionsBuilder, AzureSynapseDbContextOptionsBuilder, SqlServerDbContextOptionsBuilder } from "../../Microsoft.EntityFrameworkCore.Infrastructure/internal/index.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Action, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
-import type { DbContext, DbContextOptionsBuilder } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.js";
-import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Action_1, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
+import type { DbContext, DbContextOptionsBuilder } from "@tsonic/efcore/Microsoft.EntityFrameworkCore/internal/index.js";
+import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection/internal/index.js";
 
 export abstract class SqlServerServiceCollectionExtensions$instance {
-    static AddAzureSql<TContext extends DbContext>(serviceCollection: IServiceCollection, connectionString: string, azureSqlOptionsAction?: Action<AzureSqlDbContextOptionsBuilder>, optionsAction?: Action<DbContextOptionsBuilder>): IServiceCollection;
-    static AddAzureSynapse<TContext extends DbContext>(serviceCollection: IServiceCollection, connectionString: string, azureSynapseOptionsAction?: Action<AzureSynapseDbContextOptionsBuilder>, optionsAction?: Action<DbContextOptionsBuilder>): IServiceCollection;
+    static AddAzureSql<TContext extends DbContext>(serviceCollection: IServiceCollection, connectionString: string, azureSqlOptionsAction?: Action_1<AzureSqlDbContextOptionsBuilder>, optionsAction?: Action_1<DbContextOptionsBuilder>): IServiceCollection;
+    static AddAzureSynapse<TContext extends DbContext>(serviceCollection: IServiceCollection, connectionString: string, azureSynapseOptionsAction?: Action_1<AzureSynapseDbContextOptionsBuilder>, optionsAction?: Action_1<DbContextOptionsBuilder>): IServiceCollection;
     static AddEntityFrameworkAzureSql(serviceCollection: IServiceCollection): IServiceCollection;
     static AddEntityFrameworkAzureSynapse(serviceCollection: IServiceCollection): IServiceCollection;
     static AddEntityFrameworkSqlServer(serviceCollection: IServiceCollection): IServiceCollection;
-    static AddSqlServer<TContext extends DbContext>(serviceCollection: IServiceCollection, connectionString: string, sqlServerOptionsAction?: Action<SqlServerDbContextOptionsBuilder>, optionsAction?: Action<DbContextOptionsBuilder>): IServiceCollection;
+    static AddSqlServer<TContext extends DbContext>(serviceCollection: IServiceCollection, connectionString: string, sqlServerOptionsAction?: Action_1<SqlServerDbContextOptionsBuilder>, optionsAction?: Action_1<DbContextOptionsBuilder>): IServiceCollection;
 }
 
 

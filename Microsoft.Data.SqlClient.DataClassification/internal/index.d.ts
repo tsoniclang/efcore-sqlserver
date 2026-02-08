@@ -6,10 +6,10 @@
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 // Import types from other namespaces
-import type { IList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { ReadOnlyCollection } from "@tsonic/dotnet/System.Collections.ObjectModel.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
+import type { IList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { ReadOnlyCollection_1 } from "@tsonic/dotnet/System.Collections.ObjectModel/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
 export enum SensitivityRank {
     NOT_DEFINED = -1,
@@ -22,12 +22,12 @@ export enum SensitivityRank {
 
 
 export interface ColumnSensitivity$instance {
-    readonly SensitivityProperties: ReadOnlyCollection<SensitivityProperty>;
+    readonly SensitivityProperties: ReadOnlyCollection_1<SensitivityProperty>;
 }
 
 
 export const ColumnSensitivity: {
-    new(sensitivityProperties: IList<SensitivityProperty>): ColumnSensitivity;
+    new(sensitivityProperties: IList_1<SensitivityProperty>): ColumnSensitivity;
 };
 
 
@@ -60,15 +60,15 @@ export const Label: {
 export type Label = Label$instance;
 
 export interface SensitivityClassification$instance {
-    readonly ColumnSensitivities: ReadOnlyCollection<ColumnSensitivity>;
-    readonly InformationTypes: ReadOnlyCollection<InformationType>;
-    readonly Labels: ReadOnlyCollection<Label>;
+    readonly ColumnSensitivities: ReadOnlyCollection_1<ColumnSensitivity>;
+    readonly InformationTypes: ReadOnlyCollection_1<InformationType>;
+    readonly Labels: ReadOnlyCollection_1<Label>;
     readonly SensitivityRank: SensitivityRank;
 }
 
 
 export const SensitivityClassification: {
-    new(labels: IList<Label>, informationTypes: IList<InformationType>, columnSensitivity: IList<ColumnSensitivity>, sensitivityRank: SensitivityRank): SensitivityClassification;
+    new(labels: IList_1<Label>, informationTypes: IList_1<InformationType>, columnSensitivity: IList_1<ColumnSensitivity>, sensitivityRank: SensitivityRank): SensitivityClassification;
 };
 
 

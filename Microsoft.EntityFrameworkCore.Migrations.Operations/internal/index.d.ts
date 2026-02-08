@@ -7,13 +7,13 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 
 // Import types from other namespaces
 import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { String as ClrString } from "@tsonic/dotnet/System.js";
-import * as Microsoft_EntityFrameworkCore_Infrastructure_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure.js";
-import type { IAnnotatable, IReadOnlyAnnotatable } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure.js";
-import * as Microsoft_EntityFrameworkCore_Metadata_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
-import type { IMutableAnnotatable } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
-import * as Microsoft_EntityFrameworkCore_Migrations_Operations_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations.Operations.js";
-import type { DatabaseOperation, MigrationOperation } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations.Operations.js";
+import type { String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
+import * as Microsoft_EntityFrameworkCore_Infrastructure_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure/internal/index.js";
+import type { IAnnotatable, IReadOnlyAnnotatable } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure/internal/index.js";
+import * as Microsoft_EntityFrameworkCore_Metadata_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata/internal/index.js";
+import type { IMutableAnnotatable } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata/internal/index.js";
+import * as Microsoft_EntityFrameworkCore_Migrations_Operations_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations.Operations/internal/index.js";
+import type { DatabaseOperation, MigrationOperation } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations.Operations/internal/index.js";
 
 export interface SqlServerCreateDatabaseOperation$instance extends DatabaseOperation {
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IAnnotatable: never;

@@ -7,12 +7,12 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 
 // Import types from other namespaces
 import type { SqlServerValueGenerationStrategy } from "../../Microsoft.EntityFrameworkCore.Metadata/internal/index.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Func, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
-import * as Microsoft_EntityFrameworkCore_Diagnostics_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics.js";
-import type { EventData, EventDefinitionBase } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics.js";
-import type { IReadOnlyProperty } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
-import type { EventId } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Func_3, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
+import * as Microsoft_EntityFrameworkCore_Diagnostics_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics/internal/index.js";
+import type { EventData, EventDefinitionBase } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics/internal/index.js";
+import type { IReadOnlyProperty } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata/internal/index.js";
+import type { EventId } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
 
 export interface ConflictingValueGenerationStrategiesEventData$instance extends EventData {
     readonly OtherValueGenerationStrategy: string;
@@ -22,7 +22,7 @@ export interface ConflictingValueGenerationStrategiesEventData$instance extends 
 
 
 export const ConflictingValueGenerationStrategiesEventData: {
-    new(eventDefinition: EventDefinitionBase, messageGenerator: Func<EventDefinitionBase, EventData, System_Internal.String>, sqlServerValueGenerationStrategy: SqlServerValueGenerationStrategy, otherValueGenerationStrategy: string, property: IReadOnlyProperty): ConflictingValueGenerationStrategiesEventData;
+    new(eventDefinition: EventDefinitionBase, messageGenerator: Func_3<EventDefinitionBase, EventData, System_Internal.String>, sqlServerValueGenerationStrategy: SqlServerValueGenerationStrategy, otherValueGenerationStrategy: string, property: IReadOnlyProperty): ConflictingValueGenerationStrategiesEventData;
 };
 
 

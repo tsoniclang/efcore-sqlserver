@@ -10,12 +10,12 @@ import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import type { Configuration, ConfigurationAllowDefinition, ConfigurationAllowExeDefinition, ProtectedConfigurationProvider, ProtectedConfigurationSection } from "../../System.Configuration/internal/index.js";
-import type { Stream } from "@tsonic/dotnet/System.IO.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { AsyncCallback, Boolean as ClrBoolean, EventArgs, IAsyncResult, ICloneable, IDisposable, Int32, IntPtr, MulticastDelegate, Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System.js";
-import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { PermissionSet } from "@tsonic/dotnet/System.Security.js";
+import type { Stream } from "@tsonic/dotnet/System.IO/internal/index.js";
+import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { PermissionSet } from "@tsonic/dotnet/System.Security/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { AsyncCallback, Boolean as ClrBoolean, EventArgs, IAsyncResult, ICloneable, IDisposable, Int32, IntPtr, MulticastDelegate, Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export type InternalConfigEventHandler = (sender: unknown, e: InternalConfigEventArgs) => void;
 

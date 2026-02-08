@@ -14,17 +14,17 @@ import * as Microsoft_IdentityModel_Logging_Internal from "../../Microsoft.Ident
 import type { ISafeLogSecurityArtifact } from "../../Microsoft.IdentityModel.Logging/internal/index.js";
 import * as Microsoft_IdentityModel_Tokens_Internal from "../../Microsoft.IdentityModel.Tokens/internal/index.js";
 import type { EncryptingCredentials, ISecurityTokenValidator, SecurityKey, SecurityKeyIdentifierClause, SecurityToken, SecurityTokenDescriptor, SecurityTokenHandler, SigningCredentials, TokenValidationParameters, TokenValidationResult } from "../../Microsoft.IdentityModel.Tokens/internal/index.js";
-import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { Dictionary, ICollection as ICollection__System_Collections_Generic, IDictionary as IDictionary__System_Collections_Generic, IEnumerable as IEnumerable__System_Collections_Generic, IList, IReadOnlyCollection, IReadOnlyDictionary, ISet, KeyValuePair } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections.js";
-import type { ICollection, IDictionary, IEnumerable } from "@tsonic/dotnet/System.Collections.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, DateTime, Int32, Int64, Nullable, Object as ClrObject, String as ClrString, Type, ValueType, Void } from "@tsonic/dotnet/System.js";
-import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { IDeserializationCallback, ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { Claim, ClaimsIdentity, ClaimsPrincipal } from "@tsonic/dotnet/System.Security.Claims.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
-import type { XmlReader, XmlWriter } from "@tsonic/dotnet/System.Xml.js";
+import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { Dictionary_2, ICollection_1, IDictionary_2, IEnumerable_1, IList_1, IReadOnlyCollection_1, IReadOnlyDictionary_2, ISet_1, KeyValuePair_2 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { ICollection, IDictionary, IEnumerable } from "@tsonic/dotnet/System.Collections/internal/index.js";
+import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { IDeserializationCallback, ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { Claim, ClaimsIdentity, ClaimsPrincipal } from "@tsonic/dotnet/System.Security.Claims/internal/index.js";
+import type { Task_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import type { XmlReader, XmlWriter } from "@tsonic/dotnet/System.Xml/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, DateTime, Int32, Int64, Nullable_1, Object as ClrObject, String as ClrString, Type, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface JwtHeaderParameterNames$instance {
 }
@@ -102,7 +102,7 @@ export const JwtRegisteredClaimNames: {
 
 export type JwtRegisteredClaimNames = JwtRegisteredClaimNames$instance;
 
-export interface JwtHeader$instance extends Dictionary<System_Internal.String, unknown> {
+export interface JwtHeader$instance extends Dictionary_2<System_Internal.String, unknown> {
     readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IDictionary_2: never;
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
@@ -134,19 +134,19 @@ export const JwtHeader: {
     new(): JwtHeader;
     new(signingCredentials: SigningCredentials): JwtHeader;
     new(encryptingCredentials: EncryptingCredentials): JwtHeader;
-    new(signingCredentials: SigningCredentials, outboundAlgorithmMap: IDictionary__System_Collections_Generic<System_Internal.String, System_Internal.String>): JwtHeader;
-    new(signingCredentials: SigningCredentials, outboundAlgorithmMap: IDictionary__System_Collections_Generic<System_Internal.String, System_Internal.String>, tokenType: string): JwtHeader;
-    new(signingCredentials: SigningCredentials, outboundAlgorithmMap: IDictionary__System_Collections_Generic<System_Internal.String, System_Internal.String>, tokenType: string, additionalInnerHeaderClaims: IDictionary__System_Collections_Generic<System_Internal.String, unknown>): JwtHeader;
-    new(encryptingCredentials: EncryptingCredentials, outboundAlgorithmMap: IDictionary__System_Collections_Generic<System_Internal.String, System_Internal.String>): JwtHeader;
-    new(encryptingCredentials: EncryptingCredentials, outboundAlgorithmMap: IDictionary__System_Collections_Generic<System_Internal.String, System_Internal.String>, tokenType: string): JwtHeader;
-    new(encryptingCredentials: EncryptingCredentials, outboundAlgorithmMap: IDictionary__System_Collections_Generic<System_Internal.String, System_Internal.String>, tokenType: string, additionalHeaderClaims: IDictionary__System_Collections_Generic<System_Internal.String, unknown>): JwtHeader;
+    new(signingCredentials: SigningCredentials, outboundAlgorithmMap: IDictionary_2<System_Internal.String, System_Internal.String>): JwtHeader;
+    new(signingCredentials: SigningCredentials, outboundAlgorithmMap: IDictionary_2<System_Internal.String, System_Internal.String>, tokenType: string): JwtHeader;
+    new(signingCredentials: SigningCredentials, outboundAlgorithmMap: IDictionary_2<System_Internal.String, System_Internal.String>, tokenType: string, additionalInnerHeaderClaims: IDictionary_2<System_Internal.String, unknown>): JwtHeader;
+    new(encryptingCredentials: EncryptingCredentials, outboundAlgorithmMap: IDictionary_2<System_Internal.String, System_Internal.String>): JwtHeader;
+    new(encryptingCredentials: EncryptingCredentials, outboundAlgorithmMap: IDictionary_2<System_Internal.String, System_Internal.String>, tokenType: string): JwtHeader;
+    new(encryptingCredentials: EncryptingCredentials, outboundAlgorithmMap: IDictionary_2<System_Internal.String, System_Internal.String>, tokenType: string, additionalHeaderClaims: IDictionary_2<System_Internal.String, unknown>): JwtHeader;
     Base64UrlDeserialize(base64UrlEncodedJsonString: string): JwtHeader;
 };
 
 
 export type JwtHeader = JwtHeader$instance;
 
-export interface JwtPayload$instance extends Dictionary<System_Internal.String, unknown> {
+export interface JwtPayload$instance extends Dictionary_2<System_Internal.String, unknown> {
     readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IDictionary_2: never;
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
@@ -160,26 +160,26 @@ export interface JwtPayload$instance extends Dictionary<System_Internal.String, 
 
     readonly Acr: string;
     readonly Actort: string;
-    readonly Amr: IList<System_Internal.String>;
-    readonly Aud: IList<System_Internal.String>;
-    readonly AuthTime: Nullable<System_Internal.Int32>;
+    readonly Amr: IList_1<System_Internal.String>;
+    readonly Aud: IList_1<System_Internal.String>;
+    readonly AuthTime: Nullable_1<System_Internal.Int32>;
     readonly Azp: string;
     readonly CHash: string;
-    readonly Claims: IEnumerable__System_Collections_Generic<Claim>;
-    readonly Exp: Nullable<System_Internal.Int32>;
-    readonly Expiration: Nullable<System_Internal.Int64>;
-    readonly Iat: Nullable<System_Internal.Int32>;
+    readonly Claims: IEnumerable_1<Claim>;
+    readonly Exp: Nullable_1<System_Internal.Int32>;
+    readonly Expiration: Nullable_1<System_Internal.Int64>;
+    readonly Iat: Nullable_1<System_Internal.Int32>;
     readonly Iss: string;
     readonly IssuedAt: DateTime;
     readonly Jti: string;
-    readonly Nbf: Nullable<System_Internal.Int32>;
+    readonly Nbf: Nullable_1<System_Internal.Int32>;
     readonly Nonce: string;
-    readonly NotBefore: Nullable<System_Internal.Int64>;
+    readonly NotBefore: Nullable_1<System_Internal.Int64>;
     readonly Sub: string;
     readonly ValidFrom: DateTime;
     readonly ValidTo: DateTime;
     AddClaim(claim: Claim): void;
-    AddClaims(claims: IEnumerable__System_Collections_Generic<Claim>): void;
+    AddClaims(claims: IEnumerable_1<Claim>): void;
     Base64UrlEncode(): string;
     SerializeToJson(): string;
 }
@@ -187,10 +187,10 @@ export interface JwtPayload$instance extends Dictionary<System_Internal.String, 
 
 export const JwtPayload: {
     new(): JwtPayload;
-    new(claims: IEnumerable__System_Collections_Generic<Claim>): JwtPayload;
-    new(issuer: string, audience: string, claims: IEnumerable__System_Collections_Generic<Claim>, notBefore: Nullable<DateTime>, expires: Nullable<DateTime>): JwtPayload;
-    new(issuer: string, audience: string, claims: IEnumerable__System_Collections_Generic<Claim>, notBefore: Nullable<DateTime>, expires: Nullable<DateTime>, issuedAt: Nullable<DateTime>): JwtPayload;
-    new(issuer: string, audience: string, claims: IEnumerable__System_Collections_Generic<Claim>, claimsCollection: IDictionary__System_Collections_Generic<System_Internal.String, unknown>, notBefore: Nullable<DateTime>, expires: Nullable<DateTime>, issuedAt: Nullable<DateTime>): JwtPayload;
+    new(claims: IEnumerable_1<Claim>): JwtPayload;
+    new(issuer: string, audience: string, claims: IEnumerable_1<Claim>, notBefore: Nullable_1<DateTime>, expires: Nullable_1<DateTime>): JwtPayload;
+    new(issuer: string, audience: string, claims: IEnumerable_1<Claim>, notBefore: Nullable_1<DateTime>, expires: Nullable_1<DateTime>, issuedAt: Nullable_1<DateTime>): JwtPayload;
+    new(issuer: string, audience: string, claims: IEnumerable_1<Claim>, claimsCollection: IDictionary_2<System_Internal.String, unknown>, notBefore: Nullable_1<DateTime>, expires: Nullable_1<DateTime>, issuedAt: Nullable_1<DateTime>): JwtPayload;
     Base64UrlDeserialize(base64UrlEncodedJsonString: string): JwtPayload;
     Deserialize(jsonString: string): JwtPayload;
 };
@@ -202,8 +202,8 @@ export interface JwtSecurityToken$instance extends SecurityToken {
     readonly __tsonic_iface_Microsoft_IdentityModel_Logging_ISafeLogSecurityArtifact: never;
 
     readonly Actor: string;
-    readonly Audiences: IEnumerable__System_Collections_Generic<System_Internal.String>;
-    readonly Claims: IEnumerable__System_Collections_Generic<Claim>;
+    readonly Audiences: IEnumerable_1<System_Internal.String>;
+    readonly Claims: IEnumerable_1<Claim>;
     readonly EncodedHeader: string;
     readonly EncodedPayload: string;
     readonly EncryptingCredentials: EncryptingCredentials;
@@ -238,7 +238,7 @@ export const JwtSecurityToken: {
     new(header: JwtHeader, payload: JwtPayload, rawHeader: string, rawPayload: string, rawSignature: string): JwtSecurityToken;
     new(header: JwtHeader, innerToken: JwtSecurityToken, rawHeader: string, rawEncryptedKey: string, rawInitializationVector: string, rawCiphertext: string, rawAuthenticationTag: string): JwtSecurityToken;
     new(header: JwtHeader, payload: JwtPayload): JwtSecurityToken;
-    new(issuer: string, audience: string, claims: IEnumerable__System_Collections_Generic<Claim>, notBefore: Nullable<DateTime>, expires: Nullable<DateTime>, signingCredentials: SigningCredentials): JwtSecurityToken;
+    new(issuer: string, audience: string, claims: IEnumerable_1<Claim>, notBefore: Nullable_1<DateTime>, expires: Nullable_1<DateTime>, signingCredentials: SigningCredentials): JwtSecurityToken;
 };
 
 
@@ -254,24 +254,24 @@ export interface JwtSecurityTokenHandler$instance extends SecurityTokenHandler {
 
     readonly CanValidateToken: boolean;
     readonly CanWriteToken: boolean;
-    InboundClaimFilter: ISet<System_Internal.String>;
-    InboundClaimTypeMap: IDictionary__System_Collections_Generic<System_Internal.String, System_Internal.String>;
+    InboundClaimFilter: ISet_1<System_Internal.String>;
+    InboundClaimTypeMap: IDictionary_2<System_Internal.String, System_Internal.String>;
     MapInboundClaims: boolean;
-    readonly OutboundAlgorithmMap: IDictionary__System_Collections_Generic<System_Internal.String, System_Internal.String>;
-    OutboundClaimTypeMap: IDictionary__System_Collections_Generic<System_Internal.String, System_Internal.String>;
+    readonly OutboundAlgorithmMap: IDictionary_2<System_Internal.String, System_Internal.String>;
+    OutboundClaimTypeMap: IDictionary_2<System_Internal.String, System_Internal.String>;
     readonly TokenType: Type;
     CanReadToken(token: string): boolean;
     CanReadToken(reader: XmlReader): boolean;
     CreateActorValue(actor: ClaimsIdentity): string;
     CreateClaimsIdentity(jwtToken: JwtSecurityToken, issuer: string, validationParameters: TokenValidationParameters): ClaimsIdentity;
     CreateEncodedJwt(tokenDescriptor: SecurityTokenDescriptor): string;
-    CreateEncodedJwt(issuer: string, audience: string, subject: ClaimsIdentity, notBefore: Nullable<DateTime>, expires: Nullable<DateTime>, issuedAt: Nullable<DateTime>, signingCredentials: SigningCredentials): string;
-    CreateEncodedJwt(issuer: string, audience: string, subject: ClaimsIdentity, notBefore: Nullable<DateTime>, expires: Nullable<DateTime>, issuedAt: Nullable<DateTime>, signingCredentials: SigningCredentials, encryptingCredentials: EncryptingCredentials): string;
-    CreateEncodedJwt(issuer: string, audience: string, subject: ClaimsIdentity, notBefore: Nullable<DateTime>, expires: Nullable<DateTime>, issuedAt: Nullable<DateTime>, signingCredentials: SigningCredentials, encryptingCredentials: EncryptingCredentials, claimCollection: IDictionary__System_Collections_Generic<System_Internal.String, unknown>): string;
+    CreateEncodedJwt(issuer: string, audience: string, subject: ClaimsIdentity, notBefore: Nullable_1<DateTime>, expires: Nullable_1<DateTime>, issuedAt: Nullable_1<DateTime>, signingCredentials: SigningCredentials): string;
+    CreateEncodedJwt(issuer: string, audience: string, subject: ClaimsIdentity, notBefore: Nullable_1<DateTime>, expires: Nullable_1<DateTime>, issuedAt: Nullable_1<DateTime>, signingCredentials: SigningCredentials, encryptingCredentials: EncryptingCredentials): string;
+    CreateEncodedJwt(issuer: string, audience: string, subject: ClaimsIdentity, notBefore: Nullable_1<DateTime>, expires: Nullable_1<DateTime>, issuedAt: Nullable_1<DateTime>, signingCredentials: SigningCredentials, encryptingCredentials: EncryptingCredentials, claimCollection: IDictionary_2<System_Internal.String, unknown>): string;
     CreateJwtSecurityToken(tokenDescriptor: SecurityTokenDescriptor): JwtSecurityToken;
-    CreateJwtSecurityToken(issuer: string, audience: string, subject: ClaimsIdentity, notBefore: Nullable<DateTime>, expires: Nullable<DateTime>, issuedAt: Nullable<DateTime>, signingCredentials: SigningCredentials, encryptingCredentials: EncryptingCredentials): JwtSecurityToken;
-    CreateJwtSecurityToken(issuer: string, audience: string, subject: ClaimsIdentity, notBefore: Nullable<DateTime>, expires: Nullable<DateTime>, issuedAt: Nullable<DateTime>, signingCredentials: SigningCredentials, encryptingCredentials: EncryptingCredentials, claimCollection: IDictionary__System_Collections_Generic<System_Internal.String, unknown>): JwtSecurityToken;
-    CreateJwtSecurityToken(issuer?: string, audience?: string, subject?: ClaimsIdentity, notBefore?: Nullable<DateTime>, expires?: Nullable<DateTime>, issuedAt?: Nullable<DateTime>, signingCredentials?: SigningCredentials): JwtSecurityToken;
+    CreateJwtSecurityToken(issuer: string, audience: string, subject: ClaimsIdentity, notBefore: Nullable_1<DateTime>, expires: Nullable_1<DateTime>, issuedAt: Nullable_1<DateTime>, signingCredentials: SigningCredentials, encryptingCredentials: EncryptingCredentials): JwtSecurityToken;
+    CreateJwtSecurityToken(issuer: string, audience: string, subject: ClaimsIdentity, notBefore: Nullable_1<DateTime>, expires: Nullable_1<DateTime>, issuedAt: Nullable_1<DateTime>, signingCredentials: SigningCredentials, encryptingCredentials: EncryptingCredentials, claimCollection: IDictionary_2<System_Internal.String, unknown>): JwtSecurityToken;
+    CreateJwtSecurityToken(issuer?: string, audience?: string, subject?: ClaimsIdentity, notBefore?: Nullable_1<DateTime>, expires?: Nullable_1<DateTime>, issuedAt?: Nullable_1<DateTime>, signingCredentials?: SigningCredentials): JwtSecurityToken;
     CreateToken(tokenDescriptor: SecurityTokenDescriptor): SecurityToken;
     ReadJwtToken(token: string): JwtSecurityToken;
     ReadToken(token: string): SecurityToken;
@@ -279,17 +279,17 @@ export interface JwtSecurityTokenHandler$instance extends SecurityTokenHandler {
     ReadToken(reader: XmlReader): SecurityToken;
     ResolveIssuerSigningKey(token: string, jwtToken: JwtSecurityToken, validationParameters: TokenValidationParameters): SecurityKey;
     ResolveTokenDecryptionKey(token: string, jwtToken: JwtSecurityToken, validationParameters: TokenValidationParameters): SecurityKey;
-    ValidateAudience(audiences: IEnumerable__System_Collections_Generic<System_Internal.String>, jwtToken: JwtSecurityToken, validationParameters: TokenValidationParameters): void;
+    ValidateAudience(audiences: IEnumerable_1<System_Internal.String>, jwtToken: JwtSecurityToken, validationParameters: TokenValidationParameters): void;
     ValidateIssuer(issuer: string, jwtToken: JwtSecurityToken, validationParameters: TokenValidationParameters): string;
     ValidateIssuerSecurityKey(key: SecurityKey, securityToken: JwtSecurityToken, validationParameters: TokenValidationParameters): void;
-    ValidateLifetime(notBefore: Nullable<DateTime>, expires: Nullable<DateTime>, jwtToken: JwtSecurityToken, validationParameters: TokenValidationParameters): void;
+    ValidateLifetime(notBefore: Nullable_1<DateTime>, expires: Nullable_1<DateTime>, jwtToken: JwtSecurityToken, validationParameters: TokenValidationParameters): void;
     ValidateSignature(token: string, validationParameters: TokenValidationParameters): JwtSecurityToken;
     ValidateToken(token: string, validationParameters: TokenValidationParameters, validatedToken: SecurityToken): ClaimsPrincipal;
     ValidateToken(reader: XmlReader, validationParameters: TokenValidationParameters, validatedToken: SecurityToken): ClaimsPrincipal;
-    ValidateTokenAsync(token: string, validationParameters: TokenValidationParameters): Task<TokenValidationResult>;
-    ValidateTokenAsync(token: string, validationParameters: TokenValidationParameters): Task<TokenValidationResult>;
-    ValidateTokenAsync(token: SecurityToken, validationParameters: TokenValidationParameters): Task<TokenValidationResult>;
-    ValidateTokenReplay(expires: Nullable<DateTime>, securityToken: string, validationParameters: TokenValidationParameters): void;
+    ValidateTokenAsync(token: string, validationParameters: TokenValidationParameters): Task_1<TokenValidationResult>;
+    ValidateTokenAsync(token: string, validationParameters: TokenValidationParameters): Task_1<TokenValidationResult>;
+    ValidateTokenAsync(token: SecurityToken, validationParameters: TokenValidationParameters): Task_1<TokenValidationResult>;
+    ValidateTokenReplay(expires: Nullable_1<DateTime>, securityToken: string, validationParameters: TokenValidationParameters): void;
     WriteToken(token: SecurityToken): string;
     WriteToken(writer: XmlWriter, token: SecurityToken): void;
 }
@@ -297,11 +297,11 @@ export interface JwtSecurityTokenHandler$instance extends SecurityTokenHandler {
 
 export const JwtSecurityTokenHandler: {
     new(): JwtSecurityTokenHandler;
-    DefaultInboundClaimTypeMap: IDictionary__System_Collections_Generic<System_Internal.String, System_Internal.String>;
+    DefaultInboundClaimTypeMap: IDictionary_2<System_Internal.String, System_Internal.String>;
     DefaultMapInboundClaims: boolean;
-    DefaultOutboundClaimTypeMap: IDictionary__System_Collections_Generic<System_Internal.String, System_Internal.String>;
-    DefaultInboundClaimFilter: ISet<System_Internal.String>;
-    DefaultOutboundAlgorithmMap: IDictionary__System_Collections_Generic<System_Internal.String, System_Internal.String>;
+    DefaultOutboundClaimTypeMap: IDictionary_2<System_Internal.String, System_Internal.String>;
+    DefaultInboundClaimFilter: ISet_1<System_Internal.String>;
+    DefaultOutboundAlgorithmMap: IDictionary_2<System_Internal.String, System_Internal.String>;
     ShortClaimTypeProperty: string;
     JsonClaimTypeProperty: string;
 };

@@ -6,16 +6,16 @@
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 // Import types from other namespaces
-import type { IEnumerable } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, IAsyncDisposable, IDisposable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
-import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
-import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
-import type { IAnnotation } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure.js";
-import type { IColumn, IRelationalModel, ITable } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
-import * as Microsoft_EntityFrameworkCore_Migrations_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations.js";
-import type { HistoryRepository, HistoryRepositoryDependencies, IHistoryRepository, IMigrationsAnnotationProvider, IMigrationsDatabaseLock, LockReleaseBehavior, MigrationsAnnotationProvider, MigrationsAnnotationProviderDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations.js";
-import type { IRelationalCommand, RelationalCommandParameterObject } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
+import type { IEnumerable_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { Task_1, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, IAsyncDisposable, IDisposable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
+import type { IAnnotation } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure/internal/index.js";
+import type { IColumn, IRelationalModel, ITable } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata/internal/index.js";
+import * as Microsoft_EntityFrameworkCore_Migrations_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations/internal/index.js";
+import type { HistoryRepository, HistoryRepositoryDependencies, IHistoryRepository, IMigrationsAnnotationProvider, IMigrationsDatabaseLock, LockReleaseBehavior, MigrationsAnnotationProvider, MigrationsAnnotationProviderDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations/internal/index.js";
+import type { IRelationalCommand, RelationalCommandParameterObject } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage/internal/index.js";
 
 export interface SqlServerHistoryRepository$instance extends HistoryRepository {
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Migrations_IHistoryRepository: never;
@@ -23,7 +23,7 @@ export interface SqlServerHistoryRepository$instance extends HistoryRepository {
     readonly ExistsSql: string;
     readonly LockReleaseBehavior: LockReleaseBehavior;
     AcquireDatabaseLock(): IMigrationsDatabaseLock;
-    AcquireDatabaseLockAsync(cancellationToken?: CancellationToken): Task<IMigrationsDatabaseLock>;
+    AcquireDatabaseLockAsync(cancellationToken?: CancellationToken): Task_1<IMigrationsDatabaseLock>;
     GetBeginIfExistsScript(migrationId: string): string;
     GetBeginIfNotExistsScript(migrationId: string): string;
     GetCreateIfNotExistsScript(): string;
@@ -60,11 +60,11 @@ export type SqlServerMigrationDatabaseLock = SqlServerMigrationDatabaseLock$inst
 export interface SqlServerMigrationsAnnotationProvider$instance extends MigrationsAnnotationProvider {
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Migrations_IMigrationsAnnotationProvider: never;
 
-    ForRemove(model: IRelationalModel): IEnumerable<IAnnotation>;
-    ForRemove(table: ITable): IEnumerable<IAnnotation>;
-    ForRemove(column: IColumn): IEnumerable<IAnnotation>;
-    ForRename(table: ITable): IEnumerable<IAnnotation>;
-    ForRename(column: IColumn): IEnumerable<IAnnotation>;
+    ForRemove(model: IRelationalModel): IEnumerable_1<IAnnotation>;
+    ForRemove(table: ITable): IEnumerable_1<IAnnotation>;
+    ForRemove(column: IColumn): IEnumerable_1<IAnnotation>;
+    ForRename(table: ITable): IEnumerable_1<IAnnotation>;
+    ForRename(column: IColumn): IEnumerable_1<IAnnotation>;
 }
 
 

@@ -7,11 +7,11 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 
 // Import types from other namespaces
 import type { SortOrder } from "../../Microsoft.Data.SqlClient/internal/index.js";
-import * as System_Data_Internal from "@tsonic/dotnet/System.Data.js";
-import type { DbType, IDataRecord, SqlDbType } from "@tsonic/dotnet/System.Data.js";
-import type { SqlBinary, SqlBoolean, SqlByte, SqlBytes, SqlChars, SqlCompareOptions, SqlDateTime, SqlDecimal, SqlDouble, SqlGuid, SqlInt16, SqlInt32, SqlInt64, SqlMoney, SqlSingle, SqlString, SqlXml } from "@tsonic/dotnet/System.Data.SqlTypes.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Byte, Char, DateTime, DateTimeOffset, Decimal, Double, Guid, Int16, Int32, Int64, Object as ClrObject, Single, String as ClrString, TimeSpan, Type, Void } from "@tsonic/dotnet/System.js";
+import type { SqlBinary, SqlBoolean, SqlByte, SqlBytes, SqlChars, SqlCompareOptions, SqlDateTime, SqlDecimal, SqlDouble, SqlGuid, SqlInt16, SqlInt32, SqlInt64, SqlMoney, SqlSingle, SqlString, SqlXml } from "@tsonic/dotnet/System.Data.SqlTypes/internal/index.js";
+import * as System_Data_Internal from "@tsonic/dotnet/System.Data/internal/index.js";
+import type { DbType, IDataRecord, SqlDbType } from "@tsonic/dotnet/System.Data/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Byte, Char, DateTime, DateTimeOffset, Decimal, Double, Guid, Int16, Int32, Int64, Object as ClrObject, Single, String as ClrString, TimeSpan, Type, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface SqlDataRecord$instance {
     readonly __tsonic_iface_System_Data_IDataRecord: never;
