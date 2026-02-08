@@ -33,7 +33,7 @@ export interface ProviderCollection$instance {
 
     readonly Count: int;
     readonly IsSynchronized: boolean;
-    readonly [name: string]: ProtectedConfigurationProvider | ProviderBase;
+    readonly [name: string]: ProviderBase | SettingsProvider;
     readonly SyncRoot: unknown;
     Add(provider: ProviderBase): void;
     Clear(): void;
