@@ -6,9 +6,9 @@
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 // Import types from other namespaces
-import type { IDictionary, IReadOnlyDictionary } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, DateTime, Double, Enum, Guid, IComparable, IConvertible, IFormattable, Int32, Int64, ISpanFormattable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
+import type { IDictionary_2, IReadOnlyDictionary_2 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, DateTime, Double, Enum, Guid, IComparable, IConvertible, IFormattable, Int32, Int64, ISpanFormattable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export enum EventLogLevel {
     LogAlways = 0,
@@ -38,7 +38,7 @@ export interface ITelemetryClient$instance {
     IsEnabled(): boolean;
     IsEnabled(eventName: string): boolean;
     TrackEvent(eventDetails: TelemetryEventDetails): void;
-    TrackEvent(eventName: string, stringProperties?: IDictionary<System_Internal.String, System_Internal.String>, longProperties?: IDictionary<System_Internal.String, System_Internal.Int64>, boolProperties?: IDictionary<System_Internal.String, System_Internal.Boolean>, dateTimeProperties?: IDictionary<System_Internal.String, DateTime>, doubleProperties?: IDictionary<System_Internal.String, System_Internal.Double>, guidProperties?: IDictionary<System_Internal.String, Guid>): void;
+    TrackEvent(eventName: string, stringProperties?: IDictionary_2<System_Internal.String, System_Internal.String>, longProperties?: IDictionary_2<System_Internal.String, System_Internal.Int64>, boolProperties?: IDictionary_2<System_Internal.String, System_Internal.Boolean>, dateTimeProperties?: IDictionary_2<System_Internal.String, DateTime>, doubleProperties?: IDictionary_2<System_Internal.String, System_Internal.Double>, guidProperties?: IDictionary_2<System_Internal.String, Guid>): void;
 }
 
 
@@ -60,7 +60,7 @@ export const LogEntry: {
 
 export type LogEntry = LogEntry$instance;
 
-export interface NullIdentityModelLogger$instance {
+export interface NullIdentityModelLogger$instance extends IIdentityLogger$instance {
     readonly __tsonic_iface_Microsoft_IdentityModel_Abstractions_IIdentityLogger: never;
 
     IsEnabled(eventLogLevel: EventLogLevel): boolean;
@@ -77,12 +77,10 @@ export interface __NullIdentityModelLogger$views {
     As_IIdentityLogger(): IIdentityLogger$instance;
 }
 
-export interface NullIdentityModelLogger$instance extends IIdentityLogger$instance {}
-
 export type NullIdentityModelLogger = NullIdentityModelLogger$instance & __NullIdentityModelLogger$views;
 
 
-export interface NullTelemetryClient$instance {
+export interface NullTelemetryClient$instance extends ITelemetryClient$instance {
     readonly __tsonic_iface_Microsoft_IdentityModel_Abstractions_ITelemetryClient: never;
 
     ClientId: string;
@@ -90,7 +88,7 @@ export interface NullTelemetryClient$instance {
     IsEnabled(): boolean;
     IsEnabled(eventName: string): boolean;
     TrackEvent(eventDetails: TelemetryEventDetails): void;
-    TrackEvent(eventName: string, stringProperties?: IDictionary<System_Internal.String, System_Internal.String>, longProperties?: IDictionary<System_Internal.String, System_Internal.Int64>, boolProperties?: IDictionary<System_Internal.String, System_Internal.Boolean>, dateTimeProperties?: IDictionary<System_Internal.String, DateTime>, doubleProperties?: IDictionary<System_Internal.String, System_Internal.Double>, guidProperties?: IDictionary<System_Internal.String, Guid>): void;
+    TrackEvent(eventName: string, stringProperties?: IDictionary_2<System_Internal.String, System_Internal.String>, longProperties?: IDictionary_2<System_Internal.String, System_Internal.Int64>, boolProperties?: IDictionary_2<System_Internal.String, System_Internal.Boolean>, dateTimeProperties?: IDictionary_2<System_Internal.String, DateTime>, doubleProperties?: IDictionary_2<System_Internal.String, System_Internal.Double>, guidProperties?: IDictionary_2<System_Internal.String, Guid>): void;
 }
 
 
@@ -103,15 +101,13 @@ export interface __NullTelemetryClient$views {
     As_ITelemetryClient(): ITelemetryClient$instance;
 }
 
-export interface NullTelemetryClient$instance extends ITelemetryClient$instance {}
-
 export type NullTelemetryClient = NullTelemetryClient$instance & __NullTelemetryClient$views;
 
 
 export interface TelemetryEventDetails$instance {
     get Name(): string | undefined;
     set Name(value: string | undefined);
-    readonly Properties: IReadOnlyDictionary<System_Internal.String, unknown>;
+    readonly Properties: IReadOnlyDictionary_2<System_Internal.String, unknown>;
     SetProperty(key: string, value: string): void;
     SetProperty(key: string, value: long): void;
     SetProperty(key: string, value: boolean): void;

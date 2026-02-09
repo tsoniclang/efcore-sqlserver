@@ -6,10 +6,10 @@
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 // Import types from other namespaces
-import * as System_Diagnostics_Tracing_Internal from "@tsonic/dotnet/System.Diagnostics.Tracing.js";
-import type { EventLevel, EventListener, EventSource, EventWrittenEventArgs } from "@tsonic/dotnet/System.Diagnostics.Tracing.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Action, IDisposable, String as ClrString, Void } from "@tsonic/dotnet/System.js";
+import * as System_Diagnostics_Tracing_Internal from "@tsonic/dotnet/System.Diagnostics.Tracing/internal/index.js";
+import type { EventLevel, EventListener, EventSource, EventWrittenEventArgs } from "@tsonic/dotnet/System.Diagnostics.Tracing/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Action_1, Action_2, IDisposable, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface AzureEventSourceListener$instance extends EventListener {
     readonly __tsonic_iface_System_IDisposable: never;
@@ -20,8 +20,8 @@ export interface AzureEventSourceListener$instance extends EventListener {
 
 
 export const AzureEventSourceListener: {
-    new(log: Action<EventWrittenEventArgs>, level: EventLevel): AzureEventSourceListener;
-    new(log: Action<EventWrittenEventArgs, System_Internal.String>, level: EventLevel): AzureEventSourceListener;
+    new(log: Action_1<EventWrittenEventArgs>, level: EventLevel): AzureEventSourceListener;
+    new(log: Action_2<EventWrittenEventArgs, System_Internal.String>, level: EventLevel): AzureEventSourceListener;
     readonly TraitName: string;
     readonly TraitValue: string;
     CreateConsoleLogger(level?: EventLevel): AzureEventSourceListener;

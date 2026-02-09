@@ -12,21 +12,21 @@ import type { ptr } from "@tsonic/core/types.js";
 import * as Microsoft_IdentityModel_Logging_Internal from "../../Microsoft.IdentityModel.Logging/internal/index.js";
 import type { ISafeLogSecurityArtifact, LoggerContext } from "../../Microsoft.IdentityModel.Logging/internal/index.js";
 import type { LKGConfigurationCacheOptions } from "../../Microsoft.IdentityModel.Tokens.Configuration/internal/index.js";
-import type { Dictionary, ICollection, IDictionary, IEnumerable, IList, IReadOnlyDictionary } from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { CompressionLevel } from "@tsonic/dotnet/System.IO.Compression.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { ArgumentException, AsyncCallback, Boolean as ClrBoolean, Byte, Char, DateTime, DateTimeKind, Enum, Exception, Func, Guid, IAsyncResult, ICloneable, IComparable, IConvertible, IDisposable, IFormattable, Int32, Int64, IntPtr, ISpanFormattable, MulticastDelegate, Nullable, Object as ClrObject, ReadOnlySpan, Span, String as ClrString, TimeSpan, Type, Uri, Void } from "@tsonic/dotnet/System.js";
-import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { ISerializable, SerializationInfo, StreamingContext } from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import * as System_Security_Claims_Internal from "@tsonic/dotnet/System.Security.Claims.js";
-import type { Claim, ClaimsIdentity, ClaimsPrincipal } from "@tsonic/dotnet/System.Security.Claims.js";
-import type { AsymmetricAlgorithm, ECDsa, HashAlgorithm, HashAlgorithmName, KeyedHashAlgorithm, RSA, RSAParameters, SymmetricAlgorithm } from "@tsonic/dotnet/System.Security.Cryptography.js";
-import type { X509Certificate2 } from "@tsonic/dotnet/System.Security.Cryptography.X509Certificates.js";
-import * as System_Security_Principal_Internal from "@tsonic/dotnet/System.Security.Principal.js";
-import type { IIdentity } from "@tsonic/dotnet/System.Security.Principal.js";
-import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
-import type { XmlReader, XmlWriter } from "@tsonic/dotnet/System.Xml.js";
+import type { Dictionary_2, ICollection_1, IDictionary_2, IEnumerable_1, IList_1, IReadOnlyDictionary_2 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { CompressionLevel } from "@tsonic/dotnet/System.IO.Compression/internal/index.js";
+import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { ISerializable, SerializationInfo, StreamingContext } from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import * as System_Security_Claims_Internal from "@tsonic/dotnet/System.Security.Claims/internal/index.js";
+import type { Claim, ClaimsIdentity, ClaimsPrincipal } from "@tsonic/dotnet/System.Security.Claims/internal/index.js";
+import type { X509Certificate2 } from "@tsonic/dotnet/System.Security.Cryptography.X509Certificates/internal/index.js";
+import type { AsymmetricAlgorithm, ECDsa, HashAlgorithm, HashAlgorithmName, KeyedHashAlgorithm, RSA, RSAParameters, SymmetricAlgorithm } from "@tsonic/dotnet/System.Security.Cryptography/internal/index.js";
+import * as System_Security_Principal_Internal from "@tsonic/dotnet/System.Security.Principal/internal/index.js";
+import type { IIdentity } from "@tsonic/dotnet/System.Security.Principal/internal/index.js";
+import type { Task_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
+import type { XmlReader, XmlWriter } from "@tsonic/dotnet/System.Xml/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { ArgumentException, AsyncCallback, Boolean as ClrBoolean, Byte, Char, DateTime, DateTimeKind, Enum, Exception, Func_3, Guid, IAsyncResult, ICloneable, IComparable, IConvertible, IDisposable, IFormattable, Int32, Int64, IntPtr, ISpanFormattable, MulticastDelegate, Nullable_1, Object as ClrObject, ReadOnlySpan_1, Span_1, String as ClrString, TimeSpan, Type, Uri, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export enum PrivateKeyStatus {
     Exists = 0,
@@ -45,13 +45,13 @@ export enum ValidationFailure {
 export type AlgorithmValidator = (algorithm: string, securityKey: SecurityKey, securityToken: SecurityToken, validationParameters: TokenValidationParameters) => boolean;
 
 
-export type AudienceValidator = (audiences: IEnumerable<System_Internal.String>, securityToken: SecurityToken, validationParameters: TokenValidationParameters) => boolean;
+export type AudienceValidator = (audiences: IEnumerable_1<System_Internal.String>, securityToken: SecurityToken, validationParameters: TokenValidationParameters) => boolean;
 
 
-export type IssuerSigningKeyResolver = (token: string, securityToken: SecurityToken, kid: string, validationParameters: TokenValidationParameters) => IEnumerable<SecurityKey>;
+export type IssuerSigningKeyResolver = (token: string, securityToken: SecurityToken, kid: string, validationParameters: TokenValidationParameters) => IEnumerable_1<SecurityKey>;
 
 
-export type IssuerSigningKeyResolverUsingConfiguration = (token: string, securityToken: SecurityToken, kid: string, validationParameters: TokenValidationParameters, configuration: BaseConfiguration) => IEnumerable<SecurityKey>;
+export type IssuerSigningKeyResolverUsingConfiguration = (token: string, securityToken: SecurityToken, kid: string, validationParameters: TokenValidationParameters, configuration: BaseConfiguration) => IEnumerable_1<SecurityKey>;
 
 
 export type IssuerSigningKeyValidator = (securityKey: SecurityKey, securityToken: SecurityToken, validationParameters: TokenValidationParameters) => boolean;
@@ -66,7 +66,7 @@ export type IssuerValidator = (issuer: string, securityToken: SecurityToken, val
 export type IssuerValidatorUsingConfiguration = (issuer: string, securityToken: SecurityToken, validationParameters: TokenValidationParameters, configuration: BaseConfiguration) => string;
 
 
-export type LifetimeValidator = (notBefore: Nullable<DateTime>, expires: Nullable<DateTime>, securityToken: SecurityToken, validationParameters: TokenValidationParameters) => boolean;
+export type LifetimeValidator = (notBefore: Nullable_1<DateTime>, expires: Nullable_1<DateTime>, securityToken: SecurityToken, validationParameters: TokenValidationParameters) => boolean;
 
 
 export type SignatureValidator = (token: string, validationParameters: TokenValidationParameters) => SecurityToken;
@@ -75,13 +75,13 @@ export type SignatureValidator = (token: string, validationParameters: TokenVali
 export type SignatureValidatorUsingConfiguration = (token: string, validationParameters: TokenValidationParameters, configuration: BaseConfiguration) => SecurityToken;
 
 
-export type TokenDecryptionKeyResolver = (token: string, securityToken: SecurityToken, kid: string, validationParameters: TokenValidationParameters) => IEnumerable<SecurityKey>;
+export type TokenDecryptionKeyResolver = (token: string, securityToken: SecurityToken, kid: string, validationParameters: TokenValidationParameters) => IEnumerable_1<SecurityKey>;
 
 
 export type TokenReader = (token: string, validationParameters: TokenValidationParameters) => SecurityToken;
 
 
-export type TokenReplayValidator = (expirationTime: Nullable<DateTime>, securityToken: string, validationParameters: TokenValidationParameters) => boolean;
+export type TokenReplayValidator = (expirationTime: Nullable_1<DateTime>, securityToken: string, validationParameters: TokenValidationParameters) => boolean;
 
 
 export type TransformBeforeSignatureValidation = (token: SecurityToken, validationParameters: TokenValidationParameters) => SecurityToken;
@@ -149,15 +149,15 @@ export type AsymmetricSecurityKey = AsymmetricSecurityKey$instance;
 export interface AsymmetricSignatureProvider$instance extends SignatureProvider {
     readonly __tsonic_iface_System_IDisposable: never;
 
-    readonly MinimumAsymmetricKeySizeInBitsForSigningMap: IReadOnlyDictionary<System_Internal.String, System_Internal.Int32>;
-    readonly MinimumAsymmetricKeySizeInBitsForVerifyingMap: IReadOnlyDictionary<System_Internal.String, System_Internal.Int32>;
+    readonly MinimumAsymmetricKeySizeInBitsForSigningMap: IReadOnlyDictionary_2<System_Internal.String, System_Internal.Int32>;
+    readonly MinimumAsymmetricKeySizeInBitsForVerifyingMap: IReadOnlyDictionary_2<System_Internal.String, System_Internal.Int32>;
     Dispose(disposing: boolean): void;
     Dispose(): void;
     GetHashAlgorithmName(algorithm: string): HashAlgorithmName;
-    Sign(input: ReadOnlySpan<System_Internal.Byte>, signature: Span<System_Internal.Byte>, bytesWritten: int): boolean;
+    Sign(input: ReadOnlySpan_1<System_Internal.Byte>, signature: Span_1<System_Internal.Byte>, bytesWritten: int): boolean;
     Sign(input: byte[]): byte[];
     Sign(input: byte[], offset: int, count: int): byte[];
-    Sign(data: ReadOnlySpan<System_Internal.Byte>, destination: Span<System_Internal.Byte>, bytesWritten: int): boolean;
+    Sign(data: ReadOnlySpan_1<System_Internal.Byte>, destination: Span_1<System_Internal.Byte>, bytesWritten: int): boolean;
     ValidateAsymmetricSecurityKeySize(key: SecurityKey, algorithm: string, willCreateSignatures: boolean): void;
     Verify(input: byte[], signature: byte[]): boolean;
     Verify(input: byte[], inputOffset: int, inputLength: int, signature: byte[], signatureOffset: int, signatureLength: int): boolean;
@@ -167,8 +167,8 @@ export interface AsymmetricSignatureProvider$instance extends SignatureProvider 
 export const AsymmetricSignatureProvider: {
     new(key: SecurityKey, algorithm: string): AsymmetricSignatureProvider;
     new(key: SecurityKey, algorithm: string, willCreateSignatures: boolean): AsymmetricSignatureProvider;
-    readonly DefaultMinimumAsymmetricKeySizeInBitsForSigningMap: Dictionary<System_Internal.String, System_Internal.Int32>;
-    readonly DefaultMinimumAsymmetricKeySizeInBitsForVerifyingMap: Dictionary<System_Internal.String, System_Internal.Int32>;
+    readonly DefaultMinimumAsymmetricKeySizeInBitsForSigningMap: Dictionary_2<System_Internal.String, System_Internal.Int32>;
+    readonly DefaultMinimumAsymmetricKeySizeInBitsForVerifyingMap: Dictionary_2<System_Internal.String, System_Internal.Int32>;
 };
 
 
@@ -216,8 +216,8 @@ export type AuthenticatedEncryptionResult = AuthenticatedEncryptionResult$instan
 export interface BaseConfiguration$instance {
     ActiveTokenEndpoint: string;
     Issuer: string;
-    readonly SigningKeys: ICollection<SecurityKey>;
-    readonly TokenDecryptionKeys: ICollection<SecurityKey>;
+    readonly SigningKeys: ICollection_1<SecurityKey>;
+    readonly TokenDecryptionKeys: ICollection_1<SecurityKey>;
     TokenEndpoint: string;
 }
 
@@ -236,7 +236,7 @@ export interface BaseConfigurationManager$instance {
     MetadataAddress: string;
     RefreshInterval: TimeSpan;
     UseLastKnownGoodConfiguration: boolean;
-    GetBaseConfigurationAsync(cancel: CancellationToken): Task<BaseConfiguration>;
+    GetBaseConfigurationAsync(cancel: CancellationToken): Task_1<BaseConfiguration>;
     RequestRefresh(): void;
 }
 
@@ -268,7 +268,7 @@ export interface CaseSensitiveClaimsIdentity$instance extends ClaimsIdentity {
     readonly __tsonic_iface_System_Security_Principal_IIdentity: never;
 
     SecurityToken: SecurityToken;
-    FindAll(type: string): IEnumerable<Claim>;
+    FindAll(type: string): IEnumerable_1<Claim>;
     FindFirst(type: string): Claim;
     HasClaim(type: string, value: string): boolean;
 }
@@ -278,9 +278,9 @@ export const CaseSensitiveClaimsIdentity: {
     new(): CaseSensitiveClaimsIdentity;
     new(authenticationType: string): CaseSensitiveClaimsIdentity;
     new(claimsIdentity: ClaimsIdentity): CaseSensitiveClaimsIdentity;
-    new(claims: IEnumerable<Claim>): CaseSensitiveClaimsIdentity;
-    new(claims: IEnumerable<Claim>, authenticationType: string): CaseSensitiveClaimsIdentity;
-    new(claims: IEnumerable<Claim>, authenticationType: string, nameType: string, roleType: string): CaseSensitiveClaimsIdentity;
+    new(claims: IEnumerable_1<Claim>): CaseSensitiveClaimsIdentity;
+    new(claims: IEnumerable_1<Claim>, authenticationType: string): CaseSensitiveClaimsIdentity;
+    new(claims: IEnumerable_1<Claim>, authenticationType: string, nameType: string, roleType: string): CaseSensitiveClaimsIdentity;
     new(authenticationType: string, nameType: string, roleType: string): CaseSensitiveClaimsIdentity;
 };
 
@@ -380,7 +380,7 @@ export const CryptoProviderFactory: {
 
 export type CryptoProviderFactory = CryptoProviderFactory$instance;
 
-export interface DeflateCompressionProvider$instance {
+export interface DeflateCompressionProvider$instance extends ICompressionProvider$instance {
     readonly __tsonic_iface_Microsoft_IdentityModel_Tokens_ICompressionProvider: never;
 
     readonly Algorithm: string;
@@ -401,8 +401,6 @@ export const DeflateCompressionProvider: {
 export interface __DeflateCompressionProvider$views {
     As_ICompressionProvider(): ICompressionProvider$instance;
 }
-
-export interface DeflateCompressionProvider$instance extends ICompressionProvider$instance {}
 
 export type DeflateCompressionProvider = DeflateCompressionProvider$instance & __DeflateCompressionProvider$views;
 
@@ -477,7 +475,7 @@ export const InMemoryCryptoProviderCache: {
 export type InMemoryCryptoProviderCache = InMemoryCryptoProviderCache$instance;
 
 export interface JsonWebKey$instance extends SecurityKey {
-    readonly AdditionalData: IDictionary<System_Internal.String, unknown>;
+    readonly AdditionalData: IDictionary_2<System_Internal.String, unknown>;
     Alg: string;
     Crv: string;
     D: string;
@@ -487,18 +485,18 @@ export interface JsonWebKey$instance extends SecurityKey {
     readonly HasPrivateKey: boolean;
     K: string;
     KeyId: string;
-    readonly KeyOps: IList<System_Internal.String>;
+    readonly KeyOps: IList_1<System_Internal.String>;
     readonly KeySize: int;
     Kid: string;
     Kty: string;
     N: string;
-    readonly Oth: IList<System_Internal.String>;
+    readonly Oth: IList_1<System_Internal.String>;
     P: string;
     Q: string;
     QI: string;
     Use: string;
     X: string;
-    readonly X5c: IList<System_Internal.String>;
+    readonly X5c: IList_1<System_Internal.String>;
     X5t: string;
     X5tS256: string;
     X5u: string;
@@ -536,10 +534,10 @@ export const JsonWebKeyConverter: {
 export type JsonWebKeyConverter = JsonWebKeyConverter$instance;
 
 export interface JsonWebKeySet$instance {
-    readonly AdditionalData: IDictionary<System_Internal.String, unknown>;
-    Keys: IList<JsonWebKey>;
+    readonly AdditionalData: IDictionary_2<System_Internal.String, unknown>;
+    Keys: IList_1<JsonWebKey>;
     SkipUnresolvedJsonWebKeys: boolean;
-    GetSigningKeys(): IList<SecurityKey>;
+    GetSigningKeys(): IList_1<SecurityKey>;
 }
 
 
@@ -640,7 +638,7 @@ export const SecurityKeyIdentifierClause: {
 
 export type SecurityKeyIdentifierClause = SecurityKeyIdentifierClause$instance;
 
-export interface SecurityToken$instance {
+export interface SecurityToken$instance extends Microsoft_IdentityModel_Logging_Internal.ISafeLogSecurityArtifact$instance {
     readonly __tsonic_iface_Microsoft_IdentityModel_Logging_ISafeLogSecurityArtifact: never;
 
     readonly Id: string;
@@ -660,8 +658,6 @@ export const SecurityToken: (abstract new() => SecurityToken) & {
 export interface __SecurityToken$views {
     As_ISafeLogSecurityArtifact(): Microsoft_IdentityModel_Logging_Internal.ISafeLogSecurityArtifact$instance;
 }
-
-export interface SecurityToken$instance extends Microsoft_IdentityModel_Logging_Internal.ISafeLogSecurityArtifact$instance {}
 
 export type SecurityToken = SecurityToken$instance & __SecurityToken$views;
 
@@ -727,16 +723,16 @@ export const SecurityTokenDecryptionFailedException: {
 export type SecurityTokenDecryptionFailedException = SecurityTokenDecryptionFailedException$instance;
 
 export interface SecurityTokenDescriptor$instance {
-    AdditionalHeaderClaims: IDictionary<System_Internal.String, unknown>;
-    AdditionalInnerHeaderClaims: IDictionary<System_Internal.String, unknown>;
+    AdditionalHeaderClaims: IDictionary_2<System_Internal.String, unknown>;
+    AdditionalInnerHeaderClaims: IDictionary_2<System_Internal.String, unknown>;
     Audience: string;
-    Claims: IDictionary<System_Internal.String, unknown>;
+    Claims: IDictionary_2<System_Internal.String, unknown>;
     CompressionAlgorithm: string;
     EncryptingCredentials: EncryptingCredentials;
-    Expires: Nullable<DateTime>;
-    IssuedAt: Nullable<DateTime>;
+    Expires: Nullable_1<DateTime>;
+    IssuedAt: Nullable_1<DateTime>;
     Issuer: string;
-    NotBefore: Nullable<DateTime>;
+    NotBefore: Nullable_1<DateTime>;
     SigningCredentials: SigningCredentials;
     Subject: ClaimsIdentity;
     TokenType: string;
@@ -813,7 +809,7 @@ export const SecurityTokenExpiredException: {
 
 export type SecurityTokenExpiredException = SecurityTokenExpiredException$instance;
 
-export interface SecurityTokenHandler$instance extends TokenHandler {
+export interface SecurityTokenHandler$instance extends TokenHandler, ISecurityTokenValidator$instance {
     readonly __tsonic_iface_Microsoft_IdentityModel_Tokens_ISecurityTokenValidator: never;
 
     readonly CanValidateToken: boolean;
@@ -838,8 +834,6 @@ export const SecurityTokenHandler: (abstract new() => SecurityTokenHandler) & {
 export interface __SecurityTokenHandler$views {
     As_ISecurityTokenValidator(): ISecurityTokenValidator$instance;
 }
-
-export interface SecurityTokenHandler$instance extends ISecurityTokenValidator$instance {}
 
 export type SecurityTokenHandler = SecurityTokenHandler$instance & __SecurityTokenHandler$views;
 
@@ -898,8 +892,8 @@ export type SecurityTokenInvalidIssuerException = SecurityTokenInvalidIssuerExce
 export interface SecurityTokenInvalidLifetimeException$instance extends SecurityTokenValidationException {
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
-    Expires: Nullable<DateTime>;
-    NotBefore: Nullable<DateTime>;
+    Expires: Nullable_1<DateTime>;
+    NotBefore: Nullable_1<DateTime>;
     GetObjectData(info: SerializationInfo, context: StreamingContext): void;
 }
 
@@ -1113,7 +1107,7 @@ export interface SignatureProvider$instance {
     Dispose(disposing: boolean): void;
     Sign(input: byte[]): byte[];
     Sign(input: byte[], offset: int, count: int): byte[];
-    Sign(data: ReadOnlySpan<System_Internal.Byte>, destination: Span<System_Internal.Byte>, bytesWritten: int): boolean;
+    Sign(data: ReadOnlySpan_1<System_Internal.Byte>, destination: Span_1<System_Internal.Byte>, bytesWritten: int): boolean;
     Verify(input: byte[], signature: byte[]): boolean;
     Verify(input: byte[], inputOffset: int, inputLength: int, signature: byte[], signatureOffset: int, signatureLength: int): boolean;
 }
@@ -1189,9 +1183,9 @@ export interface SymmetricSignatureProvider$instance extends SignatureProvider {
     GetKeyedHashAlgorithm(keyBytes: byte[], algorithm: string): KeyedHashAlgorithm;
     ReleaseKeyedHashAlgorithm(keyedHashAlgorithm: KeyedHashAlgorithm): void;
     Sign(input: byte[]): byte[];
-    Sign(input: ReadOnlySpan<System_Internal.Byte>, signature: Span<System_Internal.Byte>, bytesWritten: int): boolean;
+    Sign(input: ReadOnlySpan_1<System_Internal.Byte>, signature: Span_1<System_Internal.Byte>, bytesWritten: int): boolean;
     Sign(input: byte[], offset: int, count: int): byte[];
-    Sign(data: ReadOnlySpan<System_Internal.Byte>, destination: Span<System_Internal.Byte>, bytesWritten: int): boolean;
+    Sign(data: ReadOnlySpan_1<System_Internal.Byte>, destination: Span_1<System_Internal.Byte>, bytesWritten: int): boolean;
     Verify(input: byte[], signature: byte[]): boolean;
     Verify(input: byte[], signature: byte[], length: int): boolean;
     Verify(input: byte[], inputOffset: int, inputLength: int, signature: byte[], signatureOffset: int, signatureLength: int): boolean;
@@ -1224,8 +1218,8 @@ export interface TokenHandler$instance {
     SetDefaultTimesOnTokenCreation: boolean;
     TokenLifetimeInMinutes: int;
     ReadToken(token: string): SecurityToken;
-    ValidateTokenAsync(token: string, validationParameters: TokenValidationParameters): Task<TokenValidationResult>;
-    ValidateTokenAsync(token: SecurityToken, validationParameters: TokenValidationParameters): Task<TokenValidationResult>;
+    ValidateTokenAsync(token: string, validationParameters: TokenValidationParameters): Task_1<TokenValidationResult>;
+    ValidateTokenAsync(token: SecurityToken, validationParameters: TokenValidationParameters): Task_1<TokenValidationResult>;
 }
 
 
@@ -1247,12 +1241,12 @@ export interface TokenValidationParameters$instance {
     DebugId: string;
     IgnoreTrailingSlashWhenValidatingAudience: boolean;
     IncludeTokenOnFailedValidation: boolean;
-    readonly InstancePropertyBag: IDictionary<System_Internal.String, unknown>;
+    readonly InstancePropertyBag: IDictionary_2<System_Internal.String, unknown>;
     IsClone: boolean;
     IssuerSigningKey: SecurityKey;
     IssuerSigningKeyResolver: IssuerSigningKeyResolver;
     IssuerSigningKeyResolverUsingConfiguration: IssuerSigningKeyResolverUsingConfiguration;
-    IssuerSigningKeys: IEnumerable<SecurityKey>;
+    IssuerSigningKeys: IEnumerable_1<SecurityKey>;
     IssuerSigningKeyValidator: IssuerSigningKeyValidator;
     IssuerSigningKeyValidatorUsingConfiguration: IssuerSigningKeyValidatorUsingConfiguration;
     IssuerValidator: IssuerValidator;
@@ -1261,27 +1255,27 @@ export interface TokenValidationParameters$instance {
     LogTokenId: boolean;
     LogValidationExceptions: boolean;
     NameClaimType: string;
-    NameClaimTypeRetriever: Func<SecurityToken, System_Internal.String, System_Internal.String>;
-    PropertyBag: IDictionary<System_Internal.String, unknown>;
+    NameClaimTypeRetriever: Func_3<SecurityToken, System_Internal.String, System_Internal.String>;
+    PropertyBag: IDictionary_2<System_Internal.String, unknown>;
     RefreshBeforeValidation: boolean;
     RequireAudience: boolean;
     RequireExpirationTime: boolean;
     RequireSignedTokens: boolean;
     RoleClaimType: string;
-    RoleClaimTypeRetriever: Func<SecurityToken, System_Internal.String, System_Internal.String>;
+    RoleClaimTypeRetriever: Func_3<SecurityToken, System_Internal.String, System_Internal.String>;
     SaveSigninToken: boolean;
     SignatureValidator: SignatureValidator;
     SignatureValidatorUsingConfiguration: SignatureValidatorUsingConfiguration;
     TokenDecryptionKey: SecurityKey;
     TokenDecryptionKeyResolver: TokenDecryptionKeyResolver;
-    TokenDecryptionKeys: IEnumerable<SecurityKey>;
+    TokenDecryptionKeys: IEnumerable_1<SecurityKey>;
     TokenReader: TokenReader;
     TokenReplayCache: ITokenReplayCache;
     TokenReplayValidator: TokenReplayValidator;
     TransformBeforeSignatureValidation: TransformBeforeSignatureValidation;
     TryAllIssuerSigningKeys: boolean;
     TypeValidator: TypeValidator;
-    ValidAlgorithms: IEnumerable<System_Internal.String>;
+    ValidAlgorithms: IEnumerable_1<System_Internal.String>;
     ValidateActor: boolean;
     ValidateAudience: boolean;
     ValidateIssuer: boolean;
@@ -1291,10 +1285,10 @@ export interface TokenValidationParameters$instance {
     ValidateTokenReplay: boolean;
     ValidateWithLKG: boolean;
     ValidAudience: string;
-    ValidAudiences: IEnumerable<System_Internal.String>;
+    ValidAudiences: IEnumerable_1<System_Internal.String>;
     ValidIssuer: string;
-    ValidIssuers: IEnumerable<System_Internal.String>;
-    ValidTypes: IEnumerable<System_Internal.String>;
+    ValidIssuers: IEnumerable_1<System_Internal.String>;
+    ValidTypes: IEnumerable_1<System_Internal.String>;
     Clone(): TokenValidationParameters;
     CreateClaimsIdentity(securityToken: SecurityToken, issuer: string): ClaimsIdentity;
 }
@@ -1311,12 +1305,12 @@ export const TokenValidationParameters: {
 export type TokenValidationParameters = TokenValidationParameters$instance;
 
 export interface TokenValidationResult$instance {
-    readonly Claims: IDictionary<System_Internal.String, unknown>;
+    readonly Claims: IDictionary_2<System_Internal.String, unknown>;
     ClaimsIdentity: ClaimsIdentity;
     Exception: Exception;
     Issuer: string;
     IsValid: boolean;
-    readonly PropertyBag: IDictionary<System_Internal.String, unknown>;
+    readonly PropertyBag: IDictionary_2<System_Internal.String, unknown>;
     SecurityToken: SecurityToken;
     TokenContext: CallContext;
     TokenOnFailedValidation: SecurityToken;
@@ -1385,7 +1379,7 @@ export abstract class Base64UrlEncoder$instance {
     static DecodeBytes(str: string): byte[];
     static Encode(inArray: byte[], offset: int, length: int): string;
     static Encode(inArray: byte[]): string;
-    static Encode(inArray: ReadOnlySpan<System_Internal.Byte>, output: Span<System_Internal.Char>): int;
+    static Encode(inArray: ReadOnlySpan_1<System_Internal.Byte>, output: Span_1<System_Internal.Char>): int;
     static Encode(arg: string): string;
 }
 
@@ -1393,7 +1387,7 @@ export abstract class Base64UrlEncoder$instance {
 export type Base64UrlEncoder = Base64UrlEncoder$instance;
 
 export abstract class CollectionUtilities$instance {
-    static IsNullOrEmpty<T>(enumerable: IEnumerable<T>): boolean;
+    static IsNullOrEmpty<T>(enumerable: IEnumerable_1<T>): boolean;
 }
 
 
@@ -1404,7 +1398,7 @@ export abstract class DateTimeUtil$instance {
     static GetMaxValue(kind: DateTimeKind): DateTime;
     static GetMinValue(kind: DateTimeKind): DateTime;
     static ToUniversalTime(value: DateTime): DateTime;
-    static ToUniversalTime(value: Nullable<DateTime>): Nullable<DateTime>;
+    static ToUniversalTime(value: Nullable_1<DateTime>): Nullable_1<DateTime>;
 }
 
 
@@ -1572,12 +1566,12 @@ export type Utility = Utility$instance;
 
 export abstract class Validators$instance {
     static ValidateAlgorithm(algorithm: string, securityKey: SecurityKey, securityToken: SecurityToken, validationParameters: TokenValidationParameters): void;
-    static ValidateAudience(audiences: IEnumerable<System_Internal.String>, securityToken: SecurityToken, validationParameters: TokenValidationParameters): void;
+    static ValidateAudience(audiences: IEnumerable_1<System_Internal.String>, securityToken: SecurityToken, validationParameters: TokenValidationParameters): void;
     static ValidateIssuer(issuer: string, securityToken: SecurityToken, validationParameters: TokenValidationParameters): string;
     static ValidateIssuerSecurityKey(securityKey: SecurityKey, securityToken: SecurityToken, validationParameters: TokenValidationParameters): void;
-    static ValidateLifetime(notBefore: Nullable<DateTime>, expires: Nullable<DateTime>, securityToken: SecurityToken, validationParameters: TokenValidationParameters): void;
-    static ValidateTokenReplay(expirationTime: Nullable<DateTime>, securityToken: string, validationParameters: TokenValidationParameters): void;
-    static ValidateTokenReplay(securityToken: string, expirationTime: Nullable<DateTime>, validationParameters: TokenValidationParameters): void;
+    static ValidateLifetime(notBefore: Nullable_1<DateTime>, expires: Nullable_1<DateTime>, securityToken: SecurityToken, validationParameters: TokenValidationParameters): void;
+    static ValidateTokenReplay(expirationTime: Nullable_1<DateTime>, securityToken: string, validationParameters: TokenValidationParameters): void;
+    static ValidateTokenReplay(securityToken: string, expirationTime: Nullable_1<DateTime>, validationParameters: TokenValidationParameters): void;
     static ValidateTokenType(type: string, securityToken: SecurityToken, validationParameters: TokenValidationParameters): string;
 }
 

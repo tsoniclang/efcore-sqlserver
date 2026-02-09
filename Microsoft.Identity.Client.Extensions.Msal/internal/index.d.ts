@@ -7,22 +7,22 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 
 // Import types from other namespaces
 import type { ITokenCache } from "../../Microsoft.Identity.Client/internal/index.js";
-import type { IEnumerable, KeyValuePair } from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { TraceSource } from "@tsonic/dotnet/System.Diagnostics.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Byte, EventArgs, EventHandler, Exception, IDisposable, Int32, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
-import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { ISerializable, SerializationInfo, StreamingContext } from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import type { IEnumerable_1, KeyValuePair_2 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { TraceSource } from "@tsonic/dotnet/System.Diagnostics/internal/index.js";
+import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { ISerializable, SerializationInfo, StreamingContext } from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { Task_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Byte, EventArgs, EventHandler_1, Exception, IDisposable, Int32, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface CacheChangedEventArgs$instance extends EventArgs {
-    readonly AccountsAdded: IEnumerable<System_Internal.String>;
-    readonly AccountsRemoved: IEnumerable<System_Internal.String>;
+    readonly AccountsAdded: IEnumerable_1<System_Internal.String>;
+    readonly AccountsRemoved: IEnumerable_1<System_Internal.String>;
 }
 
 
 export const CacheChangedEventArgs: {
-    new(added: IEnumerable<System_Internal.String>, removed: IEnumerable<System_Internal.String>): CacheChangedEventArgs;
+    new(added: IEnumerable_1<System_Internal.String>, removed: IEnumerable_1<System_Internal.String>): CacheChangedEventArgs;
 };
 
 
@@ -56,7 +56,7 @@ export const MsalCacheHelper: {
     readonly LinuxKeyRingDefaultCollection: string;
     readonly LinuxKeyRingSessionCollection: string;
     readonly UserRootDirectory: string;
-    CreateAsync(storageCreationProperties: StorageCreationProperties, logger?: TraceSource): Task<MsalCacheHelper>;
+    CreateAsync(storageCreationProperties: StorageCreationProperties, logger?: TraceSource): Task_1<MsalCacheHelper>;
 };
 
 
@@ -100,8 +100,8 @@ export interface StorageCreationProperties$instance {
     readonly KeyringSchemaName: string;
     readonly KeyringCollection: string;
     readonly KeyringSecretLabel: string;
-    readonly KeyringAttribute1: KeyValuePair<System_Internal.String, System_Internal.String>;
-    readonly KeyringAttribute2: KeyValuePair<System_Internal.String, System_Internal.String>;
+    readonly KeyringAttribute1: KeyValuePair_2<System_Internal.String, System_Internal.String>;
+    readonly KeyringAttribute2: KeyValuePair_2<System_Internal.String, System_Internal.String>;
     readonly LockRetryDelay: int;
     readonly UseLinuxUnencryptedFallback: boolean;
     readonly UseUnencryptedFallback: boolean;
@@ -122,7 +122,7 @@ export interface StorageCreationPropertiesBuilder$instance {
     Build(): StorageCreationProperties;
     CustomizeLockRetry(lockRetryDelay: int, lockRetryCount: int): StorageCreationPropertiesBuilder;
     WithCacheChangedEvent(clientId: string, authority?: string): StorageCreationPropertiesBuilder;
-    WithLinuxKeyring(schemaName: string, collection: string, secretLabel: string, attribute1: KeyValuePair<System_Internal.String, System_Internal.String>, attribute2: KeyValuePair<System_Internal.String, System_Internal.String>): StorageCreationPropertiesBuilder;
+    WithLinuxKeyring(schemaName: string, collection: string, secretLabel: string, attribute1: KeyValuePair_2<System_Internal.String, System_Internal.String>, attribute2: KeyValuePair_2<System_Internal.String, System_Internal.String>): StorageCreationPropertiesBuilder;
     WithLinuxUnprotectedFile(): StorageCreationPropertiesBuilder;
     WithMacKeyChain(serviceName: string, accountName: string): StorageCreationPropertiesBuilder;
     WithUnprotectedFile(): StorageCreationPropertiesBuilder;

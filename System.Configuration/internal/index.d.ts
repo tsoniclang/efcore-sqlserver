@@ -11,23 +11,23 @@ import type { IConfigErrorInfo } from "../../System.Configuration.Internal/inter
 import * as System_Configuration_Provider_Internal from "../../System.Configuration.Provider/internal/index.js";
 import type { ProviderBase, ProviderCollection } from "../../System.Configuration.Provider/internal/index.js";
 import type { UriIdnScope } from "../../System/internal/index.js";
-import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections.js";
-import type { Hashtable, ICollection, IComparer, IDictionary, IEnumerable, IEnumerator, IList, ReadOnlyCollectionBase } from "@tsonic/dotnet/System.Collections.js";
-import * as System_Collections_Specialized_Internal from "@tsonic/dotnet/System.Collections.Specialized.js";
-import type { NameObjectCollectionBase, NameValueCollection, StringCollection } from "@tsonic/dotnet/System.Collections.Specialized.js";
-import * as System_ComponentModel_Internal from "@tsonic/dotnet/System.ComponentModel.js";
-import type { CancelEventArgs, IComponent, INotifyPropertyChanged, ITypeDescriptorContext, PropertyChangedEventArgs, PropertyChangedEventHandler, TypeConverter } from "@tsonic/dotnet/System.ComponentModel.js";
-import type { CultureInfo } from "@tsonic/dotnet/System.Globalization.js";
-import * as System_Lib from "@tsonic/dotnet/System.js";
-import type { Array as ClrArray, AsyncCallback, Attribute, Boolean as ClrBoolean, Enum, EventArgs, Exception, Func, GenericUriParserOptions, IAsyncResult, ICloneable, IComparable, IConvertible, IFormattable, Int32, Int64, IntPtr, ISpanFormattable, MulticastDelegate, Object as ClrObject, String as ClrString, SystemException, TimeSpan, Type, Void } from "@tsonic/dotnet/System.js";
-import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { IDeserializationCallback, ISerializable, SerializationInfo, StreamingContext } from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { FrameworkName } from "@tsonic/dotnet/System.Runtime.Versioning.js";
-import type { RSAParameters } from "@tsonic/dotnet/System.Security.Cryptography.js";
-import * as System_Xml_Internal from "@tsonic/dotnet/System.Xml.js";
-import type { XmlAttribute, XmlCDataSection, XmlComment, XmlDocument, XmlElement, XmlNode, XmlReader, XmlSignificantWhitespace, XmlText, XmlTextReader, XmlWhitespace, XmlWriter } from "@tsonic/dotnet/System.Xml.js";
-import * as System_Xml_XPath_Internal from "@tsonic/dotnet/System.Xml.XPath.js";
-import type { IXPathNavigable } from "@tsonic/dotnet/System.Xml.XPath.js";
+import * as System_Collections_Specialized_Internal from "@tsonic/dotnet/System.Collections.Specialized/internal/index.js";
+import type { NameObjectCollectionBase, NameValueCollection, StringCollection } from "@tsonic/dotnet/System.Collections.Specialized/internal/index.js";
+import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { Hashtable, ICollection, IComparer, IDictionary, IEnumerable, IEnumerator, IList, ReadOnlyCollectionBase } from "@tsonic/dotnet/System.Collections/internal/index.js";
+import * as System_ComponentModel_Internal from "@tsonic/dotnet/System.ComponentModel/internal/index.js";
+import type { CancelEventArgs, IComponent, INotifyPropertyChanged, ITypeDescriptorContext, PropertyChangedEventArgs, PropertyChangedEventHandler, TypeConverter } from "@tsonic/dotnet/System.ComponentModel/internal/index.js";
+import type { CultureInfo } from "@tsonic/dotnet/System.Globalization/internal/index.js";
+import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { IDeserializationCallback, ISerializable, SerializationInfo, StreamingContext } from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { FrameworkName } from "@tsonic/dotnet/System.Runtime.Versioning/internal/index.js";
+import type { RSAParameters } from "@tsonic/dotnet/System.Security.Cryptography/internal/index.js";
+import * as System_Xml_XPath_Internal from "@tsonic/dotnet/System.Xml.XPath/internal/index.js";
+import type { IXPathNavigable } from "@tsonic/dotnet/System.Xml.XPath/internal/index.js";
+import * as System_Xml_Internal from "@tsonic/dotnet/System.Xml/internal/index.js";
+import type { XmlAttribute, XmlCDataSection, XmlComment, XmlDocument, XmlElement, XmlNode, XmlReader, XmlSignificantWhitespace, XmlText, XmlTextReader, XmlWhitespace, XmlWriter } from "@tsonic/dotnet/System.Xml/internal/index.js";
+import * as System_Lib from "@tsonic/dotnet/System/internal/index.js";
+import type { Array as ClrArray, AsyncCallback, Attribute, Boolean as ClrBoolean, Enum, EventArgs, Exception, Func_2, GenericUriParserOptions, IAsyncResult, ICloneable, IComparable, IConvertible, IFormattable, Int32, Int64, IntPtr, ISpanFormattable, MulticastDelegate, Object as ClrObject, String as ClrString, SystemException, TimeSpan, Type, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export enum ConfigurationAllowDefinition {
     MachineOnly = 0,
@@ -332,7 +332,7 @@ export type CommaDelimitedStringCollectionConverter = CommaDelimitedStringCollec
 
 export interface Configuration$instance {
     readonly AppSettings: AppSettingsSection;
-    AssemblyStringTransformer: Func<System_Internal.String, System_Internal.String>;
+    AssemblyStringTransformer: Func_2<System_Internal.String, System_Internal.String>;
     readonly ConnectionStrings: ConnectionStringsSection;
     readonly EvaluationContext: ContextInformation;
     readonly FilePath: string;
@@ -343,7 +343,7 @@ export interface Configuration$instance {
     readonly SectionGroups: ConfigurationSectionGroupCollection;
     readonly Sections: ConfigurationSectionCollection;
     TargetFramework: FrameworkName;
-    TypeStringTransformer: Func<System_Internal.String, System_Internal.String>;
+    TypeStringTransformer: Func_2<System_Internal.String, System_Internal.String>;
     GetSection(sectionName: string): ConfigurationSection;
     GetSectionGroup(sectionGroupName: string): ConfigurationSectionGroup;
     Save(): void;
@@ -802,7 +802,7 @@ export const ConfigurationValidatorBase: (abstract new() => ConfigurationValidat
 
 export type ConfigurationValidatorBase = ConfigurationValidatorBase$instance;
 
-export interface ConfigXmlDocument$instance extends XmlDocument {
+export interface ConfigXmlDocument$instance extends XmlDocument, System_Configuration_Internal_Internal.IConfigErrorInfo$instance, System_Lib.ICloneable, System_Xml_XPath_Internal.IXPathNavigable {
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
     readonly __tsonic_iface_System_Configuration_Internal_IConfigErrorInfo: never;
     readonly __tsonic_iface_System_ICloneable: never;
@@ -830,8 +830,6 @@ export const ConfigXmlDocument: {
 export interface __ConfigXmlDocument$views {
     As_IConfigErrorInfo(): System_Configuration_Internal_Internal.IConfigErrorInfo$instance;
 }
-
-export interface ConfigXmlDocument$instance extends System_Configuration_Internal_Internal.IConfigErrorInfo$instance, System_Lib.ICloneable, System_Xml_XPath_Internal.IXPathNavigable {}
 
 export type ConfigXmlDocument = ConfigXmlDocument$instance & __ConfigXmlDocument$views;
 
@@ -952,7 +950,7 @@ export const DefaultValidator: {
 
 export type DefaultValidator = DefaultValidator$instance;
 
-export interface DictionarySectionHandler$instance {
+export interface DictionarySectionHandler$instance extends IConfigurationSectionHandler$instance {
     readonly __tsonic_iface_System_Configuration_IConfigurationSectionHandler: never;
 
     readonly KeyAttributeName: string;
@@ -969,8 +967,6 @@ export const DictionarySectionHandler: {
 export interface __DictionarySectionHandler$views {
     As_IConfigurationSectionHandler(): IConfigurationSectionHandler$instance;
 }
-
-export interface DictionarySectionHandler$instance extends IConfigurationSectionHandler$instance {}
 
 export type DictionarySectionHandler = DictionarySectionHandler$instance & __DictionarySectionHandler$views;
 
@@ -1082,7 +1078,7 @@ export const IgnoreSection: {
 
 export type IgnoreSection = IgnoreSection$instance;
 
-export interface IgnoreSectionHandler$instance {
+export interface IgnoreSectionHandler$instance extends IConfigurationSectionHandler$instance {
     readonly __tsonic_iface_System_Configuration_IConfigurationSectionHandler: never;
 
     Create(parent: unknown, configContext: unknown, section: XmlNode): unknown;
@@ -1097,8 +1093,6 @@ export const IgnoreSectionHandler: {
 export interface __IgnoreSectionHandler$views {
     As_IConfigurationSectionHandler(): IConfigurationSectionHandler$instance;
 }
-
-export interface IgnoreSectionHandler$instance extends IConfigurationSectionHandler$instance {}
 
 export type IgnoreSectionHandler = IgnoreSectionHandler$instance & __IgnoreSectionHandler$views;
 
@@ -1212,7 +1206,7 @@ export const KeyValueConfigurationElement: {
 
 export type KeyValueConfigurationElement = KeyValueConfigurationElement$instance;
 
-export interface LocalFileSettingsProvider$instance extends SettingsProvider {
+export interface LocalFileSettingsProvider$instance extends SettingsProvider, IApplicationSettingsProvider$instance {
     readonly __tsonic_iface_System_Configuration_IApplicationSettingsProvider: never;
 
     ApplicationName: string;
@@ -1233,8 +1227,6 @@ export const LocalFileSettingsProvider: {
 export interface __LocalFileSettingsProvider$views {
     As_IApplicationSettingsProvider(): IApplicationSettingsProvider$instance;
 }
-
-export interface LocalFileSettingsProvider$instance extends IApplicationSettingsProvider$instance {}
 
 export type LocalFileSettingsProvider = LocalFileSettingsProvider$instance & __LocalFileSettingsProvider$views;
 
@@ -1307,7 +1299,7 @@ export const NameValueConfigurationElement: {
 
 export type NameValueConfigurationElement = NameValueConfigurationElement$instance;
 
-export interface NameValueFileSectionHandler$instance {
+export interface NameValueFileSectionHandler$instance extends IConfigurationSectionHandler$instance {
     readonly __tsonic_iface_System_Configuration_IConfigurationSectionHandler: never;
 
     Create(parent: unknown, configContext: unknown, section: XmlNode): unknown;
@@ -1323,12 +1315,10 @@ export interface __NameValueFileSectionHandler$views {
     As_IConfigurationSectionHandler(): IConfigurationSectionHandler$instance;
 }
 
-export interface NameValueFileSectionHandler$instance extends IConfigurationSectionHandler$instance {}
-
 export type NameValueFileSectionHandler = NameValueFileSectionHandler$instance & __NameValueFileSectionHandler$views;
 
 
-export interface NameValueSectionHandler$instance {
+export interface NameValueSectionHandler$instance extends IConfigurationSectionHandler$instance {
     readonly __tsonic_iface_System_Configuration_IConfigurationSectionHandler: never;
 
     readonly KeyAttributeName: string;
@@ -1345,8 +1335,6 @@ export const NameValueSectionHandler: {
 export interface __NameValueSectionHandler$views {
     As_IConfigurationSectionHandler(): IConfigurationSectionHandler$instance;
 }
-
-export interface NameValueSectionHandler$instance extends IConfigurationSectionHandler$instance {}
 
 export type NameValueSectionHandler = NameValueSectionHandler$instance & __NameValueSectionHandler$views;
 
@@ -2051,7 +2039,7 @@ export const SettingValueElement: {
 
 export type SettingValueElement = SettingValueElement$instance;
 
-export interface SingleTagSectionHandler$instance {
+export interface SingleTagSectionHandler$instance extends IConfigurationSectionHandler$instance {
     readonly __tsonic_iface_System_Configuration_IConfigurationSectionHandler: never;
 
     Create(parent: unknown, context: unknown, section: XmlNode): unknown;
@@ -2066,8 +2054,6 @@ export const SingleTagSectionHandler: {
 export interface __SingleTagSectionHandler$views {
     As_IConfigurationSectionHandler(): IConfigurationSectionHandler$instance;
 }
-
-export interface SingleTagSectionHandler$instance extends IConfigurationSectionHandler$instance {}
 
 export type SingleTagSectionHandler = SingleTagSectionHandler$instance & __SingleTagSectionHandler$views;
 

@@ -7,9 +7,9 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 
 // Import types from other namespaces
 import type { AcquireTokenForClientParameterBuilder, ConfidentialClientApplicationBuilder } from "../../Microsoft.Identity.Client/internal/index.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
-import type { X509Certificate2 } from "@tsonic/dotnet/System.Security.Cryptography.X509Certificates.js";
+import type { X509Certificate2 } from "@tsonic/dotnet/System.Security.Cryptography.X509Certificates/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
 export abstract class AcquireTokenForClientParameterBuilderForResourceProviders$instance {
     static WithAccessTokenSha256ToRefresh(builder: AcquireTokenForClientParameterBuilder, hash: string): AcquireTokenForClientParameterBuilder;

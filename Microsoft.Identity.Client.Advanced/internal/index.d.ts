@@ -7,12 +7,12 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 
 // Import types from other namespaces
 import type { AbstractAcquireTokenParameterBuilder_1 } from "../../Microsoft.Identity.Client/internal/index.js";
-import type { IDictionary } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
+import type { IDictionary_2 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
 export abstract class AcquireTokenParameterBuilderExtensions$instance {
-    static WithExtraHttpHeaders<T extends AbstractAcquireTokenParameterBuilder_1<T>>(builder: AbstractAcquireTokenParameterBuilder_1<T>, extraHttpHeaders: IDictionary<System_Internal.String, System_Internal.String>): T;
+    static WithExtraHttpHeaders<T extends AbstractAcquireTokenParameterBuilder_1<T>>(builder: AbstractAcquireTokenParameterBuilder_1<T>, extraHttpHeaders: IDictionary_2<System_Internal.String, System_Internal.String>): T;
 }
 
 

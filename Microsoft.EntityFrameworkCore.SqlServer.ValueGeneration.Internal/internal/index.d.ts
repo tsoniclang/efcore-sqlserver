@@ -11,15 +11,15 @@ import type { ptr } from "@tsonic/core/types.js";
 // Import types from other namespaces
 import type { ISqlServerConnection } from "../../Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal/internal/index.js";
 import type { ISqlServerUpdateSqlGenerator } from "../../Microsoft.EntityFrameworkCore.SqlServer.Update.Internal/internal/index.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, IDisposable, Int64, Object as ClrObject, Type } from "@tsonic/dotnet/System.js";
-import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
-import type { IRelationalCommandDiagnosticsLogger } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics.js";
-import type { IProperty, ISequence, ITypeBase } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
-import type { IRawSqlCommandBuilder, IRelationalConnection } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
-import * as Microsoft_EntityFrameworkCore_ValueGeneration_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.ValueGeneration.js";
-import type { HiLoValueGenerator, HiLoValueGeneratorState, IValueGeneratorCache, IValueGeneratorSelector, RelationalValueGeneratorSelector, ValueGenerator, ValueGeneratorCache, ValueGeneratorCacheDependencies, ValueGeneratorSelectorDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.ValueGeneration.js";
+import type { Task_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, IDisposable, Int64, Object as ClrObject, Type } from "@tsonic/dotnet/System/internal/index.js";
+import type { IRelationalCommandDiagnosticsLogger } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics/internal/index.js";
+import type { IProperty, ISequence, ITypeBase } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata/internal/index.js";
+import type { IRawSqlCommandBuilder, IRelationalConnection } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage/internal/index.js";
+import * as Microsoft_EntityFrameworkCore_ValueGeneration_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.ValueGeneration/internal/index.js";
+import type { HiLoValueGenerator_1, HiLoValueGeneratorState, IValueGeneratorCache, IValueGeneratorSelector, RelationalValueGeneratorSelector, ValueGenerator, ValueGeneratorCache, ValueGeneratorCacheDependencies, ValueGeneratorSelectorDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.ValueGeneration/internal/index.js";
 
 export interface ISqlServerSequenceValueGeneratorFactory$instance {
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_SqlServer_ValueGeneration_Internal_ISqlServerSequenceValueGeneratorFactory: never;
@@ -41,10 +41,10 @@ export interface ISqlServerValueGeneratorCache$instance extends Microsoft_Entity
 
 export type ISqlServerValueGeneratorCache = ISqlServerValueGeneratorCache$instance;
 
-export interface SqlServerSequenceHiLoValueGenerator_1$instance<TValue> extends HiLoValueGenerator<TValue> {
+export interface SqlServerSequenceHiLoValueGenerator_1$instance<TValue> extends HiLoValueGenerator_1<TValue> {
     readonly GeneratesTemporaryValues: boolean;
     GetNewLowValue(): long;
-    GetNewLowValueAsync(cancellationToken?: CancellationToken): Task<System_Internal.Int64>;
+    GetNewLowValueAsync(cancellationToken?: CancellationToken): Task_1<System_Internal.Int64>;
 }
 
 
@@ -55,7 +55,7 @@ export const SqlServerSequenceHiLoValueGenerator_1: {
 
 export type SqlServerSequenceHiLoValueGenerator_1<TValue> = SqlServerSequenceHiLoValueGenerator_1$instance<TValue>;
 
-export interface SqlServerSequenceValueGeneratorFactory$instance {
+export interface SqlServerSequenceValueGeneratorFactory$instance extends ISqlServerSequenceValueGeneratorFactory$instance {
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_SqlServer_ValueGeneration_Internal_ISqlServerSequenceValueGeneratorFactory: never;
 
     TryCreate(property: IProperty, type: Type, generatorState: SqlServerSequenceValueGeneratorState, connection: ISqlServerConnection, rawSqlCommandBuilder: IRawSqlCommandBuilder, commandLogger: IRelationalCommandDiagnosticsLogger): ValueGenerator | undefined;
@@ -70,8 +70,6 @@ export const SqlServerSequenceValueGeneratorFactory: {
 export interface __SqlServerSequenceValueGeneratorFactory$views {
     As_ISqlServerSequenceValueGeneratorFactory(): ISqlServerSequenceValueGeneratorFactory$instance;
 }
-
-export interface SqlServerSequenceValueGeneratorFactory$instance extends ISqlServerSequenceValueGeneratorFactory$instance {}
 
 export type SqlServerSequenceValueGeneratorFactory = SqlServerSequenceValueGeneratorFactory$instance & __SqlServerSequenceValueGeneratorFactory$views;
 
@@ -90,7 +88,7 @@ export const SqlServerSequenceValueGeneratorState: {
 
 export type SqlServerSequenceValueGeneratorState = SqlServerSequenceValueGeneratorState$instance;
 
-export interface SqlServerValueGeneratorCache$instance extends ValueGeneratorCache {
+export interface SqlServerValueGeneratorCache$instance extends ValueGeneratorCache, ISqlServerValueGeneratorCache$instance {
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_SqlServer_ValueGeneration_Internal_ISqlServerValueGeneratorCache: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_ValueGeneration_IValueGeneratorCache: never;
 
@@ -106,8 +104,6 @@ export const SqlServerValueGeneratorCache: {
 export interface __SqlServerValueGeneratorCache$views {
     As_ISqlServerValueGeneratorCache(): ISqlServerValueGeneratorCache$instance;
 }
-
-export interface SqlServerValueGeneratorCache$instance extends ISqlServerValueGeneratorCache$instance {}
 
 export type SqlServerValueGeneratorCache = SqlServerValueGeneratorCache$instance & __SqlServerValueGeneratorCache$views;
 

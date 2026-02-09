@@ -6,33 +6,33 @@
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 // Import types from other namespaces
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
-import type { EventDefinition, FallbackEventDefinition, IDiagnosticsLogger } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
+import type { EventDefinition, EventDefinition_1, EventDefinition_2, EventDefinition_3, EventDefinition_4, FallbackEventDefinition, IDiagnosticsLogger } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics/internal/index.js";
 
 export abstract class SqlServerResources$instance {
-    static LogByteIdentityColumn(logger: IDiagnosticsLogger): EventDefinition<System_Internal.String, System_Internal.String>;
-    static LogColumnWithoutType(logger: IDiagnosticsLogger): EventDefinition<System_Internal.String, System_Internal.String>;
-    static LogConflictingValueGenerationStrategies(logger: IDiagnosticsLogger): EventDefinition<System_Internal.String, System_Internal.String, System_Internal.String, System_Internal.String>;
-    static LogDecimalTypeKey(logger: IDiagnosticsLogger): EventDefinition<System_Internal.String, System_Internal.String>;
-    static LogDefaultDecimalTypeColumn(logger: IDiagnosticsLogger): EventDefinition<System_Internal.String, System_Internal.String>;
-    static LogDuplicateForeignKeyConstraintIgnored(logger: IDiagnosticsLogger): EventDefinition<System_Internal.String, System_Internal.String, System_Internal.String>;
+    static LogByteIdentityColumn(logger: IDiagnosticsLogger): EventDefinition_2<System_Internal.String, System_Internal.String>;
+    static LogColumnWithoutType(logger: IDiagnosticsLogger): EventDefinition_2<System_Internal.String, System_Internal.String>;
+    static LogConflictingValueGenerationStrategies(logger: IDiagnosticsLogger): EventDefinition_4<System_Internal.String, System_Internal.String, System_Internal.String, System_Internal.String>;
+    static LogDecimalTypeKey(logger: IDiagnosticsLogger): EventDefinition_2<System_Internal.String, System_Internal.String>;
+    static LogDefaultDecimalTypeColumn(logger: IDiagnosticsLogger): EventDefinition_2<System_Internal.String, System_Internal.String>;
+    static LogDuplicateForeignKeyConstraintIgnored(logger: IDiagnosticsLogger): EventDefinition_3<System_Internal.String, System_Internal.String, System_Internal.String>;
     static LogFoundColumn(logger: IDiagnosticsLogger): FallbackEventDefinition;
-    static LogFoundDefaultSchema(logger: IDiagnosticsLogger): EventDefinition<System_Internal.String>;
-    static LogFoundForeignKey(logger: IDiagnosticsLogger): EventDefinition<System_Internal.String, System_Internal.String, System_Internal.String, System_Internal.String>;
-    static LogFoundIndex(logger: IDiagnosticsLogger): EventDefinition<System_Internal.String, System_Internal.String, System_Internal.Boolean>;
-    static LogFoundPrimaryKey(logger: IDiagnosticsLogger): EventDefinition<System_Internal.String, System_Internal.String>;
+    static LogFoundDefaultSchema(logger: IDiagnosticsLogger): EventDefinition_1<System_Internal.String>;
+    static LogFoundForeignKey(logger: IDiagnosticsLogger): EventDefinition_4<System_Internal.String, System_Internal.String, System_Internal.String, System_Internal.String>;
+    static LogFoundIndex(logger: IDiagnosticsLogger): EventDefinition_3<System_Internal.String, System_Internal.String, System_Internal.Boolean>;
+    static LogFoundPrimaryKey(logger: IDiagnosticsLogger): EventDefinition_2<System_Internal.String, System_Internal.String>;
     static LogFoundSequence(logger: IDiagnosticsLogger): FallbackEventDefinition;
-    static LogFoundTable(logger: IDiagnosticsLogger): EventDefinition<System_Internal.String>;
-    static LogFoundTypeAlias(logger: IDiagnosticsLogger): EventDefinition<System_Internal.String, System_Internal.String>;
-    static LogFoundUniqueConstraint(logger: IDiagnosticsLogger): EventDefinition<System_Internal.String, System_Internal.String>;
-    static LogMissingSchema(logger: IDiagnosticsLogger): EventDefinition<string | undefined>;
-    static LogMissingTable(logger: IDiagnosticsLogger): EventDefinition<string | undefined>;
+    static LogFoundTable(logger: IDiagnosticsLogger): EventDefinition_1<System_Internal.String>;
+    static LogFoundTypeAlias(logger: IDiagnosticsLogger): EventDefinition_2<System_Internal.String, System_Internal.String>;
+    static LogFoundUniqueConstraint(logger: IDiagnosticsLogger): EventDefinition_2<System_Internal.String, System_Internal.String>;
+    static LogMissingSchema(logger: IDiagnosticsLogger): EventDefinition_1<string | undefined>;
+    static LogMissingTable(logger: IDiagnosticsLogger): EventDefinition_1<string | undefined>;
     static LogMissingViewDefinitionRights(logger: IDiagnosticsLogger): EventDefinition;
-    static LogPrincipalColumnNotFound(logger: IDiagnosticsLogger): EventDefinition<System_Internal.String, System_Internal.String, System_Internal.String, System_Internal.String>;
-    static LogPrincipalTableInformationNotFound(logger: IDiagnosticsLogger): EventDefinition<string | undefined, string | undefined>;
-    static LogPrincipalTableNotInSelectionSet(logger: IDiagnosticsLogger): EventDefinition<string | undefined, string | undefined, string | undefined>;
-    static LogReflexiveConstraintIgnored(logger: IDiagnosticsLogger): EventDefinition<System_Internal.String, System_Internal.String>;
+    static LogPrincipalColumnNotFound(logger: IDiagnosticsLogger): EventDefinition_4<System_Internal.String, System_Internal.String, System_Internal.String, System_Internal.String>;
+    static LogPrincipalTableInformationNotFound(logger: IDiagnosticsLogger): EventDefinition_2<string | undefined, string | undefined>;
+    static LogPrincipalTableNotInSelectionSet(logger: IDiagnosticsLogger): EventDefinition_3<string | undefined, string | undefined, string | undefined>;
+    static LogReflexiveConstraintIgnored(logger: IDiagnosticsLogger): EventDefinition_2<System_Internal.String, System_Internal.String>;
     static LogSavepointsDisabledBecauseOfMARS(logger: IDiagnosticsLogger): EventDefinition;
 }
 

@@ -6,14 +6,14 @@
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 // Import types from other namespaces
-import type { Stream } from "@tsonic/dotnet/System.IO.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Byte, Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Object as ClrObject, ReadOnlyMemory, String as ClrString, Type } from "@tsonic/dotnet/System.js";
-import type { JsonSerializerOptions } from "@tsonic/dotnet/System.Text.Json.js";
-import type { JsonSerializerContext } from "@tsonic/dotnet/System.Text.Json.Serialization.js";
-import type { JsonTypeInfo } from "@tsonic/dotnet/System.Text.Json.Serialization.Metadata.js";
-import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import type { Stream } from "@tsonic/dotnet/System.IO/internal/index.js";
+import type { JsonTypeInfo_1 } from "@tsonic/dotnet/System.Text.Json.Serialization.Metadata/internal/index.js";
+import type { JsonSerializerContext } from "@tsonic/dotnet/System.Text.Json.Serialization/internal/index.js";
+import type { JsonSerializerOptions } from "@tsonic/dotnet/System.Text.Json/internal/index.js";
+import type { Task_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Byte, Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Object as ClrObject, ReadOnlyMemory_1, String as ClrString, Type } from "@tsonic/dotnet/System/internal/index.js";
 
 export enum UriIdnScope {
     None = 0,
@@ -29,9 +29,9 @@ export interface BinaryData$instance {
     Equals(obj: unknown): boolean;
     GetHashCode(): int;
     ToArray(): byte[];
-    ToMemory(): ReadOnlyMemory<Byte>;
+    ToMemory(): ReadOnlyMemory_1<Byte>;
     ToObjectFromJson<T>(options?: JsonSerializerOptions): T | undefined;
-    ToObjectFromJson<T>(jsonTypeInfo: JsonTypeInfo<T>): T | undefined;
+    ToObjectFromJson<T>(jsonTypeInfo: JsonTypeInfo_1<T>): T | undefined;
     ToStream(): Stream;
     ToString(): string;
     WithMediaType(mediaType: string): BinaryData;
@@ -43,21 +43,21 @@ export const BinaryData: {
     new(data: byte[], mediaType: string): BinaryData;
     new(jsonSerializable: unknown, options: JsonSerializerOptions, type: Type): BinaryData;
     new(jsonSerializable: unknown, context: JsonSerializerContext, type: Type): BinaryData;
-    new(data: ReadOnlyMemory<Byte>): BinaryData;
-    new(data: ReadOnlyMemory<Byte>, mediaType: string): BinaryData;
+    new(data: ReadOnlyMemory_1<Byte>): BinaryData;
+    new(data: ReadOnlyMemory_1<Byte>, mediaType: string): BinaryData;
     new(data: string): BinaryData;
     new(data: string, mediaType: string): BinaryData;
     readonly Empty: BinaryData;
     FromBytes(data: byte[], mediaType: string): BinaryData;
     FromBytes(data: byte[]): BinaryData;
-    FromBytes(data: ReadOnlyMemory<Byte>, mediaType: string): BinaryData;
-    FromBytes(data: ReadOnlyMemory<Byte>): BinaryData;
-    FromObjectAsJson<T>(jsonSerializable: T, jsonTypeInfo: JsonTypeInfo<T>): BinaryData;
+    FromBytes(data: ReadOnlyMemory_1<Byte>, mediaType: string): BinaryData;
+    FromBytes(data: ReadOnlyMemory_1<Byte>): BinaryData;
+    FromObjectAsJson<T>(jsonSerializable: T, jsonTypeInfo: JsonTypeInfo_1<T>): BinaryData;
     FromObjectAsJson<T>(jsonSerializable: T, options?: JsonSerializerOptions): BinaryData;
     FromStream(stream: Stream, mediaType: string): BinaryData;
     FromStream(stream: Stream): BinaryData;
-    FromStreamAsync(stream: Stream, mediaType: string, cancellationToken?: CancellationToken): Task<BinaryData>;
-    FromStreamAsync(stream: Stream, cancellationToken?: CancellationToken): Task<BinaryData>;
+    FromStreamAsync(stream: Stream, mediaType: string, cancellationToken?: CancellationToken): Task_1<BinaryData>;
+    FromStreamAsync(stream: Stream, cancellationToken?: CancellationToken): Task_1<BinaryData>;
     FromString(data: string, mediaType: string): BinaryData;
     FromString(data: string): BinaryData;
 };

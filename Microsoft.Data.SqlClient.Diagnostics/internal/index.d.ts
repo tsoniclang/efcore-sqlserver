@@ -7,13 +7,13 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 
 // Import types from other namespaces
 import type { SqlCommand, SqlConnection } from "../../Microsoft.Data.SqlClient/internal/index.js";
-import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { IEnumerable as IEnumerable__System_Collections_Generic, IEnumerator, IReadOnlyCollection, IReadOnlyList, KeyValuePair } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections.js";
-import type { IDictionary, IEnumerable } from "@tsonic/dotnet/System.Collections.js";
-import type { IsolationLevel } from "@tsonic/dotnet/System.Data.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Exception, Guid, Int32, Int64, Nullable, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
+import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { IEnumerable_1, IEnumerator_1, IReadOnlyCollection_1, IReadOnlyList_1, KeyValuePair_2 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { IDictionary, IEnumerable } from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { IsolationLevel } from "@tsonic/dotnet/System.Data/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Exception, Guid, Int32, Int64, Nullable_1, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface SqlClientCommandAfter$instance {
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
@@ -22,15 +22,15 @@ export interface SqlClientCommandAfter$instance {
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly Command: SqlCommand;
-    readonly ConnectionId: Nullable<Guid>;
+    readonly ConnectionId: Nullable_1<Guid>;
     readonly Count: int;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly Operation: string;
     readonly OperationId: Guid;
     readonly Statistics: IDictionary;
     readonly Timestamp: long;
-    readonly TransactionId: Nullable<System_Internal.Int64>;
-    GetEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, unknown>>;
+    readonly TransactionId: Nullable_1<System_Internal.Int64>;
+    GetEnumerator(): IEnumerator_1<KeyValuePair_2<System_Internal.String, unknown>>;
 }
 
 
@@ -49,14 +49,14 @@ export interface SqlClientCommandBefore$instance {
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly Command: SqlCommand;
-    readonly ConnectionId: Nullable<Guid>;
+    readonly ConnectionId: Nullable_1<Guid>;
     readonly Count: int;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly Operation: string;
     readonly OperationId: Guid;
     readonly Timestamp: long;
-    readonly TransactionId: Nullable<System_Internal.Int64>;
-    GetEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, unknown>>;
+    readonly TransactionId: Nullable_1<System_Internal.Int64>;
+    GetEnumerator(): IEnumerator_1<KeyValuePair_2<System_Internal.String, unknown>>;
 }
 
 
@@ -75,15 +75,15 @@ export interface SqlClientCommandError$instance {
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly Command: SqlCommand;
-    readonly ConnectionId: Nullable<Guid>;
+    readonly ConnectionId: Nullable_1<Guid>;
     readonly Count: int;
     readonly Exception: Exception;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly Operation: string;
     readonly OperationId: Guid;
     readonly Timestamp: long;
-    readonly TransactionId: Nullable<System_Internal.Int64>;
-    GetEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, unknown>>;
+    readonly TransactionId: Nullable_1<System_Internal.Int64>;
+    GetEnumerator(): IEnumerator_1<KeyValuePair_2<System_Internal.String, unknown>>;
 }
 
 
@@ -102,14 +102,14 @@ export interface SqlClientConnectionCloseAfter$instance {
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly Connection: SqlConnection;
-    readonly ConnectionId: Nullable<Guid>;
+    readonly ConnectionId: Nullable_1<Guid>;
     readonly Count: int;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly Operation: string;
     readonly OperationId: Guid;
     readonly Statistics: IDictionary;
     readonly Timestamp: long;
-    GetEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, unknown>>;
+    GetEnumerator(): IEnumerator_1<KeyValuePair_2<System_Internal.String, unknown>>;
 }
 
 
@@ -128,14 +128,14 @@ export interface SqlClientConnectionCloseBefore$instance {
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly Connection: SqlConnection;
-    readonly ConnectionId: Nullable<Guid>;
+    readonly ConnectionId: Nullable_1<Guid>;
     readonly Count: int;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly Operation: string;
     readonly OperationId: Guid;
     readonly Statistics: IDictionary;
     readonly Timestamp: long;
-    GetEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, unknown>>;
+    GetEnumerator(): IEnumerator_1<KeyValuePair_2<System_Internal.String, unknown>>;
 }
 
 
@@ -154,15 +154,15 @@ export interface SqlClientConnectionCloseError$instance {
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly Connection: SqlConnection;
-    readonly ConnectionId: Nullable<Guid>;
+    readonly ConnectionId: Nullable_1<Guid>;
     readonly Count: int;
     readonly Exception: Exception;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly Operation: string;
     readonly OperationId: Guid;
     readonly Statistics: IDictionary;
     readonly Timestamp: long;
-    GetEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, unknown>>;
+    GetEnumerator(): IEnumerator_1<KeyValuePair_2<System_Internal.String, unknown>>;
 }
 
 
@@ -184,12 +184,12 @@ export interface SqlClientConnectionOpenAfter$instance {
     readonly Connection: SqlConnection;
     readonly ConnectionId: Guid;
     readonly Count: int;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly Operation: string;
     readonly OperationId: Guid;
     readonly Statistics: IDictionary;
     readonly Timestamp: long;
-    GetEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, unknown>>;
+    GetEnumerator(): IEnumerator_1<KeyValuePair_2<System_Internal.String, unknown>>;
 }
 
 
@@ -210,11 +210,11 @@ export interface SqlClientConnectionOpenBefore$instance {
     readonly ClientVersion: string;
     readonly Connection: SqlConnection;
     readonly Count: int;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly Operation: string;
     readonly OperationId: Guid;
     readonly Timestamp: long;
-    GetEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, unknown>>;
+    GetEnumerator(): IEnumerator_1<KeyValuePair_2<System_Internal.String, unknown>>;
 }
 
 
@@ -237,11 +237,11 @@ export interface SqlClientConnectionOpenError$instance {
     readonly ConnectionId: Guid;
     readonly Count: int;
     readonly Exception: Exception;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly Operation: string;
     readonly OperationId: Guid;
     readonly Timestamp: long;
-    GetEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, unknown>>;
+    GetEnumerator(): IEnumerator_1<KeyValuePair_2<System_Internal.String, unknown>>;
 }
 
 
@@ -262,12 +262,12 @@ export interface SqlClientTransactionCommitAfter$instance {
     readonly Connection: SqlConnection;
     readonly Count: int;
     readonly IsolationLevel: IsolationLevel;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly Operation: string;
     readonly OperationId: Guid;
     readonly Timestamp: long;
-    readonly TransactionId: Nullable<System_Internal.Int64>;
-    GetEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, unknown>>;
+    readonly TransactionId: Nullable_1<System_Internal.Int64>;
+    GetEnumerator(): IEnumerator_1<KeyValuePair_2<System_Internal.String, unknown>>;
 }
 
 
@@ -288,12 +288,12 @@ export interface SqlClientTransactionCommitBefore$instance {
     readonly Connection: SqlConnection;
     readonly Count: int;
     readonly IsolationLevel: IsolationLevel;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly Operation: string;
     readonly OperationId: Guid;
     readonly Timestamp: long;
-    readonly TransactionId: Nullable<System_Internal.Int64>;
-    GetEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, unknown>>;
+    readonly TransactionId: Nullable_1<System_Internal.Int64>;
+    GetEnumerator(): IEnumerator_1<KeyValuePair_2<System_Internal.String, unknown>>;
 }
 
 
@@ -315,12 +315,12 @@ export interface SqlClientTransactionCommitError$instance {
     readonly Count: int;
     readonly Exception: Exception;
     readonly IsolationLevel: IsolationLevel;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly Operation: string;
     readonly OperationId: Guid;
     readonly Timestamp: long;
-    readonly TransactionId: Nullable<System_Internal.Int64>;
-    GetEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, unknown>>;
+    readonly TransactionId: Nullable_1<System_Internal.Int64>;
+    GetEnumerator(): IEnumerator_1<KeyValuePair_2<System_Internal.String, unknown>>;
 }
 
 
@@ -341,13 +341,13 @@ export interface SqlClientTransactionRollbackAfter$instance {
     readonly Connection: SqlConnection;
     readonly Count: int;
     readonly IsolationLevel: IsolationLevel;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly Operation: string;
     readonly OperationId: Guid;
     readonly Timestamp: long;
-    readonly TransactionId: Nullable<System_Internal.Int64>;
+    readonly TransactionId: Nullable_1<System_Internal.Int64>;
     readonly TransactionName: string;
-    GetEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, unknown>>;
+    GetEnumerator(): IEnumerator_1<KeyValuePair_2<System_Internal.String, unknown>>;
 }
 
 
@@ -368,13 +368,13 @@ export interface SqlClientTransactionRollbackBefore$instance {
     readonly Connection: SqlConnection;
     readonly Count: int;
     readonly IsolationLevel: IsolationLevel;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly Operation: string;
     readonly OperationId: Guid;
     readonly Timestamp: long;
-    readonly TransactionId: Nullable<System_Internal.Int64>;
+    readonly TransactionId: Nullable_1<System_Internal.Int64>;
     readonly TransactionName: string;
-    GetEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, unknown>>;
+    GetEnumerator(): IEnumerator_1<KeyValuePair_2<System_Internal.String, unknown>>;
 }
 
 
@@ -396,13 +396,13 @@ export interface SqlClientTransactionRollbackError$instance {
     readonly Count: int;
     readonly Exception: Exception;
     readonly IsolationLevel: IsolationLevel;
-    readonly [index: number]: KeyValuePair<System_Internal.String, unknown>;
+    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly Operation: string;
     readonly OperationId: Guid;
     readonly Timestamp: long;
-    readonly TransactionId: Nullable<System_Internal.Int64>;
+    readonly TransactionId: Nullable_1<System_Internal.Int64>;
     readonly TransactionName: string;
-    GetEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, unknown>>;
+    GetEnumerator(): IEnumerator_1<KeyValuePair_2<System_Internal.String, unknown>>;
 }
 
 

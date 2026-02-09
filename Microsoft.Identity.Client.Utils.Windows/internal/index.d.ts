@@ -6,8 +6,8 @@
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 // Import types from other namespaces
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Object as ClrObject, Void } from "@tsonic/dotnet/System.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Object as ClrObject, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export abstract class WindowsNativeUtils$instance {
     static InitializeProcessSecurity(): void;

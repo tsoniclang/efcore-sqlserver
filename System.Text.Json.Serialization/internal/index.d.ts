@@ -12,12 +12,12 @@ import type { ptr } from "@tsonic/core/types.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
 import * as System_Internal from "../../System/internal/index.js";
 import type { BinaryData } from "../../System/internal/index.js";
-import type { Type, Void } from "@tsonic/dotnet/System.js";
-import type { JsonSerializerOptions, Utf8JsonReader, Utf8JsonWriter } from "@tsonic/dotnet/System.Text.Json.js";
-import * as System_Text_Json_Serialization_Internal from "@tsonic/dotnet/System.Text.Json.Serialization.js";
-import type { JsonConverter } from "@tsonic/dotnet/System.Text.Json.Serialization.js";
+import * as System_Text_Json_Serialization_Internal from "@tsonic/dotnet/System.Text.Json.Serialization/internal/index.js";
+import type { JsonConverter_1 } from "@tsonic/dotnet/System.Text.Json.Serialization/internal/index.js";
+import type { JsonSerializerOptions, Utf8JsonReader, Utf8JsonWriter } from "@tsonic/dotnet/System.Text.Json/internal/index.js";
+import type { Type, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface BinaryDataJsonConverter$instance extends JsonConverter<BinaryData> {
+export interface BinaryDataJsonConverter$instance extends JsonConverter_1<BinaryData> {
     Read(reader: Utf8JsonReader, typeToConvert: Type, options: JsonSerializerOptions): BinaryData | undefined;
     Write(writer: Utf8JsonWriter, value: BinaryData, options: JsonSerializerOptions): void;
 }

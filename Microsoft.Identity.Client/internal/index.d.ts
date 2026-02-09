@@ -16,19 +16,19 @@ import type { ManagedIdentitySource } from "../../Microsoft.Identity.Client.Mana
 import type { RegionOutcome } from "../../Microsoft.Identity.Client.Region/internal/index.js";
 import type { TelemetryData } from "../../Microsoft.Identity.Client.TelemetryCore.TelemetryClient/internal/index.js";
 import type { IIdentityLogger, ITelemetryClient } from "../../Microsoft.IdentityModel.Abstractions/internal/index.js";
-import type { Dictionary, IDictionary, IEnumerable, IReadOnlyCollection, IReadOnlyDictionary, IReadOnlyList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Action, AsyncCallback, Boolean as ClrBoolean, Byte, DateTimeOffset, Enum, Exception, Func, Guid, IAsyncResult, ICloneable, IComparable, IConvertible, IFormattable, Int32, Int64, IntPtr, ISpanFormattable, MulticastDelegate, Nullable, Object as ClrObject, String as ClrString, Uri, ValueType, Void } from "@tsonic/dotnet/System.js";
-import type { HttpResponseHeaders } from "@tsonic/dotnet/System.Net.Http.Headers.js";
-import type { HttpClient, HttpMethod, HttpRequestMessage } from "@tsonic/dotnet/System.Net.Http.js";
-import type { SslPolicyErrors } from "@tsonic/dotnet/System.Net.Security.js";
-import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { ClaimsPrincipal } from "@tsonic/dotnet/System.Security.Claims.js";
-import type { X509Certificate2, X509Chain } from "@tsonic/dotnet/System.Security.Cryptography.X509Certificates.js";
-import type { SecureString } from "@tsonic/dotnet/System.Security.js";
-import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import type { Dictionary_2, IDictionary_2, IEnumerable_1, IReadOnlyCollection_1, IReadOnlyDictionary_2, IReadOnlyList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { HttpResponseHeaders } from "@tsonic/dotnet/System.Net.Http.Headers/internal/index.js";
+import type { HttpClient, HttpMethod, HttpRequestMessage } from "@tsonic/dotnet/System.Net.Http/internal/index.js";
+import type { SslPolicyErrors } from "@tsonic/dotnet/System.Net.Security/internal/index.js";
+import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { ClaimsPrincipal } from "@tsonic/dotnet/System.Security.Claims/internal/index.js";
+import type { X509Certificate2, X509Chain } from "@tsonic/dotnet/System.Security.Cryptography.X509Certificates/internal/index.js";
+import type { SecureString } from "@tsonic/dotnet/System.Security/internal/index.js";
+import type { Task, Task_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Action_1, AsyncCallback, Boolean as ClrBoolean, Byte, DateTimeOffset, Enum, Exception, Func_1, Func_2, Func_5, Guid, IAsyncResult, ICloneable, IComparable, IConvertible, IFormattable, Int32, Int64, IntPtr, ISpanFormattable, MulticastDelegate, Nullable_1, Object as ClrObject, String as ClrString, Uri, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export enum AadAuthorityAudience {
     None = 0,
@@ -127,17 +127,17 @@ export interface IAppConfig$instance {
     readonly RedirectUri: string;
     readonly TenantId: string;
     readonly LoggingCallback: LogCallback;
-    readonly ExtraQueryParameters: IDictionary<System_Internal.String, System_Internal.String>;
+    readonly ExtraQueryParameters: IDictionary_2<System_Internal.String, System_Internal.String>;
     readonly IsBrokerEnabled: boolean;
     readonly ClientName: string;
     readonly ClientVersion: string;
     readonly TelemetryConfig: ITelemetryConfig;
     readonly ExperimentalFeaturesEnabled: boolean;
-    readonly ClientCapabilities: IEnumerable<System_Internal.String>;
+    readonly ClientCapabilities: IEnumerable_1<System_Internal.String>;
     readonly LegacyCacheCompatibilityEnabled: boolean;
     readonly ClientSecret: string;
     readonly ClientCredentialCertificate: X509Certificate2;
-    readonly ParentActivityOrWindowFunc: Func<unknown>;
+    readonly ParentActivityOrWindowFunc: Func_1<unknown>;
 }
 
 
@@ -154,7 +154,7 @@ export type IApplicationBase = IApplicationBase$instance;
 export interface IByRefreshToken$instance {
     readonly __tsonic_iface_Microsoft_Identity_Client_IByRefreshToken: never;
 
-    AcquireTokenByRefreshToken(scopes: IEnumerable<System_Internal.String>, refreshToken: string): AcquireTokenByRefreshTokenParameterBuilder;
+    AcquireTokenByRefreshToken(scopes: IEnumerable_1<System_Internal.String>, refreshToken: string): AcquireTokenByRefreshTokenParameterBuilder;
 }
 
 
@@ -163,7 +163,7 @@ export type IByRefreshToken = IByRefreshToken$instance;
 export interface IByUsernameAndPassword$instance {
     readonly __tsonic_iface_Microsoft_Identity_Client_IByUsernameAndPassword: never;
 
-    AcquireTokenByUsernamePassword(scopes: IEnumerable<System_Internal.String>, username: string, password: string): AcquireTokenByUsernameAndPasswordConfidentialParameterBuilder;
+    AcquireTokenByUsernamePassword(scopes: IEnumerable_1<System_Internal.String>, username: string, password: string): AcquireTokenByUsernameAndPasswordConfidentialParameterBuilder;
 }
 
 
@@ -175,10 +175,10 @@ export interface IClientApplicationBase$instance extends IApplicationBase {
     readonly AppConfig: IAppConfig;
     readonly UserTokenCache: ITokenCache;
     readonly Authority: string;
-    AcquireTokenSilent(scopes: IEnumerable<System_Internal.String>, account: IAccount): AcquireTokenSilentParameterBuilder;
-    AcquireTokenSilent(scopes: IEnumerable<System_Internal.String>, loginHint: string): AcquireTokenSilentParameterBuilder;
-    GetAccountAsync(identifier: string): Task<IAccount>;
-    GetAccountsAsync(): Task<IEnumerable<IAccount>>;
+    AcquireTokenSilent(scopes: IEnumerable_1<System_Internal.String>, account: IAccount): AcquireTokenSilentParameterBuilder;
+    AcquireTokenSilent(scopes: IEnumerable_1<System_Internal.String>, loginHint: string): AcquireTokenSilentParameterBuilder;
+    GetAccountAsync(identifier: string): Task_1<IAccount>;
+    GetAccountsAsync(): Task_1<IEnumerable_1<IAccount>>;
     RemoveAsync(account: IAccount): Task;
 }
 
@@ -194,14 +194,14 @@ export interface IConfidentialClientApplication$instance extends IClientApplicat
     readonly AppConfig: IAppConfig;
     readonly UserTokenCache: ITokenCache;
     readonly Authority: string;
-    AcquireTokenByAuthorizationCode(scopes: IEnumerable<System_Internal.String>, authorizationCode: string): AcquireTokenByAuthorizationCodeParameterBuilder;
-    AcquireTokenForClient(scopes: IEnumerable<System_Internal.String>): AcquireTokenForClientParameterBuilder;
-    AcquireTokenOnBehalfOf(scopes: IEnumerable<System_Internal.String>, userAssertion: UserAssertion): AcquireTokenOnBehalfOfParameterBuilder;
-    AcquireTokenSilent(scopes: IEnumerable<System_Internal.String>, account: IAccount): AcquireTokenSilentParameterBuilder;
-    AcquireTokenSilent(scopes: IEnumerable<System_Internal.String>, loginHint: string): AcquireTokenSilentParameterBuilder;
-    GetAccountAsync(identifier: string): Task<IAccount>;
-    GetAccountsAsync(): Task<IEnumerable<IAccount>>;
-    GetAuthorizationRequestUrl(scopes: IEnumerable<System_Internal.String>): GetAuthorizationRequestUrlParameterBuilder;
+    AcquireTokenByAuthorizationCode(scopes: IEnumerable_1<System_Internal.String>, authorizationCode: string): AcquireTokenByAuthorizationCodeParameterBuilder;
+    AcquireTokenForClient(scopes: IEnumerable_1<System_Internal.String>): AcquireTokenForClientParameterBuilder;
+    AcquireTokenOnBehalfOf(scopes: IEnumerable_1<System_Internal.String>, userAssertion: UserAssertion): AcquireTokenOnBehalfOfParameterBuilder;
+    AcquireTokenSilent(scopes: IEnumerable_1<System_Internal.String>, account: IAccount): AcquireTokenSilentParameterBuilder;
+    AcquireTokenSilent(scopes: IEnumerable_1<System_Internal.String>, loginHint: string): AcquireTokenSilentParameterBuilder;
+    GetAccountAsync(identifier: string): Task_1<IAccount>;
+    GetAccountsAsync(): Task_1<IEnumerable_1<IAccount>>;
+    GetAuthorizationRequestUrl(scopes: IEnumerable_1<System_Internal.String>): GetAuthorizationRequestUrlParameterBuilder;
     RemoveAsync(account: IAccount): Task;
 }
 
@@ -211,8 +211,8 @@ export type IConfidentialClientApplication = IConfidentialClientApplication$inst
 export interface ILongRunningWebApi$instance {
     readonly __tsonic_iface_Microsoft_Identity_Client_ILongRunningWebApi: never;
 
-    AcquireTokenInLongRunningProcess(scopes: IEnumerable<System_Internal.String>, longRunningProcessSessionKey: string): AcquireTokenOnBehalfOfParameterBuilder;
-    InitiateLongRunningProcessInWebApi(scopes: IEnumerable<System_Internal.String>, userToken: string, longRunningProcessSessionKey: string): AcquireTokenOnBehalfOfParameterBuilder;
+    AcquireTokenInLongRunningProcess(scopes: IEnumerable_1<System_Internal.String>, longRunningProcessSessionKey: string): AcquireTokenOnBehalfOfParameterBuilder;
+    InitiateLongRunningProcessInWebApi(scopes: IEnumerable_1<System_Internal.String>, userToken: string, longRunningProcessSessionKey: string): AcquireTokenOnBehalfOfParameterBuilder;
 }
 
 
@@ -242,7 +242,7 @@ export interface IMsalSFHttpClientFactory$instance extends IMsalHttpClientFactor
     readonly __tsonic_iface_Microsoft_Identity_Client_IMsalSFHttpClientFactory: never;
 
     GetHttpClient(): HttpClient;
-    GetHttpClient(validateServerCert: Func<HttpRequestMessage, X509Certificate2, X509Chain, SslPolicyErrors, System_Internal.Boolean>): HttpClient;
+    GetHttpClient(validateServerCert: Func_5<HttpRequestMessage, X509Certificate2, X509Chain, SslPolicyErrors, System_Internal.Boolean>): HttpClient;
 }
 
 
@@ -255,15 +255,15 @@ export interface IPublicClientApplication$instance extends IClientApplicationBas
     readonly AppConfig: IAppConfig;
     readonly UserTokenCache: ITokenCache;
     readonly Authority: string;
-    AcquireTokenByIntegratedWindowsAuth(scopes: IEnumerable<System_Internal.String>): AcquireTokenByIntegratedWindowsAuthParameterBuilder;
-    AcquireTokenByUsernamePassword(scopes: IEnumerable<System_Internal.String>, username: string, password: SecureString): AcquireTokenByUsernamePasswordParameterBuilder;
-    AcquireTokenByUsernamePassword(scopes: IEnumerable<System_Internal.String>, username: string, password: string): AcquireTokenByUsernamePasswordParameterBuilder;
-    AcquireTokenInteractive(scopes: IEnumerable<System_Internal.String>): AcquireTokenInteractiveParameterBuilder;
-    AcquireTokenSilent(scopes: IEnumerable<System_Internal.String>, account: IAccount): AcquireTokenSilentParameterBuilder;
-    AcquireTokenSilent(scopes: IEnumerable<System_Internal.String>, loginHint: string): AcquireTokenSilentParameterBuilder;
-    AcquireTokenWithDeviceCode(scopes: IEnumerable<System_Internal.String>, deviceCodeResultCallback: Func<DeviceCodeResult, Task>): AcquireTokenWithDeviceCodeParameterBuilder;
-    GetAccountAsync(identifier: string): Task<IAccount>;
-    GetAccountsAsync(): Task<IEnumerable<IAccount>>;
+    AcquireTokenByIntegratedWindowsAuth(scopes: IEnumerable_1<System_Internal.String>): AcquireTokenByIntegratedWindowsAuthParameterBuilder;
+    AcquireTokenByUsernamePassword(scopes: IEnumerable_1<System_Internal.String>, username: string, password: SecureString): AcquireTokenByUsernamePasswordParameterBuilder;
+    AcquireTokenByUsernamePassword(scopes: IEnumerable_1<System_Internal.String>, username: string, password: string): AcquireTokenByUsernamePasswordParameterBuilder;
+    AcquireTokenInteractive(scopes: IEnumerable_1<System_Internal.String>): AcquireTokenInteractiveParameterBuilder;
+    AcquireTokenSilent(scopes: IEnumerable_1<System_Internal.String>, account: IAccount): AcquireTokenSilentParameterBuilder;
+    AcquireTokenSilent(scopes: IEnumerable_1<System_Internal.String>, loginHint: string): AcquireTokenSilentParameterBuilder;
+    AcquireTokenWithDeviceCode(scopes: IEnumerable_1<System_Internal.String>, deviceCodeResultCallback: Func_2<DeviceCodeResult, Task>): AcquireTokenWithDeviceCodeParameterBuilder;
+    GetAccountAsync(identifier: string): Task_1<IAccount>;
+    GetAccountsAsync(): Task_1<IEnumerable_1<IAccount>>;
     RemoveAsync(account: IAccount): Task;
 }
 
@@ -275,7 +275,7 @@ export interface ITelemetryConfig$instance {
 
     readonly AudienceType: TelemetryAudienceType;
     readonly SessionId: string;
-    readonly DispatchAction: Action<ITelemetryEventPayload>;
+    readonly DispatchAction: Action_1<ITelemetryEventPayload>;
 }
 
 
@@ -285,10 +285,10 @@ export interface ITelemetryEventPayload$instance {
     readonly __tsonic_iface_Microsoft_Identity_Client_ITelemetryEventPayload: never;
 
     readonly Name: string;
-    readonly BoolValues: IReadOnlyDictionary<System_Internal.String, System_Internal.Boolean>;
-    readonly Int64Values: IReadOnlyDictionary<System_Internal.String, System_Internal.Int64>;
-    readonly IntValues: IReadOnlyDictionary<System_Internal.String, System_Internal.Int32>;
-    readonly StringValues: IReadOnlyDictionary<System_Internal.String, System_Internal.String>;
+    readonly BoolValues: IReadOnlyDictionary_2<System_Internal.String, System_Internal.Boolean>;
+    readonly Int64Values: IReadOnlyDictionary_2<System_Internal.String, System_Internal.Int64>;
+    readonly IntValues: IReadOnlyDictionary_2<System_Internal.String, System_Internal.Int32>;
+    readonly StringValues: IReadOnlyDictionary_2<System_Internal.String, System_Internal.String>;
     ToJsonString(): string;
 }
 
@@ -299,7 +299,7 @@ export interface ITokenCache$instance {
     readonly __tsonic_iface_Microsoft_Identity_Client_ITokenCache: never;
 
     SetBeforeAccess(beforeAccess: TokenCacheCallback): void;
-    SetBeforeAccessAsync(beforeAccess: Func<TokenCacheNotificationArgs, Task>): void;
+    SetBeforeAccessAsync(beforeAccess: Func_2<TokenCacheNotificationArgs, Task>): void;
 }
 
 
@@ -346,7 +346,7 @@ export interface AbstractAcquireTokenParameterBuilder_1$instance<T extends BaseA
     WithB2CAuthority(authorityUri: string): T;
     WithClaims(claims: string): T;
     WithExtraQueryParameters(extraQueryParameters: string): T;
-    WithExtraQueryParameters(extraQueryParameters: Dictionary<System_Internal.String, System_Internal.String>): T;
+    WithExtraQueryParameters(extraQueryParameters: Dictionary_2<System_Internal.String, System_Internal.String>): T;
     WithTenantId(tenantId: string): T;
     WithTenantIdFromAuthority(authorityUri: Uri): T;
 }
@@ -370,9 +370,9 @@ export interface AbstractApplicationBuilder_1$instance<T extends BaseAbstractApp
     WithAuthority(authorityAudience: AadAuthorityAudience, validateAuthority?: boolean): T;
     WithB2CAuthority(authorityUri: string): T;
     WithCacheOptions(options: CacheOptions): T;
-    WithClientCapabilities(clientCapabilities: IEnumerable<System_Internal.String>): T;
+    WithClientCapabilities(clientCapabilities: IEnumerable_1<System_Internal.String>): T;
     WithClientId(clientId: string): T;
-    WithExtraQueryParameters(extraQueryParameters: IDictionary<System_Internal.String, System_Internal.String>): T;
+    WithExtraQueryParameters(extraQueryParameters: IDictionary_2<System_Internal.String, System_Internal.String>): T;
     WithExtraQueryParameters(extraQueryParameters: string): T;
     WithInstanceDicoveryMetadata(instanceDiscoveryJson: string): T;
     WithInstanceDicoveryMetadata(instanceDiscoveryUri: Uri): T;
@@ -393,9 +393,9 @@ export const AbstractApplicationBuilder_1: {
 export type AbstractApplicationBuilder_1<T extends BaseAbstractApplicationBuilder_1<T>> = AbstractApplicationBuilder_1$instance<T>;
 
 export interface AbstractClientAppBaseAcquireTokenParameterBuilder_1$instance<T extends AbstractAcquireTokenParameterBuilder_1<T>> extends AbstractAcquireTokenParameterBuilder_1<T> {
-    ExecuteAsync(cancellationToken: CancellationToken): Task<AuthenticationResult>;
-    ExecuteAsync(cancellationToken: CancellationToken): Task<AuthenticationResult>;
-    ExecuteAsync(): Task<AuthenticationResult>;
+    ExecuteAsync(cancellationToken: CancellationToken): Task_1<AuthenticationResult>;
+    ExecuteAsync(cancellationToken: CancellationToken): Task_1<AuthenticationResult>;
+    ExecuteAsync(): Task_1<AuthenticationResult>;
 }
 
 
@@ -406,9 +406,9 @@ export const AbstractClientAppBaseAcquireTokenParameterBuilder_1: {
 export type AbstractClientAppBaseAcquireTokenParameterBuilder_1<T extends AbstractAcquireTokenParameterBuilder_1<T>> = AbstractClientAppBaseAcquireTokenParameterBuilder_1$instance<T>;
 
 export interface AbstractConfidentialClientAcquireTokenParameterBuilder_1$instance<T extends AbstractAcquireTokenParameterBuilder_1<T>> extends AbstractAcquireTokenParameterBuilder_1<T> {
-    ExecuteAsync(cancellationToken: CancellationToken): Task<AuthenticationResult>;
-    ExecuteAsync(cancellationToken: CancellationToken): Task<AuthenticationResult>;
-    ExecuteAsync(): Task<AuthenticationResult>;
+    ExecuteAsync(cancellationToken: CancellationToken): Task_1<AuthenticationResult>;
+    ExecuteAsync(cancellationToken: CancellationToken): Task_1<AuthenticationResult>;
+    ExecuteAsync(): Task_1<AuthenticationResult>;
     Validate(): void;
     WithProofOfPossession(popAuthenticationConfiguration: PoPAuthenticationConfiguration): T;
     WithSignedHttpRequestProofOfPossession(popAuthenticationConfiguration: PoPAuthenticationConfiguration): T;
@@ -422,9 +422,9 @@ export const AbstractConfidentialClientAcquireTokenParameterBuilder_1: {
 export type AbstractConfidentialClientAcquireTokenParameterBuilder_1<T extends AbstractAcquireTokenParameterBuilder_1<T>> = AbstractConfidentialClientAcquireTokenParameterBuilder_1$instance<T>;
 
 export interface AbstractManagedIdentityAcquireTokenParameterBuilder_1$instance<T extends BaseAbstractAcquireTokenParameterBuilder_1<T>> extends BaseAbstractAcquireTokenParameterBuilder_1<T> {
-    ExecuteAsync(cancellationToken: CancellationToken): Task<AuthenticationResult>;
-    ExecuteAsync(cancellationToken: CancellationToken): Task<AuthenticationResult>;
-    ExecuteAsync(): Task<AuthenticationResult>;
+    ExecuteAsync(cancellationToken: CancellationToken): Task_1<AuthenticationResult>;
+    ExecuteAsync(cancellationToken: CancellationToken): Task_1<AuthenticationResult>;
+    ExecuteAsync(): Task_1<AuthenticationResult>;
 }
 
 
@@ -435,9 +435,9 @@ export const AbstractManagedIdentityAcquireTokenParameterBuilder_1: (abstract ne
 export type AbstractManagedIdentityAcquireTokenParameterBuilder_1<T extends BaseAbstractAcquireTokenParameterBuilder_1<T>> = AbstractManagedIdentityAcquireTokenParameterBuilder_1$instance<T>;
 
 export interface AbstractPublicClientAcquireTokenParameterBuilder_1$instance<T extends AbstractAcquireTokenParameterBuilder_1<T>> extends AbstractAcquireTokenParameterBuilder_1<T> {
-    ExecuteAsync(cancellationToken: CancellationToken): Task<AuthenticationResult>;
-    ExecuteAsync(cancellationToken: CancellationToken): Task<AuthenticationResult>;
-    ExecuteAsync(): Task<AuthenticationResult>;
+    ExecuteAsync(cancellationToken: CancellationToken): Task_1<AuthenticationResult>;
+    ExecuteAsync(cancellationToken: CancellationToken): Task_1<AuthenticationResult>;
+    ExecuteAsync(): Task_1<AuthenticationResult>;
 }
 
 
@@ -561,7 +561,7 @@ export interface AcquireTokenInteractiveParameterBuilder$instance extends Abstra
     Validate(): void;
     WithAccount(account: IAccount): AcquireTokenInteractiveParameterBuilder;
     WithEmbeddedWebViewOptions(options: EmbeddedWebViewOptions): AcquireTokenInteractiveParameterBuilder;
-    WithExtraScopesToConsent(extraScopesToConsent: IEnumerable<System_Internal.String>): AcquireTokenInteractiveParameterBuilder;
+    WithExtraScopesToConsent(extraScopesToConsent: IEnumerable_1<System_Internal.String>): AcquireTokenInteractiveParameterBuilder;
     WithLoginHint(loginHint: string): AcquireTokenInteractiveParameterBuilder;
     WithParentActivityOrWindow(parent: unknown): AcquireTokenInteractiveParameterBuilder;
     WithParentActivityOrWindow(window: nint): AcquireTokenInteractiveParameterBuilder;
@@ -610,7 +610,7 @@ export type AcquireTokenSilentParameterBuilder = AcquireTokenSilentParameterBuil
 
 export interface AcquireTokenWithDeviceCodeParameterBuilder$instance extends AbstractPublicClientAcquireTokenParameterBuilder_1<AcquireTokenWithDeviceCodeParameterBuilder> {
     Validate(): void;
-    WithDeviceCodeResultCallback(deviceCodeResultCallback: Func<DeviceCodeResult, Task>): AcquireTokenWithDeviceCodeParameterBuilder;
+    WithDeviceCodeResultCallback(deviceCodeResultCallback: Func_2<DeviceCodeResult, Task>): AcquireTokenWithDeviceCodeParameterBuilder;
 }
 
 
@@ -635,7 +635,7 @@ export type ApplicationBase = ApplicationBase$instance;
 export interface ApplicationOptions$instance extends BaseApplicationOptions {
     AadAuthorityAudience: AadAuthorityAudience;
     AzureCloudInstance: AzureCloudInstance;
-    ClientCapabilities: IEnumerable<System_Internal.String>;
+    ClientCapabilities: IEnumerable_1<System_Internal.String>;
     ClientId: string;
     ClientName: string;
     ClientVersion: string;
@@ -658,7 +658,7 @@ export interface AssertionRequestOptions$instance {
     CancellationToken: CancellationToken;
     Claims: string;
     ClientAssertionFmiPath: string;
-    ClientCapabilities: IEnumerable<System_Internal.String>;
+    ClientCapabilities: IEnumerable_1<System_Internal.String>;
     ClientID: string;
     TokenEndpoint: string;
 }
@@ -674,15 +674,15 @@ export type AssertionRequestOptions = AssertionRequestOptions$instance;
 export interface AuthenticationHeaderParser$instance {
     AuthenticationInfoParameters: AuthenticationInfoParameters;
     PopNonce: string;
-    WwwAuthenticateParameters: IReadOnlyList<WwwAuthenticateParameters>;
+    WwwAuthenticateParameters: IReadOnlyList_1<WwwAuthenticateParameters>;
 }
 
 
 export const AuthenticationHeaderParser: {
     new(): AuthenticationHeaderParser;
     ParseAuthenticationHeaders(httpResponseHeaders: HttpResponseHeaders): AuthenticationHeaderParser;
-    ParseAuthenticationHeadersAsync(resourceUri: string, httpClient: HttpClient, cancellationToken?: CancellationToken): Task<AuthenticationHeaderParser>;
-    ParseAuthenticationHeadersAsync(resourceUri: string, cancellationToken?: CancellationToken): Task<AuthenticationHeaderParser>;
+    ParseAuthenticationHeadersAsync(resourceUri: string, httpClient: HttpClient, cancellationToken?: CancellationToken): Task_1<AuthenticationHeaderParser>;
+    ParseAuthenticationHeadersAsync(resourceUri: string, cancellationToken?: CancellationToken): Task_1<AuthenticationHeaderParser>;
 };
 
 
@@ -705,7 +705,7 @@ export type AuthenticationInfoParameters = AuthenticationInfoParameters$instance
 export interface AuthenticationResult$instance {
     AccessToken: string;
     readonly Account: IAccount;
-    readonly AdditionalResponseParameters: IReadOnlyDictionary<System_Internal.String, System_Internal.String>;
+    readonly AdditionalResponseParameters: IReadOnlyDictionary_2<System_Internal.String, System_Internal.String>;
     readonly AuthenticationResultMetadata: AuthenticationResultMetadata;
     readonly ClaimsPrincipal: ClaimsPrincipal;
     readonly CorrelationId: Guid;
@@ -713,7 +713,7 @@ export interface AuthenticationResult$instance {
     readonly ExtendedExpiresOn: DateTimeOffset;
     readonly IdToken: string;
     readonly IsExtendedLifeTimeToken: boolean;
-    readonly Scopes: IEnumerable<System_Internal.String>;
+    readonly Scopes: IEnumerable_1<System_Internal.String>;
     readonly SpaAuthCode: string;
     readonly TenantId: string;
     readonly TokenType: string;
@@ -723,8 +723,8 @@ export interface AuthenticationResult$instance {
 
 
 export const AuthenticationResult: {
-    new(accessToken: string, isExtendedLifeTimeToken: boolean, uniqueId: string, expiresOn: DateTimeOffset, extendedExpiresOn: DateTimeOffset, tenantId: string, account: IAccount, idToken: string, scopes: IEnumerable<System_Internal.String>, correlationId: Guid, tokenType: string, authenticationResultMetadata: AuthenticationResultMetadata, claimsPrincipal: ClaimsPrincipal, spaAuthCode: string, additionalResponseParameters: IReadOnlyDictionary<System_Internal.String, System_Internal.String>): AuthenticationResult;
-    new(accessToken: string, isExtendedLifeTimeToken: boolean, uniqueId: string, expiresOn: DateTimeOffset, extendedExpiresOn: DateTimeOffset, tenantId: string, account: IAccount, idToken: string, scopes: IEnumerable<System_Internal.String>, correlationId: Guid, authenticationResultMetadata: AuthenticationResultMetadata, tokenType: string): AuthenticationResult;
+    new(accessToken: string, isExtendedLifeTimeToken: boolean, uniqueId: string, expiresOn: DateTimeOffset, extendedExpiresOn: DateTimeOffset, tenantId: string, account: IAccount, idToken: string, scopes: IEnumerable_1<System_Internal.String>, correlationId: Guid, tokenType: string, authenticationResultMetadata: AuthenticationResultMetadata, claimsPrincipal: ClaimsPrincipal, spaAuthCode: string, additionalResponseParameters: IReadOnlyDictionary_2<System_Internal.String, System_Internal.String>): AuthenticationResult;
+    new(accessToken: string, isExtendedLifeTimeToken: boolean, uniqueId: string, expiresOn: DateTimeOffset, extendedExpiresOn: DateTimeOffset, tenantId: string, account: IAccount, idToken: string, scopes: IEnumerable_1<System_Internal.String>, correlationId: Guid, authenticationResultMetadata: AuthenticationResultMetadata, tokenType: string): AuthenticationResult;
 };
 
 
@@ -738,7 +738,7 @@ export interface AuthenticationResultMetadata$instance {
     DurationInCacheInMs: long;
     DurationInHttpInMs: long;
     DurationTotalInMs: long;
-    RefreshOn: Nullable<DateTimeOffset>;
+    RefreshOn: Nullable_1<DateTimeOffset>;
     RegionDetails: RegionDetails;
     Telemetry: string;
     TokenEndpoint: string;
@@ -754,11 +754,11 @@ export const AuthenticationResultMetadata: {
 export type AuthenticationResultMetadata = AuthenticationResultMetadata$instance;
 
 export interface BaseAbstractAcquireTokenParameterBuilder_1$instance<T extends BaseAbstractAcquireTokenParameterBuilder_1<T>> {
-    ExecuteAsync(cancellationToken: CancellationToken): Task<AuthenticationResult>;
-    ExecuteAsync(): Task<AuthenticationResult>;
+    ExecuteAsync(cancellationToken: CancellationToken): Task_1<AuthenticationResult>;
+    ExecuteAsync(): Task_1<AuthenticationResult>;
     Validate(): void;
     WithCorrelationId(correlationId: Guid): T;
-    WithExtraQueryParameters(extraQueryParameters: Dictionary<System_Internal.String, System_Internal.String>): T;
+    WithExtraQueryParameters(extraQueryParameters: Dictionary_2<System_Internal.String, System_Internal.String>): T;
 }
 
 
@@ -775,7 +775,7 @@ export interface BaseAbstractApplicationBuilder_1$instance<T extends BaseAbstrac
     WithExperimentalFeatures(enableExperimentalFeatures?: boolean): T;
     WithHttpClientFactory(httpClientFactory: IMsalHttpClientFactory): T;
     WithHttpClientFactory(httpClientFactory: IMsalHttpClientFactory, retryOnceOn5xx: boolean): T;
-    WithLogging(loggingCallback: LogCallback, logLevel?: Nullable<LogLevel>, enablePiiLogging?: Nullable<System_Internal.Boolean>, enableDefaultPlatformLogging?: Nullable<System_Internal.Boolean>): T;
+    WithLogging(loggingCallback: LogCallback, logLevel?: Nullable_1<LogLevel>, enablePiiLogging?: Nullable_1<System_Internal.Boolean>, enableDefaultPlatformLogging?: Nullable_1<System_Internal.Boolean>): T;
     WithLogging(identityLogger: IIdentityLogger, enablePiiLogging?: boolean): T;
 }
 
@@ -835,14 +835,14 @@ export interface ClientApplicationBase$instance extends ApplicationBase, IApplic
     readonly AppConfig: IAppConfig;
     readonly Authority: string;
     readonly UserTokenCache: ITokenCache;
-    AcquireTokenSilent(scopes: IEnumerable<System_Internal.String>, account: IAccount): AcquireTokenSilentParameterBuilder;
-    AcquireTokenSilent(scopes: IEnumerable<System_Internal.String>, loginHint: string): AcquireTokenSilentParameterBuilder;
-    GetAccountAsync(accountId: string, cancellationToken?: CancellationToken): Task<IAccount>;
-    GetAccountAsync(accountId: string): Task<IAccount>;
-    GetAccountsAsync(): Task<IEnumerable<IAccount>>;
-    GetAccountsAsync(cancellationToken?: CancellationToken): Task<IEnumerable<IAccount>>;
-    GetAccountsAsync(userFlow: string): Task<IEnumerable<IAccount>>;
-    GetAccountsAsync(userFlow: string, cancellationToken?: CancellationToken): Task<IEnumerable<IAccount>>;
+    AcquireTokenSilent(scopes: IEnumerable_1<System_Internal.String>, account: IAccount): AcquireTokenSilentParameterBuilder;
+    AcquireTokenSilent(scopes: IEnumerable_1<System_Internal.String>, loginHint: string): AcquireTokenSilentParameterBuilder;
+    GetAccountAsync(accountId: string, cancellationToken?: CancellationToken): Task_1<IAccount>;
+    GetAccountAsync(accountId: string): Task_1<IAccount>;
+    GetAccountsAsync(): Task_1<IEnumerable_1<IAccount>>;
+    GetAccountsAsync(cancellationToken?: CancellationToken): Task_1<IEnumerable_1<IAccount>>;
+    GetAccountsAsync(userFlow: string): Task_1<IEnumerable_1<IAccount>>;
+    GetAccountsAsync(userFlow: string, cancellationToken?: CancellationToken): Task_1<IEnumerable_1<IAccount>>;
     RemoveAsync(account: IAccount): Task;
     RemoveAsync(account: IAccount, cancellationToken?: CancellationToken): Task;
 }
@@ -859,7 +859,7 @@ export interface __ClientApplicationBase$views {
 export type ClientApplicationBase = ClientApplicationBase$instance & __ClientApplicationBase$views;
 
 
-export interface ConfidentialClientApplication$instance extends ClientApplicationBase$instance, IApplicationBase {
+export interface ConfidentialClientApplication$instance extends ClientApplicationBase$instance, IApplicationBase, IByRefreshToken$instance, IByUsernameAndPassword$instance, ILongRunningWebApi$instance {
     readonly __tsonic_iface_Microsoft_Identity_Client_IApplicationBase: never;
     readonly __tsonic_iface_Microsoft_Identity_Client_IByRefreshToken: never;
     readonly __tsonic_iface_Microsoft_Identity_Client_IByUsernameAndPassword: never;
@@ -869,23 +869,23 @@ export interface ConfidentialClientApplication$instance extends ClientApplicatio
 
     readonly AppTokenCache: ITokenCache;
     readonly Certificate: X509Certificate2;
-    AcquireTokenByAuthorizationCode(scopes: IEnumerable<System_Internal.String>, authorizationCode: string): AcquireTokenByAuthorizationCodeParameterBuilder;
-    AcquireTokenForClient(scopes: IEnumerable<System_Internal.String>): AcquireTokenForClientParameterBuilder;
-    AcquireTokenInLongRunningProcess(scopes: IEnumerable<System_Internal.String>, longRunningProcessSessionKey: string): AcquireTokenOnBehalfOfParameterBuilder;
-    AcquireTokenOnBehalfOf(scopes: IEnumerable<System_Internal.String>, userAssertion: UserAssertion): AcquireTokenOnBehalfOfParameterBuilder;
-    AcquireTokenSilent(scopes: IEnumerable<System_Internal.String>, account: IAccount): AcquireTokenSilentParameterBuilder;
-    AcquireTokenSilent(scopes: IEnumerable<System_Internal.String>, loginHint: string): AcquireTokenSilentParameterBuilder;
-    GetAccountAsync(accountId: string, cancellationToken?: CancellationToken): Task<IAccount>;
-    GetAccountAsync(accountId: string): Task<IAccount>;
-    GetAccountsAsync(): Task<IEnumerable<IAccount>>;
-    GetAccountsAsync(cancellationToken?: CancellationToken): Task<IEnumerable<IAccount>>;
-    GetAccountsAsync(userFlow: string): Task<IEnumerable<IAccount>>;
-    GetAccountsAsync(userFlow: string, cancellationToken?: CancellationToken): Task<IEnumerable<IAccount>>;
-    GetAuthorizationRequestUrl(scopes: IEnumerable<System_Internal.String>): GetAuthorizationRequestUrlParameterBuilder;
-    InitiateLongRunningProcessInWebApi(scopes: IEnumerable<System_Internal.String>, userToken: string, longRunningProcessSessionKey: string): AcquireTokenOnBehalfOfParameterBuilder;
+    AcquireTokenByAuthorizationCode(scopes: IEnumerable_1<System_Internal.String>, authorizationCode: string): AcquireTokenByAuthorizationCodeParameterBuilder;
+    AcquireTokenForClient(scopes: IEnumerable_1<System_Internal.String>): AcquireTokenForClientParameterBuilder;
+    AcquireTokenInLongRunningProcess(scopes: IEnumerable_1<System_Internal.String>, longRunningProcessSessionKey: string): AcquireTokenOnBehalfOfParameterBuilder;
+    AcquireTokenOnBehalfOf(scopes: IEnumerable_1<System_Internal.String>, userAssertion: UserAssertion): AcquireTokenOnBehalfOfParameterBuilder;
+    AcquireTokenSilent(scopes: IEnumerable_1<System_Internal.String>, account: IAccount): AcquireTokenSilentParameterBuilder;
+    AcquireTokenSilent(scopes: IEnumerable_1<System_Internal.String>, loginHint: string): AcquireTokenSilentParameterBuilder;
+    GetAccountAsync(accountId: string, cancellationToken?: CancellationToken): Task_1<IAccount>;
+    GetAccountAsync(accountId: string): Task_1<IAccount>;
+    GetAccountsAsync(): Task_1<IEnumerable_1<IAccount>>;
+    GetAccountsAsync(cancellationToken?: CancellationToken): Task_1<IEnumerable_1<IAccount>>;
+    GetAccountsAsync(userFlow: string): Task_1<IEnumerable_1<IAccount>>;
+    GetAccountsAsync(userFlow: string, cancellationToken?: CancellationToken): Task_1<IEnumerable_1<IAccount>>;
+    GetAuthorizationRequestUrl(scopes: IEnumerable_1<System_Internal.String>): GetAuthorizationRequestUrlParameterBuilder;
+    InitiateLongRunningProcessInWebApi(scopes: IEnumerable_1<System_Internal.String>, userToken: string, longRunningProcessSessionKey: string): AcquireTokenOnBehalfOfParameterBuilder;
     RemoveAsync(account: IAccount): Task;
     RemoveAsync(account: IAccount, cancellationToken?: CancellationToken): Task;
-    StopLongRunningProcessInWebApiAsync(longRunningProcessSessionKey: string, cancellationToken?: CancellationToken): Task<System_Internal.Boolean>;
+    StopLongRunningProcessInWebApiAsync(longRunningProcessSessionKey: string, cancellationToken?: CancellationToken): Task_1<System_Internal.Boolean>;
 }
 
 
@@ -902,8 +902,6 @@ export interface __ConfidentialClientApplication$views {
     As_ILongRunningWebApi(): ILongRunningWebApi$instance;
 }
 
-export interface ConfidentialClientApplication$instance extends IByRefreshToken$instance, IByUsernameAndPassword$instance, ILongRunningWebApi$instance {}
-
 export type ConfidentialClientApplication = ConfidentialClientApplication$instance & __ConfidentialClientApplication$views;
 
 
@@ -914,11 +912,11 @@ export interface ConfidentialClientApplicationBuilder$instance extends AbstractA
     WithCertificate(certificate: X509Certificate2): ConfidentialClientApplicationBuilder;
     WithCertificate(certificate: X509Certificate2, sendX5C: boolean): ConfidentialClientApplicationBuilder;
     WithClientAssertion(signedClientAssertion: string): ConfidentialClientApplicationBuilder;
-    WithClientAssertion(clientAssertionDelegate: Func<System_Internal.String>): ConfidentialClientApplicationBuilder;
-    WithClientAssertion(clientAssertionAsyncDelegate: Func<CancellationToken, Task<System_Internal.String>>): ConfidentialClientApplicationBuilder;
-    WithClientAssertion(clientAssertionAsyncDelegate: Func<AssertionRequestOptions, Task<System_Internal.String>>): ConfidentialClientApplicationBuilder;
-    WithClientClaims(certificate: X509Certificate2, claimsToSign: IDictionary<System_Internal.String, System_Internal.String>, mergeWithDefaultClaims: boolean): ConfidentialClientApplicationBuilder;
-    WithClientClaims(certificate: X509Certificate2, claimsToSign: IDictionary<System_Internal.String, System_Internal.String>, mergeWithDefaultClaims?: boolean, sendX5C?: boolean): ConfidentialClientApplicationBuilder;
+    WithClientAssertion(clientAssertionDelegate: Func_1<System_Internal.String>): ConfidentialClientApplicationBuilder;
+    WithClientAssertion(clientAssertionAsyncDelegate: Func_2<CancellationToken, Task_1<System_Internal.String>>): ConfidentialClientApplicationBuilder;
+    WithClientAssertion(clientAssertionAsyncDelegate: Func_2<AssertionRequestOptions, Task_1<System_Internal.String>>): ConfidentialClientApplicationBuilder;
+    WithClientClaims(certificate: X509Certificate2, claimsToSign: IDictionary_2<System_Internal.String, System_Internal.String>, mergeWithDefaultClaims: boolean): ConfidentialClientApplicationBuilder;
+    WithClientClaims(certificate: X509Certificate2, claimsToSign: IDictionary_2<System_Internal.String, System_Internal.String>, mergeWithDefaultClaims?: boolean, sendX5C?: boolean): ConfidentialClientApplicationBuilder;
     WithClientSecret(clientSecret: string): ConfidentialClientApplicationBuilder;
     WithGenericAuthority(authorityUri: string): ConfidentialClientApplicationBuilder;
     WithOidcAuthority(authorityUri: string): ConfidentialClientApplicationBuilder;
@@ -954,7 +952,7 @@ export interface DeviceCodeResult$instance {
     readonly ExpiresOn: DateTimeOffset;
     readonly Interval: long;
     readonly Message: string;
-    readonly Scopes: IReadOnlyCollection<System_Internal.String>;
+    readonly Scopes: IReadOnlyCollection_1<System_Internal.String>;
     readonly UserCode: string;
     readonly VerificationUrl: string;
 }
@@ -980,13 +978,13 @@ export const EmbeddedWebViewOptions: {
 export type EmbeddedWebViewOptions = EmbeddedWebViewOptions$instance;
 
 export interface GetAuthorizationRequestUrlParameterBuilder$instance extends AbstractConfidentialClientAcquireTokenParameterBuilder_1<GetAuthorizationRequestUrlParameterBuilder> {
-    ExecuteAsync(cancellationToken: CancellationToken): Task<Uri>;
-    ExecuteAsync(): Task<Uri>;
-    ExecuteAsync(cancellationToken: CancellationToken): Task<AuthenticationResult>;
-    ExecuteAsync(): Task<AuthenticationResult>;
+    ExecuteAsync(cancellationToken: CancellationToken): Task_1<Uri>;
+    ExecuteAsync(): Task_1<Uri>;
+    ExecuteAsync(cancellationToken: CancellationToken): Task_1<AuthenticationResult>;
+    ExecuteAsync(): Task_1<AuthenticationResult>;
     WithAccount(account: IAccount): GetAuthorizationRequestUrlParameterBuilder;
     WithCcsRoutingHint(userObjectIdentifier: string, tenantIdentifier: string): GetAuthorizationRequestUrlParameterBuilder;
-    WithExtraScopesToConsent(extraScopesToConsent: IEnumerable<System_Internal.String>): GetAuthorizationRequestUrlParameterBuilder;
+    WithExtraScopesToConsent(extraScopesToConsent: IEnumerable_1<System_Internal.String>): GetAuthorizationRequestUrlParameterBuilder;
     WithLoginHint(loginHint: string): GetAuthorizationRequestUrlParameterBuilder;
     WithPkce(codeVerifier: string): GetAuthorizationRequestUrlParameterBuilder;
     WithPrompt(prompt: Prompt): GetAuthorizationRequestUrlParameterBuilder;
@@ -1017,7 +1015,7 @@ export const IntuneAppProtectionPolicyRequiredException: {
 
 export type IntuneAppProtectionPolicyRequiredException = IntuneAppProtectionPolicyRequiredException$instance;
 
-export interface ManagedIdentityApplication$instance extends ApplicationBase, IApplicationBase {
+export interface ManagedIdentityApplication$instance extends ApplicationBase, IApplicationBase, IManagedIdentityApplication$instance {
     readonly __tsonic_iface_Microsoft_Identity_Client_IApplicationBase: never;
     readonly __tsonic_iface_Microsoft_Identity_Client_IManagedIdentityApplication: never;
 
@@ -1034,14 +1032,12 @@ export interface __ManagedIdentityApplication$views {
     As_IManagedIdentityApplication(): IManagedIdentityApplication$instance;
 }
 
-export interface ManagedIdentityApplication$instance extends IManagedIdentityApplication$instance {}
-
 export type ManagedIdentityApplication = ManagedIdentityApplication$instance & __ManagedIdentityApplication$views;
 
 
 export interface ManagedIdentityApplicationBuilder$instance extends BaseAbstractApplicationBuilder_1<ManagedIdentityApplicationBuilder> {
     Build(): IManagedIdentityApplication;
-    WithClientCapabilities(clientCapabilities: IEnumerable<System_Internal.String>): ManagedIdentityApplicationBuilder;
+    WithClientCapabilities(clientCapabilities: IEnumerable_1<System_Internal.String>): ManagedIdentityApplicationBuilder;
     WithTelemetryClient(...telemetryClients: ITelemetryClient[]): ManagedIdentityApplicationBuilder;
 }
 
@@ -1100,7 +1096,7 @@ export type MsalClientException = MsalClientException$instance;
 export interface MsalException$instance extends Exception {
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
-    AdditionalExceptionData: IReadOnlyDictionary<System_Internal.String, System_Internal.String>;
+    AdditionalExceptionData: IReadOnlyDictionary_2<System_Internal.String, System_Internal.String>;
     CorrelationId: string;
     ErrorCode: string;
     IsRetryable: boolean;
@@ -1211,26 +1207,26 @@ export const MsalUiRequiredException: {
 
 export type MsalUiRequiredException = MsalUiRequiredException$instance;
 
-export interface PublicClientApplication$instance extends ClientApplicationBase$instance, IApplicationBase {
+export interface PublicClientApplication$instance extends ClientApplicationBase$instance, IApplicationBase, IByRefreshToken$instance {
     readonly __tsonic_iface_Microsoft_Identity_Client_IApplicationBase: never;
     readonly __tsonic_iface_Microsoft_Identity_Client_IByRefreshToken: never;
     readonly __tsonic_iface_Microsoft_Identity_Client_IClientApplicationBase: never;
     readonly __tsonic_iface_Microsoft_Identity_Client_IPublicClientApplication: never;
 
     readonly IsSystemWebViewAvailable: boolean;
-    AcquireTokenByIntegratedWindowsAuth(scopes: IEnumerable<System_Internal.String>): AcquireTokenByIntegratedWindowsAuthParameterBuilder;
-    AcquireTokenByUsernamePassword(scopes: IEnumerable<System_Internal.String>, username: string, password: SecureString): AcquireTokenByUsernamePasswordParameterBuilder;
-    AcquireTokenByUsernamePassword(scopes: IEnumerable<System_Internal.String>, username: string, password: string): AcquireTokenByUsernamePasswordParameterBuilder;
-    AcquireTokenInteractive(scopes: IEnumerable<System_Internal.String>): AcquireTokenInteractiveParameterBuilder;
-    AcquireTokenSilent(scopes: IEnumerable<System_Internal.String>, account: IAccount): AcquireTokenSilentParameterBuilder;
-    AcquireTokenSilent(scopes: IEnumerable<System_Internal.String>, loginHint: string): AcquireTokenSilentParameterBuilder;
-    AcquireTokenWithDeviceCode(scopes: IEnumerable<System_Internal.String>, deviceCodeResultCallback: Func<DeviceCodeResult, Task>): AcquireTokenWithDeviceCodeParameterBuilder;
-    GetAccountAsync(accountId: string, cancellationToken?: CancellationToken): Task<IAccount>;
-    GetAccountAsync(accountId: string): Task<IAccount>;
-    GetAccountsAsync(): Task<IEnumerable<IAccount>>;
-    GetAccountsAsync(cancellationToken?: CancellationToken): Task<IEnumerable<IAccount>>;
-    GetAccountsAsync(userFlow: string): Task<IEnumerable<IAccount>>;
-    GetAccountsAsync(userFlow: string, cancellationToken?: CancellationToken): Task<IEnumerable<IAccount>>;
+    AcquireTokenByIntegratedWindowsAuth(scopes: IEnumerable_1<System_Internal.String>): AcquireTokenByIntegratedWindowsAuthParameterBuilder;
+    AcquireTokenByUsernamePassword(scopes: IEnumerable_1<System_Internal.String>, username: string, password: SecureString): AcquireTokenByUsernamePasswordParameterBuilder;
+    AcquireTokenByUsernamePassword(scopes: IEnumerable_1<System_Internal.String>, username: string, password: string): AcquireTokenByUsernamePasswordParameterBuilder;
+    AcquireTokenInteractive(scopes: IEnumerable_1<System_Internal.String>): AcquireTokenInteractiveParameterBuilder;
+    AcquireTokenSilent(scopes: IEnumerable_1<System_Internal.String>, account: IAccount): AcquireTokenSilentParameterBuilder;
+    AcquireTokenSilent(scopes: IEnumerable_1<System_Internal.String>, loginHint: string): AcquireTokenSilentParameterBuilder;
+    AcquireTokenWithDeviceCode(scopes: IEnumerable_1<System_Internal.String>, deviceCodeResultCallback: Func_2<DeviceCodeResult, Task>): AcquireTokenWithDeviceCodeParameterBuilder;
+    GetAccountAsync(accountId: string, cancellationToken?: CancellationToken): Task_1<IAccount>;
+    GetAccountAsync(accountId: string): Task_1<IAccount>;
+    GetAccountsAsync(): Task_1<IEnumerable_1<IAccount>>;
+    GetAccountsAsync(cancellationToken?: CancellationToken): Task_1<IEnumerable_1<IAccount>>;
+    GetAccountsAsync(userFlow: string): Task_1<IEnumerable_1<IAccount>>;
+    GetAccountsAsync(userFlow: string, cancellationToken?: CancellationToken): Task_1<IEnumerable_1<IAccount>>;
     IsBrokerAvailable(): boolean;
     IsEmbeddedWebViewAvailable(): boolean;
     IsProofOfPossessionSupportedByClient(): boolean;
@@ -1251,8 +1247,6 @@ export interface __PublicClientApplication$views {
     As_IPublicClientApplication(): IPublicClientApplication$instance;
 }
 
-export interface PublicClientApplication$instance extends IByRefreshToken$instance {}
-
 export type PublicClientApplication = PublicClientApplication$instance & __PublicClientApplication$views;
 
 
@@ -1265,8 +1259,8 @@ export interface PublicClientApplicationBuilder$instance extends AbstractApplica
     WithKerberosTicketClaim(servicePrincipalName: string, ticketContainer: KerberosTicketContainer): PublicClientApplicationBuilder;
     WithMultiCloudSupport(enableMultiCloudSupport: boolean): PublicClientApplicationBuilder;
     WithOidcAuthority(authorityUri: string): PublicClientApplicationBuilder;
-    WithParentActivityOrWindow(parentActivityOrWindowFunc: Func<unknown>): PublicClientApplicationBuilder;
-    WithParentActivityOrWindow(windowFunc: Func<System_Internal.IntPtr>): PublicClientApplicationBuilder;
+    WithParentActivityOrWindow(parentActivityOrWindowFunc: Func_1<unknown>): PublicClientApplicationBuilder;
+    WithParentActivityOrWindow(windowFunc: Func_1<System_Internal.IntPtr>): PublicClientApplicationBuilder;
     WithWindowsBrokerOptions(options: WindowsBrokerOptions): PublicClientApplicationBuilder;
 }
 
@@ -1310,7 +1304,7 @@ export interface SystemWebViewOptions$instance {
     HtmlMessageError: string;
     HtmlMessageSuccess: string;
     iOSHidePrivacyPrompt: boolean;
-    OpenBrowserAsync: Func<Uri, Task>;
+    OpenBrowserAsync: Func_2<Uri, Task>;
 }
 
 
@@ -1337,16 +1331,16 @@ export const TenantProfile: {
 
 export type TenantProfile = TenantProfile$instance;
 
-export interface TokenCache$instance {
+export interface TokenCache$instance extends ITokenCache$instance, ITokenCacheSerializer$instance {
     readonly __tsonic_iface_Microsoft_Identity_Client_ITokenCache: never;
     readonly __tsonic_iface_Microsoft_Identity_Client_ITokenCacheSerializer: never;
 
     SetAfterAccess(afterAccess: TokenCacheCallback): void;
-    SetAfterAccessAsync(afterAccess: Func<TokenCacheNotificationArgs, Task>): void;
+    SetAfterAccessAsync(afterAccess: Func_2<TokenCacheNotificationArgs, Task>): void;
     SetBeforeAccess(beforeAccess: TokenCacheCallback): void;
-    SetBeforeAccessAsync(beforeAccess: Func<TokenCacheNotificationArgs, Task>): void;
+    SetBeforeAccessAsync(beforeAccess: Func_2<TokenCacheNotificationArgs, Task>): void;
     SetBeforeWrite(beforeWrite: TokenCacheCallback): void;
-    SetBeforeWriteAsync(beforeWrite: Func<TokenCacheNotificationArgs, Task>): void;
+    SetBeforeWriteAsync(beforeWrite: Func_2<TokenCacheNotificationArgs, Task>): void;
     SetIosKeychainSecurityGroup(securityGroup: string): void;
 }
 
@@ -1360,8 +1354,6 @@ export interface __TokenCache$views {
     As_ITokenCache(): ITokenCache$instance;
     As_ITokenCacheSerializer(): ITokenCacheSerializer$instance;
 }
-
-export interface TokenCache$instance extends ITokenCache$instance, ITokenCacheSerializer$instance {}
 
 export type TokenCache = TokenCache$instance & __TokenCache$views;
 
@@ -1377,9 +1369,9 @@ export interface TokenCacheNotificationArgs$instance {
     readonly IsApplicationCache: boolean;
     readonly NoDistributedCacheUseReason: string;
     readonly PiiLoggingEnabled: boolean;
-    readonly RequestScopes: IEnumerable<System_Internal.String>;
+    readonly RequestScopes: IEnumerable_1<System_Internal.String>;
     readonly RequestTenantId: string;
-    readonly SuggestedCacheExpiry: Nullable<DateTimeOffset>;
+    readonly SuggestedCacheExpiry: Nullable_1<DateTimeOffset>;
     readonly SuggestedCacheKey: string;
     readonly TelemetryData: TelemetryData;
     readonly TokenCache: ITokenCacheSerializer;
@@ -1387,21 +1379,21 @@ export interface TokenCacheNotificationArgs$instance {
 
 
 export const TokenCacheNotificationArgs: {
-    new(tokenCache: ITokenCacheSerializer, clientId: string, account: IAccount, hasStateChanged: boolean, isApplicationCache: boolean, suggestedCacheKey: string, hasTokens: boolean, suggestedCacheExpiry: Nullable<DateTimeOffset>, cancellationToken: CancellationToken): TokenCacheNotificationArgs;
-    new(tokenCache: ITokenCacheSerializer, clientId: string, account: IAccount, hasStateChanged: boolean, isApplicationCache: boolean, suggestedCacheKey: string, hasTokens: boolean, suggestedCacheExpiry: Nullable<DateTimeOffset>, cancellationToken: CancellationToken, correlationId: Guid): TokenCacheNotificationArgs;
-    new(tokenCache: ITokenCacheSerializer, clientId: string, account: IAccount, hasStateChanged: boolean, isApplicationCache: boolean, suggestedCacheKey: string, hasTokens: boolean, suggestedCacheExpiry: Nullable<DateTimeOffset>, cancellationToken: CancellationToken, correlationId: Guid, requestScopes: IEnumerable<System_Internal.String>, requestTenantId: string): TokenCacheNotificationArgs;
-    new(tokenCache: ITokenCacheSerializer, clientId: string, account: IAccount, hasStateChanged: boolean, isApplicationCache: boolean, suggestedCacheKey: string, hasTokens: boolean, suggestedCacheExpiry: Nullable<DateTimeOffset>, cancellationToken: CancellationToken, correlationId: Guid, requestScopes: IEnumerable<System_Internal.String>, requestTenantId: string, identityLogger: IIdentityLogger, piiLoggingEnabled: boolean, telemetryData: TelemetryData): TokenCacheNotificationArgs;
+    new(tokenCache: ITokenCacheSerializer, clientId: string, account: IAccount, hasStateChanged: boolean, isApplicationCache: boolean, suggestedCacheKey: string, hasTokens: boolean, suggestedCacheExpiry: Nullable_1<DateTimeOffset>, cancellationToken: CancellationToken): TokenCacheNotificationArgs;
+    new(tokenCache: ITokenCacheSerializer, clientId: string, account: IAccount, hasStateChanged: boolean, isApplicationCache: boolean, suggestedCacheKey: string, hasTokens: boolean, suggestedCacheExpiry: Nullable_1<DateTimeOffset>, cancellationToken: CancellationToken, correlationId: Guid): TokenCacheNotificationArgs;
+    new(tokenCache: ITokenCacheSerializer, clientId: string, account: IAccount, hasStateChanged: boolean, isApplicationCache: boolean, suggestedCacheKey: string, hasTokens: boolean, suggestedCacheExpiry: Nullable_1<DateTimeOffset>, cancellationToken: CancellationToken, correlationId: Guid, requestScopes: IEnumerable_1<System_Internal.String>, requestTenantId: string): TokenCacheNotificationArgs;
+    new(tokenCache: ITokenCacheSerializer, clientId: string, account: IAccount, hasStateChanged: boolean, isApplicationCache: boolean, suggestedCacheKey: string, hasTokens: boolean, suggestedCacheExpiry: Nullable_1<DateTimeOffset>, cancellationToken: CancellationToken, correlationId: Guid, requestScopes: IEnumerable_1<System_Internal.String>, requestTenantId: string, identityLogger: IIdentityLogger, piiLoggingEnabled: boolean, telemetryData: TelemetryData): TokenCacheNotificationArgs;
 };
 
 
 export type TokenCacheNotificationArgs = TokenCacheNotificationArgs$instance;
 
-export interface TraceTelemetryConfig$instance {
+export interface TraceTelemetryConfig$instance extends ITelemetryConfig$instance {
     readonly __tsonic_iface_Microsoft_Identity_Client_ITelemetryConfig: never;
 
-    readonly AllowedScopes: IEnumerable<System_Internal.String>;
+    readonly AllowedScopes: IEnumerable_1<System_Internal.String>;
     readonly AudienceType: TelemetryAudienceType;
-    readonly DispatchAction: Action<ITelemetryEventPayload>;
+    readonly DispatchAction: Action_1<ITelemetryEventPayload>;
     readonly SessionId: string;
 }
 
@@ -1414,8 +1406,6 @@ export const TraceTelemetryConfig: {
 export interface __TraceTelemetryConfig$views {
     As_ITelemetryConfig(): ITelemetryConfig$instance;
 }
-
-export interface TraceTelemetryConfig$instance extends ITelemetryConfig$instance {}
 
 export type TraceTelemetryConfig = TraceTelemetryConfig$instance & __TraceTelemetryConfig$views;
 
@@ -1456,7 +1446,7 @@ export interface WwwAuthenticateParameters$instance {
     readonly [key: string]: string;
     Nonce: string;
     Resource: string;
-    Scopes: IEnumerable<System_Internal.String>;
+    Scopes: IEnumerable_1<System_Internal.String>;
     GetTenantId(): string;
 }
 
@@ -1464,14 +1454,14 @@ export interface WwwAuthenticateParameters$instance {
 export const WwwAuthenticateParameters: {
     new(): WwwAuthenticateParameters;
     CreateFromAuthenticationHeaders(httpResponseHeaders: HttpResponseHeaders, scheme: string): WwwAuthenticateParameters;
-    CreateFromAuthenticationHeaders(httpResponseHeaders: HttpResponseHeaders): IReadOnlyList<WwwAuthenticateParameters>;
-    CreateFromAuthenticationResponseAsync(resourceUri: string, httpClient: HttpClient, cancellationToken?: CancellationToken): Task<IReadOnlyList<WwwAuthenticateParameters>>;
-    CreateFromAuthenticationResponseAsync(resourceUri: string, scheme: string, httpClient: HttpClient, cancellationToken?: CancellationToken): Task<WwwAuthenticateParameters>;
-    CreateFromAuthenticationResponseAsync(resourceUri: string, scheme: string, cancellationToken?: CancellationToken): Task<WwwAuthenticateParameters>;
-    CreateFromAuthenticationResponseAsync(resourceUri: string, cancellationToken?: CancellationToken): Task<IReadOnlyList<WwwAuthenticateParameters>>;
-    CreateFromResourceResponseAsync(httpClient: HttpClient, resourceUri: string, cancellationToken?: CancellationToken): Task<WwwAuthenticateParameters>;
-    CreateFromResourceResponseAsync(resourceUri: string, cancellationToken?: CancellationToken): Task<WwwAuthenticateParameters>;
-    CreateFromResourceResponseAsync(resourceUri: string): Task<WwwAuthenticateParameters>;
+    CreateFromAuthenticationHeaders(httpResponseHeaders: HttpResponseHeaders): IReadOnlyList_1<WwwAuthenticateParameters>;
+    CreateFromAuthenticationResponseAsync(resourceUri: string, httpClient: HttpClient, cancellationToken?: CancellationToken): Task_1<IReadOnlyList_1<WwwAuthenticateParameters>>;
+    CreateFromAuthenticationResponseAsync(resourceUri: string, scheme: string, httpClient: HttpClient, cancellationToken?: CancellationToken): Task_1<WwwAuthenticateParameters>;
+    CreateFromAuthenticationResponseAsync(resourceUri: string, scheme: string, cancellationToken?: CancellationToken): Task_1<WwwAuthenticateParameters>;
+    CreateFromAuthenticationResponseAsync(resourceUri: string, cancellationToken?: CancellationToken): Task_1<IReadOnlyList_1<WwwAuthenticateParameters>>;
+    CreateFromResourceResponseAsync(httpClient: HttpClient, resourceUri: string, cancellationToken?: CancellationToken): Task_1<WwwAuthenticateParameters>;
+    CreateFromResourceResponseAsync(resourceUri: string, cancellationToken?: CancellationToken): Task_1<WwwAuthenticateParameters>;
+    CreateFromResourceResponseAsync(resourceUri: string): Task_1<WwwAuthenticateParameters>;
     CreateFromResponseHeaders(httpResponseHeaders: HttpResponseHeaders, scheme?: string): WwwAuthenticateParameters;
     CreateFromWwwAuthenticateHeaderValue(wwwAuthenticateValue: string): WwwAuthenticateParameters;
     GetClaimChallengeFromResponseHeaders(httpResponseHeaders: HttpResponseHeaders, scheme?: string): string;
@@ -1481,7 +1471,7 @@ export const WwwAuthenticateParameters: {
 export type WwwAuthenticateParameters = WwwAuthenticateParameters$instance;
 
 export abstract class AccountExtensions$instance {
-    static GetTenantProfiles(account: IAccount): IEnumerable<TenantProfile>;
+    static GetTenantProfiles(account: IAccount): IEnumerable_1<TenantProfile>;
 }
 
 

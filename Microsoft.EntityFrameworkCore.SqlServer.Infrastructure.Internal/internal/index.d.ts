@@ -9,15 +9,15 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
-import type { IReadOnlyList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Nullable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
-import type { IDiagnosticsLogger } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics.js";
-import * as Microsoft_EntityFrameworkCore_Infrastructure_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure.js";
-import type { DbContextOptionsExtensionInfo, IDbContextOptions, IDbContextOptionsExtension, IModelValidator, ISingletonOptions, ModelValidatorDependencies, RelationalModelValidator, RelationalModelValidatorDependencies, RelationalOptionsExtension } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure.js";
-import type { DbLoggerCategory$Model$Validation } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.js";
-import type { IEntityType, IIndex, IKey, IModel, IProperty, StoreObjectIdentifier } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
-import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection.js";
+import type { IReadOnlyList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Nullable_1, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
+import type { IDiagnosticsLogger_1 } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics/internal/index.js";
+import * as Microsoft_EntityFrameworkCore_Infrastructure_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure/internal/index.js";
+import type { DbContextOptionsExtensionInfo, IDbContextOptions, IDbContextOptionsExtension, IModelValidator, ISingletonOptions, ModelValidatorDependencies, RelationalModelValidator, RelationalModelValidatorDependencies, RelationalOptionsExtension } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure/internal/index.js";
+import type { IEntityType, IIndex, IKey, IModel, IProperty, StoreObjectIdentifier } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata/internal/index.js";
+import type { DbLoggerCategory$Model$Validation } from "@tsonic/efcore/Microsoft.EntityFrameworkCore/internal/index.js";
+import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection/internal/index.js";
 
 export enum SqlServerEngineType {
     Unknown = 0,
@@ -47,19 +47,19 @@ export type ISqlServerSingletonOptions = ISqlServerSingletonOptions$instance;
 export interface SqlServerModelValidator$instance extends RelationalModelValidator {
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IModelValidator: never;
 
-    Validate(model: IModel, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
-    ValidateByteIdentityMapping(model: IModel, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
-    ValidateCompatible(property: IProperty, duplicateProperty: IProperty, columnName: string, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
-    ValidateCompatible(key: IKey, duplicateKey: IKey, keyName: string, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
-    ValidateCompatible(index: IIndex, duplicateIndex: IIndex, indexName: string, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
-    ValidateDecimalColumns(model: IModel, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
-    ValidateIndexIncludeProperties(model: IModel, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
-    ValidateSharedColumnsCompatibility(mappedTypes: IReadOnlyList<IEntityType>, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
-    ValidateSharedTableCompatibility(mappedTypes: IReadOnlyList<IEntityType>, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
-    ValidateTemporalTables(model: IModel, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
-    ValidateTypeMappings(model: IModel, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
-    ValidateValueGeneration(entityType: IEntityType, key: IKey, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
-    ValidateVectorColumns(model: IModel, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
+    Validate(model: IModel, logger: IDiagnosticsLogger_1<DbLoggerCategory$Model$Validation>): void;
+    ValidateByteIdentityMapping(model: IModel, logger: IDiagnosticsLogger_1<DbLoggerCategory$Model$Validation>): void;
+    ValidateCompatible(property: IProperty, duplicateProperty: IProperty, columnName: string, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger_1<DbLoggerCategory$Model$Validation>): void;
+    ValidateCompatible(key: IKey, duplicateKey: IKey, keyName: string, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger_1<DbLoggerCategory$Model$Validation>): void;
+    ValidateCompatible(index: IIndex, duplicateIndex: IIndex, indexName: string, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger_1<DbLoggerCategory$Model$Validation>): void;
+    ValidateDecimalColumns(model: IModel, logger: IDiagnosticsLogger_1<DbLoggerCategory$Model$Validation>): void;
+    ValidateIndexIncludeProperties(model: IModel, logger: IDiagnosticsLogger_1<DbLoggerCategory$Model$Validation>): void;
+    ValidateSharedColumnsCompatibility(mappedTypes: IReadOnlyList_1<IEntityType>, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger_1<DbLoggerCategory$Model$Validation>): void;
+    ValidateSharedTableCompatibility(mappedTypes: IReadOnlyList_1<IEntityType>, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger_1<DbLoggerCategory$Model$Validation>): void;
+    ValidateTemporalTables(model: IModel, logger: IDiagnosticsLogger_1<DbLoggerCategory$Model$Validation>): void;
+    ValidateTypeMappings(model: IModel, logger: IDiagnosticsLogger_1<DbLoggerCategory$Model$Validation>): void;
+    ValidateValueGeneration(entityType: IEntityType, key: IKey, logger: IDiagnosticsLogger_1<DbLoggerCategory$Model$Validation>): void;
+    ValidateVectorColumns(model: IModel, logger: IDiagnosticsLogger_1<DbLoggerCategory$Model$Validation>): void;
 }
 
 
@@ -83,11 +83,11 @@ export interface SqlServerOptionsExtension$instance extends RelationalOptionsExt
     ApplyServices(services: IServiceCollection): void;
     Clone(): RelationalOptionsExtension;
     Validate(options: IDbContextOptions): void;
-    WithAzureSqlCompatibilityLevel(azureSqlCompatibilityLevel: Nullable<System_Internal.Int32>): SqlServerOptionsExtension;
-    WithAzureSynapseCompatibilityLevel(azureSynapseCompatibilityLevel: Nullable<System_Internal.Int32>): SqlServerOptionsExtension;
+    WithAzureSqlCompatibilityLevel(azureSqlCompatibilityLevel: Nullable_1<System_Internal.Int32>): SqlServerOptionsExtension;
+    WithAzureSynapseCompatibilityLevel(azureSynapseCompatibilityLevel: Nullable_1<System_Internal.Int32>): SqlServerOptionsExtension;
     WithEngineType(engineType: SqlServerEngineType): SqlServerOptionsExtension;
     WithLegacyAzureSql(enable: boolean): SqlServerOptionsExtension;
-    WithSqlServerCompatibilityLevel(sqlServerCompatibilityLevel: Nullable<System_Internal.Int32>): SqlServerOptionsExtension;
+    WithSqlServerCompatibilityLevel(sqlServerCompatibilityLevel: Nullable_1<System_Internal.Int32>): SqlServerOptionsExtension;
     WithUseRetryingStrategyByDefault(enable: boolean): SqlServerOptionsExtension;
 }
 

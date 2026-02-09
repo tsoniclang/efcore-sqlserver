@@ -6,12 +6,12 @@
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 // Import types from other namespaces
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Int32, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
-import * as Microsoft_EntityFrameworkCore_Infrastructure_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure.js";
-import type { IInfrastructure } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure.js";
-import * as Microsoft_EntityFrameworkCore_Metadata_Builders_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.Builders.js";
-import type { EntityTypeBuilder, OwnedNavigationBuilder, PropertyBuilder } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.Builders.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Int32, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
+import * as Microsoft_EntityFrameworkCore_Infrastructure_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure/internal/index.js";
+import type { IInfrastructure_1 } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure/internal/index.js";
+import * as Microsoft_EntityFrameworkCore_Metadata_Builders_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.Builders/internal/index.js";
+import type { EntityTypeBuilder, OwnedNavigationBuilder, PropertyBuilder } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.Builders/internal/index.js";
 
 export interface OwnedNavigationTemporalPeriodPropertyBuilder$instance {
     Equals(obj: unknown): boolean;

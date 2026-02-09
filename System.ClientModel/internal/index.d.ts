@@ -12,19 +12,19 @@ import type { ptr } from "@tsonic/core/types.js";
 import * as System_ClientModel_Primitives_Internal from "../../System.ClientModel.Primitives/internal/index.js";
 import type { AsyncCollectionResult, AuthenticationToken, CollectionResult, GetTokenOptions, IPersistableModel_1, ModelReaderWriterOptions, PipelineResponse } from "../../System.ClientModel.Primitives/internal/index.js";
 import type { BinaryData } from "../../System/internal/index.js";
-import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { IAsyncEnumerable, IAsyncEnumerator, IEnumerable as IEnumerable__System_Collections_Generic, IEnumerator, IReadOnlyDictionary } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections.js";
-import type { IEnumerable } from "@tsonic/dotnet/System.Collections.js";
-import type { Stream } from "@tsonic/dotnet/System.IO.js";
-import * as System_Lib from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Exception, IDisposable, Int32, Int64, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
-import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { JsonSerializerOptions } from "@tsonic/dotnet/System.Text.Json.js";
-import type { JsonTypeInfo } from "@tsonic/dotnet/System.Text.Json.Serialization.Metadata.js";
-import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
-import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { IAsyncEnumerable_1, IAsyncEnumerator_1, IEnumerable_1, IEnumerator_1, IReadOnlyDictionary_2 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { IEnumerable } from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { Stream } from "@tsonic/dotnet/System.IO/internal/index.js";
+import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { JsonTypeInfo_1 } from "@tsonic/dotnet/System.Text.Json.Serialization.Metadata/internal/index.js";
+import type { JsonSerializerOptions } from "@tsonic/dotnet/System.Text.Json/internal/index.js";
+import type { Task, Task_1, ValueTask_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
+import * as System_Lib from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Exception, IDisposable, Int32, Int64, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface ApiKeyCredential$instance {
     Deconstruct(key: string): void;
@@ -42,8 +42,8 @@ export type ApiKeyCredential = ApiKeyCredential$instance;
 export interface AsyncCollectionResult_1$instance<T> extends AsyncCollectionResult {
     readonly __tsonic_iface_System_Collections_Generic_IAsyncEnumerable_1: never;
 
-    GetAsyncEnumerator(cancellationToken?: CancellationToken): IAsyncEnumerator<T>;
-    GetValuesFromPageAsync(page: ClientResult): IAsyncEnumerable<T>;
+    GetAsyncEnumerator(cancellationToken?: CancellationToken): IAsyncEnumerator_1<T>;
+    GetValuesFromPageAsync(page: ClientResult): IAsyncEnumerable_1<T>;
 }
 
 
@@ -54,9 +54,9 @@ export const AsyncCollectionResult_1: (abstract new<T>() => AsyncCollectionResul
 export type AsyncCollectionResult_1<T> = AsyncCollectionResult_1$instance<T>;
 
 export interface AuthenticationTokenProvider$instance {
-    CreateTokenOptions(properties: IReadOnlyDictionary<System_Internal.String, unknown>): GetTokenOptions | undefined;
+    CreateTokenOptions(properties: IReadOnlyDictionary_2<System_Internal.String, unknown>): GetTokenOptions | undefined;
     GetToken(options: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
-    GetTokenAsync(options: GetTokenOptions, cancellationToken: CancellationToken): ValueTask<AuthenticationToken>;
+    GetTokenAsync(options: GetTokenOptions, cancellationToken: CancellationToken): ValueTask_1<AuthenticationToken>;
 }
 
 
@@ -83,7 +83,7 @@ export const BinaryContent: (abstract new() => BinaryContent) & {
     Create(stream: Stream): BinaryContent;
     Create<T extends IPersistableModel_1<T>>(model: T, options?: ModelReaderWriterOptions): BinaryContent;
     CreateJson(jsonString: string, validate?: boolean): BinaryContent;
-    CreateJson<T>(jsonSerializable: T, jsonTypeInfo: JsonTypeInfo<T>): BinaryContent;
+    CreateJson<T>(jsonSerializable: T, jsonTypeInfo: JsonTypeInfo_1<T>): BinaryContent;
     CreateJson<T>(jsonSerializable: T, options?: JsonSerializerOptions): BinaryContent;
 };
 
@@ -126,7 +126,7 @@ export interface ClientResultException$instance extends Exception {
 export const ClientResultException: {
     new(response: PipelineResponse, innerException: Exception): ClientResultException;
     new(message: string, response: PipelineResponse, innerException: Exception): ClientResultException;
-    CreateAsync(response: PipelineResponse, innerException?: Exception): Task<ClientResultException>;
+    CreateAsync(response: PipelineResponse, innerException?: Exception): Task_1<ClientResultException>;
 };
 
 
@@ -136,8 +136,8 @@ export interface CollectionResult_1$instance<T> extends CollectionResult {
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
-    GetEnumerator(): IEnumerator<T>;
-    GetValuesFromPage(page: ClientResult): IEnumerable__System_Collections_Generic<T>;
+    GetEnumerator(): IEnumerator_1<T>;
+    GetValuesFromPage(page: ClientResult): IEnumerable_1<T>;
 }
 
 

@@ -9,9 +9,9 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Object as ClrObject } from "@tsonic/dotnet/System.js";
-import type { IReadOnlyIndex, IReadOnlyKey, StoreObjectIdentifier } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Object as ClrObject } from "@tsonic/dotnet/System/internal/index.js";
+import type { IReadOnlyIndex, IReadOnlyKey, StoreObjectIdentifier } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata/internal/index.js";
 
 export abstract class SqlServerIndexExtensions$instance {
     static AreCompatibleForSqlServer(index: IReadOnlyIndex, duplicateIndex: IReadOnlyIndex, storeObject: StoreObjectIdentifier, shouldThrow: boolean): boolean;

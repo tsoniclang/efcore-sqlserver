@@ -8,8 +8,8 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 // Import types from other namespaces
 import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { AuthenticationResult } from "../../Microsoft.Identity.Client/internal/index.js";
-import type { IReadOnlyDictionary } from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { Int32, String as ClrString, Void } from "@tsonic/dotnet/System.js";
+import type { IReadOnlyDictionary_2 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { Int32, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface IAuthenticationOperation$instance {
     readonly __tsonic_iface_Microsoft_Identity_Client_AuthScheme_IAuthenticationOperation: never;
@@ -19,7 +19,7 @@ export interface IAuthenticationOperation$instance {
     readonly KeyId: string;
     readonly AccessTokenType: string;
     FormatResult(authenticationResult: AuthenticationResult): void;
-    GetTokenRequestParams(): IReadOnlyDictionary<System_Internal.String, System_Internal.String>;
+    GetTokenRequestParams(): IReadOnlyDictionary_2<System_Internal.String, System_Internal.String>;
 }
 
 

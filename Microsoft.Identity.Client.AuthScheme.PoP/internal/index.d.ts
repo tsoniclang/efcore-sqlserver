@@ -7,7 +7,7 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 
 // Import types from other namespaces
 import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Byte, String as ClrString } from "@tsonic/dotnet/System.js";
+import type { Byte, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface IPoPCryptoProvider$instance {
     readonly __tsonic_iface_Microsoft_Identity_Client_AuthScheme_PoP_IPoPCryptoProvider: never;

@@ -7,36 +7,36 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 
 // Import types from other namespaces
 import type { SqlServerValueGenerationStrategy } from "../../Microsoft.EntityFrameworkCore.Metadata/internal/index.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Int32, Int64, Nullable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
-import type { IDiagnosticsLogger } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics.js";
-import type { DbLoggerCategory$Database$Transaction, DbLoggerCategory$Model$Validation, DbLoggerCategory$Scaffolding } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.js";
-import type { IProperty, IReadOnlyProperty } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Int32, Int64, Nullable_1, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
+import type { IDiagnosticsLogger_1 } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics/internal/index.js";
+import type { IProperty, IReadOnlyProperty } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata/internal/index.js";
+import type { DbLoggerCategory$Database$Transaction, DbLoggerCategory$Model$Validation, DbLoggerCategory$Scaffolding } from "@tsonic/efcore/Microsoft.EntityFrameworkCore/internal/index.js";
 
 export abstract class SqlServerLoggerExtensions$instance {
-    static ByteIdentityColumnWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>, property: IProperty): void;
-    static ColumnFound(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, tableName: string, columnName: string, ordinal: int, dataTypeName: string, maxLength: int, precision: int, scale: int, nullable: boolean, identity: boolean, defaultValue: string, computedValue: string, stored: Nullable<System_Internal.Boolean>): void;
-    static ColumnWithoutTypeWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, tableName: string, columnName: string): void;
-    static ConflictingValueGenerationStrategiesWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>, sqlServerValueGenerationStrategy: SqlServerValueGenerationStrategy, otherValueGenerationStrategy: string, property: IReadOnlyProperty): void;
-    static DecimalTypeDefaultWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>, property: IProperty): void;
-    static DecimalTypeKeyWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>, property: IProperty): void;
-    static DefaultSchemaFound(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, schemaName: string): void;
-    static DuplicateForeignKeyConstraintIgnored(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, foreignKeyName: string, tableName: string, duplicateForeignKeyName: string): void;
-    static ForeignKeyFound(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, foreignKeyName: string, tableName: string, principalTableName: string, onDeleteAction: string): void;
-    static ForeignKeyPrincipalColumnMissingWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, foreignKeyName: string, tableName: string, principalColumnName: string, principalTableName: string): void;
-    static ForeignKeyReferencesMissingPrincipalTableWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, foreignKeyName: string, tableName: string, principalTableName: string): void;
-    static ForeignKeyReferencesUnknownPrincipalTableWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, foreignKeyName: string, tableName: string): void;
-    static IndexFound(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, indexName: string, tableName: string, unique: boolean): void;
-    static MissingSchemaWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, schemaName: string): void;
-    static MissingTableWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, tableName: string): void;
-    static MissingViewDefinitionRightsWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>): void;
-    static PrimaryKeyFound(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, primaryKeyName: string, tableName: string): void;
-    static ReflexiveConstraintIgnored(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, foreignKeyName: string, tableName: string): void;
-    static SavepointsDisabledBecauseOfMARS(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Database$Transaction>): void;
-    static SequenceFound(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, sequenceName: string, sequenceTypeName: string, cyclic: boolean, increment: int, start: long, min: long, max: long): void;
-    static TableFound(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, tableName: string): void;
-    static TypeAliasFound(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, typeAliasName: string, systemTypeName: string): void;
-    static UniqueConstraintFound(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, uniqueConstraintName: string, tableName: string): void;
+    static ByteIdentityColumnWarning(diagnostics: IDiagnosticsLogger_1<DbLoggerCategory$Model$Validation>, property: IProperty): void;
+    static ColumnFound(diagnostics: IDiagnosticsLogger_1<DbLoggerCategory$Scaffolding>, tableName: string, columnName: string, ordinal: int, dataTypeName: string, maxLength: int, precision: int, scale: int, nullable: boolean, identity: boolean, defaultValue: string, computedValue: string, stored: Nullable_1<System_Internal.Boolean>): void;
+    static ColumnWithoutTypeWarning(diagnostics: IDiagnosticsLogger_1<DbLoggerCategory$Scaffolding>, tableName: string, columnName: string): void;
+    static ConflictingValueGenerationStrategiesWarning(diagnostics: IDiagnosticsLogger_1<DbLoggerCategory$Model$Validation>, sqlServerValueGenerationStrategy: SqlServerValueGenerationStrategy, otherValueGenerationStrategy: string, property: IReadOnlyProperty): void;
+    static DecimalTypeDefaultWarning(diagnostics: IDiagnosticsLogger_1<DbLoggerCategory$Model$Validation>, property: IProperty): void;
+    static DecimalTypeKeyWarning(diagnostics: IDiagnosticsLogger_1<DbLoggerCategory$Model$Validation>, property: IProperty): void;
+    static DefaultSchemaFound(diagnostics: IDiagnosticsLogger_1<DbLoggerCategory$Scaffolding>, schemaName: string): void;
+    static DuplicateForeignKeyConstraintIgnored(diagnostics: IDiagnosticsLogger_1<DbLoggerCategory$Scaffolding>, foreignKeyName: string, tableName: string, duplicateForeignKeyName: string): void;
+    static ForeignKeyFound(diagnostics: IDiagnosticsLogger_1<DbLoggerCategory$Scaffolding>, foreignKeyName: string, tableName: string, principalTableName: string, onDeleteAction: string): void;
+    static ForeignKeyPrincipalColumnMissingWarning(diagnostics: IDiagnosticsLogger_1<DbLoggerCategory$Scaffolding>, foreignKeyName: string, tableName: string, principalColumnName: string, principalTableName: string): void;
+    static ForeignKeyReferencesMissingPrincipalTableWarning(diagnostics: IDiagnosticsLogger_1<DbLoggerCategory$Scaffolding>, foreignKeyName: string, tableName: string, principalTableName: string): void;
+    static ForeignKeyReferencesUnknownPrincipalTableWarning(diagnostics: IDiagnosticsLogger_1<DbLoggerCategory$Scaffolding>, foreignKeyName: string, tableName: string): void;
+    static IndexFound(diagnostics: IDiagnosticsLogger_1<DbLoggerCategory$Scaffolding>, indexName: string, tableName: string, unique: boolean): void;
+    static MissingSchemaWarning(diagnostics: IDiagnosticsLogger_1<DbLoggerCategory$Scaffolding>, schemaName: string): void;
+    static MissingTableWarning(diagnostics: IDiagnosticsLogger_1<DbLoggerCategory$Scaffolding>, tableName: string): void;
+    static MissingViewDefinitionRightsWarning(diagnostics: IDiagnosticsLogger_1<DbLoggerCategory$Scaffolding>): void;
+    static PrimaryKeyFound(diagnostics: IDiagnosticsLogger_1<DbLoggerCategory$Scaffolding>, primaryKeyName: string, tableName: string): void;
+    static ReflexiveConstraintIgnored(diagnostics: IDiagnosticsLogger_1<DbLoggerCategory$Scaffolding>, foreignKeyName: string, tableName: string): void;
+    static SavepointsDisabledBecauseOfMARS(diagnostics: IDiagnosticsLogger_1<DbLoggerCategory$Database$Transaction>): void;
+    static SequenceFound(diagnostics: IDiagnosticsLogger_1<DbLoggerCategory$Scaffolding>, sequenceName: string, sequenceTypeName: string, cyclic: boolean, increment: int, start: long, min: long, max: long): void;
+    static TableFound(diagnostics: IDiagnosticsLogger_1<DbLoggerCategory$Scaffolding>, tableName: string): void;
+    static TypeAliasFound(diagnostics: IDiagnosticsLogger_1<DbLoggerCategory$Scaffolding>, typeAliasName: string, systemTypeName: string): void;
+    static UniqueConstraintFound(diagnostics: IDiagnosticsLogger_1<DbLoggerCategory$Scaffolding>, uniqueConstraintName: string, tableName: string): void;
 }
 
 

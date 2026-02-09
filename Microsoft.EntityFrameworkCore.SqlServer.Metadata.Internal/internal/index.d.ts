@@ -6,21 +6,21 @@
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 // Import types from other namespaces
-import type { IEnumerable } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
-import type { IAnnotation } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure.js";
-import * as Microsoft_EntityFrameworkCore_Metadata_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
-import type { IColumn, IRelationalAnnotationProvider, IRelationalModel, ITable, ITableIndex, IUniqueConstraint, RelationalAnnotationProvider, RelationalAnnotationProviderDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
+import type { IEnumerable_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
+import type { IAnnotation } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure/internal/index.js";
+import * as Microsoft_EntityFrameworkCore_Metadata_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata/internal/index.js";
+import type { IColumn, IRelationalAnnotationProvider, IRelationalModel, ITable, ITableIndex, IUniqueConstraint, RelationalAnnotationProvider, RelationalAnnotationProviderDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata/internal/index.js";
 
 export interface SqlServerAnnotationProvider$instance extends RelationalAnnotationProvider {
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_IRelationalAnnotationProvider: never;
 
-    For(model: IRelationalModel, designTime: boolean): IEnumerable<IAnnotation>;
-    For(table: ITable, designTime: boolean): IEnumerable<IAnnotation>;
-    For(constraint: IUniqueConstraint, designTime: boolean): IEnumerable<IAnnotation>;
-    For(index: ITableIndex, designTime: boolean): IEnumerable<IAnnotation>;
-    For(column: IColumn, designTime: boolean): IEnumerable<IAnnotation>;
+    For(model: IRelationalModel, designTime: boolean): IEnumerable_1<IAnnotation>;
+    For(table: ITable, designTime: boolean): IEnumerable_1<IAnnotation>;
+    For(constraint: IUniqueConstraint, designTime: boolean): IEnumerable_1<IAnnotation>;
+    For(index: ITableIndex, designTime: boolean): IEnumerable_1<IAnnotation>;
+    For(column: IColumn, designTime: boolean): IEnumerable_1<IAnnotation>;
 }
 
 

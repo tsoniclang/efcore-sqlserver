@@ -13,18 +13,18 @@ import type { SqlVector_1 } from "../../Microsoft.Data.SqlTypes/internal/index.j
 import type { AzureSqlDbContextOptionsBuilder, AzureSynapseDbContextOptionsBuilder, SqlEngineDbContextOptionsBuilder, SqlServerDbContextOptionsBuilder } from "../../Microsoft.EntityFrameworkCore.Infrastructure/internal/index.js";
 import type { OwnedNavigationTemporalTableBuilder, OwnedNavigationTemporalTableBuilder_2, TemporalTableBuilder, TemporalTableBuilder_1 } from "../../Microsoft.EntityFrameworkCore.Metadata.Builders/internal/index.js";
 import type { SqlServerValueGenerationStrategy } from "../../Microsoft.EntityFrameworkCore.Metadata/internal/index.js";
-import type { IEnumerable, IReadOnlyList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { DbConnection } from "@tsonic/dotnet/System.Data.Common.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Action, Boolean as ClrBoolean, Byte, DateOnly, DateTime, DateTimeOffset, Decimal, Double, Enum, Exception, Func, Guid, IComparable, IConvertible, IFormattable, Int16, Int32, Int64, ISpanFormattable, Nullable, Object as ClrObject, Single, String as ClrString, TimeOnly, TimeSpan, ValueType, Void } from "@tsonic/dotnet/System.js";
-import type { Expression } from "@tsonic/dotnet/System.Linq.Expressions.js";
-import type { IQueryable } from "@tsonic/dotnet/System.Linq.js";
-import type { DatabaseFacade } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure.js";
-import type { DbContext, DbContextOptionsBuilder, DbFunctions, DbSet, ModelBuilder } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.js";
-import type { ColumnBuilder, ComplexTypePrimitiveCollectionBuilder, ComplexTypePropertyBuilder, EntityTypeBuilder, IConventionEntityTypeBuilder, IConventionIndexBuilder, IConventionKeyBuilder, IConventionModelBuilder, IConventionPropertyBuilder, IConventionSequenceBuilder, IndexBuilder, KeyBuilder, OwnedNavigationBuilder, OwnedNavigationTableBuilder, PrimitiveCollectionBuilder, PropertyBuilder, SplitTableBuilder, TableBuilder } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.Builders.js";
-import type { ConfigurationSource, IConventionEntityType, IConventionEntityTypeMappingFragment, IConventionIndex, IConventionKey, IConventionModel, IConventionProperty, IConventionRelationalPropertyOverrides, IMutableEntityType, IMutableEntityTypeMappingFragment, IMutableIndex, IMutableKey, IMutableModel, IMutableProperty, IMutableRelationalPropertyOverrides, IProperty, IReadOnlyEntityType, IReadOnlyEntityTypeMappingFragment, IReadOnlyIndex, IReadOnlyKey, IReadOnlyModel, IReadOnlyProperty, IReadOnlyRelationalPropertyOverrides, IReadOnlySequence, ISequence, ITable, StoreObjectIdentifier } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
-import * as Microsoft_EntityFrameworkCore_Storage_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
-import type { ExecutionStrategy, ExecutionStrategyDependencies, IExecutionStrategy } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
+import type { IEnumerable_1, IReadOnlyList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { DbConnection } from "@tsonic/dotnet/System.Data.Common/internal/index.js";
+import type { Expression_1 } from "@tsonic/dotnet/System.Linq.Expressions/internal/index.js";
+import type { IQueryable_1 } from "@tsonic/dotnet/System.Linq/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Action_1, Boolean as ClrBoolean, Byte, DateOnly, DateTime, DateTimeOffset, Decimal, Double, Enum, Exception, Func_2, Guid, IComparable, IConvertible, IFormattable, Int16, Int32, Int64, ISpanFormattable, Nullable_1, Object as ClrObject, Single, String as ClrString, TimeOnly, TimeSpan, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
+import type { DatabaseFacade } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure/internal/index.js";
+import type { ColumnBuilder, ColumnBuilder_1, ComplexTypePrimitiveCollectionBuilder, ComplexTypePrimitiveCollectionBuilder_1, ComplexTypePropertyBuilder, ComplexTypePropertyBuilder_1, EntityTypeBuilder, EntityTypeBuilder_1, IConventionEntityTypeBuilder, IConventionIndexBuilder, IConventionKeyBuilder, IConventionModelBuilder, IConventionPropertyBuilder, IConventionSequenceBuilder, IndexBuilder, IndexBuilder_1, KeyBuilder, KeyBuilder_1, OwnedNavigationBuilder, OwnedNavigationBuilder_2, OwnedNavigationTableBuilder, OwnedNavigationTableBuilder_2, PrimitiveCollectionBuilder, PrimitiveCollectionBuilder_1, PropertyBuilder, PropertyBuilder_1, SplitTableBuilder, SplitTableBuilder_1, TableBuilder, TableBuilder_1 } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.Builders/internal/index.js";
+import type { ConfigurationSource, IConventionEntityType, IConventionEntityTypeMappingFragment, IConventionIndex, IConventionKey, IConventionModel, IConventionProperty, IConventionRelationalPropertyOverrides, IMutableEntityType, IMutableEntityTypeMappingFragment, IMutableIndex, IMutableKey, IMutableModel, IMutableProperty, IMutableRelationalPropertyOverrides, IProperty, IReadOnlyEntityType, IReadOnlyEntityTypeMappingFragment, IReadOnlyIndex, IReadOnlyKey, IReadOnlyModel, IReadOnlyProperty, IReadOnlyRelationalPropertyOverrides, IReadOnlySequence, ISequence, ITable, StoreObjectIdentifier } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata/internal/index.js";
+import * as Microsoft_EntityFrameworkCore_Storage_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage/internal/index.js";
+import type { ExecutionStrategy, ExecutionStrategyDependencies, IExecutionStrategy } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage/internal/index.js";
+import type { DbContext, DbContextOptionsBuilder, DbContextOptionsBuilder_1, DbFunctions, DbSet_1, ModelBuilder } from "@tsonic/efcore/Microsoft.EntityFrameworkCore/internal/index.js";
 
 export enum DataCompressionType {
     None = 0,
@@ -36,8 +36,8 @@ export enum DataCompressionType {
 export interface SqlServerRetryingExecutionStrategy$instance extends ExecutionStrategy {
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_IExecutionStrategy: never;
 
-    readonly AdditionalErrorNumbers: IEnumerable<System_Internal.Int32> | undefined;
-    GetNextDelay(lastException: Exception): Nullable<TimeSpan>;
+    readonly AdditionalErrorNumbers: IEnumerable_1<System_Internal.Int32> | undefined;
+    GetNextDelay(lastException: Exception): Nullable_1<TimeSpan>;
     ShouldRetryOn(exception: Exception): boolean;
 }
 
@@ -47,9 +47,9 @@ export const SqlServerRetryingExecutionStrategy: {
     new(dependencies: ExecutionStrategyDependencies): SqlServerRetryingExecutionStrategy;
     new(context: DbContext, maxRetryCount: int): SqlServerRetryingExecutionStrategy;
     new(dependencies: ExecutionStrategyDependencies, maxRetryCount: int): SqlServerRetryingExecutionStrategy;
-    new(dependencies: ExecutionStrategyDependencies, errorNumbersToAdd: IEnumerable<System_Internal.Int32>): SqlServerRetryingExecutionStrategy;
-    new(context: DbContext, maxRetryCount: int, maxRetryDelay: TimeSpan, errorNumbersToAdd: IEnumerable<System_Internal.Int32>): SqlServerRetryingExecutionStrategy;
-    new(dependencies: ExecutionStrategyDependencies, maxRetryCount: int, maxRetryDelay: TimeSpan, errorNumbersToAdd: IEnumerable<System_Internal.Int32>): SqlServerRetryingExecutionStrategy;
+    new(dependencies: ExecutionStrategyDependencies, errorNumbersToAdd: IEnumerable_1<System_Internal.Int32>): SqlServerRetryingExecutionStrategy;
+    new(context: DbContext, maxRetryCount: int, maxRetryDelay: TimeSpan, errorNumbersToAdd: IEnumerable_1<System_Internal.Int32>): SqlServerRetryingExecutionStrategy;
+    new(dependencies: ExecutionStrategyDependencies, maxRetryCount: int, maxRetryDelay: TimeSpan, errorNumbersToAdd: IEnumerable_1<System_Internal.Int32>): SqlServerRetryingExecutionStrategy;
     readonly DefaultMinDelayThrottling: TimeSpan;
 };
 
@@ -57,11 +57,11 @@ export const SqlServerRetryingExecutionStrategy: {
 export type SqlServerRetryingExecutionStrategy = SqlServerRetryingExecutionStrategy$instance;
 
 export abstract class SqlServerComplexTypePrimitiveCollectionBuilderExtensions$instance {
-    static HasDefaultValue<TProperty>(primitiveCollectionBuilder: ComplexTypePrimitiveCollectionBuilder<TProperty>, value: unknown, defaultConstraintName: string): ComplexTypePrimitiveCollectionBuilder<TProperty>;
+    static HasDefaultValue<TProperty>(primitiveCollectionBuilder: ComplexTypePrimitiveCollectionBuilder_1<TProperty>, value: unknown, defaultConstraintName: string): ComplexTypePrimitiveCollectionBuilder_1<TProperty>;
     static HasDefaultValue(primitiveCollectionBuilder: ComplexTypePrimitiveCollectionBuilder, value: unknown, defaultConstraintName: string): ComplexTypePrimitiveCollectionBuilder;
-    static HasDefaultValueSql<TProperty>(primitiveCollectionBuilder: ComplexTypePrimitiveCollectionBuilder<TProperty>, sql: string, defaultConstraintName: string): ComplexTypePrimitiveCollectionBuilder<TProperty>;
+    static HasDefaultValueSql<TProperty>(primitiveCollectionBuilder: ComplexTypePrimitiveCollectionBuilder_1<TProperty>, sql: string, defaultConstraintName: string): ComplexTypePrimitiveCollectionBuilder_1<TProperty>;
     static HasDefaultValueSql(primitiveCollectionBuilder: ComplexTypePrimitiveCollectionBuilder, sql: string, defaultConstraintName: string): ComplexTypePrimitiveCollectionBuilder;
-    static IsSparse<TProperty>(primitiveCollectionBuilder: ComplexTypePrimitiveCollectionBuilder<TProperty>, sparse?: boolean): ComplexTypePrimitiveCollectionBuilder<TProperty>;
+    static IsSparse<TProperty>(primitiveCollectionBuilder: ComplexTypePrimitiveCollectionBuilder_1<TProperty>, sparse?: boolean): ComplexTypePrimitiveCollectionBuilder_1<TProperty>;
     static IsSparse(primitiveCollectionBuilder: ComplexTypePrimitiveCollectionBuilder, sparse?: boolean): ComplexTypePrimitiveCollectionBuilder;
 }
 
@@ -69,19 +69,19 @@ export abstract class SqlServerComplexTypePrimitiveCollectionBuilderExtensions$i
 export type SqlServerComplexTypePrimitiveCollectionBuilderExtensions = SqlServerComplexTypePrimitiveCollectionBuilderExtensions$instance;
 
 export abstract class SqlServerComplexTypePropertyBuilderExtensions$instance {
-    static HasDefaultValue<TProperty>(propertyBuilder: ComplexTypePropertyBuilder<TProperty>, value: unknown, defaultConstraintName: string): ComplexTypePropertyBuilder<TProperty>;
+    static HasDefaultValue<TProperty>(propertyBuilder: ComplexTypePropertyBuilder_1<TProperty>, value: unknown, defaultConstraintName: string): ComplexTypePropertyBuilder_1<TProperty>;
     static HasDefaultValue(propertyBuilder: ComplexTypePropertyBuilder, value: unknown, defaultConstraintName: string): ComplexTypePropertyBuilder;
-    static HasDefaultValueSql<TProperty>(propertyBuilder: ComplexTypePropertyBuilder<TProperty>, sql: string, defaultConstraintName: string): ComplexTypePropertyBuilder<TProperty>;
+    static HasDefaultValueSql<TProperty>(propertyBuilder: ComplexTypePropertyBuilder_1<TProperty>, sql: string, defaultConstraintName: string): ComplexTypePropertyBuilder_1<TProperty>;
     static HasDefaultValueSql(propertyBuilder: ComplexTypePropertyBuilder, sql: string, defaultConstraintName: string): ComplexTypePropertyBuilder;
-    static IsSparse<TProperty>(propertyBuilder: ComplexTypePropertyBuilder<TProperty>, sparse?: boolean): ComplexTypePropertyBuilder<TProperty>;
+    static IsSparse<TProperty>(propertyBuilder: ComplexTypePropertyBuilder_1<TProperty>, sparse?: boolean): ComplexTypePropertyBuilder_1<TProperty>;
     static IsSparse(propertyBuilder: ComplexTypePropertyBuilder, sparse?: boolean): ComplexTypePropertyBuilder;
-    static UseHiLo<TProperty>(propertyBuilder: ComplexTypePropertyBuilder<TProperty>, name?: string, schema?: string): ComplexTypePropertyBuilder<TProperty>;
+    static UseHiLo<TProperty>(propertyBuilder: ComplexTypePropertyBuilder_1<TProperty>, name?: string, schema?: string): ComplexTypePropertyBuilder_1<TProperty>;
     static UseHiLo(propertyBuilder: ComplexTypePropertyBuilder, name?: string, schema?: string): ComplexTypePropertyBuilder;
-    static UseIdentityColumn<TProperty>(propertyBuilder: ComplexTypePropertyBuilder<TProperty>, seed: int, increment?: int): ComplexTypePropertyBuilder<TProperty>;
-    static UseIdentityColumn<TProperty>(propertyBuilder: ComplexTypePropertyBuilder<TProperty>, seed?: long, increment?: int): ComplexTypePropertyBuilder<TProperty>;
+    static UseIdentityColumn<TProperty>(propertyBuilder: ComplexTypePropertyBuilder_1<TProperty>, seed: int, increment?: int): ComplexTypePropertyBuilder_1<TProperty>;
+    static UseIdentityColumn<TProperty>(propertyBuilder: ComplexTypePropertyBuilder_1<TProperty>, seed?: long, increment?: int): ComplexTypePropertyBuilder_1<TProperty>;
     static UseIdentityColumn(propertyBuilder: ComplexTypePropertyBuilder, seed: int, increment?: int): ComplexTypePropertyBuilder;
     static UseIdentityColumn(propertyBuilder: ComplexTypePropertyBuilder, seed?: long, increment?: int): ComplexTypePropertyBuilder;
-    static UseSequence<TProperty>(propertyBuilder: ComplexTypePropertyBuilder<TProperty>, name?: string, schema?: string): ComplexTypePropertyBuilder<TProperty>;
+    static UseSequence<TProperty>(propertyBuilder: ComplexTypePropertyBuilder_1<TProperty>, name?: string, schema?: string): ComplexTypePropertyBuilder_1<TProperty>;
     static UseSequence(propertyBuilder: ComplexTypePropertyBuilder, name?: string, schema?: string): ComplexTypePropertyBuilder;
 }
 
@@ -96,32 +96,32 @@ export abstract class SqlServerDatabaseFacadeExtensions$instance {
 export type SqlServerDatabaseFacadeExtensions = SqlServerDatabaseFacadeExtensions$instance;
 
 export abstract class SqlServerDbContextOptionsExtensions$instance {
-    static ConfigureSqlEngine<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder<TContext>, sqlEngineOptionsAction?: Action<SqlEngineDbContextOptionsBuilder>): DbContextOptionsBuilder<TContext>;
-    static ConfigureSqlEngine(optionsBuilder: DbContextOptionsBuilder, sqlEngineOptionsAction?: Action<SqlEngineDbContextOptionsBuilder>): DbContextOptionsBuilder;
-    static UseAzureSql<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder<TContext>, azureSqlOptionsAction?: Action<AzureSqlDbContextOptionsBuilder>): DbContextOptionsBuilder<TContext>;
-    static UseAzureSql<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder<TContext>, connection: DbConnection, azureSqlOptionsAction?: Action<AzureSqlDbContextOptionsBuilder>): DbContextOptionsBuilder<TContext>;
-    static UseAzureSql<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder<TContext>, connection: DbConnection, contextOwnsConnection: boolean, azureSqlOptionsAction?: Action<AzureSqlDbContextOptionsBuilder>): DbContextOptionsBuilder<TContext>;
-    static UseAzureSql<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder<TContext>, connectionString: string, azureSqlOptionsAction?: Action<AzureSqlDbContextOptionsBuilder>): DbContextOptionsBuilder<TContext>;
-    static UseAzureSql(optionsBuilder: DbContextOptionsBuilder, azureSqlOptionsAction?: Action<AzureSqlDbContextOptionsBuilder>): DbContextOptionsBuilder;
-    static UseAzureSql(optionsBuilder: DbContextOptionsBuilder, connection: DbConnection, azureSqlOptionsAction?: Action<AzureSqlDbContextOptionsBuilder>): DbContextOptionsBuilder;
-    static UseAzureSql(optionsBuilder: DbContextOptionsBuilder, connection: DbConnection, contextOwnsConnection: boolean, azureSqlOptionsAction?: Action<AzureSqlDbContextOptionsBuilder>): DbContextOptionsBuilder;
-    static UseAzureSql(optionsBuilder: DbContextOptionsBuilder, connectionString: string, azureSqlOptionsAction?: Action<AzureSqlDbContextOptionsBuilder>): DbContextOptionsBuilder;
-    static UseAzureSynapse<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder<TContext>, azureSynapseOptionsAction?: Action<AzureSynapseDbContextOptionsBuilder>): DbContextOptionsBuilder<TContext>;
-    static UseAzureSynapse<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder<TContext>, connection: DbConnection, azureSynapseOptionsAction?: Action<AzureSynapseDbContextOptionsBuilder>): DbContextOptionsBuilder<TContext>;
-    static UseAzureSynapse<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder<TContext>, connection: DbConnection, contextOwnsConnection: boolean, azureSynapseOptionsAction?: Action<AzureSynapseDbContextOptionsBuilder>): DbContextOptionsBuilder<TContext>;
-    static UseAzureSynapse<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder<TContext>, connectionString: string, azureSynapseOptionsAction?: Action<AzureSynapseDbContextOptionsBuilder>): DbContextOptionsBuilder<TContext>;
-    static UseAzureSynapse(optionsBuilder: DbContextOptionsBuilder, azureSynapseOptionsAction?: Action<AzureSynapseDbContextOptionsBuilder>): DbContextOptionsBuilder;
-    static UseAzureSynapse(optionsBuilder: DbContextOptionsBuilder, connection: DbConnection, azureSynapseOptionsAction?: Action<AzureSynapseDbContextOptionsBuilder>): DbContextOptionsBuilder;
-    static UseAzureSynapse(optionsBuilder: DbContextOptionsBuilder, connection: DbConnection, contextOwnsConnection: boolean, azureSynapseOptionsAction?: Action<AzureSynapseDbContextOptionsBuilder>): DbContextOptionsBuilder;
-    static UseAzureSynapse(optionsBuilder: DbContextOptionsBuilder, connectionString: string, azureSynapseOptionsAction?: Action<AzureSynapseDbContextOptionsBuilder>): DbContextOptionsBuilder;
-    static UseSqlServer<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder<TContext>, sqlServerOptionsAction?: Action<SqlServerDbContextOptionsBuilder>): DbContextOptionsBuilder<TContext>;
-    static UseSqlServer<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder<TContext>, connection: DbConnection, sqlServerOptionsAction?: Action<SqlServerDbContextOptionsBuilder>): DbContextOptionsBuilder<TContext>;
-    static UseSqlServer<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder<TContext>, connection: DbConnection, contextOwnsConnection: boolean, sqlServerOptionsAction?: Action<SqlServerDbContextOptionsBuilder>): DbContextOptionsBuilder<TContext>;
-    static UseSqlServer<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder<TContext>, connectionString: string, sqlServerOptionsAction?: Action<SqlServerDbContextOptionsBuilder>): DbContextOptionsBuilder<TContext>;
-    static UseSqlServer(optionsBuilder: DbContextOptionsBuilder, sqlServerOptionsAction?: Action<SqlServerDbContextOptionsBuilder>): DbContextOptionsBuilder;
-    static UseSqlServer(optionsBuilder: DbContextOptionsBuilder, connection: DbConnection, sqlServerOptionsAction?: Action<SqlServerDbContextOptionsBuilder>): DbContextOptionsBuilder;
-    static UseSqlServer(optionsBuilder: DbContextOptionsBuilder, connection: DbConnection, contextOwnsConnection: boolean, sqlServerOptionsAction?: Action<SqlServerDbContextOptionsBuilder>): DbContextOptionsBuilder;
-    static UseSqlServer(optionsBuilder: DbContextOptionsBuilder, connectionString: string, sqlServerOptionsAction?: Action<SqlServerDbContextOptionsBuilder>): DbContextOptionsBuilder;
+    static ConfigureSqlEngine<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, sqlEngineOptionsAction?: Action_1<SqlEngineDbContextOptionsBuilder>): DbContextOptionsBuilder_1<TContext>;
+    static ConfigureSqlEngine(optionsBuilder: DbContextOptionsBuilder, sqlEngineOptionsAction?: Action_1<SqlEngineDbContextOptionsBuilder>): DbContextOptionsBuilder;
+    static UseAzureSql<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, azureSqlOptionsAction?: Action_1<AzureSqlDbContextOptionsBuilder>): DbContextOptionsBuilder_1<TContext>;
+    static UseAzureSql<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connection: DbConnection, azureSqlOptionsAction?: Action_1<AzureSqlDbContextOptionsBuilder>): DbContextOptionsBuilder_1<TContext>;
+    static UseAzureSql<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connection: DbConnection, contextOwnsConnection: boolean, azureSqlOptionsAction?: Action_1<AzureSqlDbContextOptionsBuilder>): DbContextOptionsBuilder_1<TContext>;
+    static UseAzureSql<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connectionString: string, azureSqlOptionsAction?: Action_1<AzureSqlDbContextOptionsBuilder>): DbContextOptionsBuilder_1<TContext>;
+    static UseAzureSql(optionsBuilder: DbContextOptionsBuilder, azureSqlOptionsAction?: Action_1<AzureSqlDbContextOptionsBuilder>): DbContextOptionsBuilder;
+    static UseAzureSql(optionsBuilder: DbContextOptionsBuilder, connection: DbConnection, azureSqlOptionsAction?: Action_1<AzureSqlDbContextOptionsBuilder>): DbContextOptionsBuilder;
+    static UseAzureSql(optionsBuilder: DbContextOptionsBuilder, connection: DbConnection, contextOwnsConnection: boolean, azureSqlOptionsAction?: Action_1<AzureSqlDbContextOptionsBuilder>): DbContextOptionsBuilder;
+    static UseAzureSql(optionsBuilder: DbContextOptionsBuilder, connectionString: string, azureSqlOptionsAction?: Action_1<AzureSqlDbContextOptionsBuilder>): DbContextOptionsBuilder;
+    static UseAzureSynapse<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, azureSynapseOptionsAction?: Action_1<AzureSynapseDbContextOptionsBuilder>): DbContextOptionsBuilder_1<TContext>;
+    static UseAzureSynapse<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connection: DbConnection, azureSynapseOptionsAction?: Action_1<AzureSynapseDbContextOptionsBuilder>): DbContextOptionsBuilder_1<TContext>;
+    static UseAzureSynapse<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connection: DbConnection, contextOwnsConnection: boolean, azureSynapseOptionsAction?: Action_1<AzureSynapseDbContextOptionsBuilder>): DbContextOptionsBuilder_1<TContext>;
+    static UseAzureSynapse<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connectionString: string, azureSynapseOptionsAction?: Action_1<AzureSynapseDbContextOptionsBuilder>): DbContextOptionsBuilder_1<TContext>;
+    static UseAzureSynapse(optionsBuilder: DbContextOptionsBuilder, azureSynapseOptionsAction?: Action_1<AzureSynapseDbContextOptionsBuilder>): DbContextOptionsBuilder;
+    static UseAzureSynapse(optionsBuilder: DbContextOptionsBuilder, connection: DbConnection, azureSynapseOptionsAction?: Action_1<AzureSynapseDbContextOptionsBuilder>): DbContextOptionsBuilder;
+    static UseAzureSynapse(optionsBuilder: DbContextOptionsBuilder, connection: DbConnection, contextOwnsConnection: boolean, azureSynapseOptionsAction?: Action_1<AzureSynapseDbContextOptionsBuilder>): DbContextOptionsBuilder;
+    static UseAzureSynapse(optionsBuilder: DbContextOptionsBuilder, connectionString: string, azureSynapseOptionsAction?: Action_1<AzureSynapseDbContextOptionsBuilder>): DbContextOptionsBuilder;
+    static UseSqlServer<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, sqlServerOptionsAction?: Action_1<SqlServerDbContextOptionsBuilder>): DbContextOptionsBuilder_1<TContext>;
+    static UseSqlServer<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connection: DbConnection, sqlServerOptionsAction?: Action_1<SqlServerDbContextOptionsBuilder>): DbContextOptionsBuilder_1<TContext>;
+    static UseSqlServer<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connection: DbConnection, contextOwnsConnection: boolean, sqlServerOptionsAction?: Action_1<SqlServerDbContextOptionsBuilder>): DbContextOptionsBuilder_1<TContext>;
+    static UseSqlServer<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connectionString: string, sqlServerOptionsAction?: Action_1<SqlServerDbContextOptionsBuilder>): DbContextOptionsBuilder_1<TContext>;
+    static UseSqlServer(optionsBuilder: DbContextOptionsBuilder, sqlServerOptionsAction?: Action_1<SqlServerDbContextOptionsBuilder>): DbContextOptionsBuilder;
+    static UseSqlServer(optionsBuilder: DbContextOptionsBuilder, connection: DbConnection, sqlServerOptionsAction?: Action_1<SqlServerDbContextOptionsBuilder>): DbContextOptionsBuilder;
+    static UseSqlServer(optionsBuilder: DbContextOptionsBuilder, connection: DbConnection, contextOwnsConnection: boolean, sqlServerOptionsAction?: Action_1<SqlServerDbContextOptionsBuilder>): DbContextOptionsBuilder;
+    static UseSqlServer(optionsBuilder: DbContextOptionsBuilder, connectionString: string, sqlServerOptionsAction?: Action_1<SqlServerDbContextOptionsBuilder>): DbContextOptionsBuilder;
 }
 
 
@@ -132,99 +132,99 @@ export abstract class SqlServerDbFunctionsExtensions$instance {
     static AtTimeZone(_: DbFunctions, dateTimeOffset: DateTimeOffset, timeZone: string): DateTimeOffset;
     static Contains(_: DbFunctions, propertyReference: unknown, searchCondition: string, languageTerm: int): boolean;
     static Contains(_: DbFunctions, propertyReference: unknown, searchCondition: string): boolean;
-    static DataLength(_: DbFunctions, arg: byte[]): Nullable<System_Internal.Int32>;
-    static DataLength(_: DbFunctions, arg: Nullable<System_Internal.Boolean>): Nullable<System_Internal.Int32>;
-    static DataLength(_: DbFunctions, arg: Nullable<DateTime>): Nullable<System_Internal.Int32>;
-    static DataLength(_: DbFunctions, arg: Nullable<DateTimeOffset>): Nullable<System_Internal.Int32>;
-    static DataLength(_: DbFunctions, arg: Nullable<System_Internal.Decimal>): Nullable<System_Internal.Int32>;
-    static DataLength(_: DbFunctions, arg: Nullable<System_Internal.Double>): Nullable<System_Internal.Int32>;
-    static DataLength(_: DbFunctions, arg: Nullable<Guid>): Nullable<System_Internal.Int32>;
-    static DataLength(_: DbFunctions, arg: Nullable<TimeSpan>): Nullable<System_Internal.Int32>;
-    static DataLength(_: DbFunctions, arg: string): Nullable<System_Internal.Int32>;
+    static DataLength(_: DbFunctions, arg: byte[]): Nullable_1<System_Internal.Int32>;
+    static DataLength(_: DbFunctions, arg: Nullable_1<System_Internal.Boolean>): Nullable_1<System_Internal.Int32>;
+    static DataLength(_: DbFunctions, arg: Nullable_1<DateTime>): Nullable_1<System_Internal.Int32>;
+    static DataLength(_: DbFunctions, arg: Nullable_1<DateTimeOffset>): Nullable_1<System_Internal.Int32>;
+    static DataLength(_: DbFunctions, arg: Nullable_1<System_Internal.Decimal>): Nullable_1<System_Internal.Int32>;
+    static DataLength(_: DbFunctions, arg: Nullable_1<System_Internal.Double>): Nullable_1<System_Internal.Int32>;
+    static DataLength(_: DbFunctions, arg: Nullable_1<Guid>): Nullable_1<System_Internal.Int32>;
+    static DataLength(_: DbFunctions, arg: Nullable_1<TimeSpan>): Nullable_1<System_Internal.Int32>;
+    static DataLength(_: DbFunctions, arg: string): Nullable_1<System_Internal.Int32>;
     static DateDiffDay(_: DbFunctions, startDate: DateOnly, endDate: DateOnly): int;
     static DateDiffDay(_: DbFunctions, startDate: DateTime, endDate: DateTime): int;
     static DateDiffDay(_: DbFunctions, startDate: DateTimeOffset, endDate: DateTimeOffset): int;
-    static DateDiffDay(_: DbFunctions, startDate: Nullable<DateOnly>, endDate: Nullable<DateOnly>): Nullable<System_Internal.Int32>;
-    static DateDiffDay(_: DbFunctions, startDate: Nullable<DateTime>, endDate: Nullable<DateTime>): Nullable<System_Internal.Int32>;
-    static DateDiffDay(_: DbFunctions, startDate: Nullable<DateTimeOffset>, endDate: Nullable<DateTimeOffset>): Nullable<System_Internal.Int32>;
+    static DateDiffDay(_: DbFunctions, startDate: Nullable_1<DateOnly>, endDate: Nullable_1<DateOnly>): Nullable_1<System_Internal.Int32>;
+    static DateDiffDay(_: DbFunctions, startDate: Nullable_1<DateTime>, endDate: Nullable_1<DateTime>): Nullable_1<System_Internal.Int32>;
+    static DateDiffDay(_: DbFunctions, startDate: Nullable_1<DateTimeOffset>, endDate: Nullable_1<DateTimeOffset>): Nullable_1<System_Internal.Int32>;
     static DateDiffHour(_: DbFunctions, startDate: DateOnly, endDate: DateOnly): int;
     static DateDiffHour(_: DbFunctions, startDate: DateTime, endDate: DateTime): int;
     static DateDiffHour(_: DbFunctions, startDate: DateTimeOffset, endDate: DateTimeOffset): int;
-    static DateDiffHour(_: DbFunctions, startDate: Nullable<DateOnly>, endDate: Nullable<DateOnly>): Nullable<System_Internal.Int32>;
-    static DateDiffHour(_: DbFunctions, startDate: Nullable<DateTime>, endDate: Nullable<DateTime>): Nullable<System_Internal.Int32>;
-    static DateDiffHour(_: DbFunctions, startDate: Nullable<DateTimeOffset>, endDate: Nullable<DateTimeOffset>): Nullable<System_Internal.Int32>;
-    static DateDiffHour(_: DbFunctions, startTime: Nullable<TimeOnly>, endTime: Nullable<TimeOnly>): Nullable<System_Internal.Int32>;
-    static DateDiffHour(_: DbFunctions, startTimeSpan: Nullable<TimeSpan>, endTimeSpan: Nullable<TimeSpan>): Nullable<System_Internal.Int32>;
+    static DateDiffHour(_: DbFunctions, startDate: Nullable_1<DateOnly>, endDate: Nullable_1<DateOnly>): Nullable_1<System_Internal.Int32>;
+    static DateDiffHour(_: DbFunctions, startDate: Nullable_1<DateTime>, endDate: Nullable_1<DateTime>): Nullable_1<System_Internal.Int32>;
+    static DateDiffHour(_: DbFunctions, startDate: Nullable_1<DateTimeOffset>, endDate: Nullable_1<DateTimeOffset>): Nullable_1<System_Internal.Int32>;
+    static DateDiffHour(_: DbFunctions, startTime: Nullable_1<TimeOnly>, endTime: Nullable_1<TimeOnly>): Nullable_1<System_Internal.Int32>;
+    static DateDiffHour(_: DbFunctions, startTimeSpan: Nullable_1<TimeSpan>, endTimeSpan: Nullable_1<TimeSpan>): Nullable_1<System_Internal.Int32>;
     static DateDiffHour(_: DbFunctions, startTime: TimeOnly, endTime: TimeOnly): int;
     static DateDiffHour(_: DbFunctions, startTimeSpan: TimeSpan, endTimeSpan: TimeSpan): int;
     static DateDiffMicrosecond(_: DbFunctions, startDate: DateOnly, endDate: DateOnly): int;
     static DateDiffMicrosecond(_: DbFunctions, startDate: DateTime, endDate: DateTime): int;
     static DateDiffMicrosecond(_: DbFunctions, startDate: DateTimeOffset, endDate: DateTimeOffset): int;
-    static DateDiffMicrosecond(_: DbFunctions, startDate: Nullable<DateOnly>, endDate: Nullable<DateOnly>): Nullable<System_Internal.Int32>;
-    static DateDiffMicrosecond(_: DbFunctions, startDate: Nullable<DateTime>, endDate: Nullable<DateTime>): Nullable<System_Internal.Int32>;
-    static DateDiffMicrosecond(_: DbFunctions, startDate: Nullable<DateTimeOffset>, endDate: Nullable<DateTimeOffset>): Nullable<System_Internal.Int32>;
-    static DateDiffMicrosecond(_: DbFunctions, startTime: Nullable<TimeOnly>, endTime: Nullable<TimeOnly>): Nullable<System_Internal.Int32>;
-    static DateDiffMicrosecond(_: DbFunctions, startTimeSpan: Nullable<TimeSpan>, endTimeSpan: Nullable<TimeSpan>): Nullable<System_Internal.Int32>;
+    static DateDiffMicrosecond(_: DbFunctions, startDate: Nullable_1<DateOnly>, endDate: Nullable_1<DateOnly>): Nullable_1<System_Internal.Int32>;
+    static DateDiffMicrosecond(_: DbFunctions, startDate: Nullable_1<DateTime>, endDate: Nullable_1<DateTime>): Nullable_1<System_Internal.Int32>;
+    static DateDiffMicrosecond(_: DbFunctions, startDate: Nullable_1<DateTimeOffset>, endDate: Nullable_1<DateTimeOffset>): Nullable_1<System_Internal.Int32>;
+    static DateDiffMicrosecond(_: DbFunctions, startTime: Nullable_1<TimeOnly>, endTime: Nullable_1<TimeOnly>): Nullable_1<System_Internal.Int32>;
+    static DateDiffMicrosecond(_: DbFunctions, startTimeSpan: Nullable_1<TimeSpan>, endTimeSpan: Nullable_1<TimeSpan>): Nullable_1<System_Internal.Int32>;
     static DateDiffMicrosecond(_: DbFunctions, startTime: TimeOnly, endTime: TimeOnly): int;
     static DateDiffMicrosecond(_: DbFunctions, startTimeSpan: TimeSpan, endTimeSpan: TimeSpan): int;
     static DateDiffMillisecond(_: DbFunctions, startDate: DateOnly, endDate: DateOnly): int;
     static DateDiffMillisecond(_: DbFunctions, startDate: DateTime, endDate: DateTime): int;
     static DateDiffMillisecond(_: DbFunctions, startDate: DateTimeOffset, endDate: DateTimeOffset): int;
-    static DateDiffMillisecond(_: DbFunctions, startDate: Nullable<DateOnly>, endDate: Nullable<DateOnly>): Nullable<System_Internal.Int32>;
-    static DateDiffMillisecond(_: DbFunctions, startDate: Nullable<DateTime>, endDate: Nullable<DateTime>): Nullable<System_Internal.Int32>;
-    static DateDiffMillisecond(_: DbFunctions, startDate: Nullable<DateTimeOffset>, endDate: Nullable<DateTimeOffset>): Nullable<System_Internal.Int32>;
-    static DateDiffMillisecond(_: DbFunctions, startTime: Nullable<TimeOnly>, endTime: Nullable<TimeOnly>): Nullable<System_Internal.Int32>;
-    static DateDiffMillisecond(_: DbFunctions, startTimeSpan: Nullable<TimeSpan>, endTimeSpan: Nullable<TimeSpan>): Nullable<System_Internal.Int32>;
+    static DateDiffMillisecond(_: DbFunctions, startDate: Nullable_1<DateOnly>, endDate: Nullable_1<DateOnly>): Nullable_1<System_Internal.Int32>;
+    static DateDiffMillisecond(_: DbFunctions, startDate: Nullable_1<DateTime>, endDate: Nullable_1<DateTime>): Nullable_1<System_Internal.Int32>;
+    static DateDiffMillisecond(_: DbFunctions, startDate: Nullable_1<DateTimeOffset>, endDate: Nullable_1<DateTimeOffset>): Nullable_1<System_Internal.Int32>;
+    static DateDiffMillisecond(_: DbFunctions, startTime: Nullable_1<TimeOnly>, endTime: Nullable_1<TimeOnly>): Nullable_1<System_Internal.Int32>;
+    static DateDiffMillisecond(_: DbFunctions, startTimeSpan: Nullable_1<TimeSpan>, endTimeSpan: Nullable_1<TimeSpan>): Nullable_1<System_Internal.Int32>;
     static DateDiffMillisecond(_: DbFunctions, startTime: TimeOnly, endTime: TimeOnly): int;
     static DateDiffMillisecond(_: DbFunctions, startTimeSpan: TimeSpan, endTimeSpan: TimeSpan): int;
     static DateDiffMinute(_: DbFunctions, startDate: DateOnly, endDate: DateOnly): int;
     static DateDiffMinute(_: DbFunctions, startDate: DateTime, endDate: DateTime): int;
     static DateDiffMinute(_: DbFunctions, startDate: DateTimeOffset, endDate: DateTimeOffset): int;
-    static DateDiffMinute(_: DbFunctions, startDate: Nullable<DateOnly>, endDate: Nullable<DateOnly>): Nullable<System_Internal.Int32>;
-    static DateDiffMinute(_: DbFunctions, startDate: Nullable<DateTime>, endDate: Nullable<DateTime>): Nullable<System_Internal.Int32>;
-    static DateDiffMinute(_: DbFunctions, startDate: Nullable<DateTimeOffset>, endDate: Nullable<DateTimeOffset>): Nullable<System_Internal.Int32>;
-    static DateDiffMinute(_: DbFunctions, startTime: Nullable<TimeOnly>, endTime: Nullable<TimeOnly>): Nullable<System_Internal.Int32>;
-    static DateDiffMinute(_: DbFunctions, startTimeSpan: Nullable<TimeSpan>, endTimeSpan: Nullable<TimeSpan>): Nullable<System_Internal.Int32>;
+    static DateDiffMinute(_: DbFunctions, startDate: Nullable_1<DateOnly>, endDate: Nullable_1<DateOnly>): Nullable_1<System_Internal.Int32>;
+    static DateDiffMinute(_: DbFunctions, startDate: Nullable_1<DateTime>, endDate: Nullable_1<DateTime>): Nullable_1<System_Internal.Int32>;
+    static DateDiffMinute(_: DbFunctions, startDate: Nullable_1<DateTimeOffset>, endDate: Nullable_1<DateTimeOffset>): Nullable_1<System_Internal.Int32>;
+    static DateDiffMinute(_: DbFunctions, startTime: Nullable_1<TimeOnly>, endTime: Nullable_1<TimeOnly>): Nullable_1<System_Internal.Int32>;
+    static DateDiffMinute(_: DbFunctions, startTimeSpan: Nullable_1<TimeSpan>, endTimeSpan: Nullable_1<TimeSpan>): Nullable_1<System_Internal.Int32>;
     static DateDiffMinute(_: DbFunctions, startTime: TimeOnly, endTime: TimeOnly): int;
     static DateDiffMinute(_: DbFunctions, startTimeSpan: TimeSpan, endTimeSpan: TimeSpan): int;
     static DateDiffMonth(_: DbFunctions, startDate: DateOnly, endDate: DateOnly): int;
     static DateDiffMonth(_: DbFunctions, startDate: DateTime, endDate: DateTime): int;
     static DateDiffMonth(_: DbFunctions, startDate: DateTimeOffset, endDate: DateTimeOffset): int;
-    static DateDiffMonth(_: DbFunctions, startDate: Nullable<DateOnly>, endDate: Nullable<DateOnly>): Nullable<System_Internal.Int32>;
-    static DateDiffMonth(_: DbFunctions, startDate: Nullable<DateTime>, endDate: Nullable<DateTime>): Nullable<System_Internal.Int32>;
-    static DateDiffMonth(_: DbFunctions, startDate: Nullable<DateTimeOffset>, endDate: Nullable<DateTimeOffset>): Nullable<System_Internal.Int32>;
+    static DateDiffMonth(_: DbFunctions, startDate: Nullable_1<DateOnly>, endDate: Nullable_1<DateOnly>): Nullable_1<System_Internal.Int32>;
+    static DateDiffMonth(_: DbFunctions, startDate: Nullable_1<DateTime>, endDate: Nullable_1<DateTime>): Nullable_1<System_Internal.Int32>;
+    static DateDiffMonth(_: DbFunctions, startDate: Nullable_1<DateTimeOffset>, endDate: Nullable_1<DateTimeOffset>): Nullable_1<System_Internal.Int32>;
     static DateDiffNanosecond(_: DbFunctions, startDate: DateOnly, endDate: DateOnly): int;
     static DateDiffNanosecond(_: DbFunctions, startDate: DateTime, endDate: DateTime): int;
     static DateDiffNanosecond(_: DbFunctions, startDate: DateTimeOffset, endDate: DateTimeOffset): int;
-    static DateDiffNanosecond(_: DbFunctions, startDate: Nullable<DateOnly>, endDate: Nullable<DateOnly>): Nullable<System_Internal.Int32>;
-    static DateDiffNanosecond(_: DbFunctions, startDate: Nullable<DateTime>, endDate: Nullable<DateTime>): Nullable<System_Internal.Int32>;
-    static DateDiffNanosecond(_: DbFunctions, startDate: Nullable<DateTimeOffset>, endDate: Nullable<DateTimeOffset>): Nullable<System_Internal.Int32>;
-    static DateDiffNanosecond(_: DbFunctions, startTime: Nullable<TimeOnly>, endTime: Nullable<TimeOnly>): Nullable<System_Internal.Int32>;
-    static DateDiffNanosecond(_: DbFunctions, startTimeSpan: Nullable<TimeSpan>, endTimeSpan: Nullable<TimeSpan>): Nullable<System_Internal.Int32>;
+    static DateDiffNanosecond(_: DbFunctions, startDate: Nullable_1<DateOnly>, endDate: Nullable_1<DateOnly>): Nullable_1<System_Internal.Int32>;
+    static DateDiffNanosecond(_: DbFunctions, startDate: Nullable_1<DateTime>, endDate: Nullable_1<DateTime>): Nullable_1<System_Internal.Int32>;
+    static DateDiffNanosecond(_: DbFunctions, startDate: Nullable_1<DateTimeOffset>, endDate: Nullable_1<DateTimeOffset>): Nullable_1<System_Internal.Int32>;
+    static DateDiffNanosecond(_: DbFunctions, startTime: Nullable_1<TimeOnly>, endTime: Nullable_1<TimeOnly>): Nullable_1<System_Internal.Int32>;
+    static DateDiffNanosecond(_: DbFunctions, startTimeSpan: Nullable_1<TimeSpan>, endTimeSpan: Nullable_1<TimeSpan>): Nullable_1<System_Internal.Int32>;
     static DateDiffNanosecond(_: DbFunctions, startTime: TimeOnly, endTime: TimeOnly): int;
     static DateDiffNanosecond(_: DbFunctions, startTimeSpan: TimeSpan, endTimeSpan: TimeSpan): int;
     static DateDiffSecond(_: DbFunctions, startDate: DateOnly, endDate: DateOnly): int;
     static DateDiffSecond(_: DbFunctions, startDate: DateTime, endDate: DateTime): int;
     static DateDiffSecond(_: DbFunctions, startDate: DateTimeOffset, endDate: DateTimeOffset): int;
-    static DateDiffSecond(_: DbFunctions, startDate: Nullable<DateOnly>, endDate: Nullable<DateOnly>): Nullable<System_Internal.Int32>;
-    static DateDiffSecond(_: DbFunctions, startDate: Nullable<DateTime>, endDate: Nullable<DateTime>): Nullable<System_Internal.Int32>;
-    static DateDiffSecond(_: DbFunctions, startDate: Nullable<DateTimeOffset>, endDate: Nullable<DateTimeOffset>): Nullable<System_Internal.Int32>;
-    static DateDiffSecond(_: DbFunctions, startTime: Nullable<TimeOnly>, endTime: Nullable<TimeOnly>): Nullable<System_Internal.Int32>;
-    static DateDiffSecond(_: DbFunctions, startTimeSpan: Nullable<TimeSpan>, endTimeSpan: Nullable<TimeSpan>): Nullable<System_Internal.Int32>;
+    static DateDiffSecond(_: DbFunctions, startDate: Nullable_1<DateOnly>, endDate: Nullable_1<DateOnly>): Nullable_1<System_Internal.Int32>;
+    static DateDiffSecond(_: DbFunctions, startDate: Nullable_1<DateTime>, endDate: Nullable_1<DateTime>): Nullable_1<System_Internal.Int32>;
+    static DateDiffSecond(_: DbFunctions, startDate: Nullable_1<DateTimeOffset>, endDate: Nullable_1<DateTimeOffset>): Nullable_1<System_Internal.Int32>;
+    static DateDiffSecond(_: DbFunctions, startTime: Nullable_1<TimeOnly>, endTime: Nullable_1<TimeOnly>): Nullable_1<System_Internal.Int32>;
+    static DateDiffSecond(_: DbFunctions, startTimeSpan: Nullable_1<TimeSpan>, endTimeSpan: Nullable_1<TimeSpan>): Nullable_1<System_Internal.Int32>;
     static DateDiffSecond(_: DbFunctions, startTime: TimeOnly, endTime: TimeOnly): int;
     static DateDiffSecond(_: DbFunctions, startTimeSpan: TimeSpan, endTimeSpan: TimeSpan): int;
     static DateDiffWeek(_: DbFunctions, startDate: DateOnly, endDate: DateOnly): int;
     static DateDiffWeek(_: DbFunctions, startDate: DateTime, endDate: DateTime): int;
     static DateDiffWeek(_: DbFunctions, startDate: DateTimeOffset, endDate: DateTimeOffset): int;
-    static DateDiffWeek(_: DbFunctions, startDate: Nullable<DateOnly>, endDate: Nullable<DateOnly>): Nullable<System_Internal.Int32>;
-    static DateDiffWeek(_: DbFunctions, startDate: Nullable<DateTime>, endDate: Nullable<DateTime>): Nullable<System_Internal.Int32>;
-    static DateDiffWeek(_: DbFunctions, startDate: Nullable<DateTimeOffset>, endDate: Nullable<DateTimeOffset>): Nullable<System_Internal.Int32>;
+    static DateDiffWeek(_: DbFunctions, startDate: Nullable_1<DateOnly>, endDate: Nullable_1<DateOnly>): Nullable_1<System_Internal.Int32>;
+    static DateDiffWeek(_: DbFunctions, startDate: Nullable_1<DateTime>, endDate: Nullable_1<DateTime>): Nullable_1<System_Internal.Int32>;
+    static DateDiffWeek(_: DbFunctions, startDate: Nullable_1<DateTimeOffset>, endDate: Nullable_1<DateTimeOffset>): Nullable_1<System_Internal.Int32>;
     static DateDiffYear(_: DbFunctions, startDate: DateOnly, endDate: DateOnly): int;
     static DateDiffYear(_: DbFunctions, startDate: DateTime, endDate: DateTime): int;
     static DateDiffYear(_: DbFunctions, startDate: DateTimeOffset, endDate: DateTimeOffset): int;
-    static DateDiffYear(_: DbFunctions, startDate: Nullable<DateOnly>, endDate: Nullable<DateOnly>): Nullable<System_Internal.Int32>;
-    static DateDiffYear(_: DbFunctions, startDate: Nullable<DateTime>, endDate: Nullable<DateTime>): Nullable<System_Internal.Int32>;
-    static DateDiffYear(_: DbFunctions, startDate: Nullable<DateTimeOffset>, endDate: Nullable<DateTimeOffset>): Nullable<System_Internal.Int32>;
+    static DateDiffYear(_: DbFunctions, startDate: Nullable_1<DateOnly>, endDate: Nullable_1<DateOnly>): Nullable_1<System_Internal.Int32>;
+    static DateDiffYear(_: DbFunctions, startDate: Nullable_1<DateTime>, endDate: Nullable_1<DateTime>): Nullable_1<System_Internal.Int32>;
+    static DateDiffYear(_: DbFunctions, startDate: Nullable_1<DateTimeOffset>, endDate: Nullable_1<DateTimeOffset>): Nullable_1<System_Internal.Int32>;
     static DateFromParts(_: DbFunctions, year: int, month: int, day: int): DateTime;
     static DateTime2FromParts(_: DbFunctions, year: int, month: int, day: int, hour: int, minute: int, second: int, fractions: int, precision: int): DateTime;
     static DateTimeFromParts(_: DbFunctions, year: int, month: int, day: int, hour: int, minute: int, second: int, millisecond: int): DateTime;
@@ -235,35 +235,35 @@ export abstract class SqlServerDbFunctionsExtensions$instance {
     static IsNumeric(_: DbFunctions, expression: string): boolean;
     static PatIndex(_: DbFunctions, pattern: string, expression: string): long;
     static SmallDateTimeFromParts(_: DbFunctions, year: int, month: int, day: int, hour: int, minute: int): DateTime;
-    static StandardDeviationPopulation(_: DbFunctions, values: IEnumerable<System_Internal.Byte>): Nullable<System_Internal.Double>;
-    static StandardDeviationPopulation(_: DbFunctions, values: IEnumerable<System_Internal.Decimal>): Nullable<System_Internal.Double>;
-    static StandardDeviationPopulation(_: DbFunctions, values: IEnumerable<System_Internal.Double>): Nullable<System_Internal.Double>;
-    static StandardDeviationPopulation(_: DbFunctions, values: IEnumerable<System_Internal.Int16>): Nullable<System_Internal.Double>;
-    static StandardDeviationPopulation(_: DbFunctions, values: IEnumerable<System_Internal.Int32>): Nullable<System_Internal.Double>;
-    static StandardDeviationPopulation(_: DbFunctions, values: IEnumerable<System_Internal.Int64>): Nullable<System_Internal.Double>;
-    static StandardDeviationPopulation(_: DbFunctions, values: IEnumerable<System_Internal.Single>): Nullable<System_Internal.Double>;
-    static StandardDeviationSample(_: DbFunctions, values: IEnumerable<System_Internal.Byte>): Nullable<System_Internal.Double>;
-    static StandardDeviationSample(_: DbFunctions, values: IEnumerable<System_Internal.Decimal>): Nullable<System_Internal.Double>;
-    static StandardDeviationSample(_: DbFunctions, values: IEnumerable<System_Internal.Double>): Nullable<System_Internal.Double>;
-    static StandardDeviationSample(_: DbFunctions, values: IEnumerable<System_Internal.Int16>): Nullable<System_Internal.Double>;
-    static StandardDeviationSample(_: DbFunctions, values: IEnumerable<System_Internal.Int32>): Nullable<System_Internal.Double>;
-    static StandardDeviationSample(_: DbFunctions, values: IEnumerable<System_Internal.Int64>): Nullable<System_Internal.Double>;
-    static StandardDeviationSample(_: DbFunctions, values: IEnumerable<System_Internal.Single>): Nullable<System_Internal.Double>;
+    static StandardDeviationPopulation(_: DbFunctions, values: IEnumerable_1<System_Internal.Byte>): Nullable_1<System_Internal.Double>;
+    static StandardDeviationPopulation(_: DbFunctions, values: IEnumerable_1<System_Internal.Decimal>): Nullable_1<System_Internal.Double>;
+    static StandardDeviationPopulation(_: DbFunctions, values: IEnumerable_1<System_Internal.Double>): Nullable_1<System_Internal.Double>;
+    static StandardDeviationPopulation(_: DbFunctions, values: IEnumerable_1<System_Internal.Int16>): Nullable_1<System_Internal.Double>;
+    static StandardDeviationPopulation(_: DbFunctions, values: IEnumerable_1<System_Internal.Int32>): Nullable_1<System_Internal.Double>;
+    static StandardDeviationPopulation(_: DbFunctions, values: IEnumerable_1<System_Internal.Int64>): Nullable_1<System_Internal.Double>;
+    static StandardDeviationPopulation(_: DbFunctions, values: IEnumerable_1<System_Internal.Single>): Nullable_1<System_Internal.Double>;
+    static StandardDeviationSample(_: DbFunctions, values: IEnumerable_1<System_Internal.Byte>): Nullable_1<System_Internal.Double>;
+    static StandardDeviationSample(_: DbFunctions, values: IEnumerable_1<System_Internal.Decimal>): Nullable_1<System_Internal.Double>;
+    static StandardDeviationSample(_: DbFunctions, values: IEnumerable_1<System_Internal.Double>): Nullable_1<System_Internal.Double>;
+    static StandardDeviationSample(_: DbFunctions, values: IEnumerable_1<System_Internal.Int16>): Nullable_1<System_Internal.Double>;
+    static StandardDeviationSample(_: DbFunctions, values: IEnumerable_1<System_Internal.Int32>): Nullable_1<System_Internal.Double>;
+    static StandardDeviationSample(_: DbFunctions, values: IEnumerable_1<System_Internal.Int64>): Nullable_1<System_Internal.Double>;
+    static StandardDeviationSample(_: DbFunctions, values: IEnumerable_1<System_Internal.Single>): Nullable_1<System_Internal.Double>;
     static TimeFromParts(_: DbFunctions, hour: int, minute: int, second: int, fractions: int, precision: int): TimeSpan;
-    static VariancePopulation(_: DbFunctions, values: IEnumerable<System_Internal.Byte>): Nullable<System_Internal.Double>;
-    static VariancePopulation(_: DbFunctions, values: IEnumerable<System_Internal.Decimal>): Nullable<System_Internal.Double>;
-    static VariancePopulation(_: DbFunctions, values: IEnumerable<System_Internal.Double>): Nullable<System_Internal.Double>;
-    static VariancePopulation(_: DbFunctions, values: IEnumerable<System_Internal.Int16>): Nullable<System_Internal.Double>;
-    static VariancePopulation(_: DbFunctions, values: IEnumerable<System_Internal.Int32>): Nullable<System_Internal.Double>;
-    static VariancePopulation(_: DbFunctions, values: IEnumerable<System_Internal.Int64>): Nullable<System_Internal.Double>;
-    static VariancePopulation(_: DbFunctions, values: IEnumerable<System_Internal.Single>): Nullable<System_Internal.Double>;
-    static VarianceSample(_: DbFunctions, values: IEnumerable<System_Internal.Byte>): Nullable<System_Internal.Double>;
-    static VarianceSample(_: DbFunctions, values: IEnumerable<System_Internal.Decimal>): Nullable<System_Internal.Double>;
-    static VarianceSample(_: DbFunctions, values: IEnumerable<System_Internal.Double>): Nullable<System_Internal.Double>;
-    static VarianceSample(_: DbFunctions, values: IEnumerable<System_Internal.Int16>): Nullable<System_Internal.Double>;
-    static VarianceSample(_: DbFunctions, values: IEnumerable<System_Internal.Int32>): Nullable<System_Internal.Double>;
-    static VarianceSample(_: DbFunctions, values: IEnumerable<System_Internal.Int64>): Nullable<System_Internal.Double>;
-    static VarianceSample(_: DbFunctions, values: IEnumerable<System_Internal.Single>): Nullable<System_Internal.Double>;
+    static VariancePopulation(_: DbFunctions, values: IEnumerable_1<System_Internal.Byte>): Nullable_1<System_Internal.Double>;
+    static VariancePopulation(_: DbFunctions, values: IEnumerable_1<System_Internal.Decimal>): Nullable_1<System_Internal.Double>;
+    static VariancePopulation(_: DbFunctions, values: IEnumerable_1<System_Internal.Double>): Nullable_1<System_Internal.Double>;
+    static VariancePopulation(_: DbFunctions, values: IEnumerable_1<System_Internal.Int16>): Nullable_1<System_Internal.Double>;
+    static VariancePopulation(_: DbFunctions, values: IEnumerable_1<System_Internal.Int32>): Nullable_1<System_Internal.Double>;
+    static VariancePopulation(_: DbFunctions, values: IEnumerable_1<System_Internal.Int64>): Nullable_1<System_Internal.Double>;
+    static VariancePopulation(_: DbFunctions, values: IEnumerable_1<System_Internal.Single>): Nullable_1<System_Internal.Double>;
+    static VarianceSample(_: DbFunctions, values: IEnumerable_1<System_Internal.Byte>): Nullable_1<System_Internal.Double>;
+    static VarianceSample(_: DbFunctions, values: IEnumerable_1<System_Internal.Decimal>): Nullable_1<System_Internal.Double>;
+    static VarianceSample(_: DbFunctions, values: IEnumerable_1<System_Internal.Double>): Nullable_1<System_Internal.Double>;
+    static VarianceSample(_: DbFunctions, values: IEnumerable_1<System_Internal.Int16>): Nullable_1<System_Internal.Double>;
+    static VarianceSample(_: DbFunctions, values: IEnumerable_1<System_Internal.Int32>): Nullable_1<System_Internal.Double>;
+    static VarianceSample(_: DbFunctions, values: IEnumerable_1<System_Internal.Int64>): Nullable_1<System_Internal.Double>;
+    static VarianceSample(_: DbFunctions, values: IEnumerable_1<System_Internal.Single>): Nullable_1<System_Internal.Double>;
     static VectorDistance<T extends unknown>(_: DbFunctions, distanceMetric: string, vector1: SqlVector_1<T>, vector2: SqlVector_1<T>): double;
 }
 
@@ -271,11 +271,11 @@ export abstract class SqlServerDbFunctionsExtensions$instance {
 export type SqlServerDbFunctionsExtensions = SqlServerDbFunctionsExtensions$instance;
 
 export abstract class SqlServerDbSetExtensions$instance {
-    static TemporalAll<TEntity>(source: DbSet<TEntity>): IQueryable<TEntity>;
-    static TemporalAsOf<TEntity>(source: DbSet<TEntity>, utcPointInTime: DateTime): IQueryable<TEntity>;
-    static TemporalBetween<TEntity>(source: DbSet<TEntity>, utcFrom: DateTime, utcTo: DateTime): IQueryable<TEntity>;
-    static TemporalContainedIn<TEntity>(source: DbSet<TEntity>, utcFrom: DateTime, utcTo: DateTime): IQueryable<TEntity>;
-    static TemporalFromTo<TEntity>(source: DbSet<TEntity>, utcFrom: DateTime, utcTo: DateTime): IQueryable<TEntity>;
+    static TemporalAll<TEntity>(source: DbSet_1<TEntity>): IQueryable_1<TEntity>;
+    static TemporalAsOf<TEntity>(source: DbSet_1<TEntity>, utcPointInTime: DateTime): IQueryable_1<TEntity>;
+    static TemporalBetween<TEntity>(source: DbSet_1<TEntity>, utcFrom: DateTime, utcTo: DateTime): IQueryable_1<TEntity>;
+    static TemporalContainedIn<TEntity>(source: DbSet_1<TEntity>, utcFrom: DateTime, utcTo: DateTime): IQueryable_1<TEntity>;
+    static TemporalFromTo<TEntity>(source: DbSet_1<TEntity>, utcFrom: DateTime, utcTo: DateTime): IQueryable_1<TEntity>;
 }
 
 
@@ -284,24 +284,24 @@ export type SqlServerDbSetExtensions = SqlServerDbSetExtensions$instance;
 export abstract class SqlServerEntityTypeBuilderExtensions$instance {
     static CanSetHistoryTableName(entityTypeBuilder: IConventionEntityTypeBuilder, name: string, fromDataAnnotation?: boolean): boolean;
     static CanSetHistoryTableSchema(entityTypeBuilder: IConventionEntityTypeBuilder, schema: string, fromDataAnnotation?: boolean): boolean;
-    static CanSetIsMemoryOptimized(entityTypeBuilder: IConventionEntityTypeBuilder, memoryOptimized: Nullable<System_Internal.Boolean>, fromDataAnnotation?: boolean): boolean;
+    static CanSetIsMemoryOptimized(entityTypeBuilder: IConventionEntityTypeBuilder, memoryOptimized: Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): boolean;
     static CanSetIsTemporal(entityTypeBuilder: IConventionEntityTypeBuilder, temporal?: boolean, fromDataAnnotation?: boolean): boolean;
     static CanSetPeriodEnd(entityTypeBuilder: IConventionEntityTypeBuilder, propertyName: string, fromDataAnnotation?: boolean): boolean;
     static CanSetPeriodStart(entityTypeBuilder: IConventionEntityTypeBuilder, propertyName: string, fromDataAnnotation?: boolean): boolean;
-    static CanUseSqlOutputClause(entityTypeBuilder: IConventionEntityTypeBuilder, useSqlOutputClause: Nullable<System_Internal.Boolean>, storeObject: StoreObjectIdentifier, fromDataAnnotation?: boolean): boolean;
-    static CanUseSqlOutputClause(entityTypeBuilder: IConventionEntityTypeBuilder, useSqlOutputClause: Nullable<System_Internal.Boolean>, fromDataAnnotation?: boolean): boolean;
+    static CanUseSqlOutputClause(entityTypeBuilder: IConventionEntityTypeBuilder, useSqlOutputClause: Nullable_1<System_Internal.Boolean>, storeObject: StoreObjectIdentifier, fromDataAnnotation?: boolean): boolean;
+    static CanUseSqlOutputClause(entityTypeBuilder: IConventionEntityTypeBuilder, useSqlOutputClause: Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): boolean;
     static HasPeriodEnd(entityTypeBuilder: IConventionEntityTypeBuilder, propertyName: string, fromDataAnnotation?: boolean): IConventionEntityTypeBuilder | undefined;
     static HasPeriodStart(entityTypeBuilder: IConventionEntityTypeBuilder, propertyName: string, fromDataAnnotation?: boolean): IConventionEntityTypeBuilder | undefined;
-    static IsMemoryOptimized<TEntity>(entityTypeBuilder: EntityTypeBuilder<TEntity>, memoryOptimized?: boolean): EntityTypeBuilder<TEntity>;
+    static IsMemoryOptimized<TEntity>(entityTypeBuilder: EntityTypeBuilder_1<TEntity>, memoryOptimized?: boolean): EntityTypeBuilder_1<TEntity>;
     static IsMemoryOptimized(entityTypeBuilder: EntityTypeBuilder, memoryOptimized?: boolean): EntityTypeBuilder;
-    static IsMemoryOptimized(entityTypeBuilder: IConventionEntityTypeBuilder, memoryOptimized: Nullable<System_Internal.Boolean>, fromDataAnnotation?: boolean): IConventionEntityTypeBuilder | undefined;
+    static IsMemoryOptimized(entityTypeBuilder: IConventionEntityTypeBuilder, memoryOptimized: Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): IConventionEntityTypeBuilder | undefined;
     static IsMemoryOptimized(collectionOwnershipBuilder: OwnedNavigationBuilder, memoryOptimized?: boolean): OwnedNavigationBuilder;
-    static IsMemoryOptimized<TEntity, TRelatedEntity>(collectionOwnershipBuilder: OwnedNavigationBuilder<TEntity, TRelatedEntity>, memoryOptimized?: boolean): OwnedNavigationBuilder<TEntity, TRelatedEntity>;
+    static IsMemoryOptimized<TEntity, TRelatedEntity>(collectionOwnershipBuilder: OwnedNavigationBuilder_2<TEntity, TRelatedEntity>, memoryOptimized?: boolean): OwnedNavigationBuilder_2<TEntity, TRelatedEntity>;
     static IsTemporal(entityTypeBuilder: IConventionEntityTypeBuilder, temporal?: boolean, fromDataAnnotation?: boolean): IConventionEntityTypeBuilder | undefined;
     static UseHistoryTableName(entityTypeBuilder: IConventionEntityTypeBuilder, name: string, fromDataAnnotation?: boolean): IConventionEntityTypeBuilder | undefined;
     static UseHistoryTableSchema(entityTypeBuilder: IConventionEntityTypeBuilder, schema: string, fromDataAnnotation?: boolean): IConventionEntityTypeBuilder | undefined;
-    static UseSqlOutputClause(entityTypeBuilder: IConventionEntityTypeBuilder, useSqlOutputClause: Nullable<System_Internal.Boolean>, storeObject: StoreObjectIdentifier, fromDataAnnotation?: boolean): IConventionEntityTypeBuilder | undefined;
-    static UseSqlOutputClause(entityTypeBuilder: IConventionEntityTypeBuilder, useSqlOutputClause: Nullable<System_Internal.Boolean>, fromDataAnnotation?: boolean): IConventionEntityTypeBuilder | undefined;
+    static UseSqlOutputClause(entityTypeBuilder: IConventionEntityTypeBuilder, useSqlOutputClause: Nullable_1<System_Internal.Boolean>, storeObject: StoreObjectIdentifier, fromDataAnnotation?: boolean): IConventionEntityTypeBuilder | undefined;
+    static UseSqlOutputClause(entityTypeBuilder: IConventionEntityTypeBuilder, useSqlOutputClause: Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): IConventionEntityTypeBuilder | undefined;
 }
 
 
@@ -309,18 +309,18 @@ export type SqlServerEntityTypeBuilderExtensions = SqlServerEntityTypeBuilderExt
 
 export abstract class SqlServerEntityTypeExtensions$instance {
     static GetHistoryTableName(entityType: IReadOnlyEntityType): string | undefined;
-    static GetHistoryTableNameConfigurationSource(entityType: IConventionEntityType): Nullable<ConfigurationSource>;
+    static GetHistoryTableNameConfigurationSource(entityType: IConventionEntityType): Nullable_1<ConfigurationSource>;
     static GetHistoryTableSchema(entityType: IReadOnlyEntityType): string | undefined;
-    static GetHistoryTableSchemaConfigurationSource(entityType: IConventionEntityType): Nullable<ConfigurationSource>;
-    static GetIsMemoryOptimizedConfigurationSource(entityType: IConventionEntityType): Nullable<ConfigurationSource>;
-    static GetIsTemporalConfigurationSource(entityType: IConventionEntityType): Nullable<ConfigurationSource>;
+    static GetHistoryTableSchemaConfigurationSource(entityType: IConventionEntityType): Nullable_1<ConfigurationSource>;
+    static GetIsMemoryOptimizedConfigurationSource(entityType: IConventionEntityType): Nullable_1<ConfigurationSource>;
+    static GetIsTemporalConfigurationSource(entityType: IConventionEntityType): Nullable_1<ConfigurationSource>;
     static GetPeriodEndPropertyName(entityType: IReadOnlyEntityType): string | undefined;
-    static GetPeriodEndPropertyNameConfigurationSource(entityType: IConventionEntityType): Nullable<ConfigurationSource>;
+    static GetPeriodEndPropertyNameConfigurationSource(entityType: IConventionEntityType): Nullable_1<ConfigurationSource>;
     static GetPeriodStartPropertyName(entityType: IReadOnlyEntityType): string | undefined;
-    static GetPeriodStartPropertyNameConfigurationSource(entityType: IConventionEntityType): Nullable<ConfigurationSource>;
+    static GetPeriodStartPropertyNameConfigurationSource(entityType: IConventionEntityType): Nullable_1<ConfigurationSource>;
     static GetSchemaQualifiedHistoryTableName(entityType: IReadOnlyEntityType): string | undefined;
-    static GetUseSqlOutputClauseConfigurationSource(entityType: IConventionEntityType, storeObject: StoreObjectIdentifier): Nullable<ConfigurationSource>;
-    static GetUseSqlOutputClauseConfigurationSource(entityType: IConventionEntityType): Nullable<ConfigurationSource>;
+    static GetUseSqlOutputClauseConfigurationSource(entityType: IConventionEntityType, storeObject: StoreObjectIdentifier): Nullable_1<ConfigurationSource>;
+    static GetUseSqlOutputClauseConfigurationSource(entityType: IConventionEntityType): Nullable_1<ConfigurationSource>;
     static IsMemoryOptimized(entityType: IReadOnlyEntityType): boolean;
     static IsSqlOutputClauseUsed(entityType: IReadOnlyEntityType, storeObject: StoreObjectIdentifier): boolean;
     static IsSqlOutputClauseUsed(entityType: IReadOnlyEntityType): boolean;
@@ -329,58 +329,58 @@ export abstract class SqlServerEntityTypeExtensions$instance {
     static SetHistoryTableName(entityType: IMutableEntityType, historyTableName: string): void;
     static SetHistoryTableSchema(entityType: IConventionEntityType, historyTableSchema: string, fromDataAnnotation?: boolean): string | undefined;
     static SetHistoryTableSchema(entityType: IMutableEntityType, historyTableSchema: string): void;
-    static SetIsMemoryOptimized(entityType: IConventionEntityType, memoryOptimized: Nullable<System_Internal.Boolean>, fromDataAnnotation?: boolean): Nullable<System_Internal.Boolean>;
+    static SetIsMemoryOptimized(entityType: IConventionEntityType, memoryOptimized: Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): Nullable_1<System_Internal.Boolean>;
     static SetIsMemoryOptimized(entityType: IMutableEntityType, memoryOptimized: boolean): void;
-    static SetIsTemporal(entityType: IConventionEntityType, temporal: Nullable<System_Internal.Boolean>, fromDataAnnotation?: boolean): Nullable<System_Internal.Boolean>;
+    static SetIsTemporal(entityType: IConventionEntityType, temporal: Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): Nullable_1<System_Internal.Boolean>;
     static SetIsTemporal(entityType: IMutableEntityType, temporal: boolean): void;
     static SetPeriodEndPropertyName(entityType: IConventionEntityType, periodEndPropertyName: string, fromDataAnnotation?: boolean): string | undefined;
     static SetPeriodEndPropertyName(entityType: IMutableEntityType, periodEndPropertyName: string): void;
     static SetPeriodStartPropertyName(entityType: IConventionEntityType, periodStartPropertyName: string, fromDataAnnotation?: boolean): string | undefined;
     static SetPeriodStartPropertyName(entityType: IMutableEntityType, periodStartPropertyName: string): void;
-    static UseSqlOutputClause(entityType: IConventionEntityType, useSqlOutputClause: Nullable<System_Internal.Boolean>, storeObject: StoreObjectIdentifier, fromDataAnnotation?: boolean): Nullable<System_Internal.Boolean>;
-    static UseSqlOutputClause(entityType: IConventionEntityType, useSqlOutputClause: Nullable<System_Internal.Boolean>, fromDataAnnotation?: boolean): Nullable<System_Internal.Boolean>;
-    static UseSqlOutputClause(entityType: IMutableEntityType, useSqlOutputClause: Nullable<System_Internal.Boolean>, storeObject: StoreObjectIdentifier): void;
-    static UseSqlOutputClause(entityType: IMutableEntityType, useSqlOutputClause: Nullable<System_Internal.Boolean>): void;
+    static UseSqlOutputClause(entityType: IConventionEntityType, useSqlOutputClause: Nullable_1<System_Internal.Boolean>, storeObject: StoreObjectIdentifier, fromDataAnnotation?: boolean): Nullable_1<System_Internal.Boolean>;
+    static UseSqlOutputClause(entityType: IConventionEntityType, useSqlOutputClause: Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): Nullable_1<System_Internal.Boolean>;
+    static UseSqlOutputClause(entityType: IMutableEntityType, useSqlOutputClause: Nullable_1<System_Internal.Boolean>, storeObject: StoreObjectIdentifier): void;
+    static UseSqlOutputClause(entityType: IMutableEntityType, useSqlOutputClause: Nullable_1<System_Internal.Boolean>): void;
 }
 
 
 export type SqlServerEntityTypeExtensions = SqlServerEntityTypeExtensions$instance;
 
 export abstract class SqlServerEntityTypeMappingFragmentExtensions$instance {
-    static GetUseSqlOutputClauseConfigurationSource(fragment: IConventionEntityTypeMappingFragment): Nullable<ConfigurationSource>;
+    static GetUseSqlOutputClauseConfigurationSource(fragment: IConventionEntityTypeMappingFragment): Nullable_1<ConfigurationSource>;
     static IsSqlOutputClauseUsed(fragment: IReadOnlyEntityTypeMappingFragment): boolean;
-    static UseSqlOutputClause(fragment: IConventionEntityTypeMappingFragment, useSqlOutputClause: Nullable<System_Internal.Boolean>, fromDataAnnotation?: boolean): Nullable<System_Internal.Boolean>;
-    static UseSqlOutputClause(fragment: IMutableEntityTypeMappingFragment, useSqlOutputClause: Nullable<System_Internal.Boolean>): void;
+    static UseSqlOutputClause(fragment: IConventionEntityTypeMappingFragment, useSqlOutputClause: Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): Nullable_1<System_Internal.Boolean>;
+    static UseSqlOutputClause(fragment: IMutableEntityTypeMappingFragment, useSqlOutputClause: Nullable_1<System_Internal.Boolean>): void;
 }
 
 
 export type SqlServerEntityTypeMappingFragmentExtensions = SqlServerEntityTypeMappingFragmentExtensions$instance;
 
 export abstract class SqlServerIndexBuilderExtensions$instance {
-    static CanSetDataCompression(indexBuilder: IConventionIndexBuilder, dataCompressionType: Nullable<DataCompressionType>, fromDataAnnotation?: boolean): boolean;
-    static CanSetFillFactor(indexBuilder: IConventionIndexBuilder, fillFactor: Nullable<System_Internal.Int32>, fromDataAnnotation?: boolean): boolean;
-    static CanSetIncludeProperties(indexBuilder: IConventionIndexBuilder, propertyNames: IReadOnlyList<System_Internal.String>, fromDataAnnotation?: boolean): boolean;
-    static CanSetIsClustered(indexBuilder: IConventionIndexBuilder, clustered: Nullable<System_Internal.Boolean>, fromDataAnnotation?: boolean): boolean;
-    static CanSetIsCreatedOnline(indexBuilder: IConventionIndexBuilder, createdOnline: Nullable<System_Internal.Boolean>, fromDataAnnotation?: boolean): boolean;
-    static CanSetSortInTempDb(indexBuilder: IConventionIndexBuilder, sortInTempDb: Nullable<System_Internal.Boolean>, fromDataAnnotation?: boolean): boolean;
-    static HasFillFactor<TEntity>(indexBuilder: IndexBuilder<TEntity>, fillFactor: int): IndexBuilder<TEntity>;
-    static HasFillFactor(indexBuilder: IConventionIndexBuilder, fillFactor: Nullable<System_Internal.Int32>, fromDataAnnotation?: boolean): IConventionIndexBuilder | undefined;
+    static CanSetDataCompression(indexBuilder: IConventionIndexBuilder, dataCompressionType: Nullable_1<DataCompressionType>, fromDataAnnotation?: boolean): boolean;
+    static CanSetFillFactor(indexBuilder: IConventionIndexBuilder, fillFactor: Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): boolean;
+    static CanSetIncludeProperties(indexBuilder: IConventionIndexBuilder, propertyNames: IReadOnlyList_1<System_Internal.String>, fromDataAnnotation?: boolean): boolean;
+    static CanSetIsClustered(indexBuilder: IConventionIndexBuilder, clustered: Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): boolean;
+    static CanSetIsCreatedOnline(indexBuilder: IConventionIndexBuilder, createdOnline: Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): boolean;
+    static CanSetSortInTempDb(indexBuilder: IConventionIndexBuilder, sortInTempDb: Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): boolean;
+    static HasFillFactor<TEntity>(indexBuilder: IndexBuilder_1<TEntity>, fillFactor: int): IndexBuilder_1<TEntity>;
+    static HasFillFactor(indexBuilder: IConventionIndexBuilder, fillFactor: Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): IConventionIndexBuilder | undefined;
     static HasFillFactor(indexBuilder: IndexBuilder, fillFactor: int): IndexBuilder;
-    static IncludeProperties<TEntity>(indexBuilder: IndexBuilder<TEntity>, includeExpression: Expression<Func<TEntity, unknown>>): IndexBuilder<TEntity>;
-    static IncludeProperties<TEntity>(indexBuilder: IndexBuilder<TEntity>, ...propertyNames: string[]): IndexBuilder<TEntity>;
-    static IncludeProperties(indexBuilder: IConventionIndexBuilder, propertyNames: IReadOnlyList<System_Internal.String>, fromDataAnnotation?: boolean): IConventionIndexBuilder | undefined;
+    static IncludeProperties<TEntity>(indexBuilder: IndexBuilder_1<TEntity>, includeExpression: Expression_1<Func_2<TEntity, unknown>>): IndexBuilder_1<TEntity>;
+    static IncludeProperties<TEntity>(indexBuilder: IndexBuilder_1<TEntity>, ...propertyNames: string[]): IndexBuilder_1<TEntity>;
+    static IncludeProperties(indexBuilder: IConventionIndexBuilder, propertyNames: IReadOnlyList_1<System_Internal.String>, fromDataAnnotation?: boolean): IConventionIndexBuilder | undefined;
     static IncludeProperties(indexBuilder: IndexBuilder, ...propertyNames: string[]): IndexBuilder;
-    static IsClustered<TEntity>(indexBuilder: IndexBuilder<TEntity>, clustered?: boolean): IndexBuilder<TEntity>;
-    static IsClustered(indexBuilder: IConventionIndexBuilder, clustered: Nullable<System_Internal.Boolean>, fromDataAnnotation?: boolean): IConventionIndexBuilder | undefined;
+    static IsClustered<TEntity>(indexBuilder: IndexBuilder_1<TEntity>, clustered?: boolean): IndexBuilder_1<TEntity>;
+    static IsClustered(indexBuilder: IConventionIndexBuilder, clustered: Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): IConventionIndexBuilder | undefined;
     static IsClustered(indexBuilder: IndexBuilder, clustered?: boolean): IndexBuilder;
-    static IsCreatedOnline<TEntity>(indexBuilder: IndexBuilder<TEntity>, createdOnline?: boolean): IndexBuilder<TEntity>;
-    static IsCreatedOnline(indexBuilder: IConventionIndexBuilder, createdOnline: Nullable<System_Internal.Boolean>, fromDataAnnotation?: boolean): IConventionIndexBuilder | undefined;
+    static IsCreatedOnline<TEntity>(indexBuilder: IndexBuilder_1<TEntity>, createdOnline?: boolean): IndexBuilder_1<TEntity>;
+    static IsCreatedOnline(indexBuilder: IConventionIndexBuilder, createdOnline: Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): IConventionIndexBuilder | undefined;
     static IsCreatedOnline(indexBuilder: IndexBuilder, createdOnline?: boolean): IndexBuilder;
-    static SortInTempDb<TEntity>(indexBuilder: IndexBuilder<TEntity>, sortInTempDb?: boolean): IndexBuilder<TEntity>;
-    static SortInTempDb(indexBuilder: IConventionIndexBuilder, sortInTempDb: Nullable<System_Internal.Boolean>, fromDataAnnotation?: boolean): IConventionIndexBuilder | undefined;
+    static SortInTempDb<TEntity>(indexBuilder: IndexBuilder_1<TEntity>, sortInTempDb?: boolean): IndexBuilder_1<TEntity>;
+    static SortInTempDb(indexBuilder: IConventionIndexBuilder, sortInTempDb: Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): IConventionIndexBuilder | undefined;
     static SortInTempDb(indexBuilder: IndexBuilder, sortInTempDb?: boolean): IndexBuilder;
-    static UseDataCompression<TEntity>(indexBuilder: IndexBuilder<TEntity>, dataCompressionType: DataCompressionType): IndexBuilder<TEntity>;
-    static UseDataCompression(indexBuilder: IConventionIndexBuilder, dataCompressionType: Nullable<DataCompressionType>, fromDataAnnotation?: boolean): IConventionIndexBuilder | undefined;
+    static UseDataCompression<TEntity>(indexBuilder: IndexBuilder_1<TEntity>, dataCompressionType: DataCompressionType): IndexBuilder_1<TEntity>;
+    static UseDataCompression(indexBuilder: IConventionIndexBuilder, dataCompressionType: Nullable_1<DataCompressionType>, fromDataAnnotation?: boolean): IConventionIndexBuilder | undefined;
     static UseDataCompression(indexBuilder: IndexBuilder, dataCompressionType: DataCompressionType): IndexBuilder;
 }
 
@@ -388,49 +388,49 @@ export abstract class SqlServerIndexBuilderExtensions$instance {
 export type SqlServerIndexBuilderExtensions = SqlServerIndexBuilderExtensions$instance;
 
 export abstract class SqlServerIndexExtensions$instance {
-    static GetDataCompression(index: IReadOnlyIndex, storeObject: StoreObjectIdentifier): Nullable<DataCompressionType>;
-    static GetDataCompression(index: IReadOnlyIndex): Nullable<DataCompressionType>;
-    static GetDataCompressionConfigurationSource(index: IConventionIndex): Nullable<ConfigurationSource>;
-    static GetFillFactor(index: IReadOnlyIndex, storeObject: StoreObjectIdentifier): Nullable<System_Internal.Int32>;
-    static GetFillFactor(index: IReadOnlyIndex): Nullable<System_Internal.Int32>;
-    static GetFillFactorConfigurationSource(index: IConventionIndex): Nullable<ConfigurationSource>;
-    static GetIncludeProperties(index: IReadOnlyIndex, storeObject: StoreObjectIdentifier): IReadOnlyList<System_Internal.String> | undefined;
-    static GetIncludeProperties(index: IReadOnlyIndex): IReadOnlyList<System_Internal.String> | undefined;
-    static GetIncludePropertiesConfigurationSource(index: IConventionIndex): Nullable<ConfigurationSource>;
-    static GetIsClusteredConfigurationSource(property: IConventionIndex): Nullable<ConfigurationSource>;
-    static GetIsCreatedOnlineConfigurationSource(index: IConventionIndex): Nullable<ConfigurationSource>;
-    static GetSortInTempDb(index: IReadOnlyIndex, storeObject: StoreObjectIdentifier): Nullable<System_Internal.Boolean>;
-    static GetSortInTempDb(index: IReadOnlyIndex): Nullable<System_Internal.Boolean>;
-    static GetSortInTempDbConfigurationSource(index: IConventionIndex): Nullable<ConfigurationSource>;
-    static IsClustered(index: IReadOnlyIndex, storeObject: StoreObjectIdentifier): Nullable<System_Internal.Boolean>;
-    static IsClustered(index: IReadOnlyIndex): Nullable<System_Internal.Boolean>;
-    static IsCreatedOnline(index: IReadOnlyIndex, storeObject: StoreObjectIdentifier): Nullable<System_Internal.Boolean>;
-    static IsCreatedOnline(index: IReadOnlyIndex): Nullable<System_Internal.Boolean>;
-    static SetDataCompression(index: IConventionIndex, dataCompression: Nullable<DataCompressionType>, fromDataAnnotation?: boolean): Nullable<DataCompressionType>;
-    static SetDataCompression(index: IMutableIndex, dataCompression: Nullable<DataCompressionType>): void;
-    static SetFillFactor(index: IConventionIndex, fillFactor: Nullable<System_Internal.Int32>, fromDataAnnotation?: boolean): Nullable<System_Internal.Int32>;
-    static SetFillFactor(index: IMutableIndex, fillFactor: Nullable<System_Internal.Int32>): void;
-    static SetIncludeProperties(index: IConventionIndex, properties: IReadOnlyList<System_Internal.String>, fromDataAnnotation?: boolean): IReadOnlyList<System_Internal.String> | undefined;
-    static SetIncludeProperties(index: IMutableIndex, properties: IReadOnlyList<System_Internal.String>): void;
-    static SetIsClustered(index: IConventionIndex, value: Nullable<System_Internal.Boolean>, fromDataAnnotation?: boolean): Nullable<System_Internal.Boolean>;
-    static SetIsClustered(index: IMutableIndex, value: Nullable<System_Internal.Boolean>): void;
-    static SetIsCreatedOnline(index: IConventionIndex, createdOnline: Nullable<System_Internal.Boolean>, fromDataAnnotation?: boolean): Nullable<System_Internal.Boolean>;
-    static SetIsCreatedOnline(index: IMutableIndex, createdOnline: Nullable<System_Internal.Boolean>): void;
-    static SetSortInTempDb(index: IConventionIndex, sortInTempDb: Nullable<System_Internal.Boolean>, fromDataAnnotation?: boolean): Nullable<System_Internal.Boolean>;
-    static SetSortInTempDb(index: IMutableIndex, sortInTempDb: Nullable<System_Internal.Boolean>): void;
+    static GetDataCompression(index: IReadOnlyIndex, storeObject: StoreObjectIdentifier): Nullable_1<DataCompressionType>;
+    static GetDataCompression(index: IReadOnlyIndex): Nullable_1<DataCompressionType>;
+    static GetDataCompressionConfigurationSource(index: IConventionIndex): Nullable_1<ConfigurationSource>;
+    static GetFillFactor(index: IReadOnlyIndex, storeObject: StoreObjectIdentifier): Nullable_1<System_Internal.Int32>;
+    static GetFillFactor(index: IReadOnlyIndex): Nullable_1<System_Internal.Int32>;
+    static GetFillFactorConfigurationSource(index: IConventionIndex): Nullable_1<ConfigurationSource>;
+    static GetIncludeProperties(index: IReadOnlyIndex, storeObject: StoreObjectIdentifier): IReadOnlyList_1<System_Internal.String> | undefined;
+    static GetIncludeProperties(index: IReadOnlyIndex): IReadOnlyList_1<System_Internal.String> | undefined;
+    static GetIncludePropertiesConfigurationSource(index: IConventionIndex): Nullable_1<ConfigurationSource>;
+    static GetIsClusteredConfigurationSource(property: IConventionIndex): Nullable_1<ConfigurationSource>;
+    static GetIsCreatedOnlineConfigurationSource(index: IConventionIndex): Nullable_1<ConfigurationSource>;
+    static GetSortInTempDb(index: IReadOnlyIndex, storeObject: StoreObjectIdentifier): Nullable_1<System_Internal.Boolean>;
+    static GetSortInTempDb(index: IReadOnlyIndex): Nullable_1<System_Internal.Boolean>;
+    static GetSortInTempDbConfigurationSource(index: IConventionIndex): Nullable_1<ConfigurationSource>;
+    static IsClustered(index: IReadOnlyIndex, storeObject: StoreObjectIdentifier): Nullable_1<System_Internal.Boolean>;
+    static IsClustered(index: IReadOnlyIndex): Nullable_1<System_Internal.Boolean>;
+    static IsCreatedOnline(index: IReadOnlyIndex, storeObject: StoreObjectIdentifier): Nullable_1<System_Internal.Boolean>;
+    static IsCreatedOnline(index: IReadOnlyIndex): Nullable_1<System_Internal.Boolean>;
+    static SetDataCompression(index: IConventionIndex, dataCompression: Nullable_1<DataCompressionType>, fromDataAnnotation?: boolean): Nullable_1<DataCompressionType>;
+    static SetDataCompression(index: IMutableIndex, dataCompression: Nullable_1<DataCompressionType>): void;
+    static SetFillFactor(index: IConventionIndex, fillFactor: Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): Nullable_1<System_Internal.Int32>;
+    static SetFillFactor(index: IMutableIndex, fillFactor: Nullable_1<System_Internal.Int32>): void;
+    static SetIncludeProperties(index: IConventionIndex, properties: IReadOnlyList_1<System_Internal.String>, fromDataAnnotation?: boolean): IReadOnlyList_1<System_Internal.String> | undefined;
+    static SetIncludeProperties(index: IMutableIndex, properties: IReadOnlyList_1<System_Internal.String>): void;
+    static SetIsClustered(index: IConventionIndex, value: Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): Nullable_1<System_Internal.Boolean>;
+    static SetIsClustered(index: IMutableIndex, value: Nullable_1<System_Internal.Boolean>): void;
+    static SetIsCreatedOnline(index: IConventionIndex, createdOnline: Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): Nullable_1<System_Internal.Boolean>;
+    static SetIsCreatedOnline(index: IMutableIndex, createdOnline: Nullable_1<System_Internal.Boolean>): void;
+    static SetSortInTempDb(index: IConventionIndex, sortInTempDb: Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): Nullable_1<System_Internal.Boolean>;
+    static SetSortInTempDb(index: IMutableIndex, sortInTempDb: Nullable_1<System_Internal.Boolean>): void;
 }
 
 
 export type SqlServerIndexExtensions = SqlServerIndexExtensions$instance;
 
 export abstract class SqlServerKeyBuilderExtensions$instance {
-    static CanSetFillFactor(keyBuilder: IConventionKeyBuilder, fillFactor: Nullable<System_Internal.Int32>, fromDataAnnotation?: boolean): boolean;
-    static CanSetIsClustered(keyBuilder: IConventionKeyBuilder, clustered: Nullable<System_Internal.Boolean>, fromDataAnnotation?: boolean): boolean;
-    static HasFillFactor<TEntity>(keyBuilder: KeyBuilder<TEntity>, fillFactor: int): KeyBuilder<TEntity>;
-    static HasFillFactor(keyBuilder: IConventionKeyBuilder, fillFactor: Nullable<System_Internal.Int32>, fromDataAnnotation?: boolean): IConventionKeyBuilder | undefined;
+    static CanSetFillFactor(keyBuilder: IConventionKeyBuilder, fillFactor: Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): boolean;
+    static CanSetIsClustered(keyBuilder: IConventionKeyBuilder, clustered: Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): boolean;
+    static HasFillFactor<TEntity>(keyBuilder: KeyBuilder_1<TEntity>, fillFactor: int): KeyBuilder_1<TEntity>;
+    static HasFillFactor(keyBuilder: IConventionKeyBuilder, fillFactor: Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): IConventionKeyBuilder | undefined;
     static HasFillFactor(keyBuilder: KeyBuilder, fillFactor: int): KeyBuilder;
-    static IsClustered<TEntity>(keyBuilder: KeyBuilder<TEntity>, clustered?: boolean): KeyBuilder<TEntity>;
-    static IsClustered(keyBuilder: IConventionKeyBuilder, clustered: Nullable<System_Internal.Boolean>, fromDataAnnotation?: boolean): IConventionKeyBuilder | undefined;
+    static IsClustered<TEntity>(keyBuilder: KeyBuilder_1<TEntity>, clustered?: boolean): KeyBuilder_1<TEntity>;
+    static IsClustered(keyBuilder: IConventionKeyBuilder, clustered: Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): IConventionKeyBuilder | undefined;
     static IsClustered(keyBuilder: KeyBuilder, clustered?: boolean): KeyBuilder;
 }
 
@@ -438,16 +438,16 @@ export abstract class SqlServerKeyBuilderExtensions$instance {
 export type SqlServerKeyBuilderExtensions = SqlServerKeyBuilderExtensions$instance;
 
 export abstract class SqlServerKeyExtensions$instance {
-    static GetFillFactor(key: IReadOnlyKey, storeObject: StoreObjectIdentifier): Nullable<System_Internal.Int32>;
-    static GetFillFactor(key: IReadOnlyKey): Nullable<System_Internal.Int32>;
-    static GetFillFactorConfigurationSource(key: IConventionKey): Nullable<ConfigurationSource>;
-    static GetIsClusteredConfigurationSource(key: IConventionKey): Nullable<ConfigurationSource>;
-    static IsClustered(key: IReadOnlyKey, storeObject: StoreObjectIdentifier): Nullable<System_Internal.Boolean>;
-    static IsClustered(key: IReadOnlyKey): Nullable<System_Internal.Boolean>;
-    static SetFillFactor(key: IConventionKey, fillFactor: Nullable<System_Internal.Int32>, fromDataAnnotation?: boolean): Nullable<System_Internal.Int32>;
-    static SetFillFactor(key: IMutableKey, fillFactor: Nullable<System_Internal.Int32>): void;
-    static SetIsClustered(key: IConventionKey, clustered: Nullable<System_Internal.Boolean>, fromDataAnnotation?: boolean): Nullable<System_Internal.Boolean>;
-    static SetIsClustered(key: IMutableKey, clustered: Nullable<System_Internal.Boolean>): void;
+    static GetFillFactor(key: IReadOnlyKey, storeObject: StoreObjectIdentifier): Nullable_1<System_Internal.Int32>;
+    static GetFillFactor(key: IReadOnlyKey): Nullable_1<System_Internal.Int32>;
+    static GetFillFactorConfigurationSource(key: IConventionKey): Nullable_1<ConfigurationSource>;
+    static GetIsClusteredConfigurationSource(key: IConventionKey): Nullable_1<ConfigurationSource>;
+    static IsClustered(key: IReadOnlyKey, storeObject: StoreObjectIdentifier): Nullable_1<System_Internal.Boolean>;
+    static IsClustered(key: IReadOnlyKey): Nullable_1<System_Internal.Boolean>;
+    static SetFillFactor(key: IConventionKey, fillFactor: Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): Nullable_1<System_Internal.Int32>;
+    static SetFillFactor(key: IMutableKey, fillFactor: Nullable_1<System_Internal.Int32>): void;
+    static SetIsClustered(key: IConventionKey, clustered: Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): Nullable_1<System_Internal.Boolean>;
+    static SetIsClustered(key: IMutableKey, clustered: Nullable_1<System_Internal.Boolean>): void;
 }
 
 
@@ -456,24 +456,24 @@ export type SqlServerKeyExtensions = SqlServerKeyExtensions$instance;
 export abstract class SqlServerModelBuilderExtensions$instance {
     static CanSetDatabaseMaxSize(modelBuilder: IConventionModelBuilder, maxSize: string, fromDataAnnotation?: boolean): boolean;
     static CanSetHiLoSequence(modelBuilder: IConventionModelBuilder, name: string, schema: string, fromDataAnnotation?: boolean): boolean;
-    static CanSetIdentityColumnIncrement(modelBuilder: IConventionModelBuilder, increment: Nullable<System_Internal.Int32>, fromDataAnnotation?: boolean): boolean;
-    static CanSetIdentityColumnSeed(modelBuilder: IConventionModelBuilder, seed: Nullable<System_Internal.Int64>, fromDataAnnotation?: boolean): boolean;
+    static CanSetIdentityColumnIncrement(modelBuilder: IConventionModelBuilder, increment: Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): boolean;
+    static CanSetIdentityColumnSeed(modelBuilder: IConventionModelBuilder, seed: Nullable_1<System_Internal.Int64>, fromDataAnnotation?: boolean): boolean;
     static CanSetPerformanceLevelSql(modelBuilder: IConventionModelBuilder, performanceLevel: string, fromDataAnnotation?: boolean): boolean;
     static CanSetServiceTierSql(modelBuilder: IConventionModelBuilder, serviceTier: string, fromDataAnnotation?: boolean): boolean;
-    static CanSetValueGenerationStrategy(modelBuilder: IConventionModelBuilder, valueGenerationStrategy: Nullable<SqlServerValueGenerationStrategy>, fromDataAnnotation?: boolean): boolean;
+    static CanSetValueGenerationStrategy(modelBuilder: IConventionModelBuilder, valueGenerationStrategy: Nullable_1<SqlServerValueGenerationStrategy>, fromDataAnnotation?: boolean): boolean;
     static CanUseNamedDefaultConstraints(modelBuilder: IConventionModelBuilder, value: boolean, fromDataAnnotation?: boolean): boolean;
     static HasDatabaseMaxSize(modelBuilder: IConventionModelBuilder, maxSize: string, fromDataAnnotation?: boolean): IConventionModelBuilder | undefined;
     static HasDatabaseMaxSize(modelBuilder: ModelBuilder, maxSize: string): ModelBuilder;
     static HasHiLoSequence(modelBuilder: IConventionModelBuilder, name: string, schema: string, fromDataAnnotation?: boolean): IConventionSequenceBuilder | undefined;
-    static HasIdentityColumnIncrement(modelBuilder: IConventionModelBuilder, increment: Nullable<System_Internal.Int32>, fromDataAnnotation?: boolean): IConventionModelBuilder | undefined;
-    static HasIdentityColumnSeed(modelBuilder: IConventionModelBuilder, seed: Nullable<System_Internal.Int64>, fromDataAnnotation?: boolean): IConventionModelBuilder | undefined;
+    static HasIdentityColumnIncrement(modelBuilder: IConventionModelBuilder, increment: Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): IConventionModelBuilder | undefined;
+    static HasIdentityColumnSeed(modelBuilder: IConventionModelBuilder, seed: Nullable_1<System_Internal.Int64>, fromDataAnnotation?: boolean): IConventionModelBuilder | undefined;
     static HasPerformanceLevel(modelBuilder: ModelBuilder, performanceLevel: string): ModelBuilder;
     static HasPerformanceLevelSql(modelBuilder: IConventionModelBuilder, performanceLevel: string, fromDataAnnotation?: boolean): IConventionModelBuilder | undefined;
     static HasPerformanceLevelSql(modelBuilder: ModelBuilder, performanceLevel: string): ModelBuilder;
     static HasServiceTier(modelBuilder: ModelBuilder, serviceTier: string): ModelBuilder;
     static HasServiceTierSql(modelBuilder: IConventionModelBuilder, serviceTier: string, fromDataAnnotation?: boolean): IConventionModelBuilder | undefined;
     static HasServiceTierSql(modelBuilder: ModelBuilder, serviceTier: string): ModelBuilder;
-    static HasValueGenerationStrategy(modelBuilder: IConventionModelBuilder, valueGenerationStrategy: Nullable<SqlServerValueGenerationStrategy>, fromDataAnnotation?: boolean): IConventionModelBuilder | undefined;
+    static HasValueGenerationStrategy(modelBuilder: IConventionModelBuilder, valueGenerationStrategy: Nullable_1<SqlServerValueGenerationStrategy>, fromDataAnnotation?: boolean): IConventionModelBuilder | undefined;
     static UseHiLo(modelBuilder: ModelBuilder, name?: string, schema?: string): ModelBuilder;
     static UseIdentityColumns(modelBuilder: ModelBuilder, seed: int, increment?: int): ModelBuilder;
     static UseIdentityColumns(modelBuilder: ModelBuilder, seed?: long, increment?: int): ModelBuilder;
@@ -489,35 +489,35 @@ export abstract class SqlServerModelExtensions$instance {
     static readonly DefaultHiLoSequenceName: string;
     static readonly DefaultSequenceNameSuffix: string;
     static GetDatabaseMaxSize(model: IReadOnlyModel): string | undefined;
-    static GetDatabaseMaxSizeConfigurationSource(model: IConventionModel): Nullable<ConfigurationSource>;
+    static GetDatabaseMaxSizeConfigurationSource(model: IConventionModel): Nullable_1<ConfigurationSource>;
     static GetHiLoSequenceName(model: IReadOnlyModel): string;
-    static GetHiLoSequenceNameConfigurationSource(model: IConventionModel): Nullable<ConfigurationSource>;
+    static GetHiLoSequenceNameConfigurationSource(model: IConventionModel): Nullable_1<ConfigurationSource>;
     static GetHiLoSequenceSchema(model: IReadOnlyModel): string | undefined;
-    static GetHiLoSequenceSchemaConfigurationSource(model: IConventionModel): Nullable<ConfigurationSource>;
+    static GetHiLoSequenceSchemaConfigurationSource(model: IConventionModel): Nullable_1<ConfigurationSource>;
     static GetIdentityIncrement(model: IReadOnlyModel): int;
-    static GetIdentityIncrementConfigurationSource(model: IConventionModel): Nullable<ConfigurationSource>;
+    static GetIdentityIncrementConfigurationSource(model: IConventionModel): Nullable_1<ConfigurationSource>;
     static GetIdentitySeed(model: IReadOnlyModel): long;
-    static GetIdentitySeedConfigurationSource(model: IConventionModel): Nullable<ConfigurationSource>;
+    static GetIdentitySeedConfigurationSource(model: IConventionModel): Nullable_1<ConfigurationSource>;
     static GetPerformanceLevelSql(model: IReadOnlyModel): string | undefined;
-    static GetPerformanceLevelSqlConfigurationSource(model: IConventionModel): Nullable<ConfigurationSource>;
+    static GetPerformanceLevelSqlConfigurationSource(model: IConventionModel): Nullable_1<ConfigurationSource>;
     static GetSequenceNameSuffix(model: IReadOnlyModel): string;
-    static GetSequenceNameSuffixConfigurationSource(model: IConventionModel): Nullable<ConfigurationSource>;
+    static GetSequenceNameSuffixConfigurationSource(model: IConventionModel): Nullable_1<ConfigurationSource>;
     static GetSequenceSchema(model: IReadOnlyModel): string | undefined;
-    static GetSequenceSchemaConfigurationSource(model: IConventionModel): Nullable<ConfigurationSource>;
+    static GetSequenceSchemaConfigurationSource(model: IConventionModel): Nullable_1<ConfigurationSource>;
     static GetServiceTierSql(model: IReadOnlyModel): string | undefined;
-    static GetServiceTierSqlConfigurationSource(model: IConventionModel): Nullable<ConfigurationSource>;
-    static GetValueGenerationStrategy(model: IReadOnlyModel): Nullable<SqlServerValueGenerationStrategy>;
-    static GetValueGenerationStrategyConfigurationSource(model: IConventionModel): Nullable<ConfigurationSource>;
+    static GetServiceTierSqlConfigurationSource(model: IConventionModel): Nullable_1<ConfigurationSource>;
+    static GetValueGenerationStrategy(model: IReadOnlyModel): Nullable_1<SqlServerValueGenerationStrategy>;
+    static GetValueGenerationStrategyConfigurationSource(model: IConventionModel): Nullable_1<ConfigurationSource>;
     static SetDatabaseMaxSize(model: IConventionModel, value: string, fromDataAnnotation?: boolean): string | undefined;
     static SetDatabaseMaxSize(model: IMutableModel, value: string): void;
     static SetHiLoSequenceName(model: IConventionModel, name: string, fromDataAnnotation?: boolean): string | undefined;
     static SetHiLoSequenceName(model: IMutableModel, name: string): void;
     static SetHiLoSequenceSchema(model: IConventionModel, value: string, fromDataAnnotation?: boolean): string | undefined;
     static SetHiLoSequenceSchema(model: IMutableModel, value: string): void;
-    static SetIdentityIncrement(model: IConventionModel, increment: Nullable<System_Internal.Int32>, fromDataAnnotation?: boolean): Nullable<System_Internal.Int32>;
-    static SetIdentityIncrement(model: IMutableModel, increment: Nullable<System_Internal.Int32>): void;
-    static SetIdentitySeed(model: IConventionModel, seed: Nullable<System_Internal.Int64>, fromDataAnnotation?: boolean): Nullable<System_Internal.Int64>;
-    static SetIdentitySeed(model: IMutableModel, seed: Nullable<System_Internal.Int64>): void;
+    static SetIdentityIncrement(model: IConventionModel, increment: Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): Nullable_1<System_Internal.Int32>;
+    static SetIdentityIncrement(model: IMutableModel, increment: Nullable_1<System_Internal.Int32>): void;
+    static SetIdentitySeed(model: IConventionModel, seed: Nullable_1<System_Internal.Int64>, fromDataAnnotation?: boolean): Nullable_1<System_Internal.Int64>;
+    static SetIdentitySeed(model: IMutableModel, seed: Nullable_1<System_Internal.Int64>): void;
     static SetPerformanceLevelSql(model: IConventionModel, value: string, fromDataAnnotation?: boolean): string | undefined;
     static SetPerformanceLevelSql(model: IMutableModel, value: string): void;
     static SetSequenceNameSuffix(model: IConventionModel, name: string, fromDataAnnotation?: boolean): string | undefined;
@@ -526,8 +526,8 @@ export abstract class SqlServerModelExtensions$instance {
     static SetSequenceSchema(model: IMutableModel, value: string): void;
     static SetServiceTierSql(model: IConventionModel, value: string, fromDataAnnotation?: boolean): string | undefined;
     static SetServiceTierSql(model: IMutableModel, value: string): void;
-    static SetValueGenerationStrategy(model: IConventionModel, value: Nullable<SqlServerValueGenerationStrategy>, fromDataAnnotation?: boolean): Nullable<SqlServerValueGenerationStrategy>;
-    static SetValueGenerationStrategy(model: IMutableModel, value: Nullable<SqlServerValueGenerationStrategy>): void;
+    static SetValueGenerationStrategy(model: IConventionModel, value: Nullable_1<SqlServerValueGenerationStrategy>, fromDataAnnotation?: boolean): Nullable_1<SqlServerValueGenerationStrategy>;
+    static SetValueGenerationStrategy(model: IMutableModel, value: Nullable_1<SqlServerValueGenerationStrategy>): void;
 }
 
 
@@ -535,11 +535,11 @@ export type SqlServerModelExtensions = SqlServerModelExtensions$instance;
 
 export abstract class SqlServerPrimitiveCollectionBuilderExtensions$instance {
     static HasDefaultValue(primitiveCollectionBuilder: PrimitiveCollectionBuilder, value: unknown, defaultConstraintName: string): PrimitiveCollectionBuilder;
-    static HasDefaultValue<TProperty>(primitiveCollectionBuilder: PrimitiveCollectionBuilder<TProperty>, value: unknown, defaultConstraintName: string): PrimitiveCollectionBuilder<TProperty>;
+    static HasDefaultValue<TProperty>(primitiveCollectionBuilder: PrimitiveCollectionBuilder_1<TProperty>, value: unknown, defaultConstraintName: string): PrimitiveCollectionBuilder_1<TProperty>;
     static HasDefaultValueSql(primitiveCollectionBuilder: PrimitiveCollectionBuilder, sql: string, defaultConstraintName: string): PrimitiveCollectionBuilder;
-    static HasDefaultValueSql<TProperty>(primitiveCollectionBuilder: PrimitiveCollectionBuilder<TProperty>, sql: string, defaultConstraintName: string): PrimitiveCollectionBuilder<TProperty>;
+    static HasDefaultValueSql<TProperty>(primitiveCollectionBuilder: PrimitiveCollectionBuilder_1<TProperty>, sql: string, defaultConstraintName: string): PrimitiveCollectionBuilder_1<TProperty>;
     static IsSparse(primitiveCollectionBuilder: PrimitiveCollectionBuilder, sparse?: boolean): PrimitiveCollectionBuilder;
-    static IsSparse<TProperty>(primitiveCollectionBuilder: PrimitiveCollectionBuilder<TProperty>, sparse?: boolean): PrimitiveCollectionBuilder<TProperty>;
+    static IsSparse<TProperty>(primitiveCollectionBuilder: PrimitiveCollectionBuilder_1<TProperty>, sparse?: boolean): PrimitiveCollectionBuilder_1<TProperty>;
 }
 
 
@@ -549,41 +549,41 @@ export abstract class SqlServerPropertyBuilderExtensions$instance {
     static CanSetDefaultValue(propertyBuilder: IConventionPropertyBuilder, value: unknown, defaultConstraintName: string, fromDataAnnotation?: boolean): boolean;
     static CanSetDefaultValueSql(propertyBuilder: IConventionPropertyBuilder, sql: string, defaultConstraintName: string, fromDataAnnotation?: boolean): boolean;
     static CanSetHiLoSequence(propertyBuilder: IConventionPropertyBuilder, name: string, schema: string, fromDataAnnotation?: boolean): boolean;
-    static CanSetIdentityColumnIncrement(propertyBuilder: IConventionPropertyBuilder, increment: Nullable<System_Internal.Int32>, storeObject: StoreObjectIdentifier, fromDataAnnotation?: boolean): boolean;
-    static CanSetIdentityColumnIncrement(propertyBuilder: IConventionPropertyBuilder, increment: Nullable<System_Internal.Int32>, fromDataAnnotation?: boolean): boolean;
-    static CanSetIdentityColumnSeed(propertyBuilder: IConventionPropertyBuilder, seed: Nullable<System_Internal.Int64>, storeObject: StoreObjectIdentifier, fromDataAnnotation?: boolean): boolean;
-    static CanSetIdentityColumnSeed(propertyBuilder: IConventionPropertyBuilder, seed: Nullable<System_Internal.Int64>, fromDataAnnotation?: boolean): boolean;
-    static CanSetIsSparse(property: IConventionPropertyBuilder, sparse: Nullable<System_Internal.Boolean>, fromDataAnnotation?: boolean): boolean;
+    static CanSetIdentityColumnIncrement(propertyBuilder: IConventionPropertyBuilder, increment: Nullable_1<System_Internal.Int32>, storeObject: StoreObjectIdentifier, fromDataAnnotation?: boolean): boolean;
+    static CanSetIdentityColumnIncrement(propertyBuilder: IConventionPropertyBuilder, increment: Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): boolean;
+    static CanSetIdentityColumnSeed(propertyBuilder: IConventionPropertyBuilder, seed: Nullable_1<System_Internal.Int64>, storeObject: StoreObjectIdentifier, fromDataAnnotation?: boolean): boolean;
+    static CanSetIdentityColumnSeed(propertyBuilder: IConventionPropertyBuilder, seed: Nullable_1<System_Internal.Int64>, fromDataAnnotation?: boolean): boolean;
+    static CanSetIsSparse(property: IConventionPropertyBuilder, sparse: Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): boolean;
     static CanSetSequence(propertyBuilder: IConventionPropertyBuilder, name: string, schema: string, fromDataAnnotation?: boolean): boolean;
-    static CanSetValueGenerationStrategy(propertyBuilder: IConventionPropertyBuilder, valueGenerationStrategy: Nullable<SqlServerValueGenerationStrategy>, storeObject: StoreObjectIdentifier, fromDataAnnotation?: boolean): boolean;
-    static CanSetValueGenerationStrategy(propertyBuilder: IConventionPropertyBuilder, valueGenerationStrategy: Nullable<SqlServerValueGenerationStrategy>, fromDataAnnotation?: boolean): boolean;
+    static CanSetValueGenerationStrategy(propertyBuilder: IConventionPropertyBuilder, valueGenerationStrategy: Nullable_1<SqlServerValueGenerationStrategy>, storeObject: StoreObjectIdentifier, fromDataAnnotation?: boolean): boolean;
+    static CanSetValueGenerationStrategy(propertyBuilder: IConventionPropertyBuilder, valueGenerationStrategy: Nullable_1<SqlServerValueGenerationStrategy>, fromDataAnnotation?: boolean): boolean;
     static HasDefaultValue(propertyBuilder: IConventionPropertyBuilder, value: unknown, defaultConstraintName: string, fromDataAnnotation?: boolean): IConventionPropertyBuilder | undefined;
     static HasDefaultValue(propertyBuilder: PropertyBuilder, value: unknown, defaultConstraintName: string): PropertyBuilder;
-    static HasDefaultValue<TProperty>(propertyBuilder: PropertyBuilder<TProperty>, value: unknown, defaultConstraintName: string): PropertyBuilder<TProperty>;
+    static HasDefaultValue<TProperty>(propertyBuilder: PropertyBuilder_1<TProperty>, value: unknown, defaultConstraintName: string): PropertyBuilder_1<TProperty>;
     static HasDefaultValueSql(propertyBuilder: IConventionPropertyBuilder, sql: string, defaultConstraintName: string, fromDataAnnotation?: boolean): IConventionPropertyBuilder | undefined;
     static HasDefaultValueSql(propertyBuilder: PropertyBuilder, sql: string, defaultConstraintName: string): PropertyBuilder;
-    static HasDefaultValueSql<TProperty>(propertyBuilder: PropertyBuilder<TProperty>, sql: string, defaultConstraintName: string): PropertyBuilder<TProperty>;
+    static HasDefaultValueSql<TProperty>(propertyBuilder: PropertyBuilder_1<TProperty>, sql: string, defaultConstraintName: string): PropertyBuilder_1<TProperty>;
     static HasHiLoSequence(propertyBuilder: IConventionPropertyBuilder, name: string, schema: string, fromDataAnnotation?: boolean): IConventionSequenceBuilder | undefined;
-    static HasIdentityColumnIncrement(propertyBuilder: IConventionPropertyBuilder, increment: Nullable<System_Internal.Int32>, storeObject: StoreObjectIdentifier, fromDataAnnotation?: boolean): IConventionPropertyBuilder | undefined;
-    static HasIdentityColumnIncrement(propertyBuilder: IConventionPropertyBuilder, increment: Nullable<System_Internal.Int32>, fromDataAnnotation?: boolean): IConventionPropertyBuilder | undefined;
-    static HasIdentityColumnSeed(propertyBuilder: IConventionPropertyBuilder, seed: Nullable<System_Internal.Int64>, storeObject: StoreObjectIdentifier, fromDataAnnotation?: boolean): IConventionPropertyBuilder | undefined;
-    static HasIdentityColumnSeed(propertyBuilder: IConventionPropertyBuilder, seed: Nullable<System_Internal.Int64>, fromDataAnnotation?: boolean): IConventionPropertyBuilder | undefined;
+    static HasIdentityColumnIncrement(propertyBuilder: IConventionPropertyBuilder, increment: Nullable_1<System_Internal.Int32>, storeObject: StoreObjectIdentifier, fromDataAnnotation?: boolean): IConventionPropertyBuilder | undefined;
+    static HasIdentityColumnIncrement(propertyBuilder: IConventionPropertyBuilder, increment: Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): IConventionPropertyBuilder | undefined;
+    static HasIdentityColumnSeed(propertyBuilder: IConventionPropertyBuilder, seed: Nullable_1<System_Internal.Int64>, storeObject: StoreObjectIdentifier, fromDataAnnotation?: boolean): IConventionPropertyBuilder | undefined;
+    static HasIdentityColumnSeed(propertyBuilder: IConventionPropertyBuilder, seed: Nullable_1<System_Internal.Int64>, fromDataAnnotation?: boolean): IConventionPropertyBuilder | undefined;
     static HasSequence(propertyBuilder: IConventionPropertyBuilder, name: string, schema: string, fromDataAnnotation?: boolean): IConventionSequenceBuilder | undefined;
-    static HasValueGenerationStrategy(propertyBuilder: IConventionPropertyBuilder, valueGenerationStrategy: Nullable<SqlServerValueGenerationStrategy>, storeObject: StoreObjectIdentifier, fromDataAnnotation?: boolean): IConventionPropertyBuilder | undefined;
-    static HasValueGenerationStrategy(propertyBuilder: IConventionPropertyBuilder, valueGenerationStrategy: Nullable<SqlServerValueGenerationStrategy>, fromDataAnnotation?: boolean): IConventionPropertyBuilder | undefined;
-    static IsSparse(propertyBuilder: IConventionPropertyBuilder, sparse: Nullable<System_Internal.Boolean>, fromDataAnnotation?: boolean): IConventionPropertyBuilder | undefined;
+    static HasValueGenerationStrategy(propertyBuilder: IConventionPropertyBuilder, valueGenerationStrategy: Nullable_1<SqlServerValueGenerationStrategy>, storeObject: StoreObjectIdentifier, fromDataAnnotation?: boolean): IConventionPropertyBuilder | undefined;
+    static HasValueGenerationStrategy(propertyBuilder: IConventionPropertyBuilder, valueGenerationStrategy: Nullable_1<SqlServerValueGenerationStrategy>, fromDataAnnotation?: boolean): IConventionPropertyBuilder | undefined;
+    static IsSparse(propertyBuilder: IConventionPropertyBuilder, sparse: Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): IConventionPropertyBuilder | undefined;
     static IsSparse(propertyBuilder: PropertyBuilder, sparse?: boolean): PropertyBuilder;
-    static IsSparse<TProperty>(propertyBuilder: PropertyBuilder<TProperty>, sparse?: boolean): PropertyBuilder<TProperty>;
+    static IsSparse<TProperty>(propertyBuilder: PropertyBuilder_1<TProperty>, sparse?: boolean): PropertyBuilder_1<TProperty>;
     static UseHiLo(propertyBuilder: PropertyBuilder, name?: string, schema?: string): PropertyBuilder;
-    static UseHiLo<TProperty>(propertyBuilder: PropertyBuilder<TProperty>, name?: string, schema?: string): PropertyBuilder<TProperty>;
-    static UseIdentityColumn<TProperty>(columnBuilder: ColumnBuilder<TProperty>, seed?: long, increment?: int): ColumnBuilder<TProperty>;
+    static UseHiLo<TProperty>(propertyBuilder: PropertyBuilder_1<TProperty>, name?: string, schema?: string): PropertyBuilder_1<TProperty>;
+    static UseIdentityColumn<TProperty>(columnBuilder: ColumnBuilder_1<TProperty>, seed?: long, increment?: int): ColumnBuilder_1<TProperty>;
     static UseIdentityColumn(columnBuilder: ColumnBuilder, seed?: long, increment?: int): ColumnBuilder;
     static UseIdentityColumn(propertyBuilder: PropertyBuilder, seed: int, increment?: int): PropertyBuilder;
     static UseIdentityColumn(propertyBuilder: PropertyBuilder, seed?: long, increment?: int): PropertyBuilder;
-    static UseIdentityColumn<TProperty>(propertyBuilder: PropertyBuilder<TProperty>, seed: int, increment?: int): PropertyBuilder<TProperty>;
-    static UseIdentityColumn<TProperty>(propertyBuilder: PropertyBuilder<TProperty>, seed?: long, increment?: int): PropertyBuilder<TProperty>;
+    static UseIdentityColumn<TProperty>(propertyBuilder: PropertyBuilder_1<TProperty>, seed: int, increment?: int): PropertyBuilder_1<TProperty>;
+    static UseIdentityColumn<TProperty>(propertyBuilder: PropertyBuilder_1<TProperty>, seed?: long, increment?: int): PropertyBuilder_1<TProperty>;
     static UseSequence(propertyBuilder: PropertyBuilder, name?: string, schema?: string): PropertyBuilder;
-    static UseSequence<TProperty>(propertyBuilder: PropertyBuilder<TProperty>, name?: string, schema?: string): PropertyBuilder<TProperty>;
+    static UseSequence<TProperty>(propertyBuilder: PropertyBuilder_1<TProperty>, name?: string, schema?: string): PropertyBuilder_1<TProperty>;
 }
 
 
@@ -600,66 +600,66 @@ export abstract class SqlServerPropertyExtensions$instance {
     static FindSequence(property: IReadOnlyProperty): IReadOnlySequence | undefined;
     static GetHiLoSequenceName(property: IReadOnlyProperty, storeObject: StoreObjectIdentifier): string | undefined;
     static GetHiLoSequenceName(property: IReadOnlyProperty): string | undefined;
-    static GetHiLoSequenceNameConfigurationSource(property: IConventionProperty): Nullable<ConfigurationSource>;
+    static GetHiLoSequenceNameConfigurationSource(property: IConventionProperty): Nullable_1<ConfigurationSource>;
     static GetHiLoSequenceSchema(property: IReadOnlyProperty, storeObject: StoreObjectIdentifier): string | undefined;
     static GetHiLoSequenceSchema(property: IReadOnlyProperty): string | undefined;
-    static GetHiLoSequenceSchemaConfigurationSource(property: IConventionProperty): Nullable<ConfigurationSource>;
-    static GetIdentityIncrement(property: IReadOnlyProperty, storeObject: StoreObjectIdentifier): Nullable<System_Internal.Int32>;
-    static GetIdentityIncrement(property: IReadOnlyProperty): Nullable<System_Internal.Int32>;
-    static GetIdentityIncrement(overrides: IReadOnlyRelationalPropertyOverrides): Nullable<System_Internal.Int32>;
-    static GetIdentityIncrementConfigurationSource(property: IConventionProperty, storeObject: StoreObjectIdentifier): Nullable<ConfigurationSource>;
-    static GetIdentityIncrementConfigurationSource(property: IConventionProperty): Nullable<ConfigurationSource>;
-    static GetIdentityIncrementConfigurationSource(overrides: IConventionRelationalPropertyOverrides): Nullable<ConfigurationSource>;
-    static GetIdentitySeed(property: IReadOnlyProperty, storeObject: StoreObjectIdentifier): Nullable<System_Internal.Int64>;
-    static GetIdentitySeed(property: IReadOnlyProperty): Nullable<System_Internal.Int64>;
-    static GetIdentitySeed(overrides: IReadOnlyRelationalPropertyOverrides): Nullable<System_Internal.Int64>;
-    static GetIdentitySeedConfigurationSource(property: IConventionProperty, storeObject: StoreObjectIdentifier): Nullable<ConfigurationSource>;
-    static GetIdentitySeedConfigurationSource(property: IConventionProperty): Nullable<ConfigurationSource>;
-    static GetIdentitySeedConfigurationSource(overrides: IConventionRelationalPropertyOverrides): Nullable<ConfigurationSource>;
-    static GetIsSparseConfigurationSource(property: IConventionProperty): Nullable<ConfigurationSource>;
+    static GetHiLoSequenceSchemaConfigurationSource(property: IConventionProperty): Nullable_1<ConfigurationSource>;
+    static GetIdentityIncrement(property: IReadOnlyProperty, storeObject: StoreObjectIdentifier): Nullable_1<System_Internal.Int32>;
+    static GetIdentityIncrement(property: IReadOnlyProperty): Nullable_1<System_Internal.Int32>;
+    static GetIdentityIncrement(overrides: IReadOnlyRelationalPropertyOverrides): Nullable_1<System_Internal.Int32>;
+    static GetIdentityIncrementConfigurationSource(property: IConventionProperty, storeObject: StoreObjectIdentifier): Nullable_1<ConfigurationSource>;
+    static GetIdentityIncrementConfigurationSource(property: IConventionProperty): Nullable_1<ConfigurationSource>;
+    static GetIdentityIncrementConfigurationSource(overrides: IConventionRelationalPropertyOverrides): Nullable_1<ConfigurationSource>;
+    static GetIdentitySeed(property: IReadOnlyProperty, storeObject: StoreObjectIdentifier): Nullable_1<System_Internal.Int64>;
+    static GetIdentitySeed(property: IReadOnlyProperty): Nullable_1<System_Internal.Int64>;
+    static GetIdentitySeed(overrides: IReadOnlyRelationalPropertyOverrides): Nullable_1<System_Internal.Int64>;
+    static GetIdentitySeedConfigurationSource(property: IConventionProperty, storeObject: StoreObjectIdentifier): Nullable_1<ConfigurationSource>;
+    static GetIdentitySeedConfigurationSource(property: IConventionProperty): Nullable_1<ConfigurationSource>;
+    static GetIdentitySeedConfigurationSource(overrides: IConventionRelationalPropertyOverrides): Nullable_1<ConfigurationSource>;
+    static GetIsSparseConfigurationSource(property: IConventionProperty): Nullable_1<ConfigurationSource>;
     static GetSequenceName(property: IReadOnlyProperty, storeObject: StoreObjectIdentifier): string | undefined;
     static GetSequenceName(property: IReadOnlyProperty): string | undefined;
-    static GetSequenceNameConfigurationSource(property: IConventionProperty): Nullable<ConfigurationSource>;
+    static GetSequenceNameConfigurationSource(property: IConventionProperty): Nullable_1<ConfigurationSource>;
     static GetSequenceSchema(property: IReadOnlyProperty, storeObject: StoreObjectIdentifier): string | undefined;
     static GetSequenceSchema(property: IReadOnlyProperty): string | undefined;
-    static GetSequenceSchemaConfigurationSource(property: IConventionProperty): Nullable<ConfigurationSource>;
+    static GetSequenceSchemaConfigurationSource(property: IConventionProperty): Nullable_1<ConfigurationSource>;
     static GetValueGenerationStrategy(property: IReadOnlyProperty, storeObject: StoreObjectIdentifier): SqlServerValueGenerationStrategy;
     static GetValueGenerationStrategy(property: IReadOnlyProperty): SqlServerValueGenerationStrategy;
-    static GetValueGenerationStrategy(overrides: IReadOnlyRelationalPropertyOverrides): Nullable<SqlServerValueGenerationStrategy>;
-    static GetValueGenerationStrategyConfigurationSource(property: IConventionProperty, storeObject: StoreObjectIdentifier): Nullable<ConfigurationSource>;
-    static GetValueGenerationStrategyConfigurationSource(property: IConventionProperty): Nullable<ConfigurationSource>;
-    static GetValueGenerationStrategyConfigurationSource(overrides: IConventionRelationalPropertyOverrides): Nullable<ConfigurationSource>;
+    static GetValueGenerationStrategy(overrides: IReadOnlyRelationalPropertyOverrides): Nullable_1<SqlServerValueGenerationStrategy>;
+    static GetValueGenerationStrategyConfigurationSource(property: IConventionProperty, storeObject: StoreObjectIdentifier): Nullable_1<ConfigurationSource>;
+    static GetValueGenerationStrategyConfigurationSource(property: IConventionProperty): Nullable_1<ConfigurationSource>;
+    static GetValueGenerationStrategyConfigurationSource(overrides: IConventionRelationalPropertyOverrides): Nullable_1<ConfigurationSource>;
     static IsCompatibleWithValueGeneration(property: IReadOnlyProperty): boolean;
-    static IsSparse(property: IReadOnlyProperty, storeObject: StoreObjectIdentifier): Nullable<System_Internal.Boolean>;
-    static IsSparse(property: IReadOnlyProperty): Nullable<System_Internal.Boolean>;
+    static IsSparse(property: IReadOnlyProperty, storeObject: StoreObjectIdentifier): Nullable_1<System_Internal.Boolean>;
+    static IsSparse(property: IReadOnlyProperty): Nullable_1<System_Internal.Boolean>;
     static SetHiLoSequenceName(property: IConventionProperty, name: string, fromDataAnnotation?: boolean): string | undefined;
     static SetHiLoSequenceName(property: IMutableProperty, name: string): void;
     static SetHiLoSequenceSchema(property: IConventionProperty, schema: string, fromDataAnnotation?: boolean): string | undefined;
     static SetHiLoSequenceSchema(property: IMutableProperty, schema: string): void;
-    static SetIdentityIncrement(property: IConventionProperty, increment: Nullable<System_Internal.Int32>, storeObject: StoreObjectIdentifier, fromDataAnnotation?: boolean): Nullable<System_Internal.Int32>;
-    static SetIdentityIncrement(property: IConventionProperty, increment: Nullable<System_Internal.Int32>, fromDataAnnotation?: boolean): Nullable<System_Internal.Int32>;
-    static SetIdentityIncrement(overrides: IConventionRelationalPropertyOverrides, increment: Nullable<System_Internal.Int32>, fromDataAnnotation?: boolean): Nullable<System_Internal.Int32>;
-    static SetIdentityIncrement(property: IMutableProperty, increment: Nullable<System_Internal.Int32>, storeObject: StoreObjectIdentifier): void;
-    static SetIdentityIncrement(property: IMutableProperty, increment: Nullable<System_Internal.Int32>): void;
-    static SetIdentityIncrement(overrides: IMutableRelationalPropertyOverrides, increment: Nullable<System_Internal.Int32>): void;
-    static SetIdentitySeed(property: IConventionProperty, seed: Nullable<System_Internal.Int64>, storeObject: StoreObjectIdentifier, fromDataAnnotation?: boolean): Nullable<System_Internal.Int64>;
-    static SetIdentitySeed(property: IConventionProperty, seed: Nullable<System_Internal.Int64>, fromDataAnnotation?: boolean): Nullable<System_Internal.Int64>;
-    static SetIdentitySeed(overrides: IConventionRelationalPropertyOverrides, seed: Nullable<System_Internal.Int64>, fromDataAnnotation?: boolean): Nullable<System_Internal.Int64>;
-    static SetIdentitySeed(property: IMutableProperty, seed: Nullable<System_Internal.Int64>, storeObject: StoreObjectIdentifier): void;
-    static SetIdentitySeed(property: IMutableProperty, seed: Nullable<System_Internal.Int64>): void;
-    static SetIdentitySeed(overrides: IMutableRelationalPropertyOverrides, seed: Nullable<System_Internal.Int64>): void;
-    static SetIsSparse(property: IConventionProperty, sparse: Nullable<System_Internal.Boolean>, fromDataAnnotation?: boolean): Nullable<System_Internal.Boolean>;
-    static SetIsSparse(property: IMutableProperty, sparse: Nullable<System_Internal.Boolean>): void;
+    static SetIdentityIncrement(property: IConventionProperty, increment: Nullable_1<System_Internal.Int32>, storeObject: StoreObjectIdentifier, fromDataAnnotation?: boolean): Nullable_1<System_Internal.Int32>;
+    static SetIdentityIncrement(property: IConventionProperty, increment: Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): Nullable_1<System_Internal.Int32>;
+    static SetIdentityIncrement(overrides: IConventionRelationalPropertyOverrides, increment: Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): Nullable_1<System_Internal.Int32>;
+    static SetIdentityIncrement(property: IMutableProperty, increment: Nullable_1<System_Internal.Int32>, storeObject: StoreObjectIdentifier): void;
+    static SetIdentityIncrement(property: IMutableProperty, increment: Nullable_1<System_Internal.Int32>): void;
+    static SetIdentityIncrement(overrides: IMutableRelationalPropertyOverrides, increment: Nullable_1<System_Internal.Int32>): void;
+    static SetIdentitySeed(property: IConventionProperty, seed: Nullable_1<System_Internal.Int64>, storeObject: StoreObjectIdentifier, fromDataAnnotation?: boolean): Nullable_1<System_Internal.Int64>;
+    static SetIdentitySeed(property: IConventionProperty, seed: Nullable_1<System_Internal.Int64>, fromDataAnnotation?: boolean): Nullable_1<System_Internal.Int64>;
+    static SetIdentitySeed(overrides: IConventionRelationalPropertyOverrides, seed: Nullable_1<System_Internal.Int64>, fromDataAnnotation?: boolean): Nullable_1<System_Internal.Int64>;
+    static SetIdentitySeed(property: IMutableProperty, seed: Nullable_1<System_Internal.Int64>, storeObject: StoreObjectIdentifier): void;
+    static SetIdentitySeed(property: IMutableProperty, seed: Nullable_1<System_Internal.Int64>): void;
+    static SetIdentitySeed(overrides: IMutableRelationalPropertyOverrides, seed: Nullable_1<System_Internal.Int64>): void;
+    static SetIsSparse(property: IConventionProperty, sparse: Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): Nullable_1<System_Internal.Boolean>;
+    static SetIsSparse(property: IMutableProperty, sparse: Nullable_1<System_Internal.Boolean>): void;
     static SetSequenceName(property: IConventionProperty, name: string, fromDataAnnotation?: boolean): string | undefined;
     static SetSequenceName(property: IMutableProperty, name: string): void;
     static SetSequenceSchema(property: IConventionProperty, schema: string, fromDataAnnotation?: boolean): string | undefined;
     static SetSequenceSchema(property: IMutableProperty, schema: string): void;
-    static SetValueGenerationStrategy(property: IConventionProperty, value: Nullable<SqlServerValueGenerationStrategy>, storeObject: StoreObjectIdentifier, fromDataAnnotation?: boolean): Nullable<SqlServerValueGenerationStrategy>;
-    static SetValueGenerationStrategy(property: IConventionProperty, value: Nullable<SqlServerValueGenerationStrategy>, fromDataAnnotation?: boolean): Nullable<SqlServerValueGenerationStrategy>;
-    static SetValueGenerationStrategy(overrides: IConventionRelationalPropertyOverrides, value: Nullable<SqlServerValueGenerationStrategy>, fromDataAnnotation?: boolean): Nullable<SqlServerValueGenerationStrategy>;
-    static SetValueGenerationStrategy(property: IMutableProperty, value: Nullable<SqlServerValueGenerationStrategy>, storeObject: StoreObjectIdentifier): void;
-    static SetValueGenerationStrategy(property: IMutableProperty, value: Nullable<SqlServerValueGenerationStrategy>): void;
-    static SetValueGenerationStrategy(overrides: IMutableRelationalPropertyOverrides, value: Nullable<SqlServerValueGenerationStrategy>): void;
+    static SetValueGenerationStrategy(property: IConventionProperty, value: Nullable_1<SqlServerValueGenerationStrategy>, storeObject: StoreObjectIdentifier, fromDataAnnotation?: boolean): Nullable_1<SqlServerValueGenerationStrategy>;
+    static SetValueGenerationStrategy(property: IConventionProperty, value: Nullable_1<SqlServerValueGenerationStrategy>, fromDataAnnotation?: boolean): Nullable_1<SqlServerValueGenerationStrategy>;
+    static SetValueGenerationStrategy(overrides: IConventionRelationalPropertyOverrides, value: Nullable_1<SqlServerValueGenerationStrategy>, fromDataAnnotation?: boolean): Nullable_1<SqlServerValueGenerationStrategy>;
+    static SetValueGenerationStrategy(property: IMutableProperty, value: Nullable_1<SqlServerValueGenerationStrategy>, storeObject: StoreObjectIdentifier): void;
+    static SetValueGenerationStrategy(property: IMutableProperty, value: Nullable_1<SqlServerValueGenerationStrategy>): void;
+    static SetValueGenerationStrategy(overrides: IMutableRelationalPropertyOverrides, value: Nullable_1<SqlServerValueGenerationStrategy>): void;
 }
 
 
@@ -668,22 +668,22 @@ export type SqlServerPropertyExtensions = SqlServerPropertyExtensions$instance;
 export abstract class SqlServerTableBuilderExtensions$instance {
     static IsMemoryOptimized(tableBuilder: OwnedNavigationTableBuilder, memoryOptimized?: boolean): OwnedNavigationTableBuilder;
     static IsMemoryOptimized(tableBuilder: TableBuilder, memoryOptimized?: boolean): TableBuilder;
-    static IsMemoryOptimized<TOwnerEntity, TDependentEntity>(tableBuilder: OwnedNavigationTableBuilder<TOwnerEntity, TDependentEntity>, memoryOptimized?: boolean): OwnedNavigationTableBuilder<TOwnerEntity, TDependentEntity>;
-    static IsMemoryOptimized<TEntity>(tableBuilder: TableBuilder<TEntity>, memoryOptimized?: boolean): TableBuilder<TEntity>;
-    static IsTemporal(tableBuilder: OwnedNavigationTableBuilder, buildAction: Action<OwnedNavigationTemporalTableBuilder>): OwnedNavigationTableBuilder;
+    static IsMemoryOptimized<TOwnerEntity, TDependentEntity>(tableBuilder: OwnedNavigationTableBuilder_2<TOwnerEntity, TDependentEntity>, memoryOptimized?: boolean): OwnedNavigationTableBuilder_2<TOwnerEntity, TDependentEntity>;
+    static IsMemoryOptimized<TEntity>(tableBuilder: TableBuilder_1<TEntity>, memoryOptimized?: boolean): TableBuilder_1<TEntity>;
+    static IsTemporal(tableBuilder: OwnedNavigationTableBuilder, buildAction: Action_1<OwnedNavigationTemporalTableBuilder>): OwnedNavigationTableBuilder;
     static IsTemporal(tableBuilder: OwnedNavigationTableBuilder, temporal?: boolean): OwnedNavigationTemporalTableBuilder;
-    static IsTemporal(tableBuilder: TableBuilder, buildAction: Action<TemporalTableBuilder>): TableBuilder;
+    static IsTemporal(tableBuilder: TableBuilder, buildAction: Action_1<TemporalTableBuilder>): TableBuilder;
     static IsTemporal(tableBuilder: TableBuilder, temporal?: boolean): TemporalTableBuilder;
-    static IsTemporal<TOwnerEntity, TDependentEntity>(tableBuilder: OwnedNavigationTableBuilder<TOwnerEntity, TDependentEntity>, buildAction: Action<OwnedNavigationTemporalTableBuilder_2<TOwnerEntity, TDependentEntity>>): OwnedNavigationTableBuilder<TOwnerEntity, TDependentEntity>;
-    static IsTemporal<TOwnerEntity, TDependentEntity>(tableBuilder: OwnedNavigationTableBuilder<TOwnerEntity, TDependentEntity>, temporal?: boolean): OwnedNavigationTemporalTableBuilder_2<TOwnerEntity, TDependentEntity>;
-    static IsTemporal<TEntity>(tableBuilder: TableBuilder<TEntity>, buildAction: Action<TemporalTableBuilder_1<TEntity>>): TableBuilder<TEntity>;
-    static IsTemporal<TEntity>(tableBuilder: TableBuilder<TEntity>, temporal?: boolean): TemporalTableBuilder_1<TEntity>;
+    static IsTemporal<TOwnerEntity, TDependentEntity>(tableBuilder: OwnedNavigationTableBuilder_2<TOwnerEntity, TDependentEntity>, buildAction: Action_1<OwnedNavigationTemporalTableBuilder_2<TOwnerEntity, TDependentEntity>>): OwnedNavigationTableBuilder_2<TOwnerEntity, TDependentEntity>;
+    static IsTemporal<TOwnerEntity, TDependentEntity>(tableBuilder: OwnedNavigationTableBuilder_2<TOwnerEntity, TDependentEntity>, temporal?: boolean): OwnedNavigationTemporalTableBuilder_2<TOwnerEntity, TDependentEntity>;
+    static IsTemporal<TEntity>(tableBuilder: TableBuilder_1<TEntity>, buildAction: Action_1<TemporalTableBuilder_1<TEntity>>): TableBuilder_1<TEntity>;
+    static IsTemporal<TEntity>(tableBuilder: TableBuilder_1<TEntity>, temporal?: boolean): TemporalTableBuilder_1<TEntity>;
     static UseSqlOutputClause(tableBuilder: OwnedNavigationTableBuilder, useSqlOutputClause?: boolean): OwnedNavigationTableBuilder;
     static UseSqlOutputClause(tableBuilder: SplitTableBuilder, useSqlOutputClause?: boolean): SplitTableBuilder;
     static UseSqlOutputClause(tableBuilder: TableBuilder, useSqlOutputClause?: boolean): TableBuilder;
-    static UseSqlOutputClause<TOwnerEntity, TDependentEntity>(tableBuilder: OwnedNavigationTableBuilder<TOwnerEntity, TDependentEntity>, useSqlOutputClause?: boolean): OwnedNavigationTableBuilder<TOwnerEntity, TDependentEntity>;
-    static UseSqlOutputClause<TEntity>(tableBuilder: SplitTableBuilder<TEntity>, useSqlOutputClause?: boolean): SplitTableBuilder<TEntity>;
-    static UseSqlOutputClause<TEntity>(tableBuilder: TableBuilder<TEntity>, useSqlOutputClause?: boolean): TableBuilder<TEntity>;
+    static UseSqlOutputClause<TOwnerEntity, TDependentEntity>(tableBuilder: OwnedNavigationTableBuilder_2<TOwnerEntity, TDependentEntity>, useSqlOutputClause?: boolean): OwnedNavigationTableBuilder_2<TOwnerEntity, TDependentEntity>;
+    static UseSqlOutputClause<TEntity>(tableBuilder: SplitTableBuilder_1<TEntity>, useSqlOutputClause?: boolean): SplitTableBuilder_1<TEntity>;
+    static UseSqlOutputClause<TEntity>(tableBuilder: TableBuilder_1<TEntity>, useSqlOutputClause?: boolean): TableBuilder_1<TEntity>;
 }
 
 

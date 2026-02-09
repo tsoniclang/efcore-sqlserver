@@ -10,8 +10,8 @@ import * as Microsoft_IdentityModel_Protocols_OpenIdConnect_Internal from "../..
 import type { OpenIdConnectConfiguration } from "../../Microsoft.IdentityModel.Protocols.OpenIdConnect/internal/index.js";
 import * as Microsoft_IdentityModel_Protocols_Internal from "../../Microsoft.IdentityModel.Protocols/internal/index.js";
 import type { ConfigurationValidationResult, IConfigurationValidator_1 } from "../../Microsoft.IdentityModel.Protocols/internal/index.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Int32, Object as ClrObject } from "@tsonic/dotnet/System.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Int32, Object as ClrObject } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface OpenIdConnectConfigurationValidator$instance {
     readonly __tsonic_iface_Microsoft_IdentityModel_Protocols_IConfigurationValidator_1: never;
@@ -29,8 +29,6 @@ export const OpenIdConnectConfigurationValidator: {
 export interface __OpenIdConnectConfigurationValidator$views {
     As_IConfigurationValidator_1(): Microsoft_IdentityModel_Protocols_Internal.IConfigurationValidator_1$instance<OpenIdConnectConfiguration>;
 }
-
-export interface OpenIdConnectConfigurationValidator$instance extends Microsoft_IdentityModel_Protocols_Internal.IConfigurationValidator_1$instance<OpenIdConnectConfiguration> {}
 
 export type OpenIdConnectConfigurationValidator = OpenIdConnectConfigurationValidator$instance & __OpenIdConnectConfigurationValidator$views;
 

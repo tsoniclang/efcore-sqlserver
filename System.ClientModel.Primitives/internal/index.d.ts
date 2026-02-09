@@ -11,23 +11,23 @@ import type { ptr } from "@tsonic/core/types.js";
 // Import types from other namespaces
 import type { ApiKeyCredential, AuthenticationTokenProvider, BinaryContent, ClientResult, ContinuationToken } from "../../System.ClientModel/internal/index.js";
 import type { BinaryData } from "../../System/internal/index.js";
-import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { IAsyncEnumerable, ICollection as ICollection__System_Collections_Generic, IEnumerable as IEnumerable__System_Collections_Generic, IEnumerator, IList as IList__System_Collections_Generic, IReadOnlyCollection, IReadOnlyDictionary, IReadOnlyList, KeyValuePair } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections.js";
-import type { ICollection, IEnumerable, IList } from "@tsonic/dotnet/System.Collections.js";
-import * as System_Collections_ObjectModel_Internal from "@tsonic/dotnet/System.Collections.ObjectModel.js";
-import type { KeyedCollection } from "@tsonic/dotnet/System.Collections.ObjectModel.js";
-import type { Activity, ActivityContext, ActivityKind, ActivitySource } from "@tsonic/dotnet/System.Diagnostics.js";
-import type { Stream } from "@tsonic/dotnet/System.IO.js";
-import * as System_Lib from "@tsonic/dotnet/System.js";
-import type { Attribute, Boolean as ClrBoolean, DateTimeOffset, Enum, Exception, Func, IComparable, IConvertible, IDisposable, IFormattable, Int32, ISpanFormattable, Nullable, Object as ClrObject, ReadOnlySpan, String as ClrString, TimeSpan, Type, UInt16, Uri, ValueType, Void } from "@tsonic/dotnet/System.js";
-import type { HttpClient, HttpRequestMessage, HttpResponseMessage } from "@tsonic/dotnet/System.Net.Http.js";
-import type { JsonSerializerOptions, Utf8JsonReader, Utf8JsonWriter } from "@tsonic/dotnet/System.Text.Json.js";
-import * as System_Text_Json_Serialization_Internal from "@tsonic/dotnet/System.Text.Json.Serialization.js";
-import type { JsonConverter } from "@tsonic/dotnet/System.Text.Json.Serialization.js";
-import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
-import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
-import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
+import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { IAsyncEnumerable_1, ICollection_1, IEnumerable_1, IEnumerator_1, IList_1, IReadOnlyCollection_1, IReadOnlyDictionary_2, IReadOnlyList_1, KeyValuePair_2 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Collections_ObjectModel_Internal from "@tsonic/dotnet/System.Collections.ObjectModel/internal/index.js";
+import type { KeyedCollection_2 } from "@tsonic/dotnet/System.Collections.ObjectModel/internal/index.js";
+import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { ICollection, IEnumerable, IList } from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { Activity, ActivityContext, ActivityKind, ActivitySource } from "@tsonic/dotnet/System.Diagnostics/internal/index.js";
+import type { Stream } from "@tsonic/dotnet/System.IO/internal/index.js";
+import type { HttpClient, HttpRequestMessage, HttpResponseMessage } from "@tsonic/dotnet/System.Net.Http/internal/index.js";
+import * as System_Text_Json_Serialization_Internal from "@tsonic/dotnet/System.Text.Json.Serialization/internal/index.js";
+import type { JsonConverter_1 } from "@tsonic/dotnet/System.Text.Json.Serialization/internal/index.js";
+import type { JsonSerializerOptions, Utf8JsonReader, Utf8JsonWriter } from "@tsonic/dotnet/System.Text.Json/internal/index.js";
+import type { Task, ValueTask, ValueTask_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
+import * as System_Lib from "@tsonic/dotnet/System/internal/index.js";
+import type { Attribute, Boolean as ClrBoolean, DateTimeOffset, Enum, Exception, Func_1, IComparable, IConvertible, IDisposable, IFormattable, Int32, ISpanFormattable, Nullable_1, Object as ClrObject, ReadOnlySpan_1, String as ClrString, TimeSpan, Type, UInt16, Uri, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
+import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
 
 export enum ClientErrorBehaviors {
     Default = 0,
@@ -93,8 +93,8 @@ export const ClientConnection: {
 export type ClientConnection = ClientConnection$instance;
 
 export interface ApiKeyAuthenticationPolicy$instance extends AuthenticationPolicy {
-    Process(message: PipelineMessage, pipeline: IReadOnlyList<PipelinePolicy>, currentIndex: int): void;
-    ProcessAsync(message: PipelineMessage, pipeline: IReadOnlyList<PipelinePolicy>, currentIndex: int): ValueTask;
+    Process(message: PipelineMessage, pipeline: IReadOnlyList_1<PipelinePolicy>, currentIndex: int): void;
+    ProcessAsync(message: PipelineMessage, pipeline: IReadOnlyList_1<PipelinePolicy>, currentIndex: int): ValueTask;
 }
 
 
@@ -109,7 +109,7 @@ export type ApiKeyAuthenticationPolicy = ApiKeyAuthenticationPolicy$instance;
 
 export interface AsyncCollectionResult$instance {
     GetContinuationToken(page: ClientResult): ContinuationToken | undefined;
-    GetRawPagesAsync(): IAsyncEnumerable<ClientResult>;
+    GetRawPagesAsync(): IAsyncEnumerable_1<ClientResult>;
 }
 
 
@@ -130,28 +130,28 @@ export const AuthenticationPolicy: (abstract new() => AuthenticationPolicy) & {
 export type AuthenticationPolicy = AuthenticationPolicy$instance;
 
 export interface AuthenticationToken$instance {
-    readonly ExpiresOn: Nullable<DateTimeOffset>;
-    readonly RefreshOn: Nullable<DateTimeOffset>;
+    readonly ExpiresOn: Nullable_1<DateTimeOffset>;
+    readonly RefreshOn: Nullable_1<DateTimeOffset>;
     readonly TokenType: string;
     readonly TokenValue: string;
 }
 
 
 export const AuthenticationToken: {
-    new(tokenValue: string, tokenType: string, expiresOn: DateTimeOffset, refreshOn: Nullable<DateTimeOffset>): AuthenticationToken;
+    new(tokenValue: string, tokenType: string, expiresOn: DateTimeOffset, refreshOn: Nullable_1<DateTimeOffset>): AuthenticationToken;
 };
 
 
 export type AuthenticationToken = AuthenticationToken$instance;
 
 export interface BearerTokenPolicy$instance extends AuthenticationPolicy {
-    Process(message: PipelineMessage, pipeline: IReadOnlyList<PipelinePolicy>, currentIndex: int): void;
-    ProcessAsync(message: PipelineMessage, pipeline: IReadOnlyList<PipelinePolicy>, currentIndex: int): ValueTask;
+    Process(message: PipelineMessage, pipeline: IReadOnlyList_1<PipelinePolicy>, currentIndex: int): void;
+    ProcessAsync(message: PipelineMessage, pipeline: IReadOnlyList_1<PipelinePolicy>, currentIndex: int): ValueTask;
 }
 
 
 export const BearerTokenPolicy: {
-    new(tokenProvider: AuthenticationTokenProvider, contexts: IEnumerable__System_Collections_Generic<IReadOnlyDictionary<System_Internal.String, unknown>>): BearerTokenPolicy;
+    new(tokenProvider: AuthenticationTokenProvider, contexts: IEnumerable_1<IReadOnlyDictionary_2<System_Internal.String, unknown>>): BearerTokenPolicy;
     new(tokenProvider: AuthenticationTokenProvider, scope: string): BearerTokenPolicy;
 };
 
@@ -159,7 +159,7 @@ export const BearerTokenPolicy: {
 export type BearerTokenPolicy = BearerTokenPolicy$instance;
 
 export interface ClientCache$instance {
-    GetClient<T>(clientId: unknown, createClient: Func<T>): T;
+    GetClient<T>(clientId: unknown, createClient: Func_1<T>): T;
 }
 
 
@@ -170,7 +170,7 @@ export const ClientCache: {
 
 export type ClientCache = ClientCache$instance;
 
-export interface ClientConnectionCollection$instance extends KeyedCollection<System_Internal.String, ClientConnection> {
+export interface ClientConnectionCollection$instance extends KeyedCollection_2<System_Internal.String, ClientConnection> {
     readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IList_1: never;
@@ -180,7 +180,7 @@ export interface ClientConnectionCollection$instance extends KeyedCollection<Sys
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
     readonly __tsonic_iface_System_Collections_IList: never;
 
-    AddRange(connections: IEnumerable__System_Collections_Generic<ClientConnection>): void;
+    AddRange(connections: IEnumerable_1<ClientConnection>): void;
     GetKeyForItem(item: ClientConnection): string;
 }
 
@@ -194,7 +194,7 @@ export type ClientConnectionCollection = ClientConnectionCollection$instance;
 
 export interface ClientConnectionProvider$instance {
     readonly Subclients: ClientCache;
-    GetAllConnections(): IEnumerable__System_Collections_Generic<ClientConnection>;
+    GetAllConnections(): IEnumerable_1<ClientConnection>;
     GetConnection(connectionId: string): ClientConnection;
 }
 
@@ -206,14 +206,14 @@ export const ClientConnectionProvider: (abstract new(maxCacheSize: int) => Clien
 export type ClientConnectionProvider = ClientConnectionProvider$instance;
 
 export interface ClientLoggingOptions$instance {
-    readonly AllowedHeaderNames: IList__System_Collections_Generic<System_Internal.String>;
-    readonly AllowedQueryParameters: IList__System_Collections_Generic<System_Internal.String>;
-    EnableLogging: Nullable<System_Internal.Boolean>;
-    EnableMessageContentLogging: Nullable<System_Internal.Boolean>;
-    EnableMessageLogging: Nullable<System_Internal.Boolean>;
+    readonly AllowedHeaderNames: IList_1<System_Internal.String>;
+    readonly AllowedQueryParameters: IList_1<System_Internal.String>;
+    EnableLogging: Nullable_1<System_Internal.Boolean>;
+    EnableMessageContentLogging: Nullable_1<System_Internal.Boolean>;
+    EnableMessageLogging: Nullable_1<System_Internal.Boolean>;
     get LoggerFactory(): ILoggerFactory | undefined;
     set LoggerFactory(value: ILoggerFactory | undefined);
-    MessageContentSizeLimit: Nullable<System_Internal.Int32>;
+    MessageContentSizeLimit: Nullable_1<System_Internal.Int32>;
     Freeze(): void;
 }
 
@@ -233,7 +233,7 @@ export interface ClientPipeline$instance {
 
 
 export const ClientPipeline: {
-    Create(options: ClientPipelineOptions, perCallPolicies: ReadOnlySpan<PipelinePolicy>, perTryPolicies: ReadOnlySpan<PipelinePolicy>, beforeTransportPolicies: ReadOnlySpan<PipelinePolicy>): ClientPipeline;
+    Create(options: ClientPipelineOptions, perCallPolicies: ReadOnlySpan_1<PipelinePolicy>, perTryPolicies: ReadOnlySpan_1<PipelinePolicy>, beforeTransportPolicies: ReadOnlySpan_1<PipelinePolicy>): ClientPipeline;
     Create(options?: ClientPipelineOptions): ClientPipeline;
 };
 
@@ -243,10 +243,10 @@ export type ClientPipeline = ClientPipeline$instance;
 export interface ClientPipelineOptions$instance {
     get ClientLoggingOptions(): ClientLoggingOptions | undefined;
     set ClientLoggingOptions(value: ClientLoggingOptions | undefined);
-    EnableDistributedTracing: Nullable<System_Internal.Boolean>;
+    EnableDistributedTracing: Nullable_1<System_Internal.Boolean>;
     get MessageLoggingPolicy(): PipelinePolicy | undefined;
     set MessageLoggingPolicy(value: PipelinePolicy | undefined);
-    NetworkTimeout: Nullable<TimeSpan>;
+    NetworkTimeout: Nullable_1<TimeSpan>;
     get RetryPolicy(): PipelinePolicy | undefined;
     set RetryPolicy(value: PipelinePolicy | undefined);
     get Transport(): PipelineTransport | undefined;
@@ -270,10 +270,10 @@ export interface ClientRetryPolicy$instance extends PipelinePolicy {
     OnSendingRequest(message: PipelineMessage): void;
     OnSendingRequestAsync(message: PipelineMessage): ValueTask;
     OnTryComplete(message: PipelineMessage): void;
-    Process(message: PipelineMessage, pipeline: IReadOnlyList<PipelinePolicy>, currentIndex: int): void;
-    ProcessAsync(message: PipelineMessage, pipeline: IReadOnlyList<PipelinePolicy>, currentIndex: int): ValueTask;
+    Process(message: PipelineMessage, pipeline: IReadOnlyList_1<PipelinePolicy>, currentIndex: int): void;
+    ProcessAsync(message: PipelineMessage, pipeline: IReadOnlyList_1<PipelinePolicy>, currentIndex: int): ValueTask;
     ShouldRetry(message: PipelineMessage, exception: Exception): boolean;
-    ShouldRetryAsync(message: PipelineMessage, exception: Exception): ValueTask<System_Internal.Boolean>;
+    ShouldRetryAsync(message: PipelineMessage, exception: Exception): ValueTask_1<System_Internal.Boolean>;
     Wait(time: TimeSpan, cancellationToken: CancellationToken): void;
     WaitAsync(time: TimeSpan, cancellationToken: CancellationToken): Task;
 }
@@ -290,7 +290,7 @@ export type ClientRetryPolicy = ClientRetryPolicy$instance;
 
 export interface CollectionResult$instance {
     GetContinuationToken(page: ClientResult): ContinuationToken | undefined;
-    GetRawPages(): IEnumerable__System_Collections_Generic<ClientResult>;
+    GetRawPages(): IEnumerable_1<ClientResult>;
 }
 
 
@@ -301,12 +301,12 @@ export const CollectionResult: (abstract new() => CollectionResult) & {
 export type CollectionResult = CollectionResult$instance;
 
 export interface GetTokenOptions$instance {
-    readonly Properties: IReadOnlyDictionary<System_Internal.String, unknown>;
+    readonly Properties: IReadOnlyDictionary_2<System_Internal.String, unknown>;
 }
 
 
 export const GetTokenOptions: {
-    new(properties: IReadOnlyDictionary<System_Internal.String, unknown>): GetTokenOptions;
+    new(properties: IReadOnlyDictionary_2<System_Internal.String, unknown>): GetTokenOptions;
     readonly ScopesPropertyName: string;
     readonly TokenUrlPropertyName: string;
     readonly AuthorizationUrlPropertyName: string;
@@ -339,7 +339,7 @@ export const HttpClientPipelineTransport: {
 
 export type HttpClientPipelineTransport = HttpClientPipelineTransport$instance;
 
-export interface JsonModelConverter$instance extends JsonConverter<IJsonModel_1<unknown>> {
+export interface JsonModelConverter$instance extends JsonConverter_1<IJsonModel_1<unknown>> {
     CanConvert(typeToConvert: Type): boolean;
     Read(reader: Utf8JsonReader, typeToConvert: Type, options: JsonSerializerOptions): IJsonModel_1<unknown> | undefined;
     Write(writer: Utf8JsonWriter, value: IJsonModel_1<unknown>, options: JsonSerializerOptions): void;
@@ -356,8 +356,8 @@ export const JsonModelConverter: {
 export type JsonModelConverter = JsonModelConverter$instance;
 
 export interface MessageLoggingPolicy$instance extends PipelinePolicy {
-    Process(message: PipelineMessage, pipeline: IReadOnlyList<PipelinePolicy>, currentIndex: int): void;
-    ProcessAsync(message: PipelineMessage, pipeline: IReadOnlyList<PipelinePolicy>, currentIndex: int): ValueTask;
+    Process(message: PipelineMessage, pipeline: IReadOnlyList_1<PipelinePolicy>, currentIndex: int): void;
+    ProcessAsync(message: PipelineMessage, pipeline: IReadOnlyList_1<PipelinePolicy>, currentIndex: int): ValueTask;
 }
 
 
@@ -441,7 +441,7 @@ export interface OperationResult$instance {
     set RehydrationToken(value: ContinuationToken | undefined);
     GetRawResponse(): PipelineResponse;
     UpdateStatus(options?: RequestOptions): ClientResult;
-    UpdateStatusAsync(options?: RequestOptions): ValueTask<ClientResult>;
+    UpdateStatusAsync(options?: RequestOptions): ValueTask_1<ClientResult>;
     WaitForCompletion(cancellationToken?: CancellationToken): void;
     WaitForCompletionAsync(cancellationToken?: CancellationToken): ValueTask;
 }
@@ -470,7 +470,7 @@ export interface PipelineMessage$instance {
 
     BufferResponse: boolean;
     CancellationToken: CancellationToken;
-    NetworkTimeout: Nullable<TimeSpan>;
+    NetworkTimeout: Nullable_1<TimeSpan>;
     readonly Request: PipelineRequest;
     get Response(): PipelineResponse | undefined;
     set Response(value: PipelineResponse | undefined);
@@ -498,21 +498,21 @@ export interface PipelineMessageClassifier$instance {
 
 export const PipelineMessageClassifier: (abstract new() => PipelineMessageClassifier) & {
     readonly Default: PipelineMessageClassifier;
-    Create(successStatusCodes: ReadOnlySpan<System_Internal.UInt16>): PipelineMessageClassifier;
+    Create(successStatusCodes: ReadOnlySpan_1<System_Internal.UInt16>): PipelineMessageClassifier;
 };
 
 
 export type PipelineMessageClassifier = PipelineMessageClassifier$instance;
 
 export interface PipelinePolicy$instance {
-    Process(message: PipelineMessage, pipeline: IReadOnlyList<PipelinePolicy>, currentIndex: int): void;
-    ProcessAsync(message: PipelineMessage, pipeline: IReadOnlyList<PipelinePolicy>, currentIndex: int): ValueTask;
+    Process(message: PipelineMessage, pipeline: IReadOnlyList_1<PipelinePolicy>, currentIndex: int): void;
+    ProcessAsync(message: PipelineMessage, pipeline: IReadOnlyList_1<PipelinePolicy>, currentIndex: int): ValueTask;
 }
 
 
 export const PipelinePolicy: (abstract new() => PipelinePolicy) & {
-    ProcessNext(message: PipelineMessage, pipeline: IReadOnlyList<PipelinePolicy>, currentIndex: int): void;
-    ProcessNextAsync(message: PipelineMessage, pipeline: IReadOnlyList<PipelinePolicy>, currentIndex: int): ValueTask;
+    ProcessNext(message: PipelineMessage, pipeline: IReadOnlyList_1<PipelinePolicy>, currentIndex: int): void;
+    ProcessNextAsync(message: PipelineMessage, pipeline: IReadOnlyList_1<PipelinePolicy>, currentIndex: int): ValueTask;
 };
 
 
@@ -548,11 +548,11 @@ export interface PipelineRequestHeaders$instance {
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     Add(name: string, value: string): void;
-    GetEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, System_Internal.String>>;
+    GetEnumerator(): IEnumerator_1<KeyValuePair_2<System_Internal.String, System_Internal.String>>;
     Remove(name: string): boolean;
     Set(name: string, value: string): void;
     TryGetValue(name: string, value: string): boolean;
-    TryGetValues(name: string, values: IEnumerable__System_Collections_Generic<System_Internal.String>): boolean;
+    TryGetValues(name: string, values: IEnumerable_1<System_Internal.String>): boolean;
 }
 
 
@@ -575,7 +575,7 @@ export interface PipelineResponse$instance {
     readonly ReasonPhrase: string;
     readonly Status: int;
     BufferContent(cancellationToken?: CancellationToken): BinaryData;
-    BufferContentAsync(cancellationToken?: CancellationToken): ValueTask<BinaryData>;
+    BufferContentAsync(cancellationToken?: CancellationToken): ValueTask_1<BinaryData>;
     Dispose(): void;
 }
 
@@ -590,9 +590,9 @@ export interface PipelineResponseHeaders$instance {
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
-    GetEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, System_Internal.String>>;
+    GetEnumerator(): IEnumerator_1<KeyValuePair_2<System_Internal.String, System_Internal.String>>;
     TryGetValue(name: string, value: string): boolean;
-    TryGetValues(name: string, values: IEnumerable__System_Collections_Generic<System_Internal.String>): boolean;
+    TryGetValues(name: string, values: IEnumerable_1<System_Internal.String>): boolean;
 }
 
 
@@ -606,11 +606,11 @@ export interface PipelineTransport$instance extends PipelinePolicy {
     CreateMessage(): PipelineMessage;
     CreateMessageCore(): PipelineMessage;
     Process(message: PipelineMessage): void;
-    Process(message: PipelineMessage, pipeline: IReadOnlyList<PipelinePolicy>, currentIndex: int): void;
-    Process(message: PipelineMessage, pipeline: IReadOnlyList<PipelinePolicy>, currentIndex: int): void;
+    Process(message: PipelineMessage, pipeline: IReadOnlyList_1<PipelinePolicy>, currentIndex: int): void;
+    Process(message: PipelineMessage, pipeline: IReadOnlyList_1<PipelinePolicy>, currentIndex: int): void;
     ProcessAsync(message: PipelineMessage): ValueTask;
-    ProcessAsync(message: PipelineMessage, pipeline: IReadOnlyList<PipelinePolicy>, currentIndex: int): ValueTask;
-    ProcessAsync(message: PipelineMessage, pipeline: IReadOnlyList<PipelinePolicy>, currentIndex: int): ValueTask;
+    ProcessAsync(message: PipelineMessage, pipeline: IReadOnlyList_1<PipelinePolicy>, currentIndex: int): ValueTask;
+    ProcessAsync(message: PipelineMessage, pipeline: IReadOnlyList_1<PipelinePolicy>, currentIndex: int): ValueTask;
     ProcessCore(message: PipelineMessage): void;
     ProcessCoreAsync(message: PipelineMessage): ValueTask;
 }
@@ -643,7 +643,7 @@ export type RequestOptions = RequestOptions$instance;
 
 export abstract class ActivityExtensions$instance {
     static MarkClientActivityFailed(activity: Activity, exception: Exception): Activity;
-    static StartClientActivity(activitySource: ActivitySource, options: ClientPipelineOptions, name: string, kind?: ActivityKind, parentContext?: ActivityContext, tags?: IEnumerable__System_Collections_Generic<KeyValuePair<System_Internal.String, unknown>>): Activity | undefined;
+    static StartClientActivity(activitySource: ActivitySource, options: ClientPipelineOptions, name: string, kind?: ActivityKind, parentContext?: ActivityContext, tags?: IEnumerable_1<KeyValuePair_2<System_Internal.String, unknown>>): Activity | undefined;
 }
 
 

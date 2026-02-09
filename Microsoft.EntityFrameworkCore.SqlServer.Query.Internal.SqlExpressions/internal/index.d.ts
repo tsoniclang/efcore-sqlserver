@@ -7,20 +7,20 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 
 // Import types from other namespaces
 import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { IReadOnlyList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { Boolean as ClrBoolean, Int32, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
-import type { Expression } from "@tsonic/dotnet/System.Linq.Expressions.js";
-import * as Microsoft_EntityFrameworkCore_Query_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query.js";
-import type { ExpressionPrinter, IPrintableExpression, IRelationalQuotableExpression } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query.js";
-import * as Microsoft_EntityFrameworkCore_Query_SqlExpressions_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query.SqlExpressions.js";
-import type { SqlExpression, SqlFunctionExpression } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query.SqlExpressions.js";
-import type { RelationalTypeMapping } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
+import type { IReadOnlyList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { Expression } from "@tsonic/dotnet/System.Linq.Expressions/internal/index.js";
+import type { Boolean as ClrBoolean, Int32, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
+import * as Microsoft_EntityFrameworkCore_Query_SqlExpressions_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query.SqlExpressions/internal/index.js";
+import type { SqlExpression, SqlFunctionExpression } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query.SqlExpressions/internal/index.js";
+import * as Microsoft_EntityFrameworkCore_Query_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query/internal/index.js";
+import type { ExpressionPrinter, IPrintableExpression, IRelationalQuotableExpression } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query/internal/index.js";
+import type { RelationalTypeMapping } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage/internal/index.js";
 
 export interface SqlServerJsonObjectExpression$instance extends SqlFunctionExpression {
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IPrintableExpression: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IRelationalQuotableExpression: never;
 
-    readonly PropertyNames: IReadOnlyList<System_Internal.String>;
+    readonly PropertyNames: IReadOnlyList_1<System_Internal.String>;
     Equals(obj: unknown): boolean;
     GetHashCode(): int;
     Print(expressionPrinter: ExpressionPrinter): void;
@@ -29,7 +29,7 @@ export interface SqlServerJsonObjectExpression$instance extends SqlFunctionExpre
 
 
 export const SqlServerJsonObjectExpression: {
-    new(propertyNames: IReadOnlyList<System_Internal.String>, propertyValues: IReadOnlyList<SqlExpression>, typeMapping: RelationalTypeMapping): SqlServerJsonObjectExpression;
+    new(propertyNames: IReadOnlyList_1<System_Internal.String>, propertyValues: IReadOnlyList_1<SqlExpression>, typeMapping: RelationalTypeMapping): SqlServerJsonObjectExpression;
 };
 
 

@@ -6,25 +6,25 @@
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 // Import types from other namespaces
-import * as System_Data_SqlTypes_Internal from "@tsonic/dotnet/System.Data.SqlTypes.js";
-import type { INullable } from "@tsonic/dotnet/System.Data.SqlTypes.js";
-import * as System_IO_Internal from "@tsonic/dotnet/System.IO.js";
-import type { FileAccess, FileOptions, SeekOrigin, Stream } from "@tsonic/dotnet/System.IO.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { AsyncCallback, Boolean as ClrBoolean, Byte, IAsyncDisposable, IAsyncResult, IDisposable, Int32, Int64, Nullable, Object as ClrObject, ReadOnlyMemory, String as ClrString, ValueType, Void } from "@tsonic/dotnet/System.js";
-import type { JsonDocument } from "@tsonic/dotnet/System.Text.Json.js";
+import * as System_Data_SqlTypes_Internal from "@tsonic/dotnet/System.Data.SqlTypes/internal/index.js";
+import type { INullable } from "@tsonic/dotnet/System.Data.SqlTypes/internal/index.js";
+import * as System_IO_Internal from "@tsonic/dotnet/System.IO/internal/index.js";
+import type { FileAccess, FileOptions, SeekOrigin, Stream } from "@tsonic/dotnet/System.IO/internal/index.js";
+import type { JsonDocument } from "@tsonic/dotnet/System.Text.Json/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { AsyncCallback, Boolean as ClrBoolean, Byte, IAsyncDisposable, IAsyncResult, IDisposable, Int32, Int64, Nullable_1, Object as ClrObject, ReadOnlyMemory_1, String as ClrString, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface SqlVector_1$instance<T extends unknown> {
     readonly __tsonic_iface_System_Data_SqlTypes_INullable: never;
 
     readonly IsNull: boolean;
     readonly Length: int;
-    readonly Memory: ReadOnlyMemory<T>;
+    readonly Memory: ReadOnlyMemory_1<T>;
 }
 
 
 export const SqlVector_1: {
-    new<T extends unknown>(memory: ReadOnlyMemory<T>): SqlVector_1<T>;
+    new<T extends unknown>(memory: ReadOnlyMemory_1<T>): SqlVector_1<T>;
     readonly Null: unknown;
     CreateNull<T extends unknown>(length: int): SqlVector_1<T>;
 };

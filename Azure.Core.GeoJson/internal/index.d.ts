@@ -12,13 +12,13 @@ import type { ptr } from "@tsonic/core/types.js";
 import * as System_ClientModel_Primitives_Internal from "../../System.ClientModel.Primitives/internal/index.js";
 import type { IJsonModel_1, IPersistableModel_1, ModelReaderWriterOptions } from "../../System.ClientModel.Primitives/internal/index.js";
 import type { BinaryData } from "../../System/internal/index.js";
-import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { IEnumerable as IEnumerable__System_Collections_Generic, IEnumerator as IEnumerator__System_Collections_Generic, IReadOnlyCollection, IReadOnlyDictionary, IReadOnlyList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections.js";
-import type { IEnumerable, IEnumerator } from "@tsonic/dotnet/System.Collections.js";
-import * as System_Lib from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Double, Enum, IComparable, IConvertible, IDisposable, IEquatable, IFormattable, Int32, ISpanFormattable, Nullable, Object as ClrObject, String as ClrString, ValueType, Void } from "@tsonic/dotnet/System.js";
-import type { Utf8JsonReader, Utf8JsonWriter } from "@tsonic/dotnet/System.Text.Json.js";
+import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { IEnumerable_1, IEnumerator_1, IReadOnlyCollection_1, IReadOnlyDictionary_2, IReadOnlyList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { IEnumerable, IEnumerator } from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { Utf8JsonReader, Utf8JsonWriter } from "@tsonic/dotnet/System.Text.Json/internal/index.js";
+import * as System_Lib from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Double, Enum, IComparable, IConvertible, IDisposable, IEquatable_1, IFormattable, Int32, ISpanFormattable, Nullable_1, Object as ClrObject, String as ClrString, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export enum GeoObjectType {
     Point = 0,
@@ -72,7 +72,7 @@ export type GeoArray_1_Enumerator<T> = GeoArray_1_Enumerator$instance<T>;
 export interface GeoPosition$instance {
     readonly __tsonic_iface_System_IEquatable_1: never;
 
-    readonly Altitude: Nullable<System_Internal.Double>;
+    readonly Altitude: Nullable_1<System_Internal.Double>;
     readonly Count: int;
     readonly [index: number]: double;
     readonly Latitude: double;
@@ -86,7 +86,7 @@ export interface GeoPosition$instance {
 
 export const GeoPosition: {
     new(longitude: double, latitude: double): GeoPosition;
-    new(longitude: double, latitude: double, altitude: Nullable<System_Internal.Double>): GeoPosition;
+    new(longitude: double, latitude: double, altitude: Nullable_1<System_Internal.Double>): GeoPosition;
 };
 
 
@@ -97,8 +97,8 @@ export interface GeoBoundingBox$instance {
 
     readonly East: double;
     readonly [index: number]: double;
-    readonly MaxAltitude: Nullable<System_Internal.Double>;
-    readonly MinAltitude: Nullable<System_Internal.Double>;
+    readonly MaxAltitude: Nullable_1<System_Internal.Double>;
+    readonly MinAltitude: Nullable_1<System_Internal.Double>;
     readonly North: double;
     readonly South: double;
     readonly West: double;
@@ -111,7 +111,7 @@ export interface GeoBoundingBox$instance {
 
 export const GeoBoundingBox: {
     new(west: double, south: double, east: double, north: double): GeoBoundingBox;
-    new(west: double, south: double, east: double, north: double, minAltitude: Nullable<System_Internal.Double>, maxAltitude: Nullable<System_Internal.Double>): GeoBoundingBox;
+    new(west: double, south: double, east: double, north: double, minAltitude: Nullable_1<System_Internal.Double>, maxAltitude: Nullable_1<System_Internal.Double>): GeoBoundingBox;
 };
 
 
@@ -126,13 +126,13 @@ export interface GeoCollection$instance extends GeoObject {
     readonly Count: int;
     readonly [index: number]: GeoObject;
     readonly Type: GeoObjectType;
-    GetEnumerator(): IEnumerator__System_Collections_Generic<GeoObject>;
+    GetEnumerator(): IEnumerator_1<GeoObject>;
 }
 
 
 export const GeoCollection: {
-    new(geometries: IEnumerable__System_Collections_Generic<GeoObject>): GeoCollection;
-    new(geometries: IEnumerable__System_Collections_Generic<GeoObject>, boundingBox: GeoBoundingBox, customProperties: IReadOnlyDictionary<System_Internal.String, unknown>): GeoCollection;
+    new(geometries: IEnumerable_1<GeoObject>): GeoCollection;
+    new(geometries: IEnumerable_1<GeoObject>, boundingBox: GeoBoundingBox, customProperties: IReadOnlyDictionary_2<System_Internal.String, unknown>): GeoCollection;
 };
 
 
@@ -144,7 +144,7 @@ export interface GeoLinearRing$instance {
 
 
 export const GeoLinearRing: {
-    new(coordinates: IEnumerable__System_Collections_Generic<GeoPosition>): GeoLinearRing;
+    new(coordinates: IEnumerable_1<GeoPosition>): GeoLinearRing;
 };
 
 
@@ -157,8 +157,8 @@ export interface GeoLineString$instance extends GeoObject {
 
 
 export const GeoLineString: {
-    new(coordinates: IEnumerable__System_Collections_Generic<GeoPosition>): GeoLineString;
-    new(coordinates: IEnumerable__System_Collections_Generic<GeoPosition>, boundingBox: GeoBoundingBox, customProperties: IReadOnlyDictionary<System_Internal.String, unknown>): GeoLineString;
+    new(coordinates: IEnumerable_1<GeoPosition>): GeoLineString;
+    new(coordinates: IEnumerable_1<GeoPosition>, boundingBox: GeoBoundingBox, customProperties: IReadOnlyDictionary_2<System_Internal.String, unknown>): GeoLineString;
 };
 
 
@@ -174,13 +174,13 @@ export interface GeoLineStringCollection$instance extends GeoObject {
     readonly Count: int;
     readonly [index: number]: GeoLineString;
     readonly Type: GeoObjectType;
-    GetEnumerator(): IEnumerator__System_Collections_Generic<GeoLineString>;
+    GetEnumerator(): IEnumerator_1<GeoLineString>;
 }
 
 
 export const GeoLineStringCollection: {
-    new(lines: IEnumerable__System_Collections_Generic<GeoLineString>): GeoLineStringCollection;
-    new(lines: IEnumerable__System_Collections_Generic<GeoLineString>, boundingBox: GeoBoundingBox, customProperties: IReadOnlyDictionary<System_Internal.String, unknown>): GeoLineStringCollection;
+    new(lines: IEnumerable_1<GeoLineString>): GeoLineStringCollection;
+    new(lines: IEnumerable_1<GeoLineString>, boundingBox: GeoBoundingBox, customProperties: IReadOnlyDictionary_2<System_Internal.String, unknown>): GeoLineStringCollection;
 };
 
 
@@ -213,9 +213,9 @@ export interface GeoPoint$instance extends GeoObject {
 export const GeoPoint: {
     new(): GeoPoint;
     new(longitude: double, latitude: double): GeoPoint;
-    new(longitude: double, latitude: double, altitude: Nullable<System_Internal.Double>): GeoPoint;
+    new(longitude: double, latitude: double, altitude: Nullable_1<System_Internal.Double>): GeoPoint;
     new(position: GeoPosition): GeoPoint;
-    new(position: GeoPosition, boundingBox: GeoBoundingBox, customProperties: IReadOnlyDictionary<System_Internal.String, unknown>): GeoPoint;
+    new(position: GeoPosition, boundingBox: GeoBoundingBox, customProperties: IReadOnlyDictionary_2<System_Internal.String, unknown>): GeoPoint;
 };
 
 
@@ -223,8 +223,6 @@ export interface __GeoPoint$views {
     As_IJsonModel_1(): System_ClientModel_Primitives_Internal.IJsonModel_1$instance<GeoPoint>;
     As_IPersistableModel_1(): System_ClientModel_Primitives_Internal.IPersistableModel_1$instance<GeoPoint>;
 }
-
-export interface GeoPoint$instance extends System_ClientModel_Primitives_Internal.IJsonModel_1$instance<GeoPoint> {}
 
 export type GeoPoint = GeoPoint$instance & __GeoPoint$views;
 
@@ -239,13 +237,13 @@ export interface GeoPointCollection$instance extends GeoObject {
     readonly Count: int;
     readonly [index: number]: GeoPoint;
     readonly Type: GeoObjectType;
-    GetEnumerator(): IEnumerator__System_Collections_Generic<GeoPoint>;
+    GetEnumerator(): IEnumerator_1<GeoPoint>;
 }
 
 
 export const GeoPointCollection: {
-    new(points: IEnumerable__System_Collections_Generic<GeoPoint>): GeoPointCollection;
-    new(points: IEnumerable__System_Collections_Generic<GeoPoint>, boundingBox: GeoBoundingBox, customProperties: IReadOnlyDictionary<System_Internal.String, unknown>): GeoPointCollection;
+    new(points: IEnumerable_1<GeoPoint>): GeoPointCollection;
+    new(points: IEnumerable_1<GeoPoint>, boundingBox: GeoBoundingBox, customProperties: IReadOnlyDictionary_2<System_Internal.String, unknown>): GeoPointCollection;
 };
 
 
@@ -254,15 +252,15 @@ export type GeoPointCollection = GeoPointCollection$instance;
 export interface GeoPolygon$instance extends GeoObject {
     readonly Coordinates: GeoArray_1<GeoArray_1<GeoPosition>>;
     readonly OuterRing: GeoLinearRing;
-    readonly Rings: IReadOnlyList<GeoLinearRing>;
+    readonly Rings: IReadOnlyList_1<GeoLinearRing>;
     readonly Type: GeoObjectType;
 }
 
 
 export const GeoPolygon: {
-    new(positions: IEnumerable__System_Collections_Generic<GeoPosition>): GeoPolygon;
-    new(rings: IEnumerable__System_Collections_Generic<GeoLinearRing>): GeoPolygon;
-    new(rings: IEnumerable__System_Collections_Generic<GeoLinearRing>, boundingBox: GeoBoundingBox, customProperties: IReadOnlyDictionary<System_Internal.String, unknown>): GeoPolygon;
+    new(positions: IEnumerable_1<GeoPosition>): GeoPolygon;
+    new(rings: IEnumerable_1<GeoLinearRing>): GeoPolygon;
+    new(rings: IEnumerable_1<GeoLinearRing>, boundingBox: GeoBoundingBox, customProperties: IReadOnlyDictionary_2<System_Internal.String, unknown>): GeoPolygon;
 };
 
 
@@ -278,13 +276,13 @@ export interface GeoPolygonCollection$instance extends GeoObject {
     readonly Count: int;
     readonly [index: number]: GeoPolygon;
     readonly Type: GeoObjectType;
-    GetEnumerator(): IEnumerator__System_Collections_Generic<GeoPolygon>;
+    GetEnumerator(): IEnumerator_1<GeoPolygon>;
 }
 
 
 export const GeoPolygonCollection: {
-    new(polygons: IEnumerable__System_Collections_Generic<GeoPolygon>): GeoPolygonCollection;
-    new(polygons: IEnumerable__System_Collections_Generic<GeoPolygon>, boundingBox: GeoBoundingBox, customProperties: IReadOnlyDictionary<System_Internal.String, unknown>): GeoPolygonCollection;
+    new(polygons: IEnumerable_1<GeoPolygon>): GeoPolygonCollection;
+    new(polygons: IEnumerable_1<GeoPolygon>, boundingBox: GeoBoundingBox, customProperties: IReadOnlyDictionary_2<System_Internal.String, unknown>): GeoPolygonCollection;
 };
 
 

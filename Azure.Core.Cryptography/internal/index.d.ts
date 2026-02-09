@@ -7,16 +7,16 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 
 // Import types from other namespaces
 import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Byte, ReadOnlyMemory, String as ClrString } from "@tsonic/dotnet/System.js";
-import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import type { Task_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
+import type { Byte, ReadOnlyMemory_1, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface IKeyEncryptionKey$instance {
     readonly __tsonic_iface_Azure_Core_Cryptography_IKeyEncryptionKey: never;
 
     readonly KeyId: string;
-    WrapKey(algorithm: string, key: ReadOnlyMemory<System_Internal.Byte>, cancellationToken?: CancellationToken): byte[];
-    WrapKeyAsync(algorithm: string, key: ReadOnlyMemory<System_Internal.Byte>, cancellationToken?: CancellationToken): Task<byte[]>;
+    WrapKey(algorithm: string, key: ReadOnlyMemory_1<System_Internal.Byte>, cancellationToken?: CancellationToken): byte[];
+    WrapKeyAsync(algorithm: string, key: ReadOnlyMemory_1<System_Internal.Byte>, cancellationToken?: CancellationToken): Task_1<byte[]>;
 }
 
 
@@ -26,7 +26,7 @@ export interface IKeyEncryptionKeyResolver$instance {
     readonly __tsonic_iface_Azure_Core_Cryptography_IKeyEncryptionKeyResolver: never;
 
     Resolve(keyId: string, cancellationToken?: CancellationToken): IKeyEncryptionKey;
-    ResolveAsync(keyId: string, cancellationToken?: CancellationToken): Task<IKeyEncryptionKey>;
+    ResolveAsync(keyId: string, cancellationToken?: CancellationToken): Task_1<IKeyEncryptionKey>;
 }
 
 

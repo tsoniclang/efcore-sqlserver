@@ -6,11 +6,11 @@
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 // Import types from other namespaces
-import * as System_Data_Common_Internal from "@tsonic/dotnet/System.Data.Common.js";
-import type { DbDataSourceEnumerator } from "@tsonic/dotnet/System.Data.Common.js";
-import type { DataTable } from "@tsonic/dotnet/System.Data.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Int32, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
+import * as System_Data_Common_Internal from "@tsonic/dotnet/System.Data.Common/internal/index.js";
+import type { DbDataSourceEnumerator } from "@tsonic/dotnet/System.Data.Common/internal/index.js";
+import type { DataTable } from "@tsonic/dotnet/System.Data/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Int32, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface SqlDataSourceEnumerator$instance extends DbDataSourceEnumerator {
     GetDataSources(): DataTable;

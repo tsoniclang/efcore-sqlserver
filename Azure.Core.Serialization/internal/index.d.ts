@@ -7,15 +7,15 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 
 // Import types from other namespaces
 import type { BinaryData } from "../../System/internal/index.js";
-import * as System_Dynamic_Internal from "@tsonic/dotnet/System.Dynamic.js";
-import type { IDynamicMetaObjectProvider } from "@tsonic/dotnet/System.Dynamic.js";
-import type { Stream } from "@tsonic/dotnet/System.IO.js";
-import * as System_Lib from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Enum, IComparable, IConvertible, IDisposable, IFormattable, Int32, ISpanFormattable, Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System.js";
-import type { MemberInfo } from "@tsonic/dotnet/System.Reflection.js";
-import type { JsonSerializerOptions } from "@tsonic/dotnet/System.Text.Json.js";
-import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
-import type { ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import * as System_Dynamic_Internal from "@tsonic/dotnet/System.Dynamic/internal/index.js";
+import type { IDynamicMetaObjectProvider } from "@tsonic/dotnet/System.Dynamic/internal/index.js";
+import type { Stream } from "@tsonic/dotnet/System.IO/internal/index.js";
+import type { MemberInfo } from "@tsonic/dotnet/System.Reflection/internal/index.js";
+import type { JsonSerializerOptions } from "@tsonic/dotnet/System.Text.Json/internal/index.js";
+import type { ValueTask, ValueTask_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
+import * as System_Lib from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Enum, IComparable, IConvertible, IDisposable, IFormattable, Int32, ISpanFormattable, Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export enum JsonPropertyNames {
     UseExact = 0,
@@ -49,16 +49,16 @@ export const DynamicData: {
 
 export type DynamicData = DynamicData$instance;
 
-export interface JsonObjectSerializer$instance extends ObjectSerializer {
+export interface JsonObjectSerializer$instance extends ObjectSerializer, IMemberNameConverter$instance {
     readonly __tsonic_iface_Azure_Core_Serialization_IMemberNameConverter: never;
 
     Deserialize(stream: Stream, returnType: Type, cancellationToken: CancellationToken): unknown | undefined;
-    DeserializeAsync(stream: Stream, returnType: Type, cancellationToken: CancellationToken): ValueTask<unknown>;
+    DeserializeAsync(stream: Stream, returnType: Type, cancellationToken: CancellationToken): ValueTask_1<unknown>;
     Serialize(stream: Stream, value: unknown, inputType: Type, cancellationToken: CancellationToken): void;
     Serialize(value: unknown, inputType?: Type, cancellationToken?: CancellationToken): BinaryData;
     SerializeAsync(stream: Stream, value: unknown, inputType: Type, cancellationToken: CancellationToken): ValueTask;
-    SerializeAsync(value: unknown, inputType?: Type, cancellationToken?: CancellationToken): ValueTask<BinaryData>;
-    SerializeAsync(value: unknown, inputType?: Type, cancellationToken?: CancellationToken): ValueTask<BinaryData>;
+    SerializeAsync(value: unknown, inputType?: Type, cancellationToken?: CancellationToken): ValueTask_1<BinaryData>;
+    SerializeAsync(value: unknown, inputType?: Type, cancellationToken?: CancellationToken): ValueTask_1<BinaryData>;
 }
 
 
@@ -73,18 +73,16 @@ export interface __JsonObjectSerializer$views {
     As_IMemberNameConverter(): IMemberNameConverter$instance;
 }
 
-export interface JsonObjectSerializer$instance extends IMemberNameConverter$instance {}
-
 export type JsonObjectSerializer = JsonObjectSerializer$instance & __JsonObjectSerializer$views;
 
 
 export interface ObjectSerializer$instance {
     Deserialize(stream: Stream, returnType: Type, cancellationToken: CancellationToken): unknown | undefined;
-    DeserializeAsync(stream: Stream, returnType: Type, cancellationToken: CancellationToken): ValueTask<unknown>;
+    DeserializeAsync(stream: Stream, returnType: Type, cancellationToken: CancellationToken): ValueTask_1<unknown>;
     Serialize(stream: Stream, value: unknown, inputType: Type, cancellationToken: CancellationToken): void;
     Serialize(value: unknown, inputType?: Type, cancellationToken?: CancellationToken): BinaryData;
     SerializeAsync(stream: Stream, value: unknown, inputType: Type, cancellationToken: CancellationToken): ValueTask;
-    SerializeAsync(value: unknown, inputType?: Type, cancellationToken?: CancellationToken): ValueTask<BinaryData>;
+    SerializeAsync(value: unknown, inputType?: Type, cancellationToken?: CancellationToken): ValueTask_1<BinaryData>;
 }
 
 
