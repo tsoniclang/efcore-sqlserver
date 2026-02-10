@@ -17,6 +17,8 @@ import type { ExpressionPrinter, IPrintableExpression, IRelationalQuotableExpres
 import type { RelationalTypeMapping } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage/internal/index.js";
 
 export interface SqlServerJsonObjectExpression$instance extends SqlFunctionExpression {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Query_Internal_SqlExpressions_SqlServerJsonObjectExpression: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IPrintableExpression: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IRelationalQuotableExpression: never;
 

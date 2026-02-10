@@ -18,6 +18,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Exception, Func_2, IDisposable, Int32, Object as ClrObject, ReadOnlyMemory_1, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface BearerTokenAuthenticationPolicy$instance extends HttpPipelinePolicy {
+    readonly __tsonic_type_Azure_Core_Pipeline_BearerTokenAuthenticationPolicy: never;
+
     AuthorizeRequest(message: HttpMessage): void;
     AuthorizeRequestAsync(message: HttpMessage): ValueTask;
     AuthorizeRequestOnChallenge(message: HttpMessage): boolean;
@@ -36,6 +38,8 @@ export const BearerTokenAuthenticationPolicy: {
 export type BearerTokenAuthenticationPolicy = BearerTokenAuthenticationPolicy$instance;
 
 export interface DisposableHttpPipeline$instance extends HttpPipeline {
+    readonly __tsonic_type_Azure_Core_Pipeline_DisposableHttpPipeline: never;
+
     readonly __tsonic_iface_System_IDisposable: never;
 
     Dispose(): void;
@@ -49,6 +53,8 @@ export const DisposableHttpPipeline: {
 export type DisposableHttpPipeline = DisposableHttpPipeline$instance;
 
 export interface HttpClientTransport$instance extends HttpPipelineTransport {
+    readonly __tsonic_type_Azure_Core_Pipeline_HttpClientTransport: never;
+
     readonly __tsonic_iface_System_IDisposable: never;
 
     CreateRequest(): Request;
@@ -69,6 +75,8 @@ export const HttpClientTransport: {
 export type HttpClientTransport = HttpClientTransport$instance;
 
 export interface HttpPipeline$instance {
+    readonly __tsonic_type_Azure_Core_Pipeline_HttpPipeline: never;
+
     readonly ResponseClassifier: ResponseClassifier;
     CreateMessage(): HttpMessage;
     CreateMessage(context: RequestContext): HttpMessage;
@@ -91,6 +99,8 @@ export const HttpPipeline: {
 export type HttpPipeline = HttpPipeline$instance;
 
 export interface HttpPipelineOptions$instance {
+    readonly __tsonic_type_Azure_Core_Pipeline_HttpPipelineOptions: never;
+
     readonly ClientOptions: ClientOptions;
     readonly PerCallPolicies: IList_1<HttpPipelinePolicy>;
     readonly PerRetryPolicies: IList_1<HttpPipelinePolicy>;
@@ -108,6 +118,8 @@ export const HttpPipelineOptions: {
 export type HttpPipelineOptions = HttpPipelineOptions$instance;
 
 export interface HttpPipelinePolicy$instance {
+    readonly __tsonic_type_Azure_Core_Pipeline_HttpPipelinePolicy: never;
+
     Process(message: HttpMessage, pipeline: ReadOnlyMemory_1<HttpPipelinePolicy>): void;
     ProcessAsync(message: HttpMessage, pipeline: ReadOnlyMemory_1<HttpPipelinePolicy>): ValueTask;
 }
@@ -122,6 +134,8 @@ export const HttpPipelinePolicy: (abstract new() => HttpPipelinePolicy) & {
 export type HttpPipelinePolicy = HttpPipelinePolicy$instance;
 
 export interface HttpPipelineSynchronousPolicy$instance extends HttpPipelinePolicy {
+    readonly __tsonic_type_Azure_Core_Pipeline_HttpPipelineSynchronousPolicy: never;
+
     OnReceivedResponse(message: HttpMessage): void;
     OnSendingRequest(message: HttpMessage): void;
     Process(message: HttpMessage, pipeline: ReadOnlyMemory_1<HttpPipelinePolicy>): void;
@@ -138,6 +152,8 @@ export const HttpPipelineSynchronousPolicy: (abstract new() => HttpPipelineSynch
 export type HttpPipelineSynchronousPolicy = HttpPipelineSynchronousPolicy$instance;
 
 export interface HttpPipelineTransport$instance {
+    readonly __tsonic_type_Azure_Core_Pipeline_HttpPipelineTransport: never;
+
     CreateRequest(): Request;
     Process(message: HttpMessage): void;
     ProcessAsync(message: HttpMessage): ValueTask;
@@ -151,6 +167,8 @@ export const HttpPipelineTransport: (abstract new() => HttpPipelineTransport) & 
 export type HttpPipelineTransport = HttpPipelineTransport$instance;
 
 export interface HttpPipelineTransportOptions$instance {
+    readonly __tsonic_type_Azure_Core_Pipeline_HttpPipelineTransportOptions: never;
+
     readonly ClientCertificates: IList_1<X509Certificate2>;
     IsClientRedirectEnabled: boolean;
     get ServerCertificateCustomValidationCallback(): Func_2<ServerCertificateCustomValidationArgs, System_Internal.Boolean> | undefined;
@@ -166,6 +184,8 @@ export const HttpPipelineTransportOptions: {
 export type HttpPipelineTransportOptions = HttpPipelineTransportOptions$instance;
 
 export interface RedirectPolicy$instance extends HttpPipelinePolicy {
+    readonly __tsonic_type_Azure_Core_Pipeline_RedirectPolicy: never;
+
     Process(message: HttpMessage, pipeline: ReadOnlyMemory_1<HttpPipelinePolicy>): void;
     ProcessAsync(message: HttpMessage, pipeline: ReadOnlyMemory_1<HttpPipelinePolicy>): ValueTask;
 }
@@ -179,6 +199,8 @@ export const RedirectPolicy: {
 export type RedirectPolicy = RedirectPolicy$instance;
 
 export interface RetryPolicy$instance extends HttpPipelinePolicy {
+    readonly __tsonic_type_Azure_Core_Pipeline_RetryPolicy: never;
+
     OnRequestSent(message: HttpMessage): void;
     OnRequestSentAsync(message: HttpMessage): ValueTask;
     OnSendingRequest(message: HttpMessage): void;
@@ -198,6 +220,8 @@ export const RetryPolicy: {
 export type RetryPolicy = RetryPolicy$instance;
 
 export interface ServerCertificateCustomValidationArgs$instance {
+    readonly __tsonic_type_Azure_Core_Pipeline_ServerCertificateCustomValidationArgs: never;
+
     readonly Certificate: X509Certificate2 | undefined;
     readonly CertificateAuthorityChain: X509Chain | undefined;
     readonly SslPolicyErrors: SslPolicyErrors;

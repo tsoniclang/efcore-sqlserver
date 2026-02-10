@@ -178,6 +178,8 @@ export type SqlRowUpdatingEventHandler = (sender: unknown, e: SqlRowUpdatingEven
 
 
 export interface ActiveDirectoryAuthenticationProvider$instance extends SqlAuthenticationProvider {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_ActiveDirectoryAuthenticationProvider: never;
+
     AcquireTokenAsync(parameters: SqlAuthenticationParameters): Task_1<SqlAuthenticationToken>;
     BeforeLoad(authentication: SqlAuthenticationMethod): void;
     BeforeUnload(authentication: SqlAuthenticationMethod): void;
@@ -198,6 +200,8 @@ export const ActiveDirectoryAuthenticationProvider: {
 export type ActiveDirectoryAuthenticationProvider = ActiveDirectoryAuthenticationProvider$instance;
 
 export interface SqlAuthenticationInitializer$instance {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_SqlAuthenticationInitializer: never;
+
     Initialize(): void;
 }
 
@@ -209,6 +213,8 @@ export const SqlAuthenticationInitializer: (abstract new() => SqlAuthenticationI
 export type SqlAuthenticationInitializer = SqlAuthenticationInitializer$instance;
 
 export interface SqlAuthenticationParameters$instance {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_SqlAuthenticationParameters: never;
+
     readonly AuthenticationMethod: SqlAuthenticationMethod;
     readonly Authority: string;
     readonly ConnectionId: Guid;
@@ -228,6 +234,8 @@ export const SqlAuthenticationParameters: (abstract new(authenticationMethod: Sq
 export type SqlAuthenticationParameters = SqlAuthenticationParameters$instance;
 
 export interface SqlAuthenticationProvider$instance {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_SqlAuthenticationProvider: never;
+
     AcquireTokenAsync(parameters: SqlAuthenticationParameters): Task_1<SqlAuthenticationToken>;
     BeforeLoad(authenticationMethod: SqlAuthenticationMethod): void;
     BeforeUnload(authenticationMethod: SqlAuthenticationMethod): void;
@@ -244,6 +252,8 @@ export const SqlAuthenticationProvider: (abstract new() => SqlAuthenticationProv
 export type SqlAuthenticationProvider = SqlAuthenticationProvider$instance;
 
 export interface SqlAuthenticationToken$instance {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_SqlAuthenticationToken: never;
+
     readonly AccessToken: string;
     readonly ExpiresOn: DateTimeOffset;
 }
@@ -257,6 +267,8 @@ export const SqlAuthenticationToken: {
 export type SqlAuthenticationToken = SqlAuthenticationToken$instance;
 
 export interface SqlBatch$instance extends DbBatch {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_SqlBatch: never;
+
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -293,6 +305,8 @@ export const SqlBatch: {
 export type SqlBatch = SqlBatch$instance;
 
 export interface SqlBatchCommand$instance extends DbBatchCommand {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_SqlBatchCommand: never;
+
     ColumnEncryptionSetting: SqlCommandColumnEncryptionSetting;
     CommandBehavior: CommandBehavior;
     CommandText: string;
@@ -312,6 +326,8 @@ export const SqlBatchCommand: {
 export type SqlBatchCommand = SqlBatchCommand$instance;
 
 export interface SqlBatchCommandCollection$instance extends DbBatchCommandCollection {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_SqlBatchCommandCollection: never;
+
     readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IList_1: never;
@@ -319,7 +335,6 @@ export interface SqlBatchCommandCollection$instance extends DbBatchCommandCollec
 
     readonly Count: int;
     readonly IsReadOnly: boolean;
-    [index: number]: SqlBatchCommand;
     Add(item: SqlBatchCommand): void;
     Add(item: DbBatchCommand): void;
     Clear(): void;
@@ -345,9 +360,11 @@ export const SqlBatchCommandCollection: {
 };
 
 
-export type SqlBatchCommandCollection = SqlBatchCommandCollection$instance;
+export type SqlBatchCommandCollection = SqlBatchCommandCollection$instance & { [index: number]: SqlBatchCommand; };
 
 export interface SqlBulkCopy$instance {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_SqlBulkCopy: never;
+
     readonly __tsonic_iface_System_IDisposable: never;
 
     BatchSize: int;
@@ -389,6 +406,8 @@ export const SqlBulkCopy: {
 export type SqlBulkCopy = SqlBulkCopy$instance;
 
 export interface SqlBulkCopyColumnMapping$instance {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_SqlBulkCopyColumnMapping: never;
+
     DestinationColumn: string;
     DestinationOrdinal: int;
     SourceColumn: string;
@@ -408,11 +427,12 @@ export const SqlBulkCopyColumnMapping: {
 export type SqlBulkCopyColumnMapping = SqlBulkCopyColumnMapping$instance;
 
 export interface SqlBulkCopyColumnMappingCollection$instance extends CollectionBase {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_SqlBulkCopyColumnMappingCollection: never;
+
     readonly __tsonic_iface_System_Collections_ICollection: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
     readonly __tsonic_iface_System_Collections_IList: never;
 
-    readonly [index: number]: SqlBulkCopyColumnMapping;
     Add(bulkCopyColumnMapping: SqlBulkCopyColumnMapping): SqlBulkCopyColumnMapping;
     Add(sourceColumnIndex: int, destinationColumnIndex: int): SqlBulkCopyColumnMapping;
     Add(sourceColumnIndex: int, destinationColumn: string): SqlBulkCopyColumnMapping;
@@ -432,9 +452,11 @@ export const SqlBulkCopyColumnMappingCollection: {
 };
 
 
-export type SqlBulkCopyColumnMappingCollection = SqlBulkCopyColumnMappingCollection$instance;
+export type SqlBulkCopyColumnMappingCollection = SqlBulkCopyColumnMappingCollection$instance & { readonly [index: number]: SqlBulkCopyColumnMapping; };
 
 export interface SqlBulkCopyColumnOrderHint$instance {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_SqlBulkCopyColumnOrderHint: never;
+
     Column: string;
     SortOrder: SortOrder;
 }
@@ -448,11 +470,12 @@ export const SqlBulkCopyColumnOrderHint: {
 export type SqlBulkCopyColumnOrderHint = SqlBulkCopyColumnOrderHint$instance;
 
 export interface SqlBulkCopyColumnOrderHintCollection$instance extends CollectionBase {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_SqlBulkCopyColumnOrderHintCollection: never;
+
     readonly __tsonic_iface_System_Collections_ICollection: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
     readonly __tsonic_iface_System_Collections_IList: never;
 
-    readonly [index: number]: SqlBulkCopyColumnOrderHint;
     Add(columnOrderHint: SqlBulkCopyColumnOrderHint): SqlBulkCopyColumnOrderHint;
     Add(column: string, sortOrder: SortOrder): SqlBulkCopyColumnOrderHint;
     Clear(): void;
@@ -470,9 +493,11 @@ export const SqlBulkCopyColumnOrderHintCollection: {
 };
 
 
-export type SqlBulkCopyColumnOrderHintCollection = SqlBulkCopyColumnOrderHintCollection$instance;
+export type SqlBulkCopyColumnOrderHintCollection = SqlBulkCopyColumnOrderHintCollection$instance & { readonly [index: number]: SqlBulkCopyColumnOrderHint; };
 
 export interface SqlClientFactory$instance extends DbProviderFactory {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_SqlClientFactory: never;
+
     readonly CanCreateBatch: boolean;
     CreateBatch(): DbBatch;
     CreateBatchCommand(): DbBatchCommand;
@@ -494,6 +519,8 @@ export const SqlClientFactory: {
 export type SqlClientFactory = SqlClientFactory$instance;
 
 export interface SqlClientLogger$instance {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_SqlClientLogger: never;
+
     readonly IsLoggingEnabled: boolean;
     LogAssert(value: boolean, type: string, method: string, message: string): boolean;
     LogError(type: string, method: string, message: string): void;
@@ -510,6 +537,8 @@ export const SqlClientLogger: {
 export type SqlClientLogger = SqlClientLogger$instance;
 
 export interface SqlColumnEncryptionCertificateStoreProvider$instance extends SqlColumnEncryptionKeyStoreProvider {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_SqlColumnEncryptionCertificateStoreProvider: never;
+
     DecryptColumnEncryptionKey(masterKeyPath: string, encryptionAlgorithm: string, encryptedColumnEncryptionKey: byte[]): byte[];
     EncryptColumnEncryptionKey(masterKeyPath: string, encryptionAlgorithm: string, columnEncryptionKey: byte[]): byte[];
     SignColumnMasterKeyMetadata(masterKeyPath: string, allowEnclaveComputations: boolean): byte[];
@@ -526,6 +555,8 @@ export const SqlColumnEncryptionCertificateStoreProvider: {
 export type SqlColumnEncryptionCertificateStoreProvider = SqlColumnEncryptionCertificateStoreProvider$instance;
 
 export interface SqlColumnEncryptionCngProvider$instance extends SqlColumnEncryptionKeyStoreProvider {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_SqlColumnEncryptionCngProvider: never;
+
     DecryptColumnEncryptionKey(masterKeyPath: string, encryptionAlgorithm: string, encryptedColumnEncryptionKey: byte[]): byte[];
     EncryptColumnEncryptionKey(masterKeyPath: string, encryptionAlgorithm: string, columnEncryptionKey: byte[]): byte[];
     SignColumnMasterKeyMetadata(masterKeyPath: string, allowEnclaveComputations: boolean): byte[];
@@ -542,6 +573,8 @@ export const SqlColumnEncryptionCngProvider: {
 export type SqlColumnEncryptionCngProvider = SqlColumnEncryptionCngProvider$instance;
 
 export interface SqlColumnEncryptionCspProvider$instance extends SqlColumnEncryptionKeyStoreProvider {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_SqlColumnEncryptionCspProvider: never;
+
     DecryptColumnEncryptionKey(masterKeyPath: string, encryptionAlgorithm: string, encryptedColumnEncryptionKey: byte[]): byte[];
     EncryptColumnEncryptionKey(masterKeyPath: string, encryptionAlgorithm: string, columnEncryptionKey: byte[]): byte[];
     SignColumnMasterKeyMetadata(masterKeyPath: string, allowEnclaveComputations: boolean): byte[];
@@ -558,6 +591,8 @@ export const SqlColumnEncryptionCspProvider: {
 export type SqlColumnEncryptionCspProvider = SqlColumnEncryptionCspProvider$instance;
 
 export interface SqlColumnEncryptionKeyStoreProvider$instance {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_SqlColumnEncryptionKeyStoreProvider: never;
+
     ColumnEncryptionKeyCacheTtl: Nullable_1<TimeSpan>;
     DecryptColumnEncryptionKey(masterKeyPath: string, encryptionAlgorithm: string, encryptedColumnEncryptionKey: byte[]): byte[];
     EncryptColumnEncryptionKey(masterKeyPath: string, encryptionAlgorithm: string, columnEncryptionKey: byte[]): byte[];
@@ -573,6 +608,8 @@ export const SqlColumnEncryptionKeyStoreProvider: (abstract new() => SqlColumnEn
 export type SqlColumnEncryptionKeyStoreProvider = SqlColumnEncryptionKeyStoreProvider$instance;
 
 export interface SqlCommand$instance extends DbCommand {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_SqlCommand: never;
+
     readonly __tsonic_iface_System_ComponentModel_IComponent: never;
     readonly __tsonic_iface_System_Data_IDbCommand: never;
     readonly __tsonic_iface_System_IAsyncDisposable: never;
@@ -643,6 +680,8 @@ export const SqlCommand: {
 export type SqlCommand = SqlCommand$instance;
 
 export interface SqlCommandBuilder$instance extends DbCommandBuilder {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_SqlCommandBuilder: never;
+
     readonly __tsonic_iface_System_ComponentModel_IComponent: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -680,6 +719,8 @@ export const SqlCommandBuilder: {
 export type SqlCommandBuilder = SqlCommandBuilder$instance;
 
 export interface SqlConfigurableRetryFactory$instance {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_SqlConfigurableRetryFactory: never;
+
 }
 
 
@@ -695,6 +736,8 @@ export const SqlConfigurableRetryFactory: {
 export type SqlConfigurableRetryFactory = SqlConfigurableRetryFactory$instance;
 
 export interface SqlConnection$instance extends DbConnection {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_SqlConnection: never;
+
     readonly __tsonic_iface_System_ComponentModel_IComponent: never;
     readonly __tsonic_iface_System_Data_IDbConnection: never;
     readonly __tsonic_iface_System_IAsyncDisposable: never;
@@ -762,6 +805,8 @@ export const SqlConnection: {
 export type SqlConnection = SqlConnection$instance;
 
 export interface SqlConnectionEncryptOption$instance {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_SqlConnectionEncryptOption: never;
+
     Equals(obj: unknown): boolean;
     GetHashCode(): int;
     ToString(): string;
@@ -781,6 +826,8 @@ export const SqlConnectionEncryptOption: {
 export type SqlConnectionEncryptOption = SqlConnectionEncryptOption$instance;
 
 export interface SqlConnectionStringBuilder$instance extends DbConnectionStringBuilder {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_SqlConnectionStringBuilder: never;
+
     readonly __tsonic_iface_System_Collections_ICollection: never;
     readonly __tsonic_iface_System_Collections_IDictionary: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
@@ -808,7 +855,6 @@ export interface SqlConnectionStringBuilder$instance extends DbConnectionStringB
     IntegratedSecurity: boolean;
     IPAddressPreference: SqlConnectionIPAddressPreference;
     readonly IsFixedSize: boolean;
-    [keyword: string]: unknown;
     readonly Keys: ICollection;
     LoadBalanceTimeout: int;
     MaxPoolSize: int;
@@ -844,9 +890,11 @@ export const SqlConnectionStringBuilder: {
 };
 
 
-export type SqlConnectionStringBuilder = SqlConnectionStringBuilder$instance;
+export type SqlConnectionStringBuilder = SqlConnectionStringBuilder$instance & { [keyword: string]: unknown; };
 
 export interface SqlCredential$instance {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_SqlCredential: never;
+
     readonly Password: SecureString;
     readonly UserId: string;
 }
@@ -860,6 +908,8 @@ export const SqlCredential: {
 export type SqlCredential = SqlCredential$instance;
 
 export interface SqlDataAdapter$instance extends DbDataAdapter {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_SqlDataAdapter: never;
+
     readonly __tsonic_iface_System_ComponentModel_IComponent: never;
     readonly __tsonic_iface_System_Data_IDataAdapter: never;
     readonly __tsonic_iface_System_Data_IDbDataAdapter: never;
@@ -887,6 +937,8 @@ export const SqlDataAdapter: {
 export type SqlDataAdapter = SqlDataAdapter$instance;
 
 export interface SqlDataReader$instance extends DbDataReader {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_SqlDataReader: never;
+
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
     readonly __tsonic_iface_System_Data_Common_IDbColumnSchemaGenerator: never;
     readonly __tsonic_iface_System_Data_IDataReader: never;
@@ -973,6 +1025,8 @@ export const SqlDataReader: {
 export type SqlDataReader = SqlDataReader$instance;
 
 export interface SqlDependency$instance {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_SqlDependency: never;
+
     readonly HasChanges: boolean;
     readonly Id: string;
     AddCommandDependency(command: SqlCommand): void;
@@ -993,6 +1047,8 @@ export const SqlDependency: {
 export type SqlDependency = SqlDependency$instance;
 
 export interface SqlError$instance {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_SqlError: never;
+
     readonly Class: byte;
     readonly LineNumber: int;
     readonly Message: string;
@@ -1012,11 +1068,12 @@ export const SqlError: {
 export type SqlError = SqlError$instance;
 
 export interface SqlErrorCollection$instance {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_SqlErrorCollection: never;
+
     readonly __tsonic_iface_System_Collections_ICollection: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly Count: int;
-    readonly [index: number]: SqlError;
     CopyTo(array: SqlError[], index: int): void;
     CopyTo(array: ClrArray, index: int): void;
     GetEnumerator(): IEnumerator;
@@ -1027,9 +1084,11 @@ export const SqlErrorCollection: {
 };
 
 
-export type SqlErrorCollection = SqlErrorCollection$instance;
+export type SqlErrorCollection = SqlErrorCollection$instance & { readonly [index: number]: SqlError; };
 
 export interface SqlException$instance extends DbException {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_SqlException: never;
+
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
     readonly BatchCommand: SqlBatchCommand;
@@ -1055,6 +1114,8 @@ export const SqlException: {
 export type SqlException = SqlException$instance;
 
 export interface SqlInfoMessageEventArgs$instance extends EventArgs {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_SqlInfoMessageEventArgs: never;
+
     readonly Errors: SqlErrorCollection;
     readonly Message: string;
     readonly Source: string;
@@ -1069,6 +1130,8 @@ export const SqlInfoMessageEventArgs: {
 export type SqlInfoMessageEventArgs = SqlInfoMessageEventArgs$instance;
 
 export interface SqlNotificationEventArgs$instance extends EventArgs {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_SqlNotificationEventArgs: never;
+
     readonly Info: SqlNotificationInfo;
     readonly Source: SqlNotificationSource;
     readonly Type: SqlNotificationType;
@@ -1083,6 +1146,8 @@ export const SqlNotificationEventArgs: {
 export type SqlNotificationEventArgs = SqlNotificationEventArgs$instance;
 
 export interface SqlParameter$instance extends DbParameter {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_SqlParameter: never;
+
     readonly __tsonic_iface_System_Data_IDataParameter: never;
     readonly __tsonic_iface_System_Data_IDbDataParameter: never;
     readonly __tsonic_iface_System_ICloneable: never;
@@ -1129,6 +1194,8 @@ export const SqlParameter: {
 export type SqlParameter = SqlParameter$instance;
 
 export interface SqlParameterCollection$instance extends DbParameterCollection {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_SqlParameterCollection: never;
+
     readonly __tsonic_iface_System_Collections_ICollection: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
     readonly __tsonic_iface_System_Collections_IList: never;
@@ -1180,6 +1247,8 @@ export const SqlParameterCollection: {
 export type SqlParameterCollection = SqlParameterCollection$instance;
 
 export interface SqlRetryingEventArgs$instance extends EventArgs {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_SqlRetryingEventArgs: never;
+
     Cancel: boolean;
     readonly Delay: TimeSpan;
     readonly Exceptions: IList_1<Exception>;
@@ -1195,6 +1264,8 @@ export const SqlRetryingEventArgs: {
 export type SqlRetryingEventArgs = SqlRetryingEventArgs$instance;
 
 export interface SqlRetryIntervalBaseEnumerator$instance {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_SqlRetryIntervalBaseEnumerator: never;
+
     readonly __tsonic_iface_System_Collections_Generic_IEnumerator_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerator: never;
     readonly __tsonic_iface_System_ICloneable: never;
@@ -1220,6 +1291,8 @@ export const SqlRetryIntervalBaseEnumerator: (abstract new() => SqlRetryInterval
 export type SqlRetryIntervalBaseEnumerator = SqlRetryIntervalBaseEnumerator$instance;
 
 export interface SqlRetryLogicBase$instance {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_SqlRetryLogicBase: never;
+
     readonly __tsonic_iface_System_ICloneable: never;
 
     Current: int;
@@ -1240,6 +1313,8 @@ export const SqlRetryLogicBase: (abstract new() => SqlRetryLogicBase) & {
 export type SqlRetryLogicBase = SqlRetryLogicBase$instance;
 
 export interface SqlRetryLogicBaseProvider$instance {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_SqlRetryLogicBaseProvider: never;
+
     Retrying: EventHandler_1<SqlRetryingEventArgs>;
     RetryLogic: SqlRetryLogicBase;
     Execute<TResult>(sender: unknown, function_: Func_1<TResult>): TResult;
@@ -1255,6 +1330,8 @@ export const SqlRetryLogicBaseProvider: (abstract new() => SqlRetryLogicBaseProv
 export type SqlRetryLogicBaseProvider = SqlRetryLogicBaseProvider$instance;
 
 export interface SqlRetryLogicOption$instance {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_SqlRetryLogicOption: never;
+
     AuthorizedSqlCondition: Predicate_1<System_Internal.String>;
     DeltaTime: TimeSpan;
     MaxTimeInterval: TimeSpan;
@@ -1272,6 +1349,8 @@ export const SqlRetryLogicOption: {
 export type SqlRetryLogicOption = SqlRetryLogicOption$instance;
 
 export interface SqlRowsCopiedEventArgs$instance extends EventArgs {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_SqlRowsCopiedEventArgs: never;
+
     Abort: boolean;
     readonly RowsCopied: long;
 }
@@ -1285,6 +1364,8 @@ export const SqlRowsCopiedEventArgs: {
 export type SqlRowsCopiedEventArgs = SqlRowsCopiedEventArgs$instance;
 
 export interface SqlRowUpdatedEventArgs$instance extends RowUpdatedEventArgs {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_SqlRowUpdatedEventArgs: never;
+
     readonly Command: SqlCommand;
 }
 
@@ -1297,6 +1378,8 @@ export const SqlRowUpdatedEventArgs: {
 export type SqlRowUpdatedEventArgs = SqlRowUpdatedEventArgs$instance;
 
 export interface SqlRowUpdatingEventArgs$instance extends RowUpdatingEventArgs {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_SqlRowUpdatingEventArgs: never;
+
     BaseCommand: IDbCommand;
     Command: SqlCommand;
 }
@@ -1310,6 +1393,8 @@ export const SqlRowUpdatingEventArgs: {
 export type SqlRowUpdatingEventArgs = SqlRowUpdatingEventArgs$instance;
 
 export interface SqlTransaction$instance extends DbTransaction {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_SqlTransaction: never;
+
     readonly __tsonic_iface_System_Data_IDbTransaction: never;
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;

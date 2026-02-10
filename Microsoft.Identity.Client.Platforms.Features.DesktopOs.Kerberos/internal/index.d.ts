@@ -10,6 +10,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Object as ClrObject } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface Credential$instance {
+    readonly __tsonic_type_Microsoft_Identity_Client_Platforms_Features_DesktopOs_Kerberos_Credential: never;
+
 }
 
 

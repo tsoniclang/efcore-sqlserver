@@ -16,6 +16,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Byte, EventArgs, EventHandler_1, Exception, IDisposable, Int32, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface CacheChangedEventArgs$instance extends EventArgs {
+    readonly __tsonic_type_Microsoft_Identity_Client_Extensions_Msal_CacheChangedEventArgs: never;
+
     readonly AccountsAdded: IEnumerable_1<System_Internal.String>;
     readonly AccountsRemoved: IEnumerable_1<System_Internal.String>;
 }
@@ -29,6 +31,8 @@ export const CacheChangedEventArgs: {
 export type CacheChangedEventArgs = CacheChangedEventArgs$instance;
 
 export interface CrossPlatLock$instance {
+    readonly __tsonic_type_Microsoft_Identity_Client_Extensions_Msal_CrossPlatLock: never;
+
     readonly __tsonic_iface_System_IDisposable: never;
 
     Dispose(): void;
@@ -43,6 +47,8 @@ export const CrossPlatLock: {
 export type CrossPlatLock = CrossPlatLock$instance;
 
 export interface MsalCacheHelper$instance {
+    readonly __tsonic_type_Microsoft_Identity_Client_Extensions_Msal_MsalCacheHelper: never;
+
     Clear(): void;
     LoadUnencryptedTokenCache(): byte[];
     RegisterCache(tokenCache: ITokenCache): void;
@@ -63,6 +69,8 @@ export const MsalCacheHelper: {
 export type MsalCacheHelper = MsalCacheHelper$instance;
 
 export interface MsalCachePersistenceException$instance extends Exception {
+    readonly __tsonic_type_Microsoft_Identity_Client_Extensions_Msal_MsalCachePersistenceException: never;
+
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
 }
@@ -78,6 +86,8 @@ export const MsalCachePersistenceException: {
 export type MsalCachePersistenceException = MsalCachePersistenceException$instance;
 
 export interface Storage$instance {
+    readonly __tsonic_type_Microsoft_Identity_Client_Extensions_Msal_Storage: never;
+
     Clear(ignoreExceptions?: boolean): void;
     ReadData(): byte[];
     VerifyPersistence(): void;
@@ -93,6 +103,8 @@ export const Storage: {
 export type Storage = Storage$instance;
 
 export interface StorageCreationProperties$instance {
+    readonly __tsonic_type_Microsoft_Identity_Client_Extensions_Msal_StorageCreationProperties: never;
+
     readonly CacheFileName: string;
     readonly CacheDirectory: string;
     readonly MacKeyChainServiceName: string;
@@ -119,6 +131,8 @@ export const StorageCreationProperties: {
 export type StorageCreationProperties = StorageCreationProperties$instance;
 
 export interface StorageCreationPropertiesBuilder$instance {
+    readonly __tsonic_type_Microsoft_Identity_Client_Extensions_Msal_StorageCreationPropertiesBuilder: never;
+
     Build(): StorageCreationProperties;
     CustomizeLockRetry(lockRetryDelay: int, lockRetryCount: int): StorageCreationPropertiesBuilder;
     WithCacheChangedEvent(clientId: string, authority?: string): StorageCreationPropertiesBuilder;
@@ -138,6 +152,8 @@ export const StorageCreationPropertiesBuilder: {
 export type StorageCreationPropertiesBuilder = StorageCreationPropertiesBuilder$instance;
 
 export interface TraceSourceLogger$instance {
+    readonly __tsonic_type_Microsoft_Identity_Client_Extensions_Msal_TraceSourceLogger: never;
+
     readonly Source: TraceSource;
     LogError(message: string): void;
     LogInformation(message: string): void;

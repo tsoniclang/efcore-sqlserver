@@ -15,6 +15,8 @@ import type { IReadOnlyProperty } from "@tsonic/efcore/Microsoft.EntityFramework
 import type { EventId } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
 
 export interface ConflictingValueGenerationStrategiesEventData$instance extends EventData {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Diagnostics_ConflictingValueGenerationStrategiesEventData: never;
+
     readonly OtherValueGenerationStrategy: string;
     readonly Property: IReadOnlyProperty;
     readonly SqlServerValueGenerationStrategy: SqlServerValueGenerationStrategy;

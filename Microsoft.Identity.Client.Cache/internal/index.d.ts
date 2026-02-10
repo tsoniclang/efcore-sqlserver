@@ -18,6 +18,8 @@ export enum CacheLevel {
 
 
 export interface CacheData$instance {
+    readonly __tsonic_type_Microsoft_Identity_Client_Cache_CacheData: never;
+
     AdalV3State: byte[];
     UnifiedState: byte[];
 }

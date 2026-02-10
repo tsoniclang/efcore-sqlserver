@@ -45,6 +45,8 @@ export interface ISqlServerSingletonOptions$instance extends Microsoft_EntityFra
 export type ISqlServerSingletonOptions = ISqlServerSingletonOptions$instance;
 
 export interface SqlServerModelValidator$instance extends RelationalModelValidator {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Infrastructure_Internal_SqlServerModelValidator: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IModelValidator: never;
 
     Validate(model: IModel, logger: IDiagnosticsLogger_1<DbLoggerCategory$Model$Validation>): void;
@@ -71,6 +73,8 @@ export const SqlServerModelValidator: {
 export type SqlServerModelValidator = SqlServerModelValidator$instance;
 
 export interface SqlServerOptionsExtension$instance extends RelationalOptionsExtension {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Infrastructure_Internal_SqlServerOptionsExtension: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IDbContextOptionsExtension: never;
 
     readonly AzureSqlCompatibilityLevel: int;
@@ -103,6 +107,8 @@ export const SqlServerOptionsExtension: {
 export type SqlServerOptionsExtension = SqlServerOptionsExtension$instance;
 
 export interface SqlServerSingletonOptions$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Infrastructure_Internal_SqlServerSingletonOptions: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_ISingletonOptions: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_SqlServer_Infrastructure_Internal_ISqlServerSingletonOptions: never;
 

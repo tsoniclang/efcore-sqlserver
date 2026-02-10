@@ -13,6 +13,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Int32, Object as ClrObject } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface LKGConfigurationCacheOptions$instance {
+    readonly __tsonic_type_Microsoft_IdentityModel_Tokens_Configuration_LKGConfigurationCacheOptions: never;
+
     BaseConfigurationComparer: IEqualityComparer_1<BaseConfiguration>;
     LastKnownGoodConfigurationSizeLimit: int;
     RemoveExpiredValues: boolean;

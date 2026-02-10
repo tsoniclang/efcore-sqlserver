@@ -57,6 +57,8 @@ export interface IDocumentRetriever$instance {
 export type IDocumentRetriever = IDocumentRetriever$instance;
 
 export interface AuthenticationProtocolMessage$instance {
+    readonly __tsonic_type_Microsoft_IdentityModel_Protocols_AuthenticationProtocolMessage: never;
+
     IssuerAddress: string;
     readonly Parameters: IDictionary_2<System_Internal.String, System_Internal.String>;
     PostTitle: string;
@@ -79,6 +81,8 @@ export const AuthenticationProtocolMessage: (abstract new() => AuthenticationPro
 export type AuthenticationProtocolMessage = AuthenticationProtocolMessage$instance;
 
 export interface ConfigurationManager_1$instance<T> extends BaseConfigurationManager {
+    readonly __tsonic_type_Microsoft_IdentityModel_Protocols_ConfigurationManager_1: never;
+
     readonly __tsonic_iface_Microsoft_IdentityModel_Protocols_IConfigurationManager_1: never;
 
     GetBaseConfigurationAsync(cancel: CancellationToken): Task_1<BaseConfiguration>;
@@ -111,6 +115,8 @@ export type ConfigurationManager_1<T> = ConfigurationManager_1$instance<T> & __C
 
 
 export interface ConfigurationValidationResult$instance {
+    readonly __tsonic_type_Microsoft_IdentityModel_Protocols_ConfigurationValidationResult: never;
+
     ErrorMessage: string;
     Succeeded: boolean;
 }
@@ -124,6 +130,8 @@ export const ConfigurationValidationResult: {
 export type ConfigurationValidationResult = ConfigurationValidationResult$instance;
 
 export interface FileDocumentRetriever$instance extends IDocumentRetriever$instance {
+    readonly __tsonic_type_Microsoft_IdentityModel_Protocols_FileDocumentRetriever: never;
+
     readonly __tsonic_iface_Microsoft_IdentityModel_Protocols_IDocumentRetriever: never;
 
     GetDocumentAsync(address: string, cancel: CancellationToken): Task_1<System_Internal.String>;
@@ -143,6 +151,8 @@ export type FileDocumentRetriever = FileDocumentRetriever$instance & __FileDocum
 
 
 export interface HttpDocumentRetriever$instance extends IDocumentRetriever$instance {
+    readonly __tsonic_type_Microsoft_IdentityModel_Protocols_HttpDocumentRetriever: never;
+
     readonly __tsonic_iface_Microsoft_IdentityModel_Protocols_IDocumentRetriever: never;
 
     RequireHttps: boolean;
@@ -168,6 +178,8 @@ export type HttpDocumentRetriever = HttpDocumentRetriever$instance & __HttpDocum
 
 
 export interface HttpRequestData$instance {
+    readonly __tsonic_type_Microsoft_IdentityModel_Protocols_HttpRequestData: never;
+
     Body: byte[];
     readonly ClientCertificates: X509Certificate2Collection;
     Headers: IDictionary_2<System_Internal.String, IEnumerable_1<System_Internal.String>>;
@@ -186,6 +198,8 @@ export const HttpRequestData: {
 export type HttpRequestData = HttpRequestData$instance;
 
 export interface StaticConfigurationManager_1$instance<T> extends BaseConfigurationManager {
+    readonly __tsonic_type_Microsoft_IdentityModel_Protocols_StaticConfigurationManager_1: never;
+
     readonly __tsonic_iface_Microsoft_IdentityModel_Protocols_IConfigurationManager_1: never;
 
     GetBaseConfigurationAsync(cancel: CancellationToken): Task_1<BaseConfiguration>;
@@ -208,6 +222,8 @@ export type StaticConfigurationManager_1<T> = StaticConfigurationManager_1$insta
 
 
 export interface X509CertificateValidationMode$instance {
+    readonly __tsonic_type_Microsoft_IdentityModel_Protocols_X509CertificateValidationMode: never;
+
 }
 
 

@@ -33,6 +33,8 @@ export interface ISqlServerUpdateSqlGenerator$instance extends Microsoft_EntityF
 export type ISqlServerUpdateSqlGenerator = ISqlServerUpdateSqlGenerator$instance;
 
 export interface SqlServerModificationCommand$instance extends ModificationCommand {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Update_Internal_SqlServerModificationCommand: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Update_IModificationCommand: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Update_INonTrackedModificationCommand: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Update_IReadOnlyModificationCommand: never;
@@ -50,6 +52,8 @@ export const SqlServerModificationCommand: {
 export type SqlServerModificationCommand = SqlServerModificationCommand$instance;
 
 export interface SqlServerModificationCommandBatch$instance extends AffectedCountModificationCommandBatch {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Update_Internal_SqlServerModificationCommandBatch: never;
+
     readonly UpdateSqlGenerator: ISqlServerUpdateSqlGenerator;
     AddCommand(modificationCommand: IReadOnlyModificationCommand): void;
     Complete(moreBatchesExpected: boolean): void;
@@ -69,6 +73,8 @@ export const SqlServerModificationCommandBatch: {
 export type SqlServerModificationCommandBatch = SqlServerModificationCommandBatch$instance;
 
 export interface SqlServerModificationCommandBatchFactory$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Update_Internal_SqlServerModificationCommandBatchFactory: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Update_IModificationCommandBatchFactory: never;
 
     readonly Dependencies: ModificationCommandBatchFactoryDependencies;
@@ -84,6 +90,8 @@ export const SqlServerModificationCommandBatchFactory: {
 export type SqlServerModificationCommandBatchFactory = SqlServerModificationCommandBatchFactory$instance;
 
 export interface SqlServerModificationCommandFactory$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Update_Internal_SqlServerModificationCommandFactory: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Update_IModificationCommandFactory: never;
 
     CreateModificationCommand(modificationCommandParameters: ModificationCommandParameters): IModificationCommand;
@@ -99,6 +107,8 @@ export const SqlServerModificationCommandFactory: {
 export type SqlServerModificationCommandFactory = SqlServerModificationCommandFactory$instance;
 
 export interface SqlServerUpdateSqlGenerator$instance extends UpdateAndSelectSqlGenerator {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Update_Internal_SqlServerUpdateSqlGenerator: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_SqlServer_Update_Internal_ISqlServerUpdateSqlGenerator: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Update_IUpdateSqlGenerator: never;
 

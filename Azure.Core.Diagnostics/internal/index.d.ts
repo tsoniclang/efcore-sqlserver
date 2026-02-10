@@ -12,6 +12,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Action_1, Action_2, IDisposable, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface AzureEventSourceListener$instance extends EventListener {
+    readonly __tsonic_type_Azure_Core_Diagnostics_AzureEventSourceListener: never;
+
     readonly __tsonic_iface_System_IDisposable: never;
 
     OnEventSourceCreated(eventSource: EventSource): void;

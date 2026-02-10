@@ -17,6 +17,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Exception, Int32, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface InvalidConfigurationException$instance extends Exception {
+    readonly __tsonic_type_Microsoft_IdentityModel_Protocols_Configuration_InvalidConfigurationException: never;
+
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
 }
@@ -32,6 +34,8 @@ export const InvalidConfigurationException: {
 export type InvalidConfigurationException = InvalidConfigurationException$instance;
 
 export interface LastKnownGoodConfigurationCacheOptions$instance extends LKGConfigurationCacheOptions {
+    readonly __tsonic_type_Microsoft_IdentityModel_Protocols_Configuration_LastKnownGoodConfigurationCacheOptions: never;
+
 }
 
 

@@ -18,6 +18,8 @@ import type { JsonSerializerOptions, Utf8JsonReader, Utf8JsonWriter } from "@tso
 import type { Type, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface BinaryDataJsonConverter$instance extends JsonConverter_1<BinaryData> {
+    readonly __tsonic_type_System_Text_Json_Serialization_BinaryDataJsonConverter: never;
+
     Read(reader: Utf8JsonReader, typeToConvert: Type, options: JsonSerializerOptions): BinaryData | undefined;
     Write(writer: Utf8JsonWriter, value: BinaryData, options: JsonSerializerOptions): void;
 }

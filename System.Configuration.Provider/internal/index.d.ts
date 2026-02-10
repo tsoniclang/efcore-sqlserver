@@ -15,6 +15,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Exception, Int32, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface ProviderBase$instance {
+    readonly __tsonic_type_System_Configuration_Provider_ProviderBase: never;
+
     readonly Description: string;
     readonly Name: string;
     Initialize(name: string, config: NameValueCollection): void;
@@ -28,12 +30,13 @@ export const ProviderBase: (abstract new() => ProviderBase) & {
 export type ProviderBase = ProviderBase$instance;
 
 export interface ProviderCollection$instance {
+    readonly __tsonic_type_System_Configuration_Provider_ProviderCollection: never;
+
     readonly __tsonic_iface_System_Collections_ICollection: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly Count: int;
     readonly IsSynchronized: boolean;
-    readonly [name: string]: ProviderBase | SettingsProvider;
     readonly SyncRoot: unknown;
     Add(provider: ProviderBase): void;
     Clear(): void;
@@ -49,9 +52,11 @@ export const ProviderCollection: {
 };
 
 
-export type ProviderCollection = ProviderCollection$instance;
+export type ProviderCollection = ProviderCollection$instance & { readonly [name: string]: ProviderBase; };
 
 export interface ProviderException$instance extends Exception {
+    readonly __tsonic_type_System_Configuration_Provider_ProviderException: never;
+
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
 }

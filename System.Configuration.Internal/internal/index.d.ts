@@ -181,6 +181,8 @@ export interface IInternalConfigSystem$instance {
 export type IInternalConfigSystem = IInternalConfigSystem$instance;
 
 export interface DelegatingConfigHost$instance {
+    readonly __tsonic_type_System_Configuration_Internal_DelegatingConfigHost: never;
+
     readonly HasLocalConfig: boolean;
     readonly HasRoamingConfig: boolean;
     readonly IsAppConfigHttp: boolean;
@@ -236,6 +238,8 @@ export const DelegatingConfigHost: (abstract new() => DelegatingConfigHost) & {
 export type DelegatingConfigHost = DelegatingConfigHost$instance;
 
 export interface InternalConfigEventArgs$instance extends EventArgs {
+    readonly __tsonic_type_System_Configuration_Internal_InternalConfigEventArgs: never;
+
     ConfigPath: string;
 }
 

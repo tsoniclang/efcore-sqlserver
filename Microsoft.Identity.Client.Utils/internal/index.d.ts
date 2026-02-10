@@ -11,6 +11,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Func_1, Object as ClrObject, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface MacMainThreadScheduler$instance {
+    readonly __tsonic_type_Microsoft_Identity_Client_Utils_MacMainThreadScheduler: never;
+
     IsCurrentlyOnMainThread(): boolean;
     IsRunning(): boolean;
     RunOnMainThreadAsync(asyncAction: Func_1<Task>): Task;

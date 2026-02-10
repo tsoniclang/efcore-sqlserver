@@ -21,6 +21,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Byte, Char, DateTime, Int32, Object as ClrObject, ReadOnlyMemory_1, String as ClrString, Type, ValueType } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface JwtHeaderParameterNames$instance {
+    readonly __tsonic_type_Microsoft_IdentityModel_JsonWebTokens_JwtHeaderParameterNames: never;
+
 }
 
 
@@ -47,6 +49,8 @@ export const JwtHeaderParameterNames: {
 export type JwtHeaderParameterNames = JwtHeaderParameterNames$instance;
 
 export interface JwtRegisteredClaimNames$instance {
+    readonly __tsonic_type_Microsoft_IdentityModel_JsonWebTokens_JwtRegisteredClaimNames: never;
+
 }
 
 
@@ -97,6 +101,8 @@ export const JwtRegisteredClaimNames: {
 export type JwtRegisteredClaimNames = JwtRegisteredClaimNames$instance;
 
 export interface JsonWebToken$instance extends SecurityToken {
+    readonly __tsonic_type_Microsoft_IdentityModel_JsonWebTokens_JsonWebToken: never;
+
     readonly __tsonic_iface_Microsoft_IdentityModel_Logging_ISafeLogSecurityArtifact: never;
 
     readonly Actor: string;
@@ -156,6 +162,8 @@ export type JsonWebToken = JsonWebToken$instance & __JsonWebToken$views;
 
 
 export interface JsonWebTokenHandler$instance extends TokenHandler {
+    readonly __tsonic_type_Microsoft_IdentityModel_JsonWebTokens_JsonWebTokenHandler: never;
+
     readonly CanValidateToken: boolean;
     InboundClaimTypeMap: IDictionary_2<System_Internal.String, System_Internal.String>;
     MapInboundClaims: boolean;
@@ -204,6 +212,8 @@ export const JsonWebTokenHandler: {
 export type JsonWebTokenHandler = JsonWebTokenHandler$instance;
 
 export interface JwtTokenUtilities$instance {
+    readonly __tsonic_type_Microsoft_IdentityModel_JsonWebTokens_JwtTokenUtilities: never;
+
 }
 
 

@@ -13,7 +13,9 @@ import type { ConfigurationValidationResult, IConfigurationValidator_1 } from ".
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Int32, Object as ClrObject } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface OpenIdConnectConfigurationValidator$instance {
+export interface OpenIdConnectConfigurationValidator$instance extends Microsoft_IdentityModel_Protocols_Internal.IConfigurationValidator_1$instance<OpenIdConnectConfiguration> {
+    readonly __tsonic_type_Microsoft_IdentityModel_Protocols_OpenIdConnect_Configuration_OpenIdConnectConfigurationValidator: never;
+
     readonly __tsonic_iface_Microsoft_IdentityModel_Protocols_IConfigurationValidator_1: never;
 
     MinimumNumberOfKeys: int;

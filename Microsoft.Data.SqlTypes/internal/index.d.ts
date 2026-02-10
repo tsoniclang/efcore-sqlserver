@@ -15,6 +15,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { AsyncCallback, Boolean as ClrBoolean, Byte, IAsyncDisposable, IAsyncResult, IDisposable, Int32, Int64, Nullable_1, Object as ClrObject, ReadOnlyMemory_1, String as ClrString, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface SqlVector_1$instance<T extends unknown> {
+    readonly __tsonic_type_Microsoft_Data_SqlTypes_SqlVector_1: never;
+
     readonly __tsonic_iface_System_Data_SqlTypes_INullable: never;
 
     readonly IsNull: boolean;
@@ -33,6 +35,8 @@ export const SqlVector_1: {
 export type SqlVector_1<T> = SqlVector_1$instance<T>;
 
 export interface SqlFileStream$instance extends Stream {
+    readonly __tsonic_type_Microsoft_Data_SqlTypes_SqlFileStream: never;
+
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -69,6 +73,8 @@ export const SqlFileStream: {
 export type SqlFileStream = SqlFileStream$instance;
 
 export interface SqlJson$instance {
+    readonly __tsonic_type_Microsoft_Data_SqlTypes_SqlJson: never;
+
     readonly __tsonic_iface_System_Data_SqlTypes_INullable: never;
 
     readonly IsNull: boolean;

@@ -15,6 +15,8 @@ import type { XmlReader, XmlWriter } from "@tsonic/dotnet/System.Xml/internal/in
 import type { Boolean as ClrBoolean, Int32, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface SystemDrawingSection$instance extends ConfigurationSection {
+    readonly __tsonic_type_System_Drawing_Configuration_SystemDrawingSection: never;
+
     BitmapSuffix: string;
     readonly Properties: ConfigurationPropertyCollection;
 }

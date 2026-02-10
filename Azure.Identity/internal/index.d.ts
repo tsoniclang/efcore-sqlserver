@@ -21,6 +21,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Byte, DateTimeOffset, Exception, Func_1, Func_2, Func_3, Int32, Nullable_1, Object as ClrObject, ReadOnlyMemory_1, String as ClrString, TimeSpan, Uri, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface DeviceCodeInfo$instance {
+    readonly __tsonic_type_Azure_Identity_DeviceCodeInfo: never;
+
     ClientId: string;
     DeviceCode: string;
     ExpiresOn: DateTimeOffset;
@@ -39,6 +41,8 @@ export const DeviceCodeInfo: {
 export type DeviceCodeInfo = DeviceCodeInfo$instance;
 
 export interface TokenCacheData$instance {
+    readonly __tsonic_type_Azure_Identity_TokenCacheData: never;
+
     readonly CacheBytes: ReadOnlyMemory_1<System_Internal.Byte>;
 }
 
@@ -51,6 +55,8 @@ export const TokenCacheData: {
 export type TokenCacheData = TokenCacheData$instance;
 
 export interface AuthenticationFailedException$instance extends Exception {
+    readonly __tsonic_type_Azure_Identity_AuthenticationFailedException: never;
+
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
 }
@@ -65,6 +71,8 @@ export const AuthenticationFailedException: {
 export type AuthenticationFailedException = AuthenticationFailedException$instance;
 
 export interface AuthenticationRecord$instance {
+    readonly __tsonic_type_Azure_Identity_AuthenticationRecord: never;
+
     Authority: string;
     ClientId: string;
     readonly HomeAccountId: string;
@@ -84,6 +92,8 @@ export const AuthenticationRecord: {
 export type AuthenticationRecord = AuthenticationRecord$instance;
 
 export interface AuthenticationRequiredException$instance extends CredentialUnavailableException {
+    readonly __tsonic_type_Azure_Identity_AuthenticationRequiredException: never;
+
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
     readonly TokenRequestContext: TokenRequestContext;
@@ -99,6 +109,8 @@ export const AuthenticationRequiredException: {
 export type AuthenticationRequiredException = AuthenticationRequiredException$instance;
 
 export interface AuthorizationCodeCredential$instance extends TokenCredential {
+    readonly __tsonic_type_Azure_Identity_AuthorizationCodeCredential: never;
+
     GetToken(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): AccessToken;
     GetToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
     GetTokenAsync(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): ValueTask_1<AccessToken>;
@@ -116,6 +128,8 @@ export const AuthorizationCodeCredential: {
 export type AuthorizationCodeCredential = AuthorizationCodeCredential$instance;
 
 export interface AuthorizationCodeCredentialOptions$instance extends TokenCredentialOptions {
+    readonly __tsonic_type_Azure_Identity_AuthorizationCodeCredentialOptions: never;
+
     readonly __tsonic_iface_Azure_Identity_ISupportsAdditionallyAllowedTenants: never;
     readonly __tsonic_iface_Azure_Identity_ISupportsDisableInstanceDiscovery: never;
 
@@ -133,6 +147,8 @@ export const AuthorizationCodeCredentialOptions: {
 export type AuthorizationCodeCredentialOptions = AuthorizationCodeCredentialOptions$instance;
 
 export interface AzureCliCredential$instance extends TokenCredential {
+    readonly __tsonic_type_Azure_Identity_AzureCliCredential: never;
+
     GetToken(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): AccessToken;
     GetToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
     GetTokenAsync(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): ValueTask_1<AccessToken>;
@@ -149,6 +165,8 @@ export const AzureCliCredential: {
 export type AzureCliCredential = AzureCliCredential$instance;
 
 export interface AzureCliCredentialOptions$instance extends TokenCredentialOptions {
+    readonly __tsonic_type_Azure_Identity_AzureCliCredentialOptions: never;
+
     readonly __tsonic_iface_Azure_Identity_ISupportsAdditionallyAllowedTenants: never;
 
     AdditionallyAllowedTenants: IList_1<System_Internal.String>;
@@ -166,6 +184,8 @@ export const AzureCliCredentialOptions: {
 export type AzureCliCredentialOptions = AzureCliCredentialOptions$instance;
 
 export interface AzureDeveloperCliCredential$instance extends TokenCredential {
+    readonly __tsonic_type_Azure_Identity_AzureDeveloperCliCredential: never;
+
     GetToken(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): AccessToken;
     GetToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
     GetTokenAsync(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): ValueTask_1<AccessToken>;
@@ -182,6 +202,8 @@ export const AzureDeveloperCliCredential: {
 export type AzureDeveloperCliCredential = AzureDeveloperCliCredential$instance;
 
 export interface AzureDeveloperCliCredentialOptions$instance extends TokenCredentialOptions {
+    readonly __tsonic_type_Azure_Identity_AzureDeveloperCliCredentialOptions: never;
+
     readonly __tsonic_iface_Azure_Identity_ISupportsAdditionallyAllowedTenants: never;
 
     AdditionallyAllowedTenants: IList_1<System_Internal.String>;
@@ -198,6 +220,8 @@ export const AzureDeveloperCliCredentialOptions: {
 export type AzureDeveloperCliCredentialOptions = AzureDeveloperCliCredentialOptions$instance;
 
 export interface AzurePipelinesCredential$instance extends TokenCredential {
+    readonly __tsonic_type_Azure_Identity_AzurePipelinesCredential: never;
+
     GetToken(requestContext: TokenRequestContext, cancellationToken: CancellationToken): AccessToken;
     GetToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
     GetTokenAsync(requestContext: TokenRequestContext, cancellationToken: CancellationToken): ValueTask_1<AccessToken>;
@@ -213,6 +237,8 @@ export const AzurePipelinesCredential: {
 export type AzurePipelinesCredential = AzurePipelinesCredential$instance;
 
 export interface AzurePipelinesCredentialOptions$instance extends TokenCredentialOptions {
+    readonly __tsonic_type_Azure_Identity_AzurePipelinesCredentialOptions: never;
+
     readonly __tsonic_iface_Azure_Identity_ISupportsAdditionallyAllowedTenants: never;
     readonly __tsonic_iface_Azure_Identity_ISupportsDisableInstanceDiscovery: never;
     readonly __tsonic_iface_Azure_Identity_ISupportsTokenCachePersistenceOptions: never;
@@ -231,6 +257,8 @@ export const AzurePipelinesCredentialOptions: {
 export type AzurePipelinesCredentialOptions = AzurePipelinesCredentialOptions$instance;
 
 export interface AzurePowerShellCredential$instance extends TokenCredential {
+    readonly __tsonic_type_Azure_Identity_AzurePowerShellCredential: never;
+
     GetToken(requestContext: TokenRequestContext, cancellationToken: CancellationToken): AccessToken;
     GetToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
     GetTokenAsync(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): ValueTask_1<AccessToken>;
@@ -247,6 +275,8 @@ export const AzurePowerShellCredential: {
 export type AzurePowerShellCredential = AzurePowerShellCredential$instance;
 
 export interface AzurePowerShellCredentialOptions$instance extends TokenCredentialOptions {
+    readonly __tsonic_type_Azure_Identity_AzurePowerShellCredentialOptions: never;
+
     readonly __tsonic_iface_Azure_Identity_ISupportsAdditionallyAllowedTenants: never;
 
     AdditionallyAllowedTenants: IList_1<System_Internal.String>;
@@ -263,6 +293,8 @@ export const AzurePowerShellCredentialOptions: {
 export type AzurePowerShellCredentialOptions = AzurePowerShellCredentialOptions$instance;
 
 export interface BrowserCustomizationOptions$instance {
+    readonly __tsonic_type_Azure_Identity_BrowserCustomizationOptions: never;
+
     ErrorMessage: string;
     SuccessMessage: string;
     UseEmbeddedWebView: Nullable_1<System_Internal.Boolean>;
@@ -277,6 +309,8 @@ export const BrowserCustomizationOptions: {
 export type BrowserCustomizationOptions = BrowserCustomizationOptions$instance;
 
 export interface ChainedTokenCredential$instance extends TokenCredential {
+    readonly __tsonic_type_Azure_Identity_ChainedTokenCredential: never;
+
     GetToken(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): AccessToken;
     GetToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
     GetTokenAsync(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): ValueTask_1<AccessToken>;
@@ -292,6 +326,8 @@ export const ChainedTokenCredential: {
 export type ChainedTokenCredential = ChainedTokenCredential$instance;
 
 export interface ClientAssertionCredential$instance extends TokenCredential {
+    readonly __tsonic_type_Azure_Identity_ClientAssertionCredential: never;
+
     GetToken(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): AccessToken;
     GetToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
     GetTokenAsync(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): ValueTask_1<AccessToken>;
@@ -308,6 +344,8 @@ export const ClientAssertionCredential: {
 export type ClientAssertionCredential = ClientAssertionCredential$instance;
 
 export interface ClientAssertionCredentialOptions$instance extends TokenCredentialOptions {
+    readonly __tsonic_type_Azure_Identity_ClientAssertionCredentialOptions: never;
+
     readonly __tsonic_iface_Azure_Identity_ISupportsAdditionallyAllowedTenants: never;
     readonly __tsonic_iface_Azure_Identity_ISupportsDisableInstanceDiscovery: never;
     readonly __tsonic_iface_Azure_Identity_ISupportsTokenCachePersistenceOptions: never;
@@ -326,6 +364,8 @@ export const ClientAssertionCredentialOptions: {
 export type ClientAssertionCredentialOptions = ClientAssertionCredentialOptions$instance;
 
 export interface ClientCertificateCredential$instance extends TokenCredential {
+    readonly __tsonic_type_Azure_Identity_ClientCertificateCredential: never;
+
     GetToken(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): AccessToken;
     GetToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
     GetTokenAsync(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): ValueTask_1<AccessToken>;
@@ -346,6 +386,8 @@ export const ClientCertificateCredential: {
 export type ClientCertificateCredential = ClientCertificateCredential$instance;
 
 export interface ClientCertificateCredentialOptions$instance extends TokenCredentialOptions {
+    readonly __tsonic_type_Azure_Identity_ClientCertificateCredentialOptions: never;
+
     readonly __tsonic_iface_Azure_Identity_ISupportsAdditionallyAllowedTenants: never;
     readonly __tsonic_iface_Azure_Identity_ISupportsDisableInstanceDiscovery: never;
     readonly __tsonic_iface_Azure_Identity_ISupportsTokenCachePersistenceOptions: never;
@@ -365,6 +407,8 @@ export const ClientCertificateCredentialOptions: {
 export type ClientCertificateCredentialOptions = ClientCertificateCredentialOptions$instance;
 
 export interface ClientSecretCredential$instance extends TokenCredential {
+    readonly __tsonic_type_Azure_Identity_ClientSecretCredential: never;
+
     GetToken(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): AccessToken;
     GetToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
     GetTokenAsync(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): ValueTask_1<AccessToken>;
@@ -382,6 +426,8 @@ export const ClientSecretCredential: {
 export type ClientSecretCredential = ClientSecretCredential$instance;
 
 export interface ClientSecretCredentialOptions$instance extends TokenCredentialOptions {
+    readonly __tsonic_type_Azure_Identity_ClientSecretCredentialOptions: never;
+
     readonly __tsonic_iface_Azure_Identity_ISupportsAdditionallyAllowedTenants: never;
     readonly __tsonic_iface_Azure_Identity_ISupportsDisableInstanceDiscovery: never;
     readonly __tsonic_iface_Azure_Identity_ISupportsTokenCachePersistenceOptions: never;
@@ -400,6 +446,8 @@ export const ClientSecretCredentialOptions: {
 export type ClientSecretCredentialOptions = ClientSecretCredentialOptions$instance;
 
 export interface CredentialUnavailableException$instance extends AuthenticationFailedException {
+    readonly __tsonic_type_Azure_Identity_CredentialUnavailableException: never;
+
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
 }
@@ -414,6 +462,8 @@ export const CredentialUnavailableException: {
 export type CredentialUnavailableException = CredentialUnavailableException$instance;
 
 export interface DefaultAzureCredential$instance extends TokenCredential {
+    readonly __tsonic_type_Azure_Identity_DefaultAzureCredential: never;
+
     GetToken(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): AccessToken;
     GetToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
     GetTokenAsync(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): ValueTask_1<AccessToken>;
@@ -430,6 +480,8 @@ export const DefaultAzureCredential: {
 export type DefaultAzureCredential = DefaultAzureCredential$instance;
 
 export interface DefaultAzureCredentialOptions$instance extends TokenCredentialOptions {
+    readonly __tsonic_type_Azure_Identity_DefaultAzureCredentialOptions: never;
+
     readonly __tsonic_iface_Azure_Identity_ISupportsAdditionallyAllowedTenants: never;
     readonly __tsonic_iface_Azure_Identity_ISupportsDisableInstanceDiscovery: never;
 
@@ -467,6 +519,8 @@ export const DefaultAzureCredentialOptions: {
 export type DefaultAzureCredentialOptions = DefaultAzureCredentialOptions$instance;
 
 export interface DeviceCodeCredential$instance extends TokenCredential {
+    readonly __tsonic_type_Azure_Identity_DeviceCodeCredential: never;
+
     Authenticate(cancellationToken?: CancellationToken): AuthenticationRecord;
     Authenticate(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): AuthenticationRecord;
     AuthenticateAsync(cancellationToken?: CancellationToken): Task_1<AuthenticationRecord>;
@@ -489,6 +543,8 @@ export const DeviceCodeCredential: {
 export type DeviceCodeCredential = DeviceCodeCredential$instance;
 
 export interface DeviceCodeCredentialOptions$instance extends TokenCredentialOptions {
+    readonly __tsonic_type_Azure_Identity_DeviceCodeCredentialOptions: never;
+
     readonly __tsonic_iface_Azure_Identity_ISupportsAdditionallyAllowedTenants: never;
     readonly __tsonic_iface_Azure_Identity_ISupportsDisableInstanceDiscovery: never;
     readonly __tsonic_iface_Azure_Identity_ISupportsTokenCachePersistenceOptions: never;
@@ -512,6 +568,8 @@ export const DeviceCodeCredentialOptions: {
 export type DeviceCodeCredentialOptions = DeviceCodeCredentialOptions$instance;
 
 export interface EnvironmentCredential$instance extends TokenCredential {
+    readonly __tsonic_type_Azure_Identity_EnvironmentCredential: never;
+
     GetToken(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): AccessToken;
     GetToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
     GetTokenAsync(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): ValueTask_1<AccessToken>;
@@ -529,6 +587,8 @@ export const EnvironmentCredential: {
 export type EnvironmentCredential = EnvironmentCredential$instance;
 
 export interface EnvironmentCredentialOptions$instance extends TokenCredentialOptions {
+    readonly __tsonic_type_Azure_Identity_EnvironmentCredentialOptions: never;
+
     readonly __tsonic_iface_Azure_Identity_ISupportsAdditionallyAllowedTenants: never;
     readonly __tsonic_iface_Azure_Identity_ISupportsDisableInstanceDiscovery: never;
 
@@ -545,6 +605,8 @@ export const EnvironmentCredentialOptions: {
 export type EnvironmentCredentialOptions = EnvironmentCredentialOptions$instance;
 
 export interface InteractiveBrowserCredential$instance extends TokenCredential {
+    readonly __tsonic_type_Azure_Identity_InteractiveBrowserCredential: never;
+
     Authenticate(cancellationToken?: CancellationToken): AuthenticationRecord;
     Authenticate(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): AuthenticationRecord;
     AuthenticateAsync(cancellationToken?: CancellationToken): Task_1<AuthenticationRecord>;
@@ -567,6 +629,8 @@ export const InteractiveBrowserCredential: {
 export type InteractiveBrowserCredential = InteractiveBrowserCredential$instance;
 
 export interface InteractiveBrowserCredentialOptions$instance extends TokenCredentialOptions {
+    readonly __tsonic_type_Azure_Identity_InteractiveBrowserCredentialOptions: never;
+
     readonly __tsonic_iface_Azure_Identity_ISupportsAdditionallyAllowedTenants: never;
     readonly __tsonic_iface_Azure_Identity_ISupportsDisableInstanceDiscovery: never;
     readonly __tsonic_iface_Azure_Identity_ISupportsTokenCachePersistenceOptions: never;
@@ -592,6 +656,8 @@ export const InteractiveBrowserCredentialOptions: {
 export type InteractiveBrowserCredentialOptions = InteractiveBrowserCredentialOptions$instance;
 
 export interface ManagedIdentityCredential$instance extends TokenCredential {
+    readonly __tsonic_type_Azure_Identity_ManagedIdentityCredential: never;
+
     GetToken(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): AccessToken;
     GetToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
     GetTokenAsync(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): ValueTask_1<AccessToken>;
@@ -610,6 +676,8 @@ export const ManagedIdentityCredential: {
 export type ManagedIdentityCredential = ManagedIdentityCredential$instance;
 
 export interface ManagedIdentityCredentialOptions$instance extends TokenCredentialOptions {
+    readonly __tsonic_type_Azure_Identity_ManagedIdentityCredentialOptions: never;
+
 }
 
 
@@ -621,6 +689,8 @@ export const ManagedIdentityCredentialOptions: {
 export type ManagedIdentityCredentialOptions = ManagedIdentityCredentialOptions$instance;
 
 export interface ManagedIdentityId$instance {
+    readonly __tsonic_type_Azure_Identity_ManagedIdentityId: never;
+
     ToString(): string;
 }
 
@@ -636,6 +706,8 @@ export const ManagedIdentityId: {
 export type ManagedIdentityId = ManagedIdentityId$instance;
 
 export interface OnBehalfOfCredential$instance extends TokenCredential {
+    readonly __tsonic_type_Azure_Identity_OnBehalfOfCredential: never;
+
     GetToken(requestContext: TokenRequestContext, cancellationToken: CancellationToken): AccessToken;
     GetToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
     GetTokenAsync(requestContext: TokenRequestContext, cancellationToken: CancellationToken): ValueTask_1<AccessToken>;
@@ -656,6 +728,8 @@ export const OnBehalfOfCredential: {
 export type OnBehalfOfCredential = OnBehalfOfCredential$instance;
 
 export interface OnBehalfOfCredentialOptions$instance extends TokenCredentialOptions {
+    readonly __tsonic_type_Azure_Identity_OnBehalfOfCredentialOptions: never;
+
     readonly __tsonic_iface_Azure_Identity_ISupportsAdditionallyAllowedTenants: never;
     readonly __tsonic_iface_Azure_Identity_ISupportsDisableInstanceDiscovery: never;
     readonly __tsonic_iface_Azure_Identity_ISupportsTokenCachePersistenceOptions: never;
@@ -675,6 +749,8 @@ export const OnBehalfOfCredentialOptions: {
 export type OnBehalfOfCredentialOptions = OnBehalfOfCredentialOptions$instance;
 
 export interface SharedTokenCacheCredential$instance extends TokenCredential {
+    readonly __tsonic_type_Azure_Identity_SharedTokenCacheCredential: never;
+
     GetToken(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): AccessToken;
     GetToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
     GetTokenAsync(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): ValueTask_1<AccessToken>;
@@ -692,6 +768,8 @@ export const SharedTokenCacheCredential: {
 export type SharedTokenCacheCredential = SharedTokenCacheCredential$instance;
 
 export interface SharedTokenCacheCredentialOptions$instance extends TokenCredentialOptions {
+    readonly __tsonic_type_Azure_Identity_SharedTokenCacheCredentialOptions: never;
+
     readonly __tsonic_iface_Azure_Identity_ISupportsDisableInstanceDiscovery: never;
     readonly __tsonic_iface_Azure_Identity_ISupportsTokenCachePersistenceOptions: never;
 
@@ -714,6 +792,8 @@ export const SharedTokenCacheCredentialOptions: {
 export type SharedTokenCacheCredentialOptions = SharedTokenCacheCredentialOptions$instance;
 
 export interface TokenCachePersistenceOptions$instance {
+    readonly __tsonic_type_Azure_Identity_TokenCachePersistenceOptions: never;
+
     Name: string;
     UnsafeAllowUnencryptedStorage: boolean;
 }
@@ -727,6 +807,8 @@ export const TokenCachePersistenceOptions: {
 export type TokenCachePersistenceOptions = TokenCachePersistenceOptions$instance;
 
 export interface TokenCacheRefreshArgs$instance {
+    readonly __tsonic_type_Azure_Identity_TokenCacheRefreshArgs: never;
+
     readonly IsCaeEnabled: boolean;
     readonly SuggestedCacheKey: string;
 }
@@ -739,6 +821,8 @@ export const TokenCacheRefreshArgs: {
 export type TokenCacheRefreshArgs = TokenCacheRefreshArgs$instance;
 
 export interface TokenCacheUpdatedArgs$instance {
+    readonly __tsonic_type_Azure_Identity_TokenCacheUpdatedArgs: never;
+
     readonly IsCaeEnabled: boolean;
     readonly UnsafeCacheData: ReadOnlyMemory_1<System_Internal.Byte>;
 }
@@ -751,6 +835,8 @@ export const TokenCacheUpdatedArgs: {
 export type TokenCacheUpdatedArgs = TokenCacheUpdatedArgs$instance;
 
 export interface TokenCredentialDiagnosticsOptions$instance extends DiagnosticsOptions {
+    readonly __tsonic_type_Azure_Identity_TokenCredentialDiagnosticsOptions: never;
+
     IsAccountIdentifierLoggingEnabled: boolean;
 }
 
@@ -763,6 +849,8 @@ export const TokenCredentialDiagnosticsOptions: {
 export type TokenCredentialDiagnosticsOptions = TokenCredentialDiagnosticsOptions$instance;
 
 export interface TokenCredentialOptions$instance extends ClientOptions {
+    readonly __tsonic_type_Azure_Identity_TokenCredentialOptions: never;
+
     AuthorityHost: Uri;
     readonly Diagnostics: DiagnosticsOptions | TokenCredentialDiagnosticsOptions;
     IsUnsafeSupportLoggingEnabled: boolean;
@@ -777,6 +865,8 @@ export const TokenCredentialOptions: {
 export type TokenCredentialOptions = TokenCredentialOptions$instance;
 
 export interface UnsafeTokenCacheOptions$instance extends TokenCachePersistenceOptions {
+    readonly __tsonic_type_Azure_Identity_UnsafeTokenCacheOptions: never;
+
     RefreshCacheAsync(): Task_1<ReadOnlyMemory_1<System_Internal.Byte>>;
     RefreshCacheAsync(args: TokenCacheRefreshArgs, cancellationToken?: CancellationToken): Task_1<TokenCacheData>;
     TokenCacheUpdatedAsync(tokenCacheUpdatedArgs: TokenCacheUpdatedArgs): Task;
@@ -790,6 +880,8 @@ export const UnsafeTokenCacheOptions: (abstract new() => UnsafeTokenCacheOptions
 export type UnsafeTokenCacheOptions = UnsafeTokenCacheOptions$instance;
 
 export interface UsernamePasswordCredential$instance extends TokenCredential {
+    readonly __tsonic_type_Azure_Identity_UsernamePasswordCredential: never;
+
     Authenticate(cancellationToken?: CancellationToken): AuthenticationRecord;
     Authenticate(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): AuthenticationRecord;
     AuthenticateAsync(cancellationToken?: CancellationToken): Task_1<AuthenticationRecord>;
@@ -811,6 +903,8 @@ export const UsernamePasswordCredential: {
 export type UsernamePasswordCredential = UsernamePasswordCredential$instance;
 
 export interface UsernamePasswordCredentialOptions$instance extends TokenCredentialOptions {
+    readonly __tsonic_type_Azure_Identity_UsernamePasswordCredentialOptions: never;
+
     readonly __tsonic_iface_Azure_Identity_ISupportsAdditionallyAllowedTenants: never;
     readonly __tsonic_iface_Azure_Identity_ISupportsDisableInstanceDiscovery: never;
     readonly __tsonic_iface_Azure_Identity_ISupportsTokenCachePersistenceOptions: never;
@@ -829,6 +923,8 @@ export const UsernamePasswordCredentialOptions: {
 export type UsernamePasswordCredentialOptions = UsernamePasswordCredentialOptions$instance;
 
 export interface VisualStudioCodeCredential$instance extends TokenCredential {
+    readonly __tsonic_type_Azure_Identity_VisualStudioCodeCredential: never;
+
     GetToken(requestContext: TokenRequestContext, cancellationToken: CancellationToken): AccessToken;
     GetToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
     GetTokenAsync(requestContext: TokenRequestContext, cancellationToken: CancellationToken): ValueTask_1<AccessToken>;
@@ -845,6 +941,8 @@ export const VisualStudioCodeCredential: {
 export type VisualStudioCodeCredential = VisualStudioCodeCredential$instance;
 
 export interface VisualStudioCodeCredentialOptions$instance extends TokenCredentialOptions {
+    readonly __tsonic_type_Azure_Identity_VisualStudioCodeCredentialOptions: never;
+
     readonly __tsonic_iface_Azure_Identity_ISupportsAdditionallyAllowedTenants: never;
 
     AdditionallyAllowedTenants: IList_1<System_Internal.String>;
@@ -860,6 +958,8 @@ export const VisualStudioCodeCredentialOptions: {
 export type VisualStudioCodeCredentialOptions = VisualStudioCodeCredentialOptions$instance;
 
 export interface VisualStudioCredential$instance extends TokenCredential {
+    readonly __tsonic_type_Azure_Identity_VisualStudioCredential: never;
+
     GetToken(requestContext: TokenRequestContext, cancellationToken: CancellationToken): AccessToken;
     GetToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
     GetTokenAsync(requestContext: TokenRequestContext, cancellationToken: CancellationToken): ValueTask_1<AccessToken>;
@@ -876,6 +976,8 @@ export const VisualStudioCredential: {
 export type VisualStudioCredential = VisualStudioCredential$instance;
 
 export interface VisualStudioCredentialOptions$instance extends TokenCredentialOptions {
+    readonly __tsonic_type_Azure_Identity_VisualStudioCredentialOptions: never;
+
     readonly __tsonic_iface_Azure_Identity_ISupportsAdditionallyAllowedTenants: never;
 
     AdditionallyAllowedTenants: IList_1<System_Internal.String>;
@@ -892,6 +994,8 @@ export const VisualStudioCredentialOptions: {
 export type VisualStudioCredentialOptions = VisualStudioCredentialOptions$instance;
 
 export interface WorkloadIdentityCredential$instance extends TokenCredential {
+    readonly __tsonic_type_Azure_Identity_WorkloadIdentityCredential: never;
+
     GetToken(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): AccessToken;
     GetToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
     GetTokenAsync(requestContext: TokenRequestContext, cancellationToken?: CancellationToken): ValueTask_1<AccessToken>;
@@ -908,6 +1012,8 @@ export const WorkloadIdentityCredential: {
 export type WorkloadIdentityCredential = WorkloadIdentityCredential$instance;
 
 export interface WorkloadIdentityCredentialOptions$instance extends TokenCredentialOptions {
+    readonly __tsonic_type_Azure_Identity_WorkloadIdentityCredentialOptions: never;
+
     readonly __tsonic_iface_Azure_Identity_ISupportsAdditionallyAllowedTenants: never;
     readonly __tsonic_iface_Azure_Identity_ISupportsDisableInstanceDiscovery: never;
 

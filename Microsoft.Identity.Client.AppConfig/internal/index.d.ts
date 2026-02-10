@@ -12,6 +12,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString, Uri } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface ManagedIdentityId$instance {
+    readonly __tsonic_type_Microsoft_Identity_Client_AppConfig_ManagedIdentityId: never;
+
 }
 
 
@@ -26,6 +28,8 @@ export const ManagedIdentityId: {
 export type ManagedIdentityId = ManagedIdentityId$instance;
 
 export interface PoPAuthenticationConfiguration$instance {
+    readonly __tsonic_type_Microsoft_Identity_Client_AppConfig_PoPAuthenticationConfiguration: never;
+
     HttpHost: string;
     HttpMethod: HttpMethod;
     HttpPath: string;
