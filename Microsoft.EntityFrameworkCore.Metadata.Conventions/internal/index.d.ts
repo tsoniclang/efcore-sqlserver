@@ -22,6 +22,8 @@ import type { ISqlGenerationHelper } from "@tsonic/efcore/Microsoft.EntityFramew
 import type { DeleteBehavior, ModelBuilder } from "@tsonic/efcore/Microsoft.EntityFrameworkCore/internal/index.js";
 
 export interface SqlServerConventionSetBuilder$instance extends RelationalConventionSetBuilder {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_SqlServerConventionSetBuilder: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_Infrastructure_IProviderConventionSetBuilder: never;
 
     CreateConventionSet(): ConventionSet;
@@ -38,6 +40,8 @@ export const SqlServerConventionSetBuilder: {
 export type SqlServerConventionSetBuilder = SqlServerConventionSetBuilder$instance;
 
 export interface SqlServerDbFunctionConvention$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_SqlServerDbFunctionConvention: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IModelFinalizingConvention: never;
 
@@ -55,6 +59,8 @@ export const SqlServerDbFunctionConvention: {
 export type SqlServerDbFunctionConvention = SqlServerDbFunctionConvention$instance;
 
 export interface SqlServerIndexConvention$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_SqlServerIndexConvention: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IEntityTypeBaseTypeChangedConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IIndexAddedConvention: never;
@@ -82,6 +88,8 @@ export const SqlServerIndexConvention: {
 export type SqlServerIndexConvention = SqlServerIndexConvention$instance;
 
 export interface SqlServerMemoryOptimizedTablesConvention$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_SqlServerMemoryOptimizedTablesConvention: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IEntityTypeAnnotationChangedConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IIndexAddedConvention: never;
@@ -103,6 +111,8 @@ export const SqlServerMemoryOptimizedTablesConvention: {
 export type SqlServerMemoryOptimizedTablesConvention = SqlServerMemoryOptimizedTablesConvention$instance;
 
 export interface SqlServerOnDeleteConvention$instance extends CascadeDeleteConvention {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_SqlServerOnDeleteConvention: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IEntityTypeAnnotationChangedConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IForeignKeyAddedConvention: never;
@@ -124,6 +134,8 @@ export const SqlServerOnDeleteConvention: {
 export type SqlServerOnDeleteConvention = SqlServerOnDeleteConvention$instance;
 
 export interface SqlServerOutputClauseConvention$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_SqlServerOutputClauseConvention: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_ITriggerAddedConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_ITriggerRemovedConvention: never;
@@ -143,6 +155,8 @@ export const SqlServerOutputClauseConvention: {
 export type SqlServerOutputClauseConvention = SqlServerOutputClauseConvention$instance;
 
 export interface SqlServerRuntimeModelConvention$instance extends RelationalRuntimeModelConvention {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_SqlServerRuntimeModelConvention: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IModelFinalizedConvention: never;
 
@@ -163,6 +177,8 @@ export const SqlServerRuntimeModelConvention: {
 export type SqlServerRuntimeModelConvention = SqlServerRuntimeModelConvention$instance;
 
 export interface SqlServerSharedTableConvention$instance extends SharedTableConvention {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_SqlServerSharedTableConvention: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IModelFinalizingConvention: never;
 
@@ -181,6 +197,8 @@ export const SqlServerSharedTableConvention: {
 export type SqlServerSharedTableConvention = SqlServerSharedTableConvention$instance;
 
 export interface SqlServerStoreGenerationConvention$instance extends StoreGenerationConvention {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_SqlServerStoreGenerationConvention: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IModelFinalizingConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IPropertyAnnotationChangedConvention: never;
@@ -198,6 +216,8 @@ export const SqlServerStoreGenerationConvention: {
 export type SqlServerStoreGenerationConvention = SqlServerStoreGenerationConvention$instance;
 
 export interface SqlServerTemporalConvention$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_SqlServerTemporalConvention: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IEntityTypeAnnotationChangedConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IModelFinalizingConvention: never;
@@ -219,6 +239,8 @@ export const SqlServerTemporalConvention: {
 export type SqlServerTemporalConvention = SqlServerTemporalConvention$instance;
 
 export interface SqlServerValueGenerationConvention$instance extends RelationalValueGenerationConvention {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_SqlServerValueGenerationConvention: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IEntityTypeAnnotationChangedConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IEntityTypeBaseTypeChangedConvention: never;
@@ -245,6 +267,8 @@ export const SqlServerValueGenerationConvention: {
 export type SqlServerValueGenerationConvention = SqlServerValueGenerationConvention$instance;
 
 export interface SqlServerValueGenerationStrategyConvention$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_SqlServerValueGenerationStrategyConvention: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IModelFinalizingConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IModelInitializedConvention: never;

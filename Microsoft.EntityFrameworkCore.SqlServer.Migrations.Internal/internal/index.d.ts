@@ -18,6 +18,8 @@ import type { HistoryRepository, HistoryRepositoryDependencies, IHistoryReposito
 import type { IRelationalCommand, RelationalCommandParameterObject } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage/internal/index.js";
 
 export interface SqlServerHistoryRepository$instance extends HistoryRepository {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Migrations_Internal_SqlServerHistoryRepository: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Migrations_IHistoryRepository: never;
 
     readonly ExistsSql: string;
@@ -40,6 +42,8 @@ export const SqlServerHistoryRepository: {
 export type SqlServerHistoryRepository = SqlServerHistoryRepository$instance;
 
 export interface SqlServerMigrationDatabaseLock$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Migrations_Internal_SqlServerMigrationDatabaseLock: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Migrations_IMigrationsDatabaseLock: never;
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
@@ -58,6 +62,8 @@ export const SqlServerMigrationDatabaseLock: {
 export type SqlServerMigrationDatabaseLock = SqlServerMigrationDatabaseLock$instance;
 
 export interface SqlServerMigrationsAnnotationProvider$instance extends MigrationsAnnotationProvider {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Migrations_Internal_SqlServerMigrationsAnnotationProvider: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Migrations_IMigrationsAnnotationProvider: never;
 
     ForRemove(model: IRelationalModel): IEnumerable_1<IAnnotation>;

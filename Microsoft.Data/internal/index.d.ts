@@ -13,6 +13,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Object as ClrObject, SystemException } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface OperationAbortedException$instance extends SystemException {
+    readonly __tsonic_type_Microsoft_Data_OperationAbortedException: never;
+
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
 }

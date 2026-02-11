@@ -43,6 +43,8 @@ export enum WaitUntil {
 
 
 export interface ETag$instance {
+    readonly __tsonic_type_Azure_ETag: never;
+
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     Equals(other: ETag): boolean;
@@ -63,6 +65,8 @@ export const ETag: {
 export type ETag = ETag$instance;
 
 export interface HttpRange$instance {
+    readonly __tsonic_type_Azure_HttpRange: never;
+
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     readonly Length: Nullable_1<System_Internal.Int64>;
@@ -82,6 +86,8 @@ export const HttpRange: {
 export type HttpRange = HttpRange$instance;
 
 export interface AsyncPageable_1$instance<T> {
+    readonly __tsonic_type_Azure_AsyncPageable_1: never;
+
     readonly __tsonic_iface_System_Collections_Generic_IAsyncEnumerable_1: never;
 
     readonly CancellationToken: CancellationToken;
@@ -101,6 +107,8 @@ export const AsyncPageable_1: (abstract new<T>() => AsyncPageable_1<T>) & (abstr
 export type AsyncPageable_1<T> = AsyncPageable_1$instance<T>;
 
 export interface AzureKeyCredential$instance extends ApiKeyCredential {
+    readonly __tsonic_type_Azure_AzureKeyCredential: never;
+
     Key: string;
 }
 
@@ -113,6 +121,8 @@ export const AzureKeyCredential: {
 export type AzureKeyCredential = AzureKeyCredential$instance;
 
 export interface AzureNamedKeyCredential$instance {
+    readonly __tsonic_type_Azure_AzureNamedKeyCredential: never;
+
     readonly Name: string;
     Deconstruct(name: string, key: string): void;
     Update(name: string, key: string): void;
@@ -127,6 +137,8 @@ export const AzureNamedKeyCredential: {
 export type AzureNamedKeyCredential = AzureNamedKeyCredential$instance;
 
 export interface AzureSasCredential$instance {
+    readonly __tsonic_type_Azure_AzureSasCredential: never;
+
     Signature: string;
     Update(signature: string): void;
 }
@@ -140,6 +152,8 @@ export const AzureSasCredential: {
 export type AzureSasCredential = AzureSasCredential$instance;
 
 export interface HttpAuthorization$instance {
+    readonly __tsonic_type_Azure_HttpAuthorization: never;
+
     readonly Parameter: string;
     readonly Scheme: string;
     ToString(): string;
@@ -154,6 +168,8 @@ export const HttpAuthorization: {
 export type HttpAuthorization = HttpAuthorization$instance;
 
 export interface JsonPatchDocument$instance {
+    readonly __tsonic_type_Azure_JsonPatchDocument: never;
+
     AppendAdd<T>(path: string, value: T): void;
     AppendAddRaw(path: string, rawJsonValue: string): void;
     AppendCopy(from: string, path: string): void;
@@ -179,6 +195,8 @@ export const JsonPatchDocument: {
 export type JsonPatchDocument = JsonPatchDocument$instance;
 
 export interface MatchConditions$instance {
+    readonly __tsonic_type_Azure_MatchConditions: never;
+
     IfMatch: Nullable_1<ETag>;
     IfNoneMatch: Nullable_1<ETag>;
 }
@@ -192,6 +210,8 @@ export const MatchConditions: {
 export type MatchConditions = MatchConditions$instance;
 
 export interface NullableResponse_1$instance<T> {
+    readonly __tsonic_type_Azure_NullableResponse_1: never;
+
     readonly HasValue: boolean;
     readonly Value: T | undefined;
     Equals(obj: unknown): boolean;
@@ -208,6 +228,8 @@ export const NullableResponse_1: (abstract new<T>() => NullableResponse_1<T>) & 
 export type NullableResponse_1<T> = NullableResponse_1$instance<T>;
 
 export interface Operation$instance {
+    readonly __tsonic_type_Azure_Operation: never;
+
     readonly HasCompleted: boolean;
     readonly Id: string;
     Equals(obj: unknown): boolean;
@@ -237,6 +259,8 @@ export const Operation: (abstract new() => Operation) & {
 export type Operation = Operation$instance;
 
 export interface Operation_1$instance<T> extends Operation {
+    readonly __tsonic_type_Azure_Operation_1: never;
+
     readonly HasValue: boolean;
     readonly Value: T;
     WaitForCompletion(cancellationToken?: CancellationToken): Response_1<T>;
@@ -260,6 +284,8 @@ export const Operation_1: (abstract new<T>() => Operation_1<T>) & {
 export type Operation_1<T> = Operation_1$instance<T>;
 
 export interface Page_1$instance<T> {
+    readonly __tsonic_type_Azure_Page_1: never;
+
     readonly ContinuationToken: string | undefined;
     readonly Values: IReadOnlyList_1<T>;
     Equals(obj: unknown): boolean;
@@ -277,6 +303,8 @@ export const Page_1: (abstract new<T>() => Page_1<T>) & {
 export type Page_1<T> = Page_1$instance<T>;
 
 export interface Pageable_1$instance<T> {
+    readonly __tsonic_type_Azure_Pageable_1: never;
+
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
@@ -297,6 +325,8 @@ export const Pageable_1: (abstract new<T>() => Pageable_1<T>) & (abstract new<T>
 export type Pageable_1<T> = Pageable_1$instance<T>;
 
 export interface PageableOperation_1$instance<T> extends Operation_1<AsyncPageable_1<T>> {
+    readonly __tsonic_type_Azure_PageableOperation_1: never;
+
     readonly Value: AsyncPageable_1<T>;
     GetValues(cancellationToken?: CancellationToken): Pageable_1<T>;
     GetValuesAsync(cancellationToken?: CancellationToken): AsyncPageable_1<T>;
@@ -310,6 +340,8 @@ export const PageableOperation_1: (abstract new<T>() => PageableOperation_1<T>) 
 export type PageableOperation_1<T> = PageableOperation_1$instance<T>;
 
 export interface RequestConditions$instance extends MatchConditions {
+    readonly __tsonic_type_Azure_RequestConditions: never;
+
     IfModifiedSince: Nullable_1<DateTimeOffset>;
     IfUnmodifiedSince: Nullable_1<DateTimeOffset>;
 }
@@ -323,6 +355,8 @@ export const RequestConditions: {
 export type RequestConditions = RequestConditions$instance;
 
 export interface RequestContext$instance {
+    readonly __tsonic_type_Azure_RequestContext: never;
+
     CancellationToken: CancellationToken;
     ErrorOptions: ErrorOptions;
     AddClassifier(statusCode: int, isError: boolean): void;
@@ -339,6 +373,8 @@ export const RequestContext: {
 export type RequestContext = RequestContext$instance;
 
 export interface RequestFailedException$instance extends Exception {
+    readonly __tsonic_type_Azure_RequestFailedException: never;
+
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
     readonly ErrorCode: string | undefined;
@@ -363,6 +399,8 @@ export const RequestFailedException: {
 export type RequestFailedException = RequestFailedException$instance;
 
 export interface Response$instance {
+    readonly __tsonic_type_Azure_Response: never;
+
     readonly __tsonic_iface_System_IDisposable: never;
 
     ClientRequestId: string;
@@ -390,6 +428,8 @@ export const Response: (abstract new() => Response) & {
 export type Response = Response$instance;
 
 export interface Response_1$instance<T> extends NullableResponse_1<T> {
+    readonly __tsonic_type_Azure_Response_1: never;
+
     readonly HasValue: boolean;
     readonly Value: T;
     Equals(obj: unknown): boolean;
@@ -403,7 +443,9 @@ export const Response_1: (abstract new<T>() => Response_1<T>) & {
 
 export type Response_1<T> = Response_1$instance<T>;
 
-export interface ResponseError$instance {
+export interface ResponseError$instance extends System_ClientModel_Primitives_Internal.IJsonModel_1$instance<ResponseError> {
+    readonly __tsonic_type_Azure_ResponseError: never;
+
     readonly __tsonic_iface_System_ClientModel_Primitives_IJsonModel_1: never;
     readonly __tsonic_iface_System_ClientModel_Primitives_IPersistableModel_1: never;
 
@@ -428,6 +470,8 @@ export type ResponseError = ResponseError$instance & __ResponseError$views;
 
 
 export interface SyncAsyncEventArgs$instance extends EventArgs {
+    readonly __tsonic_type_Azure_SyncAsyncEventArgs: never;
+
     readonly CancellationToken: CancellationToken;
     readonly IsRunningSynchronously: boolean;
 }

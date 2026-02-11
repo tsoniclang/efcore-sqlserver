@@ -42,6 +42,8 @@ export interface IBinarySerialize$instance {
 export type IBinarySerialize = IBinarySerialize$instance;
 
 export interface InvalidUdtException$instance extends SystemException {
+    readonly __tsonic_type_Microsoft_SqlServer_Server_InvalidUdtException: never;
+
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
     GetObjectData(si: SerializationInfo, context: StreamingContext): void;
@@ -56,6 +58,8 @@ export const InvalidUdtException: {
 export type InvalidUdtException = InvalidUdtException$instance;
 
 export interface SqlFacetAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_SqlServer_Server_SqlFacetAttribute: never;
+
     IsFixedLength: boolean;
     IsNullable: boolean;
     MaxSize: int;
@@ -72,6 +76,8 @@ export const SqlFacetAttribute: {
 export type SqlFacetAttribute = SqlFacetAttribute$instance;
 
 export interface SqlFunctionAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_SqlServer_Server_SqlFunctionAttribute: never;
+
     DataAccess: DataAccessKind;
     FillRowMethodName: string;
     IsDeterministic: boolean;
@@ -90,6 +96,8 @@ export const SqlFunctionAttribute: {
 export type SqlFunctionAttribute = SqlFunctionAttribute$instance;
 
 export interface SqlMethodAttribute$instance extends SqlFunctionAttribute {
+    readonly __tsonic_type_Microsoft_SqlServer_Server_SqlMethodAttribute: never;
+
     InvokeIfReceiverIsNull: boolean;
     IsMutator: boolean;
     OnNullCall: boolean;
@@ -104,6 +112,8 @@ export const SqlMethodAttribute: {
 export type SqlMethodAttribute = SqlMethodAttribute$instance;
 
 export interface SqlUserDefinedAggregateAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_SqlServer_Server_SqlUserDefinedAggregateAttribute: never;
+
     readonly Format: Format;
     IsInvariantToDuplicates: boolean;
     IsInvariantToNulls: boolean;
@@ -123,6 +133,8 @@ export const SqlUserDefinedAggregateAttribute: {
 export type SqlUserDefinedAggregateAttribute = SqlUserDefinedAggregateAttribute$instance;
 
 export interface SqlUserDefinedTypeAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_SqlServer_Server_SqlUserDefinedTypeAttribute: never;
+
     readonly Format: Format;
     IsByteOrdered: boolean;
     IsFixedLength: boolean;

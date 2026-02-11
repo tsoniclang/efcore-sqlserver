@@ -27,6 +27,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, DateTime, Int32, Int64, Nullable_1, Object as ClrObject, String as ClrString, Type, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface JwtHeaderParameterNames$instance {
+    readonly __tsonic_type_System_IdentityModel_Tokens_Jwt_JwtHeaderParameterNames: never;
+
 }
 
 
@@ -53,6 +55,8 @@ export const JwtHeaderParameterNames: {
 export type JwtHeaderParameterNames = JwtHeaderParameterNames$instance;
 
 export interface JwtRegisteredClaimNames$instance {
+    readonly __tsonic_type_System_IdentityModel_Tokens_Jwt_JwtRegisteredClaimNames: never;
+
 }
 
 
@@ -103,6 +107,8 @@ export const JwtRegisteredClaimNames: {
 export type JwtRegisteredClaimNames = JwtRegisteredClaimNames$instance;
 
 export interface JwtHeader$instance extends Dictionary_2<System_Internal.String, unknown> {
+    readonly __tsonic_type_System_IdentityModel_Tokens_Jwt_JwtHeader: never;
+
     readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IDictionary_2: never;
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
@@ -147,6 +153,8 @@ export const JwtHeader: {
 export type JwtHeader = JwtHeader$instance;
 
 export interface JwtPayload$instance extends Dictionary_2<System_Internal.String, unknown> {
+    readonly __tsonic_type_System_IdentityModel_Tokens_Jwt_JwtPayload: never;
+
     readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IDictionary_2: never;
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
@@ -199,6 +207,8 @@ export const JwtPayload: {
 export type JwtPayload = JwtPayload$instance;
 
 export interface JwtSecurityToken$instance extends SecurityToken {
+    readonly __tsonic_type_System_IdentityModel_Tokens_Jwt_JwtSecurityToken: never;
+
     readonly __tsonic_iface_Microsoft_IdentityModel_Logging_ISafeLogSecurityArtifact: never;
 
     readonly Actor: string;
@@ -250,6 +260,8 @@ export type JwtSecurityToken = JwtSecurityToken$instance & __JwtSecurityToken$vi
 
 
 export interface JwtSecurityTokenHandler$instance extends SecurityTokenHandler {
+    readonly __tsonic_type_System_IdentityModel_Tokens_Jwt_JwtSecurityTokenHandler: never;
+
     readonly __tsonic_iface_Microsoft_IdentityModel_Tokens_ISecurityTokenValidator: never;
 
     readonly CanValidateToken: boolean;

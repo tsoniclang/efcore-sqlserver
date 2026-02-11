@@ -27,6 +27,8 @@ import * as System_Lib from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Exception, IDisposable, Int32, Int64, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface ApiKeyCredential$instance {
+    readonly __tsonic_type_System_ClientModel_ApiKeyCredential: never;
+
     Deconstruct(key: string): void;
     Update(key: string): void;
 }
@@ -40,6 +42,8 @@ export const ApiKeyCredential: {
 export type ApiKeyCredential = ApiKeyCredential$instance;
 
 export interface AsyncCollectionResult_1$instance<T> extends AsyncCollectionResult {
+    readonly __tsonic_type_System_ClientModel_AsyncCollectionResult_1: never;
+
     readonly __tsonic_iface_System_Collections_Generic_IAsyncEnumerable_1: never;
 
     GetAsyncEnumerator(cancellationToken?: CancellationToken): IAsyncEnumerator_1<T>;
@@ -54,6 +58,8 @@ export const AsyncCollectionResult_1: (abstract new<T>() => AsyncCollectionResul
 export type AsyncCollectionResult_1<T> = AsyncCollectionResult_1$instance<T>;
 
 export interface AuthenticationTokenProvider$instance {
+    readonly __tsonic_type_System_ClientModel_AuthenticationTokenProvider: never;
+
     CreateTokenOptions(properties: IReadOnlyDictionary_2<System_Internal.String, unknown>): GetTokenOptions | undefined;
     GetToken(options: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
     GetTokenAsync(options: GetTokenOptions, cancellationToken: CancellationToken): ValueTask_1<AuthenticationToken>;
@@ -67,6 +73,8 @@ export const AuthenticationTokenProvider: (abstract new() => AuthenticationToken
 export type AuthenticationTokenProvider = AuthenticationTokenProvider$instance;
 
 export interface BinaryContent$instance {
+    readonly __tsonic_type_System_ClientModel_BinaryContent: never;
+
     readonly __tsonic_iface_System_IDisposable: never;
 
     get MediaType(): string | undefined;
@@ -91,6 +99,8 @@ export const BinaryContent: (abstract new() => BinaryContent) & {
 export type BinaryContent = BinaryContent$instance;
 
 export interface ClientResult$instance {
+    readonly __tsonic_type_System_ClientModel_ClientResult: never;
+
     GetRawResponse(): PipelineResponse;
 }
 
@@ -105,6 +115,8 @@ export const ClientResult: (abstract new(response: PipelineResponse) => ClientRe
 export type ClientResult = ClientResult$instance;
 
 export interface ClientResult_1$instance<T> extends ClientResult {
+    readonly __tsonic_type_System_ClientModel_ClientResult_1: never;
+
     readonly Value: T;
 }
 
@@ -116,6 +128,8 @@ export const ClientResult_1: (abstract new<T>(value: T, response: PipelineRespon
 export type ClientResult_1<T> = ClientResult_1$instance<T>;
 
 export interface ClientResultException$instance extends Exception {
+    readonly __tsonic_type_System_ClientModel_ClientResultException: never;
+
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
     Status: int;
@@ -133,6 +147,8 @@ export const ClientResultException: {
 export type ClientResultException = ClientResultException$instance;
 
 export interface CollectionResult_1$instance<T> extends CollectionResult {
+    readonly __tsonic_type_System_ClientModel_CollectionResult_1: never;
+
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
@@ -148,6 +164,8 @@ export const CollectionResult_1: (abstract new<T>() => CollectionResult_1<T>) & 
 export type CollectionResult_1<T> = CollectionResult_1$instance<T>;
 
 export interface ContinuationToken$instance {
+    readonly __tsonic_type_System_ClientModel_ContinuationToken: never;
+
     ToBytes(): BinaryData;
 }
 

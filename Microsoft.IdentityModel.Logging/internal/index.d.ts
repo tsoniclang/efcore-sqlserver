@@ -24,6 +24,8 @@ export interface ISafeLogSecurityArtifact$instance {
 export type ISafeLogSecurityArtifact = ISafeLogSecurityArtifact$instance;
 
 export interface IdentityModelEventSource$instance extends EventSource {
+    readonly __tsonic_type_Microsoft_IdentityModel_Logging_IdentityModelEventSource: never;
+
     readonly __tsonic_iface_System_IDisposable: never;
 
     LogLevel: EventLevel;
@@ -57,6 +59,8 @@ export const IdentityModelEventSource: {
 export type IdentityModelEventSource = IdentityModelEventSource$instance;
 
 export interface LoggerContext$instance {
+    readonly __tsonic_type_Microsoft_IdentityModel_Logging_LoggerContext: never;
+
     ActivityId: Guid;
     CaptureLogs: boolean;
     DebugId: string;
@@ -74,6 +78,8 @@ export const LoggerContext: {
 export type LoggerContext = LoggerContext$instance;
 
 export interface LogHelper$instance {
+    readonly __tsonic_type_Microsoft_IdentityModel_Logging_LogHelper: never;
+
 }
 
 
@@ -114,6 +120,8 @@ export const LogHelper: {
 export type LogHelper = LogHelper$instance;
 
 export interface TextWriterEventListener$instance extends EventListener {
+    readonly __tsonic_type_Microsoft_IdentityModel_Logging_TextWriterEventListener: never;
+
     readonly __tsonic_iface_System_IDisposable: never;
 
     Dispose(): void;

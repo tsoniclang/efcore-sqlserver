@@ -22,6 +22,8 @@ export enum SensitivityRank {
 
 
 export interface ColumnSensitivity$instance {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_DataClassification_ColumnSensitivity: never;
+
     readonly SensitivityProperties: ReadOnlyCollection_1<SensitivityProperty>;
 }
 
@@ -34,6 +36,8 @@ export const ColumnSensitivity: {
 export type ColumnSensitivity = ColumnSensitivity$instance;
 
 export interface InformationType$instance {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_DataClassification_InformationType: never;
+
     readonly Id: string;
     readonly Name: string;
 }
@@ -47,6 +51,8 @@ export const InformationType: {
 export type InformationType = InformationType$instance;
 
 export interface Label$instance {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_DataClassification_Label: never;
+
     readonly Id: string;
     readonly Name: string;
 }
@@ -60,6 +66,8 @@ export const Label: {
 export type Label = Label$instance;
 
 export interface SensitivityClassification$instance {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_DataClassification_SensitivityClassification: never;
+
     readonly ColumnSensitivities: ReadOnlyCollection_1<ColumnSensitivity>;
     readonly InformationTypes: ReadOnlyCollection_1<InformationType>;
     readonly Labels: ReadOnlyCollection_1<Label>;
@@ -75,6 +83,8 @@ export const SensitivityClassification: {
 export type SensitivityClassification = SensitivityClassification$instance;
 
 export interface SensitivityProperty$instance {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_DataClassification_SensitivityProperty: never;
+
     readonly InformationType: InformationType;
     readonly Label: Label;
     readonly SensitivityRank: SensitivityRank;

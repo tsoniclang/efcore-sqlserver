@@ -16,6 +16,8 @@ import * as Microsoft_EntityFrameworkCore_Migrations_Operations_Internal from "@
 import type { DatabaseOperation, MigrationOperation } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations.Operations/internal/index.js";
 
 export interface SqlServerCreateDatabaseOperation$instance extends DatabaseOperation {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Migrations_Operations_SqlServerCreateDatabaseOperation: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IAnnotatable: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IReadOnlyAnnotatable: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_IMutableAnnotatable: never;
@@ -34,6 +36,8 @@ export const SqlServerCreateDatabaseOperation: {
 export type SqlServerCreateDatabaseOperation = SqlServerCreateDatabaseOperation$instance;
 
 export interface SqlServerDropDatabaseOperation$instance extends MigrationOperation {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Migrations_Operations_SqlServerDropDatabaseOperation: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IAnnotatable: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IReadOnlyAnnotatable: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_IMutableAnnotatable: never;

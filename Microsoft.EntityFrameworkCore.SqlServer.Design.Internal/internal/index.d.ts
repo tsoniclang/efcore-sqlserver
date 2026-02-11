@@ -18,6 +18,8 @@ import type { IColumn, IEntityType, IIndex, IKey, IModel, IProperty, IRelational
 import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection/internal/index.js";
 
 export interface SqlServerAnnotationCodeGenerator$instance extends AnnotationCodeGenerator {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Design_Internal_SqlServerAnnotationCodeGenerator: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Design_IAnnotationCodeGenerator: never;
 
     GenerateFluentApi(key: IKey, annotation: IAnnotation): MethodCallCodeFragment | undefined;
@@ -38,6 +40,8 @@ export const SqlServerAnnotationCodeGenerator: {
 export type SqlServerAnnotationCodeGenerator = SqlServerAnnotationCodeGenerator$instance;
 
 export interface SqlServerCSharpRuntimeAnnotationCodeGenerator$instance extends RelationalCSharpRuntimeAnnotationCodeGenerator {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Design_Internal_SqlServerCSharpRuntimeAnnotationCodeGenerator: never;
+
     Generate(model: IModel, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
     Generate(model: IRelationalModel, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
     Generate(property: IProperty, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
@@ -60,6 +64,8 @@ export const SqlServerCSharpRuntimeAnnotationCodeGenerator: {
 export type SqlServerCSharpRuntimeAnnotationCodeGenerator = SqlServerCSharpRuntimeAnnotationCodeGenerator$instance;
 
 export interface SqlServerDesignTimeServices$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Design_Internal_SqlServerDesignTimeServices: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Design_IDesignTimeServices: never;
 
     ConfigureDesignTimeServices(serviceCollection: IServiceCollection): void;

@@ -317,6 +317,8 @@ export interface ITokenCacheSerializer$instance {
 export type ITokenCacheSerializer = ITokenCacheSerializer$instance;
 
 export interface Prompt$instance {
+    readonly __tsonic_type_Microsoft_Identity_Client_Prompt: never;
+
     Equals(obj: unknown): boolean;
     GetHashCode(): int;
 }
@@ -335,6 +337,8 @@ export const Prompt: {
 export type Prompt = Prompt$instance;
 
 export interface AbstractAcquireTokenParameterBuilder_1$instance<T extends BaseAbstractAcquireTokenParameterBuilder_1<T>> extends BaseAbstractAcquireTokenParameterBuilder_1<T> {
+    readonly __tsonic_type_Microsoft_Identity_Client_AbstractAcquireTokenParameterBuilder_1: never;
+
     WithAdfsAuthority(authorityUri: string, validateAuthority?: boolean): T;
     WithAuthority(authorityUri: string, validateAuthority?: boolean): T;
     WithAuthority(cloudInstanceUri: string, tenantId: Guid, validateAuthority?: boolean): T;
@@ -359,6 +363,8 @@ export const AbstractAcquireTokenParameterBuilder_1: (abstract new<T extends Bas
 export type AbstractAcquireTokenParameterBuilder_1<T extends BaseAbstractAcquireTokenParameterBuilder_1<T>> = AbstractAcquireTokenParameterBuilder_1$instance<T>;
 
 export interface AbstractApplicationBuilder_1$instance<T extends BaseAbstractApplicationBuilder_1<T>> extends BaseAbstractApplicationBuilder_1<T> {
+    readonly __tsonic_type_Microsoft_Identity_Client_AbstractApplicationBuilder_1: never;
+
     WithAdfsAuthority(authorityUri: string, validateAuthority?: boolean): T;
     WithAuthority(authorityUri: Uri, validateAuthority?: boolean): T;
     WithAuthority(authorityUri: string, validateAuthority?: boolean): T;
@@ -393,6 +399,8 @@ export const AbstractApplicationBuilder_1: {
 export type AbstractApplicationBuilder_1<T extends BaseAbstractApplicationBuilder_1<T>> = AbstractApplicationBuilder_1$instance<T>;
 
 export interface AbstractClientAppBaseAcquireTokenParameterBuilder_1$instance<T extends AbstractAcquireTokenParameterBuilder_1<T>> extends AbstractAcquireTokenParameterBuilder_1<T> {
+    readonly __tsonic_type_Microsoft_Identity_Client_AbstractClientAppBaseAcquireTokenParameterBuilder_1: never;
+
     ExecuteAsync(cancellationToken: CancellationToken): Task_1<AuthenticationResult>;
     ExecuteAsync(cancellationToken: CancellationToken): Task_1<AuthenticationResult>;
     ExecuteAsync(): Task_1<AuthenticationResult>;
@@ -406,6 +414,8 @@ export const AbstractClientAppBaseAcquireTokenParameterBuilder_1: {
 export type AbstractClientAppBaseAcquireTokenParameterBuilder_1<T extends AbstractAcquireTokenParameterBuilder_1<T>> = AbstractClientAppBaseAcquireTokenParameterBuilder_1$instance<T>;
 
 export interface AbstractConfidentialClientAcquireTokenParameterBuilder_1$instance<T extends AbstractAcquireTokenParameterBuilder_1<T>> extends AbstractAcquireTokenParameterBuilder_1<T> {
+    readonly __tsonic_type_Microsoft_Identity_Client_AbstractConfidentialClientAcquireTokenParameterBuilder_1: never;
+
     ExecuteAsync(cancellationToken: CancellationToken): Task_1<AuthenticationResult>;
     ExecuteAsync(cancellationToken: CancellationToken): Task_1<AuthenticationResult>;
     ExecuteAsync(): Task_1<AuthenticationResult>;
@@ -422,6 +432,8 @@ export const AbstractConfidentialClientAcquireTokenParameterBuilder_1: {
 export type AbstractConfidentialClientAcquireTokenParameterBuilder_1<T extends AbstractAcquireTokenParameterBuilder_1<T>> = AbstractConfidentialClientAcquireTokenParameterBuilder_1$instance<T>;
 
 export interface AbstractManagedIdentityAcquireTokenParameterBuilder_1$instance<T extends BaseAbstractAcquireTokenParameterBuilder_1<T>> extends BaseAbstractAcquireTokenParameterBuilder_1<T> {
+    readonly __tsonic_type_Microsoft_Identity_Client_AbstractManagedIdentityAcquireTokenParameterBuilder_1: never;
+
     ExecuteAsync(cancellationToken: CancellationToken): Task_1<AuthenticationResult>;
     ExecuteAsync(cancellationToken: CancellationToken): Task_1<AuthenticationResult>;
     ExecuteAsync(): Task_1<AuthenticationResult>;
@@ -435,6 +447,8 @@ export const AbstractManagedIdentityAcquireTokenParameterBuilder_1: (abstract ne
 export type AbstractManagedIdentityAcquireTokenParameterBuilder_1<T extends BaseAbstractAcquireTokenParameterBuilder_1<T>> = AbstractManagedIdentityAcquireTokenParameterBuilder_1$instance<T>;
 
 export interface AbstractPublicClientAcquireTokenParameterBuilder_1$instance<T extends AbstractAcquireTokenParameterBuilder_1<T>> extends AbstractAcquireTokenParameterBuilder_1<T> {
+    readonly __tsonic_type_Microsoft_Identity_Client_AbstractPublicClientAcquireTokenParameterBuilder_1: never;
+
     ExecuteAsync(cancellationToken: CancellationToken): Task_1<AuthenticationResult>;
     ExecuteAsync(cancellationToken: CancellationToken): Task_1<AuthenticationResult>;
     ExecuteAsync(): Task_1<AuthenticationResult>;
@@ -448,6 +462,8 @@ export const AbstractPublicClientAcquireTokenParameterBuilder_1: {
 export type AbstractPublicClientAcquireTokenParameterBuilder_1<T extends AbstractAcquireTokenParameterBuilder_1<T>> = AbstractPublicClientAcquireTokenParameterBuilder_1$instance<T>;
 
 export interface AccountId$instance {
+    readonly __tsonic_type_Microsoft_Identity_Client_AccountId: never;
+
     readonly Identifier: string;
     readonly ObjectId: string;
     readonly TenantId: string;
@@ -466,6 +482,8 @@ export const AccountId: {
 export type AccountId = AccountId$instance;
 
 export interface AcquireTokenByAuthorizationCodeParameterBuilder$instance extends AbstractConfidentialClientAcquireTokenParameterBuilder_1<AcquireTokenByAuthorizationCodeParameterBuilder> {
+    readonly __tsonic_type_Microsoft_Identity_Client_AcquireTokenByAuthorizationCodeParameterBuilder: never;
+
     Validate(): void;
     WithCcsRoutingHint(userObjectIdentifier: string, tenantIdentifier: string): AcquireTokenByAuthorizationCodeParameterBuilder;
     WithCcsRoutingHint(userName: string): AcquireTokenByAuthorizationCodeParameterBuilder;
@@ -482,6 +500,8 @@ export const AcquireTokenByAuthorizationCodeParameterBuilder: {
 export type AcquireTokenByAuthorizationCodeParameterBuilder = AcquireTokenByAuthorizationCodeParameterBuilder$instance;
 
 export interface AcquireTokenByIntegratedWindowsAuthParameterBuilder$instance extends AbstractPublicClientAcquireTokenParameterBuilder_1<AcquireTokenByIntegratedWindowsAuthParameterBuilder> {
+    readonly __tsonic_type_Microsoft_Identity_Client_AcquireTokenByIntegratedWindowsAuthParameterBuilder: never;
+
     WithFederationMetadata(federationMetadata: string): AcquireTokenByIntegratedWindowsAuthParameterBuilder;
     WithUsername(username: string): AcquireTokenByIntegratedWindowsAuthParameterBuilder;
 }
@@ -494,6 +514,8 @@ export const AcquireTokenByIntegratedWindowsAuthParameterBuilder: {
 export type AcquireTokenByIntegratedWindowsAuthParameterBuilder = AcquireTokenByIntegratedWindowsAuthParameterBuilder$instance;
 
 export interface AcquireTokenByRefreshTokenParameterBuilder$instance extends AbstractClientAppBaseAcquireTokenParameterBuilder_1<AcquireTokenByRefreshTokenParameterBuilder> {
+    readonly __tsonic_type_Microsoft_Identity_Client_AcquireTokenByRefreshTokenParameterBuilder: never;
+
     Validate(): void;
     WithSendX5C(withSendX5C: boolean): AcquireTokenByRefreshTokenParameterBuilder;
 }
@@ -506,6 +528,8 @@ export const AcquireTokenByRefreshTokenParameterBuilder: {
 export type AcquireTokenByRefreshTokenParameterBuilder = AcquireTokenByRefreshTokenParameterBuilder$instance;
 
 export interface AcquireTokenByUsernameAndPasswordConfidentialParameterBuilder$instance extends AbstractConfidentialClientAcquireTokenParameterBuilder_1<AcquireTokenByUsernameAndPasswordConfidentialParameterBuilder> {
+    readonly __tsonic_type_Microsoft_Identity_Client_AcquireTokenByUsernameAndPasswordConfidentialParameterBuilder: never;
+
     Validate(): void;
 }
 
@@ -517,6 +541,8 @@ export const AcquireTokenByUsernameAndPasswordConfidentialParameterBuilder: {
 export type AcquireTokenByUsernameAndPasswordConfidentialParameterBuilder = AcquireTokenByUsernameAndPasswordConfidentialParameterBuilder$instance;
 
 export interface AcquireTokenByUsernamePasswordParameterBuilder$instance extends AbstractPublicClientAcquireTokenParameterBuilder_1<AcquireTokenByUsernamePasswordParameterBuilder> {
+    readonly __tsonic_type_Microsoft_Identity_Client_AcquireTokenByUsernamePasswordParameterBuilder: never;
+
     WithFederationMetadata(federationMetadata: string): AcquireTokenByUsernamePasswordParameterBuilder;
     WithProofOfPossession(nonce: string, httpMethod: HttpMethod, requestUri: Uri): AcquireTokenByUsernamePasswordParameterBuilder;
 }
@@ -529,6 +555,8 @@ export const AcquireTokenByUsernamePasswordParameterBuilder: {
 export type AcquireTokenByUsernamePasswordParameterBuilder = AcquireTokenByUsernamePasswordParameterBuilder$instance;
 
 export interface AcquireTokenForClientParameterBuilder$instance extends AbstractConfidentialClientAcquireTokenParameterBuilder_1<AcquireTokenForClientParameterBuilder> {
+    readonly __tsonic_type_Microsoft_Identity_Client_AcquireTokenForClientParameterBuilder: never;
+
     Validate(): void;
     WithAzureRegion(useAzureRegion: boolean): AcquireTokenForClientParameterBuilder;
     WithFmiPath(pathSuffix: string): AcquireTokenForClientParameterBuilder;
@@ -546,6 +574,8 @@ export const AcquireTokenForClientParameterBuilder: {
 export type AcquireTokenForClientParameterBuilder = AcquireTokenForClientParameterBuilder$instance;
 
 export interface AcquireTokenForManagedIdentityParameterBuilder$instance extends AbstractManagedIdentityAcquireTokenParameterBuilder_1<AcquireTokenForManagedIdentityParameterBuilder> {
+    readonly __tsonic_type_Microsoft_Identity_Client_AcquireTokenForManagedIdentityParameterBuilder: never;
+
     WithClaims(claims: string): AcquireTokenForManagedIdentityParameterBuilder;
     WithForceRefresh(forceRefresh: boolean): AcquireTokenForManagedIdentityParameterBuilder;
 }
@@ -558,6 +588,8 @@ export const AcquireTokenForManagedIdentityParameterBuilder: {
 export type AcquireTokenForManagedIdentityParameterBuilder = AcquireTokenForManagedIdentityParameterBuilder$instance;
 
 export interface AcquireTokenInteractiveParameterBuilder$instance extends AbstractPublicClientAcquireTokenParameterBuilder_1<AcquireTokenInteractiveParameterBuilder> {
+    readonly __tsonic_type_Microsoft_Identity_Client_AcquireTokenInteractiveParameterBuilder: never;
+
     Validate(): void;
     WithAccount(account: IAccount): AcquireTokenInteractiveParameterBuilder;
     WithEmbeddedWebViewOptions(options: EmbeddedWebViewOptions): AcquireTokenInteractiveParameterBuilder;
@@ -579,6 +611,8 @@ export const AcquireTokenInteractiveParameterBuilder: {
 export type AcquireTokenInteractiveParameterBuilder = AcquireTokenInteractiveParameterBuilder$instance;
 
 export interface AcquireTokenOnBehalfOfParameterBuilder$instance extends AbstractConfidentialClientAcquireTokenParameterBuilder_1<AcquireTokenOnBehalfOfParameterBuilder> {
+    readonly __tsonic_type_Microsoft_Identity_Client_AcquireTokenOnBehalfOfParameterBuilder: never;
+
     Validate(): void;
     WithCcsRoutingHint(userObjectIdentifier: string, tenantIdentifier: string): AcquireTokenOnBehalfOfParameterBuilder;
     WithCcsRoutingHint(userName: string): AcquireTokenOnBehalfOfParameterBuilder;
@@ -594,6 +628,8 @@ export const AcquireTokenOnBehalfOfParameterBuilder: {
 export type AcquireTokenOnBehalfOfParameterBuilder = AcquireTokenOnBehalfOfParameterBuilder$instance;
 
 export interface AcquireTokenSilentParameterBuilder$instance extends AbstractClientAppBaseAcquireTokenParameterBuilder_1<AcquireTokenSilentParameterBuilder> {
+    readonly __tsonic_type_Microsoft_Identity_Client_AcquireTokenSilentParameterBuilder: never;
+
     Validate(): void;
     WithForceRefresh(forceRefresh: boolean): AcquireTokenSilentParameterBuilder;
     WithProofOfPossession(popAuthenticationConfiguration: PoPAuthenticationConfiguration): AcquireTokenSilentParameterBuilder;
@@ -609,6 +645,8 @@ export const AcquireTokenSilentParameterBuilder: {
 export type AcquireTokenSilentParameterBuilder = AcquireTokenSilentParameterBuilder$instance;
 
 export interface AcquireTokenWithDeviceCodeParameterBuilder$instance extends AbstractPublicClientAcquireTokenParameterBuilder_1<AcquireTokenWithDeviceCodeParameterBuilder> {
+    readonly __tsonic_type_Microsoft_Identity_Client_AcquireTokenWithDeviceCodeParameterBuilder: never;
+
     Validate(): void;
     WithDeviceCodeResultCallback(deviceCodeResultCallback: Func_2<DeviceCodeResult, Task>): AcquireTokenWithDeviceCodeParameterBuilder;
 }
@@ -621,6 +659,8 @@ export const AcquireTokenWithDeviceCodeParameterBuilder: {
 export type AcquireTokenWithDeviceCodeParameterBuilder = AcquireTokenWithDeviceCodeParameterBuilder$instance;
 
 export interface ApplicationBase$instance extends IApplicationBase {
+    readonly __tsonic_type_Microsoft_Identity_Client_ApplicationBase: never;
+
     readonly __tsonic_iface_Microsoft_Identity_Client_IApplicationBase: never;
 
 }
@@ -633,6 +673,8 @@ export const ApplicationBase: {
 export type ApplicationBase = ApplicationBase$instance;
 
 export interface ApplicationOptions$instance extends BaseApplicationOptions {
+    readonly __tsonic_type_Microsoft_Identity_Client_ApplicationOptions: never;
+
     AadAuthorityAudience: AadAuthorityAudience;
     AzureCloudInstance: AzureCloudInstance;
     ClientCapabilities: IEnumerable_1<System_Internal.String>;
@@ -655,6 +697,8 @@ export const ApplicationOptions: (abstract new() => ApplicationOptions) & {
 export type ApplicationOptions = ApplicationOptions$instance;
 
 export interface AssertionRequestOptions$instance {
+    readonly __tsonic_type_Microsoft_Identity_Client_AssertionRequestOptions: never;
+
     CancellationToken: CancellationToken;
     Claims: string;
     ClientAssertionFmiPath: string;
@@ -672,6 +716,8 @@ export const AssertionRequestOptions: {
 export type AssertionRequestOptions = AssertionRequestOptions$instance;
 
 export interface AuthenticationHeaderParser$instance {
+    readonly __tsonic_type_Microsoft_Identity_Client_AuthenticationHeaderParser: never;
+
     AuthenticationInfoParameters: AuthenticationInfoParameters;
     PopNonce: string;
     WwwAuthenticateParameters: IReadOnlyList_1<WwwAuthenticateParameters>;
@@ -689,7 +735,8 @@ export const AuthenticationHeaderParser: {
 export type AuthenticationHeaderParser = AuthenticationHeaderParser$instance;
 
 export interface AuthenticationInfoParameters$instance {
-    readonly [key: string]: string;
+    readonly __tsonic_type_Microsoft_Identity_Client_AuthenticationInfoParameters: never;
+
     NextNonce: string;
 }
 
@@ -700,9 +747,11 @@ export const AuthenticationInfoParameters: {
 };
 
 
-export type AuthenticationInfoParameters = AuthenticationInfoParameters$instance;
+export type AuthenticationInfoParameters = AuthenticationInfoParameters$instance & { readonly [key: string]: string; };
 
 export interface AuthenticationResult$instance {
+    readonly __tsonic_type_Microsoft_Identity_Client_AuthenticationResult: never;
+
     AccessToken: string;
     readonly Account: IAccount;
     readonly AdditionalResponseParameters: IReadOnlyDictionary_2<System_Internal.String, System_Internal.String>;
@@ -731,6 +780,8 @@ export const AuthenticationResult: {
 export type AuthenticationResult = AuthenticationResult$instance;
 
 export interface AuthenticationResultMetadata$instance {
+    readonly __tsonic_type_Microsoft_Identity_Client_AuthenticationResultMetadata: never;
+
     CachedAccessTokenCount: int;
     CacheLevel: CacheLevel;
     CacheRefreshReason: CacheRefreshReason;
@@ -754,6 +805,8 @@ export const AuthenticationResultMetadata: {
 export type AuthenticationResultMetadata = AuthenticationResultMetadata$instance;
 
 export interface BaseAbstractAcquireTokenParameterBuilder_1$instance<T extends BaseAbstractAcquireTokenParameterBuilder_1<T>> {
+    readonly __tsonic_type_Microsoft_Identity_Client_BaseAbstractAcquireTokenParameterBuilder_1: never;
+
     ExecuteAsync(cancellationToken: CancellationToken): Task_1<AuthenticationResult>;
     ExecuteAsync(): Task_1<AuthenticationResult>;
     Validate(): void;
@@ -769,6 +822,8 @@ export const BaseAbstractAcquireTokenParameterBuilder_1: (abstract new<T extends
 export type BaseAbstractAcquireTokenParameterBuilder_1<T extends BaseAbstractAcquireTokenParameterBuilder_1<T>> = BaseAbstractAcquireTokenParameterBuilder_1$instance<T>;
 
 export interface BaseAbstractApplicationBuilder_1$instance<T extends BaseAbstractApplicationBuilder_1<T>> {
+    readonly __tsonic_type_Microsoft_Identity_Client_BaseAbstractApplicationBuilder_1: never;
+
     WithClientName(clientName: string): T;
     WithClientVersion(clientVersion: string): T;
     WithDebugLoggingCallback(logLevel?: LogLevel, enablePiiLogging?: boolean, withDefaultPlatformLoggingEnabled?: boolean): T;
@@ -787,6 +842,8 @@ export const BaseAbstractApplicationBuilder_1: {
 export type BaseAbstractApplicationBuilder_1<T extends BaseAbstractApplicationBuilder_1<T>> = BaseAbstractApplicationBuilder_1$instance<T>;
 
 export interface BaseApplicationOptions$instance {
+    readonly __tsonic_type_Microsoft_Identity_Client_BaseApplicationOptions: never;
+
     EnablePiiLogging: boolean;
     IsDefaultPlatformLoggingEnabled: boolean;
     LogLevel: LogLevel;
@@ -800,6 +857,8 @@ export const BaseApplicationOptions: (abstract new() => BaseApplicationOptions) 
 export type BaseApplicationOptions = BaseApplicationOptions$instance;
 
 export interface BrokerOptions$instance {
+    readonly __tsonic_type_Microsoft_Identity_Client_BrokerOptions: never;
+
     readonly EnabledOn: BrokerOptions_OperatingSystems;
     ListOperatingSystemAccounts: boolean;
     MsaPassthrough: boolean;
@@ -815,6 +874,8 @@ export const BrokerOptions: {
 export type BrokerOptions = BrokerOptions$instance;
 
 export interface CacheOptions$instance {
+    readonly __tsonic_type_Microsoft_Identity_Client_CacheOptions: never;
+
     UseSharedCache: boolean;
 }
 
@@ -829,6 +890,8 @@ export const CacheOptions: {
 export type CacheOptions = CacheOptions$instance;
 
 export interface ClientApplicationBase$instance extends ApplicationBase, IApplicationBase {
+    readonly __tsonic_type_Microsoft_Identity_Client_ClientApplicationBase: never;
+
     readonly __tsonic_iface_Microsoft_Identity_Client_IApplicationBase: never;
     readonly __tsonic_iface_Microsoft_Identity_Client_IClientApplicationBase: never;
 
@@ -860,6 +923,8 @@ export type ClientApplicationBase = ClientApplicationBase$instance & __ClientApp
 
 
 export interface ConfidentialClientApplication$instance extends ClientApplicationBase$instance, IApplicationBase, IByRefreshToken$instance, IByUsernameAndPassword$instance, ILongRunningWebApi$instance {
+    readonly __tsonic_type_Microsoft_Identity_Client_ConfidentialClientApplication: never;
+
     readonly __tsonic_iface_Microsoft_Identity_Client_IApplicationBase: never;
     readonly __tsonic_iface_Microsoft_Identity_Client_IByRefreshToken: never;
     readonly __tsonic_iface_Microsoft_Identity_Client_IByUsernameAndPassword: never;
@@ -906,6 +971,8 @@ export type ConfidentialClientApplication = ConfidentialClientApplication$instan
 
 
 export interface ConfidentialClientApplicationBuilder$instance extends AbstractApplicationBuilder_1<ConfidentialClientApplicationBuilder> {
+    readonly __tsonic_type_Microsoft_Identity_Client_ConfidentialClientApplicationBuilder: never;
+
     Build(): IConfidentialClientApplication;
     WithAzureRegion(azureRegion?: string): ConfidentialClientApplicationBuilder;
     WithCacheSynchronization(enableCacheSynchronization: boolean): ConfidentialClientApplicationBuilder;
@@ -933,6 +1000,8 @@ export const ConfidentialClientApplicationBuilder: {
 export type ConfidentialClientApplicationBuilder = ConfidentialClientApplicationBuilder$instance;
 
 export interface ConfidentialClientApplicationOptions$instance extends ApplicationOptions {
+    readonly __tsonic_type_Microsoft_Identity_Client_ConfidentialClientApplicationOptions: never;
+
     AzureRegion: string;
     ClientSecret: string;
     EnableCacheSynchronization: boolean;
@@ -947,6 +1016,8 @@ export const ConfidentialClientApplicationOptions: {
 export type ConfidentialClientApplicationOptions = ConfidentialClientApplicationOptions$instance;
 
 export interface DeviceCodeResult$instance {
+    readonly __tsonic_type_Microsoft_Identity_Client_DeviceCodeResult: never;
+
     readonly ClientId: string;
     readonly DeviceCode: string;
     readonly ExpiresOn: DateTimeOffset;
@@ -965,6 +1036,8 @@ export const DeviceCodeResult: {
 export type DeviceCodeResult = DeviceCodeResult$instance;
 
 export interface EmbeddedWebViewOptions$instance {
+    readonly __tsonic_type_Microsoft_Identity_Client_EmbeddedWebViewOptions: never;
+
     Title: string;
     WebView2BrowserExecutableFolder: string;
 }
@@ -978,6 +1051,8 @@ export const EmbeddedWebViewOptions: {
 export type EmbeddedWebViewOptions = EmbeddedWebViewOptions$instance;
 
 export interface GetAuthorizationRequestUrlParameterBuilder$instance extends AbstractConfidentialClientAcquireTokenParameterBuilder_1<GetAuthorizationRequestUrlParameterBuilder> {
+    readonly __tsonic_type_Microsoft_Identity_Client_GetAuthorizationRequestUrlParameterBuilder: never;
+
     ExecuteAsync(cancellationToken: CancellationToken): Task_1<Uri>;
     ExecuteAsync(): Task_1<Uri>;
     ExecuteAsync(cancellationToken: CancellationToken): Task_1<AuthenticationResult>;
@@ -999,6 +1074,8 @@ export const GetAuthorizationRequestUrlParameterBuilder: {
 export type GetAuthorizationRequestUrlParameterBuilder = GetAuthorizationRequestUrlParameterBuilder$instance;
 
 export interface IntuneAppProtectionPolicyRequiredException$instance extends MsalServiceException {
+    readonly __tsonic_type_Microsoft_Identity_Client_IntuneAppProtectionPolicyRequiredException: never;
+
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
     AccountUserId: string;
@@ -1016,6 +1093,8 @@ export const IntuneAppProtectionPolicyRequiredException: {
 export type IntuneAppProtectionPolicyRequiredException = IntuneAppProtectionPolicyRequiredException$instance;
 
 export interface ManagedIdentityApplication$instance extends ApplicationBase, IApplicationBase, IManagedIdentityApplication$instance {
+    readonly __tsonic_type_Microsoft_Identity_Client_ManagedIdentityApplication: never;
+
     readonly __tsonic_iface_Microsoft_Identity_Client_IApplicationBase: never;
     readonly __tsonic_iface_Microsoft_Identity_Client_IManagedIdentityApplication: never;
 
@@ -1036,6 +1115,8 @@ export type ManagedIdentityApplication = ManagedIdentityApplication$instance & _
 
 
 export interface ManagedIdentityApplicationBuilder$instance extends BaseAbstractApplicationBuilder_1<ManagedIdentityApplicationBuilder> {
+    readonly __tsonic_type_Microsoft_Identity_Client_ManagedIdentityApplicationBuilder: never;
+
     Build(): IManagedIdentityApplication;
     WithClientCapabilities(clientCapabilities: IEnumerable_1<System_Internal.String>): ManagedIdentityApplicationBuilder;
     WithTelemetryClient(...telemetryClients: ITelemetryClient[]): ManagedIdentityApplicationBuilder;
@@ -1050,6 +1131,8 @@ export const ManagedIdentityApplicationBuilder: {
 export type ManagedIdentityApplicationBuilder = ManagedIdentityApplicationBuilder$instance;
 
 export interface Metrics$instance {
+    readonly __tsonic_type_Microsoft_Identity_Client_Metrics: never;
+
 }
 
 
@@ -1064,6 +1147,8 @@ export const Metrics: {
 export type Metrics = Metrics$instance;
 
 export interface MsalClaimsChallengeException$instance extends MsalUiRequiredException {
+    readonly __tsonic_type_Microsoft_Identity_Client_MsalClaimsChallengeException: never;
+
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
 }
@@ -1079,6 +1164,8 @@ export const MsalClaimsChallengeException: {
 export type MsalClaimsChallengeException = MsalClaimsChallengeException$instance;
 
 export interface MsalClientException$instance extends MsalException {
+    readonly __tsonic_type_Microsoft_Identity_Client_MsalClientException: never;
+
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
 }
@@ -1094,6 +1181,8 @@ export const MsalClientException: {
 export type MsalClientException = MsalClientException$instance;
 
 export interface MsalException$instance extends Exception {
+    readonly __tsonic_type_Microsoft_Identity_Client_MsalException: never;
+
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
     AdditionalExceptionData: IReadOnlyDictionary_2<System_Internal.String, System_Internal.String>;
@@ -1123,6 +1212,8 @@ export const MsalException: {
 export type MsalException = MsalException$instance;
 
 export interface MsalManagedIdentityException$instance extends MsalServiceException {
+    readonly __tsonic_type_Microsoft_Identity_Client_MsalManagedIdentityException: never;
+
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
     readonly ManagedIdentitySource: ManagedIdentitySource;
@@ -1141,6 +1232,8 @@ export const MsalManagedIdentityException: {
 export type MsalManagedIdentityException = MsalManagedIdentityException$instance;
 
 export interface MsalServiceException$instance extends MsalException {
+    readonly __tsonic_type_Microsoft_Identity_Client_MsalServiceException: never;
+
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
     Claims: string;
@@ -1164,6 +1257,8 @@ export const MsalServiceException: {
 export type MsalServiceException = MsalServiceException$instance;
 
 export interface MsalThrottledServiceException$instance extends MsalServiceException {
+    readonly __tsonic_type_Microsoft_Identity_Client_MsalThrottledServiceException: never;
+
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
     readonly OriginalServiceException: MsalServiceException;
@@ -1178,6 +1273,8 @@ export const MsalThrottledServiceException: {
 export type MsalThrottledServiceException = MsalThrottledServiceException$instance;
 
 export interface MsalThrottledUiRequiredException$instance extends MsalUiRequiredException {
+    readonly __tsonic_type_Microsoft_Identity_Client_MsalThrottledUiRequiredException: never;
+
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
     readonly OriginalServiceException: MsalUiRequiredException;
@@ -1192,6 +1289,8 @@ export const MsalThrottledUiRequiredException: {
 export type MsalThrottledUiRequiredException = MsalThrottledUiRequiredException$instance;
 
 export interface MsalUiRequiredException$instance extends MsalServiceException {
+    readonly __tsonic_type_Microsoft_Identity_Client_MsalUiRequiredException: never;
+
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
     readonly Classification: UiRequiredExceptionClassification;
@@ -1208,6 +1307,8 @@ export const MsalUiRequiredException: {
 export type MsalUiRequiredException = MsalUiRequiredException$instance;
 
 export interface PublicClientApplication$instance extends ClientApplicationBase$instance, IApplicationBase, IByRefreshToken$instance {
+    readonly __tsonic_type_Microsoft_Identity_Client_PublicClientApplication: never;
+
     readonly __tsonic_iface_Microsoft_Identity_Client_IApplicationBase: never;
     readonly __tsonic_iface_Microsoft_Identity_Client_IByRefreshToken: never;
     readonly __tsonic_iface_Microsoft_Identity_Client_IClientApplicationBase: never;
@@ -1251,6 +1352,8 @@ export type PublicClientApplication = PublicClientApplication$instance & __Publi
 
 
 export interface PublicClientApplicationBuilder$instance extends AbstractApplicationBuilder_1<PublicClientApplicationBuilder> {
+    readonly __tsonic_type_Microsoft_Identity_Client_PublicClientApplicationBuilder: never;
+
     Build(): IPublicClientApplication;
     IsBrokerAvailable(): boolean;
     WithBroker(enableBroker?: boolean): PublicClientApplicationBuilder;
@@ -1274,6 +1377,8 @@ export const PublicClientApplicationBuilder: {
 export type PublicClientApplicationBuilder = PublicClientApplicationBuilder$instance;
 
 export interface PublicClientApplicationOptions$instance extends ApplicationOptions {
+    readonly __tsonic_type_Microsoft_Identity_Client_PublicClientApplicationOptions: never;
+
 }
 
 
@@ -1285,6 +1390,8 @@ export const PublicClientApplicationOptions: {
 export type PublicClientApplicationOptions = PublicClientApplicationOptions$instance;
 
 export interface RegionDetails$instance {
+    readonly __tsonic_type_Microsoft_Identity_Client_RegionDetails: never;
+
     readonly AutoDetectionError: string;
     readonly RegionOutcome: RegionOutcome;
     readonly RegionUsed: string;
@@ -1299,6 +1406,8 @@ export const RegionDetails: {
 export type RegionDetails = RegionDetails$instance;
 
 export interface SystemWebViewOptions$instance {
+    readonly __tsonic_type_Microsoft_Identity_Client_SystemWebViewOptions: never;
+
     BrowserRedirectError: Uri;
     BrowserRedirectSuccess: Uri;
     HtmlMessageError: string;
@@ -1318,6 +1427,8 @@ export const SystemWebViewOptions: {
 export type SystemWebViewOptions = SystemWebViewOptions$instance;
 
 export interface TenantProfile$instance {
+    readonly __tsonic_type_Microsoft_Identity_Client_TenantProfile: never;
+
     readonly ClaimsPrincipal: ClaimsPrincipal;
     readonly IsHomeTenant: boolean;
     readonly Oid: string;
@@ -1332,6 +1443,8 @@ export const TenantProfile: {
 export type TenantProfile = TenantProfile$instance;
 
 export interface TokenCache$instance extends ITokenCache$instance, ITokenCacheSerializer$instance {
+    readonly __tsonic_type_Microsoft_Identity_Client_TokenCache: never;
+
     readonly __tsonic_iface_Microsoft_Identity_Client_ITokenCache: never;
     readonly __tsonic_iface_Microsoft_Identity_Client_ITokenCacheSerializer: never;
 
@@ -1359,6 +1472,8 @@ export type TokenCache = TokenCache$instance & __TokenCache$views;
 
 
 export interface TokenCacheNotificationArgs$instance {
+    readonly __tsonic_type_Microsoft_Identity_Client_TokenCacheNotificationArgs: never;
+
     readonly Account: IAccount;
     readonly CancellationToken: CancellationToken;
     readonly ClientId: string;
@@ -1389,6 +1504,8 @@ export const TokenCacheNotificationArgs: {
 export type TokenCacheNotificationArgs = TokenCacheNotificationArgs$instance;
 
 export interface TraceTelemetryConfig$instance extends ITelemetryConfig$instance {
+    readonly __tsonic_type_Microsoft_Identity_Client_TraceTelemetryConfig: never;
+
     readonly __tsonic_iface_Microsoft_Identity_Client_ITelemetryConfig: never;
 
     readonly AllowedScopes: IEnumerable_1<System_Internal.String>;
@@ -1411,6 +1528,8 @@ export type TraceTelemetryConfig = TraceTelemetryConfig$instance & __TraceTeleme
 
 
 export interface UserAssertion$instance {
+    readonly __tsonic_type_Microsoft_Identity_Client_UserAssertion: never;
+
     Assertion: string;
     AssertionType: string;
 }
@@ -1425,6 +1544,8 @@ export const UserAssertion: {
 export type UserAssertion = UserAssertion$instance;
 
 export interface WindowsBrokerOptions$instance {
+    readonly __tsonic_type_Microsoft_Identity_Client_WindowsBrokerOptions: never;
+
     HeaderText: string;
     ListWindowsWorkAndSchoolAccounts: boolean;
     MsaPassthrough: boolean;
@@ -1439,11 +1560,12 @@ export const WindowsBrokerOptions: {
 export type WindowsBrokerOptions = WindowsBrokerOptions$instance;
 
 export interface WwwAuthenticateParameters$instance {
+    readonly __tsonic_type_Microsoft_Identity_Client_WwwAuthenticateParameters: never;
+
     AuthenticationScheme: string;
     Authority: string;
     Claims: string;
     Error: string;
-    readonly [key: string]: string;
     Nonce: string;
     Resource: string;
     Scopes: IEnumerable_1<System_Internal.String>;
@@ -1468,7 +1590,7 @@ export const WwwAuthenticateParameters: {
 };
 
 
-export type WwwAuthenticateParameters = WwwAuthenticateParameters$instance;
+export type WwwAuthenticateParameters = WwwAuthenticateParameters$instance & { readonly [key: string]: string; };
 
 export abstract class AccountExtensions$instance {
     static GetTenantProfiles(account: IAccount): IEnumerable_1<TenantProfile>;

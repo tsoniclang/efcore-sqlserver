@@ -24,6 +24,8 @@ export interface ICustomWebUi$instance {
 export type ICustomWebUi = ICustomWebUi$instance;
 
 export interface AppTokenProviderParameters$instance {
+    readonly __tsonic_type_Microsoft_Identity_Client_Extensibility_AppTokenProviderParameters: never;
+
     CancellationToken: CancellationToken;
     Claims: string;
     CorrelationId: string;
@@ -40,6 +42,8 @@ export const AppTokenProviderParameters: {
 export type AppTokenProviderParameters = AppTokenProviderParameters$instance;
 
 export interface AppTokenProviderResult$instance {
+    readonly __tsonic_type_Microsoft_Identity_Client_Extensibility_AppTokenProviderResult: never;
+
     AccessToken: string;
     ExpiresInSeconds: long;
     RefreshInSeconds: Nullable_1<System_Internal.Int64>;
@@ -54,6 +58,8 @@ export const AppTokenProviderResult: {
 export type AppTokenProviderResult = AppTokenProviderResult$instance;
 
 export interface MsalAuthenticationExtension$instance {
+    readonly __tsonic_type_Microsoft_Identity_Client_Extensibility_MsalAuthenticationExtension: never;
+
     AdditionalCacheParameters: IEnumerable_1<System_Internal.String>;
     AuthenticationOperation: IAuthenticationOperation;
     OnBeforeTokenRequestHandler: Func_2<OnBeforeTokenRequestData, Task>;
@@ -68,6 +74,8 @@ export const MsalAuthenticationExtension: {
 export type MsalAuthenticationExtension = MsalAuthenticationExtension$instance;
 
 export interface OnBeforeTokenRequestData$instance {
+    readonly __tsonic_type_Microsoft_Identity_Client_Extensibility_OnBeforeTokenRequestData: never;
+
     readonly BodyParameters: IDictionary_2<System_Internal.String, System_Internal.String>;
     readonly CancellationToken: CancellationToken;
     readonly Headers: IDictionary_2<System_Internal.String, System_Internal.String>;

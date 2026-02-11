@@ -17,6 +17,8 @@ import type { IMigrationsSqlGenerator, MigrationBuilder, MigrationCommand, Migra
 import type { ICommandBatchPreparer } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Update/internal/index.js";
 
 export interface SqlServerMigrationsSqlGenerator$instance extends MigrationsSqlGenerator {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Migrations_SqlServerMigrationsSqlGenerator: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Migrations_IMigrationsSqlGenerator: never;
 
     AddDescription(builder: MigrationCommandListBuilder, description: string, schema: string, table: string, column?: string, omitVariableDeclarations?: boolean): void;

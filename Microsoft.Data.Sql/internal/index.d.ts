@@ -13,6 +13,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Int32, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface SqlDataSourceEnumerator$instance extends DbDataSourceEnumerator {
+    readonly __tsonic_type_Microsoft_Data_Sql_SqlDataSourceEnumerator: never;
+
     GetDataSources(): DataTable;
 }
 
@@ -26,6 +28,8 @@ export const SqlDataSourceEnumerator: {
 export type SqlDataSourceEnumerator = SqlDataSourceEnumerator$instance;
 
 export interface SqlNotificationRequest$instance {
+    readonly __tsonic_type_Microsoft_Data_Sql_SqlNotificationRequest: never;
+
     Options: string;
     Timeout: int;
     UserData: string;

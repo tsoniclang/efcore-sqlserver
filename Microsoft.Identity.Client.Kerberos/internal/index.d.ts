@@ -25,6 +25,8 @@ export enum KerberosTicketContainer {
 
 
 export interface KerberosSupplementalTicket$instance {
+    readonly __tsonic_type_Microsoft_Identity_Client_Kerberos_KerberosSupplementalTicket: never;
+
     ClientKey: string;
     ClientName: string;
     ErrorMessage: string;

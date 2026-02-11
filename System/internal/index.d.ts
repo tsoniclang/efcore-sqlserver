@@ -23,6 +23,8 @@ export enum UriIdnScope {
 
 
 export interface BinaryData$instance {
+    readonly __tsonic_type_System_BinaryData: never;
+
     readonly IsEmpty: boolean;
     readonly Length: int;
     readonly MediaType: string | undefined;

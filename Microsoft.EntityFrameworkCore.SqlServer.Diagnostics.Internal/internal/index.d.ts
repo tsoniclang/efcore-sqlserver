@@ -11,6 +11,8 @@ import * as Microsoft_EntityFrameworkCore_Diagnostics_Internal from "@tsonic/efc
 import type { EventDefinitionBase, RelationalLoggingDefinitions } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics/internal/index.js";
 
 export interface SqlServerLoggingDefinitions$instance extends RelationalLoggingDefinitions {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Diagnostics_Internal_SqlServerLoggingDefinitions: never;
+
     LogDecimalTypeKey: EventDefinitionBase | undefined;
     LogDefaultDecimalTypeColumn: EventDefinitionBase | undefined;
     LogByteIdentityColumn: EventDefinitionBase | undefined;

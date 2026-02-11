@@ -43,6 +43,8 @@ export interface ISqlServerConnection$instance extends Microsoft_EntityFramework
 export type ISqlServerConnection = ISqlServerConnection$instance;
 
 export interface SqlServerBoolTypeMapping$instance extends BoolTypeMapping {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Storage_Internal_SqlServerBoolTypeMapping: never;
+
     Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
     GenerateNonNullSqlLiteral(value: unknown): string;
 }
@@ -57,6 +59,8 @@ export const SqlServerBoolTypeMapping: {
 export type SqlServerBoolTypeMapping = SqlServerBoolTypeMapping$instance;
 
 export interface SqlServerByteArrayTypeMapping$instance extends ByteArrayTypeMapping {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Storage_Internal_SqlServerByteArrayTypeMapping: never;
+
     Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
     ConfigureParameter(parameter: DbParameter): void;
     GenerateNonNullSqlLiteral(value: unknown): string;
@@ -72,6 +76,8 @@ export const SqlServerByteArrayTypeMapping: {
 export type SqlServerByteArrayTypeMapping = SqlServerByteArrayTypeMapping$instance;
 
 export interface SqlServerByteTypeMapping$instance extends ByteTypeMapping {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Storage_Internal_SqlServerByteTypeMapping: never;
+
     Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
     GenerateNonNullSqlLiteral(value: unknown): string;
 }
@@ -86,6 +92,8 @@ export const SqlServerByteTypeMapping: {
 export type SqlServerByteTypeMapping = SqlServerByteTypeMapping$instance;
 
 export interface SqlServerConnection$instance extends RelationalConnection, ISqlServerConnection$instance, Microsoft_EntityFrameworkCore_Storage_Internal.ITransactionEnlistmentManager {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Storage_Internal_SqlServerConnection: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IResettableService: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_SqlServer_Storage_Internal_ISqlServerConnection: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_IDbContextTransactionManager: never;
@@ -120,6 +128,8 @@ export type SqlServerConnection = SqlServerConnection$instance & __SqlServerConn
 
 
 export interface SqlServerDatabaseCreator$instance extends RelationalDatabaseCreator {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Storage_Internal_SqlServerDatabaseCreator: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_IDatabaseCreator: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_IRelationalDatabaseCreator: never;
 
@@ -144,6 +154,8 @@ export const SqlServerDatabaseCreator: {
 export type SqlServerDatabaseCreator = SqlServerDatabaseCreator$instance;
 
 export interface SqlServerDateOnlyTypeMapping$instance extends DateOnlyTypeMapping {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Storage_Internal_SqlServerDateOnlyTypeMapping: never;
+
     readonly SqlLiteralFormatString: string;
     Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
     ConfigureParameter(parameter: DbParameter): void;
@@ -158,6 +170,8 @@ export const SqlServerDateOnlyTypeMapping: (abstract new(parameters: RelationalT
 export type SqlServerDateOnlyTypeMapping = SqlServerDateOnlyTypeMapping$instance;
 
 export interface SqlServerDateTimeOffsetTypeMapping$instance extends DateTimeOffsetTypeMapping {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Storage_Internal_SqlServerDateTimeOffsetTypeMapping: never;
+
     readonly SqlLiteralFormatString: string;
     Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
     ConfigureParameter(parameter: DbParameter): void;
@@ -173,6 +187,8 @@ export const SqlServerDateTimeOffsetTypeMapping: {
 export type SqlServerDateTimeOffsetTypeMapping = SqlServerDateTimeOffsetTypeMapping$instance;
 
 export interface SqlServerDateTimeTypeMapping$instance extends DateTimeTypeMapping {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Storage_Internal_SqlServerDateTimeTypeMapping: never;
+
     readonly SqlLiteralFormatString: string;
     readonly SqlType: Nullable_1<SqlDbType>;
     Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
@@ -189,6 +205,8 @@ export const SqlServerDateTimeTypeMapping: {
 export type SqlServerDateTimeTypeMapping = SqlServerDateTimeTypeMapping$instance;
 
 export interface SqlServerDecimalTypeMapping$instance extends DecimalTypeMapping {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Storage_Internal_SqlServerDecimalTypeMapping: never;
+
     readonly SqlType: Nullable_1<SqlDbType>;
     Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
     ConfigureParameter(parameter: DbParameter): void;
@@ -204,6 +222,8 @@ export const SqlServerDecimalTypeMapping: {
 export type SqlServerDecimalTypeMapping = SqlServerDecimalTypeMapping$instance;
 
 export interface SqlServerDoubleTypeMapping$instance extends DoubleTypeMapping {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Storage_Internal_SqlServerDoubleTypeMapping: never;
+
     Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
     ConfigureParameter(parameter: DbParameter): void;
     CustomizeDataReaderExpression(expression: Expression): Expression;
@@ -221,6 +241,8 @@ export const SqlServerDoubleTypeMapping: {
 export type SqlServerDoubleTypeMapping = SqlServerDoubleTypeMapping$instance;
 
 export interface SqlServerExceptionDetector$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Storage_Internal_SqlServerExceptionDetector: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_IExceptionDetector: never;
 
     IsCancellation(exception: Exception, cancellationToken?: CancellationToken): boolean;
@@ -235,6 +257,8 @@ export const SqlServerExceptionDetector: {
 export type SqlServerExceptionDetector = SqlServerExceptionDetector$instance;
 
 export interface SqlServerExecutionStrategy$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Storage_Internal_SqlServerExecutionStrategy: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_IExecutionStrategy: never;
 
     readonly Dependencies: ExecutionStrategyDependencies;
@@ -252,6 +276,8 @@ export const SqlServerExecutionStrategy: {
 export type SqlServerExecutionStrategy = SqlServerExecutionStrategy$instance;
 
 export interface SqlServerExecutionStrategyFactory$instance extends RelationalExecutionStrategyFactory {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Storage_Internal_SqlServerExecutionStrategyFactory: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_IExecutionStrategyFactory: never;
 
     CreateDefaultStrategy(dependencies: ExecutionStrategyDependencies): IExecutionStrategy;
@@ -266,6 +292,8 @@ export const SqlServerExecutionStrategyFactory: {
 export type SqlServerExecutionStrategyFactory = SqlServerExecutionStrategyFactory$instance;
 
 export interface SqlServerFloatTypeMapping$instance extends FloatTypeMapping {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Storage_Internal_SqlServerFloatTypeMapping: never;
+
     Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
     ConfigureParameter(parameter: DbParameter): void;
     GenerateNonNullSqlLiteral(value: unknown): string;
@@ -281,6 +309,8 @@ export const SqlServerFloatTypeMapping: {
 export type SqlServerFloatTypeMapping = SqlServerFloatTypeMapping$instance;
 
 export interface SqlServerLongTypeMapping$instance extends LongTypeMapping {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Storage_Internal_SqlServerLongTypeMapping: never;
+
     Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
     GenerateNonNullSqlLiteral(value: unknown): string;
 }
@@ -295,6 +325,8 @@ export const SqlServerLongTypeMapping: {
 export type SqlServerLongTypeMapping = SqlServerLongTypeMapping$instance;
 
 export interface SqlServerShortTypeMapping$instance extends ShortTypeMapping {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Storage_Internal_SqlServerShortTypeMapping: never;
+
     Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
     GenerateNonNullSqlLiteral(value: unknown): string;
 }
@@ -309,6 +341,8 @@ export const SqlServerShortTypeMapping: {
 export type SqlServerShortTypeMapping = SqlServerShortTypeMapping$instance;
 
 export interface SqlServerSqlGenerationHelper$instance extends RelationalSqlGenerationHelper {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Storage_Internal_SqlServerSqlGenerationHelper: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_ISqlGenerationHelper: never;
 
     readonly BatchTerminator: string;
@@ -332,6 +366,8 @@ export const SqlServerSqlGenerationHelper: {
 export type SqlServerSqlGenerationHelper = SqlServerSqlGenerationHelper$instance;
 
 export interface SqlServerSqlVariantTypeMapping$instance extends RelationalTypeMapping {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Storage_Internal_SqlServerSqlVariantTypeMapping: never;
+
     Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
 }
 
@@ -345,6 +381,8 @@ export const SqlServerSqlVariantTypeMapping: {
 export type SqlServerSqlVariantTypeMapping = SqlServerSqlVariantTypeMapping$instance;
 
 export interface SqlServerStringTypeMapping$instance extends StringTypeMapping {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Storage_Internal_SqlServerStringTypeMapping: never;
+
     Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
     ConfigureParameter(parameter: DbParameter): void;
     GenerateNonNullSqlLiteral(value: unknown): string;
@@ -362,6 +400,8 @@ export const SqlServerStringTypeMapping: {
 export type SqlServerStringTypeMapping = SqlServerStringTypeMapping$instance;
 
 export interface SqlServerStructuralJsonTypeMapping$instance extends JsonTypeMapping {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Storage_Internal_SqlServerStructuralJsonTypeMapping: never;
+
     Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
     ConfigureParameter(parameter: DbParameter): void;
     CustomizeDataReaderExpression(expression: Expression): Expression;
@@ -383,6 +423,8 @@ export const SqlServerStructuralJsonTypeMapping: {
 export type SqlServerStructuralJsonTypeMapping = SqlServerStructuralJsonTypeMapping$instance;
 
 export interface SqlServerTimeOnlyTypeMapping$instance extends TimeOnlyTypeMapping {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Storage_Internal_SqlServerTimeOnlyTypeMapping: never;
+
     readonly SqlLiteralFormatString: string;
     Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
     ConfigureParameter(parameter: DbParameter): void;
@@ -398,6 +440,8 @@ export const SqlServerTimeOnlyTypeMapping: (abstract new(parameters: RelationalT
 export type SqlServerTimeOnlyTypeMapping = SqlServerTimeOnlyTypeMapping$instance;
 
 export interface SqlServerTimeSpanTypeMapping$instance extends TimeSpanTypeMapping {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Storage_Internal_SqlServerTimeSpanTypeMapping: never;
+
     readonly SqlLiteralFormatString: string;
     Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
     ConfigureParameter(parameter: DbParameter): void;
@@ -414,6 +458,8 @@ export const SqlServerTimeSpanTypeMapping: {
 export type SqlServerTimeSpanTypeMapping = SqlServerTimeSpanTypeMapping$instance;
 
 export interface SqlServerTransaction$instance extends RelationalTransaction {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Storage_Internal_SqlServerTransaction: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IInfrastructure_1: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction: never;
     readonly __tsonic_iface_System_IAsyncDisposable: never;
@@ -433,6 +479,8 @@ export const SqlServerTransaction: {
 export type SqlServerTransaction = SqlServerTransaction$instance;
 
 export interface SqlServerTransactionFactory$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Storage_Internal_SqlServerTransactionFactory: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_IRelationalTransactionFactory: never;
 
     readonly Dependencies: RelationalTransactionFactoryDependencies;
@@ -448,6 +496,8 @@ export const SqlServerTransactionFactory: {
 export type SqlServerTransactionFactory = SqlServerTransactionFactory$instance;
 
 export interface SqlServerTypeMappingSource$instance extends RelationalTypeMappingSource {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Storage_Internal_SqlServerTypeMappingSource: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_IRelationalTypeMappingSource: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_ITypeMappingSource: never;
 
@@ -465,6 +515,8 @@ export const SqlServerTypeMappingSource: {
 export type SqlServerTypeMappingSource = SqlServerTypeMappingSource$instance;
 
 export interface SqlServerUdtTypeMapping$instance extends RelationalTypeMapping {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Storage_Internal_SqlServerUdtTypeMapping: never;
+
     readonly LiteralGenerator: Func_2<unknown, Expression>;
     readonly UdtTypeName: string;
     Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
@@ -481,6 +533,8 @@ export const SqlServerUdtTypeMapping: {
 export type SqlServerUdtTypeMapping = SqlServerUdtTypeMapping$instance;
 
 export interface SqlServerVectorTypeMapping$instance extends RelationalTypeMapping {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Storage_Internal_SqlServerVectorTypeMapping: never;
+
     Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
     GenerateNonNullSqlLiteral(value: unknown): string;
 }

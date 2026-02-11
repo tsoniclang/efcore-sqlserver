@@ -34,6 +34,8 @@ export enum DataCompressionType {
 
 
 export interface SqlServerRetryingExecutionStrategy$instance extends ExecutionStrategy {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServerRetryingExecutionStrategy: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_IExecutionStrategy: never;
 
     readonly AdditionalErrorNumbers: IEnumerable_1<System_Internal.Int32> | undefined;

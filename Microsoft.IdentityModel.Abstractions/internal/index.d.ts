@@ -45,6 +45,8 @@ export interface ITelemetryClient$instance {
 export type ITelemetryClient = ITelemetryClient$instance;
 
 export interface LogEntry$instance {
+    readonly __tsonic_type_Microsoft_IdentityModel_Abstractions_LogEntry: never;
+
     get CorrelationId(): string | undefined;
     set CorrelationId(value: string | undefined);
     EventLogLevel: EventLogLevel;
@@ -61,6 +63,8 @@ export const LogEntry: {
 export type LogEntry = LogEntry$instance;
 
 export interface NullIdentityModelLogger$instance extends IIdentityLogger$instance {
+    readonly __tsonic_type_Microsoft_IdentityModel_Abstractions_NullIdentityModelLogger: never;
+
     readonly __tsonic_iface_Microsoft_IdentityModel_Abstractions_IIdentityLogger: never;
 
     IsEnabled(eventLogLevel: EventLogLevel): boolean;
@@ -81,6 +85,8 @@ export type NullIdentityModelLogger = NullIdentityModelLogger$instance & __NullI
 
 
 export interface NullTelemetryClient$instance extends ITelemetryClient$instance {
+    readonly __tsonic_type_Microsoft_IdentityModel_Abstractions_NullTelemetryClient: never;
+
     readonly __tsonic_iface_Microsoft_IdentityModel_Abstractions_ITelemetryClient: never;
 
     ClientId: string;
@@ -105,6 +111,8 @@ export type NullTelemetryClient = NullTelemetryClient$instance & __NullTelemetry
 
 
 export interface TelemetryEventDetails$instance {
+    readonly __tsonic_type_Microsoft_IdentityModel_Abstractions_TelemetryEventDetails: never;
+
     get Name(): string | undefined;
     set Name(value: string | undefined);
     readonly Properties: IReadOnlyDictionary_2<System_Internal.String, unknown>;

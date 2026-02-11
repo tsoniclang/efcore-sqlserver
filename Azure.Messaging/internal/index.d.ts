@@ -19,6 +19,8 @@ export enum CloudEventDataFormat {
 
 
 export interface CloudEvent$instance {
+    readonly __tsonic_type_Azure_Messaging_CloudEvent: never;
+
     get Data(): BinaryData | undefined;
     set Data(value: BinaryData | undefined);
     get DataContentType(): string | undefined;
@@ -46,6 +48,8 @@ export const CloudEvent: {
 export type CloudEvent = CloudEvent$instance;
 
 export interface MessageContent$instance {
+    readonly __tsonic_type_Azure_Messaging_MessageContent: never;
+
     ContentType: Nullable_1<ContentType>;
     ContentTypeCore: Nullable_1<ContentType>;
     get Data(): BinaryData | undefined;

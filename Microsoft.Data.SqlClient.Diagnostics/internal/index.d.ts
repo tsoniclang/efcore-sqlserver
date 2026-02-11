@@ -16,6 +16,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Exception, Guid, Int32, Int64, Nullable_1, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface SqlClientCommandAfter$instance {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_Diagnostics_SqlClientCommandAfter: never;
+
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
@@ -24,7 +26,6 @@ export interface SqlClientCommandAfter$instance {
     readonly Command: SqlCommand;
     readonly ConnectionId: Nullable_1<Guid>;
     readonly Count: int;
-    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly Operation: string;
     readonly OperationId: Guid;
     readonly Statistics: IDictionary;
@@ -40,9 +41,11 @@ export const SqlClientCommandAfter: {
 };
 
 
-export type SqlClientCommandAfter = SqlClientCommandAfter$instance;
+export type SqlClientCommandAfter = SqlClientCommandAfter$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
 export interface SqlClientCommandBefore$instance {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_Diagnostics_SqlClientCommandBefore: never;
+
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
@@ -51,7 +54,6 @@ export interface SqlClientCommandBefore$instance {
     readonly Command: SqlCommand;
     readonly ConnectionId: Nullable_1<Guid>;
     readonly Count: int;
-    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly Operation: string;
     readonly OperationId: Guid;
     readonly Timestamp: long;
@@ -66,9 +68,11 @@ export const SqlClientCommandBefore: {
 };
 
 
-export type SqlClientCommandBefore = SqlClientCommandBefore$instance;
+export type SqlClientCommandBefore = SqlClientCommandBefore$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
 export interface SqlClientCommandError$instance {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_Diagnostics_SqlClientCommandError: never;
+
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
@@ -78,7 +82,6 @@ export interface SqlClientCommandError$instance {
     readonly ConnectionId: Nullable_1<Guid>;
     readonly Count: int;
     readonly Exception: Exception;
-    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly Operation: string;
     readonly OperationId: Guid;
     readonly Timestamp: long;
@@ -93,9 +96,11 @@ export const SqlClientCommandError: {
 };
 
 
-export type SqlClientCommandError = SqlClientCommandError$instance;
+export type SqlClientCommandError = SqlClientCommandError$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
 export interface SqlClientConnectionCloseAfter$instance {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_Diagnostics_SqlClientConnectionCloseAfter: never;
+
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
@@ -104,7 +109,6 @@ export interface SqlClientConnectionCloseAfter$instance {
     readonly Connection: SqlConnection;
     readonly ConnectionId: Nullable_1<Guid>;
     readonly Count: int;
-    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly Operation: string;
     readonly OperationId: Guid;
     readonly Statistics: IDictionary;
@@ -119,9 +123,11 @@ export const SqlClientConnectionCloseAfter: {
 };
 
 
-export type SqlClientConnectionCloseAfter = SqlClientConnectionCloseAfter$instance;
+export type SqlClientConnectionCloseAfter = SqlClientConnectionCloseAfter$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
 export interface SqlClientConnectionCloseBefore$instance {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_Diagnostics_SqlClientConnectionCloseBefore: never;
+
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
@@ -130,7 +136,6 @@ export interface SqlClientConnectionCloseBefore$instance {
     readonly Connection: SqlConnection;
     readonly ConnectionId: Nullable_1<Guid>;
     readonly Count: int;
-    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly Operation: string;
     readonly OperationId: Guid;
     readonly Statistics: IDictionary;
@@ -145,9 +150,11 @@ export const SqlClientConnectionCloseBefore: {
 };
 
 
-export type SqlClientConnectionCloseBefore = SqlClientConnectionCloseBefore$instance;
+export type SqlClientConnectionCloseBefore = SqlClientConnectionCloseBefore$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
 export interface SqlClientConnectionCloseError$instance {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_Diagnostics_SqlClientConnectionCloseError: never;
+
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
@@ -157,7 +164,6 @@ export interface SqlClientConnectionCloseError$instance {
     readonly ConnectionId: Nullable_1<Guid>;
     readonly Count: int;
     readonly Exception: Exception;
-    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly Operation: string;
     readonly OperationId: Guid;
     readonly Statistics: IDictionary;
@@ -172,9 +178,11 @@ export const SqlClientConnectionCloseError: {
 };
 
 
-export type SqlClientConnectionCloseError = SqlClientConnectionCloseError$instance;
+export type SqlClientConnectionCloseError = SqlClientConnectionCloseError$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
 export interface SqlClientConnectionOpenAfter$instance {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_Diagnostics_SqlClientConnectionOpenAfter: never;
+
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
@@ -184,7 +192,6 @@ export interface SqlClientConnectionOpenAfter$instance {
     readonly Connection: SqlConnection;
     readonly ConnectionId: Guid;
     readonly Count: int;
-    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly Operation: string;
     readonly OperationId: Guid;
     readonly Statistics: IDictionary;
@@ -199,9 +206,11 @@ export const SqlClientConnectionOpenAfter: {
 };
 
 
-export type SqlClientConnectionOpenAfter = SqlClientConnectionOpenAfter$instance;
+export type SqlClientConnectionOpenAfter = SqlClientConnectionOpenAfter$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
 export interface SqlClientConnectionOpenBefore$instance {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_Diagnostics_SqlClientConnectionOpenBefore: never;
+
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
@@ -210,7 +219,6 @@ export interface SqlClientConnectionOpenBefore$instance {
     readonly ClientVersion: string;
     readonly Connection: SqlConnection;
     readonly Count: int;
-    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly Operation: string;
     readonly OperationId: Guid;
     readonly Timestamp: long;
@@ -224,9 +232,11 @@ export const SqlClientConnectionOpenBefore: {
 };
 
 
-export type SqlClientConnectionOpenBefore = SqlClientConnectionOpenBefore$instance;
+export type SqlClientConnectionOpenBefore = SqlClientConnectionOpenBefore$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
 export interface SqlClientConnectionOpenError$instance {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_Diagnostics_SqlClientConnectionOpenError: never;
+
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
@@ -237,7 +247,6 @@ export interface SqlClientConnectionOpenError$instance {
     readonly ConnectionId: Guid;
     readonly Count: int;
     readonly Exception: Exception;
-    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly Operation: string;
     readonly OperationId: Guid;
     readonly Timestamp: long;
@@ -251,9 +260,11 @@ export const SqlClientConnectionOpenError: {
 };
 
 
-export type SqlClientConnectionOpenError = SqlClientConnectionOpenError$instance;
+export type SqlClientConnectionOpenError = SqlClientConnectionOpenError$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
 export interface SqlClientTransactionCommitAfter$instance {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_Diagnostics_SqlClientTransactionCommitAfter: never;
+
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
@@ -262,7 +273,6 @@ export interface SqlClientTransactionCommitAfter$instance {
     readonly Connection: SqlConnection;
     readonly Count: int;
     readonly IsolationLevel: IsolationLevel;
-    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly Operation: string;
     readonly OperationId: Guid;
     readonly Timestamp: long;
@@ -277,9 +287,11 @@ export const SqlClientTransactionCommitAfter: {
 };
 
 
-export type SqlClientTransactionCommitAfter = SqlClientTransactionCommitAfter$instance;
+export type SqlClientTransactionCommitAfter = SqlClientTransactionCommitAfter$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
 export interface SqlClientTransactionCommitBefore$instance {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_Diagnostics_SqlClientTransactionCommitBefore: never;
+
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
@@ -288,7 +300,6 @@ export interface SqlClientTransactionCommitBefore$instance {
     readonly Connection: SqlConnection;
     readonly Count: int;
     readonly IsolationLevel: IsolationLevel;
-    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly Operation: string;
     readonly OperationId: Guid;
     readonly Timestamp: long;
@@ -303,9 +314,11 @@ export const SqlClientTransactionCommitBefore: {
 };
 
 
-export type SqlClientTransactionCommitBefore = SqlClientTransactionCommitBefore$instance;
+export type SqlClientTransactionCommitBefore = SqlClientTransactionCommitBefore$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
 export interface SqlClientTransactionCommitError$instance {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_Diagnostics_SqlClientTransactionCommitError: never;
+
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
@@ -315,7 +328,6 @@ export interface SqlClientTransactionCommitError$instance {
     readonly Count: int;
     readonly Exception: Exception;
     readonly IsolationLevel: IsolationLevel;
-    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly Operation: string;
     readonly OperationId: Guid;
     readonly Timestamp: long;
@@ -330,9 +342,11 @@ export const SqlClientTransactionCommitError: {
 };
 
 
-export type SqlClientTransactionCommitError = SqlClientTransactionCommitError$instance;
+export type SqlClientTransactionCommitError = SqlClientTransactionCommitError$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
 export interface SqlClientTransactionRollbackAfter$instance {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_Diagnostics_SqlClientTransactionRollbackAfter: never;
+
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
@@ -341,7 +355,6 @@ export interface SqlClientTransactionRollbackAfter$instance {
     readonly Connection: SqlConnection;
     readonly Count: int;
     readonly IsolationLevel: IsolationLevel;
-    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly Operation: string;
     readonly OperationId: Guid;
     readonly Timestamp: long;
@@ -357,9 +370,11 @@ export const SqlClientTransactionRollbackAfter: {
 };
 
 
-export type SqlClientTransactionRollbackAfter = SqlClientTransactionRollbackAfter$instance;
+export type SqlClientTransactionRollbackAfter = SqlClientTransactionRollbackAfter$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
 export interface SqlClientTransactionRollbackBefore$instance {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_Diagnostics_SqlClientTransactionRollbackBefore: never;
+
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
@@ -368,7 +383,6 @@ export interface SqlClientTransactionRollbackBefore$instance {
     readonly Connection: SqlConnection;
     readonly Count: int;
     readonly IsolationLevel: IsolationLevel;
-    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly Operation: string;
     readonly OperationId: Guid;
     readonly Timestamp: long;
@@ -384,9 +398,11 @@ export const SqlClientTransactionRollbackBefore: {
 };
 
 
-export type SqlClientTransactionRollbackBefore = SqlClientTransactionRollbackBefore$instance;
+export type SqlClientTransactionRollbackBefore = SqlClientTransactionRollbackBefore$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 
 export interface SqlClientTransactionRollbackError$instance {
+    readonly __tsonic_type_Microsoft_Data_SqlClient_Diagnostics_SqlClientTransactionRollbackError: never;
+
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
@@ -396,7 +412,6 @@ export interface SqlClientTransactionRollbackError$instance {
     readonly Count: int;
     readonly Exception: Exception;
     readonly IsolationLevel: IsolationLevel;
-    readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>;
     readonly Operation: string;
     readonly OperationId: Guid;
     readonly Timestamp: long;
@@ -412,5 +427,5 @@ export const SqlClientTransactionRollbackError: {
 };
 
 
-export type SqlClientTransactionRollbackError = SqlClientTransactionRollbackError$instance;
+export type SqlClientTransactionRollbackError = SqlClientTransactionRollbackError$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
 

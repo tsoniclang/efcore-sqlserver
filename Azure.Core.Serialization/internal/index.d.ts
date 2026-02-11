@@ -33,6 +33,8 @@ export interface IMemberNameConverter$instance {
 export type IMemberNameConverter = IMemberNameConverter$instance;
 
 export interface DynamicData$instance {
+    readonly __tsonic_type_Azure_Core_Serialization_DynamicData: never;
+
     readonly __tsonic_iface_System_Dynamic_IDynamicMetaObjectProvider: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -50,6 +52,8 @@ export const DynamicData: {
 export type DynamicData = DynamicData$instance;
 
 export interface JsonObjectSerializer$instance extends ObjectSerializer, IMemberNameConverter$instance {
+    readonly __tsonic_type_Azure_Core_Serialization_JsonObjectSerializer: never;
+
     readonly __tsonic_iface_Azure_Core_Serialization_IMemberNameConverter: never;
 
     Deserialize(stream: Stream, returnType: Type, cancellationToken: CancellationToken): unknown | undefined;
@@ -77,6 +81,8 @@ export type JsonObjectSerializer = JsonObjectSerializer$instance & __JsonObjectS
 
 
 export interface ObjectSerializer$instance {
+    readonly __tsonic_type_Azure_Core_Serialization_ObjectSerializer: never;
+
     Deserialize(stream: Stream, returnType: Type, cancellationToken: CancellationToken): unknown | undefined;
     DeserializeAsync(stream: Stream, returnType: Type, cancellationToken: CancellationToken): ValueTask_1<unknown>;
     Serialize(stream: Stream, value: unknown, inputType: Type, cancellationToken: CancellationToken): void;

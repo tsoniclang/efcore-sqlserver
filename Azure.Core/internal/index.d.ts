@@ -49,6 +49,8 @@ export type SyncAsyncEventHandler_1<T extends SyncAsyncEventArgs> = (e: T) => Ta
 
 
 export interface AccessToken$instance {
+    readonly __tsonic_type_Azure_Core_AccessToken: never;
+
     readonly ExpiresOn: DateTimeOffset;
     readonly RefreshOn: Nullable_1<DateTimeOffset>;
     readonly Token: string;
@@ -68,6 +70,8 @@ export const AccessToken: {
 export type AccessToken = AccessToken$instance;
 
 export interface AzureLocation$instance {
+    readonly __tsonic_type_Azure_Core_AzureLocation: never;
+
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     readonly DisplayName: string | undefined;
@@ -152,6 +156,8 @@ export const AzureLocation: {
 export type AzureLocation = AzureLocation$instance;
 
 export interface ContentType$instance {
+    readonly __tsonic_type_Azure_Core_ContentType: never;
+
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     Equals(other: ContentType): boolean;
@@ -173,6 +179,8 @@ export const ContentType: {
 export type ContentType = ContentType$instance;
 
 export interface HttpHeader$instance {
+    readonly __tsonic_type_Azure_Core_HttpHeader: never;
+
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     readonly Name: string;
@@ -192,6 +200,8 @@ export const HttpHeader: {
 export type HttpHeader = HttpHeader$instance;
 
 export interface MessageProcessingContext$instance {
+    readonly __tsonic_type_Azure_Core_MessageProcessingContext: never;
+
     RetryNumber: int;
     StartTime: DateTimeOffset;
 }
@@ -204,7 +214,9 @@ export const MessageProcessingContext: {
 
 export type MessageProcessingContext = MessageProcessingContext$instance;
 
-export interface RehydrationToken$instance {
+export interface RehydrationToken$instance extends System_ClientModel_Primitives_Internal.IJsonModel_1$instance<RehydrationToken> {
+    readonly __tsonic_type_Azure_Core_RehydrationToken: never;
+
     readonly __tsonic_iface_System_ClientModel_Primitives_IJsonModel_1: never;
     readonly __tsonic_iface_System_ClientModel_Primitives_IPersistableModel_1: never;
 
@@ -226,6 +238,8 @@ export type RehydrationToken = RehydrationToken$instance & __RehydrationToken$vi
 
 
 export interface RequestHeaders$instance {
+    readonly __tsonic_type_Azure_Core_RequestHeaders: never;
+
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
@@ -248,6 +262,8 @@ export const RequestHeaders: {
 export type RequestHeaders = RequestHeaders$instance;
 
 export interface RequestMethod$instance {
+    readonly __tsonic_type_Azure_Core_RequestMethod: never;
+
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     readonly Method: string;
@@ -275,6 +291,8 @@ export const RequestMethod: {
 export type RequestMethod = RequestMethod$instance;
 
 export interface ResourceType$instance {
+    readonly __tsonic_type_Azure_Core_ResourceType: never;
+
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     readonly Namespace: string;
@@ -295,6 +313,8 @@ export const ResourceType: {
 export type ResourceType = ResourceType$instance;
 
 export interface ResponseHeaders$instance {
+    readonly __tsonic_type_Azure_Core_ResponseHeaders: never;
+
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
@@ -319,6 +339,8 @@ export const ResponseHeaders: {
 export type ResponseHeaders = ResponseHeaders$instance;
 
 export interface TokenRequestContext$instance {
+    readonly __tsonic_type_Azure_Core_TokenRequestContext: never;
+
     readonly Claims: string | undefined;
     readonly IsCaeEnabled: boolean;
     readonly IsProofOfPossessionEnabled: boolean;
@@ -343,6 +365,8 @@ export const TokenRequestContext: {
 export type TokenRequestContext = TokenRequestContext$instance;
 
 export interface AzureCoreContext$instance extends ModelReaderWriterContext {
+    readonly __tsonic_type_Azure_Core_AzureCoreContext: never;
+
     TryGetTypeBuilderCore(type: Type, builder: ModelReaderWriterTypeBuilder): boolean;
 }
 
@@ -355,6 +379,8 @@ export const AzureCoreContext: {
 export type AzureCoreContext = AzureCoreContext$instance;
 
 export interface ClientOptions$instance {
+    readonly __tsonic_type_Azure_Core_ClientOptions: never;
+
     readonly Diagnostics: DiagnosticsOptions | TokenCredentialDiagnosticsOptions;
     readonly Retry: RetryOptions;
     get RetryPolicy(): HttpPipelinePolicy | undefined;
@@ -375,6 +401,8 @@ export const ClientOptions: (abstract new() => ClientOptions) & (abstract new(di
 export type ClientOptions = ClientOptions$instance;
 
 export interface DelayStrategy$instance {
+    readonly __tsonic_type_Azure_Core_DelayStrategy: never;
+
     GetNextDelay(response: Response, retryNumber: int): TimeSpan;
     GetNextDelayCore(response: Response, retryNumber: int): TimeSpan;
 }
@@ -391,6 +419,8 @@ export const DelayStrategy: (abstract new(maxDelay: Nullable_1<TimeSpan>, jitter
 export type DelayStrategy = DelayStrategy$instance;
 
 export interface DiagnosticsOptions$instance {
+    readonly __tsonic_type_Azure_Core_DiagnosticsOptions: never;
+
     get ApplicationId(): string | undefined;
     set ApplicationId(value: string | undefined);
     IsDistributedTracingEnabled: boolean;
@@ -412,6 +442,8 @@ export const DiagnosticsOptions: (abstract new() => DiagnosticsOptions) & {
 export type DiagnosticsOptions = DiagnosticsOptions$instance;
 
 export interface HttpMessage$instance {
+    readonly __tsonic_type_Azure_Core_HttpMessage: never;
+
     readonly __tsonic_iface_System_IDisposable: never;
 
     BufferResponse: boolean;
@@ -439,6 +471,8 @@ export const HttpMessage: {
 export type HttpMessage = HttpMessage$instance;
 
 export interface Request$instance {
+    readonly __tsonic_type_Azure_Core_Request: never;
+
     readonly __tsonic_iface_System_IDisposable: never;
 
     ClientRequestId: string;
@@ -465,6 +499,8 @@ export const Request: (abstract new() => Request) & {
 export type Request = Request$instance;
 
 export interface RequestContent$instance {
+    readonly __tsonic_type_Azure_Core_RequestContent: never;
+
     readonly __tsonic_iface_System_IDisposable: never;
 
     Dispose(): void;
@@ -493,6 +529,8 @@ export const RequestContent: (abstract new() => RequestContent) & {
 export type RequestContent = RequestContent$instance;
 
 export interface RequestFailedDetailsParser$instance {
+    readonly __tsonic_type_Azure_Core_RequestFailedDetailsParser: never;
+
     TryParse(response: Response, error: ResponseError, data: IDictionary_2<System_Internal.String, System_Internal.String>): boolean;
 }
 
@@ -504,6 +542,8 @@ export const RequestFailedDetailsParser: (abstract new() => RequestFailedDetails
 export type RequestFailedDetailsParser = RequestFailedDetailsParser$instance;
 
 export interface RequestUriBuilder$instance {
+    readonly __tsonic_type_Azure_Core_RequestUriBuilder: never;
+
     get Host(): string | undefined;
     set Host(value: string | undefined);
     Path: string;
@@ -532,6 +572,8 @@ export const RequestUriBuilder: {
 export type RequestUriBuilder = RequestUriBuilder$instance;
 
 export interface ResourceIdentifier$instance {
+    readonly __tsonic_type_Azure_Core_ResourceIdentifier: never;
+
     readonly __tsonic_iface_System_IComparable_1: never;
     readonly __tsonic_iface_System_IEquatable_1: never;
 
@@ -563,6 +605,8 @@ export const ResourceIdentifier: {
 export type ResourceIdentifier = ResourceIdentifier$instance;
 
 export interface ResponseClassificationHandler$instance {
+    readonly __tsonic_type_Azure_Core_ResponseClassificationHandler: never;
+
     TryClassify(message: HttpMessage, isError: boolean): boolean;
 }
 
@@ -574,6 +618,8 @@ export const ResponseClassificationHandler: (abstract new() => ResponseClassific
 export type ResponseClassificationHandler = ResponseClassificationHandler$instance;
 
 export interface ResponseClassifier$instance {
+    readonly __tsonic_type_Azure_Core_ResponseClassifier: never;
+
     IsErrorResponse(message: HttpMessage): boolean;
     IsRetriable(message: HttpMessage, exception: Exception): boolean;
     IsRetriableException(exception: Exception): boolean;
@@ -589,6 +635,8 @@ export const ResponseClassifier: {
 export type ResponseClassifier = ResponseClassifier$instance;
 
 export interface RetryOptions$instance {
+    readonly __tsonic_type_Azure_Core_RetryOptions: never;
+
     Delay: TimeSpan;
     MaxDelay: TimeSpan;
     MaxRetries: int;
@@ -604,6 +652,8 @@ export const RetryOptions: {
 export type RetryOptions = RetryOptions$instance;
 
 export interface StatusCodeClassifier$instance extends ResponseClassifier {
+    readonly __tsonic_type_Azure_Core_StatusCodeClassifier: never;
+
     IsErrorResponse(message: HttpMessage): boolean;
 }
 
@@ -616,6 +666,8 @@ export const StatusCodeClassifier: {
 export type StatusCodeClassifier = StatusCodeClassifier$instance;
 
 export interface TelemetryDetails$instance {
+    readonly __tsonic_type_Azure_Core_TelemetryDetails: never;
+
     readonly ApplicationId: string | undefined;
     readonly Assembly: Assembly;
     Apply(message: HttpMessage): void;
@@ -631,6 +683,8 @@ export const TelemetryDetails: {
 export type TelemetryDetails = TelemetryDetails$instance;
 
 export interface TokenCredential$instance extends AuthenticationTokenProvider {
+    readonly __tsonic_type_Azure_Core_TokenCredential: never;
+
     CreateTokenOptions(properties: IReadOnlyDictionary_2<System_Internal.String, unknown>): GetTokenOptions | undefined;
     CreateTokenOptions(properties: IReadOnlyDictionary_2<System_Internal.String, unknown>): GetTokenOptions | undefined;
     GetToken(requestContext: TokenRequestContext, cancellationToken: CancellationToken): AccessToken;
