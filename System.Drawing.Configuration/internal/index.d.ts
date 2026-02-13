@@ -6,7 +6,7 @@
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 // Import types from other namespaces
-import * as System_Internal from "@tsonic/dotnet/System.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import * as System_Configuration_Internal from "../../System.Configuration/internal/index.js";
 import type { Configuration, ConfigurationElement, ConfigurationElementProperty, ConfigurationLockCollection, ConfigurationProperty, ConfigurationPropertyCollection, ConfigurationSaveMode, ConfigurationSection, ContextInformation, ElementInformation, SectionInformation } from "../../System.Configuration/internal/index.js";
 import type { IList } from "@tsonic/dotnet/System.Collections/internal/index.js";
