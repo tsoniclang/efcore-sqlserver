@@ -139,8 +139,6 @@ export interface HttpPipelineSynchronousPolicy$instance extends HttpPipelinePoli
     OnReceivedResponse(message: HttpMessage): void;
     OnSendingRequest(message: HttpMessage): void;
     Process(message: HttpMessage, pipeline: ReadOnlyMemory_1<HttpPipelinePolicy>): void;
-    Process(message: HttpMessage, pipeline: ReadOnlyMemory_1<HttpPipelinePolicy>): void;
-    ProcessAsync(message: HttpMessage, pipeline: ReadOnlyMemory_1<HttpPipelinePolicy>): ValueTask;
     ProcessAsync(message: HttpMessage, pipeline: ReadOnlyMemory_1<HttpPipelinePolicy>): ValueTask;
 }
 

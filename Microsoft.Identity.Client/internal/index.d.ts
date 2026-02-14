@@ -402,7 +402,6 @@ export interface AbstractClientAppBaseAcquireTokenParameterBuilder_1$instance<T 
     readonly __tsonic_type_Microsoft_Identity_Client_AbstractClientAppBaseAcquireTokenParameterBuilder_1: never;
 
     ExecuteAsync(cancellationToken: CancellationToken): Task_1<AuthenticationResult>;
-    ExecuteAsync(cancellationToken: CancellationToken): Task_1<AuthenticationResult>;
     ExecuteAsync(): Task_1<AuthenticationResult>;
 }
 
@@ -416,7 +415,6 @@ export type AbstractClientAppBaseAcquireTokenParameterBuilder_1<T extends Abstra
 export interface AbstractConfidentialClientAcquireTokenParameterBuilder_1$instance<T extends AbstractAcquireTokenParameterBuilder_1<T>> extends AbstractAcquireTokenParameterBuilder_1<T> {
     readonly __tsonic_type_Microsoft_Identity_Client_AbstractConfidentialClientAcquireTokenParameterBuilder_1: never;
 
-    ExecuteAsync(cancellationToken: CancellationToken): Task_1<AuthenticationResult>;
     ExecuteAsync(cancellationToken: CancellationToken): Task_1<AuthenticationResult>;
     ExecuteAsync(): Task_1<AuthenticationResult>;
     Validate(): void;
@@ -435,7 +433,6 @@ export interface AbstractManagedIdentityAcquireTokenParameterBuilder_1$instance<
     readonly __tsonic_type_Microsoft_Identity_Client_AbstractManagedIdentityAcquireTokenParameterBuilder_1: never;
 
     ExecuteAsync(cancellationToken: CancellationToken): Task_1<AuthenticationResult>;
-    ExecuteAsync(cancellationToken: CancellationToken): Task_1<AuthenticationResult>;
     ExecuteAsync(): Task_1<AuthenticationResult>;
 }
 
@@ -449,7 +446,6 @@ export type AbstractManagedIdentityAcquireTokenParameterBuilder_1<T extends Base
 export interface AbstractPublicClientAcquireTokenParameterBuilder_1$instance<T extends AbstractAcquireTokenParameterBuilder_1<T>> extends AbstractAcquireTokenParameterBuilder_1<T> {
     readonly __tsonic_type_Microsoft_Identity_Client_AbstractPublicClientAcquireTokenParameterBuilder_1: never;
 
-    ExecuteAsync(cancellationToken: CancellationToken): Task_1<AuthenticationResult>;
     ExecuteAsync(cancellationToken: CancellationToken): Task_1<AuthenticationResult>;
     ExecuteAsync(): Task_1<AuthenticationResult>;
 }
@@ -938,18 +934,8 @@ export interface ConfidentialClientApplication$instance extends ClientApplicatio
     AcquireTokenForClient(scopes: IEnumerable_1<System_Internal.String>): AcquireTokenForClientParameterBuilder;
     AcquireTokenInLongRunningProcess(scopes: IEnumerable_1<System_Internal.String>, longRunningProcessSessionKey: string): AcquireTokenOnBehalfOfParameterBuilder;
     AcquireTokenOnBehalfOf(scopes: IEnumerable_1<System_Internal.String>, userAssertion: UserAssertion): AcquireTokenOnBehalfOfParameterBuilder;
-    AcquireTokenSilent(scopes: IEnumerable_1<System_Internal.String>, account: IAccount): AcquireTokenSilentParameterBuilder;
-    AcquireTokenSilent(scopes: IEnumerable_1<System_Internal.String>, loginHint: string): AcquireTokenSilentParameterBuilder;
-    GetAccountAsync(accountId: string, cancellationToken?: CancellationToken): Task_1<IAccount>;
-    GetAccountAsync(accountId: string): Task_1<IAccount>;
-    GetAccountsAsync(): Task_1<IEnumerable_1<IAccount>>;
-    GetAccountsAsync(cancellationToken?: CancellationToken): Task_1<IEnumerable_1<IAccount>>;
-    GetAccountsAsync(userFlow: string): Task_1<IEnumerable_1<IAccount>>;
-    GetAccountsAsync(userFlow: string, cancellationToken?: CancellationToken): Task_1<IEnumerable_1<IAccount>>;
     GetAuthorizationRequestUrl(scopes: IEnumerable_1<System_Internal.String>): GetAuthorizationRequestUrlParameterBuilder;
     InitiateLongRunningProcessInWebApi(scopes: IEnumerable_1<System_Internal.String>, userToken: string, longRunningProcessSessionKey: string): AcquireTokenOnBehalfOfParameterBuilder;
-    RemoveAsync(account: IAccount): Task;
-    RemoveAsync(account: IAccount, cancellationToken?: CancellationToken): Task;
     StopLongRunningProcessInWebApiAsync(longRunningProcessSessionKey: string, cancellationToken?: CancellationToken): Task_1<System_Internal.Boolean>;
 }
 
@@ -1319,21 +1305,11 @@ export interface PublicClientApplication$instance extends ClientApplicationBase$
     AcquireTokenByUsernamePassword(scopes: IEnumerable_1<System_Internal.String>, username: string, password: SecureString): AcquireTokenByUsernamePasswordParameterBuilder;
     AcquireTokenByUsernamePassword(scopes: IEnumerable_1<System_Internal.String>, username: string, password: string): AcquireTokenByUsernamePasswordParameterBuilder;
     AcquireTokenInteractive(scopes: IEnumerable_1<System_Internal.String>): AcquireTokenInteractiveParameterBuilder;
-    AcquireTokenSilent(scopes: IEnumerable_1<System_Internal.String>, account: IAccount): AcquireTokenSilentParameterBuilder;
-    AcquireTokenSilent(scopes: IEnumerable_1<System_Internal.String>, loginHint: string): AcquireTokenSilentParameterBuilder;
     AcquireTokenWithDeviceCode(scopes: IEnumerable_1<System_Internal.String>, deviceCodeResultCallback: Func_2<DeviceCodeResult, Task>): AcquireTokenWithDeviceCodeParameterBuilder;
-    GetAccountAsync(accountId: string, cancellationToken?: CancellationToken): Task_1<IAccount>;
-    GetAccountAsync(accountId: string): Task_1<IAccount>;
-    GetAccountsAsync(): Task_1<IEnumerable_1<IAccount>>;
-    GetAccountsAsync(cancellationToken?: CancellationToken): Task_1<IEnumerable_1<IAccount>>;
-    GetAccountsAsync(userFlow: string): Task_1<IEnumerable_1<IAccount>>;
-    GetAccountsAsync(userFlow: string, cancellationToken?: CancellationToken): Task_1<IEnumerable_1<IAccount>>;
     IsBrokerAvailable(): boolean;
     IsEmbeddedWebViewAvailable(): boolean;
     IsProofOfPossessionSupportedByClient(): boolean;
     IsUserInteractive(): boolean;
-    RemoveAsync(account: IAccount): Task;
-    RemoveAsync(account: IAccount, cancellationToken?: CancellationToken): Task;
 }
 
 

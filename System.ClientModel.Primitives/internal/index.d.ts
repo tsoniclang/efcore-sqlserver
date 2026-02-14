@@ -673,9 +673,7 @@ export interface PipelineTransport$instance extends PipelinePolicy {
     CreateMessageCore(): PipelineMessage;
     Process(message: PipelineMessage): void;
     Process(message: PipelineMessage, pipeline: IReadOnlyList_1<PipelinePolicy>, currentIndex: int): void;
-    Process(message: PipelineMessage, pipeline: IReadOnlyList_1<PipelinePolicy>, currentIndex: int): void;
     ProcessAsync(message: PipelineMessage): ValueTask;
-    ProcessAsync(message: PipelineMessage, pipeline: IReadOnlyList_1<PipelinePolicy>, currentIndex: int): ValueTask;
     ProcessAsync(message: PipelineMessage, pipeline: IReadOnlyList_1<PipelinePolicy>, currentIndex: int): ValueTask;
     ProcessCore(message: PipelineMessage): void;
     ProcessCoreAsync(message: PipelineMessage): ValueTask;

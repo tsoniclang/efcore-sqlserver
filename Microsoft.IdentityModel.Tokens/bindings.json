@@ -2435,37 +2435,11 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
-          "isSealed": false,
+          "isSealed": true,
           "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Tokens.AsymmetricSignatureProvider",
           "declaringAssemblyName": "Microsoft.IdentityModel.Tokens",
           "isExtensionMethod": false
-        },
-        {
-          "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.AsymmetricSignatureProvider::Sign(System.ReadOnlySpan_1,System.Span_1,System.Int32\u0026):System.Boolean",
-          "clrName": "Sign",
-          "metadataToken": 0,
-          "canonicalSignature": "(System.ReadOnlySpan_1,System.Span_1,System.Int32\u0026):System.Boolean",
-          "normalizedSignature": "Sign|(System.ReadOnlySpan_1,System.Span_1,System.Int32\u0026):System.Boolean|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 3,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Tokens.AsymmetricSignatureProvider",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Tokens",
-          "isExtensionMethod": false,
-          "parameterModifiers": [
-            {
-              "index": 2,
-              "modifier": "out"
-            }
-          ]
         }
       ],
       "properties": [
@@ -6520,7 +6494,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
-          "isSealed": false,
+          "isSealed": true,
           "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Tokens.RsaKeyWrapProvider",
           "declaringAssemblyName": "Microsoft.IdentityModel.Tokens",
@@ -10590,7 +10564,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
-          "isSealed": false,
+          "isSealed": true,
           "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Tokens.SymmetricKeyWrapProvider",
           "declaringAssemblyName": "Microsoft.IdentityModel.Tokens",
@@ -11027,37 +11001,11 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
-          "isSealed": false,
+          "isSealed": true,
           "visibility": "Public",
           "declaringClrType": "Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider",
           "declaringAssemblyName": "Microsoft.IdentityModel.Tokens",
           "isExtensionMethod": false
-        },
-        {
-          "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider::Sign(System.ReadOnlySpan_1,System.Span_1,System.Int32\u0026):System.Boolean",
-          "clrName": "Sign",
-          "metadataToken": 0,
-          "canonicalSignature": "(System.ReadOnlySpan_1,System.Span_1,System.Int32\u0026):System.Boolean",
-          "normalizedSignature": "Sign|(System.ReadOnlySpan_1,System.Span_1,System.Int32\u0026):System.Boolean|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 3,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Tokens",
-          "isExtensionMethod": false,
-          "parameterModifiers": [
-            {
-              "index": 2,
-              "modifier": "out"
-            }
-          ]
         }
       ],
       "properties": [

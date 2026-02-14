@@ -603,26 +603,6 @@
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.IdentityModel.Protocols.IConfigurationManager\u00601"
-        },
-        {
-          "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.ConfigurationManager\u00601::GetBaseConfigurationAsync(System.Threading.CancellationToken):System.Threading.Tasks.Task_1",
-          "clrName": "GetBaseConfigurationAsync",
-          "metadataToken": 0,
-          "canonicalSignature": "(System.Threading.CancellationToken):System.Threading.Tasks.Task_1",
-          "normalizedSignature": "GetBaseConfigurationAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task_1|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Protocols.ConfigurationManager\u00601",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Protocols",
-          "isExtensionMethod": false
         }
       ],
       "properties": [],
@@ -1372,26 +1352,6 @@
           "declaringAssemblyName": "Microsoft.IdentityModel.Protocols",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.IdentityModel.Protocols.IConfigurationManager\u00601"
-        },
-        {
-          "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.StaticConfigurationManager\u00601::GetBaseConfigurationAsync(System.Threading.CancellationToken):System.Threading.Tasks.Task_1",
-          "clrName": "GetBaseConfigurationAsync",
-          "metadataToken": 0,
-          "canonicalSignature": "(System.Threading.CancellationToken):System.Threading.Tasks.Task_1",
-          "normalizedSignature": "GetBaseConfigurationAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task_1|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Protocols.StaticConfigurationManager\u00601",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Protocols",
-          "isExtensionMethod": false
         }
       ],
       "properties": [],
