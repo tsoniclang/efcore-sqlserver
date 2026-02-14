@@ -686,12 +686,10 @@ export interface TokenCredential$instance extends AuthenticationTokenProvider {
     readonly __tsonic_type_Azure_Core_TokenCredential: never;
 
     CreateTokenOptions(properties: IReadOnlyDictionary_2<System_Internal.String, unknown>): GetTokenOptions | undefined;
-    CreateTokenOptions(properties: IReadOnlyDictionary_2<System_Internal.String, unknown>): GetTokenOptions | undefined;
     GetToken(requestContext: TokenRequestContext, cancellationToken: CancellationToken): AccessToken;
     GetToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
     GetTokenAsync(requestContext: TokenRequestContext, cancellationToken: CancellationToken): ValueTask_1<AccessToken>;
     GetTokenAsync(properties: GetTokenOptions, cancellationToken: CancellationToken): ValueTask_1<AuthenticationToken>;
-    GetTokenAsync(options: GetTokenOptions, cancellationToken: CancellationToken): ValueTask_1<AuthenticationToken>;
 }
 
 

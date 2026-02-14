@@ -195,8 +195,6 @@ export interface JsonWebTokenHandler$instance extends TokenHandler {
     ValidateToken(token: string, validationParameters: TokenValidationParameters): TokenValidationResult;
     ValidateTokenAsync(token: string, validationParameters: TokenValidationParameters): Task_1<TokenValidationResult>;
     ValidateTokenAsync(token: SecurityToken, validationParameters: TokenValidationParameters): Task_1<TokenValidationResult>;
-    ValidateTokenAsync(token: string, validationParameters: TokenValidationParameters): Task_1<TokenValidationResult>;
-    ValidateTokenAsync(token: SecurityToken, validationParameters: TokenValidationParameters): Task_1<TokenValidationResult>;
 }
 
 

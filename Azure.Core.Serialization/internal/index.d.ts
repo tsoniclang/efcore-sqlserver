@@ -62,7 +62,6 @@ export interface JsonObjectSerializer$instance extends ObjectSerializer, IMember
     Serialize(value: unknown, inputType?: Type, cancellationToken?: CancellationToken): BinaryData;
     SerializeAsync(stream: Stream, value: unknown, inputType: Type, cancellationToken: CancellationToken): ValueTask;
     SerializeAsync(value: unknown, inputType?: Type, cancellationToken?: CancellationToken): ValueTask_1<BinaryData>;
-    SerializeAsync(value: unknown, inputType?: Type, cancellationToken?: CancellationToken): ValueTask_1<BinaryData>;
 }
 
 

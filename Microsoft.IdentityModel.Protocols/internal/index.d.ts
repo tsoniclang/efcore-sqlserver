@@ -86,7 +86,6 @@ export interface ConfigurationManager_1$instance<T> extends BaseConfigurationMan
     readonly __tsonic_iface_Microsoft_IdentityModel_Protocols_IConfigurationManager_1: never;
 
     GetBaseConfigurationAsync(cancel: CancellationToken): Task_1<BaseConfiguration>;
-    GetBaseConfigurationAsync(cancel: CancellationToken): Task_1<BaseConfiguration>;
     GetConfigurationAsync(): Task_1<T>;
     GetConfigurationAsync(cancel: CancellationToken): Task_1<T>;
     RequestRefresh(): void;
@@ -202,7 +201,6 @@ export interface StaticConfigurationManager_1$instance<T> extends BaseConfigurat
 
     readonly __tsonic_iface_Microsoft_IdentityModel_Protocols_IConfigurationManager_1: never;
 
-    GetBaseConfigurationAsync(cancel: CancellationToken): Task_1<BaseConfiguration>;
     GetBaseConfigurationAsync(cancel: CancellationToken): Task_1<BaseConfiguration>;
     GetConfigurationAsync(cancel: CancellationToken): Task_1<T>;
     RequestRefresh(): void;

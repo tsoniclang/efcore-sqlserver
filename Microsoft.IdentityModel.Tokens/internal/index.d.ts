@@ -161,7 +161,6 @@ export interface AsymmetricSignatureProvider$instance extends SignatureProvider 
     Sign(input: ReadOnlySpan_1<System_Internal.Byte>, signature: Span_1<System_Internal.Byte>, bytesWritten: int): boolean;
     Sign(input: byte[]): byte[];
     Sign(input: byte[], offset: int, count: int): byte[];
-    Sign(data: ReadOnlySpan_1<System_Internal.Byte>, destination: Span_1<System_Internal.Byte>, bytesWritten: int): boolean;
     ValidateAsymmetricSecurityKeySize(key: SecurityKey, algorithm: string, willCreateSignatures: boolean): void;
     Verify(input: byte[], signature: byte[]): boolean;
     Verify(input: byte[], inputOffset: int, inputLength: int, signature: byte[], signatureOffset: int, signatureLength: int): boolean;
@@ -893,6 +892,8 @@ export interface SecurityTokenHandler$instance extends TokenHandler, ISecurityTo
     CanReadToken(tokenString: string): boolean;
     CreateSecurityTokenReference(token: SecurityToken, attached: boolean): SecurityKeyIdentifierClause;
     CreateToken(tokenDescriptor: SecurityTokenDescriptor): SecurityToken;
+    ReadToken(reader: XmlReader): SecurityToken;
+    ReadToken(reader: XmlReader, validationParameters: TokenValidationParameters): SecurityToken;
     ReadToken(token: string): SecurityToken;
     ValidateToken(securityToken: string, validationParameters: TokenValidationParameters, validatedToken: SecurityToken): ClaimsPrincipal;
     ValidateToken(reader: XmlReader, validationParameters: TokenValidationParameters, validatedToken: SecurityToken): ClaimsPrincipal;
@@ -1301,7 +1302,6 @@ export interface SymmetricSignatureProvider$instance extends SignatureProvider {
     Sign(input: byte[]): byte[];
     Sign(input: ReadOnlySpan_1<System_Internal.Byte>, signature: Span_1<System_Internal.Byte>, bytesWritten: int): boolean;
     Sign(input: byte[], offset: int, count: int): byte[];
-    Sign(data: ReadOnlySpan_1<System_Internal.Byte>, destination: Span_1<System_Internal.Byte>, bytesWritten: int): boolean;
     Verify(input: byte[], signature: byte[]): boolean;
     Verify(input: byte[], signature: byte[], length: int): boolean;
     Verify(input: byte[], inputOffset: int, inputLength: int, signature: byte[], signatureOffset: int, signatureLength: int): boolean;

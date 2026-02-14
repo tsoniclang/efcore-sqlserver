@@ -2255,26 +2255,6 @@
           "declaringClrType": "Microsoft.Data.SqlClient.ActiveDirectoryAuthenticationProvider",
           "declaringAssemblyName": "Microsoft.Data.SqlClient",
           "isExtensionMethod": false
-        },
-        {
-          "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.ActiveDirectoryAuthenticationProvider::AcquireTokenAsync(Microsoft.Data.SqlClient.SqlAuthenticationParameters):System.Threading.Tasks.Task_1",
-          "clrName": "AcquireTokenAsync",
-          "metadataToken": 0,
-          "canonicalSignature": "(Microsoft.Data.SqlClient.SqlAuthenticationParameters):System.Threading.Tasks.Task_1",
-          "normalizedSignature": "AcquireTokenAsync|(Microsoft.Data.SqlClient.SqlAuthenticationParameters):System.Threading.Tasks.Task_1|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": true,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.Data.SqlClient.ActiveDirectoryAuthenticationProvider",
-          "declaringAssemblyName": "Microsoft.Data.SqlClient",
-          "isExtensionMethod": false
         }
       ],
       "properties": [],

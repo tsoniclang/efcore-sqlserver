@@ -271,8 +271,6 @@ export interface Operation_1$instance<T> extends Operation {
     WaitForCompletionAsync(delayStrategy: DelayStrategy, cancellationToken: CancellationToken): ValueTask_1<Response_1<T>>;
     WaitForCompletionResponseAsync(cancellationToken?: CancellationToken): ValueTask_1<Response>;
     WaitForCompletionResponseAsync(pollingInterval: TimeSpan, cancellationToken?: CancellationToken): ValueTask_1<Response>;
-    WaitForCompletionResponseAsync(cancellationToken?: CancellationToken): ValueTask_1<Response>;
-    WaitForCompletionResponseAsync(pollingInterval: TimeSpan, cancellationToken?: CancellationToken): ValueTask_1<Response>;
     WaitForCompletionResponseAsync(delayStrategy: DelayStrategy, cancellationToken?: CancellationToken): ValueTask_1<Response>;
 }
 

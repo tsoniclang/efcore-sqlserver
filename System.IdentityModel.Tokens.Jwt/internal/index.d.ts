@@ -299,7 +299,6 @@ export interface JwtSecurityTokenHandler$instance extends SecurityTokenHandler {
     ValidateToken(token: string, validationParameters: TokenValidationParameters, validatedToken: SecurityToken): ClaimsPrincipal;
     ValidateToken(reader: XmlReader, validationParameters: TokenValidationParameters, validatedToken: SecurityToken): ClaimsPrincipal;
     ValidateTokenAsync(token: string, validationParameters: TokenValidationParameters): Task_1<TokenValidationResult>;
-    ValidateTokenAsync(token: string, validationParameters: TokenValidationParameters): Task_1<TokenValidationResult>;
     ValidateTokenAsync(token: SecurityToken, validationParameters: TokenValidationParameters): Task_1<TokenValidationResult>;
     ValidateTokenReplay(expires: Nullable_1<DateTime>, securityToken: string, validationParameters: TokenValidationParameters): void;
     WriteToken(token: SecurityToken): string;
