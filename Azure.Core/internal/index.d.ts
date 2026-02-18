@@ -11,6 +11,7 @@ import type { ptr } from "@tsonic/core/types.js";
 // Import types from other namespaces
 import type { HttpPipelinePolicy, HttpPipelineTransport } from "../../Azure.Core.Pipeline/internal/index.js";
 import type { DynamicData, JsonPropertyNames, ObjectSerializer } from "../../Azure.Core.Serialization/internal/index.js";
+import type { TokenCredentialDiagnosticsOptions } from "../../Azure.Identity/internal/index.js";
 import type { ETag, Response, ResponseError, SyncAsyncEventArgs } from "../../Azure/internal/index.js";
 import * as System_ClientModel_Primitives_Internal from "../../System.ClientModel.Primitives/internal/index.js";
 import type { AuthenticationToken, GetTokenOptions, IJsonModel_1, IPersistableModel_1, ModelReaderWriterContext, ModelReaderWriterOptions, ModelReaderWriterTypeBuilder } from "../../System.ClientModel.Primitives/internal/index.js";

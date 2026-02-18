@@ -6,6 +6,7 @@
 import * as Internal from './System.Configuration.Provider/internal/index.js';
 
 // Cross-namespace type imports for constraints
+import type { ProtectedConfigurationProvider } from './System.Configuration/internal/index.js';
 import type { ICollection, IEnumerable, IEnumerator } from '@tsonic/dotnet/System.Collections.js';
 import type { NameValueCollection } from '@tsonic/dotnet/System.Collections.Specialized.js';
 import type { Boolean as ClrBoolean, Exception, Int32, Object as ClrObject, String as ClrString, Void } from '@tsonic/dotnet/System.js';
