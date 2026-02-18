@@ -9,7 +9,7 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 import type { ContentType } from "../../Azure.Core/internal/index.js";
 import type { BinaryData } from "../../System/internal/index.js";
 import type { IDictionary_2 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
-import * as System_Lib from "@tsonic/dotnet/System/internal/index.js";
+import * as System_Lib_tsonic_dotnet from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, DateTimeOffset, Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Nullable_1, Object as ClrObject, String as ClrString, Type } from "@tsonic/dotnet/System/internal/index.js";
 
 export enum CloudEventDataFormat {

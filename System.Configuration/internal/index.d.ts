@@ -26,7 +26,7 @@ import * as System_Xml_XPath_Internal from "@tsonic/dotnet/System.Xml.XPath/inte
 import type { IXPathNavigable } from "@tsonic/dotnet/System.Xml.XPath/internal/index.js";
 import * as System_Xml_Internal from "@tsonic/dotnet/System.Xml/internal/index.js";
 import type { XmlAttribute, XmlCDataSection, XmlComment, XmlDocument, XmlElement, XmlNode, XmlReader, XmlSignificantWhitespace, XmlText, XmlTextReader, XmlWhitespace, XmlWriter } from "@tsonic/dotnet/System.Xml/internal/index.js";
-import * as System_Lib from "@tsonic/dotnet/System/internal/index.js";
+import * as System_Lib_tsonic_dotnet from "@tsonic/dotnet/System/internal/index.js";
 import type { Array as ClrArray, AsyncCallback, Attribute, Boolean as ClrBoolean, Enum, EventArgs, Exception, Func_2, GenericUriParserOptions, IAsyncResult, ICloneable, IComparable, IConvertible, IFormattable, Int32, Int64, IntPtr, ISpanFormattable, MulticastDelegate, Object as ClrObject, String as ClrString, SystemException, TimeSpan, Type, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export enum ConfigurationAllowDefinition {
@@ -862,7 +862,7 @@ export const ConfigurationValidatorBase: (abstract new() => ConfigurationValidat
 
 export type ConfigurationValidatorBase = ConfigurationValidatorBase$instance;
 
-export interface ConfigXmlDocument$instance extends XmlDocument, System_Configuration_Internal_Internal.IConfigErrorInfo$instance, System_Lib.ICloneable, System_Xml_XPath_Internal.IXPathNavigable {
+export interface ConfigXmlDocument$instance extends XmlDocument, System_Configuration_Internal_Internal.IConfigErrorInfo$instance, System_Lib_tsonic_dotnet.ICloneable, System_Xml_XPath_Internal.IXPathNavigable {
     readonly __tsonic_type_System_Configuration_ConfigXmlDocument: never;
 
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
