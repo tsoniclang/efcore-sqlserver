@@ -27,7 +27,7 @@ import type { ISerializable, SerializationInfo, StreamingContext } from "@tsonic
 import type { Utf8JsonReader, Utf8JsonWriter } from "@tsonic/dotnet/System.Text.Json/internal/index.js";
 import type { Task_1, ValueTask_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
 import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
-import * as System_Lib from "@tsonic/dotnet/System/internal/index.js";
+import * as System_Lib_tsonic_dotnet from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Byte, DateTimeOffset, Enum, EventArgs, Exception, IComparable, IConvertible, IDisposable, IEquatable_1, IFormattable, Int32, Int64, ISpanFormattable, Nullable_1, Object as ClrObject, ReadOnlyMemory_1, String as ClrString, TimeSpan, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export enum ErrorOptions {

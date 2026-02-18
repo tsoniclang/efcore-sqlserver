@@ -29,7 +29,7 @@ import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization/
 import type { Utf8JsonReader, Utf8JsonWriter } from "@tsonic/dotnet/System.Text.Json/internal/index.js";
 import type { Task, Task_1, ValueTask_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
 import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
-import * as System_Lib from "@tsonic/dotnet/System/internal/index.js";
+import * as System_Lib_tsonic_dotnet from "@tsonic/dotnet/System/internal/index.js";
 import type { AsyncCallback, Boolean as ClrBoolean, Byte, Char, DateTimeOffset, Double, Enum, Exception, Func_3, IAsyncResult, ICloneable, IComparable, IComparable_1, IConvertible, IDisposable, IEquatable_1, IFormattable, Int32, Int64, IntPtr, ISpanFormattable, MulticastDelegate, Nullable_1, Object as ClrObject, ReadOnlyMemory_1, ReadOnlySpan_1, String as ClrString, TimeSpan, Type, UInt16, Uri, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export enum HttpPipelinePosition {

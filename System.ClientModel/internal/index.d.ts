@@ -23,7 +23,7 @@ import type { JsonTypeInfo_1 } from "@tsonic/dotnet/System.Text.Json.Serializati
 import type { JsonSerializerOptions } from "@tsonic/dotnet/System.Text.Json/internal/index.js";
 import type { Task, Task_1, ValueTask_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
 import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
-import * as System_Lib from "@tsonic/dotnet/System/internal/index.js";
+import * as System_Lib_tsonic_dotnet from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Exception, IDisposable, Int32, Int64, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface ApiKeyCredential$instance {
