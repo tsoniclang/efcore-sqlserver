@@ -450,7 +450,8 @@ export interface HttpMessage$instance {
     BufferResponse: boolean;
     CancellationToken: CancellationToken;
     readonly HasResponse: boolean;
-    NetworkTimeout: Nullable_1<TimeSpan>;
+    get NetworkTimeout(): Nullable_1<TimeSpan>;
+    set NetworkTimeout(value: Nullable_1<TimeSpan> | TimeSpan);
     readonly ProcessingContext: MessageProcessingContext;
     readonly Request: Request;
     Response: Response;

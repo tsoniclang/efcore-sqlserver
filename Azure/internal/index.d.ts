@@ -197,8 +197,10 @@ export type JsonPatchDocument = JsonPatchDocument$instance;
 export interface MatchConditions$instance {
     readonly __tsonic_type_Azure_MatchConditions: never;
 
-    IfMatch: Nullable_1<ETag>;
-    IfNoneMatch: Nullable_1<ETag>;
+    get IfMatch(): Nullable_1<ETag>;
+    set IfMatch(value: Nullable_1<ETag> | ETag);
+    get IfNoneMatch(): Nullable_1<ETag>;
+    set IfNoneMatch(value: Nullable_1<ETag> | ETag);
 }
 
 
@@ -340,8 +342,10 @@ export type PageableOperation_1<T> = PageableOperation_1$instance<T>;
 export interface RequestConditions$instance extends MatchConditions {
     readonly __tsonic_type_Azure_RequestConditions: never;
 
-    IfModifiedSince: Nullable_1<DateTimeOffset>;
-    IfUnmodifiedSince: Nullable_1<DateTimeOffset>;
+    get IfModifiedSince(): Nullable_1<DateTimeOffset>;
+    set IfModifiedSince(value: Nullable_1<DateTimeOffset> | DateTimeOffset);
+    get IfUnmodifiedSince(): Nullable_1<DateTimeOffset>;
+    set IfUnmodifiedSince(value: Nullable_1<DateTimeOffset> | DateTimeOffset);
 }
 
 

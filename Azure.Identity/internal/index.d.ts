@@ -170,7 +170,8 @@ export interface AzureCliCredentialOptions$instance extends TokenCredentialOptio
     readonly __tsonic_iface_Azure_Identity_ISupportsAdditionallyAllowedTenants: never;
 
     AdditionallyAllowedTenants: IList_1<System_Internal.String>;
-    ProcessTimeout: Nullable_1<TimeSpan>;
+    get ProcessTimeout(): Nullable_1<TimeSpan>;
+    set ProcessTimeout(value: Nullable_1<TimeSpan> | TimeSpan);
     Subscription: string;
     TenantId: string;
 }
@@ -207,7 +208,8 @@ export interface AzureDeveloperCliCredentialOptions$instance extends TokenCreden
     readonly __tsonic_iface_Azure_Identity_ISupportsAdditionallyAllowedTenants: never;
 
     AdditionallyAllowedTenants: IList_1<System_Internal.String>;
-    ProcessTimeout: Nullable_1<TimeSpan>;
+    get ProcessTimeout(): Nullable_1<TimeSpan>;
+    set ProcessTimeout(value: Nullable_1<TimeSpan> | TimeSpan);
     TenantId: string;
 }
 
@@ -280,7 +282,8 @@ export interface AzurePowerShellCredentialOptions$instance extends TokenCredenti
     readonly __tsonic_iface_Azure_Identity_ISupportsAdditionallyAllowedTenants: never;
 
     AdditionallyAllowedTenants: IList_1<System_Internal.String>;
-    ProcessTimeout: Nullable_1<TimeSpan>;
+    get ProcessTimeout(): Nullable_1<TimeSpan>;
+    set ProcessTimeout(value: Nullable_1<TimeSpan> | TimeSpan);
     TenantId: string;
 }
 
@@ -297,7 +300,8 @@ export interface BrowserCustomizationOptions$instance {
 
     ErrorMessage: string;
     SuccessMessage: string;
-    UseEmbeddedWebView: Nullable_1<System_Internal.Boolean>;
+    get UseEmbeddedWebView(): Nullable_1<System_Internal.Boolean>;
+    set UseEmbeddedWebView(value: Nullable_1<System_Internal.Boolean> | boolean);
 }
 
 
@@ -486,7 +490,8 @@ export interface DefaultAzureCredentialOptions$instance extends TokenCredentialO
     readonly __tsonic_iface_Azure_Identity_ISupportsDisableInstanceDiscovery: never;
 
     AdditionallyAllowedTenants: IList_1<System_Internal.String>;
-    CredentialProcessTimeout: Nullable_1<TimeSpan>;
+    get CredentialProcessTimeout(): Nullable_1<TimeSpan>;
+    set CredentialProcessTimeout(value: Nullable_1<TimeSpan> | TimeSpan);
     DisableInstanceDiscovery: boolean;
     ExcludeAzureCliCredential: boolean;
     ExcludeAzureDeveloperCliCredential: boolean;
@@ -981,7 +986,8 @@ export interface VisualStudioCredentialOptions$instance extends TokenCredentialO
     readonly __tsonic_iface_Azure_Identity_ISupportsAdditionallyAllowedTenants: never;
 
     AdditionallyAllowedTenants: IList_1<System_Internal.String>;
-    ProcessTimeout: Nullable_1<TimeSpan>;
+    get ProcessTimeout(): Nullable_1<TimeSpan>;
+    set ProcessTimeout(value: Nullable_1<TimeSpan> | TimeSpan);
     TenantId: string;
 }
 

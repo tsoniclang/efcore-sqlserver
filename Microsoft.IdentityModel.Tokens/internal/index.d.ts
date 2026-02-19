@@ -792,10 +792,13 @@ export interface SecurityTokenDescriptor$instance {
     Claims: IDictionary_2<System_Internal.String, unknown>;
     CompressionAlgorithm: string;
     EncryptingCredentials: EncryptingCredentials;
-    Expires: Nullable_1<DateTime>;
-    IssuedAt: Nullable_1<DateTime>;
+    get Expires(): Nullable_1<DateTime>;
+    set Expires(value: Nullable_1<DateTime> | DateTime);
+    get IssuedAt(): Nullable_1<DateTime>;
+    set IssuedAt(value: Nullable_1<DateTime> | DateTime);
     Issuer: string;
-    NotBefore: Nullable_1<DateTime>;
+    get NotBefore(): Nullable_1<DateTime>;
+    set NotBefore(value: Nullable_1<DateTime> | DateTime);
     SigningCredentials: SigningCredentials;
     Subject: ClaimsIdentity;
     TokenType: string;
@@ -975,8 +978,10 @@ export interface SecurityTokenInvalidLifetimeException$instance extends Security
 
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
-    Expires: Nullable_1<DateTime>;
-    NotBefore: Nullable_1<DateTime>;
+    get Expires(): Nullable_1<DateTime>;
+    set Expires(value: Nullable_1<DateTime> | DateTime);
+    get NotBefore(): Nullable_1<DateTime>;
+    set NotBefore(value: Nullable_1<DateTime> | DateTime);
     GetObjectData(info: SerializationInfo, context: StreamingContext): void;
 }
 
