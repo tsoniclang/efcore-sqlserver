@@ -876,7 +876,6 @@ export interface __Ext_System_ClientModel_Primitives_ActivitySource {
 type __TsonicExtMapOf<T> = T extends { __tsonic_ext?: infer M } ? M : {};
 type __TsonicMergeExtMaps<A, B> = A & B;
 type __TsonicWithExt<TShape, K extends string, TApplier> = { __tsonic_ext?: __TsonicMergeExtMaps<__TsonicExtMapOf<TShape>, { [P in K]: TApplier }> };
-type __TsonicPreferExt<A, B> = A & B;
 
 // Generic helper type for extension methods in namespace: Azure
 type __TsonicExtSurface_Azure<TShape> =
