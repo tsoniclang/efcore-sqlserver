@@ -785,7 +785,8 @@ export interface AuthenticationResultMetadata$instance {
     DurationInCacheInMs: long;
     DurationInHttpInMs: long;
     DurationTotalInMs: long;
-    RefreshOn: Nullable_1<DateTimeOffset>;
+    get RefreshOn(): Nullable_1<DateTimeOffset>;
+    set RefreshOn(value: Nullable_1<DateTimeOffset> | DateTimeOffset);
     RegionDetails: RegionDetails;
     Telemetry: string;
     TokenEndpoint: string;

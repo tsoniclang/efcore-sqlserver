@@ -593,7 +593,8 @@ export type SqlColumnEncryptionCspProvider = SqlColumnEncryptionCspProvider$inst
 export interface SqlColumnEncryptionKeyStoreProvider$instance {
     readonly __tsonic_type_Microsoft_Data_SqlClient_SqlColumnEncryptionKeyStoreProvider: never;
 
-    ColumnEncryptionKeyCacheTtl: Nullable_1<TimeSpan>;
+    get ColumnEncryptionKeyCacheTtl(): Nullable_1<TimeSpan>;
+    set ColumnEncryptionKeyCacheTtl(value: Nullable_1<TimeSpan> | TimeSpan);
     DecryptColumnEncryptionKey(masterKeyPath: string, encryptionAlgorithm: string, encryptedColumnEncryptionKey: byte[]): byte[];
     EncryptColumnEncryptionKey(masterKeyPath: string, encryptionAlgorithm: string, columnEncryptionKey: byte[]): byte[];
     SignColumnMasterKeyMetadata(masterKeyPath: string, allowEnclaveComputations: boolean): byte[];

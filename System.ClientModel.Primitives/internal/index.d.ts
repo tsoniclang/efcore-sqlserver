@@ -228,12 +228,16 @@ export interface ClientLoggingOptions$instance {
 
     readonly AllowedHeaderNames: IList_1<System_Internal.String>;
     readonly AllowedQueryParameters: IList_1<System_Internal.String>;
-    EnableLogging: Nullable_1<System_Internal.Boolean>;
-    EnableMessageContentLogging: Nullable_1<System_Internal.Boolean>;
-    EnableMessageLogging: Nullable_1<System_Internal.Boolean>;
+    get EnableLogging(): Nullable_1<System_Internal.Boolean>;
+    set EnableLogging(value: Nullable_1<System_Internal.Boolean> | boolean);
+    get EnableMessageContentLogging(): Nullable_1<System_Internal.Boolean>;
+    set EnableMessageContentLogging(value: Nullable_1<System_Internal.Boolean> | boolean);
+    get EnableMessageLogging(): Nullable_1<System_Internal.Boolean>;
+    set EnableMessageLogging(value: Nullable_1<System_Internal.Boolean> | boolean);
     get LoggerFactory(): ILoggerFactory | undefined;
     set LoggerFactory(value: ILoggerFactory | undefined);
-    MessageContentSizeLimit: Nullable_1<System_Internal.Int32>;
+    get MessageContentSizeLimit(): Nullable_1<System_Internal.Int32>;
+    set MessageContentSizeLimit(value: Nullable_1<System_Internal.Int32> | int);
     Freeze(): void;
 }
 
@@ -267,10 +271,12 @@ export interface ClientPipelineOptions$instance {
 
     get ClientLoggingOptions(): ClientLoggingOptions | undefined;
     set ClientLoggingOptions(value: ClientLoggingOptions | undefined);
-    EnableDistributedTracing: Nullable_1<System_Internal.Boolean>;
+    get EnableDistributedTracing(): Nullable_1<System_Internal.Boolean>;
+    set EnableDistributedTracing(value: Nullable_1<System_Internal.Boolean> | boolean);
     get MessageLoggingPolicy(): PipelinePolicy | undefined;
     set MessageLoggingPolicy(value: PipelinePolicy | undefined);
-    NetworkTimeout: Nullable_1<TimeSpan>;
+    get NetworkTimeout(): Nullable_1<TimeSpan>;
+    set NetworkTimeout(value: Nullable_1<TimeSpan> | TimeSpan);
     get RetryPolicy(): PipelinePolicy | undefined;
     set RetryPolicy(value: PipelinePolicy | undefined);
     get Transport(): PipelineTransport | undefined;
@@ -522,7 +528,8 @@ export interface PipelineMessage$instance {
 
     BufferResponse: boolean;
     CancellationToken: CancellationToken;
-    NetworkTimeout: Nullable_1<TimeSpan>;
+    get NetworkTimeout(): Nullable_1<TimeSpan>;
+    set NetworkTimeout(value: Nullable_1<TimeSpan> | TimeSpan);
     readonly Request: PipelineRequest;
     get Response(): PipelineResponse | undefined;
     set Response(value: PipelineResponse | undefined);

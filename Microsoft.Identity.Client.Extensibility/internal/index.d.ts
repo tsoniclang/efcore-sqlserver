@@ -46,7 +46,8 @@ export interface AppTokenProviderResult$instance {
 
     AccessToken: string;
     ExpiresInSeconds: long;
-    RefreshInSeconds: Nullable_1<System_Internal.Int64>;
+    get RefreshInSeconds(): Nullable_1<System_Internal.Int64>;
+    set RefreshInSeconds(value: Nullable_1<System_Internal.Int64> | long);
 }
 
 

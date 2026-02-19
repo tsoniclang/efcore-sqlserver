@@ -32,7 +32,8 @@ export interface CloudEvent$instance {
     Source: string;
     get Subject(): string | undefined;
     set Subject(value: string | undefined);
-    Time: Nullable_1<DateTimeOffset>;
+    get Time(): Nullable_1<DateTimeOffset>;
+    set Time(value: Nullable_1<DateTimeOffset> | DateTimeOffset);
     Type: string;
 }
 
@@ -50,8 +51,10 @@ export type CloudEvent = CloudEvent$instance;
 export interface MessageContent$instance {
     readonly __tsonic_type_Azure_Messaging_MessageContent: never;
 
-    ContentType: Nullable_1<ContentType>;
-    ContentTypeCore: Nullable_1<ContentType>;
+    get ContentType(): Nullable_1<ContentType>;
+    set ContentType(value: Nullable_1<ContentType> | ContentType);
+    get ContentTypeCore(): Nullable_1<ContentType>;
+    set ContentTypeCore(value: Nullable_1<ContentType> | ContentType);
     get Data(): BinaryData | undefined;
     set Data(value: BinaryData | undefined);
     readonly IsReadOnly: boolean;
