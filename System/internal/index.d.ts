@@ -2,8 +2,9 @@
 // Namespace: System
 // Assembly: System.ComponentModel, System.ComponentModel.TypeConverter, System.Configuration.ConfigurationManager, System.Console, System.Memory, System.Memory.Data, System.Private.CoreLib, System.Private.Uri
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { Stream } from "@tsonic/dotnet/System.IO/internal/index.js";
@@ -27,40 +28,40 @@ export interface BinaryData$instance {
 
     readonly IsEmpty: boolean;
     readonly Length: int;
-    readonly MediaType: string | undefined;
-    Equals(obj: unknown): boolean;
+    readonly MediaType: string | null;
+    Equals(obj: JsValue | null): boolean;
     GetHashCode(): int;
     ToArray(): byte[];
     ToMemory(): ReadOnlyMemory_1<Byte>;
-    ToObjectFromJson<T>(options?: JsonSerializerOptions): T | undefined;
-    ToObjectFromJson<T>(jsonTypeInfo: JsonTypeInfo_1<T>): T | undefined;
+    ToObjectFromJson<T>(options?: JsonSerializerOptions | null): T | null;
+    ToObjectFromJson<T>(jsonTypeInfo: JsonTypeInfo_1<T>): T | null;
     ToStream(): Stream;
     ToString(): string;
-    WithMediaType(mediaType: string): BinaryData;
+    WithMediaType(mediaType: string | null): BinaryData;
 }
 
 
 export const BinaryData: {
     new(data: byte[]): BinaryData;
-    new(data: byte[], mediaType: string): BinaryData;
-    new(jsonSerializable: unknown, options: JsonSerializerOptions, type: Type): BinaryData;
-    new(jsonSerializable: unknown, context: JsonSerializerContext, type: Type): BinaryData;
+    new(data: byte[], mediaType: string | null): BinaryData;
+    new(jsonSerializable: JsValue | null, options: JsonSerializerOptions | null, type: Type | null): BinaryData;
+    new(jsonSerializable: JsValue | null, context: JsonSerializerContext, type: Type | null): BinaryData;
     new(data: ReadOnlyMemory_1<Byte>): BinaryData;
-    new(data: ReadOnlyMemory_1<Byte>, mediaType: string): BinaryData;
+    new(data: ReadOnlyMemory_1<Byte>, mediaType: string | null): BinaryData;
     new(data: string): BinaryData;
-    new(data: string, mediaType: string): BinaryData;
+    new(data: string, mediaType: string | null): BinaryData;
     readonly Empty: BinaryData;
-    FromBytes(data: byte[], mediaType: string): BinaryData;
+    FromBytes(data: byte[], mediaType: string | null): BinaryData;
     FromBytes(data: byte[]): BinaryData;
-    FromBytes(data: ReadOnlyMemory_1<Byte>, mediaType: string): BinaryData;
+    FromBytes(data: ReadOnlyMemory_1<Byte>, mediaType: string | null): BinaryData;
     FromBytes(data: ReadOnlyMemory_1<Byte>): BinaryData;
     FromObjectAsJson<T>(jsonSerializable: T, jsonTypeInfo: JsonTypeInfo_1<T>): BinaryData;
-    FromObjectAsJson<T>(jsonSerializable: T, options?: JsonSerializerOptions): BinaryData;
-    FromStream(stream: Stream, mediaType: string): BinaryData;
+    FromObjectAsJson<T>(jsonSerializable: T, options?: JsonSerializerOptions | null): BinaryData;
+    FromStream(stream: Stream, mediaType: string | null): BinaryData;
     FromStream(stream: Stream): BinaryData;
-    FromStreamAsync(stream: Stream, mediaType: string, cancellationToken?: CancellationToken): Task_1<BinaryData>;
+    FromStreamAsync(stream: Stream, mediaType: string | null, cancellationToken?: CancellationToken): Task_1<BinaryData>;
     FromStreamAsync(stream: Stream, cancellationToken?: CancellationToken): Task_1<BinaryData>;
-    FromString(data: string, mediaType: string): BinaryData;
+    FromString(data: string, mediaType: string | null): BinaryData;
     FromString(data: string): BinaryData;
 };
 

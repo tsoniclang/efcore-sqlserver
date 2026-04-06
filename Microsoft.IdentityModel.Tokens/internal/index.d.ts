@@ -2,11 +2,9 @@
 // Namespace: Microsoft.IdentityModel.Tokens
 // Assembly: Microsoft.IdentityModel.Tokens
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
-// Import support types from @tsonic/core
-import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import * as Microsoft_IdentityModel_Logging_Internal from "../../Microsoft.IdentityModel.Logging/internal/index.js";
@@ -104,9 +102,9 @@ export type ICompressionProvider = ICompressionProvider$instance;
 export interface ICryptoProvider$instance {
     readonly __tsonic_iface_Microsoft_IdentityModel_Tokens_ICryptoProvider: never;
 
-    Create(algorithm: string, ...args: unknown[]): unknown;
-    IsSupportedAlgorithm(algorithm: string, ...args: unknown[]): boolean;
-    Release(cryptoInstance: unknown): void;
+    Create(algorithm: string, ...args: JsValue[]): JsValue;
+    IsSupportedAlgorithm(algorithm: string, ...args: JsValue[]): boolean;
+    Release(cryptoInstance: JsValue): void;
 }
 
 
@@ -512,7 +510,7 @@ export type InMemoryCryptoProviderCache = InMemoryCryptoProviderCache$instance;
 export interface JsonWebKey$instance extends SecurityKey {
     readonly __tsonic_type_Microsoft_IdentityModel_Tokens_JsonWebKey: never;
 
-    readonly AdditionalData: IDictionary_2<System_Internal.String, unknown>;
+    readonly AdditionalData: IDictionary_2<System_Internal.String, JsValue>;
     Alg: string;
     Crv: string;
     D: string;
@@ -575,7 +573,7 @@ export type JsonWebKeyConverter = JsonWebKeyConverter$instance;
 export interface JsonWebKeySet$instance {
     readonly __tsonic_type_Microsoft_IdentityModel_Tokens_JsonWebKeySet: never;
 
-    readonly AdditionalData: IDictionary_2<System_Internal.String, unknown>;
+    readonly AdditionalData: IDictionary_2<System_Internal.String, JsValue>;
     Keys: IList_1<JsonWebKey>;
     SkipUnresolvedJsonWebKeys: boolean;
     GetSigningKeys(): IList_1<SecurityKey>;
@@ -786,10 +784,10 @@ export type SecurityTokenDecryptionFailedException = SecurityTokenDecryptionFail
 export interface SecurityTokenDescriptor$instance {
     readonly __tsonic_type_Microsoft_IdentityModel_Tokens_SecurityTokenDescriptor: never;
 
-    AdditionalHeaderClaims: IDictionary_2<System_Internal.String, unknown>;
-    AdditionalInnerHeaderClaims: IDictionary_2<System_Internal.String, unknown>;
+    AdditionalHeaderClaims: IDictionary_2<System_Internal.String, JsValue>;
+    AdditionalInnerHeaderClaims: IDictionary_2<System_Internal.String, JsValue>;
     Audience: string;
-    Claims: IDictionary_2<System_Internal.String, unknown>;
+    Claims: IDictionary_2<System_Internal.String, JsValue>;
     CompressionAlgorithm: string;
     EncryptingCredentials: EncryptingCredentials;
     get Expires(): Nullable_1<DateTime>;
@@ -1368,7 +1366,7 @@ export interface TokenValidationParameters$instance {
     DebugId: string;
     IgnoreTrailingSlashWhenValidatingAudience: boolean;
     IncludeTokenOnFailedValidation: boolean;
-    readonly InstancePropertyBag: IDictionary_2<System_Internal.String, unknown>;
+    readonly InstancePropertyBag: IDictionary_2<System_Internal.String, JsValue>;
     IsClone: boolean;
     IssuerSigningKey: SecurityKey;
     IssuerSigningKeyResolver: IssuerSigningKeyResolver;
@@ -1383,7 +1381,7 @@ export interface TokenValidationParameters$instance {
     LogValidationExceptions: boolean;
     NameClaimType: string;
     NameClaimTypeRetriever: Func_3<SecurityToken, System_Internal.String, System_Internal.String>;
-    PropertyBag: IDictionary_2<System_Internal.String, unknown>;
+    PropertyBag: IDictionary_2<System_Internal.String, JsValue>;
     RefreshBeforeValidation: boolean;
     RequireAudience: boolean;
     RequireExpirationTime: boolean;
@@ -1434,12 +1432,12 @@ export type TokenValidationParameters = TokenValidationParameters$instance;
 export interface TokenValidationResult$instance {
     readonly __tsonic_type_Microsoft_IdentityModel_Tokens_TokenValidationResult: never;
 
-    readonly Claims: IDictionary_2<System_Internal.String, unknown>;
+    readonly Claims: IDictionary_2<System_Internal.String, JsValue>;
     ClaimsIdentity: ClaimsIdentity;
     Exception: Exception;
     Issuer: string;
     IsValid: boolean;
-    readonly PropertyBag: IDictionary_2<System_Internal.String, unknown>;
+    readonly PropertyBag: IDictionary_2<System_Internal.String, JsValue>;
     SecurityToken: SecurityToken;
     TokenContext: CallContext;
     TokenOnFailedValidation: SecurityToken;
@@ -1481,7 +1479,7 @@ export interface X509SecurityKey$instance extends AsymmetricSecurityKey {
     readonly X5t: string;
     CanComputeJwkThumbprint(): boolean;
     ComputeJwkThumbprint(): byte[];
-    Equals(obj: unknown): boolean;
+    Equals(obj: JsValue): boolean;
     GetHashCode(): int;
 }
 

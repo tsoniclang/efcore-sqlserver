@@ -9,7 +9,7 @@ import * as Internal from './Microsoft.EntityFrameworkCore.SqlServer.Extensions.
 import type { SqlServerValueGenerationStrategy } from './Microsoft.EntityFrameworkCore.Metadata/internal/index.js';
 import type { Boolean as ClrBoolean, Int32, Int64, Nullable, Object as ClrObject, String as ClrString, Void } from '@tsonic/dotnet/System.js';
 import type { IDiagnosticsLogger } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics.js';
-import type { DbLoggerCategory$Database$Transaction, DbLoggerCategory$Model$Validation, DbLoggerCategory$Scaffolding } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.js';
+import type { DbLoggerCategory_Database_Transaction, DbLoggerCategory_Model_Validation, DbLoggerCategory_Scaffolding } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.js';
 import type { IProperty, IReadOnlyProperty } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js';
 
 // Public API exports (curated - no internal $instance/$views leakage)

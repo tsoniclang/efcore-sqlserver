@@ -2,8 +2,9 @@
 // Namespace: System.Configuration
 // Assembly: System.Configuration.ConfigurationManager
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import * as System_Configuration_Internal_Internal from "../../System.Configuration.Internal/internal/index.js";
@@ -111,16 +112,16 @@ export enum SpecialSetting {
 }
 
 
-export type SettingChangingEventHandler = (sender: unknown, e: SettingChangingEventArgs) => void;
+export type SettingChangingEventHandler = (sender: JsValue, e: SettingChangingEventArgs) => void;
 
 
-export type SettingsLoadedEventHandler = (sender: unknown, e: SettingsLoadedEventArgs) => void;
+export type SettingsLoadedEventHandler = (sender: JsValue, e: SettingsLoadedEventArgs) => void;
 
 
-export type SettingsSavingEventHandler = (sender: unknown, e: CancelEventArgs) => void;
+export type SettingsSavingEventHandler = (sender: JsValue, e: CancelEventArgs) => void;
 
 
-export type ValidatorCallback = (value: unknown) => void;
+export type ValidatorCallback = (value: JsValue) => void;
 
 
 export interface IApplicationSettingsProvider$instance {
@@ -137,7 +138,7 @@ export type IApplicationSettingsProvider = IApplicationSettingsProvider$instance
 export interface IConfigurationSectionHandler$instance {
     readonly __tsonic_iface_System_Configuration_IConfigurationSectionHandler: never;
 
-    Create(parent: unknown, configContext: unknown, section: XmlNode): unknown;
+    Create(parent: JsValue, configContext: JsValue, section: XmlNode): JsValue;
 }
 
 
@@ -146,7 +147,7 @@ export type IConfigurationSectionHandler = IConfigurationSectionHandler$instance
 export interface IConfigurationSystem$instance {
     readonly __tsonic_iface_System_Configuration_IConfigurationSystem: never;
 
-    GetConfig(configKey: string): unknown;
+    GetConfig(configKey: string): JsValue;
     Init(): void;
 }
 
@@ -196,11 +197,11 @@ export interface ApplicationSettingsBase$instance extends SettingsBase {
     readonly PropertyValues: SettingsPropertyValueCollection;
     readonly Providers: SettingsProviderCollection;
     SettingsKey: string;
-    GetPreviousVersion(propertyName: string): unknown;
-    OnPropertyChanged(sender: unknown, e: PropertyChangedEventArgs): void;
-    OnSettingChanging(sender: unknown, e: SettingChangingEventArgs): void;
-    OnSettingsLoaded(sender: unknown, e: SettingsLoadedEventArgs): void;
-    OnSettingsSaving(sender: unknown, e: CancelEventArgs): void;
+    GetPreviousVersion(propertyName: string): JsValue;
+    OnPropertyChanged(sender: JsValue, e: PropertyChangedEventArgs): void;
+    OnSettingChanging(sender: JsValue, e: SettingChangingEventArgs): void;
+    OnSettingsLoaded(sender: JsValue, e: SettingsLoadedEventArgs): void;
+    OnSettingsSaving(sender: JsValue, e: CancelEventArgs): void;
     Reload(): void;
     Reset(): void;
     Save(): void;
@@ -212,7 +213,7 @@ export const ApplicationSettingsBase: (abstract new() => ApplicationSettingsBase
 };
 
 
-export type ApplicationSettingsBase = ApplicationSettingsBase$instance & { [propertyName: string]: unknown; };
+export type ApplicationSettingsBase = ApplicationSettingsBase$instance & { [propertyName: string]: JsValue; };
 
 export interface ApplicationSettingsGroup$instance extends ConfigurationSectionGroup {
     readonly __tsonic_type_System_Configuration_ApplicationSettingsGroup: never;
@@ -230,7 +231,7 @@ export type ApplicationSettingsGroup = ApplicationSettingsGroup$instance;
 export interface AppSettingsReader$instance {
     readonly __tsonic_type_System_Configuration_AppSettingsReader: never;
 
-    GetValue(key: string, type: Type): unknown;
+    GetValue(key: string, type: Type): JsValue;
 }
 
 
@@ -248,7 +249,7 @@ export interface AppSettingsSection$instance extends ConfigurationSection {
     readonly Properties: ConfigurationPropertyCollection;
     readonly Settings: KeyValueConfigurationCollection;
     DeserializeElement(reader: XmlReader, serializeCollectionKey: boolean): void;
-    GetRuntimeObject(): unknown;
+    GetRuntimeObject(): JsValue;
     Reset(parentSection: ConfigurationElement): void;
 }
 
@@ -264,7 +265,7 @@ export interface CallbackValidator$instance extends ConfigurationValidatorBase {
     readonly __tsonic_type_System_Configuration_CallbackValidator: never;
 
     CanValidate(type: Type): boolean;
-    Validate(value: unknown): void;
+    Validate(value: JsValue): void;
 }
 
 
@@ -336,8 +337,8 @@ export type CommaDelimitedStringCollection = CommaDelimitedStringCollection$inst
 export interface CommaDelimitedStringCollectionConverter$instance extends ConfigurationConverterBase {
     readonly __tsonic_type_System_Configuration_CommaDelimitedStringCollectionConverter: never;
 
-    ConvertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown): unknown;
-    ConvertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type): unknown;
+    ConvertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: JsValue): JsValue;
+    ConvertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: JsValue, type: Type): JsValue;
 }
 
 
@@ -426,7 +427,7 @@ export interface ConfigurationElement$instance {
     LockItem: boolean;
     readonly Properties: ConfigurationPropertyCollection;
     DeserializeElement(reader: XmlReader, serializeCollectionKey: boolean): void;
-    Equals(compareTo: unknown): boolean;
+    Equals(compareTo: JsValue): boolean;
     GetHashCode(): int;
     GetTransformedAssemblyString(assemblyName: string): string;
     GetTransformedTypeString(typeName: string): string;
@@ -437,7 +438,7 @@ export interface ConfigurationElement$instance {
     ListErrors(errorList: IList): void;
     OnDeserializeUnrecognizedAttribute(name: string, value: string): boolean;
     OnDeserializeUnrecognizedElement(elementName: string, reader: XmlReader): boolean;
-    OnRequiredPropertyNotFound(name: string): unknown;
+    OnRequiredPropertyNotFound(name: string): JsValue;
     PostDeserialize(): void;
     PreSerialize(writer: XmlWriter): void;
     Reset(parentElement: ConfigurationElement): void;
@@ -466,15 +467,15 @@ export interface ConfigurationElementCollection$instance extends ConfigurationEl
     readonly ElementName: string;
     EmitClear: boolean;
     readonly IsSynchronized: boolean;
-    readonly SyncRoot: unknown;
+    readonly SyncRoot: JsValue;
     readonly ThrowOnDuplicate: boolean;
     BaseAdd(element: ConfigurationElement): void;
     BaseAdd(index: int, element: ConfigurationElement): void;
     CopyTo(array: ConfigurationElement[], index: int): void;
     CreateNewElement(elementName: string): ConfigurationElement;
     CreateNewElement(): ConfigurationElement;
-    Equals(compareTo: unknown): boolean;
-    GetElementKey(element: ConfigurationElement): unknown;
+    Equals(compareTo: JsValue): boolean;
+    GetElementKey(element: ConfigurationElement): JsValue;
     GetEnumerator(): IEnumerator;
     GetHashCode(): int;
     IsElementName(elementName: string): boolean;
@@ -576,7 +577,7 @@ export interface ConfigurationFileMap$instance {
     readonly __tsonic_iface_System_ICloneable: never;
 
     MachineConfigFilename: string;
-    Clone(): unknown;
+    Clone(): JsValue;
 }
 
 
@@ -628,7 +629,7 @@ export interface ConfigurationLockCollection$instance {
     readonly HasParentElements: boolean;
     IsModified: boolean;
     readonly IsSynchronized: boolean;
-    readonly SyncRoot: unknown;
+    readonly SyncRoot: JsValue;
     Add(name: string): void;
     Clear(): void;
     Contains(name: string): boolean;
@@ -650,7 +651,7 @@ export interface ConfigurationProperty$instance {
     readonly __tsonic_type_System_Configuration_ConfigurationProperty: never;
 
     readonly Converter: TypeConverter;
-    DefaultValue: unknown;
+    DefaultValue: JsValue;
     Description: string;
     readonly IsAssemblyStringTransformationRequired: boolean;
     readonly IsDefaultCollection: boolean;
@@ -666,10 +667,10 @@ export interface ConfigurationProperty$instance {
 
 export const ConfigurationProperty: {
     new(name: string, type: Type): ConfigurationProperty;
-    new(name: string, type: Type, defaultValue: unknown): ConfigurationProperty;
-    new(name: string, type: Type, defaultValue: unknown, options: ConfigurationPropertyOptions): ConfigurationProperty;
-    new(name: string, type: Type, defaultValue: unknown, typeConverter: TypeConverter, validator: ConfigurationValidatorBase, options: ConfigurationPropertyOptions): ConfigurationProperty;
-    new(name: string, type: Type, defaultValue: unknown, typeConverter: TypeConverter, validator: ConfigurationValidatorBase, options: ConfigurationPropertyOptions, description: string): ConfigurationProperty;
+    new(name: string, type: Type, defaultValue: JsValue): ConfigurationProperty;
+    new(name: string, type: Type, defaultValue: JsValue, options: ConfigurationPropertyOptions): ConfigurationProperty;
+    new(name: string, type: Type, defaultValue: JsValue, typeConverter: TypeConverter, validator: ConfigurationValidatorBase, options: ConfigurationPropertyOptions): ConfigurationProperty;
+    new(name: string, type: Type, defaultValue: JsValue, typeConverter: TypeConverter, validator: ConfigurationValidatorBase, options: ConfigurationPropertyOptions, description: string): ConfigurationProperty;
 };
 
 
@@ -678,7 +679,7 @@ export type ConfigurationProperty = ConfigurationProperty$instance;
 export interface ConfigurationPropertyAttribute$instance extends Attribute {
     readonly __tsonic_type_System_Configuration_ConfigurationPropertyAttribute: never;
 
-    DefaultValue: unknown;
+    DefaultValue: JsValue;
     IsDefaultCollection: boolean;
     IsKey: boolean;
     IsRequired: boolean;
@@ -702,7 +703,7 @@ export interface ConfigurationPropertyCollection$instance {
 
     readonly Count: int;
     readonly IsSynchronized: boolean;
-    readonly SyncRoot: unknown;
+    readonly SyncRoot: JsValue;
     Add(property: ConfigurationProperty): void;
     Clear(): void;
     Contains(name: string): boolean;
@@ -724,7 +725,7 @@ export interface ConfigurationSection$instance extends ConfigurationElement {
 
     readonly SectionInformation: SectionInformation;
     DeserializeSection(reader: XmlReader): void;
-    GetRuntimeObject(): unknown;
+    GetRuntimeObject(): JsValue;
     IsModified(): boolean;
     ResetModified(): void;
     SerializeSection(parentElement: ConfigurationElement, name: string, saveMode: ConfigurationSaveMode): string;
@@ -827,7 +828,7 @@ export interface ConfigurationSettings$instance {
 
 export const ConfigurationSettings: {
     readonly AppSettings: NameValueCollection;
-    GetConfig(sectionName: string): unknown;
+    GetConfig(sectionName: string): JsValue;
 };
 
 
@@ -852,7 +853,7 @@ export interface ConfigurationValidatorBase$instance {
     readonly __tsonic_type_System_Configuration_ConfigurationValidatorBase: never;
 
     CanValidate(type: Type): boolean;
-    Validate(value: unknown): void;
+    Validate(value: JsValue): void;
 }
 
 
@@ -931,7 +932,7 @@ export interface ConnectionStringSettingsCollection$instance extends Configurati
     CreateNewElement(elementName: string): ConfigurationElement;
     get_Item(index: int): ConnectionStringSettings;
     get_Item(name: string): ConnectionStringSettings;
-    GetElementKey(element: ConfigurationElement): unknown;
+    GetElementKey(element: ConfigurationElement): JsValue;
     IndexOf(settings: ConnectionStringSettings): int;
     Remove(settings: ConnectionStringSettings): void;
     Remove(name: string): void;
@@ -952,7 +953,7 @@ export interface ConnectionStringsSection$instance extends ConfigurationSection 
 
     readonly ConnectionStrings: ConnectionStringSettingsCollection;
     readonly Properties: ConfigurationPropertyCollection;
-    GetRuntimeObject(): unknown;
+    GetRuntimeObject(): JsValue;
 }
 
 
@@ -966,9 +967,9 @@ export type ConnectionStringsSection = ConnectionStringsSection$instance;
 export interface ContextInformation$instance {
     readonly __tsonic_type_System_Configuration_ContextInformation: never;
 
-    readonly HostingContext: unknown;
+    readonly HostingContext: JsValue;
     readonly IsMachineLevel: boolean;
-    GetSection(sectionName: string): unknown;
+    GetSection(sectionName: string): JsValue;
 }
 
 
@@ -1015,7 +1016,7 @@ export interface DefaultValidator$instance extends ConfigurationValidatorBase {
     readonly __tsonic_type_System_Configuration_DefaultValidator: never;
 
     CanValidate(type: Type): boolean;
-    Validate(value: unknown): void;
+    Validate(value: JsValue): void;
 }
 
 
@@ -1033,7 +1034,7 @@ export interface DictionarySectionHandler$instance extends IConfigurationSection
 
     readonly KeyAttributeName: string;
     readonly ValueAttributeName: string;
-    Create(parent: unknown, context: unknown, section: XmlNode): unknown;
+    Create(parent: JsValue, context: JsValue, section: XmlNode): JsValue;
 }
 
 
@@ -1095,7 +1096,7 @@ export interface ExeConfigurationFileMap$instance extends ConfigurationFileMap {
     ExeConfigFilename: string;
     LocalUserConfigFilename: string;
     RoamingUserConfigFilename: string;
-    Clone(): unknown;
+    Clone(): JsValue;
 }
 
 
@@ -1124,8 +1125,8 @@ export type ExeContext = ExeContext$instance;
 export interface GenericEnumConverter$instance extends ConfigurationConverterBase {
     readonly __tsonic_type_System_Configuration_GenericEnumConverter: never;
 
-    ConvertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown): unknown;
-    ConvertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type): unknown;
+    ConvertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: JsValue): JsValue;
+    ConvertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: JsValue, type: Type): JsValue;
 }
 
 
@@ -1175,7 +1176,7 @@ export interface IgnoreSectionHandler$instance extends IConfigurationSectionHand
 
     readonly __tsonic_iface_System_Configuration_IConfigurationSectionHandler: never;
 
-    Create(parent: unknown, configContext: unknown, section: XmlNode): unknown;
+    Create(parent: JsValue, configContext: JsValue, section: XmlNode): JsValue;
 }
 
 
@@ -1194,8 +1195,8 @@ export type IgnoreSectionHandler = IgnoreSectionHandler$instance & __IgnoreSecti
 export interface InfiniteIntConverter$instance extends ConfigurationConverterBase {
     readonly __tsonic_type_System_Configuration_InfiniteIntConverter: never;
 
-    ConvertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown): unknown;
-    ConvertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type): unknown;
+    ConvertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: JsValue): JsValue;
+    ConvertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: JsValue, type: Type): JsValue;
 }
 
 
@@ -1209,8 +1210,8 @@ export type InfiniteIntConverter = InfiniteIntConverter$instance;
 export interface InfiniteTimeSpanConverter$instance extends ConfigurationConverterBase {
     readonly __tsonic_type_System_Configuration_InfiniteTimeSpanConverter: never;
 
-    ConvertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown): unknown;
-    ConvertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type): unknown;
+    ConvertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: JsValue): JsValue;
+    ConvertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: JsValue, type: Type): JsValue;
 }
 
 
@@ -1225,7 +1226,7 @@ export interface IntegerValidator$instance extends ConfigurationValidatorBase {
     readonly __tsonic_type_System_Configuration_IntegerValidator: never;
 
     CanValidate(type: Type): boolean;
-    Validate(value: unknown): void;
+    Validate(value: JsValue): void;
 }
 
 
@@ -1284,7 +1285,7 @@ export interface KeyValueConfigurationCollection$instance extends ConfigurationE
     Clear(): void;
     CreateNewElement(): ConfigurationElement;
     CreateNewElement(elementName: string): ConfigurationElement;
-    GetElementKey(element: ConfigurationElement): unknown;
+    GetElementKey(element: ConfigurationElement): JsValue;
     Remove(key: string): void;
 }
 
@@ -1344,7 +1345,7 @@ export interface LongValidator$instance extends ConfigurationValidatorBase {
     readonly __tsonic_type_System_Configuration_LongValidator: never;
 
     CanValidate(type: Type): boolean;
-    Validate(value: unknown): void;
+    Validate(value: JsValue): void;
 }
 
 
@@ -1386,7 +1387,7 @@ export interface NameValueConfigurationCollection$instance extends Configuration
     Clear(): void;
     CreateNewElement(): ConfigurationElement;
     CreateNewElement(elementName: string): ConfigurationElement;
-    GetElementKey(element: ConfigurationElement): unknown;
+    GetElementKey(element: ConfigurationElement): JsValue;
     Remove(nameValue: NameValueConfigurationElement): void;
     Remove(name: string): void;
 }
@@ -1420,7 +1421,7 @@ export interface NameValueFileSectionHandler$instance extends IConfigurationSect
 
     readonly __tsonic_iface_System_Configuration_IConfigurationSectionHandler: never;
 
-    Create(parent: unknown, configContext: unknown, section: XmlNode): unknown;
+    Create(parent: JsValue, configContext: JsValue, section: XmlNode): JsValue;
 }
 
 
@@ -1443,7 +1444,7 @@ export interface NameValueSectionHandler$instance extends IConfigurationSectionH
 
     readonly KeyAttributeName: string;
     readonly ValueAttributeName: string;
-    Create(parent: unknown, context: unknown, section: XmlNode): unknown;
+    Create(parent: JsValue, context: JsValue, section: XmlNode): JsValue;
 }
 
 
@@ -1476,7 +1477,7 @@ export interface PositiveTimeSpanValidator$instance extends ConfigurationValidat
     readonly __tsonic_type_System_Configuration_PositiveTimeSpanValidator: never;
 
     CanValidate(type: Type): boolean;
-    Validate(value: unknown): void;
+    Validate(value: JsValue): void;
 }
 
 
@@ -1505,7 +1506,7 @@ export interface PropertyInformation$instance {
     readonly __tsonic_type_System_Configuration_PropertyInformation: never;
 
     readonly Converter: TypeConverter;
-    readonly DefaultValue: unknown;
+    readonly DefaultValue: JsValue;
     readonly Description: string;
     readonly IsKey: boolean;
     readonly IsLocked: boolean;
@@ -1516,7 +1517,7 @@ export interface PropertyInformation$instance {
     readonly Source: string;
     readonly Type: Type;
     readonly Validator: ConfigurationValidatorBase;
-    Value: unknown;
+    Value: JsValue;
     readonly ValueOrigin: PropertyValueOrigin;
 }
 
@@ -1643,7 +1644,7 @@ export interface ProviderSettingsCollection$instance extends ConfigurationElemen
     CreateNewElement(elementName: string): ConfigurationElement;
     get_Item(key: string): ProviderSettings;
     get_Item(index: int): ProviderSettings;
-    GetElementKey(element: ConfigurationElement): unknown;
+    GetElementKey(element: ConfigurationElement): JsValue;
     Remove(name: string): void;
     set_Item(index: int, value: ProviderSettings): void;
 }
@@ -1660,7 +1661,7 @@ export interface RegexStringValidator$instance extends ConfigurationValidatorBas
     readonly __tsonic_type_System_Configuration_RegexStringValidator: never;
 
     CanValidate(type: Type): boolean;
-    Validate(value: unknown): void;
+    Validate(value: JsValue): void;
 }
 
 
@@ -1738,7 +1739,7 @@ export interface SchemeSettingElementCollection$instance extends ConfigurationEl
     CreateNewElement(elementName: string): ConfigurationElement;
     get_Item(index: int): SchemeSettingElement;
     get_Item(name: string): SchemeSettingElement;
-    GetElementKey(element: ConfigurationElement): unknown;
+    GetElementKey(element: ConfigurationElement): JsValue;
     IndexOf(element: SchemeSettingElement): int;
 }
 
@@ -1806,7 +1807,7 @@ export type SettingAttribute = SettingAttribute$instance;
 export interface SettingChangingEventArgs$instance extends CancelEventArgs {
     readonly __tsonic_type_System_Configuration_SettingChangingEventArgs: never;
 
-    readonly NewValue: unknown;
+    readonly NewValue: JsValue;
     readonly SettingClass: string;
     readonly SettingKey: string;
     readonly SettingName: string;
@@ -1814,7 +1815,7 @@ export interface SettingChangingEventArgs$instance extends CancelEventArgs {
 
 
 export const SettingChangingEventArgs: {
-    new(settingName: string, settingClass: string, settingKey: string, newValue: unknown, cancel: boolean): SettingChangingEventArgs;
+    new(settingName: string, settingClass: string, settingKey: string, newValue: JsValue, cancel: boolean): SettingChangingEventArgs;
 };
 
 
@@ -1827,7 +1828,7 @@ export interface SettingElement$instance extends ConfigurationElement {
     readonly Properties: ConfigurationPropertyCollection;
     SerializeAs: SettingsSerializeAs;
     Value: SettingValueElement;
-    Equals(settings: unknown): boolean;
+    Equals(settings: JsValue): boolean;
     GetHashCode(): int;
 }
 
@@ -1853,7 +1854,7 @@ export interface SettingElementCollection$instance extends ConfigurationElementC
     CreateNewElement(): ConfigurationElement;
     CreateNewElement(elementName: string): ConfigurationElement;
     Get(elementKey: string): SettingElement;
-    GetElementKey(element: ConfigurationElement): unknown;
+    GetElementKey(element: ConfigurationElement): JsValue;
     Remove(element: SettingElement): void;
 }
 
@@ -1904,7 +1905,7 @@ export const SettingsBase: (abstract new() => SettingsBase) & {
 };
 
 
-export type SettingsBase = SettingsBase$instance & { [propertyName: string]: unknown; };
+export type SettingsBase = SettingsBase$instance & { [propertyName: string]: JsValue; };
 
 export interface SettingsContext$instance extends Hashtable {
     readonly __tsonic_type_System_Configuration_SettingsContext: never;
@@ -2000,7 +2001,7 @@ export interface SettingsProperty$instance {
     readonly __tsonic_type_System_Configuration_SettingsProperty: never;
 
     Attributes: SettingsAttributeDictionary;
-    DefaultValue: unknown;
+    DefaultValue: JsValue;
     IsReadOnly: boolean;
     Name: string;
     PropertyType: Type;
@@ -2013,7 +2014,7 @@ export interface SettingsProperty$instance {
 
 export const SettingsProperty: {
     new(name: string): SettingsProperty;
-    new(name: string, propertyType: Type, provider: SettingsProvider, isReadOnly: boolean, defaultValue: unknown, serializeAs: SettingsSerializeAs, attributes: SettingsAttributeDictionary, throwOnErrorDeserializing: boolean, throwOnErrorSerializing: boolean): SettingsProperty;
+    new(name: string, propertyType: Type, provider: SettingsProvider, isReadOnly: boolean, defaultValue: JsValue, serializeAs: SettingsSerializeAs, attributes: SettingsAttributeDictionary, throwOnErrorDeserializing: boolean, throwOnErrorSerializing: boolean): SettingsProperty;
     new(propertyToCopy: SettingsProperty): SettingsProperty;
 };
 
@@ -2029,10 +2030,10 @@ export interface SettingsPropertyCollection$instance {
 
     readonly Count: int;
     readonly IsSynchronized: boolean;
-    readonly SyncRoot: unknown;
+    readonly SyncRoot: JsValue;
     Add(property: SettingsProperty): void;
     Clear(): void;
-    Clone(): unknown;
+    Clone(): JsValue;
     CopyTo(array: ClrArray, index: int): void;
     GetEnumerator(): IEnumerator;
     OnAdd(property: SettingsProperty): void;
@@ -2094,8 +2095,8 @@ export interface SettingsPropertyValue$instance {
     IsDirty: boolean;
     readonly Name: string;
     Property: SettingsProperty;
-    PropertyValue: unknown;
-    SerializedValue: unknown;
+    PropertyValue: JsValue;
+    SerializedValue: JsValue;
     UsingDefaultValue: boolean;
 }
 
@@ -2116,10 +2117,10 @@ export interface SettingsPropertyValueCollection$instance {
 
     readonly Count: int;
     readonly IsSynchronized: boolean;
-    readonly SyncRoot: unknown;
+    readonly SyncRoot: JsValue;
     Add(property: SettingsPropertyValue): void;
     Clear(): void;
-    Clone(): unknown;
+    Clone(): JsValue;
     CopyTo(array: ClrArray, index: int): void;
     GetEnumerator(): IEnumerator;
     Remove(name: string): void;
@@ -2218,7 +2219,7 @@ export interface SettingValueElement$instance extends ConfigurationElement {
     readonly Properties: ConfigurationPropertyCollection;
     ValueXml: XmlNode;
     DeserializeElement(reader: XmlReader, serializeCollectionKey: boolean): void;
-    Equals(settingValue: unknown): boolean;
+    Equals(settingValue: JsValue): boolean;
     GetHashCode(): int;
     IsModified(): boolean;
     Reset(parentElement: ConfigurationElement): void;
@@ -2240,7 +2241,7 @@ export interface SingleTagSectionHandler$instance extends IConfigurationSectionH
 
     readonly __tsonic_iface_System_Configuration_IConfigurationSectionHandler: never;
 
-    Create(parent: unknown, context: unknown, section: XmlNode): unknown;
+    Create(parent: JsValue, context: JsValue, section: XmlNode): JsValue;
 }
 
 
@@ -2274,7 +2275,7 @@ export interface StringValidator$instance extends ConfigurationValidatorBase {
     readonly __tsonic_type_System_Configuration_StringValidator: never;
 
     CanValidate(type: Type): boolean;
-    Validate(value: unknown): void;
+    Validate(value: JsValue): void;
 }
 
 
@@ -2308,7 +2309,7 @@ export interface SubclassTypeValidator$instance extends ConfigurationValidatorBa
     readonly __tsonic_type_System_Configuration_SubclassTypeValidator: never;
 
     CanValidate(type: Type): boolean;
-    Validate(value: unknown): void;
+    Validate(value: JsValue): void;
 }
 
 
@@ -2337,8 +2338,8 @@ export type SubclassTypeValidatorAttribute = SubclassTypeValidatorAttribute$inst
 export interface TimeSpanMinutesConverter$instance extends ConfigurationConverterBase {
     readonly __tsonic_type_System_Configuration_TimeSpanMinutesConverter: never;
 
-    ConvertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown): unknown;
-    ConvertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type): unknown;
+    ConvertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: JsValue): JsValue;
+    ConvertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: JsValue, type: Type): JsValue;
 }
 
 
@@ -2352,8 +2353,8 @@ export type TimeSpanMinutesConverter = TimeSpanMinutesConverter$instance;
 export interface TimeSpanMinutesOrInfiniteConverter$instance extends TimeSpanMinutesConverter {
     readonly __tsonic_type_System_Configuration_TimeSpanMinutesOrInfiniteConverter: never;
 
-    ConvertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown): unknown;
-    ConvertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type): unknown;
+    ConvertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: JsValue): JsValue;
+    ConvertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: JsValue, type: Type): JsValue;
 }
 
 
@@ -2367,8 +2368,8 @@ export type TimeSpanMinutesOrInfiniteConverter = TimeSpanMinutesOrInfiniteConver
 export interface TimeSpanSecondsConverter$instance extends ConfigurationConverterBase {
     readonly __tsonic_type_System_Configuration_TimeSpanSecondsConverter: never;
 
-    ConvertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown): unknown;
-    ConvertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type): unknown;
+    ConvertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: JsValue): JsValue;
+    ConvertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: JsValue, type: Type): JsValue;
 }
 
 
@@ -2382,8 +2383,8 @@ export type TimeSpanSecondsConverter = TimeSpanSecondsConverter$instance;
 export interface TimeSpanSecondsOrInfiniteConverter$instance extends TimeSpanSecondsConverter {
     readonly __tsonic_type_System_Configuration_TimeSpanSecondsOrInfiniteConverter: never;
 
-    ConvertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown): unknown;
-    ConvertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type): unknown;
+    ConvertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: JsValue): JsValue;
+    ConvertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: JsValue, type: Type): JsValue;
 }
 
 
@@ -2398,7 +2399,7 @@ export interface TimeSpanValidator$instance extends ConfigurationValidatorBase {
     readonly __tsonic_type_System_Configuration_TimeSpanValidator: never;
 
     CanValidate(type: Type): boolean;
-    Validate(value: unknown): void;
+    Validate(value: JsValue): void;
 }
 
 
@@ -2435,8 +2436,8 @@ export type TimeSpanValidatorAttribute = TimeSpanValidatorAttribute$instance;
 export interface TypeNameConverter$instance extends ConfigurationConverterBase {
     readonly __tsonic_type_System_Configuration_TypeNameConverter: never;
 
-    ConvertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown): unknown;
-    ConvertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type): unknown;
+    ConvertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: JsValue): JsValue;
+    ConvertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: JsValue, type: Type): JsValue;
 }
 
 
@@ -2493,8 +2494,8 @@ export type UserSettingsGroup = UserSettingsGroup$instance;
 export interface WhiteSpaceTrimStringConverter$instance extends ConfigurationConverterBase {
     readonly __tsonic_type_System_Configuration_WhiteSpaceTrimStringConverter: never;
 
-    ConvertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown): unknown;
-    ConvertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type): unknown;
+    ConvertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: JsValue): JsValue;
+    ConvertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: JsValue, type: Type): JsValue;
 }
 
 
@@ -2508,7 +2509,7 @@ export type WhiteSpaceTrimStringConverter = WhiteSpaceTrimStringConverter$instan
 export abstract class ConfigurationManager$instance {
     static readonly AppSettings: NameValueCollection;
     static readonly ConnectionStrings: ConnectionStringSettingsCollection;
-    static GetSection(sectionName: string): unknown;
+    static GetSection(sectionName: string): JsValue;
     static OpenExeConfiguration(userLevel: ConfigurationUserLevel): Configuration;
     static OpenExeConfiguration(exePath: string): Configuration;
     static OpenMachineConfiguration(): Configuration;

@@ -2,11 +2,12 @@
 // Namespace: System.Configuration.Provider
 // Assembly: System.Configuration.ConfigurationManager
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
-import type { ProtectedConfigurationProvider } from "../../System.Configuration/internal/index.js";
+import type { SettingsProvider } from "../../System.Configuration/internal/index.js";
 import type { NameValueCollection } from "@tsonic/dotnet/System.Collections.Specialized/internal/index.js";
 import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections/internal/index.js";
 import type { ICollection, IEnumerable, IEnumerator } from "@tsonic/dotnet/System.Collections/internal/index.js";
@@ -38,7 +39,7 @@ export interface ProviderCollection$instance {
 
     readonly Count: int;
     readonly IsSynchronized: boolean;
-    readonly SyncRoot: unknown;
+    readonly SyncRoot: JsValue;
     Add(provider: ProviderBase): void;
     Clear(): void;
     CopyTo(array: ProviderBase[], index: int): void;

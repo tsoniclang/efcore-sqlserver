@@ -2,8 +2,9 @@
 // Namespace: Microsoft.Data.SqlTypes
 // Assembly: Microsoft.Data.SqlClient
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import * as System_Data_SqlTypes_Internal from "@tsonic/dotnet/System.Data.SqlTypes/internal/index.js";
@@ -14,7 +15,7 @@ import type { JsonDocument } from "@tsonic/dotnet/System.Text.Json/internal/inde
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { AsyncCallback, Boolean as ClrBoolean, Byte, IAsyncDisposable, IAsyncResult, IDisposable, Int32, Int64, Nullable_1, Object as ClrObject, ReadOnlyMemory_1, String as ClrString, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface SqlVector_1$instance<T extends unknown> {
+export interface SqlVector_1$instance<T extends NonNullable<JsValue>> {
     readonly __tsonic_type_Microsoft_Data_SqlTypes_SqlVector_1: never;
 
     readonly __tsonic_iface_System_Data_SqlTypes_INullable: never;
@@ -26,9 +27,9 @@ export interface SqlVector_1$instance<T extends unknown> {
 
 
 export const SqlVector_1: {
-    new<T extends unknown>(memory: ReadOnlyMemory_1<T>): SqlVector_1<T>;
-    readonly Null: unknown;
-    CreateNull<T extends unknown>(length: int): SqlVector_1<T>;
+    new<T extends NonNullable<JsValue>>(memory: ReadOnlyMemory_1<T>): SqlVector_1<T>;
+    readonly Null: <T extends NonNullable<JsValue>>() => Nullable_1<SqlVector_1<T>>;
+    CreateNull<T extends NonNullable<JsValue>>(length: int): SqlVector_1<T>;
 };
 
 
@@ -50,8 +51,8 @@ export interface SqlFileStream$instance extends Stream {
     readonly ReadTimeout: int;
     readonly TransactionContext: byte[];
     readonly WriteTimeout: int;
-    BeginRead(buffer: byte[], offset: int, count: int, callback: AsyncCallback, state: unknown): IAsyncResult;
-    BeginWrite(buffer: byte[], offset: int, count: int, callback: AsyncCallback, state: unknown): IAsyncResult;
+    BeginRead(buffer: byte[], offset: int, count: int, callback: AsyncCallback, state: JsValue): IAsyncResult;
+    BeginWrite(buffer: byte[], offset: int, count: int, callback: AsyncCallback, state: JsValue): IAsyncResult;
     EndRead(asyncResult: IAsyncResult): int;
     EndWrite(asyncResult: IAsyncResult): void;
     Flush(): void;

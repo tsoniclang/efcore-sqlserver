@@ -125,7 +125,10 @@
           "isOverride": false,
           "visibility": "Public",
           "declaringClrType": "Microsoft.Data.SqlTypes.SqlVector\u00601",
-          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "emitSemantics": {
+            "callableStaticAccessorKind": "property"
+          }
         }
       ],
       "fields": [],

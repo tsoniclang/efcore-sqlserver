@@ -2,11 +2,9 @@
 // Namespace: Microsoft.Identity.Client
 // Assembly: Microsoft.Identity.Client
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
-// Import support types from @tsonic/core
-import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import type { ManagedIdentityId, PoPAuthenticationConfiguration } from "../../Microsoft.Identity.Client.AppConfig/internal/index.js";
@@ -45,14 +43,6 @@ export enum AzureCloudInstance {
     AzureChina = 2,
     AzureGermany = 3,
     AzureUsGovernment = 4
-}
-
-
-export enum BrokerOptions_OperatingSystems {
-    None = 0,
-    Windows = 1,
-    Linux = 2,
-    OSX = 4
 }
 
 
@@ -137,7 +127,7 @@ export interface IAppConfig$instance {
     readonly LegacyCacheCompatibilityEnabled: boolean;
     readonly ClientSecret: string;
     readonly ClientCredentialCertificate: X509Certificate2;
-    readonly ParentActivityOrWindowFunc: Func_1<unknown>;
+    readonly ParentActivityOrWindowFunc: Func_1<JsValue>;
 }
 
 
@@ -319,7 +309,7 @@ export type ITokenCacheSerializer = ITokenCacheSerializer$instance;
 export interface Prompt$instance {
     readonly __tsonic_type_Microsoft_Identity_Client_Prompt: never;
 
-    Equals(obj: unknown): boolean;
+    Equals(obj: JsValue): boolean;
     GetHashCode(): int;
 }
 
@@ -463,7 +453,7 @@ export interface AccountId$instance {
     readonly Identifier: string;
     readonly ObjectId: string;
     readonly TenantId: string;
-    Equals(obj: unknown): boolean;
+    Equals(obj: JsValue): boolean;
     GetHashCode(): int;
     ToString(): string;
 }
@@ -591,7 +581,7 @@ export interface AcquireTokenInteractiveParameterBuilder$instance extends Abstra
     WithEmbeddedWebViewOptions(options: EmbeddedWebViewOptions): AcquireTokenInteractiveParameterBuilder;
     WithExtraScopesToConsent(extraScopesToConsent: IEnumerable_1<System_Internal.String>): AcquireTokenInteractiveParameterBuilder;
     WithLoginHint(loginHint: string): AcquireTokenInteractiveParameterBuilder;
-    WithParentActivityOrWindow(parent: unknown): AcquireTokenInteractiveParameterBuilder;
+    WithParentActivityOrWindow(parent: JsValue): AcquireTokenInteractiveParameterBuilder;
     WithParentActivityOrWindow(window: nint): AcquireTokenInteractiveParameterBuilder;
     WithPrompt(prompt: Prompt): AcquireTokenInteractiveParameterBuilder;
     WithProofOfPossession(nonce: string, httpMethod: HttpMethod, requestUri: Uri): AcquireTokenInteractiveParameterBuilder;
@@ -869,6 +859,14 @@ export const BrokerOptions: {
 
 
 export type BrokerOptions = BrokerOptions$instance;
+
+export enum BrokerOptions_OperatingSystems {
+    None = 0,
+    Windows = 1,
+    Linux = 2,
+    OSX = 4
+}
+
 
 export interface CacheOptions$instance {
     readonly __tsonic_type_Microsoft_Identity_Client_CacheOptions: never;
@@ -1339,7 +1337,7 @@ export interface PublicClientApplicationBuilder$instance extends AbstractApplica
     WithKerberosTicketClaim(servicePrincipalName: string, ticketContainer: KerberosTicketContainer): PublicClientApplicationBuilder;
     WithMultiCloudSupport(enableMultiCloudSupport: boolean): PublicClientApplicationBuilder;
     WithOidcAuthority(authorityUri: string): PublicClientApplicationBuilder;
-    WithParentActivityOrWindow(parentActivityOrWindowFunc: Func_1<unknown>): PublicClientApplicationBuilder;
+    WithParentActivityOrWindow(parentActivityOrWindowFunc: Func_1<JsValue>): PublicClientApplicationBuilder;
     WithParentActivityOrWindow(windowFunc: Func_1<System_Internal.IntPtr>): PublicClientApplicationBuilder;
     WithWindowsBrokerOptions(options: WindowsBrokerOptions): PublicClientApplicationBuilder;
 }

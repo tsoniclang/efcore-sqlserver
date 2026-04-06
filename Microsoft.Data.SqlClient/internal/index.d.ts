@@ -2,11 +2,9 @@
 // Namespace: Microsoft.Data.SqlClient
 // Assembly: Microsoft.Data.SqlClient
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
-// Import support types from @tsonic/core
-import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import type { SqlNotificationRequest } from "../../Microsoft.Data.Sql/internal/index.js";
@@ -162,19 +160,19 @@ export enum SqlNotificationType {
 }
 
 
-export type OnChangeEventHandler = (sender: unknown, e: SqlNotificationEventArgs) => void;
+export type OnChangeEventHandler = (sender: JsValue, e: SqlNotificationEventArgs) => void;
 
 
-export type SqlInfoMessageEventHandler = (sender: unknown, e: SqlInfoMessageEventArgs) => void;
+export type SqlInfoMessageEventHandler = (sender: JsValue, e: SqlInfoMessageEventArgs) => void;
 
 
-export type SqlRowsCopiedEventHandler = (sender: unknown, e: SqlRowsCopiedEventArgs) => void;
+export type SqlRowsCopiedEventHandler = (sender: JsValue, e: SqlRowsCopiedEventArgs) => void;
 
 
-export type SqlRowUpdatedEventHandler = (sender: unknown, e: SqlRowUpdatedEventArgs) => void;
+export type SqlRowUpdatedEventHandler = (sender: JsValue, e: SqlRowUpdatedEventArgs) => void;
 
 
-export type SqlRowUpdatingEventHandler = (sender: unknown, e: SqlRowUpdatingEventArgs) => void;
+export type SqlRowUpdatingEventHandler = (sender: JsValue, e: SqlRowUpdatingEventArgs) => void;
 
 
 export interface ActiveDirectoryAuthenticationProvider$instance extends SqlAuthenticationProvider {
@@ -289,8 +287,8 @@ export interface SqlBatch$instance extends DbBatch {
     ExecuteNonQueryAsync(cancellationToken?: CancellationToken): Task_1<System_Internal.Int32>;
     ExecuteReader(): SqlDataReader;
     ExecuteReaderAsync(cancellationToken?: CancellationToken): Task_1<SqlDataReader>;
-    ExecuteScalar(): unknown;
-    ExecuteScalarAsync(cancellationToken?: CancellationToken): Task_1<unknown>;
+    ExecuteScalar(): JsValue;
+    ExecuteScalarAsync(cancellationToken?: CancellationToken): Task_1<JsValue>;
     Prepare(): void;
     PrepareAsync(cancellationToken?: CancellationToken): Task;
 }
@@ -633,13 +631,13 @@ export interface SqlCommand$instance extends DbCommand {
     Transaction: SqlTransaction;
     UpdatedRowSource: UpdateRowSource;
     BeginExecuteNonQuery(): IAsyncResult;
-    BeginExecuteNonQuery(callback: AsyncCallback, stateObject: unknown): IAsyncResult;
+    BeginExecuteNonQuery(callback: AsyncCallback, stateObject: JsValue): IAsyncResult;
     BeginExecuteReader(): IAsyncResult;
-    BeginExecuteReader(callback: AsyncCallback, stateObject: unknown): IAsyncResult;
-    BeginExecuteReader(callback: AsyncCallback, stateObject: unknown, behavior: CommandBehavior): IAsyncResult;
+    BeginExecuteReader(callback: AsyncCallback, stateObject: JsValue): IAsyncResult;
+    BeginExecuteReader(callback: AsyncCallback, stateObject: JsValue, behavior: CommandBehavior): IAsyncResult;
     BeginExecuteReader(behavior: CommandBehavior): IAsyncResult;
     BeginExecuteXmlReader(): IAsyncResult;
-    BeginExecuteXmlReader(callback: AsyncCallback, stateObject: unknown): IAsyncResult;
+    BeginExecuteXmlReader(callback: AsyncCallback, stateObject: JsValue): IAsyncResult;
     Cancel(): void;
     Clone(): SqlCommand;
     CreateDbParameter(): DbParameter;
@@ -658,8 +656,8 @@ export interface SqlCommand$instance extends DbCommand {
     ExecuteReaderAsync(behavior: CommandBehavior): Task_1<SqlDataReader>;
     ExecuteReaderAsync(behavior: CommandBehavior, cancellationToken: CancellationToken): Task_1<SqlDataReader>;
     ExecuteReaderAsync(cancellationToken: CancellationToken): Task_1<SqlDataReader>;
-    ExecuteScalar(): unknown;
-    ExecuteScalarAsync(cancellationToken: CancellationToken): Task_1<unknown>;
+    ExecuteScalar(): JsValue;
+    ExecuteScalarAsync(cancellationToken: CancellationToken): Task_1<JsValue>;
     ExecuteXmlReader(): XmlReader;
     ExecuteXmlReaderAsync(): Task_1<XmlReader>;
     ExecuteXmlReaderAsync(cancellationToken: CancellationToken): Task_1<XmlReader>;
@@ -783,7 +781,7 @@ export interface SqlConnection$instance extends DbConnection {
     OpenAsync(cancellationToken: CancellationToken): Task;
     RegisterColumnEncryptionKeyStoreProvidersOnConnection(customProviders: IDictionary_2<System_Internal.String, SqlColumnEncryptionKeyStoreProvider>): void;
     ResetStatistics(): void;
-    RetrieveInternalInfo(): IDictionary_2<System_Internal.String, unknown>;
+    RetrieveInternalInfo(): IDictionary_2<System_Internal.String, JsValue>;
     RetrieveStatistics(): IDictionary;
 }
 
@@ -808,7 +806,7 @@ export type SqlConnection = SqlConnection$instance;
 export interface SqlConnectionEncryptOption$instance {
     readonly __tsonic_type_Microsoft_Data_SqlClient_SqlConnectionEncryptOption: never;
 
-    Equals(obj: unknown): boolean;
+    Equals(obj: JsValue): boolean;
     GetHashCode(): int;
     ToString(): string;
 }
@@ -881,7 +879,7 @@ export interface SqlConnectionStringBuilder$instance extends DbConnectionStringB
     ContainsKey(keyword: string): boolean;
     Remove(keyword: string): boolean;
     ShouldSerialize(keyword: string): boolean;
-    TryGetValue(keyword: string, value: unknown): boolean;
+    TryGetValue(keyword: string, value: JsValue): boolean;
 }
 
 
@@ -891,7 +889,7 @@ export const SqlConnectionStringBuilder: {
 };
 
 
-export type SqlConnectionStringBuilder = SqlConnectionStringBuilder$instance & { [keyword: string]: unknown; };
+export type SqlConnectionStringBuilder = SqlConnectionStringBuilder$instance & { [keyword: string]: JsValue; };
 
 export interface SqlCredential$instance {
     readonly __tsonic_type_Microsoft_Data_SqlClient_SqlCredential: never;
@@ -955,8 +953,8 @@ export interface SqlDataReader$instance extends DbDataReader {
     readonly SensitivityClassification: SensitivityClassification;
     readonly VisibleFieldCount: int;
     Close(): void;
-    get_Item(i: int): unknown;
-    get_Item(name: string): unknown;
+    get_Item(i: int): JsValue;
+    get_Item(name: string): JsValue;
     GetBoolean(i: int): boolean;
     GetByte(i: int): byte;
     GetBytes(i: int, dataIndex: long, buffer: byte[], bufferIndex: int, length: int): long;
@@ -980,8 +978,8 @@ export interface SqlDataReader$instance extends DbDataReader {
     GetName(i: int): string;
     GetOrdinal(name: string): int;
     GetProviderSpecificFieldType(i: int): Type;
-    GetProviderSpecificValue(i: int): unknown;
-    GetProviderSpecificValues(values: unknown[]): int;
+    GetProviderSpecificValue(i: int): JsValue;
+    GetProviderSpecificValues(values: JsValue[]): int;
     GetSchemaTable(): DataTable;
     GetSqlBinary(i: int): SqlBinary;
     GetSqlBoolean(i: int): SqlBoolean;
@@ -999,16 +997,16 @@ export interface SqlDataReader$instance extends DbDataReader {
     GetSqlMoney(i: int): SqlMoney;
     GetSqlSingle(i: int): SqlSingle;
     GetSqlString(i: int): SqlString;
-    GetSqlValue(i: int): unknown;
-    GetSqlValues(values: unknown[]): int;
-    GetSqlVector<T extends unknown>(i: int): SqlVector_1<T>;
+    GetSqlValue(i: int): JsValue;
+    GetSqlValues(values: JsValue[]): int;
+    GetSqlVector<T extends NonNullable<JsValue>>(i: int): SqlVector_1<T>;
     GetSqlXml(i: int): SqlXml;
     GetStream(i: int): Stream;
     GetString(i: int): string;
     GetTextReader(i: int): TextReader;
     GetTimeSpan(i: int): TimeSpan;
-    GetValue(i: int): unknown;
-    GetValues(values: unknown[]): int;
+    GetValue(i: int): JsValue;
+    GetValues(values: JsValue[]): int;
     GetXmlReader(i: int): XmlReader;
     IsDBNull(i: int): boolean;
     IsDBNullAsync(i: int, cancellationToken: CancellationToken): Task_1<System_Internal.Boolean>;
@@ -1168,10 +1166,10 @@ export interface SqlParameter$instance extends DbParameter {
     SourceColumnNullMapping: boolean;
     SourceVersion: DataRowVersion;
     SqlDbType: SqlDbType;
-    SqlValue: unknown;
+    SqlValue: JsValue;
     TypeName: string;
     UdtTypeName: string;
-    Value: unknown;
+    Value: JsValue;
     XmlSchemaCollectionDatabase: string;
     XmlSchemaCollectionName: string;
     XmlSchemaCollectionOwningSchema: string;
@@ -1185,10 +1183,10 @@ export const SqlParameter: {
     new(): SqlParameter;
     new(parameterName: string, dbType: SqlDbType): SqlParameter;
     new(parameterName: string, dbType: SqlDbType, size: int): SqlParameter;
-    new(parameterName: string, dbType: SqlDbType, size: int, direction: ParameterDirection, isNullable: boolean, precision: byte, scale: byte, sourceColumn: string, sourceVersion: DataRowVersion, value: unknown): SqlParameter;
-    new(parameterName: string, dbType: SqlDbType, size: int, direction: ParameterDirection, precision: byte, scale: byte, sourceColumn: string, sourceVersion: DataRowVersion, sourceColumnNullMapping: boolean, value: unknown, xmlSchemaCollectionDatabase: string, xmlSchemaCollectionOwningSchema: string, xmlSchemaCollectionName: string): SqlParameter;
+    new(parameterName: string, dbType: SqlDbType, size: int, direction: ParameterDirection, isNullable: boolean, precision: byte, scale: byte, sourceColumn: string, sourceVersion: DataRowVersion, value: JsValue): SqlParameter;
+    new(parameterName: string, dbType: SqlDbType, size: int, direction: ParameterDirection, precision: byte, scale: byte, sourceColumn: string, sourceVersion: DataRowVersion, sourceColumnNullMapping: boolean, value: JsValue, xmlSchemaCollectionDatabase: string, xmlSchemaCollectionOwningSchema: string, xmlSchemaCollectionName: string): SqlParameter;
     new(parameterName: string, dbType: SqlDbType, size: int, sourceColumn: string): SqlParameter;
-    new(parameterName: string, value: unknown): SqlParameter;
+    new(parameterName: string, value: JsValue): SqlParameter;
 };
 
 
@@ -1205,18 +1203,18 @@ export interface SqlParameterCollection$instance extends DbParameterCollection {
     readonly Count: int;
     readonly IsFixedSize: boolean;
     readonly IsReadOnly: boolean;
-    readonly SyncRoot: unknown;
+    readonly SyncRoot: JsValue;
     Add(value: SqlParameter): SqlParameter;
-    Add(value: unknown): int;
+    Add(value: JsValue): int;
     Add(parameterName: string, sqlDbType: SqlDbType): SqlParameter;
     Add(parameterName: string, sqlDbType: SqlDbType, size: int): SqlParameter;
     Add(parameterName: string, sqlDbType: SqlDbType, size: int, sourceColumn: string): SqlParameter;
     AddRange(values: SqlParameter[]): void;
     AddRange(values: ClrArray): void;
-    AddWithValue(parameterName: string, value: unknown): SqlParameter;
+    AddWithValue(parameterName: string, value: JsValue): SqlParameter;
     Clear(): void;
     Contains(value: SqlParameter): boolean;
-    Contains(value: unknown): boolean;
+    Contains(value: JsValue): boolean;
     Contains(value: string): boolean;
     CopyTo(array: SqlParameter[], index: int): void;
     CopyTo(array: ClrArray, index: int): void;
@@ -1226,12 +1224,12 @@ export interface SqlParameterCollection$instance extends DbParameterCollection {
     GetParameter(index: int): DbParameter;
     GetParameter(parameterName: string): DbParameter;
     IndexOf(value: SqlParameter): int;
-    IndexOf(value: unknown): int;
+    IndexOf(value: JsValue): int;
     IndexOf(parameterName: string): int;
     Insert(index: int, value: SqlParameter): void;
-    Insert(index: int, value: unknown): void;
+    Insert(index: int, value: JsValue): void;
     Remove(value: SqlParameter): void;
-    Remove(value: unknown): void;
+    Remove(value: JsValue): void;
     RemoveAt(index: int): void;
     RemoveAt(parameterName: string): void;
     set_Item(index: int, value: SqlParameter): void;
@@ -1276,7 +1274,7 @@ export interface SqlRetryIntervalBaseEnumerator$instance {
     GapTimeInterval: TimeSpan;
     MaxTimeInterval: TimeSpan;
     MinTimeInterval: TimeSpan;
-    Clone(): unknown;
+    Clone(): JsValue;
     Dispose(): void;
     GetNextInterval(): TimeSpan;
     MoveNext(): boolean;
@@ -1300,9 +1298,9 @@ export interface SqlRetryLogicBase$instance {
     NumberOfTries: int;
     RetryIntervalEnumerator: SqlRetryIntervalBaseEnumerator;
     TransientPredicate: Predicate_1<Exception>;
-    Clone(): unknown;
+    Clone(): JsValue;
     Reset(): void;
-    RetryCondition(sender: unknown): boolean;
+    RetryCondition(sender: JsValue): boolean;
     TryNextInterval(intervalTime: TimeSpan): boolean;
 }
 
@@ -1318,9 +1316,9 @@ export interface SqlRetryLogicBaseProvider$instance {
 
     Retrying: EventHandler_1<SqlRetryingEventArgs>;
     RetryLogic: SqlRetryLogicBase;
-    Execute<TResult>(sender: unknown, function_: Func_1<TResult>): TResult;
-    ExecuteAsync(sender: unknown, function_: Func_1<Task>, cancellationToken?: CancellationToken): Task;
-    ExecuteAsync<TResult>(sender: unknown, function_: Func_1<Task_1<TResult>>, cancellationToken?: CancellationToken): Task_1<TResult>;
+    Execute<TResult>(sender: JsValue, function_: Func_1<TResult>): TResult;
+    ExecuteAsync(sender: JsValue, function_: Func_1<Task>, cancellationToken?: CancellationToken): Task;
+    ExecuteAsync<TResult>(sender: JsValue, function_: Func_1<Task_1<TResult>>, cancellationToken?: CancellationToken): Task_1<TResult>;
 }
 
 

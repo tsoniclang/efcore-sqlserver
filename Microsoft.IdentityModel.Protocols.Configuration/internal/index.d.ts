@@ -2,8 +2,9 @@
 // Namespace: Microsoft.IdentityModel.Protocols.Configuration
 // Assembly: Microsoft.IdentityModel.Protocols
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import * as Microsoft_IdentityModel_Tokens_Configuration_Internal from "../../Microsoft.IdentityModel.Tokens.Configuration/internal/index.js";

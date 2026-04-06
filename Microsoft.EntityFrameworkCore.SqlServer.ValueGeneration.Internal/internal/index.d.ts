@@ -2,11 +2,9 @@
 // Namespace: Microsoft.EntityFrameworkCore.SqlServer.ValueGeneration.Internal
 // Assembly: Microsoft.EntityFrameworkCore.SqlServer
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
-// Import support types from @tsonic/core
-import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import type { ISqlServerConnection } from "../../Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal/internal/index.js";
@@ -24,7 +22,7 @@ import type { HiLoValueGenerator_1, HiLoValueGeneratorState, IValueGeneratorCach
 export interface ISqlServerSequenceValueGeneratorFactory$instance {
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_SqlServer_ValueGeneration_Internal_ISqlServerSequenceValueGeneratorFactory: never;
 
-    TryCreate(property: IProperty, clrType: Type, generatorState: SqlServerSequenceValueGeneratorState, connection: ISqlServerConnection, rawSqlCommandBuilder: IRawSqlCommandBuilder, commandLogger: IRelationalCommandDiagnosticsLogger): ValueGenerator | undefined;
+    TryCreate(property: IProperty, clrType: Type, generatorState: SqlServerSequenceValueGeneratorState, connection: ISqlServerConnection, rawSqlCommandBuilder: IRawSqlCommandBuilder, commandLogger: IRelationalCommandDiagnosticsLogger): ValueGenerator | null;
 }
 
 
@@ -62,7 +60,7 @@ export interface SqlServerSequenceValueGeneratorFactory$instance extends ISqlSer
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_SqlServer_ValueGeneration_Internal_ISqlServerSequenceValueGeneratorFactory: never;
 
-    TryCreate(property: IProperty, type: Type, generatorState: SqlServerSequenceValueGeneratorState, connection: ISqlServerConnection, rawSqlCommandBuilder: IRawSqlCommandBuilder, commandLogger: IRelationalCommandDiagnosticsLogger): ValueGenerator | undefined;
+    TryCreate(property: IProperty, type: Type, generatorState: SqlServerSequenceValueGeneratorState, connection: ISqlServerConnection, rawSqlCommandBuilder: IRawSqlCommandBuilder, commandLogger: IRelationalCommandDiagnosticsLogger): ValueGenerator | null;
 }
 
 
@@ -122,9 +120,9 @@ export interface SqlServerValueGeneratorSelector$instance extends RelationalValu
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_ValueGeneration_IValueGeneratorSelector: never;
 
     readonly Cache: ISqlServerValueGeneratorCache;
-    FindForType(property: IProperty, typeBase: ITypeBase, clrType: Type): ValueGenerator | undefined;
-    Select(property: IProperty, typeBase: ITypeBase): ValueGenerator | undefined;
-    TrySelect(property: IProperty, typeBase: ITypeBase, valueGenerator: ValueGenerator): boolean;
+    FindForType(property: IProperty, typeBase: ITypeBase, clrType: Type): ValueGenerator | null;
+    Select(property: IProperty, typeBase: ITypeBase): ValueGenerator | null;
+    TrySelect(property: IProperty, typeBase: ITypeBase, valueGenerator: ValueGenerator | null): boolean;
 }
 
 

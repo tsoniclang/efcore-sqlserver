@@ -26,17 +26,15 @@ import * as System_Security_Cryptography_X509Certificates from "@tsonic/dotnet/S
 import * as System_Threading from "@tsonic/dotnet/System.Threading/internal/index.js";
 import * as System_Threading_Tasks from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
 
-// Import primitive type aliases
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import sticky extension scope helper
 import type { Rewrap } from '@tsonic/core/lang.js';
 
 // Import CLR type aliases for generic type arguments
 import * as System_Internal from "../../System/internal/index.js";
-
-// Import unsafe type markers
-import type { ptr } from '@tsonic/core/types.js';
 
 // Internal helper types for sticky extension scopes
 type __TsonicExtMapOf<T> = T extends { __tsonic_ext?: infer M } ? M : {};
@@ -45,16 +43,16 @@ type __TsonicWithExt<TShape, K extends string, TApplier> = { __tsonic_ext?: __Ts
 
 // Extension method table for namespace: Azure
 interface __TsonicExtMethods_Azure {
-  ToDynamicFromJson(this: System.BinaryData): Rewrap<this, unknown>;
-  ToDynamicFromJson(this: System.BinaryData, propertyNameFormat: Azure_Core_Serialization.JsonPropertyNames, dateTimeFormat?: string): Rewrap<this, unknown>;
-  ToObject<T>(this: System.BinaryData, serializer: Azure_Core_Serialization.ObjectSerializer, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, T | undefined>;
+  ToDynamicFromJson(this: System.BinaryData): Rewrap<this, JsValue>;
+  ToDynamicFromJson(this: System.BinaryData, propertyNameFormat: Azure_Core_Serialization.JsonPropertyNames, dateTimeFormat?: string): Rewrap<this, JsValue>;
+  ToObject<T>(this: System.BinaryData, serializer: Azure_Core_Serialization.ObjectSerializer, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, T | null>;
   ToObjectAsync<T>(this: System.BinaryData, serializer: Azure_Core_Serialization.ObjectSerializer, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.ValueTask_1<T>>;
-  ToObjectFromJson(this: System.BinaryData): Rewrap<this, unknown | undefined>;
+  ToObjectFromJson(this: System.BinaryData): Rewrap<this, JsValue | null>;
 }
 
 // Generic helper type for extension methods in namespace: Azure
 interface __TsonicExtApplier_Azure {
-  __tsonic_shape: unknown;
+  __tsonic_shape: JsValue;
   __tsonic_type: __TsonicExtMethods_Azure;
 }
 
@@ -68,33 +66,33 @@ interface __TsonicExtMethods_Microsoft_EntityFrameworkCore {
   AtTimeZone(this: Microsoft_EntityFrameworkCore.DbFunctions, dateTime: System.DateTime, timeZone: string): Rewrap<this, System.DateTimeOffset>;
   AtTimeZone(this: Microsoft_EntityFrameworkCore.DbFunctions, dateTimeOffset: System.DateTimeOffset, timeZone: string): Rewrap<this, System.DateTimeOffset>;
   CanSetDataCompression(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, dataCompressionType: System.Nullable_1<Microsoft_EntityFrameworkCore.DataCompressionType>, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
-  CanSetDatabaseMaxSize(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder, maxSize: string, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
-  CanSetDefaultValue(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, value: unknown, defaultConstraintName: string, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
-  CanSetDefaultValueSql(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, sql: string, defaultConstraintName: string, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
+  CanSetDatabaseMaxSize(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder, maxSize: string | null, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
+  CanSetDefaultValue(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, value: JsValue | null, defaultConstraintName: string, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
+  CanSetDefaultValueSql(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, sql: string | null, defaultConstraintName: string, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
   CanSetFillFactor(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, fillFactor: System.Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
   CanSetFillFactor(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionKeyBuilder, fillFactor: System.Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
-  CanSetHiLoSequence(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder, name: string, schema: string, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
-  CanSetHiLoSequence(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, name: string, schema: string, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
+  CanSetHiLoSequence(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder, name: string | null, schema: string | null, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
+  CanSetHiLoSequence(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, name: string | null, schema: string | null, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
   CanSetHistoryTableName(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder, name: string, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
-  CanSetHistoryTableSchema(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder, schema: string, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
+  CanSetHistoryTableSchema(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder, schema: string | null, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
   CanSetIdentityColumnIncrement(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder, increment: System.Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
   CanSetIdentityColumnIncrement(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, increment: System.Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
   CanSetIdentityColumnIncrement(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, increment: System.Nullable_1<System_Internal.Int32>, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
   CanSetIdentityColumnSeed(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder, seed: System.Nullable_1<System_Internal.Int64>, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
   CanSetIdentityColumnSeed(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, seed: System.Nullable_1<System_Internal.Int64>, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
   CanSetIdentityColumnSeed(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, seed: System.Nullable_1<System_Internal.Int64>, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
-  CanSetIncludeProperties(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, propertyNames: System_Collections_Generic.IReadOnlyList_1<System_Internal.String>, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
+  CanSetIncludeProperties(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, propertyNames: System_Collections_Generic.IReadOnlyList_1<System_Internal.String> | null, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
   CanSetIsClustered(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, clustered: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
   CanSetIsClustered(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionKeyBuilder, clustered: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
   CanSetIsCreatedOnline(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, createdOnline: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
   CanSetIsMemoryOptimized(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder, memoryOptimized: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
   CanSetIsSparse(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, sparse: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
   CanSetIsTemporal(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder, temporal?: boolean, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
-  CanSetPerformanceLevelSql(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder, performanceLevel: string, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
-  CanSetPeriodEnd(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder, propertyName: string, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
-  CanSetPeriodStart(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder, propertyName: string, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
-  CanSetSequence(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, name: string, schema: string, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
-  CanSetServiceTierSql(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder, serviceTier: string, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
+  CanSetPerformanceLevelSql(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder, performanceLevel: string | null, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
+  CanSetPeriodEnd(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder, propertyName: string | null, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
+  CanSetPeriodStart(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder, propertyName: string | null, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
+  CanSetSequence(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, name: string | null, schema: string | null, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
+  CanSetServiceTierSql(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder, serviceTier: string | null, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
   CanSetSortInTempDb(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, sortInTempDb: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
   CanSetValueGenerationStrategy(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder, valueGenerationStrategy: System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.SqlServerValueGenerationStrategy>, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
   CanSetValueGenerationStrategy(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, valueGenerationStrategy: System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.SqlServerValueGenerationStrategy>, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
@@ -102,18 +100,18 @@ interface __TsonicExtMethods_Microsoft_EntityFrameworkCore {
   CanUseNamedDefaultConstraints(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder, value: boolean, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
   CanUseSqlOutputClause(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder, useSqlOutputClause: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
   CanUseSqlOutputClause(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder, useSqlOutputClause: System.Nullable_1<System_Internal.Boolean>, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
-  ConfigureSqlEngine(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder, sqlEngineOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqlEngineDbContextOptionsBuilder>): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
-  ConfigureSqlEngine<TContext extends Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>, sqlEngineOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqlEngineDbContextOptionsBuilder>): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>>;
-  Contains(this: Microsoft_EntityFrameworkCore.DbFunctions, propertyReference: unknown, searchCondition: string, languageTerm: int): Rewrap<this, boolean>;
-  Contains(this: Microsoft_EntityFrameworkCore.DbFunctions, propertyReference: unknown, searchCondition: string): Rewrap<this, boolean>;
-  DataLength(this: Microsoft_EntityFrameworkCore.DbFunctions, arg: string): Rewrap<this, System.Nullable_1<System_Internal.Int32>>;
+  ConfigureSqlEngine(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder, sqlEngineOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqlEngineDbContextOptionsBuilder> | null): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
+  ConfigureSqlEngine<TContext extends Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>, sqlEngineOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqlEngineDbContextOptionsBuilder> | null): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>>;
+  Contains(this: Microsoft_EntityFrameworkCore.DbFunctions, propertyReference: JsValue, searchCondition: string, languageTerm: int): Rewrap<this, boolean>;
+  Contains(this: Microsoft_EntityFrameworkCore.DbFunctions, propertyReference: JsValue, searchCondition: string): Rewrap<this, boolean>;
+  DataLength(this: Microsoft_EntityFrameworkCore.DbFunctions, arg: string | null): Rewrap<this, System.Nullable_1<System_Internal.Int32>>;
   DataLength(this: Microsoft_EntityFrameworkCore.DbFunctions, arg: System.Nullable_1<System_Internal.Boolean>): Rewrap<this, System.Nullable_1<System_Internal.Int32>>;
   DataLength(this: Microsoft_EntityFrameworkCore.DbFunctions, arg: System.Nullable_1<System_Internal.Double>): Rewrap<this, System.Nullable_1<System_Internal.Int32>>;
   DataLength(this: Microsoft_EntityFrameworkCore.DbFunctions, arg: System.Nullable_1<System_Internal.Decimal>): Rewrap<this, System.Nullable_1<System_Internal.Int32>>;
   DataLength(this: Microsoft_EntityFrameworkCore.DbFunctions, arg: System.Nullable_1<System.DateTime>): Rewrap<this, System.Nullable_1<System_Internal.Int32>>;
   DataLength(this: Microsoft_EntityFrameworkCore.DbFunctions, arg: System.Nullable_1<System.TimeSpan>): Rewrap<this, System.Nullable_1<System_Internal.Int32>>;
   DataLength(this: Microsoft_EntityFrameworkCore.DbFunctions, arg: System.Nullable_1<System.DateTimeOffset>): Rewrap<this, System.Nullable_1<System_Internal.Int32>>;
-  DataLength(this: Microsoft_EntityFrameworkCore.DbFunctions, arg: byte[]): Rewrap<this, System.Nullable_1<System_Internal.Int32>>;
+  DataLength(this: Microsoft_EntityFrameworkCore.DbFunctions, arg: byte[] | null): Rewrap<this, System.Nullable_1<System_Internal.Int32>>;
   DataLength(this: Microsoft_EntityFrameworkCore.DbFunctions, arg: System.Nullable_1<System.Guid>): Rewrap<this, System.Nullable_1<System_Internal.Int32>>;
   DateDiffDay(this: Microsoft_EntityFrameworkCore.DbFunctions, startDate: System.DateTime, endDate: System.DateTime): Rewrap<this, int>;
   DateDiffDay(this: Microsoft_EntityFrameworkCore.DbFunctions, startDate: System.Nullable_1<System.DateTime>, endDate: System.Nullable_1<System.DateTime>): Rewrap<this, System.Nullable_1<System_Internal.Int32>>;
@@ -203,20 +201,20 @@ interface __TsonicExtMethods_Microsoft_EntityFrameworkCore {
   DateTime2FromParts(this: Microsoft_EntityFrameworkCore.DbFunctions, year: int, month: int, day: int, hour: int, minute: int, second: int, fractions: int, precision: int): Rewrap<this, System.DateTime>;
   DateTimeFromParts(this: Microsoft_EntityFrameworkCore.DbFunctions, year: int, month: int, day: int, hour: int, minute: int, second: int, millisecond: int): Rewrap<this, System.DateTime>;
   DateTimeOffsetFromParts(this: Microsoft_EntityFrameworkCore.DbFunctions, year: int, month: int, day: int, hour: int, minute: int, second: int, fractions: int, hourOffset: int, minuteOffset: int, precision: int): Rewrap<this, System.DateTimeOffset>;
-  FindHiLoSequence(this: Microsoft_EntityFrameworkCore_Metadata.IProperty): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata.ISequence | undefined>;
-  FindHiLoSequence(this: Microsoft_EntityFrameworkCore_Metadata.IProperty, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata.ISequence | undefined>;
-  FindHiLoSequence(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata.IReadOnlySequence | undefined>;
-  FindHiLoSequence(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata.IReadOnlySequence | undefined>;
-  FindSequence(this: Microsoft_EntityFrameworkCore_Metadata.IProperty): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata.ISequence | undefined>;
-  FindSequence(this: Microsoft_EntityFrameworkCore_Metadata.IProperty, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata.ISequence | undefined>;
-  FindSequence(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata.IReadOnlySequence | undefined>;
-  FindSequence(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata.IReadOnlySequence | undefined>;
-  FreeText(this: Microsoft_EntityFrameworkCore.DbFunctions, propertyReference: unknown, freeText: string, languageTerm: int): Rewrap<this, boolean>;
-  FreeText(this: Microsoft_EntityFrameworkCore.DbFunctions, propertyReference: unknown, freeText: string): Rewrap<this, boolean>;
+  FindHiLoSequence(this: Microsoft_EntityFrameworkCore_Metadata.IProperty): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata.ISequence | null>;
+  FindHiLoSequence(this: Microsoft_EntityFrameworkCore_Metadata.IProperty, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata.ISequence | null>;
+  FindHiLoSequence(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata.IReadOnlySequence | null>;
+  FindHiLoSequence(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata.IReadOnlySequence | null>;
+  FindSequence(this: Microsoft_EntityFrameworkCore_Metadata.IProperty): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata.ISequence | null>;
+  FindSequence(this: Microsoft_EntityFrameworkCore_Metadata.IProperty, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata.ISequence | null>;
+  FindSequence(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata.IReadOnlySequence | null>;
+  FindSequence(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata.IReadOnlySequence | null>;
+  FreeText(this: Microsoft_EntityFrameworkCore.DbFunctions, propertyReference: JsValue, freeText: string, languageTerm: int): Rewrap<this, boolean>;
+  FreeText(this: Microsoft_EntityFrameworkCore.DbFunctions, propertyReference: JsValue, freeText: string): Rewrap<this, boolean>;
   GetDataCompression(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyIndex): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore.DataCompressionType>>;
   GetDataCompression(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyIndex, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore.DataCompressionType>>;
   GetDataCompressionConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionIndex): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
-  GetDatabaseMaxSize(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyModel): Rewrap<this, string | undefined>;
+  GetDatabaseMaxSize(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyModel): Rewrap<this, string | null>;
   GetDatabaseMaxSizeConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionModel): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
   GetFillFactor(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyIndex): Rewrap<this, System.Nullable_1<System_Internal.Int32>>;
   GetFillFactor(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyIndex, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): Rewrap<this, System.Nullable_1<System_Internal.Int32>>;
@@ -225,18 +223,18 @@ interface __TsonicExtMethods_Microsoft_EntityFrameworkCore {
   GetFillFactorConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionIndex): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
   GetFillFactorConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionKey): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
   GetHiLoSequenceName(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyModel): Rewrap<this, string>;
-  GetHiLoSequenceName(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty): Rewrap<this, string | undefined>;
-  GetHiLoSequenceName(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): Rewrap<this, string | undefined>;
+  GetHiLoSequenceName(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty): Rewrap<this, string | null>;
+  GetHiLoSequenceName(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): Rewrap<this, string | null>;
   GetHiLoSequenceNameConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionModel): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
   GetHiLoSequenceNameConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionProperty): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
-  GetHiLoSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyModel): Rewrap<this, string | undefined>;
-  GetHiLoSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty): Rewrap<this, string | undefined>;
-  GetHiLoSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): Rewrap<this, string | undefined>;
+  GetHiLoSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyModel): Rewrap<this, string | null>;
+  GetHiLoSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty): Rewrap<this, string | null>;
+  GetHiLoSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): Rewrap<this, string | null>;
   GetHiLoSequenceSchemaConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionModel): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
   GetHiLoSequenceSchemaConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionProperty): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
-  GetHistoryTableName(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyEntityType): Rewrap<this, string | undefined>;
+  GetHistoryTableName(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyEntityType): Rewrap<this, string | null>;
   GetHistoryTableNameConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionEntityType): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
-  GetHistoryTableSchema(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyEntityType): Rewrap<this, string | undefined>;
+  GetHistoryTableSchema(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyEntityType): Rewrap<this, string | null>;
   GetHistoryTableSchemaConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionEntityType): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
   GetIdentityIncrement(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyModel): Rewrap<this, int>;
   GetIdentityIncrement(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty): Rewrap<this, System.Nullable_1<System_Internal.Int32>>;
@@ -254,8 +252,8 @@ interface __TsonicExtMethods_Microsoft_EntityFrameworkCore {
   GetIdentitySeedConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionProperty): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
   GetIdentitySeedConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionProperty, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
   GetIdentitySeedConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionRelationalPropertyOverrides): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
-  GetIncludeProperties(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyIndex): Rewrap<this, System_Collections_Generic.IReadOnlyList_1<System_Internal.String> | undefined>;
-  GetIncludeProperties(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyIndex, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): Rewrap<this, System_Collections_Generic.IReadOnlyList_1<System_Internal.String> | undefined>;
+  GetIncludeProperties(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyIndex): Rewrap<this, System_Collections_Generic.IReadOnlyList_1<System_Internal.String> | null>;
+  GetIncludeProperties(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyIndex, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): Rewrap<this, System_Collections_Generic.IReadOnlyList_1<System_Internal.String> | null>;
   GetIncludePropertiesConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionIndex): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
   GetIsClusteredConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionIndex): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
   GetIsClusteredConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionKey): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
@@ -263,24 +261,24 @@ interface __TsonicExtMethods_Microsoft_EntityFrameworkCore {
   GetIsMemoryOptimizedConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionEntityType): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
   GetIsSparseConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionProperty): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
   GetIsTemporalConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionEntityType): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
-  GetPerformanceLevelSql(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyModel): Rewrap<this, string | undefined>;
+  GetPerformanceLevelSql(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyModel): Rewrap<this, string | null>;
   GetPerformanceLevelSqlConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionModel): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
-  GetPeriodEndPropertyName(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyEntityType): Rewrap<this, string | undefined>;
+  GetPeriodEndPropertyName(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyEntityType): Rewrap<this, string | null>;
   GetPeriodEndPropertyNameConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionEntityType): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
-  GetPeriodStartPropertyName(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyEntityType): Rewrap<this, string | undefined>;
+  GetPeriodStartPropertyName(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyEntityType): Rewrap<this, string | null>;
   GetPeriodStartPropertyNameConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionEntityType): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
-  GetSchemaQualifiedHistoryTableName(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyEntityType): Rewrap<this, string | undefined>;
-  GetSequenceName(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty): Rewrap<this, string | undefined>;
-  GetSequenceName(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): Rewrap<this, string | undefined>;
+  GetSchemaQualifiedHistoryTableName(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyEntityType): Rewrap<this, string | null>;
+  GetSequenceName(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty): Rewrap<this, string | null>;
+  GetSequenceName(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): Rewrap<this, string | null>;
   GetSequenceNameConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionProperty): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
   GetSequenceNameSuffix(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyModel): Rewrap<this, string>;
   GetSequenceNameSuffixConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionModel): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
-  GetSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyModel): Rewrap<this, string | undefined>;
-  GetSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty): Rewrap<this, string | undefined>;
-  GetSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): Rewrap<this, string | undefined>;
+  GetSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyModel): Rewrap<this, string | null>;
+  GetSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty): Rewrap<this, string | null>;
+  GetSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): Rewrap<this, string | null>;
   GetSequenceSchemaConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionModel): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
   GetSequenceSchemaConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionProperty): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
-  GetServiceTierSql(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyModel): Rewrap<this, string | undefined>;
+  GetServiceTierSql(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyModel): Rewrap<this, string | null>;
   GetServiceTierSqlConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionModel): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
   GetSortInTempDb(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyIndex): Rewrap<this, System.Nullable_1<System_Internal.Boolean>>;
   GetSortInTempDb(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyIndex, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): Rewrap<this, System.Nullable_1<System_Internal.Boolean>>;
@@ -297,75 +295,75 @@ interface __TsonicExtMethods_Microsoft_EntityFrameworkCore {
   GetValueGenerationStrategyConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionProperty, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
   GetValueGenerationStrategyConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionRelationalPropertyOverrides): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
   HasDatabaseMaxSize(this: Microsoft_EntityFrameworkCore.ModelBuilder, maxSize: string): Rewrap<this, Microsoft_EntityFrameworkCore.ModelBuilder>;
-  HasDatabaseMaxSize(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder, maxSize: string, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder | undefined>;
-  HasDefaultValue(this: Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePrimitiveCollectionBuilder, value: unknown, defaultConstraintName: string): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePrimitiveCollectionBuilder>;
-  HasDefaultValue<TProperty>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePrimitiveCollectionBuilder_1<TProperty>, value: unknown, defaultConstraintName: string): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePrimitiveCollectionBuilder_1<TProperty>>;
-  HasDefaultValue(this: Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder, value: unknown, defaultConstraintName: string): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder>;
-  HasDefaultValue<TProperty>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder_1<TProperty>, value: unknown, defaultConstraintName: string): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder_1<TProperty>>;
-  HasDefaultValue(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, value: unknown, defaultConstraintName: string, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder | undefined>;
-  HasDefaultValue(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PrimitiveCollectionBuilder, value: unknown, defaultConstraintName: string): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PrimitiveCollectionBuilder>;
-  HasDefaultValue<TProperty>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PrimitiveCollectionBuilder_1<TProperty>, value: unknown, defaultConstraintName: string): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PrimitiveCollectionBuilder_1<TProperty>>;
-  HasDefaultValue(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder, value: unknown, defaultConstraintName: string): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder>;
-  HasDefaultValue<TProperty>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<TProperty>, value: unknown, defaultConstraintName: string): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<TProperty>>;
-  HasDefaultValueSql(this: Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePrimitiveCollectionBuilder, sql: string, defaultConstraintName: string): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePrimitiveCollectionBuilder>;
-  HasDefaultValueSql<TProperty>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePrimitiveCollectionBuilder_1<TProperty>, sql: string, defaultConstraintName: string): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePrimitiveCollectionBuilder_1<TProperty>>;
-  HasDefaultValueSql(this: Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder, sql: string, defaultConstraintName: string): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder>;
-  HasDefaultValueSql<TProperty>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder_1<TProperty>, sql: string, defaultConstraintName: string): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder_1<TProperty>>;
-  HasDefaultValueSql(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, sql: string, defaultConstraintName: string, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder | undefined>;
-  HasDefaultValueSql(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PrimitiveCollectionBuilder, sql: string, defaultConstraintName: string): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PrimitiveCollectionBuilder>;
-  HasDefaultValueSql<TProperty>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PrimitiveCollectionBuilder_1<TProperty>, sql: string, defaultConstraintName: string): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PrimitiveCollectionBuilder_1<TProperty>>;
-  HasDefaultValueSql(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder, sql: string, defaultConstraintName: string): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder>;
-  HasDefaultValueSql<TProperty>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<TProperty>, sql: string, defaultConstraintName: string): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<TProperty>>;
-  HasFillFactor(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, fillFactor: System.Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder | undefined>;
-  HasFillFactor(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionKeyBuilder, fillFactor: System.Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionKeyBuilder | undefined>;
+  HasDatabaseMaxSize(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder, maxSize: string | null, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder | null>;
+  HasDefaultValue(this: Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePrimitiveCollectionBuilder, value: JsValue | null, defaultConstraintName: string): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePrimitiveCollectionBuilder>;
+  HasDefaultValue<TProperty>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePrimitiveCollectionBuilder_1<TProperty>, value: JsValue | null, defaultConstraintName: string): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePrimitiveCollectionBuilder_1<TProperty>>;
+  HasDefaultValue(this: Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder, value: JsValue | null, defaultConstraintName: string): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder>;
+  HasDefaultValue<TProperty>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder_1<TProperty>, value: JsValue | null, defaultConstraintName: string): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder_1<TProperty>>;
+  HasDefaultValue(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, value: JsValue | null, defaultConstraintName: string, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder | null>;
+  HasDefaultValue(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PrimitiveCollectionBuilder, value: JsValue | null, defaultConstraintName: string): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PrimitiveCollectionBuilder>;
+  HasDefaultValue<TProperty>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PrimitiveCollectionBuilder_1<TProperty>, value: JsValue | null, defaultConstraintName: string): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PrimitiveCollectionBuilder_1<TProperty>>;
+  HasDefaultValue(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder, value: JsValue | null, defaultConstraintName: string): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder>;
+  HasDefaultValue<TProperty>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<TProperty>, value: JsValue | null, defaultConstraintName: string): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<TProperty>>;
+  HasDefaultValueSql(this: Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePrimitiveCollectionBuilder, sql: string | null, defaultConstraintName: string): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePrimitiveCollectionBuilder>;
+  HasDefaultValueSql<TProperty>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePrimitiveCollectionBuilder_1<TProperty>, sql: string | null, defaultConstraintName: string): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePrimitiveCollectionBuilder_1<TProperty>>;
+  HasDefaultValueSql(this: Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder, sql: string | null, defaultConstraintName: string): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder>;
+  HasDefaultValueSql<TProperty>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder_1<TProperty>, sql: string | null, defaultConstraintName: string): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder_1<TProperty>>;
+  HasDefaultValueSql(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, sql: string | null, defaultConstraintName: string, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder | null>;
+  HasDefaultValueSql(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PrimitiveCollectionBuilder, sql: string | null, defaultConstraintName: string): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PrimitiveCollectionBuilder>;
+  HasDefaultValueSql<TProperty>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PrimitiveCollectionBuilder_1<TProperty>, sql: string | null, defaultConstraintName: string): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PrimitiveCollectionBuilder_1<TProperty>>;
+  HasDefaultValueSql(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder, sql: string | null, defaultConstraintName: string): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder>;
+  HasDefaultValueSql<TProperty>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<TProperty>, sql: string | null, defaultConstraintName: string): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<TProperty>>;
+  HasFillFactor(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, fillFactor: System.Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder | null>;
+  HasFillFactor(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionKeyBuilder, fillFactor: System.Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionKeyBuilder | null>;
   HasFillFactor(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder, fillFactor: int): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder>;
   HasFillFactor<TEntity>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<TEntity>, fillFactor: int): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<TEntity>>;
   HasFillFactor(this: Microsoft_EntityFrameworkCore_Metadata_Builders.KeyBuilder, fillFactor: int): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.KeyBuilder>;
   HasFillFactor<TEntity>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.KeyBuilder_1<TEntity>, fillFactor: int): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.KeyBuilder_1<TEntity>>;
-  HasHiLoSequence(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder, name: string, schema: string, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionSequenceBuilder | undefined>;
-  HasHiLoSequence(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, name: string, schema: string, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionSequenceBuilder | undefined>;
-  HasIdentityColumnIncrement(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder, increment: System.Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder | undefined>;
-  HasIdentityColumnIncrement(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, increment: System.Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder | undefined>;
-  HasIdentityColumnIncrement(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, increment: System.Nullable_1<System_Internal.Int32>, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder | undefined>;
-  HasIdentityColumnSeed(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder, seed: System.Nullable_1<System_Internal.Int64>, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder | undefined>;
-  HasIdentityColumnSeed(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, seed: System.Nullable_1<System_Internal.Int64>, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder | undefined>;
-  HasIdentityColumnSeed(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, seed: System.Nullable_1<System_Internal.Int64>, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder | undefined>;
+  HasHiLoSequence(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder, name: string | null, schema: string | null, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionSequenceBuilder | null>;
+  HasHiLoSequence(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, name: string | null, schema: string | null, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionSequenceBuilder | null>;
+  HasIdentityColumnIncrement(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder, increment: System.Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder | null>;
+  HasIdentityColumnIncrement(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, increment: System.Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder | null>;
+  HasIdentityColumnIncrement(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, increment: System.Nullable_1<System_Internal.Int32>, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder | null>;
+  HasIdentityColumnSeed(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder, seed: System.Nullable_1<System_Internal.Int64>, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder | null>;
+  HasIdentityColumnSeed(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, seed: System.Nullable_1<System_Internal.Int64>, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder | null>;
+  HasIdentityColumnSeed(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, seed: System.Nullable_1<System_Internal.Int64>, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder | null>;
   HasPerformanceLevel(this: Microsoft_EntityFrameworkCore.ModelBuilder, performanceLevel: string): Rewrap<this, Microsoft_EntityFrameworkCore.ModelBuilder>;
   HasPerformanceLevelSql(this: Microsoft_EntityFrameworkCore.ModelBuilder, performanceLevel: string): Rewrap<this, Microsoft_EntityFrameworkCore.ModelBuilder>;
-  HasPerformanceLevelSql(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder, performanceLevel: string, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder | undefined>;
-  HasPeriodEnd(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder, propertyName: string, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder | undefined>;
-  HasPeriodStart(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder, propertyName: string, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder | undefined>;
-  HasSequence(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, name: string, schema: string, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionSequenceBuilder | undefined>;
+  HasPerformanceLevelSql(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder, performanceLevel: string | null, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder | null>;
+  HasPeriodEnd(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder, propertyName: string | null, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder | null>;
+  HasPeriodStart(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder, propertyName: string | null, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder | null>;
+  HasSequence(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, name: string | null, schema: string | null, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionSequenceBuilder | null>;
   HasServiceTier(this: Microsoft_EntityFrameworkCore.ModelBuilder, serviceTier: string): Rewrap<this, Microsoft_EntityFrameworkCore.ModelBuilder>;
   HasServiceTierSql(this: Microsoft_EntityFrameworkCore.ModelBuilder, serviceTier: string): Rewrap<this, Microsoft_EntityFrameworkCore.ModelBuilder>;
-  HasServiceTierSql(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder, serviceTier: string, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder | undefined>;
-  HasValueGenerationStrategy(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder, valueGenerationStrategy: System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.SqlServerValueGenerationStrategy>, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder | undefined>;
-  HasValueGenerationStrategy(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, valueGenerationStrategy: System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.SqlServerValueGenerationStrategy>, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder | undefined>;
-  HasValueGenerationStrategy(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, valueGenerationStrategy: System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.SqlServerValueGenerationStrategy>, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder | undefined>;
-  IncludeProperties(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, propertyNames: System_Collections_Generic.IReadOnlyList_1<System_Internal.String>, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder | undefined>;
+  HasServiceTierSql(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder, serviceTier: string | null, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder | null>;
+  HasValueGenerationStrategy(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder, valueGenerationStrategy: System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.SqlServerValueGenerationStrategy>, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder | null>;
+  HasValueGenerationStrategy(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, valueGenerationStrategy: System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.SqlServerValueGenerationStrategy>, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder | null>;
+  HasValueGenerationStrategy(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, valueGenerationStrategy: System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.SqlServerValueGenerationStrategy>, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder | null>;
+  IncludeProperties(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, propertyNames: System_Collections_Generic.IReadOnlyList_1<System_Internal.String> | null, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder | null>;
   IncludeProperties(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder, ...propertyNames: string[]): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder>;
   IncludeProperties<TEntity>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<TEntity>, ...propertyNames: string[]): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<TEntity>>;
-  IncludeProperties<TEntity>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<TEntity>, includeExpression: System_Linq_Expressions.Expression_1<System.Func_2<TEntity, unknown>>): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<TEntity>>;
+  IncludeProperties<TEntity>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<TEntity>, includeExpression: System_Linq_Expressions.Expression_1<System.Func_2<TEntity, JsValue | null>>): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<TEntity>>;
   IsClustered(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyIndex): Rewrap<this, System.Nullable_1<System_Internal.Boolean>>;
   IsClustered(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyIndex, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): Rewrap<this, System.Nullable_1<System_Internal.Boolean>>;
   IsClustered(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyKey): Rewrap<this, System.Nullable_1<System_Internal.Boolean>>;
   IsClustered(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyKey, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): Rewrap<this, System.Nullable_1<System_Internal.Boolean>>;
-  IsClustered(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, clustered: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder | undefined>;
-  IsClustered(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionKeyBuilder, clustered: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionKeyBuilder | undefined>;
+  IsClustered(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, clustered: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder | null>;
+  IsClustered(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionKeyBuilder, clustered: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionKeyBuilder | null>;
   IsClustered(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder, clustered?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder>;
   IsClustered<TEntity>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<TEntity>, clustered?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<TEntity>>;
   IsClustered(this: Microsoft_EntityFrameworkCore_Metadata_Builders.KeyBuilder, clustered?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.KeyBuilder>;
   IsClustered<TEntity>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.KeyBuilder_1<TEntity>, clustered?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.KeyBuilder_1<TEntity>>;
   IsCreatedOnline(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyIndex): Rewrap<this, System.Nullable_1<System_Internal.Boolean>>;
   IsCreatedOnline(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyIndex, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): Rewrap<this, System.Nullable_1<System_Internal.Boolean>>;
-  IsCreatedOnline(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, createdOnline: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder | undefined>;
+  IsCreatedOnline(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, createdOnline: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder | null>;
   IsCreatedOnline(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder, createdOnline?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder>;
   IsCreatedOnline<TEntity>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<TEntity>, createdOnline?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<TEntity>>;
   IsDate(this: Microsoft_EntityFrameworkCore.DbFunctions, expression: string): Rewrap<this, boolean>;
   IsMemoryOptimized(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyEntityType): Rewrap<this, boolean>;
   IsMemoryOptimized(this: Microsoft_EntityFrameworkCore_Metadata_Builders.EntityTypeBuilder, memoryOptimized?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.EntityTypeBuilder>;
   IsMemoryOptimized<TEntity>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.EntityTypeBuilder_1<TEntity>, memoryOptimized?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.EntityTypeBuilder_1<TEntity>>;
-  IsMemoryOptimized(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder, memoryOptimized: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder | undefined>;
+  IsMemoryOptimized(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder, memoryOptimized: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder | null>;
   IsMemoryOptimized(this: Microsoft_EntityFrameworkCore_Metadata_Builders.OwnedNavigationBuilder, memoryOptimized?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.OwnedNavigationBuilder>;
   IsMemoryOptimized<TEntity, TRelatedEntity>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.OwnedNavigationBuilder_2<TEntity, TRelatedEntity>, memoryOptimized?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.OwnedNavigationBuilder_2<TEntity, TRelatedEntity>>;
   IsMemoryOptimized(this: Microsoft_EntityFrameworkCore_Metadata_Builders.OwnedNavigationTableBuilder, memoryOptimized?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.OwnedNavigationTableBuilder>;
@@ -379,7 +377,7 @@ interface __TsonicExtMethods_Microsoft_EntityFrameworkCore {
   IsSparse<TProperty>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePrimitiveCollectionBuilder_1<TProperty>, sparse?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePrimitiveCollectionBuilder_1<TProperty>>;
   IsSparse(this: Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder, sparse?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder>;
   IsSparse<TProperty>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder_1<TProperty>, sparse?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder_1<TProperty>>;
-  IsSparse(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, sparse: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder | undefined>;
+  IsSparse(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, sparse: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder | null>;
   IsSparse(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PrimitiveCollectionBuilder, sparse?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PrimitiveCollectionBuilder>;
   IsSparse<TProperty>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PrimitiveCollectionBuilder_1<TProperty>, sparse?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PrimitiveCollectionBuilder_1<TProperty>>;
   IsSparse(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder, sparse?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder>;
@@ -390,7 +388,7 @@ interface __TsonicExtMethods_Microsoft_EntityFrameworkCore {
   IsSqlOutputClauseUsed(this: Microsoft_EntityFrameworkCore_Metadata.ITable): Rewrap<this, boolean>;
   IsSqlServer(this: Microsoft_EntityFrameworkCore_Infrastructure.DatabaseFacade): Rewrap<this, boolean>;
   IsTemporal(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyEntityType): Rewrap<this, boolean>;
-  IsTemporal(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder, temporal?: boolean, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder | undefined>;
+  IsTemporal(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder, temporal?: boolean, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder | null>;
   IsTemporal(this: Microsoft_EntityFrameworkCore_Metadata_Builders.OwnedNavigationTableBuilder, temporal?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.OwnedNavigationTemporalTableBuilder>;
   IsTemporal(this: Microsoft_EntityFrameworkCore_Metadata_Builders.OwnedNavigationTableBuilder, buildAction: System.Action_1<Microsoft_EntityFrameworkCore_Metadata_Builders.OwnedNavigationTemporalTableBuilder>): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.OwnedNavigationTableBuilder>;
   IsTemporal<TOwnerEntity, TDependentEntity>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.OwnedNavigationTableBuilder_2<TOwnerEntity, TDependentEntity>, temporal?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.OwnedNavigationTemporalTableBuilder_2<TOwnerEntity, TDependentEntity>>;
@@ -402,24 +400,24 @@ interface __TsonicExtMethods_Microsoft_EntityFrameworkCore {
   PatIndex(this: Microsoft_EntityFrameworkCore.DbFunctions, pattern: string, expression: string): Rewrap<this, long>;
   SetDataCompression(this: Microsoft_EntityFrameworkCore_Metadata.IConventionIndex, dataCompression: System.Nullable_1<Microsoft_EntityFrameworkCore.DataCompressionType>, fromDataAnnotation?: boolean): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore.DataCompressionType>>;
   SetDataCompression(this: Microsoft_EntityFrameworkCore_Metadata.IMutableIndex, dataCompression: System.Nullable_1<Microsoft_EntityFrameworkCore.DataCompressionType>): Rewrap<this, void>;
-  SetDatabaseMaxSize(this: Microsoft_EntityFrameworkCore_Metadata.IConventionModel, value: string, fromDataAnnotation?: boolean): Rewrap<this, string | undefined>;
-  SetDatabaseMaxSize(this: Microsoft_EntityFrameworkCore_Metadata.IMutableModel, value: string): Rewrap<this, void>;
+  SetDatabaseMaxSize(this: Microsoft_EntityFrameworkCore_Metadata.IConventionModel, value: string | null, fromDataAnnotation?: boolean): Rewrap<this, string | null>;
+  SetDatabaseMaxSize(this: Microsoft_EntityFrameworkCore_Metadata.IMutableModel, value: string | null): Rewrap<this, void>;
   SetFillFactor(this: Microsoft_EntityFrameworkCore_Metadata.IConventionIndex, fillFactor: System.Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): Rewrap<this, System.Nullable_1<System_Internal.Int32>>;
   SetFillFactor(this: Microsoft_EntityFrameworkCore_Metadata.IConventionKey, fillFactor: System.Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): Rewrap<this, System.Nullable_1<System_Internal.Int32>>;
   SetFillFactor(this: Microsoft_EntityFrameworkCore_Metadata.IMutableIndex, fillFactor: System.Nullable_1<System_Internal.Int32>): Rewrap<this, void>;
   SetFillFactor(this: Microsoft_EntityFrameworkCore_Metadata.IMutableKey, fillFactor: System.Nullable_1<System_Internal.Int32>): Rewrap<this, void>;
-  SetHiLoSequenceName(this: Microsoft_EntityFrameworkCore_Metadata.IConventionModel, name: string, fromDataAnnotation?: boolean): Rewrap<this, string | undefined>;
-  SetHiLoSequenceName(this: Microsoft_EntityFrameworkCore_Metadata.IConventionProperty, name: string, fromDataAnnotation?: boolean): Rewrap<this, string | undefined>;
-  SetHiLoSequenceName(this: Microsoft_EntityFrameworkCore_Metadata.IMutableModel, name: string): Rewrap<this, void>;
-  SetHiLoSequenceName(this: Microsoft_EntityFrameworkCore_Metadata.IMutableProperty, name: string): Rewrap<this, void>;
-  SetHiLoSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IConventionModel, value: string, fromDataAnnotation?: boolean): Rewrap<this, string | undefined>;
-  SetHiLoSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IConventionProperty, schema: string, fromDataAnnotation?: boolean): Rewrap<this, string | undefined>;
-  SetHiLoSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IMutableModel, value: string): Rewrap<this, void>;
-  SetHiLoSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IMutableProperty, schema: string): Rewrap<this, void>;
-  SetHistoryTableName(this: Microsoft_EntityFrameworkCore_Metadata.IConventionEntityType, historyTableName: string, fromDataAnnotation?: boolean): Rewrap<this, string | undefined>;
-  SetHistoryTableName(this: Microsoft_EntityFrameworkCore_Metadata.IMutableEntityType, historyTableName: string): Rewrap<this, void>;
-  SetHistoryTableSchema(this: Microsoft_EntityFrameworkCore_Metadata.IConventionEntityType, historyTableSchema: string, fromDataAnnotation?: boolean): Rewrap<this, string | undefined>;
-  SetHistoryTableSchema(this: Microsoft_EntityFrameworkCore_Metadata.IMutableEntityType, historyTableSchema: string): Rewrap<this, void>;
+  SetHiLoSequenceName(this: Microsoft_EntityFrameworkCore_Metadata.IConventionModel, name: string | null, fromDataAnnotation?: boolean): Rewrap<this, string | null>;
+  SetHiLoSequenceName(this: Microsoft_EntityFrameworkCore_Metadata.IConventionProperty, name: string | null, fromDataAnnotation?: boolean): Rewrap<this, string | null>;
+  SetHiLoSequenceName(this: Microsoft_EntityFrameworkCore_Metadata.IMutableModel, name: string | null): Rewrap<this, void>;
+  SetHiLoSequenceName(this: Microsoft_EntityFrameworkCore_Metadata.IMutableProperty, name: string | null): Rewrap<this, void>;
+  SetHiLoSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IConventionModel, value: string | null, fromDataAnnotation?: boolean): Rewrap<this, string | null>;
+  SetHiLoSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IConventionProperty, schema: string | null, fromDataAnnotation?: boolean): Rewrap<this, string | null>;
+  SetHiLoSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IMutableModel, value: string | null): Rewrap<this, void>;
+  SetHiLoSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IMutableProperty, schema: string | null): Rewrap<this, void>;
+  SetHistoryTableName(this: Microsoft_EntityFrameworkCore_Metadata.IConventionEntityType, historyTableName: string | null, fromDataAnnotation?: boolean): Rewrap<this, string | null>;
+  SetHistoryTableName(this: Microsoft_EntityFrameworkCore_Metadata.IMutableEntityType, historyTableName: string | null): Rewrap<this, void>;
+  SetHistoryTableSchema(this: Microsoft_EntityFrameworkCore_Metadata.IConventionEntityType, historyTableSchema: string | null, fromDataAnnotation?: boolean): Rewrap<this, string | null>;
+  SetHistoryTableSchema(this: Microsoft_EntityFrameworkCore_Metadata.IMutableEntityType, historyTableSchema: string | null): Rewrap<this, void>;
   SetIdentityIncrement(this: Microsoft_EntityFrameworkCore_Metadata.IConventionModel, increment: System.Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): Rewrap<this, System.Nullable_1<System_Internal.Int32>>;
   SetIdentityIncrement(this: Microsoft_EntityFrameworkCore_Metadata.IConventionProperty, increment: System.Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): Rewrap<this, System.Nullable_1<System_Internal.Int32>>;
   SetIdentityIncrement(this: Microsoft_EntityFrameworkCore_Metadata.IConventionProperty, increment: System.Nullable_1<System_Internal.Int32>, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier, fromDataAnnotation?: boolean): Rewrap<this, System.Nullable_1<System_Internal.Int32>>;
@@ -436,7 +434,7 @@ interface __TsonicExtMethods_Microsoft_EntityFrameworkCore {
   SetIdentitySeed(this: Microsoft_EntityFrameworkCore_Metadata.IMutableProperty, seed: System.Nullable_1<System_Internal.Int64>): Rewrap<this, void>;
   SetIdentitySeed(this: Microsoft_EntityFrameworkCore_Metadata.IMutableProperty, seed: System.Nullable_1<System_Internal.Int64>, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): Rewrap<this, void>;
   SetIdentitySeed(this: Microsoft_EntityFrameworkCore_Metadata.IMutableRelationalPropertyOverrides, seed: System.Nullable_1<System_Internal.Int64>): Rewrap<this, void>;
-  SetIncludeProperties(this: Microsoft_EntityFrameworkCore_Metadata.IConventionIndex, properties: System_Collections_Generic.IReadOnlyList_1<System_Internal.String>, fromDataAnnotation?: boolean): Rewrap<this, System_Collections_Generic.IReadOnlyList_1<System_Internal.String> | undefined>;
+  SetIncludeProperties(this: Microsoft_EntityFrameworkCore_Metadata.IConventionIndex, properties: System_Collections_Generic.IReadOnlyList_1<System_Internal.String> | null, fromDataAnnotation?: boolean): Rewrap<this, System_Collections_Generic.IReadOnlyList_1<System_Internal.String> | null>;
   SetIncludeProperties(this: Microsoft_EntityFrameworkCore_Metadata.IMutableIndex, properties: System_Collections_Generic.IReadOnlyList_1<System_Internal.String>): Rewrap<this, void>;
   SetIsClustered(this: Microsoft_EntityFrameworkCore_Metadata.IConventionIndex, value: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): Rewrap<this, System.Nullable_1<System_Internal.Boolean>>;
   SetIsClustered(this: Microsoft_EntityFrameworkCore_Metadata.IConventionKey, clustered: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): Rewrap<this, System.Nullable_1<System_Internal.Boolean>>;
@@ -450,22 +448,22 @@ interface __TsonicExtMethods_Microsoft_EntityFrameworkCore {
   SetIsSparse(this: Microsoft_EntityFrameworkCore_Metadata.IMutableProperty, sparse: System.Nullable_1<System_Internal.Boolean>): Rewrap<this, void>;
   SetIsTemporal(this: Microsoft_EntityFrameworkCore_Metadata.IConventionEntityType, temporal: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): Rewrap<this, System.Nullable_1<System_Internal.Boolean>>;
   SetIsTemporal(this: Microsoft_EntityFrameworkCore_Metadata.IMutableEntityType, temporal: boolean): Rewrap<this, void>;
-  SetPerformanceLevelSql(this: Microsoft_EntityFrameworkCore_Metadata.IConventionModel, value: string, fromDataAnnotation?: boolean): Rewrap<this, string | undefined>;
-  SetPerformanceLevelSql(this: Microsoft_EntityFrameworkCore_Metadata.IMutableModel, value: string): Rewrap<this, void>;
-  SetPeriodEndPropertyName(this: Microsoft_EntityFrameworkCore_Metadata.IConventionEntityType, periodEndPropertyName: string, fromDataAnnotation?: boolean): Rewrap<this, string | undefined>;
-  SetPeriodEndPropertyName(this: Microsoft_EntityFrameworkCore_Metadata.IMutableEntityType, periodEndPropertyName: string): Rewrap<this, void>;
-  SetPeriodStartPropertyName(this: Microsoft_EntityFrameworkCore_Metadata.IConventionEntityType, periodStartPropertyName: string, fromDataAnnotation?: boolean): Rewrap<this, string | undefined>;
-  SetPeriodStartPropertyName(this: Microsoft_EntityFrameworkCore_Metadata.IMutableEntityType, periodStartPropertyName: string): Rewrap<this, void>;
-  SetSequenceName(this: Microsoft_EntityFrameworkCore_Metadata.IConventionProperty, name: string, fromDataAnnotation?: boolean): Rewrap<this, string | undefined>;
-  SetSequenceName(this: Microsoft_EntityFrameworkCore_Metadata.IMutableProperty, name: string): Rewrap<this, void>;
-  SetSequenceNameSuffix(this: Microsoft_EntityFrameworkCore_Metadata.IConventionModel, name: string, fromDataAnnotation?: boolean): Rewrap<this, string | undefined>;
-  SetSequenceNameSuffix(this: Microsoft_EntityFrameworkCore_Metadata.IMutableModel, name: string): Rewrap<this, void>;
-  SetSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IConventionModel, value: string, fromDataAnnotation?: boolean): Rewrap<this, string | undefined>;
-  SetSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IConventionProperty, schema: string, fromDataAnnotation?: boolean): Rewrap<this, string | undefined>;
-  SetSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IMutableModel, value: string): Rewrap<this, void>;
-  SetSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IMutableProperty, schema: string): Rewrap<this, void>;
-  SetServiceTierSql(this: Microsoft_EntityFrameworkCore_Metadata.IConventionModel, value: string, fromDataAnnotation?: boolean): Rewrap<this, string | undefined>;
-  SetServiceTierSql(this: Microsoft_EntityFrameworkCore_Metadata.IMutableModel, value: string): Rewrap<this, void>;
+  SetPerformanceLevelSql(this: Microsoft_EntityFrameworkCore_Metadata.IConventionModel, value: string | null, fromDataAnnotation?: boolean): Rewrap<this, string | null>;
+  SetPerformanceLevelSql(this: Microsoft_EntityFrameworkCore_Metadata.IMutableModel, value: string | null): Rewrap<this, void>;
+  SetPeriodEndPropertyName(this: Microsoft_EntityFrameworkCore_Metadata.IConventionEntityType, periodEndPropertyName: string | null, fromDataAnnotation?: boolean): Rewrap<this, string | null>;
+  SetPeriodEndPropertyName(this: Microsoft_EntityFrameworkCore_Metadata.IMutableEntityType, periodEndPropertyName: string | null): Rewrap<this, void>;
+  SetPeriodStartPropertyName(this: Microsoft_EntityFrameworkCore_Metadata.IConventionEntityType, periodStartPropertyName: string | null, fromDataAnnotation?: boolean): Rewrap<this, string | null>;
+  SetPeriodStartPropertyName(this: Microsoft_EntityFrameworkCore_Metadata.IMutableEntityType, periodStartPropertyName: string | null): Rewrap<this, void>;
+  SetSequenceName(this: Microsoft_EntityFrameworkCore_Metadata.IConventionProperty, name: string | null, fromDataAnnotation?: boolean): Rewrap<this, string | null>;
+  SetSequenceName(this: Microsoft_EntityFrameworkCore_Metadata.IMutableProperty, name: string | null): Rewrap<this, void>;
+  SetSequenceNameSuffix(this: Microsoft_EntityFrameworkCore_Metadata.IConventionModel, name: string | null, fromDataAnnotation?: boolean): Rewrap<this, string | null>;
+  SetSequenceNameSuffix(this: Microsoft_EntityFrameworkCore_Metadata.IMutableModel, name: string | null): Rewrap<this, void>;
+  SetSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IConventionModel, value: string | null, fromDataAnnotation?: boolean): Rewrap<this, string | null>;
+  SetSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IConventionProperty, schema: string | null, fromDataAnnotation?: boolean): Rewrap<this, string | null>;
+  SetSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IMutableModel, value: string | null): Rewrap<this, void>;
+  SetSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IMutableProperty, schema: string | null): Rewrap<this, void>;
+  SetServiceTierSql(this: Microsoft_EntityFrameworkCore_Metadata.IConventionModel, value: string | null, fromDataAnnotation?: boolean): Rewrap<this, string | null>;
+  SetServiceTierSql(this: Microsoft_EntityFrameworkCore_Metadata.IMutableModel, value: string | null): Rewrap<this, void>;
   SetSortInTempDb(this: Microsoft_EntityFrameworkCore_Metadata.IConventionIndex, sortInTempDb: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): Rewrap<this, System.Nullable_1<System_Internal.Boolean>>;
   SetSortInTempDb(this: Microsoft_EntityFrameworkCore_Metadata.IMutableIndex, sortInTempDb: System.Nullable_1<System_Internal.Boolean>): Rewrap<this, void>;
   SetValueGenerationStrategy(this: Microsoft_EntityFrameworkCore_Metadata.IConventionModel, value: System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.SqlServerValueGenerationStrategy>, fromDataAnnotation?: boolean): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.SqlServerValueGenerationStrategy>>;
@@ -477,7 +475,7 @@ interface __TsonicExtMethods_Microsoft_EntityFrameworkCore {
   SetValueGenerationStrategy(this: Microsoft_EntityFrameworkCore_Metadata.IMutableProperty, value: System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.SqlServerValueGenerationStrategy>, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): Rewrap<this, void>;
   SetValueGenerationStrategy(this: Microsoft_EntityFrameworkCore_Metadata.IMutableRelationalPropertyOverrides, value: System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.SqlServerValueGenerationStrategy>): Rewrap<this, void>;
   SmallDateTimeFromParts(this: Microsoft_EntityFrameworkCore.DbFunctions, year: int, month: int, day: int, hour: int, minute: int): Rewrap<this, System.DateTime>;
-  SortInTempDb(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, sortInTempDb: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder | undefined>;
+  SortInTempDb(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, sortInTempDb: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder | null>;
   SortInTempDb(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder, sortInTempDb?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder>;
   SortInTempDb<TEntity>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<TEntity>, sortInTempDb?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<TEntity>>;
   StandardDeviationPopulation(this: Microsoft_EntityFrameworkCore.DbFunctions, values: System_Collections_Generic.IEnumerable_1<System_Internal.Byte>): Rewrap<this, System.Nullable_1<System_Internal.Double>>;
@@ -500,32 +498,32 @@ interface __TsonicExtMethods_Microsoft_EntityFrameworkCore {
   TemporalContainedIn<TEntity>(this: Microsoft_EntityFrameworkCore.DbSet_1<TEntity>, utcFrom: System.DateTime, utcTo: System.DateTime): Rewrap<this, System_Linq.IQueryable_1<TEntity>>;
   TemporalFromTo<TEntity>(this: Microsoft_EntityFrameworkCore.DbSet_1<TEntity>, utcFrom: System.DateTime, utcTo: System.DateTime): Rewrap<this, System_Linq.IQueryable_1<TEntity>>;
   TimeFromParts(this: Microsoft_EntityFrameworkCore.DbFunctions, hour: int, minute: int, second: int, fractions: int, precision: int): Rewrap<this, System.TimeSpan>;
-  UseAzureSql(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder, azureSqlOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSqlDbContextOptionsBuilder>): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
-  UseAzureSql(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder, connectionString: string, azureSqlOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSqlDbContextOptionsBuilder>): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
-  UseAzureSql(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder, connection: System_Data_Common.DbConnection, azureSqlOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSqlDbContextOptionsBuilder>): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
-  UseAzureSql(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder, connection: System_Data_Common.DbConnection, contextOwnsConnection: boolean, azureSqlOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSqlDbContextOptionsBuilder>): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
-  UseAzureSql<TContext extends Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>, azureSqlOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSqlDbContextOptionsBuilder>): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>>;
-  UseAzureSql<TContext extends Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>, connectionString: string, azureSqlOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSqlDbContextOptionsBuilder>): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>>;
-  UseAzureSql<TContext extends Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>, connection: System_Data_Common.DbConnection, azureSqlOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSqlDbContextOptionsBuilder>): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>>;
-  UseAzureSql<TContext extends Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>, connection: System_Data_Common.DbConnection, contextOwnsConnection: boolean, azureSqlOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSqlDbContextOptionsBuilder>): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>>;
-  UseAzureSynapse(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder, azureSynapseOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSynapseDbContextOptionsBuilder>): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
-  UseAzureSynapse(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder, connectionString: string, azureSynapseOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSynapseDbContextOptionsBuilder>): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
-  UseAzureSynapse(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder, connection: System_Data_Common.DbConnection, azureSynapseOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSynapseDbContextOptionsBuilder>): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
-  UseAzureSynapse(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder, connection: System_Data_Common.DbConnection, contextOwnsConnection: boolean, azureSynapseOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSynapseDbContextOptionsBuilder>): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
-  UseAzureSynapse<TContext extends Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>, azureSynapseOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSynapseDbContextOptionsBuilder>): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>>;
-  UseAzureSynapse<TContext extends Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>, connectionString: string, azureSynapseOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSynapseDbContextOptionsBuilder>): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>>;
-  UseAzureSynapse<TContext extends Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>, connection: System_Data_Common.DbConnection, azureSynapseOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSynapseDbContextOptionsBuilder>): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>>;
-  UseAzureSynapse<TContext extends Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>, connection: System_Data_Common.DbConnection, contextOwnsConnection: boolean, azureSynapseOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSynapseDbContextOptionsBuilder>): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>>;
-  UseDataCompression(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, dataCompressionType: System.Nullable_1<Microsoft_EntityFrameworkCore.DataCompressionType>, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder | undefined>;
+  UseAzureSql(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder, azureSqlOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSqlDbContextOptionsBuilder> | null): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
+  UseAzureSql(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder, connectionString: string | null, azureSqlOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSqlDbContextOptionsBuilder> | null): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
+  UseAzureSql(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder, connection: System_Data_Common.DbConnection, azureSqlOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSqlDbContextOptionsBuilder> | null): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
+  UseAzureSql(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder, connection: System_Data_Common.DbConnection, contextOwnsConnection: boolean, azureSqlOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSqlDbContextOptionsBuilder> | null): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
+  UseAzureSql<TContext extends Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>, azureSqlOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSqlDbContextOptionsBuilder> | null): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>>;
+  UseAzureSql<TContext extends Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>, connectionString: string | null, azureSqlOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSqlDbContextOptionsBuilder> | null): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>>;
+  UseAzureSql<TContext extends Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>, connection: System_Data_Common.DbConnection, azureSqlOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSqlDbContextOptionsBuilder> | null): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>>;
+  UseAzureSql<TContext extends Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>, connection: System_Data_Common.DbConnection, contextOwnsConnection: boolean, azureSqlOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSqlDbContextOptionsBuilder> | null): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>>;
+  UseAzureSynapse(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder, azureSynapseOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSynapseDbContextOptionsBuilder> | null): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
+  UseAzureSynapse(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder, connectionString: string | null, azureSynapseOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSynapseDbContextOptionsBuilder> | null): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
+  UseAzureSynapse(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder, connection: System_Data_Common.DbConnection, azureSynapseOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSynapseDbContextOptionsBuilder> | null): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
+  UseAzureSynapse(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder, connection: System_Data_Common.DbConnection, contextOwnsConnection: boolean, azureSynapseOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSynapseDbContextOptionsBuilder> | null): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
+  UseAzureSynapse<TContext extends Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>, azureSynapseOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSynapseDbContextOptionsBuilder> | null): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>>;
+  UseAzureSynapse<TContext extends Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>, connectionString: string | null, azureSynapseOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSynapseDbContextOptionsBuilder> | null): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>>;
+  UseAzureSynapse<TContext extends Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>, connection: System_Data_Common.DbConnection, azureSynapseOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSynapseDbContextOptionsBuilder> | null): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>>;
+  UseAzureSynapse<TContext extends Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>, connection: System_Data_Common.DbConnection, contextOwnsConnection: boolean, azureSynapseOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSynapseDbContextOptionsBuilder> | null): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>>;
+  UseDataCompression(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, dataCompressionType: System.Nullable_1<Microsoft_EntityFrameworkCore.DataCompressionType>, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder | null>;
   UseDataCompression(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder, dataCompressionType: Microsoft_EntityFrameworkCore.DataCompressionType): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder>;
   UseDataCompression<TEntity>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<TEntity>, dataCompressionType: Microsoft_EntityFrameworkCore.DataCompressionType): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<TEntity>>;
-  UseHiLo(this: Microsoft_EntityFrameworkCore.ModelBuilder, name?: string, schema?: string): Rewrap<this, Microsoft_EntityFrameworkCore.ModelBuilder>;
-  UseHiLo(this: Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder, name?: string, schema?: string): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder>;
-  UseHiLo<TProperty>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder_1<TProperty>, name?: string, schema?: string): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder_1<TProperty>>;
-  UseHiLo(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder, name?: string, schema?: string): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder>;
-  UseHiLo<TProperty>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<TProperty>, name?: string, schema?: string): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<TProperty>>;
-  UseHistoryTableName(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder, name: string, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder | undefined>;
-  UseHistoryTableSchema(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder, schema: string, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder | undefined>;
+  UseHiLo(this: Microsoft_EntityFrameworkCore.ModelBuilder, name?: string | null, schema?: string | null): Rewrap<this, Microsoft_EntityFrameworkCore.ModelBuilder>;
+  UseHiLo(this: Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder, name?: string | null, schema?: string | null): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder>;
+  UseHiLo<TProperty>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder_1<TProperty>, name?: string | null, schema?: string | null): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder_1<TProperty>>;
+  UseHiLo(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder, name?: string | null, schema?: string | null): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder>;
+  UseHiLo<TProperty>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<TProperty>, name?: string | null, schema?: string | null): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<TProperty>>;
+  UseHistoryTableName(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder, name: string, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder | null>;
+  UseHistoryTableSchema(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder, schema: string | null, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder | null>;
   UseIdentityColumn(this: Microsoft_EntityFrameworkCore_Metadata_Builders.ColumnBuilder, seed?: long, increment?: int): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.ColumnBuilder>;
   UseIdentityColumn<TProperty>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.ColumnBuilder_1<TProperty>, seed?: long, increment?: int): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.ColumnBuilder_1<TProperty>>;
   UseIdentityColumn(this: Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder, seed?: long, increment?: int): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder>;
@@ -538,35 +536,35 @@ interface __TsonicExtMethods_Microsoft_EntityFrameworkCore {
   UseIdentityColumn<TProperty>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<TProperty>, seed: int, increment?: int): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<TProperty>>;
   UseIdentityColumns(this: Microsoft_EntityFrameworkCore.ModelBuilder, seed?: long, increment?: int): Rewrap<this, Microsoft_EntityFrameworkCore.ModelBuilder>;
   UseIdentityColumns(this: Microsoft_EntityFrameworkCore.ModelBuilder, seed: int, increment?: int): Rewrap<this, Microsoft_EntityFrameworkCore.ModelBuilder>;
-  UseKeySequences(this: Microsoft_EntityFrameworkCore.ModelBuilder, nameSuffix?: string, schema?: string): Rewrap<this, Microsoft_EntityFrameworkCore.ModelBuilder>;
+  UseKeySequences(this: Microsoft_EntityFrameworkCore.ModelBuilder, nameSuffix?: string | null, schema?: string | null): Rewrap<this, Microsoft_EntityFrameworkCore.ModelBuilder>;
   UseNamedDefaultConstraints(this: Microsoft_EntityFrameworkCore.ModelBuilder, value?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore.ModelBuilder>;
-  UseNamedDefaultConstraints(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder, value: boolean, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder | undefined>;
-  UseSequence(this: Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder, name?: string, schema?: string): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder>;
-  UseSequence<TProperty>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder_1<TProperty>, name?: string, schema?: string): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder_1<TProperty>>;
-  UseSequence(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder, name?: string, schema?: string): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder>;
-  UseSequence<TProperty>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<TProperty>, name?: string, schema?: string): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<TProperty>>;
+  UseNamedDefaultConstraints(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder, value: boolean, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder | null>;
+  UseSequence(this: Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder, name?: string | null, schema?: string | null): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder>;
+  UseSequence<TProperty>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder_1<TProperty>, name?: string | null, schema?: string | null): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.ComplexTypePropertyBuilder_1<TProperty>>;
+  UseSequence(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder, name?: string | null, schema?: string | null): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder>;
+  UseSequence<TProperty>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<TProperty>, name?: string | null, schema?: string | null): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<TProperty>>;
   UseSqlOutputClause(this: Microsoft_EntityFrameworkCore_Metadata.IConventionEntityType, useSqlOutputClause: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): Rewrap<this, System.Nullable_1<System_Internal.Boolean>>;
   UseSqlOutputClause(this: Microsoft_EntityFrameworkCore_Metadata.IConventionEntityType, useSqlOutputClause: System.Nullable_1<System_Internal.Boolean>, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier, fromDataAnnotation?: boolean): Rewrap<this, System.Nullable_1<System_Internal.Boolean>>;
   UseSqlOutputClause(this: Microsoft_EntityFrameworkCore_Metadata.IConventionEntityTypeMappingFragment, useSqlOutputClause: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): Rewrap<this, System.Nullable_1<System_Internal.Boolean>>;
   UseSqlOutputClause(this: Microsoft_EntityFrameworkCore_Metadata.IMutableEntityType, useSqlOutputClause: System.Nullable_1<System_Internal.Boolean>): Rewrap<this, void>;
   UseSqlOutputClause(this: Microsoft_EntityFrameworkCore_Metadata.IMutableEntityType, useSqlOutputClause: System.Nullable_1<System_Internal.Boolean>, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): Rewrap<this, void>;
   UseSqlOutputClause(this: Microsoft_EntityFrameworkCore_Metadata.IMutableEntityTypeMappingFragment, useSqlOutputClause: System.Nullable_1<System_Internal.Boolean>): Rewrap<this, void>;
-  UseSqlOutputClause(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder, useSqlOutputClause: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder | undefined>;
-  UseSqlOutputClause(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder, useSqlOutputClause: System.Nullable_1<System_Internal.Boolean>, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder | undefined>;
+  UseSqlOutputClause(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder, useSqlOutputClause: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder | null>;
+  UseSqlOutputClause(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder, useSqlOutputClause: System.Nullable_1<System_Internal.Boolean>, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder | null>;
   UseSqlOutputClause(this: Microsoft_EntityFrameworkCore_Metadata_Builders.OwnedNavigationTableBuilder, useSqlOutputClause?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.OwnedNavigationTableBuilder>;
   UseSqlOutputClause<TOwnerEntity, TDependentEntity>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.OwnedNavigationTableBuilder_2<TOwnerEntity, TDependentEntity>, useSqlOutputClause?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.OwnedNavigationTableBuilder_2<TOwnerEntity, TDependentEntity>>;
   UseSqlOutputClause(this: Microsoft_EntityFrameworkCore_Metadata_Builders.SplitTableBuilder, useSqlOutputClause?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.SplitTableBuilder>;
   UseSqlOutputClause<TEntity>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.SplitTableBuilder_1<TEntity>, useSqlOutputClause?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.SplitTableBuilder_1<TEntity>>;
   UseSqlOutputClause(this: Microsoft_EntityFrameworkCore_Metadata_Builders.TableBuilder, useSqlOutputClause?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.TableBuilder>;
   UseSqlOutputClause<TEntity>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.TableBuilder_1<TEntity>, useSqlOutputClause?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.TableBuilder_1<TEntity>>;
-  UseSqlServer(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder, sqlServerOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqlServerDbContextOptionsBuilder>): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
-  UseSqlServer(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder, connectionString: string, sqlServerOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqlServerDbContextOptionsBuilder>): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
-  UseSqlServer(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder, connection: System_Data_Common.DbConnection, sqlServerOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqlServerDbContextOptionsBuilder>): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
-  UseSqlServer(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder, connection: System_Data_Common.DbConnection, contextOwnsConnection: boolean, sqlServerOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqlServerDbContextOptionsBuilder>): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
-  UseSqlServer<TContext extends Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>, sqlServerOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqlServerDbContextOptionsBuilder>): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>>;
-  UseSqlServer<TContext extends Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>, connectionString: string, sqlServerOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqlServerDbContextOptionsBuilder>): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>>;
-  UseSqlServer<TContext extends Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>, connection: System_Data_Common.DbConnection, sqlServerOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqlServerDbContextOptionsBuilder>): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>>;
-  UseSqlServer<TContext extends Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>, connection: System_Data_Common.DbConnection, contextOwnsConnection: boolean, sqlServerOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqlServerDbContextOptionsBuilder>): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>>;
+  UseSqlServer(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder, sqlServerOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqlServerDbContextOptionsBuilder> | null): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
+  UseSqlServer(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder, connectionString: string | null, sqlServerOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqlServerDbContextOptionsBuilder> | null): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
+  UseSqlServer(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder, connection: System_Data_Common.DbConnection, sqlServerOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqlServerDbContextOptionsBuilder> | null): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
+  UseSqlServer(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder, connection: System_Data_Common.DbConnection, contextOwnsConnection: boolean, sqlServerOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqlServerDbContextOptionsBuilder> | null): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
+  UseSqlServer<TContext extends Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>, sqlServerOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqlServerDbContextOptionsBuilder> | null): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>>;
+  UseSqlServer<TContext extends Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>, connectionString: string | null, sqlServerOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqlServerDbContextOptionsBuilder> | null): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>>;
+  UseSqlServer<TContext extends Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>, connection: System_Data_Common.DbConnection, sqlServerOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqlServerDbContextOptionsBuilder> | null): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>>;
+  UseSqlServer<TContext extends Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>, connection: System_Data_Common.DbConnection, contextOwnsConnection: boolean, sqlServerOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqlServerDbContextOptionsBuilder> | null): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>>;
   VariancePopulation(this: Microsoft_EntityFrameworkCore.DbFunctions, values: System_Collections_Generic.IEnumerable_1<System_Internal.Byte>): Rewrap<this, System.Nullable_1<System_Internal.Double>>;
   VariancePopulation(this: Microsoft_EntityFrameworkCore.DbFunctions, values: System_Collections_Generic.IEnumerable_1<System_Internal.Int16>): Rewrap<this, System.Nullable_1<System_Internal.Double>>;
   VariancePopulation(this: Microsoft_EntityFrameworkCore.DbFunctions, values: System_Collections_Generic.IEnumerable_1<System_Internal.Int32>): Rewrap<this, System.Nullable_1<System_Internal.Double>>;
@@ -581,12 +579,12 @@ interface __TsonicExtMethods_Microsoft_EntityFrameworkCore {
   VarianceSample(this: Microsoft_EntityFrameworkCore.DbFunctions, values: System_Collections_Generic.IEnumerable_1<System_Internal.Single>): Rewrap<this, System.Nullable_1<System_Internal.Double>>;
   VarianceSample(this: Microsoft_EntityFrameworkCore.DbFunctions, values: System_Collections_Generic.IEnumerable_1<System_Internal.Double>): Rewrap<this, System.Nullable_1<System_Internal.Double>>;
   VarianceSample(this: Microsoft_EntityFrameworkCore.DbFunctions, values: System_Collections_Generic.IEnumerable_1<System_Internal.Decimal>): Rewrap<this, System.Nullable_1<System_Internal.Double>>;
-  VectorDistance<T extends unknown>(this: Microsoft_EntityFrameworkCore.DbFunctions, distanceMetric: string, vector1: Microsoft_Data_SqlTypes.SqlVector_1<T>, vector2: Microsoft_Data_SqlTypes.SqlVector_1<T>): Rewrap<this, double>;
+  VectorDistance<T extends NonNullable<JsValue>>(this: Microsoft_EntityFrameworkCore.DbFunctions, distanceMetric: string, vector1: Microsoft_Data_SqlTypes.SqlVector_1<T>, vector2: Microsoft_Data_SqlTypes.SqlVector_1<T>): Rewrap<this, double>;
 }
 
 // Generic helper type for extension methods in namespace: Microsoft.EntityFrameworkCore
 interface __TsonicExtApplier_Microsoft_EntityFrameworkCore {
-  __tsonic_shape: unknown;
+  __tsonic_shape: JsValue;
   __tsonic_type: __TsonicExtMethods_Microsoft_EntityFrameworkCore;
 }
 
@@ -603,7 +601,7 @@ interface __TsonicExtMethods_Microsoft_EntityFrameworkCore_Metadata_Internal {
 
 // Generic helper type for extension methods in namespace: Microsoft.EntityFrameworkCore.Metadata.Internal
 interface __TsonicExtApplier_Microsoft_EntityFrameworkCore_Metadata_Internal {
-  __tsonic_shape: unknown;
+  __tsonic_shape: JsValue;
   __tsonic_type: __TsonicExtMethods_Microsoft_EntityFrameworkCore_Metadata_Internal;
 }
 
@@ -619,7 +617,7 @@ interface __TsonicExtMethods_Microsoft_EntityFrameworkCore_Migrations {
 
 // Generic helper type for extension methods in namespace: Microsoft.EntityFrameworkCore.Migrations
 interface __TsonicExtApplier_Microsoft_EntityFrameworkCore_Migrations {
-  __tsonic_shape: unknown;
+  __tsonic_shape: JsValue;
   __tsonic_type: __TsonicExtMethods_Microsoft_EntityFrameworkCore_Migrations;
 }
 
@@ -631,7 +629,7 @@ export type ExtensionMethods_Microsoft_EntityFrameworkCore_Migrations<TShape> =
 // Extension method table for namespace: Microsoft.EntityFrameworkCore.SqlServer.Extensions.Internal
 interface __TsonicExtMethods_Microsoft_EntityFrameworkCore_SqlServer_Extensions_Internal {
   ByteIdentityColumnWarning(this: Microsoft_EntityFrameworkCore_Diagnostics.IDiagnosticsLogger_1<Microsoft_EntityFrameworkCore.DbLoggerCategory_Model_Validation>, property: Microsoft_EntityFrameworkCore_Metadata.IProperty): Rewrap<this, void>;
-  ColumnFound(this: Microsoft_EntityFrameworkCore_Diagnostics.IDiagnosticsLogger_1<Microsoft_EntityFrameworkCore.DbLoggerCategory_Scaffolding>, tableName: string, columnName: string, ordinal: int, dataTypeName: string, maxLength: int, precision: int, scale: int, nullable: boolean, identity: boolean, defaultValue: string, computedValue: string, stored: System.Nullable_1<System_Internal.Boolean>): Rewrap<this, void>;
+  ColumnFound(this: Microsoft_EntityFrameworkCore_Diagnostics.IDiagnosticsLogger_1<Microsoft_EntityFrameworkCore.DbLoggerCategory_Scaffolding>, tableName: string, columnName: string, ordinal: int, dataTypeName: string, maxLength: int, precision: int, scale: int, nullable: boolean, identity: boolean, defaultValue: string | null, computedValue: string | null, stored: System.Nullable_1<System_Internal.Boolean>): Rewrap<this, void>;
   ColumnWithoutTypeWarning(this: Microsoft_EntityFrameworkCore_Diagnostics.IDiagnosticsLogger_1<Microsoft_EntityFrameworkCore.DbLoggerCategory_Scaffolding>, tableName: string, columnName: string): Rewrap<this, void>;
   ConflictingValueGenerationStrategiesWarning(this: Microsoft_EntityFrameworkCore_Diagnostics.IDiagnosticsLogger_1<Microsoft_EntityFrameworkCore.DbLoggerCategory_Model_Validation>, sqlServerValueGenerationStrategy: Microsoft_EntityFrameworkCore_Metadata.SqlServerValueGenerationStrategy, otherValueGenerationStrategy: string, property: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty): Rewrap<this, void>;
   DecimalTypeDefaultWarning(this: Microsoft_EntityFrameworkCore_Diagnostics.IDiagnosticsLogger_1<Microsoft_EntityFrameworkCore.DbLoggerCategory_Model_Validation>, property: Microsoft_EntityFrameworkCore_Metadata.IProperty): Rewrap<this, void>;
@@ -640,11 +638,11 @@ interface __TsonicExtMethods_Microsoft_EntityFrameworkCore_SqlServer_Extensions_
   DuplicateForeignKeyConstraintIgnored(this: Microsoft_EntityFrameworkCore_Diagnostics.IDiagnosticsLogger_1<Microsoft_EntityFrameworkCore.DbLoggerCategory_Scaffolding>, foreignKeyName: string, tableName: string, duplicateForeignKeyName: string): Rewrap<this, void>;
   ForeignKeyFound(this: Microsoft_EntityFrameworkCore_Diagnostics.IDiagnosticsLogger_1<Microsoft_EntityFrameworkCore.DbLoggerCategory_Scaffolding>, foreignKeyName: string, tableName: string, principalTableName: string, onDeleteAction: string): Rewrap<this, void>;
   ForeignKeyPrincipalColumnMissingWarning(this: Microsoft_EntityFrameworkCore_Diagnostics.IDiagnosticsLogger_1<Microsoft_EntityFrameworkCore.DbLoggerCategory_Scaffolding>, foreignKeyName: string, tableName: string, principalColumnName: string, principalTableName: string): Rewrap<this, void>;
-  ForeignKeyReferencesMissingPrincipalTableWarning(this: Microsoft_EntityFrameworkCore_Diagnostics.IDiagnosticsLogger_1<Microsoft_EntityFrameworkCore.DbLoggerCategory_Scaffolding>, foreignKeyName: string, tableName: string, principalTableName: string): Rewrap<this, void>;
-  ForeignKeyReferencesUnknownPrincipalTableWarning(this: Microsoft_EntityFrameworkCore_Diagnostics.IDiagnosticsLogger_1<Microsoft_EntityFrameworkCore.DbLoggerCategory_Scaffolding>, foreignKeyName: string, tableName: string): Rewrap<this, void>;
+  ForeignKeyReferencesMissingPrincipalTableWarning(this: Microsoft_EntityFrameworkCore_Diagnostics.IDiagnosticsLogger_1<Microsoft_EntityFrameworkCore.DbLoggerCategory_Scaffolding>, foreignKeyName: string | null, tableName: string | null, principalTableName: string | null): Rewrap<this, void>;
+  ForeignKeyReferencesUnknownPrincipalTableWarning(this: Microsoft_EntityFrameworkCore_Diagnostics.IDiagnosticsLogger_1<Microsoft_EntityFrameworkCore.DbLoggerCategory_Scaffolding>, foreignKeyName: string | null, tableName: string | null): Rewrap<this, void>;
   IndexFound(this: Microsoft_EntityFrameworkCore_Diagnostics.IDiagnosticsLogger_1<Microsoft_EntityFrameworkCore.DbLoggerCategory_Scaffolding>, indexName: string, tableName: string, unique: boolean): Rewrap<this, void>;
-  MissingSchemaWarning(this: Microsoft_EntityFrameworkCore_Diagnostics.IDiagnosticsLogger_1<Microsoft_EntityFrameworkCore.DbLoggerCategory_Scaffolding>, schemaName: string): Rewrap<this, void>;
-  MissingTableWarning(this: Microsoft_EntityFrameworkCore_Diagnostics.IDiagnosticsLogger_1<Microsoft_EntityFrameworkCore.DbLoggerCategory_Scaffolding>, tableName: string): Rewrap<this, void>;
+  MissingSchemaWarning(this: Microsoft_EntityFrameworkCore_Diagnostics.IDiagnosticsLogger_1<Microsoft_EntityFrameworkCore.DbLoggerCategory_Scaffolding>, schemaName: string | null): Rewrap<this, void>;
+  MissingTableWarning(this: Microsoft_EntityFrameworkCore_Diagnostics.IDiagnosticsLogger_1<Microsoft_EntityFrameworkCore.DbLoggerCategory_Scaffolding>, tableName: string | null): Rewrap<this, void>;
   MissingViewDefinitionRightsWarning(this: Microsoft_EntityFrameworkCore_Diagnostics.IDiagnosticsLogger_1<Microsoft_EntityFrameworkCore.DbLoggerCategory_Scaffolding>): Rewrap<this, void>;
   PrimaryKeyFound(this: Microsoft_EntityFrameworkCore_Diagnostics.IDiagnosticsLogger_1<Microsoft_EntityFrameworkCore.DbLoggerCategory_Scaffolding>, primaryKeyName: string, tableName: string): Rewrap<this, void>;
   ReflexiveConstraintIgnored(this: Microsoft_EntityFrameworkCore_Diagnostics.IDiagnosticsLogger_1<Microsoft_EntityFrameworkCore.DbLoggerCategory_Scaffolding>, foreignKeyName: string, tableName: string): Rewrap<this, void>;
@@ -657,7 +655,7 @@ interface __TsonicExtMethods_Microsoft_EntityFrameworkCore_SqlServer_Extensions_
 
 // Generic helper type for extension methods in namespace: Microsoft.EntityFrameworkCore.SqlServer.Extensions.Internal
 interface __TsonicExtApplier_Microsoft_EntityFrameworkCore_SqlServer_Extensions_Internal {
-  __tsonic_shape: unknown;
+  __tsonic_shape: JsValue;
   __tsonic_type: __TsonicExtMethods_Microsoft_EntityFrameworkCore_SqlServer_Extensions_Internal;
 }
 
@@ -669,13 +667,13 @@ export type ExtensionMethods_Microsoft_EntityFrameworkCore_SqlServer_Extensions_
 // Extension method table for namespace: Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal
 interface __TsonicExtMethods_Microsoft_EntityFrameworkCore_SqlServer_Scaffolding_Internal {
   GetFieldValue<T>(this: System_Data_Common.DbDataRecord, name: string): Rewrap<this, T>;
-  GetValueOrDefault<T>(this: System_Data_Common.DbDataReader, name: string): Rewrap<this, T | undefined>;
-  GetValueOrDefault<T>(this: System_Data_Common.DbDataRecord, name: string): Rewrap<this, T | undefined>;
+  GetValueOrDefault<T>(this: System_Data_Common.DbDataReader, name: string): Rewrap<this, T | null>;
+  GetValueOrDefault<T>(this: System_Data_Common.DbDataRecord, name: string): Rewrap<this, T | null>;
 }
 
 // Generic helper type for extension methods in namespace: Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal
 interface __TsonicExtApplier_Microsoft_EntityFrameworkCore_SqlServer_Scaffolding_Internal {
-  __tsonic_shape: unknown;
+  __tsonic_shape: JsValue;
   __tsonic_type: __TsonicExtMethods_Microsoft_EntityFrameworkCore_SqlServer_Scaffolding_Internal;
 }
 
@@ -686,17 +684,17 @@ export type ExtensionMethods_Microsoft_EntityFrameworkCore_SqlServer_Scaffolding
 
 // Extension method table for namespace: Microsoft.Extensions.DependencyInjection
 interface __TsonicExtMethods_Microsoft_Extensions_DependencyInjection {
-  AddAzureSql<TContext extends Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, connectionString: string, azureSqlOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSqlDbContextOptionsBuilder>, optionsAction?: System.Action_1<Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  AddAzureSynapse<TContext extends Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, connectionString: string, azureSynapseOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSynapseDbContextOptionsBuilder>, optionsAction?: System.Action_1<Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddAzureSql<TContext extends Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, connectionString: string | null, azureSqlOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSqlDbContextOptionsBuilder> | null, optionsAction?: System.Action_1<Microsoft_EntityFrameworkCore.DbContextOptionsBuilder> | null): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddAzureSynapse<TContext extends Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, connectionString: string | null, azureSynapseOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.AzureSynapseDbContextOptionsBuilder> | null, optionsAction?: System.Action_1<Microsoft_EntityFrameworkCore.DbContextOptionsBuilder> | null): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   AddEntityFrameworkAzureSql(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   AddEntityFrameworkAzureSynapse(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   AddEntityFrameworkSqlServer(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  AddSqlServer<TContext extends Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, connectionString: string, sqlServerOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqlServerDbContextOptionsBuilder>, optionsAction?: System.Action_1<Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddSqlServer<TContext extends Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, connectionString: string | null, sqlServerOptionsAction?: System.Action_1<Microsoft_EntityFrameworkCore_Infrastructure.SqlServerDbContextOptionsBuilder> | null, optionsAction?: System.Action_1<Microsoft_EntityFrameworkCore.DbContextOptionsBuilder> | null): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
 }
 
 // Generic helper type for extension methods in namespace: Microsoft.Extensions.DependencyInjection
 interface __TsonicExtApplier_Microsoft_Extensions_DependencyInjection {
-  __tsonic_shape: unknown;
+  __tsonic_shape: JsValue;
   __tsonic_type: __TsonicExtMethods_Microsoft_Extensions_DependencyInjection;
 }
 
@@ -718,7 +716,7 @@ interface __TsonicExtMethods_Microsoft_Identity_Client {
 
 // Generic helper type for extension methods in namespace: Microsoft.Identity.Client
 interface __TsonicExtApplier_Microsoft_Identity_Client {
-  __tsonic_shape: unknown;
+  __tsonic_shape: JsValue;
   __tsonic_type: __TsonicExtMethods_Microsoft_Identity_Client;
 }
 
@@ -734,7 +732,7 @@ interface __TsonicExtMethods_Microsoft_Identity_Client_Advanced {
 
 // Generic helper type for extension methods in namespace: Microsoft.Identity.Client.Advanced
 interface __TsonicExtApplier_Microsoft_Identity_Client_Advanced {
-  __tsonic_shape: unknown;
+  __tsonic_shape: JsValue;
   __tsonic_type: __TsonicExtMethods_Microsoft_Identity_Client_Advanced;
 }
 
@@ -759,7 +757,7 @@ interface __TsonicExtMethods_Microsoft_Identity_Client_Extensibility {
 
 // Generic helper type for extension methods in namespace: Microsoft.Identity.Client.Extensibility
 interface __TsonicExtApplier_Microsoft_Identity_Client_Extensibility {
-  __tsonic_shape: unknown;
+  __tsonic_shape: JsValue;
   __tsonic_type: __TsonicExtMethods_Microsoft_Identity_Client_Extensibility;
 }
 
@@ -776,7 +774,7 @@ interface __TsonicExtMethods_Microsoft_Identity_Client_RP {
 
 // Generic helper type for extension methods in namespace: Microsoft.Identity.Client.RP
 interface __TsonicExtApplier_Microsoft_Identity_Client_RP {
-  __tsonic_shape: unknown;
+  __tsonic_shape: JsValue;
   __tsonic_type: __TsonicExtMethods_Microsoft_Identity_Client_RP;
 }
 
@@ -793,7 +791,7 @@ interface __TsonicExtMethods_Microsoft_Identity_Client_SSHCertificates {
 
 // Generic helper type for extension methods in namespace: Microsoft.Identity.Client.SSHCertificates
 interface __TsonicExtApplier_Microsoft_Identity_Client_SSHCertificates {
-  __tsonic_shape: unknown;
+  __tsonic_shape: JsValue;
   __tsonic_type: __TsonicExtMethods_Microsoft_Identity_Client_SSHCertificates;
 }
 
@@ -809,7 +807,7 @@ interface __TsonicExtMethods_Microsoft_IdentityModel_Tokens {
 
 // Generic helper type for extension methods in namespace: Microsoft.IdentityModel.Tokens
 interface __TsonicExtApplier_Microsoft_IdentityModel_Tokens {
-  __tsonic_shape: unknown;
+  __tsonic_shape: JsValue;
   __tsonic_type: __TsonicExtMethods_Microsoft_IdentityModel_Tokens;
 }
 
@@ -821,13 +819,13 @@ export type ExtensionMethods_Microsoft_IdentityModel_Tokens<TShape> =
 
 // Extension method table for namespace: System.ClientModel.Primitives
 interface __TsonicExtMethods_System_ClientModel_Primitives {
-  MarkClientActivityFailed(this: System_Diagnostics.Activity, exception: System.Exception): Rewrap<this, System_Diagnostics.Activity>;
-  StartClientActivity(this: System_Diagnostics.ActivitySource, options: System_ClientModel_Primitives.ClientPipelineOptions, name: string, kind?: System_Diagnostics.ActivityKind, parentContext?: System_Diagnostics.ActivityContext, tags?: System_Collections_Generic.IEnumerable_1<System_Collections_Generic.KeyValuePair_2<System_Internal.String, unknown>>): Rewrap<this, System_Diagnostics.Activity | undefined>;
+  MarkClientActivityFailed(this: System_Diagnostics.Activity, exception: System.Exception | null): Rewrap<this, System_Diagnostics.Activity>;
+  StartClientActivity(this: System_Diagnostics.ActivitySource, options: System_ClientModel_Primitives.ClientPipelineOptions, name: string, kind?: System_Diagnostics.ActivityKind, parentContext?: System_Diagnostics.ActivityContext, tags?: System_Collections_Generic.IEnumerable_1<System_Collections_Generic.KeyValuePair_2<System_Internal.String, JsValue>> | null): Rewrap<this, System_Diagnostics.Activity | null>;
 }
 
 // Generic helper type for extension methods in namespace: System.ClientModel.Primitives
 interface __TsonicExtApplier_System_ClientModel_Primitives {
-  __tsonic_shape: unknown;
+  __tsonic_shape: JsValue;
   __tsonic_type: __TsonicExtMethods_System_ClientModel_Primitives;
 }
 

@@ -2,11 +2,9 @@
 // Namespace: System.ClientModel
 // Assembly: System.ClientModel
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
-// Import support types from @tsonic/core
-import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import * as System_ClientModel_Primitives_Internal from "../../System.ClientModel.Primitives/internal/index.js";
@@ -60,7 +58,7 @@ export type AsyncCollectionResult_1<T> = AsyncCollectionResult_1$instance<T>;
 export interface AuthenticationTokenProvider$instance {
     readonly __tsonic_type_System_ClientModel_AuthenticationTokenProvider: never;
 
-    CreateTokenOptions(properties: IReadOnlyDictionary_2<System_Internal.String, unknown>): GetTokenOptions | undefined;
+    CreateTokenOptions(properties: IReadOnlyDictionary_2<System_Internal.String, JsValue>): GetTokenOptions | null;
     GetToken(options: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
     GetTokenAsync(options: GetTokenOptions, cancellationToken: CancellationToken): ValueTask_1<AuthenticationToken>;
 }
@@ -77,8 +75,8 @@ export interface BinaryContent$instance {
 
     readonly __tsonic_iface_System_IDisposable: never;
 
-    get MediaType(): string | undefined;
-    set MediaType(value: string | undefined);
+    get MediaType(): string | null;
+    set MediaType(value: string | null);
     Dispose(): void;
     TryComputeLength(length: long): boolean;
     WriteTo(stream: Stream, cancellationToken?: CancellationToken): void;
@@ -89,10 +87,10 @@ export interface BinaryContent$instance {
 export const BinaryContent: (abstract new() => BinaryContent) & {
     Create(value: BinaryData): BinaryContent;
     Create(stream: Stream): BinaryContent;
-    Create<T extends IPersistableModel_1<T>>(model: T, options?: ModelReaderWriterOptions): BinaryContent;
+    Create<T extends IPersistableModel_1<T>>(model: T, options?: ModelReaderWriterOptions | null): BinaryContent;
     CreateJson(jsonString: string, validate?: boolean): BinaryContent;
     CreateJson<T>(jsonSerializable: T, jsonTypeInfo: JsonTypeInfo_1<T>): BinaryContent;
-    CreateJson<T>(jsonSerializable: T, options?: JsonSerializerOptions): BinaryContent;
+    CreateJson<T>(jsonSerializable: T, options?: JsonSerializerOptions | null): BinaryContent;
 };
 
 
@@ -106,7 +104,7 @@ export interface ClientResult$instance {
 
 
 export const ClientResult: (abstract new(response: PipelineResponse) => ClientResult) & {
-    FromOptionalValue<T>(value: T, response: PipelineResponse): ClientResult_1<T | undefined>;
+    FromOptionalValue<T>(value: T | null, response: PipelineResponse): ClientResult_1<T | null>;
     FromResponse(response: PipelineResponse): ClientResult;
     FromValue<T>(value: T, response: PipelineResponse): ClientResult_1<T>;
 };
@@ -133,14 +131,14 @@ export interface ClientResultException$instance extends Exception {
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
     Status: int;
-    GetRawResponse(): PipelineResponse | undefined;
+    GetRawResponse(): PipelineResponse | null;
 }
 
 
 export const ClientResultException: {
-    new(response: PipelineResponse, innerException: Exception): ClientResultException;
-    new(message: string, response: PipelineResponse, innerException: Exception): ClientResultException;
-    CreateAsync(response: PipelineResponse, innerException?: Exception): Task_1<ClientResultException>;
+    new(response: PipelineResponse, innerException: Exception | null): ClientResultException;
+    new(message: string, response: PipelineResponse | null, innerException: Exception | null): ClientResultException;
+    CreateAsync(response: PipelineResponse, innerException?: Exception | null): Task_1<ClientResultException>;
 };
 
 

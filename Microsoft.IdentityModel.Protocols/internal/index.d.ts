@@ -2,8 +2,9 @@
 // Namespace: Microsoft.IdentityModel.Protocols
 // Assembly: Microsoft.IdentityModel.Protocols
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { LastKnownGoodConfigurationCacheOptions } from "../../Microsoft.IdentityModel.Protocols.Configuration/internal/index.js";
@@ -183,7 +184,7 @@ export interface HttpRequestData$instance {
     readonly ClientCertificates: X509Certificate2Collection;
     Headers: IDictionary_2<System_Internal.String, IEnumerable_1<System_Internal.String>>;
     Method: string;
-    PropertyBag: IDictionary_2<System_Internal.String, unknown>;
+    PropertyBag: IDictionary_2<System_Internal.String, JsValue>;
     Uri: Uri;
     AppendHeaders(headers: HttpHeaders): void;
 }

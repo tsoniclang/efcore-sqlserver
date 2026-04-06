@@ -2,8 +2,9 @@
 // Namespace: Microsoft.Data.SqlClient.Server
 // Assembly: Microsoft.Data.SqlClient
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { SortOrder } from "../../Microsoft.Data.SqlClient/internal/index.js";
@@ -19,8 +20,8 @@ export interface SqlDataRecord$instance {
     readonly __tsonic_iface_System_Data_IDataRecord: never;
 
     readonly FieldCount: int;
-    get_Item(ordinal: int): unknown;
-    get_Item(name: string): unknown;
+    get_Item(ordinal: int): JsValue;
+    get_Item(name: string): JsValue;
     GetBoolean(ordinal: int): boolean;
     GetByte(ordinal: int): byte;
     GetBytes(ordinal: int, fieldOffset: long, buffer: byte[], bufferOffset: int, length: int): long;
@@ -56,13 +57,13 @@ export interface SqlDataRecord$instance {
     GetSqlMoney(ordinal: int): SqlMoney;
     GetSqlSingle(ordinal: int): SqlSingle;
     GetSqlString(ordinal: int): SqlString;
-    GetSqlValue(ordinal: int): unknown;
-    GetSqlValues(values: unknown[]): int;
+    GetSqlValue(ordinal: int): JsValue;
+    GetSqlValues(values: JsValue[]): int;
     GetSqlXml(ordinal: int): SqlXml;
     GetString(ordinal: int): string;
     GetTimeSpan(ordinal: int): TimeSpan;
-    GetValue(ordinal: int): unknown;
-    GetValues(values: unknown[]): int;
+    GetValue(ordinal: int): JsValue;
+    GetValues(values: JsValue[]): int;
     IsDBNull(ordinal: int): boolean;
     SetBoolean(ordinal: int, value: boolean): void;
     SetByte(ordinal: int, value: byte): void;
@@ -97,8 +98,8 @@ export interface SqlDataRecord$instance {
     SetSqlXml(ordinal: int, value: SqlXml): void;
     SetString(ordinal: int, value: string): void;
     SetTimeSpan(ordinal: int, value: TimeSpan): void;
-    SetValue(ordinal: int, value: unknown): void;
-    SetValues(...values: unknown[]): int;
+    SetValue(ordinal: int, value: JsValue): void;
+    SetValues(...values: JsValue[]): int;
 }
 
 
@@ -158,7 +159,7 @@ export interface SqlMetaData$instance {
     Adjust(value: short): short;
     Adjust(value: int): int;
     Adjust(value: long): long;
-    Adjust(value: unknown): unknown;
+    Adjust(value: JsValue): JsValue;
     Adjust(value: float): float;
     Adjust(value: string): string;
     Adjust(value: TimeSpan): TimeSpan;
@@ -182,7 +183,7 @@ export const SqlMetaData: {
     new(name: string, dbType: SqlDbType, userDefinedType: Type, serverTypeName: string): SqlMetaData;
     new(name: string, dbType: SqlDbType, userDefinedType: Type, serverTypeName: string, useServerDefault: boolean, isUniqueKey: boolean, columnSortOrder: SortOrder, sortOrdinal: int): SqlMetaData;
     readonly Max: long;
-    InferFromValue(value: unknown, name: string): SqlMetaData;
+    InferFromValue(value: JsValue, name: string): SqlMetaData;
 };
 
 

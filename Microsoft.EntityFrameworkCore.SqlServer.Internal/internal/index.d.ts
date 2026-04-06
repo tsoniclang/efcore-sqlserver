@@ -2,8 +2,9 @@
 // Namespace: Microsoft.EntityFrameworkCore.SqlServer.Internal
 // Assembly: Microsoft.EntityFrameworkCore.SqlServer
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
@@ -26,12 +27,12 @@ export abstract class SqlServerResources$instance {
     static LogFoundTable(logger: IDiagnosticsLogger): EventDefinition_1<System_Internal.String>;
     static LogFoundTypeAlias(logger: IDiagnosticsLogger): EventDefinition_2<System_Internal.String, System_Internal.String>;
     static LogFoundUniqueConstraint(logger: IDiagnosticsLogger): EventDefinition_2<System_Internal.String, System_Internal.String>;
-    static LogMissingSchema(logger: IDiagnosticsLogger): EventDefinition_1<string | undefined>;
-    static LogMissingTable(logger: IDiagnosticsLogger): EventDefinition_1<string | undefined>;
+    static LogMissingSchema(logger: IDiagnosticsLogger): EventDefinition_1<string | null>;
+    static LogMissingTable(logger: IDiagnosticsLogger): EventDefinition_1<string | null>;
     static LogMissingViewDefinitionRights(logger: IDiagnosticsLogger): EventDefinition;
     static LogPrincipalColumnNotFound(logger: IDiagnosticsLogger): EventDefinition_4<System_Internal.String, System_Internal.String, System_Internal.String, System_Internal.String>;
-    static LogPrincipalTableInformationNotFound(logger: IDiagnosticsLogger): EventDefinition_2<string | undefined, string | undefined>;
-    static LogPrincipalTableNotInSelectionSet(logger: IDiagnosticsLogger): EventDefinition_3<string | undefined, string | undefined, string | undefined>;
+    static LogPrincipalTableInformationNotFound(logger: IDiagnosticsLogger): EventDefinition_2<string | null, string | null>;
+    static LogPrincipalTableNotInSelectionSet(logger: IDiagnosticsLogger): EventDefinition_3<string | null, string | null, string | null>;
     static LogReflexiveConstraintIgnored(logger: IDiagnosticsLogger): EventDefinition_2<System_Internal.String, System_Internal.String>;
     static LogSavepointsDisabledBecauseOfMARS(logger: IDiagnosticsLogger): EventDefinition;
 }
@@ -53,49 +54,49 @@ export abstract class SqlServerStrings$instance {
     static readonly SaveChangesFailedBecauseOfTriggers: string;
     static readonly TransientExceptionDetected: string;
     static readonly VectorDimensionsInvalid: string;
-    static AlreadyConfiguredEngineType(newEngineType: unknown, oldEngineType: unknown): string;
-    static CannotProduceUnterminatedSQLWithComments(operation: unknown): string;
-    static CompatibilityLevelTooLowForScalarCollections(compatibilityLevel: unknown): string;
-    static DuplicateColumnIdentityIncrementMismatch(entityType1: unknown, property1: unknown, entityType2: unknown, property2: unknown, columnName: unknown, table: unknown): string;
-    static DuplicateColumnIdentitySeedMismatch(entityType1: unknown, property1: unknown, entityType2: unknown, property2: unknown, columnName: unknown, table: unknown): string;
-    static DuplicateColumnNameValueGenerationStrategyMismatch(entityType1: unknown, property1: unknown, entityType2: unknown, property2: unknown, columnName: unknown, table: unknown): string;
-    static DuplicateColumnSequenceMismatch(entityType1: unknown, property1: unknown, entityType2: unknown, property2: unknown, columnName: unknown, table: unknown): string;
-    static DuplicateColumnSparsenessMismatch(entityType1: unknown, property1: unknown, entityType2: unknown, property2: unknown, columnName: unknown, table: unknown): string;
-    static DuplicateIndexClusteredMismatch(index1: unknown, entityType1: unknown, index2: unknown, entityType2: unknown, table: unknown, indexName: unknown): string;
-    static DuplicateIndexDataCompressionMismatch(index1: unknown, entityType1: unknown, index2: unknown, entityType2: unknown, table: unknown, indexName: unknown): string;
-    static DuplicateIndexFillFactorMismatch(index1: unknown, entityType1: unknown, index2: unknown, entityType2: unknown, table: unknown, indexName: unknown): string;
-    static DuplicateIndexIncludedMismatch(index1: unknown, entityType1: unknown, index2: unknown, entityType2: unknown, table: unknown, indexName: unknown, includedColumns1: unknown, includedColumns2: unknown): string;
-    static DuplicateIndexOnlineMismatch(index1: unknown, entityType1: unknown, index2: unknown, entityType2: unknown, table: unknown, indexName: unknown): string;
-    static DuplicateIndexSortInTempDbMismatch(index1: unknown, entityType1: unknown, index2: unknown, entityType2: unknown, table: unknown, indexName: unknown): string;
-    static DuplicateKeyMismatchedClustering(key1: unknown, entityType1: unknown, key2: unknown, entityType2: unknown, table: unknown, keyName: unknown): string;
-    static IdentityBadType(property: unknown, entityType: unknown, propertyType: unknown): string;
-    static IncludePropertyDuplicated(entityType: unknown, property: unknown, index: unknown): string;
-    static IncludePropertyInIndex(entityType: unknown, property: unknown, index: unknown): string;
-    static IncludePropertyNotFound(property: unknown, index: unknown, entityType: unknown): string;
-    static IncompatibleSqlOutputClauseMismatch(table: unknown, entityType: unknown, otherEntityType: unknown, entityTypeWithSqlOutputClause: unknown, entityTypeWithoutSqlOutputClause: unknown): string;
-    static IncompatibleTableMemoryOptimizedMismatch(table: unknown, entityType: unknown, otherEntityType: unknown, memoryOptimizedEntityType: unknown, nonMemoryOptimizedEntityType: unknown): string;
-    static InvalidEngineType(methods: unknown): string;
-    static InvalidTableToIncludeInScaffolding(table: unknown): string;
-    static JsonValuePathExpressionsNotSupported(compatibilityLevel: unknown): string;
-    static MultipleIdentityColumns(properties: unknown, table: unknown): string;
-    static SequenceBadType(property: unknown, entityType: unknown, propertyType: unknown): string;
-    static TemporalAllEntitiesMappedToSameTableMustBeTemporal(entityType: unknown): string;
-    static TemporalExpectedPeriodPropertyNotFound(entityType: unknown, propertyName: unknown): string;
-    static TemporalMigrationModifyingComputedColumnNotSupported(columnName: unknown, tableName: unknown): string;
-    static TemporalMustDefinePeriodProperties(entityType: unknown): string;
-    static TemporalNavigationExpansionBetweenTemporalAndNonTemporal(entityType: unknown): string;
-    static TemporalNavigationExpansionOnlySupportedForAsOf(operationName: unknown): string;
-    static TemporalNotSupportedForTableSplittingWithInconsistentPeriodMapping(periodType: unknown, entityType: unknown, periodProperty: unknown, periodColumn: unknown, expectedColumnName: unknown): string;
-    static TemporalOnlyOnRoot(entityType: unknown): string;
-    static TemporalOnlySupportedForTPH(entityType: unknown): string;
-    static TemporalPeriodPropertyCantHaveDefaultValue(entityType: unknown, propertyName: unknown): string;
-    static TemporalPeriodPropertyMustBeInShadowState(entityType: unknown, propertyName: unknown): string;
-    static TemporalPeriodPropertyMustBeMappedToDatetime2(entityType: unknown, propertyName: unknown, columnType: unknown): string;
-    static TemporalPeriodPropertyMustBeNonNullableDateTime(entityType: unknown, propertyName: unknown, dateTimeType: unknown): string;
-    static TemporalPropertyMappedToPeriodColumnMustBeValueGeneratedOnAddOrUpdate(entityType: unknown, propertyName: unknown, valueGeneratedValue: unknown): string;
-    static TemporalSetOperationOnMismatchedSources(entityType: unknown): string;
-    static VectorDimensionsMissing(structuralType: unknown, propertyName: unknown): string;
-    static VectorPropertiesNotSupportedInJson(propertyName: unknown, structuralType: unknown): string;
+    static AlreadyConfiguredEngineType(newEngineType: JsValue | null, oldEngineType: JsValue | null): string;
+    static CannotProduceUnterminatedSQLWithComments(operation: JsValue | null): string;
+    static CompatibilityLevelTooLowForScalarCollections(compatibilityLevel: JsValue | null): string;
+    static DuplicateColumnIdentityIncrementMismatch(entityType1: JsValue | null, property1: JsValue | null, entityType2: JsValue | null, property2: JsValue | null, columnName: JsValue | null, table: JsValue | null): string;
+    static DuplicateColumnIdentitySeedMismatch(entityType1: JsValue | null, property1: JsValue | null, entityType2: JsValue | null, property2: JsValue | null, columnName: JsValue | null, table: JsValue | null): string;
+    static DuplicateColumnNameValueGenerationStrategyMismatch(entityType1: JsValue | null, property1: JsValue | null, entityType2: JsValue | null, property2: JsValue | null, columnName: JsValue | null, table: JsValue | null): string;
+    static DuplicateColumnSequenceMismatch(entityType1: JsValue | null, property1: JsValue | null, entityType2: JsValue | null, property2: JsValue | null, columnName: JsValue | null, table: JsValue | null): string;
+    static DuplicateColumnSparsenessMismatch(entityType1: JsValue | null, property1: JsValue | null, entityType2: JsValue | null, property2: JsValue | null, columnName: JsValue | null, table: JsValue | null): string;
+    static DuplicateIndexClusteredMismatch(index1: JsValue | null, entityType1: JsValue | null, index2: JsValue | null, entityType2: JsValue | null, table: JsValue | null, indexName: JsValue | null): string;
+    static DuplicateIndexDataCompressionMismatch(index1: JsValue | null, entityType1: JsValue | null, index2: JsValue | null, entityType2: JsValue | null, table: JsValue | null, indexName: JsValue | null): string;
+    static DuplicateIndexFillFactorMismatch(index1: JsValue | null, entityType1: JsValue | null, index2: JsValue | null, entityType2: JsValue | null, table: JsValue | null, indexName: JsValue | null): string;
+    static DuplicateIndexIncludedMismatch(index1: JsValue | null, entityType1: JsValue | null, index2: JsValue | null, entityType2: JsValue | null, table: JsValue | null, indexName: JsValue | null, includedColumns1: JsValue | null, includedColumns2: JsValue | null): string;
+    static DuplicateIndexOnlineMismatch(index1: JsValue | null, entityType1: JsValue | null, index2: JsValue | null, entityType2: JsValue | null, table: JsValue | null, indexName: JsValue | null): string;
+    static DuplicateIndexSortInTempDbMismatch(index1: JsValue | null, entityType1: JsValue | null, index2: JsValue | null, entityType2: JsValue | null, table: JsValue | null, indexName: JsValue | null): string;
+    static DuplicateKeyMismatchedClustering(key1: JsValue | null, entityType1: JsValue | null, key2: JsValue | null, entityType2: JsValue | null, table: JsValue | null, keyName: JsValue | null): string;
+    static IdentityBadType(property: JsValue | null, entityType: JsValue | null, propertyType: JsValue | null): string;
+    static IncludePropertyDuplicated(entityType: JsValue | null, property: JsValue | null, index: JsValue | null): string;
+    static IncludePropertyInIndex(entityType: JsValue | null, property: JsValue | null, index: JsValue | null): string;
+    static IncludePropertyNotFound(property: JsValue | null, index: JsValue | null, entityType: JsValue | null): string;
+    static IncompatibleSqlOutputClauseMismatch(table: JsValue | null, entityType: JsValue | null, otherEntityType: JsValue | null, entityTypeWithSqlOutputClause: JsValue | null, entityTypeWithoutSqlOutputClause: JsValue | null): string;
+    static IncompatibleTableMemoryOptimizedMismatch(table: JsValue | null, entityType: JsValue | null, otherEntityType: JsValue | null, memoryOptimizedEntityType: JsValue | null, nonMemoryOptimizedEntityType: JsValue | null): string;
+    static InvalidEngineType(methods: JsValue | null): string;
+    static InvalidTableToIncludeInScaffolding(table: JsValue | null): string;
+    static JsonValuePathExpressionsNotSupported(compatibilityLevel: JsValue | null): string;
+    static MultipleIdentityColumns(properties: JsValue | null, table: JsValue | null): string;
+    static SequenceBadType(property: JsValue | null, entityType: JsValue | null, propertyType: JsValue | null): string;
+    static TemporalAllEntitiesMappedToSameTableMustBeTemporal(entityType: JsValue | null): string;
+    static TemporalExpectedPeriodPropertyNotFound(entityType: JsValue | null, propertyName: JsValue | null): string;
+    static TemporalMigrationModifyingComputedColumnNotSupported(columnName: JsValue | null, tableName: JsValue | null): string;
+    static TemporalMustDefinePeriodProperties(entityType: JsValue | null): string;
+    static TemporalNavigationExpansionBetweenTemporalAndNonTemporal(entityType: JsValue | null): string;
+    static TemporalNavigationExpansionOnlySupportedForAsOf(operationName: JsValue | null): string;
+    static TemporalNotSupportedForTableSplittingWithInconsistentPeriodMapping(periodType: JsValue | null, entityType: JsValue | null, periodProperty: JsValue | null, periodColumn: JsValue | null, expectedColumnName: JsValue | null): string;
+    static TemporalOnlyOnRoot(entityType: JsValue | null): string;
+    static TemporalOnlySupportedForTPH(entityType: JsValue | null): string;
+    static TemporalPeriodPropertyCantHaveDefaultValue(entityType: JsValue | null, propertyName: JsValue | null): string;
+    static TemporalPeriodPropertyMustBeInShadowState(entityType: JsValue | null, propertyName: JsValue | null): string;
+    static TemporalPeriodPropertyMustBeMappedToDatetime2(entityType: JsValue | null, propertyName: JsValue | null, columnType: JsValue | null): string;
+    static TemporalPeriodPropertyMustBeNonNullableDateTime(entityType: JsValue | null, propertyName: JsValue | null, dateTimeType: JsValue | null): string;
+    static TemporalPropertyMappedToPeriodColumnMustBeValueGeneratedOnAddOrUpdate(entityType: JsValue | null, propertyName: JsValue | null, valueGeneratedValue: JsValue | null): string;
+    static TemporalSetOperationOnMismatchedSources(entityType: JsValue | null): string;
+    static VectorDimensionsMissing(structuralType: JsValue | null, propertyName: JsValue | null): string;
+    static VectorPropertiesNotSupportedInJson(propertyName: JsValue | null, structuralType: JsValue | null): string;
 }
 
 
