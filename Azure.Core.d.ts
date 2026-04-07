@@ -34,6 +34,8 @@ export { DelayStrategy as DelayStrategy } from './Azure.Core/internal/index.js';
 export { DelegatedTokenCredential$instance as DelegatedTokenCredential } from './Azure.Core/internal/index.js';
 export { DiagnosticsOptions as DiagnosticsOptions } from './Azure.Core/internal/index.js';
 export { HttpHeader as HttpHeader } from './Azure.Core/internal/index.js';
+export { HttpHeader_Names$instance as HttpHeader_Names } from './Azure.Core/internal/index.js';
+export { HttpHeader_Common$instance as HttpHeader_Common } from './Azure.Core/internal/index.js';
 export { HttpMessage as HttpMessage } from './Azure.Core/internal/index.js';
 export { HttpPipelinePosition as HttpPipelinePosition } from './Azure.Core/internal/index.js';
 export { MessageProcessingContext as MessageProcessingContext } from './Azure.Core/internal/index.js';
@@ -57,5 +59,3 @@ export type SyncAsyncEventHandler<T extends Internal.SyncAsyncEventArgs> = Inter
 export { TelemetryDetails as TelemetryDetails } from './Azure.Core/internal/index.js';
 export { TokenCredential as TokenCredential } from './Azure.Core/internal/index.js';
 export { TokenRequestContext as TokenRequestContext } from './Azure.Core/internal/index.js';
-export { HttpHeader_Names$instance as HttpHeader_Names } from './Azure.Core/internal/index.js';
-export { HttpHeader_Common$instance as HttpHeader_Common } from './Azure.Core/internal/index.js';

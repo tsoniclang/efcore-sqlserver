@@ -2,8 +2,9 @@
 // Namespace: Microsoft.EntityFrameworkCore.Metadata.Builders
 // Assembly: Microsoft.EntityFrameworkCore, Microsoft.EntityFrameworkCore.Relational, Microsoft.EntityFrameworkCore.SqlServer
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
@@ -16,11 +17,11 @@ import type { EntityTypeBuilder, OwnedNavigationBuilder, PropertyBuilder } from 
 export interface OwnedNavigationTemporalPeriodPropertyBuilder$instance {
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Builders_OwnedNavigationTemporalPeriodPropertyBuilder: never;
 
-    Equals(obj: unknown): boolean;
+    Equals(obj: JsValue | null): boolean;
     GetHashCode(): int;
     HasColumnName(name: string): OwnedNavigationTemporalPeriodPropertyBuilder;
     HasPrecision(precision: int): OwnedNavigationTemporalPeriodPropertyBuilder;
-    ToString(): string | undefined;
+    ToString(): string | null;
 }
 
 
@@ -34,13 +35,13 @@ export type OwnedNavigationTemporalPeriodPropertyBuilder = OwnedNavigationTempor
 export interface OwnedNavigationTemporalTableBuilder$instance {
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Builders_OwnedNavigationTemporalTableBuilder: never;
 
-    Equals(obj: unknown): boolean;
+    Equals(obj: JsValue | null): boolean;
     GetHashCode(): int;
     HasPeriodEnd(propertyName: string): OwnedNavigationTemporalPeriodPropertyBuilder;
     HasPeriodStart(propertyName: string): OwnedNavigationTemporalPeriodPropertyBuilder;
-    ToString(): string | undefined;
+    ToString(): string | null;
     UseHistoryTable(name: string): OwnedNavigationTemporalTableBuilder;
-    UseHistoryTable(name: string, schema: string): OwnedNavigationTemporalTableBuilder;
+    UseHistoryTable(name: string, schema: string | null): OwnedNavigationTemporalTableBuilder;
 }
 
 
@@ -55,9 +56,9 @@ export interface OwnedNavigationTemporalTableBuilder_2$instance<TOwnerEntity, TD
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Builders_OwnedNavigationTemporalTableBuilder_2: never;
 
     UseHistoryTable(name: string): OwnedNavigationTemporalTableBuilder_2<TOwnerEntity, TDependentEntity>;
-    UseHistoryTable(name: string, schema: string): OwnedNavigationTemporalTableBuilder_2<TOwnerEntity, TDependentEntity>;
+    UseHistoryTable(name: string, schema: string | null): OwnedNavigationTemporalTableBuilder_2<TOwnerEntity, TDependentEntity>;
     UseHistoryTable(name: string): OwnedNavigationTemporalTableBuilder;
-    UseHistoryTable(name: string, schema: string): OwnedNavigationTemporalTableBuilder;
+    UseHistoryTable(name: string, schema: string | null): OwnedNavigationTemporalTableBuilder;
 }
 
 
@@ -73,11 +74,11 @@ export interface TemporalPeriodPropertyBuilder$instance {
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IInfrastructure_1: never;
 
-    Equals(obj: unknown): boolean;
+    Equals(obj: JsValue | null): boolean;
     GetHashCode(): int;
     HasColumnName(name: string): TemporalPeriodPropertyBuilder;
     HasPrecision(precision: int): TemporalPeriodPropertyBuilder;
-    ToString(): string | undefined;
+    ToString(): string | null;
 }
 
 
@@ -91,13 +92,13 @@ export type TemporalPeriodPropertyBuilder = TemporalPeriodPropertyBuilder$instan
 export interface TemporalTableBuilder$instance {
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Builders_TemporalTableBuilder: never;
 
-    Equals(obj: unknown): boolean;
+    Equals(obj: JsValue | null): boolean;
     GetHashCode(): int;
     HasPeriodEnd(propertyName: string): TemporalPeriodPropertyBuilder;
     HasPeriodStart(propertyName: string): TemporalPeriodPropertyBuilder;
-    ToString(): string | undefined;
+    ToString(): string | null;
     UseHistoryTable(name: string): TemporalTableBuilder;
-    UseHistoryTable(name: string, schema: string): TemporalTableBuilder;
+    UseHistoryTable(name: string, schema: string | null): TemporalTableBuilder;
 }
 
 
@@ -112,9 +113,9 @@ export interface TemporalTableBuilder_1$instance<TEntity> extends TemporalTableB
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Builders_TemporalTableBuilder_1: never;
 
     UseHistoryTable(name: string): TemporalTableBuilder_1<TEntity>;
-    UseHistoryTable(name: string, schema: string): TemporalTableBuilder_1<TEntity>;
+    UseHistoryTable(name: string, schema: string | null): TemporalTableBuilder_1<TEntity>;
     UseHistoryTable(name: string): TemporalTableBuilder;
-    UseHistoryTable(name: string, schema: string): TemporalTableBuilder;
+    UseHistoryTable(name: string, schema: string | null): TemporalTableBuilder;
 }
 
 

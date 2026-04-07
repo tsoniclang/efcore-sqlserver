@@ -2,8 +2,9 @@
 // Namespace: Azure.Core.Pipeline
 // Assembly: Azure.Core
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { ClientOptions, DelayStrategy, HttpMessage, Request, RequestFailedDetailsParser, ResponseClassifier, TokenCredential, TokenRequestContext } from "../../Azure.Core/internal/index.js";
@@ -79,8 +80,8 @@ export interface HttpPipeline$instance {
 
     readonly ResponseClassifier: ResponseClassifier;
     CreateMessage(): HttpMessage;
-    CreateMessage(context: RequestContext): HttpMessage;
-    CreateMessage(context: RequestContext, classifier?: ResponseClassifier): HttpMessage;
+    CreateMessage(context: RequestContext | null): HttpMessage;
+    CreateMessage(context: RequestContext | null, classifier?: ResponseClassifier | null): HttpMessage;
     CreateRequest(): Request;
     Send(message: HttpMessage, cancellationToken: CancellationToken): void;
     SendAsync(message: HttpMessage, cancellationToken: CancellationToken): ValueTask;
@@ -90,9 +91,9 @@ export interface HttpPipeline$instance {
 
 
 export const HttpPipeline: {
-    new(transport: HttpPipelineTransport, policies: HttpPipelinePolicy[], responseClassifier: ResponseClassifier): HttpPipeline;
-    CreateClientRequestIdScope(clientRequestId: string): IDisposable;
-    CreateHttpMessagePropertiesScope(messageProperties: IDictionary_2<System_Internal.String, unknown>): IDisposable;
+    new(transport: HttpPipelineTransport, policies: HttpPipelinePolicy[] | null, responseClassifier: ResponseClassifier | null): HttpPipeline;
+    CreateClientRequestIdScope(clientRequestId: string | null): IDisposable;
+    CreateHttpMessagePropertiesScope(messageProperties: IDictionary_2<System_Internal.String, JsValue | null>): IDisposable;
 };
 
 
@@ -105,8 +106,8 @@ export interface HttpPipelineOptions$instance {
     readonly PerCallPolicies: IList_1<HttpPipelinePolicy>;
     readonly PerRetryPolicies: IList_1<HttpPipelinePolicy>;
     RequestFailedDetailsParser: RequestFailedDetailsParser;
-    get ResponseClassifier(): ResponseClassifier | undefined;
-    set ResponseClassifier(value: ResponseClassifier | undefined);
+    get ResponseClassifier(): ResponseClassifier | null;
+    set ResponseClassifier(value: ResponseClassifier | null);
 }
 
 
@@ -169,8 +170,8 @@ export interface HttpPipelineTransportOptions$instance {
 
     readonly ClientCertificates: IList_1<X509Certificate2>;
     IsClientRedirectEnabled: boolean;
-    get ServerCertificateCustomValidationCallback(): Func_2<ServerCertificateCustomValidationArgs, System_Internal.Boolean> | undefined;
-    set ServerCertificateCustomValidationCallback(value: Func_2<ServerCertificateCustomValidationArgs, System_Internal.Boolean> | undefined);
+    get ServerCertificateCustomValidationCallback(): Func_2<ServerCertificateCustomValidationArgs, System_Internal.Boolean> | null;
+    set ServerCertificateCustomValidationCallback(value: Func_2<ServerCertificateCustomValidationArgs, System_Internal.Boolean> | null);
 }
 
 
@@ -205,13 +206,13 @@ export interface RetryPolicy$instance extends HttpPipelinePolicy {
     OnSendingRequestAsync(message: HttpMessage): ValueTask;
     Process(message: HttpMessage, pipeline: ReadOnlyMemory_1<HttpPipelinePolicy>): void;
     ProcessAsync(message: HttpMessage, pipeline: ReadOnlyMemory_1<HttpPipelinePolicy>): ValueTask;
-    ShouldRetry(message: HttpMessage, exception: Exception): boolean;
-    ShouldRetryAsync(message: HttpMessage, exception: Exception): ValueTask_1<System_Internal.Boolean>;
+    ShouldRetry(message: HttpMessage, exception: Exception | null): boolean;
+    ShouldRetryAsync(message: HttpMessage, exception: Exception | null): ValueTask_1<System_Internal.Boolean>;
 }
 
 
 export const RetryPolicy: {
-    new(maxRetries: int, delayStrategy: DelayStrategy): RetryPolicy;
+    new(maxRetries: int, delayStrategy: DelayStrategy | null): RetryPolicy;
 };
 
 
@@ -220,22 +221,22 @@ export type RetryPolicy = RetryPolicy$instance;
 export interface ServerCertificateCustomValidationArgs$instance {
     readonly __tsonic_type_Azure_Core_Pipeline_ServerCertificateCustomValidationArgs: never;
 
-    readonly Certificate: X509Certificate2 | undefined;
-    readonly CertificateAuthorityChain: X509Chain | undefined;
+    readonly Certificate: X509Certificate2 | null;
+    readonly CertificateAuthorityChain: X509Chain | null;
     readonly SslPolicyErrors: SslPolicyErrors;
 }
 
 
 export const ServerCertificateCustomValidationArgs: {
-    new(certificate: X509Certificate2, certificateAuthorityChain: X509Chain, sslPolicyErrors: SslPolicyErrors): ServerCertificateCustomValidationArgs;
+    new(certificate: X509Certificate2 | null, certificateAuthorityChain: X509Chain | null, sslPolicyErrors: SslPolicyErrors): ServerCertificateCustomValidationArgs;
 };
 
 
 export type ServerCertificateCustomValidationArgs = ServerCertificateCustomValidationArgs$instance;
 
 export abstract class HttpPipelineBuilder$instance {
-    static Build(options: ClientOptions, perCallPolicies: HttpPipelinePolicy[], perRetryPolicies: HttpPipelinePolicy[], transportOptions: HttpPipelineTransportOptions, responseClassifier: ResponseClassifier): DisposableHttpPipeline;
-    static Build(options: ClientOptions, perCallPolicies: HttpPipelinePolicy[], perRetryPolicies: HttpPipelinePolicy[], responseClassifier: ResponseClassifier): HttpPipeline;
+    static Build(options: ClientOptions, perCallPolicies: HttpPipelinePolicy[], perRetryPolicies: HttpPipelinePolicy[], transportOptions: HttpPipelineTransportOptions, responseClassifier: ResponseClassifier | null): DisposableHttpPipeline;
+    static Build(options: ClientOptions, perCallPolicies: HttpPipelinePolicy[], perRetryPolicies: HttpPipelinePolicy[], responseClassifier: ResponseClassifier | null): HttpPipeline;
     static Build(options: ClientOptions, ...perRetryPolicies: HttpPipelinePolicy[]): HttpPipeline;
     static Build(options: HttpPipelineOptions, transportOptions: HttpPipelineTransportOptions): DisposableHttpPipeline;
     static Build(options: HttpPipelineOptions): HttpPipeline;

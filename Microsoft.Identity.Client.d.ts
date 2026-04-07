@@ -46,6 +46,7 @@ export { AcquireTokenSilentParameterBuilder as AcquireTokenSilentParameterBuilde
 export { AcquireTokenWithDeviceCodeParameterBuilder as AcquireTokenWithDeviceCodeParameterBuilder } from './Microsoft.Identity.Client/internal/index.js';
 export { BaseAbstractAcquireTokenParameterBuilder_1 as BaseAbstractAcquireTokenParameterBuilder } from './Microsoft.Identity.Client/internal/index.js';
 export { BrokerOptions as BrokerOptions } from './Microsoft.Identity.Client/internal/index.js';
+export { BrokerOptions_OperatingSystems as BrokerOptions_OperatingSystems } from './Microsoft.Identity.Client/internal/index.js';
 export { EmbeddedWebViewOptions as EmbeddedWebViewOptions } from './Microsoft.Identity.Client/internal/index.js';
 export { GetAuthorizationRequestUrlParameterBuilder as GetAuthorizationRequestUrlParameterBuilder } from './Microsoft.Identity.Client/internal/index.js';
 export { SystemWebViewOptions as SystemWebViewOptions } from './Microsoft.Identity.Client/internal/index.js';
@@ -118,7 +119,6 @@ export { TokenSource as TokenSource } from './Microsoft.Identity.Client/internal
 export { UiRequiredExceptionClassification as UiRequiredExceptionClassification } from './Microsoft.Identity.Client/internal/index.js';
 export { UserAssertion as UserAssertion } from './Microsoft.Identity.Client/internal/index.js';
 export { WwwAuthenticateParameters as WwwAuthenticateParameters } from './Microsoft.Identity.Client/internal/index.js';
-export { BrokerOptions_OperatingSystems as BrokerOptions_OperatingSystems } from './Microsoft.Identity.Client/internal/index.js';
 // Extension methods (C# using semantics)
 export type { ExtensionMethods_Microsoft_Identity_Client as ExtensionMethods } from './__internal/extensions/index.js';
 

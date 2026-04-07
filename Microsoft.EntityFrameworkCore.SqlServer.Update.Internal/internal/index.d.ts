@@ -2,11 +2,9 @@
 // Namespace: Microsoft.EntityFrameworkCore.SqlServer.Update.Internal
 // Assembly: Microsoft.EntityFrameworkCore.SqlServer
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
-// Import support types from @tsonic/core
-import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import type { IReadOnlyList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
@@ -115,17 +113,17 @@ export interface SqlServerUpdateSqlGenerator$instance extends UpdateAndSelectSql
     readonly MergeIntoMinimumThreshold: int;
     AppendBatchHeader(commandStringBuilder: StringBuilder): void;
     AppendBulkInsertOperation(commandStringBuilder: StringBuilder, modificationCommands: IReadOnlyList_1<IReadOnlyModificationCommand>, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
-    AppendDeleteCommand(commandStringBuilder: StringBuilder, name: string, schema: string, readOperations: IReadOnlyList_1<IColumnModification>, conditionOperations: IReadOnlyList_1<IColumnModification>, appendReturningOneClause?: boolean): void;
+    AppendDeleteCommand(commandStringBuilder: StringBuilder, name: string, schema: string | null, readOperations: IReadOnlyList_1<IColumnModification>, conditionOperations: IReadOnlyList_1<IColumnModification>, appendReturningOneClause?: boolean): void;
     AppendDeleteOperation(commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
     AppendIdentityWhereCondition(commandStringBuilder: StringBuilder, columnModification: IColumnModification): void;
-    AppendInsertCommand(commandStringBuilder: StringBuilder, name: string, schema: string, writeOperations: IReadOnlyList_1<IColumnModification>, readOperations: IReadOnlyList_1<IColumnModification>): void;
+    AppendInsertCommand(commandStringBuilder: StringBuilder, name: string, schema: string | null, writeOperations: IReadOnlyList_1<IColumnModification>, readOperations: IReadOnlyList_1<IColumnModification>): void;
     AppendInsertOperation(commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
-    AppendReturningClause(commandStringBuilder: StringBuilder, operations: IReadOnlyList_1<IColumnModification>, additionalValues?: string): void;
+    AppendReturningClause(commandStringBuilder: StringBuilder, operations: IReadOnlyList_1<IColumnModification>, additionalValues?: string | null): void;
     AppendRowsAffectedWhereCondition(commandStringBuilder: StringBuilder, expectedRowsAffected: int): void;
-    AppendSelectAffectedCountCommand(commandStringBuilder: StringBuilder, name: string, schema: string, commandPosition: int): ResultSetMapping;
+    AppendSelectAffectedCountCommand(commandStringBuilder: StringBuilder, name: string, schema: string | null, commandPosition: int): ResultSetMapping;
     AppendStoredProcedureCall(commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
-    AppendUpdateColumnValue(updateSqlGeneratorHelper: ISqlGenerationHelper, columnModification: IColumnModification, stringBuilder: StringBuilder, name: string, schema: string): void;
-    AppendUpdateCommand(commandStringBuilder: StringBuilder, name: string, schema: string, writeOperations: IReadOnlyList_1<IColumnModification>, readOperations: IReadOnlyList_1<IColumnModification>, conditionOperations: IReadOnlyList_1<IColumnModification>, appendReturningOneClause?: boolean): void;
+    AppendUpdateColumnValue(updateSqlGeneratorHelper: ISqlGenerationHelper, columnModification: IColumnModification, stringBuilder: StringBuilder, name: string, schema: string | null): void;
+    AppendUpdateCommand(commandStringBuilder: StringBuilder, name: string, schema: string | null, writeOperations: IReadOnlyList_1<IColumnModification>, readOperations: IReadOnlyList_1<IColumnModification>, conditionOperations: IReadOnlyList_1<IColumnModification>, appendReturningOneClause?: boolean): void;
     AppendUpdateOperation(commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
     PrependEnsureAutocommit(commandStringBuilder: StringBuilder): void;
 }

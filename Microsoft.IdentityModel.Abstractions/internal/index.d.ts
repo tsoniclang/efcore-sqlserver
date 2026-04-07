@@ -2,8 +2,9 @@
 // Namespace: Microsoft.IdentityModel.Abstractions
 // Assembly: Microsoft.IdentityModel.Abstractions
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { IDictionary_2, IReadOnlyDictionary_2 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
@@ -38,7 +39,7 @@ export interface ITelemetryClient$instance {
     IsEnabled(): boolean;
     IsEnabled(eventName: string): boolean;
     TrackEvent(eventDetails: TelemetryEventDetails): void;
-    TrackEvent(eventName: string, stringProperties?: IDictionary_2<System_Internal.String, System_Internal.String>, longProperties?: IDictionary_2<System_Internal.String, System_Internal.Int64>, boolProperties?: IDictionary_2<System_Internal.String, System_Internal.Boolean>, dateTimeProperties?: IDictionary_2<System_Internal.String, DateTime>, doubleProperties?: IDictionary_2<System_Internal.String, System_Internal.Double>, guidProperties?: IDictionary_2<System_Internal.String, Guid>): void;
+    TrackEvent(eventName: string, stringProperties?: IDictionary_2<System_Internal.String, System_Internal.String> | null, longProperties?: IDictionary_2<System_Internal.String, System_Internal.Int64> | null, boolProperties?: IDictionary_2<System_Internal.String, System_Internal.Boolean> | null, dateTimeProperties?: IDictionary_2<System_Internal.String, DateTime> | null, doubleProperties?: IDictionary_2<System_Internal.String, System_Internal.Double> | null, guidProperties?: IDictionary_2<System_Internal.String, Guid> | null): void;
 }
 
 
@@ -47,11 +48,11 @@ export type ITelemetryClient = ITelemetryClient$instance;
 export interface LogEntry$instance {
     readonly __tsonic_type_Microsoft_IdentityModel_Abstractions_LogEntry: never;
 
-    get CorrelationId(): string | undefined;
-    set CorrelationId(value: string | undefined);
+    get CorrelationId(): string | null;
+    set CorrelationId(value: string | null);
     EventLogLevel: EventLogLevel;
-    get Message(): string | undefined;
-    set Message(value: string | undefined);
+    get Message(): string | null;
+    set Message(value: string | null);
 }
 
 
@@ -94,7 +95,7 @@ export interface NullTelemetryClient$instance extends ITelemetryClient$instance 
     IsEnabled(): boolean;
     IsEnabled(eventName: string): boolean;
     TrackEvent(eventDetails: TelemetryEventDetails): void;
-    TrackEvent(eventName: string, stringProperties?: IDictionary_2<System_Internal.String, System_Internal.String>, longProperties?: IDictionary_2<System_Internal.String, System_Internal.Int64>, boolProperties?: IDictionary_2<System_Internal.String, System_Internal.Boolean>, dateTimeProperties?: IDictionary_2<System_Internal.String, DateTime>, doubleProperties?: IDictionary_2<System_Internal.String, System_Internal.Double>, guidProperties?: IDictionary_2<System_Internal.String, Guid>): void;
+    TrackEvent(eventName: string, stringProperties?: IDictionary_2<System_Internal.String, System_Internal.String> | null, longProperties?: IDictionary_2<System_Internal.String, System_Internal.Int64> | null, boolProperties?: IDictionary_2<System_Internal.String, System_Internal.Boolean> | null, dateTimeProperties?: IDictionary_2<System_Internal.String, DateTime> | null, doubleProperties?: IDictionary_2<System_Internal.String, System_Internal.Double> | null, guidProperties?: IDictionary_2<System_Internal.String, Guid> | null): void;
 }
 
 
@@ -113,9 +114,9 @@ export type NullTelemetryClient = NullTelemetryClient$instance & __NullTelemetry
 export interface TelemetryEventDetails$instance {
     readonly __tsonic_type_Microsoft_IdentityModel_Abstractions_TelemetryEventDetails: never;
 
-    get Name(): string | undefined;
-    set Name(value: string | undefined);
-    readonly Properties: IReadOnlyDictionary_2<System_Internal.String, unknown>;
+    get Name(): string | null;
+    set Name(value: string | null);
+    readonly Properties: IReadOnlyDictionary_2<System_Internal.String, JsValue>;
     SetProperty(key: string, value: string): void;
     SetProperty(key: string, value: long): void;
     SetProperty(key: string, value: boolean): void;

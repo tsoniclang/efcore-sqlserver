@@ -2,11 +2,9 @@
 // Namespace: System.Text.Json.Serialization
 // Assembly: System.Memory.Data, System.Text.Json
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
-// Import support types from @tsonic/core
-import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
@@ -20,7 +18,7 @@ import type { Type, Void } from "@tsonic/dotnet/System/internal/index.js";
 export interface BinaryDataJsonConverter$instance extends JsonConverter_1<BinaryData> {
     readonly __tsonic_type_System_Text_Json_Serialization_BinaryDataJsonConverter: never;
 
-    Read(reader: Utf8JsonReader, typeToConvert: Type, options: JsonSerializerOptions): BinaryData | undefined;
+    Read(reader: Utf8JsonReader, typeToConvert: Type, options: JsonSerializerOptions): BinaryData | null;
     Write(writer: Utf8JsonWriter, value: BinaryData, options: JsonSerializerOptions): void;
 }
 

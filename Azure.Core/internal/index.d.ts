@@ -2,11 +2,9 @@
 // Namespace: Azure.Core
 // Assembly: Azure.Core
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
-// Import support types from @tsonic/core
-import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import type { HttpPipelinePolicy, HttpPipelineTransport } from "../../Azure.Core.Pipeline/internal/index.js";
@@ -56,7 +54,7 @@ export interface AccessToken$instance {
     readonly RefreshOn: Nullable_1<DateTimeOffset>;
     readonly Token: string;
     readonly TokenType: string;
-    Equals(obj: unknown): boolean;
+    Equals(obj: JsValue | null): boolean;
     GetHashCode(): int;
 }
 
@@ -75,10 +73,10 @@ export interface AzureLocation$instance {
 
     readonly __tsonic_iface_System_IEquatable_1: never;
 
-    readonly DisplayName: string | undefined;
+    readonly DisplayName: string | null;
     readonly Name: string;
     Equals(other: AzureLocation): boolean;
-    Equals(obj: unknown): boolean;
+    Equals(obj: JsValue | null): boolean;
     GetHashCode(): int;
     ToString(): string;
 }
@@ -162,8 +160,8 @@ export interface ContentType$instance {
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     Equals(other: ContentType): boolean;
-    Equals(other: string): boolean;
-    Equals(obj: unknown): boolean;
+    Equals(other: string | null): boolean;
+    Equals(obj: JsValue | null): boolean;
     GetHashCode(): int;
     ToString(): string;
 }
@@ -186,7 +184,7 @@ export interface HttpHeader$instance {
 
     readonly Name: string;
     readonly Value: string;
-    Equals(obj: unknown): boolean;
+    Equals(obj: JsValue | null): boolean;
     Equals(other: HttpHeader): boolean;
     GetHashCode(): int;
     ToString(): string;
@@ -199,6 +197,42 @@ export const HttpHeader: {
 
 
 export type HttpHeader = HttpHeader$instance;
+
+export abstract class HttpHeader_Common$instance {
+    static readonly JsonContentType: HttpHeader;
+    static readonly JsonAccept: HttpHeader;
+    static readonly OctetStreamContentType: HttpHeader;
+    static readonly FormUrlEncodedContentType: HttpHeader;
+}
+
+
+export type HttpHeader_Common = HttpHeader_Common$instance;
+
+export abstract class HttpHeader_Names$instance {
+    static readonly Date: string;
+    static readonly XMsDate: string;
+    static readonly ContentType: string;
+    static readonly ContentLength: string;
+    static readonly ETag: string;
+    static readonly XMsRequestId: string;
+    static readonly UserAgent: string;
+    static readonly Accept: string;
+    static readonly Authorization: string;
+    static readonly Range: string;
+    static readonly XMsRange: string;
+    static readonly IfMatch: string;
+    static readonly IfNoneMatch: string;
+    static readonly IfModifiedSince: string;
+    static readonly IfUnmodifiedSince: string;
+    static readonly Prefer: string;
+    static readonly Referer: string;
+    static readonly Host: string;
+    static readonly ContentDisposition: string;
+    static readonly WwwAuthenticate: string;
+}
+
+
+export type HttpHeader_Names = HttpHeader_Names$instance;
 
 export interface MessageProcessingContext$instance {
     readonly __tsonic_type_Azure_Core_MessageProcessingContext: never;
@@ -250,8 +284,8 @@ export interface RequestHeaders$instance {
     GetEnumerator(): IEnumerator_1<HttpHeader>;
     Remove(name: string): boolean;
     SetValue(name: string, value: string): void;
-    TryGetValue(name: string, value: string): boolean;
-    TryGetValues(name: string, values: IEnumerable_1<System_Internal.String>): boolean;
+    TryGetValue(name: string, value: string | null): boolean;
+    TryGetValues(name: string, values: IEnumerable_1<System_Internal.String> | null): boolean;
 }
 
 
@@ -269,7 +303,7 @@ export interface RequestMethod$instance {
 
     readonly Method: string;
     Equals(other: RequestMethod): boolean;
-    Equals(obj: unknown): boolean;
+    Equals(obj: JsValue | null): boolean;
     GetHashCode(): int;
     ToString(): string;
 }
@@ -299,7 +333,7 @@ export interface ResourceType$instance {
     readonly Namespace: string;
     readonly Type: string;
     Equals(other: ResourceType): boolean;
-    Equals(other: unknown): boolean;
+    Equals(other: JsValue | null): boolean;
     GetHashCode(): int;
     GetLastType(): string;
     ToString(): string;
@@ -321,14 +355,14 @@ export interface ResponseHeaders$instance {
 
     readonly ContentLength: Nullable_1<System_Internal.Int32>;
     readonly ContentLengthLong: Nullable_1<System_Internal.Int64>;
-    readonly ContentType: string | undefined;
+    readonly ContentType: string | null;
     readonly Date: Nullable_1<DateTimeOffset>;
     readonly ETag: Nullable_1<ETag>;
-    readonly RequestId: string | undefined;
+    readonly RequestId: string | null;
     Contains(name: string): boolean;
     GetEnumerator(): IEnumerator_1<HttpHeader>;
-    TryGetValue(name: string, value: string): boolean;
-    TryGetValues(name: string, values: IEnumerable_1<System_Internal.String>): boolean;
+    TryGetValue(name: string, value: string | null): boolean;
+    TryGetValues(name: string, values: IEnumerable_1<System_Internal.String> | null): boolean;
 }
 
 
@@ -342,24 +376,24 @@ export type ResponseHeaders = ResponseHeaders$instance;
 export interface TokenRequestContext$instance {
     readonly __tsonic_type_Azure_Core_TokenRequestContext: never;
 
-    readonly Claims: string | undefined;
+    readonly Claims: string | null;
     readonly IsCaeEnabled: boolean;
     readonly IsProofOfPossessionEnabled: boolean;
-    readonly ParentRequestId: string | undefined;
-    readonly ProofOfPossessionNonce: string | undefined;
-    readonly ResourceRequestMethod: string | undefined;
-    readonly ResourceRequestUri: Uri | undefined;
+    readonly ParentRequestId: string | null;
+    readonly ProofOfPossessionNonce: string | null;
+    readonly ResourceRequestMethod: string | null;
+    readonly ResourceRequestUri: Uri | null;
     readonly Scopes: string[];
-    readonly TenantId: string | undefined;
+    readonly TenantId: string | null;
 }
 
 
 export const TokenRequestContext: {
-    new(scopes: string[], parentRequestId: string): TokenRequestContext;
-    new(scopes: string[], parentRequestId: string, claims: string): TokenRequestContext;
-    new(scopes: string[], parentRequestId: string, claims: string, tenantId: string): TokenRequestContext;
-    new(scopes: string[], parentRequestId: string, claims: string, tenantId: string, isCaeEnabled: boolean): TokenRequestContext;
-    new(scopes: string[], parentRequestId: string, claims: string, tenantId: string, isCaeEnabled: boolean, isProofOfPossessionEnabled: boolean, proofOfPossessionNonce: string, requestUri: Uri, requestMethod: string): TokenRequestContext;
+    new(scopes: string[], parentRequestId: string | null): TokenRequestContext;
+    new(scopes: string[], parentRequestId: string | null, claims: string | null): TokenRequestContext;
+    new(scopes: string[], parentRequestId: string | null, claims: string | null, tenantId: string | null): TokenRequestContext;
+    new(scopes: string[], parentRequestId: string | null, claims: string | null, tenantId: string | null, isCaeEnabled: boolean): TokenRequestContext;
+    new(scopes: string[], parentRequestId: string | null, claims: string | null, tenantId: string | null, isCaeEnabled: boolean, isProofOfPossessionEnabled: boolean, proofOfPossessionNonce: string | null, requestUri: Uri | null, requestMethod: string | null): TokenRequestContext;
 };
 
 
@@ -384,17 +418,17 @@ export interface ClientOptions$instance {
 
     readonly Diagnostics: DiagnosticsOptions | TokenCredentialDiagnosticsOptions;
     readonly Retry: RetryOptions;
-    get RetryPolicy(): HttpPipelinePolicy | undefined;
-    set RetryPolicy(value: HttpPipelinePolicy | undefined);
+    get RetryPolicy(): HttpPipelinePolicy | null;
+    set RetryPolicy(value: HttpPipelinePolicy | null);
     Transport: HttpPipelineTransport;
     AddPolicy(policy: HttpPipelinePolicy, position: HttpPipelinePosition): void;
-    Equals(obj: unknown): boolean;
+    Equals(obj: JsValue | null): boolean;
     GetHashCode(): int;
-    ToString(): string | undefined;
+    ToString(): string | null;
 }
 
 
-export const ClientOptions: (abstract new() => ClientOptions) & (abstract new(diagnostics: DiagnosticsOptions) => ClientOptions) & {
+export const ClientOptions: (abstract new() => ClientOptions) & (abstract new(diagnostics: DiagnosticsOptions | null) => ClientOptions) & {
     Default: ClientOptions;
 };
 
@@ -404,8 +438,8 @@ export type ClientOptions = ClientOptions$instance;
 export interface DelayStrategy$instance {
     readonly __tsonic_type_Azure_Core_DelayStrategy: never;
 
-    GetNextDelay(response: Response, retryNumber: int): TimeSpan;
-    GetNextDelayCore(response: Response, retryNumber: int): TimeSpan;
+    GetNextDelay(response: Response | null, retryNumber: int): TimeSpan;
+    GetNextDelayCore(response: Response | null, retryNumber: int): TimeSpan;
 }
 
 
@@ -422,8 +456,8 @@ export type DelayStrategy = DelayStrategy$instance;
 export interface DiagnosticsOptions$instance {
     readonly __tsonic_type_Azure_Core_DiagnosticsOptions: never;
 
-    get ApplicationId(): string | undefined;
-    set ApplicationId(value: string | undefined);
+    get ApplicationId(): string | null;
+    set ApplicationId(value: string | null);
     IsDistributedTracingEnabled: boolean;
     IsLoggingContentEnabled: boolean;
     IsLoggingEnabled: boolean;
@@ -435,8 +469,8 @@ export interface DiagnosticsOptions$instance {
 
 
 export const DiagnosticsOptions: (abstract new() => DiagnosticsOptions) & {
-    get DefaultApplicationId(): string | undefined;
-    set DefaultApplicationId(value: string | undefined);
+    get DefaultApplicationId(): string | null;
+    set DefaultApplicationId(value: string | null);
 };
 
 
@@ -457,11 +491,11 @@ export interface HttpMessage$instance {
     Response: Response;
     ResponseClassifier: ResponseClassifier;
     Dispose(): void;
-    ExtractResponseContent(): Stream | undefined;
-    SetProperty(name: string, value: unknown): void;
-    SetProperty(type: Type, value: unknown): void;
-    TryGetProperty(name: string, value: unknown): boolean;
-    TryGetProperty(type: Type, value: unknown): boolean;
+    ExtractResponseContent(): Stream | null;
+    SetProperty(name: string, value: JsValue): void;
+    SetProperty(type: Type, value: JsValue): void;
+    TryGetProperty(name: string, value: JsValue | null): boolean;
+    TryGetProperty(type: Type, value: JsValue | null): boolean;
 }
 
 
@@ -478,8 +512,8 @@ export interface Request$instance {
     readonly __tsonic_iface_System_IDisposable: never;
 
     ClientRequestId: string;
-    get Content(): RequestContent | undefined;
-    set Content(value: RequestContent | undefined);
+    get Content(): RequestContent | null;
+    set Content(value: RequestContent | null);
     readonly Headers: RequestHeaders;
     Method: RequestMethod;
     Uri: RequestUriBuilder;
@@ -489,8 +523,8 @@ export interface Request$instance {
     EnumerateHeaders(): IEnumerable_1<HttpHeader>;
     RemoveHeader(name: string): boolean;
     SetHeader(name: string, value: string): void;
-    TryGetHeader(name: string, value: string): boolean;
-    TryGetHeaderValues(name: string, values: IEnumerable_1<System_Internal.String>): boolean;
+    TryGetHeader(name: string, value: string | null): boolean;
+    TryGetHeaderValues(name: string, values: IEnumerable_1<System_Internal.String> | null): boolean;
 }
 
 
@@ -519,12 +553,12 @@ export const RequestContent: (abstract new() => RequestContent) & {
     Create(bytes: byte[], index: int, length: int): RequestContent;
     Create(bytes: byte[]): RequestContent;
     Create(stream: Stream): RequestContent;
-    Create(serializable: unknown, propertyNameFormat: JsonPropertyNames, dateTimeFormat?: string): RequestContent;
-    Create(serializable: unknown, serializer: ObjectSerializer): RequestContent;
-    Create(serializable: unknown): RequestContent;
+    Create(serializable: JsValue, propertyNameFormat: JsonPropertyNames, dateTimeFormat?: string): RequestContent;
+    Create(serializable: JsValue, serializer: ObjectSerializer | null): RequestContent;
+    Create(serializable: JsValue): RequestContent;
     Create(bytes: ReadOnlyMemory_1<System_Internal.Byte>): RequestContent;
     Create(content: string): RequestContent;
-    Create<T extends IPersistableModel_1<T>>(model: T, options?: ModelReaderWriterOptions): RequestContent;
+    Create<T extends IPersistableModel_1<T>>(model: T, options?: ModelReaderWriterOptions | null): RequestContent;
 };
 
 
@@ -533,7 +567,7 @@ export type RequestContent = RequestContent$instance;
 export interface RequestFailedDetailsParser$instance {
     readonly __tsonic_type_Azure_Core_RequestFailedDetailsParser: never;
 
-    TryParse(response: Response, error: ResponseError, data: IDictionary_2<System_Internal.String, System_Internal.String>): boolean;
+    TryParse(response: Response, error: ResponseError | null, data: IDictionary_2<System_Internal.String, System_Internal.String> | null): boolean;
 }
 
 
@@ -546,14 +580,14 @@ export type RequestFailedDetailsParser = RequestFailedDetailsParser$instance;
 export interface RequestUriBuilder$instance {
     readonly __tsonic_type_Azure_Core_RequestUriBuilder: never;
 
-    get Host(): string | undefined;
-    set Host(value: string | undefined);
+    get Host(): string | null;
+    set Host(value: string | null);
     Path: string;
     readonly PathAndQuery: string;
     Port: int;
     Query: string;
-    get Scheme(): string | undefined;
-    set Scheme(value: string | undefined);
+    get Scheme(): string | null;
+    set Scheme(value: string | null);
     AppendPath(value: string): void;
     AppendPath(value: string, escape: boolean): void;
     AppendPath(value: ReadOnlySpan_1<System_Internal.Char>, escape: boolean): void;
@@ -581,16 +615,16 @@ export interface ResourceIdentifier$instance {
 
     readonly Location: Nullable_1<AzureLocation>;
     readonly Name: string;
-    readonly Parent: ResourceIdentifier | undefined;
-    readonly Provider: string | undefined;
-    readonly ResourceGroupName: string | undefined;
+    readonly Parent: ResourceIdentifier | null;
+    readonly Provider: string | null;
+    readonly ResourceGroupName: string | null;
     readonly ResourceType: ResourceType;
-    readonly SubscriptionId: string | undefined;
+    readonly SubscriptionId: string | null;
     AppendChildResource(childResourceType: string, childResourceName: string): ResourceIdentifier;
     AppendProviderResource(providerNamespace: string, resourceType: string, resourceName: string): ResourceIdentifier;
-    CompareTo(other: ResourceIdentifier): int;
-    Equals(other: ResourceIdentifier): boolean;
-    Equals(obj: unknown): boolean;
+    CompareTo(other: ResourceIdentifier | null): int;
+    Equals(other: ResourceIdentifier | null): boolean;
+    Equals(obj: JsValue | null): boolean;
     GetHashCode(): int;
     ToString(): string;
 }
@@ -600,7 +634,7 @@ export const ResourceIdentifier: {
     new(resourceId: string): ResourceIdentifier;
     readonly Root: ResourceIdentifier;
     Parse(input: string): ResourceIdentifier;
-    TryParse(input: string, result: ResourceIdentifier): boolean;
+    TryParse(input: string | null, result: ResourceIdentifier | null): boolean;
 };
 
 
@@ -670,7 +704,7 @@ export type StatusCodeClassifier = StatusCodeClassifier$instance;
 export interface TelemetryDetails$instance {
     readonly __tsonic_type_Azure_Core_TelemetryDetails: never;
 
-    readonly ApplicationId: string | undefined;
+    readonly ApplicationId: string | null;
     readonly Assembly: Assembly;
     Apply(message: HttpMessage): void;
     ToString(): string;
@@ -678,7 +712,7 @@ export interface TelemetryDetails$instance {
 
 
 export const TelemetryDetails: {
-    new(assembly: Assembly, applicationId: string): TelemetryDetails;
+    new(assembly: Assembly, applicationId: string | null): TelemetryDetails;
 };
 
 
@@ -687,7 +721,7 @@ export type TelemetryDetails = TelemetryDetails$instance;
 export interface TokenCredential$instance extends AuthenticationTokenProvider {
     readonly __tsonic_type_Azure_Core_TokenCredential: never;
 
-    CreateTokenOptions(properties: IReadOnlyDictionary_2<System_Internal.String, unknown>): GetTokenOptions | undefined;
+    CreateTokenOptions(properties: IReadOnlyDictionary_2<System_Internal.String, JsValue>): GetTokenOptions | null;
     GetToken(requestContext: TokenRequestContext, cancellationToken: CancellationToken): AccessToken;
     GetToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
     GetTokenAsync(requestContext: TokenRequestContext, cancellationToken: CancellationToken): ValueTask_1<AccessToken>;
@@ -708,42 +742,6 @@ export abstract class DelegatedTokenCredential$instance {
 
 
 export type DelegatedTokenCredential = DelegatedTokenCredential$instance;
-
-export abstract class HttpHeader_Common$instance {
-    static readonly JsonContentType: HttpHeader;
-    static readonly JsonAccept: HttpHeader;
-    static readonly OctetStreamContentType: HttpHeader;
-    static readonly FormUrlEncodedContentType: HttpHeader;
-}
-
-
-export type HttpHeader_Common = HttpHeader_Common$instance;
-
-export abstract class HttpHeader_Names$instance {
-    static readonly Date: string;
-    static readonly XMsDate: string;
-    static readonly ContentType: string;
-    static readonly ContentLength: string;
-    static readonly ETag: string;
-    static readonly XMsRequestId: string;
-    static readonly UserAgent: string;
-    static readonly Accept: string;
-    static readonly Authorization: string;
-    static readonly Range: string;
-    static readonly XMsRange: string;
-    static readonly IfMatch: string;
-    static readonly IfNoneMatch: string;
-    static readonly IfModifiedSince: string;
-    static readonly IfUnmodifiedSince: string;
-    static readonly Prefer: string;
-    static readonly Referer: string;
-    static readonly Host: string;
-    static readonly ContentDisposition: string;
-    static readonly WwwAuthenticate: string;
-}
-
-
-export type HttpHeader_Names = HttpHeader_Names$instance;
 
 export abstract class MultipartResponse$instance {
     static Parse(response: Response, expectCrLf: boolean, cancellationToken: CancellationToken): Response[];

@@ -2,8 +2,9 @@
 // Namespace: Microsoft.IdentityModel.Protocols.OpenIdConnect.Configuration
 // Assembly: Microsoft.IdentityModel.Protocols.OpenIdConnect
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import * as Microsoft_IdentityModel_Protocols_OpenIdConnect_Internal from "../../Microsoft.IdentityModel.Protocols.OpenIdConnect/internal/index.js";

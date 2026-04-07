@@ -2,8 +2,9 @@
 // Namespace: Microsoft.Data.Sql
 // Assembly: Microsoft.Data.SqlClient
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import * as System_Data_Common_Internal from "@tsonic/dotnet/System.Data.Common/internal/index.js";

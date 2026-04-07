@@ -229,106 +229,6 @@
       "constructors": []
     },
     {
-      "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.BrokerOptions\u002BOperatingSystems",
-      "clrName": "Microsoft.Identity.Client.BrokerOptions\u002BOperatingSystems",
-      "assemblyName": "Microsoft.Identity.Client",
-      "metadataToken": 0,
-      "kind": "Enum",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": true,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Enum",
-        "clrName": "System.Enum"
-      },
-      "interfaces": [
-        {
-          "stableId": "System.Private.CoreLib:System.IComparable",
-          "clrName": "System.IComparable"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
-          "clrName": "System.ISpanFormattable"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.IFormattable",
-          "clrName": "System.IFormattable"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.IConvertible",
-          "clrName": "System.IConvertible"
-        }
-      ],
-      "methods": [],
-      "properties": [],
-      "fields": [
-        {
-          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.BrokerOptions\u002BOperatingSystems::value__System.Int32",
-          "clrName": "value__",
-          "metadataToken": 67111072,
-          "normalizedSignature": "value__|System.Int32|static=false|const=false",
-          "isStatic": false,
-          "isReadOnly": false,
-          "isLiteral": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.BrokerOptions\u002BOperatingSystems",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
-        },
-        {
-          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.BrokerOptions\u002BOperatingSystems::NoneMicrosoft.Identity.Client.BrokerOptions\u002BOperatingSystems",
-          "clrName": "None",
-          "metadataToken": 67111073,
-          "normalizedSignature": "None|Microsoft.Identity.Client.BrokerOptions\u002BOperatingSystems|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.BrokerOptions\u002BOperatingSystems",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
-        },
-        {
-          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.BrokerOptions\u002BOperatingSystems::WindowsMicrosoft.Identity.Client.BrokerOptions\u002BOperatingSystems",
-          "clrName": "Windows",
-          "metadataToken": 67111074,
-          "normalizedSignature": "Windows|Microsoft.Identity.Client.BrokerOptions\u002BOperatingSystems|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.BrokerOptions\u002BOperatingSystems",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
-        },
-        {
-          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.BrokerOptions\u002BOperatingSystems::LinuxMicrosoft.Identity.Client.BrokerOptions\u002BOperatingSystems",
-          "clrName": "Linux",
-          "metadataToken": 67111075,
-          "normalizedSignature": "Linux|Microsoft.Identity.Client.BrokerOptions\u002BOperatingSystems|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.BrokerOptions\u002BOperatingSystems",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
-        },
-        {
-          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.BrokerOptions\u002BOperatingSystems::OSXMicrosoft.Identity.Client.BrokerOptions\u002BOperatingSystems",
-          "clrName": "OSX",
-          "metadataToken": 67111076,
-          "normalizedSignature": "OSX|Microsoft.Identity.Client.BrokerOptions\u002BOperatingSystems|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.BrokerOptions\u002BOperatingSystems",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
-        }
-      ],
-      "events": [],
-      "constructors": []
-    },
-    {
       "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.CacheRefreshReason",
       "clrName": "Microsoft.Identity.Client.CacheRefreshReason",
       "assemblyName": "Microsoft.Identity.Client",
@@ -7476,6 +7376,106 @@
           "declaringAssemblyName": "Microsoft.Identity.Client"
         }
       ]
+    },
+    {
+      "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.BrokerOptions\u002BOperatingSystems",
+      "clrName": "Microsoft.Identity.Client.BrokerOptions\u002BOperatingSystems",
+      "assemblyName": "Microsoft.Identity.Client",
+      "metadataToken": 0,
+      "kind": "Enum",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.BrokerOptions\u002BOperatingSystems::value__System.Int32",
+          "clrName": "value__",
+          "metadataToken": 67111072,
+          "normalizedSignature": "value__|System.Int32|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "isLiteral": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.Identity.Client.BrokerOptions\u002BOperatingSystems",
+          "declaringAssemblyName": "Microsoft.Identity.Client"
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.BrokerOptions\u002BOperatingSystems::NoneMicrosoft.Identity.Client.BrokerOptions\u002BOperatingSystems",
+          "clrName": "None",
+          "metadataToken": 67111073,
+          "normalizedSignature": "None|Microsoft.Identity.Client.BrokerOptions\u002BOperatingSystems|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.Identity.Client.BrokerOptions\u002BOperatingSystems",
+          "declaringAssemblyName": "Microsoft.Identity.Client"
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.BrokerOptions\u002BOperatingSystems::WindowsMicrosoft.Identity.Client.BrokerOptions\u002BOperatingSystems",
+          "clrName": "Windows",
+          "metadataToken": 67111074,
+          "normalizedSignature": "Windows|Microsoft.Identity.Client.BrokerOptions\u002BOperatingSystems|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.Identity.Client.BrokerOptions\u002BOperatingSystems",
+          "declaringAssemblyName": "Microsoft.Identity.Client"
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.BrokerOptions\u002BOperatingSystems::LinuxMicrosoft.Identity.Client.BrokerOptions\u002BOperatingSystems",
+          "clrName": "Linux",
+          "metadataToken": 67111075,
+          "normalizedSignature": "Linux|Microsoft.Identity.Client.BrokerOptions\u002BOperatingSystems|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.Identity.Client.BrokerOptions\u002BOperatingSystems",
+          "declaringAssemblyName": "Microsoft.Identity.Client"
+        },
+        {
+          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.BrokerOptions\u002BOperatingSystems::OSXMicrosoft.Identity.Client.BrokerOptions\u002BOperatingSystems",
+          "clrName": "OSX",
+          "metadataToken": 67111076,
+          "normalizedSignature": "OSX|Microsoft.Identity.Client.BrokerOptions\u002BOperatingSystems|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.Identity.Client.BrokerOptions\u002BOperatingSystems",
+          "declaringAssemblyName": "Microsoft.Identity.Client"
+        }
+      ],
+      "events": [],
+      "constructors": []
     },
     {
       "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.CacheOptions",

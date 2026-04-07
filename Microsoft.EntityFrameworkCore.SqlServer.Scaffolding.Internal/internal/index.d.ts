@@ -2,8 +2,9 @@
 // Namespace: Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal
 // Assembly: Microsoft.EntityFrameworkCore.SqlServer
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { DbConnection, DbDataReader, DbDataRecord } from "@tsonic/dotnet/System.Data.Common/internal/index.js";
@@ -15,14 +16,14 @@ import type { DatabaseModel } from "@tsonic/efcore/Microsoft.EntityFrameworkCore
 import * as Microsoft_EntityFrameworkCore_Scaffolding_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Scaffolding/internal/index.js";
 import type { DatabaseModelFactory, DatabaseModelFactoryOptions, IDatabaseModelFactory, IProviderConfigurationCodeGenerator, ProviderCodeGenerator, ProviderCodeGeneratorDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Scaffolding/internal/index.js";
 import type { IRelationalTypeMappingSource } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage/internal/index.js";
-import type { DbLoggerCategory$Scaffolding } from "@tsonic/efcore/Microsoft.EntityFrameworkCore/internal/index.js";
+import type { DbLoggerCategory_Scaffolding } from "@tsonic/efcore/Microsoft.EntityFrameworkCore/internal/index.js";
 
 export interface SqlServerCodeGenerator$instance extends ProviderCodeGenerator {
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Scaffolding_Internal_SqlServerCodeGenerator: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Scaffolding_IProviderConfigurationCodeGenerator: never;
 
-    GenerateUseProvider(connectionString: string, providerOptions: MethodCallCodeFragment): MethodCallCodeFragment;
+    GenerateUseProvider(connectionString: string, providerOptions: MethodCallCodeFragment | null): MethodCallCodeFragment;
 }
 
 
@@ -44,7 +45,7 @@ export interface SqlServerDatabaseModelFactory$instance extends DatabaseModelFac
 
 
 export const SqlServerDatabaseModelFactory: {
-    new(logger: IDiagnosticsLogger_1<DbLoggerCategory$Scaffolding>, typeMappingSource: IRelationalTypeMappingSource): SqlServerDatabaseModelFactory;
+    new(logger: IDiagnosticsLogger_1<DbLoggerCategory_Scaffolding>, typeMappingSource: IRelationalTypeMappingSource): SqlServerDatabaseModelFactory;
 };
 
 
@@ -52,8 +53,8 @@ export type SqlServerDatabaseModelFactory = SqlServerDatabaseModelFactory$instan
 
 export abstract class SqlDataReaderExtension$instance {
     static GetFieldValue<T>(record: DbDataRecord, name: string): T;
-    static GetValueOrDefault<T>(reader: DbDataReader, name: string): T | undefined;
-    static GetValueOrDefault<T>(record: DbDataRecord, name: string): T | undefined;
+    static GetValueOrDefault<T>(reader: DbDataReader, name: string): T | null;
+    static GetValueOrDefault<T>(record: DbDataRecord, name: string): T | null;
 }
 
 

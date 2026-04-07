@@ -2,11 +2,9 @@
 // Namespace: Microsoft.EntityFrameworkCore.SqlServer.Query.Internal
 // Assembly: Microsoft.EntityFrameworkCore.SqlServer
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
-// Import support types from @tsonic/core
-import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import type { ISqlServerSingletonOptions } from "../../Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal/internal/index.js";
@@ -23,16 +21,9 @@ import type { IEntityType, IModel, IProperty } from "@tsonic/efcore/Microsoft.En
 import * as Microsoft_EntityFrameworkCore_Query_SqlExpressions_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query.SqlExpressions/internal/index.js";
 import type { CaseExpression, ColumnValueSetter, DeleteExpression, InExpression, ITableBasedExpression, JsonScalarExpression, OrderingExpression, PredicateJoinExpressionBase, SelectExpression, SqlBinaryExpression, SqlConstantExpression, SqlExpression, SqlFunctionExpression, SqlParameterExpression, SqlUnaryExpression, TableExpression, TableExpressionBase, TableValuedFunctionExpression, UpdateExpression, ValuesExpression } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query.SqlExpressions/internal/index.js";
 import * as Microsoft_EntityFrameworkCore_Query_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query/internal/index.js";
-import type { CompiledQueryCacheKeyGeneratorDependencies, EntityQueryRootExpression, EnumerableExpression, EvaluatableExpressionFilterDependencies, ExpressionPrinter, IAggregateMethodCallTranslator, IAggregateMethodCallTranslatorProvider, IAsyncQueryProvider, ICompiledQueryCacheKeyGenerator, IEvaluatableExpressionFilter, IMemberTranslator, IMemberTranslatorProvider, IMethodCallTranslator, IMethodCallTranslatorProvider, INavigationExpansionExtensibilityHelper, IPrintableExpression, IQueryableMethodTranslatingExpressionVisitorFactory, IQueryCompilationContextFactory, IQuerySqlGeneratorFactory, IQueryTranslationPostprocessorFactory, IRelationalParameterBasedSqlProcessorFactory, IRelationalQueryStringFactory, IRelationalQuotableExpression, IRelationalSqlTranslatingExpressionVisitorFactory, ISqlExpressionFactory, JsonQueryExpression, NavigationExpansionExtensibilityHelper, NavigationExpansionExtensibilityHelperDependencies, ParametersCacheDecorator, PathSegment, QueryableMethodTranslatingExpressionVisitor, QueryableMethodTranslatingExpressionVisitor$ExecuteUpdateSetter, QueryableMethodTranslatingExpressionVisitorDependencies, QueryCompilationContext, QueryCompilationContextDependencies, QueryContext, QuerySqlGenerator, QuerySqlGeneratorDependencies, QueryTranslationPostprocessor, QueryTranslationPostprocessorDependencies, RelationalAggregateMethodCallTranslatorProvider, RelationalAggregateMethodCallTranslatorProviderDependencies, RelationalCompiledQueryCacheKeyGenerator, RelationalCompiledQueryCacheKeyGeneratorDependencies, RelationalEvaluatableExpressionFilter, RelationalEvaluatableExpressionFilterDependencies, RelationalMemberTranslatorProvider, RelationalMemberTranslatorProviderDependencies, RelationalMethodCallTranslatorProvider, RelationalMethodCallTranslatorProviderDependencies, RelationalParameterBasedSqlProcessor, RelationalParameterBasedSqlProcessorDependencies, RelationalParameterBasedSqlProcessorParameters, RelationalQueryableMethodTranslatingExpressionVisitor, RelationalQueryableMethodTranslatingExpressionVisitorDependencies, RelationalQueryCompilationContext, RelationalQueryCompilationContextDependencies, RelationalQueryTranslationPostprocessor, RelationalQueryTranslationPostprocessorDependencies, RelationalSqlTranslatingExpressionVisitor, RelationalSqlTranslatingExpressionVisitorDependencies, RelationalTypeMappingPostprocessor, ShapedQueryExpression, SqlAliasManager, SqlExpressionFactory, SqlExpressionFactoryDependencies, SqlNullabilityProcessor, SqlTreePruner } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query/internal/index.js";
+import type { CompiledQueryCacheKeyGeneratorDependencies, EntityQueryRootExpression, EnumerableExpression, EvaluatableExpressionFilterDependencies, ExpressionPrinter, IAggregateMethodCallTranslator, IAggregateMethodCallTranslatorProvider, IAsyncQueryProvider, ICompiledQueryCacheKeyGenerator, IEvaluatableExpressionFilter, IMemberTranslator, IMemberTranslatorProvider, IMethodCallTranslator, IMethodCallTranslatorProvider, INavigationExpansionExtensibilityHelper, IPrintableExpression, IQueryableMethodTranslatingExpressionVisitorFactory, IQueryCompilationContextFactory, IQuerySqlGeneratorFactory, IQueryTranslationPostprocessorFactory, IRelationalParameterBasedSqlProcessorFactory, IRelationalQueryStringFactory, IRelationalQuotableExpression, IRelationalSqlTranslatingExpressionVisitorFactory, ISqlExpressionFactory, JsonQueryExpression, NavigationExpansionExtensibilityHelper, NavigationExpansionExtensibilityHelperDependencies, ParametersCacheDecorator, PathSegment, QueryableMethodTranslatingExpressionVisitor, QueryableMethodTranslatingExpressionVisitor_ExecuteUpdateSetter, QueryableMethodTranslatingExpressionVisitorDependencies, QueryCompilationContext, QueryCompilationContextDependencies, QueryContext, QuerySqlGenerator, QuerySqlGeneratorDependencies, QueryTranslationPostprocessor, QueryTranslationPostprocessorDependencies, RelationalAggregateMethodCallTranslatorProvider, RelationalAggregateMethodCallTranslatorProviderDependencies, RelationalCompiledQueryCacheKeyGenerator, RelationalCompiledQueryCacheKeyGeneratorDependencies, RelationalEvaluatableExpressionFilter, RelationalEvaluatableExpressionFilterDependencies, RelationalMemberTranslatorProvider, RelationalMemberTranslatorProviderDependencies, RelationalMethodCallTranslatorProvider, RelationalMethodCallTranslatorProviderDependencies, RelationalParameterBasedSqlProcessor, RelationalParameterBasedSqlProcessorDependencies, RelationalParameterBasedSqlProcessorParameters, RelationalQueryableMethodTranslatingExpressionVisitor, RelationalQueryableMethodTranslatingExpressionVisitorDependencies, RelationalQueryCompilationContext, RelationalQueryCompilationContextDependencies, RelationalQueryTranslationPostprocessor, RelationalQueryTranslationPostprocessorDependencies, RelationalSqlTranslatingExpressionVisitor, RelationalSqlTranslatingExpressionVisitorDependencies, RelationalTypeMappingPostprocessor, ShapedQueryExpression, SqlAliasManager, SqlExpressionFactory, SqlExpressionFactoryDependencies, SqlNullabilityProcessor, SqlTreePruner } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query/internal/index.js";
 import type { IRelationalTypeMappingSource, RelationalTypeMapping } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage/internal/index.js";
-import type { DbLoggerCategory$Query } from "@tsonic/efcore/Microsoft.EntityFrameworkCore/internal/index.js";
-
-export enum SqlServerSqlTranslatingExpressionVisitor_StartsEndsWithContains {
-    StartsWith = 0,
-    EndsWith = 1,
-    Contains = 2
-}
-
+import type { DbLoggerCategory_Query } from "@tsonic/efcore/Microsoft.EntityFrameworkCore/internal/index.js";
 
 export enum TemporalOperationType {
     All = 0,
@@ -43,36 +34,11 @@ export enum TemporalOperationType {
 }
 
 
-export interface SqlServerOpenJsonExpression_ColumnInfo$instance {
-    readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Query_Internal_SqlServerOpenJsonExpression_ColumnInfo: never;
-
-    readonly __tsonic_iface_System_IEquatable_1: never;
-
-    AsJson: boolean;
-    Name: string;
-    get Path(): IReadOnlyList_1<PathSegment> | undefined;
-    set Path(value: IReadOnlyList_1<PathSegment> | undefined);
-    TypeMapping: RelationalTypeMapping;
-    Deconstruct(Name: string, TypeMapping: RelationalTypeMapping, Path: IReadOnlyList_1<PathSegment>, AsJson: boolean): void;
-    Equals(obj: unknown): boolean;
-    Equals(other: SqlServerOpenJsonExpression_ColumnInfo): boolean;
-    GetHashCode(): int;
-    ToString(): string;
-}
-
-
-export const SqlServerOpenJsonExpression_ColumnInfo: {
-    new(Name: string, TypeMapping: RelationalTypeMapping, Path: IReadOnlyList_1<PathSegment>, AsJson: boolean): SqlServerOpenJsonExpression_ColumnInfo;
-};
-
-
-export type SqlServerOpenJsonExpression_ColumnInfo = SqlServerOpenJsonExpression_ColumnInfo$instance;
-
 export interface SearchConditionConverter$instance extends ExpressionVisitor {
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Query_Internal_SearchConditionConverter: never;
 
-    Visit(expression: Expression): Expression | undefined;
-    Visit(expression: Expression, inSearchConditionContext: boolean, allowNullFalseEquivalence: boolean): Expression | undefined;
+    Visit(expression: Expression | null): Expression | null;
+    Visit(expression: Expression | null, inSearchConditionContext: boolean, allowNullFalseEquivalence: boolean): Expression | null;
     VisitCase(caseExpression: CaseExpression, inSearchConditionContext: boolean, allowNullFalseEquivalence: boolean): Expression;
     VisitPredicateJoin(join: PredicateJoinExpressionBase): Expression;
     VisitSelect(select: SelectExpression): Expression;
@@ -99,8 +65,8 @@ export interface SqlServerAggregateFunctionExpression$instance extends SqlExpres
     readonly IsNullable: boolean;
     readonly Name: string;
     readonly Orderings: IReadOnlyList_1<OrderingExpression>;
-    ApplyTypeMapping(typeMapping: RelationalTypeMapping): SqlServerAggregateFunctionExpression;
-    Equals(obj: unknown): boolean;
+    ApplyTypeMapping(typeMapping: RelationalTypeMapping | null): SqlServerAggregateFunctionExpression;
+    Equals(obj: JsValue | null): boolean;
     GetHashCode(): int;
     Print(expressionPrinter: ExpressionPrinter): void;
     Quote(): Expression;
@@ -110,7 +76,7 @@ export interface SqlServerAggregateFunctionExpression$instance extends SqlExpres
 
 
 export const SqlServerAggregateFunctionExpression: {
-    new(name: string, arguments: IReadOnlyList_1<SqlExpression>, orderings: IReadOnlyList_1<OrderingExpression>, nullable: boolean, argumentsPropagateNullability: IEnumerable_1<System_Internal.Boolean>, type: Type, typeMapping: RelationalTypeMapping): SqlServerAggregateFunctionExpression;
+    new(name: string, arguments: IReadOnlyList_1<SqlExpression>, orderings: IReadOnlyList_1<OrderingExpression>, nullable: boolean, argumentsPropagateNullability: IEnumerable_1<System_Internal.Boolean>, type: Type, typeMapping: RelationalTypeMapping | null): SqlServerAggregateFunctionExpression;
 };
 
 
@@ -150,7 +116,7 @@ export interface SqlServerByteArrayMethodTranslator$instance {
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
 
-    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(instance: SqlExpression | null, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory_Query>): SqlExpression | null;
 }
 
 
@@ -166,7 +132,7 @@ export interface SqlServerCompiledQueryCacheKeyGenerator$instance extends Relati
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_ICompiledQueryCacheKeyGenerator: never;
 
-    GenerateCacheKey(query: Expression, async: boolean): unknown;
+    GenerateCacheKey(query: Expression, async: boolean): JsValue;
 }
 
 
@@ -182,7 +148,7 @@ export interface SqlServerConvertTranslator$instance {
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
 
-    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(instance: SqlExpression | null, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory_Query>): SqlExpression | null;
 }
 
 
@@ -198,7 +164,7 @@ export interface SqlServerDataLengthFunctionTranslator$instance {
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
 
-    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(instance: SqlExpression | null, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory_Query>): SqlExpression | null;
 }
 
 
@@ -214,7 +180,7 @@ export interface SqlServerDateDiffFunctionsTranslator$instance {
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
 
-    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(instance: SqlExpression | null, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory_Query>): SqlExpression | null;
 }
 
 
@@ -230,7 +196,7 @@ export interface SqlServerDateOnlyMemberTranslator$instance {
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMemberTranslator: never;
 
-    Translate(instance: SqlExpression, member: MemberInfo, returnType: Type, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(instance: SqlExpression | null, member: MemberInfo, returnType: Type, logger: IDiagnosticsLogger_1<DbLoggerCategory_Query>): SqlExpression | null;
 }
 
 
@@ -246,7 +212,7 @@ export interface SqlServerDateOnlyMethodTranslator$instance {
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
 
-    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(instance: SqlExpression | null, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory_Query>): SqlExpression | null;
 }
 
 
@@ -262,7 +228,7 @@ export interface SqlServerDateTimeMemberTranslator$instance {
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMemberTranslator: never;
 
-    Translate(instance: SqlExpression, member: MemberInfo, returnType: Type, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(instance: SqlExpression | null, member: MemberInfo, returnType: Type, logger: IDiagnosticsLogger_1<DbLoggerCategory_Query>): SqlExpression | null;
 }
 
 
@@ -278,7 +244,7 @@ export interface SqlServerDateTimeMethodTranslator$instance {
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
 
-    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(instance: SqlExpression | null, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory_Query>): SqlExpression | null;
 }
 
 
@@ -310,7 +276,7 @@ export interface SqlServerFromPartsFunctionTranslator$instance {
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
 
-    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(instance: SqlExpression | null, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory_Query>): SqlExpression | null;
 }
 
 
@@ -326,7 +292,7 @@ export interface SqlServerFullTextSearchFunctionsTranslator$instance {
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
 
-    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(instance: SqlExpression | null, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory_Query>): SqlExpression | null;
 }
 
 
@@ -342,7 +308,7 @@ export interface SqlServerIsDateFunctionTranslator$instance {
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
 
-    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(instance: SqlExpression | null, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory_Query>): SqlExpression | null;
 }
 
 
@@ -358,7 +324,7 @@ export interface SqlServerIsNumericFunctionTranslator$instance {
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
 
-    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(instance: SqlExpression | null, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory_Query>): SqlExpression | null;
 }
 
 
@@ -373,12 +339,12 @@ export interface SqlServerJsonPostprocessor$instance extends ExpressionVisitor {
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Query_Internal_SqlServerJsonPostprocessor: never;
 
     Process(expression: Expression): Expression;
-    Visit(expression: Expression): Expression | undefined;
+    Visit(expression: Expression | null): Expression | null;
 }
 
 
 export const SqlServerJsonPostprocessor: {
-    new(typeMappingSource: IRelationalTypeMappingSource, sqlExpressionFactory: ISqlExpressionFactory, sqlAliasManager: SqlAliasManager): SqlServerJsonPostprocessor;
+    new(typeMappingSource: IRelationalTypeMappingSource, sqlExpressionFactory: ISqlExpressionFactory, sqlAliasManager: SqlAliasManager | null): SqlServerJsonPostprocessor;
 };
 
 
@@ -389,7 +355,7 @@ export interface SqlServerLongCountMethodTranslator$instance {
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IAggregateMethodCallTranslator: never;
 
-    Translate(method: MethodInfo, source: EnumerableExpression, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(method: MethodInfo, source: EnumerableExpression, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory_Query>): SqlExpression | null;
 }
 
 
@@ -405,7 +371,7 @@ export interface SqlServerMathTranslator$instance {
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
 
-    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(instance: SqlExpression | null, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory_Query>): SqlExpression | null;
 }
 
 
@@ -451,9 +417,9 @@ export interface SqlServerNavigationExpansionExtensibilityHelper$instance extend
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_INavigationExpansionExtensibilityHelper: never;
 
-    AreQueryRootsCompatible(first: EntityQueryRootExpression, second: EntityQueryRootExpression): boolean;
-    CreateQueryRoot(entityType: IEntityType, source: EntityQueryRootExpression): EntityQueryRootExpression;
-    ValidateQueryRootCreation(entityType: IEntityType, source: EntityQueryRootExpression): void;
+    AreQueryRootsCompatible(first: EntityQueryRootExpression | null, second: EntityQueryRootExpression | null): boolean;
+    CreateQueryRoot(entityType: IEntityType, source: EntityQueryRootExpression | null): EntityQueryRootExpression;
+    ValidateQueryRootCreation(entityType: IEntityType, source: EntityQueryRootExpression | null): void;
 }
 
 
@@ -469,7 +435,7 @@ export interface SqlServerNewGuidTranslator$instance {
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
 
-    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(instance: SqlExpression | null, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory_Query>): SqlExpression | null;
 }
 
 
@@ -485,7 +451,7 @@ export interface SqlServerObjectToStringTranslator$instance {
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
 
-    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(instance: SqlExpression | null, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory_Query>): SqlExpression | null;
 }
 
 
@@ -503,15 +469,15 @@ export interface SqlServerOpenJsonExpression$instance extends TableValuedFunctio
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IRelationalQuotableExpression: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_SqlExpressions_ITableBasedExpression: never;
 
-    readonly ColumnInfos: IReadOnlyList_1<SqlServerOpenJsonExpression_ColumnInfo> | undefined;
+    readonly ColumnInfos: IReadOnlyList_1<SqlServerOpenJsonExpression_ColumnInfo> | null;
     readonly JsonExpression: SqlExpression;
-    readonly Path: IReadOnlyList_1<PathSegment> | undefined;
-    Clone(alias: string, cloningExpressionVisitor: ExpressionVisitor): TableExpressionBase;
-    Equals(obj: unknown): boolean;
+    readonly Path: IReadOnlyList_1<PathSegment> | null;
+    Clone(alias: string | null, cloningExpressionVisitor: ExpressionVisitor): TableExpressionBase;
+    Equals(obj: JsValue | null): boolean;
     GetHashCode(): int;
     Print(expressionPrinter: ExpressionPrinter): void;
     Quote(): Expression;
-    Update(jsonExpression: SqlExpression, path: IReadOnlyList_1<PathSegment>, columnInfos?: IReadOnlyList_1<SqlServerOpenJsonExpression_ColumnInfo>): SqlServerOpenJsonExpression;
+    Update(jsonExpression: SqlExpression, path: IReadOnlyList_1<PathSegment> | null, columnInfos?: IReadOnlyList_1<SqlServerOpenJsonExpression_ColumnInfo> | null): SqlServerOpenJsonExpression;
     Update(sqlExpression: SqlExpression): SqlServerOpenJsonExpression;
     VisitChildren(visitor: ExpressionVisitor): Expression;
     WithAlias(newAlias: string): SqlServerOpenJsonExpression;
@@ -519,11 +485,36 @@ export interface SqlServerOpenJsonExpression$instance extends TableValuedFunctio
 
 
 export const SqlServerOpenJsonExpression: {
-    new(alias: string, jsonExpression: SqlExpression, path: IReadOnlyList_1<PathSegment>, columnInfos: IReadOnlyList_1<SqlServerOpenJsonExpression_ColumnInfo>): SqlServerOpenJsonExpression;
+    new(alias: string, jsonExpression: SqlExpression, path: IReadOnlyList_1<PathSegment> | null, columnInfos: IReadOnlyList_1<SqlServerOpenJsonExpression_ColumnInfo> | null): SqlServerOpenJsonExpression;
 };
 
 
 export type SqlServerOpenJsonExpression = SqlServerOpenJsonExpression$instance;
+
+export interface SqlServerOpenJsonExpression_ColumnInfo$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Query_Internal_SqlServerOpenJsonExpression_ColumnInfo: never;
+
+    readonly __tsonic_iface_System_IEquatable_1: never;
+
+    AsJson: boolean;
+    Name: string;
+    get Path(): IReadOnlyList_1<PathSegment> | null;
+    set Path(value: IReadOnlyList_1<PathSegment> | null);
+    TypeMapping: RelationalTypeMapping;
+    Deconstruct(Name: string, TypeMapping: RelationalTypeMapping, Path: IReadOnlyList_1<PathSegment> | null, AsJson: boolean): void;
+    Equals(obj: JsValue): boolean;
+    Equals(other: SqlServerOpenJsonExpression_ColumnInfo): boolean;
+    GetHashCode(): int;
+    ToString(): string;
+}
+
+
+export const SqlServerOpenJsonExpression_ColumnInfo: {
+    new(Name: string, TypeMapping: RelationalTypeMapping, Path: IReadOnlyList_1<PathSegment> | null, AsJson: boolean): SqlServerOpenJsonExpression_ColumnInfo;
+};
+
+
+export type SqlServerOpenJsonExpression_ColumnInfo = SqlServerOpenJsonExpression_ColumnInfo$instance;
 
 export interface SqlServerParameterBasedSqlProcessor$instance extends RelationalParameterBasedSqlProcessor {
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Query_Internal_SqlServerParameterBasedSqlProcessor: never;
@@ -561,15 +552,15 @@ export interface SqlServerQueryableMethodTranslatingExpressionVisitor$instance e
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Query_Internal_SqlServerQueryableMethodTranslatingExpressionVisitor: never;
 
     CreateSubqueryVisitor(): QueryableMethodTranslatingExpressionVisitor;
-    GenerateJsonPartialUpdateSetter(target: Expression, value: SqlExpression, existingSetterValue: SqlExpression): SqlExpression | undefined;
+    GenerateJsonPartialUpdateSetter(target: Expression, value: SqlExpression, existingSetterValue: SqlExpression | null): SqlExpression | null;
     IsNaturallyOrdered(selectExpression: SelectExpression): boolean;
     IsValidSelectExpressionForExecuteDelete(selectExpression: SelectExpression): boolean;
-    IsValidSelectExpressionForExecuteUpdate(selectExpression: SelectExpression, table: TableExpressionBase, tableExpression: TableExpression): boolean;
+    IsValidSelectExpressionForExecuteUpdate(selectExpression: SelectExpression, table: TableExpressionBase, tableExpression: TableExpression | null): boolean;
     TransformJsonQueryToTable(jsonQueryExpression: JsonQueryExpression): ShapedQueryExpression;
-    TranslateElementAtOrDefault(source: ShapedQueryExpression, index: Expression, returnDefault: boolean): ShapedQueryExpression | undefined;
-    TranslatePrimitiveCollection(sqlExpression: SqlExpression, property: IProperty, tableAlias: string): ShapedQueryExpression | undefined;
-    TrySerializeScalarToJson(target: JsonScalarExpression, value: SqlExpression, jsonValue: SqlExpression): boolean;
-    TryTranslateSetters(source: ShapedQueryExpression, setters: IReadOnlyList_1<QueryableMethodTranslatingExpressionVisitor$ExecuteUpdateSetter>, columnSetters: IReadOnlyList_1<ColumnValueSetter>, targetTable: TableExpressionBase): boolean;
+    TranslateElementAtOrDefault(source: ShapedQueryExpression, index: Expression, returnDefault: boolean): ShapedQueryExpression | null;
+    TranslatePrimitiveCollection(sqlExpression: SqlExpression, property: IProperty | null, tableAlias: string): ShapedQueryExpression | null;
+    TrySerializeScalarToJson(target: JsonScalarExpression, value: SqlExpression, jsonValue: SqlExpression | null): boolean;
+    TryTranslateSetters(source: ShapedQueryExpression, setters: IReadOnlyList_1<QueryableMethodTranslatingExpressionVisitor_ExecuteUpdateSetter>, columnSetters: IReadOnlyList_1<ColumnValueSetter> | null, targetTable: TableExpressionBase | null): boolean;
     VisitExtension(extensionExpression: Expression): Expression;
 }
 
@@ -738,7 +729,7 @@ export interface SqlServerSqlExpressionFactory$instance extends SqlExpressionFac
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_ISqlExpressionFactory: never;
 
-    ApplyTypeMapping(sqlExpression: SqlExpression, typeMapping: RelationalTypeMapping): SqlExpression | undefined;
+    ApplyTypeMapping(sqlExpression: SqlExpression | null, typeMapping: RelationalTypeMapping | null): SqlExpression | null;
 }
 
 
@@ -754,7 +745,7 @@ export interface SqlServerSqlNullabilityProcessor$instance extends SqlNullabilit
 
     readonly PreferExistsToInWithCoalesce: boolean;
     CalculateParameterBucketSize(count: int, elementTypeMapping: RelationalTypeMapping): int;
-    IsCollectionTable(table: TableExpressionBase, collection: Expression): boolean;
+    IsCollectionTable(table: TableExpressionBase, collection: Expression | null): boolean;
     Process(queryExpression: Expression, parametersDecorator: ParametersCacheDecorator): Expression;
     UpdateParameterCollection(table: TableExpressionBase, newCollectionParameter: SqlParameterExpression): TableExpressionBase;
     VisitCustomSqlExpression(sqlExpression: SqlExpression, allowOptimizedExpansion: boolean, nullable: boolean): SqlExpression;
@@ -775,8 +766,8 @@ export type SqlServerSqlNullabilityProcessor = SqlServerSqlNullabilityProcessor$
 export interface SqlServerSqlTranslatingExpressionVisitor$instance extends RelationalSqlTranslatingExpressionVisitor {
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Query_Internal_SqlServerSqlTranslatingExpressionVisitor: never;
 
-    GenerateGreatest(expressions: IReadOnlyList_1<SqlExpression>, resultType: Type): SqlExpression | undefined;
-    GenerateLeast(expressions: IReadOnlyList_1<SqlExpression>, resultType: Type): SqlExpression | undefined;
+    GenerateGreatest(expressions: IReadOnlyList_1<SqlExpression>, resultType: Type): SqlExpression | null;
+    GenerateLeast(expressions: IReadOnlyList_1<SqlExpression>, resultType: Type): SqlExpression | null;
     VisitBinary(binaryExpression: BinaryExpression): Expression;
     VisitMethodCall(methodCallExpression: MethodCallExpression): Expression;
     VisitUnary(unaryExpression: UnaryExpression): Expression;
@@ -785,11 +776,18 @@ export interface SqlServerSqlTranslatingExpressionVisitor$instance extends Relat
 
 export const SqlServerSqlTranslatingExpressionVisitor: {
     new(dependencies: RelationalSqlTranslatingExpressionVisitorDependencies, queryCompilationContext: SqlServerQueryCompilationContext, queryableMethodTranslatingExpressionVisitor: QueryableMethodTranslatingExpressionVisitor, sqlServerSingletonOptions: ISqlServerSingletonOptions): SqlServerSqlTranslatingExpressionVisitor;
-    ConstructLikePatternParameter(queryContext: QueryContext, baseParameterName: string, methodType: SqlServerSqlTranslatingExpressionVisitor_StartsEndsWithContains): string | undefined;
+    ConstructLikePatternParameter(queryContext: QueryContext, baseParameterName: string, methodType: SqlServerSqlTranslatingExpressionVisitor_StartsEndsWithContains): string | null;
 };
 
 
 export type SqlServerSqlTranslatingExpressionVisitor = SqlServerSqlTranslatingExpressionVisitor$instance;
+
+export enum SqlServerSqlTranslatingExpressionVisitor_StartsEndsWithContains {
+    StartsWith = 0,
+    EndsWith = 1,
+    Contains = 2
+}
+
 
 export interface SqlServerSqlTranslatingExpressionVisitorFactory$instance {
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Query_Internal_SqlServerSqlTranslatingExpressionVisitorFactory: never;
@@ -827,7 +825,7 @@ export interface SqlServerStatisticsAggregateMethodTranslator$instance {
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IAggregateMethodCallTranslator: never;
 
-    Translate(method: MethodInfo, source: EnumerableExpression, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(method: MethodInfo, source: EnumerableExpression, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory_Query>): SqlExpression | null;
 }
 
 
@@ -843,7 +841,7 @@ export interface SqlServerStringAggregateMethodTranslator$instance {
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IAggregateMethodCallTranslator: never;
 
-    Translate(method: MethodInfo, source: EnumerableExpression, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(method: MethodInfo, source: EnumerableExpression, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory_Query>): SqlExpression | null;
 }
 
 
@@ -859,7 +857,7 @@ export interface SqlServerStringMemberTranslator$instance {
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMemberTranslator: never;
 
-    Translate(instance: SqlExpression, member: MemberInfo, returnType: Type, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(instance: SqlExpression | null, member: MemberInfo, returnType: Type, logger: IDiagnosticsLogger_1<DbLoggerCategory_Query>): SqlExpression | null;
 }
 
 
@@ -875,7 +873,7 @@ export interface SqlServerStringMethodTranslator$instance {
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
 
-    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(instance: SqlExpression | null, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory_Query>): SqlExpression | null;
 }
 
 
@@ -891,7 +889,7 @@ export interface SqlServerTimeOnlyMemberTranslator$instance {
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMemberTranslator: never;
 
-    Translate(instance: SqlExpression, member: MemberInfo, returnType: Type, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(instance: SqlExpression | null, member: MemberInfo, returnType: Type, logger: IDiagnosticsLogger_1<DbLoggerCategory_Query>): SqlExpression | null;
 }
 
 
@@ -907,7 +905,7 @@ export interface SqlServerTimeOnlyMethodTranslator$instance {
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
 
-    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(instance: SqlExpression | null, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory_Query>): SqlExpression | null;
 }
 
 
@@ -923,7 +921,7 @@ export interface SqlServerTimeSpanMemberTranslator$instance {
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMemberTranslator: never;
 
-    Translate(instance: SqlExpression, member: MemberInfo, returnType: Type, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(instance: SqlExpression | null, member: MemberInfo, returnType: Type, logger: IDiagnosticsLogger_1<DbLoggerCategory_Query>): SqlExpression | null;
 }
 
 
@@ -955,8 +953,8 @@ export interface SqlServerVectorTranslator$instance {
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMemberTranslator: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
 
-    Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
-    Translate(instance: SqlExpression, member: MemberInfo, returnType: Type, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
+    Translate(instance: SqlExpression | null, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory_Query>): SqlExpression | null;
+    Translate(instance: SqlExpression | null, member: MemberInfo, returnType: Type, logger: IDiagnosticsLogger_1<DbLoggerCategory_Query>): SqlExpression | null;
 }
 
 
@@ -988,7 +986,7 @@ export interface TemporalAllQueryRootExpression$instance extends TemporalQueryRo
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IPrintableExpression: never;
 
     DetachQueryProvider(): Expression;
-    Equals(obj: unknown): boolean;
+    Equals(obj: JsValue | null): boolean;
     GetHashCode(): int;
     Print(expressionPrinter: ExpressionPrinter): void;
     UpdateEntityType(entityType: IEntityType): EntityQueryRootExpression;
@@ -1010,7 +1008,7 @@ export interface TemporalAsOfQueryRootExpression$instance extends TemporalQueryR
 
     readonly PointInTime: DateTime;
     DetachQueryProvider(): Expression;
-    Equals(obj: unknown): boolean;
+    Equals(obj: JsValue | null): boolean;
     GetHashCode(): int;
     Print(expressionPrinter: ExpressionPrinter): void;
     UpdateEntityType(entityType: IEntityType): EntityQueryRootExpression;
@@ -1031,7 +1029,7 @@ export interface TemporalBetweenQueryRootExpression$instance extends TemporalRan
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IPrintableExpression: never;
 
     DetachQueryProvider(): Expression;
-    Equals(obj: unknown): boolean;
+    Equals(obj: JsValue | null): boolean;
     GetHashCode(): int;
     Print(expressionPrinter: ExpressionPrinter): void;
     UpdateEntityType(entityType: IEntityType): EntityQueryRootExpression;
@@ -1052,7 +1050,7 @@ export interface TemporalContainedInQueryRootExpression$instance extends Tempora
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IPrintableExpression: never;
 
     DetachQueryProvider(): Expression;
-    Equals(obj: unknown): boolean;
+    Equals(obj: JsValue | null): boolean;
     GetHashCode(): int;
     Print(expressionPrinter: ExpressionPrinter): void;
     UpdateEntityType(entityType: IEntityType): EntityQueryRootExpression;
@@ -1073,7 +1071,7 @@ export interface TemporalFromToQueryRootExpression$instance extends TemporalRang
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IPrintableExpression: never;
 
     DetachQueryProvider(): Expression;
-    Equals(obj: unknown): boolean;
+    Equals(obj: JsValue | null): boolean;
     GetHashCode(): int;
     Print(expressionPrinter: ExpressionPrinter): void;
     UpdateEntityType(entityType: IEntityType): EntityQueryRootExpression;
@@ -1110,7 +1108,7 @@ export interface TemporalRangeQueryRootExpression$instance extends TemporalQuery
 
     readonly From: DateTime;
     readonly To: DateTime;
-    Equals(obj: unknown): boolean;
+    Equals(obj: JsValue | null): boolean;
     GetHashCode(): int;
 }
 
@@ -1122,8 +1120,8 @@ export const TemporalRangeQueryRootExpression: (abstract new(entityType: IEntity
 export type TemporalRangeQueryRootExpression = TemporalRangeQueryRootExpression$instance;
 
 export abstract class SqlServerExpression$instance {
-    static AggregateFunction(sqlExpressionFactory: ISqlExpressionFactory, name: string, arguments: IEnumerable_1<SqlExpression>, enumerableExpression: EnumerableExpression, enumerableArgumentIndex: int, nullable: boolean, argumentsPropagateNullability: IEnumerable_1<System_Internal.Boolean>, returnType: Type, typeMapping?: RelationalTypeMapping): SqlFunctionExpression;
-    static AggregateFunctionWithOrdering(sqlExpressionFactory: ISqlExpressionFactory, name: string, arguments: IEnumerable_1<SqlExpression>, enumerableExpression: EnumerableExpression, enumerableArgumentIndex: int, nullable: boolean, argumentsPropagateNullability: IEnumerable_1<System_Internal.Boolean>, returnType: Type, typeMapping?: RelationalTypeMapping): SqlExpression;
+    static AggregateFunction(sqlExpressionFactory: ISqlExpressionFactory, name: string, arguments: IEnumerable_1<SqlExpression>, enumerableExpression: EnumerableExpression, enumerableArgumentIndex: int, nullable: boolean, argumentsPropagateNullability: IEnumerable_1<System_Internal.Boolean>, returnType: Type, typeMapping?: RelationalTypeMapping | null): SqlFunctionExpression;
+    static AggregateFunctionWithOrdering(sqlExpressionFactory: ISqlExpressionFactory, name: string, arguments: IEnumerable_1<SqlExpression>, enumerableExpression: EnumerableExpression, enumerableArgumentIndex: int, nullable: boolean, argumentsPropagateNullability: IEnumerable_1<System_Internal.Boolean>, returnType: Type, typeMapping?: RelationalTypeMapping | null): SqlExpression;
 }
 
 

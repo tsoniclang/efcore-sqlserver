@@ -2,8 +2,9 @@
 // Namespace: Microsoft.EntityFrameworkCore.Infrastructure
 // Assembly: Microsoft.EntityFrameworkCore, Microsoft.EntityFrameworkCore.Abstractions, Microsoft.EntityFrameworkCore.Relational, Microsoft.EntityFrameworkCore.SqlServer
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
@@ -23,7 +24,7 @@ export interface AzureSqlDbContextOptionsBuilder$instance extends SqlEngineDbCon
     EnableRetryOnFailure(): AzureSqlDbContextOptionsBuilder;
     EnableRetryOnFailure(maxRetryCount: int): AzureSqlDbContextOptionsBuilder;
     EnableRetryOnFailure(errorNumbersToAdd: ICollection_1<System_Internal.Int32>): AzureSqlDbContextOptionsBuilder;
-    EnableRetryOnFailure(maxRetryCount: int, maxRetryDelay: TimeSpan, errorNumbersToAdd: IEnumerable_1<System_Internal.Int32>): AzureSqlDbContextOptionsBuilder;
+    EnableRetryOnFailure(maxRetryCount: int, maxRetryDelay: TimeSpan, errorNumbersToAdd: IEnumerable_1<System_Internal.Int32> | null): AzureSqlDbContextOptionsBuilder;
     UseCompatibilityLevel(compatibilityLevel: int): AzureSqlDbContextOptionsBuilder;
 }
 
@@ -43,7 +44,7 @@ export interface AzureSynapseDbContextOptionsBuilder$instance extends SqlEngineD
     EnableRetryOnFailure(): AzureSynapseDbContextOptionsBuilder;
     EnableRetryOnFailure(maxRetryCount: int): AzureSynapseDbContextOptionsBuilder;
     EnableRetryOnFailure(errorNumbersToAdd: ICollection_1<System_Internal.Int32>): AzureSynapseDbContextOptionsBuilder;
-    EnableRetryOnFailure(maxRetryCount: int, maxRetryDelay: TimeSpan, errorNumbersToAdd: IEnumerable_1<System_Internal.Int32>): AzureSynapseDbContextOptionsBuilder;
+    EnableRetryOnFailure(maxRetryCount: int, maxRetryDelay: TimeSpan, errorNumbersToAdd: IEnumerable_1<System_Internal.Int32> | null): AzureSynapseDbContextOptionsBuilder;
     UseCompatibilityLevel(compatibilityLevel: int): AzureSynapseDbContextOptionsBuilder;
 }
 
@@ -63,7 +64,7 @@ export interface SqlEngineDbContextOptionsBuilder$instance extends SqlEngineDbCo
     EnableRetryOnFailure(): SqlEngineDbContextOptionsBuilder;
     EnableRetryOnFailure(maxRetryCount: int): SqlEngineDbContextOptionsBuilder;
     EnableRetryOnFailure(errorNumbersToAdd: ICollection_1<System_Internal.Int32>): SqlEngineDbContextOptionsBuilder;
-    EnableRetryOnFailure(maxRetryCount: int, maxRetryDelay: TimeSpan, errorNumbersToAdd: IEnumerable_1<System_Internal.Int32>): SqlEngineDbContextOptionsBuilder;
+    EnableRetryOnFailure(maxRetryCount: int, maxRetryDelay: TimeSpan, errorNumbersToAdd: IEnumerable_1<System_Internal.Int32> | null): SqlEngineDbContextOptionsBuilder;
     EnableRetryOnFailureByDefault(): SqlEngineDbContextOptionsBuilder;
 }
 
@@ -97,7 +98,7 @@ export interface SqlServerDbContextOptionsBuilder$instance extends SqlEngineDbCo
     EnableRetryOnFailure(): SqlServerDbContextOptionsBuilder;
     EnableRetryOnFailure(maxRetryCount: int): SqlServerDbContextOptionsBuilder;
     EnableRetryOnFailure(errorNumbersToAdd: ICollection_1<System_Internal.Int32>): SqlServerDbContextOptionsBuilder;
-    EnableRetryOnFailure(maxRetryCount: int, maxRetryDelay: TimeSpan, errorNumbersToAdd: IEnumerable_1<System_Internal.Int32>): SqlServerDbContextOptionsBuilder;
+    EnableRetryOnFailure(maxRetryCount: int, maxRetryDelay: TimeSpan, errorNumbersToAdd: IEnumerable_1<System_Internal.Int32> | null): SqlServerDbContextOptionsBuilder;
     UseAzureSqlDefaults(enable?: boolean): SqlServerDbContextOptionsBuilder;
     UseCompatibilityLevel(compatibilityLevel: int): SqlServerDbContextOptionsBuilder;
 }

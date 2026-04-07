@@ -2,8 +2,9 @@
 // Namespace: System.Security.Cryptography
 // Assembly: System.Private.CoreLib, System.Security.Cryptography, System.Security.Cryptography.Pkcs, System.Security.Cryptography.ProtectedData
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
@@ -16,8 +17,8 @@ export enum DataProtectionScope {
 
 
 export abstract class ProtectedData$instance {
-    static Protect(userData: byte[], optionalEntropy: byte[], scope: DataProtectionScope): byte[];
-    static Unprotect(encryptedData: byte[], optionalEntropy: byte[], scope: DataProtectionScope): byte[];
+    static Protect(userData: byte[], optionalEntropy: byte[] | null, scope: DataProtectionScope): byte[];
+    static Unprotect(encryptedData: byte[], optionalEntropy: byte[] | null, scope: DataProtectionScope): byte[];
 }
 
 

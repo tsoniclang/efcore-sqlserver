@@ -5,94 +5,6 @@
   ],
   "types": [
     {
-      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains",
-      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains",
-      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
-      "metadataToken": 0,
-      "kind": "Enum",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": true,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Enum",
-        "clrName": "System.Enum"
-      },
-      "interfaces": [
-        {
-          "stableId": "System.Private.CoreLib:System.IComparable",
-          "clrName": "System.IComparable"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
-          "clrName": "System.ISpanFormattable"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.IFormattable",
-          "clrName": "System.IFormattable"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.IConvertible",
-          "clrName": "System.IConvertible"
-        }
-      ],
-      "methods": [],
-      "properties": [],
-      "fields": [
-        {
-          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains::value__System.Int32",
-          "clrName": "value__",
-          "metadataToken": 67109988,
-          "normalizedSignature": "value__|System.Int32|static=false|const=false",
-          "isStatic": false,
-          "isReadOnly": false,
-          "isLiteral": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
-        },
-        {
-          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains::StartsWithMicrosoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains",
-          "clrName": "StartsWith",
-          "metadataToken": 67109989,
-          "normalizedSignature": "StartsWith|Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
-        },
-        {
-          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains::EndsWithMicrosoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains",
-          "clrName": "EndsWith",
-          "metadataToken": 67109990,
-          "normalizedSignature": "EndsWith|Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
-        },
-        {
-          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains::ContainsMicrosoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains",
-          "clrName": "Contains",
-          "metadataToken": 67109991,
-          "normalizedSignature": "Contains|Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
-        }
-      ],
-      "events": [],
-      "constructors": []
-    },
-    {
       "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.TemporalOperationType",
       "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.TemporalOperationType",
       "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
@@ -203,244 +115,6 @@
       ],
       "events": [],
       "constructors": []
-    },
-    {
-      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerOpenJsonExpression\u002BColumnInfo",
-      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerOpenJsonExpression\u002BColumnInfo",
-      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
-      "metadataToken": 0,
-      "kind": "Struct",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": true,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.ValueType",
-        "clrName": "System.ValueType"
-      },
-      "interfaces": [
-        {
-          "stableId": "System.Private.CoreLib:System.IEquatable\u00601",
-          "clrName": "System.IEquatable\u00601",
-          "typeArguments": [
-            "ColumnInfo"
-          ]
-        }
-      ],
-      "methods": [
-        {
-          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerOpenJsonExpression\u002BColumnInfo::ToString():System.String",
-          "clrName": "ToString",
-          "metadataToken": 100665914,
-          "canonicalSignature": "():System.String",
-          "normalizedSignature": "ToString|():System.String|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": true,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerOpenJsonExpression\u002BColumnInfo",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerOpenJsonExpression\u002BColumnInfo::GetHashCode():System.Int32",
-          "clrName": "GetHashCode",
-          "metadataToken": 100665918,
-          "canonicalSignature": "():System.Int32",
-          "normalizedSignature": "GetHashCode|():System.Int32|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": true,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerOpenJsonExpression\u002BColumnInfo",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerOpenJsonExpression\u002BColumnInfo::Equals(System.Object):System.Boolean",
-          "clrName": "Equals",
-          "metadataToken": 100665919,
-          "canonicalSignature": "(System.Object):System.Boolean",
-          "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": true,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerOpenJsonExpression\u002BColumnInfo",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerOpenJsonExpression\u002BColumnInfo::Equals(Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerOpenJsonExpression\u002BColumnInfo):System.Boolean",
-          "clrName": "Equals",
-          "metadataToken": 100665920,
-          "canonicalSignature": "(Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerOpenJsonExpression\u002BColumnInfo):System.Boolean",
-          "normalizedSignature": "Equals|(Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerOpenJsonExpression\u002BColumnInfo):System.Boolean|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": true,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerOpenJsonExpression\u002BColumnInfo",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerOpenJsonExpression\u002BColumnInfo::Deconstruct(System.String\u0026,Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping\u0026,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.PathSegment,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]\u0026,System.Boolean\u0026):System.Void",
-          "clrName": "Deconstruct",
-          "metadataToken": 100665921,
-          "canonicalSignature": "(System.String\u0026,Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping\u0026,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.PathSegment,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]\u0026,System.Boolean\u0026):System.Void",
-          "normalizedSignature": "Deconstruct|(System.String\u0026,Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping\u0026,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.PathSegment,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]\u0026,System.Boolean\u0026):System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 4,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerOpenJsonExpression\u002BColumnInfo",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
-          "isExtensionMethod": false,
-          "parameterModifiers": [
-            {
-              "index": 0,
-              "modifier": "out"
-            },
-            {
-              "index": 1,
-              "modifier": "out"
-            },
-            {
-              "index": 2,
-              "modifier": "out"
-            },
-            {
-              "index": 3,
-              "modifier": "out"
-            }
-          ]
-        }
-      ],
-      "properties": [
-        {
-          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerOpenJsonExpression\u002BColumnInfo::Name:System.String",
-          "clrName": "Name",
-          "metadataToken": 385876275,
-          "canonicalSignature": ":System.String",
-          "normalizedSignature": "Name|:System.String|static=false|accessor=getset",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerOpenJsonExpression\u002BColumnInfo",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
-        },
-        {
-          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerOpenJsonExpression\u002BColumnInfo::TypeMapping:Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping",
-          "clrName": "TypeMapping",
-          "metadataToken": 385876276,
-          "canonicalSignature": ":Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping",
-          "normalizedSignature": "TypeMapping|:Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping|static=false|accessor=getset",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerOpenJsonExpression\u002BColumnInfo",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
-        },
-        {
-          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerOpenJsonExpression\u002BColumnInfo::Path:System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.PathSegment,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "Path",
-          "metadataToken": 385876277,
-          "canonicalSignature": ":System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.PathSegment,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "normalizedSignature": "Path|:System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.PathSegment,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=getset",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerOpenJsonExpression\u002BColumnInfo",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
-        },
-        {
-          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerOpenJsonExpression\u002BColumnInfo::AsJson:System.Boolean",
-          "clrName": "AsJson",
-          "metadataToken": 385876278,
-          "canonicalSignature": ":System.Boolean",
-          "normalizedSignature": "AsJson|:System.Boolean|static=false|accessor=getset",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerOpenJsonExpression\u002BColumnInfo",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerOpenJsonExpression\u002BColumnInfo::.ctor(System.String,Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.PathSegment,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean):void",
-          "metadataToken": 100665905,
-          "canonicalSignature": "(System.String,Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.PathSegment,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean):void",
-          "normalizedSignature": "constructor|(System.String,Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.PathSegment,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean):void|static=false",
-          "isStatic": false,
-          "parameterCount": 4,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerOpenJsonExpression\u002BColumnInfo",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
-        }
-      ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SearchConditionConverter",
@@ -2608,6 +2282,244 @@
       ]
     },
     {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerOpenJsonExpression\u002BColumnInfo",
+      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerOpenJsonExpression\u002BColumnInfo",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "kind": "Struct",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IEquatable\u00601",
+          "clrName": "System.IEquatable\u00601",
+          "typeArguments": [
+            "ColumnInfo"
+          ]
+        }
+      ],
+      "methods": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerOpenJsonExpression\u002BColumnInfo::ToString():System.String",
+          "clrName": "ToString",
+          "metadataToken": 100665914,
+          "canonicalSignature": "():System.String",
+          "normalizedSignature": "ToString|():System.String|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerOpenJsonExpression\u002BColumnInfo",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerOpenJsonExpression\u002BColumnInfo::GetHashCode():System.Int32",
+          "clrName": "GetHashCode",
+          "metadataToken": 100665918,
+          "canonicalSignature": "():System.Int32",
+          "normalizedSignature": "GetHashCode|():System.Int32|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerOpenJsonExpression\u002BColumnInfo",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerOpenJsonExpression\u002BColumnInfo::Equals(System.Object):System.Boolean",
+          "clrName": "Equals",
+          "metadataToken": 100665919,
+          "canonicalSignature": "(System.Object):System.Boolean",
+          "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerOpenJsonExpression\u002BColumnInfo",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerOpenJsonExpression\u002BColumnInfo::Equals(Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerOpenJsonExpression\u002BColumnInfo):System.Boolean",
+          "clrName": "Equals",
+          "metadataToken": 100665920,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerOpenJsonExpression\u002BColumnInfo):System.Boolean",
+          "normalizedSignature": "Equals|(Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerOpenJsonExpression\u002BColumnInfo):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerOpenJsonExpression\u002BColumnInfo",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerOpenJsonExpression\u002BColumnInfo::Deconstruct(System.String\u0026,Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping\u0026,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.PathSegment,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]\u0026,System.Boolean\u0026):System.Void",
+          "clrName": "Deconstruct",
+          "metadataToken": 100665921,
+          "canonicalSignature": "(System.String\u0026,Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping\u0026,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.PathSegment,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]\u0026,System.Boolean\u0026):System.Void",
+          "normalizedSignature": "Deconstruct|(System.String\u0026,Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping\u0026,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.PathSegment,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]\u0026,System.Boolean\u0026):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 4,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerOpenJsonExpression\u002BColumnInfo",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "isExtensionMethod": false,
+          "parameterModifiers": [
+            {
+              "index": 0,
+              "modifier": "out"
+            },
+            {
+              "index": 1,
+              "modifier": "out"
+            },
+            {
+              "index": 2,
+              "modifier": "out"
+            },
+            {
+              "index": 3,
+              "modifier": "out"
+            }
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerOpenJsonExpression\u002BColumnInfo::Name:System.String",
+          "clrName": "Name",
+          "metadataToken": 385876275,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Name|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerOpenJsonExpression\u002BColumnInfo",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerOpenJsonExpression\u002BColumnInfo::TypeMapping:Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping",
+          "clrName": "TypeMapping",
+          "metadataToken": 385876276,
+          "canonicalSignature": ":Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping",
+          "normalizedSignature": "TypeMapping|:Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerOpenJsonExpression\u002BColumnInfo",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerOpenJsonExpression\u002BColumnInfo::Path:System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.PathSegment,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "Path",
+          "metadataToken": 385876277,
+          "canonicalSignature": ":System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.PathSegment,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "Path|:System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.PathSegment,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerOpenJsonExpression\u002BColumnInfo",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerOpenJsonExpression\u002BColumnInfo::AsJson:System.Boolean",
+          "clrName": "AsJson",
+          "metadataToken": 385876278,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "AsJson|:System.Boolean|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerOpenJsonExpression\u002BColumnInfo",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerOpenJsonExpression\u002BColumnInfo::.ctor(System.String,Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.PathSegment,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean):void",
+          "metadataToken": 100665905,
+          "canonicalSignature": "(System.String,Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.PathSegment,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean):void",
+          "normalizedSignature": "constructor|(System.String,Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.PathSegment,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean):void|static=false",
+          "isStatic": false,
+          "parameterCount": 4,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerOpenJsonExpression\u002BColumnInfo",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ]
+    },
+    {
       "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerParameterBasedSqlProcessor",
       "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerParameterBasedSqlProcessor",
       "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
@@ -4576,6 +4488,94 @@
           "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
         }
       ]
+    },
+    {
+      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains",
+      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains",
+      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "metadataToken": 0,
+      "kind": "Enum",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains::value__System.Int32",
+          "clrName": "value__",
+          "metadataToken": 67109988,
+          "normalizedSignature": "value__|System.Int32|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "isLiteral": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains::StartsWithMicrosoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains",
+          "clrName": "StartsWith",
+          "metadataToken": 67109989,
+          "normalizedSignature": "StartsWith|Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains::EndsWithMicrosoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains",
+          "clrName": "EndsWith",
+          "metadataToken": 67109990,
+          "normalizedSignature": "EndsWith|Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains::ContainsMicrosoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains",
+          "clrName": "Contains",
+          "metadataToken": 67109991,
+          "normalizedSignature": "Contains|Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains",
+          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+        }
+      ],
+      "events": [],
+      "constructors": []
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerSqlTranslatingExpressionVisitorFactory",

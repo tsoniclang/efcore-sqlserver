@@ -2,11 +2,9 @@
 // Namespace: Azure
 // Assembly: Azure.Core
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
-// Import support types from @tsonic/core
-import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import type { HttpPipeline, HttpPipelinePolicy } from "../../Azure.Core.Pipeline/internal/index.js";
@@ -48,8 +46,8 @@ export interface ETag$instance {
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     Equals(other: ETag): boolean;
-    Equals(other: string): boolean;
-    Equals(obj: unknown): boolean;
+    Equals(other: string | null): boolean;
+    Equals(obj: JsValue | null): boolean;
     GetHashCode(): int;
     ToString(): string;
     ToString(format: string): string;
@@ -72,7 +70,7 @@ export interface HttpRange$instance {
     readonly Length: Nullable_1<System_Internal.Int64>;
     readonly Offset: long;
     Equals(other: HttpRange): boolean;
-    Equals(obj: unknown): boolean;
+    Equals(obj: JsValue | null): boolean;
     GetHashCode(): int;
     ToString(): string;
 }
@@ -91,11 +89,11 @@ export interface AsyncPageable_1$instance<T> {
     readonly __tsonic_iface_System_Collections_Generic_IAsyncEnumerable_1: never;
 
     readonly CancellationToken: CancellationToken;
-    AsPages(continuationToken?: string, pageSizeHint?: Nullable_1<System_Internal.Int32>): IAsyncEnumerable_1<Page_1<T>>;
-    Equals(obj: unknown): boolean;
+    AsPages(continuationToken?: string | null, pageSizeHint?: Nullable_1<System_Internal.Int32>): IAsyncEnumerable_1<Page_1<T>>;
+    Equals(obj: JsValue | null): boolean;
     GetAsyncEnumerator(cancellationToken?: CancellationToken): IAsyncEnumerator_1<T>;
     GetHashCode(): int;
-    ToString(): string | undefined;
+    ToString(): string | null;
 }
 
 
@@ -215,8 +213,8 @@ export interface NullableResponse_1$instance<T> {
     readonly __tsonic_type_Azure_NullableResponse_1: never;
 
     readonly HasValue: boolean;
-    readonly Value: T | undefined;
-    Equals(obj: unknown): boolean;
+    readonly Value: T | null;
+    Equals(obj: JsValue | null): boolean;
     GetHashCode(): int;
     GetRawResponse(): Response;
     ToString(): string;
@@ -234,11 +232,11 @@ export interface Operation$instance {
 
     readonly HasCompleted: boolean;
     readonly Id: string;
-    Equals(obj: unknown): boolean;
+    Equals(obj: JsValue | null): boolean;
     GetHashCode(): int;
     GetRawResponse(): Response;
     GetRehydrationToken(): Nullable_1<RehydrationToken>;
-    ToString(): string | undefined;
+    ToString(): string | null;
     UpdateStatus(cancellationToken?: CancellationToken): Response;
     UpdateStatusAsync(cancellationToken?: CancellationToken): ValueTask_1<Response>;
     WaitForCompletionResponse(cancellationToken?: CancellationToken): Response;
@@ -251,10 +249,10 @@ export interface Operation$instance {
 
 
 export const Operation: (abstract new() => Operation) & {
-    Rehydrate(pipeline: HttpPipeline, rehydrationToken: RehydrationToken, options?: ClientOptions): Operation;
-    Rehydrate<T extends IPersistableModel_1<T>>(pipeline: HttpPipeline, rehydrationToken: RehydrationToken, options?: ClientOptions): Operation_1<T>;
-    RehydrateAsync(pipeline: HttpPipeline, rehydrationToken: RehydrationToken, options?: ClientOptions): Task_1<Operation>;
-    RehydrateAsync<T extends IPersistableModel_1<T>>(pipeline: HttpPipeline, rehydrationToken: RehydrationToken, options?: ClientOptions): Task_1<Operation_1<T>>;
+    Rehydrate(pipeline: HttpPipeline, rehydrationToken: RehydrationToken, options?: ClientOptions | null): Operation;
+    Rehydrate<T extends IPersistableModel_1<T>>(pipeline: HttpPipeline, rehydrationToken: RehydrationToken, options?: ClientOptions | null): Operation_1<T>;
+    RehydrateAsync(pipeline: HttpPipeline, rehydrationToken: RehydrationToken, options?: ClientOptions | null): Task_1<Operation>;
+    RehydrateAsync<T extends IPersistableModel_1<T>>(pipeline: HttpPipeline, rehydrationToken: RehydrationToken, options?: ClientOptions | null): Task_1<Operation_1<T>>;
 };
 
 
@@ -286,17 +284,17 @@ export type Operation_1<T> = Operation_1$instance<T>;
 export interface Page_1$instance<T> {
     readonly __tsonic_type_Azure_Page_1: never;
 
-    readonly ContinuationToken: string | undefined;
+    readonly ContinuationToken: string | null;
     readonly Values: IReadOnlyList_1<T>;
-    Equals(obj: unknown): boolean;
+    Equals(obj: JsValue | null): boolean;
     GetHashCode(): int;
     GetRawResponse(): Response;
-    ToString(): string | undefined;
+    ToString(): string | null;
 }
 
 
 export const Page_1: (abstract new<T>() => Page_1<T>) & {
-    FromValues<T>(values: IReadOnlyList_1<T>, continuationToken: string, response: Response): Page_1<T>;
+    FromValues<T>(values: IReadOnlyList_1<T>, continuationToken: string | null, response: Response): Page_1<T>;
 };
 
 
@@ -309,11 +307,11 @@ export interface Pageable_1$instance<T> {
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly CancellationToken: CancellationToken;
-    AsPages(continuationToken?: string, pageSizeHint?: Nullable_1<System_Internal.Int32>): IEnumerable_1<Page_1<T>>;
-    Equals(obj: unknown): boolean;
+    AsPages(continuationToken?: string | null, pageSizeHint?: Nullable_1<System_Internal.Int32>): IEnumerable_1<Page_1<T>>;
+    Equals(obj: JsValue | null): boolean;
     GetEnumerator(): IEnumerator_1<T>;
     GetHashCode(): int;
-    ToString(): string | undefined;
+    ToString(): string | null;
 }
 
 
@@ -379,22 +377,22 @@ export interface RequestFailedException$instance extends Exception {
 
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
-    readonly ErrorCode: string | undefined;
+    readonly ErrorCode: string | null;
     readonly Status: int;
     GetObjectData(info: SerializationInfo, context: StreamingContext): void;
-    GetRawResponse(): Response | undefined;
+    GetRawResponse(): Response | null;
 }
 
 
 export const RequestFailedException: {
     new(message: string): RequestFailedException;
-    new(message: string, innerException: Exception): RequestFailedException;
+    new(message: string, innerException: Exception | null): RequestFailedException;
     new(status: int, message: string): RequestFailedException;
-    new(status: int, message: string, innerException: Exception): RequestFailedException;
-    new(status: int, message: string, errorCode: string, innerException: Exception): RequestFailedException;
+    new(status: int, message: string, innerException: Exception | null): RequestFailedException;
+    new(status: int, message: string, errorCode: string | null, innerException: Exception | null): RequestFailedException;
     new(response: Response): RequestFailedException;
-    new(response: Response, innerException: Exception): RequestFailedException;
-    new(response: Response, innerException: Exception, detailsParser: RequestFailedDetailsParser): RequestFailedException;
+    new(response: Response, innerException: Exception | null): RequestFailedException;
+    new(response: Response, innerException: Exception | null, detailsParser: RequestFailedDetailsParser | null): RequestFailedException;
 };
 
 
@@ -407,8 +405,8 @@ export interface Response$instance {
 
     ClientRequestId: string;
     readonly Content: BinaryData;
-    get ContentStream(): Stream | undefined;
-    set ContentStream(value: Stream | undefined);
+    get ContentStream(): Stream | null;
+    set ContentStream(value: Stream | null);
     readonly Headers: ResponseHeaders;
     IsError: boolean;
     readonly ReasonPhrase: string;
@@ -417,8 +415,8 @@ export interface Response$instance {
     Dispose(): void;
     EnumerateHeaders(): IEnumerable_1<HttpHeader>;
     ToString(): string;
-    TryGetHeader(name: string, value: string): boolean;
-    TryGetHeaderValues(name: string, values: IEnumerable_1<System_Internal.String>): boolean;
+    TryGetHeader(name: string, value: string | null): boolean;
+    TryGetHeaderValues(name: string, values: IEnumerable_1<System_Internal.String> | null): boolean;
 }
 
 
@@ -434,7 +432,7 @@ export interface Response_1$instance<T> extends NullableResponse_1<T> {
 
     readonly HasValue: boolean;
     readonly Value: T;
-    Equals(obj: unknown): boolean;
+    Equals(obj: JsValue | null): boolean;
     GetHashCode(): int;
 }
 
@@ -451,15 +449,15 @@ export interface ResponseError$instance extends System_ClientModel_Primitives_In
     readonly __tsonic_iface_System_ClientModel_Primitives_IJsonModel_1: never;
     readonly __tsonic_iface_System_ClientModel_Primitives_IPersistableModel_1: never;
 
-    readonly Code: string | undefined;
-    readonly Message: string | undefined;
+    readonly Code: string | null;
+    readonly Message: string | null;
     ToString(): string;
 }
 
 
 export const ResponseError: {
     new(): ResponseError;
-    new(code: string, message: string): ResponseError;
+    new(code: string | null, message: string | null): ResponseError;
 };
 
 
@@ -487,11 +485,11 @@ export const SyncAsyncEventArgs: {
 export type SyncAsyncEventArgs = SyncAsyncEventArgs$instance;
 
 export abstract class AzureCoreExtensions$instance {
-    static ToDynamicFromJson(utf8Json: BinaryData, propertyNameFormat: JsonPropertyNames, dateTimeFormat?: string): unknown;
-    static ToDynamicFromJson(utf8Json: BinaryData): unknown;
-    static ToObject<T>(data: BinaryData, serializer: ObjectSerializer, cancellationToken?: CancellationToken): T | undefined;
+    static ToDynamicFromJson(utf8Json: BinaryData, propertyNameFormat: JsonPropertyNames, dateTimeFormat?: string): JsValue;
+    static ToDynamicFromJson(utf8Json: BinaryData): JsValue;
+    static ToObject<T>(data: BinaryData, serializer: ObjectSerializer, cancellationToken?: CancellationToken): T | null;
     static ToObjectAsync<T>(data: BinaryData, serializer: ObjectSerializer, cancellationToken?: CancellationToken): ValueTask_1<T>;
-    static ToObjectFromJson(data: BinaryData): unknown | undefined;
+    static ToObjectFromJson(data: BinaryData): JsValue | null;
 }
 
 

@@ -2,8 +2,9 @@
 // Namespace: Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlExpressions
 // Assembly: Microsoft.EntityFrameworkCore.SqlServer
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
@@ -23,7 +24,7 @@ export interface SqlServerJsonObjectExpression$instance extends SqlFunctionExpre
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IRelationalQuotableExpression: never;
 
     readonly PropertyNames: IReadOnlyList_1<System_Internal.String>;
-    Equals(obj: unknown): boolean;
+    Equals(obj: JsValue | null): boolean;
     GetHashCode(): int;
     Print(expressionPrinter: ExpressionPrinter): void;
     Quote(): Expression;

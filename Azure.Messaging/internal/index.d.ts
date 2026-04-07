@@ -2,8 +2,9 @@
 // Namespace: Azure.Messaging
 // Assembly: Azure.Core
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { ContentType } from "../../Azure.Core/internal/index.js";
@@ -21,17 +22,17 @@ export enum CloudEventDataFormat {
 export interface CloudEvent$instance {
     readonly __tsonic_type_Azure_Messaging_CloudEvent: never;
 
-    get Data(): BinaryData | undefined;
-    set Data(value: BinaryData | undefined);
-    get DataContentType(): string | undefined;
-    set DataContentType(value: string | undefined);
-    get DataSchema(): string | undefined;
-    set DataSchema(value: string | undefined);
-    readonly ExtensionAttributes: IDictionary_2<System_Internal.String, unknown>;
+    get Data(): BinaryData | null;
+    set Data(value: BinaryData | null);
+    get DataContentType(): string | null;
+    set DataContentType(value: string | null);
+    get DataSchema(): string | null;
+    set DataSchema(value: string | null);
+    readonly ExtensionAttributes: IDictionary_2<System_Internal.String, JsValue>;
     Id: string;
     Source: string;
-    get Subject(): string | undefined;
-    set Subject(value: string | undefined);
+    get Subject(): string | null;
+    set Subject(value: string | null);
     get Time(): Nullable_1<DateTimeOffset>;
     set Time(value: Nullable_1<DateTimeOffset> | DateTimeOffset);
     Type: string;
@@ -39,9 +40,9 @@ export interface CloudEvent$instance {
 
 
 export const CloudEvent: {
-    new(source: string, type: string, jsonSerializableData: unknown, dataSerializationType: Type): CloudEvent;
-    new(source: string, type: string, data: BinaryData, dataContentType: string, dataFormat: CloudEventDataFormat): CloudEvent;
-    Parse(json: BinaryData, skipValidation?: boolean): CloudEvent | undefined;
+    new(source: string, type: string, jsonSerializableData: JsValue | null, dataSerializationType: Type | null): CloudEvent;
+    new(source: string, type: string, data: BinaryData | null, dataContentType: string | null, dataFormat: CloudEventDataFormat): CloudEvent;
+    Parse(json: BinaryData, skipValidation?: boolean): CloudEvent | null;
     ParseMany(json: BinaryData, skipValidation?: boolean): CloudEvent[];
 };
 
@@ -55,8 +56,8 @@ export interface MessageContent$instance {
     set ContentType(value: Nullable_1<ContentType> | ContentType);
     get ContentTypeCore(): Nullable_1<ContentType>;
     set ContentTypeCore(value: Nullable_1<ContentType> | ContentType);
-    get Data(): BinaryData | undefined;
-    set Data(value: BinaryData | undefined);
+    get Data(): BinaryData | null;
+    set Data(value: BinaryData | null);
     readonly IsReadOnly: boolean;
 }
 
