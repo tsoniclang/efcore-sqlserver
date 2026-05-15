@@ -3,7 +3,7 @@
 // Assembly: Microsoft.EntityFrameworkCore, Microsoft.EntityFrameworkCore.Relational, Microsoft.EntityFrameworkCore.SqlServer
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -158,12 +158,12 @@ export interface SqlServerRuntimeModelConvention$instance extends RelationalRunt
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IModelFinalizedConvention: never;
 
-    ProcessEntityTypeAnnotations(annotations: Dictionary_2<System_Internal.String, JsValue | null>, entityType: IEntityType, runtimeEntityType: RuntimeEntityType, runtime: boolean): void;
-    ProcessIndexAnnotations(annotations: Dictionary_2<System_Internal.String, JsValue | null>, index: IIndex, runtimeIndex: RuntimeIndex, runtime: boolean): void;
-    ProcessKeyAnnotations(annotations: Dictionary_2<System_Internal.String, JsValue | null>, key: IKey, runtimeKey: RuntimeKey, runtime: boolean): void;
-    ProcessModelAnnotations(annotations: Dictionary_2<System_Internal.String, JsValue | null>, model: IModel, runtimeModel: RuntimeModel, runtime: boolean): void;
-    ProcessPropertyAnnotations(annotations: Dictionary_2<System_Internal.String, JsValue | null>, property: IProperty, runtimeProperty: RuntimeProperty, runtime: boolean): void;
-    ProcessPropertyOverridesAnnotations(annotations: Dictionary_2<System_Internal.String, JsValue | null>, propertyOverrides: IRelationalPropertyOverrides, runtimePropertyOverrides: RuntimeRelationalPropertyOverrides, runtime: boolean): void;
+    ProcessEntityTypeAnnotations(annotations: Dictionary_2<System_Internal.String, unknown | null>, entityType: IEntityType, runtimeEntityType: RuntimeEntityType, runtime: boolean): void;
+    ProcessIndexAnnotations(annotations: Dictionary_2<System_Internal.String, unknown | null>, index: IIndex, runtimeIndex: RuntimeIndex, runtime: boolean): void;
+    ProcessKeyAnnotations(annotations: Dictionary_2<System_Internal.String, unknown | null>, key: IKey, runtimeKey: RuntimeKey, runtime: boolean): void;
+    ProcessModelAnnotations(annotations: Dictionary_2<System_Internal.String, unknown | null>, model: IModel, runtimeModel: RuntimeModel, runtime: boolean): void;
+    ProcessPropertyAnnotations(annotations: Dictionary_2<System_Internal.String, unknown | null>, property: IProperty, runtimeProperty: RuntimeProperty, runtime: boolean): void;
+    ProcessPropertyOverridesAnnotations(annotations: Dictionary_2<System_Internal.String, unknown | null>, propertyOverrides: IRelationalPropertyOverrides, runtimePropertyOverrides: RuntimeRelationalPropertyOverrides, runtime: boolean): void;
 }
 
 

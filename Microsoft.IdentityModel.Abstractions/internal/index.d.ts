@@ -3,7 +3,7 @@
 // Assembly: Microsoft.IdentityModel.Abstractions
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -116,7 +116,7 @@ export interface TelemetryEventDetails$instance {
 
     get Name(): string | null;
     set Name(value: string | null);
-    readonly Properties: IReadOnlyDictionary_2<System_Internal.String, JsValue>;
+    readonly Properties: IReadOnlyDictionary_2<System_Internal.String, unknown>;
     SetProperty(key: string, value: string): void;
     SetProperty(key: string, value: long): void;
     SetProperty(key: string, value: boolean): void;

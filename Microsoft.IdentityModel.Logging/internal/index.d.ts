@@ -3,7 +3,7 @@
 // Assembly: Microsoft.IdentityModel.Logging
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -31,19 +31,19 @@ export interface IdentityModelEventSource$instance extends EventSource {
 
     LogLevel: EventLevel;
     Write(level: EventLevel, innerException: Exception, message: string): void;
-    Write(level: EventLevel, innerException: Exception, message: string, ...args: JsValue[]): void;
+    Write(level: EventLevel, innerException: Exception, message: string, ...args: unknown[]): void;
     WriteAlways(message: string): void;
-    WriteAlways(message: string, ...args: JsValue[]): void;
+    WriteAlways(message: string, ...args: unknown[]): void;
     WriteCritical(message: string): void;
-    WriteCritical(message: string, ...args: JsValue[]): void;
+    WriteCritical(message: string, ...args: unknown[]): void;
     WriteError(message: string): void;
-    WriteError(message: string, ...args: JsValue[]): void;
+    WriteError(message: string, ...args: unknown[]): void;
     WriteInformation(message: string): void;
-    WriteInformation(message: string, ...args: JsValue[]): void;
+    WriteInformation(message: string, ...args: unknown[]): void;
     WriteVerbose(message: string): void;
-    WriteVerbose(message: string, ...args: JsValue[]): void;
+    WriteVerbose(message: string, ...args: unknown[]): void;
     WriteWarning(message: string): void;
-    WriteWarning(message: string, ...args: JsValue[]): void;
+    WriteWarning(message: string, ...args: unknown[]): void;
 }
 
 
@@ -66,7 +66,7 @@ export interface LoggerContext$instance {
     CaptureLogs: boolean;
     DebugId: string;
     Logs: ICollection_1<System_Internal.String>;
-    PropertyBag: IDictionary_2<System_Internal.String, JsValue>;
+    PropertyBag: IDictionary_2<System_Internal.String, unknown>;
 }
 
 
@@ -87,34 +87,34 @@ export interface LogHelper$instance {
 export const LogHelper: {
     new(): LogHelper;
     Logger: IIdentityLogger;
-    FormatInvariant(format: string, ...args: JsValue[]): string;
+    FormatInvariant(format: string, ...args: unknown[]): string;
     IsEnabled(level: EventLogLevel): boolean;
-    LogArgumentException<T extends ArgumentException>(eventLevel: EventLevel, argumentName: string, innerException: Exception, format: string, ...args: JsValue[]): T;
-    LogArgumentException<T extends ArgumentException>(eventLevel: EventLevel, argumentName: string, innerException: Exception, message: string): T;
-    LogArgumentException<T extends ArgumentException>(eventLevel: EventLevel, argumentName: string, format: string, ...args: JsValue[]): T;
-    LogArgumentException<T extends ArgumentException>(eventLevel: EventLevel, argumentName: string, message: string): T;
-    LogArgumentException<T extends ArgumentException>(argumentName: string, innerException: Exception, format: string, ...args: JsValue[]): T;
-    LogArgumentException<T extends ArgumentException>(argumentName: string, innerException: Exception, message: string): T;
-    LogArgumentException<T extends ArgumentException>(argumentName: string, format: string, ...args: JsValue[]): T;
-    LogArgumentException<T extends ArgumentException>(argumentName: string, message: string): T;
+    LogArgumentException<T extends unknown & ArgumentException>(eventLevel: EventLevel, argumentName: string, innerException: Exception, format: string, ...args: unknown[]): T;
+    LogArgumentException<T extends unknown & ArgumentException>(eventLevel: EventLevel, argumentName: string, innerException: Exception, message: string): T;
+    LogArgumentException<T extends unknown & ArgumentException>(eventLevel: EventLevel, argumentName: string, format: string, ...args: unknown[]): T;
+    LogArgumentException<T extends unknown & ArgumentException>(eventLevel: EventLevel, argumentName: string, message: string): T;
+    LogArgumentException<T extends unknown & ArgumentException>(argumentName: string, innerException: Exception, format: string, ...args: unknown[]): T;
+    LogArgumentException<T extends unknown & ArgumentException>(argumentName: string, innerException: Exception, message: string): T;
+    LogArgumentException<T extends unknown & ArgumentException>(argumentName: string, format: string, ...args: unknown[]): T;
+    LogArgumentException<T extends unknown & ArgumentException>(argumentName: string, message: string): T;
     LogArgumentNullException(argument: string): ArgumentNullException;
-    LogException<T extends Exception>(eventLevel: EventLevel, innerException: Exception, format: string, ...args: JsValue[]): T;
-    LogException<T extends Exception>(eventLevel: EventLevel, innerException: Exception, message: string): T;
-    LogException<T extends Exception>(eventLevel: EventLevel, format: string, ...args: JsValue[]): T;
-    LogException<T extends Exception>(eventLevel: EventLevel, message: string): T;
-    LogException<T extends Exception>(innerException: Exception, format: string, ...args: JsValue[]): T;
-    LogException<T extends Exception>(innerException: Exception, message: string): T;
-    LogException<T extends Exception>(format: string, ...args: JsValue[]): T;
-    LogException<T extends Exception>(message: string): T;
+    LogException<T extends unknown & Exception>(eventLevel: EventLevel, innerException: Exception, format: string, ...args: unknown[]): T;
+    LogException<T extends unknown & Exception>(eventLevel: EventLevel, innerException: Exception, message: string): T;
+    LogException<T extends unknown & Exception>(eventLevel: EventLevel, format: string, ...args: unknown[]): T;
+    LogException<T extends unknown & Exception>(eventLevel: EventLevel, message: string): T;
+    LogException<T extends unknown & Exception>(innerException: Exception, format: string, ...args: unknown[]): T;
+    LogException<T extends unknown & Exception>(innerException: Exception, message: string): T;
+    LogException<T extends unknown & Exception>(format: string, ...args: unknown[]): T;
+    LogException<T extends unknown & Exception>(message: string): T;
     LogExceptionMessage(eventLevel: EventLevel, exception: Exception): Exception;
     LogExceptionMessage(exception: Exception): Exception;
-    LogInformation(message: string, ...args: JsValue[]): void;
-    LogVerbose(message: string, ...args: JsValue[]): void;
-    LogWarning(message: string, ...args: JsValue[]): void;
-    MarkAsNonPII(arg: JsValue): JsValue;
-    MarkAsSecurityArtifact(arg: JsValue, callback: Func_2<JsValue, System_Internal.String>, callbackUnsafe: Func_2<JsValue, System_Internal.String>): JsValue;
-    MarkAsSecurityArtifact(arg: JsValue, callback: Func_2<JsValue, System_Internal.String>): JsValue;
-    MarkAsUnsafeSecurityArtifact(arg: JsValue, callbackUnsafe: Func_2<JsValue, System_Internal.String>): JsValue;
+    LogInformation(message: string, ...args: unknown[]): void;
+    LogVerbose(message: string, ...args: unknown[]): void;
+    LogWarning(message: string, ...args: unknown[]): void;
+    MarkAsNonPII(arg: unknown): unknown;
+    MarkAsSecurityArtifact(arg: unknown, callback: Func_2<unknown, System_Internal.String>, callbackUnsafe: Func_2<unknown, System_Internal.String>): unknown;
+    MarkAsSecurityArtifact(arg: unknown, callback: Func_2<unknown, System_Internal.String>): unknown;
+    MarkAsUnsafeSecurityArtifact(arg: unknown, callbackUnsafe: Func_2<unknown, System_Internal.String>): unknown;
 };
 
 

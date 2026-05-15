@@ -3,7 +3,7 @@
 // Assembly: Microsoft.EntityFrameworkCore.Relational, Microsoft.EntityFrameworkCore.SqlServer
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -26,7 +26,7 @@ export interface SqlServerMigrationsSqlGenerator$instance extends MigrationsSqlG
     ColumnDefinition(schema: string | null, table: string, name: string, operation: ColumnOperation, model: IModel | null, builder: MigrationCommandListBuilder): void;
     ComputedColumnDefinition(schema: string | null, table: string, name: string, operation: ColumnOperation, model: IModel | null, builder: MigrationCommandListBuilder): void;
     CreateIndexes(indexes: IEnumerable_1<ITableIndex>, builder: MigrationCommandListBuilder): void;
-    DefaultValue(defaultValue: JsValue | null, defaultValueSql: string | null, columnType: string | null, constraintName: string | null, builder: MigrationCommandListBuilder): void;
+    DefaultValue(defaultValue: unknown | null, defaultValueSql: string | null, columnType: string | null, constraintName: string | null, builder: MigrationCommandListBuilder): void;
     DropDefaultConstraint(schema: string | null, tableName: string, columnName: string, defaultConstraintName: string | null, builder: MigrationCommandListBuilder): void;
     DropDescription(builder: MigrationCommandListBuilder, schema: string | null, table: string, column?: string | null, omitVariableDeclarations?: boolean): void;
     DropIndexes(indexes: IEnumerable_1<ITableIndex>, builder: MigrationCommandListBuilder): void;

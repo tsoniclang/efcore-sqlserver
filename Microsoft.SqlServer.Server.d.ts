@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './Microsoft.SqlServer.Server/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { BinaryReader, BinaryWriter } from '@tsonic/dotnet/System.IO.js';
 import type { Attribute, Boolean as ClrBoolean, Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, String as ClrString, SystemException, Type, Void } from '@tsonic/dotnet/System.js';

@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './Microsoft.Identity.Client.TelemetryCore.TelemetryClient/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { CacheLevel } from './Microsoft.Identity.Client.Cache/internal/index.js';
 import type { Object as ClrObject } from '@tsonic/dotnet/System.js';

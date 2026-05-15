@@ -3,7 +3,7 @@
 // Assembly: Azure.Core
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -93,7 +93,7 @@ export interface HttpPipeline$instance {
 export const HttpPipeline: {
     new(transport: HttpPipelineTransport, policies: HttpPipelinePolicy[] | null, responseClassifier: ResponseClassifier | null): HttpPipeline;
     CreateClientRequestIdScope(clientRequestId: string | null): IDisposable;
-    CreateHttpMessagePropertiesScope(messageProperties: IDictionary_2<System_Internal.String, JsValue | null>): IDisposable;
+    CreateHttpMessagePropertiesScope(messageProperties: IDictionary_2<System_Internal.String, unknown | null>): IDisposable;
 };
 
 

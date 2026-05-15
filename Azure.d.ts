@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './Azure/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { HttpPipeline, HttpPipelinePolicy } from './Azure.Core.Pipeline/internal/index.js';
 import type { JsonPropertyNames, ObjectSerializer } from './Azure.Core.Serialization/internal/index.js';
@@ -53,16 +57,16 @@ declare const __unspecified: unique symbol;
 export type __ = typeof __unspecified;
 
 export type Operation<
-  T1 = __,
+  T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.Operation :
-  Internal.Operation_1<T1>;
+  [T1] extends [unknown] ? Internal.Operation_1<T1> : never;
 
 export type Response<
-  T1 = __,
+  T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.Response :
-  Internal.Response_1<T1>;
+  [T1] extends [unknown] ? Internal.Response_1<T1> : never;
 
 // Extension methods (C# using semantics)
 export type { ExtensionMethods_Azure as ExtensionMethods } from './__internal/extensions/index.js';

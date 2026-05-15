@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './System.Configuration/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { IConfigErrorInfo } from './System.Configuration.Internal/internal/index.js';
 import type { ProviderBase, ProviderCollection } from './System.Configuration.Provider/internal/index.js';

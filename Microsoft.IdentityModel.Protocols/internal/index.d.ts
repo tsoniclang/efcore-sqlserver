@@ -3,7 +3,7 @@
 // Assembly: Microsoft.IdentityModel.Protocols
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -20,7 +20,7 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Byte, Object as ClrObject, String as ClrString, TimeSpan, Uri, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface IConfigurationManager_1$instance<T> {
+export interface IConfigurationManager_1$instance<T extends (object | null)> {
     readonly __tsonic_iface_Microsoft_IdentityModel_Protocols_IConfigurationManager_1: never;
 
     GetConfigurationAsync(cancel: CancellationToken): Task_1<T>;
@@ -28,25 +28,25 @@ export interface IConfigurationManager_1$instance<T> {
 }
 
 
-export type IConfigurationManager_1<T> = IConfigurationManager_1$instance<T>;
+export type IConfigurationManager_1<T extends (object | null)> = IConfigurationManager_1$instance<T>;
 
-export interface IConfigurationRetriever_1$instance<T> {
+export interface IConfigurationRetriever_1$instance<T extends unknown> {
     readonly __tsonic_iface_Microsoft_IdentityModel_Protocols_IConfigurationRetriever_1: never;
 
     GetConfigurationAsync(address: string, retriever: IDocumentRetriever, cancel: CancellationToken): Task_1<T>;
 }
 
 
-export type IConfigurationRetriever_1<T> = IConfigurationRetriever_1$instance<T>;
+export type IConfigurationRetriever_1<T extends unknown> = IConfigurationRetriever_1$instance<T>;
 
-export interface IConfigurationValidator_1$instance<T> {
+export interface IConfigurationValidator_1$instance<T extends unknown> {
     readonly __tsonic_iface_Microsoft_IdentityModel_Protocols_IConfigurationValidator_1: never;
 
     Validate(configuration: T): ConfigurationValidationResult;
 }
 
 
-export type IConfigurationValidator_1<T> = IConfigurationValidator_1$instance<T>;
+export type IConfigurationValidator_1<T extends unknown> = IConfigurationValidator_1$instance<T>;
 
 export interface IDocumentRetriever$instance {
     readonly __tsonic_iface_Microsoft_IdentityModel_Protocols_IDocumentRetriever: never;
@@ -81,7 +81,7 @@ export const AuthenticationProtocolMessage: (abstract new() => AuthenticationPro
 
 export type AuthenticationProtocolMessage = AuthenticationProtocolMessage$instance;
 
-export interface ConfigurationManager_1$instance<T> extends BaseConfigurationManager {
+export interface ConfigurationManager_1$instance<T extends (object | null)> extends BaseConfigurationManager {
     readonly __tsonic_type_Microsoft_IdentityModel_Protocols_ConfigurationManager_1: never;
 
     readonly __tsonic_iface_Microsoft_IdentityModel_Protocols_IConfigurationManager_1: never;
@@ -94,12 +94,12 @@ export interface ConfigurationManager_1$instance<T> extends BaseConfigurationMan
 
 
 export const ConfigurationManager_1: {
-    new<T>(metadataAddress: string, configRetriever: IConfigurationRetriever_1<T>): ConfigurationManager_1<T>;
-    new<T>(metadataAddress: string, configRetriever: IConfigurationRetriever_1<T>, httpClient: HttpClient): ConfigurationManager_1<T>;
-    new<T>(metadataAddress: string, configRetriever: IConfigurationRetriever_1<T>, docRetriever: IDocumentRetriever): ConfigurationManager_1<T>;
-    new<T>(metadataAddress: string, configRetriever: IConfigurationRetriever_1<T>, docRetriever: IDocumentRetriever, lkgCacheOptions: LastKnownGoodConfigurationCacheOptions): ConfigurationManager_1<T>;
-    new<T>(metadataAddress: string, configRetriever: IConfigurationRetriever_1<T>, docRetriever: IDocumentRetriever, configValidator: IConfigurationValidator_1<T>): ConfigurationManager_1<T>;
-    new<T>(metadataAddress: string, configRetriever: IConfigurationRetriever_1<T>, docRetriever: IDocumentRetriever, configValidator: IConfigurationValidator_1<T>, lkgCacheOptions: LastKnownGoodConfigurationCacheOptions): ConfigurationManager_1<T>;
+    new<T extends (object | null)>(metadataAddress: string, configRetriever: IConfigurationRetriever_1<T>): ConfigurationManager_1<T>;
+    new<T extends (object | null)>(metadataAddress: string, configRetriever: IConfigurationRetriever_1<T>, httpClient: HttpClient): ConfigurationManager_1<T>;
+    new<T extends (object | null)>(metadataAddress: string, configRetriever: IConfigurationRetriever_1<T>, docRetriever: IDocumentRetriever): ConfigurationManager_1<T>;
+    new<T extends (object | null)>(metadataAddress: string, configRetriever: IConfigurationRetriever_1<T>, docRetriever: IDocumentRetriever, lkgCacheOptions: LastKnownGoodConfigurationCacheOptions): ConfigurationManager_1<T>;
+    new<T extends (object | null)>(metadataAddress: string, configRetriever: IConfigurationRetriever_1<T>, docRetriever: IDocumentRetriever, configValidator: IConfigurationValidator_1<T>): ConfigurationManager_1<T>;
+    new<T extends (object | null)>(metadataAddress: string, configRetriever: IConfigurationRetriever_1<T>, docRetriever: IDocumentRetriever, configValidator: IConfigurationValidator_1<T>, lkgCacheOptions: LastKnownGoodConfigurationCacheOptions): ConfigurationManager_1<T>;
     readonly DefaultAutomaticRefreshInterval: TimeSpan;
     readonly DefaultRefreshInterval: TimeSpan;
     readonly MinimumAutomaticRefreshInterval: TimeSpan;
@@ -107,11 +107,11 @@ export const ConfigurationManager_1: {
 };
 
 
-export interface __ConfigurationManager_1$views<T> {
+export interface __ConfigurationManager_1$views<T extends (object | null)> {
     As_IConfigurationManager_1(): IConfigurationManager_1$instance<T>;
 }
 
-export type ConfigurationManager_1<T> = ConfigurationManager_1$instance<T> & __ConfigurationManager_1$views<T>;
+export type ConfigurationManager_1<T extends (object | null)> = ConfigurationManager_1$instance<T> & __ConfigurationManager_1$views<T>;
 
 
 export interface ConfigurationValidationResult$instance {
@@ -184,7 +184,7 @@ export interface HttpRequestData$instance {
     readonly ClientCertificates: X509Certificate2Collection;
     Headers: IDictionary_2<System_Internal.String, IEnumerable_1<System_Internal.String>>;
     Method: string;
-    PropertyBag: IDictionary_2<System_Internal.String, JsValue>;
+    PropertyBag: IDictionary_2<System_Internal.String, unknown>;
     Uri: Uri;
     AppendHeaders(headers: HttpHeaders): void;
 }
@@ -197,7 +197,7 @@ export const HttpRequestData: {
 
 export type HttpRequestData = HttpRequestData$instance;
 
-export interface StaticConfigurationManager_1$instance<T> extends BaseConfigurationManager {
+export interface StaticConfigurationManager_1$instance<T extends (object | null)> extends BaseConfigurationManager, IConfigurationManager_1$instance<T> {
     readonly __tsonic_type_Microsoft_IdentityModel_Protocols_StaticConfigurationManager_1: never;
 
     readonly __tsonic_iface_Microsoft_IdentityModel_Protocols_IConfigurationManager_1: never;
@@ -209,15 +209,15 @@ export interface StaticConfigurationManager_1$instance<T> extends BaseConfigurat
 
 
 export const StaticConfigurationManager_1: {
-    new<T>(configuration: T): StaticConfigurationManager_1<T>;
+    new<T extends (object | null)>(configuration: T): StaticConfigurationManager_1<T>;
 };
 
 
-export interface __StaticConfigurationManager_1$views<T> {
+export interface __StaticConfigurationManager_1$views<T extends (object | null)> {
     As_IConfigurationManager_1(): IConfigurationManager_1$instance<T>;
 }
 
-export type StaticConfigurationManager_1<T> = StaticConfigurationManager_1$instance<T> & __StaticConfigurationManager_1$views<T>;
+export type StaticConfigurationManager_1<T extends (object | null)> = StaticConfigurationManager_1$instance<T> & __StaticConfigurationManager_1$views<T>;
 
 
 export interface X509CertificateValidationMode$instance {

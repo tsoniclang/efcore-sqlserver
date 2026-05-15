@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './Azure.Identity/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { HttpPipelinePolicy, HttpPipelineTransport } from './Azure.Core.Pipeline/internal/index.js';
 import type { AccessToken, ClientOptions, DiagnosticsOptions, HttpPipelinePosition, ResourceIdentifier, RetryOptions, TokenCredential, TokenRequestContext } from './Azure.Core/internal/index.js';

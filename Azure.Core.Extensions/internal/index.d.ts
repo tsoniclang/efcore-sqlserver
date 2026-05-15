@@ -3,7 +3,7 @@
 // Assembly: Azure.Core
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -11,39 +11,40 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { TokenCredential } from "../../Azure.Core/internal/index.js";
 import type { Boolean as ClrBoolean, Func_2, Func_3 } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface IAzureClientBuilder_2$instance<TClient, TOptions> {
+export interface IAzureClientBuilder_2$instance<TClient extends unknown, TOptions extends (object | null)> {
     readonly __tsonic_iface_Azure_Core_Extensions_IAzureClientBuilder_2: never;
 
 }
 
 
-export type IAzureClientBuilder_2<TClient, TOptions> = IAzureClientBuilder_2$instance<TClient, TOptions>;
+export type IAzureClientBuilder_2<TClient extends unknown, TOptions extends (object | null)> = IAzureClientBuilder_2$instance<TClient, TOptions>;
 
 export interface IAzureClientFactoryBuilder$instance {
     readonly __tsonic_iface_Azure_Core_Extensions_IAzureClientFactoryBuilder: never;
 
-    RegisterClientFactory<TClient, TOptions>(clientFactory: Func_2<TOptions, TClient>): IAzureClientBuilder_2<TClient, TOptions>;
+    RegisterClientFactory<TClient extends unknown, TOptions extends (object | null)>(clientFactory: Func_2<TOptions, TClient>): IAzureClientBuilder_2<TClient, TOptions>;
 }
 
 
 export type IAzureClientFactoryBuilder = IAzureClientFactoryBuilder$instance;
 
-export interface IAzureClientFactoryBuilderWithConfiguration_1$instance<TConfiguration> extends IAzureClientFactoryBuilder {
+export interface IAzureClientFactoryBuilderWithConfiguration_1$instance<TConfiguration extends unknown> extends IAzureClientFactoryBuilder {
     readonly __tsonic_iface_Azure_Core_Extensions_IAzureClientFactoryBuilderWithConfiguration_1: never;
 
+    RegisterClientFactory<TClient extends unknown, TOptions extends (object | null)>(clientFactory: Func_2<TOptions, TClient>): IAzureClientBuilder_2<TClient, TOptions>;
+    RegisterClientFactory<TClient extends unknown, TOptions extends (object | null)>(configuration: TConfiguration): IAzureClientBuilder_2<TClient, TOptions>;
     RegisterClientFactory<TClient, TOptions>(clientFactory: Func_2<TOptions, TClient>): IAzureClientBuilder_2<TClient, TOptions>;
-    RegisterClientFactory<TClient, TOptions>(configuration: TConfiguration): IAzureClientBuilder_2<TClient, TOptions>;
 }
 
 
-export interface IAzureClientFactoryBuilderWithConfiguration_1$instance<TConfiguration> extends IAzureClientFactoryBuilder$instance {}
+export interface IAzureClientFactoryBuilderWithConfiguration_1$instance<TConfiguration extends unknown> extends IAzureClientFactoryBuilder$instance {}
 
-export type IAzureClientFactoryBuilderWithConfiguration_1<TConfiguration> = IAzureClientFactoryBuilderWithConfiguration_1$instance<TConfiguration>;
+export type IAzureClientFactoryBuilderWithConfiguration_1<TConfiguration extends unknown> = IAzureClientFactoryBuilderWithConfiguration_1$instance<TConfiguration>;
 
 export interface IAzureClientFactoryBuilderWithCredential$instance {
     readonly __tsonic_iface_Azure_Core_Extensions_IAzureClientFactoryBuilderWithCredential: never;
 
-    RegisterClientFactory<TClient, TOptions>(clientFactory: Func_3<TOptions, TokenCredential, TClient>, requiresCredential?: boolean): IAzureClientBuilder_2<TClient, TOptions>;
+    RegisterClientFactory<TClient extends unknown, TOptions extends (object | null)>(clientFactory: Func_3<TOptions, TokenCredential, TClient>, requiresCredential?: boolean): IAzureClientBuilder_2<TClient, TOptions>;
 }
 
 
