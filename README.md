@@ -52,6 +52,10 @@ declarations, extension buckets, and `bindings.json` compiler metadata. It uses
 `@tsonic/efcore`, `@tsonic/microsoft-extensions`, `@tsonic/dotnet`, and
 `@tsonic/core` as peer packages for shared CLR types.
 
+Generated CLR object slots use TypeScript `unknown`; value-type constraints use
+`NonNullable<unknown>`. Provider code that receives a broad CLR value should
+narrow it through a proven API before member access.
+
 ## Versioning
 
 This repo is versioned by .NET major:
