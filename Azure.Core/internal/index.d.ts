@@ -3,7 +3,7 @@
 // Assembly: Azure.Core
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -44,7 +44,7 @@ export enum RetryMode {
 }
 
 
-export type SyncAsyncEventHandler_1<T extends SyncAsyncEventArgs> = (e: T) => Task;
+export type SyncAsyncEventHandler_1<T extends unknown & SyncAsyncEventArgs> = (e: T) => Task;
 
 
 export interface AccessToken$instance {
@@ -54,7 +54,7 @@ export interface AccessToken$instance {
     readonly RefreshOn: Nullable_1<DateTimeOffset>;
     readonly Token: string;
     readonly TokenType: string;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
 }
 
@@ -76,7 +76,7 @@ export interface AzureLocation$instance {
     readonly DisplayName: string | null;
     readonly Name: string;
     Equals(other: AzureLocation): boolean;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     ToString(): string;
 }
@@ -161,7 +161,7 @@ export interface ContentType$instance {
 
     Equals(other: ContentType): boolean;
     Equals(other: string | null): boolean;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     ToString(): string;
 }
@@ -184,7 +184,7 @@ export interface HttpHeader$instance {
 
     readonly Name: string;
     readonly Value: string;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     Equals(other: HttpHeader): boolean;
     GetHashCode(): int;
     ToString(): string;
@@ -303,7 +303,7 @@ export interface RequestMethod$instance {
 
     readonly Method: string;
     Equals(other: RequestMethod): boolean;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     ToString(): string;
 }
@@ -333,7 +333,7 @@ export interface ResourceType$instance {
     readonly Namespace: string;
     readonly Type: string;
     Equals(other: ResourceType): boolean;
-    Equals(other: JsValue | null): boolean;
+    Equals(other: unknown | null): boolean;
     GetHashCode(): int;
     GetLastType(): string;
     ToString(): string;
@@ -422,7 +422,7 @@ export interface ClientOptions$instance {
     set RetryPolicy(value: HttpPipelinePolicy | null);
     Transport: HttpPipelineTransport;
     AddPolicy(policy: HttpPipelinePolicy, position: HttpPipelinePosition): void;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     ToString(): string | null;
 }
@@ -492,10 +492,10 @@ export interface HttpMessage$instance {
     ResponseClassifier: ResponseClassifier;
     Dispose(): void;
     ExtractResponseContent(): Stream | null;
-    SetProperty(name: string, value: JsValue): void;
-    SetProperty(type: Type, value: JsValue): void;
-    TryGetProperty(name: string, value: JsValue | null): boolean;
-    TryGetProperty(type: Type, value: JsValue | null): boolean;
+    SetProperty(name: string, value: unknown): void;
+    SetProperty(type: Type, value: unknown): void;
+    TryGetProperty(name: string, value: unknown | null): boolean;
+    TryGetProperty(type: Type, value: unknown | null): boolean;
 }
 
 
@@ -553,12 +553,12 @@ export const RequestContent: (abstract new() => RequestContent) & {
     Create(bytes: byte[], index: int, length: int): RequestContent;
     Create(bytes: byte[]): RequestContent;
     Create(stream: Stream): RequestContent;
-    Create(serializable: JsValue, propertyNameFormat: JsonPropertyNames, dateTimeFormat?: string): RequestContent;
-    Create(serializable: JsValue, serializer: ObjectSerializer | null): RequestContent;
-    Create(serializable: JsValue): RequestContent;
+    Create(serializable: unknown, propertyNameFormat: JsonPropertyNames, dateTimeFormat?: string): RequestContent;
+    Create(serializable: unknown, serializer: ObjectSerializer | null): RequestContent;
+    Create(serializable: unknown): RequestContent;
     Create(bytes: ReadOnlyMemory_1<System_Internal.Byte>): RequestContent;
     Create(content: string): RequestContent;
-    Create<T extends IPersistableModel_1<T>>(model: T, options?: ModelReaderWriterOptions | null): RequestContent;
+    Create<T extends unknown & IPersistableModel_1<T>>(model: T, options?: ModelReaderWriterOptions | null): RequestContent;
 };
 
 
@@ -624,7 +624,7 @@ export interface ResourceIdentifier$instance {
     AppendProviderResource(providerNamespace: string, resourceType: string, resourceName: string): ResourceIdentifier;
     CompareTo(other: ResourceIdentifier | null): int;
     Equals(other: ResourceIdentifier | null): boolean;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     ToString(): string;
 }
@@ -721,7 +721,7 @@ export type TelemetryDetails = TelemetryDetails$instance;
 export interface TokenCredential$instance extends AuthenticationTokenProvider {
     readonly __tsonic_type_Azure_Core_TokenCredential: never;
 
-    CreateTokenOptions(properties: IReadOnlyDictionary_2<System_Internal.String, JsValue>): GetTokenOptions | null;
+    CreateTokenOptions(properties: IReadOnlyDictionary_2<System_Internal.String, unknown>): GetTokenOptions | null;
     GetToken(requestContext: TokenRequestContext, cancellationToken: CancellationToken): AccessToken;
     GetToken(properties: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
     GetTokenAsync(requestContext: TokenRequestContext, cancellationToken: CancellationToken): ValueTask_1<AccessToken>;

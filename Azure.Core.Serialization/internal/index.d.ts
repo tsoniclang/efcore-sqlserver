@@ -3,7 +3,7 @@
 // Assembly: Azure.Core
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -40,7 +40,7 @@ export interface DynamicData$instance {
     readonly __tsonic_iface_System_IDisposable: never;
 
     Dispose(): void;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     ToString(): string;
 }
@@ -57,12 +57,12 @@ export interface JsonObjectSerializer$instance extends ObjectSerializer, IMember
 
     readonly __tsonic_iface_Azure_Core_Serialization_IMemberNameConverter: never;
 
-    Deserialize(stream: Stream, returnType: Type, cancellationToken: CancellationToken): JsValue | null;
-    DeserializeAsync(stream: Stream, returnType: Type, cancellationToken: CancellationToken): ValueTask_1<JsValue>;
-    Serialize(stream: Stream, value: JsValue | null, inputType: Type, cancellationToken: CancellationToken): void;
-    Serialize(value: JsValue | null, inputType?: Type | null, cancellationToken?: CancellationToken): BinaryData;
-    SerializeAsync(stream: Stream, value: JsValue | null, inputType: Type, cancellationToken: CancellationToken): ValueTask;
-    SerializeAsync(value: JsValue | null, inputType?: Type | null, cancellationToken?: CancellationToken): ValueTask_1<BinaryData>;
+    Deserialize(stream: Stream, returnType: Type, cancellationToken: CancellationToken): unknown | null;
+    DeserializeAsync(stream: Stream, returnType: Type, cancellationToken: CancellationToken): ValueTask_1<unknown>;
+    Serialize(stream: Stream, value: unknown | null, inputType: Type, cancellationToken: CancellationToken): void;
+    Serialize(value: unknown | null, inputType?: Type | null, cancellationToken?: CancellationToken): BinaryData;
+    SerializeAsync(stream: Stream, value: unknown | null, inputType: Type, cancellationToken: CancellationToken): ValueTask;
+    SerializeAsync(value: unknown | null, inputType?: Type | null, cancellationToken?: CancellationToken): ValueTask_1<BinaryData>;
 }
 
 
@@ -83,12 +83,12 @@ export type JsonObjectSerializer = JsonObjectSerializer$instance & __JsonObjectS
 export interface ObjectSerializer$instance {
     readonly __tsonic_type_Azure_Core_Serialization_ObjectSerializer: never;
 
-    Deserialize(stream: Stream, returnType: Type, cancellationToken: CancellationToken): JsValue | null;
-    DeserializeAsync(stream: Stream, returnType: Type, cancellationToken: CancellationToken): ValueTask_1<JsValue>;
-    Serialize(stream: Stream, value: JsValue | null, inputType: Type, cancellationToken: CancellationToken): void;
-    Serialize(value: JsValue | null, inputType?: Type | null, cancellationToken?: CancellationToken): BinaryData;
-    SerializeAsync(stream: Stream, value: JsValue | null, inputType: Type, cancellationToken: CancellationToken): ValueTask;
-    SerializeAsync(value: JsValue | null, inputType?: Type | null, cancellationToken?: CancellationToken): ValueTask_1<BinaryData>;
+    Deserialize(stream: Stream, returnType: Type, cancellationToken: CancellationToken): unknown | null;
+    DeserializeAsync(stream: Stream, returnType: Type, cancellationToken: CancellationToken): ValueTask_1<unknown>;
+    Serialize(stream: Stream, value: unknown | null, inputType: Type, cancellationToken: CancellationToken): void;
+    Serialize(value: unknown | null, inputType?: Type | null, cancellationToken?: CancellationToken): BinaryData;
+    SerializeAsync(stream: Stream, value: unknown | null, inputType: Type, cancellationToken: CancellationToken): ValueTask;
+    SerializeAsync(value: unknown | null, inputType?: Type | null, cancellationToken?: CancellationToken): ValueTask_1<BinaryData>;
 }
 
 

@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './System.ClientModel.Primitives/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { ApiKeyCredential, AuthenticationTokenProvider, BinaryContent, ClientResult, ContinuationToken } from './System.ClientModel/internal/index.js';
 import type { BinaryData } from './System/internal/index.js';
@@ -38,8 +42,8 @@ export { PipelineRequest as PipelineRequest } from './System.ClientModel.Primiti
 export { PipelineRequestHeaders as PipelineRequestHeaders } from './System.ClientModel.Primitives/internal/index.js';
 export { PipelineResponse as PipelineResponse } from './System.ClientModel.Primitives/internal/index.js';
 export { PipelineResponseHeaders as PipelineResponseHeaders } from './System.ClientModel.Primitives/internal/index.js';
-export type IJsonModel<T> = Internal.IJsonModel_1<T>;
-export type IPersistableModel<T> = Internal.IPersistableModel_1<T>;
+export type IJsonModel<T extends unknown> = Internal.IJsonModel_1<T>;
+export type IPersistableModel<T extends unknown> = Internal.IPersistableModel_1<T>;
 export { JsonModelConverter as JsonModelConverter } from './System.ClientModel.Primitives/internal/index.js';
 export { ModelReaderWriter$instance as ModelReaderWriter } from './System.ClientModel.Primitives/internal/index.js';
 export { ModelReaderWriterBuildableAttribute as ModelReaderWriterBuildableAttribute } from './System.ClientModel.Primitives/internal/index.js';

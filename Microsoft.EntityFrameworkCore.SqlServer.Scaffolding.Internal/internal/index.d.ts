@@ -3,7 +3,7 @@
 // Assembly: Microsoft.EntityFrameworkCore.SqlServer
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -52,9 +52,9 @@ export const SqlServerDatabaseModelFactory: {
 export type SqlServerDatabaseModelFactory = SqlServerDatabaseModelFactory$instance;
 
 export abstract class SqlDataReaderExtension$instance {
-    static GetFieldValue<T>(record: DbDataRecord, name: string): T;
-    static GetValueOrDefault<T>(reader: DbDataReader, name: string): T | null;
-    static GetValueOrDefault<T>(record: DbDataRecord, name: string): T | null;
+    static GetFieldValue<T extends unknown>(record: DbDataRecord, name: string): T;
+    static GetValueOrDefault<T extends unknown>(reader: DbDataReader, name: string): T | null;
+    static GetValueOrDefault<T extends unknown>(record: DbDataRecord, name: string): T | null;
 }
 
 

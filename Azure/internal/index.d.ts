@@ -3,7 +3,7 @@
 // Assembly: Azure.Core
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -47,7 +47,7 @@ export interface ETag$instance {
 
     Equals(other: ETag): boolean;
     Equals(other: string | null): boolean;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     ToString(): string;
     ToString(format: string): string;
@@ -70,7 +70,7 @@ export interface HttpRange$instance {
     readonly Length: Nullable_1<System_Internal.Int64>;
     readonly Offset: long;
     Equals(other: HttpRange): boolean;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     ToString(): string;
 }
@@ -83,26 +83,26 @@ export const HttpRange: {
 
 export type HttpRange = HttpRange$instance;
 
-export interface AsyncPageable_1$instance<T> {
+export interface AsyncPageable_1$instance<T extends unknown> {
     readonly __tsonic_type_Azure_AsyncPageable_1: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IAsyncEnumerable_1: never;
 
     readonly CancellationToken: CancellationToken;
     AsPages(continuationToken?: string | null, pageSizeHint?: Nullable_1<System_Internal.Int32>): IAsyncEnumerable_1<Page_1<T>>;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetAsyncEnumerator(cancellationToken?: CancellationToken): IAsyncEnumerator_1<T>;
     GetHashCode(): int;
     ToString(): string | null;
 }
 
 
-export const AsyncPageable_1: (abstract new<T>() => AsyncPageable_1<T>) & (abstract new<T>(cancellationToken: CancellationToken) => AsyncPageable_1<T>) & {
-    FromPages<T>(pages: IEnumerable_1<Page_1<T>>): AsyncPageable_1<T>;
+export const AsyncPageable_1: (abstract new<T extends unknown>() => AsyncPageable_1<T>) & (abstract new<T extends unknown>(cancellationToken: CancellationToken) => AsyncPageable_1<T>) & {
+    FromPages<T extends unknown>(pages: IEnumerable_1<Page_1<T>>): AsyncPageable_1<T>;
 };
 
 
-export type AsyncPageable_1<T> = AsyncPageable_1$instance<T>;
+export type AsyncPageable_1<T extends unknown> = AsyncPageable_1$instance<T>;
 
 export interface AzureKeyCredential$instance extends ApiKeyCredential {
     readonly __tsonic_type_Azure_AzureKeyCredential: never;
@@ -168,14 +168,14 @@ export type HttpAuthorization = HttpAuthorization$instance;
 export interface JsonPatchDocument$instance {
     readonly __tsonic_type_Azure_JsonPatchDocument: never;
 
-    AppendAdd<T>(path: string, value: T): void;
+    AppendAdd<T extends unknown>(path: string, value: T): void;
     AppendAddRaw(path: string, rawJsonValue: string): void;
     AppendCopy(from: string, path: string): void;
     AppendMove(from: string, path: string): void;
     AppendRemove(path: string): void;
-    AppendReplace<T>(path: string, value: T): void;
+    AppendReplace<T extends unknown>(path: string, value: T): void;
     AppendReplaceRaw(path: string, rawJsonValue: string): void;
-    AppendTest<T>(path: string, value: T): void;
+    AppendTest<T extends unknown>(path: string, value: T): void;
     AppendTestRaw(path: string, rawJsonValue: string): void;
     ToBytes(): ReadOnlyMemory_1<System_Internal.Byte>;
     ToString(): string;
@@ -209,30 +209,30 @@ export const MatchConditions: {
 
 export type MatchConditions = MatchConditions$instance;
 
-export interface NullableResponse_1$instance<T> {
+export interface NullableResponse_1$instance<T extends unknown> {
     readonly __tsonic_type_Azure_NullableResponse_1: never;
 
     readonly HasValue: boolean;
     readonly Value: T | null;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     GetRawResponse(): Response;
     ToString(): string;
 }
 
 
-export const NullableResponse_1: (abstract new<T>() => NullableResponse_1<T>) & {
+export const NullableResponse_1: (abstract new<T extends unknown>() => NullableResponse_1<T>) & {
 };
 
 
-export type NullableResponse_1<T> = NullableResponse_1$instance<T>;
+export type NullableResponse_1<T extends unknown> = NullableResponse_1$instance<T>;
 
 export interface Operation$instance {
     readonly __tsonic_type_Azure_Operation: never;
 
     readonly HasCompleted: boolean;
     readonly Id: string;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     GetRawResponse(): Response;
     GetRehydrationToken(): Nullable_1<RehydrationToken>;
@@ -250,15 +250,15 @@ export interface Operation$instance {
 
 export const Operation: (abstract new() => Operation) & {
     Rehydrate(pipeline: HttpPipeline, rehydrationToken: RehydrationToken, options?: ClientOptions | null): Operation;
-    Rehydrate<T extends IPersistableModel_1<T>>(pipeline: HttpPipeline, rehydrationToken: RehydrationToken, options?: ClientOptions | null): Operation_1<T>;
+    Rehydrate<T extends unknown & IPersistableModel_1<T>>(pipeline: HttpPipeline, rehydrationToken: RehydrationToken, options?: ClientOptions | null): Operation_1<T>;
     RehydrateAsync(pipeline: HttpPipeline, rehydrationToken: RehydrationToken, options?: ClientOptions | null): Task_1<Operation>;
-    RehydrateAsync<T extends IPersistableModel_1<T>>(pipeline: HttpPipeline, rehydrationToken: RehydrationToken, options?: ClientOptions | null): Task_1<Operation_1<T>>;
+    RehydrateAsync<T extends unknown & IPersistableModel_1<T>>(pipeline: HttpPipeline, rehydrationToken: RehydrationToken, options?: ClientOptions | null): Task_1<Operation_1<T>>;
 };
 
 
 export type Operation = Operation$instance;
 
-export interface Operation_1$instance<T> extends Operation {
+export interface Operation_1$instance<T extends unknown> extends Operation {
     readonly __tsonic_type_Azure_Operation_1: never;
 
     readonly HasValue: boolean;
@@ -275,32 +275,32 @@ export interface Operation_1$instance<T> extends Operation {
 }
 
 
-export const Operation_1: (abstract new<T>() => Operation_1<T>) & {
+export const Operation_1: (abstract new<T extends unknown>() => Operation_1<T>) & {
 };
 
 
-export type Operation_1<T> = Operation_1$instance<T>;
+export type Operation_1<T extends unknown> = Operation_1$instance<T>;
 
-export interface Page_1$instance<T> {
+export interface Page_1$instance<T extends unknown> {
     readonly __tsonic_type_Azure_Page_1: never;
 
     readonly ContinuationToken: string | null;
     readonly Values: IReadOnlyList_1<T>;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     GetRawResponse(): Response;
     ToString(): string | null;
 }
 
 
-export const Page_1: (abstract new<T>() => Page_1<T>) & {
-    FromValues<T>(values: IReadOnlyList_1<T>, continuationToken: string | null, response: Response): Page_1<T>;
+export const Page_1: (abstract new<T extends unknown>() => Page_1<T>) & {
+    FromValues<T extends unknown>(values: IReadOnlyList_1<T>, continuationToken: string | null, response: Response): Page_1<T>;
 };
 
 
-export type Page_1<T> = Page_1$instance<T>;
+export type Page_1<T extends unknown> = Page_1$instance<T>;
 
-export interface Pageable_1$instance<T> {
+export interface Pageable_1$instance<T extends unknown> {
     readonly __tsonic_type_Azure_Pageable_1: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
@@ -308,21 +308,21 @@ export interface Pageable_1$instance<T> {
 
     readonly CancellationToken: CancellationToken;
     AsPages(continuationToken?: string | null, pageSizeHint?: Nullable_1<System_Internal.Int32>): IEnumerable_1<Page_1<T>>;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetEnumerator(): IEnumerator_1<T>;
     GetHashCode(): int;
     ToString(): string | null;
 }
 
 
-export const Pageable_1: (abstract new<T>() => Pageable_1<T>) & (abstract new<T>(cancellationToken: CancellationToken) => Pageable_1<T>) & {
-    FromPages<T>(pages: IEnumerable_1<Page_1<T>>): Pageable_1<T>;
+export const Pageable_1: (abstract new<T extends unknown>() => Pageable_1<T>) & (abstract new<T extends unknown>(cancellationToken: CancellationToken) => Pageable_1<T>) & {
+    FromPages<T extends unknown>(pages: IEnumerable_1<Page_1<T>>): Pageable_1<T>;
 };
 
 
-export type Pageable_1<T> = Pageable_1$instance<T>;
+export type Pageable_1<T extends unknown> = Pageable_1$instance<T>;
 
-export interface PageableOperation_1$instance<T> extends Operation_1<AsyncPageable_1<T>> {
+export interface PageableOperation_1$instance<T extends unknown> extends Operation_1<AsyncPageable_1<T>> {
     readonly __tsonic_type_Azure_PageableOperation_1: never;
 
     readonly Value: AsyncPageable_1<T>;
@@ -331,11 +331,11 @@ export interface PageableOperation_1$instance<T> extends Operation_1<AsyncPageab
 }
 
 
-export const PageableOperation_1: (abstract new<T>() => PageableOperation_1<T>) & {
+export const PageableOperation_1: (abstract new<T extends unknown>() => PageableOperation_1<T>) & {
 };
 
 
-export type PageableOperation_1<T> = PageableOperation_1$instance<T>;
+export type PageableOperation_1<T extends unknown> = PageableOperation_1$instance<T>;
 
 export interface RequestConditions$instance extends MatchConditions {
     readonly __tsonic_type_Azure_RequestConditions: never;
@@ -421,27 +421,27 @@ export interface Response$instance {
 
 
 export const Response: (abstract new() => Response) & {
-    FromValue<T>(value: T, response: Response): Response_1<T>;
+    FromValue<T extends unknown>(value: T, response: Response): Response_1<T>;
 };
 
 
 export type Response = Response$instance;
 
-export interface Response_1$instance<T> extends NullableResponse_1<T> {
+export interface Response_1$instance<T extends unknown> extends NullableResponse_1<T> {
     readonly __tsonic_type_Azure_Response_1: never;
 
     readonly HasValue: boolean;
     readonly Value: T;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
 }
 
 
-export const Response_1: (abstract new<T>() => Response_1<T>) & {
+export const Response_1: (abstract new<T extends unknown>() => Response_1<T>) & {
 };
 
 
-export type Response_1<T> = Response_1$instance<T>;
+export type Response_1<T extends unknown> = Response_1$instance<T>;
 
 export interface ResponseError$instance extends System_ClientModel_Primitives_Internal.IJsonModel_1$instance<ResponseError> {
     readonly __tsonic_type_Azure_ResponseError: never;
@@ -485,11 +485,11 @@ export const SyncAsyncEventArgs: {
 export type SyncAsyncEventArgs = SyncAsyncEventArgs$instance;
 
 export abstract class AzureCoreExtensions$instance {
-    static ToDynamicFromJson(utf8Json: BinaryData, propertyNameFormat: JsonPropertyNames, dateTimeFormat?: string): JsValue;
-    static ToDynamicFromJson(utf8Json: BinaryData): JsValue;
-    static ToObject<T>(data: BinaryData, serializer: ObjectSerializer, cancellationToken?: CancellationToken): T | null;
-    static ToObjectAsync<T>(data: BinaryData, serializer: ObjectSerializer, cancellationToken?: CancellationToken): ValueTask_1<T>;
-    static ToObjectFromJson(data: BinaryData): JsValue | null;
+    static ToDynamicFromJson(utf8Json: BinaryData, propertyNameFormat: JsonPropertyNames, dateTimeFormat?: string): unknown;
+    static ToDynamicFromJson(utf8Json: BinaryData): unknown;
+    static ToObject<T extends unknown>(data: BinaryData, serializer: ObjectSerializer, cancellationToken?: CancellationToken): T | null;
+    static ToObjectAsync<T extends unknown>(data: BinaryData, serializer: ObjectSerializer, cancellationToken?: CancellationToken): ValueTask_1<T>;
+    static ToObjectFromJson(data: BinaryData): unknown | null;
 }
 
 

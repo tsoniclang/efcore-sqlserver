@@ -3,7 +3,7 @@
 // Assembly: System.ClientModel
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -47,7 +47,7 @@ export enum PipelinePosition {
 }
 
 
-export interface IJsonModel_1$instance<T> extends IPersistableModel_1<T> {
+export interface IJsonModel_1$instance<T extends unknown> extends IPersistableModel_1<T> {
     readonly __tsonic_iface_System_ClientModel_Primitives_IJsonModel_1: never;
 
     Create(reader: Utf8JsonReader, options: ModelReaderWriterOptions): T | null;
@@ -59,9 +59,9 @@ export interface IJsonModel_1$instance<T> extends IPersistableModel_1<T> {
 }
 
 
-export type IJsonModel_1<T> = IJsonModel_1$instance<T>;
+export type IJsonModel_1<T extends unknown> = IJsonModel_1$instance<T>;
 
-export interface IPersistableModel_1$instance<T> {
+export interface IPersistableModel_1$instance<T extends unknown> {
     readonly __tsonic_iface_System_ClientModel_Primitives_IPersistableModel_1: never;
 
     Create(data: BinaryData, options: ModelReaderWriterOptions): T | null;
@@ -70,12 +70,12 @@ export interface IPersistableModel_1$instance<T> {
 }
 
 
-export type IPersistableModel_1<T> = IPersistableModel_1$instance<T>;
+export type IPersistableModel_1<T extends unknown> = IPersistableModel_1$instance<T>;
 
 export interface ClientConnection$instance {
     readonly __tsonic_type_System_ClientModel_Primitives_ClientConnection: never;
 
-    readonly Credential: JsValue | null;
+    readonly Credential: unknown | null;
     readonly CredentialKind: CredentialKind;
     readonly Id: string;
     readonly Locator: string;
@@ -85,7 +85,7 @@ export interface ClientConnection$instance {
 
 
 export const ClientConnection: {
-    new(id: string, locator: string, credential: JsValue, credentialKind: CredentialKind): ClientConnection;
+    new(id: string, locator: string, credential: unknown, credentialKind: CredentialKind): ClientConnection;
     new(id: string, locator: string): ClientConnection;
 };
 
@@ -161,7 +161,7 @@ export interface BearerTokenPolicy$instance extends AuthenticationPolicy {
 
 
 export const BearerTokenPolicy: {
-    new(tokenProvider: AuthenticationTokenProvider, contexts: IEnumerable_1<IReadOnlyDictionary_2<System_Internal.String, JsValue>>): BearerTokenPolicy;
+    new(tokenProvider: AuthenticationTokenProvider, contexts: IEnumerable_1<IReadOnlyDictionary_2<System_Internal.String, unknown>>): BearerTokenPolicy;
     new(tokenProvider: AuthenticationTokenProvider, scope: string): BearerTokenPolicy;
 };
 
@@ -171,7 +171,7 @@ export type BearerTokenPolicy = BearerTokenPolicy$instance;
 export interface ClientCache$instance {
     readonly __tsonic_type_System_ClientModel_Primitives_ClientCache: never;
 
-    GetClient<T>(clientId: JsValue, createClient: Func_1<T>): T;
+    GetClient<T extends (object | null)>(clientId: unknown, createClient: Func_1<T>): T;
 }
 
 
@@ -335,12 +335,12 @@ export type CollectionResult = CollectionResult$instance;
 export interface GetTokenOptions$instance {
     readonly __tsonic_type_System_ClientModel_Primitives_GetTokenOptions: never;
 
-    readonly Properties: IReadOnlyDictionary_2<System_Internal.String, JsValue>;
+    readonly Properties: IReadOnlyDictionary_2<System_Internal.String, unknown>;
 }
 
 
 export const GetTokenOptions: {
-    new(properties: IReadOnlyDictionary_2<System_Internal.String, JsValue>): GetTokenOptions;
+    new(properties: IReadOnlyDictionary_2<System_Internal.String, unknown>): GetTokenOptions;
     readonly ScopesPropertyName: string;
     readonly TokenUrlPropertyName: string;
     readonly AuthorizationUrlPropertyName: string;
@@ -375,12 +375,12 @@ export const HttpClientPipelineTransport: {
 
 export type HttpClientPipelineTransport = HttpClientPipelineTransport$instance;
 
-export interface JsonModelConverter$instance extends JsonConverter_1<IJsonModel_1<JsValue>> {
+export interface JsonModelConverter$instance extends JsonConverter_1<IJsonModel_1<unknown>> {
     readonly __tsonic_type_System_ClientModel_Primitives_JsonModelConverter: never;
 
     CanConvert(typeToConvert: Type): boolean;
-    Read(reader: Utf8JsonReader, typeToConvert: Type, options: JsonSerializerOptions): IJsonModel_1<JsValue> | null;
-    Write(writer: Utf8JsonWriter, value: IJsonModel_1<JsValue>, options: JsonSerializerOptions): void;
+    Read(reader: Utf8JsonReader, typeToConvert: Type, options: JsonSerializerOptions): IJsonModel_1<unknown> | null;
+    Write(writer: Utf8JsonWriter, value: IJsonModel_1<unknown>, options: JsonSerializerOptions): void;
 }
 
 
@@ -471,11 +471,11 @@ export interface ModelReaderWriterTypeBuilder$instance {
 
     readonly BuilderType: Type;
     readonly ItemType: Type | null;
-    AddItem(collectionBuilder: JsValue, item: JsValue | null): void;
-    AddItemWithKey(collectionBuilder: JsValue, key: string, item: JsValue | null): void;
-    ConvertCollectionBuilder(collectionBuilder: JsValue): JsValue;
-    CreateInstance(): JsValue;
-    GetItems(collection: JsValue): IEnumerable | null;
+    AddItem(collectionBuilder: unknown, item: unknown | null): void;
+    AddItemWithKey(collectionBuilder: unknown, key: string, item: unknown | null): void;
+    ConvertCollectionBuilder(collectionBuilder: unknown): unknown;
+    CreateInstance(): unknown;
+    GetItems(collection: unknown): IEnumerable | null;
 }
 
 
@@ -536,8 +536,8 @@ export interface PipelineMessage$instance {
     Dispose(): void;
     Dispose(disposing: boolean): void;
     ExtractResponse(): PipelineResponse | null;
-    SetProperty(key: Type, value: JsValue | null): void;
-    TryGetProperty(key: Type, value: JsValue | null): boolean;
+    SetProperty(key: Type, value: unknown | null): void;
+    TryGetProperty(key: Type, value: unknown | null): boolean;
 }
 
 
@@ -714,21 +714,21 @@ export type RequestOptions = RequestOptions$instance;
 
 export abstract class ActivityExtensions$instance {
     static MarkClientActivityFailed(activity: Activity, exception: Exception | null): Activity;
-    static StartClientActivity(activitySource: ActivitySource, options: ClientPipelineOptions, name: string, kind?: ActivityKind, parentContext?: ActivityContext, tags?: IEnumerable_1<KeyValuePair_2<System_Internal.String, JsValue>> | null): Activity | null;
+    static StartClientActivity(activitySource: ActivitySource, options: ClientPipelineOptions, name: string, kind?: ActivityKind, parentContext?: ActivityContext, tags?: IEnumerable_1<KeyValuePair_2<System_Internal.String, unknown>> | null): Activity | null;
 }
 
 
 export type ActivityExtensions = ActivityExtensions$instance;
 
 export abstract class ModelReaderWriter$instance {
-    static Read<T>(data: BinaryData, options: ModelReaderWriterOptions, context: ModelReaderWriterContext): T | null;
-    static Read<T extends IPersistableModel_1<T>>(data: BinaryData, options?: ModelReaderWriterOptions | null): T | null;
-    static Read(data: BinaryData, returnType: Type, options: ModelReaderWriterOptions, context: ModelReaderWriterContext): JsValue | null;
-    static Read(data: BinaryData, returnType: Type, options?: ModelReaderWriterOptions | null): JsValue | null;
-    static Write(model: JsValue, options: ModelReaderWriterOptions, context: ModelReaderWriterContext): BinaryData;
-    static Write(model: JsValue, options?: ModelReaderWriterOptions | null): BinaryData;
-    static Write<T>(model: T, options: ModelReaderWriterOptions, context: ModelReaderWriterContext): BinaryData;
-    static Write<T extends IPersistableModel_1<T>>(model: T, options?: ModelReaderWriterOptions | null): BinaryData;
+    static Read<T extends unknown>(data: BinaryData, options: ModelReaderWriterOptions, context: ModelReaderWriterContext): T | null;
+    static Read<T extends unknown & IPersistableModel_1<T>>(data: BinaryData, options?: ModelReaderWriterOptions | null): T | null;
+    static Read(data: BinaryData, returnType: Type, options: ModelReaderWriterOptions, context: ModelReaderWriterContext): unknown | null;
+    static Read(data: BinaryData, returnType: Type, options?: ModelReaderWriterOptions | null): unknown | null;
+    static Write(model: unknown, options: ModelReaderWriterOptions, context: ModelReaderWriterContext): BinaryData;
+    static Write(model: unknown, options?: ModelReaderWriterOptions | null): BinaryData;
+    static Write<T extends unknown>(model: T, options: ModelReaderWriterOptions, context: ModelReaderWriterContext): BinaryData;
+    static Write<T extends unknown & IPersistableModel_1<T>>(model: T, options?: ModelReaderWriterOptions | null): BinaryData;
 }
 
 

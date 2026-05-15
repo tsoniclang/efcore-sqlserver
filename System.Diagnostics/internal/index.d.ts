@@ -3,7 +3,7 @@
 // Assembly: System.Configuration.ConfigurationManager, System.Diagnostics.DiagnosticSource, System.Diagnostics.EventLog, System.Diagnostics.FileVersionInfo, System.Diagnostics.Process, System.Diagnostics.TextWriterTraceListener, System.Diagnostics.TraceSource, System.Private.CoreLib
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces

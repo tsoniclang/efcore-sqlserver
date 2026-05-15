@@ -3,7 +3,7 @@
 // Assembly: Microsoft.EntityFrameworkCore.SqlServer
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -66,7 +66,7 @@ export interface SqlServerAggregateFunctionExpression$instance extends SqlExpres
     readonly Name: string;
     readonly Orderings: IReadOnlyList_1<OrderingExpression>;
     ApplyTypeMapping(typeMapping: RelationalTypeMapping | null): SqlServerAggregateFunctionExpression;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     Print(expressionPrinter: ExpressionPrinter): void;
     Quote(): Expression;
@@ -132,7 +132,7 @@ export interface SqlServerCompiledQueryCacheKeyGenerator$instance extends Relati
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_ICompiledQueryCacheKeyGenerator: never;
 
-    GenerateCacheKey(query: Expression, async: boolean): JsValue;
+    GenerateCacheKey(query: Expression, async: boolean): unknown;
 }
 
 
@@ -473,7 +473,7 @@ export interface SqlServerOpenJsonExpression$instance extends TableValuedFunctio
     readonly JsonExpression: SqlExpression;
     readonly Path: IReadOnlyList_1<PathSegment> | null;
     Clone(alias: string | null, cloningExpressionVisitor: ExpressionVisitor): TableExpressionBase;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     Print(expressionPrinter: ExpressionPrinter): void;
     Quote(): Expression;
@@ -502,7 +502,7 @@ export interface SqlServerOpenJsonExpression_ColumnInfo$instance {
     set Path(value: IReadOnlyList_1<PathSegment> | null);
     TypeMapping: RelationalTypeMapping;
     Deconstruct(Name: string, TypeMapping: RelationalTypeMapping, Path: IReadOnlyList_1<PathSegment> | null, AsJson: boolean): void;
-    Equals(obj: JsValue): boolean;
+    Equals(obj: unknown): boolean;
     Equals(other: SqlServerOpenJsonExpression_ColumnInfo): boolean;
     GetHashCode(): int;
     ToString(): string;
@@ -986,7 +986,7 @@ export interface TemporalAllQueryRootExpression$instance extends TemporalQueryRo
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IPrintableExpression: never;
 
     DetachQueryProvider(): Expression;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     Print(expressionPrinter: ExpressionPrinter): void;
     UpdateEntityType(entityType: IEntityType): EntityQueryRootExpression;
@@ -1008,7 +1008,7 @@ export interface TemporalAsOfQueryRootExpression$instance extends TemporalQueryR
 
     readonly PointInTime: DateTime;
     DetachQueryProvider(): Expression;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     Print(expressionPrinter: ExpressionPrinter): void;
     UpdateEntityType(entityType: IEntityType): EntityQueryRootExpression;
@@ -1029,7 +1029,7 @@ export interface TemporalBetweenQueryRootExpression$instance extends TemporalRan
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IPrintableExpression: never;
 
     DetachQueryProvider(): Expression;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     Print(expressionPrinter: ExpressionPrinter): void;
     UpdateEntityType(entityType: IEntityType): EntityQueryRootExpression;
@@ -1050,7 +1050,7 @@ export interface TemporalContainedInQueryRootExpression$instance extends Tempora
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IPrintableExpression: never;
 
     DetachQueryProvider(): Expression;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     Print(expressionPrinter: ExpressionPrinter): void;
     UpdateEntityType(entityType: IEntityType): EntityQueryRootExpression;
@@ -1071,7 +1071,7 @@ export interface TemporalFromToQueryRootExpression$instance extends TemporalRang
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IPrintableExpression: never;
 
     DetachQueryProvider(): Expression;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     Print(expressionPrinter: ExpressionPrinter): void;
     UpdateEntityType(entityType: IEntityType): EntityQueryRootExpression;
@@ -1108,7 +1108,7 @@ export interface TemporalRangeQueryRootExpression$instance extends TemporalQuery
 
     readonly From: DateTime;
     readonly To: DateTime;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
 }
 

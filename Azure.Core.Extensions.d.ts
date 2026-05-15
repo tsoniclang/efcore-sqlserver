@@ -5,12 +5,16 @@
 // Import internal declarations
 import * as Internal from './Azure.Core.Extensions/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { TokenCredential } from './Azure.Core/internal/index.js';
 import type { Boolean as ClrBoolean, Func } from '@tsonic/dotnet/System.js';
 
 // Public API exports (curated - no internal $instance/$views leakage)
-export type IAzureClientBuilder<TClient, TOptions> = Internal.IAzureClientBuilder_2<TClient, TOptions>;
+export type IAzureClientBuilder<TClient extends unknown, TOptions extends (object | null)> = Internal.IAzureClientBuilder_2<TClient, TOptions>;
 export type IAzureClientFactoryBuilder = Internal.IAzureClientFactoryBuilder;
-export type IAzureClientFactoryBuilderWithConfiguration<TConfiguration> = Internal.IAzureClientFactoryBuilderWithConfiguration_1<TConfiguration>;
+export type IAzureClientFactoryBuilderWithConfiguration<TConfiguration extends unknown> = Internal.IAzureClientFactoryBuilderWithConfiguration_1<TConfiguration>;
 export type IAzureClientFactoryBuilderWithCredential = Internal.IAzureClientFactoryBuilderWithCredential;

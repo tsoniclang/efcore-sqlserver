@@ -3,7 +3,7 @@
 // Assembly: System.ComponentModel, System.ComponentModel.TypeConverter, System.Configuration.ConfigurationManager, System.Console, System.Memory, System.Memory.Data, System.Private.CoreLib, System.Private.Uri
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -29,12 +29,12 @@ export interface BinaryData$instance {
     readonly IsEmpty: boolean;
     readonly Length: int;
     readonly MediaType: string | null;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     ToArray(): byte[];
     ToMemory(): ReadOnlyMemory_1<Byte>;
-    ToObjectFromJson<T>(options?: JsonSerializerOptions | null): T | null;
-    ToObjectFromJson<T>(jsonTypeInfo: JsonTypeInfo_1<T>): T | null;
+    ToObjectFromJson<T extends unknown>(options?: JsonSerializerOptions | null): T | null;
+    ToObjectFromJson<T extends unknown>(jsonTypeInfo: JsonTypeInfo_1<T>): T | null;
     ToStream(): Stream;
     ToString(): string;
     WithMediaType(mediaType: string | null): BinaryData;
@@ -44,8 +44,8 @@ export interface BinaryData$instance {
 export const BinaryData: {
     new(data: byte[]): BinaryData;
     new(data: byte[], mediaType: string | null): BinaryData;
-    new(jsonSerializable: JsValue | null, options: JsonSerializerOptions | null, type: Type | null): BinaryData;
-    new(jsonSerializable: JsValue | null, context: JsonSerializerContext, type: Type | null): BinaryData;
+    new(jsonSerializable: unknown | null, options: JsonSerializerOptions | null, type: Type | null): BinaryData;
+    new(jsonSerializable: unknown | null, context: JsonSerializerContext, type: Type | null): BinaryData;
     new(data: ReadOnlyMemory_1<Byte>): BinaryData;
     new(data: ReadOnlyMemory_1<Byte>, mediaType: string | null): BinaryData;
     new(data: string): BinaryData;
@@ -55,8 +55,8 @@ export const BinaryData: {
     FromBytes(data: byte[]): BinaryData;
     FromBytes(data: ReadOnlyMemory_1<Byte>, mediaType: string | null): BinaryData;
     FromBytes(data: ReadOnlyMemory_1<Byte>): BinaryData;
-    FromObjectAsJson<T>(jsonSerializable: T, jsonTypeInfo: JsonTypeInfo_1<T>): BinaryData;
-    FromObjectAsJson<T>(jsonSerializable: T, options?: JsonSerializerOptions | null): BinaryData;
+    FromObjectAsJson<T extends unknown>(jsonSerializable: T, jsonTypeInfo: JsonTypeInfo_1<T>): BinaryData;
+    FromObjectAsJson<T extends unknown>(jsonSerializable: T, options?: JsonSerializerOptions | null): BinaryData;
     FromStream(stream: Stream, mediaType: string | null): BinaryData;
     FromStream(stream: Stream): BinaryData;
     FromStreamAsync(stream: Stream, mediaType: string | null, cancellationToken?: CancellationToken): Task_1<BinaryData>;

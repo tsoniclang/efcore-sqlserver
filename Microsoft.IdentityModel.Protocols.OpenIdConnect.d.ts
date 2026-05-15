@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './Microsoft.IdentityModel.Protocols.OpenIdConnect/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { AuthenticationProtocolMessage, IConfigurationRetriever_1, IDocumentRetriever } from './Microsoft.IdentityModel.Protocols/internal/index.js';
 import type { BaseConfiguration, CryptoProviderFactory, JsonWebKeySet, SecurityKey } from './Microsoft.IdentityModel.Tokens/internal/index.js';

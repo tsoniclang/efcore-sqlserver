@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './Microsoft.EntityFrameworkCore.Metadata.Builders/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { Boolean as ClrBoolean, Int32, Object as ClrObject, String as ClrString } from '@tsonic/dotnet/System.js';
 import type { IInfrastructure } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure.js';
@@ -24,8 +28,8 @@ declare const __unspecified: unique symbol;
 export type __ = typeof __unspecified;
 
 export type TemporalTableBuilder<
-  T1 = __,
+  T1 extends (object | null) | __ = __,
 > =
   [T1] extends [__] ? Internal.TemporalTableBuilder :
-  Internal.TemporalTableBuilder_1<T1>;
+  [T1] extends [(object | null)] ? Internal.TemporalTableBuilder_1<T1> : never;
 

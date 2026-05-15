@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './System.Text.Json.Serialization/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { BinaryData } from './System/internal/index.js';
 import type { Type, Void } from '@tsonic/dotnet/System.js';

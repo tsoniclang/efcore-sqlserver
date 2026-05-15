@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './Azure.Core/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { HttpPipelinePolicy, HttpPipelineTransport } from './Azure.Core.Pipeline/internal/index.js';
 import type { DynamicData, JsonPropertyNames, ObjectSerializer } from './Azure.Core.Serialization/internal/index.js';
@@ -55,7 +59,7 @@ export { ResponseHeaders as ResponseHeaders } from './Azure.Core/internal/index.
 export { RetryMode as RetryMode } from './Azure.Core/internal/index.js';
 export { RetryOptions as RetryOptions } from './Azure.Core/internal/index.js';
 export { StatusCodeClassifier as StatusCodeClassifier } from './Azure.Core/internal/index.js';
-export type SyncAsyncEventHandler<T extends Internal.SyncAsyncEventArgs> = Internal.SyncAsyncEventHandler_1<T>;
+export type SyncAsyncEventHandler<T extends unknown & Internal.SyncAsyncEventArgs> = Internal.SyncAsyncEventHandler_1<T>;
 export { TelemetryDetails as TelemetryDetails } from './Azure.Core/internal/index.js';
 export { TokenCredential as TokenCredential } from './Azure.Core/internal/index.js';
 export { TokenRequestContext as TokenRequestContext } from './Azure.Core/internal/index.js';

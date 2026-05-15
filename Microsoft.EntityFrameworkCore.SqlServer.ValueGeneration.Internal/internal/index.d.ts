@@ -3,7 +3,7 @@
 // Assembly: Microsoft.EntityFrameworkCore.SqlServer
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -39,7 +39,7 @@ export interface ISqlServerValueGeneratorCache$instance extends Microsoft_Entity
 
 export type ISqlServerValueGeneratorCache = ISqlServerValueGeneratorCache$instance;
 
-export interface SqlServerSequenceHiLoValueGenerator_1$instance<TValue> extends HiLoValueGenerator_1<TValue> {
+export interface SqlServerSequenceHiLoValueGenerator_1$instance<TValue extends unknown> extends HiLoValueGenerator_1<TValue> {
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_ValueGeneration_Internal_SqlServerSequenceHiLoValueGenerator_1: never;
 
     readonly GeneratesTemporaryValues: boolean;
@@ -49,11 +49,11 @@ export interface SqlServerSequenceHiLoValueGenerator_1$instance<TValue> extends 
 
 
 export const SqlServerSequenceHiLoValueGenerator_1: {
-    new<TValue>(rawSqlCommandBuilder: IRawSqlCommandBuilder, sqlGenerator: ISqlServerUpdateSqlGenerator, generatorState: SqlServerSequenceValueGeneratorState, connection: ISqlServerConnection, commandLogger: IRelationalCommandDiagnosticsLogger): SqlServerSequenceHiLoValueGenerator_1<TValue>;
+    new<TValue extends unknown>(rawSqlCommandBuilder: IRawSqlCommandBuilder, sqlGenerator: ISqlServerUpdateSqlGenerator, generatorState: SqlServerSequenceValueGeneratorState, connection: ISqlServerConnection, commandLogger: IRelationalCommandDiagnosticsLogger): SqlServerSequenceHiLoValueGenerator_1<TValue>;
 };
 
 
-export type SqlServerSequenceHiLoValueGenerator_1<TValue> = SqlServerSequenceHiLoValueGenerator_1$instance<TValue>;
+export type SqlServerSequenceHiLoValueGenerator_1<TValue extends unknown> = SqlServerSequenceHiLoValueGenerator_1$instance<TValue>;
 
 export interface SqlServerSequenceValueGeneratorFactory$instance extends ISqlServerSequenceValueGeneratorFactory$instance {
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_ValueGeneration_Internal_SqlServerSequenceValueGeneratorFactory: never;

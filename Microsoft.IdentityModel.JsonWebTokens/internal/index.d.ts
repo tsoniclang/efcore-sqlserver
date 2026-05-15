@@ -3,7 +3,7 @@
 // Assembly: Microsoft.IdentityModel.JsonWebTokens
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -98,7 +98,7 @@ export const JwtRegisteredClaimNames: {
 
 export type JwtRegisteredClaimNames = JwtRegisteredClaimNames$instance;
 
-export interface JsonWebToken$instance extends SecurityToken {
+export interface JsonWebToken$instance extends SecurityToken, Microsoft_IdentityModel_Logging_Internal.ISafeLogSecurityArtifact$instance {
     readonly __tsonic_type_Microsoft_IdentityModel_JsonWebTokens_JsonWebToken: never;
 
     readonly __tsonic_iface_Microsoft_IdentityModel_Logging_ISafeLogSecurityArtifact: never;
@@ -134,13 +134,13 @@ export interface JsonWebToken$instance extends SecurityToken {
     readonly X5t: string;
     readonly Zip: string;
     GetClaim(key: string): Claim;
-    GetHeaderValue<T>(key: string): T;
-    GetPayloadValue<T>(key: string): T;
+    GetHeaderValue<T extends unknown>(key: string): T;
+    GetPayloadValue<T extends unknown>(key: string): T;
     ToString(): string;
     TryGetClaim(key: string, value: Claim): boolean;
-    TryGetHeaderValue<T>(key: string, value: T): boolean;
-    TryGetPayloadValue<T>(key: string, value: T): boolean;
-    TryGetValue<T>(key: string, value: T): boolean;
+    TryGetHeaderValue<T extends unknown>(key: string, value: T): boolean;
+    TryGetPayloadValue<T extends unknown>(key: string, value: T): boolean;
+    TryGetValue<T extends unknown>(key: string, value: T): boolean;
     UnsafeToString(): string;
 }
 
@@ -170,23 +170,23 @@ export interface JsonWebTokenHandler$instance extends TokenHandler {
     CreateClaimsIdentity(jwtToken: JsonWebToken, validationParameters: TokenValidationParameters): ClaimsIdentity;
     CreateClaimsIdentity(jwtToken: JsonWebToken, validationParameters: TokenValidationParameters, issuer: string): ClaimsIdentity;
     CreateToken(payload: string): string;
-    CreateToken(payload: string, additionalHeaderClaims: IDictionary_2<System_Internal.String, JsValue>): string;
+    CreateToken(payload: string, additionalHeaderClaims: IDictionary_2<System_Internal.String, unknown>): string;
     CreateToken(payload: string, signingCredentials: SigningCredentials): string;
-    CreateToken(payload: string, signingCredentials: SigningCredentials, additionalHeaderClaims: IDictionary_2<System_Internal.String, JsValue>): string;
+    CreateToken(payload: string, signingCredentials: SigningCredentials, additionalHeaderClaims: IDictionary_2<System_Internal.String, unknown>): string;
     CreateToken(tokenDescriptor: SecurityTokenDescriptor): string;
     CreateToken(payload: string, encryptingCredentials: EncryptingCredentials): string;
-    CreateToken(payload: string, encryptingCredentials: EncryptingCredentials, additionalHeaderClaims: IDictionary_2<System_Internal.String, JsValue>): string;
+    CreateToken(payload: string, encryptingCredentials: EncryptingCredentials, additionalHeaderClaims: IDictionary_2<System_Internal.String, unknown>): string;
     CreateToken(payload: string, signingCredentials: SigningCredentials, encryptingCredentials: EncryptingCredentials): string;
-    CreateToken(payload: string, signingCredentials: SigningCredentials, encryptingCredentials: EncryptingCredentials, additionalHeaderClaims: IDictionary_2<System_Internal.String, JsValue>): string;
+    CreateToken(payload: string, signingCredentials: SigningCredentials, encryptingCredentials: EncryptingCredentials, additionalHeaderClaims: IDictionary_2<System_Internal.String, unknown>): string;
     CreateToken(payload: string, encryptingCredentials: EncryptingCredentials, compressionAlgorithm: string): string;
     CreateToken(payload: string, signingCredentials: SigningCredentials, encryptingCredentials: EncryptingCredentials, compressionAlgorithm: string): string;
-    CreateToken(payload: string, signingCredentials: SigningCredentials, encryptingCredentials: EncryptingCredentials, compressionAlgorithm: string, additionalHeaderClaims: IDictionary_2<System_Internal.String, JsValue>, additionalInnerHeaderClaims: IDictionary_2<System_Internal.String, JsValue>): string;
-    CreateToken(payload: string, signingCredentials: SigningCredentials, encryptingCredentials: EncryptingCredentials, compressionAlgorithm: string, additionalHeaderClaims: IDictionary_2<System_Internal.String, JsValue>): string;
+    CreateToken(payload: string, signingCredentials: SigningCredentials, encryptingCredentials: EncryptingCredentials, compressionAlgorithm: string, additionalHeaderClaims: IDictionary_2<System_Internal.String, unknown>, additionalInnerHeaderClaims: IDictionary_2<System_Internal.String, unknown>): string;
+    CreateToken(payload: string, signingCredentials: SigningCredentials, encryptingCredentials: EncryptingCredentials, compressionAlgorithm: string, additionalHeaderClaims: IDictionary_2<System_Internal.String, unknown>): string;
     DecryptToken(jwtToken: JsonWebToken, validationParameters: TokenValidationParameters): string;
     EncryptToken(innerJwt: string, encryptingCredentials: EncryptingCredentials): string;
-    EncryptToken(innerJwt: string, encryptingCredentials: EncryptingCredentials, additionalHeaderClaims: IDictionary_2<System_Internal.String, JsValue>): string;
+    EncryptToken(innerJwt: string, encryptingCredentials: EncryptingCredentials, additionalHeaderClaims: IDictionary_2<System_Internal.String, unknown>): string;
     EncryptToken(innerJwt: string, encryptingCredentials: EncryptingCredentials, algorithm: string): string;
-    EncryptToken(innerJwt: string, encryptingCredentials: EncryptingCredentials, algorithm: string, additionalHeaderClaims: IDictionary_2<System_Internal.String, JsValue>): string;
+    EncryptToken(innerJwt: string, encryptingCredentials: EncryptingCredentials, algorithm: string, additionalHeaderClaims: IDictionary_2<System_Internal.String, unknown>): string;
     ReadJsonWebToken(token: string): JsonWebToken;
     ReadToken(token: string): SecurityToken;
     ResolveTokenDecryptionKey(token: string, jwtToken: JsonWebToken, validationParameters: TokenValidationParameters): SecurityKey;

@@ -3,7 +3,7 @@
 // Assembly: Azure.Core
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -28,7 +28,7 @@ export interface CloudEvent$instance {
     set DataContentType(value: string | null);
     get DataSchema(): string | null;
     set DataSchema(value: string | null);
-    readonly ExtensionAttributes: IDictionary_2<System_Internal.String, JsValue>;
+    readonly ExtensionAttributes: IDictionary_2<System_Internal.String, unknown>;
     Id: string;
     Source: string;
     get Subject(): string | null;
@@ -40,7 +40,7 @@ export interface CloudEvent$instance {
 
 
 export const CloudEvent: {
-    new(source: string, type: string, jsonSerializableData: JsValue | null, dataSerializationType: Type | null): CloudEvent;
+    new(source: string, type: string, jsonSerializableData: unknown | null, dataSerializationType: Type | null): CloudEvent;
     new(source: string, type: string, data: BinaryData | null, dataContentType: string | null, dataFormat: CloudEventDataFormat): CloudEvent;
     Parse(json: BinaryData, skipValidation?: boolean): CloudEvent | null;
     ParseMany(json: BinaryData, skipValidation?: boolean): CloudEvent[];

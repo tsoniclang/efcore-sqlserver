@@ -3,7 +3,7 @@
 // Assembly: System.Configuration.ConfigurationManager
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -15,7 +15,7 @@ import type { PermissionSet } from "@tsonic/dotnet/System.Security/internal/inde
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { AsyncCallback, Boolean as ClrBoolean, EventArgs, IAsyncResult, ICloneable, IDisposable, Int32, IntPtr, MulticastDelegate, Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export type InternalConfigEventHandler = (sender: JsValue, e: InternalConfigEventArgs) => void;
+export type InternalConfigEventHandler = (sender: unknown, e: InternalConfigEventArgs) => void;
 
 
 export type StreamChangeCallback = (streamName: string) => void;
@@ -36,7 +36,7 @@ export interface IConfigSystem$instance {
 
     readonly Host: IInternalConfigHost;
     readonly Root: IInternalConfigRoot;
-    Init(typeConfigHost: Type, ...hostInitParams: JsValue[]): void;
+    Init(typeConfigHost: Type, ...hostInitParams: unknown[]): void;
 }
 
 
@@ -83,7 +83,7 @@ export type IInternalConfigClientHost = IInternalConfigClientHost$instance;
 export interface IInternalConfigConfigurationFactory$instance {
     readonly __tsonic_iface_System_Configuration_Internal_IInternalConfigConfigurationFactory: never;
 
-    Create(typeConfigHost: Type, ...hostInitConfigurationParams: JsValue[]): Configuration;
+    Create(typeConfigHost: Type, ...hostInitConfigurationParams: unknown[]): Configuration;
     NormalizeLocationSubPath(subPath: string, errorInfo: IConfigErrorInfo): string;
 }
 
@@ -98,7 +98,7 @@ export interface IInternalConfigHost$instance {
     readonly SupportsPath: boolean;
     readonly SupportsLocation: boolean;
     readonly IsRemote: boolean;
-    CreateConfigurationContext(configPath: string, locationSubPath: string): JsValue;
+    CreateConfigurationContext(configPath: string, locationSubPath: string): unknown;
     DecryptSection(encryptedXml: string, protectionProvider: ProtectedConfigurationProvider, protectedConfigSection: ProtectedConfigurationSection): string;
     DeleteStream(streamName: string): void;
     GetConfigType(typeName: string, throwOnError: boolean): Type;
@@ -106,24 +106,24 @@ export interface IInternalConfigHost$instance {
     GetRestrictedPermissions(configRecord: IInternalConfigRecord, permissionSet: PermissionSet, isHostReady: boolean): void;
     GetStreamName(configPath: string): string;
     GetStreamNameForConfigSource(streamName: string, configSource: string): string;
-    GetStreamVersion(streamName: string): JsValue;
+    GetStreamVersion(streamName: string): unknown;
     Impersonate(): IDisposable;
-    Init(configRoot: IInternalConfigRoot, ...hostInitParams: JsValue[]): void;
-    InitForConfiguration(locationSubPath: string, configPath: string, locationConfigPath: string, configRoot: IInternalConfigRoot, ...hostInitConfigurationParams: JsValue[]): void;
+    Init(configRoot: IInternalConfigRoot, ...hostInitParams: unknown[]): void;
+    InitForConfiguration(locationSubPath: string, configPath: string, locationConfigPath: string, configRoot: IInternalConfigRoot, ...hostInitConfigurationParams: unknown[]): void;
     IsConfigRecordRequired(configPath: string): boolean;
     IsDefinitionAllowed(configPath: string, allowDefinition: ConfigurationAllowDefinition, allowExeDefinition: ConfigurationAllowExeDefinition): boolean;
     IsInitDelayed(configRecord: IInternalConfigRecord): boolean;
     OpenStreamForRead(streamName: string, assertPermissions: boolean): Stream;
     OpenStreamForRead(streamName: string): Stream;
-    OpenStreamForWrite(streamName: string, templateStreamName: string, writeContext: JsValue, assertPermissions: boolean): Stream;
-    OpenStreamForWrite(streamName: string, templateStreamName: string, writeContext: JsValue): Stream;
+    OpenStreamForWrite(streamName: string, templateStreamName: string, writeContext: unknown, assertPermissions: boolean): Stream;
+    OpenStreamForWrite(streamName: string, templateStreamName: string, writeContext: unknown): Stream;
     PrefetchAll(configPath: string, streamName: string): boolean;
     RequireCompleteInit(configRecord: IInternalConfigRecord): void;
-    StartMonitoringStreamForChanges(streamName: string, callback: StreamChangeCallback): JsValue;
+    StartMonitoringStreamForChanges(streamName: string, callback: StreamChangeCallback): unknown;
     StopMonitoringStreamForChanges(streamName: string, callback: StreamChangeCallback): void;
     VerifyDefinitionAllowed(configPath: string, allowDefinition: ConfigurationAllowDefinition, allowExeDefinition: ConfigurationAllowExeDefinition, errorInfo: IConfigErrorInfo): void;
-    WriteCompleted(streamName: string, success: boolean, writeContext: JsValue, assertPermissions: boolean): void;
-    WriteCompleted(streamName: string, success: boolean, writeContext: JsValue): void;
+    WriteCompleted(streamName: string, success: boolean, writeContext: unknown, assertPermissions: boolean): void;
+    WriteCompleted(streamName: string, success: boolean, writeContext: unknown): void;
 }
 
 
@@ -135,7 +135,7 @@ export interface IInternalConfigRecord$instance {
     readonly ConfigPath: string;
     readonly StreamName: string;
     readonly HasInitErrors: boolean;
-    GetSection(configKey: string): JsValue;
+    GetSection(configKey: string): unknown;
     RefreshSection(configKey: string): void;
     ThrowIfInitErrors(): void;
 }
@@ -147,7 +147,7 @@ export interface IInternalConfigRoot$instance {
     readonly __tsonic_iface_System_Configuration_Internal_IInternalConfigRoot: never;
 
     readonly IsDesignTime: boolean;
-    GetSection(section: string, configPath: string): JsValue;
+    GetSection(section: string, configPath: string): unknown;
     GetUniqueConfigPath(configPath: string): string;
     GetUniqueConfigRecord(configPath: string): IInternalConfigRecord;
     Init(host: IInternalConfigHost, isDesignTime: boolean): void;
@@ -171,7 +171,7 @@ export interface IInternalConfigSystem$instance {
     readonly __tsonic_iface_System_Configuration_Internal_IInternalConfigSystem: never;
 
     readonly SupportsUserConfig: boolean;
-    GetSection(configKey: string): JsValue;
+    GetSection(configKey: string): unknown;
     RefreshConfig(sectionName: string): void;
 }
 
@@ -189,8 +189,8 @@ export interface DelegatingConfigHost$instance {
     readonly SupportsLocation: boolean;
     readonly SupportsPath: boolean;
     readonly SupportsRefresh: boolean;
-    CreateConfigurationContext(configPath: string, locationSubPath: string): JsValue;
-    CreateDeprecatedConfigContext(configPath: string): JsValue;
+    CreateConfigurationContext(configPath: string, locationSubPath: string): unknown;
+    CreateDeprecatedConfigContext(configPath: string): unknown;
     DecryptSection(encryptedXml: string, protectionProvider: ProtectedConfigurationProvider, protectedConfigSection: ProtectedConfigurationSection): string;
     DeleteStream(streamName: string): void;
     EncryptSection(clearTextXml: string, protectionProvider: ProtectedConfigurationProvider, protectedConfigSection: ProtectedConfigurationSection): string;
@@ -200,10 +200,10 @@ export interface DelegatingConfigHost$instance {
     GetRestrictedPermissions(configRecord: IInternalConfigRecord, permissionSet: PermissionSet, isHostReady: boolean): void;
     GetStreamName(configPath: string): string;
     GetStreamNameForConfigSource(streamName: string, configSource: string): string;
-    GetStreamVersion(streamName: string): JsValue;
+    GetStreamVersion(streamName: string): unknown;
     Impersonate(): IDisposable;
-    Init(configRoot: IInternalConfigRoot, ...hostInitParams: JsValue[]): void;
-    InitForConfiguration(locationSubPath: string, configPath: string, locationConfigPath: string, configRoot: IInternalConfigRoot, ...hostInitConfigurationParams: JsValue[]): void;
+    Init(configRoot: IInternalConfigRoot, ...hostInitParams: unknown[]): void;
+    InitForConfiguration(locationSubPath: string, configPath: string, locationConfigPath: string, configRoot: IInternalConfigRoot, ...hostInitConfigurationParams: unknown[]): void;
     IsAboveApplication(configPath: string): boolean;
     IsConfigRecordRequired(configPath: string): boolean;
     IsDefinitionAllowed(configPath: string, allowDefinition: ConfigurationAllowDefinition, allowExeDefinition: ConfigurationAllowExeDefinition): boolean;
@@ -215,17 +215,17 @@ export interface DelegatingConfigHost$instance {
     IsTrustedConfigPath(configPath: string): boolean;
     OpenStreamForRead(streamName: string): Stream;
     OpenStreamForRead(streamName: string, assertPermissions: boolean): Stream;
-    OpenStreamForWrite(streamName: string, templateStreamName: string, writeContext: JsValue): Stream;
-    OpenStreamForWrite(streamName: string, templateStreamName: string, writeContext: JsValue, assertPermissions: boolean): Stream;
+    OpenStreamForWrite(streamName: string, templateStreamName: string, writeContext: unknown): Stream;
+    OpenStreamForWrite(streamName: string, templateStreamName: string, writeContext: unknown, assertPermissions: boolean): Stream;
     PrefetchAll(configPath: string, streamName: string): boolean;
     PrefetchSection(sectionGroupName: string, sectionName: string): boolean;
     RefreshConfigPaths(): void;
     RequireCompleteInit(configRecord: IInternalConfigRecord): void;
-    StartMonitoringStreamForChanges(streamName: string, callback: StreamChangeCallback): JsValue;
+    StartMonitoringStreamForChanges(streamName: string, callback: StreamChangeCallback): unknown;
     StopMonitoringStreamForChanges(streamName: string, callback: StreamChangeCallback): void;
     VerifyDefinitionAllowed(configPath: string, allowDefinition: ConfigurationAllowDefinition, allowExeDefinition: ConfigurationAllowExeDefinition, errorInfo: IConfigErrorInfo): void;
-    WriteCompleted(streamName: string, success: boolean, writeContext: JsValue): void;
-    WriteCompleted(streamName: string, success: boolean, writeContext: JsValue, assertPermissions: boolean): void;
+    WriteCompleted(streamName: string, success: boolean, writeContext: unknown): void;
+    WriteCompleted(streamName: string, success: boolean, writeContext: unknown, assertPermissions: boolean): void;
 }
 
 

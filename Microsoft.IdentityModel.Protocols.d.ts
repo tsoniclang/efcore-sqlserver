@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './Microsoft.IdentityModel.Protocols/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { LastKnownGoodConfigurationCacheOptions } from './Microsoft.IdentityModel.Protocols.Configuration/internal/index.js';
 import type { BaseConfiguration, BaseConfigurationManager } from './Microsoft.IdentityModel.Tokens/internal/index.js';
@@ -23,9 +27,9 @@ export { ConfigurationManager_1 as ConfigurationManager } from './Microsoft.Iden
 export { ConfigurationValidationResult as ConfigurationValidationResult } from './Microsoft.IdentityModel.Protocols/internal/index.js';
 export { FileDocumentRetriever as FileDocumentRetriever } from './Microsoft.IdentityModel.Protocols/internal/index.js';
 export { HttpDocumentRetriever as HttpDocumentRetriever } from './Microsoft.IdentityModel.Protocols/internal/index.js';
-export type IConfigurationManager<T> = Internal.IConfigurationManager_1<T>;
-export type IConfigurationRetriever<T> = Internal.IConfigurationRetriever_1<T>;
-export type IConfigurationValidator<T> = Internal.IConfigurationValidator_1<T>;
+export type IConfigurationManager<T extends (object | null)> = Internal.IConfigurationManager_1<T>;
+export type IConfigurationRetriever<T extends unknown> = Internal.IConfigurationRetriever_1<T>;
+export type IConfigurationValidator<T extends unknown> = Internal.IConfigurationValidator_1<T>;
 export type IDocumentRetriever = Internal.IDocumentRetriever;
 export { StaticConfigurationManager_1 as StaticConfigurationManager } from './Microsoft.IdentityModel.Protocols/internal/index.js';
 export { HttpRequestData as HttpRequestData } from './Microsoft.IdentityModel.Protocols/internal/index.js';

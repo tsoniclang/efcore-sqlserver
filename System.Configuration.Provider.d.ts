@@ -5,8 +5,12 @@
 // Import internal declarations
 import * as Internal from './System.Configuration.Provider/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
-import type { SettingsProvider } from './System.Configuration/internal/index.js';
+import type { ProtectedConfigurationProvider } from './System.Configuration/internal/index.js';
 import type { ICollection, IEnumerable, IEnumerator } from '@tsonic/dotnet/System.Collections.js';
 import type { NameValueCollection } from '@tsonic/dotnet/System.Collections.Specialized.js';
 import type { Boolean as ClrBoolean, Exception, Int32, Object as ClrObject, String as ClrString, Void } from '@tsonic/dotnet/System.js';

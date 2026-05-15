@@ -3,7 +3,7 @@
 // Assembly: Microsoft.EntityFrameworkCore.SqlServer
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -31,7 +31,7 @@ export interface SqlServerHistoryRepository$instance extends HistoryRepository {
     GetBeginIfNotExistsScript(migrationId: string): string;
     GetCreateIfNotExistsScript(): string;
     GetEndIfScript(): string;
-    InterpretExistsResult(value: JsValue | null): boolean;
+    InterpretExistsResult(value: unknown | null): boolean;
 }
 
 

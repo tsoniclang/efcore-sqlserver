@@ -3,7 +3,7 @@
 // Assembly: Microsoft.Identity.Client
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -127,7 +127,7 @@ export interface IAppConfig$instance {
     readonly LegacyCacheCompatibilityEnabled: boolean;
     readonly ClientSecret: string;
     readonly ClientCredentialCertificate: X509Certificate2;
-    readonly ParentActivityOrWindowFunc: Func_1<JsValue>;
+    readonly ParentActivityOrWindowFunc: Func_1<unknown>;
 }
 
 
@@ -309,7 +309,7 @@ export type ITokenCacheSerializer = ITokenCacheSerializer$instance;
 export interface Prompt$instance {
     readonly __tsonic_type_Microsoft_Identity_Client_Prompt: never;
 
-    Equals(obj: JsValue): boolean;
+    Equals(obj: unknown): boolean;
     GetHashCode(): int;
 }
 
@@ -326,7 +326,7 @@ export const Prompt: {
 
 export type Prompt = Prompt$instance;
 
-export interface AbstractAcquireTokenParameterBuilder_1$instance<T extends BaseAbstractAcquireTokenParameterBuilder_1<T>> extends BaseAbstractAcquireTokenParameterBuilder_1<T> {
+export interface AbstractAcquireTokenParameterBuilder_1$instance<T extends unknown & BaseAbstractAcquireTokenParameterBuilder_1<T>> extends BaseAbstractAcquireTokenParameterBuilder_1<T> {
     readonly __tsonic_type_Microsoft_Identity_Client_AbstractAcquireTokenParameterBuilder_1: never;
 
     WithAdfsAuthority(authorityUri: string, validateAuthority?: boolean): T;
@@ -346,13 +346,13 @@ export interface AbstractAcquireTokenParameterBuilder_1$instance<T extends BaseA
 }
 
 
-export const AbstractAcquireTokenParameterBuilder_1: (abstract new<T extends BaseAbstractAcquireTokenParameterBuilder_1<T>>() => AbstractAcquireTokenParameterBuilder_1<T>) & {
+export const AbstractAcquireTokenParameterBuilder_1: (abstract new<T extends unknown & BaseAbstractAcquireTokenParameterBuilder_1<T>>() => AbstractAcquireTokenParameterBuilder_1<T>) & {
 };
 
 
-export type AbstractAcquireTokenParameterBuilder_1<T extends BaseAbstractAcquireTokenParameterBuilder_1<T>> = AbstractAcquireTokenParameterBuilder_1$instance<T>;
+export type AbstractAcquireTokenParameterBuilder_1<T extends unknown & BaseAbstractAcquireTokenParameterBuilder_1<T>> = AbstractAcquireTokenParameterBuilder_1$instance<T>;
 
-export interface AbstractApplicationBuilder_1$instance<T extends BaseAbstractApplicationBuilder_1<T>> extends BaseAbstractApplicationBuilder_1<T> {
+export interface AbstractApplicationBuilder_1$instance<T extends unknown & BaseAbstractApplicationBuilder_1<T>> extends BaseAbstractApplicationBuilder_1<T> {
     readonly __tsonic_type_Microsoft_Identity_Client_AbstractApplicationBuilder_1: never;
 
     WithAdfsAuthority(authorityUri: string, validateAuthority?: boolean): T;
@@ -386,9 +386,9 @@ export const AbstractApplicationBuilder_1: {
 };
 
 
-export type AbstractApplicationBuilder_1<T extends BaseAbstractApplicationBuilder_1<T>> = AbstractApplicationBuilder_1$instance<T>;
+export type AbstractApplicationBuilder_1<T extends unknown & BaseAbstractApplicationBuilder_1<T>> = AbstractApplicationBuilder_1$instance<T>;
 
-export interface AbstractClientAppBaseAcquireTokenParameterBuilder_1$instance<T extends AbstractAcquireTokenParameterBuilder_1<T>> extends AbstractAcquireTokenParameterBuilder_1<T> {
+export interface AbstractClientAppBaseAcquireTokenParameterBuilder_1$instance<T extends unknown & AbstractAcquireTokenParameterBuilder_1<T>> extends AbstractAcquireTokenParameterBuilder_1<T> {
     readonly __tsonic_type_Microsoft_Identity_Client_AbstractClientAppBaseAcquireTokenParameterBuilder_1: never;
 
     ExecuteAsync(cancellationToken: CancellationToken): Task_1<AuthenticationResult>;
@@ -400,9 +400,9 @@ export const AbstractClientAppBaseAcquireTokenParameterBuilder_1: {
 };
 
 
-export type AbstractClientAppBaseAcquireTokenParameterBuilder_1<T extends AbstractAcquireTokenParameterBuilder_1<T>> = AbstractClientAppBaseAcquireTokenParameterBuilder_1$instance<T>;
+export type AbstractClientAppBaseAcquireTokenParameterBuilder_1<T extends unknown & AbstractAcquireTokenParameterBuilder_1<T>> = AbstractClientAppBaseAcquireTokenParameterBuilder_1$instance<T>;
 
-export interface AbstractConfidentialClientAcquireTokenParameterBuilder_1$instance<T extends AbstractAcquireTokenParameterBuilder_1<T>> extends AbstractAcquireTokenParameterBuilder_1<T> {
+export interface AbstractConfidentialClientAcquireTokenParameterBuilder_1$instance<T extends unknown & AbstractAcquireTokenParameterBuilder_1<T>> extends AbstractAcquireTokenParameterBuilder_1<T> {
     readonly __tsonic_type_Microsoft_Identity_Client_AbstractConfidentialClientAcquireTokenParameterBuilder_1: never;
 
     ExecuteAsync(cancellationToken: CancellationToken): Task_1<AuthenticationResult>;
@@ -417,9 +417,9 @@ export const AbstractConfidentialClientAcquireTokenParameterBuilder_1: {
 };
 
 
-export type AbstractConfidentialClientAcquireTokenParameterBuilder_1<T extends AbstractAcquireTokenParameterBuilder_1<T>> = AbstractConfidentialClientAcquireTokenParameterBuilder_1$instance<T>;
+export type AbstractConfidentialClientAcquireTokenParameterBuilder_1<T extends unknown & AbstractAcquireTokenParameterBuilder_1<T>> = AbstractConfidentialClientAcquireTokenParameterBuilder_1$instance<T>;
 
-export interface AbstractManagedIdentityAcquireTokenParameterBuilder_1$instance<T extends BaseAbstractAcquireTokenParameterBuilder_1<T>> extends BaseAbstractAcquireTokenParameterBuilder_1<T> {
+export interface AbstractManagedIdentityAcquireTokenParameterBuilder_1$instance<T extends unknown & BaseAbstractAcquireTokenParameterBuilder_1<T>> extends BaseAbstractAcquireTokenParameterBuilder_1<T> {
     readonly __tsonic_type_Microsoft_Identity_Client_AbstractManagedIdentityAcquireTokenParameterBuilder_1: never;
 
     ExecuteAsync(cancellationToken: CancellationToken): Task_1<AuthenticationResult>;
@@ -427,13 +427,13 @@ export interface AbstractManagedIdentityAcquireTokenParameterBuilder_1$instance<
 }
 
 
-export const AbstractManagedIdentityAcquireTokenParameterBuilder_1: (abstract new<T extends BaseAbstractAcquireTokenParameterBuilder_1<T>>() => AbstractManagedIdentityAcquireTokenParameterBuilder_1<T>) & {
+export const AbstractManagedIdentityAcquireTokenParameterBuilder_1: (abstract new<T extends unknown & BaseAbstractAcquireTokenParameterBuilder_1<T>>() => AbstractManagedIdentityAcquireTokenParameterBuilder_1<T>) & {
 };
 
 
-export type AbstractManagedIdentityAcquireTokenParameterBuilder_1<T extends BaseAbstractAcquireTokenParameterBuilder_1<T>> = AbstractManagedIdentityAcquireTokenParameterBuilder_1$instance<T>;
+export type AbstractManagedIdentityAcquireTokenParameterBuilder_1<T extends unknown & BaseAbstractAcquireTokenParameterBuilder_1<T>> = AbstractManagedIdentityAcquireTokenParameterBuilder_1$instance<T>;
 
-export interface AbstractPublicClientAcquireTokenParameterBuilder_1$instance<T extends AbstractAcquireTokenParameterBuilder_1<T>> extends AbstractAcquireTokenParameterBuilder_1<T> {
+export interface AbstractPublicClientAcquireTokenParameterBuilder_1$instance<T extends unknown & AbstractAcquireTokenParameterBuilder_1<T>> extends AbstractAcquireTokenParameterBuilder_1<T> {
     readonly __tsonic_type_Microsoft_Identity_Client_AbstractPublicClientAcquireTokenParameterBuilder_1: never;
 
     ExecuteAsync(cancellationToken: CancellationToken): Task_1<AuthenticationResult>;
@@ -445,7 +445,7 @@ export const AbstractPublicClientAcquireTokenParameterBuilder_1: {
 };
 
 
-export type AbstractPublicClientAcquireTokenParameterBuilder_1<T extends AbstractAcquireTokenParameterBuilder_1<T>> = AbstractPublicClientAcquireTokenParameterBuilder_1$instance<T>;
+export type AbstractPublicClientAcquireTokenParameterBuilder_1<T extends unknown & AbstractAcquireTokenParameterBuilder_1<T>> = AbstractPublicClientAcquireTokenParameterBuilder_1$instance<T>;
 
 export interface AccountId$instance {
     readonly __tsonic_type_Microsoft_Identity_Client_AccountId: never;
@@ -453,7 +453,7 @@ export interface AccountId$instance {
     readonly Identifier: string;
     readonly ObjectId: string;
     readonly TenantId: string;
-    Equals(obj: JsValue): boolean;
+    Equals(obj: unknown): boolean;
     GetHashCode(): int;
     ToString(): string;
 }
@@ -581,7 +581,7 @@ export interface AcquireTokenInteractiveParameterBuilder$instance extends Abstra
     WithEmbeddedWebViewOptions(options: EmbeddedWebViewOptions): AcquireTokenInteractiveParameterBuilder;
     WithExtraScopesToConsent(extraScopesToConsent: IEnumerable_1<System_Internal.String>): AcquireTokenInteractiveParameterBuilder;
     WithLoginHint(loginHint: string): AcquireTokenInteractiveParameterBuilder;
-    WithParentActivityOrWindow(parent: JsValue): AcquireTokenInteractiveParameterBuilder;
+    WithParentActivityOrWindow(parent: unknown): AcquireTokenInteractiveParameterBuilder;
     WithParentActivityOrWindow(window: nint): AcquireTokenInteractiveParameterBuilder;
     WithPrompt(prompt: Prompt): AcquireTokenInteractiveParameterBuilder;
     WithProofOfPossession(nonce: string, httpMethod: HttpMethod, requestUri: Uri): AcquireTokenInteractiveParameterBuilder;
@@ -791,7 +791,7 @@ export const AuthenticationResultMetadata: {
 
 export type AuthenticationResultMetadata = AuthenticationResultMetadata$instance;
 
-export interface BaseAbstractAcquireTokenParameterBuilder_1$instance<T extends BaseAbstractAcquireTokenParameterBuilder_1<T>> {
+export interface BaseAbstractAcquireTokenParameterBuilder_1$instance<T extends unknown & BaseAbstractAcquireTokenParameterBuilder_1<T>> {
     readonly __tsonic_type_Microsoft_Identity_Client_BaseAbstractAcquireTokenParameterBuilder_1: never;
 
     ExecuteAsync(cancellationToken: CancellationToken): Task_1<AuthenticationResult>;
@@ -802,13 +802,13 @@ export interface BaseAbstractAcquireTokenParameterBuilder_1$instance<T extends B
 }
 
 
-export const BaseAbstractAcquireTokenParameterBuilder_1: (abstract new<T extends BaseAbstractAcquireTokenParameterBuilder_1<T>>() => BaseAbstractAcquireTokenParameterBuilder_1<T>) & {
+export const BaseAbstractAcquireTokenParameterBuilder_1: (abstract new<T extends unknown & BaseAbstractAcquireTokenParameterBuilder_1<T>>() => BaseAbstractAcquireTokenParameterBuilder_1<T>) & {
 };
 
 
-export type BaseAbstractAcquireTokenParameterBuilder_1<T extends BaseAbstractAcquireTokenParameterBuilder_1<T>> = BaseAbstractAcquireTokenParameterBuilder_1$instance<T>;
+export type BaseAbstractAcquireTokenParameterBuilder_1<T extends unknown & BaseAbstractAcquireTokenParameterBuilder_1<T>> = BaseAbstractAcquireTokenParameterBuilder_1$instance<T>;
 
-export interface BaseAbstractApplicationBuilder_1$instance<T extends BaseAbstractApplicationBuilder_1<T>> {
+export interface BaseAbstractApplicationBuilder_1$instance<T extends unknown & BaseAbstractApplicationBuilder_1<T>> {
     readonly __tsonic_type_Microsoft_Identity_Client_BaseAbstractApplicationBuilder_1: never;
 
     WithClientName(clientName: string): T;
@@ -826,7 +826,7 @@ export const BaseAbstractApplicationBuilder_1: {
 };
 
 
-export type BaseAbstractApplicationBuilder_1<T extends BaseAbstractApplicationBuilder_1<T>> = BaseAbstractApplicationBuilder_1$instance<T>;
+export type BaseAbstractApplicationBuilder_1<T extends unknown & BaseAbstractApplicationBuilder_1<T>> = BaseAbstractApplicationBuilder_1$instance<T>;
 
 export interface BaseApplicationOptions$instance {
     readonly __tsonic_type_Microsoft_Identity_Client_BaseApplicationOptions: never;
@@ -884,7 +884,7 @@ export const CacheOptions: {
 
 export type CacheOptions = CacheOptions$instance;
 
-export interface ClientApplicationBase$instance extends ApplicationBase, IApplicationBase {
+export interface ClientApplicationBase$instance extends ApplicationBase {
     readonly __tsonic_type_Microsoft_Identity_Client_ClientApplicationBase: never;
 
     readonly __tsonic_iface_Microsoft_Identity_Client_IApplicationBase: never;
@@ -917,7 +917,7 @@ export interface __ClientApplicationBase$views {
 export type ClientApplicationBase = ClientApplicationBase$instance & __ClientApplicationBase$views;
 
 
-export interface ConfidentialClientApplication$instance extends ClientApplicationBase$instance, IApplicationBase, IByRefreshToken$instance, IByUsernameAndPassword$instance, ILongRunningWebApi$instance {
+export interface ConfidentialClientApplication$instance extends ClientApplicationBase$instance, IByRefreshToken$instance, IByUsernameAndPassword$instance, ILongRunningWebApi$instance {
     readonly __tsonic_type_Microsoft_Identity_Client_ConfidentialClientApplication: never;
 
     readonly __tsonic_iface_Microsoft_Identity_Client_IApplicationBase: never;
@@ -1077,7 +1077,7 @@ export const IntuneAppProtectionPolicyRequiredException: {
 
 export type IntuneAppProtectionPolicyRequiredException = IntuneAppProtectionPolicyRequiredException$instance;
 
-export interface ManagedIdentityApplication$instance extends ApplicationBase, IApplicationBase, IManagedIdentityApplication$instance {
+export interface ManagedIdentityApplication$instance extends ApplicationBase, IManagedIdentityApplication$instance {
     readonly __tsonic_type_Microsoft_Identity_Client_ManagedIdentityApplication: never;
 
     readonly __tsonic_iface_Microsoft_Identity_Client_IApplicationBase: never;
@@ -1291,7 +1291,7 @@ export const MsalUiRequiredException: {
 
 export type MsalUiRequiredException = MsalUiRequiredException$instance;
 
-export interface PublicClientApplication$instance extends ClientApplicationBase$instance, IApplicationBase, IByRefreshToken$instance {
+export interface PublicClientApplication$instance extends ClientApplicationBase$instance, IByRefreshToken$instance {
     readonly __tsonic_type_Microsoft_Identity_Client_PublicClientApplication: never;
 
     readonly __tsonic_iface_Microsoft_Identity_Client_IApplicationBase: never;
@@ -1337,7 +1337,7 @@ export interface PublicClientApplicationBuilder$instance extends AbstractApplica
     WithKerberosTicketClaim(servicePrincipalName: string, ticketContainer: KerberosTicketContainer): PublicClientApplicationBuilder;
     WithMultiCloudSupport(enableMultiCloudSupport: boolean): PublicClientApplicationBuilder;
     WithOidcAuthority(authorityUri: string): PublicClientApplicationBuilder;
-    WithParentActivityOrWindow(parentActivityOrWindowFunc: Func_1<JsValue>): PublicClientApplicationBuilder;
+    WithParentActivityOrWindow(parentActivityOrWindowFunc: Func_1<unknown>): PublicClientApplicationBuilder;
     WithParentActivityOrWindow(windowFunc: Func_1<System_Internal.IntPtr>): PublicClientApplicationBuilder;
     WithWindowsBrokerOptions(options: WindowsBrokerOptions): PublicClientApplicationBuilder;
 }

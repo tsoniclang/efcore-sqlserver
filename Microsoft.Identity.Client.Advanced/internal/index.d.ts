@@ -3,7 +3,7 @@
 // Assembly: Microsoft.Identity.Client
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -13,7 +13,7 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
 export abstract class AcquireTokenParameterBuilderExtensions$instance {
-    static WithExtraHttpHeaders<T extends AbstractAcquireTokenParameterBuilder_1<T>>(builder: AbstractAcquireTokenParameterBuilder_1<T>, extraHttpHeaders: IDictionary_2<System_Internal.String, System_Internal.String>): T;
+    static WithExtraHttpHeaders<T extends unknown & AbstractAcquireTokenParameterBuilder_1<T>>(builder: AbstractAcquireTokenParameterBuilder_1<T>, extraHttpHeaders: IDictionary_2<System_Internal.String, System_Internal.String>): T;
 }
 
 

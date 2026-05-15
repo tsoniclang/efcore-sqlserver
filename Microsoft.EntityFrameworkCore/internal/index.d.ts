@@ -3,7 +3,7 @@
 // Assembly: Microsoft.EntityFrameworkCore, Microsoft.EntityFrameworkCore.Abstractions, Microsoft.EntityFrameworkCore.Relational, Microsoft.EntityFrameworkCore.SqlServer
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -57,11 +57,11 @@ export const SqlServerRetryingExecutionStrategy: {
 export type SqlServerRetryingExecutionStrategy = SqlServerRetryingExecutionStrategy$instance;
 
 export abstract class SqlServerComplexTypePrimitiveCollectionBuilderExtensions$instance {
-    static HasDefaultValue<TProperty>(primitiveCollectionBuilder: ComplexTypePrimitiveCollectionBuilder_1<TProperty>, value: JsValue | null, defaultConstraintName: string): ComplexTypePrimitiveCollectionBuilder_1<TProperty>;
-    static HasDefaultValue(primitiveCollectionBuilder: ComplexTypePrimitiveCollectionBuilder, value: JsValue | null, defaultConstraintName: string): ComplexTypePrimitiveCollectionBuilder;
-    static HasDefaultValueSql<TProperty>(primitiveCollectionBuilder: ComplexTypePrimitiveCollectionBuilder_1<TProperty>, sql: string | null, defaultConstraintName: string): ComplexTypePrimitiveCollectionBuilder_1<TProperty>;
+    static HasDefaultValue<TProperty extends unknown>(primitiveCollectionBuilder: ComplexTypePrimitiveCollectionBuilder_1<TProperty>, value: unknown | null, defaultConstraintName: string): ComplexTypePrimitiveCollectionBuilder_1<TProperty>;
+    static HasDefaultValue(primitiveCollectionBuilder: ComplexTypePrimitiveCollectionBuilder, value: unknown | null, defaultConstraintName: string): ComplexTypePrimitiveCollectionBuilder;
+    static HasDefaultValueSql<TProperty extends unknown>(primitiveCollectionBuilder: ComplexTypePrimitiveCollectionBuilder_1<TProperty>, sql: string | null, defaultConstraintName: string): ComplexTypePrimitiveCollectionBuilder_1<TProperty>;
     static HasDefaultValueSql(primitiveCollectionBuilder: ComplexTypePrimitiveCollectionBuilder, sql: string | null, defaultConstraintName: string): ComplexTypePrimitiveCollectionBuilder;
-    static IsSparse<TProperty>(primitiveCollectionBuilder: ComplexTypePrimitiveCollectionBuilder_1<TProperty>, sparse?: boolean): ComplexTypePrimitiveCollectionBuilder_1<TProperty>;
+    static IsSparse<TProperty extends unknown>(primitiveCollectionBuilder: ComplexTypePrimitiveCollectionBuilder_1<TProperty>, sparse?: boolean): ComplexTypePrimitiveCollectionBuilder_1<TProperty>;
     static IsSparse(primitiveCollectionBuilder: ComplexTypePrimitiveCollectionBuilder, sparse?: boolean): ComplexTypePrimitiveCollectionBuilder;
 }
 
@@ -69,19 +69,19 @@ export abstract class SqlServerComplexTypePrimitiveCollectionBuilderExtensions$i
 export type SqlServerComplexTypePrimitiveCollectionBuilderExtensions = SqlServerComplexTypePrimitiveCollectionBuilderExtensions$instance;
 
 export abstract class SqlServerComplexTypePropertyBuilderExtensions$instance {
-    static HasDefaultValue<TProperty>(propertyBuilder: ComplexTypePropertyBuilder_1<TProperty>, value: JsValue | null, defaultConstraintName: string): ComplexTypePropertyBuilder_1<TProperty>;
-    static HasDefaultValue(propertyBuilder: ComplexTypePropertyBuilder, value: JsValue | null, defaultConstraintName: string): ComplexTypePropertyBuilder;
-    static HasDefaultValueSql<TProperty>(propertyBuilder: ComplexTypePropertyBuilder_1<TProperty>, sql: string | null, defaultConstraintName: string): ComplexTypePropertyBuilder_1<TProperty>;
+    static HasDefaultValue<TProperty extends unknown>(propertyBuilder: ComplexTypePropertyBuilder_1<TProperty>, value: unknown | null, defaultConstraintName: string): ComplexTypePropertyBuilder_1<TProperty>;
+    static HasDefaultValue(propertyBuilder: ComplexTypePropertyBuilder, value: unknown | null, defaultConstraintName: string): ComplexTypePropertyBuilder;
+    static HasDefaultValueSql<TProperty extends unknown>(propertyBuilder: ComplexTypePropertyBuilder_1<TProperty>, sql: string | null, defaultConstraintName: string): ComplexTypePropertyBuilder_1<TProperty>;
     static HasDefaultValueSql(propertyBuilder: ComplexTypePropertyBuilder, sql: string | null, defaultConstraintName: string): ComplexTypePropertyBuilder;
-    static IsSparse<TProperty>(propertyBuilder: ComplexTypePropertyBuilder_1<TProperty>, sparse?: boolean): ComplexTypePropertyBuilder_1<TProperty>;
+    static IsSparse<TProperty extends unknown>(propertyBuilder: ComplexTypePropertyBuilder_1<TProperty>, sparse?: boolean): ComplexTypePropertyBuilder_1<TProperty>;
     static IsSparse(propertyBuilder: ComplexTypePropertyBuilder, sparse?: boolean): ComplexTypePropertyBuilder;
-    static UseHiLo<TProperty>(propertyBuilder: ComplexTypePropertyBuilder_1<TProperty>, name?: string | null, schema?: string | null): ComplexTypePropertyBuilder_1<TProperty>;
+    static UseHiLo<TProperty extends unknown>(propertyBuilder: ComplexTypePropertyBuilder_1<TProperty>, name?: string | null, schema?: string | null): ComplexTypePropertyBuilder_1<TProperty>;
     static UseHiLo(propertyBuilder: ComplexTypePropertyBuilder, name?: string | null, schema?: string | null): ComplexTypePropertyBuilder;
-    static UseIdentityColumn<TProperty>(propertyBuilder: ComplexTypePropertyBuilder_1<TProperty>, seed: int, increment?: int): ComplexTypePropertyBuilder_1<TProperty>;
-    static UseIdentityColumn<TProperty>(propertyBuilder: ComplexTypePropertyBuilder_1<TProperty>, seed?: long, increment?: int): ComplexTypePropertyBuilder_1<TProperty>;
+    static UseIdentityColumn<TProperty extends unknown>(propertyBuilder: ComplexTypePropertyBuilder_1<TProperty>, seed: int, increment?: int): ComplexTypePropertyBuilder_1<TProperty>;
+    static UseIdentityColumn<TProperty extends unknown>(propertyBuilder: ComplexTypePropertyBuilder_1<TProperty>, seed?: long, increment?: int): ComplexTypePropertyBuilder_1<TProperty>;
     static UseIdentityColumn(propertyBuilder: ComplexTypePropertyBuilder, seed: int, increment?: int): ComplexTypePropertyBuilder;
     static UseIdentityColumn(propertyBuilder: ComplexTypePropertyBuilder, seed?: long, increment?: int): ComplexTypePropertyBuilder;
-    static UseSequence<TProperty>(propertyBuilder: ComplexTypePropertyBuilder_1<TProperty>, name?: string | null, schema?: string | null): ComplexTypePropertyBuilder_1<TProperty>;
+    static UseSequence<TProperty extends unknown>(propertyBuilder: ComplexTypePropertyBuilder_1<TProperty>, name?: string | null, schema?: string | null): ComplexTypePropertyBuilder_1<TProperty>;
     static UseSequence(propertyBuilder: ComplexTypePropertyBuilder, name?: string | null, schema?: string | null): ComplexTypePropertyBuilder;
 }
 
@@ -96,28 +96,28 @@ export abstract class SqlServerDatabaseFacadeExtensions$instance {
 export type SqlServerDatabaseFacadeExtensions = SqlServerDatabaseFacadeExtensions$instance;
 
 export abstract class SqlServerDbContextOptionsExtensions$instance {
-    static ConfigureSqlEngine<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, sqlEngineOptionsAction?: Action_1<SqlEngineDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
+    static ConfigureSqlEngine<TContext extends unknown & DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, sqlEngineOptionsAction?: Action_1<SqlEngineDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
     static ConfigureSqlEngine(optionsBuilder: DbContextOptionsBuilder, sqlEngineOptionsAction?: Action_1<SqlEngineDbContextOptionsBuilder> | null): DbContextOptionsBuilder;
-    static UseAzureSql<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, azureSqlOptionsAction?: Action_1<AzureSqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
-    static UseAzureSql<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connection: DbConnection, azureSqlOptionsAction?: Action_1<AzureSqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
-    static UseAzureSql<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connection: DbConnection, contextOwnsConnection: boolean, azureSqlOptionsAction?: Action_1<AzureSqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
-    static UseAzureSql<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connectionString: string | null, azureSqlOptionsAction?: Action_1<AzureSqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
+    static UseAzureSql<TContext extends unknown & DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, azureSqlOptionsAction?: Action_1<AzureSqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
+    static UseAzureSql<TContext extends unknown & DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connection: DbConnection, azureSqlOptionsAction?: Action_1<AzureSqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
+    static UseAzureSql<TContext extends unknown & DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connection: DbConnection, contextOwnsConnection: boolean, azureSqlOptionsAction?: Action_1<AzureSqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
+    static UseAzureSql<TContext extends unknown & DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connectionString: string | null, azureSqlOptionsAction?: Action_1<AzureSqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
     static UseAzureSql(optionsBuilder: DbContextOptionsBuilder, azureSqlOptionsAction?: Action_1<AzureSqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder;
     static UseAzureSql(optionsBuilder: DbContextOptionsBuilder, connection: DbConnection, azureSqlOptionsAction?: Action_1<AzureSqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder;
     static UseAzureSql(optionsBuilder: DbContextOptionsBuilder, connection: DbConnection, contextOwnsConnection: boolean, azureSqlOptionsAction?: Action_1<AzureSqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder;
     static UseAzureSql(optionsBuilder: DbContextOptionsBuilder, connectionString: string | null, azureSqlOptionsAction?: Action_1<AzureSqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder;
-    static UseAzureSynapse<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, azureSynapseOptionsAction?: Action_1<AzureSynapseDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
-    static UseAzureSynapse<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connection: DbConnection, azureSynapseOptionsAction?: Action_1<AzureSynapseDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
-    static UseAzureSynapse<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connection: DbConnection, contextOwnsConnection: boolean, azureSynapseOptionsAction?: Action_1<AzureSynapseDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
-    static UseAzureSynapse<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connectionString: string | null, azureSynapseOptionsAction?: Action_1<AzureSynapseDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
+    static UseAzureSynapse<TContext extends unknown & DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, azureSynapseOptionsAction?: Action_1<AzureSynapseDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
+    static UseAzureSynapse<TContext extends unknown & DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connection: DbConnection, azureSynapseOptionsAction?: Action_1<AzureSynapseDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
+    static UseAzureSynapse<TContext extends unknown & DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connection: DbConnection, contextOwnsConnection: boolean, azureSynapseOptionsAction?: Action_1<AzureSynapseDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
+    static UseAzureSynapse<TContext extends unknown & DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connectionString: string | null, azureSynapseOptionsAction?: Action_1<AzureSynapseDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
     static UseAzureSynapse(optionsBuilder: DbContextOptionsBuilder, azureSynapseOptionsAction?: Action_1<AzureSynapseDbContextOptionsBuilder> | null): DbContextOptionsBuilder;
     static UseAzureSynapse(optionsBuilder: DbContextOptionsBuilder, connection: DbConnection, azureSynapseOptionsAction?: Action_1<AzureSynapseDbContextOptionsBuilder> | null): DbContextOptionsBuilder;
     static UseAzureSynapse(optionsBuilder: DbContextOptionsBuilder, connection: DbConnection, contextOwnsConnection: boolean, azureSynapseOptionsAction?: Action_1<AzureSynapseDbContextOptionsBuilder> | null): DbContextOptionsBuilder;
     static UseAzureSynapse(optionsBuilder: DbContextOptionsBuilder, connectionString: string | null, azureSynapseOptionsAction?: Action_1<AzureSynapseDbContextOptionsBuilder> | null): DbContextOptionsBuilder;
-    static UseSqlServer<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, sqlServerOptionsAction?: Action_1<SqlServerDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
-    static UseSqlServer<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connection: DbConnection, sqlServerOptionsAction?: Action_1<SqlServerDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
-    static UseSqlServer<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connection: DbConnection, contextOwnsConnection: boolean, sqlServerOptionsAction?: Action_1<SqlServerDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
-    static UseSqlServer<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connectionString: string | null, sqlServerOptionsAction?: Action_1<SqlServerDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
+    static UseSqlServer<TContext extends unknown & DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, sqlServerOptionsAction?: Action_1<SqlServerDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
+    static UseSqlServer<TContext extends unknown & DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connection: DbConnection, sqlServerOptionsAction?: Action_1<SqlServerDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
+    static UseSqlServer<TContext extends unknown & DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connection: DbConnection, contextOwnsConnection: boolean, sqlServerOptionsAction?: Action_1<SqlServerDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
+    static UseSqlServer<TContext extends unknown & DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connectionString: string | null, sqlServerOptionsAction?: Action_1<SqlServerDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
     static UseSqlServer(optionsBuilder: DbContextOptionsBuilder, sqlServerOptionsAction?: Action_1<SqlServerDbContextOptionsBuilder> | null): DbContextOptionsBuilder;
     static UseSqlServer(optionsBuilder: DbContextOptionsBuilder, connection: DbConnection, sqlServerOptionsAction?: Action_1<SqlServerDbContextOptionsBuilder> | null): DbContextOptionsBuilder;
     static UseSqlServer(optionsBuilder: DbContextOptionsBuilder, connection: DbConnection, contextOwnsConnection: boolean, sqlServerOptionsAction?: Action_1<SqlServerDbContextOptionsBuilder> | null): DbContextOptionsBuilder;
@@ -130,8 +130,8 @@ export type SqlServerDbContextOptionsExtensions = SqlServerDbContextOptionsExten
 export abstract class SqlServerDbFunctionsExtensions$instance {
     static AtTimeZone(_: DbFunctions, dateTime: DateTime, timeZone: string): DateTimeOffset;
     static AtTimeZone(_: DbFunctions, dateTimeOffset: DateTimeOffset, timeZone: string): DateTimeOffset;
-    static Contains(_: DbFunctions, propertyReference: JsValue, searchCondition: string, languageTerm: int): boolean;
-    static Contains(_: DbFunctions, propertyReference: JsValue, searchCondition: string): boolean;
+    static Contains(_: DbFunctions, propertyReference: unknown, searchCondition: string, languageTerm: int): boolean;
+    static Contains(_: DbFunctions, propertyReference: unknown, searchCondition: string): boolean;
     static DataLength(_: DbFunctions, arg: byte[] | null): Nullable_1<System_Internal.Int32>;
     static DataLength(_: DbFunctions, arg: Nullable_1<System_Internal.Boolean>): Nullable_1<System_Internal.Int32>;
     static DataLength(_: DbFunctions, arg: Nullable_1<DateTime>): Nullable_1<System_Internal.Int32>;
@@ -229,8 +229,8 @@ export abstract class SqlServerDbFunctionsExtensions$instance {
     static DateTime2FromParts(_: DbFunctions, year: int, month: int, day: int, hour: int, minute: int, second: int, fractions: int, precision: int): DateTime;
     static DateTimeFromParts(_: DbFunctions, year: int, month: int, day: int, hour: int, minute: int, second: int, millisecond: int): DateTime;
     static DateTimeOffsetFromParts(_: DbFunctions, year: int, month: int, day: int, hour: int, minute: int, second: int, fractions: int, hourOffset: int, minuteOffset: int, precision: int): DateTimeOffset;
-    static FreeText(_: DbFunctions, propertyReference: JsValue, freeText: string, languageTerm: int): boolean;
-    static FreeText(_: DbFunctions, propertyReference: JsValue, freeText: string): boolean;
+    static FreeText(_: DbFunctions, propertyReference: unknown, freeText: string, languageTerm: int): boolean;
+    static FreeText(_: DbFunctions, propertyReference: unknown, freeText: string): boolean;
     static IsDate(_: DbFunctions, expression: string): boolean;
     static IsNumeric(_: DbFunctions, expression: string): boolean;
     static PatIndex(_: DbFunctions, pattern: string, expression: string): long;
@@ -264,18 +264,18 @@ export abstract class SqlServerDbFunctionsExtensions$instance {
     static VarianceSample(_: DbFunctions, values: IEnumerable_1<System_Internal.Int32>): Nullable_1<System_Internal.Double>;
     static VarianceSample(_: DbFunctions, values: IEnumerable_1<System_Internal.Int64>): Nullable_1<System_Internal.Double>;
     static VarianceSample(_: DbFunctions, values: IEnumerable_1<System_Internal.Single>): Nullable_1<System_Internal.Double>;
-    static VectorDistance<T extends NonNullable<JsValue>>(_: DbFunctions, distanceMetric: string, vector1: SqlVector_1<T>, vector2: SqlVector_1<T>): double;
+    static VectorDistance<T extends NonNullable<unknown>>(_: DbFunctions, distanceMetric: string, vector1: SqlVector_1<T>, vector2: SqlVector_1<T>): double;
 }
 
 
 export type SqlServerDbFunctionsExtensions = SqlServerDbFunctionsExtensions$instance;
 
 export abstract class SqlServerDbSetExtensions$instance {
-    static TemporalAll<TEntity>(source: DbSet_1<TEntity>): IQueryable_1<TEntity>;
-    static TemporalAsOf<TEntity>(source: DbSet_1<TEntity>, utcPointInTime: DateTime): IQueryable_1<TEntity>;
-    static TemporalBetween<TEntity>(source: DbSet_1<TEntity>, utcFrom: DateTime, utcTo: DateTime): IQueryable_1<TEntity>;
-    static TemporalContainedIn<TEntity>(source: DbSet_1<TEntity>, utcFrom: DateTime, utcTo: DateTime): IQueryable_1<TEntity>;
-    static TemporalFromTo<TEntity>(source: DbSet_1<TEntity>, utcFrom: DateTime, utcTo: DateTime): IQueryable_1<TEntity>;
+    static TemporalAll<TEntity extends (object | null)>(source: DbSet_1<TEntity>): IQueryable_1<TEntity>;
+    static TemporalAsOf<TEntity extends (object | null)>(source: DbSet_1<TEntity>, utcPointInTime: DateTime): IQueryable_1<TEntity>;
+    static TemporalBetween<TEntity extends (object | null)>(source: DbSet_1<TEntity>, utcFrom: DateTime, utcTo: DateTime): IQueryable_1<TEntity>;
+    static TemporalContainedIn<TEntity extends (object | null)>(source: DbSet_1<TEntity>, utcFrom: DateTime, utcTo: DateTime): IQueryable_1<TEntity>;
+    static TemporalFromTo<TEntity extends (object | null)>(source: DbSet_1<TEntity>, utcFrom: DateTime, utcTo: DateTime): IQueryable_1<TEntity>;
 }
 
 
@@ -292,11 +292,11 @@ export abstract class SqlServerEntityTypeBuilderExtensions$instance {
     static CanUseSqlOutputClause(entityTypeBuilder: IConventionEntityTypeBuilder, useSqlOutputClause: Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): boolean;
     static HasPeriodEnd(entityTypeBuilder: IConventionEntityTypeBuilder, propertyName: string | null, fromDataAnnotation?: boolean): IConventionEntityTypeBuilder | null;
     static HasPeriodStart(entityTypeBuilder: IConventionEntityTypeBuilder, propertyName: string | null, fromDataAnnotation?: boolean): IConventionEntityTypeBuilder | null;
-    static IsMemoryOptimized<TEntity>(entityTypeBuilder: EntityTypeBuilder_1<TEntity>, memoryOptimized?: boolean): EntityTypeBuilder_1<TEntity>;
+    static IsMemoryOptimized<TEntity extends (object | null)>(entityTypeBuilder: EntityTypeBuilder_1<TEntity>, memoryOptimized?: boolean): EntityTypeBuilder_1<TEntity>;
     static IsMemoryOptimized(entityTypeBuilder: EntityTypeBuilder, memoryOptimized?: boolean): EntityTypeBuilder;
     static IsMemoryOptimized(entityTypeBuilder: IConventionEntityTypeBuilder, memoryOptimized: Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): IConventionEntityTypeBuilder | null;
     static IsMemoryOptimized(collectionOwnershipBuilder: OwnedNavigationBuilder, memoryOptimized?: boolean): OwnedNavigationBuilder;
-    static IsMemoryOptimized<TEntity, TRelatedEntity>(collectionOwnershipBuilder: OwnedNavigationBuilder_2<TEntity, TRelatedEntity>, memoryOptimized?: boolean): OwnedNavigationBuilder_2<TEntity, TRelatedEntity>;
+    static IsMemoryOptimized<TEntity extends (object | null), TRelatedEntity extends (object | null)>(collectionOwnershipBuilder: OwnedNavigationBuilder_2<TEntity, TRelatedEntity>, memoryOptimized?: boolean): OwnedNavigationBuilder_2<TEntity, TRelatedEntity>;
     static IsTemporal(entityTypeBuilder: IConventionEntityTypeBuilder, temporal?: boolean, fromDataAnnotation?: boolean): IConventionEntityTypeBuilder | null;
     static UseHistoryTableName(entityTypeBuilder: IConventionEntityTypeBuilder, name: string, fromDataAnnotation?: boolean): IConventionEntityTypeBuilder | null;
     static UseHistoryTableSchema(entityTypeBuilder: IConventionEntityTypeBuilder, schema: string | null, fromDataAnnotation?: boolean): IConventionEntityTypeBuilder | null;
@@ -363,23 +363,23 @@ export abstract class SqlServerIndexBuilderExtensions$instance {
     static CanSetIsClustered(indexBuilder: IConventionIndexBuilder, clustered: Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): boolean;
     static CanSetIsCreatedOnline(indexBuilder: IConventionIndexBuilder, createdOnline: Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): boolean;
     static CanSetSortInTempDb(indexBuilder: IConventionIndexBuilder, sortInTempDb: Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): boolean;
-    static HasFillFactor<TEntity>(indexBuilder: IndexBuilder_1<TEntity>, fillFactor: int): IndexBuilder_1<TEntity>;
+    static HasFillFactor<TEntity extends unknown>(indexBuilder: IndexBuilder_1<TEntity>, fillFactor: int): IndexBuilder_1<TEntity>;
     static HasFillFactor(indexBuilder: IConventionIndexBuilder, fillFactor: Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): IConventionIndexBuilder | null;
     static HasFillFactor(indexBuilder: IndexBuilder, fillFactor: int): IndexBuilder;
-    static IncludeProperties<TEntity>(indexBuilder: IndexBuilder_1<TEntity>, includeExpression: Expression_1<Func_2<TEntity, JsValue | null>>): IndexBuilder_1<TEntity>;
-    static IncludeProperties<TEntity>(indexBuilder: IndexBuilder_1<TEntity>, ...propertyNames: string[]): IndexBuilder_1<TEntity>;
+    static IncludeProperties<TEntity extends unknown>(indexBuilder: IndexBuilder_1<TEntity>, includeExpression: Expression_1<Func_2<TEntity, unknown | null>>): IndexBuilder_1<TEntity>;
+    static IncludeProperties<TEntity extends unknown>(indexBuilder: IndexBuilder_1<TEntity>, ...propertyNames: string[]): IndexBuilder_1<TEntity>;
     static IncludeProperties(indexBuilder: IConventionIndexBuilder, propertyNames: IReadOnlyList_1<System_Internal.String> | null, fromDataAnnotation?: boolean): IConventionIndexBuilder | null;
     static IncludeProperties(indexBuilder: IndexBuilder, ...propertyNames: string[]): IndexBuilder;
-    static IsClustered<TEntity>(indexBuilder: IndexBuilder_1<TEntity>, clustered?: boolean): IndexBuilder_1<TEntity>;
+    static IsClustered<TEntity extends unknown>(indexBuilder: IndexBuilder_1<TEntity>, clustered?: boolean): IndexBuilder_1<TEntity>;
     static IsClustered(indexBuilder: IConventionIndexBuilder, clustered: Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): IConventionIndexBuilder | null;
     static IsClustered(indexBuilder: IndexBuilder, clustered?: boolean): IndexBuilder;
-    static IsCreatedOnline<TEntity>(indexBuilder: IndexBuilder_1<TEntity>, createdOnline?: boolean): IndexBuilder_1<TEntity>;
+    static IsCreatedOnline<TEntity extends unknown>(indexBuilder: IndexBuilder_1<TEntity>, createdOnline?: boolean): IndexBuilder_1<TEntity>;
     static IsCreatedOnline(indexBuilder: IConventionIndexBuilder, createdOnline: Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): IConventionIndexBuilder | null;
     static IsCreatedOnline(indexBuilder: IndexBuilder, createdOnline?: boolean): IndexBuilder;
-    static SortInTempDb<TEntity>(indexBuilder: IndexBuilder_1<TEntity>, sortInTempDb?: boolean): IndexBuilder_1<TEntity>;
+    static SortInTempDb<TEntity extends unknown>(indexBuilder: IndexBuilder_1<TEntity>, sortInTempDb?: boolean): IndexBuilder_1<TEntity>;
     static SortInTempDb(indexBuilder: IConventionIndexBuilder, sortInTempDb: Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): IConventionIndexBuilder | null;
     static SortInTempDb(indexBuilder: IndexBuilder, sortInTempDb?: boolean): IndexBuilder;
-    static UseDataCompression<TEntity>(indexBuilder: IndexBuilder_1<TEntity>, dataCompressionType: DataCompressionType): IndexBuilder_1<TEntity>;
+    static UseDataCompression<TEntity extends unknown>(indexBuilder: IndexBuilder_1<TEntity>, dataCompressionType: DataCompressionType): IndexBuilder_1<TEntity>;
     static UseDataCompression(indexBuilder: IConventionIndexBuilder, dataCompressionType: Nullable_1<DataCompressionType>, fromDataAnnotation?: boolean): IConventionIndexBuilder | null;
     static UseDataCompression(indexBuilder: IndexBuilder, dataCompressionType: DataCompressionType): IndexBuilder;
 }
@@ -426,10 +426,10 @@ export type SqlServerIndexExtensions = SqlServerIndexExtensions$instance;
 export abstract class SqlServerKeyBuilderExtensions$instance {
     static CanSetFillFactor(keyBuilder: IConventionKeyBuilder, fillFactor: Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): boolean;
     static CanSetIsClustered(keyBuilder: IConventionKeyBuilder, clustered: Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): boolean;
-    static HasFillFactor<TEntity>(keyBuilder: KeyBuilder_1<TEntity>, fillFactor: int): KeyBuilder_1<TEntity>;
+    static HasFillFactor<TEntity extends unknown>(keyBuilder: KeyBuilder_1<TEntity>, fillFactor: int): KeyBuilder_1<TEntity>;
     static HasFillFactor(keyBuilder: IConventionKeyBuilder, fillFactor: Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): IConventionKeyBuilder | null;
     static HasFillFactor(keyBuilder: KeyBuilder, fillFactor: int): KeyBuilder;
-    static IsClustered<TEntity>(keyBuilder: KeyBuilder_1<TEntity>, clustered?: boolean): KeyBuilder_1<TEntity>;
+    static IsClustered<TEntity extends unknown>(keyBuilder: KeyBuilder_1<TEntity>, clustered?: boolean): KeyBuilder_1<TEntity>;
     static IsClustered(keyBuilder: IConventionKeyBuilder, clustered: Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): IConventionKeyBuilder | null;
     static IsClustered(keyBuilder: KeyBuilder, clustered?: boolean): KeyBuilder;
 }
@@ -534,19 +534,19 @@ export abstract class SqlServerModelExtensions$instance {
 export type SqlServerModelExtensions = SqlServerModelExtensions$instance;
 
 export abstract class SqlServerPrimitiveCollectionBuilderExtensions$instance {
-    static HasDefaultValue(primitiveCollectionBuilder: PrimitiveCollectionBuilder, value: JsValue | null, defaultConstraintName: string): PrimitiveCollectionBuilder;
-    static HasDefaultValue<TProperty>(primitiveCollectionBuilder: PrimitiveCollectionBuilder_1<TProperty>, value: JsValue | null, defaultConstraintName: string): PrimitiveCollectionBuilder_1<TProperty>;
+    static HasDefaultValue(primitiveCollectionBuilder: PrimitiveCollectionBuilder, value: unknown | null, defaultConstraintName: string): PrimitiveCollectionBuilder;
+    static HasDefaultValue<TProperty extends unknown>(primitiveCollectionBuilder: PrimitiveCollectionBuilder_1<TProperty>, value: unknown | null, defaultConstraintName: string): PrimitiveCollectionBuilder_1<TProperty>;
     static HasDefaultValueSql(primitiveCollectionBuilder: PrimitiveCollectionBuilder, sql: string | null, defaultConstraintName: string): PrimitiveCollectionBuilder;
-    static HasDefaultValueSql<TProperty>(primitiveCollectionBuilder: PrimitiveCollectionBuilder_1<TProperty>, sql: string | null, defaultConstraintName: string): PrimitiveCollectionBuilder_1<TProperty>;
+    static HasDefaultValueSql<TProperty extends unknown>(primitiveCollectionBuilder: PrimitiveCollectionBuilder_1<TProperty>, sql: string | null, defaultConstraintName: string): PrimitiveCollectionBuilder_1<TProperty>;
     static IsSparse(primitiveCollectionBuilder: PrimitiveCollectionBuilder, sparse?: boolean): PrimitiveCollectionBuilder;
-    static IsSparse<TProperty>(primitiveCollectionBuilder: PrimitiveCollectionBuilder_1<TProperty>, sparse?: boolean): PrimitiveCollectionBuilder_1<TProperty>;
+    static IsSparse<TProperty extends unknown>(primitiveCollectionBuilder: PrimitiveCollectionBuilder_1<TProperty>, sparse?: boolean): PrimitiveCollectionBuilder_1<TProperty>;
 }
 
 
 export type SqlServerPrimitiveCollectionBuilderExtensions = SqlServerPrimitiveCollectionBuilderExtensions$instance;
 
 export abstract class SqlServerPropertyBuilderExtensions$instance {
-    static CanSetDefaultValue(propertyBuilder: IConventionPropertyBuilder, value: JsValue | null, defaultConstraintName: string, fromDataAnnotation?: boolean): boolean;
+    static CanSetDefaultValue(propertyBuilder: IConventionPropertyBuilder, value: unknown | null, defaultConstraintName: string, fromDataAnnotation?: boolean): boolean;
     static CanSetDefaultValueSql(propertyBuilder: IConventionPropertyBuilder, sql: string | null, defaultConstraintName: string, fromDataAnnotation?: boolean): boolean;
     static CanSetHiLoSequence(propertyBuilder: IConventionPropertyBuilder, name: string | null, schema: string | null, fromDataAnnotation?: boolean): boolean;
     static CanSetIdentityColumnIncrement(propertyBuilder: IConventionPropertyBuilder, increment: Nullable_1<System_Internal.Int32>, storeObject: StoreObjectIdentifier, fromDataAnnotation?: boolean): boolean;
@@ -557,12 +557,12 @@ export abstract class SqlServerPropertyBuilderExtensions$instance {
     static CanSetSequence(propertyBuilder: IConventionPropertyBuilder, name: string | null, schema: string | null, fromDataAnnotation?: boolean): boolean;
     static CanSetValueGenerationStrategy(propertyBuilder: IConventionPropertyBuilder, valueGenerationStrategy: Nullable_1<SqlServerValueGenerationStrategy>, storeObject: StoreObjectIdentifier, fromDataAnnotation?: boolean): boolean;
     static CanSetValueGenerationStrategy(propertyBuilder: IConventionPropertyBuilder, valueGenerationStrategy: Nullable_1<SqlServerValueGenerationStrategy>, fromDataAnnotation?: boolean): boolean;
-    static HasDefaultValue(propertyBuilder: IConventionPropertyBuilder, value: JsValue | null, defaultConstraintName: string, fromDataAnnotation?: boolean): IConventionPropertyBuilder | null;
-    static HasDefaultValue(propertyBuilder: PropertyBuilder, value: JsValue | null, defaultConstraintName: string): PropertyBuilder;
-    static HasDefaultValue<TProperty>(propertyBuilder: PropertyBuilder_1<TProperty>, value: JsValue | null, defaultConstraintName: string): PropertyBuilder_1<TProperty>;
+    static HasDefaultValue(propertyBuilder: IConventionPropertyBuilder, value: unknown | null, defaultConstraintName: string, fromDataAnnotation?: boolean): IConventionPropertyBuilder | null;
+    static HasDefaultValue(propertyBuilder: PropertyBuilder, value: unknown | null, defaultConstraintName: string): PropertyBuilder;
+    static HasDefaultValue<TProperty extends unknown>(propertyBuilder: PropertyBuilder_1<TProperty>, value: unknown | null, defaultConstraintName: string): PropertyBuilder_1<TProperty>;
     static HasDefaultValueSql(propertyBuilder: IConventionPropertyBuilder, sql: string | null, defaultConstraintName: string, fromDataAnnotation?: boolean): IConventionPropertyBuilder | null;
     static HasDefaultValueSql(propertyBuilder: PropertyBuilder, sql: string | null, defaultConstraintName: string): PropertyBuilder;
-    static HasDefaultValueSql<TProperty>(propertyBuilder: PropertyBuilder_1<TProperty>, sql: string | null, defaultConstraintName: string): PropertyBuilder_1<TProperty>;
+    static HasDefaultValueSql<TProperty extends unknown>(propertyBuilder: PropertyBuilder_1<TProperty>, sql: string | null, defaultConstraintName: string): PropertyBuilder_1<TProperty>;
     static HasHiLoSequence(propertyBuilder: IConventionPropertyBuilder, name: string | null, schema: string | null, fromDataAnnotation?: boolean): IConventionSequenceBuilder | null;
     static HasIdentityColumnIncrement(propertyBuilder: IConventionPropertyBuilder, increment: Nullable_1<System_Internal.Int32>, storeObject: StoreObjectIdentifier, fromDataAnnotation?: boolean): IConventionPropertyBuilder | null;
     static HasIdentityColumnIncrement(propertyBuilder: IConventionPropertyBuilder, increment: Nullable_1<System_Internal.Int32>, fromDataAnnotation?: boolean): IConventionPropertyBuilder | null;
@@ -573,17 +573,17 @@ export abstract class SqlServerPropertyBuilderExtensions$instance {
     static HasValueGenerationStrategy(propertyBuilder: IConventionPropertyBuilder, valueGenerationStrategy: Nullable_1<SqlServerValueGenerationStrategy>, fromDataAnnotation?: boolean): IConventionPropertyBuilder | null;
     static IsSparse(propertyBuilder: IConventionPropertyBuilder, sparse: Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): IConventionPropertyBuilder | null;
     static IsSparse(propertyBuilder: PropertyBuilder, sparse?: boolean): PropertyBuilder;
-    static IsSparse<TProperty>(propertyBuilder: PropertyBuilder_1<TProperty>, sparse?: boolean): PropertyBuilder_1<TProperty>;
+    static IsSparse<TProperty extends unknown>(propertyBuilder: PropertyBuilder_1<TProperty>, sparse?: boolean): PropertyBuilder_1<TProperty>;
     static UseHiLo(propertyBuilder: PropertyBuilder, name?: string | null, schema?: string | null): PropertyBuilder;
-    static UseHiLo<TProperty>(propertyBuilder: PropertyBuilder_1<TProperty>, name?: string | null, schema?: string | null): PropertyBuilder_1<TProperty>;
-    static UseIdentityColumn<TProperty>(columnBuilder: ColumnBuilder_1<TProperty>, seed?: long, increment?: int): ColumnBuilder_1<TProperty>;
+    static UseHiLo<TProperty extends unknown>(propertyBuilder: PropertyBuilder_1<TProperty>, name?: string | null, schema?: string | null): PropertyBuilder_1<TProperty>;
+    static UseIdentityColumn<TProperty extends unknown>(columnBuilder: ColumnBuilder_1<TProperty>, seed?: long, increment?: int): ColumnBuilder_1<TProperty>;
     static UseIdentityColumn(columnBuilder: ColumnBuilder, seed?: long, increment?: int): ColumnBuilder;
     static UseIdentityColumn(propertyBuilder: PropertyBuilder, seed: int, increment?: int): PropertyBuilder;
     static UseIdentityColumn(propertyBuilder: PropertyBuilder, seed?: long, increment?: int): PropertyBuilder;
-    static UseIdentityColumn<TProperty>(propertyBuilder: PropertyBuilder_1<TProperty>, seed: int, increment?: int): PropertyBuilder_1<TProperty>;
-    static UseIdentityColumn<TProperty>(propertyBuilder: PropertyBuilder_1<TProperty>, seed?: long, increment?: int): PropertyBuilder_1<TProperty>;
+    static UseIdentityColumn<TProperty extends unknown>(propertyBuilder: PropertyBuilder_1<TProperty>, seed: int, increment?: int): PropertyBuilder_1<TProperty>;
+    static UseIdentityColumn<TProperty extends unknown>(propertyBuilder: PropertyBuilder_1<TProperty>, seed?: long, increment?: int): PropertyBuilder_1<TProperty>;
     static UseSequence(propertyBuilder: PropertyBuilder, name?: string | null, schema?: string | null): PropertyBuilder;
-    static UseSequence<TProperty>(propertyBuilder: PropertyBuilder_1<TProperty>, name?: string | null, schema?: string | null): PropertyBuilder_1<TProperty>;
+    static UseSequence<TProperty extends unknown>(propertyBuilder: PropertyBuilder_1<TProperty>, name?: string | null, schema?: string | null): PropertyBuilder_1<TProperty>;
 }
 
 
@@ -668,22 +668,22 @@ export type SqlServerPropertyExtensions = SqlServerPropertyExtensions$instance;
 export abstract class SqlServerTableBuilderExtensions$instance {
     static IsMemoryOptimized(tableBuilder: OwnedNavigationTableBuilder, memoryOptimized?: boolean): OwnedNavigationTableBuilder;
     static IsMemoryOptimized(tableBuilder: TableBuilder, memoryOptimized?: boolean): TableBuilder;
-    static IsMemoryOptimized<TOwnerEntity, TDependentEntity>(tableBuilder: OwnedNavigationTableBuilder_2<TOwnerEntity, TDependentEntity>, memoryOptimized?: boolean): OwnedNavigationTableBuilder_2<TOwnerEntity, TDependentEntity>;
-    static IsMemoryOptimized<TEntity>(tableBuilder: TableBuilder_1<TEntity>, memoryOptimized?: boolean): TableBuilder_1<TEntity>;
+    static IsMemoryOptimized<TOwnerEntity extends (object | null), TDependentEntity extends (object | null)>(tableBuilder: OwnedNavigationTableBuilder_2<TOwnerEntity, TDependentEntity>, memoryOptimized?: boolean): OwnedNavigationTableBuilder_2<TOwnerEntity, TDependentEntity>;
+    static IsMemoryOptimized<TEntity extends (object | null)>(tableBuilder: TableBuilder_1<TEntity>, memoryOptimized?: boolean): TableBuilder_1<TEntity>;
     static IsTemporal(tableBuilder: OwnedNavigationTableBuilder, buildAction: Action_1<OwnedNavigationTemporalTableBuilder>): OwnedNavigationTableBuilder;
     static IsTemporal(tableBuilder: OwnedNavigationTableBuilder, temporal?: boolean): OwnedNavigationTemporalTableBuilder;
     static IsTemporal(tableBuilder: TableBuilder, buildAction: Action_1<TemporalTableBuilder>): TableBuilder;
     static IsTemporal(tableBuilder: TableBuilder, temporal?: boolean): TemporalTableBuilder;
-    static IsTemporal<TOwnerEntity, TDependentEntity>(tableBuilder: OwnedNavigationTableBuilder_2<TOwnerEntity, TDependentEntity>, buildAction: Action_1<OwnedNavigationTemporalTableBuilder_2<TOwnerEntity, TDependentEntity>>): OwnedNavigationTableBuilder_2<TOwnerEntity, TDependentEntity>;
-    static IsTemporal<TOwnerEntity, TDependentEntity>(tableBuilder: OwnedNavigationTableBuilder_2<TOwnerEntity, TDependentEntity>, temporal?: boolean): OwnedNavigationTemporalTableBuilder_2<TOwnerEntity, TDependentEntity>;
-    static IsTemporal<TEntity>(tableBuilder: TableBuilder_1<TEntity>, buildAction: Action_1<TemporalTableBuilder_1<TEntity>>): TableBuilder_1<TEntity>;
-    static IsTemporal<TEntity>(tableBuilder: TableBuilder_1<TEntity>, temporal?: boolean): TemporalTableBuilder_1<TEntity>;
+    static IsTemporal<TOwnerEntity extends (object | null), TDependentEntity extends (object | null)>(tableBuilder: OwnedNavigationTableBuilder_2<TOwnerEntity, TDependentEntity>, buildAction: Action_1<OwnedNavigationTemporalTableBuilder_2<TOwnerEntity, TDependentEntity>>): OwnedNavigationTableBuilder_2<TOwnerEntity, TDependentEntity>;
+    static IsTemporal<TOwnerEntity extends (object | null), TDependentEntity extends (object | null)>(tableBuilder: OwnedNavigationTableBuilder_2<TOwnerEntity, TDependentEntity>, temporal?: boolean): OwnedNavigationTemporalTableBuilder_2<TOwnerEntity, TDependentEntity>;
+    static IsTemporal<TEntity extends (object | null)>(tableBuilder: TableBuilder_1<TEntity>, buildAction: Action_1<TemporalTableBuilder_1<TEntity>>): TableBuilder_1<TEntity>;
+    static IsTemporal<TEntity extends (object | null)>(tableBuilder: TableBuilder_1<TEntity>, temporal?: boolean): TemporalTableBuilder_1<TEntity>;
     static UseSqlOutputClause(tableBuilder: OwnedNavigationTableBuilder, useSqlOutputClause?: boolean): OwnedNavigationTableBuilder;
     static UseSqlOutputClause(tableBuilder: SplitTableBuilder, useSqlOutputClause?: boolean): SplitTableBuilder;
     static UseSqlOutputClause(tableBuilder: TableBuilder, useSqlOutputClause?: boolean): TableBuilder;
-    static UseSqlOutputClause<TOwnerEntity, TDependentEntity>(tableBuilder: OwnedNavigationTableBuilder_2<TOwnerEntity, TDependentEntity>, useSqlOutputClause?: boolean): OwnedNavigationTableBuilder_2<TOwnerEntity, TDependentEntity>;
-    static UseSqlOutputClause<TEntity>(tableBuilder: SplitTableBuilder_1<TEntity>, useSqlOutputClause?: boolean): SplitTableBuilder_1<TEntity>;
-    static UseSqlOutputClause<TEntity>(tableBuilder: TableBuilder_1<TEntity>, useSqlOutputClause?: boolean): TableBuilder_1<TEntity>;
+    static UseSqlOutputClause<TOwnerEntity extends (object | null), TDependentEntity extends (object | null)>(tableBuilder: OwnedNavigationTableBuilder_2<TOwnerEntity, TDependentEntity>, useSqlOutputClause?: boolean): OwnedNavigationTableBuilder_2<TOwnerEntity, TDependentEntity>;
+    static UseSqlOutputClause<TEntity extends (object | null)>(tableBuilder: SplitTableBuilder_1<TEntity>, useSqlOutputClause?: boolean): SplitTableBuilder_1<TEntity>;
+    static UseSqlOutputClause<TEntity extends (object | null)>(tableBuilder: TableBuilder_1<TEntity>, useSqlOutputClause?: boolean): TableBuilder_1<TEntity>;
 }
 
 

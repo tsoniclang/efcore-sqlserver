@@ -3,7 +3,7 @@
 // Assembly: Microsoft.Identity.Client
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -93,11 +93,11 @@ export const OnBeforeTokenRequestData: {
 export type OnBeforeTokenRequestData = OnBeforeTokenRequestData$instance;
 
 export abstract class AbstractConfidentialClientAcquireTokenParameterBuilderExtension$instance {
-    static OnBeforeTokenRequest<T extends AbstractAcquireTokenParameterBuilder_1<T>>(builder: AbstractAcquireTokenParameterBuilder_1<T>, onBeforeTokenRequestHandler: Func_2<OnBeforeTokenRequestData, Task>): AbstractAcquireTokenParameterBuilder_1<T>;
-    static WithAdditionalCacheParameters<T extends AbstractAcquireTokenParameterBuilder_1<T>>(builder: AbstractAcquireTokenParameterBuilder_1<T>, cacheParameters: IEnumerable_1<System_Internal.String>): AbstractAcquireTokenParameterBuilder_1<T>;
-    static WithAuthenticationExtension<T extends AbstractAcquireTokenParameterBuilder_1<T>>(builder: AbstractAcquireTokenParameterBuilder_1<T>, authenticationExtension: MsalAuthenticationExtension): AbstractAcquireTokenParameterBuilder_1<T>;
-    static WithFmiPathForClientAssertion<T extends AbstractAcquireTokenParameterBuilder_1<T>>(builder: AbstractAcquireTokenParameterBuilder_1<T>, fmiPath: string): AbstractAcquireTokenParameterBuilder_1<T>;
-    static WithProofOfPosessionKeyId<T extends AbstractAcquireTokenParameterBuilder_1<T>>(builder: AbstractAcquireTokenParameterBuilder_1<T>, keyId: string, expectedTokenTypeFromAad?: string): AbstractAcquireTokenParameterBuilder_1<T>;
+    static OnBeforeTokenRequest<T extends unknown & AbstractAcquireTokenParameterBuilder_1<T>>(builder: AbstractAcquireTokenParameterBuilder_1<T>, onBeforeTokenRequestHandler: Func_2<OnBeforeTokenRequestData, Task>): AbstractAcquireTokenParameterBuilder_1<T>;
+    static WithAdditionalCacheParameters<T extends unknown & AbstractAcquireTokenParameterBuilder_1<T>>(builder: AbstractAcquireTokenParameterBuilder_1<T>, cacheParameters: IEnumerable_1<System_Internal.String>): AbstractAcquireTokenParameterBuilder_1<T>;
+    static WithAuthenticationExtension<T extends unknown & AbstractAcquireTokenParameterBuilder_1<T>>(builder: AbstractAcquireTokenParameterBuilder_1<T>, authenticationExtension: MsalAuthenticationExtension): AbstractAcquireTokenParameterBuilder_1<T>;
+    static WithFmiPathForClientAssertion<T extends unknown & AbstractAcquireTokenParameterBuilder_1<T>>(builder: AbstractAcquireTokenParameterBuilder_1<T>, fmiPath: string): AbstractAcquireTokenParameterBuilder_1<T>;
+    static WithProofOfPosessionKeyId<T extends unknown & AbstractAcquireTokenParameterBuilder_1<T>>(builder: AbstractAcquireTokenParameterBuilder_1<T>, keyId: string, expectedTokenTypeFromAad?: string): AbstractAcquireTokenParameterBuilder_1<T>;
 }
 
 

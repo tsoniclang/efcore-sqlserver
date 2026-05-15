@@ -3,7 +3,7 @@
 // Assembly: System.ClientModel
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -39,7 +39,7 @@ export const ApiKeyCredential: {
 
 export type ApiKeyCredential = ApiKeyCredential$instance;
 
-export interface AsyncCollectionResult_1$instance<T> extends AsyncCollectionResult {
+export interface AsyncCollectionResult_1$instance<T extends unknown> extends AsyncCollectionResult {
     readonly __tsonic_type_System_ClientModel_AsyncCollectionResult_1: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IAsyncEnumerable_1: never;
@@ -49,16 +49,16 @@ export interface AsyncCollectionResult_1$instance<T> extends AsyncCollectionResu
 }
 
 
-export const AsyncCollectionResult_1: (abstract new<T>() => AsyncCollectionResult_1<T>) & {
+export const AsyncCollectionResult_1: (abstract new<T extends unknown>() => AsyncCollectionResult_1<T>) & {
 };
 
 
-export type AsyncCollectionResult_1<T> = AsyncCollectionResult_1$instance<T>;
+export type AsyncCollectionResult_1<T extends unknown> = AsyncCollectionResult_1$instance<T>;
 
 export interface AuthenticationTokenProvider$instance {
     readonly __tsonic_type_System_ClientModel_AuthenticationTokenProvider: never;
 
-    CreateTokenOptions(properties: IReadOnlyDictionary_2<System_Internal.String, JsValue>): GetTokenOptions | null;
+    CreateTokenOptions(properties: IReadOnlyDictionary_2<System_Internal.String, unknown>): GetTokenOptions | null;
     GetToken(options: GetTokenOptions, cancellationToken: CancellationToken): AuthenticationToken;
     GetTokenAsync(options: GetTokenOptions, cancellationToken: CancellationToken): ValueTask_1<AuthenticationToken>;
 }
@@ -87,10 +87,10 @@ export interface BinaryContent$instance {
 export const BinaryContent: (abstract new() => BinaryContent) & {
     Create(value: BinaryData): BinaryContent;
     Create(stream: Stream): BinaryContent;
-    Create<T extends IPersistableModel_1<T>>(model: T, options?: ModelReaderWriterOptions | null): BinaryContent;
+    Create<T extends unknown & IPersistableModel_1<T>>(model: T, options?: ModelReaderWriterOptions | null): BinaryContent;
     CreateJson(jsonString: string, validate?: boolean): BinaryContent;
-    CreateJson<T>(jsonSerializable: T, jsonTypeInfo: JsonTypeInfo_1<T>): BinaryContent;
-    CreateJson<T>(jsonSerializable: T, options?: JsonSerializerOptions | null): BinaryContent;
+    CreateJson<T extends unknown>(jsonSerializable: T, jsonTypeInfo: JsonTypeInfo_1<T>): BinaryContent;
+    CreateJson<T extends unknown>(jsonSerializable: T, options?: JsonSerializerOptions | null): BinaryContent;
 };
 
 
@@ -104,26 +104,26 @@ export interface ClientResult$instance {
 
 
 export const ClientResult: (abstract new(response: PipelineResponse) => ClientResult) & {
-    FromOptionalValue<T>(value: T | null, response: PipelineResponse): ClientResult_1<T | null>;
+    FromOptionalValue<T extends unknown>(value: T | null, response: PipelineResponse): ClientResult_1<T | null>;
     FromResponse(response: PipelineResponse): ClientResult;
-    FromValue<T>(value: T, response: PipelineResponse): ClientResult_1<T>;
+    FromValue<T extends unknown>(value: T, response: PipelineResponse): ClientResult_1<T>;
 };
 
 
 export type ClientResult = ClientResult$instance;
 
-export interface ClientResult_1$instance<T> extends ClientResult {
+export interface ClientResult_1$instance<T extends unknown> extends ClientResult {
     readonly __tsonic_type_System_ClientModel_ClientResult_1: never;
 
     readonly Value: T;
 }
 
 
-export const ClientResult_1: (abstract new<T>(value: T, response: PipelineResponse) => ClientResult_1<T>) & {
+export const ClientResult_1: (abstract new<T extends unknown>(value: T, response: PipelineResponse) => ClientResult_1<T>) & {
 };
 
 
-export type ClientResult_1<T> = ClientResult_1$instance<T>;
+export type ClientResult_1<T extends unknown> = ClientResult_1$instance<T>;
 
 export interface ClientResultException$instance extends Exception {
     readonly __tsonic_type_System_ClientModel_ClientResultException: never;
@@ -144,7 +144,7 @@ export const ClientResultException: {
 
 export type ClientResultException = ClientResultException$instance;
 
-export interface CollectionResult_1$instance<T> extends CollectionResult {
+export interface CollectionResult_1$instance<T extends unknown> extends CollectionResult {
     readonly __tsonic_type_System_ClientModel_CollectionResult_1: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
@@ -155,11 +155,11 @@ export interface CollectionResult_1$instance<T> extends CollectionResult {
 }
 
 
-export const CollectionResult_1: (abstract new<T>() => CollectionResult_1<T>) & {
+export const CollectionResult_1: (abstract new<T extends unknown>() => CollectionResult_1<T>) & {
 };
 
 
-export type CollectionResult_1<T> = CollectionResult_1$instance<T>;
+export type CollectionResult_1<T extends unknown> = CollectionResult_1$instance<T>;
 
 export interface ContinuationToken$instance {
     readonly __tsonic_type_System_ClientModel_ContinuationToken: never;

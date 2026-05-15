@@ -3,7 +3,7 @@
 // Assembly: Microsoft.EntityFrameworkCore, Microsoft.EntityFrameworkCore.Abstractions, Microsoft.EntityFrameworkCore.Relational, Microsoft.EntityFrameworkCore.SqlServer
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -76,7 +76,7 @@ export const SqlEngineDbContextOptionsBuilder: {
 
 export type SqlEngineDbContextOptionsBuilder = SqlEngineDbContextOptionsBuilder$instance;
 
-export interface SqlEngineDbContextOptionsBuilderBase_1$instance<TSelf extends SqlEngineDbContextOptionsBuilderBase_1<TSelf>> extends RelationalDbContextOptionsBuilder_2<TSelf, SqlServerOptionsExtension> {
+export interface SqlEngineDbContextOptionsBuilderBase_1$instance<TSelf extends unknown & SqlEngineDbContextOptionsBuilderBase_1<TSelf>> extends RelationalDbContextOptionsBuilder_2<TSelf, SqlServerOptionsExtension> {
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Infrastructure_SqlEngineDbContextOptionsBuilderBase_1: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IRelationalDbContextOptionsBuilderInfrastructure: never;
@@ -84,11 +84,11 @@ export interface SqlEngineDbContextOptionsBuilderBase_1$instance<TSelf extends S
 }
 
 
-export const SqlEngineDbContextOptionsBuilderBase_1: (abstract new<TSelf extends SqlEngineDbContextOptionsBuilderBase_1<TSelf>>(optionsBuilder: DbContextOptionsBuilder) => SqlEngineDbContextOptionsBuilderBase_1<TSelf>) & {
+export const SqlEngineDbContextOptionsBuilderBase_1: (abstract new<TSelf extends unknown & SqlEngineDbContextOptionsBuilderBase_1<TSelf>>(optionsBuilder: DbContextOptionsBuilder) => SqlEngineDbContextOptionsBuilderBase_1<TSelf>) & {
 };
 
 
-export type SqlEngineDbContextOptionsBuilderBase_1<TSelf extends SqlEngineDbContextOptionsBuilderBase_1<TSelf>> = SqlEngineDbContextOptionsBuilderBase_1$instance<TSelf>;
+export type SqlEngineDbContextOptionsBuilderBase_1<TSelf extends unknown & SqlEngineDbContextOptionsBuilderBase_1<TSelf>> = SqlEngineDbContextOptionsBuilderBase_1$instance<TSelf>;
 
 export interface SqlServerDbContextOptionsBuilder$instance extends SqlEngineDbContextOptionsBuilderBase_1<SqlServerDbContextOptionsBuilder> {
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Infrastructure_SqlServerDbContextOptionsBuilder: never;
