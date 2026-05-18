@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
-      "clrName": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
-      "assemblyName": "Microsoft.IdentityModel.Tokens",
+      "targetName": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
+      "ownerIdentity": "Microsoft.IdentityModel.Tokens",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,13 +17,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions::BaseConfigurationComparer:System.Collections.Generic.IEqualityComparer_1[[Microsoft.IdentityModel.Tokens.BaseConfiguration,Microsoft.IdentityModel.Tokens,Version=7.7.1.0,Culture=neutral,PublicKeyToken=31bf3856ad364e35]]",
-          "clrName": "BaseConfigurationComparer",
+          "targetName": "BaseConfigurationComparer",
           "metadataToken": 385876254,
           "canonicalSignature": ":System.Collections.Generic.IEqualityComparer_1[[Microsoft.IdentityModel.Tokens.BaseConfiguration,Microsoft.IdentityModel.Tokens,Version=7.7.1.0,Culture=neutral,PublicKeyToken=31bf3856ad364e35]]",
           "normalizedSignature": "BaseConfigurationComparer|:System.Collections.Generic.IEqualityComparer_1[[Microsoft.IdentityModel.Tokens.BaseConfiguration,Microsoft.IdentityModel.Tokens,Version=7.7.1.0,Culture=neutral,PublicKeyToken=31bf3856ad364e35]]|static=false|accessor=getset",
@@ -37,12 +37,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Tokens"
+          "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
+          "ownerIdentity": "Microsoft.IdentityModel.Tokens"
         },
         {
           "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions::LastKnownGoodConfigurationSizeLimit:System.Int32",
-          "clrName": "LastKnownGoodConfigurationSizeLimit",
+          "targetName": "LastKnownGoodConfigurationSizeLimit",
           "metadataToken": 385876255,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "LastKnownGoodConfigurationSizeLimit|:System.Int32|static=false|accessor=getset",
@@ -56,12 +56,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Tokens"
+          "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
+          "ownerIdentity": "Microsoft.IdentityModel.Tokens"
         },
         {
           "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions::TaskCreationOptions:System.Threading.Tasks.TaskCreationOptions",
-          "clrName": "TaskCreationOptions",
+          "targetName": "TaskCreationOptions",
           "metadataToken": 385876256,
           "canonicalSignature": ":System.Threading.Tasks.TaskCreationOptions",
           "normalizedSignature": "TaskCreationOptions|:System.Threading.Tasks.TaskCreationOptions|static=false|accessor=getset",
@@ -75,12 +75,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Tokens"
+          "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
+          "ownerIdentity": "Microsoft.IdentityModel.Tokens"
         },
         {
           "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions::RemoveExpiredValues:System.Boolean",
-          "clrName": "RemoveExpiredValues",
+          "targetName": "RemoveExpiredValues",
           "metadataToken": 385876257,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "RemoveExpiredValues|:System.Boolean|static=false|accessor=getset",
@@ -94,22 +94,22 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Tokens"
+          "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
+          "ownerIdentity": "Microsoft.IdentityModel.Tokens"
         }
       ],
       "fields": [
         {
           "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions::DefaultLKGConfigurationSizeLimitSystem.Int32",
-          "clrName": "DefaultLKGConfigurationSizeLimit",
+          "targetName": "DefaultLKGConfigurationSizeLimit",
           "metadataToken": 67109536,
           "normalizedSignature": "DefaultLKGConfigurationSizeLimit|System.Int32|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Tokens"
+          "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
+          "ownerIdentity": "Microsoft.IdentityModel.Tokens"
         }
       ],
       "events": [],
@@ -122,8 +122,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Tokens"
+          "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
+          "ownerIdentity": "Microsoft.IdentityModel.Tokens"
         }
       ]
     }

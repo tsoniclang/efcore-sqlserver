@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Azure.Core:Azure.ErrorOptions",
-      "clrName": "Azure.ErrorOptions",
-      "assemblyName": "Azure.Core",
+      "targetName": "Azure.ErrorOptions",
+      "ownerIdentity": "Azure.Core",
       "metadataToken": 0,
       "kind": "Enum",
       "accessibility": "Public",
@@ -17,24 +17,24 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Enum",
-        "clrName": "System.Enum"
+        "targetName": "System.Enum"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.IComparable",
-          "clrName": "System.IComparable"
+          "targetName": "System.IComparable"
         },
         {
           "stableId": "System.Private.CoreLib:System.ISpanFormattable",
-          "clrName": "System.ISpanFormattable"
+          "targetName": "System.ISpanFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IFormattable",
-          "clrName": "System.IFormattable"
+          "targetName": "System.IFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IConvertible",
-          "clrName": "System.IConvertible"
+          "targetName": "System.IConvertible"
         }
       ],
       "methods": [],
@@ -42,39 +42,39 @@
       "fields": [
         {
           "stableId": "Azure.Core:Azure.ErrorOptions::value__System.Int32",
-          "clrName": "value__",
+          "targetName": "value__",
           "metadataToken": 67108868,
           "normalizedSignature": "value__|System.Int32|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.ErrorOptions",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.ErrorOptions",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.ErrorOptions::DefaultAzure.ErrorOptions",
-          "clrName": "Default",
+          "targetName": "Default",
           "metadataToken": 67108869,
           "normalizedSignature": "Default|Azure.ErrorOptions|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Azure.ErrorOptions",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.ErrorOptions",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.ErrorOptions::NoThrowAzure.ErrorOptions",
-          "clrName": "NoThrow",
+          "targetName": "NoThrow",
           "metadataToken": 67108870,
           "normalizedSignature": "NoThrow|Azure.ErrorOptions|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Azure.ErrorOptions",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.ErrorOptions",
+          "ownerIdentity": "Azure.Core"
         }
       ],
       "events": [],
@@ -82,8 +82,8 @@
     },
     {
       "stableId": "Azure.Core:Azure.WaitUntil",
-      "clrName": "Azure.WaitUntil",
-      "assemblyName": "Azure.Core",
+      "targetName": "Azure.WaitUntil",
+      "ownerIdentity": "Azure.Core",
       "metadataToken": 0,
       "kind": "Enum",
       "accessibility": "Public",
@@ -93,24 +93,24 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Enum",
-        "clrName": "System.Enum"
+        "targetName": "System.Enum"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.IComparable",
-          "clrName": "System.IComparable"
+          "targetName": "System.IComparable"
         },
         {
           "stableId": "System.Private.CoreLib:System.ISpanFormattable",
-          "clrName": "System.ISpanFormattable"
+          "targetName": "System.ISpanFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IFormattable",
-          "clrName": "System.IFormattable"
+          "targetName": "System.IFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IConvertible",
-          "clrName": "System.IConvertible"
+          "targetName": "System.IConvertible"
         }
       ],
       "methods": [],
@@ -118,39 +118,39 @@
       "fields": [
         {
           "stableId": "Azure.Core:Azure.WaitUntil::value__System.Int32",
-          "clrName": "value__",
+          "targetName": "value__",
           "metadataToken": 67108933,
           "normalizedSignature": "value__|System.Int32|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.WaitUntil",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.WaitUntil",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.WaitUntil::CompletedAzure.WaitUntil",
-          "clrName": "Completed",
+          "targetName": "Completed",
           "metadataToken": 67108934,
           "normalizedSignature": "Completed|Azure.WaitUntil|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Azure.WaitUntil",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.WaitUntil",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.WaitUntil::StartedAzure.WaitUntil",
-          "clrName": "Started",
+          "targetName": "Started",
           "metadataToken": 67108935,
           "normalizedSignature": "Started|Azure.WaitUntil|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Azure.WaitUntil",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.WaitUntil",
+          "ownerIdentity": "Azure.Core"
         }
       ],
       "events": [],
@@ -158,8 +158,8 @@
     },
     {
       "stableId": "Azure.Core:Azure.ETag",
-      "clrName": "Azure.ETag",
-      "assemblyName": "Azure.Core",
+      "targetName": "Azure.ETag",
+      "ownerIdentity": "Azure.Core",
       "metadataToken": 0,
       "kind": "Struct",
       "accessibility": "Public",
@@ -169,12 +169,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.ValueType",
-        "clrName": "System.ValueType"
+        "targetName": "System.ValueType"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.IEquatable\u00601",
-          "clrName": "System.IEquatable\u00601",
+          "targetName": "System.IEquatable\u00601",
           "typeArguments": [
             "ETag"
           ]
@@ -183,7 +183,7 @@
       "methods": [
         {
           "stableId": "Azure.Core:Azure.ETag::Equals(Azure.ETag):System.Boolean",
-          "clrName": "Equals",
+          "targetName": "Equals",
           "metadataToken": 100663320,
           "canonicalSignature": "(Azure.ETag):System.Boolean",
           "normalizedSignature": "Equals|(Azure.ETag):System.Boolean|static=false",
@@ -197,13 +197,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Azure.ETag",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.ETag",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.ETag::Equals(System.String):System.Boolean",
-          "clrName": "Equals",
+          "targetName": "Equals",
           "metadataToken": 100663321,
           "canonicalSignature": "(System.String):System.Boolean",
           "normalizedSignature": "Equals|(System.String):System.Boolean|static=false",
@@ -217,13 +217,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.ETag",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.ETag",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.ETag::Equals(System.Object):System.Boolean",
-          "clrName": "Equals",
+          "targetName": "Equals",
           "metadataToken": 100663322,
           "canonicalSignature": "(System.Object):System.Boolean",
           "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
@@ -237,13 +237,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.ETag",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.ETag",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.ETag::GetHashCode():System.Int32",
-          "clrName": "GetHashCode",
+          "targetName": "GetHashCode",
           "metadataToken": 100663323,
           "canonicalSignature": "():System.Int32",
           "normalizedSignature": "GetHashCode|():System.Int32|static=false",
@@ -257,13 +257,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.ETag",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.ETag",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.ETag::ToString():System.String",
-          "clrName": "ToString",
+          "targetName": "ToString",
           "metadataToken": 100663324,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "ToString|():System.String|static=false",
@@ -277,13 +277,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.ETag",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.ETag",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.ETag::ToString(System.String):System.String",
-          "clrName": "ToString",
+          "targetName": "ToString",
           "metadataToken": 100663325,
           "canonicalSignature": "(System.String):System.String",
           "normalizedSignature": "ToString|(System.String):System.String|static=false",
@@ -297,8 +297,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.ETag",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.ETag",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         }
       ],
@@ -306,15 +306,15 @@
       "fields": [
         {
           "stableId": "Azure.Core:Azure.ETag::AllAzure.ETag",
-          "clrName": "All",
+          "targetName": "All",
           "metadataToken": 67108877,
           "normalizedSignature": "All|Azure.ETag|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.ETag",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.ETag",
+          "ownerIdentity": "Azure.Core"
         }
       ],
       "events": [],
@@ -327,15 +327,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Azure.ETag",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.ETag",
+          "ownerIdentity": "Azure.Core"
         }
       ]
     },
     {
       "stableId": "Azure.Core:Azure.HttpRange",
-      "clrName": "Azure.HttpRange",
-      "assemblyName": "Azure.Core",
+      "targetName": "Azure.HttpRange",
+      "ownerIdentity": "Azure.Core",
       "metadataToken": 0,
       "kind": "Struct",
       "accessibility": "Public",
@@ -345,12 +345,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.ValueType",
-        "clrName": "System.ValueType"
+        "targetName": "System.ValueType"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.IEquatable\u00601",
-          "clrName": "System.IEquatable\u00601",
+          "targetName": "System.IEquatable\u00601",
           "typeArguments": [
             "HttpRange"
           ]
@@ -359,7 +359,7 @@
       "methods": [
         {
           "stableId": "Azure.Core:Azure.HttpRange::ToString():System.String",
-          "clrName": "ToString",
+          "targetName": "ToString",
           "metadataToken": 100663339,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "ToString|():System.String|static=false",
@@ -373,13 +373,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.HttpRange",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.HttpRange",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.HttpRange::Equals(Azure.HttpRange):System.Boolean",
-          "clrName": "Equals",
+          "targetName": "Equals",
           "metadataToken": 100663342,
           "canonicalSignature": "(Azure.HttpRange):System.Boolean",
           "normalizedSignature": "Equals|(Azure.HttpRange):System.Boolean|static=false",
@@ -393,13 +393,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Azure.HttpRange",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.HttpRange",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.HttpRange::Equals(System.Object):System.Boolean",
-          "clrName": "Equals",
+          "targetName": "Equals",
           "metadataToken": 100663343,
           "canonicalSignature": "(System.Object):System.Boolean",
           "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
@@ -413,13 +413,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.HttpRange",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.HttpRange",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.HttpRange::GetHashCode():System.Int32",
-          "clrName": "GetHashCode",
+          "targetName": "GetHashCode",
           "metadataToken": 100663344,
           "canonicalSignature": "():System.Int32",
           "normalizedSignature": "GetHashCode|():System.Int32|static=false",
@@ -433,15 +433,15 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.HttpRange",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.HttpRange",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Azure.Core:Azure.HttpRange::Offset:System.Int64",
-          "clrName": "Offset",
+          "targetName": "Offset",
           "metadataToken": 385875975,
           "canonicalSignature": ":System.Int64",
           "normalizedSignature": "Offset|:System.Int64|static=false|accessor=get",
@@ -455,12 +455,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.HttpRange",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.HttpRange",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.HttpRange::Length:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "Length",
+          "targetName": "Length",
           "metadataToken": 385875976,
           "canonicalSignature": ":System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "Length|:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
@@ -474,8 +474,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.HttpRange",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.HttpRange",
+          "ownerIdentity": "Azure.Core"
         }
       ],
       "fields": [],
@@ -489,15 +489,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Azure.HttpRange",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.HttpRange",
+          "ownerIdentity": "Azure.Core"
         }
       ]
     },
     {
       "stableId": "Azure.Core:Azure.AsyncPageable\u00601",
-      "clrName": "Azure.AsyncPageable\u00601",
-      "assemblyName": "Azure.Core",
+      "targetName": "Azure.AsyncPageable\u00601",
+      "ownerIdentity": "Azure.Core",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -507,12 +507,12 @@
       "arity": 1,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.Collections.Generic.IAsyncEnumerable\u00601",
-          "clrName": "System.Collections.Generic.IAsyncEnumerable\u00601",
+          "targetName": "System.Collections.Generic.IAsyncEnumerable\u00601",
           "typeArguments": [
             "T"
           ]
@@ -524,7 +524,7 @@
       "methods": [
         {
           "stableId": "Azure.Core:Azure.AsyncPageable\u00601::AsPages(System.String,System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):IAsyncEnumerable_1",
-          "clrName": "AsPages",
+          "targetName": "AsPages",
           "metadataToken": 100663300,
           "canonicalSignature": "(System.String,System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):IAsyncEnumerable_1",
           "normalizedSignature": "AsPages|(System.String,System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):IAsyncEnumerable_1|static=false",
@@ -538,13 +538,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.AsyncPageable\u00601",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.AsyncPageable\u00601",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.AsyncPageable\u00601::GetAsyncEnumerator(System.Threading.CancellationToken):IAsyncEnumerator_1",
-          "clrName": "GetAsyncEnumerator",
+          "targetName": "GetAsyncEnumerator",
           "metadataToken": 100663301,
           "canonicalSignature": "(System.Threading.CancellationToken):IAsyncEnumerator_1",
           "normalizedSignature": "GetAsyncEnumerator|(System.Threading.CancellationToken):IAsyncEnumerator_1|static=false",
@@ -558,13 +558,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.AsyncPageable\u00601",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.AsyncPageable\u00601",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.AsyncPageable\u00601::FromPages(IEnumerable_1):AsyncPageable_1",
-          "clrName": "FromPages",
+          "targetName": "FromPages",
           "metadataToken": 100663302,
           "canonicalSignature": "(IEnumerable_1):AsyncPageable_1",
           "normalizedSignature": "FromPages|(IEnumerable_1):AsyncPageable_1|static=true",
@@ -578,13 +578,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.AsyncPageable\u00601",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.AsyncPageable\u00601",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.AsyncPageable\u00601::ToString():System.String",
-          "clrName": "ToString",
+          "targetName": "ToString",
           "metadataToken": 100663303,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "ToString|():System.String|static=false",
@@ -598,13 +598,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.AsyncPageable\u00601",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.AsyncPageable\u00601",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.AsyncPageable\u00601::Equals(System.Object):System.Boolean",
-          "clrName": "Equals",
+          "targetName": "Equals",
           "metadataToken": 100663304,
           "canonicalSignature": "(System.Object):System.Boolean",
           "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
@@ -618,13 +618,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.AsyncPageable\u00601",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.AsyncPageable\u00601",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.AsyncPageable\u00601::GetHashCode():System.Int32",
-          "clrName": "GetHashCode",
+          "targetName": "GetHashCode",
           "metadataToken": 100663305,
           "canonicalSignature": "():System.Int32",
           "normalizedSignature": "GetHashCode|():System.Int32|static=false",
@@ -638,15 +638,15 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.AsyncPageable\u00601",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.AsyncPageable\u00601",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Azure.Core:Azure.AsyncPageable\u00601::CancellationToken:System.Threading.CancellationToken",
-          "clrName": "CancellationToken",
+          "targetName": "CancellationToken",
           "metadataToken": 385875969,
           "canonicalSignature": ":System.Threading.CancellationToken",
           "normalizedSignature": "CancellationToken|:System.Threading.CancellationToken|static=false|accessor=get",
@@ -660,8 +660,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Protected",
-          "declaringClrType": "Azure.AsyncPageable\u00601",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.AsyncPageable\u00601",
+          "ownerIdentity": "Azure.Core"
         }
       ],
       "fields": [],
@@ -675,8 +675,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Protected",
-          "declaringClrType": "Azure.AsyncPageable\u00601",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.AsyncPageable\u00601",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.AsyncPageable\u00601::.ctor(System.Threading.CancellationToken):void",
@@ -686,15 +686,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Protected",
-          "declaringClrType": "Azure.AsyncPageable\u00601",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.AsyncPageable\u00601",
+          "ownerIdentity": "Azure.Core"
         }
       ]
     },
     {
       "stableId": "Azure.Core:Azure.AzureKeyCredential",
-      "clrName": "Azure.AzureKeyCredential",
-      "assemblyName": "Azure.Core",
+      "targetName": "Azure.AzureKeyCredential",
+      "ownerIdentity": "Azure.Core",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -704,13 +704,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.ClientModel:System.ClientModel.ApiKeyCredential",
-        "clrName": "System.ClientModel.ApiKeyCredential"
+        "targetName": "System.ClientModel.ApiKeyCredential"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Azure.Core:Azure.AzureKeyCredential::Key:System.String",
-          "clrName": "Key",
+          "targetName": "Key",
           "metadataToken": 385875970,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Key|:System.String|static=false|accessor=getset",
@@ -724,8 +724,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.AzureKeyCredential",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.AzureKeyCredential",
+          "ownerIdentity": "Azure.Core"
         }
       ],
       "fields": [],
@@ -739,15 +739,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Azure.AzureKeyCredential",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.AzureKeyCredential",
+          "ownerIdentity": "Azure.Core"
         }
       ]
     },
     {
       "stableId": "Azure.Core:Azure.AzureNamedKeyCredential",
-      "clrName": "Azure.AzureNamedKeyCredential",
-      "assemblyName": "Azure.Core",
+      "targetName": "Azure.AzureNamedKeyCredential",
+      "ownerIdentity": "Azure.Core",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -757,12 +757,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Azure.Core:Azure.AzureNamedKeyCredential::Update(System.String,System.String):System.Void",
-          "clrName": "Update",
+          "targetName": "Update",
           "metadataToken": 100663311,
           "canonicalSignature": "(System.String,System.String):System.Void",
           "normalizedSignature": "Update|(System.String,System.String):System.Void|static=false",
@@ -776,13 +776,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.AzureNamedKeyCredential",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.AzureNamedKeyCredential",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.AzureNamedKeyCredential::Deconstruct(System.String\u0026,System.String\u0026):System.Void",
-          "clrName": "Deconstruct",
+          "targetName": "Deconstruct",
           "metadataToken": 100663312,
           "canonicalSignature": "(System.String\u0026,System.String\u0026):System.Void",
           "normalizedSignature": "Deconstruct|(System.String\u0026,System.String\u0026):System.Void|static=false",
@@ -796,8 +796,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.AzureNamedKeyCredential",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.AzureNamedKeyCredential",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false,
           "parameterModifiers": [
             {
@@ -814,7 +814,7 @@
       "properties": [
         {
           "stableId": "Azure.Core:Azure.AzureNamedKeyCredential::Name:System.String",
-          "clrName": "Name",
+          "targetName": "Name",
           "metadataToken": 385875971,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Name|:System.String|static=false|accessor=get",
@@ -828,8 +828,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.AzureNamedKeyCredential",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.AzureNamedKeyCredential",
+          "ownerIdentity": "Azure.Core"
         }
       ],
       "fields": [],
@@ -843,15 +843,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Azure.AzureNamedKeyCredential",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.AzureNamedKeyCredential",
+          "ownerIdentity": "Azure.Core"
         }
       ]
     },
     {
       "stableId": "Azure.Core:Azure.AzureSasCredential",
-      "clrName": "Azure.AzureSasCredential",
-      "assemblyName": "Azure.Core",
+      "targetName": "Azure.AzureSasCredential",
+      "ownerIdentity": "Azure.Core",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -861,12 +861,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Azure.Core:Azure.AzureSasCredential::Update(System.String):System.Void",
-          "clrName": "Update",
+          "targetName": "Update",
           "metadataToken": 100663316,
           "canonicalSignature": "(System.String):System.Void",
           "normalizedSignature": "Update|(System.String):System.Void|static=false",
@@ -880,15 +880,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.AzureSasCredential",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.AzureSasCredential",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Azure.Core:Azure.AzureSasCredential::Signature:System.String",
-          "clrName": "Signature",
+          "targetName": "Signature",
           "metadataToken": 385875972,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Signature|:System.String|static=false|accessor=getset",
@@ -902,8 +902,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.AzureSasCredential",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.AzureSasCredential",
+          "ownerIdentity": "Azure.Core"
         }
       ],
       "fields": [],
@@ -917,15 +917,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Azure.AzureSasCredential",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.AzureSasCredential",
+          "ownerIdentity": "Azure.Core"
         }
       ]
     },
     {
       "stableId": "Azure.Core:Azure.HttpAuthorization",
-      "clrName": "Azure.HttpAuthorization",
-      "assemblyName": "Azure.Core",
+      "targetName": "Azure.HttpAuthorization",
+      "ownerIdentity": "Azure.Core",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -935,12 +935,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Azure.Core:Azure.HttpAuthorization::ToString():System.String",
-          "clrName": "ToString",
+          "targetName": "ToString",
           "metadataToken": 100663335,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "ToString|():System.String|static=false",
@@ -954,15 +954,15 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.HttpAuthorization",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.HttpAuthorization",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Azure.Core:Azure.HttpAuthorization::Scheme:System.String",
-          "clrName": "Scheme",
+          "targetName": "Scheme",
           "metadataToken": 385875973,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Scheme|:System.String|static=false|accessor=get",
@@ -976,12 +976,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.HttpAuthorization",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.HttpAuthorization",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.HttpAuthorization::Parameter:System.String",
-          "clrName": "Parameter",
+          "targetName": "Parameter",
           "metadataToken": 385875974,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Parameter|:System.String|static=false|accessor=get",
@@ -995,8 +995,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.HttpAuthorization",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.HttpAuthorization",
+          "ownerIdentity": "Azure.Core"
         }
       ],
       "fields": [],
@@ -1010,15 +1010,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Azure.HttpAuthorization",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.HttpAuthorization",
+          "ownerIdentity": "Azure.Core"
         }
       ]
     },
     {
       "stableId": "Azure.Core:Azure.JsonPatchDocument",
-      "clrName": "Azure.JsonPatchDocument",
-      "assemblyName": "Azure.Core",
+      "targetName": "Azure.JsonPatchDocument",
+      "ownerIdentity": "Azure.Core",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1028,12 +1028,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Azure.Core:Azure.JsonPatchDocument::AppendAddRaw(System.String,System.String):System.Void",
-          "clrName": "AppendAddRaw",
+          "targetName": "AppendAddRaw",
           "metadataToken": 100663355,
           "canonicalSignature": "(System.String,System.String):System.Void",
           "normalizedSignature": "AppendAddRaw|(System.String,System.String):System.Void|static=false",
@@ -1047,13 +1047,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.JsonPatchDocument",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.JsonPatchDocument",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.JsonPatchDocument::AppendAdd(System.String,T):System.Void",
-          "clrName": "AppendAdd",
+          "targetName": "AppendAdd",
           "metadataToken": 100663356,
           "canonicalSignature": "(System.String,T):System.Void",
           "normalizedSignature": "AppendAdd|(System.String,T):System.Void|static=false",
@@ -1067,13 +1067,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.JsonPatchDocument",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.JsonPatchDocument",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.JsonPatchDocument::AppendReplaceRaw(System.String,System.String):System.Void",
-          "clrName": "AppendReplaceRaw",
+          "targetName": "AppendReplaceRaw",
           "metadataToken": 100663357,
           "canonicalSignature": "(System.String,System.String):System.Void",
           "normalizedSignature": "AppendReplaceRaw|(System.String,System.String):System.Void|static=false",
@@ -1087,13 +1087,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.JsonPatchDocument",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.JsonPatchDocument",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.JsonPatchDocument::AppendReplace(System.String,T):System.Void",
-          "clrName": "AppendReplace",
+          "targetName": "AppendReplace",
           "metadataToken": 100663358,
           "canonicalSignature": "(System.String,T):System.Void",
           "normalizedSignature": "AppendReplace|(System.String,T):System.Void|static=false",
@@ -1107,13 +1107,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.JsonPatchDocument",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.JsonPatchDocument",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.JsonPatchDocument::AppendCopy(System.String,System.String):System.Void",
-          "clrName": "AppendCopy",
+          "targetName": "AppendCopy",
           "metadataToken": 100663359,
           "canonicalSignature": "(System.String,System.String):System.Void",
           "normalizedSignature": "AppendCopy|(System.String,System.String):System.Void|static=false",
@@ -1127,13 +1127,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.JsonPatchDocument",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.JsonPatchDocument",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.JsonPatchDocument::AppendMove(System.String,System.String):System.Void",
-          "clrName": "AppendMove",
+          "targetName": "AppendMove",
           "metadataToken": 100663360,
           "canonicalSignature": "(System.String,System.String):System.Void",
           "normalizedSignature": "AppendMove|(System.String,System.String):System.Void|static=false",
@@ -1147,13 +1147,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.JsonPatchDocument",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.JsonPatchDocument",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.JsonPatchDocument::AppendRemove(System.String):System.Void",
-          "clrName": "AppendRemove",
+          "targetName": "AppendRemove",
           "metadataToken": 100663361,
           "canonicalSignature": "(System.String):System.Void",
           "normalizedSignature": "AppendRemove|(System.String):System.Void|static=false",
@@ -1167,13 +1167,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.JsonPatchDocument",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.JsonPatchDocument",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.JsonPatchDocument::AppendTestRaw(System.String,System.String):System.Void",
-          "clrName": "AppendTestRaw",
+          "targetName": "AppendTestRaw",
           "metadataToken": 100663362,
           "canonicalSignature": "(System.String,System.String):System.Void",
           "normalizedSignature": "AppendTestRaw|(System.String,System.String):System.Void|static=false",
@@ -1187,13 +1187,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.JsonPatchDocument",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.JsonPatchDocument",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.JsonPatchDocument::AppendTest(System.String,T):System.Void",
-          "clrName": "AppendTest",
+          "targetName": "AppendTest",
           "metadataToken": 100663363,
           "canonicalSignature": "(System.String,T):System.Void",
           "normalizedSignature": "AppendTest|(System.String,T):System.Void|static=false",
@@ -1207,13 +1207,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.JsonPatchDocument",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.JsonPatchDocument",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.JsonPatchDocument::ToBytes():System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "ToBytes",
+          "targetName": "ToBytes",
           "metadataToken": 100663364,
           "canonicalSignature": "():System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "ToBytes|():System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
@@ -1227,13 +1227,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.JsonPatchDocument",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.JsonPatchDocument",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.JsonPatchDocument::ToString():System.String",
-          "clrName": "ToString",
+          "targetName": "ToString",
           "metadataToken": 100663365,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "ToString|():System.String|static=false",
@@ -1247,8 +1247,8 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.JsonPatchDocument",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.JsonPatchDocument",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         }
       ],
@@ -1264,8 +1264,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Azure.JsonPatchDocument",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.JsonPatchDocument",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.JsonPatchDocument::.ctor(Azure.Core.Serialization.ObjectSerializer):void",
@@ -1275,8 +1275,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Azure.JsonPatchDocument",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.JsonPatchDocument",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.JsonPatchDocument::.ctor(System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
@@ -1286,8 +1286,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Azure.JsonPatchDocument",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.JsonPatchDocument",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.JsonPatchDocument::.ctor(System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Azure.Core.Serialization.ObjectSerializer):void",
@@ -1297,15 +1297,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Azure.JsonPatchDocument",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.JsonPatchDocument",
+          "ownerIdentity": "Azure.Core"
         }
       ]
     },
     {
       "stableId": "Azure.Core:Azure.MatchConditions",
-      "clrName": "Azure.MatchConditions",
-      "assemblyName": "Azure.Core",
+      "targetName": "Azure.MatchConditions",
+      "ownerIdentity": "Azure.Core",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1315,13 +1315,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Azure.Core:Azure.MatchConditions::IfMatch:System.Nullable_1[[Azure.ETag,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
-          "clrName": "IfMatch",
+          "targetName": "IfMatch",
           "metadataToken": 385875980,
           "canonicalSignature": ":System.Nullable_1[[Azure.ETag,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
           "normalizedSignature": "IfMatch|:System.Nullable_1[[Azure.ETag,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]|static=false|accessor=getset",
@@ -1335,12 +1335,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.MatchConditions",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.MatchConditions",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.MatchConditions::IfNoneMatch:System.Nullable_1[[Azure.ETag,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
-          "clrName": "IfNoneMatch",
+          "targetName": "IfNoneMatch",
           "metadataToken": 385875981,
           "canonicalSignature": ":System.Nullable_1[[Azure.ETag,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
           "normalizedSignature": "IfNoneMatch|:System.Nullable_1[[Azure.ETag,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]|static=false|accessor=getset",
@@ -1354,8 +1354,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.MatchConditions",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.MatchConditions",
+          "ownerIdentity": "Azure.Core"
         }
       ],
       "fields": [],
@@ -1369,15 +1369,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Azure.MatchConditions",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.MatchConditions",
+          "ownerIdentity": "Azure.Core"
         }
       ]
     },
     {
       "stableId": "Azure.Core:Azure.NullableResponse\u00601",
-      "clrName": "Azure.NullableResponse\u00601",
-      "assemblyName": "Azure.Core",
+      "targetName": "Azure.NullableResponse\u00601",
+      "ownerIdentity": "Azure.Core",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1387,7 +1387,7 @@
       "arity": 1,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "typeParameters": [
         "T"
@@ -1395,7 +1395,7 @@
       "methods": [
         {
           "stableId": "Azure.Core:Azure.NullableResponse\u00601::GetRawResponse():Azure.Response",
-          "clrName": "GetRawResponse",
+          "targetName": "GetRawResponse",
           "metadataToken": 100663375,
           "canonicalSignature": "():Azure.Response",
           "normalizedSignature": "GetRawResponse|():Azure.Response|static=false",
@@ -1409,13 +1409,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.NullableResponse\u00601",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.NullableResponse\u00601",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.NullableResponse\u00601::Equals(System.Object):System.Boolean",
-          "clrName": "Equals",
+          "targetName": "Equals",
           "metadataToken": 100663376,
           "canonicalSignature": "(System.Object):System.Boolean",
           "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
@@ -1429,13 +1429,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.NullableResponse\u00601",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.NullableResponse\u00601",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.NullableResponse\u00601::GetHashCode():System.Int32",
-          "clrName": "GetHashCode",
+          "targetName": "GetHashCode",
           "metadataToken": 100663377,
           "canonicalSignature": "():System.Int32",
           "normalizedSignature": "GetHashCode|():System.Int32|static=false",
@@ -1449,13 +1449,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.NullableResponse\u00601",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.NullableResponse\u00601",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.NullableResponse\u00601::ToString():System.String",
-          "clrName": "ToString",
+          "targetName": "ToString",
           "metadataToken": 100663378,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "ToString|():System.String|static=false",
@@ -1469,15 +1469,15 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.NullableResponse\u00601",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.NullableResponse\u00601",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Azure.Core:Azure.NullableResponse\u00601::HasValue:System.Boolean",
-          "clrName": "HasValue",
+          "targetName": "HasValue",
           "metadataToken": 385875982,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "HasValue|:System.Boolean|static=false|accessor=get",
@@ -1491,12 +1491,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.NullableResponse\u00601",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.NullableResponse\u00601",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.NullableResponse\u00601::Value:T",
-          "clrName": "Value",
+          "targetName": "Value",
           "metadataToken": 385875983,
           "canonicalSignature": ":T",
           "normalizedSignature": "Value|:T|static=false|accessor=get",
@@ -1510,8 +1510,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.NullableResponse\u00601",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.NullableResponse\u00601",
+          "ownerIdentity": "Azure.Core"
         }
       ],
       "fields": [],
@@ -1525,15 +1525,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Protected",
-          "declaringClrType": "Azure.NullableResponse\u00601",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.NullableResponse\u00601",
+          "ownerIdentity": "Azure.Core"
         }
       ]
     },
     {
       "stableId": "Azure.Core:Azure.Operation",
-      "clrName": "Azure.Operation",
-      "assemblyName": "Azure.Core",
+      "targetName": "Azure.Operation",
+      "ownerIdentity": "Azure.Core",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1543,12 +1543,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Azure.Core:Azure.Operation::Rehydrate(Azure.Core.Pipeline.HttpPipeline,Azure.Core.RehydrationToken,Azure.Core.ClientOptions):Operation_1",
-          "clrName": "Rehydrate",
+          "targetName": "Rehydrate",
           "metadataToken": 100663380,
           "canonicalSignature": "(Azure.Core.Pipeline.HttpPipeline,Azure.Core.RehydrationToken,Azure.Core.ClientOptions):Operation_1",
           "normalizedSignature": "Rehydrate|(Azure.Core.Pipeline.HttpPipeline,Azure.Core.RehydrationToken,Azure.Core.ClientOptions):Operation_1|static=true",
@@ -1562,13 +1562,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Operation",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Operation",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Operation::Rehydrate(Azure.Core.Pipeline.HttpPipeline,Azure.Core.RehydrationToken,Azure.Core.ClientOptions):Azure.Operation",
-          "clrName": "Rehydrate",
+          "targetName": "Rehydrate",
           "metadataToken": 100663381,
           "canonicalSignature": "(Azure.Core.Pipeline.HttpPipeline,Azure.Core.RehydrationToken,Azure.Core.ClientOptions):Azure.Operation",
           "normalizedSignature": "Rehydrate|(Azure.Core.Pipeline.HttpPipeline,Azure.Core.RehydrationToken,Azure.Core.ClientOptions):Azure.Operation|static=true",
@@ -1582,13 +1582,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Operation",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Operation",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Operation::RehydrateAsync(Azure.Core.Pipeline.HttpPipeline,Azure.Core.RehydrationToken,Azure.Core.ClientOptions):Task_1",
-          "clrName": "RehydrateAsync",
+          "targetName": "RehydrateAsync",
           "metadataToken": 100663382,
           "canonicalSignature": "(Azure.Core.Pipeline.HttpPipeline,Azure.Core.RehydrationToken,Azure.Core.ClientOptions):Task_1",
           "normalizedSignature": "RehydrateAsync|(Azure.Core.Pipeline.HttpPipeline,Azure.Core.RehydrationToken,Azure.Core.ClientOptions):Task_1|static=true",
@@ -1602,13 +1602,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Operation",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Operation",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Operation::RehydrateAsync(Azure.Core.Pipeline.HttpPipeline,Azure.Core.RehydrationToken,Azure.Core.ClientOptions):System.Threading.Tasks.Task_1[[Azure.Operation,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
-          "clrName": "RehydrateAsync",
+          "targetName": "RehydrateAsync",
           "metadataToken": 100663383,
           "canonicalSignature": "(Azure.Core.Pipeline.HttpPipeline,Azure.Core.RehydrationToken,Azure.Core.ClientOptions):System.Threading.Tasks.Task_1[[Azure.Operation,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
           "normalizedSignature": "RehydrateAsync|(Azure.Core.Pipeline.HttpPipeline,Azure.Core.RehydrationToken,Azure.Core.ClientOptions):System.Threading.Tasks.Task_1[[Azure.Operation,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]|static=true",
@@ -1622,13 +1622,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Operation",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Operation",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Operation::GetRehydrationToken():System.Nullable_1[[Azure.Core.RehydrationToken,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
-          "clrName": "GetRehydrationToken",
+          "targetName": "GetRehydrationToken",
           "metadataToken": 100663384,
           "canonicalSignature": "():System.Nullable_1[[Azure.Core.RehydrationToken,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
           "normalizedSignature": "GetRehydrationToken|():System.Nullable_1[[Azure.Core.RehydrationToken,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]|static=false",
@@ -1642,13 +1642,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Operation",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Operation",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Operation::GetRawResponse():Azure.Response",
-          "clrName": "GetRawResponse",
+          "targetName": "GetRawResponse",
           "metadataToken": 100663386,
           "canonicalSignature": "():Azure.Response",
           "normalizedSignature": "GetRawResponse|():Azure.Response|static=false",
@@ -1662,13 +1662,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Operation",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Operation",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Operation::UpdateStatusAsync(System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[Azure.Response,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
-          "clrName": "UpdateStatusAsync",
+          "targetName": "UpdateStatusAsync",
           "metadataToken": 100663388,
           "canonicalSignature": "(System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[Azure.Response,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
           "normalizedSignature": "UpdateStatusAsync|(System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[Azure.Response,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]|static=false",
@@ -1682,13 +1682,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Operation",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Operation",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Operation::UpdateStatus(System.Threading.CancellationToken):Azure.Response",
-          "clrName": "UpdateStatus",
+          "targetName": "UpdateStatus",
           "metadataToken": 100663389,
           "canonicalSignature": "(System.Threading.CancellationToken):Azure.Response",
           "normalizedSignature": "UpdateStatus|(System.Threading.CancellationToken):Azure.Response|static=false",
@@ -1702,13 +1702,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Operation",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Operation",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Operation::WaitForCompletionResponseAsync(System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[Azure.Response,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
-          "clrName": "WaitForCompletionResponseAsync",
+          "targetName": "WaitForCompletionResponseAsync",
           "metadataToken": 100663390,
           "canonicalSignature": "(System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[Azure.Response,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
           "normalizedSignature": "WaitForCompletionResponseAsync|(System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[Azure.Response,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]|static=false",
@@ -1722,13 +1722,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Operation",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Operation",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Operation::WaitForCompletionResponseAsync(System.TimeSpan,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[Azure.Response,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
-          "clrName": "WaitForCompletionResponseAsync",
+          "targetName": "WaitForCompletionResponseAsync",
           "metadataToken": 100663391,
           "canonicalSignature": "(System.TimeSpan,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[Azure.Response,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
           "normalizedSignature": "WaitForCompletionResponseAsync|(System.TimeSpan,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[Azure.Response,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]|static=false",
@@ -1742,13 +1742,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Operation",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Operation",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Operation::WaitForCompletionResponseAsync(Azure.Core.DelayStrategy,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[Azure.Response,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
-          "clrName": "WaitForCompletionResponseAsync",
+          "targetName": "WaitForCompletionResponseAsync",
           "metadataToken": 100663392,
           "canonicalSignature": "(Azure.Core.DelayStrategy,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[Azure.Response,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
           "normalizedSignature": "WaitForCompletionResponseAsync|(Azure.Core.DelayStrategy,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[Azure.Response,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]|static=false",
@@ -1762,13 +1762,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Operation",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Operation",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Operation::WaitForCompletionResponse(System.Threading.CancellationToken):Azure.Response",
-          "clrName": "WaitForCompletionResponse",
+          "targetName": "WaitForCompletionResponse",
           "metadataToken": 100663393,
           "canonicalSignature": "(System.Threading.CancellationToken):Azure.Response",
           "normalizedSignature": "WaitForCompletionResponse|(System.Threading.CancellationToken):Azure.Response|static=false",
@@ -1782,13 +1782,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Operation",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Operation",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Operation::WaitForCompletionResponse(System.TimeSpan,System.Threading.CancellationToken):Azure.Response",
-          "clrName": "WaitForCompletionResponse",
+          "targetName": "WaitForCompletionResponse",
           "metadataToken": 100663394,
           "canonicalSignature": "(System.TimeSpan,System.Threading.CancellationToken):Azure.Response",
           "normalizedSignature": "WaitForCompletionResponse|(System.TimeSpan,System.Threading.CancellationToken):Azure.Response|static=false",
@@ -1802,13 +1802,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Operation",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Operation",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Operation::WaitForCompletionResponse(Azure.Core.DelayStrategy,System.Threading.CancellationToken):Azure.Response",
-          "clrName": "WaitForCompletionResponse",
+          "targetName": "WaitForCompletionResponse",
           "metadataToken": 100663395,
           "canonicalSignature": "(Azure.Core.DelayStrategy,System.Threading.CancellationToken):Azure.Response",
           "normalizedSignature": "WaitForCompletionResponse|(Azure.Core.DelayStrategy,System.Threading.CancellationToken):Azure.Response|static=false",
@@ -1822,13 +1822,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Operation",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Operation",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Operation::Equals(System.Object):System.Boolean",
-          "clrName": "Equals",
+          "targetName": "Equals",
           "metadataToken": 100663398,
           "canonicalSignature": "(System.Object):System.Boolean",
           "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
@@ -1842,13 +1842,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Operation",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Operation",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Operation::GetHashCode():System.Int32",
-          "clrName": "GetHashCode",
+          "targetName": "GetHashCode",
           "metadataToken": 100663399,
           "canonicalSignature": "():System.Int32",
           "normalizedSignature": "GetHashCode|():System.Int32|static=false",
@@ -1862,13 +1862,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Operation",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Operation",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Operation::ToString():System.String",
-          "clrName": "ToString",
+          "targetName": "ToString",
           "metadataToken": 100663400,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "ToString|():System.String|static=false",
@@ -1882,15 +1882,15 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Operation",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Operation",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Azure.Core:Azure.Operation::Id:System.String",
-          "clrName": "Id",
+          "targetName": "Id",
           "metadataToken": 385875984,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Id|:System.String|static=false|accessor=get",
@@ -1904,12 +1904,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Operation",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.Operation",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.Operation::HasCompleted:System.Boolean",
-          "clrName": "HasCompleted",
+          "targetName": "HasCompleted",
           "metadataToken": 385875985,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "HasCompleted|:System.Boolean|static=false|accessor=get",
@@ -1923,8 +1923,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Operation",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.Operation",
+          "ownerIdentity": "Azure.Core"
         }
       ],
       "fields": [],
@@ -1938,15 +1938,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Protected",
-          "declaringClrType": "Azure.Operation",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.Operation",
+          "ownerIdentity": "Azure.Core"
         }
       ]
     },
     {
       "stableId": "Azure.Core:Azure.Operation\u00601",
-      "clrName": "Azure.Operation\u00601",
-      "assemblyName": "Azure.Core",
+      "targetName": "Azure.Operation\u00601",
+      "ownerIdentity": "Azure.Core",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1956,7 +1956,7 @@
       "arity": 1,
       "baseType": {
         "stableId": "Azure.Core:Azure.Operation",
-        "clrName": "Azure.Operation"
+        "targetName": "Azure.Operation"
       },
       "typeParameters": [
         "T"
@@ -1964,7 +1964,7 @@
       "methods": [
         {
           "stableId": "Azure.Core:Azure.Operation\u00601::WaitForCompletion(System.Threading.CancellationToken):Response_1",
-          "clrName": "WaitForCompletion",
+          "targetName": "WaitForCompletion",
           "metadataToken": 100663404,
           "canonicalSignature": "(System.Threading.CancellationToken):Response_1",
           "normalizedSignature": "WaitForCompletion|(System.Threading.CancellationToken):Response_1|static=false",
@@ -1978,13 +1978,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Operation\u00601",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Operation\u00601",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Operation\u00601::WaitForCompletion(System.TimeSpan,System.Threading.CancellationToken):Response_1",
-          "clrName": "WaitForCompletion",
+          "targetName": "WaitForCompletion",
           "metadataToken": 100663405,
           "canonicalSignature": "(System.TimeSpan,System.Threading.CancellationToken):Response_1",
           "normalizedSignature": "WaitForCompletion|(System.TimeSpan,System.Threading.CancellationToken):Response_1|static=false",
@@ -1998,13 +1998,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Operation\u00601",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Operation\u00601",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Operation\u00601::WaitForCompletionAsync(System.Threading.CancellationToken):ValueTask_1",
-          "clrName": "WaitForCompletionAsync",
+          "targetName": "WaitForCompletionAsync",
           "metadataToken": 100663406,
           "canonicalSignature": "(System.Threading.CancellationToken):ValueTask_1",
           "normalizedSignature": "WaitForCompletionAsync|(System.Threading.CancellationToken):ValueTask_1|static=false",
@@ -2018,13 +2018,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Operation\u00601",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Operation\u00601",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Operation\u00601::WaitForCompletionAsync(System.TimeSpan,System.Threading.CancellationToken):ValueTask_1",
-          "clrName": "WaitForCompletionAsync",
+          "targetName": "WaitForCompletionAsync",
           "metadataToken": 100663407,
           "canonicalSignature": "(System.TimeSpan,System.Threading.CancellationToken):ValueTask_1",
           "normalizedSignature": "WaitForCompletionAsync|(System.TimeSpan,System.Threading.CancellationToken):ValueTask_1|static=false",
@@ -2038,13 +2038,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Operation\u00601",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Operation\u00601",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Operation\u00601::WaitForCompletion(Azure.Core.DelayStrategy,System.Threading.CancellationToken):Response_1",
-          "clrName": "WaitForCompletion",
+          "targetName": "WaitForCompletion",
           "metadataToken": 100663408,
           "canonicalSignature": "(Azure.Core.DelayStrategy,System.Threading.CancellationToken):Response_1",
           "normalizedSignature": "WaitForCompletion|(Azure.Core.DelayStrategy,System.Threading.CancellationToken):Response_1|static=false",
@@ -2058,13 +2058,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Operation\u00601",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Operation\u00601",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Operation\u00601::WaitForCompletionAsync(Azure.Core.DelayStrategy,System.Threading.CancellationToken):ValueTask_1",
-          "clrName": "WaitForCompletionAsync",
+          "targetName": "WaitForCompletionAsync",
           "metadataToken": 100663409,
           "canonicalSignature": "(Azure.Core.DelayStrategy,System.Threading.CancellationToken):ValueTask_1",
           "normalizedSignature": "WaitForCompletionAsync|(Azure.Core.DelayStrategy,System.Threading.CancellationToken):ValueTask_1|static=false",
@@ -2078,13 +2078,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Operation\u00601",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Operation\u00601",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Operation\u00601::WaitForCompletionResponseAsync(System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[Azure.Response,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
-          "clrName": "WaitForCompletionResponseAsync",
+          "targetName": "WaitForCompletionResponseAsync",
           "metadataToken": 100663410,
           "canonicalSignature": "(System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[Azure.Response,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
           "normalizedSignature": "WaitForCompletionResponseAsync|(System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[Azure.Response,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]|static=false",
@@ -2098,13 +2098,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Operation\u00601",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Operation\u00601",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Operation\u00601::WaitForCompletionResponseAsync(System.TimeSpan,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[Azure.Response,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
-          "clrName": "WaitForCompletionResponseAsync",
+          "targetName": "WaitForCompletionResponseAsync",
           "metadataToken": 100663411,
           "canonicalSignature": "(System.TimeSpan,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[Azure.Response,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
           "normalizedSignature": "WaitForCompletionResponseAsync|(System.TimeSpan,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[Azure.Response,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]|static=false",
@@ -2118,13 +2118,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Operation\u00601",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Operation\u00601",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Operation\u00601::WaitForCompletionResponseAsync(Azure.Core.DelayStrategy,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1\u003CAzure.Response\u003E",
-          "clrName": "WaitForCompletionResponseAsync",
+          "targetName": "WaitForCompletionResponseAsync",
           "metadataToken": 0,
           "canonicalSignature": "(Azure.Core.DelayStrategy,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1\u003CAzure.Response\u003E",
           "normalizedSignature": "WaitForCompletionResponseAsync|(Azure.Core.DelayStrategy,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1\u003CAzure.Response\u003E|static=false",
@@ -2138,15 +2138,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Operation\u00601",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Operation\u00601",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Azure.Core:Azure.Operation\u00601::Value:T",
-          "clrName": "Value",
+          "targetName": "Value",
           "metadataToken": 385875986,
           "canonicalSignature": ":T",
           "normalizedSignature": "Value|:T|static=false|accessor=get",
@@ -2160,12 +2160,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Operation\u00601",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.Operation\u00601",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.Operation\u00601::HasValue:System.Boolean",
-          "clrName": "HasValue",
+          "targetName": "HasValue",
           "metadataToken": 385875987,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "HasValue|:System.Boolean|static=false|accessor=get",
@@ -2179,8 +2179,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Operation\u00601",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.Operation\u00601",
+          "ownerIdentity": "Azure.Core"
         }
       ],
       "fields": [],
@@ -2194,15 +2194,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Protected",
-          "declaringClrType": "Azure.Operation\u00601",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.Operation\u00601",
+          "ownerIdentity": "Azure.Core"
         }
       ]
     },
     {
       "stableId": "Azure.Core:Azure.Page\u00601",
-      "clrName": "Azure.Page\u00601",
-      "assemblyName": "Azure.Core",
+      "targetName": "Azure.Page\u00601",
+      "ownerIdentity": "Azure.Core",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -2212,7 +2212,7 @@
       "arity": 1,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "typeParameters": [
         "T"
@@ -2220,7 +2220,7 @@
       "methods": [
         {
           "stableId": "Azure.Core:Azure.Page\u00601::GetRawResponse():Azure.Response",
-          "clrName": "GetRawResponse",
+          "targetName": "GetRawResponse",
           "metadataToken": 100663415,
           "canonicalSignature": "():Azure.Response",
           "normalizedSignature": "GetRawResponse|():Azure.Response|static=false",
@@ -2234,13 +2234,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Page\u00601",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Page\u00601",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Page\u00601::FromValues(IReadOnlyList_1,System.String,Azure.Response):Page_1",
-          "clrName": "FromValues",
+          "targetName": "FromValues",
           "metadataToken": 100663416,
           "canonicalSignature": "(IReadOnlyList_1,System.String,Azure.Response):Page_1",
           "normalizedSignature": "FromValues|(IReadOnlyList_1,System.String,Azure.Response):Page_1|static=true",
@@ -2254,13 +2254,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Page\u00601",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Page\u00601",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Page\u00601::ToString():System.String",
-          "clrName": "ToString",
+          "targetName": "ToString",
           "metadataToken": 100663417,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "ToString|():System.String|static=false",
@@ -2274,13 +2274,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Page\u00601",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Page\u00601",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Page\u00601::Equals(System.Object):System.Boolean",
-          "clrName": "Equals",
+          "targetName": "Equals",
           "metadataToken": 100663418,
           "canonicalSignature": "(System.Object):System.Boolean",
           "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
@@ -2294,13 +2294,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Page\u00601",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Page\u00601",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Page\u00601::GetHashCode():System.Int32",
-          "clrName": "GetHashCode",
+          "targetName": "GetHashCode",
           "metadataToken": 100663419,
           "canonicalSignature": "():System.Int32",
           "normalizedSignature": "GetHashCode|():System.Int32|static=false",
@@ -2314,15 +2314,15 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Page\u00601",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Page\u00601",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Azure.Core:Azure.Page\u00601::Values:IReadOnlyList_1",
-          "clrName": "Values",
+          "targetName": "Values",
           "metadataToken": 385875988,
           "canonicalSignature": ":IReadOnlyList_1",
           "normalizedSignature": "Values|:IReadOnlyList_1|static=false|accessor=get",
@@ -2336,12 +2336,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Page\u00601",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.Page\u00601",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.Page\u00601::ContinuationToken:System.String",
-          "clrName": "ContinuationToken",
+          "targetName": "ContinuationToken",
           "metadataToken": 385875989,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "ContinuationToken|:System.String|static=false|accessor=get",
@@ -2355,8 +2355,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Page\u00601",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.Page\u00601",
+          "ownerIdentity": "Azure.Core"
         }
       ],
       "fields": [],
@@ -2370,15 +2370,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Protected",
-          "declaringClrType": "Azure.Page\u00601",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.Page\u00601",
+          "ownerIdentity": "Azure.Core"
         }
       ]
     },
     {
       "stableId": "Azure.Core:Azure.Pageable\u00601",
-      "clrName": "Azure.Pageable\u00601",
-      "assemblyName": "Azure.Core",
+      "targetName": "Azure.Pageable\u00601",
+      "ownerIdentity": "Azure.Core",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -2388,19 +2388,19 @@
       "arity": 1,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable\u00601",
-          "clrName": "System.Collections.Generic.IEnumerable\u00601",
+          "targetName": "System.Collections.Generic.IEnumerable\u00601",
           "typeArguments": [
             "T"
           ]
         },
         {
           "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
-          "clrName": "System.Collections.IEnumerable"
+          "targetName": "System.Collections.IEnumerable"
         }
       ],
       "typeParameters": [
@@ -2409,7 +2409,7 @@
       "methods": [
         {
           "stableId": "Azure.Core:Azure.Pageable\u00601::AsPages(System.String,System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):IEnumerable_1",
-          "clrName": "AsPages",
+          "targetName": "AsPages",
           "metadataToken": 100663424,
           "canonicalSignature": "(System.String,System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):IEnumerable_1",
           "normalizedSignature": "AsPages|(System.String,System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):IEnumerable_1|static=false",
@@ -2423,13 +2423,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Pageable\u00601",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Pageable\u00601",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Pageable\u00601::ToString():System.String",
-          "clrName": "ToString",
+          "targetName": "ToString",
           "metadataToken": 100663425,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "ToString|():System.String|static=false",
@@ -2443,13 +2443,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Pageable\u00601",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Pageable\u00601",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Pageable\u00601::GetEnumerator():IEnumerator_1",
-          "clrName": "GetEnumerator",
+          "targetName": "GetEnumerator",
           "metadataToken": 100663427,
           "canonicalSignature": "():IEnumerator_1",
           "normalizedSignature": "GetEnumerator|():IEnumerator_1|static=false",
@@ -2463,13 +2463,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Pageable\u00601",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Pageable\u00601",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Pageable\u00601::FromPages(IEnumerable_1):Pageable_1",
-          "clrName": "FromPages",
+          "targetName": "FromPages",
           "metadataToken": 100663428,
           "canonicalSignature": "(IEnumerable_1):Pageable_1",
           "normalizedSignature": "FromPages|(IEnumerable_1):Pageable_1|static=true",
@@ -2483,13 +2483,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Pageable\u00601",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Pageable\u00601",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Pageable\u00601::Equals(System.Object):System.Boolean",
-          "clrName": "Equals",
+          "targetName": "Equals",
           "metadataToken": 100663429,
           "canonicalSignature": "(System.Object):System.Boolean",
           "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
@@ -2503,13 +2503,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Pageable\u00601",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Pageable\u00601",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Pageable\u00601::GetHashCode():System.Int32",
-          "clrName": "GetHashCode",
+          "targetName": "GetHashCode",
           "metadataToken": 100663430,
           "canonicalSignature": "():System.Int32",
           "normalizedSignature": "GetHashCode|():System.Int32|static=false",
@@ -2523,15 +2523,15 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Pageable\u00601",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Pageable\u00601",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Azure.Core:Azure.Pageable\u00601::CancellationToken:System.Threading.CancellationToken",
-          "clrName": "CancellationToken",
+          "targetName": "CancellationToken",
           "metadataToken": 385875990,
           "canonicalSignature": ":System.Threading.CancellationToken",
           "normalizedSignature": "CancellationToken|:System.Threading.CancellationToken|static=false|accessor=get",
@@ -2545,8 +2545,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Protected",
-          "declaringClrType": "Azure.Pageable\u00601",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.Pageable\u00601",
+          "ownerIdentity": "Azure.Core"
         }
       ],
       "fields": [],
@@ -2560,8 +2560,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Protected",
-          "declaringClrType": "Azure.Pageable\u00601",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.Pageable\u00601",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.Pageable\u00601::.ctor(System.Threading.CancellationToken):void",
@@ -2571,15 +2571,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Protected",
-          "declaringClrType": "Azure.Pageable\u00601",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.Pageable\u00601",
+          "ownerIdentity": "Azure.Core"
         }
       ]
     },
     {
       "stableId": "Azure.Core:Azure.PageableOperation\u00601",
-      "clrName": "Azure.PageableOperation\u00601",
-      "assemblyName": "Azure.Core",
+      "targetName": "Azure.PageableOperation\u00601",
+      "ownerIdentity": "Azure.Core",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -2589,7 +2589,7 @@
       "arity": 1,
       "baseType": {
         "stableId": "Azure.Core:Azure.Operation\u00601",
-        "clrName": "Azure.Operation\u00601",
+        "targetName": "Azure.Operation\u00601",
         "typeArguments": [
           "AsyncPageable_1[[T]]"
         ]
@@ -2600,7 +2600,7 @@
       "methods": [
         {
           "stableId": "Azure.Core:Azure.PageableOperation\u00601::GetValuesAsync(System.Threading.CancellationToken):AsyncPageable_1",
-          "clrName": "GetValuesAsync",
+          "targetName": "GetValuesAsync",
           "metadataToken": 100663432,
           "canonicalSignature": "(System.Threading.CancellationToken):AsyncPageable_1",
           "normalizedSignature": "GetValuesAsync|(System.Threading.CancellationToken):AsyncPageable_1|static=false",
@@ -2614,13 +2614,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.PageableOperation\u00601",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.PageableOperation\u00601",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.PageableOperation\u00601::GetValues(System.Threading.CancellationToken):Pageable_1",
-          "clrName": "GetValues",
+          "targetName": "GetValues",
           "metadataToken": 100663433,
           "canonicalSignature": "(System.Threading.CancellationToken):Pageable_1",
           "normalizedSignature": "GetValues|(System.Threading.CancellationToken):Pageable_1|static=false",
@@ -2634,15 +2634,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.PageableOperation\u00601",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.PageableOperation\u00601",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Azure.Core:Azure.PageableOperation\u00601::Value:AsyncPageable_1",
-          "clrName": "Value",
+          "targetName": "Value",
           "metadataToken": 385875991,
           "canonicalSignature": ":AsyncPageable_1",
           "normalizedSignature": "Value|:AsyncPageable_1|static=false|accessor=get",
@@ -2656,8 +2656,8 @@
           "isVirtual": true,
           "isOverride": true,
           "visibility": "Public",
-          "declaringClrType": "Azure.PageableOperation\u00601",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.PageableOperation\u00601",
+          "ownerIdentity": "Azure.Core"
         }
       ],
       "fields": [],
@@ -2671,15 +2671,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Protected",
-          "declaringClrType": "Azure.PageableOperation\u00601",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.PageableOperation\u00601",
+          "ownerIdentity": "Azure.Core"
         }
       ]
     },
     {
       "stableId": "Azure.Core:Azure.RequestConditions",
-      "clrName": "Azure.RequestConditions",
-      "assemblyName": "Azure.Core",
+      "targetName": "Azure.RequestConditions",
+      "ownerIdentity": "Azure.Core",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -2689,13 +2689,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "Azure.Core:Azure.MatchConditions",
-        "clrName": "Azure.MatchConditions"
+        "targetName": "Azure.MatchConditions"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Azure.Core:Azure.RequestConditions::IfModifiedSince:System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "IfModifiedSince",
+          "targetName": "IfModifiedSince",
           "metadataToken": 385875992,
           "canonicalSignature": ":System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "IfModifiedSince|:System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -2709,12 +2709,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.RequestConditions",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.RequestConditions",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.RequestConditions::IfUnmodifiedSince:System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "IfUnmodifiedSince",
+          "targetName": "IfUnmodifiedSince",
           "metadataToken": 385875993,
           "canonicalSignature": ":System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "IfUnmodifiedSince|:System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -2728,8 +2728,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.RequestConditions",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.RequestConditions",
+          "ownerIdentity": "Azure.Core"
         }
       ],
       "fields": [],
@@ -2743,15 +2743,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Azure.RequestConditions",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.RequestConditions",
+          "ownerIdentity": "Azure.Core"
         }
       ]
     },
     {
       "stableId": "Azure.Core:Azure.RequestContext",
-      "clrName": "Azure.RequestContext",
-      "assemblyName": "Azure.Core",
+      "targetName": "Azure.RequestContext",
+      "ownerIdentity": "Azure.Core",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -2761,12 +2761,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Azure.Core:Azure.RequestContext::AddPolicy(Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core.HttpPipelinePosition):System.Void",
-          "clrName": "AddPolicy",
+          "targetName": "AddPolicy",
           "metadataToken": 100663450,
           "canonicalSignature": "(Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core.HttpPipelinePosition):System.Void",
           "normalizedSignature": "AddPolicy|(Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core.HttpPipelinePosition):System.Void|static=false",
@@ -2780,13 +2780,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.RequestContext",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.RequestContext",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.RequestContext::AddClassifier(System.Int32,System.Boolean):System.Void",
-          "clrName": "AddClassifier",
+          "targetName": "AddClassifier",
           "metadataToken": 100663451,
           "canonicalSignature": "(System.Int32,System.Boolean):System.Void",
           "normalizedSignature": "AddClassifier|(System.Int32,System.Boolean):System.Void|static=false",
@@ -2800,13 +2800,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.RequestContext",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.RequestContext",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.RequestContext::AddClassifier(Azure.Core.ResponseClassificationHandler):System.Void",
-          "clrName": "AddClassifier",
+          "targetName": "AddClassifier",
           "metadataToken": 100663452,
           "canonicalSignature": "(Azure.Core.ResponseClassificationHandler):System.Void",
           "normalizedSignature": "AddClassifier|(Azure.Core.ResponseClassificationHandler):System.Void|static=false",
@@ -2820,15 +2820,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.RequestContext",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.RequestContext",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Azure.Core:Azure.RequestContext::ErrorOptions:Azure.ErrorOptions",
-          "clrName": "ErrorOptions",
+          "targetName": "ErrorOptions",
           "metadataToken": 385875997,
           "canonicalSignature": ":Azure.ErrorOptions",
           "normalizedSignature": "ErrorOptions|:Azure.ErrorOptions|static=false|accessor=getset",
@@ -2842,12 +2842,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.RequestContext",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.RequestContext",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.RequestContext::CancellationToken:System.Threading.CancellationToken",
-          "clrName": "CancellationToken",
+          "targetName": "CancellationToken",
           "metadataToken": 385875998,
           "canonicalSignature": ":System.Threading.CancellationToken",
           "normalizedSignature": "CancellationToken|:System.Threading.CancellationToken|static=false|accessor=getset",
@@ -2861,8 +2861,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.RequestContext",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.RequestContext",
+          "ownerIdentity": "Azure.Core"
         }
       ],
       "fields": [],
@@ -2876,15 +2876,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Azure.RequestContext",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.RequestContext",
+          "ownerIdentity": "Azure.Core"
         }
       ]
     },
     {
       "stableId": "Azure.Core:Azure.RequestFailedException",
-      "clrName": "Azure.RequestFailedException",
-      "assemblyName": "Azure.Core",
+      "targetName": "Azure.RequestFailedException",
+      "ownerIdentity": "Azure.Core",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -2894,18 +2894,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Exception",
-        "clrName": "System.Exception"
+        "targetName": "System.Exception"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.Runtime.Serialization.ISerializable",
-          "clrName": "System.Runtime.Serialization.ISerializable"
+          "targetName": "System.Runtime.Serialization.ISerializable"
         }
       ],
       "methods": [
         {
           "stableId": "Azure.Core:Azure.RequestFailedException::GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):System.Void",
-          "clrName": "GetObjectData",
+          "targetName": "GetObjectData",
           "metadataToken": 100663468,
           "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):System.Void",
           "normalizedSignature": "GetObjectData|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):System.Void|static=false",
@@ -2919,13 +2919,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.RequestFailedException",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.RequestFailedException",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.RequestFailedException::GetRawResponse():Azure.Response",
-          "clrName": "GetRawResponse",
+          "targetName": "GetRawResponse",
           "metadataToken": 100663469,
           "canonicalSignature": "():Azure.Response",
           "normalizedSignature": "GetRawResponse|():Azure.Response|static=false",
@@ -2939,15 +2939,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.RequestFailedException",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.RequestFailedException",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Azure.Core:Azure.RequestFailedException::Status:System.Int32",
-          "clrName": "Status",
+          "targetName": "Status",
           "metadataToken": 385875999,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Status|:System.Int32|static=false|accessor=get",
@@ -2961,12 +2961,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.RequestFailedException",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.RequestFailedException",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.RequestFailedException::ErrorCode:System.String",
-          "clrName": "ErrorCode",
+          "targetName": "ErrorCode",
           "metadataToken": 385876000,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "ErrorCode|:System.String|static=false|accessor=get",
@@ -2980,8 +2980,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.RequestFailedException",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.RequestFailedException",
+          "ownerIdentity": "Azure.Core"
         }
       ],
       "fields": [],
@@ -2995,8 +2995,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Azure.RequestFailedException",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.RequestFailedException",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.RequestFailedException::.ctor(System.String,System.Exception):void",
@@ -3006,8 +3006,8 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Azure.RequestFailedException",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.RequestFailedException",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.RequestFailedException::.ctor(System.Int32,System.String):void",
@@ -3017,8 +3017,8 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Azure.RequestFailedException",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.RequestFailedException",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.RequestFailedException::.ctor(System.Int32,System.String,System.Exception):void",
@@ -3028,8 +3028,8 @@
           "isStatic": false,
           "parameterCount": 3,
           "visibility": "Public",
-          "declaringClrType": "Azure.RequestFailedException",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.RequestFailedException",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.RequestFailedException::.ctor(System.Int32,System.String,System.String,System.Exception):void",
@@ -3039,8 +3039,8 @@
           "isStatic": false,
           "parameterCount": 4,
           "visibility": "Public",
-          "declaringClrType": "Azure.RequestFailedException",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.RequestFailedException",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.RequestFailedException::.ctor(Azure.Response):void",
@@ -3050,8 +3050,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Azure.RequestFailedException",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.RequestFailedException",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.RequestFailedException::.ctor(Azure.Response,System.Exception):void",
@@ -3061,8 +3061,8 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Azure.RequestFailedException",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.RequestFailedException",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.RequestFailedException::.ctor(Azure.Response,System.Exception,Azure.Core.RequestFailedDetailsParser):void",
@@ -3072,8 +3072,8 @@
           "isStatic": false,
           "parameterCount": 3,
           "visibility": "Public",
-          "declaringClrType": "Azure.RequestFailedException",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.RequestFailedException",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.RequestFailedException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
@@ -3083,15 +3083,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Protected",
-          "declaringClrType": "Azure.RequestFailedException",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.RequestFailedException",
+          "ownerIdentity": "Azure.Core"
         }
       ]
     },
     {
       "stableId": "Azure.Core:Azure.Response",
-      "clrName": "Azure.Response",
-      "assemblyName": "Azure.Core",
+      "targetName": "Azure.Response",
+      "ownerIdentity": "Azure.Core",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -3101,18 +3101,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.IDisposable",
-          "clrName": "System.IDisposable"
+          "targetName": "System.IDisposable"
         }
       ],
       "methods": [
         {
           "stableId": "Azure.Core:Azure.Response::Dispose():System.Void",
-          "clrName": "Dispose",
+          "targetName": "Dispose",
           "metadataToken": 100663483,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Dispose|():System.Void|static=false",
@@ -3126,13 +3126,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Response",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Response",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Response::TryGetHeader(System.String,System.String\u0026):System.Boolean",
-          "clrName": "TryGetHeader",
+          "targetName": "TryGetHeader",
           "metadataToken": 100663490,
           "canonicalSignature": "(System.String,System.String\u0026):System.Boolean",
           "normalizedSignature": "TryGetHeader|(System.String,System.String\u0026):System.Boolean|static=false",
@@ -3146,8 +3146,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "ProtectedInternal",
-          "declaringClrType": "Azure.Response",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Response",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false,
           "parameterModifiers": [
             {
@@ -3158,7 +3158,7 @@
         },
         {
           "stableId": "Azure.Core:Azure.Response::TryGetHeaderValues(System.String,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]\u0026):System.Boolean",
-          "clrName": "TryGetHeaderValues",
+          "targetName": "TryGetHeaderValues",
           "metadataToken": 100663491,
           "canonicalSignature": "(System.String,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]\u0026):System.Boolean",
           "normalizedSignature": "TryGetHeaderValues|(System.String,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]\u0026):System.Boolean|static=false",
@@ -3172,8 +3172,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "ProtectedInternal",
-          "declaringClrType": "Azure.Response",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Response",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false,
           "parameterModifiers": [
             {
@@ -3184,7 +3184,7 @@
         },
         {
           "stableId": "Azure.Core:Azure.Response::ContainsHeader(System.String):System.Boolean",
-          "clrName": "ContainsHeader",
+          "targetName": "ContainsHeader",
           "metadataToken": 100663492,
           "canonicalSignature": "(System.String):System.Boolean",
           "normalizedSignature": "ContainsHeader|(System.String):System.Boolean|static=false",
@@ -3198,13 +3198,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "ProtectedInternal",
-          "declaringClrType": "Azure.Response",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Response",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Response::EnumerateHeaders():System.Collections.Generic.IEnumerable_1[[Azure.Core.HttpHeader,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
-          "clrName": "EnumerateHeaders",
+          "targetName": "EnumerateHeaders",
           "metadataToken": 100663493,
           "canonicalSignature": "():System.Collections.Generic.IEnumerable_1[[Azure.Core.HttpHeader,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
           "normalizedSignature": "EnumerateHeaders|():System.Collections.Generic.IEnumerable_1[[Azure.Core.HttpHeader,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]|static=false",
@@ -3218,13 +3218,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "ProtectedInternal",
-          "declaringClrType": "Azure.Response",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Response",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Response::FromValue(T,Azure.Response):Response_1",
-          "clrName": "FromValue",
+          "targetName": "FromValue",
           "metadataToken": 100663494,
           "canonicalSignature": "(T,Azure.Response):Response_1",
           "normalizedSignature": "FromValue|(T,Azure.Response):Response_1|static=true",
@@ -3238,13 +3238,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Response",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Response",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Response::ToString():System.String",
-          "clrName": "ToString",
+          "targetName": "ToString",
           "metadataToken": 100663495,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "ToString|():System.String|static=false",
@@ -3258,15 +3258,15 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Response",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Response",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Azure.Core:Azure.Response::Status:System.Int32",
-          "clrName": "Status",
+          "targetName": "Status",
           "metadataToken": 385876001,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Status|:System.Int32|static=false|accessor=get",
@@ -3280,12 +3280,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Response",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.Response",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.Response::ReasonPhrase:System.String",
-          "clrName": "ReasonPhrase",
+          "targetName": "ReasonPhrase",
           "metadataToken": 385876002,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "ReasonPhrase|:System.String|static=false|accessor=get",
@@ -3299,12 +3299,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Response",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.Response",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.Response::ContentStream:System.IO.Stream",
-          "clrName": "ContentStream",
+          "targetName": "ContentStream",
           "metadataToken": 385876003,
           "canonicalSignature": ":System.IO.Stream",
           "normalizedSignature": "ContentStream|:System.IO.Stream|static=false|accessor=getset",
@@ -3318,12 +3318,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Response",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.Response",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.Response::ClientRequestId:System.String",
-          "clrName": "ClientRequestId",
+          "targetName": "ClientRequestId",
           "metadataToken": 385876004,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "ClientRequestId|:System.String|static=false|accessor=getset",
@@ -3337,12 +3337,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Response",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.Response",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.Response::Headers:Azure.Core.ResponseHeaders",
-          "clrName": "Headers",
+          "targetName": "Headers",
           "metadataToken": 385876005,
           "canonicalSignature": ":Azure.Core.ResponseHeaders",
           "normalizedSignature": "Headers|:Azure.Core.ResponseHeaders|static=false|accessor=get",
@@ -3356,12 +3356,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Response",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.Response",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.Response::Content:System.BinaryData",
-          "clrName": "Content",
+          "targetName": "Content",
           "metadataToken": 385876006,
           "canonicalSignature": ":System.BinaryData",
           "normalizedSignature": "Content|:System.BinaryData|static=false|accessor=get",
@@ -3375,12 +3375,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Response",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.Response",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.Response::IsError:System.Boolean",
-          "clrName": "IsError",
+          "targetName": "IsError",
           "metadataToken": 385876007,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsError|:System.Boolean|static=false|accessor=getset",
@@ -3394,8 +3394,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Response",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.Response",
+          "ownerIdentity": "Azure.Core"
         }
       ],
       "fields": [],
@@ -3409,15 +3409,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Protected",
-          "declaringClrType": "Azure.Response",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.Response",
+          "ownerIdentity": "Azure.Core"
         }
       ]
     },
     {
       "stableId": "Azure.Core:Azure.Response\u00601",
-      "clrName": "Azure.Response\u00601",
-      "assemblyName": "Azure.Core",
+      "targetName": "Azure.Response\u00601",
+      "ownerIdentity": "Azure.Core",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -3427,7 +3427,7 @@
       "arity": 1,
       "baseType": {
         "stableId": "Azure.Core:Azure.NullableResponse\u00601",
-        "clrName": "Azure.NullableResponse\u00601",
+        "targetName": "Azure.NullableResponse\u00601",
         "typeArguments": [
           "T"
         ]
@@ -3438,7 +3438,7 @@
       "methods": [
         {
           "stableId": "Azure.Core:Azure.Response\u00601::Equals(System.Object):System.Boolean",
-          "clrName": "Equals",
+          "targetName": "Equals",
           "metadataToken": 100663563,
           "canonicalSignature": "(System.Object):System.Boolean",
           "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
@@ -3452,13 +3452,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Response\u00601",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Response\u00601",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Response\u00601::GetHashCode():System.Int32",
-          "clrName": "GetHashCode",
+          "targetName": "GetHashCode",
           "metadataToken": 100663564,
           "canonicalSignature": "():System.Int32",
           "normalizedSignature": "GetHashCode|():System.Int32|static=false",
@@ -3472,15 +3472,15 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Response\u00601",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Response\u00601",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Azure.Core:Azure.Response\u00601::HasValue:System.Boolean",
-          "clrName": "HasValue",
+          "targetName": "HasValue",
           "metadataToken": 385876028,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "HasValue|:System.Boolean|static=false|accessor=get",
@@ -3494,12 +3494,12 @@
           "isVirtual": true,
           "isOverride": true,
           "visibility": "Public",
-          "declaringClrType": "Azure.Response\u00601",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.Response\u00601",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.Response\u00601::Value:T",
-          "clrName": "Value",
+          "targetName": "Value",
           "metadataToken": 385876029,
           "canonicalSignature": ":T",
           "normalizedSignature": "Value|:T|static=false|accessor=get",
@@ -3513,8 +3513,8 @@
           "isVirtual": true,
           "isOverride": true,
           "visibility": "Public",
-          "declaringClrType": "Azure.Response\u00601",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.Response\u00601",
+          "ownerIdentity": "Azure.Core"
         }
       ],
       "fields": [],
@@ -3528,15 +3528,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Protected",
-          "declaringClrType": "Azure.Response\u00601",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.Response\u00601",
+          "ownerIdentity": "Azure.Core"
         }
       ]
     },
     {
       "stableId": "Azure.Core:Azure.ResponseError",
-      "clrName": "Azure.ResponseError",
-      "assemblyName": "Azure.Core",
+      "targetName": "Azure.ResponseError",
+      "ownerIdentity": "Azure.Core",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -3546,19 +3546,19 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "System.ClientModel:System.ClientModel.Primitives.IJsonModel\u00601",
-          "clrName": "System.ClientModel.Primitives.IJsonModel\u00601",
+          "targetName": "System.ClientModel.Primitives.IJsonModel\u00601",
           "typeArguments": [
             "ResponseError"
           ]
         },
         {
           "stableId": "System.ClientModel:System.ClientModel.Primitives.IPersistableModel\u00601",
-          "clrName": "System.ClientModel.Primitives.IPersistableModel\u00601",
+          "targetName": "System.ClientModel.Primitives.IPersistableModel\u00601",
           "typeArguments": [
             "ResponseError"
           ]
@@ -3567,7 +3567,7 @@
       "methods": [
         {
           "stableId": "Azure.Core:Azure.ResponseError::ToString():System.String",
-          "clrName": "ToString",
+          "targetName": "ToString",
           "metadataToken": 100663506,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "ToString|():System.String|static=false",
@@ -3581,13 +3581,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.ResponseError",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.ResponseError",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.ClientModel:System.ClientModel.Primitives.IJsonModel\u00601::Write(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions):System.Void",
-          "clrName": "Write",
+          "targetName": "Write",
           "metadataToken": 100663689,
           "canonicalSignature": "(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions):System.Void",
           "normalizedSignature": "Write|(System.Text.Json.Utf8JsonWriter,System.ClientModel.Primitives.ModelReaderWriterOptions):System.Void|static=false",
@@ -3601,14 +3601,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.ClientModel.Primitives.IJsonModel\u00601",
-          "declaringAssemblyName": "System.ClientModel",
+          "ownerQualifiedName": "System.ClientModel.Primitives.IJsonModel\u00601",
+          "ownerIdentity": "System.ClientModel",
           "isExtensionMethod": false,
           "sourceInterface": "System.ClientModel.Primitives.IJsonModel\u00601"
         },
         {
           "stableId": "System.ClientModel:System.ClientModel.Primitives.IJsonModel\u00601::Create(System.Text.Json.Utf8JsonReader\u0026,System.ClientModel.Primitives.ModelReaderWriterOptions):T",
-          "clrName": "Create",
+          "targetName": "Create",
           "metadataToken": 100663690,
           "canonicalSignature": "(System.Text.Json.Utf8JsonReader\u0026,System.ClientModel.Primitives.ModelReaderWriterOptions):T",
           "normalizedSignature": "Create|(System.Text.Json.Utf8JsonReader\u0026,System.ClientModel.Primitives.ModelReaderWriterOptions):T|static=false",
@@ -3622,8 +3622,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.ClientModel.Primitives.IJsonModel\u00601",
-          "declaringAssemblyName": "System.ClientModel",
+          "ownerQualifiedName": "System.ClientModel.Primitives.IJsonModel\u00601",
+          "ownerIdentity": "System.ClientModel",
           "isExtensionMethod": false,
           "sourceInterface": "System.ClientModel.Primitives.IJsonModel\u00601",
           "parameterModifiers": [
@@ -3635,7 +3635,7 @@
         },
         {
           "stableId": "System.ClientModel:System.ClientModel.Primitives.IPersistableModel\u00601::Write(System.ClientModel.Primitives.ModelReaderWriterOptions):System.BinaryData",
-          "clrName": "Write",
+          "targetName": "Write",
           "metadataToken": 100663691,
           "canonicalSignature": "(System.ClientModel.Primitives.ModelReaderWriterOptions):System.BinaryData",
           "normalizedSignature": "Write|(System.ClientModel.Primitives.ModelReaderWriterOptions):System.BinaryData|static=false",
@@ -3649,14 +3649,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.ClientModel.Primitives.IPersistableModel\u00601",
-          "declaringAssemblyName": "System.ClientModel",
+          "ownerQualifiedName": "System.ClientModel.Primitives.IPersistableModel\u00601",
+          "ownerIdentity": "System.ClientModel",
           "isExtensionMethod": false,
           "sourceInterface": "System.ClientModel.Primitives.IPersistableModel\u00601"
         },
         {
           "stableId": "System.ClientModel:System.ClientModel.Primitives.IPersistableModel\u00601::Create(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions):T",
-          "clrName": "Create",
+          "targetName": "Create",
           "metadataToken": 100663692,
           "canonicalSignature": "(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions):T",
           "normalizedSignature": "Create|(System.BinaryData,System.ClientModel.Primitives.ModelReaderWriterOptions):T|static=false",
@@ -3670,14 +3670,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.ClientModel.Primitives.IPersistableModel\u00601",
-          "declaringAssemblyName": "System.ClientModel",
+          "ownerQualifiedName": "System.ClientModel.Primitives.IPersistableModel\u00601",
+          "ownerIdentity": "System.ClientModel",
           "isExtensionMethod": false,
           "sourceInterface": "System.ClientModel.Primitives.IPersistableModel\u00601"
         },
         {
           "stableId": "System.ClientModel:System.ClientModel.Primitives.IPersistableModel\u00601::GetFormatFromOptions(System.ClientModel.Primitives.ModelReaderWriterOptions):System.String",
-          "clrName": "GetFormatFromOptions",
+          "targetName": "GetFormatFromOptions",
           "metadataToken": 100663693,
           "canonicalSignature": "(System.ClientModel.Primitives.ModelReaderWriterOptions):System.String",
           "normalizedSignature": "GetFormatFromOptions|(System.ClientModel.Primitives.ModelReaderWriterOptions):System.String|static=false",
@@ -3691,8 +3691,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.ClientModel.Primitives.IPersistableModel\u00601",
-          "declaringAssemblyName": "System.ClientModel",
+          "ownerQualifiedName": "System.ClientModel.Primitives.IPersistableModel\u00601",
+          "ownerIdentity": "System.ClientModel",
           "isExtensionMethod": false,
           "sourceInterface": "System.ClientModel.Primitives.IPersistableModel\u00601"
         }
@@ -3700,7 +3700,7 @@
       "properties": [
         {
           "stableId": "Azure.Core:Azure.ResponseError::Code:System.String",
-          "clrName": "Code",
+          "targetName": "Code",
           "metadataToken": 385876010,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Code|:System.String|static=false|accessor=get",
@@ -3714,12 +3714,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.ResponseError",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.ResponseError",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.ResponseError::Message:System.String",
-          "clrName": "Message",
+          "targetName": "Message",
           "metadataToken": 385876011,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Message|:System.String|static=false|accessor=get",
@@ -3733,8 +3733,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.ResponseError",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.ResponseError",
+          "ownerIdentity": "Azure.Core"
         }
       ],
       "fields": [],
@@ -3748,8 +3748,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Azure.ResponseError",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.ResponseError",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.ResponseError::.ctor(System.String,System.String):void",
@@ -3759,15 +3759,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Azure.ResponseError",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.ResponseError",
+          "ownerIdentity": "Azure.Core"
         }
       ]
     },
     {
       "stableId": "Azure.Core:Azure.SyncAsyncEventArgs",
-      "clrName": "Azure.SyncAsyncEventArgs",
-      "assemblyName": "Azure.Core",
+      "targetName": "Azure.SyncAsyncEventArgs",
+      "ownerIdentity": "Azure.Core",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -3777,13 +3777,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.EventArgs",
-        "clrName": "System.EventArgs"
+        "targetName": "System.EventArgs"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Azure.Core:Azure.SyncAsyncEventArgs::IsRunningSynchronously:System.Boolean",
-          "clrName": "IsRunningSynchronously",
+          "targetName": "IsRunningSynchronously",
           "metadataToken": 385876030,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsRunningSynchronously|:System.Boolean|static=false|accessor=get",
@@ -3797,12 +3797,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.SyncAsyncEventArgs",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.SyncAsyncEventArgs",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.SyncAsyncEventArgs::CancellationToken:System.Threading.CancellationToken",
-          "clrName": "CancellationToken",
+          "targetName": "CancellationToken",
           "metadataToken": 385876031,
           "canonicalSignature": ":System.Threading.CancellationToken",
           "normalizedSignature": "CancellationToken|:System.Threading.CancellationToken|static=false|accessor=get",
@@ -3816,8 +3816,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.SyncAsyncEventArgs",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.SyncAsyncEventArgs",
+          "ownerIdentity": "Azure.Core"
         }
       ],
       "fields": [],
@@ -3831,15 +3831,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Azure.SyncAsyncEventArgs",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.SyncAsyncEventArgs",
+          "ownerIdentity": "Azure.Core"
         }
       ]
     },
     {
       "stableId": "Azure.Core:Azure.AzureCoreExtensions",
-      "clrName": "Azure.AzureCoreExtensions",
-      "assemblyName": "Azure.Core",
+      "targetName": "Azure.AzureCoreExtensions",
+      "ownerIdentity": "Azure.Core",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -3849,12 +3849,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Azure.Core:Azure.AzureCoreExtensions::ToObject(System.BinaryData,Azure.Core.Serialization.ObjectSerializer,System.Threading.CancellationToken):T",
-          "clrName": "ToObject",
+          "targetName": "ToObject",
           "metadataToken": 100663566,
           "canonicalSignature": "(System.BinaryData,Azure.Core.Serialization.ObjectSerializer,System.Threading.CancellationToken):T",
           "normalizedSignature": "ToObject|(System.BinaryData,Azure.Core.Serialization.ObjectSerializer,System.Threading.CancellationToken):T|static=true",
@@ -3868,13 +3868,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.AzureCoreExtensions",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.AzureCoreExtensions",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": true
         },
         {
           "stableId": "Azure.Core:Azure.AzureCoreExtensions::ToObjectAsync(System.BinaryData,Azure.Core.Serialization.ObjectSerializer,System.Threading.CancellationToken):ValueTask_1",
-          "clrName": "ToObjectAsync",
+          "targetName": "ToObjectAsync",
           "metadataToken": 100663567,
           "canonicalSignature": "(System.BinaryData,Azure.Core.Serialization.ObjectSerializer,System.Threading.CancellationToken):ValueTask_1",
           "normalizedSignature": "ToObjectAsync|(System.BinaryData,Azure.Core.Serialization.ObjectSerializer,System.Threading.CancellationToken):ValueTask_1|static=true",
@@ -3888,13 +3888,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.AzureCoreExtensions",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.AzureCoreExtensions",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": true
         },
         {
           "stableId": "Azure.Core:Azure.AzureCoreExtensions::ToObjectFromJson(System.BinaryData):System.Object",
-          "clrName": "ToObjectFromJson",
+          "targetName": "ToObjectFromJson",
           "metadataToken": 100663568,
           "canonicalSignature": "(System.BinaryData):System.Object",
           "normalizedSignature": "ToObjectFromJson|(System.BinaryData):System.Object|static=true",
@@ -3908,13 +3908,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.AzureCoreExtensions",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.AzureCoreExtensions",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": true
         },
         {
           "stableId": "Azure.Core:Azure.AzureCoreExtensions::ToDynamicFromJson(System.BinaryData):System.Object",
-          "clrName": "ToDynamicFromJson",
+          "targetName": "ToDynamicFromJson",
           "metadataToken": 100663569,
           "canonicalSignature": "(System.BinaryData):System.Object",
           "normalizedSignature": "ToDynamicFromJson|(System.BinaryData):System.Object|static=true",
@@ -3928,13 +3928,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.AzureCoreExtensions",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.AzureCoreExtensions",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": true
         },
         {
           "stableId": "Azure.Core:Azure.AzureCoreExtensions::ToDynamicFromJson(System.BinaryData,Azure.Core.Serialization.JsonPropertyNames,System.String):System.Object",
-          "clrName": "ToDynamicFromJson",
+          "targetName": "ToDynamicFromJson",
           "metadataToken": 100663570,
           "canonicalSignature": "(System.BinaryData,Azure.Core.Serialization.JsonPropertyNames,System.String):System.Object",
           "normalizedSignature": "ToDynamicFromJson|(System.BinaryData,Azure.Core.Serialization.JsonPropertyNames,System.String):System.Object|static=true",
@@ -3948,8 +3948,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.AzureCoreExtensions",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.AzureCoreExtensions",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": true
         }
       ],

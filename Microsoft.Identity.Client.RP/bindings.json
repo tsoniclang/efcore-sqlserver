@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.RP.AcquireTokenForClientParameterBuilderForResourceProviders",
-      "clrName": "Microsoft.Identity.Client.RP.AcquireTokenForClientParameterBuilderForResourceProviders",
-      "assemblyName": "Microsoft.Identity.Client",
+      "targetName": "Microsoft.Identity.Client.RP.AcquireTokenForClientParameterBuilderForResourceProviders",
+      "ownerIdentity": "Microsoft.Identity.Client",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -17,12 +17,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.RP.AcquireTokenForClientParameterBuilderForResourceProviders::WithAccessTokenSha256ToRefresh(Microsoft.Identity.Client.AcquireTokenForClientParameterBuilder,System.String):Microsoft.Identity.Client.AcquireTokenForClientParameterBuilder",
-          "clrName": "WithAccessTokenSha256ToRefresh",
+          "targetName": "WithAccessTokenSha256ToRefresh",
           "metadataToken": 100666115,
           "canonicalSignature": "(Microsoft.Identity.Client.AcquireTokenForClientParameterBuilder,System.String):Microsoft.Identity.Client.AcquireTokenForClientParameterBuilder",
           "normalizedSignature": "WithAccessTokenSha256ToRefresh|(Microsoft.Identity.Client.AcquireTokenForClientParameterBuilder,System.String):Microsoft.Identity.Client.AcquireTokenForClientParameterBuilder|static=true",
@@ -36,8 +36,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.RP.AcquireTokenForClientParameterBuilderForResourceProviders",
-          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "ownerQualifiedName": "Microsoft.Identity.Client.RP.AcquireTokenForClientParameterBuilderForResourceProviders",
+          "ownerIdentity": "Microsoft.Identity.Client",
           "isExtensionMethod": true
         }
       ],
@@ -48,8 +48,8 @@
     },
     {
       "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.RP.ConfidentialClientApplicationBuilderForResourceProviders",
-      "clrName": "Microsoft.Identity.Client.RP.ConfidentialClientApplicationBuilderForResourceProviders",
-      "assemblyName": "Microsoft.Identity.Client",
+      "targetName": "Microsoft.Identity.Client.RP.ConfidentialClientApplicationBuilderForResourceProviders",
+      "ownerIdentity": "Microsoft.Identity.Client",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -59,12 +59,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.RP.ConfidentialClientApplicationBuilderForResourceProviders::WithCertificate(Microsoft.Identity.Client.ConfidentialClientApplicationBuilder,System.Security.Cryptography.X509Certificates.X509Certificate2,System.Boolean,System.Boolean):Microsoft.Identity.Client.ConfidentialClientApplicationBuilder",
-          "clrName": "WithCertificate",
+          "targetName": "WithCertificate",
           "metadataToken": 100666116,
           "canonicalSignature": "(Microsoft.Identity.Client.ConfidentialClientApplicationBuilder,System.Security.Cryptography.X509Certificates.X509Certificate2,System.Boolean,System.Boolean):Microsoft.Identity.Client.ConfidentialClientApplicationBuilder",
           "normalizedSignature": "WithCertificate|(Microsoft.Identity.Client.ConfidentialClientApplicationBuilder,System.Security.Cryptography.X509Certificates.X509Certificate2,System.Boolean,System.Boolean):Microsoft.Identity.Client.ConfidentialClientApplicationBuilder|static=true",
@@ -78,8 +78,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.RP.ConfidentialClientApplicationBuilderForResourceProviders",
-          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "ownerQualifiedName": "Microsoft.Identity.Client.RP.ConfidentialClientApplicationBuilderForResourceProviders",
+          "ownerIdentity": "Microsoft.Identity.Client",
           "isExtensionMethod": true
         }
       ],

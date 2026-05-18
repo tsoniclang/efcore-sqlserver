@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AppConfig.ManagedIdentityId",
-      "clrName": "Microsoft.Identity.Client.AppConfig.ManagedIdentityId",
-      "assemblyName": "Microsoft.Identity.Client",
+      "targetName": "Microsoft.Identity.Client.AppConfig.ManagedIdentityId",
+      "ownerIdentity": "Microsoft.Identity.Client",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,12 +17,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AppConfig.ManagedIdentityId::WithUserAssignedClientId(System.String):Microsoft.Identity.Client.AppConfig.ManagedIdentityId",
-          "clrName": "WithUserAssignedClientId",
+          "targetName": "WithUserAssignedClientId",
           "metadataToken": 100666562,
           "canonicalSignature": "(System.String):Microsoft.Identity.Client.AppConfig.ManagedIdentityId",
           "normalizedSignature": "WithUserAssignedClientId|(System.String):Microsoft.Identity.Client.AppConfig.ManagedIdentityId|static=true",
@@ -36,13 +36,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.AppConfig.ManagedIdentityId",
-          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "ownerQualifiedName": "Microsoft.Identity.Client.AppConfig.ManagedIdentityId",
+          "ownerIdentity": "Microsoft.Identity.Client",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AppConfig.ManagedIdentityId::WithUserAssignedResourceId(System.String):Microsoft.Identity.Client.AppConfig.ManagedIdentityId",
-          "clrName": "WithUserAssignedResourceId",
+          "targetName": "WithUserAssignedResourceId",
           "metadataToken": 100666563,
           "canonicalSignature": "(System.String):Microsoft.Identity.Client.AppConfig.ManagedIdentityId",
           "normalizedSignature": "WithUserAssignedResourceId|(System.String):Microsoft.Identity.Client.AppConfig.ManagedIdentityId|static=true",
@@ -56,13 +56,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.AppConfig.ManagedIdentityId",
-          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "ownerQualifiedName": "Microsoft.Identity.Client.AppConfig.ManagedIdentityId",
+          "ownerIdentity": "Microsoft.Identity.Client",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AppConfig.ManagedIdentityId::WithUserAssignedObjectId(System.String):Microsoft.Identity.Client.AppConfig.ManagedIdentityId",
-          "clrName": "WithUserAssignedObjectId",
+          "targetName": "WithUserAssignedObjectId",
           "metadataToken": 100666564,
           "canonicalSignature": "(System.String):Microsoft.Identity.Client.AppConfig.ManagedIdentityId",
           "normalizedSignature": "WithUserAssignedObjectId|(System.String):Microsoft.Identity.Client.AppConfig.ManagedIdentityId|static=true",
@@ -76,15 +76,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.AppConfig.ManagedIdentityId",
-          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "ownerQualifiedName": "Microsoft.Identity.Client.AppConfig.ManagedIdentityId",
+          "ownerIdentity": "Microsoft.Identity.Client",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AppConfig.ManagedIdentityId::SystemAssigned:Microsoft.Identity.Client.AppConfig.ManagedIdentityId",
-          "clrName": "SystemAssigned",
+          "targetName": "SystemAssigned",
           "metadataToken": 385876793,
           "canonicalSignature": ":Microsoft.Identity.Client.AppConfig.ManagedIdentityId",
           "normalizedSignature": "SystemAssigned|:Microsoft.Identity.Client.AppConfig.ManagedIdentityId|static=true|accessor=get",
@@ -98,8 +98,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.AppConfig.ManagedIdentityId",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.AppConfig.ManagedIdentityId",
+          "ownerIdentity": "Microsoft.Identity.Client"
         }
       ],
       "fields": [],
@@ -108,8 +108,8 @@
     },
     {
       "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration",
-      "clrName": "Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration",
-      "assemblyName": "Microsoft.Identity.Client",
+      "targetName": "Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration",
+      "ownerIdentity": "Microsoft.Identity.Client",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -119,13 +119,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration::HttpMethod:System.Net.Http.HttpMethod",
-          "clrName": "HttpMethod",
+          "targetName": "HttpMethod",
           "metadataToken": 385876794,
           "canonicalSignature": ":System.Net.Http.HttpMethod",
           "normalizedSignature": "HttpMethod|:System.Net.Http.HttpMethod|static=false|accessor=getset",
@@ -139,12 +139,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration",
+          "ownerIdentity": "Microsoft.Identity.Client"
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration::HttpHost:System.String",
-          "clrName": "HttpHost",
+          "targetName": "HttpHost",
           "metadataToken": 385876795,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "HttpHost|:System.String|static=false|accessor=getset",
@@ -158,12 +158,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration",
+          "ownerIdentity": "Microsoft.Identity.Client"
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration::HttpPath:System.String",
-          "clrName": "HttpPath",
+          "targetName": "HttpPath",
           "metadataToken": 385876796,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "HttpPath|:System.String|static=false|accessor=getset",
@@ -177,12 +177,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration",
+          "ownerIdentity": "Microsoft.Identity.Client"
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration::PopCryptoProvider:Microsoft.Identity.Client.AuthScheme.PoP.IPoPCryptoProvider",
-          "clrName": "PopCryptoProvider",
+          "targetName": "PopCryptoProvider",
           "metadataToken": 385876797,
           "canonicalSignature": ":Microsoft.Identity.Client.AuthScheme.PoP.IPoPCryptoProvider",
           "normalizedSignature": "PopCryptoProvider|:Microsoft.Identity.Client.AuthScheme.PoP.IPoPCryptoProvider|static=false|accessor=getset",
@@ -196,12 +196,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration",
+          "ownerIdentity": "Microsoft.Identity.Client"
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration::Nonce:System.String",
-          "clrName": "Nonce",
+          "targetName": "Nonce",
           "metadataToken": 385876798,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Nonce|:System.String|static=false|accessor=getset",
@@ -215,12 +215,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration",
+          "ownerIdentity": "Microsoft.Identity.Client"
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration::SignHttpRequest:System.Boolean",
-          "clrName": "SignHttpRequest",
+          "targetName": "SignHttpRequest",
           "metadataToken": 385876799,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "SignHttpRequest|:System.Boolean|static=false|accessor=getset",
@@ -234,8 +234,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration",
+          "ownerIdentity": "Microsoft.Identity.Client"
         }
       ],
       "fields": [],
@@ -249,8 +249,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration",
+          "ownerIdentity": "Microsoft.Identity.Client"
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration::.ctor(System.Net.Http.HttpRequestMessage):void",
@@ -260,8 +260,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration",
+          "ownerIdentity": "Microsoft.Identity.Client"
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration::.ctor(System.Uri):void",
@@ -271,8 +271,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration",
+          "ownerIdentity": "Microsoft.Identity.Client"
         }
       ]
     }

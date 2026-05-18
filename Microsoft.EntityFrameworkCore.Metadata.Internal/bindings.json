@@ -8,8 +8,8 @@
   "types": [
     {
       "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Internal.SqlServerIndexExtensions",
-      "clrName": "Microsoft.EntityFrameworkCore.Metadata.Internal.SqlServerIndexExtensions",
-      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "targetName": "Microsoft.EntityFrameworkCore.Metadata.Internal.SqlServerIndexExtensions",
+      "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -19,12 +19,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Internal.SqlServerIndexExtensions::AreCompatibleForSqlServer(Microsoft.EntityFrameworkCore.Metadata.IReadOnlyIndex,Microsoft.EntityFrameworkCore.Metadata.IReadOnlyIndex,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier\u0026,System.Boolean):System.Boolean",
-          "clrName": "AreCompatibleForSqlServer",
+          "targetName": "AreCompatibleForSqlServer",
           "metadataToken": 100664188,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IReadOnlyIndex,Microsoft.EntityFrameworkCore.Metadata.IReadOnlyIndex,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier\u0026,System.Boolean):System.Boolean",
           "normalizedSignature": "AreCompatibleForSqlServer|(Microsoft.EntityFrameworkCore.Metadata.IReadOnlyIndex,Microsoft.EntityFrameworkCore.Metadata.IReadOnlyIndex,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier\u0026,System.Boolean):System.Boolean|static=true",
@@ -38,8 +38,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Internal.SqlServerIndexExtensions",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Metadata.Internal.SqlServerIndexExtensions",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": true,
           "parameterModifiers": [
             {
@@ -56,8 +56,8 @@
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Internal.SqlServerKeyExtensions",
-      "clrName": "Microsoft.EntityFrameworkCore.Metadata.Internal.SqlServerKeyExtensions",
-      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "targetName": "Microsoft.EntityFrameworkCore.Metadata.Internal.SqlServerKeyExtensions",
+      "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -67,12 +67,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Internal.SqlServerKeyExtensions::AreCompatibleForSqlServer(Microsoft.EntityFrameworkCore.Metadata.IReadOnlyKey,Microsoft.EntityFrameworkCore.Metadata.IReadOnlyKey,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier\u0026,System.Boolean):System.Boolean",
-          "clrName": "AreCompatibleForSqlServer",
+          "targetName": "AreCompatibleForSqlServer",
           "metadataToken": 100664191,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IReadOnlyKey,Microsoft.EntityFrameworkCore.Metadata.IReadOnlyKey,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier\u0026,System.Boolean):System.Boolean",
           "normalizedSignature": "AreCompatibleForSqlServer|(Microsoft.EntityFrameworkCore.Metadata.IReadOnlyKey,Microsoft.EntityFrameworkCore.Metadata.IReadOnlyKey,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier\u0026,System.Boolean):System.Boolean|static=true",
@@ -86,8 +86,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Internal.SqlServerKeyExtensions",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Metadata.Internal.SqlServerKeyExtensions",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": true,
           "parameterModifiers": [
             {

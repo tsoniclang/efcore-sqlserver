@@ -13,8 +13,8 @@
   "types": [
     {
       "stableId": "System.Configuration.ConfigurationManager:System.UriIdnScope",
-      "clrName": "System.UriIdnScope",
-      "assemblyName": "System.Configuration.ConfigurationManager",
+      "targetName": "System.UriIdnScope",
+      "ownerIdentity": "System.Configuration.ConfigurationManager",
       "metadataToken": 0,
       "kind": "Enum",
       "accessibility": "Public",
@@ -24,24 +24,24 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Enum",
-        "clrName": "System.Enum"
+        "targetName": "System.Enum"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.IComparable",
-          "clrName": "System.IComparable"
+          "targetName": "System.IComparable"
         },
         {
           "stableId": "System.Private.CoreLib:System.ISpanFormattable",
-          "clrName": "System.ISpanFormattable"
+          "targetName": "System.ISpanFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IFormattable",
-          "clrName": "System.IFormattable"
+          "targetName": "System.IFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IConvertible",
-          "clrName": "System.IConvertible"
+          "targetName": "System.IConvertible"
         }
       ],
       "methods": [],
@@ -49,51 +49,51 @@
       "fields": [
         {
           "stableId": "System.Configuration.ConfigurationManager:System.UriIdnScope::value__System.Int32",
-          "clrName": "value__",
+          "targetName": "value__",
           "metadataToken": 67108865,
           "normalizedSignature": "value__|System.Int32|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "System.UriIdnScope",
-          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+          "ownerQualifiedName": "System.UriIdnScope",
+          "ownerIdentity": "System.Configuration.ConfigurationManager"
         },
         {
           "stableId": "System.Configuration.ConfigurationManager:System.UriIdnScope::NoneSystem.UriIdnScope",
-          "clrName": "None",
+          "targetName": "None",
           "metadataToken": 67108866,
           "normalizedSignature": "None|System.UriIdnScope|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.UriIdnScope",
-          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+          "ownerQualifiedName": "System.UriIdnScope",
+          "ownerIdentity": "System.Configuration.ConfigurationManager"
         },
         {
           "stableId": "System.Configuration.ConfigurationManager:System.UriIdnScope::AllExceptIntranetSystem.UriIdnScope",
-          "clrName": "AllExceptIntranet",
+          "targetName": "AllExceptIntranet",
           "metadataToken": 67108867,
           "normalizedSignature": "AllExceptIntranet|System.UriIdnScope|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.UriIdnScope",
-          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+          "ownerQualifiedName": "System.UriIdnScope",
+          "ownerIdentity": "System.Configuration.ConfigurationManager"
         },
         {
           "stableId": "System.Configuration.ConfigurationManager:System.UriIdnScope::AllSystem.UriIdnScope",
-          "clrName": "All",
+          "targetName": "All",
           "metadataToken": 67108868,
           "normalizedSignature": "All|System.UriIdnScope|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.UriIdnScope",
-          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+          "ownerQualifiedName": "System.UriIdnScope",
+          "ownerIdentity": "System.Configuration.ConfigurationManager"
         }
       ],
       "events": [],
@@ -101,8 +101,8 @@
     },
     {
       "stableId": "System.Memory.Data:System.BinaryData",
-      "clrName": "System.BinaryData",
-      "assemblyName": "System.Memory.Data",
+      "targetName": "System.BinaryData",
+      "ownerIdentity": "System.Memory.Data",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -112,12 +112,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "System.Memory.Data:System.BinaryData::FromBytes(System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.BinaryData",
-          "clrName": "FromBytes",
+          "targetName": "FromBytes",
           "metadataToken": 100663309,
           "canonicalSignature": "(System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.BinaryData",
           "normalizedSignature": "FromBytes|(System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.BinaryData|static=true",
@@ -131,13 +131,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.BinaryData",
-          "declaringAssemblyName": "System.Memory.Data",
+          "ownerQualifiedName": "System.BinaryData",
+          "ownerIdentity": "System.Memory.Data",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Memory.Data:System.BinaryData::FromBytes(System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):System.BinaryData",
-          "clrName": "FromBytes",
+          "targetName": "FromBytes",
           "metadataToken": 100663310,
           "canonicalSignature": "(System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):System.BinaryData",
           "normalizedSignature": "FromBytes|(System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):System.BinaryData|static=true",
@@ -151,13 +151,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.BinaryData",
-          "declaringAssemblyName": "System.Memory.Data",
+          "ownerQualifiedName": "System.BinaryData",
+          "ownerIdentity": "System.Memory.Data",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Memory.Data:System.BinaryData::FromBytes(System.Byte[]):System.BinaryData",
-          "clrName": "FromBytes",
+          "targetName": "FromBytes",
           "metadataToken": 100663311,
           "canonicalSignature": "(System.Byte[]):System.BinaryData",
           "normalizedSignature": "FromBytes|(System.Byte[]):System.BinaryData|static=true",
@@ -171,13 +171,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.BinaryData",
-          "declaringAssemblyName": "System.Memory.Data",
+          "ownerQualifiedName": "System.BinaryData",
+          "ownerIdentity": "System.Memory.Data",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Memory.Data:System.BinaryData::FromBytes(System.Byte[],System.String):System.BinaryData",
-          "clrName": "FromBytes",
+          "targetName": "FromBytes",
           "metadataToken": 100663312,
           "canonicalSignature": "(System.Byte[],System.String):System.BinaryData",
           "normalizedSignature": "FromBytes|(System.Byte[],System.String):System.BinaryData|static=true",
@@ -191,13 +191,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.BinaryData",
-          "declaringAssemblyName": "System.Memory.Data",
+          "ownerQualifiedName": "System.BinaryData",
+          "ownerIdentity": "System.Memory.Data",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Memory.Data:System.BinaryData::FromString(System.String):System.BinaryData",
-          "clrName": "FromString",
+          "targetName": "FromString",
           "metadataToken": 100663313,
           "canonicalSignature": "(System.String):System.BinaryData",
           "normalizedSignature": "FromString|(System.String):System.BinaryData|static=true",
@@ -211,13 +211,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.BinaryData",
-          "declaringAssemblyName": "System.Memory.Data",
+          "ownerQualifiedName": "System.BinaryData",
+          "ownerIdentity": "System.Memory.Data",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Memory.Data:System.BinaryData::FromString(System.String,System.String):System.BinaryData",
-          "clrName": "FromString",
+          "targetName": "FromString",
           "metadataToken": 100663314,
           "canonicalSignature": "(System.String,System.String):System.BinaryData",
           "normalizedSignature": "FromString|(System.String,System.String):System.BinaryData|static=true",
@@ -231,13 +231,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.BinaryData",
-          "declaringAssemblyName": "System.Memory.Data",
+          "ownerQualifiedName": "System.BinaryData",
+          "ownerIdentity": "System.Memory.Data",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Memory.Data:System.BinaryData::FromStream(System.IO.Stream):System.BinaryData",
-          "clrName": "FromStream",
+          "targetName": "FromStream",
           "metadataToken": 100663315,
           "canonicalSignature": "(System.IO.Stream):System.BinaryData",
           "normalizedSignature": "FromStream|(System.IO.Stream):System.BinaryData|static=true",
@@ -251,13 +251,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.BinaryData",
-          "declaringAssemblyName": "System.Memory.Data",
+          "ownerQualifiedName": "System.BinaryData",
+          "ownerIdentity": "System.Memory.Data",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Memory.Data:System.BinaryData::FromStream(System.IO.Stream,System.String):System.BinaryData",
-          "clrName": "FromStream",
+          "targetName": "FromStream",
           "metadataToken": 100663316,
           "canonicalSignature": "(System.IO.Stream,System.String):System.BinaryData",
           "normalizedSignature": "FromStream|(System.IO.Stream,System.String):System.BinaryData|static=true",
@@ -271,13 +271,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.BinaryData",
-          "declaringAssemblyName": "System.Memory.Data",
+          "ownerQualifiedName": "System.BinaryData",
+          "ownerIdentity": "System.Memory.Data",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Memory.Data:System.BinaryData::FromStreamAsync(System.IO.Stream,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.BinaryData,System.Memory.Data,Version=8.0.0.1,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]",
-          "clrName": "FromStreamAsync",
+          "targetName": "FromStreamAsync",
           "metadataToken": 100663317,
           "canonicalSignature": "(System.IO.Stream,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.BinaryData,System.Memory.Data,Version=8.0.0.1,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]",
           "normalizedSignature": "FromStreamAsync|(System.IO.Stream,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.BinaryData,System.Memory.Data,Version=8.0.0.1,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]|static=true",
@@ -291,13 +291,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.BinaryData",
-          "declaringAssemblyName": "System.Memory.Data",
+          "ownerQualifiedName": "System.BinaryData",
+          "ownerIdentity": "System.Memory.Data",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Memory.Data:System.BinaryData::FromStreamAsync(System.IO.Stream,System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.BinaryData,System.Memory.Data,Version=8.0.0.1,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]",
-          "clrName": "FromStreamAsync",
+          "targetName": "FromStreamAsync",
           "metadataToken": 100663318,
           "canonicalSignature": "(System.IO.Stream,System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.BinaryData,System.Memory.Data,Version=8.0.0.1,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]",
           "normalizedSignature": "FromStreamAsync|(System.IO.Stream,System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.BinaryData,System.Memory.Data,Version=8.0.0.1,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]|static=true",
@@ -311,13 +311,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.BinaryData",
-          "declaringAssemblyName": "System.Memory.Data",
+          "ownerQualifiedName": "System.BinaryData",
+          "ownerIdentity": "System.Memory.Data",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Memory.Data:System.BinaryData::FromObjectAsJson(T,System.Text.Json.JsonSerializerOptions):System.BinaryData",
-          "clrName": "FromObjectAsJson",
+          "targetName": "FromObjectAsJson",
           "metadataToken": 100663320,
           "canonicalSignature": "(T,System.Text.Json.JsonSerializerOptions):System.BinaryData",
           "normalizedSignature": "FromObjectAsJson|(T,System.Text.Json.JsonSerializerOptions):System.BinaryData|static=true",
@@ -331,13 +331,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.BinaryData",
-          "declaringAssemblyName": "System.Memory.Data",
+          "ownerQualifiedName": "System.BinaryData",
+          "ownerIdentity": "System.Memory.Data",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Memory.Data:System.BinaryData::FromObjectAsJson(T,JsonTypeInfo_1):System.BinaryData",
-          "clrName": "FromObjectAsJson",
+          "targetName": "FromObjectAsJson",
           "metadataToken": 100663321,
           "canonicalSignature": "(T,JsonTypeInfo_1):System.BinaryData",
           "normalizedSignature": "FromObjectAsJson|(T,JsonTypeInfo_1):System.BinaryData|static=true",
@@ -351,13 +351,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.BinaryData",
-          "declaringAssemblyName": "System.Memory.Data",
+          "ownerQualifiedName": "System.BinaryData",
+          "ownerIdentity": "System.Memory.Data",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Memory.Data:System.BinaryData::WithMediaType(System.String):System.BinaryData",
-          "clrName": "WithMediaType",
+          "targetName": "WithMediaType",
           "metadataToken": 100663322,
           "canonicalSignature": "(System.String):System.BinaryData",
           "normalizedSignature": "WithMediaType|(System.String):System.BinaryData|static=false",
@@ -371,13 +371,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.BinaryData",
-          "declaringAssemblyName": "System.Memory.Data",
+          "ownerQualifiedName": "System.BinaryData",
+          "ownerIdentity": "System.Memory.Data",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Memory.Data:System.BinaryData::ToString():System.String",
-          "clrName": "ToString",
+          "targetName": "ToString",
           "metadataToken": 100663323,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "ToString|():System.String|static=false",
@@ -391,13 +391,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.BinaryData",
-          "declaringAssemblyName": "System.Memory.Data",
+          "ownerQualifiedName": "System.BinaryData",
+          "ownerIdentity": "System.Memory.Data",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Memory.Data:System.BinaryData::ToStream():System.IO.Stream",
-          "clrName": "ToStream",
+          "targetName": "ToStream",
           "metadataToken": 100663324,
           "canonicalSignature": "():System.IO.Stream",
           "normalizedSignature": "ToStream|():System.IO.Stream|static=false",
@@ -411,13 +411,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.BinaryData",
-          "declaringAssemblyName": "System.Memory.Data",
+          "ownerQualifiedName": "System.BinaryData",
+          "ownerIdentity": "System.Memory.Data",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Memory.Data:System.BinaryData::ToMemory():System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "ToMemory",
+          "targetName": "ToMemory",
           "metadataToken": 100663325,
           "canonicalSignature": "():System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "ToMemory|():System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
@@ -431,13 +431,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.BinaryData",
-          "declaringAssemblyName": "System.Memory.Data",
+          "ownerQualifiedName": "System.BinaryData",
+          "ownerIdentity": "System.Memory.Data",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Memory.Data:System.BinaryData::ToArray():System.Byte[]",
-          "clrName": "ToArray",
+          "targetName": "ToArray",
           "metadataToken": 100663326,
           "canonicalSignature": "():System.Byte[]",
           "normalizedSignature": "ToArray|():System.Byte[]|static=false",
@@ -451,13 +451,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.BinaryData",
-          "declaringAssemblyName": "System.Memory.Data",
+          "ownerQualifiedName": "System.BinaryData",
+          "ownerIdentity": "System.Memory.Data",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Memory.Data:System.BinaryData::ToObjectFromJson(System.Text.Json.JsonSerializerOptions):T",
-          "clrName": "ToObjectFromJson",
+          "targetName": "ToObjectFromJson",
           "metadataToken": 100663327,
           "canonicalSignature": "(System.Text.Json.JsonSerializerOptions):T",
           "normalizedSignature": "ToObjectFromJson|(System.Text.Json.JsonSerializerOptions):T|static=false",
@@ -471,13 +471,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.BinaryData",
-          "declaringAssemblyName": "System.Memory.Data",
+          "ownerQualifiedName": "System.BinaryData",
+          "ownerIdentity": "System.Memory.Data",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Memory.Data:System.BinaryData::ToObjectFromJson(JsonTypeInfo_1):T",
-          "clrName": "ToObjectFromJson",
+          "targetName": "ToObjectFromJson",
           "metadataToken": 100663328,
           "canonicalSignature": "(JsonTypeInfo_1):T",
           "normalizedSignature": "ToObjectFromJson|(JsonTypeInfo_1):T|static=false",
@@ -491,13 +491,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.BinaryData",
-          "declaringAssemblyName": "System.Memory.Data",
+          "ownerQualifiedName": "System.BinaryData",
+          "ownerIdentity": "System.Memory.Data",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Memory.Data:System.BinaryData::Equals(System.Object):System.Boolean",
-          "clrName": "Equals",
+          "targetName": "Equals",
           "metadataToken": 100663332,
           "canonicalSignature": "(System.Object):System.Boolean",
           "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
@@ -511,13 +511,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.BinaryData",
-          "declaringAssemblyName": "System.Memory.Data",
+          "ownerQualifiedName": "System.BinaryData",
+          "ownerIdentity": "System.Memory.Data",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Memory.Data:System.BinaryData::GetHashCode():System.Int32",
-          "clrName": "GetHashCode",
+          "targetName": "GetHashCode",
           "metadataToken": 100663333,
           "canonicalSignature": "():System.Int32",
           "normalizedSignature": "GetHashCode|():System.Int32|static=false",
@@ -531,15 +531,15 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.BinaryData",
-          "declaringAssemblyName": "System.Memory.Data",
+          "ownerQualifiedName": "System.BinaryData",
+          "ownerIdentity": "System.Memory.Data",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "System.Memory.Data:System.BinaryData::Empty:System.BinaryData",
-          "clrName": "Empty",
+          "targetName": "Empty",
           "metadataToken": 385875969,
           "canonicalSignature": ":System.BinaryData",
           "normalizedSignature": "Empty|:System.BinaryData|static=true|accessor=get",
@@ -553,12 +553,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.BinaryData",
-          "declaringAssemblyName": "System.Memory.Data"
+          "ownerQualifiedName": "System.BinaryData",
+          "ownerIdentity": "System.Memory.Data"
         },
         {
           "stableId": "System.Memory.Data:System.BinaryData::Length:System.Int32",
-          "clrName": "Length",
+          "targetName": "Length",
           "metadataToken": 385875970,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Length|:System.Int32|static=false|accessor=get",
@@ -572,12 +572,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.BinaryData",
-          "declaringAssemblyName": "System.Memory.Data"
+          "ownerQualifiedName": "System.BinaryData",
+          "ownerIdentity": "System.Memory.Data"
         },
         {
           "stableId": "System.Memory.Data:System.BinaryData::IsEmpty:System.Boolean",
-          "clrName": "IsEmpty",
+          "targetName": "IsEmpty",
           "metadataToken": 385875971,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsEmpty|:System.Boolean|static=false|accessor=get",
@@ -591,12 +591,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.BinaryData",
-          "declaringAssemblyName": "System.Memory.Data"
+          "ownerQualifiedName": "System.BinaryData",
+          "ownerIdentity": "System.Memory.Data"
         },
         {
           "stableId": "System.Memory.Data:System.BinaryData::MediaType:System.String",
-          "clrName": "MediaType",
+          "targetName": "MediaType",
           "metadataToken": 385875972,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "MediaType|:System.String|static=false|accessor=get",
@@ -610,8 +610,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.BinaryData",
-          "declaringAssemblyName": "System.Memory.Data"
+          "ownerQualifiedName": "System.BinaryData",
+          "ownerIdentity": "System.Memory.Data"
         }
       ],
       "fields": [],
@@ -625,8 +625,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "System.BinaryData",
-          "declaringAssemblyName": "System.Memory.Data"
+          "ownerQualifiedName": "System.BinaryData",
+          "ownerIdentity": "System.Memory.Data"
         },
         {
           "stableId": "System.Memory.Data:System.BinaryData::.ctor(System.Byte[],System.String):void",
@@ -636,8 +636,8 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "System.BinaryData",
-          "declaringAssemblyName": "System.Memory.Data"
+          "ownerQualifiedName": "System.BinaryData",
+          "ownerIdentity": "System.Memory.Data"
         },
         {
           "stableId": "System.Memory.Data:System.BinaryData::.ctor(System.Object,System.Text.Json.JsonSerializerOptions,System.Type):void",
@@ -647,8 +647,8 @@
           "isStatic": false,
           "parameterCount": 3,
           "visibility": "Public",
-          "declaringClrType": "System.BinaryData",
-          "declaringAssemblyName": "System.Memory.Data"
+          "ownerQualifiedName": "System.BinaryData",
+          "ownerIdentity": "System.Memory.Data"
         },
         {
           "stableId": "System.Memory.Data:System.BinaryData::.ctor(System.Object,System.Text.Json.Serialization.JsonSerializerContext,System.Type):void",
@@ -658,8 +658,8 @@
           "isStatic": false,
           "parameterCount": 3,
           "visibility": "Public",
-          "declaringClrType": "System.BinaryData",
-          "declaringAssemblyName": "System.Memory.Data"
+          "ownerQualifiedName": "System.BinaryData",
+          "ownerIdentity": "System.Memory.Data"
         },
         {
           "stableId": "System.Memory.Data:System.BinaryData::.ctor(System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
@@ -669,8 +669,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "System.BinaryData",
-          "declaringAssemblyName": "System.Memory.Data"
+          "ownerQualifiedName": "System.BinaryData",
+          "ownerIdentity": "System.Memory.Data"
         },
         {
           "stableId": "System.Memory.Data:System.BinaryData::.ctor(System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):void",
@@ -680,8 +680,8 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "System.BinaryData",
-          "declaringAssemblyName": "System.Memory.Data"
+          "ownerQualifiedName": "System.BinaryData",
+          "ownerIdentity": "System.Memory.Data"
         },
         {
           "stableId": "System.Memory.Data:System.BinaryData::.ctor(System.String):void",
@@ -691,8 +691,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "System.BinaryData",
-          "declaringAssemblyName": "System.Memory.Data"
+          "ownerQualifiedName": "System.BinaryData",
+          "ownerIdentity": "System.Memory.Data"
         },
         {
           "stableId": "System.Memory.Data:System.BinaryData::.ctor(System.String,System.String):void",
@@ -702,8 +702,8 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "System.BinaryData",
-          "declaringAssemblyName": "System.Memory.Data"
+          "ownerQualifiedName": "System.BinaryData",
+          "ownerIdentity": "System.Memory.Data"
         }
       ]
     }

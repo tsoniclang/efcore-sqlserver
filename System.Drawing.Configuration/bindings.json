@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "System.Configuration.ConfigurationManager:System.Drawing.Configuration.SystemDrawingSection",
-      "clrName": "System.Drawing.Configuration.SystemDrawingSection",
-      "assemblyName": "System.Configuration.ConfigurationManager",
+      "targetName": "System.Drawing.Configuration.SystemDrawingSection",
+      "ownerIdentity": "System.Configuration.ConfigurationManager",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,13 +17,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Configuration.ConfigurationManager:System.Configuration.ConfigurationSection",
-        "clrName": "System.Configuration.ConfigurationSection"
+        "targetName": "System.Configuration.ConfigurationSection"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Drawing.Configuration.SystemDrawingSection::BitmapSuffix:System.String",
-          "clrName": "BitmapSuffix",
+          "targetName": "BitmapSuffix",
           "metadataToken": 385876233,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "BitmapSuffix|:System.String|static=false|accessor=getset",
@@ -37,12 +37,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Drawing.Configuration.SystemDrawingSection",
-          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+          "ownerQualifiedName": "System.Drawing.Configuration.SystemDrawingSection",
+          "ownerIdentity": "System.Configuration.ConfigurationManager"
         },
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Drawing.Configuration.SystemDrawingSection::Properties:System.Configuration.ConfigurationPropertyCollection",
-          "clrName": "Properties",
+          "targetName": "Properties",
           "metadataToken": 385876234,
           "canonicalSignature": ":System.Configuration.ConfigurationPropertyCollection",
           "normalizedSignature": "Properties|:System.Configuration.ConfigurationPropertyCollection|static=false|accessor=get",
@@ -56,8 +56,8 @@
           "isVirtual": true,
           "isOverride": true,
           "visibility": "ProtectedInternal",
-          "declaringClrType": "System.Drawing.Configuration.SystemDrawingSection",
-          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+          "ownerQualifiedName": "System.Drawing.Configuration.SystemDrawingSection",
+          "ownerIdentity": "System.Configuration.ConfigurationManager"
         }
       ],
       "fields": [],
@@ -71,8 +71,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "System.Drawing.Configuration.SystemDrawingSection",
-          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+          "ownerQualifiedName": "System.Drawing.Configuration.SystemDrawingSection",
+          "ownerIdentity": "System.Configuration.ConfigurationManager"
         }
       ]
     }

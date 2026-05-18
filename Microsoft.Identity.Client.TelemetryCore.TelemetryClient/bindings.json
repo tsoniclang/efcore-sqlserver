@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.TelemetryCore.TelemetryClient.TelemetryData",
-      "clrName": "Microsoft.Identity.Client.TelemetryCore.TelemetryClient.TelemetryData",
-      "assemblyName": "Microsoft.Identity.Client",
+      "targetName": "Microsoft.Identity.Client.TelemetryCore.TelemetryClient.TelemetryData",
+      "ownerIdentity": "Microsoft.Identity.Client",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,13 +17,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.TelemetryCore.TelemetryClient.TelemetryData::CacheLevel:Microsoft.Identity.Client.Cache.CacheLevel",
-          "clrName": "CacheLevel",
+          "targetName": "CacheLevel",
           "metadataToken": 385876387,
           "canonicalSignature": ":Microsoft.Identity.Client.Cache.CacheLevel",
           "normalizedSignature": "CacheLevel|:Microsoft.Identity.Client.Cache.CacheLevel|static=false|accessor=getset",
@@ -37,8 +37,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.TelemetryCore.TelemetryClient.TelemetryData",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.TelemetryCore.TelemetryClient.TelemetryData",
+          "ownerIdentity": "Microsoft.Identity.Client"
         }
       ],
       "fields": [],
@@ -52,8 +52,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.TelemetryCore.TelemetryClient.TelemetryData",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.TelemetryCore.TelemetryClient.TelemetryData",
+          "ownerIdentity": "Microsoft.Identity.Client"
         }
       ]
     }

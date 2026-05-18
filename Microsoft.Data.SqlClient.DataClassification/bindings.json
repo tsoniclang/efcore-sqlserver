@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.DataClassification.SensitivityRank",
-      "clrName": "Microsoft.Data.SqlClient.DataClassification.SensitivityRank",
-      "assemblyName": "Microsoft.Data.SqlClient",
+      "targetName": "Microsoft.Data.SqlClient.DataClassification.SensitivityRank",
+      "ownerIdentity": "Microsoft.Data.SqlClient",
       "metadataToken": 0,
       "kind": "Enum",
       "accessibility": "Public",
@@ -17,24 +17,24 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Enum",
-        "clrName": "System.Enum"
+        "targetName": "System.Enum"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.IComparable",
-          "clrName": "System.IComparable"
+          "targetName": "System.IComparable"
         },
         {
           "stableId": "System.Private.CoreLib:System.ISpanFormattable",
-          "clrName": "System.ISpanFormattable"
+          "targetName": "System.ISpanFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IFormattable",
-          "clrName": "System.IFormattable"
+          "targetName": "System.IFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IConvertible",
-          "clrName": "System.IConvertible"
+          "targetName": "System.IConvertible"
         }
       ],
       "methods": [],
@@ -42,87 +42,87 @@
       "fields": [
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.DataClassification.SensitivityRank::value__System.Int32",
-          "clrName": "value__",
+          "targetName": "value__",
           "metadataToken": 67108994,
           "normalizedSignature": "value__|System.Int32|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Data.SqlClient.DataClassification.SensitivityRank",
-          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+          "ownerQualifiedName": "Microsoft.Data.SqlClient.DataClassification.SensitivityRank",
+          "ownerIdentity": "Microsoft.Data.SqlClient"
         },
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.DataClassification.SensitivityRank::NOT_DEFINEDMicrosoft.Data.SqlClient.DataClassification.SensitivityRank",
-          "clrName": "NOT_DEFINED",
+          "targetName": "NOT_DEFINED",
           "metadataToken": 67108995,
           "normalizedSignature": "NOT_DEFINED|Microsoft.Data.SqlClient.DataClassification.SensitivityRank|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Data.SqlClient.DataClassification.SensitivityRank",
-          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+          "ownerQualifiedName": "Microsoft.Data.SqlClient.DataClassification.SensitivityRank",
+          "ownerIdentity": "Microsoft.Data.SqlClient"
         },
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.DataClassification.SensitivityRank::NONEMicrosoft.Data.SqlClient.DataClassification.SensitivityRank",
-          "clrName": "NONE",
+          "targetName": "NONE",
           "metadataToken": 67108996,
           "normalizedSignature": "NONE|Microsoft.Data.SqlClient.DataClassification.SensitivityRank|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Data.SqlClient.DataClassification.SensitivityRank",
-          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+          "ownerQualifiedName": "Microsoft.Data.SqlClient.DataClassification.SensitivityRank",
+          "ownerIdentity": "Microsoft.Data.SqlClient"
         },
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.DataClassification.SensitivityRank::LOWMicrosoft.Data.SqlClient.DataClassification.SensitivityRank",
-          "clrName": "LOW",
+          "targetName": "LOW",
           "metadataToken": 67108997,
           "normalizedSignature": "LOW|Microsoft.Data.SqlClient.DataClassification.SensitivityRank|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Data.SqlClient.DataClassification.SensitivityRank",
-          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+          "ownerQualifiedName": "Microsoft.Data.SqlClient.DataClassification.SensitivityRank",
+          "ownerIdentity": "Microsoft.Data.SqlClient"
         },
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.DataClassification.SensitivityRank::MEDIUMMicrosoft.Data.SqlClient.DataClassification.SensitivityRank",
-          "clrName": "MEDIUM",
+          "targetName": "MEDIUM",
           "metadataToken": 67108998,
           "normalizedSignature": "MEDIUM|Microsoft.Data.SqlClient.DataClassification.SensitivityRank|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Data.SqlClient.DataClassification.SensitivityRank",
-          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+          "ownerQualifiedName": "Microsoft.Data.SqlClient.DataClassification.SensitivityRank",
+          "ownerIdentity": "Microsoft.Data.SqlClient"
         },
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.DataClassification.SensitivityRank::HIGHMicrosoft.Data.SqlClient.DataClassification.SensitivityRank",
-          "clrName": "HIGH",
+          "targetName": "HIGH",
           "metadataToken": 67108999,
           "normalizedSignature": "HIGH|Microsoft.Data.SqlClient.DataClassification.SensitivityRank|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Data.SqlClient.DataClassification.SensitivityRank",
-          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+          "ownerQualifiedName": "Microsoft.Data.SqlClient.DataClassification.SensitivityRank",
+          "ownerIdentity": "Microsoft.Data.SqlClient"
         },
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.DataClassification.SensitivityRank::CRITICALMicrosoft.Data.SqlClient.DataClassification.SensitivityRank",
-          "clrName": "CRITICAL",
+          "targetName": "CRITICAL",
           "metadataToken": 67109000,
           "normalizedSignature": "CRITICAL|Microsoft.Data.SqlClient.DataClassification.SensitivityRank|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Data.SqlClient.DataClassification.SensitivityRank",
-          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+          "ownerQualifiedName": "Microsoft.Data.SqlClient.DataClassification.SensitivityRank",
+          "ownerIdentity": "Microsoft.Data.SqlClient"
         }
       ],
       "events": [],
@@ -130,8 +130,8 @@
     },
     {
       "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.DataClassification.ColumnSensitivity",
-      "clrName": "Microsoft.Data.SqlClient.DataClassification.ColumnSensitivity",
-      "assemblyName": "Microsoft.Data.SqlClient",
+      "targetName": "Microsoft.Data.SqlClient.DataClassification.ColumnSensitivity",
+      "ownerIdentity": "Microsoft.Data.SqlClient",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -141,13 +141,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.DataClassification.ColumnSensitivity::SensitivityProperties:System.Collections.ObjectModel.ReadOnlyCollection_1[[Microsoft.Data.SqlClient.DataClassification.SensitivityProperty,Microsoft.Data.SqlClient,Version=6.0.0.0,Culture=neutral,PublicKeyToken=23ec7fc2d6eaa4a5]]",
-          "clrName": "SensitivityProperties",
+          "targetName": "SensitivityProperties",
           "metadataToken": 385877933,
           "canonicalSignature": ":System.Collections.ObjectModel.ReadOnlyCollection_1[[Microsoft.Data.SqlClient.DataClassification.SensitivityProperty,Microsoft.Data.SqlClient,Version=6.0.0.0,Culture=neutral,PublicKeyToken=23ec7fc2d6eaa4a5]]",
           "normalizedSignature": "SensitivityProperties|:System.Collections.ObjectModel.ReadOnlyCollection_1[[Microsoft.Data.SqlClient.DataClassification.SensitivityProperty,Microsoft.Data.SqlClient,Version=6.0.0.0,Culture=neutral,PublicKeyToken=23ec7fc2d6eaa4a5]]|static=false|accessor=get",
@@ -161,8 +161,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Data.SqlClient.DataClassification.ColumnSensitivity",
-          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+          "ownerQualifiedName": "Microsoft.Data.SqlClient.DataClassification.ColumnSensitivity",
+          "ownerIdentity": "Microsoft.Data.SqlClient"
         }
       ],
       "fields": [],
@@ -176,15 +176,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Data.SqlClient.DataClassification.ColumnSensitivity",
-          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+          "ownerQualifiedName": "Microsoft.Data.SqlClient.DataClassification.ColumnSensitivity",
+          "ownerIdentity": "Microsoft.Data.SqlClient"
         }
       ]
     },
     {
       "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.DataClassification.InformationType",
-      "clrName": "Microsoft.Data.SqlClient.DataClassification.InformationType",
-      "assemblyName": "Microsoft.Data.SqlClient",
+      "targetName": "Microsoft.Data.SqlClient.DataClassification.InformationType",
+      "ownerIdentity": "Microsoft.Data.SqlClient",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -194,13 +194,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.DataClassification.InformationType::Id:System.String",
-          "clrName": "Id",
+          "targetName": "Id",
           "metadataToken": 385877934,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Id|:System.String|static=false|accessor=get",
@@ -214,12 +214,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Data.SqlClient.DataClassification.InformationType",
-          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+          "ownerQualifiedName": "Microsoft.Data.SqlClient.DataClassification.InformationType",
+          "ownerIdentity": "Microsoft.Data.SqlClient"
         },
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.DataClassification.InformationType::Name:System.String",
-          "clrName": "Name",
+          "targetName": "Name",
           "metadataToken": 385877935,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Name|:System.String|static=false|accessor=get",
@@ -233,8 +233,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Data.SqlClient.DataClassification.InformationType",
-          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+          "ownerQualifiedName": "Microsoft.Data.SqlClient.DataClassification.InformationType",
+          "ownerIdentity": "Microsoft.Data.SqlClient"
         }
       ],
       "fields": [],
@@ -248,15 +248,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Data.SqlClient.DataClassification.InformationType",
-          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+          "ownerQualifiedName": "Microsoft.Data.SqlClient.DataClassification.InformationType",
+          "ownerIdentity": "Microsoft.Data.SqlClient"
         }
       ]
     },
     {
       "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.DataClassification.Label",
-      "clrName": "Microsoft.Data.SqlClient.DataClassification.Label",
-      "assemblyName": "Microsoft.Data.SqlClient",
+      "targetName": "Microsoft.Data.SqlClient.DataClassification.Label",
+      "ownerIdentity": "Microsoft.Data.SqlClient",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -266,13 +266,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.DataClassification.Label::Id:System.String",
-          "clrName": "Id",
+          "targetName": "Id",
           "metadataToken": 385877936,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Id|:System.String|static=false|accessor=get",
@@ -286,12 +286,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Data.SqlClient.DataClassification.Label",
-          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+          "ownerQualifiedName": "Microsoft.Data.SqlClient.DataClassification.Label",
+          "ownerIdentity": "Microsoft.Data.SqlClient"
         },
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.DataClassification.Label::Name:System.String",
-          "clrName": "Name",
+          "targetName": "Name",
           "metadataToken": 385877937,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Name|:System.String|static=false|accessor=get",
@@ -305,8 +305,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Data.SqlClient.DataClassification.Label",
-          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+          "ownerQualifiedName": "Microsoft.Data.SqlClient.DataClassification.Label",
+          "ownerIdentity": "Microsoft.Data.SqlClient"
         }
       ],
       "fields": [],
@@ -320,15 +320,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Data.SqlClient.DataClassification.Label",
-          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+          "ownerQualifiedName": "Microsoft.Data.SqlClient.DataClassification.Label",
+          "ownerIdentity": "Microsoft.Data.SqlClient"
         }
       ]
     },
     {
       "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.DataClassification.SensitivityClassification",
-      "clrName": "Microsoft.Data.SqlClient.DataClassification.SensitivityClassification",
-      "assemblyName": "Microsoft.Data.SqlClient",
+      "targetName": "Microsoft.Data.SqlClient.DataClassification.SensitivityClassification",
+      "ownerIdentity": "Microsoft.Data.SqlClient",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -338,13 +338,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.DataClassification.SensitivityClassification::ColumnSensitivities:System.Collections.ObjectModel.ReadOnlyCollection_1[[Microsoft.Data.SqlClient.DataClassification.ColumnSensitivity,Microsoft.Data.SqlClient,Version=6.0.0.0,Culture=neutral,PublicKeyToken=23ec7fc2d6eaa4a5]]",
-          "clrName": "ColumnSensitivities",
+          "targetName": "ColumnSensitivities",
           "metadataToken": 385877938,
           "canonicalSignature": ":System.Collections.ObjectModel.ReadOnlyCollection_1[[Microsoft.Data.SqlClient.DataClassification.ColumnSensitivity,Microsoft.Data.SqlClient,Version=6.0.0.0,Culture=neutral,PublicKeyToken=23ec7fc2d6eaa4a5]]",
           "normalizedSignature": "ColumnSensitivities|:System.Collections.ObjectModel.ReadOnlyCollection_1[[Microsoft.Data.SqlClient.DataClassification.ColumnSensitivity,Microsoft.Data.SqlClient,Version=6.0.0.0,Culture=neutral,PublicKeyToken=23ec7fc2d6eaa4a5]]|static=false|accessor=get",
@@ -358,12 +358,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Data.SqlClient.DataClassification.SensitivityClassification",
-          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+          "ownerQualifiedName": "Microsoft.Data.SqlClient.DataClassification.SensitivityClassification",
+          "ownerIdentity": "Microsoft.Data.SqlClient"
         },
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.DataClassification.SensitivityClassification::InformationTypes:System.Collections.ObjectModel.ReadOnlyCollection_1[[Microsoft.Data.SqlClient.DataClassification.InformationType,Microsoft.Data.SqlClient,Version=6.0.0.0,Culture=neutral,PublicKeyToken=23ec7fc2d6eaa4a5]]",
-          "clrName": "InformationTypes",
+          "targetName": "InformationTypes",
           "metadataToken": 385877939,
           "canonicalSignature": ":System.Collections.ObjectModel.ReadOnlyCollection_1[[Microsoft.Data.SqlClient.DataClassification.InformationType,Microsoft.Data.SqlClient,Version=6.0.0.0,Culture=neutral,PublicKeyToken=23ec7fc2d6eaa4a5]]",
           "normalizedSignature": "InformationTypes|:System.Collections.ObjectModel.ReadOnlyCollection_1[[Microsoft.Data.SqlClient.DataClassification.InformationType,Microsoft.Data.SqlClient,Version=6.0.0.0,Culture=neutral,PublicKeyToken=23ec7fc2d6eaa4a5]]|static=false|accessor=get",
@@ -377,12 +377,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Data.SqlClient.DataClassification.SensitivityClassification",
-          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+          "ownerQualifiedName": "Microsoft.Data.SqlClient.DataClassification.SensitivityClassification",
+          "ownerIdentity": "Microsoft.Data.SqlClient"
         },
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.DataClassification.SensitivityClassification::Labels:System.Collections.ObjectModel.ReadOnlyCollection_1[[Microsoft.Data.SqlClient.DataClassification.Label,Microsoft.Data.SqlClient,Version=6.0.0.0,Culture=neutral,PublicKeyToken=23ec7fc2d6eaa4a5]]",
-          "clrName": "Labels",
+          "targetName": "Labels",
           "metadataToken": 385877940,
           "canonicalSignature": ":System.Collections.ObjectModel.ReadOnlyCollection_1[[Microsoft.Data.SqlClient.DataClassification.Label,Microsoft.Data.SqlClient,Version=6.0.0.0,Culture=neutral,PublicKeyToken=23ec7fc2d6eaa4a5]]",
           "normalizedSignature": "Labels|:System.Collections.ObjectModel.ReadOnlyCollection_1[[Microsoft.Data.SqlClient.DataClassification.Label,Microsoft.Data.SqlClient,Version=6.0.0.0,Culture=neutral,PublicKeyToken=23ec7fc2d6eaa4a5]]|static=false|accessor=get",
@@ -396,12 +396,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Data.SqlClient.DataClassification.SensitivityClassification",
-          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+          "ownerQualifiedName": "Microsoft.Data.SqlClient.DataClassification.SensitivityClassification",
+          "ownerIdentity": "Microsoft.Data.SqlClient"
         },
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.DataClassification.SensitivityClassification::SensitivityRank:Microsoft.Data.SqlClient.DataClassification.SensitivityRank",
-          "clrName": "SensitivityRank",
+          "targetName": "SensitivityRank",
           "metadataToken": 385877941,
           "canonicalSignature": ":Microsoft.Data.SqlClient.DataClassification.SensitivityRank",
           "normalizedSignature": "SensitivityRank|:Microsoft.Data.SqlClient.DataClassification.SensitivityRank|static=false|accessor=get",
@@ -415,8 +415,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Data.SqlClient.DataClassification.SensitivityClassification",
-          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+          "ownerQualifiedName": "Microsoft.Data.SqlClient.DataClassification.SensitivityClassification",
+          "ownerIdentity": "Microsoft.Data.SqlClient"
         }
       ],
       "fields": [],
@@ -430,15 +430,15 @@
           "isStatic": false,
           "parameterCount": 4,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Data.SqlClient.DataClassification.SensitivityClassification",
-          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+          "ownerQualifiedName": "Microsoft.Data.SqlClient.DataClassification.SensitivityClassification",
+          "ownerIdentity": "Microsoft.Data.SqlClient"
         }
       ]
     },
     {
       "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.DataClassification.SensitivityProperty",
-      "clrName": "Microsoft.Data.SqlClient.DataClassification.SensitivityProperty",
-      "assemblyName": "Microsoft.Data.SqlClient",
+      "targetName": "Microsoft.Data.SqlClient.DataClassification.SensitivityProperty",
+      "ownerIdentity": "Microsoft.Data.SqlClient",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -448,13 +448,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.DataClassification.SensitivityProperty::InformationType:Microsoft.Data.SqlClient.DataClassification.InformationType",
-          "clrName": "InformationType",
+          "targetName": "InformationType",
           "metadataToken": 385877942,
           "canonicalSignature": ":Microsoft.Data.SqlClient.DataClassification.InformationType",
           "normalizedSignature": "InformationType|:Microsoft.Data.SqlClient.DataClassification.InformationType|static=false|accessor=get",
@@ -468,12 +468,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Data.SqlClient.DataClassification.SensitivityProperty",
-          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+          "ownerQualifiedName": "Microsoft.Data.SqlClient.DataClassification.SensitivityProperty",
+          "ownerIdentity": "Microsoft.Data.SqlClient"
         },
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.DataClassification.SensitivityProperty::Label:Microsoft.Data.SqlClient.DataClassification.Label",
-          "clrName": "Label",
+          "targetName": "Label",
           "metadataToken": 385877943,
           "canonicalSignature": ":Microsoft.Data.SqlClient.DataClassification.Label",
           "normalizedSignature": "Label|:Microsoft.Data.SqlClient.DataClassification.Label|static=false|accessor=get",
@@ -487,12 +487,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Data.SqlClient.DataClassification.SensitivityProperty",
-          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+          "ownerQualifiedName": "Microsoft.Data.SqlClient.DataClassification.SensitivityProperty",
+          "ownerIdentity": "Microsoft.Data.SqlClient"
         },
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.DataClassification.SensitivityProperty::SensitivityRank:Microsoft.Data.SqlClient.DataClassification.SensitivityRank",
-          "clrName": "SensitivityRank",
+          "targetName": "SensitivityRank",
           "metadataToken": 385877944,
           "canonicalSignature": ":Microsoft.Data.SqlClient.DataClassification.SensitivityRank",
           "normalizedSignature": "SensitivityRank|:Microsoft.Data.SqlClient.DataClassification.SensitivityRank|static=false|accessor=get",
@@ -506,8 +506,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Data.SqlClient.DataClassification.SensitivityProperty",
-          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+          "ownerQualifiedName": "Microsoft.Data.SqlClient.DataClassification.SensitivityProperty",
+          "ownerIdentity": "Microsoft.Data.SqlClient"
         }
       ],
       "fields": [],
@@ -521,8 +521,8 @@
           "isStatic": false,
           "parameterCount": 3,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Data.SqlClient.DataClassification.SensitivityProperty",
-          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+          "ownerQualifiedName": "Microsoft.Data.SqlClient.DataClassification.SensitivityProperty",
+          "ownerIdentity": "Microsoft.Data.SqlClient"
         }
       ]
     }

@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Region.RegionOutcome",
-      "clrName": "Microsoft.Identity.Client.Region.RegionOutcome",
-      "assemblyName": "Microsoft.Identity.Client",
+      "targetName": "Microsoft.Identity.Client.Region.RegionOutcome",
+      "ownerIdentity": "Microsoft.Identity.Client",
       "metadataToken": 0,
       "kind": "Enum",
       "accessibility": "Public",
@@ -17,24 +17,24 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Enum",
-        "clrName": "System.Enum"
+        "targetName": "System.Enum"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.IComparable",
-          "clrName": "System.IComparable"
+          "targetName": "System.IComparable"
         },
         {
           "stableId": "System.Private.CoreLib:System.ISpanFormattable",
-          "clrName": "System.ISpanFormattable"
+          "targetName": "System.ISpanFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IFormattable",
-          "clrName": "System.IFormattable"
+          "targetName": "System.IFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IConvertible",
-          "clrName": "System.IConvertible"
+          "targetName": "System.IConvertible"
         }
       ],
       "methods": [],
@@ -42,87 +42,87 @@
       "fields": [
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Region.RegionOutcome::value__System.Int32",
-          "clrName": "value__",
+          "targetName": "value__",
           "metadataToken": 67110662,
           "normalizedSignature": "value__|System.Int32|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Region.RegionOutcome",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.Region.RegionOutcome",
+          "ownerIdentity": "Microsoft.Identity.Client"
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Region.RegionOutcome::NoneMicrosoft.Identity.Client.Region.RegionOutcome",
-          "clrName": "None",
+          "targetName": "None",
           "metadataToken": 67110663,
           "normalizedSignature": "None|Microsoft.Identity.Client.Region.RegionOutcome|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Region.RegionOutcome",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.Region.RegionOutcome",
+          "ownerIdentity": "Microsoft.Identity.Client"
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Region.RegionOutcome::UserProvidedValidMicrosoft.Identity.Client.Region.RegionOutcome",
-          "clrName": "UserProvidedValid",
+          "targetName": "UserProvidedValid",
           "metadataToken": 67110664,
           "normalizedSignature": "UserProvidedValid|Microsoft.Identity.Client.Region.RegionOutcome|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Region.RegionOutcome",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.Region.RegionOutcome",
+          "ownerIdentity": "Microsoft.Identity.Client"
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Region.RegionOutcome::UserProvidedAutodetectionFailedMicrosoft.Identity.Client.Region.RegionOutcome",
-          "clrName": "UserProvidedAutodetectionFailed",
+          "targetName": "UserProvidedAutodetectionFailed",
           "metadataToken": 67110665,
           "normalizedSignature": "UserProvidedAutodetectionFailed|Microsoft.Identity.Client.Region.RegionOutcome|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Region.RegionOutcome",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.Region.RegionOutcome",
+          "ownerIdentity": "Microsoft.Identity.Client"
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Region.RegionOutcome::UserProvidedInvalidMicrosoft.Identity.Client.Region.RegionOutcome",
-          "clrName": "UserProvidedInvalid",
+          "targetName": "UserProvidedInvalid",
           "metadataToken": 67110666,
           "normalizedSignature": "UserProvidedInvalid|Microsoft.Identity.Client.Region.RegionOutcome|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Region.RegionOutcome",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.Region.RegionOutcome",
+          "ownerIdentity": "Microsoft.Identity.Client"
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Region.RegionOutcome::AutodetectSuccessMicrosoft.Identity.Client.Region.RegionOutcome",
-          "clrName": "AutodetectSuccess",
+          "targetName": "AutodetectSuccess",
           "metadataToken": 67110667,
           "normalizedSignature": "AutodetectSuccess|Microsoft.Identity.Client.Region.RegionOutcome|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Region.RegionOutcome",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.Region.RegionOutcome",
+          "ownerIdentity": "Microsoft.Identity.Client"
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Region.RegionOutcome::FallbackToGlobalMicrosoft.Identity.Client.Region.RegionOutcome",
-          "clrName": "FallbackToGlobal",
+          "targetName": "FallbackToGlobal",
           "metadataToken": 67110668,
           "normalizedSignature": "FallbackToGlobal|Microsoft.Identity.Client.Region.RegionOutcome|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Region.RegionOutcome",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.Region.RegionOutcome",
+          "ownerIdentity": "Microsoft.Identity.Client"
         }
       ],
       "events": [],

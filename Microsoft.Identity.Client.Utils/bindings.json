@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Utils.MacMainThreadScheduler",
-      "clrName": "Microsoft.Identity.Client.Utils.MacMainThreadScheduler",
-      "assemblyName": "Microsoft.Identity.Client",
+      "targetName": "Microsoft.Identity.Client.Utils.MacMainThreadScheduler",
+      "ownerIdentity": "Microsoft.Identity.Client",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,12 +17,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Utils.MacMainThreadScheduler::Instance():Microsoft.Identity.Client.Utils.MacMainThreadScheduler",
-          "clrName": "Instance",
+          "targetName": "Instance",
           "metadataToken": 100664849,
           "canonicalSignature": "():Microsoft.Identity.Client.Utils.MacMainThreadScheduler",
           "normalizedSignature": "Instance|():Microsoft.Identity.Client.Utils.MacMainThreadScheduler|static=true",
@@ -36,13 +36,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Utils.MacMainThreadScheduler",
-          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "ownerQualifiedName": "Microsoft.Identity.Client.Utils.MacMainThreadScheduler",
+          "ownerIdentity": "Microsoft.Identity.Client",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Utils.MacMainThreadScheduler::IsCurrentlyOnMainThread():System.Boolean",
-          "clrName": "IsCurrentlyOnMainThread",
+          "targetName": "IsCurrentlyOnMainThread",
           "metadataToken": 100664851,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "IsCurrentlyOnMainThread|():System.Boolean|static=false",
@@ -56,13 +56,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Utils.MacMainThreadScheduler",
-          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "ownerQualifiedName": "Microsoft.Identity.Client.Utils.MacMainThreadScheduler",
+          "ownerIdentity": "Microsoft.Identity.Client",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Utils.MacMainThreadScheduler::IsRunning():System.Boolean",
-          "clrName": "IsRunning",
+          "targetName": "IsRunning",
           "metadataToken": 100664852,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "IsRunning|():System.Boolean|static=false",
@@ -76,13 +76,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Utils.MacMainThreadScheduler",
-          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "ownerQualifiedName": "Microsoft.Identity.Client.Utils.MacMainThreadScheduler",
+          "ownerIdentity": "Microsoft.Identity.Client",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Utils.MacMainThreadScheduler::Stop():System.Void",
-          "clrName": "Stop",
+          "targetName": "Stop",
           "metadataToken": 100664853,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Stop|():System.Void|static=false",
@@ -96,13 +96,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Utils.MacMainThreadScheduler",
-          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "ownerQualifiedName": "Microsoft.Identity.Client.Utils.MacMainThreadScheduler",
+          "ownerIdentity": "Microsoft.Identity.Client",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Utils.MacMainThreadScheduler::RunOnMainThreadAsync(System.Func_1[[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Threading.Tasks.Task",
-          "clrName": "RunOnMainThreadAsync",
+          "targetName": "RunOnMainThreadAsync",
           "metadataToken": 100664854,
           "canonicalSignature": "(System.Func_1[[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Threading.Tasks.Task",
           "normalizedSignature": "RunOnMainThreadAsync|(System.Func_1[[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Threading.Tasks.Task|static=false",
@@ -116,13 +116,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Utils.MacMainThreadScheduler",
-          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "ownerQualifiedName": "Microsoft.Identity.Client.Utils.MacMainThreadScheduler",
+          "ownerIdentity": "Microsoft.Identity.Client",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Utils.MacMainThreadScheduler::StartMessageLoop():System.Void",
-          "clrName": "StartMessageLoop",
+          "targetName": "StartMessageLoop",
           "metadataToken": 100664855,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "StartMessageLoop|():System.Void|static=false",
@@ -136,8 +136,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Utils.MacMainThreadScheduler",
-          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "ownerQualifiedName": "Microsoft.Identity.Client.Utils.MacMainThreadScheduler",
+          "ownerIdentity": "Microsoft.Identity.Client",
           "isExtensionMethod": false
         }
       ],

@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.SSHCertificates.SSHExtensions",
-      "clrName": "Microsoft.Identity.Client.SSHCertificates.SSHExtensions",
-      "assemblyName": "Microsoft.Identity.Client",
+      "targetName": "Microsoft.Identity.Client.SSHCertificates.SSHExtensions",
+      "ownerIdentity": "Microsoft.Identity.Client",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -17,12 +17,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.SSHCertificates.SSHExtensions::WithSSHCertificateAuthenticationScheme(Microsoft.Identity.Client.AcquireTokenInteractiveParameterBuilder,System.String,System.String):Microsoft.Identity.Client.AcquireTokenInteractiveParameterBuilder",
-          "clrName": "WithSSHCertificateAuthenticationScheme",
+          "targetName": "WithSSHCertificateAuthenticationScheme",
           "metadataToken": 100666113,
           "canonicalSignature": "(Microsoft.Identity.Client.AcquireTokenInteractiveParameterBuilder,System.String,System.String):Microsoft.Identity.Client.AcquireTokenInteractiveParameterBuilder",
           "normalizedSignature": "WithSSHCertificateAuthenticationScheme|(Microsoft.Identity.Client.AcquireTokenInteractiveParameterBuilder,System.String,System.String):Microsoft.Identity.Client.AcquireTokenInteractiveParameterBuilder|static=true",
@@ -36,13 +36,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.SSHCertificates.SSHExtensions",
-          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "ownerQualifiedName": "Microsoft.Identity.Client.SSHCertificates.SSHExtensions",
+          "ownerIdentity": "Microsoft.Identity.Client",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.SSHCertificates.SSHExtensions::WithSSHCertificateAuthenticationScheme(Microsoft.Identity.Client.AcquireTokenSilentParameterBuilder,System.String,System.String):Microsoft.Identity.Client.AcquireTokenSilentParameterBuilder",
-          "clrName": "WithSSHCertificateAuthenticationScheme",
+          "targetName": "WithSSHCertificateAuthenticationScheme",
           "metadataToken": 100666114,
           "canonicalSignature": "(Microsoft.Identity.Client.AcquireTokenSilentParameterBuilder,System.String,System.String):Microsoft.Identity.Client.AcquireTokenSilentParameterBuilder",
           "normalizedSignature": "WithSSHCertificateAuthenticationScheme|(Microsoft.Identity.Client.AcquireTokenSilentParameterBuilder,System.String,System.String):Microsoft.Identity.Client.AcquireTokenSilentParameterBuilder|static=true",
@@ -56,8 +56,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.SSHCertificates.SSHExtensions",
-          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "ownerQualifiedName": "Microsoft.Identity.Client.SSHCertificates.SSHExtensions",
+          "ownerIdentity": "Microsoft.Identity.Client",
           "isExtensionMethod": true
         }
       ],

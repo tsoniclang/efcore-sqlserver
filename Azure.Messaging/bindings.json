@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Azure.Core:Azure.Messaging.CloudEventDataFormat",
-      "clrName": "Azure.Messaging.CloudEventDataFormat",
-      "assemblyName": "Azure.Core",
+      "targetName": "Azure.Messaging.CloudEventDataFormat",
+      "ownerIdentity": "Azure.Core",
       "metadataToken": 0,
       "kind": "Enum",
       "accessibility": "Public",
@@ -17,24 +17,24 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Enum",
-        "clrName": "System.Enum"
+        "targetName": "System.Enum"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.IComparable",
-          "clrName": "System.IComparable"
+          "targetName": "System.IComparable"
         },
         {
           "stableId": "System.Private.CoreLib:System.ISpanFormattable",
-          "clrName": "System.ISpanFormattable"
+          "targetName": "System.ISpanFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IFormattable",
-          "clrName": "System.IFormattable"
+          "targetName": "System.IFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IConvertible",
-          "clrName": "System.IConvertible"
+          "targetName": "System.IConvertible"
         }
       ],
       "methods": [],
@@ -42,39 +42,39 @@
       "fields": [
         {
           "stableId": "Azure.Core:Azure.Messaging.CloudEventDataFormat::value__System.Int32",
-          "clrName": "value__",
+          "targetName": "value__",
           "metadataToken": 67108959,
           "normalizedSignature": "value__|System.Int32|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Messaging.CloudEventDataFormat",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.Messaging.CloudEventDataFormat",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.Messaging.CloudEventDataFormat::BinaryAzure.Messaging.CloudEventDataFormat",
-          "clrName": "Binary",
+          "targetName": "Binary",
           "metadataToken": 67108960,
           "normalizedSignature": "Binary|Azure.Messaging.CloudEventDataFormat|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Azure.Messaging.CloudEventDataFormat",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.Messaging.CloudEventDataFormat",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.Messaging.CloudEventDataFormat::JsonAzure.Messaging.CloudEventDataFormat",
-          "clrName": "Json",
+          "targetName": "Json",
           "metadataToken": 67108961,
           "normalizedSignature": "Json|Azure.Messaging.CloudEventDataFormat|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Azure.Messaging.CloudEventDataFormat",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.Messaging.CloudEventDataFormat",
+          "ownerIdentity": "Azure.Core"
         }
       ],
       "events": [],
@@ -82,8 +82,8 @@
     },
     {
       "stableId": "Azure.Core:Azure.Messaging.CloudEvent",
-      "clrName": "Azure.Messaging.CloudEvent",
-      "assemblyName": "Azure.Core",
+      "targetName": "Azure.Messaging.CloudEvent",
+      "ownerIdentity": "Azure.Core",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -93,12 +93,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Azure.Core:Azure.Messaging.CloudEvent::ParseMany(System.BinaryData,System.Boolean):Azure.Messaging.CloudEvent[]",
-          "clrName": "ParseMany",
+          "targetName": "ParseMany",
           "metadataToken": 100663607,
           "canonicalSignature": "(System.BinaryData,System.Boolean):Azure.Messaging.CloudEvent[]",
           "normalizedSignature": "ParseMany|(System.BinaryData,System.Boolean):Azure.Messaging.CloudEvent[]|static=true",
@@ -112,13 +112,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Messaging.CloudEvent",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Messaging.CloudEvent",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Messaging.CloudEvent::Parse(System.BinaryData,System.Boolean):Azure.Messaging.CloudEvent",
-          "clrName": "Parse",
+          "targetName": "Parse",
           "metadataToken": 100663608,
           "canonicalSignature": "(System.BinaryData,System.Boolean):Azure.Messaging.CloudEvent",
           "normalizedSignature": "Parse|(System.BinaryData,System.Boolean):Azure.Messaging.CloudEvent|static=true",
@@ -132,15 +132,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Messaging.CloudEvent",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Messaging.CloudEvent",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Azure.Core:Azure.Messaging.CloudEvent::Data:System.BinaryData",
-          "clrName": "Data",
+          "targetName": "Data",
           "metadataToken": 385876034,
           "canonicalSignature": ":System.BinaryData",
           "normalizedSignature": "Data|:System.BinaryData|static=false|accessor=getset",
@@ -154,12 +154,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Messaging.CloudEvent",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.Messaging.CloudEvent",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.Messaging.CloudEvent::Id:System.String",
-          "clrName": "Id",
+          "targetName": "Id",
           "metadataToken": 385876035,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Id|:System.String|static=false|accessor=getset",
@@ -173,12 +173,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Messaging.CloudEvent",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.Messaging.CloudEvent",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.Messaging.CloudEvent::Source:System.String",
-          "clrName": "Source",
+          "targetName": "Source",
           "metadataToken": 385876037,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Source|:System.String|static=false|accessor=getset",
@@ -192,12 +192,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Messaging.CloudEvent",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.Messaging.CloudEvent",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.Messaging.CloudEvent::Type:System.String",
-          "clrName": "Type",
+          "targetName": "Type",
           "metadataToken": 385876038,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Type|:System.String|static=false|accessor=getset",
@@ -211,12 +211,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Messaging.CloudEvent",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.Messaging.CloudEvent",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.Messaging.CloudEvent::Time:System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "Time",
+          "targetName": "Time",
           "metadataToken": 385876040,
           "canonicalSignature": ":System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "Time|:System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -230,12 +230,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Messaging.CloudEvent",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.Messaging.CloudEvent",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.Messaging.CloudEvent::DataSchema:System.String",
-          "clrName": "DataSchema",
+          "targetName": "DataSchema",
           "metadataToken": 385876041,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "DataSchema|:System.String|static=false|accessor=getset",
@@ -249,12 +249,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Messaging.CloudEvent",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.Messaging.CloudEvent",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.Messaging.CloudEvent::DataContentType:System.String",
-          "clrName": "DataContentType",
+          "targetName": "DataContentType",
           "metadataToken": 385876042,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "DataContentType|:System.String|static=false|accessor=getset",
@@ -268,12 +268,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Messaging.CloudEvent",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.Messaging.CloudEvent",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.Messaging.CloudEvent::Subject:System.String",
-          "clrName": "Subject",
+          "targetName": "Subject",
           "metadataToken": 385876044,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Subject|:System.String|static=false|accessor=getset",
@@ -287,12 +287,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Messaging.CloudEvent",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.Messaging.CloudEvent",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.Messaging.CloudEvent::ExtensionAttributes:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "ExtensionAttributes",
+          "targetName": "ExtensionAttributes",
           "metadataToken": 385876045,
           "canonicalSignature": ":System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "ExtensionAttributes|:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
@@ -306,8 +306,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Messaging.CloudEvent",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.Messaging.CloudEvent",
+          "ownerIdentity": "Azure.Core"
         }
       ],
       "fields": [],
@@ -321,8 +321,8 @@
           "isStatic": false,
           "parameterCount": 4,
           "visibility": "Public",
-          "declaringClrType": "Azure.Messaging.CloudEvent",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.Messaging.CloudEvent",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.Messaging.CloudEvent::.ctor(System.String,System.String,System.BinaryData,System.String,Azure.Messaging.CloudEventDataFormat):void",
@@ -332,15 +332,15 @@
           "isStatic": false,
           "parameterCount": 5,
           "visibility": "Public",
-          "declaringClrType": "Azure.Messaging.CloudEvent",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.Messaging.CloudEvent",
+          "ownerIdentity": "Azure.Core"
         }
       ]
     },
     {
       "stableId": "Azure.Core:Azure.Messaging.MessageContent",
-      "clrName": "Azure.Messaging.MessageContent",
-      "assemblyName": "Azure.Core",
+      "targetName": "Azure.Messaging.MessageContent",
+      "ownerIdentity": "Azure.Core",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -350,13 +350,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Azure.Core:Azure.Messaging.MessageContent::Data:System.BinaryData",
-          "clrName": "Data",
+          "targetName": "Data",
           "metadataToken": 385876051,
           "canonicalSignature": ":System.BinaryData",
           "normalizedSignature": "Data|:System.BinaryData|static=false|accessor=getset",
@@ -370,12 +370,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Messaging.MessageContent",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.Messaging.MessageContent",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.Messaging.MessageContent::ContentType:System.Nullable_1[[Azure.Core.ContentType,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
-          "clrName": "ContentType",
+          "targetName": "ContentType",
           "metadataToken": 385876052,
           "canonicalSignature": ":System.Nullable_1[[Azure.Core.ContentType,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
           "normalizedSignature": "ContentType|:System.Nullable_1[[Azure.Core.ContentType,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]|static=false|accessor=getset",
@@ -389,12 +389,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Messaging.MessageContent",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.Messaging.MessageContent",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.Messaging.MessageContent::ContentTypeCore:System.Nullable_1[[Azure.Core.ContentType,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
-          "clrName": "ContentTypeCore",
+          "targetName": "ContentTypeCore",
           "metadataToken": 385876053,
           "canonicalSignature": ":System.Nullable_1[[Azure.Core.ContentType,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]",
           "normalizedSignature": "ContentTypeCore|:System.Nullable_1[[Azure.Core.ContentType,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]|static=false|accessor=getset",
@@ -408,12 +408,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Protected",
-          "declaringClrType": "Azure.Messaging.MessageContent",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.Messaging.MessageContent",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.Messaging.MessageContent::IsReadOnly:System.Boolean",
-          "clrName": "IsReadOnly",
+          "targetName": "IsReadOnly",
           "metadataToken": 385876054,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsReadOnly|:System.Boolean|static=false|accessor=get",
@@ -427,8 +427,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Messaging.MessageContent",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.Messaging.MessageContent",
+          "ownerIdentity": "Azure.Core"
         }
       ],
       "fields": [],
@@ -442,8 +442,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Azure.Messaging.MessageContent",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.Messaging.MessageContent",
+          "ownerIdentity": "Azure.Core"
         }
       ]
     }

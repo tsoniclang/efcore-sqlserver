@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderBase",
-      "clrName": "System.Configuration.Provider.ProviderBase",
-      "assemblyName": "System.Configuration.ConfigurationManager",
+      "targetName": "System.Configuration.Provider.ProviderBase",
+      "ownerIdentity": "System.Configuration.ConfigurationManager",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,12 +17,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderBase::Initialize(System.String,System.Collections.Specialized.NameValueCollection):System.Void",
-          "clrName": "Initialize",
+          "targetName": "Initialize",
           "metadataToken": 100665641,
           "canonicalSignature": "(System.String,System.Collections.Specialized.NameValueCollection):System.Void",
           "normalizedSignature": "Initialize|(System.String,System.Collections.Specialized.NameValueCollection):System.Void|static=false",
@@ -36,15 +36,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Configuration.Provider.ProviderBase",
-          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "ownerQualifiedName": "System.Configuration.Provider.ProviderBase",
+          "ownerIdentity": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderBase::Name:System.String",
-          "clrName": "Name",
+          "targetName": "Name",
           "metadataToken": 385876820,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Name|:System.String|static=false|accessor=get",
@@ -58,12 +58,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Configuration.Provider.ProviderBase",
-          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+          "ownerQualifiedName": "System.Configuration.Provider.ProviderBase",
+          "ownerIdentity": "System.Configuration.ConfigurationManager"
         },
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderBase::Description:System.String",
-          "clrName": "Description",
+          "targetName": "Description",
           "metadataToken": 385876821,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Description|:System.String|static=false|accessor=get",
@@ -77,8 +77,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Configuration.Provider.ProviderBase",
-          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+          "ownerQualifiedName": "System.Configuration.Provider.ProviderBase",
+          "ownerIdentity": "System.Configuration.ConfigurationManager"
         }
       ],
       "fields": [],
@@ -92,15 +92,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Protected",
-          "declaringClrType": "System.Configuration.Provider.ProviderBase",
-          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+          "ownerQualifiedName": "System.Configuration.Provider.ProviderBase",
+          "ownerIdentity": "System.Configuration.ConfigurationManager"
         }
       ]
     },
     {
       "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderCollection",
-      "clrName": "System.Configuration.Provider.ProviderCollection",
-      "assemblyName": "System.Configuration.ConfigurationManager",
+      "targetName": "System.Configuration.Provider.ProviderCollection",
+      "ownerIdentity": "System.Configuration.ConfigurationManager",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -110,22 +110,22 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.Collections.ICollection",
-          "clrName": "System.Collections.ICollection"
+          "targetName": "System.Collections.ICollection"
         },
         {
           "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
-          "clrName": "System.Collections.IEnumerable"
+          "targetName": "System.Collections.IEnumerable"
         }
       ],
       "methods": [
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderCollection::GetEnumerator():System.Collections.IEnumerator",
-          "clrName": "GetEnumerator",
+          "targetName": "GetEnumerator",
           "metadataToken": 100665645,
           "canonicalSignature": "():System.Collections.IEnumerator",
           "normalizedSignature": "GetEnumerator|():System.Collections.IEnumerator|static=false",
@@ -139,13 +139,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "System.Configuration.Provider.ProviderCollection",
-          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "ownerQualifiedName": "System.Configuration.Provider.ProviderCollection",
+          "ownerIdentity": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderCollection::Add(System.Configuration.Provider.ProviderBase):System.Void",
-          "clrName": "Add",
+          "targetName": "Add",
           "metadataToken": 100665650,
           "canonicalSignature": "(System.Configuration.Provider.ProviderBase):System.Void",
           "normalizedSignature": "Add|(System.Configuration.Provider.ProviderBase):System.Void|static=false",
@@ -159,13 +159,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Configuration.Provider.ProviderCollection",
-          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "ownerQualifiedName": "System.Configuration.Provider.ProviderCollection",
+          "ownerIdentity": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderCollection::Remove(System.String):System.Void",
-          "clrName": "Remove",
+          "targetName": "Remove",
           "metadataToken": 100665651,
           "canonicalSignature": "(System.String):System.Void",
           "normalizedSignature": "Remove|(System.String):System.Void|static=false",
@@ -179,13 +179,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Configuration.Provider.ProviderCollection",
-          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "ownerQualifiedName": "System.Configuration.Provider.ProviderCollection",
+          "ownerIdentity": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderCollection::SetReadOnly():System.Void",
-          "clrName": "SetReadOnly",
+          "targetName": "SetReadOnly",
           "metadataToken": 100665652,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "SetReadOnly|():System.Void|static=false",
@@ -199,13 +199,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Configuration.Provider.ProviderCollection",
-          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "ownerQualifiedName": "System.Configuration.Provider.ProviderCollection",
+          "ownerIdentity": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderCollection::Clear():System.Void",
-          "clrName": "Clear",
+          "targetName": "Clear",
           "metadataToken": 100665653,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Clear|():System.Void|static=false",
@@ -219,13 +219,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Configuration.Provider.ProviderCollection",
-          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "ownerQualifiedName": "System.Configuration.Provider.ProviderCollection",
+          "ownerIdentity": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderCollection::CopyTo(System.Configuration.Provider.ProviderBase[],System.Int32):System.Void",
-          "clrName": "CopyTo",
+          "targetName": "CopyTo",
           "metadataToken": 100665654,
           "canonicalSignature": "(System.Configuration.Provider.ProviderBase[],System.Int32):System.Void",
           "normalizedSignature": "CopyTo|(System.Configuration.Provider.ProviderBase[],System.Int32):System.Void|static=false",
@@ -239,15 +239,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Configuration.Provider.ProviderCollection",
-          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "ownerQualifiedName": "System.Configuration.Provider.ProviderCollection",
+          "ownerIdentity": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderCollection::Item[System.String]:System.Configuration.Provider.ProviderBase",
-          "clrName": "Item",
+          "targetName": "Item",
           "metadataToken": 385876822,
           "canonicalSignature": "[System.String]:System.Configuration.Provider.ProviderBase",
           "normalizedSignature": "Item|[System.String]:System.Configuration.Provider.ProviderBase|static=false|accessor=get",
@@ -261,12 +261,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Configuration.Provider.ProviderCollection",
-          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+          "ownerQualifiedName": "System.Configuration.Provider.ProviderCollection",
+          "ownerIdentity": "System.Configuration.ConfigurationManager"
         },
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderCollection::Count:System.Int32",
-          "clrName": "Count",
+          "targetName": "Count",
           "metadataToken": 385876823,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Count|:System.Int32|static=false|accessor=get",
@@ -280,12 +280,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Configuration.Provider.ProviderCollection",
-          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+          "ownerQualifiedName": "System.Configuration.Provider.ProviderCollection",
+          "ownerIdentity": "System.Configuration.ConfigurationManager"
         },
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderCollection::IsSynchronized:System.Boolean",
-          "clrName": "IsSynchronized",
+          "targetName": "IsSynchronized",
           "metadataToken": 385876824,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsSynchronized|:System.Boolean|static=false|accessor=get",
@@ -299,12 +299,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Configuration.Provider.ProviderCollection",
-          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+          "ownerQualifiedName": "System.Configuration.Provider.ProviderCollection",
+          "ownerIdentity": "System.Configuration.ConfigurationManager"
         },
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderCollection::SyncRoot:System.Object",
-          "clrName": "SyncRoot",
+          "targetName": "SyncRoot",
           "metadataToken": 385876825,
           "canonicalSignature": ":System.Object",
           "normalizedSignature": "SyncRoot|:System.Object|static=false|accessor=get",
@@ -318,8 +318,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Configuration.Provider.ProviderCollection",
-          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+          "ownerQualifiedName": "System.Configuration.Provider.ProviderCollection",
+          "ownerIdentity": "System.Configuration.ConfigurationManager"
         }
       ],
       "fields": [],
@@ -333,15 +333,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "System.Configuration.Provider.ProviderCollection",
-          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+          "ownerQualifiedName": "System.Configuration.Provider.ProviderCollection",
+          "ownerIdentity": "System.Configuration.ConfigurationManager"
         }
       ]
     },
     {
       "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderException",
-      "clrName": "System.Configuration.Provider.ProviderException",
-      "assemblyName": "System.Configuration.ConfigurationManager",
+      "targetName": "System.Configuration.Provider.ProviderException",
+      "ownerIdentity": "System.Configuration.ConfigurationManager",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -351,12 +351,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Exception",
-        "clrName": "System.Exception"
+        "targetName": "System.Exception"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.Runtime.Serialization.ISerializable",
-          "clrName": "System.Runtime.Serialization.ISerializable"
+          "targetName": "System.Runtime.Serialization.ISerializable"
         }
       ],
       "methods": [],
@@ -372,8 +372,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "System.Configuration.Provider.ProviderException",
-          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+          "ownerQualifiedName": "System.Configuration.Provider.ProviderException",
+          "ownerIdentity": "System.Configuration.ConfigurationManager"
         },
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderException::.ctor(System.String):void",
@@ -383,8 +383,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "System.Configuration.Provider.ProviderException",
-          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+          "ownerQualifiedName": "System.Configuration.Provider.ProviderException",
+          "ownerIdentity": "System.Configuration.ConfigurationManager"
         },
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderException::.ctor(System.String,System.Exception):void",
@@ -394,8 +394,8 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "System.Configuration.Provider.ProviderException",
-          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+          "ownerQualifiedName": "System.Configuration.Provider.ProviderException",
+          "ownerIdentity": "System.Configuration.ConfigurationManager"
         },
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
@@ -405,8 +405,8 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Protected",
-          "declaringClrType": "System.Configuration.Provider.ProviderException",
-          "declaringAssemblyName": "System.Configuration.ConfigurationManager"
+          "ownerQualifiedName": "System.Configuration.Provider.ProviderException",
+          "ownerIdentity": "System.Configuration.ConfigurationManager"
         }
       ]
     }

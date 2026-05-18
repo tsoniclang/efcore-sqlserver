@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.Sql.SqlDataSourceEnumerator",
-      "clrName": "Microsoft.Data.Sql.SqlDataSourceEnumerator",
-      "assemblyName": "Microsoft.Data.SqlClient",
+      "targetName": "Microsoft.Data.Sql.SqlDataSourceEnumerator",
+      "ownerIdentity": "Microsoft.Data.SqlClient",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,12 +17,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Data.Common:System.Data.Common.DbDataSourceEnumerator",
-        "clrName": "System.Data.Common.DbDataSourceEnumerator"
+        "targetName": "System.Data.Common.DbDataSourceEnumerator"
       },
       "methods": [
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.Sql.SqlDataSourceEnumerator::GetDataSources():System.Data.DataTable",
-          "clrName": "GetDataSources",
+          "targetName": "GetDataSources",
           "metadataToken": 100666073,
           "canonicalSignature": "():System.Data.DataTable",
           "normalizedSignature": "GetDataSources|():System.Data.DataTable|static=false",
@@ -36,15 +36,15 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Data.Sql.SqlDataSourceEnumerator",
-          "declaringAssemblyName": "Microsoft.Data.SqlClient",
+          "ownerQualifiedName": "Microsoft.Data.Sql.SqlDataSourceEnumerator",
+          "ownerIdentity": "Microsoft.Data.SqlClient",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.Sql.SqlDataSourceEnumerator::Instance:Microsoft.Data.Sql.SqlDataSourceEnumerator",
-          "clrName": "Instance",
+          "targetName": "Instance",
           "metadataToken": 385877945,
           "canonicalSignature": ":Microsoft.Data.Sql.SqlDataSourceEnumerator",
           "normalizedSignature": "Instance|:Microsoft.Data.Sql.SqlDataSourceEnumerator|static=true|accessor=get",
@@ -58,8 +58,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Data.Sql.SqlDataSourceEnumerator",
-          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+          "ownerQualifiedName": "Microsoft.Data.Sql.SqlDataSourceEnumerator",
+          "ownerIdentity": "Microsoft.Data.SqlClient"
         }
       ],
       "fields": [],
@@ -73,15 +73,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Data.Sql.SqlDataSourceEnumerator",
-          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+          "ownerQualifiedName": "Microsoft.Data.Sql.SqlDataSourceEnumerator",
+          "ownerIdentity": "Microsoft.Data.SqlClient"
         }
       ]
     },
     {
       "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.Sql.SqlNotificationRequest",
-      "clrName": "Microsoft.Data.Sql.SqlNotificationRequest",
-      "assemblyName": "Microsoft.Data.SqlClient",
+      "targetName": "Microsoft.Data.Sql.SqlNotificationRequest",
+      "ownerIdentity": "Microsoft.Data.SqlClient",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -91,13 +91,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.Sql.SqlNotificationRequest::Options:System.String",
-          "clrName": "Options",
+          "targetName": "Options",
           "metadataToken": 385877946,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Options|:System.String|static=false|accessor=getset",
@@ -111,12 +111,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Data.Sql.SqlNotificationRequest",
-          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+          "ownerQualifiedName": "Microsoft.Data.Sql.SqlNotificationRequest",
+          "ownerIdentity": "Microsoft.Data.SqlClient"
         },
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.Sql.SqlNotificationRequest::Timeout:System.Int32",
-          "clrName": "Timeout",
+          "targetName": "Timeout",
           "metadataToken": 385877947,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Timeout|:System.Int32|static=false|accessor=getset",
@@ -130,12 +130,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Data.Sql.SqlNotificationRequest",
-          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+          "ownerQualifiedName": "Microsoft.Data.Sql.SqlNotificationRequest",
+          "ownerIdentity": "Microsoft.Data.SqlClient"
         },
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.Sql.SqlNotificationRequest::UserData:System.String",
-          "clrName": "UserData",
+          "targetName": "UserData",
           "metadataToken": 385877948,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "UserData|:System.String|static=false|accessor=getset",
@@ -149,8 +149,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Data.Sql.SqlNotificationRequest",
-          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+          "ownerQualifiedName": "Microsoft.Data.Sql.SqlNotificationRequest",
+          "ownerIdentity": "Microsoft.Data.SqlClient"
         }
       ],
       "fields": [],
@@ -164,8 +164,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Data.Sql.SqlNotificationRequest",
-          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+          "ownerQualifiedName": "Microsoft.Data.Sql.SqlNotificationRequest",
+          "ownerIdentity": "Microsoft.Data.SqlClient"
         },
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.Sql.SqlNotificationRequest::.ctor(System.String,System.String,System.Int32):void",
@@ -175,8 +175,8 @@
           "isStatic": false,
           "parameterCount": 3,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Data.Sql.SqlNotificationRequest",
-          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+          "ownerQualifiedName": "Microsoft.Data.Sql.SqlNotificationRequest",
+          "ownerIdentity": "Microsoft.Data.SqlClient"
         }
       ]
     }

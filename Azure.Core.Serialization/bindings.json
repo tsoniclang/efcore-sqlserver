@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Azure.Core:Azure.Core.Serialization.JsonPropertyNames",
-      "clrName": "Azure.Core.Serialization.JsonPropertyNames",
-      "assemblyName": "Azure.Core",
+      "targetName": "Azure.Core.Serialization.JsonPropertyNames",
+      "ownerIdentity": "Azure.Core",
       "metadataToken": 0,
       "kind": "Enum",
       "accessibility": "Public",
@@ -17,24 +17,24 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Enum",
-        "clrName": "System.Enum"
+        "targetName": "System.Enum"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.IComparable",
-          "clrName": "System.IComparable"
+          "targetName": "System.IComparable"
         },
         {
           "stableId": "System.Private.CoreLib:System.ISpanFormattable",
-          "clrName": "System.ISpanFormattable"
+          "targetName": "System.ISpanFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IFormattable",
-          "clrName": "System.IFormattable"
+          "targetName": "System.IFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IConvertible",
-          "clrName": "System.IConvertible"
+          "targetName": "System.IConvertible"
         }
       ],
       "methods": [],
@@ -42,39 +42,39 @@
       "fields": [
         {
           "stableId": "Azure.Core:Azure.Core.Serialization.JsonPropertyNames::value__System.Int32",
-          "clrName": "value__",
+          "targetName": "value__",
           "metadataToken": 67109529,
           "normalizedSignature": "value__|System.Int32|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Core.Serialization.JsonPropertyNames",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.Core.Serialization.JsonPropertyNames",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.Core.Serialization.JsonPropertyNames::UseExactAzure.Core.Serialization.JsonPropertyNames",
-          "clrName": "UseExact",
+          "targetName": "UseExact",
           "metadataToken": 67109530,
           "normalizedSignature": "UseExact|Azure.Core.Serialization.JsonPropertyNames|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Azure.Core.Serialization.JsonPropertyNames",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.Core.Serialization.JsonPropertyNames",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.Core.Serialization.JsonPropertyNames::CamelCaseAzure.Core.Serialization.JsonPropertyNames",
-          "clrName": "CamelCase",
+          "targetName": "CamelCase",
           "metadataToken": 67109531,
           "normalizedSignature": "CamelCase|Azure.Core.Serialization.JsonPropertyNames|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Azure.Core.Serialization.JsonPropertyNames",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.Core.Serialization.JsonPropertyNames",
+          "ownerIdentity": "Azure.Core"
         }
       ],
       "events": [],
@@ -82,8 +82,8 @@
     },
     {
       "stableId": "Azure.Core:Azure.Core.Serialization.IMemberNameConverter",
-      "clrName": "Azure.Core.Serialization.IMemberNameConverter",
-      "assemblyName": "Azure.Core",
+      "targetName": "Azure.Core.Serialization.IMemberNameConverter",
+      "ownerIdentity": "Azure.Core",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -94,7 +94,7 @@
       "methods": [
         {
           "stableId": "Azure.Core:Azure.Core.Serialization.IMemberNameConverter::ConvertMemberName(System.Reflection.MemberInfo):System.String",
-          "clrName": "ConvertMemberName",
+          "targetName": "ConvertMemberName",
           "metadataToken": 100665058,
           "canonicalSignature": "(System.Reflection.MemberInfo):System.String",
           "normalizedSignature": "ConvertMemberName|(System.Reflection.MemberInfo):System.String|static=false",
@@ -108,8 +108,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Core.Serialization.IMemberNameConverter",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Core.Serialization.IMemberNameConverter",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         }
       ],
@@ -120,8 +120,8 @@
     },
     {
       "stableId": "Azure.Core:Azure.Core.Serialization.DynamicData",
-      "clrName": "Azure.Core.Serialization.DynamicData",
-      "assemblyName": "Azure.Core",
+      "targetName": "Azure.Core.Serialization.DynamicData",
+      "ownerIdentity": "Azure.Core",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -131,22 +131,22 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.IDisposable",
-          "clrName": "System.IDisposable"
+          "targetName": "System.IDisposable"
         },
         {
           "stableId": "System.Linq.Expressions:System.Dynamic.IDynamicMetaObjectProvider",
-          "clrName": "System.Dynamic.IDynamicMetaObjectProvider"
+          "targetName": "System.Dynamic.IDynamicMetaObjectProvider"
         }
       ],
       "methods": [
         {
           "stableId": "Azure.Core:Azure.Core.Serialization.DynamicData::ToString():System.String",
-          "clrName": "ToString",
+          "targetName": "ToString",
           "metadataToken": 100665017,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "ToString|():System.String|static=false",
@@ -160,13 +160,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Core.Serialization.DynamicData",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Core.Serialization.DynamicData",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Core.Serialization.DynamicData::Dispose():System.Void",
-          "clrName": "Dispose",
+          "targetName": "Dispose",
           "metadataToken": 100665018,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Dispose|():System.Void|static=false",
@@ -180,13 +180,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Azure.Core.Serialization.DynamicData",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Core.Serialization.DynamicData",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Core.Serialization.DynamicData::Equals(System.Object):System.Boolean",
-          "clrName": "Equals",
+          "targetName": "Equals",
           "metadataToken": 100665019,
           "canonicalSignature": "(System.Object):System.Boolean",
           "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
@@ -200,13 +200,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Core.Serialization.DynamicData",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Core.Serialization.DynamicData",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Core.Serialization.DynamicData::GetHashCode():System.Int32",
-          "clrName": "GetHashCode",
+          "targetName": "GetHashCode",
           "metadataToken": 100665022,
           "canonicalSignature": "():System.Int32",
           "normalizedSignature": "GetHashCode|():System.Int32|static=false",
@@ -220,8 +220,8 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Core.Serialization.DynamicData",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Core.Serialization.DynamicData",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         }
       ],
@@ -232,8 +232,8 @@
     },
     {
       "stableId": "Azure.Core:Azure.Core.Serialization.JsonObjectSerializer",
-      "clrName": "Azure.Core.Serialization.JsonObjectSerializer",
-      "assemblyName": "Azure.Core",
+      "targetName": "Azure.Core.Serialization.JsonObjectSerializer",
+      "ownerIdentity": "Azure.Core",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -243,18 +243,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "Azure.Core:Azure.Core.Serialization.ObjectSerializer",
-        "clrName": "Azure.Core.Serialization.ObjectSerializer"
+        "targetName": "Azure.Core.Serialization.ObjectSerializer"
       },
       "interfaces": [
         {
           "stableId": "Azure.Core:Azure.Core.Serialization.IMemberNameConverter",
-          "clrName": "Azure.Core.Serialization.IMemberNameConverter"
+          "targetName": "Azure.Core.Serialization.IMemberNameConverter"
         }
       ],
       "methods": [
         {
           "stableId": "Azure.Core:Azure.Core.Serialization.JsonObjectSerializer::Serialize(System.IO.Stream,System.Object,System.Type,System.Threading.CancellationToken):System.Void",
-          "clrName": "Serialize",
+          "targetName": "Serialize",
           "metadataToken": 100665062,
           "canonicalSignature": "(System.IO.Stream,System.Object,System.Type,System.Threading.CancellationToken):System.Void",
           "normalizedSignature": "Serialize|(System.IO.Stream,System.Object,System.Type,System.Threading.CancellationToken):System.Void|static=false",
@@ -268,13 +268,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Core.Serialization.JsonObjectSerializer",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Core.Serialization.JsonObjectSerializer",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Core.Serialization.JsonObjectSerializer::SerializeAsync(System.IO.Stream,System.Object,System.Type,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask",
-          "clrName": "SerializeAsync",
+          "targetName": "SerializeAsync",
           "metadataToken": 100665063,
           "canonicalSignature": "(System.IO.Stream,System.Object,System.Type,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask",
           "normalizedSignature": "SerializeAsync|(System.IO.Stream,System.Object,System.Type,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask|static=false",
@@ -288,13 +288,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Core.Serialization.JsonObjectSerializer",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Core.Serialization.JsonObjectSerializer",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Core.Serialization.JsonObjectSerializer::Deserialize(System.IO.Stream,System.Type,System.Threading.CancellationToken):System.Object",
-          "clrName": "Deserialize",
+          "targetName": "Deserialize",
           "metadataToken": 100665064,
           "canonicalSignature": "(System.IO.Stream,System.Type,System.Threading.CancellationToken):System.Object",
           "normalizedSignature": "Deserialize|(System.IO.Stream,System.Type,System.Threading.CancellationToken):System.Object|static=false",
@@ -308,13 +308,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Core.Serialization.JsonObjectSerializer",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Core.Serialization.JsonObjectSerializer",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Core.Serialization.JsonObjectSerializer::DeserializeAsync(System.IO.Stream,System.Type,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "DeserializeAsync",
+          "targetName": "DeserializeAsync",
           "metadataToken": 100665065,
           "canonicalSignature": "(System.IO.Stream,System.Type,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "DeserializeAsync|(System.IO.Stream,System.Type,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
@@ -328,13 +328,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Core.Serialization.JsonObjectSerializer",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Core.Serialization.JsonObjectSerializer",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Core.Serialization.JsonObjectSerializer::Serialize(System.Object,System.Type,System.Threading.CancellationToken):System.BinaryData",
-          "clrName": "Serialize",
+          "targetName": "Serialize",
           "metadataToken": 100665066,
           "canonicalSignature": "(System.Object,System.Type,System.Threading.CancellationToken):System.BinaryData",
           "normalizedSignature": "Serialize|(System.Object,System.Type,System.Threading.CancellationToken):System.BinaryData|static=false",
@@ -348,13 +348,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Core.Serialization.JsonObjectSerializer",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Core.Serialization.JsonObjectSerializer",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Core.Serialization.JsonObjectSerializer::SerializeAsync(System.Object,System.Type,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.BinaryData,System.Memory.Data,Version=8.0.0.1,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]",
-          "clrName": "SerializeAsync",
+          "targetName": "SerializeAsync",
           "metadataToken": 100665067,
           "canonicalSignature": "(System.Object,System.Type,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.BinaryData,System.Memory.Data,Version=8.0.0.1,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]",
           "normalizedSignature": "SerializeAsync|(System.Object,System.Type,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.BinaryData,System.Memory.Data,Version=8.0.0.1,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]|static=false",
@@ -368,13 +368,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Core.Serialization.JsonObjectSerializer",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Core.Serialization.JsonObjectSerializer",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Core.Serialization.IMemberNameConverter::ConvertMemberName(System.Reflection.MemberInfo):System.String",
-          "clrName": "ConvertMemberName",
+          "targetName": "ConvertMemberName",
           "metadataToken": 100665058,
           "canonicalSignature": "(System.Reflection.MemberInfo):System.String",
           "normalizedSignature": "ConvertMemberName|(System.Reflection.MemberInfo):System.String|static=false",
@@ -388,8 +388,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Core.Serialization.IMemberNameConverter",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Core.Serialization.IMemberNameConverter",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false,
           "sourceInterface": "Azure.Core.Serialization.IMemberNameConverter"
         }
@@ -397,7 +397,7 @@
       "properties": [
         {
           "stableId": "Azure.Core:Azure.Core.Serialization.JsonObjectSerializer::Default:Azure.Core.Serialization.JsonObjectSerializer",
-          "clrName": "Default",
+          "targetName": "Default",
           "metadataToken": 385876397,
           "canonicalSignature": ":Azure.Core.Serialization.JsonObjectSerializer",
           "normalizedSignature": "Default|:Azure.Core.Serialization.JsonObjectSerializer|static=true|accessor=get",
@@ -411,8 +411,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Core.Serialization.JsonObjectSerializer",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.Core.Serialization.JsonObjectSerializer",
+          "ownerIdentity": "Azure.Core"
         }
       ],
       "fields": [],
@@ -426,8 +426,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Azure.Core.Serialization.JsonObjectSerializer",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.Core.Serialization.JsonObjectSerializer",
+          "ownerIdentity": "Azure.Core"
         },
         {
           "stableId": "Azure.Core:Azure.Core.Serialization.JsonObjectSerializer::.ctor(System.Text.Json.JsonSerializerOptions):void",
@@ -437,15 +437,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Azure.Core.Serialization.JsonObjectSerializer",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.Core.Serialization.JsonObjectSerializer",
+          "ownerIdentity": "Azure.Core"
         }
       ]
     },
     {
       "stableId": "Azure.Core:Azure.Core.Serialization.ObjectSerializer",
-      "clrName": "Azure.Core.Serialization.ObjectSerializer",
-      "assemblyName": "Azure.Core",
+      "targetName": "Azure.Core.Serialization.ObjectSerializer",
+      "ownerIdentity": "Azure.Core",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -455,12 +455,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Azure.Core:Azure.Core.Serialization.ObjectSerializer::Serialize(System.IO.Stream,System.Object,System.Type,System.Threading.CancellationToken):System.Void",
-          "clrName": "Serialize",
+          "targetName": "Serialize",
           "metadataToken": 100665074,
           "canonicalSignature": "(System.IO.Stream,System.Object,System.Type,System.Threading.CancellationToken):System.Void",
           "normalizedSignature": "Serialize|(System.IO.Stream,System.Object,System.Type,System.Threading.CancellationToken):System.Void|static=false",
@@ -474,13 +474,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Core.Serialization.ObjectSerializer",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Core.Serialization.ObjectSerializer",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Core.Serialization.ObjectSerializer::SerializeAsync(System.IO.Stream,System.Object,System.Type,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask",
-          "clrName": "SerializeAsync",
+          "targetName": "SerializeAsync",
           "metadataToken": 100665075,
           "canonicalSignature": "(System.IO.Stream,System.Object,System.Type,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask",
           "normalizedSignature": "SerializeAsync|(System.IO.Stream,System.Object,System.Type,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask|static=false",
@@ -494,13 +494,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Core.Serialization.ObjectSerializer",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Core.Serialization.ObjectSerializer",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Core.Serialization.ObjectSerializer::Deserialize(System.IO.Stream,System.Type,System.Threading.CancellationToken):System.Object",
-          "clrName": "Deserialize",
+          "targetName": "Deserialize",
           "metadataToken": 100665076,
           "canonicalSignature": "(System.IO.Stream,System.Type,System.Threading.CancellationToken):System.Object",
           "normalizedSignature": "Deserialize|(System.IO.Stream,System.Type,System.Threading.CancellationToken):System.Object|static=false",
@@ -514,13 +514,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Core.Serialization.ObjectSerializer",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Core.Serialization.ObjectSerializer",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Core.Serialization.ObjectSerializer::DeserializeAsync(System.IO.Stream,System.Type,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "DeserializeAsync",
+          "targetName": "DeserializeAsync",
           "metadataToken": 100665077,
           "canonicalSignature": "(System.IO.Stream,System.Type,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "DeserializeAsync|(System.IO.Stream,System.Type,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
@@ -534,13 +534,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Core.Serialization.ObjectSerializer",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Core.Serialization.ObjectSerializer",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Core.Serialization.ObjectSerializer::Serialize(System.Object,System.Type,System.Threading.CancellationToken):System.BinaryData",
-          "clrName": "Serialize",
+          "targetName": "Serialize",
           "metadataToken": 100665078,
           "canonicalSignature": "(System.Object,System.Type,System.Threading.CancellationToken):System.BinaryData",
           "normalizedSignature": "Serialize|(System.Object,System.Type,System.Threading.CancellationToken):System.BinaryData|static=false",
@@ -554,13 +554,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Core.Serialization.ObjectSerializer",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Core.Serialization.ObjectSerializer",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         },
         {
           "stableId": "Azure.Core:Azure.Core.Serialization.ObjectSerializer::SerializeAsync(System.Object,System.Type,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.BinaryData,System.Memory.Data,Version=8.0.0.1,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]",
-          "clrName": "SerializeAsync",
+          "targetName": "SerializeAsync",
           "metadataToken": 100665079,
           "canonicalSignature": "(System.Object,System.Type,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.BinaryData,System.Memory.Data,Version=8.0.0.1,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]",
           "normalizedSignature": "SerializeAsync|(System.Object,System.Type,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.BinaryData,System.Memory.Data,Version=8.0.0.1,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]|static=false",
@@ -574,8 +574,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Azure.Core.Serialization.ObjectSerializer",
-          "declaringAssemblyName": "Azure.Core",
+          "ownerQualifiedName": "Azure.Core.Serialization.ObjectSerializer",
+          "ownerIdentity": "Azure.Core",
           "isExtensionMethod": false
         }
       ],
@@ -591,8 +591,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Protected",
-          "declaringClrType": "Azure.Core.Serialization.ObjectSerializer",
-          "declaringAssemblyName": "Azure.Core"
+          "ownerQualifiedName": "Azure.Core.Serialization.ObjectSerializer",
+          "ownerIdentity": "Azure.Core"
         }
       ]
     }

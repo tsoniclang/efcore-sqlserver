@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.ISafeLogSecurityArtifact",
-      "clrName": "Microsoft.IdentityModel.Logging.ISafeLogSecurityArtifact",
-      "assemblyName": "Microsoft.IdentityModel.Logging",
+      "targetName": "Microsoft.IdentityModel.Logging.ISafeLogSecurityArtifact",
+      "ownerIdentity": "Microsoft.IdentityModel.Logging",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -18,7 +18,7 @@
       "methods": [
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.ISafeLogSecurityArtifact::UnsafeToString():System.String",
-          "clrName": "UnsafeToString",
+          "targetName": "UnsafeToString",
           "metadataToken": 100663332,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "UnsafeToString|():System.String|static=false",
@@ -32,8 +32,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.ISafeLogSecurityArtifact",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.ISafeLogSecurityArtifact",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
         }
       ],
@@ -44,8 +44,8 @@
     },
     {
       "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.IdentityModelEventSource",
-      "clrName": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
-      "assemblyName": "Microsoft.IdentityModel.Logging",
+      "targetName": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
+      "ownerIdentity": "Microsoft.IdentityModel.Logging",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -55,18 +55,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Diagnostics.Tracing.EventSource",
-        "clrName": "System.Diagnostics.Tracing.EventSource"
+        "targetName": "System.Diagnostics.Tracing.EventSource"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.IDisposable",
-          "clrName": "System.IDisposable"
+          "targetName": "System.IDisposable"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.IdentityModelEventSource::WriteAlways(System.String):System.Void",
-          "clrName": "WriteAlways",
+          "targetName": "WriteAlways",
           "metadataToken": 100663308,
           "canonicalSignature": "(System.String):System.Void",
           "normalizedSignature": "WriteAlways|(System.String):System.Void|static=false",
@@ -80,13 +80,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.IdentityModelEventSource::WriteAlways(System.String,System.Object[]):System.Void",
-          "clrName": "WriteAlways",
+          "targetName": "WriteAlways",
           "metadataToken": 100663309,
           "canonicalSignature": "(System.String,System.Object[]):System.Void",
           "normalizedSignature": "WriteAlways|(System.String,System.Object[]):System.Void|static=false",
@@ -100,13 +100,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.IdentityModelEventSource::WriteVerbose(System.String):System.Void",
-          "clrName": "WriteVerbose",
+          "targetName": "WriteVerbose",
           "metadataToken": 100663310,
           "canonicalSignature": "(System.String):System.Void",
           "normalizedSignature": "WriteVerbose|(System.String):System.Void|static=false",
@@ -120,13 +120,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.IdentityModelEventSource::WriteVerbose(System.String,System.Object[]):System.Void",
-          "clrName": "WriteVerbose",
+          "targetName": "WriteVerbose",
           "metadataToken": 100663311,
           "canonicalSignature": "(System.String,System.Object[]):System.Void",
           "normalizedSignature": "WriteVerbose|(System.String,System.Object[]):System.Void|static=false",
@@ -140,13 +140,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.IdentityModelEventSource::WriteInformation(System.String):System.Void",
-          "clrName": "WriteInformation",
+          "targetName": "WriteInformation",
           "metadataToken": 100663312,
           "canonicalSignature": "(System.String):System.Void",
           "normalizedSignature": "WriteInformation|(System.String):System.Void|static=false",
@@ -160,13 +160,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.IdentityModelEventSource::WriteInformation(System.String,System.Object[]):System.Void",
-          "clrName": "WriteInformation",
+          "targetName": "WriteInformation",
           "metadataToken": 100663313,
           "canonicalSignature": "(System.String,System.Object[]):System.Void",
           "normalizedSignature": "WriteInformation|(System.String,System.Object[]):System.Void|static=false",
@@ -180,13 +180,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.IdentityModelEventSource::WriteWarning(System.String):System.Void",
-          "clrName": "WriteWarning",
+          "targetName": "WriteWarning",
           "metadataToken": 100663314,
           "canonicalSignature": "(System.String):System.Void",
           "normalizedSignature": "WriteWarning|(System.String):System.Void|static=false",
@@ -200,13 +200,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.IdentityModelEventSource::WriteWarning(System.String,System.Object[]):System.Void",
-          "clrName": "WriteWarning",
+          "targetName": "WriteWarning",
           "metadataToken": 100663315,
           "canonicalSignature": "(System.String,System.Object[]):System.Void",
           "normalizedSignature": "WriteWarning|(System.String,System.Object[]):System.Void|static=false",
@@ -220,13 +220,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.IdentityModelEventSource::WriteError(System.String):System.Void",
-          "clrName": "WriteError",
+          "targetName": "WriteError",
           "metadataToken": 100663316,
           "canonicalSignature": "(System.String):System.Void",
           "normalizedSignature": "WriteError|(System.String):System.Void|static=false",
@@ -240,13 +240,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.IdentityModelEventSource::WriteError(System.String,System.Object[]):System.Void",
-          "clrName": "WriteError",
+          "targetName": "WriteError",
           "metadataToken": 100663317,
           "canonicalSignature": "(System.String,System.Object[]):System.Void",
           "normalizedSignature": "WriteError|(System.String,System.Object[]):System.Void|static=false",
@@ -260,13 +260,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.IdentityModelEventSource::WriteCritical(System.String):System.Void",
-          "clrName": "WriteCritical",
+          "targetName": "WriteCritical",
           "metadataToken": 100663318,
           "canonicalSignature": "(System.String):System.Void",
           "normalizedSignature": "WriteCritical|(System.String):System.Void|static=false",
@@ -280,13 +280,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.IdentityModelEventSource::WriteCritical(System.String,System.Object[]):System.Void",
-          "clrName": "WriteCritical",
+          "targetName": "WriteCritical",
           "metadataToken": 100663319,
           "canonicalSignature": "(System.String,System.Object[]):System.Void",
           "normalizedSignature": "WriteCritical|(System.String,System.Object[]):System.Void|static=false",
@@ -300,13 +300,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.IdentityModelEventSource::Write(System.Diagnostics.Tracing.EventLevel,System.Exception,System.String):System.Void",
-          "clrName": "Write",
+          "targetName": "Write",
           "metadataToken": 100663320,
           "canonicalSignature": "(System.Diagnostics.Tracing.EventLevel,System.Exception,System.String):System.Void",
           "normalizedSignature": "Write|(System.Diagnostics.Tracing.EventLevel,System.Exception,System.String):System.Void|static=false",
@@ -320,13 +320,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.IdentityModelEventSource::Write(System.Diagnostics.Tracing.EventLevel,System.Exception,System.String,System.Object[]):System.Void",
-          "clrName": "Write",
+          "targetName": "Write",
           "metadataToken": 100663321,
           "canonicalSignature": "(System.Diagnostics.Tracing.EventLevel,System.Exception,System.String,System.Object[]):System.Void",
           "normalizedSignature": "Write|(System.Diagnostics.Tracing.EventLevel,System.Exception,System.String,System.Object[]):System.Void|static=false",
@@ -340,15 +340,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.IdentityModelEventSource::Logger:Microsoft.IdentityModel.Logging.IdentityModelEventSource",
-          "clrName": "Logger",
+          "targetName": "Logger",
           "metadataToken": 385875969,
           "canonicalSignature": ":Microsoft.IdentityModel.Logging.IdentityModelEventSource",
           "normalizedSignature": "Logger|:Microsoft.IdentityModel.Logging.IdentityModelEventSource|static=true|accessor=get",
@@ -362,12 +362,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging"
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging"
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.IdentityModelEventSource::ShowPII:System.Boolean",
-          "clrName": "ShowPII",
+          "targetName": "ShowPII",
           "metadataToken": 385875970,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "ShowPII|:System.Boolean|static=true|accessor=getset",
@@ -381,12 +381,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging"
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging"
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.IdentityModelEventSource::LogCompleteSecurityArtifact:System.Boolean",
-          "clrName": "LogCompleteSecurityArtifact",
+          "targetName": "LogCompleteSecurityArtifact",
           "metadataToken": 385875971,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "LogCompleteSecurityArtifact|:System.Boolean|static=true|accessor=getset",
@@ -400,12 +400,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging"
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging"
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.IdentityModelEventSource::HiddenPIIString:System.String",
-          "clrName": "HiddenPIIString",
+          "targetName": "HiddenPIIString",
           "metadataToken": 385875972,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "HiddenPIIString|:System.String|static=true|accessor=get",
@@ -419,12 +419,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging"
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging"
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.IdentityModelEventSource::HiddenSecurityArtifactString:System.String",
-          "clrName": "HiddenSecurityArtifactString",
+          "targetName": "HiddenSecurityArtifactString",
           "metadataToken": 385875973,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "HiddenSecurityArtifactString|:System.String|static=true|accessor=get",
@@ -438,12 +438,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging"
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging"
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.IdentityModelEventSource::HeaderWritten:System.Boolean",
-          "clrName": "HeaderWritten",
+          "targetName": "HeaderWritten",
           "metadataToken": 385875974,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "HeaderWritten|:System.Boolean|static=true|accessor=getset",
@@ -457,12 +457,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging"
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging"
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.IdentityModelEventSource::LogLevel:System.Diagnostics.Tracing.EventLevel",
-          "clrName": "LogLevel",
+          "targetName": "LogLevel",
           "metadataToken": 385875975,
           "canonicalSignature": ":System.Diagnostics.Tracing.EventLevel",
           "normalizedSignature": "LogLevel|:System.Diagnostics.Tracing.EventLevel|static=false|accessor=getset",
@@ -476,8 +476,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging"
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.IdentityModelEventSource",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging"
         }
       ],
       "fields": [],
@@ -486,8 +486,8 @@
     },
     {
       "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.LoggerContext",
-      "clrName": "Microsoft.IdentityModel.Logging.LoggerContext",
-      "assemblyName": "Microsoft.IdentityModel.Logging",
+      "targetName": "Microsoft.IdentityModel.Logging.LoggerContext",
+      "ownerIdentity": "Microsoft.IdentityModel.Logging",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -497,13 +497,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.LoggerContext::ActivityId:System.Guid",
-          "clrName": "ActivityId",
+          "targetName": "ActivityId",
           "metadataToken": 385875978,
           "canonicalSignature": ":System.Guid",
           "normalizedSignature": "ActivityId|:System.Guid|static=false|accessor=getset",
@@ -517,12 +517,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.LoggerContext",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging"
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.LoggerContext",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging"
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.LoggerContext::CaptureLogs:System.Boolean",
-          "clrName": "CaptureLogs",
+          "targetName": "CaptureLogs",
           "metadataToken": 385875979,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "CaptureLogs|:System.Boolean|static=false|accessor=getset",
@@ -536,12 +536,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.LoggerContext",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging"
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.LoggerContext",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging"
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.LoggerContext::DebugId:System.String",
-          "clrName": "DebugId",
+          "targetName": "DebugId",
           "metadataToken": 385875980,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "DebugId|:System.String|static=false|accessor=getset",
@@ -555,12 +555,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.LoggerContext",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging"
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.LoggerContext",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging"
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.LoggerContext::Logs:System.Collections.Generic.ICollection_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "Logs",
+          "targetName": "Logs",
           "metadataToken": 385875981,
           "canonicalSignature": ":System.Collections.Generic.ICollection_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "Logs|:System.Collections.Generic.ICollection_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -574,12 +574,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.LoggerContext",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging"
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.LoggerContext",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging"
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.LoggerContext::PropertyBag:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "PropertyBag",
+          "targetName": "PropertyBag",
           "metadataToken": 385875982,
           "canonicalSignature": ":System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "PropertyBag|:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -593,8 +593,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.LoggerContext",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging"
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.LoggerContext",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging"
         }
       ],
       "fields": [],
@@ -608,8 +608,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.LoggerContext",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging"
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.LoggerContext",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging"
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.LoggerContext::.ctor(System.Guid):void",
@@ -619,15 +619,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.LoggerContext",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging"
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.LoggerContext",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging"
         }
       ]
     },
     {
       "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.LogHelper",
-      "clrName": "Microsoft.IdentityModel.Logging.LogHelper",
-      "assemblyName": "Microsoft.IdentityModel.Logging",
+      "targetName": "Microsoft.IdentityModel.Logging.LogHelper",
+      "ownerIdentity": "Microsoft.IdentityModel.Logging",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -637,12 +637,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.LogHelper::IsEnabled(Microsoft.IdentityModel.Abstractions.EventLogLevel):System.Boolean",
-          "clrName": "IsEnabled",
+          "targetName": "IsEnabled",
           "metadataToken": 100663349,
           "canonicalSignature": "(Microsoft.IdentityModel.Abstractions.EventLogLevel):System.Boolean",
           "normalizedSignature": "IsEnabled|(Microsoft.IdentityModel.Abstractions.EventLogLevel):System.Boolean|static=true",
@@ -656,13 +656,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.LogHelper",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.LogHelper::LogArgumentNullException(System.String):System.ArgumentNullException",
-          "clrName": "LogArgumentNullException",
+          "targetName": "LogArgumentNullException",
           "metadataToken": 100663350,
           "canonicalSignature": "(System.String):System.ArgumentNullException",
           "normalizedSignature": "LogArgumentNullException|(System.String):System.ArgumentNullException|static=true",
@@ -676,13 +676,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.LogHelper",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.LogHelper::LogException(System.String):T",
-          "clrName": "LogException",
+          "targetName": "LogException",
           "metadataToken": 100663351,
           "canonicalSignature": "(System.String):T",
           "normalizedSignature": "LogException|(System.String):T|static=true",
@@ -696,13 +696,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.LogHelper",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.LogHelper::LogArgumentException(System.String,System.String):T",
-          "clrName": "LogArgumentException",
+          "targetName": "LogArgumentException",
           "metadataToken": 100663352,
           "canonicalSignature": "(System.String,System.String):T",
           "normalizedSignature": "LogArgumentException|(System.String,System.String):T|static=true",
@@ -716,13 +716,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.LogHelper",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.LogHelper::LogException(System.String,System.Object[]):T",
-          "clrName": "LogException",
+          "targetName": "LogException",
           "metadataToken": 100663353,
           "canonicalSignature": "(System.String,System.Object[]):T",
           "normalizedSignature": "LogException|(System.String,System.Object[]):T|static=true",
@@ -736,13 +736,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.LogHelper",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.LogHelper::LogArgumentException(System.String,System.String,System.Object[]):T",
-          "clrName": "LogArgumentException",
+          "targetName": "LogArgumentException",
           "metadataToken": 100663354,
           "canonicalSignature": "(System.String,System.String,System.Object[]):T",
           "normalizedSignature": "LogArgumentException|(System.String,System.String,System.Object[]):T|static=true",
@@ -756,13 +756,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.LogHelper",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.LogHelper::LogException(System.Exception,System.String):T",
-          "clrName": "LogException",
+          "targetName": "LogException",
           "metadataToken": 100663355,
           "canonicalSignature": "(System.Exception,System.String):T",
           "normalizedSignature": "LogException|(System.Exception,System.String):T|static=true",
@@ -776,13 +776,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.LogHelper",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.LogHelper::LogArgumentException(System.String,System.Exception,System.String):T",
-          "clrName": "LogArgumentException",
+          "targetName": "LogArgumentException",
           "metadataToken": 100663356,
           "canonicalSignature": "(System.String,System.Exception,System.String):T",
           "normalizedSignature": "LogArgumentException|(System.String,System.Exception,System.String):T|static=true",
@@ -796,13 +796,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.LogHelper",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.LogHelper::LogException(System.Exception,System.String,System.Object[]):T",
-          "clrName": "LogException",
+          "targetName": "LogException",
           "metadataToken": 100663357,
           "canonicalSignature": "(System.Exception,System.String,System.Object[]):T",
           "normalizedSignature": "LogException|(System.Exception,System.String,System.Object[]):T|static=true",
@@ -816,13 +816,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.LogHelper",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.LogHelper::LogArgumentException(System.String,System.Exception,System.String,System.Object[]):T",
-          "clrName": "LogArgumentException",
+          "targetName": "LogArgumentException",
           "metadataToken": 100663358,
           "canonicalSignature": "(System.String,System.Exception,System.String,System.Object[]):T",
           "normalizedSignature": "LogArgumentException|(System.String,System.Exception,System.String,System.Object[]):T|static=true",
@@ -836,13 +836,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.LogHelper",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.LogHelper::LogException(System.Diagnostics.Tracing.EventLevel,System.String):T",
-          "clrName": "LogException",
+          "targetName": "LogException",
           "metadataToken": 100663359,
           "canonicalSignature": "(System.Diagnostics.Tracing.EventLevel,System.String):T",
           "normalizedSignature": "LogException|(System.Diagnostics.Tracing.EventLevel,System.String):T|static=true",
@@ -856,13 +856,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.LogHelper",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.LogHelper::LogArgumentException(System.Diagnostics.Tracing.EventLevel,System.String,System.String):T",
-          "clrName": "LogArgumentException",
+          "targetName": "LogArgumentException",
           "metadataToken": 100663360,
           "canonicalSignature": "(System.Diagnostics.Tracing.EventLevel,System.String,System.String):T",
           "normalizedSignature": "LogArgumentException|(System.Diagnostics.Tracing.EventLevel,System.String,System.String):T|static=true",
@@ -876,13 +876,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.LogHelper",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.LogHelper::LogException(System.Diagnostics.Tracing.EventLevel,System.String,System.Object[]):T",
-          "clrName": "LogException",
+          "targetName": "LogException",
           "metadataToken": 100663361,
           "canonicalSignature": "(System.Diagnostics.Tracing.EventLevel,System.String,System.Object[]):T",
           "normalizedSignature": "LogException|(System.Diagnostics.Tracing.EventLevel,System.String,System.Object[]):T|static=true",
@@ -896,13 +896,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.LogHelper",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.LogHelper::LogArgumentException(System.Diagnostics.Tracing.EventLevel,System.String,System.String,System.Object[]):T",
-          "clrName": "LogArgumentException",
+          "targetName": "LogArgumentException",
           "metadataToken": 100663362,
           "canonicalSignature": "(System.Diagnostics.Tracing.EventLevel,System.String,System.String,System.Object[]):T",
           "normalizedSignature": "LogArgumentException|(System.Diagnostics.Tracing.EventLevel,System.String,System.String,System.Object[]):T|static=true",
@@ -916,13 +916,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.LogHelper",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.LogHelper::LogException(System.Diagnostics.Tracing.EventLevel,System.Exception,System.String):T",
-          "clrName": "LogException",
+          "targetName": "LogException",
           "metadataToken": 100663363,
           "canonicalSignature": "(System.Diagnostics.Tracing.EventLevel,System.Exception,System.String):T",
           "normalizedSignature": "LogException|(System.Diagnostics.Tracing.EventLevel,System.Exception,System.String):T|static=true",
@@ -936,13 +936,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.LogHelper",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.LogHelper::LogArgumentException(System.Diagnostics.Tracing.EventLevel,System.String,System.Exception,System.String):T",
-          "clrName": "LogArgumentException",
+          "targetName": "LogArgumentException",
           "metadataToken": 100663364,
           "canonicalSignature": "(System.Diagnostics.Tracing.EventLevel,System.String,System.Exception,System.String):T",
           "normalizedSignature": "LogArgumentException|(System.Diagnostics.Tracing.EventLevel,System.String,System.Exception,System.String):T|static=true",
@@ -956,13 +956,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.LogHelper",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.LogHelper::LogException(System.Diagnostics.Tracing.EventLevel,System.Exception,System.String,System.Object[]):T",
-          "clrName": "LogException",
+          "targetName": "LogException",
           "metadataToken": 100663365,
           "canonicalSignature": "(System.Diagnostics.Tracing.EventLevel,System.Exception,System.String,System.Object[]):T",
           "normalizedSignature": "LogException|(System.Diagnostics.Tracing.EventLevel,System.Exception,System.String,System.Object[]):T|static=true",
@@ -976,13 +976,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.LogHelper",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.LogHelper::LogArgumentException(System.Diagnostics.Tracing.EventLevel,System.String,System.Exception,System.String,System.Object[]):T",
-          "clrName": "LogArgumentException",
+          "targetName": "LogArgumentException",
           "metadataToken": 100663366,
           "canonicalSignature": "(System.Diagnostics.Tracing.EventLevel,System.String,System.Exception,System.String,System.Object[]):T",
           "normalizedSignature": "LogArgumentException|(System.Diagnostics.Tracing.EventLevel,System.String,System.Exception,System.String,System.Object[]):T|static=true",
@@ -996,13 +996,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.LogHelper",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.LogHelper::LogExceptionMessage(System.Exception):System.Exception",
-          "clrName": "LogExceptionMessage",
+          "targetName": "LogExceptionMessage",
           "metadataToken": 100663367,
           "canonicalSignature": "(System.Exception):System.Exception",
           "normalizedSignature": "LogExceptionMessage|(System.Exception):System.Exception|static=true",
@@ -1016,13 +1016,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.LogHelper",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.LogHelper::LogExceptionMessage(System.Diagnostics.Tracing.EventLevel,System.Exception):System.Exception",
-          "clrName": "LogExceptionMessage",
+          "targetName": "LogExceptionMessage",
           "metadataToken": 100663368,
           "canonicalSignature": "(System.Diagnostics.Tracing.EventLevel,System.Exception):System.Exception",
           "normalizedSignature": "LogExceptionMessage|(System.Diagnostics.Tracing.EventLevel,System.Exception):System.Exception|static=true",
@@ -1036,13 +1036,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.LogHelper",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.LogHelper::LogInformation(System.String,System.Object[]):System.Void",
-          "clrName": "LogInformation",
+          "targetName": "LogInformation",
           "metadataToken": 100663369,
           "canonicalSignature": "(System.String,System.Object[]):System.Void",
           "normalizedSignature": "LogInformation|(System.String,System.Object[]):System.Void|static=true",
@@ -1056,13 +1056,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.LogHelper",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.LogHelper::LogVerbose(System.String,System.Object[]):System.Void",
-          "clrName": "LogVerbose",
+          "targetName": "LogVerbose",
           "metadataToken": 100663370,
           "canonicalSignature": "(System.String,System.Object[]):System.Void",
           "normalizedSignature": "LogVerbose|(System.String,System.Object[]):System.Void|static=true",
@@ -1076,13 +1076,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.LogHelper",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.LogHelper::LogWarning(System.String,System.Object[]):System.Void",
-          "clrName": "LogWarning",
+          "targetName": "LogWarning",
           "metadataToken": 100663371,
           "canonicalSignature": "(System.String,System.Object[]):System.Void",
           "normalizedSignature": "LogWarning|(System.String,System.Object[]):System.Void|static=true",
@@ -1096,13 +1096,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.LogHelper",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.LogHelper::FormatInvariant(System.String,System.Object[]):System.String",
-          "clrName": "FormatInvariant",
+          "targetName": "FormatInvariant",
           "metadataToken": 100663375,
           "canonicalSignature": "(System.String,System.Object[]):System.String",
           "normalizedSignature": "FormatInvariant|(System.String,System.Object[]):System.String|static=true",
@@ -1116,13 +1116,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.LogHelper",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.LogHelper::MarkAsNonPII(System.Object):System.Object",
-          "clrName": "MarkAsNonPII",
+          "targetName": "MarkAsNonPII",
           "metadataToken": 100663379,
           "canonicalSignature": "(System.Object):System.Object",
           "normalizedSignature": "MarkAsNonPII|(System.Object):System.Object|static=true",
@@ -1136,13 +1136,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.LogHelper",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.LogHelper::MarkAsSecurityArtifact(System.Object,System.Func_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Object",
-          "clrName": "MarkAsSecurityArtifact",
+          "targetName": "MarkAsSecurityArtifact",
           "metadataToken": 100663380,
           "canonicalSignature": "(System.Object,System.Func_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Object",
           "normalizedSignature": "MarkAsSecurityArtifact|(System.Object,System.Func_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Object|static=true",
@@ -1156,13 +1156,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.LogHelper",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.LogHelper::MarkAsSecurityArtifact(System.Object,System.Func_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Func_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Object",
-          "clrName": "MarkAsSecurityArtifact",
+          "targetName": "MarkAsSecurityArtifact",
           "metadataToken": 100663381,
           "canonicalSignature": "(System.Object,System.Func_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Func_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Object",
           "normalizedSignature": "MarkAsSecurityArtifact|(System.Object,System.Func_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Func_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Object|static=true",
@@ -1176,13 +1176,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.LogHelper",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.LogHelper::MarkAsUnsafeSecurityArtifact(System.Object,System.Func_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Object",
-          "clrName": "MarkAsUnsafeSecurityArtifact",
+          "targetName": "MarkAsUnsafeSecurityArtifact",
           "metadataToken": 100663382,
           "canonicalSignature": "(System.Object,System.Func_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Object",
           "normalizedSignature": "MarkAsUnsafeSecurityArtifact|(System.Object,System.Func_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Object|static=true",
@@ -1196,15 +1196,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.LogHelper",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.LogHelper::Logger:Microsoft.IdentityModel.Abstractions.IIdentityLogger",
-          "clrName": "Logger",
+          "targetName": "Logger",
           "metadataToken": 385875983,
           "canonicalSignature": ":Microsoft.IdentityModel.Abstractions.IIdentityLogger",
           "normalizedSignature": "Logger|:Microsoft.IdentityModel.Abstractions.IIdentityLogger|static=true|accessor=getset",
@@ -1218,8 +1218,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging"
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.LogHelper",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging"
         }
       ],
       "fields": [],
@@ -1233,15 +1233,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.LogHelper",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging"
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.LogHelper",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging"
         }
       ]
     },
     {
       "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.TextWriterEventListener",
-      "clrName": "Microsoft.IdentityModel.Logging.TextWriterEventListener",
-      "assemblyName": "Microsoft.IdentityModel.Logging",
+      "targetName": "Microsoft.IdentityModel.Logging.TextWriterEventListener",
+      "ownerIdentity": "Microsoft.IdentityModel.Logging",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1251,18 +1251,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Diagnostics.Tracing.EventListener",
-        "clrName": "System.Diagnostics.Tracing.EventListener"
+        "targetName": "System.Diagnostics.Tracing.EventListener"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.IDisposable",
-          "clrName": "System.IDisposable"
+          "targetName": "System.IDisposable"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.TextWriterEventListener::OnEventWritten(System.Diagnostics.Tracing.EventWrittenEventArgs):System.Void",
-          "clrName": "OnEventWritten",
+          "targetName": "OnEventWritten",
           "metadataToken": 100663400,
           "canonicalSignature": "(System.Diagnostics.Tracing.EventWrittenEventArgs):System.Void",
           "normalizedSignature": "OnEventWritten|(System.Diagnostics.Tracing.EventWrittenEventArgs):System.Void|static=false",
@@ -1276,13 +1276,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.TextWriterEventListener",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.TextWriterEventListener",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.TextWriterEventListener::Dispose():System.Void",
-          "clrName": "Dispose",
+          "targetName": "Dispose",
           "metadataToken": 100663401,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Dispose|():System.Void|static=false",
@@ -1296,8 +1296,8 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.TextWriterEventListener",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.TextWriterEventListener",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
         }
       ],
@@ -1305,15 +1305,15 @@
       "fields": [
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.TextWriterEventListener::DefaultLogFileNameSystem.String",
-          "clrName": "DefaultLogFileName",
+          "targetName": "DefaultLogFileName",
           "metadataToken": 67108900,
           "normalizedSignature": "DefaultLogFileName|System.String|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.TextWriterEventListener",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging"
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.TextWriterEventListener",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging"
         }
       ],
       "events": [],
@@ -1326,8 +1326,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.TextWriterEventListener",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging"
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.TextWriterEventListener",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging"
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.TextWriterEventListener::.ctor(System.String):void",
@@ -1337,8 +1337,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.TextWriterEventListener",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging"
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.TextWriterEventListener",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging"
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.TextWriterEventListener::.ctor(System.IO.StreamWriter):void",
@@ -1348,15 +1348,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.TextWriterEventListener",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging"
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.TextWriterEventListener",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging"
         }
       ]
     },
     {
       "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.IdentityModelTelemetryUtil",
-      "clrName": "Microsoft.IdentityModel.Logging.IdentityModelTelemetryUtil",
-      "assemblyName": "Microsoft.IdentityModel.Logging",
+      "targetName": "Microsoft.IdentityModel.Logging.IdentityModelTelemetryUtil",
+      "ownerIdentity": "Microsoft.IdentityModel.Logging",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -1366,12 +1366,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.IdentityModelTelemetryUtil::AddTelemetryData(System.String,System.String):System.Boolean",
-          "clrName": "AddTelemetryData",
+          "targetName": "AddTelemetryData",
           "metadataToken": 100663327,
           "canonicalSignature": "(System.String,System.String):System.Boolean",
           "normalizedSignature": "AddTelemetryData|(System.String,System.String):System.Boolean|static=true",
@@ -1385,13 +1385,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.IdentityModelTelemetryUtil",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.IdentityModelTelemetryUtil",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.IdentityModelTelemetryUtil::RemoveTelemetryData(System.String):System.Boolean",
-          "clrName": "RemoveTelemetryData",
+          "targetName": "RemoveTelemetryData",
           "metadataToken": 100663328,
           "canonicalSignature": "(System.String):System.Boolean",
           "normalizedSignature": "RemoveTelemetryData|(System.String):System.Boolean|static=true",
@@ -1405,15 +1405,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.IdentityModelTelemetryUtil",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging",
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.IdentityModelTelemetryUtil",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.IdentityModelTelemetryUtil::ClientSku:System.String",
-          "clrName": "ClientSku",
+          "targetName": "ClientSku",
           "metadataToken": 385875976,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "ClientSku|:System.String|static=true|accessor=get",
@@ -1427,12 +1427,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.IdentityModelTelemetryUtil",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging"
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.IdentityModelTelemetryUtil",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging"
         },
         {
           "stableId": "Microsoft.IdentityModel.Logging:Microsoft.IdentityModel.Logging.IdentityModelTelemetryUtil::ClientVer:System.String",
-          "clrName": "ClientVer",
+          "targetName": "ClientVer",
           "metadataToken": 385875977,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "ClientVer|:System.String|static=true|accessor=get",
@@ -1446,8 +1446,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Logging.IdentityModelTelemetryUtil",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Logging"
+          "ownerQualifiedName": "Microsoft.IdentityModel.Logging.IdentityModelTelemetryUtil",
+          "ownerIdentity": "Microsoft.IdentityModel.Logging"
         }
       ],
       "fields": [],

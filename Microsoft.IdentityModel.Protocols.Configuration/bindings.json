@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException",
-      "clrName": "Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException",
-      "assemblyName": "Microsoft.IdentityModel.Protocols",
+      "targetName": "Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException",
+      "ownerIdentity": "Microsoft.IdentityModel.Protocols",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,12 +17,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Exception",
-        "clrName": "System.Exception"
+        "targetName": "System.Exception"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.Runtime.Serialization.ISerializable",
-          "clrName": "System.Runtime.Serialization.ISerializable"
+          "targetName": "System.Runtime.Serialization.ISerializable"
         }
       ],
       "methods": [],
@@ -38,8 +38,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
+          "ownerQualifiedName": "Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException",
+          "ownerIdentity": "Microsoft.IdentityModel.Protocols"
         },
         {
           "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException::.ctor(System.String):void",
@@ -49,8 +49,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
+          "ownerQualifiedName": "Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException",
+          "ownerIdentity": "Microsoft.IdentityModel.Protocols"
         },
         {
           "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException::.ctor(System.String,System.Exception):void",
@@ -60,8 +60,8 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
+          "ownerQualifiedName": "Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException",
+          "ownerIdentity": "Microsoft.IdentityModel.Protocols"
         },
         {
           "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
@@ -71,15 +71,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
+          "ownerQualifiedName": "Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException",
+          "ownerIdentity": "Microsoft.IdentityModel.Protocols"
         }
       ]
     },
     {
       "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.Configuration.LastKnownGoodConfigurationCacheOptions",
-      "clrName": "Microsoft.IdentityModel.Protocols.Configuration.LastKnownGoodConfigurationCacheOptions",
-      "assemblyName": "Microsoft.IdentityModel.Protocols",
+      "targetName": "Microsoft.IdentityModel.Protocols.Configuration.LastKnownGoodConfigurationCacheOptions",
+      "ownerIdentity": "Microsoft.IdentityModel.Protocols",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -89,22 +89,22 @@
       "arity": 0,
       "baseType": {
         "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
-        "clrName": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions"
+        "targetName": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions"
       },
       "methods": [],
       "properties": [],
       "fields": [
         {
           "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.Configuration.LastKnownGoodConfigurationCacheOptions::DefaultLastKnownGoodConfigurationSizeLimitSystem.Int32",
-          "clrName": "DefaultLastKnownGoodConfigurationSizeLimit",
+          "targetName": "DefaultLastKnownGoodConfigurationSizeLimit",
           "metadataToken": 67108912,
           "normalizedSignature": "DefaultLastKnownGoodConfigurationSizeLimit|System.Int32|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Protocols.Configuration.LastKnownGoodConfigurationCacheOptions",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
+          "ownerQualifiedName": "Microsoft.IdentityModel.Protocols.Configuration.LastKnownGoodConfigurationCacheOptions",
+          "ownerIdentity": "Microsoft.IdentityModel.Protocols"
         }
       ],
       "events": [],
@@ -117,8 +117,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.IdentityModel.Protocols.Configuration.LastKnownGoodConfigurationCacheOptions",
-          "declaringAssemblyName": "Microsoft.IdentityModel.Protocols"
+          "ownerQualifiedName": "Microsoft.IdentityModel.Protocols.Configuration.LastKnownGoodConfigurationCacheOptions",
+          "ownerIdentity": "Microsoft.IdentityModel.Protocols"
         }
       ]
     }
