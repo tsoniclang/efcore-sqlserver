@@ -7,7 +7,7 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 
 
 // Import types from other namespaces
-import type { ProtectedConfigurationProvider } from "../../System.Configuration/internal/index.js";
+import type { SettingsProvider } from "../../System.Configuration/internal/index.js";
 import type { NameValueCollection } from "@tsonic/dotnet/System.Collections.Specialized/internal/index.js";
 import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections/internal/index.js";
 import type { ICollection, IEnumerable, IEnumerator } from "@tsonic/dotnet/System.Collections/internal/index.js";

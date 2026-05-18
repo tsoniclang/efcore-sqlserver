@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Utils.Windows.WindowsNativeUtils",
-      "clrName": "Microsoft.Identity.Client.Utils.Windows.WindowsNativeUtils",
-      "assemblyName": "Microsoft.Identity.Client",
+      "targetName": "Microsoft.Identity.Client.Utils.Windows.WindowsNativeUtils",
+      "ownerIdentity": "Microsoft.Identity.Client",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -17,12 +17,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Utils.Windows.WindowsNativeUtils::IsElevatedUser():System.Boolean",
-          "clrName": "IsElevatedUser",
+          "targetName": "IsElevatedUser",
           "metadataToken": 100664907,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "IsElevatedUser|():System.Boolean|static=true",
@@ -36,13 +36,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Utils.Windows.WindowsNativeUtils",
-          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "ownerQualifiedName": "Microsoft.Identity.Client.Utils.Windows.WindowsNativeUtils",
+          "ownerIdentity": "Microsoft.Identity.Client",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Utils.Windows.WindowsNativeUtils::InitializeProcessSecurity():System.Void",
-          "clrName": "InitializeProcessSecurity",
+          "targetName": "InitializeProcessSecurity",
           "metadataToken": 100664908,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "InitializeProcessSecurity|():System.Void|static=true",
@@ -56,8 +56,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Utils.Windows.WindowsNativeUtils",
-          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "ownerQualifiedName": "Microsoft.Identity.Client.Utils.Windows.WindowsNativeUtils",
+          "ownerIdentity": "Microsoft.Identity.Client",
           "isExtensionMethod": false
         }
       ],

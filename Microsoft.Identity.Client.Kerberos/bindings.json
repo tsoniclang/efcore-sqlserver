@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosKeyTypes",
-      "clrName": "Microsoft.Identity.Client.Kerberos.KerberosKeyTypes",
-      "assemblyName": "Microsoft.Identity.Client",
+      "targetName": "Microsoft.Identity.Client.Kerberos.KerberosKeyTypes",
+      "ownerIdentity": "Microsoft.Identity.Client",
       "metadataToken": 0,
       "kind": "Enum",
       "accessibility": "Public",
@@ -17,24 +17,24 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Enum",
-        "clrName": "System.Enum"
+        "targetName": "System.Enum"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.IComparable",
-          "clrName": "System.IComparable"
+          "targetName": "System.IComparable"
         },
         {
           "stableId": "System.Private.CoreLib:System.ISpanFormattable",
-          "clrName": "System.ISpanFormattable"
+          "targetName": "System.ISpanFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IFormattable",
-          "clrName": "System.IFormattable"
+          "targetName": "System.IFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IConvertible",
-          "clrName": "System.IConvertible"
+          "targetName": "System.IConvertible"
         }
       ],
       "methods": [],
@@ -42,75 +42,75 @@
       "fields": [
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosKeyTypes::value__System.Int32",
-          "clrName": "value__",
+          "targetName": "value__",
           "metadataToken": 67110296,
           "normalizedSignature": "value__|System.Int32|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Kerberos.KerberosKeyTypes",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.Kerberos.KerberosKeyTypes",
+          "ownerIdentity": "Microsoft.Identity.Client"
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosKeyTypes::NoneMicrosoft.Identity.Client.Kerberos.KerberosKeyTypes",
-          "clrName": "None",
+          "targetName": "None",
           "metadataToken": 67110297,
           "normalizedSignature": "None|Microsoft.Identity.Client.Kerberos.KerberosKeyTypes|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Kerberos.KerberosKeyTypes",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.Kerberos.KerberosKeyTypes",
+          "ownerIdentity": "Microsoft.Identity.Client"
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosKeyTypes::DecCbcCrcMicrosoft.Identity.Client.Kerberos.KerberosKeyTypes",
-          "clrName": "DecCbcCrc",
+          "targetName": "DecCbcCrc",
           "metadataToken": 67110298,
           "normalizedSignature": "DecCbcCrc|Microsoft.Identity.Client.Kerberos.KerberosKeyTypes|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Kerberos.KerberosKeyTypes",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.Kerberos.KerberosKeyTypes",
+          "ownerIdentity": "Microsoft.Identity.Client"
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosKeyTypes::DesCbcMd5Microsoft.Identity.Client.Kerberos.KerberosKeyTypes",
-          "clrName": "DesCbcMd5",
+          "targetName": "DesCbcMd5",
           "metadataToken": 67110299,
           "normalizedSignature": "DesCbcMd5|Microsoft.Identity.Client.Kerberos.KerberosKeyTypes|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Kerberos.KerberosKeyTypes",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.Kerberos.KerberosKeyTypes",
+          "ownerIdentity": "Microsoft.Identity.Client"
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosKeyTypes::Aes128CtsHmacSha196Microsoft.Identity.Client.Kerberos.KerberosKeyTypes",
-          "clrName": "Aes128CtsHmacSha196",
+          "targetName": "Aes128CtsHmacSha196",
           "metadataToken": 67110300,
           "normalizedSignature": "Aes128CtsHmacSha196|Microsoft.Identity.Client.Kerberos.KerberosKeyTypes|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Kerberos.KerberosKeyTypes",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.Kerberos.KerberosKeyTypes",
+          "ownerIdentity": "Microsoft.Identity.Client"
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosKeyTypes::Aes256CtsHmacSha196Microsoft.Identity.Client.Kerberos.KerberosKeyTypes",
-          "clrName": "Aes256CtsHmacSha196",
+          "targetName": "Aes256CtsHmacSha196",
           "metadataToken": 67110301,
           "normalizedSignature": "Aes256CtsHmacSha196|Microsoft.Identity.Client.Kerberos.KerberosKeyTypes|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Kerberos.KerberosKeyTypes",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.Kerberos.KerberosKeyTypes",
+          "ownerIdentity": "Microsoft.Identity.Client"
         }
       ],
       "events": [],
@@ -118,8 +118,8 @@
     },
     {
       "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosTicketContainer",
-      "clrName": "Microsoft.Identity.Client.Kerberos.KerberosTicketContainer",
-      "assemblyName": "Microsoft.Identity.Client",
+      "targetName": "Microsoft.Identity.Client.Kerberos.KerberosTicketContainer",
+      "ownerIdentity": "Microsoft.Identity.Client",
       "metadataToken": 0,
       "kind": "Enum",
       "accessibility": "Public",
@@ -129,24 +129,24 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Enum",
-        "clrName": "System.Enum"
+        "targetName": "System.Enum"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.IComparable",
-          "clrName": "System.IComparable"
+          "targetName": "System.IComparable"
         },
         {
           "stableId": "System.Private.CoreLib:System.ISpanFormattable",
-          "clrName": "System.ISpanFormattable"
+          "targetName": "System.ISpanFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IFormattable",
-          "clrName": "System.IFormattable"
+          "targetName": "System.IFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IConvertible",
-          "clrName": "System.IConvertible"
+          "targetName": "System.IConvertible"
         }
       ],
       "methods": [],
@@ -154,39 +154,39 @@
       "fields": [
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosTicketContainer::value__System.Int32",
-          "clrName": "value__",
+          "targetName": "value__",
           "metadataToken": 67110313,
           "normalizedSignature": "value__|System.Int32|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Kerberos.KerberosTicketContainer",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.Kerberos.KerberosTicketContainer",
+          "ownerIdentity": "Microsoft.Identity.Client"
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosTicketContainer::IdTokenMicrosoft.Identity.Client.Kerberos.KerberosTicketContainer",
-          "clrName": "IdToken",
+          "targetName": "IdToken",
           "metadataToken": 67110314,
           "normalizedSignature": "IdToken|Microsoft.Identity.Client.Kerberos.KerberosTicketContainer|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Kerberos.KerberosTicketContainer",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.Kerberos.KerberosTicketContainer",
+          "ownerIdentity": "Microsoft.Identity.Client"
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosTicketContainer::AccessTokenMicrosoft.Identity.Client.Kerberos.KerberosTicketContainer",
-          "clrName": "AccessToken",
+          "targetName": "AccessToken",
           "metadataToken": 67110315,
           "normalizedSignature": "AccessToken|Microsoft.Identity.Client.Kerberos.KerberosTicketContainer|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Kerberos.KerberosTicketContainer",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.Kerberos.KerberosTicketContainer",
+          "ownerIdentity": "Microsoft.Identity.Client"
         }
       ],
       "events": [],
@@ -194,8 +194,8 @@
     },
     {
       "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket",
-      "clrName": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket",
-      "assemblyName": "Microsoft.Identity.Client",
+      "targetName": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket",
+      "ownerIdentity": "Microsoft.Identity.Client",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -205,12 +205,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket::ToString():System.String",
-          "clrName": "ToString",
+          "targetName": "ToString",
           "metadataToken": 100665490,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "ToString|():System.String|static=false",
@@ -224,15 +224,15 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket",
-          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "ownerQualifiedName": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket",
+          "ownerIdentity": "Microsoft.Identity.Client",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket::ClientKey:System.String",
-          "clrName": "ClientKey",
+          "targetName": "ClientKey",
           "metadataToken": 385876496,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "ClientKey|:System.String|static=false|accessor=getset",
@@ -246,12 +246,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket",
+          "ownerIdentity": "Microsoft.Identity.Client"
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket::KeyType:Microsoft.Identity.Client.Kerberos.KerberosKeyTypes",
-          "clrName": "KeyType",
+          "targetName": "KeyType",
           "metadataToken": 385876497,
           "canonicalSignature": ":Microsoft.Identity.Client.Kerberos.KerberosKeyTypes",
           "normalizedSignature": "KeyType|:Microsoft.Identity.Client.Kerberos.KerberosKeyTypes|static=false|accessor=getset",
@@ -265,12 +265,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket",
+          "ownerIdentity": "Microsoft.Identity.Client"
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket::KerberosMessageBuffer:System.String",
-          "clrName": "KerberosMessageBuffer",
+          "targetName": "KerberosMessageBuffer",
           "metadataToken": 385876498,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "KerberosMessageBuffer|:System.String|static=false|accessor=getset",
@@ -284,12 +284,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket",
+          "ownerIdentity": "Microsoft.Identity.Client"
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket::ErrorMessage:System.String",
-          "clrName": "ErrorMessage",
+          "targetName": "ErrorMessage",
           "metadataToken": 385876499,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "ErrorMessage|:System.String|static=false|accessor=getset",
@@ -303,12 +303,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket",
+          "ownerIdentity": "Microsoft.Identity.Client"
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket::Realm:System.String",
-          "clrName": "Realm",
+          "targetName": "Realm",
           "metadataToken": 385876500,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Realm|:System.String|static=false|accessor=getset",
@@ -322,12 +322,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket",
+          "ownerIdentity": "Microsoft.Identity.Client"
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket::ServicePrincipalName:System.String",
-          "clrName": "ServicePrincipalName",
+          "targetName": "ServicePrincipalName",
           "metadataToken": 385876501,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "ServicePrincipalName|:System.String|static=false|accessor=getset",
@@ -341,12 +341,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket",
+          "ownerIdentity": "Microsoft.Identity.Client"
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket::ClientName:System.String",
-          "clrName": "ClientName",
+          "targetName": "ClientName",
           "metadataToken": 385876502,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "ClientName|:System.String|static=false|accessor=getset",
@@ -360,8 +360,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket",
+          "ownerIdentity": "Microsoft.Identity.Client"
         }
       ],
       "fields": [],
@@ -375,8 +375,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket",
+          "ownerIdentity": "Microsoft.Identity.Client"
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket::.ctor(System.String):void",
@@ -386,15 +386,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket",
+          "ownerIdentity": "Microsoft.Identity.Client"
         }
       ]
     },
     {
       "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicketManager",
-      "clrName": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicketManager",
-      "assemblyName": "Microsoft.Identity.Client",
+      "targetName": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicketManager",
+      "ownerIdentity": "Microsoft.Identity.Client",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -404,12 +404,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicketManager::FromIdToken(System.String):Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket",
-          "clrName": "FromIdToken",
+          "targetName": "FromIdToken",
           "metadataToken": 100665491,
           "canonicalSignature": "(System.String):Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket",
           "normalizedSignature": "FromIdToken|(System.String):Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket|static=true",
@@ -423,13 +423,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicketManager",
-          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "ownerQualifiedName": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicketManager",
+          "ownerIdentity": "Microsoft.Identity.Client",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicketManager::SaveToWindowsTicketCache(Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket):System.Void",
-          "clrName": "SaveToWindowsTicketCache",
+          "targetName": "SaveToWindowsTicketCache",
           "metadataToken": 100665492,
           "canonicalSignature": "(Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket):System.Void",
           "normalizedSignature": "SaveToWindowsTicketCache|(Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket):System.Void|static=true",
@@ -443,13 +443,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicketManager",
-          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "ownerQualifiedName": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicketManager",
+          "ownerIdentity": "Microsoft.Identity.Client",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicketManager::SaveToWindowsTicketCache(Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket,System.Int64):System.Void",
-          "clrName": "SaveToWindowsTicketCache",
+          "targetName": "SaveToWindowsTicketCache",
           "metadataToken": 100665493,
           "canonicalSignature": "(Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket,System.Int64):System.Void",
           "normalizedSignature": "SaveToWindowsTicketCache|(Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket,System.Int64):System.Void|static=true",
@@ -463,13 +463,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicketManager",
-          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "ownerQualifiedName": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicketManager",
+          "ownerIdentity": "Microsoft.Identity.Client",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicketManager::GetKerberosTicketFromWindowsTicketCache(System.String):System.Byte[]",
-          "clrName": "GetKerberosTicketFromWindowsTicketCache",
+          "targetName": "GetKerberosTicketFromWindowsTicketCache",
           "metadataToken": 100665494,
           "canonicalSignature": "(System.String):System.Byte[]",
           "normalizedSignature": "GetKerberosTicketFromWindowsTicketCache|(System.String):System.Byte[]|static=true",
@@ -483,13 +483,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicketManager",
-          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "ownerQualifiedName": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicketManager",
+          "ownerIdentity": "Microsoft.Identity.Client",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicketManager::GetKerberosTicketFromWindowsTicketCache(System.String,System.Int64):System.Byte[]",
-          "clrName": "GetKerberosTicketFromWindowsTicketCache",
+          "targetName": "GetKerberosTicketFromWindowsTicketCache",
           "metadataToken": 100665495,
           "canonicalSignature": "(System.String,System.Int64):System.Byte[]",
           "normalizedSignature": "GetKerberosTicketFromWindowsTicketCache|(System.String,System.Int64):System.Byte[]|static=true",
@@ -503,13 +503,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicketManager",
-          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "ownerQualifiedName": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicketManager",
+          "ownerIdentity": "Microsoft.Identity.Client",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicketManager::GetKrbCred(Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket):System.Byte[]",
-          "clrName": "GetKrbCred",
+          "targetName": "GetKrbCred",
           "metadataToken": 100665496,
           "canonicalSignature": "(Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket):System.Byte[]",
           "normalizedSignature": "GetKrbCred|(Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicket):System.Byte[]|static=true",
@@ -523,8 +523,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicketManager",
-          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "ownerQualifiedName": "Microsoft.Identity.Client.Kerberos.KerberosSupplementalTicketManager",
+          "ownerIdentity": "Microsoft.Identity.Client",
           "isExtensionMethod": false
         }
       ],

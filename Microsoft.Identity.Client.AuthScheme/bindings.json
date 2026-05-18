@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation",
-      "clrName": "Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation",
-      "assemblyName": "Microsoft.Identity.Client",
+      "targetName": "Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation",
+      "ownerIdentity": "Microsoft.Identity.Client",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -18,7 +18,7 @@
       "methods": [
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation::GetTokenRequestParams():System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "GetTokenRequestParams",
+          "targetName": "GetTokenRequestParams",
           "metadataToken": 100666494,
           "canonicalSignature": "():System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "GetTokenRequestParams|():System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
@@ -32,13 +32,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation",
-          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "ownerQualifiedName": "Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation",
+          "ownerIdentity": "Microsoft.Identity.Client",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation::FormatResult(Microsoft.Identity.Client.AuthenticationResult):System.Void",
-          "clrName": "FormatResult",
+          "targetName": "FormatResult",
           "metadataToken": 100666496,
           "canonicalSignature": "(Microsoft.Identity.Client.AuthenticationResult):System.Void",
           "normalizedSignature": "FormatResult|(Microsoft.Identity.Client.AuthenticationResult):System.Void|static=false",
@@ -52,15 +52,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation",
-          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "ownerQualifiedName": "Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation",
+          "ownerIdentity": "Microsoft.Identity.Client",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation::TelemetryTokenType:System.Int32",
-          "clrName": "TelemetryTokenType",
+          "targetName": "TelemetryTokenType",
           "metadataToken": 385876760,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "TelemetryTokenType|:System.Int32|static=false|accessor=get",
@@ -74,12 +74,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation",
+          "ownerIdentity": "Microsoft.Identity.Client"
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation::AuthorizationHeaderPrefix:System.String",
-          "clrName": "AuthorizationHeaderPrefix",
+          "targetName": "AuthorizationHeaderPrefix",
           "metadataToken": 385876761,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "AuthorizationHeaderPrefix|:System.String|static=false|accessor=get",
@@ -93,12 +93,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation",
+          "ownerIdentity": "Microsoft.Identity.Client"
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation::KeyId:System.String",
-          "clrName": "KeyId",
+          "targetName": "KeyId",
           "metadataToken": 385876762,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "KeyId|:System.String|static=false|accessor=get",
@@ -112,12 +112,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation",
+          "ownerIdentity": "Microsoft.Identity.Client"
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation::AccessTokenType:System.String",
-          "clrName": "AccessTokenType",
+          "targetName": "AccessTokenType",
           "metadataToken": 385876763,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "AccessTokenType|:System.String|static=false|accessor=get",
@@ -131,8 +131,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation",
+          "ownerIdentity": "Microsoft.Identity.Client"
         }
       ],
       "fields": [],

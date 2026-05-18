@@ -13,8 +13,8 @@
   "types": [
     {
       "stableId": "System.Configuration.ConfigurationManager:System.Diagnostics.TraceConfiguration",
-      "clrName": "System.Diagnostics.TraceConfiguration",
-      "assemblyName": "System.Configuration.ConfigurationManager",
+      "targetName": "System.Diagnostics.TraceConfiguration",
+      "ownerIdentity": "System.Configuration.ConfigurationManager",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -24,12 +24,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "System.Configuration.ConfigurationManager:System.Diagnostics.TraceConfiguration::Register():System.Void",
-          "clrName": "Register",
+          "targetName": "Register",
           "metadataToken": 100663618,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Register|():System.Void|static=true",
@@ -43,8 +43,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.TraceConfiguration",
-          "declaringAssemblyName": "System.Configuration.ConfigurationManager",
+          "ownerQualifiedName": "System.Diagnostics.TraceConfiguration",
+          "ownerIdentity": "System.Configuration.ConfigurationManager",
           "isExtensionMethod": false
         }
       ],

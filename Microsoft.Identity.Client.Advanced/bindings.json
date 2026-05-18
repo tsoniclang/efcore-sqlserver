@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Advanced.AcquireTokenParameterBuilderExtensions",
-      "clrName": "Microsoft.Identity.Client.Advanced.AcquireTokenParameterBuilderExtensions",
-      "assemblyName": "Microsoft.Identity.Client",
+      "targetName": "Microsoft.Identity.Client.Advanced.AcquireTokenParameterBuilderExtensions",
+      "ownerIdentity": "Microsoft.Identity.Client",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -17,12 +17,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Advanced.AcquireTokenParameterBuilderExtensions::WithExtraHttpHeaders(AbstractAcquireTokenParameterBuilder_1,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):T",
-          "clrName": "WithExtraHttpHeaders",
+          "targetName": "WithExtraHttpHeaders",
           "metadataToken": 100666117,
           "canonicalSignature": "(AbstractAcquireTokenParameterBuilder_1,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):T",
           "normalizedSignature": "WithExtraHttpHeaders|(AbstractAcquireTokenParameterBuilder_1,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):T|static=true",
@@ -36,8 +36,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Advanced.AcquireTokenParameterBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "ownerQualifiedName": "Microsoft.Identity.Client.Advanced.AcquireTokenParameterBuilderExtensions",
+          "ownerIdentity": "Microsoft.Identity.Client",
           "isExtensionMethod": true
         }
       ],

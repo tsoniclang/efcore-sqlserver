@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Extensibility.ICustomWebUi",
-      "clrName": "Microsoft.Identity.Client.Extensibility.ICustomWebUi",
-      "assemblyName": "Microsoft.Identity.Client",
+      "targetName": "Microsoft.Identity.Client.Extensibility.ICustomWebUi",
+      "ownerIdentity": "Microsoft.Identity.Client",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -18,7 +18,7 @@
       "methods": [
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Extensibility.ICustomWebUi::AcquireAuthorizationCodeAsync(System.Uri,System.Uri,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Uri,System.Private.Uri,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]",
-          "clrName": "AcquireAuthorizationCodeAsync",
+          "targetName": "AcquireAuthorizationCodeAsync",
           "metadataToken": 100666154,
           "canonicalSignature": "(System.Uri,System.Uri,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Uri,System.Private.Uri,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]",
           "normalizedSignature": "AcquireAuthorizationCodeAsync|(System.Uri,System.Uri,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Uri,System.Private.Uri,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]|static=false",
@@ -32,8 +32,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Extensibility.ICustomWebUi",
-          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "ownerQualifiedName": "Microsoft.Identity.Client.Extensibility.ICustomWebUi",
+          "ownerIdentity": "Microsoft.Identity.Client",
           "isExtensionMethod": false
         }
       ],
@@ -44,8 +44,8 @@
     },
     {
       "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Extensibility.AppTokenProviderParameters",
-      "clrName": "Microsoft.Identity.Client.Extensibility.AppTokenProviderParameters",
-      "assemblyName": "Microsoft.Identity.Client",
+      "targetName": "Microsoft.Identity.Client.Extensibility.AppTokenProviderParameters",
+      "ownerIdentity": "Microsoft.Identity.Client",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -55,13 +55,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Extensibility.AppTokenProviderParameters::Scopes:System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "Scopes",
+          "targetName": "Scopes",
           "metadataToken": 385876648,
           "canonicalSignature": ":System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "Scopes|:System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -75,12 +75,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Extensibility.AppTokenProviderParameters",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.Extensibility.AppTokenProviderParameters",
+          "ownerIdentity": "Microsoft.Identity.Client"
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Extensibility.AppTokenProviderParameters::CorrelationId:System.String",
-          "clrName": "CorrelationId",
+          "targetName": "CorrelationId",
           "metadataToken": 385876649,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "CorrelationId|:System.String|static=false|accessor=getset",
@@ -94,12 +94,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Extensibility.AppTokenProviderParameters",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.Extensibility.AppTokenProviderParameters",
+          "ownerIdentity": "Microsoft.Identity.Client"
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Extensibility.AppTokenProviderParameters::Claims:System.String",
-          "clrName": "Claims",
+          "targetName": "Claims",
           "metadataToken": 385876650,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Claims|:System.String|static=false|accessor=getset",
@@ -113,12 +113,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Extensibility.AppTokenProviderParameters",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.Extensibility.AppTokenProviderParameters",
+          "ownerIdentity": "Microsoft.Identity.Client"
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Extensibility.AppTokenProviderParameters::TenantId:System.String",
-          "clrName": "TenantId",
+          "targetName": "TenantId",
           "metadataToken": 385876651,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "TenantId|:System.String|static=false|accessor=getset",
@@ -132,12 +132,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Extensibility.AppTokenProviderParameters",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.Extensibility.AppTokenProviderParameters",
+          "ownerIdentity": "Microsoft.Identity.Client"
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Extensibility.AppTokenProviderParameters::CancellationToken:System.Threading.CancellationToken",
-          "clrName": "CancellationToken",
+          "targetName": "CancellationToken",
           "metadataToken": 385876652,
           "canonicalSignature": ":System.Threading.CancellationToken",
           "normalizedSignature": "CancellationToken|:System.Threading.CancellationToken|static=false|accessor=getset",
@@ -151,8 +151,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Extensibility.AppTokenProviderParameters",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.Extensibility.AppTokenProviderParameters",
+          "ownerIdentity": "Microsoft.Identity.Client"
         }
       ],
       "fields": [],
@@ -166,15 +166,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Extensibility.AppTokenProviderParameters",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.Extensibility.AppTokenProviderParameters",
+          "ownerIdentity": "Microsoft.Identity.Client"
         }
       ]
     },
     {
       "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Extensibility.AppTokenProviderResult",
-      "clrName": "Microsoft.Identity.Client.Extensibility.AppTokenProviderResult",
-      "assemblyName": "Microsoft.Identity.Client",
+      "targetName": "Microsoft.Identity.Client.Extensibility.AppTokenProviderResult",
+      "ownerIdentity": "Microsoft.Identity.Client",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -184,13 +184,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Extensibility.AppTokenProviderResult::AccessToken:System.String",
-          "clrName": "AccessToken",
+          "targetName": "AccessToken",
           "metadataToken": 385876653,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "AccessToken|:System.String|static=false|accessor=getset",
@@ -204,12 +204,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Extensibility.AppTokenProviderResult",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.Extensibility.AppTokenProviderResult",
+          "ownerIdentity": "Microsoft.Identity.Client"
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Extensibility.AppTokenProviderResult::ExpiresInSeconds:System.Int64",
-          "clrName": "ExpiresInSeconds",
+          "targetName": "ExpiresInSeconds",
           "metadataToken": 385876654,
           "canonicalSignature": ":System.Int64",
           "normalizedSignature": "ExpiresInSeconds|:System.Int64|static=false|accessor=getset",
@@ -223,12 +223,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Extensibility.AppTokenProviderResult",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.Extensibility.AppTokenProviderResult",
+          "ownerIdentity": "Microsoft.Identity.Client"
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Extensibility.AppTokenProviderResult::RefreshInSeconds:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "RefreshInSeconds",
+          "targetName": "RefreshInSeconds",
           "metadataToken": 385876655,
           "canonicalSignature": ":System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "RefreshInSeconds|:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -242,8 +242,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Extensibility.AppTokenProviderResult",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.Extensibility.AppTokenProviderResult",
+          "ownerIdentity": "Microsoft.Identity.Client"
         }
       ],
       "fields": [],
@@ -257,15 +257,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Extensibility.AppTokenProviderResult",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.Extensibility.AppTokenProviderResult",
+          "ownerIdentity": "Microsoft.Identity.Client"
         }
       ]
     },
     {
       "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Extensibility.MsalAuthenticationExtension",
-      "clrName": "Microsoft.Identity.Client.Extensibility.MsalAuthenticationExtension",
-      "assemblyName": "Microsoft.Identity.Client",
+      "targetName": "Microsoft.Identity.Client.Extensibility.MsalAuthenticationExtension",
+      "ownerIdentity": "Microsoft.Identity.Client",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -275,13 +275,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Extensibility.MsalAuthenticationExtension::OnBeforeTokenRequestHandler:System.Func_2[[Microsoft.Identity.Client.Extensibility.OnBeforeTokenRequestData,Microsoft.Identity.Client,Version=4.73.1.0,Culture=neutral,PublicKeyToken=0a613f4dd989e8ae],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "OnBeforeTokenRequestHandler",
+          "targetName": "OnBeforeTokenRequestHandler",
           "metadataToken": 385876660,
           "canonicalSignature": ":System.Func_2[[Microsoft.Identity.Client.Extensibility.OnBeforeTokenRequestData,Microsoft.Identity.Client,Version=4.73.1.0,Culture=neutral,PublicKeyToken=0a613f4dd989e8ae],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "OnBeforeTokenRequestHandler|:System.Func_2[[Microsoft.Identity.Client.Extensibility.OnBeforeTokenRequestData,Microsoft.Identity.Client,Version=4.73.1.0,Culture=neutral,PublicKeyToken=0a613f4dd989e8ae],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -295,12 +295,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Extensibility.MsalAuthenticationExtension",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.Extensibility.MsalAuthenticationExtension",
+          "ownerIdentity": "Microsoft.Identity.Client"
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Extensibility.MsalAuthenticationExtension::AuthenticationOperation:Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation",
-          "clrName": "AuthenticationOperation",
+          "targetName": "AuthenticationOperation",
           "metadataToken": 385876661,
           "canonicalSignature": ":Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation",
           "normalizedSignature": "AuthenticationOperation|:Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation|static=false|accessor=getset",
@@ -314,12 +314,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Extensibility.MsalAuthenticationExtension",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.Extensibility.MsalAuthenticationExtension",
+          "ownerIdentity": "Microsoft.Identity.Client"
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Extensibility.MsalAuthenticationExtension::AdditionalCacheParameters:System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "AdditionalCacheParameters",
+          "targetName": "AdditionalCacheParameters",
           "metadataToken": 385876662,
           "canonicalSignature": ":System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "AdditionalCacheParameters|:System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -333,8 +333,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Extensibility.MsalAuthenticationExtension",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.Extensibility.MsalAuthenticationExtension",
+          "ownerIdentity": "Microsoft.Identity.Client"
         }
       ],
       "fields": [],
@@ -348,15 +348,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Extensibility.MsalAuthenticationExtension",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.Extensibility.MsalAuthenticationExtension",
+          "ownerIdentity": "Microsoft.Identity.Client"
         }
       ]
     },
     {
       "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Extensibility.OnBeforeTokenRequestData",
-      "clrName": "Microsoft.Identity.Client.Extensibility.OnBeforeTokenRequestData",
-      "assemblyName": "Microsoft.Identity.Client",
+      "targetName": "Microsoft.Identity.Client.Extensibility.OnBeforeTokenRequestData",
+      "ownerIdentity": "Microsoft.Identity.Client",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -366,13 +366,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Extensibility.OnBeforeTokenRequestData::BodyParameters:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "BodyParameters",
+          "targetName": "BodyParameters",
           "metadataToken": 385876663,
           "canonicalSignature": ":System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "BodyParameters|:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
@@ -386,12 +386,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Extensibility.OnBeforeTokenRequestData",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.Extensibility.OnBeforeTokenRequestData",
+          "ownerIdentity": "Microsoft.Identity.Client"
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Extensibility.OnBeforeTokenRequestData::Headers:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "Headers",
+          "targetName": "Headers",
           "metadataToken": 385876664,
           "canonicalSignature": ":System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "Headers|:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
@@ -405,12 +405,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Extensibility.OnBeforeTokenRequestData",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.Extensibility.OnBeforeTokenRequestData",
+          "ownerIdentity": "Microsoft.Identity.Client"
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Extensibility.OnBeforeTokenRequestData::RequestUri:System.Uri",
-          "clrName": "RequestUri",
+          "targetName": "RequestUri",
           "metadataToken": 385876665,
           "canonicalSignature": ":System.Uri",
           "normalizedSignature": "RequestUri|:System.Uri|static=false|accessor=getset",
@@ -424,12 +424,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Extensibility.OnBeforeTokenRequestData",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.Extensibility.OnBeforeTokenRequestData",
+          "ownerIdentity": "Microsoft.Identity.Client"
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Extensibility.OnBeforeTokenRequestData::CancellationToken:System.Threading.CancellationToken",
-          "clrName": "CancellationToken",
+          "targetName": "CancellationToken",
           "metadataToken": 385876666,
           "canonicalSignature": ":System.Threading.CancellationToken",
           "normalizedSignature": "CancellationToken|:System.Threading.CancellationToken|static=false|accessor=get",
@@ -443,8 +443,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Extensibility.OnBeforeTokenRequestData",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.Extensibility.OnBeforeTokenRequestData",
+          "ownerIdentity": "Microsoft.Identity.Client"
         }
       ],
       "fields": [],
@@ -458,15 +458,15 @@
           "isStatic": false,
           "parameterCount": 4,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Extensibility.OnBeforeTokenRequestData",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.Extensibility.OnBeforeTokenRequestData",
+          "ownerIdentity": "Microsoft.Identity.Client"
         }
       ]
     },
     {
       "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Extensibility.AbstractConfidentialClientAcquireTokenParameterBuilderExtension",
-      "clrName": "Microsoft.Identity.Client.Extensibility.AbstractConfidentialClientAcquireTokenParameterBuilderExtension",
-      "assemblyName": "Microsoft.Identity.Client",
+      "targetName": "Microsoft.Identity.Client.Extensibility.AbstractConfidentialClientAcquireTokenParameterBuilderExtension",
+      "ownerIdentity": "Microsoft.Identity.Client",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -476,12 +476,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Extensibility.AbstractConfidentialClientAcquireTokenParameterBuilderExtension::OnBeforeTokenRequest(AbstractAcquireTokenParameterBuilder_1,System.Func_2[[Microsoft.Identity.Client.Extensibility.OnBeforeTokenRequestData,Microsoft.Identity.Client,Version=4.73.1.0,Culture=neutral,PublicKeyToken=0a613f4dd989e8ae],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):AbstractAcquireTokenParameterBuilder_1",
-          "clrName": "OnBeforeTokenRequest",
+          "targetName": "OnBeforeTokenRequest",
           "metadataToken": 100666118,
           "canonicalSignature": "(AbstractAcquireTokenParameterBuilder_1,System.Func_2[[Microsoft.Identity.Client.Extensibility.OnBeforeTokenRequestData,Microsoft.Identity.Client,Version=4.73.1.0,Culture=neutral,PublicKeyToken=0a613f4dd989e8ae],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):AbstractAcquireTokenParameterBuilder_1",
           "normalizedSignature": "OnBeforeTokenRequest|(AbstractAcquireTokenParameterBuilder_1,System.Func_2[[Microsoft.Identity.Client.Extensibility.OnBeforeTokenRequestData,Microsoft.Identity.Client,Version=4.73.1.0,Culture=neutral,PublicKeyToken=0a613f4dd989e8ae],[System.Threading.Tasks.Task,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):AbstractAcquireTokenParameterBuilder_1|static=true",
@@ -495,13 +495,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Extensibility.AbstractConfidentialClientAcquireTokenParameterBuilderExtension",
-          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "ownerQualifiedName": "Microsoft.Identity.Client.Extensibility.AbstractConfidentialClientAcquireTokenParameterBuilderExtension",
+          "ownerIdentity": "Microsoft.Identity.Client",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Extensibility.AbstractConfidentialClientAcquireTokenParameterBuilderExtension::WithProofOfPosessionKeyId(AbstractAcquireTokenParameterBuilder_1,System.String,System.String):AbstractAcquireTokenParameterBuilder_1",
-          "clrName": "WithProofOfPosessionKeyId",
+          "targetName": "WithProofOfPosessionKeyId",
           "metadataToken": 100666119,
           "canonicalSignature": "(AbstractAcquireTokenParameterBuilder_1,System.String,System.String):AbstractAcquireTokenParameterBuilder_1",
           "normalizedSignature": "WithProofOfPosessionKeyId|(AbstractAcquireTokenParameterBuilder_1,System.String,System.String):AbstractAcquireTokenParameterBuilder_1|static=true",
@@ -515,13 +515,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Extensibility.AbstractConfidentialClientAcquireTokenParameterBuilderExtension",
-          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "ownerQualifiedName": "Microsoft.Identity.Client.Extensibility.AbstractConfidentialClientAcquireTokenParameterBuilderExtension",
+          "ownerIdentity": "Microsoft.Identity.Client",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Extensibility.AbstractConfidentialClientAcquireTokenParameterBuilderExtension::WithAuthenticationExtension(AbstractAcquireTokenParameterBuilder_1,Microsoft.Identity.Client.Extensibility.MsalAuthenticationExtension):AbstractAcquireTokenParameterBuilder_1",
-          "clrName": "WithAuthenticationExtension",
+          "targetName": "WithAuthenticationExtension",
           "metadataToken": 100666120,
           "canonicalSignature": "(AbstractAcquireTokenParameterBuilder_1,Microsoft.Identity.Client.Extensibility.MsalAuthenticationExtension):AbstractAcquireTokenParameterBuilder_1",
           "normalizedSignature": "WithAuthenticationExtension|(AbstractAcquireTokenParameterBuilder_1,Microsoft.Identity.Client.Extensibility.MsalAuthenticationExtension):AbstractAcquireTokenParameterBuilder_1|static=true",
@@ -535,13 +535,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Extensibility.AbstractConfidentialClientAcquireTokenParameterBuilderExtension",
-          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "ownerQualifiedName": "Microsoft.Identity.Client.Extensibility.AbstractConfidentialClientAcquireTokenParameterBuilderExtension",
+          "ownerIdentity": "Microsoft.Identity.Client",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Extensibility.AbstractConfidentialClientAcquireTokenParameterBuilderExtension::WithAdditionalCacheParameters(AbstractAcquireTokenParameterBuilder_1,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):AbstractAcquireTokenParameterBuilder_1",
-          "clrName": "WithAdditionalCacheParameters",
+          "targetName": "WithAdditionalCacheParameters",
           "metadataToken": 100666121,
           "canonicalSignature": "(AbstractAcquireTokenParameterBuilder_1,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):AbstractAcquireTokenParameterBuilder_1",
           "normalizedSignature": "WithAdditionalCacheParameters|(AbstractAcquireTokenParameterBuilder_1,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):AbstractAcquireTokenParameterBuilder_1|static=true",
@@ -555,13 +555,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Extensibility.AbstractConfidentialClientAcquireTokenParameterBuilderExtension",
-          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "ownerQualifiedName": "Microsoft.Identity.Client.Extensibility.AbstractConfidentialClientAcquireTokenParameterBuilderExtension",
+          "ownerIdentity": "Microsoft.Identity.Client",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Extensibility.AbstractConfidentialClientAcquireTokenParameterBuilderExtension::WithFmiPathForClientAssertion(AbstractAcquireTokenParameterBuilder_1,System.String):AbstractAcquireTokenParameterBuilder_1",
-          "clrName": "WithFmiPathForClientAssertion",
+          "targetName": "WithFmiPathForClientAssertion",
           "metadataToken": 100666123,
           "canonicalSignature": "(AbstractAcquireTokenParameterBuilder_1,System.String):AbstractAcquireTokenParameterBuilder_1",
           "normalizedSignature": "WithFmiPathForClientAssertion|(AbstractAcquireTokenParameterBuilder_1,System.String):AbstractAcquireTokenParameterBuilder_1|static=true",
@@ -575,8 +575,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Extensibility.AbstractConfidentialClientAcquireTokenParameterBuilderExtension",
-          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "ownerQualifiedName": "Microsoft.Identity.Client.Extensibility.AbstractConfidentialClientAcquireTokenParameterBuilderExtension",
+          "ownerIdentity": "Microsoft.Identity.Client",
           "isExtensionMethod": true
         }
       ],
@@ -587,8 +587,8 @@
     },
     {
       "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Extensibility.AcquireTokenForClientBuilderExtensions",
-      "clrName": "Microsoft.Identity.Client.Extensibility.AcquireTokenForClientBuilderExtensions",
-      "assemblyName": "Microsoft.Identity.Client",
+      "targetName": "Microsoft.Identity.Client.Extensibility.AcquireTokenForClientBuilderExtensions",
+      "ownerIdentity": "Microsoft.Identity.Client",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -598,12 +598,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Extensibility.AcquireTokenForClientBuilderExtensions::WithProofOfPosessionKeyId(Microsoft.Identity.Client.AcquireTokenForClientParameterBuilder,System.String,System.String):Microsoft.Identity.Client.AcquireTokenForClientParameterBuilder",
-          "clrName": "WithProofOfPosessionKeyId",
+          "targetName": "WithProofOfPosessionKeyId",
           "metadataToken": 100666124,
           "canonicalSignature": "(Microsoft.Identity.Client.AcquireTokenForClientParameterBuilder,System.String,System.String):Microsoft.Identity.Client.AcquireTokenForClientParameterBuilder",
           "normalizedSignature": "WithProofOfPosessionKeyId|(Microsoft.Identity.Client.AcquireTokenForClientParameterBuilder,System.String,System.String):Microsoft.Identity.Client.AcquireTokenForClientParameterBuilder|static=true",
@@ -617,8 +617,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Extensibility.AcquireTokenForClientBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "ownerQualifiedName": "Microsoft.Identity.Client.Extensibility.AcquireTokenForClientBuilderExtensions",
+          "ownerIdentity": "Microsoft.Identity.Client",
           "isExtensionMethod": true
         }
       ],
@@ -629,8 +629,8 @@
     },
     {
       "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Extensibility.AcquireTokenInteractiveParameterBuilderExtensions",
-      "clrName": "Microsoft.Identity.Client.Extensibility.AcquireTokenInteractiveParameterBuilderExtensions",
-      "assemblyName": "Microsoft.Identity.Client",
+      "targetName": "Microsoft.Identity.Client.Extensibility.AcquireTokenInteractiveParameterBuilderExtensions",
+      "ownerIdentity": "Microsoft.Identity.Client",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -640,12 +640,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Extensibility.AcquireTokenInteractiveParameterBuilderExtensions::WithCustomWebUi(Microsoft.Identity.Client.AcquireTokenInteractiveParameterBuilder,Microsoft.Identity.Client.Extensibility.ICustomWebUi):Microsoft.Identity.Client.AcquireTokenInteractiveParameterBuilder",
-          "clrName": "WithCustomWebUi",
+          "targetName": "WithCustomWebUi",
           "metadataToken": 100666125,
           "canonicalSignature": "(Microsoft.Identity.Client.AcquireTokenInteractiveParameterBuilder,Microsoft.Identity.Client.Extensibility.ICustomWebUi):Microsoft.Identity.Client.AcquireTokenInteractiveParameterBuilder",
           "normalizedSignature": "WithCustomWebUi|(Microsoft.Identity.Client.AcquireTokenInteractiveParameterBuilder,Microsoft.Identity.Client.Extensibility.ICustomWebUi):Microsoft.Identity.Client.AcquireTokenInteractiveParameterBuilder|static=true",
@@ -659,8 +659,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Extensibility.AcquireTokenInteractiveParameterBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "ownerQualifiedName": "Microsoft.Identity.Client.Extensibility.AcquireTokenInteractiveParameterBuilderExtensions",
+          "ownerIdentity": "Microsoft.Identity.Client",
           "isExtensionMethod": true
         }
       ],
@@ -671,8 +671,8 @@
     },
     {
       "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Extensibility.AcquireTokenOnBehalfOfParameterBuilderExtensions",
-      "clrName": "Microsoft.Identity.Client.Extensibility.AcquireTokenOnBehalfOfParameterBuilderExtensions",
-      "assemblyName": "Microsoft.Identity.Client",
+      "targetName": "Microsoft.Identity.Client.Extensibility.AcquireTokenOnBehalfOfParameterBuilderExtensions",
+      "ownerIdentity": "Microsoft.Identity.Client",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -682,12 +682,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Extensibility.AcquireTokenOnBehalfOfParameterBuilderExtensions::WithSearchInCacheForLongRunningProcess(Microsoft.Identity.Client.AcquireTokenOnBehalfOfParameterBuilder,System.Boolean):Microsoft.Identity.Client.AcquireTokenOnBehalfOfParameterBuilder",
-          "clrName": "WithSearchInCacheForLongRunningProcess",
+          "targetName": "WithSearchInCacheForLongRunningProcess",
           "metadataToken": 100666126,
           "canonicalSignature": "(Microsoft.Identity.Client.AcquireTokenOnBehalfOfParameterBuilder,System.Boolean):Microsoft.Identity.Client.AcquireTokenOnBehalfOfParameterBuilder",
           "normalizedSignature": "WithSearchInCacheForLongRunningProcess|(Microsoft.Identity.Client.AcquireTokenOnBehalfOfParameterBuilder,System.Boolean):Microsoft.Identity.Client.AcquireTokenOnBehalfOfParameterBuilder|static=true",
@@ -701,8 +701,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Extensibility.AcquireTokenOnBehalfOfParameterBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "ownerQualifiedName": "Microsoft.Identity.Client.Extensibility.AcquireTokenOnBehalfOfParameterBuilderExtensions",
+          "ownerIdentity": "Microsoft.Identity.Client",
           "isExtensionMethod": true
         }
       ],
@@ -713,8 +713,8 @@
     },
     {
       "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Extensibility.ConfidentialClientApplicationBuilderExtensions",
-      "clrName": "Microsoft.Identity.Client.Extensibility.ConfidentialClientApplicationBuilderExtensions",
-      "assemblyName": "Microsoft.Identity.Client",
+      "targetName": "Microsoft.Identity.Client.Extensibility.ConfidentialClientApplicationBuilderExtensions",
+      "ownerIdentity": "Microsoft.Identity.Client",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -724,12 +724,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Extensibility.ConfidentialClientApplicationBuilderExtensions::WithAppTokenProvider(Microsoft.Identity.Client.ConfidentialClientApplicationBuilder,System.Func_2[[Microsoft.Identity.Client.Extensibility.AppTokenProviderParameters,Microsoft.Identity.Client,Version=4.73.1.0,Culture=neutral,PublicKeyToken=0a613f4dd989e8ae],[System.Threading.Tasks.Task_1[[Microsoft.Identity.Client.Extensibility.AppTokenProviderResult,Microsoft.Identity.Client,Version=4.73.1.0,Culture=neutral,PublicKeyToken=0a613f4dd989e8ae]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.Identity.Client.ConfidentialClientApplicationBuilder",
-          "clrName": "WithAppTokenProvider",
+          "targetName": "WithAppTokenProvider",
           "metadataToken": 100666145,
           "canonicalSignature": "(Microsoft.Identity.Client.ConfidentialClientApplicationBuilder,System.Func_2[[Microsoft.Identity.Client.Extensibility.AppTokenProviderParameters,Microsoft.Identity.Client,Version=4.73.1.0,Culture=neutral,PublicKeyToken=0a613f4dd989e8ae],[System.Threading.Tasks.Task_1[[Microsoft.Identity.Client.Extensibility.AppTokenProviderResult,Microsoft.Identity.Client,Version=4.73.1.0,Culture=neutral,PublicKeyToken=0a613f4dd989e8ae]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.Identity.Client.ConfidentialClientApplicationBuilder",
           "normalizedSignature": "WithAppTokenProvider|(Microsoft.Identity.Client.ConfidentialClientApplicationBuilder,System.Func_2[[Microsoft.Identity.Client.Extensibility.AppTokenProviderParameters,Microsoft.Identity.Client,Version=4.73.1.0,Culture=neutral,PublicKeyToken=0a613f4dd989e8ae],[System.Threading.Tasks.Task_1[[Microsoft.Identity.Client.Extensibility.AppTokenProviderResult,Microsoft.Identity.Client,Version=4.73.1.0,Culture=neutral,PublicKeyToken=0a613f4dd989e8ae]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.Identity.Client.ConfidentialClientApplicationBuilder|static=true",
@@ -743,8 +743,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Extensibility.ConfidentialClientApplicationBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "ownerQualifiedName": "Microsoft.Identity.Client.Extensibility.ConfidentialClientApplicationBuilderExtensions",
+          "ownerIdentity": "Microsoft.Identity.Client",
           "isExtensionMethod": true
         }
       ],
@@ -755,8 +755,8 @@
     },
     {
       "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Extensibility.ConfidentialClientApplicationExtensions",
-      "clrName": "Microsoft.Identity.Client.Extensibility.ConfidentialClientApplicationExtensions",
-      "assemblyName": "Microsoft.Identity.Client",
+      "targetName": "Microsoft.Identity.Client.Extensibility.ConfidentialClientApplicationExtensions",
+      "ownerIdentity": "Microsoft.Identity.Client",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -766,12 +766,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Extensibility.ConfidentialClientApplicationExtensions::StopLongRunningProcessInWebApiAsync(Microsoft.Identity.Client.ILongRunningWebApi,System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "StopLongRunningProcessInWebApiAsync",
+          "targetName": "StopLongRunningProcessInWebApiAsync",
           "metadataToken": 100666146,
           "canonicalSignature": "(Microsoft.Identity.Client.ILongRunningWebApi,System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "StopLongRunningProcessInWebApiAsync|(Microsoft.Identity.Client.ILongRunningWebApi,System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=true",
@@ -785,8 +785,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Extensibility.ConfidentialClientApplicationExtensions",
-          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "ownerQualifiedName": "Microsoft.Identity.Client.Extensibility.ConfidentialClientApplicationExtensions",
+          "ownerIdentity": "Microsoft.Identity.Client",
           "isExtensionMethod": true
         }
       ],

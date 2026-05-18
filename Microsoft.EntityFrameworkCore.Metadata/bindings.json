@@ -8,8 +8,8 @@
   "types": [
     {
       "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.SqlServerValueGenerationStrategy",
-      "clrName": "Microsoft.EntityFrameworkCore.Metadata.SqlServerValueGenerationStrategy",
-      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "targetName": "Microsoft.EntityFrameworkCore.Metadata.SqlServerValueGenerationStrategy",
+      "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
       "metadataToken": 0,
       "kind": "Enum",
       "accessibility": "Public",
@@ -19,24 +19,24 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Enum",
-        "clrName": "System.Enum"
+        "targetName": "System.Enum"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.IComparable",
-          "clrName": "System.IComparable"
+          "targetName": "System.IComparable"
         },
         {
           "stableId": "System.Private.CoreLib:System.ISpanFormattable",
-          "clrName": "System.ISpanFormattable"
+          "targetName": "System.ISpanFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IFormattable",
-          "clrName": "System.IFormattable"
+          "targetName": "System.IFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IConvertible",
-          "clrName": "System.IConvertible"
+          "targetName": "System.IConvertible"
         }
       ],
       "methods": [],
@@ -44,63 +44,63 @@
       "fields": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.SqlServerValueGenerationStrategy::value__System.Int32",
-          "clrName": "value__",
+          "targetName": "value__",
           "metadataToken": 67108999,
           "normalizedSignature": "value__|System.Int32|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.SqlServerValueGenerationStrategy",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Metadata.SqlServerValueGenerationStrategy",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.SqlServerValueGenerationStrategy::NoneMicrosoft.EntityFrameworkCore.Metadata.SqlServerValueGenerationStrategy",
-          "clrName": "None",
+          "targetName": "None",
           "metadataToken": 67109000,
           "normalizedSignature": "None|Microsoft.EntityFrameworkCore.Metadata.SqlServerValueGenerationStrategy|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.SqlServerValueGenerationStrategy",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Metadata.SqlServerValueGenerationStrategy",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.SqlServerValueGenerationStrategy::SequenceHiLoMicrosoft.EntityFrameworkCore.Metadata.SqlServerValueGenerationStrategy",
-          "clrName": "SequenceHiLo",
+          "targetName": "SequenceHiLo",
           "metadataToken": 67109001,
           "normalizedSignature": "SequenceHiLo|Microsoft.EntityFrameworkCore.Metadata.SqlServerValueGenerationStrategy|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.SqlServerValueGenerationStrategy",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Metadata.SqlServerValueGenerationStrategy",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.SqlServerValueGenerationStrategy::IdentityColumnMicrosoft.EntityFrameworkCore.Metadata.SqlServerValueGenerationStrategy",
-          "clrName": "IdentityColumn",
+          "targetName": "IdentityColumn",
           "metadataToken": 67109002,
           "normalizedSignature": "IdentityColumn|Microsoft.EntityFrameworkCore.Metadata.SqlServerValueGenerationStrategy|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.SqlServerValueGenerationStrategy",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Metadata.SqlServerValueGenerationStrategy",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.SqlServerValueGenerationStrategy::SequenceMicrosoft.EntityFrameworkCore.Metadata.SqlServerValueGenerationStrategy",
-          "clrName": "Sequence",
+          "targetName": "Sequence",
           "metadataToken": 67109003,
           "normalizedSignature": "Sequence|Microsoft.EntityFrameworkCore.Metadata.SqlServerValueGenerationStrategy|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.SqlServerValueGenerationStrategy",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Metadata.SqlServerValueGenerationStrategy",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
         }
       ],
       "events": [],

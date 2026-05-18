@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.ISqlServerUpdateSqlGenerator",
-      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.ISqlServerUpdateSqlGenerator",
-      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "targetName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.ISqlServerUpdateSqlGenerator",
+      "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -18,13 +18,13 @@
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Update.IUpdateSqlGenerator",
-          "clrName": "Microsoft.EntityFrameworkCore.Update.IUpdateSqlGenerator"
+          "targetName": "Microsoft.EntityFrameworkCore.Update.IUpdateSqlGenerator"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.ISqlServerUpdateSqlGenerator::AppendBulkInsertOperation(System.Text.StringBuilder,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Int32,System.Boolean\u0026):Microsoft.EntityFrameworkCore.Update.ResultSetMapping",
-          "clrName": "AppendBulkInsertOperation",
+          "targetName": "AppendBulkInsertOperation",
           "metadataToken": 100664447,
           "canonicalSignature": "(System.Text.StringBuilder,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Int32,System.Boolean\u0026):Microsoft.EntityFrameworkCore.Update.ResultSetMapping",
           "normalizedSignature": "AppendBulkInsertOperation|(System.Text.StringBuilder,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Int32,System.Boolean\u0026):Microsoft.EntityFrameworkCore.Update.ResultSetMapping|static=false",
@@ -38,8 +38,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.ISqlServerUpdateSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.ISqlServerUpdateSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false,
           "parameterModifiers": [
             {
@@ -50,7 +50,7 @@
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.ISqlServerUpdateSqlGenerator::AppendBulkInsertOperation(System.Text.StringBuilder,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Int32):Microsoft.EntityFrameworkCore.Update.ResultSetMapping",
-          "clrName": "AppendBulkInsertOperation",
+          "targetName": "AppendBulkInsertOperation",
           "metadataToken": 100664448,
           "canonicalSignature": "(System.Text.StringBuilder,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Int32):Microsoft.EntityFrameworkCore.Update.ResultSetMapping",
           "normalizedSignature": "AppendBulkInsertOperation|(System.Text.StringBuilder,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Int32):Microsoft.EntityFrameworkCore.Update.ResultSetMapping|static=false",
@@ -64,8 +64,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.ISqlServerUpdateSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.ISqlServerUpdateSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
         }
       ],
@@ -76,8 +76,8 @@
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommand",
-      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommand",
-      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "targetName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommand",
+      "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -87,26 +87,26 @@
       "arity": 0,
       "baseType": {
         "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Update.ModificationCommand",
-        "clrName": "Microsoft.EntityFrameworkCore.Update.ModificationCommand"
+        "targetName": "Microsoft.EntityFrameworkCore.Update.ModificationCommand"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Update.IModificationCommand",
-          "clrName": "Microsoft.EntityFrameworkCore.Update.IModificationCommand"
+          "targetName": "Microsoft.EntityFrameworkCore.Update.IModificationCommand"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand",
-          "clrName": "Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand"
+          "targetName": "Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Update.INonTrackedModificationCommand",
-          "clrName": "Microsoft.EntityFrameworkCore.Update.INonTrackedModificationCommand"
+          "targetName": "Microsoft.EntityFrameworkCore.Update.INonTrackedModificationCommand"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommand::ProcessSinglePropertyJsonUpdate(Microsoft.EntityFrameworkCore.Update.ColumnModificationParameters\u0026):System.Void",
-          "clrName": "ProcessSinglePropertyJsonUpdate",
+          "targetName": "ProcessSinglePropertyJsonUpdate",
           "metadataToken": 100664451,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Update.ColumnModificationParameters\u0026):System.Void",
           "normalizedSignature": "ProcessSinglePropertyJsonUpdate|(Microsoft.EntityFrameworkCore.Update.ColumnModificationParameters\u0026):System.Void|static=false",
@@ -120,8 +120,8 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommand",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommand",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false,
           "parameterModifiers": [
             {
@@ -143,8 +143,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommand",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommand",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
           "parameterModifiers": [
             {
               "index": 0,
@@ -160,8 +160,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommand",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommand",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
           "parameterModifiers": [
             {
               "index": 0,
@@ -173,8 +173,8 @@
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch",
-      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch",
-      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "targetName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch",
+      "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -184,12 +184,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch",
-        "clrName": "Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch"
+        "targetName": "Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch"
       },
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch::RollbackLastCommand(Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand):System.Void",
-          "clrName": "RollbackLastCommand",
+          "targetName": "RollbackLastCommand",
           "metadataToken": 100664454,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand):System.Void",
           "normalizedSignature": "RollbackLastCommand|(Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand):System.Void|static=false",
@@ -203,13 +203,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch::IsValid():System.Boolean",
-          "clrName": "IsValid",
+          "targetName": "IsValid",
           "metadataToken": 100664455,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "IsValid|():System.Boolean|static=false",
@@ -223,13 +223,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch::TryAddCommand(Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand):System.Boolean",
-          "clrName": "TryAddCommand",
+          "targetName": "TryAddCommand",
           "metadataToken": 100664457,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand):System.Boolean",
           "normalizedSignature": "TryAddCommand|(Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand):System.Boolean|static=false",
@@ -243,13 +243,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch::AddCommand(Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand):System.Void",
-          "clrName": "AddCommand",
+          "targetName": "AddCommand",
           "metadataToken": 100664458,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand):System.Void",
           "normalizedSignature": "AddCommand|(Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand):System.Void|static=false",
@@ -263,13 +263,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch::Complete(System.Boolean):System.Void",
-          "clrName": "Complete",
+          "targetName": "Complete",
           "metadataToken": 100664460,
           "canonicalSignature": "(System.Boolean):System.Void",
           "normalizedSignature": "Complete|(System.Boolean):System.Void|static=false",
@@ -283,13 +283,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch::Execute(Microsoft.EntityFrameworkCore.Storage.IRelationalConnection):System.Void",
-          "clrName": "Execute",
+          "targetName": "Execute",
           "metadataToken": 100664461,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.IRelationalConnection):System.Void",
           "normalizedSignature": "Execute|(Microsoft.EntityFrameworkCore.Storage.IRelationalConnection):System.Void|static=false",
@@ -303,13 +303,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch::ExecuteAsync(Microsoft.EntityFrameworkCore.Storage.IRelationalConnection,System.Threading.CancellationToken):System.Threading.Tasks.Task",
-          "clrName": "ExecuteAsync",
+          "targetName": "ExecuteAsync",
           "metadataToken": 100664462,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.IRelationalConnection,System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "ExecuteAsync|(Microsoft.EntityFrameworkCore.Storage.IRelationalConnection,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
@@ -323,15 +323,15 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch::UpdateSqlGenerator:Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.ISqlServerUpdateSqlGenerator",
-          "clrName": "UpdateSqlGenerator",
+          "targetName": "UpdateSqlGenerator",
           "metadataToken": 385876099,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.ISqlServerUpdateSqlGenerator",
           "normalizedSignature": "UpdateSqlGenerator|:Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.ISqlServerUpdateSqlGenerator|static=false|accessor=get",
@@ -345,8 +345,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
         }
       ],
       "fields": [],
@@ -360,15 +360,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
         }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatchFactory",
-      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatchFactory",
-      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "targetName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatchFactory",
+      "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -378,18 +378,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Update.IModificationCommandBatchFactory",
-          "clrName": "Microsoft.EntityFrameworkCore.Update.IModificationCommandBatchFactory"
+          "targetName": "Microsoft.EntityFrameworkCore.Update.IModificationCommandBatchFactory"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatchFactory::Create():Microsoft.EntityFrameworkCore.Update.ModificationCommandBatch",
-          "clrName": "Create",
+          "targetName": "Create",
           "metadataToken": 100664466,
           "canonicalSignature": "():Microsoft.EntityFrameworkCore.Update.ModificationCommandBatch",
           "normalizedSignature": "Create|():Microsoft.EntityFrameworkCore.Update.ModificationCommandBatch|static=false",
@@ -403,15 +403,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatchFactory",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatchFactory",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatchFactory::Dependencies:Microsoft.EntityFrameworkCore.Update.ModificationCommandBatchFactoryDependencies",
-          "clrName": "Dependencies",
+          "targetName": "Dependencies",
           "metadataToken": 385876100,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.Update.ModificationCommandBatchFactoryDependencies",
           "normalizedSignature": "Dependencies|:Microsoft.EntityFrameworkCore.Update.ModificationCommandBatchFactoryDependencies|static=false|accessor=get",
@@ -425,8 +425,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatchFactory",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatchFactory",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
         }
       ],
       "fields": [],
@@ -440,15 +440,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatchFactory",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatchFactory",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
         }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandFactory",
-      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandFactory",
-      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "targetName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandFactory",
+      "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -458,18 +458,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Update.IModificationCommandFactory",
-          "clrName": "Microsoft.EntityFrameworkCore.Update.IModificationCommandFactory"
+          "targetName": "Microsoft.EntityFrameworkCore.Update.IModificationCommandFactory"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandFactory::CreateModificationCommand(Microsoft.EntityFrameworkCore.Update.ModificationCommandParameters\u0026):Microsoft.EntityFrameworkCore.Update.IModificationCommand",
-          "clrName": "CreateModificationCommand",
+          "targetName": "CreateModificationCommand",
           "metadataToken": 100664467,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Update.ModificationCommandParameters\u0026):Microsoft.EntityFrameworkCore.Update.IModificationCommand",
           "normalizedSignature": "CreateModificationCommand|(Microsoft.EntityFrameworkCore.Update.ModificationCommandParameters\u0026):Microsoft.EntityFrameworkCore.Update.IModificationCommand|static=false",
@@ -483,8 +483,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandFactory",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandFactory",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false,
           "parameterModifiers": [
             {
@@ -495,7 +495,7 @@
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandFactory::CreateNonTrackedModificationCommand(Microsoft.EntityFrameworkCore.Update.NonTrackedModificationCommandParameters\u0026):Microsoft.EntityFrameworkCore.Update.INonTrackedModificationCommand",
-          "clrName": "CreateNonTrackedModificationCommand",
+          "targetName": "CreateNonTrackedModificationCommand",
           "metadataToken": 100664468,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Update.NonTrackedModificationCommandParameters\u0026):Microsoft.EntityFrameworkCore.Update.INonTrackedModificationCommand",
           "normalizedSignature": "CreateNonTrackedModificationCommand|(Microsoft.EntityFrameworkCore.Update.NonTrackedModificationCommandParameters\u0026):Microsoft.EntityFrameworkCore.Update.INonTrackedModificationCommand|static=false",
@@ -509,8 +509,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandFactory",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandFactory",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false,
           "parameterModifiers": [
             {
@@ -532,15 +532,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandFactory",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandFactory",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
         }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator",
-      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator",
-      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "targetName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator",
+      "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -550,22 +550,22 @@
       "arity": 0,
       "baseType": {
         "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Update.UpdateAndSelectSqlGenerator",
-        "clrName": "Microsoft.EntityFrameworkCore.Update.UpdateAndSelectSqlGenerator"
+        "targetName": "Microsoft.EntityFrameworkCore.Update.UpdateAndSelectSqlGenerator"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Update.IUpdateSqlGenerator",
-          "clrName": "Microsoft.EntityFrameworkCore.Update.IUpdateSqlGenerator"
+          "targetName": "Microsoft.EntityFrameworkCore.Update.IUpdateSqlGenerator"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.ISqlServerUpdateSqlGenerator",
-          "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.ISqlServerUpdateSqlGenerator"
+          "targetName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.ISqlServerUpdateSqlGenerator"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator::AppendInsertOperation(System.Text.StringBuilder,Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand,System.Int32,System.Boolean\u0026):Microsoft.EntityFrameworkCore.Update.ResultSetMapping",
-          "clrName": "AppendInsertOperation",
+          "targetName": "AppendInsertOperation",
           "metadataToken": 100664472,
           "canonicalSignature": "(System.Text.StringBuilder,Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand,System.Int32,System.Boolean\u0026):Microsoft.EntityFrameworkCore.Update.ResultSetMapping",
           "normalizedSignature": "AppendInsertOperation|(System.Text.StringBuilder,Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand,System.Int32,System.Boolean\u0026):Microsoft.EntityFrameworkCore.Update.ResultSetMapping|static=false",
@@ -579,8 +579,8 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false,
           "parameterModifiers": [
             {
@@ -591,7 +591,7 @@
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator::AppendInsertCommand(System.Text.StringBuilder,System.String,System.String,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Update.IColumnModification,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Update.IColumnModification,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
-          "clrName": "AppendInsertCommand",
+          "targetName": "AppendInsertCommand",
           "metadataToken": 100664473,
           "canonicalSignature": "(System.Text.StringBuilder,System.String,System.String,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Update.IColumnModification,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Update.IColumnModification,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
           "normalizedSignature": "AppendInsertCommand|(System.Text.StringBuilder,System.String,System.String,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Update.IColumnModification,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Update.IColumnModification,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
@@ -605,13 +605,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator::AppendUpdateOperation(System.Text.StringBuilder,Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand,System.Int32,System.Boolean\u0026):Microsoft.EntityFrameworkCore.Update.ResultSetMapping",
-          "clrName": "AppendUpdateOperation",
+          "targetName": "AppendUpdateOperation",
           "metadataToken": 100664474,
           "canonicalSignature": "(System.Text.StringBuilder,Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand,System.Int32,System.Boolean\u0026):Microsoft.EntityFrameworkCore.Update.ResultSetMapping",
           "normalizedSignature": "AppendUpdateOperation|(System.Text.StringBuilder,Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand,System.Int32,System.Boolean\u0026):Microsoft.EntityFrameworkCore.Update.ResultSetMapping|static=false",
@@ -625,8 +625,8 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false,
           "parameterModifiers": [
             {
@@ -637,7 +637,7 @@
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator::AppendUpdateCommand(System.Text.StringBuilder,System.String,System.String,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Update.IColumnModification,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Update.IColumnModification,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Update.IColumnModification,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean):System.Void",
-          "clrName": "AppendUpdateCommand",
+          "targetName": "AppendUpdateCommand",
           "metadataToken": 100664475,
           "canonicalSignature": "(System.Text.StringBuilder,System.String,System.String,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Update.IColumnModification,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Update.IColumnModification,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Update.IColumnModification,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean):System.Void",
           "normalizedSignature": "AppendUpdateCommand|(System.Text.StringBuilder,System.String,System.String,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Update.IColumnModification,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Update.IColumnModification,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Update.IColumnModification,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean):System.Void|static=false",
@@ -651,13 +651,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator::AppendUpdateColumnValue(Microsoft.EntityFrameworkCore.Storage.ISqlGenerationHelper,Microsoft.EntityFrameworkCore.Update.IColumnModification,System.Text.StringBuilder,System.String,System.String):System.Void",
-          "clrName": "AppendUpdateColumnValue",
+          "targetName": "AppendUpdateColumnValue",
           "metadataToken": 100664476,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.ISqlGenerationHelper,Microsoft.EntityFrameworkCore.Update.IColumnModification,System.Text.StringBuilder,System.String,System.String):System.Void",
           "normalizedSignature": "AppendUpdateColumnValue|(Microsoft.EntityFrameworkCore.Storage.ISqlGenerationHelper,Microsoft.EntityFrameworkCore.Update.IColumnModification,System.Text.StringBuilder,System.String,System.String):System.Void|static=false",
@@ -671,13 +671,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator::AppendDeleteOperation(System.Text.StringBuilder,Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand,System.Int32,System.Boolean\u0026):Microsoft.EntityFrameworkCore.Update.ResultSetMapping",
-          "clrName": "AppendDeleteOperation",
+          "targetName": "AppendDeleteOperation",
           "metadataToken": 100664477,
           "canonicalSignature": "(System.Text.StringBuilder,Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand,System.Int32,System.Boolean\u0026):Microsoft.EntityFrameworkCore.Update.ResultSetMapping",
           "normalizedSignature": "AppendDeleteOperation|(System.Text.StringBuilder,Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand,System.Int32,System.Boolean\u0026):Microsoft.EntityFrameworkCore.Update.ResultSetMapping|static=false",
@@ -691,8 +691,8 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false,
           "parameterModifiers": [
             {
@@ -703,7 +703,7 @@
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator::AppendDeleteCommand(System.Text.StringBuilder,System.String,System.String,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Update.IColumnModification,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Update.IColumnModification,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean):System.Void",
-          "clrName": "AppendDeleteCommand",
+          "targetName": "AppendDeleteCommand",
           "metadataToken": 100664478,
           "canonicalSignature": "(System.Text.StringBuilder,System.String,System.String,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Update.IColumnModification,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Update.IColumnModification,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean):System.Void",
           "normalizedSignature": "AppendDeleteCommand|(System.Text.StringBuilder,System.String,System.String,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Update.IColumnModification,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Update.IColumnModification,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean):System.Void|static=false",
@@ -717,13 +717,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator::AppendBulkInsertOperation(System.Text.StringBuilder,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Int32,System.Boolean\u0026):Microsoft.EntityFrameworkCore.Update.ResultSetMapping",
-          "clrName": "AppendBulkInsertOperation",
+          "targetName": "AppendBulkInsertOperation",
           "metadataToken": 100664479,
           "canonicalSignature": "(System.Text.StringBuilder,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Int32,System.Boolean\u0026):Microsoft.EntityFrameworkCore.Update.ResultSetMapping",
           "normalizedSignature": "AppendBulkInsertOperation|(System.Text.StringBuilder,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Int32,System.Boolean\u0026):Microsoft.EntityFrameworkCore.Update.ResultSetMapping|static=false",
@@ -737,8 +737,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false,
           "parameterModifiers": [
             {
@@ -749,7 +749,7 @@
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator::AppendStoredProcedureCall(System.Text.StringBuilder,Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand,System.Int32,System.Boolean\u0026):Microsoft.EntityFrameworkCore.Update.ResultSetMapping",
-          "clrName": "AppendStoredProcedureCall",
+          "targetName": "AppendStoredProcedureCall",
           "metadataToken": 100664486,
           "canonicalSignature": "(System.Text.StringBuilder,Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand,System.Int32,System.Boolean\u0026):Microsoft.EntityFrameworkCore.Update.ResultSetMapping",
           "normalizedSignature": "AppendStoredProcedureCall|(System.Text.StringBuilder,Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand,System.Int32,System.Boolean\u0026):Microsoft.EntityFrameworkCore.Update.ResultSetMapping|static=false",
@@ -763,8 +763,8 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false,
           "parameterModifiers": [
             {
@@ -775,7 +775,7 @@
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator::AppendReturningClause(System.Text.StringBuilder,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Update.IColumnModification,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.String):System.Void",
-          "clrName": "AppendReturningClause",
+          "targetName": "AppendReturningClause",
           "metadataToken": 100664490,
           "canonicalSignature": "(System.Text.StringBuilder,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Update.IColumnModification,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.String):System.Void",
           "normalizedSignature": "AppendReturningClause|(System.Text.StringBuilder,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Update.IColumnModification,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.String):System.Void|static=false",
@@ -789,13 +789,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator::AppendSelectAffectedCountCommand(System.Text.StringBuilder,System.String,System.String,System.Int32):Microsoft.EntityFrameworkCore.Update.ResultSetMapping",
-          "clrName": "AppendSelectAffectedCountCommand",
+          "targetName": "AppendSelectAffectedCountCommand",
           "metadataToken": 100664495,
           "canonicalSignature": "(System.Text.StringBuilder,System.String,System.String,System.Int32):Microsoft.EntityFrameworkCore.Update.ResultSetMapping",
           "normalizedSignature": "AppendSelectAffectedCountCommand|(System.Text.StringBuilder,System.String,System.String,System.Int32):Microsoft.EntityFrameworkCore.Update.ResultSetMapping|static=false",
@@ -809,13 +809,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator::AppendBatchHeader(System.Text.StringBuilder):System.Void",
-          "clrName": "AppendBatchHeader",
+          "targetName": "AppendBatchHeader",
           "metadataToken": 100664496,
           "canonicalSignature": "(System.Text.StringBuilder):System.Void",
           "normalizedSignature": "AppendBatchHeader|(System.Text.StringBuilder):System.Void|static=false",
@@ -829,13 +829,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator::PrependEnsureAutocommit(System.Text.StringBuilder):System.Void",
-          "clrName": "PrependEnsureAutocommit",
+          "targetName": "PrependEnsureAutocommit",
           "metadataToken": 100664497,
           "canonicalSignature": "(System.Text.StringBuilder):System.Void",
           "normalizedSignature": "PrependEnsureAutocommit|(System.Text.StringBuilder):System.Void|static=false",
@@ -849,13 +849,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator::AppendIdentityWhereCondition(System.Text.StringBuilder,Microsoft.EntityFrameworkCore.Update.IColumnModification):System.Void",
-          "clrName": "AppendIdentityWhereCondition",
+          "targetName": "AppendIdentityWhereCondition",
           "metadataToken": 100664498,
           "canonicalSignature": "(System.Text.StringBuilder,Microsoft.EntityFrameworkCore.Update.IColumnModification):System.Void",
           "normalizedSignature": "AppendIdentityWhereCondition|(System.Text.StringBuilder,Microsoft.EntityFrameworkCore.Update.IColumnModification):System.Void|static=false",
@@ -869,13 +869,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator::AppendRowsAffectedWhereCondition(System.Text.StringBuilder,System.Int32):System.Void",
-          "clrName": "AppendRowsAffectedWhereCondition",
+          "targetName": "AppendRowsAffectedWhereCondition",
           "metadataToken": 100664499,
           "canonicalSignature": "(System.Text.StringBuilder,System.Int32):System.Void",
           "normalizedSignature": "AppendRowsAffectedWhereCondition|(System.Text.StringBuilder,System.Int32):System.Void|static=false",
@@ -889,13 +889,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.ISqlServerUpdateSqlGenerator::AppendBulkInsertOperation(System.Text.StringBuilder,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Int32):Microsoft.EntityFrameworkCore.Update.ResultSetMapping",
-          "clrName": "AppendBulkInsertOperation",
+          "targetName": "AppendBulkInsertOperation",
           "metadataToken": 100664448,
           "canonicalSignature": "(System.Text.StringBuilder,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Int32):Microsoft.EntityFrameworkCore.Update.ResultSetMapping",
           "normalizedSignature": "AppendBulkInsertOperation|(System.Text.StringBuilder,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Int32):Microsoft.EntityFrameworkCore.Update.ResultSetMapping|static=false",
@@ -909,14 +909,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.ISqlServerUpdateSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.ISqlServerUpdateSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.ISqlServerUpdateSqlGenerator"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.ISqlServerUpdateSqlGenerator::AppendBulkInsertOperation(System.Text.StringBuilder,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Int32,System.Boolean\u0026):Microsoft.EntityFrameworkCore.Update.ResultSetMapping",
-          "clrName": "AppendBulkInsertOperation",
+          "targetName": "AppendBulkInsertOperation",
           "metadataToken": 100664447,
           "canonicalSignature": "(System.Text.StringBuilder,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Int32,System.Boolean\u0026):Microsoft.EntityFrameworkCore.Update.ResultSetMapping",
           "normalizedSignature": "AppendBulkInsertOperation|(System.Text.StringBuilder,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand,Microsoft.EntityFrameworkCore.Relational,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Int32,System.Boolean\u0026):Microsoft.EntityFrameworkCore.Update.ResultSetMapping|static=false",
@@ -930,8 +930,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.ISqlServerUpdateSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.ISqlServerUpdateSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.ISqlServerUpdateSqlGenerator",
           "parameterModifiers": [
@@ -945,7 +945,7 @@
       "properties": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator::MergeIntoMinimumThreshold:System.Int32",
-          "clrName": "MergeIntoMinimumThreshold",
+          "targetName": "MergeIntoMinimumThreshold",
           "metadataToken": 385876101,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "MergeIntoMinimumThreshold|:System.Int32|static=false|accessor=get",
@@ -959,8 +959,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
         }
       ],
       "fields": [],
@@ -974,8 +974,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerUpdateSqlGenerator",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
         }
       ]
     }

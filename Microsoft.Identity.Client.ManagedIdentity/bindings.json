@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.ManagedIdentity.ManagedIdentitySource",
-      "clrName": "Microsoft.Identity.Client.ManagedIdentity.ManagedIdentitySource",
-      "assemblyName": "Microsoft.Identity.Client",
+      "targetName": "Microsoft.Identity.Client.ManagedIdentity.ManagedIdentitySource",
+      "ownerIdentity": "Microsoft.Identity.Client",
       "metadataToken": 0,
       "kind": "Enum",
       "accessibility": "Public",
@@ -17,24 +17,24 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Enum",
-        "clrName": "System.Enum"
+        "targetName": "System.Enum"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.IComparable",
-          "clrName": "System.IComparable"
+          "targetName": "System.IComparable"
         },
         {
           "stableId": "System.Private.CoreLib:System.ISpanFormattable",
-          "clrName": "System.ISpanFormattable"
+          "targetName": "System.ISpanFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IFormattable",
-          "clrName": "System.IFormattable"
+          "targetName": "System.IFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IConvertible",
-          "clrName": "System.IConvertible"
+          "targetName": "System.IConvertible"
         }
       ],
       "methods": [],
@@ -42,111 +42,111 @@
       "fields": [
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.ManagedIdentity.ManagedIdentitySource::value__System.Int32",
-          "clrName": "value__",
+          "targetName": "value__",
           "metadataToken": 67110283,
           "normalizedSignature": "value__|System.Int32|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.ManagedIdentity.ManagedIdentitySource",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.ManagedIdentity.ManagedIdentitySource",
+          "ownerIdentity": "Microsoft.Identity.Client"
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.ManagedIdentity.ManagedIdentitySource::NoneMicrosoft.Identity.Client.ManagedIdentity.ManagedIdentitySource",
-          "clrName": "None",
+          "targetName": "None",
           "metadataToken": 67110284,
           "normalizedSignature": "None|Microsoft.Identity.Client.ManagedIdentity.ManagedIdentitySource|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.ManagedIdentity.ManagedIdentitySource",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.ManagedIdentity.ManagedIdentitySource",
+          "ownerIdentity": "Microsoft.Identity.Client"
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.ManagedIdentity.ManagedIdentitySource::ImdsMicrosoft.Identity.Client.ManagedIdentity.ManagedIdentitySource",
-          "clrName": "Imds",
+          "targetName": "Imds",
           "metadataToken": 67110285,
           "normalizedSignature": "Imds|Microsoft.Identity.Client.ManagedIdentity.ManagedIdentitySource|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.ManagedIdentity.ManagedIdentitySource",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.ManagedIdentity.ManagedIdentitySource",
+          "ownerIdentity": "Microsoft.Identity.Client"
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.ManagedIdentity.ManagedIdentitySource::AppServiceMicrosoft.Identity.Client.ManagedIdentity.ManagedIdentitySource",
-          "clrName": "AppService",
+          "targetName": "AppService",
           "metadataToken": 67110286,
           "normalizedSignature": "AppService|Microsoft.Identity.Client.ManagedIdentity.ManagedIdentitySource|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.ManagedIdentity.ManagedIdentitySource",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.ManagedIdentity.ManagedIdentitySource",
+          "ownerIdentity": "Microsoft.Identity.Client"
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.ManagedIdentity.ManagedIdentitySource::AzureArcMicrosoft.Identity.Client.ManagedIdentity.ManagedIdentitySource",
-          "clrName": "AzureArc",
+          "targetName": "AzureArc",
           "metadataToken": 67110287,
           "normalizedSignature": "AzureArc|Microsoft.Identity.Client.ManagedIdentity.ManagedIdentitySource|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.ManagedIdentity.ManagedIdentitySource",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.ManagedIdentity.ManagedIdentitySource",
+          "ownerIdentity": "Microsoft.Identity.Client"
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.ManagedIdentity.ManagedIdentitySource::CloudShellMicrosoft.Identity.Client.ManagedIdentity.ManagedIdentitySource",
-          "clrName": "CloudShell",
+          "targetName": "CloudShell",
           "metadataToken": 67110288,
           "normalizedSignature": "CloudShell|Microsoft.Identity.Client.ManagedIdentity.ManagedIdentitySource|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.ManagedIdentity.ManagedIdentitySource",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.ManagedIdentity.ManagedIdentitySource",
+          "ownerIdentity": "Microsoft.Identity.Client"
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.ManagedIdentity.ManagedIdentitySource::ServiceFabricMicrosoft.Identity.Client.ManagedIdentity.ManagedIdentitySource",
-          "clrName": "ServiceFabric",
+          "targetName": "ServiceFabric",
           "metadataToken": 67110289,
           "normalizedSignature": "ServiceFabric|Microsoft.Identity.Client.ManagedIdentity.ManagedIdentitySource|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.ManagedIdentity.ManagedIdentitySource",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.ManagedIdentity.ManagedIdentitySource",
+          "ownerIdentity": "Microsoft.Identity.Client"
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.ManagedIdentity.ManagedIdentitySource::DefaultToImdsMicrosoft.Identity.Client.ManagedIdentity.ManagedIdentitySource",
-          "clrName": "DefaultToImds",
+          "targetName": "DefaultToImds",
           "metadataToken": 67110290,
           "normalizedSignature": "DefaultToImds|Microsoft.Identity.Client.ManagedIdentity.ManagedIdentitySource|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.ManagedIdentity.ManagedIdentitySource",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.ManagedIdentity.ManagedIdentitySource",
+          "ownerIdentity": "Microsoft.Identity.Client"
         },
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.ManagedIdentity.ManagedIdentitySource::MachineLearningMicrosoft.Identity.Client.ManagedIdentity.ManagedIdentitySource",
-          "clrName": "MachineLearning",
+          "targetName": "MachineLearning",
           "metadataToken": 67110291,
           "normalizedSignature": "MachineLearning|Microsoft.Identity.Client.ManagedIdentity.ManagedIdentitySource|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.ManagedIdentity.ManagedIdentitySource",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.ManagedIdentity.ManagedIdentitySource",
+          "ownerIdentity": "Microsoft.Identity.Client"
         }
       ],
       "events": [],

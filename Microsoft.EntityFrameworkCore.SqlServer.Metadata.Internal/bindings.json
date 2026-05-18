@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationProvider",
-      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationProvider",
-      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "targetName": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationProvider",
+      "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,18 +17,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Metadata.RelationalAnnotationProvider",
-        "clrName": "Microsoft.EntityFrameworkCore.Metadata.RelationalAnnotationProvider"
+        "targetName": "Microsoft.EntityFrameworkCore.Metadata.RelationalAnnotationProvider"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Metadata.IRelationalAnnotationProvider",
-          "clrName": "Microsoft.EntityFrameworkCore.Metadata.IRelationalAnnotationProvider"
+          "targetName": "Microsoft.EntityFrameworkCore.Metadata.IRelationalAnnotationProvider"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationProvider::For(Microsoft.EntityFrameworkCore.Metadata.IRelationalModel,System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "For",
+          "targetName": "For",
           "metadataToken": 100665171,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IRelationalModel,System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "For|(Microsoft.EntityFrameworkCore.Metadata.IRelationalModel,System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
@@ -42,13 +42,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationProvider",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationProvider",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationProvider::For(Microsoft.EntityFrameworkCore.Metadata.ITable,System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "For",
+          "targetName": "For",
           "metadataToken": 100665172,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.ITable,System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "For|(Microsoft.EntityFrameworkCore.Metadata.ITable,System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
@@ -62,13 +62,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationProvider",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationProvider",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationProvider::For(Microsoft.EntityFrameworkCore.Metadata.IUniqueConstraint,System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "For",
+          "targetName": "For",
           "metadataToken": 100665173,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IUniqueConstraint,System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "For|(Microsoft.EntityFrameworkCore.Metadata.IUniqueConstraint,System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
@@ -82,13 +82,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationProvider",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationProvider",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationProvider::For(Microsoft.EntityFrameworkCore.Metadata.ITableIndex,System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "For",
+          "targetName": "For",
           "metadataToken": 100665174,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.ITableIndex,System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "For|(Microsoft.EntityFrameworkCore.Metadata.ITableIndex,System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
@@ -102,13 +102,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationProvider",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationProvider",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationProvider::For(Microsoft.EntityFrameworkCore.Metadata.IColumn,System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "For",
+          "targetName": "For",
           "metadataToken": 100665175,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IColumn,System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "For|(Microsoft.EntityFrameworkCore.Metadata.IColumn,System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
@@ -122,8 +122,8 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationProvider",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationProvider",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
           "isExtensionMethod": false
         }
       ],
@@ -139,15 +139,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationProvider",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationProvider",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
         }
       ]
     },
     {
       "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
-      "clrName": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
-      "assemblyName": "Microsoft.EntityFrameworkCore.SqlServer",
+      "targetName": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
+      "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -157,442 +157,442 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [],
       "fields": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::PrefixSystem.String",
-          "clrName": "Prefix",
+          "targetName": "Prefix",
           "metadataToken": 67109379,
           "normalizedSignature": "Prefix|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::ClusteredSystem.String",
-          "clrName": "Clustered",
+          "targetName": "Clustered",
           "metadataToken": 67109380,
           "normalizedSignature": "Clustered|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::CreatedOnlineSystem.String",
-          "clrName": "CreatedOnline",
+          "targetName": "CreatedOnline",
           "metadataToken": 67109381,
           "normalizedSignature": "CreatedOnline|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::EditionOptionsSystem.String",
-          "clrName": "EditionOptions",
+          "targetName": "EditionOptions",
           "metadataToken": 67109382,
           "normalizedSignature": "EditionOptions|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::FillFactorSystem.String",
-          "clrName": "FillFactor",
+          "targetName": "FillFactor",
           "metadataToken": 67109383,
           "normalizedSignature": "FillFactor|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::SortInTempDbSystem.String",
-          "clrName": "SortInTempDb",
+          "targetName": "SortInTempDb",
           "metadataToken": 67109384,
           "normalizedSignature": "SortInTempDb|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::DataCompressionSystem.String",
-          "clrName": "DataCompression",
+          "targetName": "DataCompression",
           "metadataToken": 67109385,
           "normalizedSignature": "DataCompression|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::HiLoSequenceNameSystem.String",
-          "clrName": "HiLoSequenceName",
+          "targetName": "HiLoSequenceName",
           "metadataToken": 67109386,
           "normalizedSignature": "HiLoSequenceName|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::HiLoSequenceSchemaSystem.String",
-          "clrName": "HiLoSequenceSchema",
+          "targetName": "HiLoSequenceSchema",
           "metadataToken": 67109387,
           "normalizedSignature": "HiLoSequenceSchema|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::SequenceNameSuffixSystem.String",
-          "clrName": "SequenceNameSuffix",
+          "targetName": "SequenceNameSuffix",
           "metadataToken": 67109388,
           "normalizedSignature": "SequenceNameSuffix|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::SequenceNameSystem.String",
-          "clrName": "SequenceName",
+          "targetName": "SequenceName",
           "metadataToken": 67109389,
           "normalizedSignature": "SequenceName|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::SequenceSchemaSystem.String",
-          "clrName": "SequenceSchema",
+          "targetName": "SequenceSchema",
           "metadataToken": 67109390,
           "normalizedSignature": "SequenceSchema|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::IdentitySystem.String",
-          "clrName": "Identity",
+          "targetName": "Identity",
           "metadataToken": 67109391,
           "normalizedSignature": "Identity|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::IdentityIncrementSystem.String",
-          "clrName": "IdentityIncrement",
+          "targetName": "IdentityIncrement",
           "metadataToken": 67109392,
           "normalizedSignature": "IdentityIncrement|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::IdentitySeedSystem.String",
-          "clrName": "IdentitySeed",
+          "targetName": "IdentitySeed",
           "metadataToken": 67109393,
           "normalizedSignature": "IdentitySeed|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::IncludeSystem.String",
-          "clrName": "Include",
+          "targetName": "Include",
           "metadataToken": 67109394,
           "normalizedSignature": "Include|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::MaxDatabaseSizeSystem.String",
-          "clrName": "MaxDatabaseSize",
+          "targetName": "MaxDatabaseSize",
           "metadataToken": 67109395,
           "normalizedSignature": "MaxDatabaseSize|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::MemoryOptimizedSystem.String",
-          "clrName": "MemoryOptimized",
+          "targetName": "MemoryOptimized",
           "metadataToken": 67109396,
           "normalizedSignature": "MemoryOptimized|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::PerformanceLevelSqlSystem.String",
-          "clrName": "PerformanceLevelSql",
+          "targetName": "PerformanceLevelSql",
           "metadataToken": 67109397,
           "normalizedSignature": "PerformanceLevelSql|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::ServiceTierSqlSystem.String",
-          "clrName": "ServiceTierSql",
+          "targetName": "ServiceTierSql",
           "metadataToken": 67109398,
           "normalizedSignature": "ServiceTierSql|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::SparseSystem.String",
-          "clrName": "Sparse",
+          "targetName": "Sparse",
           "metadataToken": 67109399,
           "normalizedSignature": "Sparse|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::IsTemporalSystem.String",
-          "clrName": "IsTemporal",
+          "targetName": "IsTemporal",
           "metadataToken": 67109400,
           "normalizedSignature": "IsTemporal|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::TemporalHistoryTableNameSystem.String",
-          "clrName": "TemporalHistoryTableName",
+          "targetName": "TemporalHistoryTableName",
           "metadataToken": 67109401,
           "normalizedSignature": "TemporalHistoryTableName|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::TemporalHistoryTableSchemaSystem.String",
-          "clrName": "TemporalHistoryTableSchema",
+          "targetName": "TemporalHistoryTableSchema",
           "metadataToken": 67109402,
           "normalizedSignature": "TemporalHistoryTableSchema|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::TemporalPeriodStartPropertyNameSystem.String",
-          "clrName": "TemporalPeriodStartPropertyName",
+          "targetName": "TemporalPeriodStartPropertyName",
           "metadataToken": 67109403,
           "normalizedSignature": "TemporalPeriodStartPropertyName|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::TemporalPeriodStartColumnNameSystem.String",
-          "clrName": "TemporalPeriodStartColumnName",
+          "targetName": "TemporalPeriodStartColumnName",
           "metadataToken": 67109404,
           "normalizedSignature": "TemporalPeriodStartColumnName|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::TemporalPeriodEndPropertyNameSystem.String",
-          "clrName": "TemporalPeriodEndPropertyName",
+          "targetName": "TemporalPeriodEndPropertyName",
           "metadataToken": 67109405,
           "normalizedSignature": "TemporalPeriodEndPropertyName|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::TemporalPeriodEndColumnNameSystem.String",
-          "clrName": "TemporalPeriodEndColumnName",
+          "targetName": "TemporalPeriodEndColumnName",
           "metadataToken": 67109406,
           "normalizedSignature": "TemporalPeriodEndColumnName|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::TemporalOperationTypeSystem.String",
-          "clrName": "TemporalOperationType",
+          "targetName": "TemporalOperationType",
           "metadataToken": 67109407,
           "normalizedSignature": "TemporalOperationType|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::TemporalAsOfPointInTimeSystem.String",
-          "clrName": "TemporalAsOfPointInTime",
+          "targetName": "TemporalAsOfPointInTime",
           "metadataToken": 67109408,
           "normalizedSignature": "TemporalAsOfPointInTime|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::TemporalRangeOperationFromSystem.String",
-          "clrName": "TemporalRangeOperationFrom",
+          "targetName": "TemporalRangeOperationFrom",
           "metadataToken": 67109409,
           "normalizedSignature": "TemporalRangeOperationFrom|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::TemporalRangeOperationToSystem.String",
-          "clrName": "TemporalRangeOperationTo",
+          "targetName": "TemporalRangeOperationTo",
           "metadataToken": 67109410,
           "normalizedSignature": "TemporalRangeOperationTo|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::ValueGenerationStrategySystem.String",
-          "clrName": "ValueGenerationStrategy",
+          "targetName": "ValueGenerationStrategy",
           "metadataToken": 67109411,
           "normalizedSignature": "ValueGenerationStrategy|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::UseSqlOutputClauseSystem.String",
-          "clrName": "UseSqlOutputClause",
+          "targetName": "UseSqlOutputClause",
           "metadataToken": 67109412,
           "normalizedSignature": "UseSqlOutputClause|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::TemporalIsPeriodStartColumnSystem.String",
-          "clrName": "TemporalIsPeriodStartColumn",
+          "targetName": "TemporalIsPeriodStartColumn",
           "metadataToken": 67109413,
           "normalizedSignature": "TemporalIsPeriodStartColumn|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames::TemporalIsPeriodEndColumnSystem.String",
-          "clrName": "TemporalIsPeriodEndColumn",
+          "targetName": "TemporalIsPeriodEndColumn",
           "metadataToken": 67109414,
           "normalizedSignature": "TemporalIsPeriodEndColumn|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
-          "declaringAssemblyName": "Microsoft.EntityFrameworkCore.SqlServer"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Metadata.Internal.SqlServerAnnotationNames",
+          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
         }
       ],
       "events": [],

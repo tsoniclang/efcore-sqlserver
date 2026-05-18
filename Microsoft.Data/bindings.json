@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.OperationAbortedException",
-      "clrName": "Microsoft.Data.OperationAbortedException",
-      "assemblyName": "Microsoft.Data.SqlClient",
+      "targetName": "Microsoft.Data.OperationAbortedException",
+      "ownerIdentity": "Microsoft.Data.SqlClient",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,12 +17,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.SystemException",
-        "clrName": "System.SystemException"
+        "targetName": "System.SystemException"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.Runtime.Serialization.ISerializable",
-          "clrName": "System.Runtime.Serialization.ISerializable"
+          "targetName": "System.Runtime.Serialization.ISerializable"
         }
       ],
       "methods": [],
@@ -33,8 +33,8 @@
     },
     {
       "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlDbTypeExtensions",
-      "clrName": "Microsoft.Data.SqlDbTypeExtensions",
-      "assemblyName": "Microsoft.Data.SqlClient",
+      "targetName": "Microsoft.Data.SqlDbTypeExtensions",
+      "ownerIdentity": "Microsoft.Data.SqlClient",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -44,34 +44,34 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [],
       "fields": [
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlDbTypeExtensions::JsonSystem.Data.SqlDbType",
-          "clrName": "Json",
+          "targetName": "Json",
           "metadataToken": 67108870,
           "normalizedSignature": "Json|System.Data.SqlDbType|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Data.SqlDbTypeExtensions",
-          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+          "ownerQualifiedName": "Microsoft.Data.SqlDbTypeExtensions",
+          "ownerIdentity": "Microsoft.Data.SqlClient"
         },
         {
           "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlDbTypeExtensions::VectorSystem.Data.SqlDbType",
-          "clrName": "Vector",
+          "targetName": "Vector",
           "metadataToken": 67108871,
           "normalizedSignature": "Vector|System.Data.SqlDbType|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Data.SqlDbTypeExtensions",
-          "declaringAssemblyName": "Microsoft.Data.SqlClient"
+          "ownerQualifiedName": "Microsoft.Data.SqlDbTypeExtensions",
+          "ownerIdentity": "Microsoft.Data.SqlClient"
         }
       ],
       "events": [],

@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos.Credential",
-      "clrName": "Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos.Credential",
-      "assemblyName": "Microsoft.Identity.Client",
+      "targetName": "Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos.Credential",
+      "ownerIdentity": "Microsoft.Identity.Client",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,12 +17,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos.Credential::Current():Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos.Credential",
-          "clrName": "Current",
+          "targetName": "Current",
           "metadataToken": 100664439,
           "canonicalSignature": "():Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos.Credential",
           "normalizedSignature": "Current|():Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos.Credential|static=true",
@@ -36,8 +36,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos.Credential",
-          "declaringAssemblyName": "Microsoft.Identity.Client",
+          "ownerQualifiedName": "Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos.Credential",
+          "ownerIdentity": "Microsoft.Identity.Client",
           "isExtensionMethod": false
         }
       ],
@@ -53,8 +53,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos.Credential",
-          "declaringAssemblyName": "Microsoft.Identity.Client"
+          "ownerQualifiedName": "Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos.Credential",
+          "ownerIdentity": "Microsoft.Identity.Client"
         }
       ]
     }
