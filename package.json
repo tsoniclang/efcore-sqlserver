@@ -19,9 +19,9 @@
     "url": "https://github.com/tsoniclang/efcore-sqlserver.git"
   },
   "peerDependencies": {
-    "@tsonic/core": "10.0.44",
-    "@tsonic/dotnet": "10.0.44",
-    "@tsonic/microsoft-extensions": "10.0.43",
+    "@tsonic/core": "10.0.45",
+    "@tsonic/dotnet": "10.0.45",
+    "@tsonic/microsoft-extensions": "10.0.44",
     "@tsonic/efcore": "10.0.44"
   }
 }
