@@ -1,61 +1,66 @@
 {
-  "namespace": "Microsoft.Identity.Client.TelemetryCore.TelemetryClient",
-  "contributingAssemblies": [
-    "Microsoft.Identity.Client"
-  ],
-  "types": [
-    {
-      "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.TelemetryCore.TelemetryClient.TelemetryData",
-      "targetName": "Microsoft.Identity.Client.TelemetryCore.TelemetryClient.TelemetryData",
-      "ownerIdentity": "Microsoft.Identity.Client",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
-      },
-      "methods": [],
-      "properties": [
-        {
-          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.TelemetryCore.TelemetryClient.TelemetryData::CacheLevel:Microsoft.Identity.Client.Cache.CacheLevel",
-          "targetName": "CacheLevel",
-          "metadataToken": 385876387,
-          "canonicalSignature": ":Microsoft.Identity.Client.Cache.CacheLevel",
-          "normalizedSignature": "CacheLevel|:Microsoft.Identity.Client.Cache.CacheLevel|static=false|accessor=getset",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Identity.Client.TelemetryCore.TelemetryClient.TelemetryData",
-          "ownerIdentity": "Microsoft.Identity.Client"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.TelemetryCore.TelemetryClient.TelemetryData::.ctor():void",
-          "metadataToken": 100664954,
-          "canonicalSignature": "():void",
-          "normalizedSignature": "constructor|():void|static=false",
-          "isStatic": false,
-          "parameterCount": 0,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Identity.Client.TelemetryCore.TelemetryClient.TelemetryData",
-          "ownerIdentity": "Microsoft.Identity.Client"
-        }
-      ]
-    }
-  ]
+  "schema": "tsonic.bindings",
+  "provider": {
+    "namespace": "Microsoft.Identity.Client.TelemetryCore.TelemetryClient",
+    "ownerIdentities": [
+      "Microsoft.Identity.Client"
+    ]
+  },
+  "targetSurface": {
+    "types": [
+      {
+        "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.TelemetryCore.TelemetryClient.TelemetryData",
+        "targetName": "Microsoft.Identity.Client.TelemetryCore.TelemetryClient.TelemetryData",
+        "ownerIdentity": "Microsoft.Identity.Client",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
+        },
+        "methods": [],
+        "properties": [
+          {
+            "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.TelemetryCore.TelemetryClient.TelemetryData::CacheLevel:Microsoft.Identity.Client.Cache.CacheLevel",
+            "targetName": "CacheLevel",
+            "metadataToken": 385876387,
+            "canonicalSignature": ":Microsoft.Identity.Client.Cache.CacheLevel",
+            "normalizedSignature": "CacheLevel|:Microsoft.Identity.Client.Cache.CacheLevel|static=false|accessor=getset",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": true,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Identity.Client.TelemetryCore.TelemetryClient.TelemetryData",
+            "ownerIdentity": "Microsoft.Identity.Client"
+          }
+        ],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.TelemetryCore.TelemetryClient.TelemetryData::.ctor():void",
+            "metadataToken": 100664954,
+            "canonicalSignature": "():void",
+            "normalizedSignature": "constructor|():void|static=false",
+            "isStatic": false,
+            "parameterCount": 0,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Identity.Client.TelemetryCore.TelemetryClient.TelemetryData",
+            "ownerIdentity": "Microsoft.Identity.Client"
+          }
+        ]
+      }
+    ]
+  }
 }

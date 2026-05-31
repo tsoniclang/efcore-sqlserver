@@ -1,180 +1,185 @@
 {
-  "namespace": "Microsoft.Identity.Client.Cache",
-  "contributingAssemblies": [
-    "Microsoft.Identity.Client"
-  ],
-  "types": [
-    {
-      "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Cache.CacheLevel",
-      "targetName": "Microsoft.Identity.Client.Cache.CacheLevel",
-      "ownerIdentity": "Microsoft.Identity.Client",
-      "metadataToken": 0,
-      "kind": "Enum",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": true,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Enum",
-        "targetName": "System.Enum"
+  "schema": "tsonic.bindings",
+  "provider": {
+    "namespace": "Microsoft.Identity.Client.Cache",
+    "ownerIdentities": [
+      "Microsoft.Identity.Client"
+    ]
+  },
+  "targetSurface": {
+    "types": [
+      {
+        "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Cache.CacheLevel",
+        "targetName": "Microsoft.Identity.Client.Cache.CacheLevel",
+        "ownerIdentity": "Microsoft.Identity.Client",
+        "metadataToken": 0,
+        "kind": "Enum",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": true,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Enum",
+          "targetName": "System.Enum"
+        },
+        "interfaces": [
+          {
+            "stableId": "System.Private.CoreLib:System.IComparable",
+            "targetName": "System.IComparable"
+          },
+          {
+            "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+            "targetName": "System.ISpanFormattable"
+          },
+          {
+            "stableId": "System.Private.CoreLib:System.IFormattable",
+            "targetName": "System.IFormattable"
+          },
+          {
+            "stableId": "System.Private.CoreLib:System.IConvertible",
+            "targetName": "System.IConvertible"
+          }
+        ],
+        "methods": [],
+        "properties": [],
+        "fields": [
+          {
+            "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Cache.CacheLevel::value__System.Int32",
+            "targetName": "value__",
+            "metadataToken": 67110812,
+            "normalizedSignature": "value__|System.Int32|static=false|const=false",
+            "isStatic": false,
+            "isReadOnly": false,
+            "isLiteral": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Identity.Client.Cache.CacheLevel",
+            "ownerIdentity": "Microsoft.Identity.Client"
+          },
+          {
+            "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Cache.CacheLevel::NoneMicrosoft.Identity.Client.Cache.CacheLevel",
+            "targetName": "None",
+            "metadataToken": 67110813,
+            "normalizedSignature": "None|Microsoft.Identity.Client.Cache.CacheLevel|static=true|const=true",
+            "isStatic": true,
+            "isReadOnly": false,
+            "isLiteral": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Identity.Client.Cache.CacheLevel",
+            "ownerIdentity": "Microsoft.Identity.Client"
+          },
+          {
+            "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Cache.CacheLevel::UnknownMicrosoft.Identity.Client.Cache.CacheLevel",
+            "targetName": "Unknown",
+            "metadataToken": 67110814,
+            "normalizedSignature": "Unknown|Microsoft.Identity.Client.Cache.CacheLevel|static=true|const=true",
+            "isStatic": true,
+            "isReadOnly": false,
+            "isLiteral": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Identity.Client.Cache.CacheLevel",
+            "ownerIdentity": "Microsoft.Identity.Client"
+          },
+          {
+            "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Cache.CacheLevel::L1CacheMicrosoft.Identity.Client.Cache.CacheLevel",
+            "targetName": "L1Cache",
+            "metadataToken": 67110815,
+            "normalizedSignature": "L1Cache|Microsoft.Identity.Client.Cache.CacheLevel|static=true|const=true",
+            "isStatic": true,
+            "isReadOnly": false,
+            "isLiteral": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Identity.Client.Cache.CacheLevel",
+            "ownerIdentity": "Microsoft.Identity.Client"
+          },
+          {
+            "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Cache.CacheLevel::L2CacheMicrosoft.Identity.Client.Cache.CacheLevel",
+            "targetName": "L2Cache",
+            "metadataToken": 67110816,
+            "normalizedSignature": "L2Cache|Microsoft.Identity.Client.Cache.CacheLevel|static=true|const=true",
+            "isStatic": true,
+            "isReadOnly": false,
+            "isLiteral": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Identity.Client.Cache.CacheLevel",
+            "ownerIdentity": "Microsoft.Identity.Client"
+          }
+        ],
+        "events": [],
+        "constructors": []
       },
-      "interfaces": [
-        {
-          "stableId": "System.Private.CoreLib:System.IComparable",
-          "targetName": "System.IComparable"
+      {
+        "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Cache.CacheData",
+        "targetName": "Microsoft.Identity.Client.Cache.CacheData",
+        "ownerIdentity": "Microsoft.Identity.Client",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
         },
-        {
-          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
-          "targetName": "System.ISpanFormattable"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.IFormattable",
-          "targetName": "System.IFormattable"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.IConvertible",
-          "targetName": "System.IConvertible"
-        }
-      ],
-      "methods": [],
-      "properties": [],
-      "fields": [
-        {
-          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Cache.CacheLevel::value__System.Int32",
-          "targetName": "value__",
-          "metadataToken": 67110812,
-          "normalizedSignature": "value__|System.Int32|static=false|const=false",
-          "isStatic": false,
-          "isReadOnly": false,
-          "isLiteral": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Identity.Client.Cache.CacheLevel",
-          "ownerIdentity": "Microsoft.Identity.Client"
-        },
-        {
-          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Cache.CacheLevel::NoneMicrosoft.Identity.Client.Cache.CacheLevel",
-          "targetName": "None",
-          "metadataToken": 67110813,
-          "normalizedSignature": "None|Microsoft.Identity.Client.Cache.CacheLevel|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Identity.Client.Cache.CacheLevel",
-          "ownerIdentity": "Microsoft.Identity.Client"
-        },
-        {
-          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Cache.CacheLevel::UnknownMicrosoft.Identity.Client.Cache.CacheLevel",
-          "targetName": "Unknown",
-          "metadataToken": 67110814,
-          "normalizedSignature": "Unknown|Microsoft.Identity.Client.Cache.CacheLevel|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Identity.Client.Cache.CacheLevel",
-          "ownerIdentity": "Microsoft.Identity.Client"
-        },
-        {
-          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Cache.CacheLevel::L1CacheMicrosoft.Identity.Client.Cache.CacheLevel",
-          "targetName": "L1Cache",
-          "metadataToken": 67110815,
-          "normalizedSignature": "L1Cache|Microsoft.Identity.Client.Cache.CacheLevel|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Identity.Client.Cache.CacheLevel",
-          "ownerIdentity": "Microsoft.Identity.Client"
-        },
-        {
-          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Cache.CacheLevel::L2CacheMicrosoft.Identity.Client.Cache.CacheLevel",
-          "targetName": "L2Cache",
-          "metadataToken": 67110816,
-          "normalizedSignature": "L2Cache|Microsoft.Identity.Client.Cache.CacheLevel|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Identity.Client.Cache.CacheLevel",
-          "ownerIdentity": "Microsoft.Identity.Client"
-        }
-      ],
-      "events": [],
-      "constructors": []
-    },
-    {
-      "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Cache.CacheData",
-      "targetName": "Microsoft.Identity.Client.Cache.CacheData",
-      "ownerIdentity": "Microsoft.Identity.Client",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
-      },
-      "methods": [],
-      "properties": [
-        {
-          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Cache.CacheData::AdalV3State:System.Byte[]",
-          "targetName": "AdalV3State",
-          "metadataToken": 385876692,
-          "canonicalSignature": ":System.Byte[]",
-          "normalizedSignature": "AdalV3State|:System.Byte[]|static=false|accessor=getset",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Identity.Client.Cache.CacheData",
-          "ownerIdentity": "Microsoft.Identity.Client"
-        },
-        {
-          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Cache.CacheData::UnifiedState:System.Byte[]",
-          "targetName": "UnifiedState",
-          "metadataToken": 385876693,
-          "canonicalSignature": ":System.Byte[]",
-          "normalizedSignature": "UnifiedState|:System.Byte[]|static=false|accessor=getset",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Identity.Client.Cache.CacheData",
-          "ownerIdentity": "Microsoft.Identity.Client"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Cache.CacheData::.ctor():void",
-          "metadataToken": 100666231,
-          "canonicalSignature": "():void",
-          "normalizedSignature": "constructor|():void|static=false",
-          "isStatic": false,
-          "parameterCount": 0,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Identity.Client.Cache.CacheData",
-          "ownerIdentity": "Microsoft.Identity.Client"
-        }
-      ]
-    }
-  ]
+        "methods": [],
+        "properties": [
+          {
+            "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Cache.CacheData::AdalV3State:System.Byte[]",
+            "targetName": "AdalV3State",
+            "metadataToken": 385876692,
+            "canonicalSignature": ":System.Byte[]",
+            "normalizedSignature": "AdalV3State|:System.Byte[]|static=false|accessor=getset",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": true,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Identity.Client.Cache.CacheData",
+            "ownerIdentity": "Microsoft.Identity.Client"
+          },
+          {
+            "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Cache.CacheData::UnifiedState:System.Byte[]",
+            "targetName": "UnifiedState",
+            "metadataToken": 385876693,
+            "canonicalSignature": ":System.Byte[]",
+            "normalizedSignature": "UnifiedState|:System.Byte[]|static=false|accessor=getset",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": true,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Identity.Client.Cache.CacheData",
+            "ownerIdentity": "Microsoft.Identity.Client"
+          }
+        ],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Cache.CacheData::.ctor():void",
+            "metadataToken": 100666231,
+            "canonicalSignature": "():void",
+            "normalizedSignature": "constructor|():void|static=false",
+            "isStatic": false,
+            "parameterCount": 0,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Identity.Client.Cache.CacheData",
+            "ownerIdentity": "Microsoft.Identity.Client"
+          }
+        ]
+      }
+    ]
+  }
 }

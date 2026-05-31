@@ -1,172 +1,177 @@
 {
-  "namespace": "Azure.Core.Extensions",
-  "contributingAssemblies": [
-    "Azure.Core"
-  ],
-  "types": [
-    {
-      "stableId": "Azure.Core:Azure.Core.Extensions.IAzureClientBuilder\u00602",
-      "targetName": "Azure.Core.Extensions.IAzureClientBuilder\u00602",
-      "ownerIdentity": "Azure.Core",
-      "metadataToken": 0,
-      "kind": "Interface",
-      "accessibility": "Public",
-      "isAbstract": true,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 2,
-      "typeParameters": [
-        "TClient",
-        "TOptions"
-      ],
-      "methods": [],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": []
-    },
-    {
-      "stableId": "Azure.Core:Azure.Core.Extensions.IAzureClientFactoryBuilder",
-      "targetName": "Azure.Core.Extensions.IAzureClientFactoryBuilder",
-      "ownerIdentity": "Azure.Core",
-      "metadataToken": 0,
-      "kind": "Interface",
-      "accessibility": "Public",
-      "isAbstract": true,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "methods": [
-        {
-          "stableId": "Azure.Core:Azure.Core.Extensions.IAzureClientFactoryBuilder::RegisterClientFactory(Func_2):IAzureClientBuilder_2",
-          "targetName": "RegisterClientFactory",
-          "metadataToken": 100664857,
-          "canonicalSignature": "(Func_2):IAzureClientBuilder_2",
-          "normalizedSignature": "RegisterClientFactory|(Func_2):IAzureClientBuilder_2|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 2,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": true,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Azure.Core.Extensions.IAzureClientFactoryBuilder",
-          "ownerIdentity": "Azure.Core",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": []
-    },
-    {
-      "stableId": "Azure.Core:Azure.Core.Extensions.IAzureClientFactoryBuilderWithConfiguration\u00601",
-      "targetName": "Azure.Core.Extensions.IAzureClientFactoryBuilderWithConfiguration\u00601",
-      "ownerIdentity": "Azure.Core",
-      "metadataToken": 0,
-      "kind": "Interface",
-      "accessibility": "Public",
-      "isAbstract": true,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 1,
-      "interfaces": [
-        {
-          "stableId": "Azure.Core:Azure.Core.Extensions.IAzureClientFactoryBuilder",
-          "targetName": "Azure.Core.Extensions.IAzureClientFactoryBuilder"
-        }
-      ],
-      "typeParameters": [
-        "TConfiguration"
-      ],
-      "methods": [
-        {
-          "stableId": "Azure.Core:Azure.Core.Extensions.IAzureClientFactoryBuilderWithConfiguration\u00601::RegisterClientFactory(TConfiguration):IAzureClientBuilder_2",
-          "targetName": "RegisterClientFactory",
-          "metadataToken": 100664858,
-          "canonicalSignature": "(TConfiguration):IAzureClientBuilder_2",
-          "normalizedSignature": "RegisterClientFactory|(TConfiguration):IAzureClientBuilder_2|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 2,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": true,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Azure.Core.Extensions.IAzureClientFactoryBuilderWithConfiguration\u00601",
-          "ownerIdentity": "Azure.Core",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Azure.Core:Azure.Core.Extensions.IAzureClientFactoryBuilder::RegisterClientFactory(Func_2):IAzureClientBuilder_2",
-          "targetName": "RegisterClientFactory",
-          "metadataToken": 100664857,
-          "canonicalSignature": "(Func_2):IAzureClientBuilder_2",
-          "normalizedSignature": "RegisterClientFactory|(Func_2):IAzureClientBuilder_2|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 2,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": true,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Azure.Core.Extensions.IAzureClientFactoryBuilder",
-          "ownerIdentity": "Azure.Core",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": []
-    },
-    {
-      "stableId": "Azure.Core:Azure.Core.Extensions.IAzureClientFactoryBuilderWithCredential",
-      "targetName": "Azure.Core.Extensions.IAzureClientFactoryBuilderWithCredential",
-      "ownerIdentity": "Azure.Core",
-      "metadataToken": 0,
-      "kind": "Interface",
-      "accessibility": "Public",
-      "isAbstract": true,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "methods": [
-        {
-          "stableId": "Azure.Core:Azure.Core.Extensions.IAzureClientFactoryBuilderWithCredential::RegisterClientFactory(Func_3,System.Boolean):IAzureClientBuilder_2",
-          "targetName": "RegisterClientFactory",
-          "metadataToken": 100664859,
-          "canonicalSignature": "(Func_3,System.Boolean):IAzureClientBuilder_2",
-          "normalizedSignature": "RegisterClientFactory|(Func_3,System.Boolean):IAzureClientBuilder_2|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 2,
-          "parameterCount": 2,
-          "isStatic": false,
-          "isAbstract": true,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Azure.Core.Extensions.IAzureClientFactoryBuilderWithCredential",
-          "ownerIdentity": "Azure.Core",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": []
-    }
-  ]
+  "schema": "tsonic.bindings",
+  "provider": {
+    "namespace": "Azure.Core.Extensions",
+    "ownerIdentities": [
+      "Azure.Core"
+    ]
+  },
+  "targetSurface": {
+    "types": [
+      {
+        "stableId": "Azure.Core:Azure.Core.Extensions.IAzureClientBuilder`2",
+        "targetName": "Azure.Core.Extensions.IAzureClientBuilder`2",
+        "ownerIdentity": "Azure.Core",
+        "metadataToken": 0,
+        "kind": "Interface",
+        "accessibility": "Public",
+        "isAbstract": true,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 2,
+        "typeParameters": [
+          "TClient",
+          "TOptions"
+        ],
+        "methods": [],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": []
+      },
+      {
+        "stableId": "Azure.Core:Azure.Core.Extensions.IAzureClientFactoryBuilder",
+        "targetName": "Azure.Core.Extensions.IAzureClientFactoryBuilder",
+        "ownerIdentity": "Azure.Core",
+        "metadataToken": 0,
+        "kind": "Interface",
+        "accessibility": "Public",
+        "isAbstract": true,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "methods": [
+          {
+            "stableId": "Azure.Core:Azure.Core.Extensions.IAzureClientFactoryBuilder::RegisterClientFactory(Func_2):IAzureClientBuilder_2",
+            "targetName": "RegisterClientFactory",
+            "metadataToken": 100664857,
+            "canonicalSignature": "(Func_2):IAzureClientBuilder_2",
+            "normalizedSignature": "RegisterClientFactory|(Func_2):IAzureClientBuilder_2|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 2,
+            "parameterCount": 1,
+            "isStatic": false,
+            "isAbstract": true,
+            "isVirtual": true,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Azure.Core.Extensions.IAzureClientFactoryBuilder",
+            "ownerIdentity": "Azure.Core",
+            "isExtensionMethod": false
+          }
+        ],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": []
+      },
+      {
+        "stableId": "Azure.Core:Azure.Core.Extensions.IAzureClientFactoryBuilderWithConfiguration`1",
+        "targetName": "Azure.Core.Extensions.IAzureClientFactoryBuilderWithConfiguration`1",
+        "ownerIdentity": "Azure.Core",
+        "metadataToken": 0,
+        "kind": "Interface",
+        "accessibility": "Public",
+        "isAbstract": true,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 1,
+        "interfaces": [
+          {
+            "stableId": "Azure.Core:Azure.Core.Extensions.IAzureClientFactoryBuilder",
+            "targetName": "Azure.Core.Extensions.IAzureClientFactoryBuilder"
+          }
+        ],
+        "typeParameters": [
+          "TConfiguration"
+        ],
+        "methods": [
+          {
+            "stableId": "Azure.Core:Azure.Core.Extensions.IAzureClientFactoryBuilderWithConfiguration`1::RegisterClientFactory(TConfiguration):IAzureClientBuilder_2",
+            "targetName": "RegisterClientFactory",
+            "metadataToken": 100664858,
+            "canonicalSignature": "(TConfiguration):IAzureClientBuilder_2",
+            "normalizedSignature": "RegisterClientFactory|(TConfiguration):IAzureClientBuilder_2|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 2,
+            "parameterCount": 1,
+            "isStatic": false,
+            "isAbstract": true,
+            "isVirtual": true,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Azure.Core.Extensions.IAzureClientFactoryBuilderWithConfiguration`1",
+            "ownerIdentity": "Azure.Core",
+            "isExtensionMethod": false
+          },
+          {
+            "stableId": "Azure.Core:Azure.Core.Extensions.IAzureClientFactoryBuilder::RegisterClientFactory(Func_2):IAzureClientBuilder_2",
+            "targetName": "RegisterClientFactory",
+            "metadataToken": 100664857,
+            "canonicalSignature": "(Func_2):IAzureClientBuilder_2",
+            "normalizedSignature": "RegisterClientFactory|(Func_2):IAzureClientBuilder_2|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 2,
+            "parameterCount": 1,
+            "isStatic": false,
+            "isAbstract": true,
+            "isVirtual": true,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Azure.Core.Extensions.IAzureClientFactoryBuilder",
+            "ownerIdentity": "Azure.Core",
+            "isExtensionMethod": false
+          }
+        ],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": []
+      },
+      {
+        "stableId": "Azure.Core:Azure.Core.Extensions.IAzureClientFactoryBuilderWithCredential",
+        "targetName": "Azure.Core.Extensions.IAzureClientFactoryBuilderWithCredential",
+        "ownerIdentity": "Azure.Core",
+        "metadataToken": 0,
+        "kind": "Interface",
+        "accessibility": "Public",
+        "isAbstract": true,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "methods": [
+          {
+            "stableId": "Azure.Core:Azure.Core.Extensions.IAzureClientFactoryBuilderWithCredential::RegisterClientFactory(Func_3,System.Boolean):IAzureClientBuilder_2",
+            "targetName": "RegisterClientFactory",
+            "metadataToken": 100664859,
+            "canonicalSignature": "(Func_3,System.Boolean):IAzureClientBuilder_2",
+            "normalizedSignature": "RegisterClientFactory|(Func_3,System.Boolean):IAzureClientBuilder_2|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 2,
+            "parameterCount": 2,
+            "isStatic": false,
+            "isAbstract": true,
+            "isVirtual": true,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Azure.Core.Extensions.IAzureClientFactoryBuilderWithCredential",
+            "ownerIdentity": "Azure.Core",
+            "isExtensionMethod": false
+          }
+        ],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": []
+      }
+    ]
+  }
 }

@@ -1,126 +1,131 @@
 {
-  "namespace": "Microsoft.IdentityModel.Protocols.Configuration",
-  "contributingAssemblies": [
-    "Microsoft.IdentityModel.Protocols"
-  ],
-  "types": [
-    {
-      "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException",
-      "targetName": "Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException",
-      "ownerIdentity": "Microsoft.IdentityModel.Protocols",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Exception",
-        "targetName": "System.Exception"
+  "schema": "tsonic.bindings",
+  "provider": {
+    "namespace": "Microsoft.IdentityModel.Protocols.Configuration",
+    "ownerIdentities": [
+      "Microsoft.IdentityModel.Protocols"
+    ]
+  },
+  "targetSurface": {
+    "types": [
+      {
+        "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException",
+        "targetName": "Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException",
+        "ownerIdentity": "Microsoft.IdentityModel.Protocols",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Exception",
+          "targetName": "System.Exception"
+        },
+        "interfaces": [
+          {
+            "stableId": "System.Private.CoreLib:System.Runtime.Serialization.ISerializable",
+            "targetName": "System.Runtime.Serialization.ISerializable"
+          }
+        ],
+        "methods": [],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException::.ctor():void",
+            "metadataToken": 100663369,
+            "canonicalSignature": "():void",
+            "normalizedSignature": "constructor|():void|static=false",
+            "isStatic": false,
+            "parameterCount": 0,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException",
+            "ownerIdentity": "Microsoft.IdentityModel.Protocols"
+          },
+          {
+            "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException::.ctor(System.String):void",
+            "metadataToken": 100663370,
+            "canonicalSignature": "(System.String):void",
+            "normalizedSignature": "constructor|(System.String):void|static=false",
+            "isStatic": false,
+            "parameterCount": 1,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException",
+            "ownerIdentity": "Microsoft.IdentityModel.Protocols"
+          },
+          {
+            "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException::.ctor(System.String,System.Exception):void",
+            "metadataToken": 100663371,
+            "canonicalSignature": "(System.String,System.Exception):void",
+            "normalizedSignature": "constructor|(System.String,System.Exception):void|static=false",
+            "isStatic": false,
+            "parameterCount": 2,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException",
+            "ownerIdentity": "Microsoft.IdentityModel.Protocols"
+          },
+          {
+            "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
+            "metadataToken": 100663372,
+            "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
+            "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
+            "isStatic": false,
+            "parameterCount": 2,
+            "visibility": "Protected",
+            "ownerQualifiedName": "Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException",
+            "ownerIdentity": "Microsoft.IdentityModel.Protocols"
+          }
+        ]
       },
-      "interfaces": [
-        {
-          "stableId": "System.Private.CoreLib:System.Runtime.Serialization.ISerializable",
-          "targetName": "System.Runtime.Serialization.ISerializable"
-        }
-      ],
-      "methods": [],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException::.ctor():void",
-          "metadataToken": 100663369,
-          "canonicalSignature": "():void",
-          "normalizedSignature": "constructor|():void|static=false",
-          "isStatic": false,
-          "parameterCount": 0,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException",
-          "ownerIdentity": "Microsoft.IdentityModel.Protocols"
+      {
+        "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.Configuration.LastKnownGoodConfigurationCacheOptions",
+        "targetName": "Microsoft.IdentityModel.Protocols.Configuration.LastKnownGoodConfigurationCacheOptions",
+        "ownerIdentity": "Microsoft.IdentityModel.Protocols",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
+          "targetName": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions"
         },
-        {
-          "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException::.ctor(System.String):void",
-          "metadataToken": 100663370,
-          "canonicalSignature": "(System.String):void",
-          "normalizedSignature": "constructor|(System.String):void|static=false",
-          "isStatic": false,
-          "parameterCount": 1,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException",
-          "ownerIdentity": "Microsoft.IdentityModel.Protocols"
-        },
-        {
-          "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException::.ctor(System.String,System.Exception):void",
-          "metadataToken": 100663371,
-          "canonicalSignature": "(System.String,System.Exception):void",
-          "normalizedSignature": "constructor|(System.String,System.Exception):void|static=false",
-          "isStatic": false,
-          "parameterCount": 2,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException",
-          "ownerIdentity": "Microsoft.IdentityModel.Protocols"
-        },
-        {
-          "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-          "metadataToken": 100663372,
-          "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-          "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
-          "isStatic": false,
-          "parameterCount": 2,
-          "visibility": "Protected",
-          "ownerQualifiedName": "Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException",
-          "ownerIdentity": "Microsoft.IdentityModel.Protocols"
-        }
-      ]
-    },
-    {
-      "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.Configuration.LastKnownGoodConfigurationCacheOptions",
-      "targetName": "Microsoft.IdentityModel.Protocols.Configuration.LastKnownGoodConfigurationCacheOptions",
-      "ownerIdentity": "Microsoft.IdentityModel.Protocols",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
-        "targetName": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions"
-      },
-      "methods": [],
-      "properties": [],
-      "fields": [
-        {
-          "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.Configuration.LastKnownGoodConfigurationCacheOptions::DefaultLastKnownGoodConfigurationSizeLimitSystem.Int32",
-          "targetName": "DefaultLastKnownGoodConfigurationSizeLimit",
-          "metadataToken": 67108912,
-          "normalizedSignature": "DefaultLastKnownGoodConfigurationSizeLimit|System.Int32|static=true|const=false",
-          "isStatic": true,
-          "isReadOnly": true,
-          "isLiteral": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.IdentityModel.Protocols.Configuration.LastKnownGoodConfigurationCacheOptions",
-          "ownerIdentity": "Microsoft.IdentityModel.Protocols"
-        }
-      ],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.Configuration.LastKnownGoodConfigurationCacheOptions::.ctor():void",
-          "metadataToken": 100663373,
-          "canonicalSignature": "():void",
-          "normalizedSignature": "constructor|():void|static=false",
-          "isStatic": false,
-          "parameterCount": 0,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.IdentityModel.Protocols.Configuration.LastKnownGoodConfigurationCacheOptions",
-          "ownerIdentity": "Microsoft.IdentityModel.Protocols"
-        }
-      ]
-    }
-  ]
+        "methods": [],
+        "properties": [],
+        "fields": [
+          {
+            "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.Configuration.LastKnownGoodConfigurationCacheOptions::DefaultLastKnownGoodConfigurationSizeLimitSystem.Int32",
+            "targetName": "DefaultLastKnownGoodConfigurationSizeLimit",
+            "metadataToken": 67108912,
+            "normalizedSignature": "DefaultLastKnownGoodConfigurationSizeLimit|System.Int32|static=true|const=false",
+            "isStatic": true,
+            "isReadOnly": true,
+            "isLiteral": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.IdentityModel.Protocols.Configuration.LastKnownGoodConfigurationCacheOptions",
+            "ownerIdentity": "Microsoft.IdentityModel.Protocols"
+          }
+        ],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.Configuration.LastKnownGoodConfigurationCacheOptions::.ctor():void",
+            "metadataToken": 100663373,
+            "canonicalSignature": "():void",
+            "normalizedSignature": "constructor|():void|static=false",
+            "isStatic": false,
+            "parameterCount": 0,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.IdentityModel.Protocols.Configuration.LastKnownGoodConfigurationCacheOptions",
+            "ownerIdentity": "Microsoft.IdentityModel.Protocols"
+          }
+        ]
+      }
+    ]
+  }
 }

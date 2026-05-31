@@ -1,50 +1,55 @@
 {
-  "namespace": "Microsoft.Identity.Client.Advanced",
-  "contributingAssemblies": [
-    "Microsoft.Identity.Client"
-  ],
-  "types": [
-    {
-      "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Advanced.AcquireTokenParameterBuilderExtensions",
-      "targetName": "Microsoft.Identity.Client.Advanced.AcquireTokenParameterBuilderExtensions",
-      "ownerIdentity": "Microsoft.Identity.Client",
-      "metadataToken": 0,
-      "kind": "StaticNamespace",
-      "accessibility": "Public",
-      "isAbstract": true,
-      "isSealed": true,
-      "isStatic": true,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
-      },
-      "methods": [
-        {
-          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Advanced.AcquireTokenParameterBuilderExtensions::WithExtraHttpHeaders(AbstractAcquireTokenParameterBuilder_1,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):T",
-          "targetName": "WithExtraHttpHeaders",
-          "metadataToken": 100666117,
-          "canonicalSignature": "(AbstractAcquireTokenParameterBuilder_1,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):T",
-          "normalizedSignature": "WithExtraHttpHeaders|(AbstractAcquireTokenParameterBuilder_1,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):T|static=true",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 1,
-          "parameterCount": 2,
-          "isStatic": true,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Identity.Client.Advanced.AcquireTokenParameterBuilderExtensions",
-          "ownerIdentity": "Microsoft.Identity.Client",
-          "isExtensionMethod": true
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": []
-    }
-  ]
+  "schema": "tsonic.bindings",
+  "provider": {
+    "namespace": "Microsoft.Identity.Client.Advanced",
+    "ownerIdentities": [
+      "Microsoft.Identity.Client"
+    ]
+  },
+  "targetSurface": {
+    "types": [
+      {
+        "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Advanced.AcquireTokenParameterBuilderExtensions",
+        "targetName": "Microsoft.Identity.Client.Advanced.AcquireTokenParameterBuilderExtensions",
+        "ownerIdentity": "Microsoft.Identity.Client",
+        "metadataToken": 0,
+        "kind": "StaticNamespace",
+        "accessibility": "Public",
+        "isAbstract": true,
+        "isSealed": true,
+        "isStatic": true,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
+        },
+        "methods": [
+          {
+            "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Advanced.AcquireTokenParameterBuilderExtensions::WithExtraHttpHeaders(AbstractAcquireTokenParameterBuilder_1,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):T",
+            "targetName": "WithExtraHttpHeaders",
+            "metadataToken": 100666117,
+            "canonicalSignature": "(AbstractAcquireTokenParameterBuilder_1,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):T",
+            "normalizedSignature": "WithExtraHttpHeaders|(AbstractAcquireTokenParameterBuilder_1,System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):T|static=true",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 1,
+            "parameterCount": 2,
+            "isStatic": true,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Identity.Client.Advanced.AcquireTokenParameterBuilderExtensions",
+            "ownerIdentity": "Microsoft.Identity.Client",
+            "isExtensionMethod": true
+          }
+        ],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": []
+      }
+    ]
+  }
 }

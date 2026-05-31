@@ -1,230 +1,235 @@
 {
-  "namespace": "Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal",
-  "contributingAssemblies": [
-    "Microsoft.EntityFrameworkCore.SqlServer"
-  ],
-  "types": [
-    {
-      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlServerCodeGenerator",
-      "targetName": "Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlServerCodeGenerator",
-      "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Scaffolding.ProviderCodeGenerator",
-        "targetName": "Microsoft.EntityFrameworkCore.Scaffolding.ProviderCodeGenerator"
-      },
-      "interfaces": [
-        {
-          "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Scaffolding.IProviderConfigurationCodeGenerator",
-          "targetName": "Microsoft.EntityFrameworkCore.Scaffolding.IProviderConfigurationCodeGenerator"
-        }
-      ],
-      "methods": [
-        {
-          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlServerCodeGenerator::GenerateUseProvider(System.String,Microsoft.EntityFrameworkCore.Design.MethodCallCodeFragment):Microsoft.EntityFrameworkCore.Design.MethodCallCodeFragment",
-          "targetName": "GenerateUseProvider",
-          "metadataToken": 100664716,
-          "canonicalSignature": "(System.String,Microsoft.EntityFrameworkCore.Design.MethodCallCodeFragment):Microsoft.EntityFrameworkCore.Design.MethodCallCodeFragment",
-          "normalizedSignature": "GenerateUseProvider|(System.String,Microsoft.EntityFrameworkCore.Design.MethodCallCodeFragment):Microsoft.EntityFrameworkCore.Design.MethodCallCodeFragment|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 2,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": true,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlServerCodeGenerator",
-          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlServerCodeGenerator::.ctor(Microsoft.EntityFrameworkCore.Scaffolding.ProviderCodeGeneratorDependencies):void",
-          "metadataToken": 100664715,
-          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Scaffolding.ProviderCodeGeneratorDependencies):void",
-          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Scaffolding.ProviderCodeGeneratorDependencies):void|static=false",
-          "isStatic": false,
-          "parameterCount": 1,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlServerCodeGenerator",
-          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
-        }
-      ]
-    },
-    {
-      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlServerDatabaseModelFactory",
-      "targetName": "Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlServerDatabaseModelFactory",
-      "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Scaffolding.DatabaseModelFactory",
-        "targetName": "Microsoft.EntityFrameworkCore.Scaffolding.DatabaseModelFactory"
-      },
-      "interfaces": [
-        {
-          "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Scaffolding.IDatabaseModelFactory",
-          "targetName": "Microsoft.EntityFrameworkCore.Scaffolding.IDatabaseModelFactory"
-        }
-      ],
-      "methods": [
-        {
-          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlServerDatabaseModelFactory::Create(System.String,Microsoft.EntityFrameworkCore.Scaffolding.DatabaseModelFactoryOptions):Microsoft.EntityFrameworkCore.Scaffolding.Metadata.DatabaseModel",
-          "targetName": "Create",
-          "metadataToken": 100664719,
-          "canonicalSignature": "(System.String,Microsoft.EntityFrameworkCore.Scaffolding.DatabaseModelFactoryOptions):Microsoft.EntityFrameworkCore.Scaffolding.Metadata.DatabaseModel",
-          "normalizedSignature": "Create|(System.String,Microsoft.EntityFrameworkCore.Scaffolding.DatabaseModelFactoryOptions):Microsoft.EntityFrameworkCore.Scaffolding.Metadata.DatabaseModel|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 2,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": true,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlServerDatabaseModelFactory",
-          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
-          "isExtensionMethod": false
+  "schema": "tsonic.bindings",
+  "provider": {
+    "namespace": "Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal",
+    "ownerIdentities": [
+      "Microsoft.EntityFrameworkCore.SqlServer"
+    ]
+  },
+  "targetSurface": {
+    "types": [
+      {
+        "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlServerCodeGenerator",
+        "targetName": "Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlServerCodeGenerator",
+        "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Scaffolding.ProviderCodeGenerator",
+          "targetName": "Microsoft.EntityFrameworkCore.Scaffolding.ProviderCodeGenerator"
         },
-        {
-          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlServerDatabaseModelFactory::Create(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Scaffolding.DatabaseModelFactoryOptions):Microsoft.EntityFrameworkCore.Scaffolding.Metadata.DatabaseModel",
-          "targetName": "Create",
-          "metadataToken": 100664720,
-          "canonicalSignature": "(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Scaffolding.DatabaseModelFactoryOptions):Microsoft.EntityFrameworkCore.Scaffolding.Metadata.DatabaseModel",
-          "normalizedSignature": "Create|(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Scaffolding.DatabaseModelFactoryOptions):Microsoft.EntityFrameworkCore.Scaffolding.Metadata.DatabaseModel|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 2,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": true,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlServerDatabaseModelFactory",
-          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlServerDatabaseModelFactory::.ctor(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BScaffolding,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Storage.IRelationalTypeMappingSource):void",
-          "metadataToken": 100664718,
-          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BScaffolding,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Storage.IRelationalTypeMappingSource):void",
-          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BScaffolding,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Storage.IRelationalTypeMappingSource):void|static=false",
-          "isStatic": false,
-          "parameterCount": 2,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlServerDatabaseModelFactory",
-          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
-        }
-      ]
-    },
-    {
-      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlDataReaderExtension",
-      "targetName": "Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlDataReaderExtension",
-      "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
-      "metadataToken": 0,
-      "kind": "StaticNamespace",
-      "accessibility": "Public",
-      "isAbstract": true,
-      "isSealed": true,
-      "isStatic": true,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
+        "interfaces": [
+          {
+            "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Scaffolding.IProviderConfigurationCodeGenerator",
+            "targetName": "Microsoft.EntityFrameworkCore.Scaffolding.IProviderConfigurationCodeGenerator"
+          }
+        ],
+        "methods": [
+          {
+            "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlServerCodeGenerator::GenerateUseProvider(System.String,Microsoft.EntityFrameworkCore.Design.MethodCallCodeFragment):Microsoft.EntityFrameworkCore.Design.MethodCallCodeFragment",
+            "targetName": "GenerateUseProvider",
+            "metadataToken": 100664716,
+            "canonicalSignature": "(System.String,Microsoft.EntityFrameworkCore.Design.MethodCallCodeFragment):Microsoft.EntityFrameworkCore.Design.MethodCallCodeFragment",
+            "normalizedSignature": "GenerateUseProvider|(System.String,Microsoft.EntityFrameworkCore.Design.MethodCallCodeFragment):Microsoft.EntityFrameworkCore.Design.MethodCallCodeFragment|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 2,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": true,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlServerCodeGenerator",
+            "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
+            "isExtensionMethod": false
+          }
+        ],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlServerCodeGenerator::.ctor(Microsoft.EntityFrameworkCore.Scaffolding.ProviderCodeGeneratorDependencies):void",
+            "metadataToken": 100664715,
+            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Scaffolding.ProviderCodeGeneratorDependencies):void",
+            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Scaffolding.ProviderCodeGeneratorDependencies):void|static=false",
+            "isStatic": false,
+            "parameterCount": 1,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlServerCodeGenerator",
+            "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
+          }
+        ]
       },
-      "methods": [
-        {
-          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlDataReaderExtension::GetValueOrDefault(System.Data.Common.DbDataReader,System.String):T",
-          "targetName": "GetValueOrDefault",
-          "metadataToken": 100664712,
-          "canonicalSignature": "(System.Data.Common.DbDataReader,System.String):T",
-          "normalizedSignature": "GetValueOrDefault|(System.Data.Common.DbDataReader,System.String):T|static=true",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 1,
-          "parameterCount": 2,
-          "isStatic": true,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlDataReaderExtension",
-          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
-          "isExtensionMethod": true
+      {
+        "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlServerDatabaseModelFactory",
+        "targetName": "Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlServerDatabaseModelFactory",
+        "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Scaffolding.DatabaseModelFactory",
+          "targetName": "Microsoft.EntityFrameworkCore.Scaffolding.DatabaseModelFactory"
         },
-        {
-          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlDataReaderExtension::GetValueOrDefault(System.Data.Common.DbDataRecord,System.String):T",
-          "targetName": "GetValueOrDefault",
-          "metadataToken": 100664713,
-          "canonicalSignature": "(System.Data.Common.DbDataRecord,System.String):T",
-          "normalizedSignature": "GetValueOrDefault|(System.Data.Common.DbDataRecord,System.String):T|static=true",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 1,
-          "parameterCount": 2,
-          "isStatic": true,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlDataReaderExtension",
-          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
-          "isExtensionMethod": true
+        "interfaces": [
+          {
+            "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Scaffolding.IDatabaseModelFactory",
+            "targetName": "Microsoft.EntityFrameworkCore.Scaffolding.IDatabaseModelFactory"
+          }
+        ],
+        "methods": [
+          {
+            "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlServerDatabaseModelFactory::Create(System.String,Microsoft.EntityFrameworkCore.Scaffolding.DatabaseModelFactoryOptions):Microsoft.EntityFrameworkCore.Scaffolding.Metadata.DatabaseModel",
+            "targetName": "Create",
+            "metadataToken": 100664719,
+            "canonicalSignature": "(System.String,Microsoft.EntityFrameworkCore.Scaffolding.DatabaseModelFactoryOptions):Microsoft.EntityFrameworkCore.Scaffolding.Metadata.DatabaseModel",
+            "normalizedSignature": "Create|(System.String,Microsoft.EntityFrameworkCore.Scaffolding.DatabaseModelFactoryOptions):Microsoft.EntityFrameworkCore.Scaffolding.Metadata.DatabaseModel|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 2,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": true,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlServerDatabaseModelFactory",
+            "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
+            "isExtensionMethod": false
+          },
+          {
+            "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlServerDatabaseModelFactory::Create(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Scaffolding.DatabaseModelFactoryOptions):Microsoft.EntityFrameworkCore.Scaffolding.Metadata.DatabaseModel",
+            "targetName": "Create",
+            "metadataToken": 100664720,
+            "canonicalSignature": "(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Scaffolding.DatabaseModelFactoryOptions):Microsoft.EntityFrameworkCore.Scaffolding.Metadata.DatabaseModel",
+            "normalizedSignature": "Create|(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Scaffolding.DatabaseModelFactoryOptions):Microsoft.EntityFrameworkCore.Scaffolding.Metadata.DatabaseModel|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 2,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": true,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlServerDatabaseModelFactory",
+            "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
+            "isExtensionMethod": false
+          }
+        ],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlServerDatabaseModelFactory::.ctor(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory+Scaffolding,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Storage.IRelationalTypeMappingSource):void",
+            "metadataToken": 100664718,
+            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory+Scaffolding,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Storage.IRelationalTypeMappingSource):void",
+            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory+Scaffolding,Microsoft.EntityFrameworkCore,Version=10.0.1.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Storage.IRelationalTypeMappingSource):void|static=false",
+            "isStatic": false,
+            "parameterCount": 2,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlServerDatabaseModelFactory",
+            "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
+          }
+        ]
+      },
+      {
+        "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlDataReaderExtension",
+        "targetName": "Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlDataReaderExtension",
+        "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
+        "metadataToken": 0,
+        "kind": "StaticNamespace",
+        "accessibility": "Public",
+        "isAbstract": true,
+        "isSealed": true,
+        "isStatic": true,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
         },
-        {
-          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlDataReaderExtension::GetFieldValue(System.Data.Common.DbDataRecord,System.String):T",
-          "targetName": "GetFieldValue",
-          "metadataToken": 100664714,
-          "canonicalSignature": "(System.Data.Common.DbDataRecord,System.String):T",
-          "normalizedSignature": "GetFieldValue|(System.Data.Common.DbDataRecord,System.String):T|static=true",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 1,
-          "parameterCount": 2,
-          "isStatic": true,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlDataReaderExtension",
-          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
-          "isExtensionMethod": true
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": []
-    }
-  ]
+        "methods": [
+          {
+            "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlDataReaderExtension::GetValueOrDefault(System.Data.Common.DbDataReader,System.String):T",
+            "targetName": "GetValueOrDefault",
+            "metadataToken": 100664712,
+            "canonicalSignature": "(System.Data.Common.DbDataReader,System.String):T",
+            "normalizedSignature": "GetValueOrDefault|(System.Data.Common.DbDataReader,System.String):T|static=true",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 1,
+            "parameterCount": 2,
+            "isStatic": true,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlDataReaderExtension",
+            "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
+            "isExtensionMethod": true
+          },
+          {
+            "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlDataReaderExtension::GetValueOrDefault(System.Data.Common.DbDataRecord,System.String):T",
+            "targetName": "GetValueOrDefault",
+            "metadataToken": 100664713,
+            "canonicalSignature": "(System.Data.Common.DbDataRecord,System.String):T",
+            "normalizedSignature": "GetValueOrDefault|(System.Data.Common.DbDataRecord,System.String):T|static=true",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 1,
+            "parameterCount": 2,
+            "isStatic": true,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlDataReaderExtension",
+            "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
+            "isExtensionMethod": true
+          },
+          {
+            "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlDataReaderExtension::GetFieldValue(System.Data.Common.DbDataRecord,System.String):T",
+            "targetName": "GetFieldValue",
+            "metadataToken": 100664714,
+            "canonicalSignature": "(System.Data.Common.DbDataRecord,System.String):T",
+            "normalizedSignature": "GetFieldValue|(System.Data.Common.DbDataRecord,System.String):T|static=true",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 1,
+            "parameterCount": 2,
+            "isStatic": true,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Scaffolding.Internal.SqlDataReaderExtension",
+            "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
+            "isExtensionMethod": true
+          }
+        ],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": []
+      }
+    ]
+  }
 }
