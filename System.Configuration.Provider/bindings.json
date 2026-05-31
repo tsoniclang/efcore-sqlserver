@@ -1,414 +1,419 @@
 {
-  "namespace": "System.Configuration.Provider",
-  "contributingAssemblies": [
-    "System.Configuration.ConfigurationManager"
-  ],
-  "types": [
-    {
-      "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderBase",
-      "targetName": "System.Configuration.Provider.ProviderBase",
-      "ownerIdentity": "System.Configuration.ConfigurationManager",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": true,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
+  "schema": "tsonic.bindings",
+  "provider": {
+    "namespace": "System.Configuration.Provider",
+    "ownerIdentities": [
+      "System.Configuration.ConfigurationManager"
+    ]
+  },
+  "targetSurface": {
+    "types": [
+      {
+        "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderBase",
+        "targetName": "System.Configuration.Provider.ProviderBase",
+        "ownerIdentity": "System.Configuration.ConfigurationManager",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": true,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
+        },
+        "methods": [
+          {
+            "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderBase::Initialize(System.String,System.Collections.Specialized.NameValueCollection):System.Void",
+            "targetName": "Initialize",
+            "metadataToken": 100665641,
+            "canonicalSignature": "(System.String,System.Collections.Specialized.NameValueCollection):System.Void",
+            "normalizedSignature": "Initialize|(System.String,System.Collections.Specialized.NameValueCollection):System.Void|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 2,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "System.Configuration.Provider.ProviderBase",
+            "ownerIdentity": "System.Configuration.ConfigurationManager",
+            "isExtensionMethod": false
+          }
+        ],
+        "properties": [
+          {
+            "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderBase::Name:System.String",
+            "targetName": "Name",
+            "metadataToken": 385876820,
+            "canonicalSignature": ":System.String",
+            "normalizedSignature": "Name|:System.String|static=false|accessor=get",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "System.Configuration.Provider.ProviderBase",
+            "ownerIdentity": "System.Configuration.ConfigurationManager"
+          },
+          {
+            "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderBase::Description:System.String",
+            "targetName": "Description",
+            "metadataToken": 385876821,
+            "canonicalSignature": ":System.String",
+            "normalizedSignature": "Description|:System.String|static=false|accessor=get",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "System.Configuration.Provider.ProviderBase",
+            "ownerIdentity": "System.Configuration.ConfigurationManager"
+          }
+        ],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderBase::.ctor():void",
+            "metadataToken": 100665642,
+            "canonicalSignature": "():void",
+            "normalizedSignature": "constructor|():void|static=false",
+            "isStatic": false,
+            "parameterCount": 0,
+            "visibility": "Protected",
+            "ownerQualifiedName": "System.Configuration.Provider.ProviderBase",
+            "ownerIdentity": "System.Configuration.ConfigurationManager"
+          }
+        ]
       },
-      "methods": [
-        {
-          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderBase::Initialize(System.String,System.Collections.Specialized.NameValueCollection):System.Void",
-          "targetName": "Initialize",
-          "metadataToken": 100665641,
-          "canonicalSignature": "(System.String,System.Collections.Specialized.NameValueCollection):System.Void",
-          "normalizedSignature": "Initialize|(System.String,System.Collections.Specialized.NameValueCollection):System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 2,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "System.Configuration.Provider.ProviderBase",
-          "ownerIdentity": "System.Configuration.ConfigurationManager",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [
-        {
-          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderBase::Name:System.String",
-          "targetName": "Name",
-          "metadataToken": 385876820,
-          "canonicalSignature": ":System.String",
-          "normalizedSignature": "Name|:System.String|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "System.Configuration.Provider.ProviderBase",
-          "ownerIdentity": "System.Configuration.ConfigurationManager"
+      {
+        "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderCollection",
+        "targetName": "System.Configuration.Provider.ProviderCollection",
+        "ownerIdentity": "System.Configuration.ConfigurationManager",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
         },
-        {
-          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderBase::Description:System.String",
-          "targetName": "Description",
-          "metadataToken": 385876821,
-          "canonicalSignature": ":System.String",
-          "normalizedSignature": "Description|:System.String|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "System.Configuration.Provider.ProviderBase",
-          "ownerIdentity": "System.Configuration.ConfigurationManager"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderBase::.ctor():void",
-          "metadataToken": 100665642,
-          "canonicalSignature": "():void",
-          "normalizedSignature": "constructor|():void|static=false",
-          "isStatic": false,
-          "parameterCount": 0,
-          "visibility": "Protected",
-          "ownerQualifiedName": "System.Configuration.Provider.ProviderBase",
-          "ownerIdentity": "System.Configuration.ConfigurationManager"
-        }
-      ]
-    },
-    {
-      "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderCollection",
-      "targetName": "System.Configuration.Provider.ProviderCollection",
-      "ownerIdentity": "System.Configuration.ConfigurationManager",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
+        "interfaces": [
+          {
+            "stableId": "System.Private.CoreLib:System.Collections.ICollection",
+            "targetName": "System.Collections.ICollection"
+          },
+          {
+            "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+            "targetName": "System.Collections.IEnumerable"
+          }
+        ],
+        "methods": [
+          {
+            "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderCollection::GetEnumerator():System.Collections.IEnumerator",
+            "targetName": "GetEnumerator",
+            "metadataToken": 100665645,
+            "canonicalSignature": "():System.Collections.IEnumerator",
+            "normalizedSignature": "GetEnumerator|():System.Collections.IEnumerator|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 0,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "isSealed": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "System.Configuration.Provider.ProviderCollection",
+            "ownerIdentity": "System.Configuration.ConfigurationManager",
+            "isExtensionMethod": false
+          },
+          {
+            "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderCollection::Add(System.Configuration.Provider.ProviderBase):System.Void",
+            "targetName": "Add",
+            "metadataToken": 100665650,
+            "canonicalSignature": "(System.Configuration.Provider.ProviderBase):System.Void",
+            "normalizedSignature": "Add|(System.Configuration.Provider.ProviderBase):System.Void|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 1,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "System.Configuration.Provider.ProviderCollection",
+            "ownerIdentity": "System.Configuration.ConfigurationManager",
+            "isExtensionMethod": false
+          },
+          {
+            "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderCollection::Remove(System.String):System.Void",
+            "targetName": "Remove",
+            "metadataToken": 100665651,
+            "canonicalSignature": "(System.String):System.Void",
+            "normalizedSignature": "Remove|(System.String):System.Void|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 1,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "System.Configuration.Provider.ProviderCollection",
+            "ownerIdentity": "System.Configuration.ConfigurationManager",
+            "isExtensionMethod": false
+          },
+          {
+            "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderCollection::SetReadOnly():System.Void",
+            "targetName": "SetReadOnly",
+            "metadataToken": 100665652,
+            "canonicalSignature": "():System.Void",
+            "normalizedSignature": "SetReadOnly|():System.Void|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 0,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "System.Configuration.Provider.ProviderCollection",
+            "ownerIdentity": "System.Configuration.ConfigurationManager",
+            "isExtensionMethod": false
+          },
+          {
+            "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderCollection::Clear():System.Void",
+            "targetName": "Clear",
+            "metadataToken": 100665653,
+            "canonicalSignature": "():System.Void",
+            "normalizedSignature": "Clear|():System.Void|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 0,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "System.Configuration.Provider.ProviderCollection",
+            "ownerIdentity": "System.Configuration.ConfigurationManager",
+            "isExtensionMethod": false
+          },
+          {
+            "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderCollection::CopyTo(System.Configuration.Provider.ProviderBase[],System.Int32):System.Void",
+            "targetName": "CopyTo",
+            "metadataToken": 100665654,
+            "canonicalSignature": "(System.Configuration.Provider.ProviderBase[],System.Int32):System.Void",
+            "normalizedSignature": "CopyTo|(System.Configuration.Provider.ProviderBase[],System.Int32):System.Void|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 2,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "System.Configuration.Provider.ProviderCollection",
+            "ownerIdentity": "System.Configuration.ConfigurationManager",
+            "isExtensionMethod": false
+          }
+        ],
+        "properties": [
+          {
+            "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderCollection::Item[System.String]:System.Configuration.Provider.ProviderBase",
+            "targetName": "Item",
+            "metadataToken": 385876822,
+            "canonicalSignature": "[System.String]:System.Configuration.Provider.ProviderBase",
+            "normalizedSignature": "Item|[System.String]:System.Configuration.Provider.ProviderBase|static=false|accessor=get",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": true,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "System.Configuration.Provider.ProviderCollection",
+            "ownerIdentity": "System.Configuration.ConfigurationManager"
+          },
+          {
+            "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderCollection::Count:System.Int32",
+            "targetName": "Count",
+            "metadataToken": 385876823,
+            "canonicalSignature": ":System.Int32",
+            "normalizedSignature": "Count|:System.Int32|static=false|accessor=get",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "System.Configuration.Provider.ProviderCollection",
+            "ownerIdentity": "System.Configuration.ConfigurationManager"
+          },
+          {
+            "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderCollection::IsSynchronized:System.Boolean",
+            "targetName": "IsSynchronized",
+            "metadataToken": 385876824,
+            "canonicalSignature": ":System.Boolean",
+            "normalizedSignature": "IsSynchronized|:System.Boolean|static=false|accessor=get",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "System.Configuration.Provider.ProviderCollection",
+            "ownerIdentity": "System.Configuration.ConfigurationManager"
+          },
+          {
+            "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderCollection::SyncRoot:System.Object",
+            "targetName": "SyncRoot",
+            "metadataToken": 385876825,
+            "canonicalSignature": ":System.Object",
+            "normalizedSignature": "SyncRoot|:System.Object|static=false|accessor=get",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "System.Configuration.Provider.ProviderCollection",
+            "ownerIdentity": "System.Configuration.ConfigurationManager"
+          }
+        ],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderCollection::.ctor():void",
+            "metadataToken": 100665643,
+            "canonicalSignature": "():void",
+            "normalizedSignature": "constructor|():void|static=false",
+            "isStatic": false,
+            "parameterCount": 0,
+            "visibility": "Public",
+            "ownerQualifiedName": "System.Configuration.Provider.ProviderCollection",
+            "ownerIdentity": "System.Configuration.ConfigurationManager"
+          }
+        ]
       },
-      "interfaces": [
-        {
-          "stableId": "System.Private.CoreLib:System.Collections.ICollection",
-          "targetName": "System.Collections.ICollection"
+      {
+        "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderException",
+        "targetName": "System.Configuration.Provider.ProviderException",
+        "ownerIdentity": "System.Configuration.ConfigurationManager",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Exception",
+          "targetName": "System.Exception"
         },
-        {
-          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
-          "targetName": "System.Collections.IEnumerable"
-        }
-      ],
-      "methods": [
-        {
-          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderCollection::GetEnumerator():System.Collections.IEnumerator",
-          "targetName": "GetEnumerator",
-          "metadataToken": 100665645,
-          "canonicalSignature": "():System.Collections.IEnumerator",
-          "normalizedSignature": "GetEnumerator|():System.Collections.IEnumerator|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "System.Configuration.Provider.ProviderCollection",
-          "ownerIdentity": "System.Configuration.ConfigurationManager",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderCollection::Add(System.Configuration.Provider.ProviderBase):System.Void",
-          "targetName": "Add",
-          "metadataToken": 100665650,
-          "canonicalSignature": "(System.Configuration.Provider.ProviderBase):System.Void",
-          "normalizedSignature": "Add|(System.Configuration.Provider.ProviderBase):System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "System.Configuration.Provider.ProviderCollection",
-          "ownerIdentity": "System.Configuration.ConfigurationManager",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderCollection::Remove(System.String):System.Void",
-          "targetName": "Remove",
-          "metadataToken": 100665651,
-          "canonicalSignature": "(System.String):System.Void",
-          "normalizedSignature": "Remove|(System.String):System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "System.Configuration.Provider.ProviderCollection",
-          "ownerIdentity": "System.Configuration.ConfigurationManager",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderCollection::SetReadOnly():System.Void",
-          "targetName": "SetReadOnly",
-          "metadataToken": 100665652,
-          "canonicalSignature": "():System.Void",
-          "normalizedSignature": "SetReadOnly|():System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "System.Configuration.Provider.ProviderCollection",
-          "ownerIdentity": "System.Configuration.ConfigurationManager",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderCollection::Clear():System.Void",
-          "targetName": "Clear",
-          "metadataToken": 100665653,
-          "canonicalSignature": "():System.Void",
-          "normalizedSignature": "Clear|():System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "System.Configuration.Provider.ProviderCollection",
-          "ownerIdentity": "System.Configuration.ConfigurationManager",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderCollection::CopyTo(System.Configuration.Provider.ProviderBase[],System.Int32):System.Void",
-          "targetName": "CopyTo",
-          "metadataToken": 100665654,
-          "canonicalSignature": "(System.Configuration.Provider.ProviderBase[],System.Int32):System.Void",
-          "normalizedSignature": "CopyTo|(System.Configuration.Provider.ProviderBase[],System.Int32):System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 2,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "System.Configuration.Provider.ProviderCollection",
-          "ownerIdentity": "System.Configuration.ConfigurationManager",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [
-        {
-          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderCollection::Item[System.String]:System.Configuration.Provider.ProviderBase",
-          "targetName": "Item",
-          "metadataToken": 385876822,
-          "canonicalSignature": "[System.String]:System.Configuration.Provider.ProviderBase",
-          "normalizedSignature": "Item|[System.String]:System.Configuration.Provider.ProviderBase|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": true,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "System.Configuration.Provider.ProviderCollection",
-          "ownerIdentity": "System.Configuration.ConfigurationManager"
-        },
-        {
-          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderCollection::Count:System.Int32",
-          "targetName": "Count",
-          "metadataToken": 385876823,
-          "canonicalSignature": ":System.Int32",
-          "normalizedSignature": "Count|:System.Int32|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "System.Configuration.Provider.ProviderCollection",
-          "ownerIdentity": "System.Configuration.ConfigurationManager"
-        },
-        {
-          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderCollection::IsSynchronized:System.Boolean",
-          "targetName": "IsSynchronized",
-          "metadataToken": 385876824,
-          "canonicalSignature": ":System.Boolean",
-          "normalizedSignature": "IsSynchronized|:System.Boolean|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "System.Configuration.Provider.ProviderCollection",
-          "ownerIdentity": "System.Configuration.ConfigurationManager"
-        },
-        {
-          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderCollection::SyncRoot:System.Object",
-          "targetName": "SyncRoot",
-          "metadataToken": 385876825,
-          "canonicalSignature": ":System.Object",
-          "normalizedSignature": "SyncRoot|:System.Object|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "System.Configuration.Provider.ProviderCollection",
-          "ownerIdentity": "System.Configuration.ConfigurationManager"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderCollection::.ctor():void",
-          "metadataToken": 100665643,
-          "canonicalSignature": "():void",
-          "normalizedSignature": "constructor|():void|static=false",
-          "isStatic": false,
-          "parameterCount": 0,
-          "visibility": "Public",
-          "ownerQualifiedName": "System.Configuration.Provider.ProviderCollection",
-          "ownerIdentity": "System.Configuration.ConfigurationManager"
-        }
-      ]
-    },
-    {
-      "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderException",
-      "targetName": "System.Configuration.Provider.ProviderException",
-      "ownerIdentity": "System.Configuration.ConfigurationManager",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Exception",
-        "targetName": "System.Exception"
-      },
-      "interfaces": [
-        {
-          "stableId": "System.Private.CoreLib:System.Runtime.Serialization.ISerializable",
-          "targetName": "System.Runtime.Serialization.ISerializable"
-        }
-      ],
-      "methods": [],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderException::.ctor():void",
-          "metadataToken": 100665655,
-          "canonicalSignature": "():void",
-          "normalizedSignature": "constructor|():void|static=false",
-          "isStatic": false,
-          "parameterCount": 0,
-          "visibility": "Public",
-          "ownerQualifiedName": "System.Configuration.Provider.ProviderException",
-          "ownerIdentity": "System.Configuration.ConfigurationManager"
-        },
-        {
-          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderException::.ctor(System.String):void",
-          "metadataToken": 100665656,
-          "canonicalSignature": "(System.String):void",
-          "normalizedSignature": "constructor|(System.String):void|static=false",
-          "isStatic": false,
-          "parameterCount": 1,
-          "visibility": "Public",
-          "ownerQualifiedName": "System.Configuration.Provider.ProviderException",
-          "ownerIdentity": "System.Configuration.ConfigurationManager"
-        },
-        {
-          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderException::.ctor(System.String,System.Exception):void",
-          "metadataToken": 100665657,
-          "canonicalSignature": "(System.String,System.Exception):void",
-          "normalizedSignature": "constructor|(System.String,System.Exception):void|static=false",
-          "isStatic": false,
-          "parameterCount": 2,
-          "visibility": "Public",
-          "ownerQualifiedName": "System.Configuration.Provider.ProviderException",
-          "ownerIdentity": "System.Configuration.ConfigurationManager"
-        },
-        {
-          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-          "metadataToken": 100665658,
-          "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-          "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
-          "isStatic": false,
-          "parameterCount": 2,
-          "visibility": "Protected",
-          "ownerQualifiedName": "System.Configuration.Provider.ProviderException",
-          "ownerIdentity": "System.Configuration.ConfigurationManager"
-        }
-      ]
-    }
-  ]
+        "interfaces": [
+          {
+            "stableId": "System.Private.CoreLib:System.Runtime.Serialization.ISerializable",
+            "targetName": "System.Runtime.Serialization.ISerializable"
+          }
+        ],
+        "methods": [],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderException::.ctor():void",
+            "metadataToken": 100665655,
+            "canonicalSignature": "():void",
+            "normalizedSignature": "constructor|():void|static=false",
+            "isStatic": false,
+            "parameterCount": 0,
+            "visibility": "Public",
+            "ownerQualifiedName": "System.Configuration.Provider.ProviderException",
+            "ownerIdentity": "System.Configuration.ConfigurationManager"
+          },
+          {
+            "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderException::.ctor(System.String):void",
+            "metadataToken": 100665656,
+            "canonicalSignature": "(System.String):void",
+            "normalizedSignature": "constructor|(System.String):void|static=false",
+            "isStatic": false,
+            "parameterCount": 1,
+            "visibility": "Public",
+            "ownerQualifiedName": "System.Configuration.Provider.ProviderException",
+            "ownerIdentity": "System.Configuration.ConfigurationManager"
+          },
+          {
+            "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderException::.ctor(System.String,System.Exception):void",
+            "metadataToken": 100665657,
+            "canonicalSignature": "(System.String,System.Exception):void",
+            "normalizedSignature": "constructor|(System.String,System.Exception):void|static=false",
+            "isStatic": false,
+            "parameterCount": 2,
+            "visibility": "Public",
+            "ownerQualifiedName": "System.Configuration.Provider.ProviderException",
+            "ownerIdentity": "System.Configuration.ConfigurationManager"
+          },
+          {
+            "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
+            "metadataToken": 100665658,
+            "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
+            "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
+            "isStatic": false,
+            "parameterCount": 2,
+            "visibility": "Protected",
+            "ownerQualifiedName": "System.Configuration.Provider.ProviderException",
+            "ownerIdentity": "System.Configuration.ConfigurationManager"
+          }
+        ]
+      }
+    ]
+  }
 }

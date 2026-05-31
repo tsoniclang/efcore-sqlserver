@@ -1,62 +1,67 @@
 {
-  "namespace": "Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos",
-  "contributingAssemblies": [
-    "Microsoft.Identity.Client"
-  ],
-  "types": [
-    {
-      "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos.Credential",
-      "targetName": "Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos.Credential",
-      "ownerIdentity": "Microsoft.Identity.Client",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": true,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
-      },
-      "methods": [
-        {
-          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos.Credential::Current():Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos.Credential",
-          "targetName": "Current",
-          "metadataToken": 100664439,
-          "canonicalSignature": "():Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos.Credential",
-          "normalizedSignature": "Current|():Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos.Credential|static=true",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": true,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos.Credential",
-          "ownerIdentity": "Microsoft.Identity.Client",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos.Credential::.ctor():void",
-          "metadataToken": 100664440,
-          "canonicalSignature": "():void",
-          "normalizedSignature": "constructor|():void|static=false",
-          "isStatic": false,
-          "parameterCount": 0,
-          "visibility": "Protected",
-          "ownerQualifiedName": "Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos.Credential",
-          "ownerIdentity": "Microsoft.Identity.Client"
-        }
-      ]
-    }
-  ]
+  "schema": "tsonic.bindings",
+  "provider": {
+    "namespace": "Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos",
+    "ownerIdentities": [
+      "Microsoft.Identity.Client"
+    ]
+  },
+  "targetSurface": {
+    "types": [
+      {
+        "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos.Credential",
+        "targetName": "Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos.Credential",
+        "ownerIdentity": "Microsoft.Identity.Client",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": true,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
+        },
+        "methods": [
+          {
+            "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos.Credential::Current():Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos.Credential",
+            "targetName": "Current",
+            "metadataToken": 100664439,
+            "canonicalSignature": "():Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos.Credential",
+            "normalizedSignature": "Current|():Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos.Credential|static=true",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 0,
+            "isStatic": true,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos.Credential",
+            "ownerIdentity": "Microsoft.Identity.Client",
+            "isExtensionMethod": false
+          }
+        ],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos.Credential::.ctor():void",
+            "metadataToken": 100664440,
+            "canonicalSignature": "():void",
+            "normalizedSignature": "constructor|():void|static=false",
+            "isStatic": false,
+            "parameterCount": 0,
+            "visibility": "Protected",
+            "ownerQualifiedName": "Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos.Credential",
+            "ownerIdentity": "Microsoft.Identity.Client"
+          }
+        ]
+      }
+    ]
+  }
 }

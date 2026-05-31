@@ -1,106 +1,111 @@
 {
-  "namespace": "Microsoft.EntityFrameworkCore.Metadata.Internal",
-  "contributingAssemblies": [
-    "Microsoft.EntityFrameworkCore",
-    "Microsoft.EntityFrameworkCore.Relational",
-    "Microsoft.EntityFrameworkCore.SqlServer"
-  ],
-  "types": [
-    {
-      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Internal.SqlServerIndexExtensions",
-      "targetName": "Microsoft.EntityFrameworkCore.Metadata.Internal.SqlServerIndexExtensions",
-      "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
-      "metadataToken": 0,
-      "kind": "StaticNamespace",
-      "accessibility": "Public",
-      "isAbstract": true,
-      "isSealed": true,
-      "isStatic": true,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
+  "schema": "tsonic.bindings",
+  "provider": {
+    "namespace": "Microsoft.EntityFrameworkCore.Metadata.Internal",
+    "ownerIdentities": [
+      "Microsoft.EntityFrameworkCore",
+      "Microsoft.EntityFrameworkCore.Relational",
+      "Microsoft.EntityFrameworkCore.SqlServer"
+    ]
+  },
+  "targetSurface": {
+    "types": [
+      {
+        "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Internal.SqlServerIndexExtensions",
+        "targetName": "Microsoft.EntityFrameworkCore.Metadata.Internal.SqlServerIndexExtensions",
+        "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
+        "metadataToken": 0,
+        "kind": "StaticNamespace",
+        "accessibility": "Public",
+        "isAbstract": true,
+        "isSealed": true,
+        "isStatic": true,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
+        },
+        "methods": [
+          {
+            "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Internal.SqlServerIndexExtensions::AreCompatibleForSqlServer(Microsoft.EntityFrameworkCore.Metadata.IReadOnlyIndex,Microsoft.EntityFrameworkCore.Metadata.IReadOnlyIndex,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier&,System.Boolean):System.Boolean",
+            "targetName": "AreCompatibleForSqlServer",
+            "metadataToken": 100664188,
+            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IReadOnlyIndex,Microsoft.EntityFrameworkCore.Metadata.IReadOnlyIndex,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier&,System.Boolean):System.Boolean",
+            "normalizedSignature": "AreCompatibleForSqlServer|(Microsoft.EntityFrameworkCore.Metadata.IReadOnlyIndex,Microsoft.EntityFrameworkCore.Metadata.IReadOnlyIndex,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier&,System.Boolean):System.Boolean|static=true",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 4,
+            "isStatic": true,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Metadata.Internal.SqlServerIndexExtensions",
+            "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
+            "isExtensionMethod": true,
+            "parameterModifiers": [
+              {
+                "index": 2,
+                "modifier": "in"
+              }
+            ]
+          }
+        ],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": []
       },
-      "methods": [
-        {
-          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Internal.SqlServerIndexExtensions::AreCompatibleForSqlServer(Microsoft.EntityFrameworkCore.Metadata.IReadOnlyIndex,Microsoft.EntityFrameworkCore.Metadata.IReadOnlyIndex,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier\u0026,System.Boolean):System.Boolean",
-          "targetName": "AreCompatibleForSqlServer",
-          "metadataToken": 100664188,
-          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IReadOnlyIndex,Microsoft.EntityFrameworkCore.Metadata.IReadOnlyIndex,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier\u0026,System.Boolean):System.Boolean",
-          "normalizedSignature": "AreCompatibleForSqlServer|(Microsoft.EntityFrameworkCore.Metadata.IReadOnlyIndex,Microsoft.EntityFrameworkCore.Metadata.IReadOnlyIndex,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier\u0026,System.Boolean):System.Boolean|static=true",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 4,
-          "isStatic": true,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Metadata.Internal.SqlServerIndexExtensions",
-          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
-          "isExtensionMethod": true,
-          "parameterModifiers": [
-            {
-              "index": 2,
-              "modifier": "in"
-            }
-          ]
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": []
-    },
-    {
-      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Internal.SqlServerKeyExtensions",
-      "targetName": "Microsoft.EntityFrameworkCore.Metadata.Internal.SqlServerKeyExtensions",
-      "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
-      "metadataToken": 0,
-      "kind": "StaticNamespace",
-      "accessibility": "Public",
-      "isAbstract": true,
-      "isSealed": true,
-      "isStatic": true,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
-      },
-      "methods": [
-        {
-          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Internal.SqlServerKeyExtensions::AreCompatibleForSqlServer(Microsoft.EntityFrameworkCore.Metadata.IReadOnlyKey,Microsoft.EntityFrameworkCore.Metadata.IReadOnlyKey,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier\u0026,System.Boolean):System.Boolean",
-          "targetName": "AreCompatibleForSqlServer",
-          "metadataToken": 100664191,
-          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IReadOnlyKey,Microsoft.EntityFrameworkCore.Metadata.IReadOnlyKey,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier\u0026,System.Boolean):System.Boolean",
-          "normalizedSignature": "AreCompatibleForSqlServer|(Microsoft.EntityFrameworkCore.Metadata.IReadOnlyKey,Microsoft.EntityFrameworkCore.Metadata.IReadOnlyKey,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier\u0026,System.Boolean):System.Boolean|static=true",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 4,
-          "isStatic": true,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Metadata.Internal.SqlServerKeyExtensions",
-          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
-          "isExtensionMethod": true,
-          "parameterModifiers": [
-            {
-              "index": 2,
-              "modifier": "in"
-            }
-          ]
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": []
-    }
-  ]
+      {
+        "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Internal.SqlServerKeyExtensions",
+        "targetName": "Microsoft.EntityFrameworkCore.Metadata.Internal.SqlServerKeyExtensions",
+        "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
+        "metadataToken": 0,
+        "kind": "StaticNamespace",
+        "accessibility": "Public",
+        "isAbstract": true,
+        "isSealed": true,
+        "isStatic": true,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
+        },
+        "methods": [
+          {
+            "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Metadata.Internal.SqlServerKeyExtensions::AreCompatibleForSqlServer(Microsoft.EntityFrameworkCore.Metadata.IReadOnlyKey,Microsoft.EntityFrameworkCore.Metadata.IReadOnlyKey,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier&,System.Boolean):System.Boolean",
+            "targetName": "AreCompatibleForSqlServer",
+            "metadataToken": 100664191,
+            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IReadOnlyKey,Microsoft.EntityFrameworkCore.Metadata.IReadOnlyKey,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier&,System.Boolean):System.Boolean",
+            "normalizedSignature": "AreCompatibleForSqlServer|(Microsoft.EntityFrameworkCore.Metadata.IReadOnlyKey,Microsoft.EntityFrameworkCore.Metadata.IReadOnlyKey,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier&,System.Boolean):System.Boolean|static=true",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 4,
+            "isStatic": true,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Metadata.Internal.SqlServerKeyExtensions",
+            "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
+            "isExtensionMethod": true,
+            "parameterModifiers": [
+              {
+                "index": 2,
+                "modifier": "in"
+              }
+            ]
+          }
+        ],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": []
+      }
+    ]
+  }
 }

@@ -1,70 +1,75 @@
 {
-  "namespace": "Microsoft.Identity.Client.Utils.Windows",
-  "contributingAssemblies": [
-    "Microsoft.Identity.Client"
-  ],
-  "types": [
-    {
-      "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Utils.Windows.WindowsNativeUtils",
-      "targetName": "Microsoft.Identity.Client.Utils.Windows.WindowsNativeUtils",
-      "ownerIdentity": "Microsoft.Identity.Client",
-      "metadataToken": 0,
-      "kind": "StaticNamespace",
-      "accessibility": "Public",
-      "isAbstract": true,
-      "isSealed": true,
-      "isStatic": true,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
-      },
-      "methods": [
-        {
-          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Utils.Windows.WindowsNativeUtils::IsElevatedUser():System.Boolean",
-          "targetName": "IsElevatedUser",
-          "metadataToken": 100664907,
-          "canonicalSignature": "():System.Boolean",
-          "normalizedSignature": "IsElevatedUser|():System.Boolean|static=true",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": true,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Identity.Client.Utils.Windows.WindowsNativeUtils",
-          "ownerIdentity": "Microsoft.Identity.Client",
-          "isExtensionMethod": false
+  "schema": "tsonic.bindings",
+  "provider": {
+    "namespace": "Microsoft.Identity.Client.Utils.Windows",
+    "ownerIdentities": [
+      "Microsoft.Identity.Client"
+    ]
+  },
+  "targetSurface": {
+    "types": [
+      {
+        "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Utils.Windows.WindowsNativeUtils",
+        "targetName": "Microsoft.Identity.Client.Utils.Windows.WindowsNativeUtils",
+        "ownerIdentity": "Microsoft.Identity.Client",
+        "metadataToken": 0,
+        "kind": "StaticNamespace",
+        "accessibility": "Public",
+        "isAbstract": true,
+        "isSealed": true,
+        "isStatic": true,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
         },
-        {
-          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Utils.Windows.WindowsNativeUtils::InitializeProcessSecurity():System.Void",
-          "targetName": "InitializeProcessSecurity",
-          "metadataToken": 100664908,
-          "canonicalSignature": "():System.Void",
-          "normalizedSignature": "InitializeProcessSecurity|():System.Void|static=true",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": true,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Identity.Client.Utils.Windows.WindowsNativeUtils",
-          "ownerIdentity": "Microsoft.Identity.Client",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": []
-    }
-  ]
+        "methods": [
+          {
+            "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Utils.Windows.WindowsNativeUtils::IsElevatedUser():System.Boolean",
+            "targetName": "IsElevatedUser",
+            "metadataToken": 100664907,
+            "canonicalSignature": "():System.Boolean",
+            "normalizedSignature": "IsElevatedUser|():System.Boolean|static=true",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 0,
+            "isStatic": true,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Identity.Client.Utils.Windows.WindowsNativeUtils",
+            "ownerIdentity": "Microsoft.Identity.Client",
+            "isExtensionMethod": false
+          },
+          {
+            "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Utils.Windows.WindowsNativeUtils::InitializeProcessSecurity():System.Void",
+            "targetName": "InitializeProcessSecurity",
+            "metadataToken": 100664908,
+            "canonicalSignature": "():System.Void",
+            "normalizedSignature": "InitializeProcessSecurity|():System.Void|static=true",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 0,
+            "isStatic": true,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Identity.Client.Utils.Windows.WindowsNativeUtils",
+            "ownerIdentity": "Microsoft.Identity.Client",
+            "isExtensionMethod": false
+          }
+        ],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": []
+      }
+    ]
+  }
 }

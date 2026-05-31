@@ -1,85 +1,90 @@
 {
-  "namespace": "Microsoft.Identity.Client.AuthScheme.PoP",
-  "contributingAssemblies": [
-    "Microsoft.Identity.Client"
-  ],
-  "types": [
-    {
-      "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AuthScheme.PoP.IPoPCryptoProvider",
-      "targetName": "Microsoft.Identity.Client.AuthScheme.PoP.IPoPCryptoProvider",
-      "ownerIdentity": "Microsoft.Identity.Client",
-      "metadataToken": 0,
-      "kind": "Interface",
-      "accessibility": "Public",
-      "isAbstract": true,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "methods": [
-        {
-          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AuthScheme.PoP.IPoPCryptoProvider::Sign(System.Byte[]):System.Byte[]",
-          "targetName": "Sign",
-          "metadataToken": 100666515,
-          "canonicalSignature": "(System.Byte[]):System.Byte[]",
-          "normalizedSignature": "Sign|(System.Byte[]):System.Byte[]|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": true,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Identity.Client.AuthScheme.PoP.IPoPCryptoProvider",
-          "ownerIdentity": "Microsoft.Identity.Client",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [
-        {
-          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AuthScheme.PoP.IPoPCryptoProvider::CannonicalPublicKeyJwk:System.String",
-          "targetName": "CannonicalPublicKeyJwk",
-          "metadataToken": 385876770,
-          "canonicalSignature": ":System.String",
-          "normalizedSignature": "CannonicalPublicKeyJwk|:System.String|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": true,
-          "isVirtual": true,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Identity.Client.AuthScheme.PoP.IPoPCryptoProvider",
-          "ownerIdentity": "Microsoft.Identity.Client"
-        },
-        {
-          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AuthScheme.PoP.IPoPCryptoProvider::CryptographicAlgorithm:System.String",
-          "targetName": "CryptographicAlgorithm",
-          "metadataToken": 385876771,
-          "canonicalSignature": ":System.String",
-          "normalizedSignature": "CryptographicAlgorithm|:System.String|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": true,
-          "isVirtual": true,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Identity.Client.AuthScheme.PoP.IPoPCryptoProvider",
-          "ownerIdentity": "Microsoft.Identity.Client"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": []
-    }
-  ]
+  "schema": "tsonic.bindings",
+  "provider": {
+    "namespace": "Microsoft.Identity.Client.AuthScheme.PoP",
+    "ownerIdentities": [
+      "Microsoft.Identity.Client"
+    ]
+  },
+  "targetSurface": {
+    "types": [
+      {
+        "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AuthScheme.PoP.IPoPCryptoProvider",
+        "targetName": "Microsoft.Identity.Client.AuthScheme.PoP.IPoPCryptoProvider",
+        "ownerIdentity": "Microsoft.Identity.Client",
+        "metadataToken": 0,
+        "kind": "Interface",
+        "accessibility": "Public",
+        "isAbstract": true,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "methods": [
+          {
+            "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AuthScheme.PoP.IPoPCryptoProvider::Sign(System.Byte[]):System.Byte[]",
+            "targetName": "Sign",
+            "metadataToken": 100666515,
+            "canonicalSignature": "(System.Byte[]):System.Byte[]",
+            "normalizedSignature": "Sign|(System.Byte[]):System.Byte[]|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 1,
+            "isStatic": false,
+            "isAbstract": true,
+            "isVirtual": true,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Identity.Client.AuthScheme.PoP.IPoPCryptoProvider",
+            "ownerIdentity": "Microsoft.Identity.Client",
+            "isExtensionMethod": false
+          }
+        ],
+        "properties": [
+          {
+            "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AuthScheme.PoP.IPoPCryptoProvider::CannonicalPublicKeyJwk:System.String",
+            "targetName": "CannonicalPublicKeyJwk",
+            "metadataToken": 385876770,
+            "canonicalSignature": ":System.String",
+            "normalizedSignature": "CannonicalPublicKeyJwk|:System.String|static=false|accessor=get",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": false,
+            "isAbstract": true,
+            "isVirtual": true,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Identity.Client.AuthScheme.PoP.IPoPCryptoProvider",
+            "ownerIdentity": "Microsoft.Identity.Client"
+          },
+          {
+            "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.AuthScheme.PoP.IPoPCryptoProvider::CryptographicAlgorithm:System.String",
+            "targetName": "CryptographicAlgorithm",
+            "metadataToken": 385876771,
+            "canonicalSignature": ":System.String",
+            "normalizedSignature": "CryptographicAlgorithm|:System.String|static=false|accessor=get",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": false,
+            "isAbstract": true,
+            "isVirtual": true,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Identity.Client.AuthScheme.PoP.IPoPCryptoProvider",
+            "ownerIdentity": "Microsoft.Identity.Client"
+          }
+        ],
+        "fields": [],
+        "events": [],
+        "constructors": []
+      }
+    ]
+  }
 }

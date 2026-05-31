@@ -1,57 +1,62 @@
 {
-  "namespace": "System.Diagnostics",
-  "contributingAssemblies": [
-    "System.Configuration.ConfigurationManager",
-    "System.Diagnostics.DiagnosticSource",
-    "System.Diagnostics.EventLog",
-    "System.Diagnostics.FileVersionInfo",
-    "System.Diagnostics.Process",
-    "System.Diagnostics.TextWriterTraceListener",
-    "System.Diagnostics.TraceSource",
-    "System.Private.CoreLib"
-  ],
-  "types": [
-    {
-      "stableId": "System.Configuration.ConfigurationManager:System.Diagnostics.TraceConfiguration",
-      "targetName": "System.Diagnostics.TraceConfiguration",
-      "ownerIdentity": "System.Configuration.ConfigurationManager",
-      "metadataToken": 0,
-      "kind": "StaticNamespace",
-      "accessibility": "Public",
-      "isAbstract": true,
-      "isSealed": true,
-      "isStatic": true,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
-      },
-      "methods": [
-        {
-          "stableId": "System.Configuration.ConfigurationManager:System.Diagnostics.TraceConfiguration::Register():System.Void",
-          "targetName": "Register",
-          "metadataToken": 100663618,
-          "canonicalSignature": "():System.Void",
-          "normalizedSignature": "Register|():System.Void|static=true",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": true,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "System.Diagnostics.TraceConfiguration",
-          "ownerIdentity": "System.Configuration.ConfigurationManager",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": []
-    }
-  ]
+  "schema": "tsonic.bindings",
+  "provider": {
+    "namespace": "System.Diagnostics",
+    "ownerIdentities": [
+      "System.Configuration.ConfigurationManager",
+      "System.Diagnostics.DiagnosticSource",
+      "System.Diagnostics.EventLog",
+      "System.Diagnostics.FileVersionInfo",
+      "System.Diagnostics.Process",
+      "System.Diagnostics.TextWriterTraceListener",
+      "System.Diagnostics.TraceSource",
+      "System.Private.CoreLib"
+    ]
+  },
+  "targetSurface": {
+    "types": [
+      {
+        "stableId": "System.Configuration.ConfigurationManager:System.Diagnostics.TraceConfiguration",
+        "targetName": "System.Diagnostics.TraceConfiguration",
+        "ownerIdentity": "System.Configuration.ConfigurationManager",
+        "metadataToken": 0,
+        "kind": "StaticNamespace",
+        "accessibility": "Public",
+        "isAbstract": true,
+        "isSealed": true,
+        "isStatic": true,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
+        },
+        "methods": [
+          {
+            "stableId": "System.Configuration.ConfigurationManager:System.Diagnostics.TraceConfiguration::Register():System.Void",
+            "targetName": "Register",
+            "metadataToken": 100663618,
+            "canonicalSignature": "():System.Void",
+            "normalizedSignature": "Register|():System.Void|static=true",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 0,
+            "isStatic": true,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "System.Diagnostics.TraceConfiguration",
+            "ownerIdentity": "System.Configuration.ConfigurationManager",
+            "isExtensionMethod": false
+          }
+        ],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": []
+      }
+    ]
+  }
 }

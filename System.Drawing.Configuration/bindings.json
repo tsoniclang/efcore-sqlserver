@@ -1,80 +1,85 @@
 {
-  "namespace": "System.Drawing.Configuration",
-  "contributingAssemblies": [
-    "System.Configuration.ConfigurationManager"
-  ],
-  "types": [
-    {
-      "stableId": "System.Configuration.ConfigurationManager:System.Drawing.Configuration.SystemDrawingSection",
-      "targetName": "System.Drawing.Configuration.SystemDrawingSection",
-      "ownerIdentity": "System.Configuration.ConfigurationManager",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": true,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Configuration.ConfigurationManager:System.Configuration.ConfigurationSection",
-        "targetName": "System.Configuration.ConfigurationSection"
-      },
-      "methods": [],
-      "properties": [
-        {
-          "stableId": "System.Configuration.ConfigurationManager:System.Drawing.Configuration.SystemDrawingSection::BitmapSuffix:System.String",
-          "targetName": "BitmapSuffix",
-          "metadataToken": 385876233,
-          "canonicalSignature": ":System.String",
-          "normalizedSignature": "BitmapSuffix|:System.String|static=false|accessor=getset",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "System.Drawing.Configuration.SystemDrawingSection",
-          "ownerIdentity": "System.Configuration.ConfigurationManager"
+  "schema": "tsonic.bindings",
+  "provider": {
+    "namespace": "System.Drawing.Configuration",
+    "ownerIdentities": [
+      "System.Configuration.ConfigurationManager"
+    ]
+  },
+  "targetSurface": {
+    "types": [
+      {
+        "stableId": "System.Configuration.ConfigurationManager:System.Drawing.Configuration.SystemDrawingSection",
+        "targetName": "System.Drawing.Configuration.SystemDrawingSection",
+        "ownerIdentity": "System.Configuration.ConfigurationManager",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": true,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Configuration.ConfigurationManager:System.Configuration.ConfigurationSection",
+          "targetName": "System.Configuration.ConfigurationSection"
         },
-        {
-          "stableId": "System.Configuration.ConfigurationManager:System.Drawing.Configuration.SystemDrawingSection::Properties:System.Configuration.ConfigurationPropertyCollection",
-          "targetName": "Properties",
-          "metadataToken": 385876234,
-          "canonicalSignature": ":System.Configuration.ConfigurationPropertyCollection",
-          "normalizedSignature": "Properties|:System.Configuration.ConfigurationPropertyCollection|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": true,
-          "visibility": "ProtectedInternal",
-          "ownerQualifiedName": "System.Drawing.Configuration.SystemDrawingSection",
-          "ownerIdentity": "System.Configuration.ConfigurationManager"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "System.Configuration.ConfigurationManager:System.Drawing.Configuration.SystemDrawingSection::.ctor():void",
-          "metadataToken": 100663682,
-          "canonicalSignature": "():void",
-          "normalizedSignature": "constructor|():void|static=false",
-          "isStatic": false,
-          "parameterCount": 0,
-          "visibility": "Public",
-          "ownerQualifiedName": "System.Drawing.Configuration.SystemDrawingSection",
-          "ownerIdentity": "System.Configuration.ConfigurationManager"
-        }
-      ]
-    }
-  ]
+        "methods": [],
+        "properties": [
+          {
+            "stableId": "System.Configuration.ConfigurationManager:System.Drawing.Configuration.SystemDrawingSection::BitmapSuffix:System.String",
+            "targetName": "BitmapSuffix",
+            "metadataToken": 385876233,
+            "canonicalSignature": ":System.String",
+            "normalizedSignature": "BitmapSuffix|:System.String|static=false|accessor=getset",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": true,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "System.Drawing.Configuration.SystemDrawingSection",
+            "ownerIdentity": "System.Configuration.ConfigurationManager"
+          },
+          {
+            "stableId": "System.Configuration.ConfigurationManager:System.Drawing.Configuration.SystemDrawingSection::Properties:System.Configuration.ConfigurationPropertyCollection",
+            "targetName": "Properties",
+            "metadataToken": 385876234,
+            "canonicalSignature": ":System.Configuration.ConfigurationPropertyCollection",
+            "normalizedSignature": "Properties|:System.Configuration.ConfigurationPropertyCollection|static=false|accessor=get",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": true,
+            "visibility": "ProtectedInternal",
+            "ownerQualifiedName": "System.Drawing.Configuration.SystemDrawingSection",
+            "ownerIdentity": "System.Configuration.ConfigurationManager"
+          }
+        ],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "System.Configuration.ConfigurationManager:System.Drawing.Configuration.SystemDrawingSection::.ctor():void",
+            "metadataToken": 100663682,
+            "canonicalSignature": "():void",
+            "normalizedSignature": "constructor|():void|static=false",
+            "isStatic": false,
+            "parameterCount": 0,
+            "visibility": "Public",
+            "ownerQualifiedName": "System.Drawing.Configuration.SystemDrawingSection",
+            "ownerIdentity": "System.Configuration.ConfigurationManager"
+          }
+        ]
+      }
+    ]
+  }
 }

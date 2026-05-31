@@ -1,162 +1,167 @@
 {
-  "namespace": "Microsoft.EntityFrameworkCore.Migrations.Operations",
-  "contributingAssemblies": [
-    "Microsoft.EntityFrameworkCore.Relational",
-    "Microsoft.EntityFrameworkCore.SqlServer"
-  ],
-  "types": [
-    {
-      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Migrations.Operations.SqlServerCreateDatabaseOperation",
-      "targetName": "Microsoft.EntityFrameworkCore.Migrations.Operations.SqlServerCreateDatabaseOperation",
-      "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Migrations.Operations.DatabaseOperation",
-        "targetName": "Microsoft.EntityFrameworkCore.Migrations.Operations.DatabaseOperation"
+  "schema": "tsonic.bindings",
+  "provider": {
+    "namespace": "Microsoft.EntityFrameworkCore.Migrations.Operations",
+    "ownerIdentities": [
+      "Microsoft.EntityFrameworkCore.Relational",
+      "Microsoft.EntityFrameworkCore.SqlServer"
+    ]
+  },
+  "targetSurface": {
+    "types": [
+      {
+        "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Migrations.Operations.SqlServerCreateDatabaseOperation",
+        "targetName": "Microsoft.EntityFrameworkCore.Migrations.Operations.SqlServerCreateDatabaseOperation",
+        "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Migrations.Operations.DatabaseOperation",
+          "targetName": "Microsoft.EntityFrameworkCore.Migrations.Operations.DatabaseOperation"
+        },
+        "interfaces": [
+          {
+            "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Infrastructure.IAnnotatable",
+            "targetName": "Microsoft.EntityFrameworkCore.Infrastructure.IAnnotatable"
+          },
+          {
+            "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Infrastructure.IReadOnlyAnnotatable",
+            "targetName": "Microsoft.EntityFrameworkCore.Infrastructure.IReadOnlyAnnotatable"
+          },
+          {
+            "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.IMutableAnnotatable",
+            "targetName": "Microsoft.EntityFrameworkCore.Metadata.IMutableAnnotatable"
+          }
+        ],
+        "methods": [],
+        "properties": [
+          {
+            "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Migrations.Operations.SqlServerCreateDatabaseOperation::Name:System.String",
+            "targetName": "Name",
+            "metadataToken": 385876090,
+            "canonicalSignature": ":System.String",
+            "normalizedSignature": "Name|:System.String|static=false|accessor=getset",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": true,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Migrations.Operations.SqlServerCreateDatabaseOperation",
+            "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
+          },
+          {
+            "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Migrations.Operations.SqlServerCreateDatabaseOperation::FileName:System.String",
+            "targetName": "FileName",
+            "metadataToken": 385876091,
+            "canonicalSignature": ":System.String",
+            "normalizedSignature": "FileName|:System.String|static=false|accessor=getset",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": true,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Migrations.Operations.SqlServerCreateDatabaseOperation",
+            "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
+          }
+        ],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Migrations.Operations.SqlServerCreateDatabaseOperation::.ctor():void",
+            "metadataToken": 100664417,
+            "canonicalSignature": "():void",
+            "normalizedSignature": "constructor|():void|static=false",
+            "isStatic": false,
+            "parameterCount": 0,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Migrations.Operations.SqlServerCreateDatabaseOperation",
+            "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
+          }
+        ]
       },
-      "interfaces": [
-        {
-          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Infrastructure.IAnnotatable",
-          "targetName": "Microsoft.EntityFrameworkCore.Infrastructure.IAnnotatable"
+      {
+        "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Migrations.Operations.SqlServerDropDatabaseOperation",
+        "targetName": "Microsoft.EntityFrameworkCore.Migrations.Operations.SqlServerDropDatabaseOperation",
+        "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Migrations.Operations.MigrationOperation",
+          "targetName": "Microsoft.EntityFrameworkCore.Migrations.Operations.MigrationOperation"
         },
-        {
-          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Infrastructure.IReadOnlyAnnotatable",
-          "targetName": "Microsoft.EntityFrameworkCore.Infrastructure.IReadOnlyAnnotatable"
-        },
-        {
-          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.IMutableAnnotatable",
-          "targetName": "Microsoft.EntityFrameworkCore.Metadata.IMutableAnnotatable"
-        }
-      ],
-      "methods": [],
-      "properties": [
-        {
-          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Migrations.Operations.SqlServerCreateDatabaseOperation::Name:System.String",
-          "targetName": "Name",
-          "metadataToken": 385876090,
-          "canonicalSignature": ":System.String",
-          "normalizedSignature": "Name|:System.String|static=false|accessor=getset",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Migrations.Operations.SqlServerCreateDatabaseOperation",
-          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
-        },
-        {
-          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Migrations.Operations.SqlServerCreateDatabaseOperation::FileName:System.String",
-          "targetName": "FileName",
-          "metadataToken": 385876091,
-          "canonicalSignature": ":System.String",
-          "normalizedSignature": "FileName|:System.String|static=false|accessor=getset",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Migrations.Operations.SqlServerCreateDatabaseOperation",
-          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Migrations.Operations.SqlServerCreateDatabaseOperation::.ctor():void",
-          "metadataToken": 100664417,
-          "canonicalSignature": "():void",
-          "normalizedSignature": "constructor|():void|static=false",
-          "isStatic": false,
-          "parameterCount": 0,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Migrations.Operations.SqlServerCreateDatabaseOperation",
-          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
-        }
-      ]
-    },
-    {
-      "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Migrations.Operations.SqlServerDropDatabaseOperation",
-      "targetName": "Microsoft.EntityFrameworkCore.Migrations.Operations.SqlServerDropDatabaseOperation",
-      "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Migrations.Operations.MigrationOperation",
-        "targetName": "Microsoft.EntityFrameworkCore.Migrations.Operations.MigrationOperation"
-      },
-      "interfaces": [
-        {
-          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Infrastructure.IAnnotatable",
-          "targetName": "Microsoft.EntityFrameworkCore.Infrastructure.IAnnotatable"
-        },
-        {
-          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Infrastructure.IReadOnlyAnnotatable",
-          "targetName": "Microsoft.EntityFrameworkCore.Infrastructure.IReadOnlyAnnotatable"
-        },
-        {
-          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.IMutableAnnotatable",
-          "targetName": "Microsoft.EntityFrameworkCore.Metadata.IMutableAnnotatable"
-        }
-      ],
-      "methods": [],
-      "properties": [
-        {
-          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Migrations.Operations.SqlServerDropDatabaseOperation::Name:System.String",
-          "targetName": "Name",
-          "metadataToken": 385876092,
-          "canonicalSignature": ":System.String",
-          "normalizedSignature": "Name|:System.String|static=false|accessor=getset",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Migrations.Operations.SqlServerDropDatabaseOperation",
-          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Migrations.Operations.SqlServerDropDatabaseOperation::.ctor():void",
-          "metadataToken": 100664420,
-          "canonicalSignature": "():void",
-          "normalizedSignature": "constructor|():void|static=false",
-          "isStatic": false,
-          "parameterCount": 0,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Migrations.Operations.SqlServerDropDatabaseOperation",
-          "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
-        }
-      ]
-    }
-  ]
+        "interfaces": [
+          {
+            "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Infrastructure.IAnnotatable",
+            "targetName": "Microsoft.EntityFrameworkCore.Infrastructure.IAnnotatable"
+          },
+          {
+            "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Infrastructure.IReadOnlyAnnotatable",
+            "targetName": "Microsoft.EntityFrameworkCore.Infrastructure.IReadOnlyAnnotatable"
+          },
+          {
+            "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.IMutableAnnotatable",
+            "targetName": "Microsoft.EntityFrameworkCore.Metadata.IMutableAnnotatable"
+          }
+        ],
+        "methods": [],
+        "properties": [
+          {
+            "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Migrations.Operations.SqlServerDropDatabaseOperation::Name:System.String",
+            "targetName": "Name",
+            "metadataToken": 385876092,
+            "canonicalSignature": ":System.String",
+            "normalizedSignature": "Name|:System.String|static=false|accessor=getset",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": true,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Migrations.Operations.SqlServerDropDatabaseOperation",
+            "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
+          }
+        ],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Migrations.Operations.SqlServerDropDatabaseOperation::.ctor():void",
+            "metadataToken": 100664420,
+            "canonicalSignature": "():void",
+            "normalizedSignature": "constructor|():void|static=false",
+            "isStatic": false,
+            "parameterCount": 0,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Migrations.Operations.SqlServerDropDatabaseOperation",
+            "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
+          }
+        ]
+      }
+    ]
+  }
 }

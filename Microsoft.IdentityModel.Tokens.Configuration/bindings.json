@@ -1,131 +1,136 @@
 {
-  "namespace": "Microsoft.IdentityModel.Tokens.Configuration",
-  "contributingAssemblies": [
-    "Microsoft.IdentityModel.Tokens"
-  ],
-  "types": [
-    {
-      "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
-      "targetName": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
-      "ownerIdentity": "Microsoft.IdentityModel.Tokens",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
-      },
-      "methods": [],
-      "properties": [
-        {
-          "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions::BaseConfigurationComparer:System.Collections.Generic.IEqualityComparer_1[[Microsoft.IdentityModel.Tokens.BaseConfiguration,Microsoft.IdentityModel.Tokens,Version=7.7.1.0,Culture=neutral,PublicKeyToken=31bf3856ad364e35]]",
-          "targetName": "BaseConfigurationComparer",
-          "metadataToken": 385876254,
-          "canonicalSignature": ":System.Collections.Generic.IEqualityComparer_1[[Microsoft.IdentityModel.Tokens.BaseConfiguration,Microsoft.IdentityModel.Tokens,Version=7.7.1.0,Culture=neutral,PublicKeyToken=31bf3856ad364e35]]",
-          "normalizedSignature": "BaseConfigurationComparer|:System.Collections.Generic.IEqualityComparer_1[[Microsoft.IdentityModel.Tokens.BaseConfiguration,Microsoft.IdentityModel.Tokens,Version=7.7.1.0,Culture=neutral,PublicKeyToken=31bf3856ad364e35]]|static=false|accessor=getset",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
-          "ownerIdentity": "Microsoft.IdentityModel.Tokens"
+  "schema": "tsonic.bindings",
+  "provider": {
+    "namespace": "Microsoft.IdentityModel.Tokens.Configuration",
+    "ownerIdentities": [
+      "Microsoft.IdentityModel.Tokens"
+    ]
+  },
+  "targetSurface": {
+    "types": [
+      {
+        "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
+        "targetName": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
+        "ownerIdentity": "Microsoft.IdentityModel.Tokens",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
         },
-        {
-          "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions::LastKnownGoodConfigurationSizeLimit:System.Int32",
-          "targetName": "LastKnownGoodConfigurationSizeLimit",
-          "metadataToken": 385876255,
-          "canonicalSignature": ":System.Int32",
-          "normalizedSignature": "LastKnownGoodConfigurationSizeLimit|:System.Int32|static=false|accessor=getset",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
-          "ownerIdentity": "Microsoft.IdentityModel.Tokens"
-        },
-        {
-          "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions::TaskCreationOptions:System.Threading.Tasks.TaskCreationOptions",
-          "targetName": "TaskCreationOptions",
-          "metadataToken": 385876256,
-          "canonicalSignature": ":System.Threading.Tasks.TaskCreationOptions",
-          "normalizedSignature": "TaskCreationOptions|:System.Threading.Tasks.TaskCreationOptions|static=false|accessor=getset",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
-          "ownerIdentity": "Microsoft.IdentityModel.Tokens"
-        },
-        {
-          "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions::RemoveExpiredValues:System.Boolean",
-          "targetName": "RemoveExpiredValues",
-          "metadataToken": 385876257,
-          "canonicalSignature": ":System.Boolean",
-          "normalizedSignature": "RemoveExpiredValues|:System.Boolean|static=false|accessor=getset",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
-          "ownerIdentity": "Microsoft.IdentityModel.Tokens"
-        }
-      ],
-      "fields": [
-        {
-          "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions::DefaultLKGConfigurationSizeLimitSystem.Int32",
-          "targetName": "DefaultLKGConfigurationSizeLimit",
-          "metadataToken": 67109536,
-          "normalizedSignature": "DefaultLKGConfigurationSizeLimit|System.Int32|static=true|const=false",
-          "isStatic": true,
-          "isReadOnly": true,
-          "isLiteral": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
-          "ownerIdentity": "Microsoft.IdentityModel.Tokens"
-        }
-      ],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions::.ctor():void",
-          "metadataToken": 100664531,
-          "canonicalSignature": "():void",
-          "normalizedSignature": "constructor|():void|static=false",
-          "isStatic": false,
-          "parameterCount": 0,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
-          "ownerIdentity": "Microsoft.IdentityModel.Tokens"
-        }
-      ]
-    }
-  ]
+        "methods": [],
+        "properties": [
+          {
+            "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions::BaseConfigurationComparer:System.Collections.Generic.IEqualityComparer_1[[Microsoft.IdentityModel.Tokens.BaseConfiguration,Microsoft.IdentityModel.Tokens,Version=7.7.1.0,Culture=neutral,PublicKeyToken=31bf3856ad364e35]]",
+            "targetName": "BaseConfigurationComparer",
+            "metadataToken": 385876254,
+            "canonicalSignature": ":System.Collections.Generic.IEqualityComparer_1[[Microsoft.IdentityModel.Tokens.BaseConfiguration,Microsoft.IdentityModel.Tokens,Version=7.7.1.0,Culture=neutral,PublicKeyToken=31bf3856ad364e35]]",
+            "normalizedSignature": "BaseConfigurationComparer|:System.Collections.Generic.IEqualityComparer_1[[Microsoft.IdentityModel.Tokens.BaseConfiguration,Microsoft.IdentityModel.Tokens,Version=7.7.1.0,Culture=neutral,PublicKeyToken=31bf3856ad364e35]]|static=false|accessor=getset",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": true,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
+            "ownerIdentity": "Microsoft.IdentityModel.Tokens"
+          },
+          {
+            "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions::LastKnownGoodConfigurationSizeLimit:System.Int32",
+            "targetName": "LastKnownGoodConfigurationSizeLimit",
+            "metadataToken": 385876255,
+            "canonicalSignature": ":System.Int32",
+            "normalizedSignature": "LastKnownGoodConfigurationSizeLimit|:System.Int32|static=false|accessor=getset",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": true,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
+            "ownerIdentity": "Microsoft.IdentityModel.Tokens"
+          },
+          {
+            "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions::TaskCreationOptions:System.Threading.Tasks.TaskCreationOptions",
+            "targetName": "TaskCreationOptions",
+            "metadataToken": 385876256,
+            "canonicalSignature": ":System.Threading.Tasks.TaskCreationOptions",
+            "normalizedSignature": "TaskCreationOptions|:System.Threading.Tasks.TaskCreationOptions|static=false|accessor=getset",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": true,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
+            "ownerIdentity": "Microsoft.IdentityModel.Tokens"
+          },
+          {
+            "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions::RemoveExpiredValues:System.Boolean",
+            "targetName": "RemoveExpiredValues",
+            "metadataToken": 385876257,
+            "canonicalSignature": ":System.Boolean",
+            "normalizedSignature": "RemoveExpiredValues|:System.Boolean|static=false|accessor=getset",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": true,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
+            "ownerIdentity": "Microsoft.IdentityModel.Tokens"
+          }
+        ],
+        "fields": [
+          {
+            "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions::DefaultLKGConfigurationSizeLimitSystem.Int32",
+            "targetName": "DefaultLKGConfigurationSizeLimit",
+            "metadataToken": 67109536,
+            "normalizedSignature": "DefaultLKGConfigurationSizeLimit|System.Int32|static=true|const=false",
+            "isStatic": true,
+            "isReadOnly": true,
+            "isLiteral": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
+            "ownerIdentity": "Microsoft.IdentityModel.Tokens"
+          }
+        ],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions::.ctor():void",
+            "metadataToken": 100664531,
+            "canonicalSignature": "():void",
+            "normalizedSignature": "constructor|():void|static=false",
+            "isStatic": false,
+            "parameterCount": 0,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.Configuration.LKGConfigurationCacheOptions",
+            "ownerIdentity": "Microsoft.IdentityModel.Tokens"
+          }
+        ]
+      }
+    ]
+  }
 }

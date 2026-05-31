@@ -1,70 +1,75 @@
 {
-  "namespace": "Microsoft.Identity.Client.SSHCertificates",
-  "contributingAssemblies": [
-    "Microsoft.Identity.Client"
-  ],
-  "types": [
-    {
-      "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.SSHCertificates.SSHExtensions",
-      "targetName": "Microsoft.Identity.Client.SSHCertificates.SSHExtensions",
-      "ownerIdentity": "Microsoft.Identity.Client",
-      "metadataToken": 0,
-      "kind": "StaticNamespace",
-      "accessibility": "Public",
-      "isAbstract": true,
-      "isSealed": true,
-      "isStatic": true,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
-      },
-      "methods": [
-        {
-          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.SSHCertificates.SSHExtensions::WithSSHCertificateAuthenticationScheme(Microsoft.Identity.Client.AcquireTokenInteractiveParameterBuilder,System.String,System.String):Microsoft.Identity.Client.AcquireTokenInteractiveParameterBuilder",
-          "targetName": "WithSSHCertificateAuthenticationScheme",
-          "metadataToken": 100666113,
-          "canonicalSignature": "(Microsoft.Identity.Client.AcquireTokenInteractiveParameterBuilder,System.String,System.String):Microsoft.Identity.Client.AcquireTokenInteractiveParameterBuilder",
-          "normalizedSignature": "WithSSHCertificateAuthenticationScheme|(Microsoft.Identity.Client.AcquireTokenInteractiveParameterBuilder,System.String,System.String):Microsoft.Identity.Client.AcquireTokenInteractiveParameterBuilder|static=true",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 3,
-          "isStatic": true,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Identity.Client.SSHCertificates.SSHExtensions",
-          "ownerIdentity": "Microsoft.Identity.Client",
-          "isExtensionMethod": true
+  "schema": "tsonic.bindings",
+  "provider": {
+    "namespace": "Microsoft.Identity.Client.SSHCertificates",
+    "ownerIdentities": [
+      "Microsoft.Identity.Client"
+    ]
+  },
+  "targetSurface": {
+    "types": [
+      {
+        "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.SSHCertificates.SSHExtensions",
+        "targetName": "Microsoft.Identity.Client.SSHCertificates.SSHExtensions",
+        "ownerIdentity": "Microsoft.Identity.Client",
+        "metadataToken": 0,
+        "kind": "StaticNamespace",
+        "accessibility": "Public",
+        "isAbstract": true,
+        "isSealed": true,
+        "isStatic": true,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
         },
-        {
-          "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.SSHCertificates.SSHExtensions::WithSSHCertificateAuthenticationScheme(Microsoft.Identity.Client.AcquireTokenSilentParameterBuilder,System.String,System.String):Microsoft.Identity.Client.AcquireTokenSilentParameterBuilder",
-          "targetName": "WithSSHCertificateAuthenticationScheme",
-          "metadataToken": 100666114,
-          "canonicalSignature": "(Microsoft.Identity.Client.AcquireTokenSilentParameterBuilder,System.String,System.String):Microsoft.Identity.Client.AcquireTokenSilentParameterBuilder",
-          "normalizedSignature": "WithSSHCertificateAuthenticationScheme|(Microsoft.Identity.Client.AcquireTokenSilentParameterBuilder,System.String,System.String):Microsoft.Identity.Client.AcquireTokenSilentParameterBuilder|static=true",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 3,
-          "isStatic": true,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Identity.Client.SSHCertificates.SSHExtensions",
-          "ownerIdentity": "Microsoft.Identity.Client",
-          "isExtensionMethod": true
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": []
-    }
-  ]
+        "methods": [
+          {
+            "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.SSHCertificates.SSHExtensions::WithSSHCertificateAuthenticationScheme(Microsoft.Identity.Client.AcquireTokenInteractiveParameterBuilder,System.String,System.String):Microsoft.Identity.Client.AcquireTokenInteractiveParameterBuilder",
+            "targetName": "WithSSHCertificateAuthenticationScheme",
+            "metadataToken": 100666113,
+            "canonicalSignature": "(Microsoft.Identity.Client.AcquireTokenInteractiveParameterBuilder,System.String,System.String):Microsoft.Identity.Client.AcquireTokenInteractiveParameterBuilder",
+            "normalizedSignature": "WithSSHCertificateAuthenticationScheme|(Microsoft.Identity.Client.AcquireTokenInteractiveParameterBuilder,System.String,System.String):Microsoft.Identity.Client.AcquireTokenInteractiveParameterBuilder|static=true",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 3,
+            "isStatic": true,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Identity.Client.SSHCertificates.SSHExtensions",
+            "ownerIdentity": "Microsoft.Identity.Client",
+            "isExtensionMethod": true
+          },
+          {
+            "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.SSHCertificates.SSHExtensions::WithSSHCertificateAuthenticationScheme(Microsoft.Identity.Client.AcquireTokenSilentParameterBuilder,System.String,System.String):Microsoft.Identity.Client.AcquireTokenSilentParameterBuilder",
+            "targetName": "WithSSHCertificateAuthenticationScheme",
+            "metadataToken": 100666114,
+            "canonicalSignature": "(Microsoft.Identity.Client.AcquireTokenSilentParameterBuilder,System.String,System.String):Microsoft.Identity.Client.AcquireTokenSilentParameterBuilder",
+            "normalizedSignature": "WithSSHCertificateAuthenticationScheme|(Microsoft.Identity.Client.AcquireTokenSilentParameterBuilder,System.String,System.String):Microsoft.Identity.Client.AcquireTokenSilentParameterBuilder|static=true",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 3,
+            "isStatic": true,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Identity.Client.SSHCertificates.SSHExtensions",
+            "ownerIdentity": "Microsoft.Identity.Client",
+            "isExtensionMethod": true
+          }
+        ],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": []
+      }
+    ]
+  }
 }

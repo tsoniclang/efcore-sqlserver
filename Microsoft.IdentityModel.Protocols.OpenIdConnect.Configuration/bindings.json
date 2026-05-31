@@ -1,112 +1,117 @@
 {
-  "namespace": "Microsoft.IdentityModel.Protocols.OpenIdConnect.Configuration",
-  "contributingAssemblies": [
-    "Microsoft.IdentityModel.Protocols.OpenIdConnect"
-  ],
-  "types": [
-    {
-      "stableId": "Microsoft.IdentityModel.Protocols.OpenIdConnect:Microsoft.IdentityModel.Protocols.OpenIdConnect.Configuration.OpenIdConnectConfigurationValidator",
-      "targetName": "Microsoft.IdentityModel.Protocols.OpenIdConnect.Configuration.OpenIdConnectConfigurationValidator",
-      "ownerIdentity": "Microsoft.IdentityModel.Protocols.OpenIdConnect",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
-      },
-      "interfaces": [
-        {
-          "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.IConfigurationValidator\u00601",
-          "targetName": "Microsoft.IdentityModel.Protocols.IConfigurationValidator\u00601",
-          "typeArguments": [
-            "OpenIdConnectConfiguration"
-          ]
-        }
-      ],
-      "methods": [
-        {
-          "stableId": "Microsoft.IdentityModel.Protocols.OpenIdConnect:Microsoft.IdentityModel.Protocols.OpenIdConnect.Configuration.OpenIdConnectConfigurationValidator::Validate(Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfiguration):Microsoft.IdentityModel.Protocols.ConfigurationValidationResult",
-          "targetName": "Validate",
-          "metadataToken": 100663703,
-          "canonicalSignature": "(Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfiguration):Microsoft.IdentityModel.Protocols.ConfigurationValidationResult",
-          "normalizedSignature": "Validate|(Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfiguration):Microsoft.IdentityModel.Protocols.ConfigurationValidationResult|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.IdentityModel.Protocols.OpenIdConnect.Configuration.OpenIdConnectConfigurationValidator",
-          "ownerIdentity": "Microsoft.IdentityModel.Protocols.OpenIdConnect",
-          "isExtensionMethod": false
+  "schema": "tsonic.bindings",
+  "provider": {
+    "namespace": "Microsoft.IdentityModel.Protocols.OpenIdConnect.Configuration",
+    "ownerIdentities": [
+      "Microsoft.IdentityModel.Protocols.OpenIdConnect"
+    ]
+  },
+  "targetSurface": {
+    "types": [
+      {
+        "stableId": "Microsoft.IdentityModel.Protocols.OpenIdConnect:Microsoft.IdentityModel.Protocols.OpenIdConnect.Configuration.OpenIdConnectConfigurationValidator",
+        "targetName": "Microsoft.IdentityModel.Protocols.OpenIdConnect.Configuration.OpenIdConnectConfigurationValidator",
+        "ownerIdentity": "Microsoft.IdentityModel.Protocols.OpenIdConnect",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
         },
-        {
-          "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.IConfigurationValidator\u00601::Validate(T):Microsoft.IdentityModel.Protocols.ConfigurationValidationResult",
-          "targetName": "Validate",
-          "metadataToken": 100663349,
-          "canonicalSignature": "(T):Microsoft.IdentityModel.Protocols.ConfigurationValidationResult",
-          "normalizedSignature": "Validate|(T):Microsoft.IdentityModel.Protocols.ConfigurationValidationResult|static=false",
-          "emitScope": "ViewOnly",
-          "provenance": "ExplicitView",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.IdentityModel.Protocols.IConfigurationValidator\u00601",
-          "ownerIdentity": "Microsoft.IdentityModel.Protocols",
-          "isExtensionMethod": false,
-          "sourceInterface": "Microsoft.IdentityModel.Protocols.IConfigurationValidator\u00601"
-        }
-      ],
-      "properties": [
-        {
-          "stableId": "Microsoft.IdentityModel.Protocols.OpenIdConnect:Microsoft.IdentityModel.Protocols.OpenIdConnect.Configuration.OpenIdConnectConfigurationValidator::MinimumNumberOfKeys:System.Int32",
-          "targetName": "MinimumNumberOfKeys",
-          "metadataToken": 385876189,
-          "canonicalSignature": ":System.Int32",
-          "normalizedSignature": "MinimumNumberOfKeys|:System.Int32|static=false|accessor=getset",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.IdentityModel.Protocols.OpenIdConnect.Configuration.OpenIdConnectConfigurationValidator",
-          "ownerIdentity": "Microsoft.IdentityModel.Protocols.OpenIdConnect"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.IdentityModel.Protocols.OpenIdConnect:Microsoft.IdentityModel.Protocols.OpenIdConnect.Configuration.OpenIdConnectConfigurationValidator::.ctor():void",
-          "metadataToken": 100663706,
-          "canonicalSignature": "():void",
-          "normalizedSignature": "constructor|():void|static=false",
-          "isStatic": false,
-          "parameterCount": 0,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.IdentityModel.Protocols.OpenIdConnect.Configuration.OpenIdConnectConfigurationValidator",
-          "ownerIdentity": "Microsoft.IdentityModel.Protocols.OpenIdConnect"
-        }
-      ]
-    }
-  ]
+        "interfaces": [
+          {
+            "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.IConfigurationValidator`1",
+            "targetName": "Microsoft.IdentityModel.Protocols.IConfigurationValidator`1",
+            "typeArguments": [
+              "OpenIdConnectConfiguration"
+            ]
+          }
+        ],
+        "methods": [
+          {
+            "stableId": "Microsoft.IdentityModel.Protocols.OpenIdConnect:Microsoft.IdentityModel.Protocols.OpenIdConnect.Configuration.OpenIdConnectConfigurationValidator::Validate(Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfiguration):Microsoft.IdentityModel.Protocols.ConfigurationValidationResult",
+            "targetName": "Validate",
+            "metadataToken": 100663703,
+            "canonicalSignature": "(Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfiguration):Microsoft.IdentityModel.Protocols.ConfigurationValidationResult",
+            "normalizedSignature": "Validate|(Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfiguration):Microsoft.IdentityModel.Protocols.ConfigurationValidationResult|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 1,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "isSealed": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.IdentityModel.Protocols.OpenIdConnect.Configuration.OpenIdConnectConfigurationValidator",
+            "ownerIdentity": "Microsoft.IdentityModel.Protocols.OpenIdConnect",
+            "isExtensionMethod": false
+          },
+          {
+            "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.IConfigurationValidator`1::Validate(T):Microsoft.IdentityModel.Protocols.ConfigurationValidationResult",
+            "targetName": "Validate",
+            "metadataToken": 100663349,
+            "canonicalSignature": "(T):Microsoft.IdentityModel.Protocols.ConfigurationValidationResult",
+            "normalizedSignature": "Validate|(T):Microsoft.IdentityModel.Protocols.ConfigurationValidationResult|static=false",
+            "emitScope": "ViewOnly",
+            "provenance": "ExplicitView",
+            "arity": 0,
+            "parameterCount": 1,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.IdentityModel.Protocols.IConfigurationValidator`1",
+            "ownerIdentity": "Microsoft.IdentityModel.Protocols",
+            "isExtensionMethod": false,
+            "sourceInterface": "Microsoft.IdentityModel.Protocols.IConfigurationValidator`1"
+          }
+        ],
+        "properties": [
+          {
+            "stableId": "Microsoft.IdentityModel.Protocols.OpenIdConnect:Microsoft.IdentityModel.Protocols.OpenIdConnect.Configuration.OpenIdConnectConfigurationValidator::MinimumNumberOfKeys:System.Int32",
+            "targetName": "MinimumNumberOfKeys",
+            "metadataToken": 385876189,
+            "canonicalSignature": ":System.Int32",
+            "normalizedSignature": "MinimumNumberOfKeys|:System.Int32|static=false|accessor=getset",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": true,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.IdentityModel.Protocols.OpenIdConnect.Configuration.OpenIdConnectConfigurationValidator",
+            "ownerIdentity": "Microsoft.IdentityModel.Protocols.OpenIdConnect"
+          }
+        ],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Microsoft.IdentityModel.Protocols.OpenIdConnect:Microsoft.IdentityModel.Protocols.OpenIdConnect.Configuration.OpenIdConnectConfigurationValidator::.ctor():void",
+            "metadataToken": 100663706,
+            "canonicalSignature": "():void",
+            "normalizedSignature": "constructor|():void|static=false",
+            "isStatic": false,
+            "parameterCount": 0,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.IdentityModel.Protocols.OpenIdConnect.Configuration.OpenIdConnectConfigurationValidator",
+            "ownerIdentity": "Microsoft.IdentityModel.Protocols.OpenIdConnect"
+          }
+        ]
+      }
+    ]
+  }
 }
