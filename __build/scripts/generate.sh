@@ -3,7 +3,7 @@
 #
 # Prerequisites:
 #   - .NET 10 SDK installed
-#   - tsbindgen repository cloned at ../tsbindgen (sibling directory)
+#   - dotnet-bindgen repository cloned at ../dotnet-bindgen (sibling directory)
 #   - @tsonic/dotnet cloned at ../dotnet (sibling directory)
 #   - @tsonic/microsoft-extensions cloned at ../microsoft-extensions (sibling directory)
 #   - @tsonic/efcore cloned at ../efcore (sibling directory)
@@ -15,16 +15,38 @@ set -e
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 PROJECT_DIR="$(cd "$SCRIPT_DIR/../.." && pwd)"
-TSBINDGEN_DIR="$PROJECT_DIR/../tsbindgen"
+DOTNET_BINDGEN_DIR="$PROJECT_DIR/../dotnet-bindgen"
 DOTNET_MAJOR="${DOTNET_MAJOR:-10}"
 DOTNET_LIB="$PROJECT_DIR/../dotnet/versions/$DOTNET_MAJOR"
 EXT_LIB="$PROJECT_DIR/../microsoft-extensions"
 EFCORE_LIB="$PROJECT_DIR/../efcore"
 REF_DIR="$PROJECT_DIR/__build/ref"
 
-DOTNET_VERSION="${DOTNET_VERSION:-10.0.1}"
-DOTNET_HOME="${DOTNET_HOME:-$HOME/.dotnet}"
-NETCORE_RUNTIME_PATH="$DOTNET_HOME/shared/Microsoft.NETCore.App/$DOTNET_VERSION"
+resolve_shared_framework_path() {
+    local framework="$1"
+    local version="${DOTNET_VERSION:-}"
+    if [ -n "$version" ]; then
+        local explicit
+        explicit="$(dotnet --list-runtimes | awk -v framework="$framework" -v version="$version" '$1 == framework && $2 == version { root=$3; gsub(/^\[/, "", root); gsub(/\]$/, "", root); print root "/" $2; exit }')"
+        if [ -n "$explicit" ]; then
+            echo "$explicit"
+            return
+        fi
+        echo "${DOTNET_HOME:-$HOME/.dotnet}/shared/$framework/$version"
+        return
+    fi
+
+    local resolved
+    resolved="$(dotnet --list-runtimes | awk -v framework="$framework" -v major="$DOTNET_MAJOR" '$1 == framework && index($2, major ".") == 1 { root=$3; gsub(/^\[/, "", root); gsub(/\]$/, "", root); print $2 "|" root }' | sort -t '|' -k1,1V | tail -1)"
+    if [ -z "$resolved" ]; then
+        echo "ERROR: No installed $framework runtime found for .NET major $DOTNET_MAJOR" >&2
+        exit 1
+    fi
+
+    echo "${resolved#*|}/${resolved%%|*}"
+}
+
+NETCORE_RUNTIME_PATH="$(resolve_shared_framework_path Microsoft.NETCore.App)"
 
 echo "================================================================"
 echo "Generating EF Core SQL Server TypeScript Declarations"
@@ -35,7 +57,7 @@ echo "  .NET Runtime:       $NETCORE_RUNTIME_PATH"
 echo "  BCL Library:        $DOTNET_LIB (external reference)"
 echo "  Extensions Library: $EXT_LIB (external reference)"
 echo "  EF Core Library:    $EFCORE_LIB (external reference)"
-echo "  tsbindgen:          $TSBINDGEN_DIR"
+echo "  dotnet-bindgen:          $DOTNET_BINDGEN_DIR"
 echo "  Ref project:        $REF_DIR"
 echo "  Output:             $PROJECT_DIR"
 echo "  Naming:             CLR (no transforms)"
@@ -46,7 +68,7 @@ if [ ! -d "$NETCORE_RUNTIME_PATH" ]; then
     exit 1
 fi
 
-for dir in "$TSBINDGEN_DIR" "$DOTNET_LIB" "$EXT_LIB" "$EFCORE_LIB"; do
+for dir in "$DOTNET_BINDGEN_DIR" "$DOTNET_LIB" "$EXT_LIB" "$EFCORE_LIB"; do
     if [ ! -d "$dir" ]; then
         echo "ERROR: Missing required repo at $dir"
         exit 1
@@ -82,9 +104,9 @@ echo "[3/4] Building reference project..."
 dotnet build "$REF_DIR/ref.csproj" -c Release --no-restore --verbosity quiet
 echo "  Done"
 
-echo "[4/4] Building + running tsbindgen..."
-cd "$TSBINDGEN_DIR"
-dotnet build src/tsbindgen/tsbindgen.csproj -c Release --verbosity quiet
+echo "[4/4] Building + running dotnet-bindgen..."
+cd "$DOTNET_BINDGEN_DIR"
+dotnet build src/DotnetBindgen/DotnetBindgen.csproj -c Release --verbosity quiet
 
 REF_OUT="$REF_DIR/bin/Release/net10.0"
 REF_DLLS=( "$REF_OUT"/*.dll )
@@ -99,8 +121,8 @@ for dll in "${REF_DLLS[@]}"; do
 done
 
 # EF Core includes generic `new()` constraints that TypeScript cannot represent for instance-type generics.
-# We explicitly allow this constraint loss to unblock generation (emitted as warnings by tsbindgen).
-dotnet run --project src/tsbindgen/tsbindgen.csproj --no-build -c Release -- \
+# We explicitly allow this constraint loss to unblock generation (emitted as warnings by dotnet-bindgen).
+dotnet run --project src/DotnetBindgen/DotnetBindgen.csproj --no-build -c Release -- \
     generate "${GEN_ARGS[@]}" -d "$NETCORE_RUNTIME_PATH" -o "$PROJECT_DIR" \
     --allow-constructor-constraint-loss \
     --lib "$DOTNET_LIB" \
