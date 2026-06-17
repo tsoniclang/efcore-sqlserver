@@ -17,17 +17,20 @@ import * as Microsoft_EntityFrameworkCore_Query_Internal from "@tsonic/efcore/Mi
 import type { ExpressionPrinter, IPrintableExpression, IRelationalQuotableExpression } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query/internal/index.js";
 import type { RelationalTypeMapping } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage/internal/index.js";
 
-export interface SqlServerJsonObjectExpression$instance extends SqlFunctionExpression {
+export interface SqlServerJsonObjectExpression$instance extends Microsoft_EntityFrameworkCore_Query_SqlExpressions_Internal.SqlFunctionExpression {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Query_SqlExpressions_SqlExpression: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Query_SqlExpressions_SqlFunctionExpression: never;
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Query_Internal_SqlExpressions_SqlServerJsonObjectExpression: never;
+    readonly __tsonic_type_System_Linq_Expressions_Expression: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IPrintableExpression: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IRelationalQuotableExpression: never;
 
     readonly PropertyNames: IReadOnlyList_1<System_Internal.String>;
-    Equals(obj: unknown | null): boolean;
-    GetHashCode(): int;
-    Print(expressionPrinter: ExpressionPrinter): void;
-    Quote(): Expression;
+    Equals: Microsoft_EntityFrameworkCore_Query_SqlExpressions_Internal.SqlFunctionExpression["Equals"] & ((obj: unknown | null) => boolean);
+    GetHashCode: Microsoft_EntityFrameworkCore_Query_SqlExpressions_Internal.SqlFunctionExpression["GetHashCode"] & (() => int);
+    Print: Microsoft_EntityFrameworkCore_Query_SqlExpressions_Internal.SqlFunctionExpression["Print"] & ((expressionPrinter: ExpressionPrinter) => void);
+    Quote: Microsoft_EntityFrameworkCore_Query_SqlExpressions_Internal.SqlFunctionExpression["Quote"] & (() => Expression);
 }
 
 

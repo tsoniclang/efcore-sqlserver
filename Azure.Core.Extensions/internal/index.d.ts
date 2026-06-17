@@ -28,12 +28,12 @@ export interface IAzureClientFactoryBuilder$instance {
 
 export type IAzureClientFactoryBuilder = IAzureClientFactoryBuilder$instance;
 
-export interface IAzureClientFactoryBuilderWithConfiguration_1$instance<TConfiguration extends unknown> extends IAzureClientFactoryBuilder {
+export interface IAzureClientFactoryBuilderWithConfiguration_1$instance<TConfiguration extends unknown> {
+    readonly __tsonic_iface_Azure_Core_Extensions_IAzureClientFactoryBuilder: never;
     readonly __tsonic_iface_Azure_Core_Extensions_IAzureClientFactoryBuilderWithConfiguration_1: never;
 
     RegisterClientFactory<TClient extends unknown, TOptions extends (object | null)>(clientFactory: Func_2<TOptions, TClient>): IAzureClientBuilder_2<TClient, TOptions>;
     RegisterClientFactory<TClient extends unknown, TOptions extends (object | null)>(configuration: TConfiguration): IAzureClientBuilder_2<TClient, TOptions>;
-    RegisterClientFactory<TClient, TOptions>(clientFactory: Func_2<TOptions, TClient>): IAzureClientBuilder_2<TClient, TOptions>;
 }
 
 

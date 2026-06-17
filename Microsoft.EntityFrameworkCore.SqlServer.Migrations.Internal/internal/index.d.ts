@@ -18,20 +18,19 @@ import * as Microsoft_EntityFrameworkCore_Migrations_Internal from "@tsonic/efco
 import type { HistoryRepository, HistoryRepositoryDependencies, IHistoryRepository, IMigrationsAnnotationProvider, IMigrationsDatabaseLock, LockReleaseBehavior, MigrationsAnnotationProvider, MigrationsAnnotationProviderDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations/internal/index.js";
 import type { IRelationalCommand, RelationalCommandParameterObject } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage/internal/index.js";
 
-export interface SqlServerHistoryRepository$instance extends HistoryRepository {
+export interface SqlServerHistoryRepository$instance extends Microsoft_EntityFrameworkCore_Migrations_Internal.HistoryRepository {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Migrations_HistoryRepository: never;
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Migrations_Internal_SqlServerHistoryRepository: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Migrations_IHistoryRepository: never;
 
-    readonly ExistsSql: string;
-    readonly LockReleaseBehavior: LockReleaseBehavior;
-    AcquireDatabaseLock(): IMigrationsDatabaseLock;
-    AcquireDatabaseLockAsync(cancellationToken?: CancellationToken): Task_1<IMigrationsDatabaseLock>;
-    GetBeginIfExistsScript(migrationId: string): string;
-    GetBeginIfNotExistsScript(migrationId: string): string;
-    GetCreateIfNotExistsScript(): string;
-    GetEndIfScript(): string;
-    InterpretExistsResult(value: unknown | null): boolean;
+    AcquireDatabaseLock: Microsoft_EntityFrameworkCore_Migrations_Internal.HistoryRepository["AcquireDatabaseLock"] & (() => IMigrationsDatabaseLock);
+    AcquireDatabaseLockAsync: Microsoft_EntityFrameworkCore_Migrations_Internal.HistoryRepository["AcquireDatabaseLockAsync"] & ((cancellationToken?: CancellationToken) => Task_1<IMigrationsDatabaseLock>);
+    GetBeginIfExistsScript: Microsoft_EntityFrameworkCore_Migrations_Internal.HistoryRepository["GetBeginIfExistsScript"] & ((migrationId: string) => string);
+    GetBeginIfNotExistsScript: Microsoft_EntityFrameworkCore_Migrations_Internal.HistoryRepository["GetBeginIfNotExistsScript"] & ((migrationId: string) => string);
+    GetCreateIfNotExistsScript: Microsoft_EntityFrameworkCore_Migrations_Internal.HistoryRepository["GetCreateIfNotExistsScript"] & (() => string);
+    GetEndIfScript: Microsoft_EntityFrameworkCore_Migrations_Internal.HistoryRepository["GetEndIfScript"] & (() => string);
+    InterpretExistsResult: Microsoft_EntityFrameworkCore_Migrations_Internal.HistoryRepository["InterpretExistsResult"] & ((value: unknown | null) => boolean);
 }
 
 
@@ -62,16 +61,14 @@ export const SqlServerMigrationDatabaseLock: {
 
 export type SqlServerMigrationDatabaseLock = SqlServerMigrationDatabaseLock$instance;
 
-export interface SqlServerMigrationsAnnotationProvider$instance extends MigrationsAnnotationProvider {
+export interface SqlServerMigrationsAnnotationProvider$instance extends Microsoft_EntityFrameworkCore_Migrations_Internal.MigrationsAnnotationProvider {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Migrations_MigrationsAnnotationProvider: never;
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Migrations_Internal_SqlServerMigrationsAnnotationProvider: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Migrations_IMigrationsAnnotationProvider: never;
 
-    ForRemove(model: IRelationalModel): IEnumerable_1<IAnnotation>;
-    ForRemove(table: ITable): IEnumerable_1<IAnnotation>;
-    ForRemove(column: IColumn): IEnumerable_1<IAnnotation>;
-    ForRename(table: ITable): IEnumerable_1<IAnnotation>;
-    ForRename(column: IColumn): IEnumerable_1<IAnnotation>;
+    ForRemove: Microsoft_EntityFrameworkCore_Migrations_Internal.MigrationsAnnotationProvider["ForRemove"] & ((column: IColumn) => IEnumerable_1<IAnnotation>) & ((model: IRelationalModel) => IEnumerable_1<IAnnotation>) & ((table: ITable) => IEnumerable_1<IAnnotation>);
+    ForRename: Microsoft_EntityFrameworkCore_Migrations_Internal.MigrationsAnnotationProvider["ForRename"] & ((column: IColumn) => IEnumerable_1<IAnnotation>) & ((table: ITable) => IEnumerable_1<IAnnotation>);
 }
 
 

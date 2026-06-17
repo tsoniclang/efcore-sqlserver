@@ -444,19 +444,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.AuthenticationProtocolMessage::.ctor():void",
-            "metadataToken": 100663297,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.IdentityModel.Protocols.AuthenticationProtocolMessage",
-            "ownerIdentity": "Microsoft.IdentityModel.Protocols"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.ConfigurationManager`1",

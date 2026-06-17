@@ -75,21 +75,22 @@ export interface AuthenticationProtocolMessage$instance {
 }
 
 
-export const AuthenticationProtocolMessage: (abstract new() => AuthenticationProtocolMessage) & {
+export const AuthenticationProtocolMessage: {
 };
 
 
 export type AuthenticationProtocolMessage = AuthenticationProtocolMessage$instance;
 
-export interface ConfigurationManager_1$instance<T extends (object | null)> extends BaseConfigurationManager {
+export interface ConfigurationManager_1$instance<T extends (object | null)> extends Microsoft_IdentityModel_Tokens_Internal.BaseConfigurationManager$instance {
     readonly __tsonic_type_Microsoft_IdentityModel_Protocols_ConfigurationManager_1: never;
+    readonly __tsonic_type_Microsoft_IdentityModel_Tokens_BaseConfigurationManager: never;
 
     readonly __tsonic_iface_Microsoft_IdentityModel_Protocols_IConfigurationManager_1: never;
 
-    GetBaseConfigurationAsync(cancel: CancellationToken): Task_1<BaseConfiguration>;
+    GetBaseConfigurationAsync: Microsoft_IdentityModel_Tokens_Internal.BaseConfigurationManager$instance["GetBaseConfigurationAsync"] & ((cancel: CancellationToken) => Task_1<BaseConfiguration>);
     GetConfigurationAsync(): Task_1<T>;
     GetConfigurationAsync(cancel: CancellationToken): Task_1<T>;
-    RequestRefresh(): void;
+    RequestRefresh: Microsoft_IdentityModel_Tokens_Internal.BaseConfigurationManager$instance["RequestRefresh"] & (() => void);
 }
 
 
@@ -129,7 +130,7 @@ export const ConfigurationValidationResult: {
 
 export type ConfigurationValidationResult = ConfigurationValidationResult$instance;
 
-export interface FileDocumentRetriever$instance extends IDocumentRetriever$instance {
+export interface FileDocumentRetriever$instance {
     readonly __tsonic_type_Microsoft_IdentityModel_Protocols_FileDocumentRetriever: never;
 
     readonly __tsonic_iface_Microsoft_IdentityModel_Protocols_IDocumentRetriever: never;
@@ -150,7 +151,7 @@ export interface __FileDocumentRetriever$views {
 export type FileDocumentRetriever = FileDocumentRetriever$instance & __FileDocumentRetriever$views;
 
 
-export interface HttpDocumentRetriever$instance extends IDocumentRetriever$instance {
+export interface HttpDocumentRetriever$instance {
     readonly __tsonic_type_Microsoft_IdentityModel_Protocols_HttpDocumentRetriever: never;
 
     readonly __tsonic_iface_Microsoft_IdentityModel_Protocols_IDocumentRetriever: never;
@@ -197,14 +198,15 @@ export const HttpRequestData: {
 
 export type HttpRequestData = HttpRequestData$instance;
 
-export interface StaticConfigurationManager_1$instance<T extends (object | null)> extends BaseConfigurationManager, IConfigurationManager_1$instance<T> {
+export interface StaticConfigurationManager_1$instance<T extends (object | null)> extends Microsoft_IdentityModel_Tokens_Internal.BaseConfigurationManager$instance {
     readonly __tsonic_type_Microsoft_IdentityModel_Protocols_StaticConfigurationManager_1: never;
+    readonly __tsonic_type_Microsoft_IdentityModel_Tokens_BaseConfigurationManager: never;
 
     readonly __tsonic_iface_Microsoft_IdentityModel_Protocols_IConfigurationManager_1: never;
 
-    GetBaseConfigurationAsync(cancel: CancellationToken): Task_1<BaseConfiguration>;
+    GetBaseConfigurationAsync: Microsoft_IdentityModel_Tokens_Internal.BaseConfigurationManager$instance["GetBaseConfigurationAsync"] & ((cancel: CancellationToken) => Task_1<BaseConfiguration>);
     GetConfigurationAsync(cancel: CancellationToken): Task_1<T>;
-    RequestRefresh(): void;
+    RequestRefresh: Microsoft_IdentityModel_Tokens_Internal.BaseConfigurationManager$instance["RequestRefresh"] & (() => void);
 }
 
 

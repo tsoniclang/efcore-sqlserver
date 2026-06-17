@@ -17,55 +17,28 @@ import * as Microsoft_EntityFrameworkCore_Migrations_Internal from "@tsonic/efco
 import type { IMigrationsSqlGenerator, MigrationBuilder, MigrationCommand, MigrationCommandListBuilder, MigrationsSqlGenerationOptions, MigrationsSqlGenerator, MigrationsSqlGeneratorDependencies, ReferentialAction } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations/internal/index.js";
 import type { ICommandBatchPreparer } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Update/internal/index.js";
 
-export interface SqlServerMigrationsSqlGenerator$instance extends MigrationsSqlGenerator {
+export interface SqlServerMigrationsSqlGenerator$instance extends Microsoft_EntityFrameworkCore_Migrations_Internal.MigrationsSqlGenerator {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Migrations_MigrationsSqlGenerator: never;
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Migrations_SqlServerMigrationsSqlGenerator: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Migrations_IMigrationsSqlGenerator: never;
 
     AddDescription(builder: MigrationCommandListBuilder, description: string, schema: string | null, table: string, column?: string | null, omitVariableDeclarations?: boolean): void;
-    ColumnDefinition(schema: string | null, table: string, name: string, operation: ColumnOperation, model: IModel | null, builder: MigrationCommandListBuilder): void;
-    ComputedColumnDefinition(schema: string | null, table: string, name: string, operation: ColumnOperation, model: IModel | null, builder: MigrationCommandListBuilder): void;
+    ColumnDefinition: Microsoft_EntityFrameworkCore_Migrations_Internal.MigrationsSqlGenerator["ColumnDefinition"] & ((schema: string | null, table: string, name: string, operation: ColumnOperation, model: IModel | null, builder: MigrationCommandListBuilder) => void);
+    ComputedColumnDefinition: Microsoft_EntityFrameworkCore_Migrations_Internal.MigrationsSqlGenerator["ComputedColumnDefinition"] & ((schema: string | null, table: string, name: string, operation: ColumnOperation, model: IModel | null, builder: MigrationCommandListBuilder) => void);
     CreateIndexes(indexes: IEnumerable_1<ITableIndex>, builder: MigrationCommandListBuilder): void;
-    DefaultValue(defaultValue: unknown | null, defaultValueSql: string | null, columnType: string | null, constraintName: string | null, builder: MigrationCommandListBuilder): void;
+    DefaultValue: Microsoft_EntityFrameworkCore_Migrations_Internal.MigrationsSqlGenerator["DefaultValue"] & ((defaultValue: unknown | null, defaultValueSql: string | null, columnType: string | null, constraintName: string | null, builder: MigrationCommandListBuilder) => void);
     DropDefaultConstraint(schema: string | null, tableName: string, columnName: string, defaultConstraintName: string | null, builder: MigrationCommandListBuilder): void;
     DropDescription(builder: MigrationCommandListBuilder, schema: string | null, table: string, column?: string | null, omitVariableDeclarations?: boolean): void;
     DropIndexes(indexes: IEnumerable_1<ITableIndex>, builder: MigrationCommandListBuilder): void;
-    ForeignKeyAction(referentialAction: ReferentialAction, builder: MigrationCommandListBuilder): void;
-    Generate(operations: IReadOnlyList_1<MigrationOperation>, model?: IModel | null, options?: MigrationsSqlGenerationOptions): IReadOnlyList_1<MigrationCommand>;
-    Generate(operation: MigrationOperation, model: IModel | null, builder: MigrationCommandListBuilder): void;
-    Generate(operation: AddCheckConstraintOperation, model: IModel | null, builder: MigrationCommandListBuilder): void;
-    Generate(operation: AddColumnOperation, model: IModel | null, builder: MigrationCommandListBuilder, terminate: boolean): void;
-    Generate(operation: AddForeignKeyOperation, model: IModel | null, builder: MigrationCommandListBuilder, terminate?: boolean): void;
-    Generate(operation: AddPrimaryKeyOperation, model: IModel | null, builder: MigrationCommandListBuilder, terminate?: boolean): void;
-    Generate(operation: AlterColumnOperation, model: IModel | null, builder: MigrationCommandListBuilder): void;
-    Generate(operation: RenameIndexOperation, model: IModel | null, builder: MigrationCommandListBuilder): void;
-    Generate(operation: RenameSequenceOperation, model: IModel | null, builder: MigrationCommandListBuilder): void;
-    Generate(operation: RestartSequenceOperation, model: IModel | null, builder: MigrationCommandListBuilder): void;
-    Generate(operation: CreateTableOperation, model: IModel | null, builder: MigrationCommandListBuilder, terminate?: boolean): void;
-    Generate(operation: RenameTableOperation, model: IModel | null, builder: MigrationCommandListBuilder): void;
-    Generate(operation: DropTableOperation, model: IModel | null, builder: MigrationCommandListBuilder, terminate?: boolean): void;
-    Generate(operation: CreateIndexOperation, model: IModel | null, builder: MigrationCommandListBuilder, terminate?: boolean): void;
-    Generate(operation: DropPrimaryKeyOperation, model: IModel | null, builder: MigrationCommandListBuilder, terminate?: boolean): void;
-    Generate(operation: EnsureSchemaOperation, model: IModel | null, builder: MigrationCommandListBuilder): void;
-    Generate(operation: CreateSequenceOperation, model: IModel | null, builder: MigrationCommandListBuilder): void;
-    Generate(operation: SqlServerCreateDatabaseOperation, model: IModel | null, builder: MigrationCommandListBuilder): void;
-    Generate(operation: SqlServerDropDatabaseOperation, model: IModel | null, builder: MigrationCommandListBuilder): void;
-    Generate(operation: AlterDatabaseOperation, model: IModel | null, builder: MigrationCommandListBuilder): void;
-    Generate(operation: AlterTableOperation, model: IModel | null, builder: MigrationCommandListBuilder): void;
-    Generate(operation: DropForeignKeyOperation, model: IModel | null, builder: MigrationCommandListBuilder, terminate?: boolean): void;
-    Generate(operation: DropIndexOperation, model: IModel | null, builder: MigrationCommandListBuilder, terminate: boolean): void;
-    Generate(operation: DropColumnOperation, model: IModel | null, builder: MigrationCommandListBuilder, terminate?: boolean): void;
-    Generate(operation: RenameColumnOperation, model: IModel | null, builder: MigrationCommandListBuilder): void;
-    Generate(operation: SqlOperation, model: IModel | null, builder: MigrationCommandListBuilder): void;
-    Generate(operation: InsertDataOperation, model: IModel | null, builder: MigrationCommandListBuilder, terminate?: boolean): void;
-    Generate(operation: DeleteDataOperation, model: IModel | null, builder: MigrationCommandListBuilder): void;
-    Generate(operation: UpdateDataOperation, model: IModel | null, builder: MigrationCommandListBuilder): void;
+    ForeignKeyAction: Microsoft_EntityFrameworkCore_Migrations_Internal.MigrationsSqlGenerator["ForeignKeyAction"] & ((referentialAction: ReferentialAction, builder: MigrationCommandListBuilder) => void);
+    Generate: Microsoft_EntityFrameworkCore_Migrations_Internal.MigrationsSqlGenerator["Generate"] & ((operation: AddCheckConstraintOperation, model: IModel | null, builder: MigrationCommandListBuilder) => void) & ((operation: AddColumnOperation, model: IModel | null, builder: MigrationCommandListBuilder, terminate: boolean) => void) & ((operation: AddForeignKeyOperation, model: IModel | null, builder: MigrationCommandListBuilder, terminate?: boolean) => void) & ((operation: AddPrimaryKeyOperation, model: IModel | null, builder: MigrationCommandListBuilder, terminate?: boolean) => void) & ((operation: AlterColumnOperation, model: IModel | null, builder: MigrationCommandListBuilder) => void) & ((operation: AlterDatabaseOperation, model: IModel | null, builder: MigrationCommandListBuilder) => void) & ((operation: AlterTableOperation, model: IModel | null, builder: MigrationCommandListBuilder) => void) & ((operation: CreateIndexOperation, model: IModel | null, builder: MigrationCommandListBuilder, terminate?: boolean) => void) & ((operation: CreateSequenceOperation, model: IModel | null, builder: MigrationCommandListBuilder) => void) & ((operation: CreateTableOperation, model: IModel | null, builder: MigrationCommandListBuilder, terminate?: boolean) => void) & ((operation: DeleteDataOperation, model: IModel | null, builder: MigrationCommandListBuilder) => void) & ((operation: DropColumnOperation, model: IModel | null, builder: MigrationCommandListBuilder, terminate?: boolean) => void) & ((operation: DropForeignKeyOperation, model: IModel | null, builder: MigrationCommandListBuilder, terminate?: boolean) => void) & ((operation: DropIndexOperation, model: IModel | null, builder: MigrationCommandListBuilder, terminate: boolean) => void) & ((operation: DropPrimaryKeyOperation, model: IModel | null, builder: MigrationCommandListBuilder, terminate?: boolean) => void) & ((operation: DropTableOperation, model: IModel | null, builder: MigrationCommandListBuilder, terminate?: boolean) => void) & ((operation: EnsureSchemaOperation, model: IModel | null, builder: MigrationCommandListBuilder) => void) & ((operation: InsertDataOperation, model: IModel | null, builder: MigrationCommandListBuilder, terminate?: boolean) => void) & ((operation: MigrationOperation, model: IModel | null, builder: MigrationCommandListBuilder) => void) & ((operation: RenameColumnOperation, model: IModel | null, builder: MigrationCommandListBuilder) => void) & ((operation: RenameIndexOperation, model: IModel | null, builder: MigrationCommandListBuilder) => void) & ((operation: RenameSequenceOperation, model: IModel | null, builder: MigrationCommandListBuilder) => void) & ((operation: RenameTableOperation, model: IModel | null, builder: MigrationCommandListBuilder) => void) & ((operation: RestartSequenceOperation, model: IModel | null, builder: MigrationCommandListBuilder) => void) & ((operation: SqlOperation, model: IModel | null, builder: MigrationCommandListBuilder) => void) & ((operation: SqlServerCreateDatabaseOperation, model: IModel | null, builder: MigrationCommandListBuilder) => void) & ((operation: SqlServerDropDatabaseOperation, model: IModel | null, builder: MigrationCommandListBuilder) => void) & ((operation: UpdateDataOperation, model: IModel | null, builder: MigrationCommandListBuilder) => void) & ((operations: IReadOnlyList_1<MigrationOperation>, model?: IModel | null, options?: MigrationsSqlGenerationOptions) => IReadOnlyList_1<MigrationCommand>);
     GetIndexesToRebuild(column: IColumn | null, currentOperation: MigrationOperation): IEnumerable_1<ITableIndex>;
-    IndexOptions(operation: MigrationOperation, model: IModel | null, builder: MigrationCommandListBuilder): void;
-    IndexTraits(operation: MigrationOperation, model: IModel | null, builder: MigrationCommandListBuilder): void;
+    IndexOptions: Microsoft_EntityFrameworkCore_Migrations_Internal.MigrationsSqlGenerator["IndexOptions"] & ((operation: MigrationOperation, model: IModel | null, builder: MigrationCommandListBuilder) => void);
+    IndexTraits: Microsoft_EntityFrameworkCore_Migrations_Internal.MigrationsSqlGenerator["IndexTraits"] & ((operation: MigrationOperation, model: IModel | null, builder: MigrationCommandListBuilder) => void);
     Rename(name: string, newName: string, builder: MigrationCommandListBuilder): void;
     Rename(name: string, newName: string, type: string | null, builder: MigrationCommandListBuilder): void;
-    SequenceOptions(schema: string | null, name: string, operation: SequenceOperation, model: IModel | null, builder: MigrationCommandListBuilder, forAlter: boolean): void;
+    SequenceOptions: Microsoft_EntityFrameworkCore_Migrations_Internal.MigrationsSqlGenerator["SequenceOptions"] & ((schema: string | null, name: string, operation: SequenceOperation, model: IModel | null, builder: MigrationCommandListBuilder, forAlter: boolean) => void);
     Transfer(newSchema: string | null, schema: string | null, name: string, builder: MigrationCommandListBuilder): void;
     UseLegacyIndexFilters(operation: CreateIndexOperation, model: IModel | null): boolean;
 }

@@ -113,17 +113,17 @@ export interface IInternalConfigHost$instance {
     IsConfigRecordRequired(configPath: string): boolean;
     IsDefinitionAllowed(configPath: string, allowDefinition: ConfigurationAllowDefinition, allowExeDefinition: ConfigurationAllowExeDefinition): boolean;
     IsInitDelayed(configRecord: IInternalConfigRecord): boolean;
-    OpenStreamForRead(streamName: string, assertPermissions: boolean): Stream;
     OpenStreamForRead(streamName: string): Stream;
-    OpenStreamForWrite(streamName: string, templateStreamName: string, writeContext: unknown, assertPermissions: boolean): Stream;
+    OpenStreamForRead(streamName: string, assertPermissions: boolean): Stream;
     OpenStreamForWrite(streamName: string, templateStreamName: string, writeContext: unknown): Stream;
+    OpenStreamForWrite(streamName: string, templateStreamName: string, writeContext: unknown, assertPermissions: boolean): Stream;
     PrefetchAll(configPath: string, streamName: string): boolean;
     RequireCompleteInit(configRecord: IInternalConfigRecord): void;
     StartMonitoringStreamForChanges(streamName: string, callback: StreamChangeCallback): unknown;
     StopMonitoringStreamForChanges(streamName: string, callback: StreamChangeCallback): void;
     VerifyDefinitionAllowed(configPath: string, allowDefinition: ConfigurationAllowDefinition, allowExeDefinition: ConfigurationAllowExeDefinition, errorInfo: IConfigErrorInfo): void;
-    WriteCompleted(streamName: string, success: boolean, writeContext: unknown, assertPermissions: boolean): void;
     WriteCompleted(streamName: string, success: boolean, writeContext: unknown): void;
+    WriteCompleted(streamName: string, success: boolean, writeContext: unknown, assertPermissions: boolean): void;
 }
 
 
@@ -229,14 +229,15 @@ export interface DelegatingConfigHost$instance {
 }
 
 
-export const DelegatingConfigHost: (abstract new() => DelegatingConfigHost) & {
+export const DelegatingConfigHost: {
 };
 
 
 export type DelegatingConfigHost = DelegatingConfigHost$instance;
 
-export interface InternalConfigEventArgs$instance extends EventArgs {
+export interface InternalConfigEventArgs$instance extends System_Internal.EventArgs {
     readonly __tsonic_type_System_Configuration_Internal_InternalConfigEventArgs: never;
+    readonly __tsonic_type_System_EventArgs: never;
 
     ConfigPath: string;
 }

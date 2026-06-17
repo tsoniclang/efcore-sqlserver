@@ -16,7 +16,7 @@ import type { AuthenticationToken, GetTokenOptions } from './System.ClientModel.
 import type { IList, IReadOnlyCollection, IReadOnlyDictionary } from '@tsonic/dotnet/System.Collections.Generic.js';
 import type { Stream } from '@tsonic/dotnet/System.IO.js';
 import type { Boolean as ClrBoolean, Byte, DateTimeOffset, Exception, Func, Int32, Nullable, Object as ClrObject, ReadOnlyMemory, String as ClrString, TimeSpan, Uri, ValueType, Void } from '@tsonic/dotnet/System.js';
-import type { ISerializable, SerializationInfo, StreamingContext } from '@tsonic/dotnet/System.Runtime.Serialization.js';
+import type { ISerializable } from '@tsonic/dotnet/System.Runtime.Serialization.js';
 import type { X509Certificate2 } from '@tsonic/dotnet/System.Security.Cryptography.X509Certificates.js';
 import type { CancellationToken } from '@tsonic/dotnet/System.Threading.js';
 import type { Task, ValueTask } from '@tsonic/dotnet/System.Threading.Tasks.js';

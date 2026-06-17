@@ -827,19 +827,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "System.ClientModel:System.ClientModel.Primitives.AsyncCollectionResult::.ctor():void",
-            "metadataToken": 100663543,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "System.ClientModel.Primitives.AsyncCollectionResult",
-            "ownerIdentity": "System.ClientModel"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "System.ClientModel:System.ClientModel.Primitives.AuthenticationPolicy",
@@ -860,19 +848,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "System.ClientModel:System.ClientModel.Primitives.AuthenticationPolicy::.ctor():void",
-            "metadataToken": 100663845,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "System.ClientModel.Primitives.AuthenticationPolicy",
-            "ownerIdentity": "System.ClientModel"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "System.ClientModel:System.ClientModel.Primitives.AuthenticationToken",
@@ -1330,19 +1306,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "System.ClientModel:System.ClientModel.Primitives.ClientConnectionProvider::.ctor(System.Int32):void",
-            "metadataToken": 100663570,
-            "canonicalSignature": "(System.Int32):void",
-            "normalizedSignature": "constructor|(System.Int32):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
-            "ownerQualifiedName": "System.ClientModel.Primitives.ClientConnectionProvider",
-            "ownerIdentity": "System.ClientModel"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "System.ClientModel:System.ClientModel.Primitives.ClientLoggingOptions",
@@ -1376,26 +1340,6 @@
             "isOverride": false,
             "isSealed": false,
             "visibility": "Public",
-            "ownerQualifiedName": "System.ClientModel.Primitives.ClientLoggingOptions",
-            "ownerIdentity": "System.ClientModel",
-            "isExtensionMethod": false
-          },
-          {
-            "stableId": "System.ClientModel:System.ClientModel.Primitives.ClientLoggingOptions::AssertNotFrozen():System.Void",
-            "targetName": "AssertNotFrozen",
-            "metadataToken": 100663774,
-            "canonicalSignature": "():System.Void",
-            "normalizedSignature": "AssertNotFrozen|():System.Void|static=false",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "arity": 0,
-            "parameterCount": 0,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "isSealed": false,
-            "visibility": "Protected",
             "ownerQualifiedName": "System.ClientModel.Primitives.ClientLoggingOptions",
             "ownerIdentity": "System.ClientModel",
             "isExtensionMethod": false
@@ -1726,26 +1670,6 @@
             "isOverride": false,
             "isSealed": false,
             "visibility": "Public",
-            "ownerQualifiedName": "System.ClientModel.Primitives.ClientPipelineOptions",
-            "ownerIdentity": "System.ClientModel",
-            "isExtensionMethod": false
-          },
-          {
-            "stableId": "System.ClientModel:System.ClientModel.Primitives.ClientPipelineOptions::AssertNotFrozen():System.Void",
-            "targetName": "AssertNotFrozen",
-            "metadataToken": 100663806,
-            "canonicalSignature": "():System.Void",
-            "normalizedSignature": "AssertNotFrozen|():System.Void|static=false",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "arity": 0,
-            "parameterCount": 0,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "isSealed": false,
-            "visibility": "Protected",
             "ownerQualifiedName": "System.ClientModel.Primitives.ClientPipelineOptions",
             "ownerIdentity": "System.ClientModel",
             "isExtensionMethod": false
@@ -2248,19 +2172,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "System.ClientModel:System.ClientModel.Primitives.CollectionResult::.ctor():void",
-            "metadataToken": 100663574,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "System.ClientModel.Primitives.CollectionResult",
-            "ownerIdentity": "System.ClientModel"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "System.ClientModel:System.ClientModel.Primitives.GetTokenOptions",
@@ -2930,19 +2842,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "System.ClientModel:System.ClientModel.Primitives.ModelReaderWriterContext::.ctor():void",
-            "metadataToken": 100663730,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "System.ClientModel.Primitives.ModelReaderWriterContext",
-            "ownerIdentity": "System.ClientModel"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "System.ClientModel:System.ClientModel.Primitives.ModelReaderWriterContextTypeAttribute",
@@ -3227,19 +3127,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "System.ClientModel:System.ClientModel.Primitives.ModelReaderWriterTypeBuilder::.ctor():void",
-            "metadataToken": 100663750,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "System.ClientModel.Primitives.ModelReaderWriterTypeBuilder",
-            "ownerIdentity": "System.ClientModel"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "System.ClientModel:System.ClientModel.Primitives.OperationResult",
@@ -3356,26 +3244,6 @@
             "ownerQualifiedName": "System.ClientModel.Primitives.OperationResult",
             "ownerIdentity": "System.ClientModel",
             "isExtensionMethod": false
-          },
-          {
-            "stableId": "System.ClientModel:System.ClientModel.Primitives.OperationResult::SetRawResponse(System.ClientModel.Primitives.PipelineResponse):System.Void",
-            "targetName": "SetRawResponse",
-            "metadataToken": 100663587,
-            "canonicalSignature": "(System.ClientModel.Primitives.PipelineResponse):System.Void",
-            "normalizedSignature": "SetRawResponse|(System.ClientModel.Primitives.PipelineResponse):System.Void|static=false",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "arity": 0,
-            "parameterCount": 1,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "isSealed": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "System.ClientModel.Primitives.OperationResult",
-            "ownerIdentity": "System.ClientModel",
-            "isExtensionMethod": false
           }
         ],
         "properties": [
@@ -3384,12 +3252,12 @@
             "targetName": "HasCompleted",
             "metadataToken": 385876001,
             "canonicalSignature": ":System.Boolean",
-            "normalizedSignature": "HasCompleted|:System.Boolean|static=false|accessor=getset",
+            "normalizedSignature": "HasCompleted|:System.Boolean|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -3420,19 +3288,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "System.ClientModel:System.ClientModel.Primitives.OperationResult::.ctor(System.ClientModel.Primitives.PipelineResponse):void",
-            "metadataToken": 100663577,
-            "canonicalSignature": "(System.ClientModel.Primitives.PipelineResponse):void",
-            "normalizedSignature": "constructor|(System.ClientModel.Primitives.PipelineResponse):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
-            "ownerQualifiedName": "System.ClientModel.Primitives.OperationResult",
-            "ownerIdentity": "System.ClientModel"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "System.ClientModel:System.ClientModel.Primitives.PersistableModelProxyAttribute",
@@ -3661,12 +3517,12 @@
             "targetName": "Response",
             "metadataToken": 385876004,
             "canonicalSignature": ":System.ClientModel.Primitives.PipelineResponse",
-            "normalizedSignature": "Response|:System.ClientModel.Primitives.PipelineResponse|static=false|accessor=getset",
+            "normalizedSignature": "Response|:System.ClientModel.Primitives.PipelineResponse|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -3680,12 +3536,12 @@
             "targetName": "CancellationToken",
             "metadataToken": 385876005,
             "canonicalSignature": ":System.Threading.CancellationToken",
-            "normalizedSignature": "CancellationToken|:System.Threading.CancellationToken|static=false|accessor=getset",
+            "normalizedSignature": "CancellationToken|:System.Threading.CancellationToken|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -3754,19 +3610,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelineMessage::.ctor(System.ClientModel.Primitives.PipelineRequest):void",
-            "metadataToken": 100663607,
-            "canonicalSignature": "(System.ClientModel.Primitives.PipelineRequest):void",
-            "normalizedSignature": "constructor|(System.ClientModel.Primitives.PipelineRequest):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "ProtectedInternal",
-            "ownerQualifiedName": "System.ClientModel.Primitives.PipelineMessage",
-            "ownerIdentity": "System.ClientModel"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelineMessageClassifier",
@@ -3880,19 +3724,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelineMessageClassifier::.ctor():void",
-            "metadataToken": 100663817,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "System.ClientModel.Primitives.PipelineMessageClassifier",
-            "ownerIdentity": "System.ClientModel"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelinePolicy",
@@ -3949,64 +3781,12 @@
             "ownerQualifiedName": "System.ClientModel.Primitives.PipelinePolicy",
             "ownerIdentity": "System.ClientModel",
             "isExtensionMethod": false
-          },
-          {
-            "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelinePolicy::ProcessNext(System.ClientModel.Primitives.PipelineMessage,System.Collections.Generic.IReadOnlyList_1[[System.ClientModel.Primitives.PipelinePolicy,System.ClientModel,Version=1.5.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]],System.Int32):System.Void",
-            "targetName": "ProcessNext",
-            "metadataToken": 100663905,
-            "canonicalSignature": "(System.ClientModel.Primitives.PipelineMessage,System.Collections.Generic.IReadOnlyList_1[[System.ClientModel.Primitives.PipelinePolicy,System.ClientModel,Version=1.5.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]],System.Int32):System.Void",
-            "normalizedSignature": "ProcessNext|(System.ClientModel.Primitives.PipelineMessage,System.Collections.Generic.IReadOnlyList_1[[System.ClientModel.Primitives.PipelinePolicy,System.ClientModel,Version=1.5.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]],System.Int32):System.Void|static=true",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "arity": 0,
-            "parameterCount": 3,
-            "isStatic": true,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "isSealed": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "System.ClientModel.Primitives.PipelinePolicy",
-            "ownerIdentity": "System.ClientModel",
-            "isExtensionMethod": false
-          },
-          {
-            "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelinePolicy::ProcessNextAsync(System.ClientModel.Primitives.PipelineMessage,System.Collections.Generic.IReadOnlyList_1[[System.ClientModel.Primitives.PipelinePolicy,System.ClientModel,Version=1.5.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]],System.Int32):System.Threading.Tasks.ValueTask",
-            "targetName": "ProcessNextAsync",
-            "metadataToken": 100663906,
-            "canonicalSignature": "(System.ClientModel.Primitives.PipelineMessage,System.Collections.Generic.IReadOnlyList_1[[System.ClientModel.Primitives.PipelinePolicy,System.ClientModel,Version=1.5.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]],System.Int32):System.Threading.Tasks.ValueTask",
-            "normalizedSignature": "ProcessNextAsync|(System.ClientModel.Primitives.PipelineMessage,System.Collections.Generic.IReadOnlyList_1[[System.ClientModel.Primitives.PipelinePolicy,System.ClientModel,Version=1.5.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]],System.Int32):System.Threading.Tasks.ValueTask|static=true",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "arity": 0,
-            "parameterCount": 3,
-            "isStatic": true,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "isSealed": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "System.ClientModel.Primitives.PipelinePolicy",
-            "ownerIdentity": "System.ClientModel",
-            "isExtensionMethod": false
           }
         ],
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelinePolicy::.ctor():void",
-            "metadataToken": 100663907,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "System.ClientModel.Primitives.PipelinePolicy",
-            "ownerIdentity": "System.ClientModel"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelineRequest",
@@ -4207,19 +3987,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelineRequest::.ctor():void",
-            "metadataToken": 100663652,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "System.ClientModel.Primitives.PipelineRequest",
-            "ownerIdentity": "System.ClientModel"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelineRequestHeaders",
@@ -4386,19 +4154,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelineRequestHeaders::.ctor():void",
-            "metadataToken": 100663660,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "System.ClientModel.Primitives.PipelineRequestHeaders",
-            "ownerIdentity": "System.ClientModel"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelineResponse",
@@ -4639,19 +4395,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelineResponse::.ctor():void",
-            "metadataToken": 100663674,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "System.ClientModel.Primitives.PipelineResponse",
-            "ownerIdentity": "System.ClientModel"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelineResponseHeaders",
@@ -4758,19 +4502,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelineResponseHeaders::.ctor():void",
-            "metadataToken": 100663680,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "System.ClientModel.Primitives.PipelineResponseHeaders",
-            "ownerIdentity": "System.ClientModel"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelineTransport",
@@ -4952,30 +4684,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelineTransport::.ctor():void",
-            "metadataToken": 100663908,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "System.ClientModel.Primitives.PipelineTransport",
-            "ownerIdentity": "System.ClientModel"
-          },
-          {
-            "stableId": "System.ClientModel:System.ClientModel.Primitives.PipelineTransport::.ctor(System.Boolean,Microsoft.Extensions.Logging.ILoggerFactory):void",
-            "metadataToken": 100663909,
-            "canonicalSignature": "(System.Boolean,Microsoft.Extensions.Logging.ILoggerFactory):void",
-            "normalizedSignature": "constructor|(System.Boolean,Microsoft.Extensions.Logging.ILoggerFactory):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
-            "ownerQualifiedName": "System.ClientModel.Primitives.PipelineTransport",
-            "ownerIdentity": "System.ClientModel"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "System.ClientModel:System.ClientModel.Primitives.RequestOptions",
@@ -5089,26 +4798,6 @@
             "isOverride": false,
             "isSealed": false,
             "visibility": "Public",
-            "ownerQualifiedName": "System.ClientModel.Primitives.RequestOptions",
-            "ownerIdentity": "System.ClientModel",
-            "isExtensionMethod": false
-          },
-          {
-            "stableId": "System.ClientModel:System.ClientModel.Primitives.RequestOptions::AssertNotFrozen():System.Void",
-            "targetName": "AssertNotFrozen",
-            "metadataToken": 100663832,
-            "canonicalSignature": "():System.Void",
-            "normalizedSignature": "AssertNotFrozen|():System.Void|static=false",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "arity": 0,
-            "parameterCount": 0,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "isSealed": false,
-            "visibility": "Protected",
             "ownerQualifiedName": "System.ClientModel.Primitives.RequestOptions",
             "ownerIdentity": "System.ClientModel",
             "isExtensionMethod": false

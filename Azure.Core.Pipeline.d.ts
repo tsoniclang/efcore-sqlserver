@@ -10,7 +10,7 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 
 
 // Cross-namespace type imports for constraints
-import type { ClientOptions, DelayStrategy, HttpMessage, Request, RequestFailedDetailsParser, ResponseClassifier, TokenCredential, TokenRequestContext } from './Azure.Core/internal/index.js';
+import type { ClientOptions, DelayStrategy, HttpMessage, Request, RequestFailedDetailsParser, ResponseClassifier, TokenCredential } from './Azure.Core/internal/index.js';
 import type { RequestContext, Response } from './Azure/internal/index.js';
 import type { IDictionary, IEnumerable, IList } from '@tsonic/dotnet/System.Collections.Generic.js';
 import type { Boolean as ClrBoolean, Exception, Func, IDisposable, Int32, Object as ClrObject, ReadOnlyMemory, String as ClrString, Void } from '@tsonic/dotnet/System.js';

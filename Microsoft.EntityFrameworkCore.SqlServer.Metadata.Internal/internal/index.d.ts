@@ -14,16 +14,13 @@ import type { IAnnotation } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.I
 import * as Microsoft_EntityFrameworkCore_Metadata_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata/internal/index.js";
 import type { IColumn, IRelationalAnnotationProvider, IRelationalModel, ITable, ITableIndex, IUniqueConstraint, RelationalAnnotationProvider, RelationalAnnotationProviderDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata/internal/index.js";
 
-export interface SqlServerAnnotationProvider$instance extends RelationalAnnotationProvider {
+export interface SqlServerAnnotationProvider$instance extends Microsoft_EntityFrameworkCore_Metadata_Internal.RelationalAnnotationProvider {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_RelationalAnnotationProvider: never;
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Metadata_Internal_SqlServerAnnotationProvider: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_IRelationalAnnotationProvider: never;
 
-    For(model: IRelationalModel, designTime: boolean): IEnumerable_1<IAnnotation>;
-    For(table: ITable, designTime: boolean): IEnumerable_1<IAnnotation>;
-    For(constraint: IUniqueConstraint, designTime: boolean): IEnumerable_1<IAnnotation>;
-    For(index: ITableIndex, designTime: boolean): IEnumerable_1<IAnnotation>;
-    For(column: IColumn, designTime: boolean): IEnumerable_1<IAnnotation>;
+    For: Microsoft_EntityFrameworkCore_Metadata_Internal.RelationalAnnotationProvider["For"] & ((column: IColumn, designTime: boolean) => IEnumerable_1<IAnnotation>) & ((constraint: IUniqueConstraint, designTime: boolean) => IEnumerable_1<IAnnotation>) & ((index: ITableIndex, designTime: boolean) => IEnumerable_1<IAnnotation>) & ((model: IRelationalModel, designTime: boolean) => IEnumerable_1<IAnnotation>) & ((table: ITable, designTime: boolean) => IEnumerable_1<IAnnotation>);
 }
 
 

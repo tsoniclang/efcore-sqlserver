@@ -18,26 +18,26 @@ import type { IRelationalConnection, ISqlGenerationHelper } from "@tsonic/efcore
 import * as Microsoft_EntityFrameworkCore_Update_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Update/internal/index.js";
 import type { AffectedCountModificationCommandBatch, ColumnModificationParameters, IColumnModification, IModificationCommand, IModificationCommandBatchFactory, IModificationCommandFactory, INonTrackedModificationCommand, IReadOnlyModificationCommand, IUpdateSqlGenerator, ModificationCommand, ModificationCommandBatch, ModificationCommandBatchFactoryDependencies, ModificationCommandParameters, NonTrackedModificationCommandParameters, ResultSetMapping, UpdateAndSelectSqlGenerator, UpdateSqlGeneratorDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Update/internal/index.js";
 
-export interface ISqlServerUpdateSqlGenerator$instance extends IUpdateSqlGenerator {
+export interface ISqlServerUpdateSqlGenerator$instance {
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_SqlServer_Update_Internal_ISqlServerUpdateSqlGenerator: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Update_IUpdateSqlGenerator: never;
 
-    AppendBulkInsertOperation(commandStringBuilder: StringBuilder, modificationCommands: IReadOnlyList_1<IReadOnlyModificationCommand>, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
     AppendBulkInsertOperation(commandStringBuilder: StringBuilder, modificationCommands: IReadOnlyList_1<IReadOnlyModificationCommand>, commandPosition: int): ResultSetMapping;
+    AppendBulkInsertOperation(commandStringBuilder: StringBuilder, modificationCommands: IReadOnlyList_1<IReadOnlyModificationCommand>, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
 }
 
 
-export interface ISqlServerUpdateSqlGenerator$instance extends Microsoft_EntityFrameworkCore_Update_Internal.IUpdateSqlGenerator {}
-
 export type ISqlServerUpdateSqlGenerator = ISqlServerUpdateSqlGenerator$instance;
 
-export interface SqlServerModificationCommand$instance extends ModificationCommand {
+export interface SqlServerModificationCommand$instance extends Microsoft_EntityFrameworkCore_Update_Internal.ModificationCommand {
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Update_Internal_SqlServerModificationCommand: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Update_ModificationCommand: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Update_IModificationCommand: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Update_INonTrackedModificationCommand: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Update_IReadOnlyModificationCommand: never;
 
-    ProcessSinglePropertyJsonUpdate(parameters: ColumnModificationParameters): void;
+    ProcessSinglePropertyJsonUpdate: Microsoft_EntityFrameworkCore_Update_Internal.ModificationCommand["ProcessSinglePropertyJsonUpdate"] & ((parameters: ColumnModificationParameters) => void);
 }
 
 
@@ -49,17 +49,19 @@ export const SqlServerModificationCommand: {
 
 export type SqlServerModificationCommand = SqlServerModificationCommand$instance;
 
-export interface SqlServerModificationCommandBatch$instance extends AffectedCountModificationCommandBatch {
+export interface SqlServerModificationCommandBatch$instance extends Microsoft_EntityFrameworkCore_Update_Internal.AffectedCountModificationCommandBatch {
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Update_Internal_SqlServerModificationCommandBatch: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Update_AffectedCountModificationCommandBatch: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Update_ModificationCommandBatch: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Update_ReaderModificationCommandBatch: never;
 
-    readonly UpdateSqlGenerator: ISqlServerUpdateSqlGenerator;
-    AddCommand(modificationCommand: IReadOnlyModificationCommand): void;
-    Complete(moreBatchesExpected: boolean): void;
-    Execute(connection: IRelationalConnection): void;
-    ExecuteAsync(connection: IRelationalConnection, cancellationToken?: CancellationToken): Task;
-    IsValid(): boolean;
-    RollbackLastCommand(modificationCommand: IReadOnlyModificationCommand): void;
-    TryAddCommand(modificationCommand: IReadOnlyModificationCommand): boolean;
+    AddCommand: Microsoft_EntityFrameworkCore_Update_Internal.AffectedCountModificationCommandBatch["AddCommand"] & ((modificationCommand: IReadOnlyModificationCommand) => void);
+    Complete: Microsoft_EntityFrameworkCore_Update_Internal.AffectedCountModificationCommandBatch["Complete"] & ((moreBatchesExpected: boolean) => void);
+    Execute: Microsoft_EntityFrameworkCore_Update_Internal.AffectedCountModificationCommandBatch["Execute"] & ((connection: IRelationalConnection) => void);
+    ExecuteAsync: Microsoft_EntityFrameworkCore_Update_Internal.AffectedCountModificationCommandBatch["ExecuteAsync"] & ((connection: IRelationalConnection, cancellationToken?: CancellationToken) => Task);
+    IsValid: Microsoft_EntityFrameworkCore_Update_Internal.AffectedCountModificationCommandBatch["IsValid"] & (() => boolean);
+    RollbackLastCommand: Microsoft_EntityFrameworkCore_Update_Internal.AffectedCountModificationCommandBatch["RollbackLastCommand"] & ((modificationCommand: IReadOnlyModificationCommand) => void);
+    TryAddCommand: Microsoft_EntityFrameworkCore_Update_Internal.AffectedCountModificationCommandBatch["TryAddCommand"] & ((modificationCommand: IReadOnlyModificationCommand) => boolean);
 }
 
 
@@ -104,28 +106,30 @@ export const SqlServerModificationCommandFactory: {
 
 export type SqlServerModificationCommandFactory = SqlServerModificationCommandFactory$instance;
 
-export interface SqlServerUpdateSqlGenerator$instance extends UpdateAndSelectSqlGenerator {
+export interface SqlServerUpdateSqlGenerator$instance extends Microsoft_EntityFrameworkCore_Update_Internal.UpdateAndSelectSqlGenerator {
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Update_Internal_SqlServerUpdateSqlGenerator: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Update_UpdateAndSelectSqlGenerator: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Update_UpdateSqlGenerator: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_SqlServer_Update_Internal_ISqlServerUpdateSqlGenerator: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Update_IUpdateSqlGenerator: never;
 
     readonly MergeIntoMinimumThreshold: int;
-    AppendBatchHeader(commandStringBuilder: StringBuilder): void;
+    AppendBatchHeader: Microsoft_EntityFrameworkCore_Update_Internal.UpdateAndSelectSqlGenerator["AppendBatchHeader"] & ((commandStringBuilder: StringBuilder) => void);
     AppendBulkInsertOperation(commandStringBuilder: StringBuilder, modificationCommands: IReadOnlyList_1<IReadOnlyModificationCommand>, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
-    AppendDeleteCommand(commandStringBuilder: StringBuilder, name: string, schema: string | null, readOperations: IReadOnlyList_1<IColumnModification>, conditionOperations: IReadOnlyList_1<IColumnModification>, appendReturningOneClause?: boolean): void;
-    AppendDeleteOperation(commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
-    AppendIdentityWhereCondition(commandStringBuilder: StringBuilder, columnModification: IColumnModification): void;
-    AppendInsertCommand(commandStringBuilder: StringBuilder, name: string, schema: string | null, writeOperations: IReadOnlyList_1<IColumnModification>, readOperations: IReadOnlyList_1<IColumnModification>): void;
-    AppendInsertOperation(commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
-    AppendReturningClause(commandStringBuilder: StringBuilder, operations: IReadOnlyList_1<IColumnModification>, additionalValues?: string | null): void;
-    AppendRowsAffectedWhereCondition(commandStringBuilder: StringBuilder, expectedRowsAffected: int): void;
-    AppendSelectAffectedCountCommand(commandStringBuilder: StringBuilder, name: string, schema: string | null, commandPosition: int): ResultSetMapping;
-    AppendStoredProcedureCall(commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
-    AppendUpdateColumnValue(updateSqlGeneratorHelper: ISqlGenerationHelper, columnModification: IColumnModification, stringBuilder: StringBuilder, name: string, schema: string | null): void;
-    AppendUpdateCommand(commandStringBuilder: StringBuilder, name: string, schema: string | null, writeOperations: IReadOnlyList_1<IColumnModification>, readOperations: IReadOnlyList_1<IColumnModification>, conditionOperations: IReadOnlyList_1<IColumnModification>, appendReturningOneClause?: boolean): void;
-    AppendUpdateOperation(commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
-    PrependEnsureAutocommit(commandStringBuilder: StringBuilder): void;
+    AppendDeleteCommand: Microsoft_EntityFrameworkCore_Update_Internal.UpdateAndSelectSqlGenerator["AppendDeleteCommand"] & ((commandStringBuilder: StringBuilder, name: string, schema: string | null, readOperations: IReadOnlyList_1<IColumnModification>, conditionOperations: IReadOnlyList_1<IColumnModification>, appendReturningOneClause?: boolean) => void);
+    AppendDeleteOperation: Microsoft_EntityFrameworkCore_Update_Internal.UpdateAndSelectSqlGenerator["AppendDeleteOperation"] & ((commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, requiresTransaction: boolean) => ResultSetMapping);
+    AppendIdentityWhereCondition: Microsoft_EntityFrameworkCore_Update_Internal.UpdateAndSelectSqlGenerator["AppendIdentityWhereCondition"] & ((commandStringBuilder: StringBuilder, columnModification: IColumnModification) => void);
+    AppendInsertCommand: Microsoft_EntityFrameworkCore_Update_Internal.UpdateAndSelectSqlGenerator["AppendInsertCommand"] & ((commandStringBuilder: StringBuilder, name: string, schema: string | null, writeOperations: IReadOnlyList_1<IColumnModification>, readOperations: IReadOnlyList_1<IColumnModification>) => void);
+    AppendInsertOperation: Microsoft_EntityFrameworkCore_Update_Internal.UpdateAndSelectSqlGenerator["AppendInsertOperation"] & ((commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, requiresTransaction: boolean) => ResultSetMapping);
+    AppendReturningClause: Microsoft_EntityFrameworkCore_Update_Internal.UpdateAndSelectSqlGenerator["AppendReturningClause"] & ((commandStringBuilder: StringBuilder, operations: IReadOnlyList_1<IColumnModification>, additionalValues?: string | null) => void);
+    AppendRowsAffectedWhereCondition: Microsoft_EntityFrameworkCore_Update_Internal.UpdateAndSelectSqlGenerator["AppendRowsAffectedWhereCondition"] & ((commandStringBuilder: StringBuilder, expectedRowsAffected: int) => void);
+    AppendSelectAffectedCountCommand: Microsoft_EntityFrameworkCore_Update_Internal.UpdateAndSelectSqlGenerator["AppendSelectAffectedCountCommand"] & ((commandStringBuilder: StringBuilder, name: string, schema: string | null, commandPosition: int) => ResultSetMapping);
+    AppendStoredProcedureCall: Microsoft_EntityFrameworkCore_Update_Internal.UpdateAndSelectSqlGenerator["AppendStoredProcedureCall"] & ((commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, requiresTransaction: boolean) => ResultSetMapping);
+    AppendUpdateColumnValue: Microsoft_EntityFrameworkCore_Update_Internal.UpdateAndSelectSqlGenerator["AppendUpdateColumnValue"] & ((updateSqlGeneratorHelper: ISqlGenerationHelper, columnModification: IColumnModification, stringBuilder: StringBuilder, name: string, schema: string | null) => void);
+    AppendUpdateCommand: Microsoft_EntityFrameworkCore_Update_Internal.UpdateAndSelectSqlGenerator["AppendUpdateCommand"] & ((commandStringBuilder: StringBuilder, name: string, schema: string | null, writeOperations: IReadOnlyList_1<IColumnModification>, readOperations: IReadOnlyList_1<IColumnModification>, conditionOperations: IReadOnlyList_1<IColumnModification>, appendReturningOneClause?: boolean) => void);
+    AppendUpdateOperation: Microsoft_EntityFrameworkCore_Update_Internal.UpdateAndSelectSqlGenerator["AppendUpdateOperation"] & ((commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, requiresTransaction: boolean) => ResultSetMapping);
+    PrependEnsureAutocommit: Microsoft_EntityFrameworkCore_Update_Internal.UpdateAndSelectSqlGenerator["PrependEnsureAutocommit"] & ((commandStringBuilder: StringBuilder) => void);
 }
 
 

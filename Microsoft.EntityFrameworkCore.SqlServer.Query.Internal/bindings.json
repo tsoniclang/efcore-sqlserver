@@ -2956,17 +2956,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerQueryableMethodTranslatingExpressionVisitor",
             "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
-          },
-          {
-            "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerQueryableMethodTranslatingExpressionVisitor::.ctor(Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerQueryableMethodTranslatingExpressionVisitor):void",
-            "metadataToken": 100664870,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerQueryableMethodTranslatingExpressionVisitor):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerQueryableMethodTranslatingExpressionVisitor):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerQueryableMethodTranslatingExpressionVisitor",
-            "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
           }
         ]
       },
@@ -6188,30 +6177,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.TemporalQueryRootExpression::.ctor(Microsoft.EntityFrameworkCore.Metadata.IEntityType):void",
-            "metadataToken": 100664820,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IEntityType):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Metadata.IEntityType):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.TemporalQueryRootExpression",
-            "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
-          },
-          {
-            "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.TemporalQueryRootExpression::.ctor(Microsoft.EntityFrameworkCore.Query.IAsyncQueryProvider,Microsoft.EntityFrameworkCore.Metadata.IEntityType):void",
-            "metadataToken": 100664821,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.IAsyncQueryProvider,Microsoft.EntityFrameworkCore.Metadata.IEntityType):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Query.IAsyncQueryProvider,Microsoft.EntityFrameworkCore.Metadata.IEntityType):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.TemporalQueryRootExpression",
-            "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.TemporalRangeQueryRootExpression",
@@ -6318,30 +6284,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.TemporalRangeQueryRootExpression::.ctor(Microsoft.EntityFrameworkCore.Metadata.IEntityType,System.DateTime,System.DateTime):void",
-            "metadataToken": 100664823,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IEntityType,System.DateTime,System.DateTime):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Metadata.IEntityType,System.DateTime,System.DateTime):void|static=false",
-            "isStatic": false,
-            "parameterCount": 3,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.TemporalRangeQueryRootExpression",
-            "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
-          },
-          {
-            "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.TemporalRangeQueryRootExpression::.ctor(Microsoft.EntityFrameworkCore.Query.IAsyncQueryProvider,Microsoft.EntityFrameworkCore.Metadata.IEntityType,System.DateTime,System.DateTime):void",
-            "metadataToken": 100664824,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.IAsyncQueryProvider,Microsoft.EntityFrameworkCore.Metadata.IEntityType,System.DateTime,System.DateTime):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Query.IAsyncQueryProvider,Microsoft.EntityFrameworkCore.Metadata.IEntityType,System.DateTime,System.DateTime):void|static=false",
-            "isStatic": false,
-            "parameterCount": 4,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.TemporalRangeQueryRootExpression",
-            "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerExpression",

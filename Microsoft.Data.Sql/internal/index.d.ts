@@ -13,10 +13,11 @@ import type { DataTable } from "@tsonic/dotnet/System.Data/internal/index.js";
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Int32, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface SqlDataSourceEnumerator$instance extends DbDataSourceEnumerator {
+export interface SqlDataSourceEnumerator$instance extends System_Data_Common_Internal.DbDataSourceEnumerator {
     readonly __tsonic_type_Microsoft_Data_Sql_SqlDataSourceEnumerator: never;
+    readonly __tsonic_type_System_Data_Common_DbDataSourceEnumerator: never;
 
-    GetDataSources(): DataTable;
+    GetDataSources: System_Data_Common_Internal.DbDataSourceEnumerator["GetDataSources"] & (() => DataTable);
 }
 
 

@@ -3052,17 +3052,6 @@
             "ownerIdentity": "Microsoft.IdentityModel.Protocols.OpenIdConnect"
           },
           {
-            "stableId": "Microsoft.IdentityModel.Protocols.OpenIdConnect:Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectMessage::.ctor(Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectMessage):void",
-            "metadataToken": 100663447,
-            "canonicalSignature": "(Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectMessage):void",
-            "normalizedSignature": "constructor|(Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectMessage):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectMessage",
-            "ownerIdentity": "Microsoft.IdentityModel.Protocols.OpenIdConnect"
-          },
-          {
             "stableId": "Microsoft.IdentityModel.Protocols.OpenIdConnect:Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectMessage::.ctor(System.Collections.Specialized.NameValueCollection):void",
             "metadataToken": 100663448,
             "canonicalSignature": "(System.Collections.Specialized.NameValueCollection):void",
@@ -3144,17 +3133,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectProtocolException",
             "ownerIdentity": "Microsoft.IdentityModel.Protocols.OpenIdConnect"
-          },
-          {
-            "stableId": "Microsoft.IdentityModel.Protocols.OpenIdConnect:Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectProtocolException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "metadataToken": 100663422,
-            "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectProtocolException",
-            "ownerIdentity": "Microsoft.IdentityModel.Protocols.OpenIdConnect"
           }
         ]
       },
@@ -3214,17 +3192,6 @@
             "isStatic": false,
             "parameterCount": 2,
             "visibility": "Public",
-            "ownerQualifiedName": "Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectProtocolInvalidAtHashException",
-            "ownerIdentity": "Microsoft.IdentityModel.Protocols.OpenIdConnect"
-          },
-          {
-            "stableId": "Microsoft.IdentityModel.Protocols.OpenIdConnect:Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectProtocolInvalidAtHashException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "metadataToken": 100663426,
-            "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
             "ownerQualifiedName": "Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectProtocolInvalidAtHashException",
             "ownerIdentity": "Microsoft.IdentityModel.Protocols.OpenIdConnect"
           }
@@ -3288,17 +3255,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectProtocolInvalidCHashException",
             "ownerIdentity": "Microsoft.IdentityModel.Protocols.OpenIdConnect"
-          },
-          {
-            "stableId": "Microsoft.IdentityModel.Protocols.OpenIdConnect:Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectProtocolInvalidCHashException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "metadataToken": 100663430,
-            "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectProtocolInvalidCHashException",
-            "ownerIdentity": "Microsoft.IdentityModel.Protocols.OpenIdConnect"
           }
         ]
       },
@@ -3360,17 +3316,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectProtocolInvalidNonceException",
             "ownerIdentity": "Microsoft.IdentityModel.Protocols.OpenIdConnect"
-          },
-          {
-            "stableId": "Microsoft.IdentityModel.Protocols.OpenIdConnect:Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectProtocolInvalidNonceException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "metadataToken": 100663434,
-            "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectProtocolInvalidNonceException",
-            "ownerIdentity": "Microsoft.IdentityModel.Protocols.OpenIdConnect"
           }
         ]
       },
@@ -3430,17 +3375,6 @@
             "isStatic": false,
             "parameterCount": 2,
             "visibility": "Public",
-            "ownerQualifiedName": "Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectProtocolInvalidStateException",
-            "ownerIdentity": "Microsoft.IdentityModel.Protocols.OpenIdConnect"
-          },
-          {
-            "stableId": "Microsoft.IdentityModel.Protocols.OpenIdConnect:Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectProtocolInvalidStateException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "metadataToken": 100663438,
-            "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
             "ownerQualifiedName": "Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectProtocolInvalidStateException",
             "ownerIdentity": "Microsoft.IdentityModel.Protocols.OpenIdConnect"
           }

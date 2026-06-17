@@ -10,10 +10,12 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Byte, Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Object as ClrObject } from "@tsonic/dotnet/System/internal/index.js";
 
-export enum DataProtectionScope {
-    CurrentUser = 0,
-    LocalMachine = 1
-}
+export type DataProtectionScope = number & { readonly __tsonic_type_System_Security_Cryptography_DataProtectionScope: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const DataProtectionScope: {
+    readonly CurrentUser: DataProtectionScope;
+    readonly LocalMachine: DataProtectionScope;
+};
 
 
 export abstract class ProtectedData$instance {

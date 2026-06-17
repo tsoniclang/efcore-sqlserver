@@ -13,9 +13,9 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 import type { IConfigErrorInfo } from './System.Configuration.Internal/internal/index.js';
 import type { ProviderBase, ProviderCollection } from './System.Configuration.Provider/internal/index.js';
 import type { UriIdnScope } from './System/internal/index.js';
-import type { Hashtable, ICollection, IComparer, IDictionary, IEnumerable, IEnumerator, IList, ReadOnlyCollectionBase } from '@tsonic/dotnet/System.Collections.js';
+import type { Hashtable, ICollection, IDictionary, IEnumerable, IEnumerator, IList, ReadOnlyCollectionBase } from '@tsonic/dotnet/System.Collections.js';
 import type { NameObjectCollectionBase, NameValueCollection, StringCollection } from '@tsonic/dotnet/System.Collections.Specialized.js';
-import type { CancelEventArgs, IComponent, INotifyPropertyChanged, ITypeDescriptorContext, PropertyChangedEventArgs, PropertyChangedEventHandler, TypeConverter } from '@tsonic/dotnet/System.ComponentModel.js';
+import type { CancelEventArgs, INotifyPropertyChanged, ITypeDescriptorContext, PropertyChangedEventArgs, PropertyChangedEventHandler, TypeConverter } from '@tsonic/dotnet/System.ComponentModel.js';
 import type { CultureInfo } from '@tsonic/dotnet/System.Globalization.js';
 import type { Array as ClrArray, AsyncCallback, Attribute, Boolean as ClrBoolean, Enum, EventArgs, Exception, Func, GenericUriParserOptions, IAsyncResult, ICloneable, IComparable, IConvertible, IFormattable, Int32, Int64, IntPtr, ISpanFormattable, MulticastDelegate, Object as ClrObject, String as ClrString, SystemException, TimeSpan, Type, Void } from '@tsonic/dotnet/System.js';
 import type { IDeserializationCallback, ISerializable, SerializationInfo, StreamingContext } from '@tsonic/dotnet/System.Runtime.Serialization.js';

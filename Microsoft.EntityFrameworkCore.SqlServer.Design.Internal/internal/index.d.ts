@@ -18,18 +18,15 @@ import type { IAnnotation } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.I
 import type { IColumn, IEntityType, IIndex, IKey, IModel, IProperty, IRelationalModel, IRelationalPropertyOverrides, ITable, ITableIndex, IUniqueConstraint } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata/internal/index.js";
 import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection/internal/index.js";
 
-export interface SqlServerAnnotationCodeGenerator$instance extends AnnotationCodeGenerator {
+export interface SqlServerAnnotationCodeGenerator$instance extends Microsoft_EntityFrameworkCore_Design_Internal.AnnotationCodeGenerator {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Design_AnnotationCodeGenerator: never;
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Design_Internal_SqlServerAnnotationCodeGenerator: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Design_IAnnotationCodeGenerator: never;
 
-    GenerateFluentApi(key: IKey, annotation: IAnnotation): MethodCallCodeFragment | null;
-    GenerateFluentApi(index: IIndex, annotation: IAnnotation): MethodCallCodeFragment | null;
-    GenerateFluentApiCalls(model: IModel, annotations: IDictionary_2<System_Internal.String, IAnnotation>): IReadOnlyList_1<MethodCallCodeFragment>;
-    GenerateFluentApiCalls(property: IProperty, annotations: IDictionary_2<System_Internal.String, IAnnotation>): IReadOnlyList_1<MethodCallCodeFragment>;
-    GenerateFluentApiCalls(entityType: IEntityType, annotations: IDictionary_2<System_Internal.String, IAnnotation>): IReadOnlyList_1<MethodCallCodeFragment>;
-    IsHandledByConvention(model: IModel, annotation: IAnnotation): boolean;
-    IsHandledByConvention(property: IProperty, annotation: IAnnotation): boolean;
+    GenerateFluentApi: Microsoft_EntityFrameworkCore_Design_Internal.AnnotationCodeGenerator["GenerateFluentApi"] & ((index: IIndex, annotation: IAnnotation) => MethodCallCodeFragment | null) & ((key: IKey, annotation: IAnnotation) => MethodCallCodeFragment | null);
+    GenerateFluentApiCalls: Microsoft_EntityFrameworkCore_Design_Internal.AnnotationCodeGenerator["GenerateFluentApiCalls"] & ((entityType: IEntityType, annotations: IDictionary_2<System_Internal.String, IAnnotation>) => IReadOnlyList_1<MethodCallCodeFragment>) & ((model: IModel, annotations: IDictionary_2<System_Internal.String, IAnnotation>) => IReadOnlyList_1<MethodCallCodeFragment>) & ((property: IProperty, annotations: IDictionary_2<System_Internal.String, IAnnotation>) => IReadOnlyList_1<MethodCallCodeFragment>);
+    IsHandledByConvention: Microsoft_EntityFrameworkCore_Design_Internal.AnnotationCodeGenerator["IsHandledByConvention"] & ((model: IModel, annotation: IAnnotation) => boolean) & ((property: IProperty, annotation: IAnnotation) => boolean);
 }
 
 
@@ -40,20 +37,12 @@ export const SqlServerAnnotationCodeGenerator: {
 
 export type SqlServerAnnotationCodeGenerator = SqlServerAnnotationCodeGenerator$instance;
 
-export interface SqlServerCSharpRuntimeAnnotationCodeGenerator$instance extends RelationalCSharpRuntimeAnnotationCodeGenerator {
+export interface SqlServerCSharpRuntimeAnnotationCodeGenerator$instance extends Microsoft_EntityFrameworkCore_Design_Internal_Internal.RelationalCSharpRuntimeAnnotationCodeGenerator {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Design_Internal_CSharpRuntimeAnnotationCodeGenerator: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Design_Internal_RelationalCSharpRuntimeAnnotationCodeGenerator: never;
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Design_Internal_SqlServerCSharpRuntimeAnnotationCodeGenerator: never;
 
-    Generate(model: IModel, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
-    Generate(model: IRelationalModel, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
-    Generate(property: IProperty, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
-    Generate(column: IColumn, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
-    Generate(index: IIndex, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
-    Generate(index: ITableIndex, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
-    Generate(key: IKey, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
-    Generate(uniqueConstraint: IUniqueConstraint, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
-    Generate(entityType: IEntityType, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
-    Generate(table: ITable, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
-    Generate(overrides: IRelationalPropertyOverrides, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
+    Generate: Microsoft_EntityFrameworkCore_Design_Internal_Internal.RelationalCSharpRuntimeAnnotationCodeGenerator["Generate"] & ((column: IColumn, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters) => void) & ((entityType: IEntityType, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters) => void) & ((index: IIndex, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters) => void) & ((index: ITableIndex, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters) => void) & ((key: IKey, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters) => void) & ((model: IModel, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters) => void) & ((model: IRelationalModel, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters) => void) & ((overrides: IRelationalPropertyOverrides, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters) => void) & ((property: IProperty, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters) => void) & ((table: ITable, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters) => void) & ((uniqueConstraint: IUniqueConstraint, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters) => void);
 }
 
 

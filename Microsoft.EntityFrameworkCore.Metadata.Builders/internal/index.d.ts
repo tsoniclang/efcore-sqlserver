@@ -52,13 +52,11 @@ export const OwnedNavigationTemporalTableBuilder: {
 
 export type OwnedNavigationTemporalTableBuilder = OwnedNavigationTemporalTableBuilder$instance;
 
-export interface OwnedNavigationTemporalTableBuilder_2$instance<TOwnerEntity extends (object | null), TDependentEntity extends (object | null)> extends OwnedNavigationTemporalTableBuilder {
+export interface OwnedNavigationTemporalTableBuilder_2$instance<TOwnerEntity extends (object | null), TDependentEntity extends (object | null)> extends OwnedNavigationTemporalTableBuilder$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Builders_OwnedNavigationTemporalTableBuilder: never;
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Builders_OwnedNavigationTemporalTableBuilder_2: never;
 
-    UseHistoryTable(name: string): OwnedNavigationTemporalTableBuilder_2<TOwnerEntity, TDependentEntity>;
-    UseHistoryTable(name: string, schema: string | null): OwnedNavigationTemporalTableBuilder_2<TOwnerEntity, TDependentEntity>;
-    UseHistoryTable(name: string): OwnedNavigationTemporalTableBuilder;
-    UseHistoryTable(name: string, schema: string | null): OwnedNavigationTemporalTableBuilder;
+    UseHistoryTable: OwnedNavigationTemporalTableBuilder$instance["UseHistoryTable"] & ((name: string) => OwnedNavigationTemporalTableBuilder) & ((name: string) => OwnedNavigationTemporalTableBuilder_2<TOwnerEntity, TDependentEntity>) & ((name: string, schema: string | null) => OwnedNavigationTemporalTableBuilder) & ((name: string, schema: string | null) => OwnedNavigationTemporalTableBuilder_2<TOwnerEntity, TDependentEntity>);
 }
 
 
@@ -109,13 +107,11 @@ export const TemporalTableBuilder: {
 
 export type TemporalTableBuilder = TemporalTableBuilder$instance;
 
-export interface TemporalTableBuilder_1$instance<TEntity extends (object | null)> extends TemporalTableBuilder {
+export interface TemporalTableBuilder_1$instance<TEntity extends (object | null)> extends TemporalTableBuilder$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Builders_TemporalTableBuilder: never;
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Builders_TemporalTableBuilder_1: never;
 
-    UseHistoryTable(name: string): TemporalTableBuilder_1<TEntity>;
-    UseHistoryTable(name: string, schema: string | null): TemporalTableBuilder_1<TEntity>;
-    UseHistoryTable(name: string): TemporalTableBuilder;
-    UseHistoryTable(name: string, schema: string | null): TemporalTableBuilder;
+    UseHistoryTable: TemporalTableBuilder$instance["UseHistoryTable"] & ((name: string) => TemporalTableBuilder) & ((name: string) => TemporalTableBuilder_1<TEntity>) & ((name: string, schema: string | null) => TemporalTableBuilder) & ((name: string, schema: string | null) => TemporalTableBuilder_1<TEntity>);
 }
 
 

@@ -21,7 +21,7 @@ import type { ReadOnlySequence } from '@tsonic/dotnet/System.Buffers.js';
 import type { IDictionary, IEnumerable as IEnumerable__System_Collections_Generic, IEnumerator, IList, IReadOnlyDictionary } from '@tsonic/dotnet/System.Collections.Generic.js';
 import type { IEnumerable } from '@tsonic/dotnet/System.Collections.js';
 import type { Stream } from '@tsonic/dotnet/System.IO.js';
-import type { AsyncCallback, Boolean as ClrBoolean, Byte, Char, DateTimeOffset, Double, Enum, Exception, Func, IAsyncResult, ICloneable, IComparable, IConvertible, IDisposable, IEquatable, IFormattable, Int32, Int64, IntPtr, ISpanFormattable, MulticastDelegate, Nullable, Object as ClrObject, ReadOnlyMemory, ReadOnlySpan, String as ClrString, TimeSpan, Type, UInt16, Uri, ValueType, Void } from '@tsonic/dotnet/System.js';
+import type { AsyncCallback, Boolean as ClrBoolean, Byte, Char, DateTimeOffset, Enum, Exception, Func, IAsyncResult, ICloneable, IComparable, IConvertible, IDisposable, IEquatable, IFormattable, Int32, Int64, IntPtr, ISpanFormattable, MulticastDelegate, Nullable, Object as ClrObject, ReadOnlyMemory, ReadOnlySpan, String as ClrString, TimeSpan, Type, UInt16, Uri, ValueType, Void } from '@tsonic/dotnet/System.js';
 import type { Assembly } from '@tsonic/dotnet/System.Reflection.js';
 import type { ISerializable } from '@tsonic/dotnet/System.Runtime.Serialization.js';
 import type { Utf8JsonReader, Utf8JsonWriter } from '@tsonic/dotnet/System.Text.Json.js';
@@ -59,7 +59,7 @@ export { ResponseHeaders as ResponseHeaders } from './Azure.Core/internal/index.
 export { RetryMode as RetryMode } from './Azure.Core/internal/index.js';
 export { RetryOptions as RetryOptions } from './Azure.Core/internal/index.js';
 export { StatusCodeClassifier as StatusCodeClassifier } from './Azure.Core/internal/index.js';
-export type SyncAsyncEventHandler<T extends unknown & Internal.SyncAsyncEventArgs> = Internal.SyncAsyncEventHandler_1<T>;
+export type SyncAsyncEventHandler<T extends unknown & { readonly __tsonic_type_Azure_SyncAsyncEventArgs: never } & { readonly __tsonic_type_System_EventArgs: never }> = Internal.SyncAsyncEventHandler_1<T>;
 export { TelemetryDetails as TelemetryDetails } from './Azure.Core/internal/index.js';
 export { TokenCredential as TokenCredential } from './Azure.Core/internal/index.js';
 export { TokenRequestContext as TokenRequestContext } from './Azure.Core/internal/index.js';

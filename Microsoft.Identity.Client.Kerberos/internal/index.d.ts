@@ -10,19 +10,23 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Byte, Enum, IComparable, IConvertible, IFormattable, Int32, Int64, ISpanFormattable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export enum KerberosKeyTypes {
-    None = 0,
-    DecCbcCrc = 1,
-    DesCbcMd5 = 3,
-    Aes128CtsHmacSha196 = 17,
-    Aes256CtsHmacSha196 = 18
-}
+export type KerberosKeyTypes = number & { readonly __tsonic_type_Microsoft_Identity_Client_Kerberos_KerberosKeyTypes: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const KerberosKeyTypes: {
+    readonly None: KerberosKeyTypes;
+    readonly DecCbcCrc: KerberosKeyTypes;
+    readonly DesCbcMd5: KerberosKeyTypes;
+    readonly Aes128CtsHmacSha196: KerberosKeyTypes;
+    readonly Aes256CtsHmacSha196: KerberosKeyTypes;
+};
 
 
-export enum KerberosTicketContainer {
-    IdToken = 0,
-    AccessToken = 1
-}
+export type KerberosTicketContainer = number & { readonly __tsonic_type_Microsoft_Identity_Client_Kerberos_KerberosTicketContainer: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const KerberosTicketContainer: {
+    readonly IdToken: KerberosTicketContainer;
+    readonly AccessToken: KerberosTicketContainer;
+};
 
 
 export interface KerberosSupplementalTicket$instance {

@@ -10,7 +10,7 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 
 
 // Cross-namespace type imports for constraints
-import type { Configuration, ConfigurationElement, ConfigurationElementProperty, ConfigurationLockCollection, ConfigurationProperty, ConfigurationPropertyCollection, ConfigurationSaveMode, ConfigurationSection, ContextInformation, ElementInformation, SectionInformation } from './System.Configuration/internal/index.js';
+import type { Configuration, ConfigurationElement, ConfigurationElementProperty, ConfigurationLockCollection, ConfigurationProperty, ConfigurationPropertyCollection, ConfigurationSaveMode, ConfigurationSection, ElementInformation, SectionInformation } from './System.Configuration/internal/index.js';
 import type { IList } from '@tsonic/dotnet/System.Collections.js';
 import type { Boolean as ClrBoolean, Int32, Object as ClrObject, String as ClrString, Void } from '@tsonic/dotnet/System.js';
 import type { FrameworkName } from '@tsonic/dotnet/System.Runtime.Versioning.js';

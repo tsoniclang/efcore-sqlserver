@@ -12,13 +12,14 @@ import type { EventLevel, EventListener, EventSource, EventWrittenEventArgs } fr
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Action_1, Action_2, IDisposable, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface AzureEventSourceListener$instance extends EventListener {
+export interface AzureEventSourceListener$instance extends System_Diagnostics_Tracing_Internal.EventListener {
     readonly __tsonic_type_Azure_Core_Diagnostics_AzureEventSourceListener: never;
+    readonly __tsonic_type_System_Diagnostics_Tracing_EventListener: never;
 
     readonly __tsonic_iface_System_IDisposable: never;
 
-    OnEventSourceCreated(eventSource: EventSource): void;
-    OnEventWritten(eventData: EventWrittenEventArgs): void;
+    OnEventSourceCreated: System_Diagnostics_Tracing_Internal.EventListener["OnEventSourceCreated"] & ((eventSource: EventSource) => void);
+    OnEventWritten: System_Diagnostics_Tracing_Internal.EventListener["OnEventWritten"] & ((eventData: EventWrittenEventArgs) => void);
 }
 
 

@@ -15,8 +15,9 @@ import type { JsonDocument } from "@tsonic/dotnet/System.Text.Json/internal/inde
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { AsyncCallback, Boolean as ClrBoolean, Byte, IAsyncDisposable, IAsyncResult, IDisposable, Int32, Int64, Nullable_1, Object as ClrObject, ReadOnlyMemory_1, String as ClrString, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface SqlVector_1$instance<T extends NonNullable<unknown>> {
+export interface SqlVector_1$instance<T extends { readonly __tsonic_type_System_ValueType: never }> {
     readonly __tsonic_type_Microsoft_Data_SqlTypes_SqlVector_1: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_Data_SqlTypes_INullable: never;
 
@@ -27,41 +28,35 @@ export interface SqlVector_1$instance<T extends NonNullable<unknown>> {
 
 
 export const SqlVector_1: {
-    new<T extends NonNullable<unknown>>(memory: ReadOnlyMemory_1<T>): SqlVector_1<T>;
-    readonly Null: <T extends NonNullable<unknown>>() => Nullable_1<SqlVector_1<T>>;
-    CreateNull<T extends NonNullable<unknown>>(length: int): SqlVector_1<T>;
+    new<T extends { readonly __tsonic_type_System_ValueType: never }>(memory: ReadOnlyMemory_1<T>): SqlVector_1<T>;
+    readonly Null: <T extends { readonly __tsonic_type_System_ValueType: never }>() => Nullable_1<SqlVector_1<T>>;
+    CreateNull<T extends { readonly __tsonic_type_System_ValueType: never }>(length: int): SqlVector_1<T>;
 };
 
 
-export type SqlVector_1<T extends NonNullable<unknown>> = SqlVector_1$instance<T>;
+export type SqlVector_1<T extends { readonly __tsonic_type_System_ValueType: never }> = SqlVector_1$instance<T>;
 
-export interface SqlFileStream$instance extends Stream {
+export interface SqlFileStream$instance extends System_IO_Internal.Stream {
     readonly __tsonic_type_Microsoft_Data_SqlTypes_SqlFileStream: never;
+    readonly __tsonic_type_System_IO_Stream: never;
+    readonly __tsonic_type_System_MarshalByRefObject: never;
 
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    readonly CanRead: boolean;
-    readonly CanSeek: boolean;
-    readonly CanTimeout: boolean;
-    readonly CanWrite: boolean;
-    readonly Length: long;
     readonly Name: string;
-    Position: long;
-    readonly ReadTimeout: int;
     readonly TransactionContext: byte[];
-    readonly WriteTimeout: int;
-    BeginRead(buffer: byte[], offset: int, count: int, callback: AsyncCallback, state: unknown): IAsyncResult;
-    BeginWrite(buffer: byte[], offset: int, count: int, callback: AsyncCallback, state: unknown): IAsyncResult;
-    EndRead(asyncResult: IAsyncResult): int;
-    EndWrite(asyncResult: IAsyncResult): void;
-    Flush(): void;
-    Read(buffer: byte[], offset: int, count: int): int;
-    ReadByte(): int;
-    Seek(offset: long, origin: SeekOrigin): long;
-    SetLength(value: long): void;
-    Write(buffer: byte[], offset: int, count: int): void;
-    WriteByte(value: byte): void;
+    BeginRead: System_IO_Internal.Stream["BeginRead"] & ((buffer: byte[], offset: int, count: int, callback: AsyncCallback, state: unknown) => IAsyncResult);
+    BeginWrite: System_IO_Internal.Stream["BeginWrite"] & ((buffer: byte[], offset: int, count: int, callback: AsyncCallback, state: unknown) => IAsyncResult);
+    EndRead: System_IO_Internal.Stream["EndRead"] & ((asyncResult: IAsyncResult) => int);
+    EndWrite: System_IO_Internal.Stream["EndWrite"] & ((asyncResult: IAsyncResult) => void);
+    Flush: System_IO_Internal.Stream["Flush"] & (() => void);
+    Read: System_IO_Internal.Stream["Read"] & ((buffer: byte[], offset: int, count: int) => int);
+    ReadByte: System_IO_Internal.Stream["ReadByte"] & (() => int);
+    Seek: System_IO_Internal.Stream["Seek"] & ((offset: long, origin: SeekOrigin) => long);
+    SetLength: System_IO_Internal.Stream["SetLength"] & ((value: long) => void);
+    Write: System_IO_Internal.Stream["Write"] & ((buffer: byte[], offset: int, count: int) => void);
+    WriteByte: System_IO_Internal.Stream["WriteByte"] & ((value: byte) => void);
 }
 
 

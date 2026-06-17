@@ -7,12 +7,12 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 
 
 // Import types from other namespaces
-import type { SettingsProvider } from "../../System.Configuration/internal/index.js";
+import type { ProtectedConfigurationProvider } from "../../System.Configuration/internal/index.js";
 import type { NameValueCollection } from "@tsonic/dotnet/System.Collections.Specialized/internal/index.js";
 import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections/internal/index.js";
 import type { ICollection, IEnumerable, IEnumerator } from "@tsonic/dotnet/System.Collections/internal/index.js";
 import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
-import type { ISerializable, SerializationInfo, StreamingContext } from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Exception, Int32, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
@@ -25,7 +25,7 @@ export interface ProviderBase$instance {
 }
 
 
-export const ProviderBase: (abstract new() => ProviderBase) & {
+export const ProviderBase: {
 };
 
 
@@ -56,8 +56,9 @@ export const ProviderCollection: {
 
 export type ProviderCollection = ProviderCollection$instance & { readonly [name: string]: ProviderBase; };
 
-export interface ProviderException$instance extends Exception {
+export interface ProviderException$instance extends System_Internal.Exception {
     readonly __tsonic_type_System_Configuration_Provider_ProviderException: never;
+    readonly __tsonic_type_System_Exception: never;
 
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 

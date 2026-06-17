@@ -14,7 +14,7 @@ import type { LKGConfigurationCacheOptions } from './Microsoft.IdentityModel.Tok
 import type { BaseConfiguration } from './Microsoft.IdentityModel.Tokens/internal/index.js';
 import type { IEqualityComparer } from '@tsonic/dotnet/System.Collections.Generic.js';
 import type { Boolean as ClrBoolean, Exception, Int32, String as ClrString } from '@tsonic/dotnet/System.js';
-import type { ISerializable, SerializationInfo, StreamingContext } from '@tsonic/dotnet/System.Runtime.Serialization.js';
+import type { ISerializable } from '@tsonic/dotnet/System.Runtime.Serialization.js';
 import type { TaskCreationOptions } from '@tsonic/dotnet/System.Threading.Tasks.js';
 
 // Public API exports (curated - no internal $instance/$views leakage)

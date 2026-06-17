@@ -9,17 +9,18 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 // Import types from other namespaces
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import * as System_Configuration_Internal from "../../System.Configuration/internal/index.js";
-import type { Configuration, ConfigurationElement, ConfigurationElementProperty, ConfigurationLockCollection, ConfigurationProperty, ConfigurationPropertyCollection, ConfigurationSaveMode, ConfigurationSection, ContextInformation, ElementInformation, SectionInformation } from "../../System.Configuration/internal/index.js";
+import type { Configuration, ConfigurationElement, ConfigurationElementProperty, ConfigurationLockCollection, ConfigurationProperty, ConfigurationPropertyCollection, ConfigurationSaveMode, ConfigurationSection, ElementInformation, SectionInformation } from "../../System.Configuration/internal/index.js";
 import type { IList } from "@tsonic/dotnet/System.Collections/internal/index.js";
 import type { FrameworkName } from "@tsonic/dotnet/System.Runtime.Versioning/internal/index.js";
 import type { XmlReader, XmlWriter } from "@tsonic/dotnet/System.Xml/internal/index.js";
 import type { Boolean as ClrBoolean, Int32, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface SystemDrawingSection$instance extends ConfigurationSection {
+export interface SystemDrawingSection$instance extends System_Configuration_Internal.ConfigurationSection$instance {
+    readonly __tsonic_type_System_Configuration_ConfigurationElement: never;
+    readonly __tsonic_type_System_Configuration_ConfigurationSection: never;
     readonly __tsonic_type_System_Drawing_Configuration_SystemDrawingSection: never;
 
     BitmapSuffix: string;
-    readonly Properties: ConfigurationPropertyCollection;
 }
 
 

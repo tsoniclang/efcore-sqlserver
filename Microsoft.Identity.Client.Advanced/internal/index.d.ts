@@ -13,7 +13,7 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
 export abstract class AcquireTokenParameterBuilderExtensions$instance {
-    static WithExtraHttpHeaders<T extends unknown & AbstractAcquireTokenParameterBuilder_1<T>>(builder: AbstractAcquireTokenParameterBuilder_1<T>, extraHttpHeaders: IDictionary_2<System_Internal.String, System_Internal.String>): T;
+    static WithExtraHttpHeaders<T extends unknown & { readonly __tsonic_type_Microsoft_Identity_Client_AbstractAcquireTokenParameterBuilder_1: never } & { readonly __tsonic_type_Microsoft_Identity_Client_BaseAbstractAcquireTokenParameterBuilder_1: never }>(builder: AbstractAcquireTokenParameterBuilder_1<T>, extraHttpHeaders: IDictionary_2<System_Internal.String, System_Internal.String>): T;
 }
 
 

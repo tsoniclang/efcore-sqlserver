@@ -27,11 +27,11 @@ export type ICustomWebUi = ICustomWebUi$instance;
 export interface AppTokenProviderParameters$instance {
     readonly __tsonic_type_Microsoft_Identity_Client_Extensibility_AppTokenProviderParameters: never;
 
-    CancellationToken: CancellationToken;
-    Claims: string;
-    CorrelationId: string;
-    Scopes: IEnumerable_1<System_Internal.String>;
-    TenantId: string;
+    readonly CancellationToken: CancellationToken;
+    readonly Claims: string;
+    readonly CorrelationId: string;
+    readonly Scopes: IEnumerable_1<System_Internal.String>;
+    readonly TenantId: string;
 }
 
 
@@ -93,11 +93,11 @@ export const OnBeforeTokenRequestData: {
 export type OnBeforeTokenRequestData = OnBeforeTokenRequestData$instance;
 
 export abstract class AbstractConfidentialClientAcquireTokenParameterBuilderExtension$instance {
-    static OnBeforeTokenRequest<T extends unknown & AbstractAcquireTokenParameterBuilder_1<T>>(builder: AbstractAcquireTokenParameterBuilder_1<T>, onBeforeTokenRequestHandler: Func_2<OnBeforeTokenRequestData, Task>): AbstractAcquireTokenParameterBuilder_1<T>;
-    static WithAdditionalCacheParameters<T extends unknown & AbstractAcquireTokenParameterBuilder_1<T>>(builder: AbstractAcquireTokenParameterBuilder_1<T>, cacheParameters: IEnumerable_1<System_Internal.String>): AbstractAcquireTokenParameterBuilder_1<T>;
-    static WithAuthenticationExtension<T extends unknown & AbstractAcquireTokenParameterBuilder_1<T>>(builder: AbstractAcquireTokenParameterBuilder_1<T>, authenticationExtension: MsalAuthenticationExtension): AbstractAcquireTokenParameterBuilder_1<T>;
-    static WithFmiPathForClientAssertion<T extends unknown & AbstractAcquireTokenParameterBuilder_1<T>>(builder: AbstractAcquireTokenParameterBuilder_1<T>, fmiPath: string): AbstractAcquireTokenParameterBuilder_1<T>;
-    static WithProofOfPosessionKeyId<T extends unknown & AbstractAcquireTokenParameterBuilder_1<T>>(builder: AbstractAcquireTokenParameterBuilder_1<T>, keyId: string, expectedTokenTypeFromAad?: string): AbstractAcquireTokenParameterBuilder_1<T>;
+    static OnBeforeTokenRequest<T extends unknown & { readonly __tsonic_type_Microsoft_Identity_Client_AbstractAcquireTokenParameterBuilder_1: never } & { readonly __tsonic_type_Microsoft_Identity_Client_BaseAbstractAcquireTokenParameterBuilder_1: never }>(builder: AbstractAcquireTokenParameterBuilder_1<T>, onBeforeTokenRequestHandler: Func_2<OnBeforeTokenRequestData, Task>): AbstractAcquireTokenParameterBuilder_1<T>;
+    static WithAdditionalCacheParameters<T extends unknown & { readonly __tsonic_type_Microsoft_Identity_Client_AbstractAcquireTokenParameterBuilder_1: never } & { readonly __tsonic_type_Microsoft_Identity_Client_BaseAbstractAcquireTokenParameterBuilder_1: never }>(builder: AbstractAcquireTokenParameterBuilder_1<T>, cacheParameters: IEnumerable_1<System_Internal.String>): AbstractAcquireTokenParameterBuilder_1<T>;
+    static WithAuthenticationExtension<T extends unknown & { readonly __tsonic_type_Microsoft_Identity_Client_AbstractAcquireTokenParameterBuilder_1: never } & { readonly __tsonic_type_Microsoft_Identity_Client_BaseAbstractAcquireTokenParameterBuilder_1: never }>(builder: AbstractAcquireTokenParameterBuilder_1<T>, authenticationExtension: MsalAuthenticationExtension): AbstractAcquireTokenParameterBuilder_1<T>;
+    static WithFmiPathForClientAssertion<T extends unknown & { readonly __tsonic_type_Microsoft_Identity_Client_AbstractAcquireTokenParameterBuilder_1: never } & { readonly __tsonic_type_Microsoft_Identity_Client_BaseAbstractAcquireTokenParameterBuilder_1: never }>(builder: AbstractAcquireTokenParameterBuilder_1<T>, fmiPath: string): AbstractAcquireTokenParameterBuilder_1<T>;
+    static WithProofOfPosessionKeyId<T extends unknown & { readonly __tsonic_type_Microsoft_Identity_Client_AbstractAcquireTokenParameterBuilder_1: never } & { readonly __tsonic_type_Microsoft_Identity_Client_BaseAbstractAcquireTokenParameterBuilder_1: never }>(builder: AbstractAcquireTokenParameterBuilder_1<T>, keyId: string, expectedTokenTypeFromAad?: string): AbstractAcquireTokenParameterBuilder_1<T>;
 }
 
 

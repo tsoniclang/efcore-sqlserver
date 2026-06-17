@@ -66,17 +66,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException",
             "ownerIdentity": "Microsoft.IdentityModel.Protocols"
-          },
-          {
-            "stableId": "Microsoft.IdentityModel.Protocols:Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "metadataToken": 100663372,
-            "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.IdentityModel.Protocols.Configuration.InvalidConfigurationException",
-            "ownerIdentity": "Microsoft.IdentityModel.Protocols"
           }
         ]
       },

@@ -2818,12 +2818,12 @@
             "targetName": "Key",
             "metadataToken": 385876024,
             "canonicalSignature": ":Microsoft.IdentityModel.Tokens.SecurityKey",
-            "normalizedSignature": "Key|:Microsoft.IdentityModel.Tokens.SecurityKey|static=false|accessor=getset",
+            "normalizedSignature": "Key|:Microsoft.IdentityModel.Tokens.SecurityKey|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -2837,12 +2837,12 @@
             "targetName": "Ciphertext",
             "metadataToken": 385876025,
             "canonicalSignature": ":System.Byte[]",
-            "normalizedSignature": "Ciphertext|:System.Byte[]|static=false|accessor=getset",
+            "normalizedSignature": "Ciphertext|:System.Byte[]|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -2856,12 +2856,12 @@
             "targetName": "IV",
             "metadataToken": 385876026,
             "canonicalSignature": ":System.Byte[]",
-            "normalizedSignature": "IV|:System.Byte[]|static=false|accessor=getset",
+            "normalizedSignature": "IV|:System.Byte[]|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -2875,12 +2875,12 @@
             "targetName": "AuthenticationTag",
             "metadataToken": 385876027,
             "canonicalSignature": ":System.Byte[]",
-            "normalizedSignature": "AuthenticationTag|:System.Byte[]|static=false|accessor=getset",
+            "normalizedSignature": "AuthenticationTag|:System.Byte[]|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -3021,19 +3021,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.BaseConfiguration::.ctor():void",
-            "metadataToken": 100663431,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.BaseConfiguration",
-            "ownerIdentity": "Microsoft.IdentityModel.Tokens"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.BaseConfigurationManager",
@@ -3448,12 +3436,12 @@
             "targetName": "SecurityToken",
             "metadataToken": 385875997,
             "canonicalSignature": ":Microsoft.IdentityModel.Tokens.SecurityToken",
-            "normalizedSignature": "SecurityToken|:Microsoft.IdentityModel.Tokens.SecurityToken|static=false|accessor=getset",
+            "normalizedSignature": "SecurityToken|:Microsoft.IdentityModel.Tokens.SecurityToken|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -3861,19 +3849,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.CryptoProviderCache::.ctor():void",
-            "metadataToken": 100663490,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.CryptoProviderCache",
-            "ownerIdentity": "Microsoft.IdentityModel.Tokens"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.CryptoProviderCacheOptions",
@@ -4341,12 +4317,12 @@
             "targetName": "CryptoProviderCache",
             "metadataToken": 385876004,
             "canonicalSignature": ":Microsoft.IdentityModel.Tokens.CryptoProviderCache",
-            "normalizedSignature": "CryptoProviderCache|:Microsoft.IdentityModel.Tokens.CryptoProviderCache|static=false|accessor=getset",
+            "normalizedSignature": "CryptoProviderCache|:Microsoft.IdentityModel.Tokens.CryptoProviderCache|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -4601,12 +4577,12 @@
             "targetName": "CompressionLevel",
             "metadataToken": 385876009,
             "canonicalSignature": ":System.IO.Compression.CompressionLevel",
-            "normalizedSignature": "CompressionLevel|:System.IO.Compression.CompressionLevel|static=false|accessor=getset",
+            "normalizedSignature": "CompressionLevel|:System.IO.Compression.CompressionLevel|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -4819,12 +4795,12 @@
             "targetName": "ECDsa",
             "metadataToken": 385876011,
             "canonicalSignature": ":System.Security.Cryptography.ECDsa",
-            "normalizedSignature": "ECDsa|:System.Security.Cryptography.ECDsa|static=false|accessor=getset",
+            "normalizedSignature": "ECDsa|:System.Security.Cryptography.ECDsa|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -4929,12 +4905,12 @@
             "targetName": "Alg",
             "metadataToken": 385876015,
             "canonicalSignature": ":System.String",
-            "normalizedSignature": "Alg|:System.String|static=false|accessor=getset",
+            "normalizedSignature": "Alg|:System.String|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -4948,12 +4924,12 @@
             "targetName": "Enc",
             "metadataToken": 385876016,
             "canonicalSignature": ":System.String",
-            "normalizedSignature": "Enc|:System.String|static=false|accessor=getset",
+            "normalizedSignature": "Enc|:System.String|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -5024,12 +5000,12 @@
             "targetName": "Key",
             "metadataToken": 385876020,
             "canonicalSignature": ":Microsoft.IdentityModel.Tokens.SecurityKey",
-            "normalizedSignature": "Key|:Microsoft.IdentityModel.Tokens.SecurityKey|static=false|accessor=getset",
+            "normalizedSignature": "Key|:Microsoft.IdentityModel.Tokens.SecurityKey|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -5042,17 +5018,6 @@
         "fields": [],
         "events": [],
         "constructors": [
-          {
-            "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.EncryptingCredentials::.ctor(System.Security.Cryptography.X509Certificates.X509Certificate2,System.String,System.String):void",
-            "metadataToken": 100663646,
-            "canonicalSignature": "(System.Security.Cryptography.X509Certificates.X509Certificate2,System.String,System.String):void",
-            "normalizedSignature": "constructor|(System.Security.Cryptography.X509Certificates.X509Certificate2,System.String,System.String):void|static=false",
-            "isStatic": false,
-            "parameterCount": 3,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.EncryptingCredentials",
-            "ownerIdentity": "Microsoft.IdentityModel.Tokens"
-          },
           {
             "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.EncryptingCredentials::.ctor(Microsoft.IdentityModel.Tokens.SecurityKey,System.String,System.String):void",
             "metadataToken": 100663647,
@@ -6130,12 +6095,12 @@
             "targetName": "Keys",
             "metadataToken": 385876117,
             "canonicalSignature": ":System.Collections.Generic.IList_1[[Microsoft.IdentityModel.Tokens.JsonWebKey,Microsoft.IdentityModel.Tokens,Version=7.7.1.0,Culture=neutral,PublicKeyToken=31bf3856ad364e35]]",
-            "normalizedSignature": "Keys|:System.Collections.Generic.IList_1[[Microsoft.IdentityModel.Tokens.JsonWebKey,Microsoft.IdentityModel.Tokens,Version=7.7.1.0,Culture=neutral,PublicKeyToken=31bf3856ad364e35]]|static=false|accessor=getset",
+            "normalizedSignature": "Keys|:System.Collections.Generic.IList_1[[Microsoft.IdentityModel.Tokens.JsonWebKey,Microsoft.IdentityModel.Tokens,Version=7.7.1.0,Culture=neutral,PublicKeyToken=31bf3856ad364e35]]|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -6368,19 +6333,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.KeyWrapProvider::.ctor():void",
-            "metadataToken": 100663723,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.KeyWrapProvider",
-            "ownerIdentity": "Microsoft.IdentityModel.Tokens"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.RsaKeyWrapProvider",
@@ -6700,12 +6653,12 @@
             "targetName": "Parameters",
             "metadataToken": 385876125,
             "canonicalSignature": ":System.Security.Cryptography.RSAParameters",
-            "normalizedSignature": "Parameters|:System.Security.Cryptography.RSAParameters|static=false|accessor=getset",
+            "normalizedSignature": "Parameters|:System.Security.Cryptography.RSAParameters|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -6719,12 +6672,12 @@
             "targetName": "Rsa",
             "metadataToken": 385876126,
             "canonicalSignature": ":System.Security.Cryptography.RSA",
-            "normalizedSignature": "Rsa|:System.Security.Cryptography.RSA|static=false|accessor=getset",
+            "normalizedSignature": "Rsa|:System.Security.Cryptography.RSA|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -7148,19 +7101,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.SecurityToken::.ctor():void",
-            "metadataToken": 100664136,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SecurityToken",
-            "ownerIdentity": "Microsoft.IdentityModel.Tokens"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.SecurityTokenArgumentException",
@@ -7218,17 +7159,6 @@
             "isStatic": false,
             "parameterCount": 2,
             "visibility": "Public",
-            "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SecurityTokenArgumentException",
-            "ownerIdentity": "Microsoft.IdentityModel.Tokens"
-          },
-          {
-            "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.SecurityTokenArgumentException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "metadataToken": 100663798,
-            "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
             "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SecurityTokenArgumentException",
             "ownerIdentity": "Microsoft.IdentityModel.Tokens"
           }
@@ -7292,17 +7222,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SecurityTokenCompressionFailedException",
             "ownerIdentity": "Microsoft.IdentityModel.Tokens"
-          },
-          {
-            "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.SecurityTokenCompressionFailedException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "metadataToken": 100663802,
-            "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SecurityTokenCompressionFailedException",
-            "ownerIdentity": "Microsoft.IdentityModel.Tokens"
           }
         ]
       },
@@ -7364,17 +7283,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SecurityTokenDecompressionFailedException",
             "ownerIdentity": "Microsoft.IdentityModel.Tokens"
-          },
-          {
-            "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.SecurityTokenDecompressionFailedException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "metadataToken": 100663806,
-            "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SecurityTokenDecompressionFailedException",
-            "ownerIdentity": "Microsoft.IdentityModel.Tokens"
           }
         ]
       },
@@ -7434,17 +7342,6 @@
             "isStatic": false,
             "parameterCount": 2,
             "visibility": "Public",
-            "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SecurityTokenDecryptionFailedException",
-            "ownerIdentity": "Microsoft.IdentityModel.Tokens"
-          },
-          {
-            "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.SecurityTokenDecryptionFailedException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "metadataToken": 100663810,
-            "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
             "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SecurityTokenDecryptionFailedException",
             "ownerIdentity": "Microsoft.IdentityModel.Tokens"
           }
@@ -7789,17 +7686,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SecurityTokenEncryptionFailedException",
             "ownerIdentity": "Microsoft.IdentityModel.Tokens"
-          },
-          {
-            "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.SecurityTokenEncryptionFailedException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "metadataToken": 100663814,
-            "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SecurityTokenEncryptionFailedException",
-            "ownerIdentity": "Microsoft.IdentityModel.Tokens"
           }
         ]
       },
@@ -7859,17 +7745,6 @@
             "isStatic": false,
             "parameterCount": 2,
             "visibility": "Public",
-            "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SecurityTokenEncryptionKeyNotFoundException",
-            "ownerIdentity": "Microsoft.IdentityModel.Tokens"
-          },
-          {
-            "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.SecurityTokenEncryptionKeyNotFoundException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "metadataToken": 100663818,
-            "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
             "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SecurityTokenEncryptionKeyNotFoundException",
             "ownerIdentity": "Microsoft.IdentityModel.Tokens"
           }
@@ -7952,17 +7827,6 @@
             "isStatic": false,
             "parameterCount": 2,
             "visibility": "Public",
-            "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SecurityTokenException",
-            "ownerIdentity": "Microsoft.IdentityModel.Tokens"
-          },
-          {
-            "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.SecurityTokenException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "metadataToken": 100663822,
-            "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
             "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SecurityTokenException",
             "ownerIdentity": "Microsoft.IdentityModel.Tokens"
           }
@@ -8065,17 +7929,6 @@
             "isStatic": false,
             "parameterCount": 2,
             "visibility": "Public",
-            "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException",
-            "ownerIdentity": "Microsoft.IdentityModel.Tokens"
-          },
-          {
-            "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "metadataToken": 100663829,
-            "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
             "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException",
             "ownerIdentity": "Microsoft.IdentityModel.Tokens"
           }
@@ -8485,19 +8338,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.SecurityTokenHandler::.ctor():void",
-            "metadataToken": 100664164,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SecurityTokenHandler",
-            "ownerIdentity": "Microsoft.IdentityModel.Tokens"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.SecurityTokenInvalidAlgorithmException",
@@ -8596,17 +8437,6 @@
             "isStatic": false,
             "parameterCount": 2,
             "visibility": "Public",
-            "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SecurityTokenInvalidAlgorithmException",
-            "ownerIdentity": "Microsoft.IdentityModel.Tokens"
-          },
-          {
-            "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.SecurityTokenInvalidAlgorithmException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "metadataToken": 100663836,
-            "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
             "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SecurityTokenInvalidAlgorithmException",
             "ownerIdentity": "Microsoft.IdentityModel.Tokens"
           }
@@ -8711,17 +8541,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SecurityTokenInvalidAudienceException",
             "ownerIdentity": "Microsoft.IdentityModel.Tokens"
-          },
-          {
-            "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.SecurityTokenInvalidAudienceException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "metadataToken": 100663843,
-            "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SecurityTokenInvalidAudienceException",
-            "ownerIdentity": "Microsoft.IdentityModel.Tokens"
           }
         ]
       },
@@ -8822,17 +8641,6 @@
             "isStatic": false,
             "parameterCount": 2,
             "visibility": "Public",
-            "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SecurityTokenInvalidIssuerException",
-            "ownerIdentity": "Microsoft.IdentityModel.Tokens"
-          },
-          {
-            "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.SecurityTokenInvalidIssuerException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "metadataToken": 100663850,
-            "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
             "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SecurityTokenInvalidIssuerException",
             "ownerIdentity": "Microsoft.IdentityModel.Tokens"
           }
@@ -8956,17 +8764,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SecurityTokenInvalidLifetimeException",
             "ownerIdentity": "Microsoft.IdentityModel.Tokens"
-          },
-          {
-            "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.SecurityTokenInvalidLifetimeException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "metadataToken": 100663859,
-            "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SecurityTokenInvalidLifetimeException",
-            "ownerIdentity": "Microsoft.IdentityModel.Tokens"
           }
         ]
       },
@@ -9026,17 +8823,6 @@
             "isStatic": false,
             "parameterCount": 2,
             "visibility": "Public",
-            "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SecurityTokenInvalidSignatureException",
-            "ownerIdentity": "Microsoft.IdentityModel.Tokens"
-          },
-          {
-            "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.SecurityTokenInvalidSignatureException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "metadataToken": 100663864,
-            "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
             "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SecurityTokenInvalidSignatureException",
             "ownerIdentity": "Microsoft.IdentityModel.Tokens"
           }
@@ -9118,17 +8904,6 @@
             "isStatic": false,
             "parameterCount": 2,
             "visibility": "Public",
-            "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SecurityTokenInvalidSigningKeyException",
-            "ownerIdentity": "Microsoft.IdentityModel.Tokens"
-          },
-          {
-            "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.SecurityTokenInvalidSigningKeyException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "metadataToken": 100663870,
-            "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
             "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SecurityTokenInvalidSigningKeyException",
             "ownerIdentity": "Microsoft.IdentityModel.Tokens"
           }
@@ -9233,17 +9008,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SecurityTokenInvalidTypeException",
             "ownerIdentity": "Microsoft.IdentityModel.Tokens"
-          },
-          {
-            "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.SecurityTokenInvalidTypeException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "metadataToken": 100663876,
-            "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SecurityTokenInvalidTypeException",
-            "ownerIdentity": "Microsoft.IdentityModel.Tokens"
           }
         ]
       },
@@ -9303,17 +9067,6 @@
             "isStatic": false,
             "parameterCount": 2,
             "visibility": "Public",
-            "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SecurityTokenKeyWrapException",
-            "ownerIdentity": "Microsoft.IdentityModel.Tokens"
-          },
-          {
-            "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.SecurityTokenKeyWrapException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "metadataToken": 100663881,
-            "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
             "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SecurityTokenKeyWrapException",
             "ownerIdentity": "Microsoft.IdentityModel.Tokens"
           }
@@ -9377,17 +9130,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException",
             "ownerIdentity": "Microsoft.IdentityModel.Tokens"
-          },
-          {
-            "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "metadataToken": 100663885,
-            "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException",
-            "ownerIdentity": "Microsoft.IdentityModel.Tokens"
           }
         ]
       },
@@ -9447,17 +9189,6 @@
             "isStatic": false,
             "parameterCount": 2,
             "visibility": "Public",
-            "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SecurityTokenNoExpirationException",
-            "ownerIdentity": "Microsoft.IdentityModel.Tokens"
-          },
-          {
-            "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.SecurityTokenNoExpirationException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "metadataToken": 100663889,
-            "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
             "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SecurityTokenNoExpirationException",
             "ownerIdentity": "Microsoft.IdentityModel.Tokens"
           }
@@ -9562,17 +9293,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SecurityTokenNotYetValidException",
             "ownerIdentity": "Microsoft.IdentityModel.Tokens"
-          },
-          {
-            "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.SecurityTokenNotYetValidException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "metadataToken": 100663895,
-            "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SecurityTokenNotYetValidException",
-            "ownerIdentity": "Microsoft.IdentityModel.Tokens"
           }
         ]
       },
@@ -9632,17 +9352,6 @@
             "isStatic": false,
             "parameterCount": 2,
             "visibility": "Public",
-            "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SecurityTokenReplayAddFailedException",
-            "ownerIdentity": "Microsoft.IdentityModel.Tokens"
-          },
-          {
-            "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.SecurityTokenReplayAddFailedException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "metadataToken": 100663900,
-            "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
             "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SecurityTokenReplayAddFailedException",
             "ownerIdentity": "Microsoft.IdentityModel.Tokens"
           }
@@ -9706,17 +9415,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SecurityTokenReplayDetectedException",
             "ownerIdentity": "Microsoft.IdentityModel.Tokens"
-          },
-          {
-            "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.SecurityTokenReplayDetectedException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "metadataToken": 100663904,
-            "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SecurityTokenReplayDetectedException",
-            "ownerIdentity": "Microsoft.IdentityModel.Tokens"
           }
         ]
       },
@@ -9776,17 +9474,6 @@
             "isStatic": false,
             "parameterCount": 2,
             "visibility": "Public",
-            "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SecurityTokenSignatureKeyNotFoundException",
-            "ownerIdentity": "Microsoft.IdentityModel.Tokens"
-          },
-          {
-            "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.SecurityTokenSignatureKeyNotFoundException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "metadataToken": 100663908,
-            "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
             "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SecurityTokenSignatureKeyNotFoundException",
             "ownerIdentity": "Microsoft.IdentityModel.Tokens"
           }
@@ -9902,17 +9589,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SecurityTokenUnableToValidateException",
             "ownerIdentity": "Microsoft.IdentityModel.Tokens"
-          },
-          {
-            "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.SecurityTokenUnableToValidateException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "metadataToken": 100663915,
-            "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SecurityTokenUnableToValidateException",
-            "ownerIdentity": "Microsoft.IdentityModel.Tokens"
           }
         ]
       },
@@ -9972,17 +9648,6 @@
             "isStatic": false,
             "parameterCount": 2,
             "visibility": "Public",
-            "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SecurityTokenValidationException",
-            "ownerIdentity": "Microsoft.IdentityModel.Tokens"
-          },
-          {
-            "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.SecurityTokenValidationException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "metadataToken": 100663920,
-            "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
             "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SecurityTokenValidationException",
             "ownerIdentity": "Microsoft.IdentityModel.Tokens"
           }
@@ -10163,12 +9828,12 @@
             "targetName": "Algorithm",
             "metadataToken": 385876153,
             "canonicalSignature": ":System.String",
-            "normalizedSignature": "Algorithm|:System.String|static=false|accessor=getset",
+            "normalizedSignature": "Algorithm|:System.String|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -10220,12 +9885,12 @@
             "targetName": "Key",
             "metadataToken": 385876156,
             "canonicalSignature": ":Microsoft.IdentityModel.Tokens.SecurityKey",
-            "normalizedSignature": "Key|:Microsoft.IdentityModel.Tokens.SecurityKey|static=false|accessor=getset",
+            "normalizedSignature": "Key|:Microsoft.IdentityModel.Tokens.SecurityKey|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -10239,12 +9904,12 @@
             "targetName": "WillCreateSignatures",
             "metadataToken": 385876159,
             "canonicalSignature": ":System.Boolean",
-            "normalizedSignature": "WillCreateSignatures|:System.Boolean|static=false|accessor=getset",
+            "normalizedSignature": "WillCreateSignatures|:System.Boolean|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -10256,19 +9921,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.SignatureProvider::.ctor(Microsoft.IdentityModel.Tokens.SecurityKey,System.String):void",
-            "metadataToken": 100664178,
-            "canonicalSignature": "(Microsoft.IdentityModel.Tokens.SecurityKey,System.String):void",
-            "normalizedSignature": "constructor|(Microsoft.IdentityModel.Tokens.SecurityKey,System.String):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SignatureProvider",
-            "ownerIdentity": "Microsoft.IdentityModel.Tokens"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.SigningCredentials",
@@ -10292,12 +9945,12 @@
             "targetName": "Algorithm",
             "metadataToken": 385876160,
             "canonicalSignature": ":System.String",
-            "normalizedSignature": "Algorithm|:System.String|static=false|accessor=getset",
+            "normalizedSignature": "Algorithm|:System.String|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -10311,12 +9964,12 @@
             "targetName": "Digest",
             "metadataToken": 385876161,
             "canonicalSignature": ":System.String",
-            "normalizedSignature": "Digest|:System.String|static=false|accessor=getset",
+            "normalizedSignature": "Digest|:System.String|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -10349,12 +10002,12 @@
             "targetName": "Key",
             "metadataToken": 385876163,
             "canonicalSignature": ":Microsoft.IdentityModel.Tokens.SecurityKey",
-            "normalizedSignature": "Key|:Microsoft.IdentityModel.Tokens.SecurityKey|static=false|accessor=getset",
+            "normalizedSignature": "Key|:Microsoft.IdentityModel.Tokens.SecurityKey|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -10386,28 +10039,6 @@
         "fields": [],
         "events": [],
         "constructors": [
-          {
-            "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.SigningCredentials::.ctor(System.Security.Cryptography.X509Certificates.X509Certificate2):void",
-            "metadataToken": 100664200,
-            "canonicalSignature": "(System.Security.Cryptography.X509Certificates.X509Certificate2):void",
-            "normalizedSignature": "constructor|(System.Security.Cryptography.X509Certificates.X509Certificate2):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SigningCredentials",
-            "ownerIdentity": "Microsoft.IdentityModel.Tokens"
-          },
-          {
-            "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.SigningCredentials::.ctor(System.Security.Cryptography.X509Certificates.X509Certificate2,System.String):void",
-            "metadataToken": 100664201,
-            "canonicalSignature": "(System.Security.Cryptography.X509Certificates.X509Certificate2,System.String):void",
-            "normalizedSignature": "constructor|(System.Security.Cryptography.X509Certificates.X509Certificate2,System.String):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.SigningCredentials",
-            "ownerIdentity": "Microsoft.IdentityModel.Tokens"
-          },
           {
             "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.SigningCredentials::.ctor(Microsoft.IdentityModel.Tokens.SecurityKey,System.String):void",
             "metadataToken": 100664202,
@@ -11268,19 +10899,7 @@
           }
         ],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.TokenHandler::.ctor():void",
-            "metadataToken": 100664264,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.TokenHandler",
-            "ownerIdentity": "Microsoft.IdentityModel.Tokens"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.TokenValidationParameters",
@@ -11592,12 +11211,12 @@
             "targetName": "IsClone",
             "metadataToken": 385876185,
             "canonicalSignature": ":System.Boolean",
-            "normalizedSignature": "IsClone|:System.Boolean|static=false|accessor=getset",
+            "normalizedSignature": "IsClone|:System.Boolean|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -12484,17 +12103,6 @@
         "events": [],
         "constructors": [
           {
-            "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.TokenValidationParameters::.ctor(Microsoft.IdentityModel.Tokens.TokenValidationParameters):void",
-            "metadataToken": 100664274,
-            "canonicalSignature": "(Microsoft.IdentityModel.Tokens.TokenValidationParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.IdentityModel.Tokens.TokenValidationParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.IdentityModel.Tokens.TokenValidationParameters",
-            "ownerIdentity": "Microsoft.IdentityModel.Tokens"
-          },
-          {
             "stableId": "Microsoft.IdentityModel.Tokens:Microsoft.IdentityModel.Tokens.TokenValidationParameters::.ctor():void",
             "metadataToken": 100664275,
             "canonicalSignature": "():void",
@@ -12662,12 +12270,12 @@
             "targetName": "TokenOnFailedValidation",
             "metadataToken": 385876240,
             "canonicalSignature": ":Microsoft.IdentityModel.Tokens.SecurityToken",
-            "normalizedSignature": "TokenOnFailedValidation|:Microsoft.IdentityModel.Tokens.SecurityToken|static=false|accessor=getset",
+            "normalizedSignature": "TokenOnFailedValidation|:Microsoft.IdentityModel.Tokens.SecurityToken|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -12753,12 +12361,12 @@
             "targetName": "Certificate",
             "metadataToken": 385876243,
             "canonicalSignature": ":System.Security.Cryptography.X509Certificates.X509Certificate2",
-            "normalizedSignature": "Certificate|:System.Security.Cryptography.X509Certificates.X509Certificate2|static=false|accessor=getset",
+            "normalizedSignature": "Certificate|:System.Security.Cryptography.X509Certificates.X509Certificate2|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -13012,12 +12620,12 @@
             "targetName": "Certificate",
             "metadataToken": 385876251,
             "canonicalSignature": ":System.Security.Cryptography.X509Certificates.X509Certificate2",
-            "normalizedSignature": "Certificate|:System.Security.Cryptography.X509Certificates.X509Certificate2|static=false|accessor=getset",
+            "normalizedSignature": "Certificate|:System.Security.Cryptography.X509Certificates.X509Certificate2|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -13076,12 +12684,12 @@
             "targetName": "Certificate",
             "metadataToken": 385876253,
             "canonicalSignature": ":System.Security.Cryptography.X509Certificates.X509Certificate2",
-            "normalizedSignature": "Certificate|:System.Security.Cryptography.X509Certificates.X509Certificate2|static=false|accessor=getset",
+            "normalizedSignature": "Certificate|:System.Security.Cryptography.X509Certificates.X509Certificate2|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,

@@ -48,19 +48,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.Identity.Client:Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos.Credential::.ctor():void",
-            "metadataToken": 100664440,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.Identity.Client.Platforms.Features.DesktopOs.Kerberos.Credential",
-            "ownerIdentity": "Microsoft.Identity.Client"
-          }
-        ]
+        "constructors": []
       }
     ]
   }

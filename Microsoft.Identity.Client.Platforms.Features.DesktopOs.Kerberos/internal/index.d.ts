@@ -16,7 +16,7 @@ export interface Credential$instance {
 }
 
 
-export const Credential: (abstract new() => Credential) & {
+export const Credential: {
     Current(): Credential;
 };
 

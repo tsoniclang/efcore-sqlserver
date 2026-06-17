@@ -10,6 +10,7 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 
 
 // Cross-namespace type imports for constraints
+import type { ResponseError } from './Azure/internal/index.js';
 import type { IJsonModel_1, IPersistableModel_1, ModelReaderWriterOptions } from './System.ClientModel.Primitives/internal/index.js';
 import type { BinaryData } from './System/internal/index.js';
 import type { IEnumerable as IEnumerable__System_Collections_Generic, IEnumerator as IEnumerator__System_Collections_Generic, IReadOnlyCollection, IReadOnlyDictionary, IReadOnlyList } from '@tsonic/dotnet/System.Collections.Generic.js';
@@ -19,6 +20,7 @@ import type { Utf8JsonReader, Utf8JsonWriter } from '@tsonic/dotnet/System.Text.
 
 // Public API exports (curated - no internal $instance/$views leakage)
 export { GeoArray_1 as GeoArray } from './Azure.Core.GeoJson/internal/index.js';
+export { GeoArray_1_Enumerator as GeoArray_1_Enumerator } from './Azure.Core.GeoJson/internal/index.js';
 export { GeoBoundingBox as GeoBoundingBox } from './Azure.Core.GeoJson/internal/index.js';
 export { GeoCollection as GeoCollection } from './Azure.Core.GeoJson/internal/index.js';
 export { GeoLinearRing as GeoLinearRing } from './Azure.Core.GeoJson/internal/index.js';

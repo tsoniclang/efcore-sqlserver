@@ -7,6 +7,7 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 
 
 // Import types from other namespaces
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import * as System_Configuration_Internal_Internal from "../../System.Configuration.Internal/internal/index.js";
 import type { IConfigErrorInfo } from "../../System.Configuration.Internal/internal/index.js";
 import * as System_Configuration_Provider_Internal from "../../System.Configuration.Provider/internal/index.js";
@@ -15,9 +16,9 @@ import type { UriIdnScope } from "../../System/internal/index.js";
 import * as System_Collections_Specialized_Internal from "@tsonic/dotnet/System.Collections.Specialized/internal/index.js";
 import type { NameObjectCollectionBase, NameValueCollection, StringCollection } from "@tsonic/dotnet/System.Collections.Specialized/internal/index.js";
 import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections/internal/index.js";
-import type { Hashtable, ICollection, IComparer, IDictionary, IEnumerable, IEnumerator, IList, ReadOnlyCollectionBase } from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { Hashtable, ICollection, IDictionary, IEnumerable, IEnumerator, IList, ReadOnlyCollectionBase } from "@tsonic/dotnet/System.Collections/internal/index.js";
 import * as System_ComponentModel_Internal from "@tsonic/dotnet/System.ComponentModel/internal/index.js";
-import type { CancelEventArgs, IComponent, INotifyPropertyChanged, ITypeDescriptorContext, PropertyChangedEventArgs, PropertyChangedEventHandler, TypeConverter } from "@tsonic/dotnet/System.ComponentModel/internal/index.js";
+import type { CancelEventArgs, INotifyPropertyChanged, ITypeDescriptorContext, PropertyChangedEventArgs, PropertyChangedEventHandler, TypeConverter } from "@tsonic/dotnet/System.ComponentModel/internal/index.js";
 import type { CultureInfo } from "@tsonic/dotnet/System.Globalization/internal/index.js";
 import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
 import type { IDeserializationCallback, ISerializable, SerializationInfo, StreamingContext } from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
@@ -30,86 +31,108 @@ import type { XmlAttribute, XmlCDataSection, XmlComment, XmlDocument, XmlElement
 import * as System_Lib_tsonic_dotnet from "@tsonic/dotnet/System/internal/index.js";
 import type { Array as ClrArray, AsyncCallback, Attribute, Boolean as ClrBoolean, Enum, EventArgs, Exception, Func_2, GenericUriParserOptions, IAsyncResult, ICloneable, IComparable, IConvertible, IFormattable, Int32, Int64, IntPtr, ISpanFormattable, MulticastDelegate, Object as ClrObject, String as ClrString, SystemException, TimeSpan, Type, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export enum ConfigurationAllowDefinition {
-    MachineOnly = 0,
-    MachineToWebRoot = 100,
-    MachineToApplication = 200,
-    Everywhere = 300
-}
+export type ConfigurationAllowDefinition = number & { readonly __tsonic_type_System_Configuration_ConfigurationAllowDefinition: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const ConfigurationAllowDefinition: {
+    readonly MachineOnly: ConfigurationAllowDefinition;
+    readonly MachineToWebRoot: ConfigurationAllowDefinition;
+    readonly MachineToApplication: ConfigurationAllowDefinition;
+    readonly Everywhere: ConfigurationAllowDefinition;
+};
 
 
-export enum ConfigurationAllowExeDefinition {
-    MachineOnly = 0,
-    MachineToApplication = 100,
-    MachineToRoamingUser = 200,
-    MachineToLocalUser = 300
-}
+export type ConfigurationAllowExeDefinition = number & { readonly __tsonic_type_System_Configuration_ConfigurationAllowExeDefinition: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const ConfigurationAllowExeDefinition: {
+    readonly MachineOnly: ConfigurationAllowExeDefinition;
+    readonly MachineToApplication: ConfigurationAllowExeDefinition;
+    readonly MachineToRoamingUser: ConfigurationAllowExeDefinition;
+    readonly MachineToLocalUser: ConfigurationAllowExeDefinition;
+};
 
 
-export enum ConfigurationElementCollectionType {
-    BasicMap = 0,
-    AddRemoveClearMap = 1,
-    BasicMapAlternate = 2,
-    AddRemoveClearMapAlternate = 3
-}
+export type ConfigurationElementCollectionType = number & { readonly __tsonic_type_System_Configuration_ConfigurationElementCollectionType: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const ConfigurationElementCollectionType: {
+    readonly BasicMap: ConfigurationElementCollectionType;
+    readonly AddRemoveClearMap: ConfigurationElementCollectionType;
+    readonly BasicMapAlternate: ConfigurationElementCollectionType;
+    readonly AddRemoveClearMapAlternate: ConfigurationElementCollectionType;
+};
 
 
-export enum ConfigurationPropertyOptions {
-    None = 0,
-    IsDefaultCollection = 1,
-    IsRequired = 2,
-    IsKey = 4,
-    IsTypeStringTransformationRequired = 8,
-    IsAssemblyStringTransformationRequired = 16,
-    IsVersionCheckRequired = 32
-}
+export type ConfigurationPropertyOptions = number & { readonly __tsonic_type_System_Configuration_ConfigurationPropertyOptions: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const ConfigurationPropertyOptions: {
+    readonly None: ConfigurationPropertyOptions;
+    readonly IsDefaultCollection: ConfigurationPropertyOptions;
+    readonly IsRequired: ConfigurationPropertyOptions;
+    readonly IsKey: ConfigurationPropertyOptions;
+    readonly IsTypeStringTransformationRequired: ConfigurationPropertyOptions;
+    readonly IsAssemblyStringTransformationRequired: ConfigurationPropertyOptions;
+    readonly IsVersionCheckRequired: ConfigurationPropertyOptions;
+};
 
 
-export enum ConfigurationSaveMode {
-    Modified = 0,
-    Minimal = 1,
-    Full = 2
-}
+export type ConfigurationSaveMode = number & { readonly __tsonic_type_System_Configuration_ConfigurationSaveMode: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const ConfigurationSaveMode: {
+    readonly Modified: ConfigurationSaveMode;
+    readonly Minimal: ConfigurationSaveMode;
+    readonly Full: ConfigurationSaveMode;
+};
 
 
-export enum ConfigurationUserLevel {
-    None = 0,
-    PerUserRoaming = 10,
-    PerUserRoamingAndLocal = 20
-}
+export type ConfigurationUserLevel = number & { readonly __tsonic_type_System_Configuration_ConfigurationUserLevel: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const ConfigurationUserLevel: {
+    readonly None: ConfigurationUserLevel;
+    readonly PerUserRoaming: ConfigurationUserLevel;
+    readonly PerUserRoamingAndLocal: ConfigurationUserLevel;
+};
 
 
-export enum OverrideMode {
-    Inherit = 0,
-    Allow = 1,
-    Deny = 2
-}
+export type OverrideMode = number & { readonly __tsonic_type_System_Configuration_OverrideMode: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const OverrideMode: {
+    readonly Inherit: OverrideMode;
+    readonly Allow: OverrideMode;
+    readonly Deny: OverrideMode;
+};
 
 
-export enum PropertyValueOrigin {
-    Default = 0,
-    Inherited = 1,
-    SetHere = 2
-}
+export type PropertyValueOrigin = number & { readonly __tsonic_type_System_Configuration_PropertyValueOrigin: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const PropertyValueOrigin: {
+    readonly Default: PropertyValueOrigin;
+    readonly Inherited: PropertyValueOrigin;
+    readonly SetHere: PropertyValueOrigin;
+};
 
 
-export enum SettingsManageability {
-    Roaming = 0
-}
+export type SettingsManageability = number & { readonly __tsonic_type_System_Configuration_SettingsManageability: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const SettingsManageability: {
+    readonly Roaming: SettingsManageability;
+};
 
 
-export enum SettingsSerializeAs {
-    String = 0,
-    Xml = 1,
-    Binary = 2,
-    ProviderSpecific = 3
-}
+export type SettingsSerializeAs = number & { readonly __tsonic_type_System_Configuration_SettingsSerializeAs: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const SettingsSerializeAs: {
+    readonly String: SettingsSerializeAs;
+    readonly Xml: SettingsSerializeAs;
+    readonly Binary: SettingsSerializeAs;
+    readonly ProviderSpecific: SettingsSerializeAs;
+};
 
 
-export enum SpecialSetting {
-    ConnectionString = 0,
-    WebServiceUrl = 1
-}
+export type SpecialSetting = number & { readonly __tsonic_type_System_Configuration_SpecialSetting: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const SpecialSetting: {
+    readonly ConnectionString: SpecialSetting;
+    readonly WebServiceUrl: SpecialSetting;
+};
 
 
 export type SettingChangingEventHandler = (sender: unknown, e: SettingChangingEventArgs) => void;
@@ -174,8 +197,10 @@ export interface ISettingsProviderService$instance {
 
 export type ISettingsProviderService = ISettingsProviderService$instance;
 
-export interface ApplicationScopedSettingAttribute$instance extends SettingAttribute {
+export interface ApplicationScopedSettingAttribute$instance extends SettingAttribute$instance {
+    readonly __tsonic_type_System_Attribute: never;
     readonly __tsonic_type_System_Configuration_ApplicationScopedSettingAttribute: never;
+    readonly __tsonic_type_System_Configuration_SettingAttribute: never;
 
 }
 
@@ -187,15 +212,12 @@ export const ApplicationScopedSettingAttribute: {
 
 export type ApplicationScopedSettingAttribute = ApplicationScopedSettingAttribute$instance;
 
-export interface ApplicationSettingsBase$instance extends SettingsBase {
+export interface ApplicationSettingsBase$instance extends SettingsBase$instance {
     readonly __tsonic_type_System_Configuration_ApplicationSettingsBase: never;
+    readonly __tsonic_type_System_Configuration_SettingsBase: never;
 
     readonly __tsonic_iface_System_ComponentModel_INotifyPropertyChanged: never;
 
-    readonly Context: SettingsContext;
-    readonly Properties: SettingsPropertyCollection;
-    readonly PropertyValues: SettingsPropertyValueCollection;
-    readonly Providers: SettingsProviderCollection;
     SettingsKey: string;
     GetPreviousVersion(propertyName: string): unknown;
     OnPropertyChanged(sender: unknown, e: PropertyChangedEventArgs): void;
@@ -204,19 +226,20 @@ export interface ApplicationSettingsBase$instance extends SettingsBase {
     OnSettingsSaving(sender: unknown, e: CancelEventArgs): void;
     Reload(): void;
     Reset(): void;
-    Save(): void;
+    Save: SettingsBase$instance["Save"] & (() => void);
     Upgrade(): void;
 }
 
 
-export const ApplicationSettingsBase: (abstract new() => ApplicationSettingsBase) & (abstract new(owner: IComponent) => ApplicationSettingsBase) & (abstract new(settingsKey: string) => ApplicationSettingsBase) & (abstract new(owner: IComponent, settingsKey: string) => ApplicationSettingsBase) & {
+export const ApplicationSettingsBase: {
 };
 
 
 export type ApplicationSettingsBase = ApplicationSettingsBase$instance & { [propertyName: string]: unknown; };
 
-export interface ApplicationSettingsGroup$instance extends ConfigurationSectionGroup {
+export interface ApplicationSettingsGroup$instance extends ConfigurationSectionGroup$instance {
     readonly __tsonic_type_System_Configuration_ApplicationSettingsGroup: never;
+    readonly __tsonic_type_System_Configuration_ConfigurationSectionGroup: never;
 
 }
 
@@ -242,15 +265,16 @@ export const AppSettingsReader: {
 
 export type AppSettingsReader = AppSettingsReader$instance;
 
-export interface AppSettingsSection$instance extends ConfigurationSection {
+export interface AppSettingsSection$instance extends ConfigurationSection$instance {
     readonly __tsonic_type_System_Configuration_AppSettingsSection: never;
+    readonly __tsonic_type_System_Configuration_ConfigurationElement: never;
+    readonly __tsonic_type_System_Configuration_ConfigurationSection: never;
 
     File: string;
-    readonly Properties: ConfigurationPropertyCollection;
     readonly Settings: KeyValueConfigurationCollection;
-    DeserializeElement(reader: XmlReader, serializeCollectionKey: boolean): void;
-    GetRuntimeObject(): unknown;
-    Reset(parentSection: ConfigurationElement): void;
+    DeserializeElement: ConfigurationSection$instance["DeserializeElement"] & ((reader: XmlReader, serializeCollectionKey: boolean) => void);
+    GetRuntimeObject: ConfigurationSection$instance["GetRuntimeObject"] & (() => unknown);
+    Reset: ConfigurationSection$instance["Reset"] & ((parentSection: ConfigurationElement) => void);
 }
 
 
@@ -261,11 +285,12 @@ export const AppSettingsSection: {
 
 export type AppSettingsSection = AppSettingsSection$instance;
 
-export interface CallbackValidator$instance extends ConfigurationValidatorBase {
+export interface CallbackValidator$instance extends ConfigurationValidatorBase$instance {
     readonly __tsonic_type_System_Configuration_CallbackValidator: never;
+    readonly __tsonic_type_System_Configuration_ConfigurationValidatorBase: never;
 
-    CanValidate(type: Type): boolean;
-    Validate(value: unknown): void;
+    CanValidate: ConfigurationValidatorBase$instance["CanValidate"] & ((type: Type) => boolean);
+    Validate: ConfigurationValidatorBase$instance["Validate"] & ((value: unknown) => void);
 }
 
 
@@ -276,12 +301,13 @@ export const CallbackValidator: {
 
 export type CallbackValidator = CallbackValidator$instance;
 
-export interface CallbackValidatorAttribute$instance extends ConfigurationValidatorAttribute {
+export interface CallbackValidatorAttribute$instance extends ConfigurationValidatorAttribute$instance {
+    readonly __tsonic_type_System_Attribute: never;
     readonly __tsonic_type_System_Configuration_CallbackValidatorAttribute: never;
+    readonly __tsonic_type_System_Configuration_ConfigurationValidatorAttribute: never;
 
     CallbackMethodName: string;
     Type: Type;
-    readonly ValidatorInstance: ConfigurationValidatorBase;
 }
 
 
@@ -292,10 +318,11 @@ export const CallbackValidatorAttribute: {
 
 export type CallbackValidatorAttribute = CallbackValidatorAttribute$instance;
 
-export interface ClientSettingsSection$instance extends ConfigurationSection {
+export interface ClientSettingsSection$instance extends ConfigurationSection$instance {
     readonly __tsonic_type_System_Configuration_ClientSettingsSection: never;
+    readonly __tsonic_type_System_Configuration_ConfigurationElement: never;
+    readonly __tsonic_type_System_Configuration_ConfigurationSection: never;
 
-    readonly Properties: ConfigurationPropertyCollection;
     readonly Settings: SettingElementCollection;
 }
 
@@ -307,7 +334,8 @@ export const ClientSettingsSection: {
 
 export type ClientSettingsSection = ClientSettingsSection$instance;
 
-export interface CommaDelimitedStringCollection$instance extends StringCollection {
+export interface CommaDelimitedStringCollection$instance extends System_Collections_Specialized_Internal.StringCollection {
+    readonly __tsonic_type_System_Collections_Specialized_StringCollection: never;
     readonly __tsonic_type_System_Configuration_CommaDelimitedStringCollection: never;
 
     readonly __tsonic_iface_System_Collections_ICollection: never;
@@ -315,13 +343,12 @@ export interface CommaDelimitedStringCollection$instance extends StringCollectio
     readonly __tsonic_iface_System_Collections_IList: never;
 
     readonly IsModified: boolean;
-    IsReadOnly: boolean;
-    Add(value: string): void;
-    AddRange(range: string[]): void;
-    Clear(): void;
+    Add: System_Collections_Specialized_Internal.StringCollection["Add"] & ((value: string) => void);
+    AddRange: System_Collections_Specialized_Internal.StringCollection["AddRange"] & ((range: string[]) => void);
+    Clear: System_Collections_Specialized_Internal.StringCollection["Clear"] & (() => void);
     Clone(): CommaDelimitedStringCollection;
-    Insert(index: int, value: string): void;
-    Remove(value: string): void;
+    Insert: System_Collections_Specialized_Internal.StringCollection["Insert"] & ((index: int, value: string) => void);
+    Remove: System_Collections_Specialized_Internal.StringCollection["Remove"] & ((value: string) => void);
     SetReadOnly(): void;
     ToString(): string;
 }
@@ -334,11 +361,13 @@ export const CommaDelimitedStringCollection: {
 
 export type CommaDelimitedStringCollection = CommaDelimitedStringCollection$instance & { [index: number]: string; };
 
-export interface CommaDelimitedStringCollectionConverter$instance extends ConfigurationConverterBase {
+export interface CommaDelimitedStringCollectionConverter$instance extends ConfigurationConverterBase$instance {
+    readonly __tsonic_type_System_ComponentModel_TypeConverter: never;
     readonly __tsonic_type_System_Configuration_CommaDelimitedStringCollectionConverter: never;
+    readonly __tsonic_type_System_Configuration_ConfigurationConverterBase: never;
 
-    ConvertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown): unknown;
-    ConvertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type): unknown;
+    ConvertFrom: ConfigurationConverterBase$instance["ConvertFrom"] & ((ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown) => unknown);
+    ConvertTo: ConfigurationConverterBase$instance["ConvertTo"] & ((ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type) => unknown);
 }
 
 
@@ -382,7 +411,8 @@ export const Configuration: {
 
 export type Configuration = Configuration$instance;
 
-export interface ConfigurationCollectionAttribute$instance extends Attribute {
+export interface ConfigurationCollectionAttribute$instance extends System_Lib_tsonic_dotnet.Attribute {
+    readonly __tsonic_type_System_Attribute: never;
     readonly __tsonic_type_System_Configuration_ConfigurationCollectionAttribute: never;
 
     AddItemName: string;
@@ -400,15 +430,16 @@ export const ConfigurationCollectionAttribute: {
 
 export type ConfigurationCollectionAttribute = ConfigurationCollectionAttribute$instance;
 
-export interface ConfigurationConverterBase$instance extends TypeConverter {
+export interface ConfigurationConverterBase$instance extends System_ComponentModel_Internal.TypeConverter {
+    readonly __tsonic_type_System_ComponentModel_TypeConverter: never;
     readonly __tsonic_type_System_Configuration_ConfigurationConverterBase: never;
 
-    CanConvertFrom(ctx: ITypeDescriptorContext, type: Type): boolean;
-    CanConvertTo(ctx: ITypeDescriptorContext, type: Type): boolean;
+    CanConvertFrom: System_ComponentModel_Internal.TypeConverter["CanConvertFrom"] & ((ctx: ITypeDescriptorContext, type: Type) => boolean);
+    CanConvertTo: System_ComponentModel_Internal.TypeConverter["CanConvertTo"] & ((ctx: ITypeDescriptorContext, type: Type) => boolean);
 }
 
 
-export const ConfigurationConverterBase: (abstract new() => ConfigurationConverterBase) & {
+export const ConfigurationConverterBase: {
 };
 
 
@@ -450,13 +481,14 @@ export interface ConfigurationElement$instance {
 }
 
 
-export const ConfigurationElement: (abstract new() => ConfigurationElement) & {
+export const ConfigurationElement: {
 };
 
 
 export type ConfigurationElement = ConfigurationElement$instance;
 
-export interface ConfigurationElementCollection$instance extends ConfigurationElement {
+export interface ConfigurationElementCollection$instance extends ConfigurationElement$instance {
+    readonly __tsonic_type_System_Configuration_ConfigurationElement: never;
     readonly __tsonic_type_System_Configuration_ConfigurationElementCollection: never;
 
     readonly __tsonic_iface_System_Collections_ICollection: never;
@@ -472,26 +504,26 @@ export interface ConfigurationElementCollection$instance extends ConfigurationEl
     BaseAdd(element: ConfigurationElement): void;
     BaseAdd(index: int, element: ConfigurationElement): void;
     CopyTo(array: ConfigurationElement[], index: int): void;
-    CreateNewElement(elementName: string): ConfigurationElement;
     CreateNewElement(): ConfigurationElement;
-    Equals(compareTo: unknown): boolean;
+    CreateNewElement(elementName: string): ConfigurationElement;
+    Equals: ConfigurationElement$instance["Equals"] & ((compareTo: unknown) => boolean);
     GetElementKey(element: ConfigurationElement): unknown;
     GetEnumerator(): IEnumerator;
-    GetHashCode(): int;
+    GetHashCode: ConfigurationElement$instance["GetHashCode"] & (() => int);
     IsElementName(elementName: string): boolean;
     IsElementRemovable(element: ConfigurationElement): boolean;
-    IsModified(): boolean;
-    IsReadOnly(): boolean;
-    OnDeserializeUnrecognizedElement(elementName: string, reader: XmlReader): boolean;
-    Reset(parentElement: ConfigurationElement): void;
-    ResetModified(): void;
-    SerializeElement(writer: XmlWriter, serializeCollectionKey: boolean): boolean;
-    SetReadOnly(): void;
-    Unmerge(sourceElement: ConfigurationElement, parentElement: ConfigurationElement, saveMode: ConfigurationSaveMode): void;
+    IsModified: ConfigurationElement$instance["IsModified"] & (() => boolean);
+    IsReadOnly: ConfigurationElement$instance["IsReadOnly"] & (() => boolean);
+    OnDeserializeUnrecognizedElement: ConfigurationElement$instance["OnDeserializeUnrecognizedElement"] & ((elementName: string, reader: XmlReader) => boolean);
+    Reset: ConfigurationElement$instance["Reset"] & ((parentElement: ConfigurationElement) => void);
+    ResetModified: ConfigurationElement$instance["ResetModified"] & (() => void);
+    SerializeElement: ConfigurationElement$instance["SerializeElement"] & ((writer: XmlWriter, serializeCollectionKey: boolean) => boolean);
+    SetReadOnly: ConfigurationElement$instance["SetReadOnly"] & (() => void);
+    Unmerge: ConfigurationElement$instance["Unmerge"] & ((sourceElement: ConfigurationElement, parentElement: ConfigurationElement, saveMode: ConfigurationSaveMode) => void);
 }
 
 
-export const ConfigurationElementCollection: (abstract new() => ConfigurationElementCollection) & (abstract new(comparer: IComparer) => ConfigurationElementCollection) & {
+export const ConfigurationElementCollection: {
 };
 
 
@@ -511,16 +543,16 @@ export const ConfigurationElementProperty: {
 
 export type ConfigurationElementProperty = ConfigurationElementProperty$instance;
 
-export interface ConfigurationErrorsException$instance extends ConfigurationException {
+export interface ConfigurationErrorsException$instance extends ConfigurationException$instance {
     readonly __tsonic_type_System_Configuration_ConfigurationErrorsException: never;
+    readonly __tsonic_type_System_Configuration_ConfigurationException: never;
+    readonly __tsonic_type_System_Exception: never;
+    readonly __tsonic_type_System_SystemException: never;
 
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
     readonly Errors: ICollection;
-    readonly Filename: string;
-    readonly Line: int;
-    readonly Message: string;
-    GetObjectData(info: SerializationInfo, context: StreamingContext): void;
+    GetObjectData: ConfigurationException$instance["GetObjectData"] & ((info: SerializationInfo, context: StreamingContext) => void);
 }
 
 
@@ -543,16 +575,17 @@ export const ConfigurationErrorsException: {
 
 export type ConfigurationErrorsException = ConfigurationErrorsException$instance;
 
-export interface ConfigurationException$instance extends SystemException {
+export interface ConfigurationException$instance extends System_Lib_tsonic_dotnet.SystemException {
     readonly __tsonic_type_System_Configuration_ConfigurationException: never;
+    readonly __tsonic_type_System_Exception: never;
+    readonly __tsonic_type_System_SystemException: never;
 
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
     readonly BareMessage: string;
     readonly Filename: string;
     readonly Line: int;
-    readonly Message: string;
-    GetObjectData(info: SerializationInfo, context: StreamingContext): void;
+    GetObjectData: System_Lib_tsonic_dotnet.SystemException["GetObjectData"] & ((info: SerializationInfo, context: StreamingContext) => void);
 }
 
 
@@ -603,7 +636,8 @@ export const ConfigurationLocation: {
 
 export type ConfigurationLocation = ConfigurationLocation$instance;
 
-export interface ConfigurationLocationCollection$instance extends ReadOnlyCollectionBase {
+export interface ConfigurationLocationCollection$instance extends System_Collections_Internal.ReadOnlyCollectionBase {
+    readonly __tsonic_type_System_Collections_ReadOnlyCollectionBase: never;
     readonly __tsonic_type_System_Configuration_ConfigurationLocationCollection: never;
 
     readonly __tsonic_iface_System_Collections_ICollection: never;
@@ -627,7 +661,7 @@ export interface ConfigurationLockCollection$instance {
     readonly AttributeList: string;
     readonly Count: int;
     readonly HasParentElements: boolean;
-    IsModified: boolean;
+    readonly IsModified: boolean;
     readonly IsSynchronized: boolean;
     readonly SyncRoot: unknown;
     Add(name: string): void;
@@ -651,17 +685,17 @@ export interface ConfigurationProperty$instance {
     readonly __tsonic_type_System_Configuration_ConfigurationProperty: never;
 
     readonly Converter: TypeConverter;
-    DefaultValue: unknown;
-    Description: string;
+    readonly DefaultValue: unknown;
+    readonly Description: string;
     readonly IsAssemblyStringTransformationRequired: boolean;
     readonly IsDefaultCollection: boolean;
     readonly IsKey: boolean;
     readonly IsRequired: boolean;
     readonly IsTypeStringTransformationRequired: boolean;
     readonly IsVersionCheckRequired: boolean;
-    Name: string;
-    Type: Type;
-    Validator: ConfigurationValidatorBase;
+    readonly Name: string;
+    readonly Type: Type;
+    readonly Validator: ConfigurationValidatorBase;
 }
 
 
@@ -676,7 +710,8 @@ export const ConfigurationProperty: {
 
 export type ConfigurationProperty = ConfigurationProperty$instance;
 
-export interface ConfigurationPropertyAttribute$instance extends Attribute {
+export interface ConfigurationPropertyAttribute$instance extends System_Lib_tsonic_dotnet.Attribute {
+    readonly __tsonic_type_System_Attribute: never;
     readonly __tsonic_type_System_Configuration_ConfigurationPropertyAttribute: never;
 
     DefaultValue: unknown;
@@ -720,14 +755,15 @@ export const ConfigurationPropertyCollection: {
 
 export type ConfigurationPropertyCollection = ConfigurationPropertyCollection$instance & { readonly [name: string]: ConfigurationProperty; };
 
-export interface ConfigurationSection$instance extends ConfigurationElement {
+export interface ConfigurationSection$instance extends ConfigurationElement$instance {
+    readonly __tsonic_type_System_Configuration_ConfigurationElement: never;
     readonly __tsonic_type_System_Configuration_ConfigurationSection: never;
 
     readonly SectionInformation: SectionInformation;
     DeserializeSection(reader: XmlReader): void;
     GetRuntimeObject(): unknown;
-    IsModified(): boolean;
-    ResetModified(): void;
+    IsModified: ConfigurationElement$instance["IsModified"] & (() => boolean);
+    ResetModified: ConfigurationElement$instance["ResetModified"] & (() => void);
     SerializeSection(parentElement: ConfigurationElement, name: string, saveMode: ConfigurationSaveMode): string;
     ShouldSerializeElementInTargetVersion(element: ConfigurationElement, elementName: string, targetFramework: FrameworkName): boolean;
     ShouldSerializePropertyInTargetVersion(property: ConfigurationProperty, propertyName: string, targetFramework: FrameworkName, parentConfigurationElement: ConfigurationElement): boolean;
@@ -735,13 +771,14 @@ export interface ConfigurationSection$instance extends ConfigurationElement {
 }
 
 
-export const ConfigurationSection: (abstract new() => ConfigurationSection) & {
+export const ConfigurationSection: {
 };
 
 
 export type ConfigurationSection = ConfigurationSection$instance;
 
-export interface ConfigurationSectionCollection$instance extends NameObjectCollectionBase {
+export interface ConfigurationSectionCollection$instance extends System_Collections_Specialized_Internal.NameObjectCollectionBase {
+    readonly __tsonic_type_System_Collections_Specialized_NameObjectCollectionBase: never;
     readonly __tsonic_type_System_Configuration_ConfigurationSectionCollection: never;
 
     readonly __tsonic_iface_System_Collections_ICollection: never;
@@ -754,9 +791,9 @@ export interface ConfigurationSectionCollection$instance extends NameObjectColle
     CopyTo(array: ConfigurationSection[], index: int): void;
     Get(index: int): ConfigurationSection;
     Get(name: string): ConfigurationSection;
-    get_Item(name: string): ConfigurationSection;
     get_Item(index: int): ConfigurationSection;
-    GetEnumerator(): IEnumerator;
+    get_Item(name: string): ConfigurationSection;
+    GetEnumerator: System_Collections_Specialized_Internal.NameObjectCollectionBase["GetEnumerator"] & (() => IEnumerator);
     GetKey(index: int): string;
     Remove(name: string): void;
     RemoveAt(index: int): void;
@@ -772,10 +809,10 @@ export type ConfigurationSectionCollection = ConfigurationSectionCollection$inst
 export interface ConfigurationSectionGroup$instance {
     readonly __tsonic_type_System_Configuration_ConfigurationSectionGroup: never;
 
-    IsDeclarationRequired: boolean;
-    IsDeclared: boolean;
-    Name: string;
-    SectionGroupName: string;
+    readonly IsDeclarationRequired: boolean;
+    readonly IsDeclared: boolean;
+    readonly Name: string;
+    readonly SectionGroupName: string;
     readonly SectionGroups: ConfigurationSectionGroupCollection;
     readonly Sections: ConfigurationSectionCollection;
     Type: string;
@@ -792,7 +829,8 @@ export const ConfigurationSectionGroup: {
 
 export type ConfigurationSectionGroup = ConfigurationSectionGroup$instance;
 
-export interface ConfigurationSectionGroupCollection$instance extends NameObjectCollectionBase {
+export interface ConfigurationSectionGroupCollection$instance extends System_Collections_Specialized_Internal.NameObjectCollectionBase {
+    readonly __tsonic_type_System_Collections_Specialized_NameObjectCollectionBase: never;
     readonly __tsonic_type_System_Configuration_ConfigurationSectionGroupCollection: never;
 
     readonly __tsonic_iface_System_Collections_ICollection: never;
@@ -805,9 +843,9 @@ export interface ConfigurationSectionGroupCollection$instance extends NameObject
     CopyTo(array: ConfigurationSectionGroup[], index: int): void;
     Get(index: int): ConfigurationSectionGroup;
     Get(name: string): ConfigurationSectionGroup;
-    get_Item(name: string): ConfigurationSectionGroup;
     get_Item(index: int): ConfigurationSectionGroup;
-    GetEnumerator(): IEnumerator;
+    get_Item(name: string): ConfigurationSectionGroup;
+    GetEnumerator: System_Collections_Specialized_Internal.NameObjectCollectionBase["GetEnumerator"] & (() => IEnumerator);
     GetKey(index: int): string;
     Remove(name: string): void;
     RemoveAt(index: int): void;
@@ -834,7 +872,8 @@ export const ConfigurationSettings: {
 
 export type ConfigurationSettings = ConfigurationSettings$instance;
 
-export interface ConfigurationValidatorAttribute$instance extends Attribute {
+export interface ConfigurationValidatorAttribute$instance extends System_Lib_tsonic_dotnet.Attribute {
+    readonly __tsonic_type_System_Attribute: never;
     readonly __tsonic_type_System_Configuration_ConfigurationValidatorAttribute: never;
 
     readonly ValidatorInstance: ConfigurationValidatorBase;
@@ -857,14 +896,16 @@ export interface ConfigurationValidatorBase$instance {
 }
 
 
-export const ConfigurationValidatorBase: (abstract new() => ConfigurationValidatorBase) & {
+export const ConfigurationValidatorBase: {
 };
 
 
 export type ConfigurationValidatorBase = ConfigurationValidatorBase$instance;
 
-export interface ConfigXmlDocument$instance extends XmlDocument, System_Configuration_Internal_Internal.IConfigErrorInfo$instance, System_Lib_tsonic_dotnet.ICloneable, System_Xml_XPath_Internal.IXPathNavigable {
+export interface ConfigXmlDocument$instance extends System_Xml_Internal.XmlDocument {
     readonly __tsonic_type_System_Configuration_ConfigXmlDocument: never;
+    readonly __tsonic_type_System_Xml_XmlDocument: never;
+    readonly __tsonic_type_System_Xml_XmlNode: never;
 
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
     readonly __tsonic_iface_System_Configuration_Internal_IConfigErrorInfo: never;
@@ -873,14 +914,14 @@ export interface ConfigXmlDocument$instance extends XmlDocument, System_Configur
 
     readonly Filename: string;
     readonly LineNumber: int;
-    CreateAttribute(prefix: string, localName: string, namespaceUri: string): XmlAttribute;
-    CreateCDataSection(data: string): XmlCDataSection;
-    CreateComment(data: string): XmlComment;
-    CreateElement(prefix: string, localName: string, namespaceUri: string): XmlElement;
-    CreateSignificantWhitespace(data: string): XmlSignificantWhitespace;
-    CreateTextNode(text: string): XmlText;
-    CreateWhitespace(data: string): XmlWhitespace;
-    Load(filename: string): void;
+    CreateAttribute: System_Xml_Internal.XmlDocument["CreateAttribute"] & ((prefix: string, localName: string, namespaceUri: string) => XmlAttribute);
+    CreateCDataSection: System_Xml_Internal.XmlDocument["CreateCDataSection"] & ((data: string) => XmlCDataSection);
+    CreateComment: System_Xml_Internal.XmlDocument["CreateComment"] & ((data: string) => XmlComment);
+    CreateElement: System_Xml_Internal.XmlDocument["CreateElement"] & ((prefix: string, localName: string, namespaceUri: string) => XmlElement);
+    CreateSignificantWhitespace: System_Xml_Internal.XmlDocument["CreateSignificantWhitespace"] & ((data: string) => XmlSignificantWhitespace);
+    CreateTextNode: System_Xml_Internal.XmlDocument["CreateTextNode"] & ((text: string) => XmlText);
+    CreateWhitespace: System_Xml_Internal.XmlDocument["CreateWhitespace"] & ((data: string) => XmlWhitespace);
+    Load: System_Xml_Internal.XmlDocument["Load"] & ((filename: string) => void);
     LoadSingleElement(filename: string, sourceReader: XmlTextReader): void;
 }
 
@@ -897,12 +938,12 @@ export interface __ConfigXmlDocument$views {
 export type ConfigXmlDocument = ConfigXmlDocument$instance & __ConfigXmlDocument$views;
 
 
-export interface ConnectionStringSettings$instance extends ConfigurationElement {
+export interface ConnectionStringSettings$instance extends ConfigurationElement$instance {
+    readonly __tsonic_type_System_Configuration_ConfigurationElement: never;
     readonly __tsonic_type_System_Configuration_ConnectionStringSettings: never;
 
     ConnectionString: string;
     Name: string;
-    readonly Properties: ConfigurationPropertyCollection;
     ProviderName: string;
     ToString(): string;
 }
@@ -917,25 +958,24 @@ export const ConnectionStringSettings: {
 
 export type ConnectionStringSettings = ConnectionStringSettings$instance;
 
-export interface ConnectionStringSettingsCollection$instance extends ConfigurationElementCollection {
+export interface ConnectionStringSettingsCollection$instance extends ConfigurationElementCollection$instance {
+    readonly __tsonic_type_System_Configuration_ConfigurationElement: never;
+    readonly __tsonic_type_System_Configuration_ConfigurationElementCollection: never;
     readonly __tsonic_type_System_Configuration_ConnectionStringSettingsCollection: never;
 
     readonly __tsonic_iface_System_Collections_ICollection: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
-    readonly Properties: ConfigurationPropertyCollection;
     Add(settings: ConnectionStringSettings): void;
-    BaseAdd(index: int, element: ConfigurationElement): void;
-    BaseAdd(element: ConfigurationElement): void;
+    BaseAdd: ConfigurationElementCollection$instance["BaseAdd"] & ((element: ConfigurationElement) => void) & ((index: int, element: ConfigurationElement) => void);
     Clear(): void;
-    CreateNewElement(): ConfigurationElement;
-    CreateNewElement(elementName: string): ConfigurationElement;
+    CreateNewElement: ConfigurationElementCollection$instance["CreateNewElement"] & (() => ConfigurationElement) & ((elementName: string) => ConfigurationElement);
     get_Item(index: int): ConnectionStringSettings;
     get_Item(name: string): ConnectionStringSettings;
-    GetElementKey(element: ConfigurationElement): unknown;
+    GetElementKey: ConfigurationElementCollection$instance["GetElementKey"] & ((element: ConfigurationElement) => unknown);
     IndexOf(settings: ConnectionStringSettings): int;
-    Remove(settings: ConnectionStringSettings): void;
     Remove(name: string): void;
+    Remove(settings: ConnectionStringSettings): void;
     RemoveAt(index: int): void;
     set_Item(index: int, value: ConnectionStringSettings): void;
 }
@@ -948,12 +988,13 @@ export const ConnectionStringSettingsCollection: {
 
 export type ConnectionStringSettingsCollection = ConnectionStringSettingsCollection$instance;
 
-export interface ConnectionStringsSection$instance extends ConfigurationSection {
+export interface ConnectionStringsSection$instance extends ConfigurationSection$instance {
+    readonly __tsonic_type_System_Configuration_ConfigurationElement: never;
+    readonly __tsonic_type_System_Configuration_ConfigurationSection: never;
     readonly __tsonic_type_System_Configuration_ConnectionStringsSection: never;
 
     readonly ConnectionStrings: ConnectionStringSettingsCollection;
-    readonly Properties: ConfigurationPropertyCollection;
-    GetRuntimeObject(): unknown;
+    GetRuntimeObject: ConfigurationSection$instance["GetRuntimeObject"] & (() => unknown);
 }
 
 
@@ -979,15 +1020,16 @@ export const ContextInformation: {
 
 export type ContextInformation = ContextInformation$instance;
 
-export interface DefaultSection$instance extends ConfigurationSection {
+export interface DefaultSection$instance extends ConfigurationSection$instance {
+    readonly __tsonic_type_System_Configuration_ConfigurationElement: never;
+    readonly __tsonic_type_System_Configuration_ConfigurationSection: never;
     readonly __tsonic_type_System_Configuration_DefaultSection: never;
 
-    readonly Properties: ConfigurationPropertyCollection;
-    DeserializeSection(xmlReader: XmlReader): void;
-    IsModified(): boolean;
-    Reset(parentSection: ConfigurationElement): void;
-    ResetModified(): void;
-    SerializeSection(parentSection: ConfigurationElement, name: string, saveMode: ConfigurationSaveMode): string;
+    DeserializeSection: ConfigurationSection$instance["DeserializeSection"] & ((xmlReader: XmlReader) => void);
+    IsModified: ConfigurationSection$instance["IsModified"] & (() => boolean);
+    Reset: ConfigurationSection$instance["Reset"] & ((parentSection: ConfigurationElement) => void);
+    ResetModified: ConfigurationSection$instance["ResetModified"] & (() => void);
+    SerializeSection: ConfigurationSection$instance["SerializeSection"] & ((parentSection: ConfigurationElement, name: string, saveMode: ConfigurationSaveMode) => string);
 }
 
 
@@ -998,7 +1040,8 @@ export const DefaultSection: {
 
 export type DefaultSection = DefaultSection$instance;
 
-export interface DefaultSettingValueAttribute$instance extends Attribute {
+export interface DefaultSettingValueAttribute$instance extends System_Lib_tsonic_dotnet.Attribute {
+    readonly __tsonic_type_System_Attribute: never;
     readonly __tsonic_type_System_Configuration_DefaultSettingValueAttribute: never;
 
     readonly Value: string;
@@ -1012,11 +1055,12 @@ export const DefaultSettingValueAttribute: {
 
 export type DefaultSettingValueAttribute = DefaultSettingValueAttribute$instance;
 
-export interface DefaultValidator$instance extends ConfigurationValidatorBase {
+export interface DefaultValidator$instance extends ConfigurationValidatorBase$instance {
+    readonly __tsonic_type_System_Configuration_ConfigurationValidatorBase: never;
     readonly __tsonic_type_System_Configuration_DefaultValidator: never;
 
-    CanValidate(type: Type): boolean;
-    Validate(value: unknown): void;
+    CanValidate: ConfigurationValidatorBase$instance["CanValidate"] & ((type: Type) => boolean);
+    Validate: ConfigurationValidatorBase$instance["Validate"] & ((value: unknown) => void);
 }
 
 
@@ -1027,7 +1071,7 @@ export const DefaultValidator: {
 
 export type DefaultValidator = DefaultValidator$instance;
 
-export interface DictionarySectionHandler$instance extends IConfigurationSectionHandler$instance {
+export interface DictionarySectionHandler$instance {
     readonly __tsonic_type_System_Configuration_DictionarySectionHandler: never;
 
     readonly __tsonic_iface_System_Configuration_IConfigurationSectionHandler: never;
@@ -1050,13 +1094,15 @@ export interface __DictionarySectionHandler$views {
 export type DictionarySectionHandler = DictionarySectionHandler$instance & __DictionarySectionHandler$views;
 
 
-export interface DpapiProtectedConfigurationProvider$instance extends ProtectedConfigurationProvider {
+export interface DpapiProtectedConfigurationProvider$instance extends ProtectedConfigurationProvider$instance {
     readonly __tsonic_type_System_Configuration_DpapiProtectedConfigurationProvider: never;
+    readonly __tsonic_type_System_Configuration_ProtectedConfigurationProvider: never;
+    readonly __tsonic_type_System_Configuration_Provider_ProviderBase: never;
 
     readonly UseMachineProtection: boolean;
-    Decrypt(encryptedNode: XmlNode): XmlNode;
-    Encrypt(node: XmlNode): XmlNode;
-    Initialize(name: string, configurationValues: NameValueCollection): void;
+    Decrypt: ProtectedConfigurationProvider$instance["Decrypt"] & ((encryptedNode: XmlNode) => XmlNode);
+    Encrypt: ProtectedConfigurationProvider$instance["Encrypt"] & ((node: XmlNode) => XmlNode);
+    Initialize: ProtectedConfigurationProvider$instance["Initialize"] & ((name: string, configurationValues: NameValueCollection) => void);
 }
 
 
@@ -1088,7 +1134,8 @@ export const ElementInformation: {
 
 export type ElementInformation = ElementInformation$instance;
 
-export interface ExeConfigurationFileMap$instance extends ConfigurationFileMap {
+export interface ExeConfigurationFileMap$instance extends ConfigurationFileMap$instance {
+    readonly __tsonic_type_System_Configuration_ConfigurationFileMap: never;
     readonly __tsonic_type_System_Configuration_ExeConfigurationFileMap: never;
 
     readonly __tsonic_iface_System_ICloneable: never;
@@ -1096,7 +1143,7 @@ export interface ExeConfigurationFileMap$instance extends ConfigurationFileMap {
     ExeConfigFilename: string;
     LocalUserConfigFilename: string;
     RoamingUserConfigFilename: string;
-    Clone(): unknown;
+    Clone: ConfigurationFileMap$instance["Clone"] & (() => unknown);
 }
 
 
@@ -1122,11 +1169,13 @@ export const ExeContext: {
 
 export type ExeContext = ExeContext$instance;
 
-export interface GenericEnumConverter$instance extends ConfigurationConverterBase {
+export interface GenericEnumConverter$instance extends ConfigurationConverterBase$instance {
+    readonly __tsonic_type_System_ComponentModel_TypeConverter: never;
+    readonly __tsonic_type_System_Configuration_ConfigurationConverterBase: never;
     readonly __tsonic_type_System_Configuration_GenericEnumConverter: never;
 
-    ConvertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown): unknown;
-    ConvertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type): unknown;
+    ConvertFrom: ConfigurationConverterBase$instance["ConvertFrom"] & ((ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown) => unknown);
+    ConvertTo: ConfigurationConverterBase$instance["ConvertTo"] & ((ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type) => unknown);
 }
 
 
@@ -1137,11 +1186,11 @@ export const GenericEnumConverter: {
 
 export type GenericEnumConverter = GenericEnumConverter$instance;
 
-export interface IdnElement$instance extends ConfigurationElement {
+export interface IdnElement$instance extends ConfigurationElement$instance {
+    readonly __tsonic_type_System_Configuration_ConfigurationElement: never;
     readonly __tsonic_type_System_Configuration_IdnElement: never;
 
     Enabled: UriIdnScope;
-    readonly Properties: ConfigurationPropertyCollection;
 }
 
 
@@ -1152,15 +1201,16 @@ export const IdnElement: {
 
 export type IdnElement = IdnElement$instance;
 
-export interface IgnoreSection$instance extends ConfigurationSection {
+export interface IgnoreSection$instance extends ConfigurationSection$instance {
+    readonly __tsonic_type_System_Configuration_ConfigurationElement: never;
+    readonly __tsonic_type_System_Configuration_ConfigurationSection: never;
     readonly __tsonic_type_System_Configuration_IgnoreSection: never;
 
-    readonly Properties: ConfigurationPropertyCollection;
-    DeserializeSection(xmlReader: XmlReader): void;
-    IsModified(): boolean;
-    Reset(parentSection: ConfigurationElement): void;
-    ResetModified(): void;
-    SerializeSection(parentSection: ConfigurationElement, name: string, saveMode: ConfigurationSaveMode): string;
+    DeserializeSection: ConfigurationSection$instance["DeserializeSection"] & ((xmlReader: XmlReader) => void);
+    IsModified: ConfigurationSection$instance["IsModified"] & (() => boolean);
+    Reset: ConfigurationSection$instance["Reset"] & ((parentSection: ConfigurationElement) => void);
+    ResetModified: ConfigurationSection$instance["ResetModified"] & (() => void);
+    SerializeSection: ConfigurationSection$instance["SerializeSection"] & ((parentSection: ConfigurationElement, name: string, saveMode: ConfigurationSaveMode) => string);
 }
 
 
@@ -1171,7 +1221,7 @@ export const IgnoreSection: {
 
 export type IgnoreSection = IgnoreSection$instance;
 
-export interface IgnoreSectionHandler$instance extends IConfigurationSectionHandler$instance {
+export interface IgnoreSectionHandler$instance {
     readonly __tsonic_type_System_Configuration_IgnoreSectionHandler: never;
 
     readonly __tsonic_iface_System_Configuration_IConfigurationSectionHandler: never;
@@ -1192,11 +1242,13 @@ export interface __IgnoreSectionHandler$views {
 export type IgnoreSectionHandler = IgnoreSectionHandler$instance & __IgnoreSectionHandler$views;
 
 
-export interface InfiniteIntConverter$instance extends ConfigurationConverterBase {
+export interface InfiniteIntConverter$instance extends ConfigurationConverterBase$instance {
+    readonly __tsonic_type_System_ComponentModel_TypeConverter: never;
+    readonly __tsonic_type_System_Configuration_ConfigurationConverterBase: never;
     readonly __tsonic_type_System_Configuration_InfiniteIntConverter: never;
 
-    ConvertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown): unknown;
-    ConvertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type): unknown;
+    ConvertFrom: ConfigurationConverterBase$instance["ConvertFrom"] & ((ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown) => unknown);
+    ConvertTo: ConfigurationConverterBase$instance["ConvertTo"] & ((ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type) => unknown);
 }
 
 
@@ -1207,11 +1259,13 @@ export const InfiniteIntConverter: {
 
 export type InfiniteIntConverter = InfiniteIntConverter$instance;
 
-export interface InfiniteTimeSpanConverter$instance extends ConfigurationConverterBase {
+export interface InfiniteTimeSpanConverter$instance extends ConfigurationConverterBase$instance {
+    readonly __tsonic_type_System_ComponentModel_TypeConverter: never;
+    readonly __tsonic_type_System_Configuration_ConfigurationConverterBase: never;
     readonly __tsonic_type_System_Configuration_InfiniteTimeSpanConverter: never;
 
-    ConvertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown): unknown;
-    ConvertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type): unknown;
+    ConvertFrom: ConfigurationConverterBase$instance["ConvertFrom"] & ((ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown) => unknown);
+    ConvertTo: ConfigurationConverterBase$instance["ConvertTo"] & ((ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type) => unknown);
 }
 
 
@@ -1222,11 +1276,12 @@ export const InfiniteTimeSpanConverter: {
 
 export type InfiniteTimeSpanConverter = InfiniteTimeSpanConverter$instance;
 
-export interface IntegerValidator$instance extends ConfigurationValidatorBase {
+export interface IntegerValidator$instance extends ConfigurationValidatorBase$instance {
+    readonly __tsonic_type_System_Configuration_ConfigurationValidatorBase: never;
     readonly __tsonic_type_System_Configuration_IntegerValidator: never;
 
-    CanValidate(type: Type): boolean;
-    Validate(value: unknown): void;
+    CanValidate: ConfigurationValidatorBase$instance["CanValidate"] & ((type: Type) => boolean);
+    Validate: ConfigurationValidatorBase$instance["Validate"] & ((value: unknown) => void);
 }
 
 
@@ -1239,13 +1294,14 @@ export const IntegerValidator: {
 
 export type IntegerValidator = IntegerValidator$instance;
 
-export interface IntegerValidatorAttribute$instance extends ConfigurationValidatorAttribute {
+export interface IntegerValidatorAttribute$instance extends ConfigurationValidatorAttribute$instance {
+    readonly __tsonic_type_System_Attribute: never;
+    readonly __tsonic_type_System_Configuration_ConfigurationValidatorAttribute: never;
     readonly __tsonic_type_System_Configuration_IntegerValidatorAttribute: never;
 
     ExcludeRange: boolean;
     MaxValue: int;
     MinValue: int;
-    readonly ValidatorInstance: ConfigurationValidatorBase;
 }
 
 
@@ -1256,11 +1312,11 @@ export const IntegerValidatorAttribute: {
 
 export type IntegerValidatorAttribute = IntegerValidatorAttribute$instance;
 
-export interface IriParsingElement$instance extends ConfigurationElement {
+export interface IriParsingElement$instance extends ConfigurationElement$instance {
+    readonly __tsonic_type_System_Configuration_ConfigurationElement: never;
     readonly __tsonic_type_System_Configuration_IriParsingElement: never;
 
     Enabled: boolean;
-    readonly Properties: ConfigurationPropertyCollection;
 }
 
 
@@ -1271,21 +1327,20 @@ export const IriParsingElement: {
 
 export type IriParsingElement = IriParsingElement$instance;
 
-export interface KeyValueConfigurationCollection$instance extends ConfigurationElementCollection {
+export interface KeyValueConfigurationCollection$instance extends ConfigurationElementCollection$instance {
+    readonly __tsonic_type_System_Configuration_ConfigurationElement: never;
+    readonly __tsonic_type_System_Configuration_ConfigurationElementCollection: never;
     readonly __tsonic_type_System_Configuration_KeyValueConfigurationCollection: never;
 
     readonly __tsonic_iface_System_Collections_ICollection: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly AllKeys: string[];
-    readonly Properties: ConfigurationPropertyCollection;
-    readonly ThrowOnDuplicate: boolean;
-    Add(keyValue: KeyValueConfigurationElement): void;
     Add(key: string, value: string): void;
+    Add(keyValue: KeyValueConfigurationElement): void;
     Clear(): void;
-    CreateNewElement(): ConfigurationElement;
-    CreateNewElement(elementName: string): ConfigurationElement;
-    GetElementKey(element: ConfigurationElement): unknown;
+    CreateNewElement: ConfigurationElementCollection$instance["CreateNewElement"] & (() => ConfigurationElement) & ((elementName: string) => ConfigurationElement);
+    GetElementKey: ConfigurationElementCollection$instance["GetElementKey"] & ((element: ConfigurationElement) => unknown);
     Remove(key: string): void;
 }
 
@@ -1297,13 +1352,13 @@ export const KeyValueConfigurationCollection: {
 
 export type KeyValueConfigurationCollection = KeyValueConfigurationCollection$instance & { readonly [key: string]: KeyValueConfigurationElement; };
 
-export interface KeyValueConfigurationElement$instance extends ConfigurationElement {
+export interface KeyValueConfigurationElement$instance extends ConfigurationElement$instance {
+    readonly __tsonic_type_System_Configuration_ConfigurationElement: never;
     readonly __tsonic_type_System_Configuration_KeyValueConfigurationElement: never;
 
     readonly Key: string;
-    readonly Properties: ConfigurationPropertyCollection;
     Value: string;
-    Init(): void;
+    Init: ConfigurationElement$instance["Init"] & (() => void);
 }
 
 
@@ -1314,17 +1369,18 @@ export const KeyValueConfigurationElement: {
 
 export type KeyValueConfigurationElement = KeyValueConfigurationElement$instance;
 
-export interface LocalFileSettingsProvider$instance extends SettingsProvider, IApplicationSettingsProvider$instance {
+export interface LocalFileSettingsProvider$instance extends SettingsProvider$instance {
     readonly __tsonic_type_System_Configuration_LocalFileSettingsProvider: never;
+    readonly __tsonic_type_System_Configuration_Provider_ProviderBase: never;
+    readonly __tsonic_type_System_Configuration_SettingsProvider: never;
 
     readonly __tsonic_iface_System_Configuration_IApplicationSettingsProvider: never;
 
-    ApplicationName: string;
     GetPreviousVersion(context: SettingsContext, property: SettingsProperty): SettingsPropertyValue;
-    GetPropertyValues(context: SettingsContext, properties: SettingsPropertyCollection): SettingsPropertyValueCollection;
-    Initialize(name: string, values: NameValueCollection): void;
+    GetPropertyValues: SettingsProvider$instance["GetPropertyValues"] & ((context: SettingsContext, properties: SettingsPropertyCollection) => SettingsPropertyValueCollection);
+    Initialize: SettingsProvider$instance["Initialize"] & ((name: string, values: NameValueCollection) => void);
     Reset(context: SettingsContext): void;
-    SetPropertyValues(context: SettingsContext, values: SettingsPropertyValueCollection): void;
+    SetPropertyValues: SettingsProvider$instance["SetPropertyValues"] & ((context: SettingsContext, values: SettingsPropertyValueCollection) => void);
     Upgrade(context: SettingsContext, properties: SettingsPropertyCollection): void;
 }
 
@@ -1341,11 +1397,12 @@ export interface __LocalFileSettingsProvider$views {
 export type LocalFileSettingsProvider = LocalFileSettingsProvider$instance & __LocalFileSettingsProvider$views;
 
 
-export interface LongValidator$instance extends ConfigurationValidatorBase {
+export interface LongValidator$instance extends ConfigurationValidatorBase$instance {
+    readonly __tsonic_type_System_Configuration_ConfigurationValidatorBase: never;
     readonly __tsonic_type_System_Configuration_LongValidator: never;
 
-    CanValidate(type: Type): boolean;
-    Validate(value: unknown): void;
+    CanValidate: ConfigurationValidatorBase$instance["CanValidate"] & ((type: Type) => boolean);
+    Validate: ConfigurationValidatorBase$instance["Validate"] & ((value: unknown) => void);
 }
 
 
@@ -1358,13 +1415,14 @@ export const LongValidator: {
 
 export type LongValidator = LongValidator$instance;
 
-export interface LongValidatorAttribute$instance extends ConfigurationValidatorAttribute {
+export interface LongValidatorAttribute$instance extends ConfigurationValidatorAttribute$instance {
+    readonly __tsonic_type_System_Attribute: never;
+    readonly __tsonic_type_System_Configuration_ConfigurationValidatorAttribute: never;
     readonly __tsonic_type_System_Configuration_LongValidatorAttribute: never;
 
     ExcludeRange: boolean;
     MaxValue: long;
     MinValue: long;
-    readonly ValidatorInstance: ConfigurationValidatorBase;
 }
 
 
@@ -1375,21 +1433,21 @@ export const LongValidatorAttribute: {
 
 export type LongValidatorAttribute = LongValidatorAttribute$instance;
 
-export interface NameValueConfigurationCollection$instance extends ConfigurationElementCollection {
+export interface NameValueConfigurationCollection$instance extends ConfigurationElementCollection$instance {
+    readonly __tsonic_type_System_Configuration_ConfigurationElement: never;
+    readonly __tsonic_type_System_Configuration_ConfigurationElementCollection: never;
     readonly __tsonic_type_System_Configuration_NameValueConfigurationCollection: never;
 
     readonly __tsonic_iface_System_Collections_ICollection: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly AllKeys: string[];
-    readonly Properties: ConfigurationPropertyCollection;
     Add(nameValue: NameValueConfigurationElement): void;
     Clear(): void;
-    CreateNewElement(): ConfigurationElement;
-    CreateNewElement(elementName: string): ConfigurationElement;
-    GetElementKey(element: ConfigurationElement): unknown;
-    Remove(nameValue: NameValueConfigurationElement): void;
+    CreateNewElement: ConfigurationElementCollection$instance["CreateNewElement"] & (() => ConfigurationElement) & ((elementName: string) => ConfigurationElement);
+    GetElementKey: ConfigurationElementCollection$instance["GetElementKey"] & ((element: ConfigurationElement) => unknown);
     Remove(name: string): void;
+    Remove(nameValue: NameValueConfigurationElement): void;
 }
 
 
@@ -1400,11 +1458,11 @@ export const NameValueConfigurationCollection: {
 
 export type NameValueConfigurationCollection = NameValueConfigurationCollection$instance & { [name: string]: NameValueConfigurationElement; };
 
-export interface NameValueConfigurationElement$instance extends ConfigurationElement {
+export interface NameValueConfigurationElement$instance extends ConfigurationElement$instance {
+    readonly __tsonic_type_System_Configuration_ConfigurationElement: never;
     readonly __tsonic_type_System_Configuration_NameValueConfigurationElement: never;
 
     readonly Name: string;
-    readonly Properties: ConfigurationPropertyCollection;
     Value: string;
 }
 
@@ -1416,7 +1474,7 @@ export const NameValueConfigurationElement: {
 
 export type NameValueConfigurationElement = NameValueConfigurationElement$instance;
 
-export interface NameValueFileSectionHandler$instance extends IConfigurationSectionHandler$instance {
+export interface NameValueFileSectionHandler$instance {
     readonly __tsonic_type_System_Configuration_NameValueFileSectionHandler: never;
 
     readonly __tsonic_iface_System_Configuration_IConfigurationSectionHandler: never;
@@ -1437,7 +1495,7 @@ export interface __NameValueFileSectionHandler$views {
 export type NameValueFileSectionHandler = NameValueFileSectionHandler$instance & __NameValueFileSectionHandler$views;
 
 
-export interface NameValueSectionHandler$instance extends IConfigurationSectionHandler$instance {
+export interface NameValueSectionHandler$instance {
     readonly __tsonic_type_System_Configuration_NameValueSectionHandler: never;
 
     readonly __tsonic_iface_System_Configuration_IConfigurationSectionHandler: never;
@@ -1460,7 +1518,8 @@ export interface __NameValueSectionHandler$views {
 export type NameValueSectionHandler = NameValueSectionHandler$instance & __NameValueSectionHandler$views;
 
 
-export interface NoSettingsVersionUpgradeAttribute$instance extends Attribute {
+export interface NoSettingsVersionUpgradeAttribute$instance extends System_Lib_tsonic_dotnet.Attribute {
+    readonly __tsonic_type_System_Attribute: never;
     readonly __tsonic_type_System_Configuration_NoSettingsVersionUpgradeAttribute: never;
 
 }
@@ -1473,11 +1532,12 @@ export const NoSettingsVersionUpgradeAttribute: {
 
 export type NoSettingsVersionUpgradeAttribute = NoSettingsVersionUpgradeAttribute$instance;
 
-export interface PositiveTimeSpanValidator$instance extends ConfigurationValidatorBase {
+export interface PositiveTimeSpanValidator$instance extends ConfigurationValidatorBase$instance {
+    readonly __tsonic_type_System_Configuration_ConfigurationValidatorBase: never;
     readonly __tsonic_type_System_Configuration_PositiveTimeSpanValidator: never;
 
-    CanValidate(type: Type): boolean;
-    Validate(value: unknown): void;
+    CanValidate: ConfigurationValidatorBase$instance["CanValidate"] & ((type: Type) => boolean);
+    Validate: ConfigurationValidatorBase$instance["Validate"] & ((value: unknown) => void);
 }
 
 
@@ -1488,10 +1548,11 @@ export const PositiveTimeSpanValidator: {
 
 export type PositiveTimeSpanValidator = PositiveTimeSpanValidator$instance;
 
-export interface PositiveTimeSpanValidatorAttribute$instance extends ConfigurationValidatorAttribute {
+export interface PositiveTimeSpanValidatorAttribute$instance extends ConfigurationValidatorAttribute$instance {
+    readonly __tsonic_type_System_Attribute: never;
+    readonly __tsonic_type_System_Configuration_ConfigurationValidatorAttribute: never;
     readonly __tsonic_type_System_Configuration_PositiveTimeSpanValidatorAttribute: never;
 
-    readonly ValidatorInstance: ConfigurationValidatorBase;
 }
 
 
@@ -1528,7 +1589,8 @@ export const PropertyInformation: {
 
 export type PropertyInformation = PropertyInformation$instance;
 
-export interface PropertyInformationCollection$instance extends NameObjectCollectionBase {
+export interface PropertyInformationCollection$instance extends System_Collections_Specialized_Internal.NameObjectCollectionBase {
+    readonly __tsonic_type_System_Collections_Specialized_NameObjectCollectionBase: never;
     readonly __tsonic_type_System_Configuration_PropertyInformationCollection: never;
 
     readonly __tsonic_iface_System_Collections_ICollection: never;
@@ -1537,7 +1599,7 @@ export interface PropertyInformationCollection$instance extends NameObjectCollec
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
     CopyTo(array: PropertyInformation[], index: int): void;
-    GetEnumerator(): IEnumerator;
+    GetEnumerator: System_Collections_Specialized_Internal.NameObjectCollectionBase["GetEnumerator"] & (() => IEnumerator);
 }
 
 
@@ -1547,27 +1609,29 @@ export const PropertyInformationCollection: {
 
 export type PropertyInformationCollection = PropertyInformationCollection$instance & { readonly [propertyName: string]: PropertyInformation; };
 
-export interface ProtectedConfigurationProvider$instance extends ProviderBase {
+export interface ProtectedConfigurationProvider$instance extends System_Configuration_Provider_Internal.ProviderBase$instance {
     readonly __tsonic_type_System_Configuration_ProtectedConfigurationProvider: never;
+    readonly __tsonic_type_System_Configuration_Provider_ProviderBase: never;
 
     Decrypt(encryptedNode: XmlNode): XmlNode;
     Encrypt(node: XmlNode): XmlNode;
 }
 
 
-export const ProtectedConfigurationProvider: (abstract new() => ProtectedConfigurationProvider) & {
+export const ProtectedConfigurationProvider: {
 };
 
 
 export type ProtectedConfigurationProvider = ProtectedConfigurationProvider$instance;
 
-export interface ProtectedConfigurationProviderCollection$instance extends ProviderCollection {
+export interface ProtectedConfigurationProviderCollection$instance extends System_Configuration_Provider_Internal.ProviderCollection$instance {
     readonly __tsonic_type_System_Configuration_ProtectedConfigurationProviderCollection: never;
+    readonly __tsonic_type_System_Configuration_Provider_ProviderCollection: never;
 
     readonly __tsonic_iface_System_Collections_ICollection: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
-    Add(provider: ProviderBase): void;
+    Add: System_Configuration_Provider_Internal.ProviderCollection$instance["Add"] & ((provider: ProviderBase) => void);
 }
 
 
@@ -1578,11 +1642,12 @@ export const ProtectedConfigurationProviderCollection: {
 
 export type ProtectedConfigurationProviderCollection = ProtectedConfigurationProviderCollection$instance & { readonly [name: string]: ProtectedConfigurationProvider; };
 
-export interface ProtectedConfigurationSection$instance extends ConfigurationSection {
+export interface ProtectedConfigurationSection$instance extends ConfigurationSection$instance {
+    readonly __tsonic_type_System_Configuration_ConfigurationElement: never;
+    readonly __tsonic_type_System_Configuration_ConfigurationSection: never;
     readonly __tsonic_type_System_Configuration_ProtectedConfigurationSection: never;
 
     DefaultProvider: string;
-    readonly Properties: ConfigurationPropertyCollection;
     readonly Providers: ProviderSettingsCollection;
 }
 
@@ -1594,10 +1659,10 @@ export const ProtectedConfigurationSection: {
 
 export type ProtectedConfigurationSection = ProtectedConfigurationSection$instance;
 
-export interface ProtectedProviderSettings$instance extends ConfigurationElement {
+export interface ProtectedProviderSettings$instance extends ConfigurationElement$instance {
+    readonly __tsonic_type_System_Configuration_ConfigurationElement: never;
     readonly __tsonic_type_System_Configuration_ProtectedProviderSettings: never;
 
-    readonly Properties: ConfigurationPropertyCollection;
     readonly Providers: ProviderSettingsCollection;
 }
 
@@ -1609,17 +1674,17 @@ export const ProtectedProviderSettings: {
 
 export type ProtectedProviderSettings = ProtectedProviderSettings$instance;
 
-export interface ProviderSettings$instance extends ConfigurationElement {
+export interface ProviderSettings$instance extends ConfigurationElement$instance {
+    readonly __tsonic_type_System_Configuration_ConfigurationElement: never;
     readonly __tsonic_type_System_Configuration_ProviderSettings: never;
 
     Name: string;
     readonly Parameters: NameValueCollection;
-    readonly Properties: ConfigurationPropertyCollection;
     Type: string;
-    IsModified(): boolean;
-    OnDeserializeUnrecognizedAttribute(name: string, value: string): boolean;
-    Reset(parentElement: ConfigurationElement): void;
-    Unmerge(sourceElement: ConfigurationElement, parentElement: ConfigurationElement, saveMode: ConfigurationSaveMode): void;
+    IsModified: ConfigurationElement$instance["IsModified"] & (() => boolean);
+    OnDeserializeUnrecognizedAttribute: ConfigurationElement$instance["OnDeserializeUnrecognizedAttribute"] & ((name: string, value: string) => boolean);
+    Reset: ConfigurationElement$instance["Reset"] & ((parentElement: ConfigurationElement) => void);
+    Unmerge: ConfigurationElement$instance["Unmerge"] & ((sourceElement: ConfigurationElement, parentElement: ConfigurationElement, saveMode: ConfigurationSaveMode) => void);
 }
 
 
@@ -1631,20 +1696,20 @@ export const ProviderSettings: {
 
 export type ProviderSettings = ProviderSettings$instance;
 
-export interface ProviderSettingsCollection$instance extends ConfigurationElementCollection {
+export interface ProviderSettingsCollection$instance extends ConfigurationElementCollection$instance {
+    readonly __tsonic_type_System_Configuration_ConfigurationElement: never;
+    readonly __tsonic_type_System_Configuration_ConfigurationElementCollection: never;
     readonly __tsonic_type_System_Configuration_ProviderSettingsCollection: never;
 
     readonly __tsonic_iface_System_Collections_ICollection: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
-    readonly Properties: ConfigurationPropertyCollection;
     Add(provider: ProviderSettings): void;
     Clear(): void;
-    CreateNewElement(): ConfigurationElement;
-    CreateNewElement(elementName: string): ConfigurationElement;
-    get_Item(key: string): ProviderSettings;
+    CreateNewElement: ConfigurationElementCollection$instance["CreateNewElement"] & (() => ConfigurationElement) & ((elementName: string) => ConfigurationElement);
     get_Item(index: int): ProviderSettings;
-    GetElementKey(element: ConfigurationElement): unknown;
+    get_Item(key: string): ProviderSettings;
+    GetElementKey: ConfigurationElementCollection$instance["GetElementKey"] & ((element: ConfigurationElement) => unknown);
     Remove(name: string): void;
     set_Item(index: int, value: ProviderSettings): void;
 }
@@ -1657,11 +1722,12 @@ export const ProviderSettingsCollection: {
 
 export type ProviderSettingsCollection = ProviderSettingsCollection$instance;
 
-export interface RegexStringValidator$instance extends ConfigurationValidatorBase {
+export interface RegexStringValidator$instance extends ConfigurationValidatorBase$instance {
+    readonly __tsonic_type_System_Configuration_ConfigurationValidatorBase: never;
     readonly __tsonic_type_System_Configuration_RegexStringValidator: never;
 
-    CanValidate(type: Type): boolean;
-    Validate(value: unknown): void;
+    CanValidate: ConfigurationValidatorBase$instance["CanValidate"] & ((type: Type) => boolean);
+    Validate: ConfigurationValidatorBase$instance["Validate"] & ((value: unknown) => void);
 }
 
 
@@ -1672,11 +1738,12 @@ export const RegexStringValidator: {
 
 export type RegexStringValidator = RegexStringValidator$instance;
 
-export interface RegexStringValidatorAttribute$instance extends ConfigurationValidatorAttribute {
+export interface RegexStringValidatorAttribute$instance extends ConfigurationValidatorAttribute$instance {
+    readonly __tsonic_type_System_Attribute: never;
+    readonly __tsonic_type_System_Configuration_ConfigurationValidatorAttribute: never;
     readonly __tsonic_type_System_Configuration_RegexStringValidatorAttribute: never;
 
     readonly Regex: string;
-    readonly ValidatorInstance: ConfigurationValidatorBase;
 }
 
 
@@ -1687,7 +1754,9 @@ export const RegexStringValidatorAttribute: {
 
 export type RegexStringValidatorAttribute = RegexStringValidatorAttribute$instance;
 
-export interface RsaProtectedConfigurationProvider$instance extends ProtectedConfigurationProvider {
+export interface RsaProtectedConfigurationProvider$instance extends ProtectedConfigurationProvider$instance {
+    readonly __tsonic_type_System_Configuration_ProtectedConfigurationProvider: never;
+    readonly __tsonic_type_System_Configuration_Provider_ProviderBase: never;
     readonly __tsonic_type_System_Configuration_RsaProtectedConfigurationProvider: never;
 
     readonly CspProviderName: string;
@@ -1697,9 +1766,9 @@ export interface RsaProtectedConfigurationProvider$instance extends ProtectedCon
     readonly UseMachineContainer: boolean;
     readonly UseOAEP: boolean;
     AddKey(keySize: int, exportable: boolean): void;
-    Decrypt(encryptedNode: XmlNode): XmlNode;
+    Decrypt: ProtectedConfigurationProvider$instance["Decrypt"] & ((encryptedNode: XmlNode) => XmlNode);
     DeleteKey(): void;
-    Encrypt(node: XmlNode): XmlNode;
+    Encrypt: ProtectedConfigurationProvider$instance["Encrypt"] & ((node: XmlNode) => XmlNode);
     ExportKey(xmlFileName: string, includePrivateParameters: boolean): void;
     ImportKey(xmlFileName: string, exportable: boolean): void;
 }
@@ -1712,12 +1781,12 @@ export const RsaProtectedConfigurationProvider: {
 
 export type RsaProtectedConfigurationProvider = RsaProtectedConfigurationProvider$instance;
 
-export interface SchemeSettingElement$instance extends ConfigurationElement {
+export interface SchemeSettingElement$instance extends ConfigurationElement$instance {
+    readonly __tsonic_type_System_Configuration_ConfigurationElement: never;
     readonly __tsonic_type_System_Configuration_SchemeSettingElement: never;
 
     readonly GenericUriParserOptions: GenericUriParserOptions;
     readonly Name: string;
-    readonly Properties: ConfigurationPropertyCollection;
 }
 
 
@@ -1728,18 +1797,18 @@ export const SchemeSettingElement: {
 
 export type SchemeSettingElement = SchemeSettingElement$instance;
 
-export interface SchemeSettingElementCollection$instance extends ConfigurationElementCollection {
+export interface SchemeSettingElementCollection$instance extends ConfigurationElementCollection$instance {
+    readonly __tsonic_type_System_Configuration_ConfigurationElement: never;
+    readonly __tsonic_type_System_Configuration_ConfigurationElementCollection: never;
     readonly __tsonic_type_System_Configuration_SchemeSettingElementCollection: never;
 
     readonly __tsonic_iface_System_Collections_ICollection: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
-    readonly CollectionType: ConfigurationElementCollectionType;
-    CreateNewElement(): ConfigurationElement;
-    CreateNewElement(elementName: string): ConfigurationElement;
+    CreateNewElement: ConfigurationElementCollection$instance["CreateNewElement"] & (() => ConfigurationElement) & ((elementName: string) => ConfigurationElement);
     get_Item(index: int): SchemeSettingElement;
     get_Item(name: string): SchemeSettingElement;
-    GetElementKey(element: ConfigurationElement): unknown;
+    GetElementKey: ConfigurationElementCollection$instance["GetElementKey"] & ((element: ConfigurationElement) => unknown);
     IndexOf(element: SchemeSettingElement): int;
 }
 
@@ -1765,7 +1834,7 @@ export interface SectionInformation$instance {
     readonly IsDeclared: boolean;
     readonly IsLocked: boolean;
     readonly IsProtected: boolean;
-    Name: string;
+    readonly Name: string;
     OverrideMode: OverrideMode;
     OverrideModeDefault: OverrideMode;
     readonly OverrideModeEffective: OverrideMode;
@@ -1791,7 +1860,8 @@ export const SectionInformation: {
 
 export type SectionInformation = SectionInformation$instance;
 
-export interface SettingAttribute$instance extends Attribute {
+export interface SettingAttribute$instance extends System_Lib_tsonic_dotnet.Attribute {
+    readonly __tsonic_type_System_Attribute: never;
     readonly __tsonic_type_System_Configuration_SettingAttribute: never;
 
 }
@@ -1804,8 +1874,10 @@ export const SettingAttribute: {
 
 export type SettingAttribute = SettingAttribute$instance;
 
-export interface SettingChangingEventArgs$instance extends CancelEventArgs {
+export interface SettingChangingEventArgs$instance extends System_ComponentModel_Internal.CancelEventArgs {
+    readonly __tsonic_type_System_ComponentModel_CancelEventArgs: never;
     readonly __tsonic_type_System_Configuration_SettingChangingEventArgs: never;
+    readonly __tsonic_type_System_EventArgs: never;
 
     readonly NewValue: unknown;
     readonly SettingClass: string;
@@ -1821,15 +1893,15 @@ export const SettingChangingEventArgs: {
 
 export type SettingChangingEventArgs = SettingChangingEventArgs$instance;
 
-export interface SettingElement$instance extends ConfigurationElement {
+export interface SettingElement$instance extends ConfigurationElement$instance {
+    readonly __tsonic_type_System_Configuration_ConfigurationElement: never;
     readonly __tsonic_type_System_Configuration_SettingElement: never;
 
     Name: string;
-    readonly Properties: ConfigurationPropertyCollection;
     SerializeAs: SettingsSerializeAs;
     Value: SettingValueElement;
-    Equals(settings: unknown): boolean;
-    GetHashCode(): int;
+    Equals: ConfigurationElement$instance["Equals"] & ((settings: unknown) => boolean);
+    GetHashCode: ConfigurationElement$instance["GetHashCode"] & (() => int);
 }
 
 
@@ -1841,20 +1913,19 @@ export const SettingElement: {
 
 export type SettingElement = SettingElement$instance;
 
-export interface SettingElementCollection$instance extends ConfigurationElementCollection {
+export interface SettingElementCollection$instance extends ConfigurationElementCollection$instance {
+    readonly __tsonic_type_System_Configuration_ConfigurationElement: never;
+    readonly __tsonic_type_System_Configuration_ConfigurationElementCollection: never;
     readonly __tsonic_type_System_Configuration_SettingElementCollection: never;
 
     readonly __tsonic_iface_System_Collections_ICollection: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
-    readonly CollectionType: ConfigurationElementCollectionType;
-    readonly ElementName: string;
     Add(element: SettingElement): void;
     Clear(): void;
-    CreateNewElement(): ConfigurationElement;
-    CreateNewElement(elementName: string): ConfigurationElement;
+    CreateNewElement: ConfigurationElementCollection$instance["CreateNewElement"] & (() => ConfigurationElement) & ((elementName: string) => ConfigurationElement);
     Get(elementKey: string): SettingElement;
-    GetElementKey(element: ConfigurationElement): unknown;
+    GetElementKey: ConfigurationElementCollection$instance["GetElementKey"] & ((element: ConfigurationElement) => unknown);
     Remove(element: SettingElement): void;
 }
 
@@ -1866,7 +1937,8 @@ export const SettingElementCollection: {
 
 export type SettingElementCollection = SettingElementCollection$instance;
 
-export interface SettingsAttributeDictionary$instance extends Hashtable {
+export interface SettingsAttributeDictionary$instance extends System_Collections_Internal.Hashtable {
+    readonly __tsonic_type_System_Collections_Hashtable: never;
     readonly __tsonic_type_System_Configuration_SettingsAttributeDictionary: never;
 
     readonly __tsonic_iface_System_Collections_ICollection: never;
@@ -1900,14 +1972,15 @@ export interface SettingsBase$instance {
 }
 
 
-export const SettingsBase: (abstract new() => SettingsBase) & {
+export const SettingsBase: {
     Synchronized(settingsBase: SettingsBase): SettingsBase;
 };
 
 
 export type SettingsBase = SettingsBase$instance & { [propertyName: string]: unknown; };
 
-export interface SettingsContext$instance extends Hashtable {
+export interface SettingsContext$instance extends System_Collections_Internal.Hashtable {
+    readonly __tsonic_type_System_Collections_Hashtable: never;
     readonly __tsonic_type_System_Configuration_SettingsContext: never;
 
     readonly __tsonic_iface_System_Collections_ICollection: never;
@@ -1927,7 +2000,8 @@ export const SettingsContext: {
 
 export type SettingsContext = SettingsContext$instance;
 
-export interface SettingsDescriptionAttribute$instance extends Attribute {
+export interface SettingsDescriptionAttribute$instance extends System_Lib_tsonic_dotnet.Attribute {
+    readonly __tsonic_type_System_Attribute: never;
     readonly __tsonic_type_System_Configuration_SettingsDescriptionAttribute: never;
 
     readonly Description: string;
@@ -1941,7 +2015,8 @@ export const SettingsDescriptionAttribute: {
 
 export type SettingsDescriptionAttribute = SettingsDescriptionAttribute$instance;
 
-export interface SettingsGroupDescriptionAttribute$instance extends Attribute {
+export interface SettingsGroupDescriptionAttribute$instance extends System_Lib_tsonic_dotnet.Attribute {
+    readonly __tsonic_type_System_Attribute: never;
     readonly __tsonic_type_System_Configuration_SettingsGroupDescriptionAttribute: never;
 
     readonly Description: string;
@@ -1955,7 +2030,8 @@ export const SettingsGroupDescriptionAttribute: {
 
 export type SettingsGroupDescriptionAttribute = SettingsGroupDescriptionAttribute$instance;
 
-export interface SettingsGroupNameAttribute$instance extends Attribute {
+export interface SettingsGroupNameAttribute$instance extends System_Lib_tsonic_dotnet.Attribute {
+    readonly __tsonic_type_System_Attribute: never;
     readonly __tsonic_type_System_Configuration_SettingsGroupNameAttribute: never;
 
     readonly GroupName: string;
@@ -1969,8 +2045,9 @@ export const SettingsGroupNameAttribute: {
 
 export type SettingsGroupNameAttribute = SettingsGroupNameAttribute$instance;
 
-export interface SettingsLoadedEventArgs$instance extends EventArgs {
+export interface SettingsLoadedEventArgs$instance extends System_Lib_tsonic_dotnet.EventArgs {
     readonly __tsonic_type_System_Configuration_SettingsLoadedEventArgs: never;
+    readonly __tsonic_type_System_EventArgs: never;
 
     readonly Provider: SettingsProvider;
 }
@@ -1983,7 +2060,8 @@ export const SettingsLoadedEventArgs: {
 
 export type SettingsLoadedEventArgs = SettingsLoadedEventArgs$instance;
 
-export interface SettingsManageabilityAttribute$instance extends Attribute {
+export interface SettingsManageabilityAttribute$instance extends System_Lib_tsonic_dotnet.Attribute {
+    readonly __tsonic_type_System_Attribute: never;
     readonly __tsonic_type_System_Configuration_SettingsManageabilityAttribute: never;
 
     readonly Manageability: SettingsManageability;
@@ -2000,7 +2078,7 @@ export type SettingsManageabilityAttribute = SettingsManageabilityAttribute$inst
 export interface SettingsProperty$instance {
     readonly __tsonic_type_System_Configuration_SettingsProperty: never;
 
-    Attributes: SettingsAttributeDictionary;
+    readonly Attributes: SettingsAttributeDictionary;
     DefaultValue: unknown;
     IsReadOnly: boolean;
     Name: string;
@@ -2054,8 +2132,9 @@ export const SettingsPropertyCollection: {
 
 export type SettingsPropertyCollection = SettingsPropertyCollection$instance & { readonly [name: string]: SettingsProperty; };
 
-export interface SettingsPropertyIsReadOnlyException$instance extends Exception {
+export interface SettingsPropertyIsReadOnlyException$instance extends System_Lib_tsonic_dotnet.Exception {
     readonly __tsonic_type_System_Configuration_SettingsPropertyIsReadOnlyException: never;
+    readonly __tsonic_type_System_Exception: never;
 
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
@@ -2071,8 +2150,9 @@ export const SettingsPropertyIsReadOnlyException: {
 
 export type SettingsPropertyIsReadOnlyException = SettingsPropertyIsReadOnlyException$instance;
 
-export interface SettingsPropertyNotFoundException$instance extends Exception {
+export interface SettingsPropertyNotFoundException$instance extends System_Lib_tsonic_dotnet.Exception {
     readonly __tsonic_type_System_Configuration_SettingsPropertyNotFoundException: never;
+    readonly __tsonic_type_System_Exception: never;
 
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
@@ -2094,10 +2174,10 @@ export interface SettingsPropertyValue$instance {
     Deserialized: boolean;
     IsDirty: boolean;
     readonly Name: string;
-    Property: SettingsProperty;
+    readonly Property: SettingsProperty;
     PropertyValue: unknown;
     SerializedValue: unknown;
-    UsingDefaultValue: boolean;
+    readonly UsingDefaultValue: boolean;
 }
 
 
@@ -2135,8 +2215,9 @@ export const SettingsPropertyValueCollection: {
 
 export type SettingsPropertyValueCollection = SettingsPropertyValueCollection$instance & { readonly [name: string]: SettingsPropertyValue; };
 
-export interface SettingsPropertyWrongTypeException$instance extends Exception {
+export interface SettingsPropertyWrongTypeException$instance extends System_Lib_tsonic_dotnet.Exception {
     readonly __tsonic_type_System_Configuration_SettingsPropertyWrongTypeException: never;
+    readonly __tsonic_type_System_Exception: never;
 
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
@@ -2152,7 +2233,8 @@ export const SettingsPropertyWrongTypeException: {
 
 export type SettingsPropertyWrongTypeException = SettingsPropertyWrongTypeException$instance;
 
-export interface SettingsProvider$instance extends ProviderBase {
+export interface SettingsProvider$instance extends System_Configuration_Provider_Internal.ProviderBase$instance {
+    readonly __tsonic_type_System_Configuration_Provider_ProviderBase: never;
     readonly __tsonic_type_System_Configuration_SettingsProvider: never;
 
     ApplicationName: string;
@@ -2161,13 +2243,14 @@ export interface SettingsProvider$instance extends ProviderBase {
 }
 
 
-export const SettingsProvider: (abstract new() => SettingsProvider) & {
+export const SettingsProvider: {
 };
 
 
 export type SettingsProvider = SettingsProvider$instance;
 
-export interface SettingsProviderAttribute$instance extends Attribute {
+export interface SettingsProviderAttribute$instance extends System_Lib_tsonic_dotnet.Attribute {
+    readonly __tsonic_type_System_Attribute: never;
     readonly __tsonic_type_System_Configuration_SettingsProviderAttribute: never;
 
     readonly ProviderTypeName: string;
@@ -2182,13 +2265,14 @@ export const SettingsProviderAttribute: {
 
 export type SettingsProviderAttribute = SettingsProviderAttribute$instance;
 
-export interface SettingsProviderCollection$instance extends ProviderCollection {
+export interface SettingsProviderCollection$instance extends System_Configuration_Provider_Internal.ProviderCollection$instance {
+    readonly __tsonic_type_System_Configuration_Provider_ProviderCollection: never;
     readonly __tsonic_type_System_Configuration_SettingsProviderCollection: never;
 
     readonly __tsonic_iface_System_Collections_ICollection: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
-    Add(provider: ProviderBase): void;
+    Add: System_Configuration_Provider_Internal.ProviderCollection$instance["Add"] & ((provider: ProviderBase) => void);
 }
 
 
@@ -2199,7 +2283,8 @@ export const SettingsProviderCollection: {
 
 export type SettingsProviderCollection = SettingsProviderCollection$instance & { readonly [name: string]: SettingsProvider; };
 
-export interface SettingsSerializeAsAttribute$instance extends Attribute {
+export interface SettingsSerializeAsAttribute$instance extends System_Lib_tsonic_dotnet.Attribute {
+    readonly __tsonic_type_System_Attribute: never;
     readonly __tsonic_type_System_Configuration_SettingsSerializeAsAttribute: never;
 
     readonly SerializeAs: SettingsSerializeAs;
@@ -2213,19 +2298,19 @@ export const SettingsSerializeAsAttribute: {
 
 export type SettingsSerializeAsAttribute = SettingsSerializeAsAttribute$instance;
 
-export interface SettingValueElement$instance extends ConfigurationElement {
+export interface SettingValueElement$instance extends ConfigurationElement$instance {
+    readonly __tsonic_type_System_Configuration_ConfigurationElement: never;
     readonly __tsonic_type_System_Configuration_SettingValueElement: never;
 
-    readonly Properties: ConfigurationPropertyCollection;
     ValueXml: XmlNode;
-    DeserializeElement(reader: XmlReader, serializeCollectionKey: boolean): void;
-    Equals(settingValue: unknown): boolean;
-    GetHashCode(): int;
-    IsModified(): boolean;
-    Reset(parentElement: ConfigurationElement): void;
-    ResetModified(): void;
-    SerializeToXmlElement(writer: XmlWriter, elementName: string): boolean;
-    Unmerge(sourceElement: ConfigurationElement, parentElement: ConfigurationElement, saveMode: ConfigurationSaveMode): void;
+    DeserializeElement: ConfigurationElement$instance["DeserializeElement"] & ((reader: XmlReader, serializeCollectionKey: boolean) => void);
+    Equals: ConfigurationElement$instance["Equals"] & ((settingValue: unknown) => boolean);
+    GetHashCode: ConfigurationElement$instance["GetHashCode"] & (() => int);
+    IsModified: ConfigurationElement$instance["IsModified"] & (() => boolean);
+    Reset: ConfigurationElement$instance["Reset"] & ((parentElement: ConfigurationElement) => void);
+    ResetModified: ConfigurationElement$instance["ResetModified"] & (() => void);
+    SerializeToXmlElement: ConfigurationElement$instance["SerializeToXmlElement"] & ((writer: XmlWriter, elementName: string) => boolean);
+    Unmerge: ConfigurationElement$instance["Unmerge"] & ((sourceElement: ConfigurationElement, parentElement: ConfigurationElement, saveMode: ConfigurationSaveMode) => void);
 }
 
 
@@ -2236,7 +2321,7 @@ export const SettingValueElement: {
 
 export type SettingValueElement = SettingValueElement$instance;
 
-export interface SingleTagSectionHandler$instance extends IConfigurationSectionHandler$instance {
+export interface SingleTagSectionHandler$instance {
     readonly __tsonic_type_System_Configuration_SingleTagSectionHandler: never;
 
     readonly __tsonic_iface_System_Configuration_IConfigurationSectionHandler: never;
@@ -2257,7 +2342,8 @@ export interface __SingleTagSectionHandler$views {
 export type SingleTagSectionHandler = SingleTagSectionHandler$instance & __SingleTagSectionHandler$views;
 
 
-export interface SpecialSettingAttribute$instance extends Attribute {
+export interface SpecialSettingAttribute$instance extends System_Lib_tsonic_dotnet.Attribute {
+    readonly __tsonic_type_System_Attribute: never;
     readonly __tsonic_type_System_Configuration_SpecialSettingAttribute: never;
 
     readonly SpecialSetting: SpecialSetting;
@@ -2271,11 +2357,12 @@ export const SpecialSettingAttribute: {
 
 export type SpecialSettingAttribute = SpecialSettingAttribute$instance;
 
-export interface StringValidator$instance extends ConfigurationValidatorBase {
+export interface StringValidator$instance extends ConfigurationValidatorBase$instance {
+    readonly __tsonic_type_System_Configuration_ConfigurationValidatorBase: never;
     readonly __tsonic_type_System_Configuration_StringValidator: never;
 
-    CanValidate(type: Type): boolean;
-    Validate(value: unknown): void;
+    CanValidate: ConfigurationValidatorBase$instance["CanValidate"] & ((type: Type) => boolean);
+    Validate: ConfigurationValidatorBase$instance["Validate"] & ((value: unknown) => void);
 }
 
 
@@ -2288,13 +2375,14 @@ export const StringValidator: {
 
 export type StringValidator = StringValidator$instance;
 
-export interface StringValidatorAttribute$instance extends ConfigurationValidatorAttribute {
+export interface StringValidatorAttribute$instance extends ConfigurationValidatorAttribute$instance {
+    readonly __tsonic_type_System_Attribute: never;
+    readonly __tsonic_type_System_Configuration_ConfigurationValidatorAttribute: never;
     readonly __tsonic_type_System_Configuration_StringValidatorAttribute: never;
 
     InvalidCharacters: string;
     MaxLength: int;
     MinLength: int;
-    readonly ValidatorInstance: ConfigurationValidatorBase;
 }
 
 
@@ -2305,11 +2393,12 @@ export const StringValidatorAttribute: {
 
 export type StringValidatorAttribute = StringValidatorAttribute$instance;
 
-export interface SubclassTypeValidator$instance extends ConfigurationValidatorBase {
+export interface SubclassTypeValidator$instance extends ConfigurationValidatorBase$instance {
+    readonly __tsonic_type_System_Configuration_ConfigurationValidatorBase: never;
     readonly __tsonic_type_System_Configuration_SubclassTypeValidator: never;
 
-    CanValidate(type: Type): boolean;
-    Validate(value: unknown): void;
+    CanValidate: ConfigurationValidatorBase$instance["CanValidate"] & ((type: Type) => boolean);
+    Validate: ConfigurationValidatorBase$instance["Validate"] & ((value: unknown) => void);
 }
 
 
@@ -2320,11 +2409,12 @@ export const SubclassTypeValidator: {
 
 export type SubclassTypeValidator = SubclassTypeValidator$instance;
 
-export interface SubclassTypeValidatorAttribute$instance extends ConfigurationValidatorAttribute {
+export interface SubclassTypeValidatorAttribute$instance extends ConfigurationValidatorAttribute$instance {
+    readonly __tsonic_type_System_Attribute: never;
+    readonly __tsonic_type_System_Configuration_ConfigurationValidatorAttribute: never;
     readonly __tsonic_type_System_Configuration_SubclassTypeValidatorAttribute: never;
 
     readonly BaseClass: Type;
-    readonly ValidatorInstance: ConfigurationValidatorBase;
 }
 
 
@@ -2335,11 +2425,13 @@ export const SubclassTypeValidatorAttribute: {
 
 export type SubclassTypeValidatorAttribute = SubclassTypeValidatorAttribute$instance;
 
-export interface TimeSpanMinutesConverter$instance extends ConfigurationConverterBase {
+export interface TimeSpanMinutesConverter$instance extends ConfigurationConverterBase$instance {
+    readonly __tsonic_type_System_ComponentModel_TypeConverter: never;
+    readonly __tsonic_type_System_Configuration_ConfigurationConverterBase: never;
     readonly __tsonic_type_System_Configuration_TimeSpanMinutesConverter: never;
 
-    ConvertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown): unknown;
-    ConvertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type): unknown;
+    ConvertFrom: ConfigurationConverterBase$instance["ConvertFrom"] & ((ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown) => unknown);
+    ConvertTo: ConfigurationConverterBase$instance["ConvertTo"] & ((ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type) => unknown);
 }
 
 
@@ -2350,11 +2442,14 @@ export const TimeSpanMinutesConverter: {
 
 export type TimeSpanMinutesConverter = TimeSpanMinutesConverter$instance;
 
-export interface TimeSpanMinutesOrInfiniteConverter$instance extends TimeSpanMinutesConverter {
+export interface TimeSpanMinutesOrInfiniteConverter$instance extends TimeSpanMinutesConverter$instance {
+    readonly __tsonic_type_System_ComponentModel_TypeConverter: never;
+    readonly __tsonic_type_System_Configuration_ConfigurationConverterBase: never;
+    readonly __tsonic_type_System_Configuration_TimeSpanMinutesConverter: never;
     readonly __tsonic_type_System_Configuration_TimeSpanMinutesOrInfiniteConverter: never;
 
-    ConvertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown): unknown;
-    ConvertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type): unknown;
+    ConvertFrom: TimeSpanMinutesConverter$instance["ConvertFrom"] & ((ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown) => unknown);
+    ConvertTo: TimeSpanMinutesConverter$instance["ConvertTo"] & ((ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type) => unknown);
 }
 
 
@@ -2365,11 +2460,13 @@ export const TimeSpanMinutesOrInfiniteConverter: {
 
 export type TimeSpanMinutesOrInfiniteConverter = TimeSpanMinutesOrInfiniteConverter$instance;
 
-export interface TimeSpanSecondsConverter$instance extends ConfigurationConverterBase {
+export interface TimeSpanSecondsConverter$instance extends ConfigurationConverterBase$instance {
+    readonly __tsonic_type_System_ComponentModel_TypeConverter: never;
+    readonly __tsonic_type_System_Configuration_ConfigurationConverterBase: never;
     readonly __tsonic_type_System_Configuration_TimeSpanSecondsConverter: never;
 
-    ConvertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown): unknown;
-    ConvertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type): unknown;
+    ConvertFrom: ConfigurationConverterBase$instance["ConvertFrom"] & ((ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown) => unknown);
+    ConvertTo: ConfigurationConverterBase$instance["ConvertTo"] & ((ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type) => unknown);
 }
 
 
@@ -2380,11 +2477,14 @@ export const TimeSpanSecondsConverter: {
 
 export type TimeSpanSecondsConverter = TimeSpanSecondsConverter$instance;
 
-export interface TimeSpanSecondsOrInfiniteConverter$instance extends TimeSpanSecondsConverter {
+export interface TimeSpanSecondsOrInfiniteConverter$instance extends TimeSpanSecondsConverter$instance {
+    readonly __tsonic_type_System_ComponentModel_TypeConverter: never;
+    readonly __tsonic_type_System_Configuration_ConfigurationConverterBase: never;
+    readonly __tsonic_type_System_Configuration_TimeSpanSecondsConverter: never;
     readonly __tsonic_type_System_Configuration_TimeSpanSecondsOrInfiniteConverter: never;
 
-    ConvertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown): unknown;
-    ConvertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type): unknown;
+    ConvertFrom: TimeSpanSecondsConverter$instance["ConvertFrom"] & ((ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown) => unknown);
+    ConvertTo: TimeSpanSecondsConverter$instance["ConvertTo"] & ((ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type) => unknown);
 }
 
 
@@ -2395,11 +2495,12 @@ export const TimeSpanSecondsOrInfiniteConverter: {
 
 export type TimeSpanSecondsOrInfiniteConverter = TimeSpanSecondsOrInfiniteConverter$instance;
 
-export interface TimeSpanValidator$instance extends ConfigurationValidatorBase {
+export interface TimeSpanValidator$instance extends ConfigurationValidatorBase$instance {
+    readonly __tsonic_type_System_Configuration_ConfigurationValidatorBase: never;
     readonly __tsonic_type_System_Configuration_TimeSpanValidator: never;
 
-    CanValidate(type: Type): boolean;
-    Validate(value: unknown): void;
+    CanValidate: ConfigurationValidatorBase$instance["CanValidate"] & ((type: Type) => boolean);
+    Validate: ConfigurationValidatorBase$instance["Validate"] & ((value: unknown) => void);
 }
 
 
@@ -2412,15 +2513,16 @@ export const TimeSpanValidator: {
 
 export type TimeSpanValidator = TimeSpanValidator$instance;
 
-export interface TimeSpanValidatorAttribute$instance extends ConfigurationValidatorAttribute {
+export interface TimeSpanValidatorAttribute$instance extends ConfigurationValidatorAttribute$instance {
+    readonly __tsonic_type_System_Attribute: never;
+    readonly __tsonic_type_System_Configuration_ConfigurationValidatorAttribute: never;
     readonly __tsonic_type_System_Configuration_TimeSpanValidatorAttribute: never;
 
     ExcludeRange: boolean;
-    MaxValue: TimeSpan;
+    readonly MaxValue: TimeSpan;
     MaxValueString: string;
-    MinValue: TimeSpan;
+    readonly MinValue: TimeSpan;
     MinValueString: string;
-    readonly ValidatorInstance: ConfigurationValidatorBase;
 }
 
 
@@ -2433,11 +2535,13 @@ export const TimeSpanValidatorAttribute: {
 
 export type TimeSpanValidatorAttribute = TimeSpanValidatorAttribute$instance;
 
-export interface TypeNameConverter$instance extends ConfigurationConverterBase {
+export interface TypeNameConverter$instance extends ConfigurationConverterBase$instance {
+    readonly __tsonic_type_System_ComponentModel_TypeConverter: never;
+    readonly __tsonic_type_System_Configuration_ConfigurationConverterBase: never;
     readonly __tsonic_type_System_Configuration_TypeNameConverter: never;
 
-    ConvertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown): unknown;
-    ConvertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type): unknown;
+    ConvertFrom: ConfigurationConverterBase$instance["ConvertFrom"] & ((ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown) => unknown);
+    ConvertTo: ConfigurationConverterBase$instance["ConvertTo"] & ((ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type) => unknown);
 }
 
 
@@ -2448,12 +2552,13 @@ export const TypeNameConverter: {
 
 export type TypeNameConverter = TypeNameConverter$instance;
 
-export interface UriSection$instance extends ConfigurationSection {
+export interface UriSection$instance extends ConfigurationSection$instance {
+    readonly __tsonic_type_System_Configuration_ConfigurationElement: never;
+    readonly __tsonic_type_System_Configuration_ConfigurationSection: never;
     readonly __tsonic_type_System_Configuration_UriSection: never;
 
     readonly Idn: IdnElement;
     readonly IriParsing: IriParsingElement;
-    readonly Properties: ConfigurationPropertyCollection;
     readonly SchemeSettings: SchemeSettingElementCollection;
 }
 
@@ -2465,7 +2570,9 @@ export const UriSection: {
 
 export type UriSection = UriSection$instance;
 
-export interface UserScopedSettingAttribute$instance extends SettingAttribute {
+export interface UserScopedSettingAttribute$instance extends SettingAttribute$instance {
+    readonly __tsonic_type_System_Attribute: never;
+    readonly __tsonic_type_System_Configuration_SettingAttribute: never;
     readonly __tsonic_type_System_Configuration_UserScopedSettingAttribute: never;
 
 }
@@ -2478,7 +2585,8 @@ export const UserScopedSettingAttribute: {
 
 export type UserScopedSettingAttribute = UserScopedSettingAttribute$instance;
 
-export interface UserSettingsGroup$instance extends ConfigurationSectionGroup {
+export interface UserSettingsGroup$instance extends ConfigurationSectionGroup$instance {
+    readonly __tsonic_type_System_Configuration_ConfigurationSectionGroup: never;
     readonly __tsonic_type_System_Configuration_UserSettingsGroup: never;
 
 }
@@ -2491,11 +2599,13 @@ export const UserSettingsGroup: {
 
 export type UserSettingsGroup = UserSettingsGroup$instance;
 
-export interface WhiteSpaceTrimStringConverter$instance extends ConfigurationConverterBase {
+export interface WhiteSpaceTrimStringConverter$instance extends ConfigurationConverterBase$instance {
+    readonly __tsonic_type_System_ComponentModel_TypeConverter: never;
+    readonly __tsonic_type_System_Configuration_ConfigurationConverterBase: never;
     readonly __tsonic_type_System_Configuration_WhiteSpaceTrimStringConverter: never;
 
-    ConvertFrom(ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown): unknown;
-    ConvertTo(ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type): unknown;
+    ConvertFrom: ConfigurationConverterBase$instance["ConvertFrom"] & ((ctx: ITypeDescriptorContext, ci: CultureInfo, data: unknown) => unknown);
+    ConvertTo: ConfigurationConverterBase$instance["ConvertTo"] & ((ctx: ITypeDescriptorContext, ci: CultureInfo, value: unknown, type: Type) => unknown);
 }
 
 

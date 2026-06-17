@@ -17,15 +17,18 @@ import type { IEntityType, IIndex, IKey, IModel, IProperty, StoreObjectIdentifie
 import type { DbLoggerCategory_Model_Validation } from "@tsonic/efcore/Microsoft.EntityFrameworkCore/internal/index.js";
 import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection/internal/index.js";
 
-export enum SqlServerEngineType {
-    Unknown = 0,
-    SqlServer = 1,
-    AzureSql = 2,
-    AzureSynapse = 3
-}
+export type SqlServerEngineType = number & { readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Infrastructure_Internal_SqlServerEngineType: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const SqlServerEngineType: {
+    readonly Unknown: SqlServerEngineType;
+    readonly SqlServer: SqlServerEngineType;
+    readonly AzureSql: SqlServerEngineType;
+    readonly AzureSynapse: SqlServerEngineType;
+};
 
 
-export interface ISqlServerSingletonOptions$instance extends ISingletonOptions {
+export interface ISqlServerSingletonOptions$instance {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_ISingletonOptions: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_SqlServer_Infrastructure_Internal_ISqlServerSingletonOptions: never;
 
     readonly EngineType: SqlServerEngineType;
@@ -38,27 +41,25 @@ export interface ISqlServerSingletonOptions$instance extends ISingletonOptions {
 }
 
 
-export interface ISqlServerSingletonOptions$instance extends Microsoft_EntityFrameworkCore_Infrastructure_Internal.ISingletonOptions {}
-
 export type ISqlServerSingletonOptions = ISqlServerSingletonOptions$instance;
 
-export interface SqlServerModelValidator$instance extends RelationalModelValidator {
+export interface SqlServerModelValidator$instance extends Microsoft_EntityFrameworkCore_Infrastructure_Internal.RelationalModelValidator {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Infrastructure_ModelValidator: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Infrastructure_RelationalModelValidator: never;
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Infrastructure_Internal_SqlServerModelValidator: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IModelValidator: never;
 
-    Validate(model: IModel, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>): void;
+    Validate: Microsoft_EntityFrameworkCore_Infrastructure_Internal.RelationalModelValidator["Validate"] & ((model: IModel, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>) => void);
     ValidateByteIdentityMapping(model: IModel, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>): void;
-    ValidateCompatible(property: IProperty, duplicateProperty: IProperty, columnName: string, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>): void;
-    ValidateCompatible(key: IKey, duplicateKey: IKey, keyName: string, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>): void;
-    ValidateCompatible(index: IIndex, duplicateIndex: IIndex, indexName: string, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>): void;
+    ValidateCompatible: Microsoft_EntityFrameworkCore_Infrastructure_Internal.RelationalModelValidator["ValidateCompatible"] & ((index: IIndex, duplicateIndex: IIndex, indexName: string, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>) => void) & ((key: IKey, duplicateKey: IKey, keyName: string, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>) => void) & ((property: IProperty, duplicateProperty: IProperty, columnName: string, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>) => void);
     ValidateDecimalColumns(model: IModel, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>): void;
     ValidateIndexIncludeProperties(model: IModel, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>): void;
-    ValidateSharedColumnsCompatibility(mappedTypes: IReadOnlyList_1<IEntityType>, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>): void;
-    ValidateSharedTableCompatibility(mappedTypes: IReadOnlyList_1<IEntityType>, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>): void;
+    ValidateSharedColumnsCompatibility: Microsoft_EntityFrameworkCore_Infrastructure_Internal.RelationalModelValidator["ValidateSharedColumnsCompatibility"] & ((mappedTypes: IReadOnlyList_1<IEntityType>, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>) => void);
+    ValidateSharedTableCompatibility: Microsoft_EntityFrameworkCore_Infrastructure_Internal.RelationalModelValidator["ValidateSharedTableCompatibility"] & ((mappedTypes: IReadOnlyList_1<IEntityType>, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>) => void);
     ValidateTemporalTables(model: IModel, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>): void;
-    ValidateTypeMappings(model: IModel, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>): void;
-    ValidateValueGeneration(entityType: IEntityType, key: IKey, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>): void;
+    ValidateTypeMappings: Microsoft_EntityFrameworkCore_Infrastructure_Internal.RelationalModelValidator["ValidateTypeMappings"] & ((model: IModel, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>) => void);
+    ValidateValueGeneration: Microsoft_EntityFrameworkCore_Infrastructure_Internal.RelationalModelValidator["ValidateValueGeneration"] & ((entityType: IEntityType, key: IKey, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>) => void);
     ValidateVectorColumns(model: IModel, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>): void;
 }
 
@@ -70,7 +71,8 @@ export const SqlServerModelValidator: {
 
 export type SqlServerModelValidator = SqlServerModelValidator$instance;
 
-export interface SqlServerOptionsExtension$instance extends RelationalOptionsExtension {
+export interface SqlServerOptionsExtension$instance extends Microsoft_EntityFrameworkCore_Infrastructure_Internal.RelationalOptionsExtension {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Infrastructure_RelationalOptionsExtension: never;
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_Infrastructure_Internal_SqlServerOptionsExtension: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IDbContextOptionsExtension: never;
@@ -78,13 +80,12 @@ export interface SqlServerOptionsExtension$instance extends RelationalOptionsExt
     readonly AzureSqlCompatibilityLevel: int;
     readonly AzureSynapseCompatibilityLevel: int;
     readonly EngineType: SqlServerEngineType;
-    readonly Info: DbContextOptionsExtensionInfo;
     readonly SqlServerCompatibilityLevel: int;
     readonly UseRetryingStrategyByDefault: boolean;
     ApplyDefaults(options: IDbContextOptions): IDbContextOptionsExtension;
-    ApplyServices(services: IServiceCollection): void;
-    Clone(): RelationalOptionsExtension;
-    Validate(options: IDbContextOptions): void;
+    ApplyServices: Microsoft_EntityFrameworkCore_Infrastructure_Internal.RelationalOptionsExtension["ApplyServices"] & ((services: IServiceCollection) => void);
+    Clone: Microsoft_EntityFrameworkCore_Infrastructure_Internal.RelationalOptionsExtension["Clone"] & (() => RelationalOptionsExtension);
+    Validate: Microsoft_EntityFrameworkCore_Infrastructure_Internal.RelationalOptionsExtension["Validate"] & ((options: IDbContextOptions) => void);
     WithAzureSqlCompatibilityLevel(azureSqlCompatibilityLevel: Nullable_1<System_Internal.Int32>): SqlServerOptionsExtension;
     WithAzureSynapseCompatibilityLevel(azureSynapseCompatibilityLevel: Nullable_1<System_Internal.Int32>): SqlServerOptionsExtension;
     WithEngineType(engineType: SqlServerEngineType): SqlServerOptionsExtension;
@@ -110,10 +111,10 @@ export interface SqlServerSingletonOptions$instance {
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_ISingletonOptions: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_SqlServer_Infrastructure_Internal_ISqlServerSingletonOptions: never;
 
-    AzureSqlCompatibilityLevel: int;
-    AzureSynapseCompatibilityLevel: int;
-    EngineType: SqlServerEngineType;
-    SqlServerCompatibilityLevel: int;
+    readonly AzureSqlCompatibilityLevel: int;
+    readonly AzureSynapseCompatibilityLevel: int;
+    readonly EngineType: SqlServerEngineType;
+    readonly SqlServerCompatibilityLevel: int;
     readonly SupportsJsonFunctions: boolean;
     readonly SupportsJsonObjectArray: boolean;
     readonly SupportsJsonType: boolean;

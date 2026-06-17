@@ -2340,19 +2340,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.SqlAuthenticationInitializer::.ctor():void",
-            "metadataToken": 100664909,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.Data.SqlClient.SqlAuthenticationInitializer",
-            "ownerIdentity": "Microsoft.Data.SqlClient"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.SqlAuthenticationParameters",
@@ -2545,19 +2533,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.SqlAuthenticationParameters::.ctor(Microsoft.Data.SqlClient.SqlAuthenticationMethod,System.String,System.String,System.String,System.String,System.String,System.String,System.Guid,System.Int32):void",
-            "metadataToken": 100664911,
-            "canonicalSignature": "(Microsoft.Data.SqlClient.SqlAuthenticationMethod,System.String,System.String,System.String,System.String,System.String,System.String,System.Guid,System.Int32):void",
-            "normalizedSignature": "constructor|(Microsoft.Data.SqlClient.SqlAuthenticationMethod,System.String,System.String,System.String,System.String,System.String,System.String,System.Guid,System.Int32):void|static=false",
-            "isStatic": false,
-            "parameterCount": 9,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.Data.SqlClient.SqlAuthenticationParameters",
-            "ownerIdentity": "Microsoft.Data.SqlClient"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.SqlAuthenticationProvider",
@@ -2699,19 +2675,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.SqlAuthenticationProvider::.ctor():void",
-            "metadataToken": 100664921,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.Data.SqlClient.SqlAuthenticationProvider",
-            "ownerIdentity": "Microsoft.Data.SqlClient"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.SqlAuthenticationToken",
@@ -6127,19 +6091,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.SqlColumnEncryptionKeyStoreProvider::.ctor():void",
-            "metadataToken": 100665110,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.Data.SqlClient.SqlColumnEncryptionKeyStoreProvider",
-            "ownerIdentity": "Microsoft.Data.SqlClient"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.SqlCommand",
@@ -11496,26 +11448,6 @@
             "isExtensionMethod": false
           },
           {
-            "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.SqlDataReader::IsCommandBehavior(System.Data.CommandBehavior):System.Boolean",
-            "targetName": "IsCommandBehavior",
-            "metadataToken": 100665484,
-            "canonicalSignature": "(System.Data.CommandBehavior):System.Boolean",
-            "normalizedSignature": "IsCommandBehavior|(System.Data.CommandBehavior):System.Boolean|static=false",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "arity": 0,
-            "parameterCount": 1,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "isSealed": false,
-            "visibility": "ProtectedInternal",
-            "ownerQualifiedName": "Microsoft.Data.SqlClient.SqlDataReader",
-            "ownerIdentity": "Microsoft.Data.SqlClient",
-            "isExtensionMethod": false
-          },
-          {
             "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.SqlDataReader::IsDBNull(System.Int32):System.Boolean",
             "targetName": "IsDBNull",
             "metadataToken": 100665485,
@@ -11677,25 +11609,6 @@
           }
         ],
         "properties": [
-          {
-            "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.SqlDataReader::Connection:Microsoft.Data.SqlClient.SqlConnection",
-            "targetName": "Connection",
-            "metadataToken": 385877685,
-            "canonicalSignature": ":Microsoft.Data.SqlClient.SqlConnection",
-            "normalizedSignature": "Connection|:Microsoft.Data.SqlClient.SqlConnection|static=false|accessor=get",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "isIndexer": false,
-            "hasGetter": true,
-            "hasSetter": false,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.Data.SqlClient.SqlDataReader",
-            "ownerIdentity": "Microsoft.Data.SqlClient"
-          },
           {
             "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.SqlDataReader::Depth:System.Int32",
             "targetName": "Depth",
@@ -14459,12 +14372,12 @@
             "targetName": "Current",
             "metadataToken": 385877758,
             "canonicalSignature": ":System.TimeSpan",
-            "normalizedSignature": "Current|:System.TimeSpan|static=false|accessor=getset",
+            "normalizedSignature": "Current|:System.TimeSpan|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": true,
@@ -14478,12 +14391,12 @@
             "targetName": "GapTimeInterval",
             "metadataToken": 385877759,
             "canonicalSignature": ":System.TimeSpan",
-            "normalizedSignature": "GapTimeInterval|:System.TimeSpan|static=false|accessor=getset",
+            "normalizedSignature": "GapTimeInterval|:System.TimeSpan|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -14497,12 +14410,12 @@
             "targetName": "MaxTimeInterval",
             "metadataToken": 385877760,
             "canonicalSignature": ":System.TimeSpan",
-            "normalizedSignature": "MaxTimeInterval|:System.TimeSpan|static=false|accessor=getset",
+            "normalizedSignature": "MaxTimeInterval|:System.TimeSpan|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -14516,12 +14429,12 @@
             "targetName": "MinTimeInterval",
             "metadataToken": 385877761,
             "canonicalSignature": ":System.TimeSpan",
-            "normalizedSignature": "MinTimeInterval|:System.TimeSpan|static=false|accessor=getset",
+            "normalizedSignature": "MinTimeInterval|:System.TimeSpan|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -14673,12 +14586,12 @@
             "targetName": "Current",
             "metadataToken": 385877763,
             "canonicalSignature": ":System.Int32",
-            "normalizedSignature": "Current|:System.Int32|static=false|accessor=getset",
+            "normalizedSignature": "Current|:System.Int32|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -14692,12 +14605,12 @@
             "targetName": "NumberOfTries",
             "metadataToken": 385877764,
             "canonicalSignature": ":System.Int32",
-            "normalizedSignature": "NumberOfTries|:System.Int32|static=false|accessor=getset",
+            "normalizedSignature": "NumberOfTries|:System.Int32|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -14711,12 +14624,12 @@
             "targetName": "RetryIntervalEnumerator",
             "metadataToken": 385877765,
             "canonicalSignature": ":Microsoft.Data.SqlClient.SqlRetryIntervalBaseEnumerator",
-            "normalizedSignature": "RetryIntervalEnumerator|:Microsoft.Data.SqlClient.SqlRetryIntervalBaseEnumerator|static=false|accessor=getset",
+            "normalizedSignature": "RetryIntervalEnumerator|:Microsoft.Data.SqlClient.SqlRetryIntervalBaseEnumerator|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -14730,12 +14643,12 @@
             "targetName": "TransientPredicate",
             "metadataToken": 385877766,
             "canonicalSignature": ":System.Predicate_1[[System.Exception,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-            "normalizedSignature": "TransientPredicate|:System.Predicate_1[[System.Exception,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+            "normalizedSignature": "TransientPredicate|:System.Predicate_1[[System.Exception,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -14747,19 +14660,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.SqlRetryLogicBase::.ctor():void",
-            "metadataToken": 100665664,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.Data.SqlClient.SqlRetryLogicBase",
-            "ownerIdentity": "Microsoft.Data.SqlClient"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.SqlRetryLogicBaseProvider",
@@ -14863,12 +14764,12 @@
             "targetName": "RetryLogic",
             "metadataToken": 385877768,
             "canonicalSignature": ":Microsoft.Data.SqlClient.SqlRetryLogicBase",
-            "normalizedSignature": "RetryLogic|:Microsoft.Data.SqlClient.SqlRetryLogicBase|static=false|accessor=getset",
+            "normalizedSignature": "RetryLogic|:Microsoft.Data.SqlClient.SqlRetryLogicBase|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -14880,19 +14781,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.SqlRetryLogicBaseProvider::.ctor():void",
-            "metadataToken": 100665677,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.Data.SqlClient.SqlRetryLogicBaseProvider",
-            "ownerIdentity": "Microsoft.Data.SqlClient"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.Data.SqlClient:Microsoft.Data.SqlClient.SqlRetryLogicOption",

@@ -183,20 +183,7 @@
             "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
           }
         ],
-        "fields": [
-          {
-            "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.SqlServerRetryingExecutionStrategy::DefaultMinDelayThrottlingSystem.TimeSpan",
-            "targetName": "DefaultMinDelayThrottling",
-            "metadataToken": 67108891,
-            "normalizedSignature": "DefaultMinDelayThrottling|System.TimeSpan|static=true|const=false",
-            "isStatic": true,
-            "isReadOnly": true,
-            "isLiteral": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.EntityFrameworkCore.SqlServerRetryingExecutionStrategy",
-            "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
-          }
-        ],
+        "fields": [],
         "events": [],
         "constructors": [
           {

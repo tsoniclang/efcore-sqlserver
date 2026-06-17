@@ -20,8 +20,8 @@ export interface SqlDataRecord$instance {
     readonly __tsonic_iface_System_Data_IDataRecord: never;
 
     readonly FieldCount: int;
-    get_Item(ordinal: int): unknown;
     get_Item(name: string): unknown;
+    get_Item(ordinal: int): unknown;
     GetBoolean(ordinal: int): boolean;
     GetByte(ordinal: int): byte;
     GetBytes(ordinal: int, fieldOffset: long, buffer: byte[], bufferOffset: int, length: int): long;
@@ -130,11 +130,9 @@ export interface SqlMetaData$instance {
     readonly XmlSchemaCollectionDatabase: string;
     readonly XmlSchemaCollectionName: string;
     readonly XmlSchemaCollectionOwningSchema: string;
-    Adjust(value: boolean): boolean;
-    Adjust(value: byte): byte;
-    Adjust(value: byte[]): byte[];
-    Adjust(value: char): char;
-    Adjust(value: char[]): char[];
+    Adjust(value: DateTime): DateTime;
+    Adjust(value: DateTimeOffset): DateTimeOffset;
+    Adjust(value: Guid): Guid;
     Adjust(value: SqlBinary): SqlBinary;
     Adjust(value: SqlBoolean): SqlBoolean;
     Adjust(value: SqlByte): SqlByte;
@@ -151,18 +149,20 @@ export interface SqlMetaData$instance {
     Adjust(value: SqlSingle): SqlSingle;
     Adjust(value: SqlString): SqlString;
     Adjust(value: SqlXml): SqlXml;
-    Adjust(value: DateTime): DateTime;
-    Adjust(value: DateTimeOffset): DateTimeOffset;
+    Adjust(value: TimeSpan): TimeSpan;
+    Adjust(value: boolean): boolean;
+    Adjust(value: byte): byte;
+    Adjust(value: byte[]): byte[];
+    Adjust(value: char): char;
+    Adjust(value: char[]): char[];
     Adjust(value: decimal): decimal;
     Adjust(value: double): double;
-    Adjust(value: Guid): Guid;
-    Adjust(value: short): short;
+    Adjust(value: float): float;
     Adjust(value: int): int;
     Adjust(value: long): long;
-    Adjust(value: unknown): unknown;
-    Adjust(value: float): float;
+    Adjust(value: short): short;
     Adjust(value: string): string;
-    Adjust(value: TimeSpan): TimeSpan;
+    Adjust(value: unknown): unknown;
 }
 
 

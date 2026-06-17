@@ -14,7 +14,7 @@ import type { ITokenCache } from './Microsoft.Identity.Client/internal/index.js'
 import type { IEnumerable, KeyValuePair } from '@tsonic/dotnet/System.Collections.Generic.js';
 import type { TraceSource } from '@tsonic/dotnet/System.Diagnostics.js';
 import type { Boolean as ClrBoolean, Byte, EventArgs, EventHandler, Exception, IDisposable, Int32, Object as ClrObject, String as ClrString, Void } from '@tsonic/dotnet/System.js';
-import type { ISerializable, SerializationInfo, StreamingContext } from '@tsonic/dotnet/System.Runtime.Serialization.js';
+import type { ISerializable } from '@tsonic/dotnet/System.Runtime.Serialization.js';
 import type { Task } from '@tsonic/dotnet/System.Threading.Tasks.js';
 
 // Public API exports (curated - no internal $instance/$views leakage)
