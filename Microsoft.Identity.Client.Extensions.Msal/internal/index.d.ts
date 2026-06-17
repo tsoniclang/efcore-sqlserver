@@ -178,4 +178,3 @@ export abstract class SharedUtilities$instance {
 
 
 export type SharedUtilities = SharedUtilities$instance;
-

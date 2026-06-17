@@ -42,4 +42,3 @@ export abstract class SqlServerLoggerExtensions$instance {
 
 
 export type SqlServerLoggerExtensions = SqlServerLoggerExtensions$instance;
-

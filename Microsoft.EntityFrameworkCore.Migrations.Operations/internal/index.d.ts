@@ -53,4 +53,3 @@ export const SqlServerDropDatabaseOperation: {
 
 
 export type SqlServerDropDatabaseOperation = SqlServerDropDatabaseOperation$instance;
-

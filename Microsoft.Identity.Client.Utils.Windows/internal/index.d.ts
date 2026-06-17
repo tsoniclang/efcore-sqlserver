@@ -17,4 +17,3 @@ export abstract class WindowsNativeUtils$instance {
 
 
 export type WindowsNativeUtils = WindowsNativeUtils$instance;
-

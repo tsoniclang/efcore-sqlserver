@@ -18,5 +18,3 @@ export enum RegionOutcome {
     AutodetectSuccess = 4,
     FallbackToGlobal = 5
 }
-
-

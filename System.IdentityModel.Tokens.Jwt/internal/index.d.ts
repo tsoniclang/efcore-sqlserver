@@ -351,4 +351,3 @@ export abstract class JwtSecurityTokenConverter$instance {
 
 
 export type JwtSecurityTokenConverter = JwtSecurityTokenConverter$instance;
-

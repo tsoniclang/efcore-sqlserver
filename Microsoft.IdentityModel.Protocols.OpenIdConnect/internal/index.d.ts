@@ -547,4 +547,3 @@ export abstract class OpenIdProviderMetadataNames$instance {
 
 
 export type OpenIdProviderMetadataNames = OpenIdProviderMetadataNames$instance;
-

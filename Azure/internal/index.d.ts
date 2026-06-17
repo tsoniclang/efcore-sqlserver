@@ -494,4 +494,3 @@ export abstract class AzureCoreExtensions$instance {
 
 
 export type AzureCoreExtensions = AzureCoreExtensions$instance;
-

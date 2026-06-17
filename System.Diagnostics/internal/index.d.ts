@@ -16,4 +16,3 @@ export abstract class TraceConfiguration$instance {
 
 
 export type TraceConfiguration = TraceConfiguration$instance;
-

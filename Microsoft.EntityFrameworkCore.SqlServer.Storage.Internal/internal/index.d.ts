@@ -552,4 +552,3 @@ export abstract class SqlServerTransientExceptionDetector$instance {
 
 
 export type SqlServerTransientExceptionDetector = SqlServerTransientExceptionDetector$instance;
-

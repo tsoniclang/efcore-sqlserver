@@ -23,4 +23,3 @@ export abstract class ProtectedData$instance {
 
 
 export type ProtectedData = ProtectedData$instance;
-

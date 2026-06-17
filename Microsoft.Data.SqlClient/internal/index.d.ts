@@ -1435,4 +1435,3 @@ export abstract class SqlClientMetaDataCollectionNames$instance {
 
 
 export type SqlClientMetaDataCollectionNames = SqlClientMetaDataCollectionNames$instance;
-

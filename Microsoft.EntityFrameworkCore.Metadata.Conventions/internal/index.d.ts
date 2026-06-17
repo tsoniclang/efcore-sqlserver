@@ -284,4 +284,3 @@ export const SqlServerValueGenerationStrategyConvention: {
 
 
 export type SqlServerValueGenerationStrategyConvention = SqlServerValueGenerationStrategyConvention$instance;
-

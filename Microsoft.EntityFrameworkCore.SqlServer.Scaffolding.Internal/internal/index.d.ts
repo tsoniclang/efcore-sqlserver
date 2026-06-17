@@ -59,4 +59,3 @@ export abstract class SqlDataReaderExtension$instance {
 
 
 export type SqlDataReaderExtension = SqlDataReaderExtension$instance;
-

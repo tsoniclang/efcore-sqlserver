@@ -25,4 +25,3 @@ export abstract class ConfidentialClientApplicationBuilderForResourceProviders$i
 
 
 export type ConfidentialClientApplicationBuilderForResourceProviders = ConfidentialClientApplicationBuilderForResourceProviders$instance;
-

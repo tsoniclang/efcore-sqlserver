@@ -97,4 +97,3 @@ export const ObjectSerializer: (abstract new() => ObjectSerializer) & {
 
 
 export type ObjectSerializer = ObjectSerializer$instance;
-

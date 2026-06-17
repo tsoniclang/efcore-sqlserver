@@ -174,4 +174,3 @@ export const ContinuationToken: (abstract new() => ContinuationToken) & (abstrac
 
 
 export type ContinuationToken = ContinuationToken$instance;
-

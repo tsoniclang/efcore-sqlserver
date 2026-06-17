@@ -75,4 +75,3 @@ export abstract class SqlServerAnnotationNames$instance {
 
 
 export type SqlServerAnnotationNames = SqlServerAnnotationNames$instance;
-

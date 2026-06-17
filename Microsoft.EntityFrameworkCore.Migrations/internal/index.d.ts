@@ -84,4 +84,3 @@ export abstract class SqlServerMigrationBuilderExtensions$instance {
 
 
 export type SqlServerMigrationBuilderExtensions = SqlServerMigrationBuilderExtensions$instance;
-

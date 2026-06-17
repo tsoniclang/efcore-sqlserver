@@ -20,4 +20,3 @@ export interface IPoPCryptoProvider$instance {
 
 
 export type IPoPCryptoProvider = IPoPCryptoProvider$instance;
-

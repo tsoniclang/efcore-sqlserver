@@ -59,4 +59,3 @@ export abstract class SqlServerEventId$instance {
 
 
 export type SqlServerEventId = SqlServerEventId$instance;
-

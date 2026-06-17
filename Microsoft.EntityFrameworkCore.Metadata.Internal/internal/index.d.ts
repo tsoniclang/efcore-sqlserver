@@ -24,4 +24,3 @@ export abstract class SqlServerKeyExtensions$instance {
 
 
 export type SqlServerKeyExtensions = SqlServerKeyExtensions$instance;
-

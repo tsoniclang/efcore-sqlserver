@@ -2532,4 +2532,3 @@ export abstract class ProtectedConfiguration$instance {
 
 
 export type ProtectedConfiguration = ProtectedConfiguration$instance;
-

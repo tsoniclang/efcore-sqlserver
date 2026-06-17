@@ -22,4 +22,3 @@ export const Credential: (abstract new() => Credential) & {
 
 
 export type Credential = Credential$instance;
-

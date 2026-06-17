@@ -429,4 +429,3 @@ export const SqlClientTransactionRollbackError: {
 
 
 export type SqlClientTransactionRollbackError = SqlClientTransactionRollbackError$instance & { readonly [index: number]: KeyValuePair_2<System_Internal.String, unknown>; };
-

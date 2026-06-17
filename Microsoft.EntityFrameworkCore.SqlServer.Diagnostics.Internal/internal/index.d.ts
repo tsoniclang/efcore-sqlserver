@@ -46,4 +46,3 @@ export const SqlServerLoggingDefinitions: {
 
 
 export type SqlServerLoggingDefinitions = SqlServerLoggingDefinitions$instance;
-

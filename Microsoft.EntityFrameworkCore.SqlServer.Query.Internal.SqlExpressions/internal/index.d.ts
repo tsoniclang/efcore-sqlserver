@@ -37,4 +37,3 @@ export const SqlServerJsonObjectExpression: {
 
 
 export type SqlServerJsonObjectExpression = SqlServerJsonObjectExpression$instance;
-

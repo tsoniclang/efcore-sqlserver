@@ -44,4 +44,3 @@ export const SqlNotificationRequest: {
 
 
 export type SqlNotificationRequest = SqlNotificationRequest$instance;
-

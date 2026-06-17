@@ -32,4 +32,3 @@ export interface IKeyEncryptionKeyResolver$instance {
 
 
 export type IKeyEncryptionKeyResolver = IKeyEncryptionKeyResolver$instance;
-

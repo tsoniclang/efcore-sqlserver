@@ -24,4 +24,3 @@ export abstract class SqlServerServiceCollectionExtensions$instance {
 
 
 export type SqlServerServiceCollectionExtensions = SqlServerServiceCollectionExtensions$instance;
-

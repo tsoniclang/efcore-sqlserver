@@ -137,4 +137,3 @@ export abstract class ConfidentialClientApplicationExtensions$instance {
 
 
 export type ConfidentialClientApplicationExtensions = ConfidentialClientApplicationExtensions$instance;
-

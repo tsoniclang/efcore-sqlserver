@@ -833,4 +833,3 @@ export type ExtensionMethods_System_ClientModel_Primitives<TShape> =
   TShape extends null | undefined ? TShape
   : TShape extends void ? void
   : TShape & __TsonicWithExt<TShape, "System.ClientModel.Primitives", __TsonicExtApplier_System_ClientModel_Primitives> & __TsonicExtMethods_System_ClientModel_Primitives;
-

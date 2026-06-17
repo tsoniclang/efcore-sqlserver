@@ -25,4 +25,3 @@ export interface IAuthenticationOperation$instance {
 
 
 export type IAuthenticationOperation = IAuthenticationOperation$instance;
-

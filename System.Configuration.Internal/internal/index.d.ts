@@ -248,4 +248,3 @@ export const InternalConfigEventArgs: {
 
 
 export type InternalConfigEventArgs = InternalConfigEventArgs$instance;
-

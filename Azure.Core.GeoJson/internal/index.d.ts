@@ -304,4 +304,3 @@ export const GeoPolygonCollection: {
 
 
 export type GeoPolygonCollection = GeoPolygonCollection$instance & { readonly [index: number]: GeoPolygon; };
-

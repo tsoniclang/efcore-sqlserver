@@ -48,4 +48,3 @@ export const PoPAuthenticationConfiguration: {
 
 
 export type PoPAuthenticationConfiguration = PoPAuthenticationConfiguration$instance;
-

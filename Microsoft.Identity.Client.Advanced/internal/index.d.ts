@@ -18,4 +18,3 @@ export abstract class AcquireTokenParameterBuilderExtensions$instance {
 
 
 export type AcquireTokenParameterBuilderExtensions = AcquireTokenParameterBuilderExtensions$instance;
-

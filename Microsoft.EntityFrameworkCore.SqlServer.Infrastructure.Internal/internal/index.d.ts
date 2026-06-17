@@ -132,5 +132,3 @@ export interface __SqlServerSingletonOptions$views {
 }
 
 export type SqlServerSingletonOptions = SqlServerSingletonOptions$instance & __SqlServerSingletonOptions$views;
-
-

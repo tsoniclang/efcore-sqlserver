@@ -49,4 +49,3 @@ export interface IAzureClientFactoryBuilderWithCredential$instance {
 
 
 export type IAzureClientFactoryBuilderWithCredential = IAzureClientFactoryBuilderWithCredential$instance;
-

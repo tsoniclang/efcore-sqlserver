@@ -29,4 +29,3 @@ export const SystemDrawingSection: {
 
 
 export type SystemDrawingSection = SystemDrawingSection$instance;
-

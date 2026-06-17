@@ -101,4 +101,3 @@ export abstract class SqlServerStrings$instance {
 
 
 export type SqlServerStrings = SqlServerStrings$instance;
-

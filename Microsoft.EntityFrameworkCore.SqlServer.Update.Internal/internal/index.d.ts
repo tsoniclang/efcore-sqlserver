@@ -139,5 +139,3 @@ export interface __SqlServerUpdateSqlGenerator$views {
 }
 
 export type SqlServerUpdateSqlGenerator = SqlServerUpdateSqlGenerator$instance & __SqlServerUpdateSqlGenerator$views;
-
-

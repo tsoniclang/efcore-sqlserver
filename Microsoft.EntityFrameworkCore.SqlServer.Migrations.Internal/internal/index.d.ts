@@ -81,4 +81,3 @@ export const SqlServerMigrationsAnnotationProvider: {
 
 
 export type SqlServerMigrationsAnnotationProvider = SqlServerMigrationsAnnotationProvider$instance;
-

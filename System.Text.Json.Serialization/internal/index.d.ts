@@ -29,4 +29,3 @@ export const BinaryDataJsonConverter: {
 
 
 export type BinaryDataJsonConverter = BinaryDataJsonConverter$instance;
-

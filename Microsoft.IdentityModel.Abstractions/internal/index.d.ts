@@ -141,4 +141,3 @@ export abstract class ObservabilityConstants$instance {
 
 
 export type ObservabilityConstants = ObservabilityConstants$instance;
-

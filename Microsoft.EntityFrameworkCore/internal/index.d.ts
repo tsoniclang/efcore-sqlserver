@@ -695,4 +695,3 @@ export abstract class SqlServerTableExtensions$instance {
 
 
 export type SqlServerTableExtensions = SqlServerTableExtensions$instance;
-

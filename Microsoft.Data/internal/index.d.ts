@@ -34,4 +34,3 @@ export abstract class SqlDbTypeExtensions$instance {
 
 
 export type SqlDbTypeExtensions = SqlDbTypeExtensions$instance;
-

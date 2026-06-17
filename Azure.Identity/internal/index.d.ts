@@ -1056,4 +1056,3 @@ export abstract class IdentityModelFactory$instance {
 
 
 export type IdentityModelFactory = IdentityModelFactory$instance;
-

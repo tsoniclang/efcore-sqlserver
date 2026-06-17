@@ -733,4 +733,3 @@ export abstract class ModelReaderWriter$instance {
 
 
 export type ModelReaderWriter = ModelReaderWriter$instance;
-

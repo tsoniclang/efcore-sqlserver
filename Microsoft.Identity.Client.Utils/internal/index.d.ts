@@ -28,4 +28,3 @@ export const MacMainThreadScheduler: {
 
 
 export type MacMainThreadScheduler = MacMainThreadScheduler$instance;
-

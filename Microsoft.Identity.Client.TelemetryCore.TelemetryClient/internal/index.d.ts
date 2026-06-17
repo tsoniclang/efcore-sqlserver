@@ -24,4 +24,3 @@ export const TelemetryData: {
 
 
 export type TelemetryData = TelemetryData$instance;
-

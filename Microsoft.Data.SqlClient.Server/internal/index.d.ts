@@ -188,4 +188,3 @@ export const SqlMetaData: {
 
 
 export type SqlMetaData = SqlMetaData$instance;
-

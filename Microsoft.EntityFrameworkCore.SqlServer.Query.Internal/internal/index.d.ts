@@ -1126,4 +1126,3 @@ export abstract class SqlServerExpression$instance {
 
 
 export type SqlServerExpression = SqlServerExpression$instance;
-

@@ -93,4 +93,3 @@ export const SqlJson: {
 
 
 export type SqlJson = SqlJson$instance;
-

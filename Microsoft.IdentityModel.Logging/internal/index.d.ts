@@ -149,4 +149,3 @@ export abstract class IdentityModelTelemetryUtil$instance {
 
 
 export type IdentityModelTelemetryUtil = IdentityModelTelemetryUtil$instance;
-

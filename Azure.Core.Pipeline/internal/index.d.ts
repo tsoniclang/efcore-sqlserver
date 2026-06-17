@@ -244,4 +244,3 @@ export abstract class HttpPipelineBuilder$instance {
 
 
 export type HttpPipelineBuilder = HttpPipelineBuilder$instance;
-

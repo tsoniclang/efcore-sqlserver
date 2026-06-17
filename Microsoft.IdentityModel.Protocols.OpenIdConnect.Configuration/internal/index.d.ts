@@ -34,5 +34,3 @@ export interface __OpenIdConnectConfigurationValidator$views {
 }
 
 export type OpenIdConnectConfigurationValidator = OpenIdConnectConfigurationValidator$instance & __OpenIdConnectConfigurationValidator$views;
-
-

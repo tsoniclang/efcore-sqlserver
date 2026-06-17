@@ -20,5 +20,3 @@ export enum ManagedIdentitySource {
     DefaultToImds = 6,
     MachineLearning = 7
 }
-
-

@@ -58,4 +58,3 @@ export abstract class KerberosSupplementalTicketManager$instance {
 
 
 export type KerberosSupplementalTicketManager = KerberosSupplementalTicketManager$instance;
-

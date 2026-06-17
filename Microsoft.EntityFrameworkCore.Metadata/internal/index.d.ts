@@ -16,5 +16,3 @@ export enum SqlServerValueGenerationStrategy {
     IdentityColumn = 2,
     Sequence = 3
 }
-
-

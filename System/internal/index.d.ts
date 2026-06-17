@@ -67,4 +67,3 @@ export const BinaryData: {
 
 
 export type BinaryData = BinaryData$instance;
-

@@ -125,4 +125,3 @@ export const TemporalTableBuilder_1: {
 
 
 export type TemporalTableBuilder_1<TEntity extends (object | null)> = TemporalTableBuilder_1$instance<TEntity>;
-

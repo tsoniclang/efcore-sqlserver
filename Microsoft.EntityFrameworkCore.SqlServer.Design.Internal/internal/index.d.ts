@@ -79,4 +79,3 @@ export const SqlServerDesignTimeServices: {
 
 
 export type SqlServerDesignTimeServices = SqlServerDesignTimeServices$instance;
-

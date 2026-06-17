@@ -18,4 +18,3 @@ export abstract class SSHExtensions$instance {
 
 
 export type SSHExtensions = SSHExtensions$instance;
-

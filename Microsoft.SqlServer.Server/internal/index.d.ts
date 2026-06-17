@@ -151,4 +151,3 @@ export const SqlUserDefinedTypeAttribute: {
 
 
 export type SqlUserDefinedTypeAttribute = SqlUserDefinedTypeAttribute$instance;
-

@@ -68,4 +68,3 @@ export const MessageContent: {
 
 
 export type MessageContent = MessageContent$instance;
-
