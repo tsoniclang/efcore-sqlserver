@@ -10,11 +10,11 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 
 
 // Cross-namespace type imports for constraints
-import type { SettingsProvider } from './System.Configuration/internal/index.js';
+import type { ProtectedConfigurationProvider } from './System.Configuration/internal/index.js';
 import type { ICollection, IEnumerable, IEnumerator } from '@tsonic/dotnet/System.Collections.js';
 import type { NameValueCollection } from '@tsonic/dotnet/System.Collections.Specialized.js';
 import type { Boolean as ClrBoolean, Exception, Int32, Object as ClrObject, String as ClrString, Void } from '@tsonic/dotnet/System.js';
-import type { ISerializable, SerializationInfo, StreamingContext } from '@tsonic/dotnet/System.Runtime.Serialization.js';
+import type { ISerializable } from '@tsonic/dotnet/System.Runtime.Serialization.js';
 
 // Public API exports (curated - no internal $instance/$views leakage)
 export { ProviderBase as ProviderBase } from './System.Configuration.Provider/internal/index.js';

@@ -24,14 +24,14 @@ export interface ISafeLogSecurityArtifact$instance {
 
 export type ISafeLogSecurityArtifact = ISafeLogSecurityArtifact$instance;
 
-export interface IdentityModelEventSource$instance extends EventSource {
+export interface IdentityModelEventSource$instance extends System_Diagnostics_Tracing_Internal.EventSource {
     readonly __tsonic_type_Microsoft_IdentityModel_Logging_IdentityModelEventSource: never;
+    readonly __tsonic_type_System_Diagnostics_Tracing_EventSource: never;
 
     readonly __tsonic_iface_System_IDisposable: never;
 
     LogLevel: EventLevel;
-    Write(level: EventLevel, innerException: Exception, message: string): void;
-    Write(level: EventLevel, innerException: Exception, message: string, ...args: unknown[]): void;
+    Write: System_Diagnostics_Tracing_Internal.EventSource["Write"] & ((level: EventLevel, innerException: Exception, message: string) => void) & ((level: EventLevel, innerException: Exception, message: string, ...args: unknown[]) => void);
     WriteAlways(message: string): void;
     WriteAlways(message: string, ...args: unknown[]): void;
     WriteCritical(message: string): void;
@@ -65,7 +65,7 @@ export interface LoggerContext$instance {
     ActivityId: Guid;
     CaptureLogs: boolean;
     DebugId: string;
-    Logs: ICollection_1<System_Internal.String>;
+    readonly Logs: ICollection_1<System_Internal.String>;
     PropertyBag: IDictionary_2<System_Internal.String, unknown>;
 }
 
@@ -89,23 +89,23 @@ export const LogHelper: {
     Logger: IIdentityLogger;
     FormatInvariant(format: string, ...args: unknown[]): string;
     IsEnabled(level: EventLogLevel): boolean;
-    LogArgumentException<T extends unknown & ArgumentException>(eventLevel: EventLevel, argumentName: string, innerException: Exception, format: string, ...args: unknown[]): T;
-    LogArgumentException<T extends unknown & ArgumentException>(eventLevel: EventLevel, argumentName: string, innerException: Exception, message: string): T;
-    LogArgumentException<T extends unknown & ArgumentException>(eventLevel: EventLevel, argumentName: string, format: string, ...args: unknown[]): T;
-    LogArgumentException<T extends unknown & ArgumentException>(eventLevel: EventLevel, argumentName: string, message: string): T;
-    LogArgumentException<T extends unknown & ArgumentException>(argumentName: string, innerException: Exception, format: string, ...args: unknown[]): T;
-    LogArgumentException<T extends unknown & ArgumentException>(argumentName: string, innerException: Exception, message: string): T;
-    LogArgumentException<T extends unknown & ArgumentException>(argumentName: string, format: string, ...args: unknown[]): T;
-    LogArgumentException<T extends unknown & ArgumentException>(argumentName: string, message: string): T;
+    LogArgumentException<T extends unknown & { readonly __tsonic_type_System_ArgumentException: never } & { readonly __tsonic_type_System_Exception: never } & { readonly __tsonic_type_System_SystemException: never }>(eventLevel: EventLevel, argumentName: string, innerException: Exception, format: string, ...args: unknown[]): T;
+    LogArgumentException<T extends unknown & { readonly __tsonic_type_System_ArgumentException: never } & { readonly __tsonic_type_System_Exception: never } & { readonly __tsonic_type_System_SystemException: never }>(eventLevel: EventLevel, argumentName: string, innerException: Exception, message: string): T;
+    LogArgumentException<T extends unknown & { readonly __tsonic_type_System_ArgumentException: never } & { readonly __tsonic_type_System_Exception: never } & { readonly __tsonic_type_System_SystemException: never }>(eventLevel: EventLevel, argumentName: string, format: string, ...args: unknown[]): T;
+    LogArgumentException<T extends unknown & { readonly __tsonic_type_System_ArgumentException: never } & { readonly __tsonic_type_System_Exception: never } & { readonly __tsonic_type_System_SystemException: never }>(eventLevel: EventLevel, argumentName: string, message: string): T;
+    LogArgumentException<T extends unknown & { readonly __tsonic_type_System_ArgumentException: never } & { readonly __tsonic_type_System_Exception: never } & { readonly __tsonic_type_System_SystemException: never }>(argumentName: string, innerException: Exception, format: string, ...args: unknown[]): T;
+    LogArgumentException<T extends unknown & { readonly __tsonic_type_System_ArgumentException: never } & { readonly __tsonic_type_System_Exception: never } & { readonly __tsonic_type_System_SystemException: never }>(argumentName: string, innerException: Exception, message: string): T;
+    LogArgumentException<T extends unknown & { readonly __tsonic_type_System_ArgumentException: never } & { readonly __tsonic_type_System_Exception: never } & { readonly __tsonic_type_System_SystemException: never }>(argumentName: string, format: string, ...args: unknown[]): T;
+    LogArgumentException<T extends unknown & { readonly __tsonic_type_System_ArgumentException: never } & { readonly __tsonic_type_System_Exception: never } & { readonly __tsonic_type_System_SystemException: never }>(argumentName: string, message: string): T;
     LogArgumentNullException(argument: string): ArgumentNullException;
-    LogException<T extends unknown & Exception>(eventLevel: EventLevel, innerException: Exception, format: string, ...args: unknown[]): T;
-    LogException<T extends unknown & Exception>(eventLevel: EventLevel, innerException: Exception, message: string): T;
-    LogException<T extends unknown & Exception>(eventLevel: EventLevel, format: string, ...args: unknown[]): T;
-    LogException<T extends unknown & Exception>(eventLevel: EventLevel, message: string): T;
-    LogException<T extends unknown & Exception>(innerException: Exception, format: string, ...args: unknown[]): T;
-    LogException<T extends unknown & Exception>(innerException: Exception, message: string): T;
-    LogException<T extends unknown & Exception>(format: string, ...args: unknown[]): T;
-    LogException<T extends unknown & Exception>(message: string): T;
+    LogException<T extends unknown & { readonly __tsonic_type_System_Exception: never }>(eventLevel: EventLevel, innerException: Exception, format: string, ...args: unknown[]): T;
+    LogException<T extends unknown & { readonly __tsonic_type_System_Exception: never }>(eventLevel: EventLevel, innerException: Exception, message: string): T;
+    LogException<T extends unknown & { readonly __tsonic_type_System_Exception: never }>(eventLevel: EventLevel, format: string, ...args: unknown[]): T;
+    LogException<T extends unknown & { readonly __tsonic_type_System_Exception: never }>(eventLevel: EventLevel, message: string): T;
+    LogException<T extends unknown & { readonly __tsonic_type_System_Exception: never }>(innerException: Exception, format: string, ...args: unknown[]): T;
+    LogException<T extends unknown & { readonly __tsonic_type_System_Exception: never }>(innerException: Exception, message: string): T;
+    LogException<T extends unknown & { readonly __tsonic_type_System_Exception: never }>(format: string, ...args: unknown[]): T;
+    LogException<T extends unknown & { readonly __tsonic_type_System_Exception: never }>(message: string): T;
     LogExceptionMessage(eventLevel: EventLevel, exception: Exception): Exception;
     LogExceptionMessage(exception: Exception): Exception;
     LogInformation(message: string, ...args: unknown[]): void;
@@ -120,13 +120,14 @@ export const LogHelper: {
 
 export type LogHelper = LogHelper$instance;
 
-export interface TextWriterEventListener$instance extends EventListener {
+export interface TextWriterEventListener$instance extends System_Diagnostics_Tracing_Internal.EventListener {
     readonly __tsonic_type_Microsoft_IdentityModel_Logging_TextWriterEventListener: never;
+    readonly __tsonic_type_System_Diagnostics_Tracing_EventListener: never;
 
     readonly __tsonic_iface_System_IDisposable: never;
 
-    Dispose(): void;
-    OnEventWritten(eventData: EventWrittenEventArgs): void;
+    Dispose: System_Diagnostics_Tracing_Internal.EventListener["Dispose"] & (() => void);
+    OnEventWritten: System_Diagnostics_Tracing_Internal.EventListener["OnEventWritten"] & ((eventData: EventWrittenEventArgs) => void);
 }
 
 

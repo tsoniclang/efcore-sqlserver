@@ -11,14 +11,16 @@ import type { IDictionary_2, IReadOnlyDictionary_2 } from "@tsonic/dotnet/System
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, DateTime, Double, Enum, Guid, IComparable, IConvertible, IFormattable, Int32, Int64, ISpanFormattable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export enum EventLogLevel {
-    LogAlways = 0,
-    Critical = 1,
-    Error = 2,
-    Warning = 3,
-    Informational = 4,
-    Verbose = 5
-}
+export type EventLogLevel = number & { readonly __tsonic_type_Microsoft_IdentityModel_Abstractions_EventLogLevel: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const EventLogLevel: {
+    readonly LogAlways: EventLogLevel;
+    readonly Critical: EventLogLevel;
+    readonly Error: EventLogLevel;
+    readonly Warning: EventLogLevel;
+    readonly Informational: EventLogLevel;
+    readonly Verbose: EventLogLevel;
+};
 
 
 export interface IIdentityLogger$instance {
@@ -63,7 +65,7 @@ export const LogEntry: {
 
 export type LogEntry = LogEntry$instance;
 
-export interface NullIdentityModelLogger$instance extends IIdentityLogger$instance {
+export interface NullIdentityModelLogger$instance {
     readonly __tsonic_type_Microsoft_IdentityModel_Abstractions_NullIdentityModelLogger: never;
 
     readonly __tsonic_iface_Microsoft_IdentityModel_Abstractions_IIdentityLogger: never;
@@ -85,7 +87,7 @@ export interface __NullIdentityModelLogger$views {
 export type NullIdentityModelLogger = NullIdentityModelLogger$instance & __NullIdentityModelLogger$views;
 
 
-export interface NullTelemetryClient$instance extends ITelemetryClient$instance {
+export interface NullTelemetryClient$instance {
     readonly __tsonic_type_Microsoft_IdentityModel_Abstractions_NullTelemetryClient: never;
 
     readonly __tsonic_iface_Microsoft_IdentityModel_Abstractions_ITelemetryClient: never;
@@ -117,16 +119,16 @@ export interface TelemetryEventDetails$instance {
     get Name(): string | null;
     set Name(value: string | null);
     readonly Properties: IReadOnlyDictionary_2<System_Internal.String, unknown>;
-    SetProperty(key: string, value: string): void;
-    SetProperty(key: string, value: long): void;
-    SetProperty(key: string, value: boolean): void;
     SetProperty(key: string, value: DateTime): void;
-    SetProperty(key: string, value: double): void;
     SetProperty(key: string, value: Guid): void;
+    SetProperty(key: string, value: boolean): void;
+    SetProperty(key: string, value: double): void;
+    SetProperty(key: string, value: long): void;
+    SetProperty(key: string, value: string): void;
 }
 
 
-export const TelemetryEventDetails: (abstract new() => TelemetryEventDetails) & {
+export const TelemetryEventDetails: {
 };
 
 

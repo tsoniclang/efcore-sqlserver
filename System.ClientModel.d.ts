@@ -42,5 +42,5 @@ export type ClientResult<
   T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.ClientResult :
-  [T1] extends [unknown] ? Internal.ClientResult_1<T1> : never;
+  Internal.ClientResult_1<T1>;
 

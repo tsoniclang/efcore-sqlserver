@@ -980,25 +980,6 @@
         ],
         "properties": [
           {
-            "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.TelemetryEventDetails::PropertyValues:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-            "targetName": "PropertyValues",
-            "metadataToken": 385875976,
-            "canonicalSignature": ":System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-            "normalizedSignature": "PropertyValues|:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "isIndexer": false,
-            "hasGetter": true,
-            "hasSetter": false,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "visibility": "ProtectedInternal",
-            "ownerQualifiedName": "Microsoft.IdentityModel.Abstractions.TelemetryEventDetails",
-            "ownerIdentity": "Microsoft.IdentityModel.Abstractions"
-          },
-          {
             "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.TelemetryEventDetails::Name:System.String",
             "targetName": "Name",
             "metadataToken": 385875977,
@@ -1039,19 +1020,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.TelemetryEventDetails::.ctor():void",
-            "metadataToken": 100663339,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.IdentityModel.Abstractions.TelemetryEventDetails",
-            "ownerIdentity": "Microsoft.IdentityModel.Abstractions"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.IdentityModel.Abstractions:Microsoft.IdentityModel.Abstractions.ObservabilityConstants",

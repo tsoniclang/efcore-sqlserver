@@ -586,19 +586,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Azure.Core:Azure.Core.Serialization.ObjectSerializer::.ctor():void",
-            "metadataToken": 100665081,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Azure.Core.Serialization.ObjectSerializer",
-            "ownerIdentity": "Azure.Core"
-          }
-        ]
+        "constructors": []
       }
     ]
   }

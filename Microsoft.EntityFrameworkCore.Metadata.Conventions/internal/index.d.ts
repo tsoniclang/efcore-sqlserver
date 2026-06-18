@@ -19,12 +19,14 @@ import type { IConventionAnnotation, IConventionEntityType, IConventionForeignKe
 import type { ISqlGenerationHelper } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage/internal/index.js";
 import type { DeleteBehavior, ModelBuilder } from "@tsonic/efcore/Microsoft.EntityFrameworkCore/internal/index.js";
 
-export interface SqlServerConventionSetBuilder$instance extends RelationalConventionSetBuilder {
+export interface SqlServerConventionSetBuilder$instance extends Microsoft_EntityFrameworkCore_Metadata_Conventions_Infrastructure_Internal.RelationalConventionSetBuilder {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_Infrastructure_ProviderConventionSetBuilder: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_Infrastructure_RelationalConventionSetBuilder: never;
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_SqlServerConventionSetBuilder: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_Infrastructure_IProviderConventionSetBuilder: never;
 
-    CreateConventionSet(): ConventionSet;
+    CreateConventionSet: Microsoft_EntityFrameworkCore_Metadata_Conventions_Infrastructure_Internal.RelationalConventionSetBuilder["CreateConventionSet"] & (() => ConventionSet);
 }
 
 
@@ -108,7 +110,8 @@ export const SqlServerMemoryOptimizedTablesConvention: {
 
 export type SqlServerMemoryOptimizedTablesConvention = SqlServerMemoryOptimizedTablesConvention$instance;
 
-export interface SqlServerOnDeleteConvention$instance extends CascadeDeleteConvention {
+export interface SqlServerOnDeleteConvention$instance extends Microsoft_EntityFrameworkCore_Metadata_Conventions_Internal.CascadeDeleteConvention {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_CascadeDeleteConvention: never;
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_SqlServerOnDeleteConvention: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IConvention: never;
@@ -118,7 +121,7 @@ export interface SqlServerOnDeleteConvention$instance extends CascadeDeleteConve
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_ISkipNavigationForeignKeyChangedConvention: never;
 
     readonly RelationalDependencies: RelationalConventionSetBuilderDependencies;
-    GetTargetDeleteBehavior(foreignKey: IConventionForeignKey): DeleteBehavior;
+    GetTargetDeleteBehavior: Microsoft_EntityFrameworkCore_Metadata_Conventions_Internal.CascadeDeleteConvention["GetTargetDeleteBehavior"] & ((foreignKey: IConventionForeignKey) => DeleteBehavior);
     ProcessEntityTypeAnnotationChanged(entityTypeBuilder: IConventionEntityTypeBuilder, name: string, annotation: IConventionAnnotation | null, oldAnnotation: IConventionAnnotation | null, context: IConventionContext_1<IConventionAnnotation>): void;
     ProcessSkipNavigationForeignKeyChanged(skipNavigationBuilder: IConventionSkipNavigationBuilder, foreignKey: IConventionForeignKey | null, oldForeignKey: IConventionForeignKey | null, context: IConventionContext_1<IConventionForeignKey>): void;
 }
@@ -152,18 +155,20 @@ export const SqlServerOutputClauseConvention: {
 
 export type SqlServerOutputClauseConvention = SqlServerOutputClauseConvention$instance;
 
-export interface SqlServerRuntimeModelConvention$instance extends RelationalRuntimeModelConvention {
+export interface SqlServerRuntimeModelConvention$instance extends Microsoft_EntityFrameworkCore_Metadata_Conventions_Internal.RelationalRuntimeModelConvention {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_RelationalRuntimeModelConvention: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_RuntimeModelConvention: never;
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_SqlServerRuntimeModelConvention: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IModelFinalizedConvention: never;
 
-    ProcessEntityTypeAnnotations(annotations: Dictionary_2<System_Internal.String, unknown | null>, entityType: IEntityType, runtimeEntityType: RuntimeEntityType, runtime: boolean): void;
-    ProcessIndexAnnotations(annotations: Dictionary_2<System_Internal.String, unknown | null>, index: IIndex, runtimeIndex: RuntimeIndex, runtime: boolean): void;
-    ProcessKeyAnnotations(annotations: Dictionary_2<System_Internal.String, unknown | null>, key: IKey, runtimeKey: RuntimeKey, runtime: boolean): void;
-    ProcessModelAnnotations(annotations: Dictionary_2<System_Internal.String, unknown | null>, model: IModel, runtimeModel: RuntimeModel, runtime: boolean): void;
-    ProcessPropertyAnnotations(annotations: Dictionary_2<System_Internal.String, unknown | null>, property: IProperty, runtimeProperty: RuntimeProperty, runtime: boolean): void;
-    ProcessPropertyOverridesAnnotations(annotations: Dictionary_2<System_Internal.String, unknown | null>, propertyOverrides: IRelationalPropertyOverrides, runtimePropertyOverrides: RuntimeRelationalPropertyOverrides, runtime: boolean): void;
+    ProcessEntityTypeAnnotations: Microsoft_EntityFrameworkCore_Metadata_Conventions_Internal.RelationalRuntimeModelConvention["ProcessEntityTypeAnnotations"] & ((annotations: Dictionary_2<System_Internal.String, unknown | null>, entityType: IEntityType, runtimeEntityType: RuntimeEntityType, runtime: boolean) => void);
+    ProcessIndexAnnotations: Microsoft_EntityFrameworkCore_Metadata_Conventions_Internal.RelationalRuntimeModelConvention["ProcessIndexAnnotations"] & ((annotations: Dictionary_2<System_Internal.String, unknown | null>, index: IIndex, runtimeIndex: RuntimeIndex, runtime: boolean) => void);
+    ProcessKeyAnnotations: Microsoft_EntityFrameworkCore_Metadata_Conventions_Internal.RelationalRuntimeModelConvention["ProcessKeyAnnotations"] & ((annotations: Dictionary_2<System_Internal.String, unknown | null>, key: IKey, runtimeKey: RuntimeKey, runtime: boolean) => void);
+    ProcessModelAnnotations: Microsoft_EntityFrameworkCore_Metadata_Conventions_Internal.RelationalRuntimeModelConvention["ProcessModelAnnotations"] & ((annotations: Dictionary_2<System_Internal.String, unknown | null>, model: IModel, runtimeModel: RuntimeModel, runtime: boolean) => void);
+    ProcessPropertyAnnotations: Microsoft_EntityFrameworkCore_Metadata_Conventions_Internal.RelationalRuntimeModelConvention["ProcessPropertyAnnotations"] & ((annotations: Dictionary_2<System_Internal.String, unknown | null>, property: IProperty, runtimeProperty: RuntimeProperty, runtime: boolean) => void);
+    ProcessPropertyOverridesAnnotations: Microsoft_EntityFrameworkCore_Metadata_Conventions_Internal.RelationalRuntimeModelConvention["ProcessPropertyOverridesAnnotations"] & ((annotations: Dictionary_2<System_Internal.String, unknown | null>, propertyOverrides: IRelationalPropertyOverrides, runtimePropertyOverrides: RuntimeRelationalPropertyOverrides, runtime: boolean) => void);
 }
 
 
@@ -174,16 +179,14 @@ export const SqlServerRuntimeModelConvention: {
 
 export type SqlServerRuntimeModelConvention = SqlServerRuntimeModelConvention$instance;
 
-export interface SqlServerSharedTableConvention$instance extends SharedTableConvention {
+export interface SqlServerSharedTableConvention$instance extends Microsoft_EntityFrameworkCore_Metadata_Conventions_Internal.SharedTableConvention {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_SharedTableConvention: never;
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_SqlServerSharedTableConvention: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IModelFinalizingConvention: never;
 
-    readonly DefaultConstraintsUniqueAcrossTables: boolean;
-    readonly IndexesUniqueAcrossTables: boolean;
-    AreCompatible(key: IReadOnlyKey, duplicateKey: IReadOnlyKey, storeObject: StoreObjectIdentifier): boolean;
-    AreCompatible(index: IReadOnlyIndex, duplicateIndex: IReadOnlyIndex, storeObject: StoreObjectIdentifier): boolean;
+    AreCompatible: Microsoft_EntityFrameworkCore_Metadata_Conventions_Internal.SharedTableConvention["AreCompatible"] & ((index: IReadOnlyIndex, duplicateIndex: IReadOnlyIndex, storeObject: StoreObjectIdentifier) => boolean) & ((key: IReadOnlyKey, duplicateKey: IReadOnlyKey, storeObject: StoreObjectIdentifier) => boolean);
 }
 
 
@@ -194,15 +197,16 @@ export const SqlServerSharedTableConvention: {
 
 export type SqlServerSharedTableConvention = SqlServerSharedTableConvention$instance;
 
-export interface SqlServerStoreGenerationConvention$instance extends StoreGenerationConvention {
+export interface SqlServerStoreGenerationConvention$instance extends Microsoft_EntityFrameworkCore_Metadata_Conventions_Internal.StoreGenerationConvention {
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_SqlServerStoreGenerationConvention: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_StoreGenerationConvention: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IModelFinalizingConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IPropertyAnnotationChangedConvention: never;
 
-    ProcessPropertyAnnotationChanged(propertyBuilder: IConventionPropertyBuilder, name: string, annotation: IConventionAnnotation | null, oldAnnotation: IConventionAnnotation | null, context: IConventionContext_1<IConventionAnnotation>): void;
-    Validate(property: IConventionProperty, storeObject: StoreObjectIdentifier): void;
+    ProcessPropertyAnnotationChanged: Microsoft_EntityFrameworkCore_Metadata_Conventions_Internal.StoreGenerationConvention["ProcessPropertyAnnotationChanged"] & ((propertyBuilder: IConventionPropertyBuilder, name: string, annotation: IConventionAnnotation | null, oldAnnotation: IConventionAnnotation | null, context: IConventionContext_1<IConventionAnnotation>) => void);
+    Validate: Microsoft_EntityFrameworkCore_Metadata_Conventions_Internal.StoreGenerationConvention["Validate"] & ((property: IConventionProperty, storeObject: StoreObjectIdentifier) => void);
 }
 
 
@@ -236,8 +240,10 @@ export const SqlServerTemporalConvention: {
 
 export type SqlServerTemporalConvention = SqlServerTemporalConvention$instance;
 
-export interface SqlServerValueGenerationConvention$instance extends RelationalValueGenerationConvention {
+export interface SqlServerValueGenerationConvention$instance extends Microsoft_EntityFrameworkCore_Metadata_Conventions_Internal.RelationalValueGenerationConvention {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_RelationalValueGenerationConvention: never;
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_SqlServerValueGenerationConvention: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_ValueGenerationConvention: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IEntityTypeAnnotationChangedConvention: never;
@@ -249,10 +255,10 @@ export interface SqlServerValueGenerationConvention$instance extends RelationalV
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IForeignKeyRemovedConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IPropertyAnnotationChangedConvention: never;
 
-    GetValueGenerated(property: IConventionProperty): Nullable_1<ValueGenerated>;
-    MappingStrategyAllowsValueGeneration(property: IConventionProperty, mappingStrategy: string | null): boolean;
-    ProcessEntityTypeAnnotationChanged(entityTypeBuilder: IConventionEntityTypeBuilder, name: string, annotation: IConventionAnnotation | null, oldAnnotation: IConventionAnnotation | null, context: IConventionContext_1<IConventionAnnotation>): void;
-    ProcessPropertyAnnotationChanged(propertyBuilder: IConventionPropertyBuilder, name: string, annotation: IConventionAnnotation | null, oldAnnotation: IConventionAnnotation | null, context: IConventionContext_1<IConventionAnnotation>): void;
+    GetValueGenerated: Microsoft_EntityFrameworkCore_Metadata_Conventions_Internal.RelationalValueGenerationConvention["GetValueGenerated"] & ((property: IConventionProperty) => Nullable_1<ValueGenerated>);
+    MappingStrategyAllowsValueGeneration: Microsoft_EntityFrameworkCore_Metadata_Conventions_Internal.RelationalValueGenerationConvention["MappingStrategyAllowsValueGeneration"] & ((property: IConventionProperty, mappingStrategy: string | null) => boolean);
+    ProcessEntityTypeAnnotationChanged: Microsoft_EntityFrameworkCore_Metadata_Conventions_Internal.RelationalValueGenerationConvention["ProcessEntityTypeAnnotationChanged"] & ((entityTypeBuilder: IConventionEntityTypeBuilder, name: string, annotation: IConventionAnnotation | null, oldAnnotation: IConventionAnnotation | null, context: IConventionContext_1<IConventionAnnotation>) => void);
+    ProcessPropertyAnnotationChanged: Microsoft_EntityFrameworkCore_Metadata_Conventions_Internal.RelationalValueGenerationConvention["ProcessPropertyAnnotationChanged"] & ((propertyBuilder: IConventionPropertyBuilder, name: string, annotation: IConventionAnnotation | null, oldAnnotation: IConventionAnnotation | null, context: IConventionContext_1<IConventionAnnotation>) => void);
 }
 
 

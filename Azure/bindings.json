@@ -670,30 +670,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Azure.Core:Azure.AsyncPageable`1::.ctor():void",
-            "metadataToken": 100663298,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Azure.AsyncPageable`1",
-            "ownerIdentity": "Azure.Core"
-          },
-          {
-            "stableId": "Azure.Core:Azure.AsyncPageable`1::.ctor(System.Threading.CancellationToken):void",
-            "metadataToken": 100663299,
-            "canonicalSignature": "(System.Threading.CancellationToken):void",
-            "normalizedSignature": "constructor|(System.Threading.CancellationToken):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Azure.AsyncPageable`1",
-            "ownerIdentity": "Azure.Core"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Azure.Core:Azure.AzureKeyCredential",
@@ -717,12 +694,12 @@
             "targetName": "Key",
             "metadataToken": 385875970,
             "canonicalSignature": ":System.String",
-            "normalizedSignature": "Key|:System.String|static=false|accessor=getset",
+            "normalizedSignature": "Key|:System.String|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -895,12 +872,12 @@
             "targetName": "Signature",
             "metadataToken": 385875972,
             "canonicalSignature": ":System.String",
-            "normalizedSignature": "Signature|:System.String|static=false|accessor=getset",
+            "normalizedSignature": "Signature|:System.String|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -1520,19 +1497,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Azure.Core:Azure.NullableResponse`1::.ctor():void",
-            "metadataToken": 100663379,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Azure.NullableResponse`1",
-            "ownerIdentity": "Azure.Core"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Azure.Core:Azure.Operation",
@@ -1933,19 +1898,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Azure.Core:Azure.Operation::.ctor():void",
-            "metadataToken": 100663401,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Azure.Operation",
-            "ownerIdentity": "Azure.Core"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Azure.Core:Azure.Operation`1",
@@ -2189,19 +2142,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Azure.Core:Azure.Operation`1::.ctor():void",
-            "metadataToken": 100663412,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Azure.Operation`1",
-            "ownerIdentity": "Azure.Core"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Azure.Core:Azure.Page`1",
@@ -2365,19 +2306,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Azure.Core:Azure.Page`1::.ctor():void",
-            "metadataToken": 100663420,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Azure.Page`1",
-            "ownerIdentity": "Azure.Core"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Azure.Core:Azure.Pageable`1",
@@ -2555,30 +2484,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Azure.Core:Azure.Pageable`1::.ctor():void",
-            "metadataToken": 100663422,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Azure.Pageable`1",
-            "ownerIdentity": "Azure.Core"
-          },
-          {
-            "stableId": "Azure.Core:Azure.Pageable`1::.ctor(System.Threading.CancellationToken):void",
-            "metadataToken": 100663423,
-            "canonicalSignature": "(System.Threading.CancellationToken):void",
-            "normalizedSignature": "constructor|(System.Threading.CancellationToken):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Azure.Pageable`1",
-            "ownerIdentity": "Azure.Core"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Azure.Core:Azure.PageableOperation`1",
@@ -2666,19 +2572,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Azure.Core:Azure.PageableOperation`1::.ctor():void",
-            "metadataToken": 100663434,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Azure.PageableOperation`1",
-            "ownerIdentity": "Azure.Core"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Azure.Core:Azure.RequestConditions",
@@ -3078,17 +2972,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "Azure.RequestFailedException",
             "ownerIdentity": "Azure.Core"
-          },
-          {
-            "stableId": "Azure.Core:Azure.RequestFailedException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "metadataToken": 100663467,
-            "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Azure.RequestFailedException",
-            "ownerIdentity": "Azure.Core"
           }
         ]
       },
@@ -3387,12 +3270,12 @@
             "targetName": "IsError",
             "metadataToken": 385876007,
             "canonicalSignature": ":System.Boolean",
-            "normalizedSignature": "IsError|:System.Boolean|static=false|accessor=getset",
+            "normalizedSignature": "IsError|:System.Boolean|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": true,
@@ -3404,19 +3287,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Azure.Core:Azure.Response::.ctor():void",
-            "metadataToken": 100663497,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Azure.Response",
-            "ownerIdentity": "Azure.Core"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Azure.Core:Azure.Response`1",
@@ -3523,19 +3394,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Azure.Core:Azure.Response`1::.ctor():void",
-            "metadataToken": 100663565,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Azure.Response`1",
-            "ownerIdentity": "Azure.Core"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Azure.Core:Azure.ResponseError",

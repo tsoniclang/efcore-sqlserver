@@ -7,6 +7,9 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 
 
 // Import types from other namespaces
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import * as Azure_Internal from "../../Azure/internal/index.js";
+import type { ResponseError } from "../../Azure/internal/index.js";
 import * as System_ClientModel_Primitives_Internal from "../../System.ClientModel.Primitives/internal/index.js";
 import type { IJsonModel_1, IPersistableModel_1, ModelReaderWriterOptions } from "../../System.ClientModel.Primitives/internal/index.js";
 import type { BinaryData } from "../../System/internal/index.js";
@@ -18,19 +21,22 @@ import type { Utf8JsonReader, Utf8JsonWriter } from "@tsonic/dotnet/System.Text.
 import * as System_Lib_tsonic_dotnet from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Double, Enum, IComparable, IConvertible, IDisposable, IEquatable_1, IFormattable, Int32, ISpanFormattable, Nullable_1, Object as ClrObject, String as ClrString, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export enum GeoObjectType {
-    Point = 0,
-    MultiPoint = 1,
-    Polygon = 2,
-    MultiPolygon = 3,
-    LineString = 4,
-    MultiLineString = 5,
-    GeometryCollection = 6
-}
+export type GeoObjectType = number & { readonly __tsonic_type_Azure_Core_GeoJson_GeoObjectType: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const GeoObjectType: {
+    readonly Point: GeoObjectType;
+    readonly MultiPoint: GeoObjectType;
+    readonly Polygon: GeoObjectType;
+    readonly MultiPolygon: GeoObjectType;
+    readonly LineString: GeoObjectType;
+    readonly MultiLineString: GeoObjectType;
+    readonly GeometryCollection: GeoObjectType;
+};
 
 
 export interface GeoArray_1$instance<T extends unknown> {
     readonly __tsonic_type_Azure_Core_GeoJson_GeoArray_1: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
@@ -51,6 +57,7 @@ export type GeoArray_1<T extends unknown> = GeoArray_1$instance<T> & { readonly 
 
 export interface GeoArray_1_Enumerator$instance<T extends unknown> {
     readonly __tsonic_type_Azure_Core_GeoJson_GeoArray_1_Enumerator: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerator_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerator: never;
@@ -72,6 +79,7 @@ export type GeoArray_1_Enumerator<T extends unknown> = GeoArray_1_Enumerator$ins
 
 export interface GeoPosition$instance {
     readonly __tsonic_type_Azure_Core_GeoJson_GeoPosition: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_IEquatable_1: never;
 
@@ -79,8 +87,8 @@ export interface GeoPosition$instance {
     readonly Count: int;
     readonly Latitude: double;
     readonly Longitude: double;
-    Equals(other: GeoPosition): boolean;
     Equals(obj: unknown | null): boolean;
+    Equals(other: GeoPosition): boolean;
     GetHashCode(): int;
     ToString(): string;
 }
@@ -105,8 +113,8 @@ export interface GeoBoundingBox$instance {
     readonly North: double;
     readonly South: double;
     readonly West: double;
-    Equals(other: GeoBoundingBox | null): boolean;
     Equals(obj: unknown | null): boolean;
+    Equals(other: GeoBoundingBox | null): boolean;
     GetHashCode(): int;
     ToString(): string;
 }
@@ -120,8 +128,9 @@ export const GeoBoundingBox: {
 
 export type GeoBoundingBox = GeoBoundingBox$instance & { readonly [index: number]: double; };
 
-export interface GeoCollection$instance extends GeoObject {
+export interface GeoCollection$instance extends GeoObject$instance {
     readonly __tsonic_type_Azure_Core_GeoJson_GeoCollection: never;
+    readonly __tsonic_type_Azure_Core_GeoJson_GeoObject: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
@@ -129,7 +138,6 @@ export interface GeoCollection$instance extends GeoObject {
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly Count: int;
-    readonly Type: GeoObjectType;
     GetEnumerator(): IEnumerator_1<GeoObject>;
 }
 
@@ -156,11 +164,11 @@ export const GeoLinearRing: {
 
 export type GeoLinearRing = GeoLinearRing$instance;
 
-export interface GeoLineString$instance extends GeoObject {
+export interface GeoLineString$instance extends GeoObject$instance {
     readonly __tsonic_type_Azure_Core_GeoJson_GeoLineString: never;
+    readonly __tsonic_type_Azure_Core_GeoJson_GeoObject: never;
 
     readonly Coordinates: GeoArray_1<GeoPosition>;
-    readonly Type: GeoObjectType;
 }
 
 
@@ -172,8 +180,9 @@ export const GeoLineString: {
 
 export type GeoLineString = GeoLineString$instance;
 
-export interface GeoLineStringCollection$instance extends GeoObject {
+export interface GeoLineStringCollection$instance extends GeoObject$instance {
     readonly __tsonic_type_Azure_Core_GeoJson_GeoLineStringCollection: never;
+    readonly __tsonic_type_Azure_Core_GeoJson_GeoObject: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
@@ -182,7 +191,6 @@ export interface GeoLineStringCollection$instance extends GeoObject {
 
     readonly Coordinates: GeoArray_1<GeoArray_1<GeoPosition>>;
     readonly Count: int;
-    readonly Type: GeoObjectType;
     GetEnumerator(): IEnumerator_1<GeoLineString>;
 }
 
@@ -212,14 +220,14 @@ export const GeoObject: {
 
 export type GeoObject = GeoObject$instance;
 
-export interface GeoPoint$instance extends GeoObject, System_ClientModel_Primitives_Internal.IJsonModel_1$instance<GeoPoint> {
+export interface GeoPoint$instance extends GeoObject$instance {
+    readonly __tsonic_type_Azure_Core_GeoJson_GeoObject: never;
     readonly __tsonic_type_Azure_Core_GeoJson_GeoPoint: never;
 
     readonly __tsonic_iface_System_ClientModel_Primitives_IJsonModel_1: never;
     readonly __tsonic_iface_System_ClientModel_Primitives_IPersistableModel_1: never;
 
     readonly Coordinates: GeoPosition;
-    readonly Type: GeoObjectType;
 }
 
 
@@ -240,7 +248,8 @@ export interface __GeoPoint$views {
 export type GeoPoint = GeoPoint$instance & __GeoPoint$views;
 
 
-export interface GeoPointCollection$instance extends GeoObject {
+export interface GeoPointCollection$instance extends GeoObject$instance {
+    readonly __tsonic_type_Azure_Core_GeoJson_GeoObject: never;
     readonly __tsonic_type_Azure_Core_GeoJson_GeoPointCollection: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
@@ -250,7 +259,6 @@ export interface GeoPointCollection$instance extends GeoObject {
 
     readonly Coordinates: GeoArray_1<GeoPosition>;
     readonly Count: int;
-    readonly Type: GeoObjectType;
     GetEnumerator(): IEnumerator_1<GeoPoint>;
 }
 
@@ -263,13 +271,13 @@ export const GeoPointCollection: {
 
 export type GeoPointCollection = GeoPointCollection$instance & { readonly [index: number]: GeoPoint; };
 
-export interface GeoPolygon$instance extends GeoObject {
+export interface GeoPolygon$instance extends GeoObject$instance {
+    readonly __tsonic_type_Azure_Core_GeoJson_GeoObject: never;
     readonly __tsonic_type_Azure_Core_GeoJson_GeoPolygon: never;
 
     readonly Coordinates: GeoArray_1<GeoArray_1<GeoPosition>>;
     readonly OuterRing: GeoLinearRing;
     readonly Rings: IReadOnlyList_1<GeoLinearRing>;
-    readonly Type: GeoObjectType;
 }
 
 
@@ -282,7 +290,8 @@ export const GeoPolygon: {
 
 export type GeoPolygon = GeoPolygon$instance;
 
-export interface GeoPolygonCollection$instance extends GeoObject {
+export interface GeoPolygonCollection$instance extends GeoObject$instance {
+    readonly __tsonic_type_Azure_Core_GeoJson_GeoObject: never;
     readonly __tsonic_type_Azure_Core_GeoJson_GeoPolygonCollection: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
@@ -292,7 +301,6 @@ export interface GeoPolygonCollection$instance extends GeoObject {
 
     readonly Coordinates: GeoArray_1<GeoArray_1<GeoArray_1<GeoPosition>>>;
     readonly Count: int;
-    readonly Type: GeoObjectType;
     GetEnumerator(): IEnumerator_1<GeoPolygon>;
 }
 

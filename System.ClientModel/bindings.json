@@ -160,19 +160,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "System.ClientModel:System.ClientModel.AsyncCollectionResult`1::.ctor():void",
-            "metadataToken": 100663305,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "ProtectedInternal",
-            "ownerQualifiedName": "System.ClientModel.AsyncCollectionResult`1",
-            "ownerIdentity": "System.ClientModel"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "System.ClientModel:System.ClientModel.AuthenticationTokenProvider",
@@ -254,19 +242,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "System.ClientModel:System.ClientModel.AuthenticationTokenProvider::.ctor():void",
-            "metadataToken": 100663301,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "System.ClientModel.AuthenticationTokenProvider",
-            "ownerIdentity": "System.ClientModel"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "System.ClientModel:System.ClientModel.BinaryContent",
@@ -503,12 +479,12 @@
             "targetName": "MediaType",
             "metadataToken": 385875971,
             "canonicalSignature": ":System.String",
-            "normalizedSignature": "MediaType|:System.String|static=false|accessor=getset",
+            "normalizedSignature": "MediaType|:System.String|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -520,19 +496,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "System.ClientModel:System.ClientModel.BinaryContent::.ctor():void",
-            "metadataToken": 100663346,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "System.ClientModel.BinaryContent",
-            "ownerIdentity": "System.ClientModel"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "System.ClientModel:System.ClientModel.ClientResult",
@@ -634,19 +598,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "System.ClientModel:System.ClientModel.ClientResult::.ctor(System.ClientModel.Primitives.PipelineResponse):void",
-            "metadataToken": 100663308,
-            "canonicalSignature": "(System.ClientModel.Primitives.PipelineResponse):void",
-            "normalizedSignature": "constructor|(System.ClientModel.Primitives.PipelineResponse):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
-            "ownerQualifiedName": "System.ClientModel.ClientResult",
-            "ownerIdentity": "System.ClientModel"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "System.ClientModel:System.ClientModel.ClientResult`1",
@@ -690,19 +642,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "System.ClientModel:System.ClientModel.ClientResult`1::.ctor(T,System.ClientModel.Primitives.PipelineResponse):void",
-            "metadataToken": 100663322,
-            "canonicalSignature": "(T,System.ClientModel.Primitives.PipelineResponse):void",
-            "normalizedSignature": "constructor|(T,System.ClientModel.Primitives.PipelineResponse):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "ProtectedInternal",
-            "ownerQualifiedName": "System.ClientModel.ClientResult`1",
-            "ownerIdentity": "System.ClientModel"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "System.ClientModel:System.ClientModel.ClientResultException",
@@ -773,12 +713,12 @@
             "targetName": "Status",
             "metadataToken": 385875969,
             "canonicalSignature": ":System.Int32",
-            "normalizedSignature": "Status|:System.Int32|static=false|accessor=getset",
+            "normalizedSignature": "Status|:System.Int32|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -891,19 +831,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "System.ClientModel:System.ClientModel.CollectionResult`1::.ctor():void",
-            "metadataToken": 100663325,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "ProtectedInternal",
-            "ownerQualifiedName": "System.ClientModel.CollectionResult`1",
-            "ownerIdentity": "System.ClientModel"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "System.ClientModel:System.ClientModel.ContinuationToken",
@@ -965,30 +893,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "System.ClientModel:System.ClientModel.ContinuationToken::.ctor():void",
-            "metadataToken": 100663329,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "System.ClientModel.ContinuationToken",
-            "ownerIdentity": "System.ClientModel"
-          },
-          {
-            "stableId": "System.ClientModel:System.ClientModel.ContinuationToken::.ctor(System.BinaryData):void",
-            "metadataToken": 100663330,
-            "canonicalSignature": "(System.BinaryData):void",
-            "normalizedSignature": "constructor|(System.BinaryData):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
-            "ownerQualifiedName": "System.ClientModel.ContinuationToken",
-            "ownerIdentity": "System.ClientModel"
-          }
-        ]
+        "constructors": []
       }
     ]
   }

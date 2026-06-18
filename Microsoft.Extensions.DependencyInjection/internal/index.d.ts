@@ -14,12 +14,12 @@ import type { DbContext, DbContextOptionsBuilder } from "@tsonic/efcore/Microsof
 import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection/internal/index.js";
 
 export abstract class SqlServerServiceCollectionExtensions$instance {
-    static AddAzureSql<TContext extends unknown & DbContext>(serviceCollection: IServiceCollection, connectionString: string | null, azureSqlOptionsAction?: Action_1<AzureSqlDbContextOptionsBuilder> | null, optionsAction?: Action_1<DbContextOptionsBuilder> | null): IServiceCollection;
-    static AddAzureSynapse<TContext extends unknown & DbContext>(serviceCollection: IServiceCollection, connectionString: string | null, azureSynapseOptionsAction?: Action_1<AzureSynapseDbContextOptionsBuilder> | null, optionsAction?: Action_1<DbContextOptionsBuilder> | null): IServiceCollection;
+    static AddAzureSql<TContext extends unknown & { readonly __tsonic_type_Microsoft_EntityFrameworkCore_DbContext: never }>(serviceCollection: IServiceCollection, connectionString: string | null, azureSqlOptionsAction?: Action_1<AzureSqlDbContextOptionsBuilder> | null, optionsAction?: Action_1<DbContextOptionsBuilder> | null): IServiceCollection;
+    static AddAzureSynapse<TContext extends unknown & { readonly __tsonic_type_Microsoft_EntityFrameworkCore_DbContext: never }>(serviceCollection: IServiceCollection, connectionString: string | null, azureSynapseOptionsAction?: Action_1<AzureSynapseDbContextOptionsBuilder> | null, optionsAction?: Action_1<DbContextOptionsBuilder> | null): IServiceCollection;
     static AddEntityFrameworkAzureSql(serviceCollection: IServiceCollection): IServiceCollection;
     static AddEntityFrameworkAzureSynapse(serviceCollection: IServiceCollection): IServiceCollection;
     static AddEntityFrameworkSqlServer(serviceCollection: IServiceCollection): IServiceCollection;
-    static AddSqlServer<TContext extends unknown & DbContext>(serviceCollection: IServiceCollection, connectionString: string | null, sqlServerOptionsAction?: Action_1<SqlServerDbContextOptionsBuilder> | null, optionsAction?: Action_1<DbContextOptionsBuilder> | null): IServiceCollection;
+    static AddSqlServer<TContext extends unknown & { readonly __tsonic_type_Microsoft_EntityFrameworkCore_DbContext: never }>(serviceCollection: IServiceCollection, connectionString: string | null, sqlServerOptionsAction?: Action_1<SqlServerDbContextOptionsBuilder> | null, optionsAction?: Action_1<DbContextOptionsBuilder> | null): IServiceCollection;
 }
 
 

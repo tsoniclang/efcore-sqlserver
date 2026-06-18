@@ -7,16 +7,19 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 
 
 // Import types from other namespaces
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { ContentType } from "../../Azure.Core/internal/index.js";
 import type { BinaryData } from "../../System/internal/index.js";
 import type { IDictionary_2 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
 import * as System_Lib_tsonic_dotnet from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, DateTimeOffset, Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Nullable_1, Object as ClrObject, String as ClrString, Type } from "@tsonic/dotnet/System/internal/index.js";
 
-export enum CloudEventDataFormat {
-    Binary = 0,
-    Json = 1
-}
+export type CloudEventDataFormat = number & { readonly __tsonic_type_Azure_Messaging_CloudEventDataFormat: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const CloudEventDataFormat: {
+    readonly Binary: CloudEventDataFormat;
+    readonly Json: CloudEventDataFormat;
+};
 
 
 export interface CloudEvent$instance {

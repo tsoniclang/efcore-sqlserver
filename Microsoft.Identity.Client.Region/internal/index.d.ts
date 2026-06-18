@@ -10,11 +10,13 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable } from "@tsonic/dotnet/System/internal/index.js";
 
-export enum RegionOutcome {
-    None = 0,
-    UserProvidedValid = 1,
-    UserProvidedAutodetectionFailed = 2,
-    UserProvidedInvalid = 3,
-    AutodetectSuccess = 4,
-    FallbackToGlobal = 5
-}
+export type RegionOutcome = number & { readonly __tsonic_type_Microsoft_Identity_Client_Region_RegionOutcome: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const RegionOutcome: {
+    readonly None: RegionOutcome;
+    readonly UserProvidedValid: RegionOutcome;
+    readonly UserProvidedAutodetectionFailed: RegionOutcome;
+    readonly UserProvidedInvalid: RegionOutcome;
+    readonly AutodetectSuccess: RegionOutcome;
+    readonly FallbackToGlobal: RegionOutcome;
+};

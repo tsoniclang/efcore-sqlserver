@@ -10,12 +10,14 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Byte, Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Object as ClrObject } from "@tsonic/dotnet/System/internal/index.js";
 
-export enum CacheLevel {
-    None = 0,
-    Unknown = 1,
-    L1Cache = 2,
-    L2Cache = 3
-}
+export type CacheLevel = number & { readonly __tsonic_type_Microsoft_Identity_Client_Cache_CacheLevel: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const CacheLevel: {
+    readonly None: CacheLevel;
+    readonly Unknown: CacheLevel;
+    readonly L1Cache: CacheLevel;
+    readonly L2Cache: CacheLevel;
+};
 
 
 export interface CacheData$instance {

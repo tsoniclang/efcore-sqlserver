@@ -7,6 +7,7 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 
 
 // Import types from other namespaces
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { BinaryData } from "../../System/internal/index.js";
 import * as System_Dynamic_Internal from "@tsonic/dotnet/System.Dynamic/internal/index.js";
 import type { IDynamicMetaObjectProvider } from "@tsonic/dotnet/System.Dynamic/internal/index.js";
@@ -18,10 +19,12 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal
 import * as System_Lib_tsonic_dotnet from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Enum, IComparable, IConvertible, IDisposable, IFormattable, Int32, ISpanFormattable, Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export enum JsonPropertyNames {
-    UseExact = 0,
-    CamelCase = 1
-}
+export type JsonPropertyNames = number & { readonly __tsonic_type_Azure_Core_Serialization_JsonPropertyNames: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const JsonPropertyNames: {
+    readonly UseExact: JsonPropertyNames;
+    readonly CamelCase: JsonPropertyNames;
+};
 
 
 export interface IMemberNameConverter$instance {
@@ -52,17 +55,16 @@ export const DynamicData: {
 
 export type DynamicData = DynamicData$instance;
 
-export interface JsonObjectSerializer$instance extends ObjectSerializer, IMemberNameConverter$instance {
+export interface JsonObjectSerializer$instance extends ObjectSerializer$instance {
     readonly __tsonic_type_Azure_Core_Serialization_JsonObjectSerializer: never;
+    readonly __tsonic_type_Azure_Core_Serialization_ObjectSerializer: never;
 
     readonly __tsonic_iface_Azure_Core_Serialization_IMemberNameConverter: never;
 
-    Deserialize(stream: Stream, returnType: Type, cancellationToken: CancellationToken): unknown | null;
-    DeserializeAsync(stream: Stream, returnType: Type, cancellationToken: CancellationToken): ValueTask_1<unknown>;
-    Serialize(stream: Stream, value: unknown | null, inputType: Type, cancellationToken: CancellationToken): void;
-    Serialize(value: unknown | null, inputType?: Type | null, cancellationToken?: CancellationToken): BinaryData;
-    SerializeAsync(stream: Stream, value: unknown | null, inputType: Type, cancellationToken: CancellationToken): ValueTask;
-    SerializeAsync(value: unknown | null, inputType?: Type | null, cancellationToken?: CancellationToken): ValueTask_1<BinaryData>;
+    Deserialize: ObjectSerializer$instance["Deserialize"] & ((stream: Stream, returnType: Type, cancellationToken: CancellationToken) => unknown | null);
+    DeserializeAsync: ObjectSerializer$instance["DeserializeAsync"] & ((stream: Stream, returnType: Type, cancellationToken: CancellationToken) => ValueTask_1<unknown>);
+    Serialize: ObjectSerializer$instance["Serialize"] & ((stream: Stream, value: unknown | null, inputType: Type, cancellationToken: CancellationToken) => void) & ((value: unknown | null, inputType?: Type | null, cancellationToken?: CancellationToken) => BinaryData);
+    SerializeAsync: ObjectSerializer$instance["SerializeAsync"] & ((stream: Stream, value: unknown | null, inputType: Type, cancellationToken: CancellationToken) => ValueTask) & ((value: unknown | null, inputType?: Type | null, cancellationToken?: CancellationToken) => ValueTask_1<BinaryData>);
 }
 
 
@@ -92,7 +94,7 @@ export interface ObjectSerializer$instance {
 }
 
 
-export const ObjectSerializer: (abstract new() => ObjectSerializer) & {
+export const ObjectSerializer: {
 };
 
 

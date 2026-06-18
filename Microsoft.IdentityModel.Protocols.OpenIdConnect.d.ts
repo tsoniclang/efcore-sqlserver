@@ -17,7 +17,7 @@ import type { ICollection, IDictionary, IEnumerable, KeyValuePair } from '@tsoni
 import type { NameValueCollection } from '@tsonic/dotnet/System.Collections.Specialized.js';
 import type { AsyncCallback, Boolean as ClrBoolean, Enum, Exception, IAsyncResult, ICloneable, IComparable, IConvertible, IFormattable, Int32, IntPtr, ISpanFormattable, MulticastDelegate, Object as ClrObject, String as ClrString, TimeSpan, Void } from '@tsonic/dotnet/System.js';
 import type { HttpClient } from '@tsonic/dotnet/System.Net.Http.js';
-import type { ISerializable, SerializationInfo, StreamingContext } from '@tsonic/dotnet/System.Runtime.Serialization.js';
+import type { ISerializable } from '@tsonic/dotnet/System.Runtime.Serialization.js';
 import type { HashAlgorithm } from '@tsonic/dotnet/System.Security.Cryptography.js';
 import type { CancellationToken } from '@tsonic/dotnet/System.Threading.js';
 import type { Task } from '@tsonic/dotnet/System.Threading.Tasks.js';

@@ -12,14 +12,16 @@ import type { ReadOnlyCollection_1 } from "@tsonic/dotnet/System.Collections.Obj
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
-export enum SensitivityRank {
-    NOT_DEFINED = -1,
-    NONE = 0,
-    LOW = 10,
-    MEDIUM = 20,
-    HIGH = 30,
-    CRITICAL = 40
-}
+export type SensitivityRank = number & { readonly __tsonic_type_Microsoft_Data_SqlClient_DataClassification_SensitivityRank: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const SensitivityRank: {
+    readonly NOT_DEFINED: SensitivityRank;
+    readonly NONE: SensitivityRank;
+    readonly LOW: SensitivityRank;
+    readonly MEDIUM: SensitivityRank;
+    readonly HIGH: SensitivityRank;
+    readonly CRITICAL: SensitivityRank;
+};
 
 
 export interface ColumnSensitivity$instance {

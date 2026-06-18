@@ -16,7 +16,11 @@ import type { IMutableAnnotatable } from "@tsonic/efcore/Microsoft.EntityFramewo
 import * as Microsoft_EntityFrameworkCore_Migrations_Operations_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations.Operations/internal/index.js";
 import type { DatabaseOperation, MigrationOperation } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations.Operations/internal/index.js";
 
-export interface SqlServerCreateDatabaseOperation$instance extends DatabaseOperation {
+export interface SqlServerCreateDatabaseOperation$instance extends Microsoft_EntityFrameworkCore_Migrations_Operations_Internal.DatabaseOperation {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Infrastructure_Annotatable: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Infrastructure_AnnotatableBase: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Migrations_Operations_DatabaseOperation: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Migrations_Operations_MigrationOperation: never;
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Migrations_Operations_SqlServerCreateDatabaseOperation: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IAnnotatable: never;
@@ -36,7 +40,10 @@ export const SqlServerCreateDatabaseOperation: {
 
 export type SqlServerCreateDatabaseOperation = SqlServerCreateDatabaseOperation$instance;
 
-export interface SqlServerDropDatabaseOperation$instance extends MigrationOperation {
+export interface SqlServerDropDatabaseOperation$instance extends Microsoft_EntityFrameworkCore_Migrations_Operations_Internal.MigrationOperation {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Infrastructure_Annotatable: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Infrastructure_AnnotatableBase: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Migrations_Operations_MigrationOperation: never;
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Migrations_Operations_SqlServerDropDatabaseOperation: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IAnnotatable: never;

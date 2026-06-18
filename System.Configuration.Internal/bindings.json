@@ -2616,25 +2616,6 @@
         ],
         "properties": [
           {
-            "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::Host:System.Configuration.Internal.IInternalConfigHost",
-            "targetName": "Host",
-            "metadataToken": 385876839,
-            "canonicalSignature": ":System.Configuration.Internal.IInternalConfigHost",
-            "normalizedSignature": "Host|:System.Configuration.Internal.IInternalConfigHost|static=false|accessor=getset",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "isIndexer": false,
-            "hasGetter": true,
-            "hasSetter": true,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "System.Configuration.Internal.DelegatingConfigHost",
-            "ownerIdentity": "System.Configuration.ConfigurationManager"
-          },
-          {
             "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::SupportsChangeNotifications:System.Boolean",
             "targetName": "SupportsChangeNotifications",
             "metadataToken": 385876840,
@@ -2789,19 +2770,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.DelegatingConfigHost::.ctor():void",
-            "metadataToken": 100665677,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "System.Configuration.Internal.DelegatingConfigHost",
-            "ownerIdentity": "System.Configuration.ConfigurationManager"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Internal.InternalConfigEventArgs",

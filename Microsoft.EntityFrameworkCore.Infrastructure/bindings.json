@@ -472,19 +472,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilderBase`1::.ctor(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder):void",
-            "metadataToken": 100664323,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Infrastructure.SqlEngineDbContextOptionsBuilderBase`1",
-            "ownerIdentity": "Microsoft.EntityFrameworkCore.SqlServer"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.EntityFrameworkCore.SqlServer:Microsoft.EntityFrameworkCore.Infrastructure.SqlServerDbContextOptionsBuilder",

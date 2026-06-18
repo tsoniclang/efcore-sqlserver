@@ -60,13 +60,13 @@ export type Operation<
   T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.Operation :
-  [T1] extends [unknown] ? Internal.Operation_1<T1> : never;
+  Internal.Operation_1<T1>;
 
 export type Response<
   T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.Response :
-  [T1] extends [unknown] ? Internal.Response_1<T1> : never;
+  Internal.Response_1<T1>;
 
 // Extension methods (C# using semantics)
 export type { ExtensionMethods_Azure as ExtensionMethods } from './__internal/extensions/index.js';

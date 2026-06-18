@@ -87,19 +87,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderBase::.ctor():void",
-            "metadataToken": 100665642,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "System.Configuration.Provider.ProviderBase",
-            "ownerIdentity": "System.Configuration.ConfigurationManager"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderCollection",
@@ -398,17 +386,6 @@
             "isStatic": false,
             "parameterCount": 2,
             "visibility": "Public",
-            "ownerQualifiedName": "System.Configuration.Provider.ProviderException",
-            "ownerIdentity": "System.Configuration.ConfigurationManager"
-          },
-          {
-            "stableId": "System.Configuration.ConfigurationManager:System.Configuration.Provider.ProviderException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "metadataToken": 100665658,
-            "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
             "ownerQualifiedName": "System.Configuration.Provider.ProviderException",
             "ownerIdentity": "System.Configuration.ConfigurationManager"
           }

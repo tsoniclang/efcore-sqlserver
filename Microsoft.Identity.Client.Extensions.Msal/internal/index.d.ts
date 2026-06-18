@@ -11,13 +11,14 @@ import type { ITokenCache } from "../../Microsoft.Identity.Client/internal/index
 import type { IEnumerable_1, KeyValuePair_2 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
 import type { TraceSource } from "@tsonic/dotnet/System.Diagnostics/internal/index.js";
 import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
-import type { ISerializable, SerializationInfo, StreamingContext } from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
 import type { Task_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Byte, EventArgs, EventHandler_1, Exception, IDisposable, Int32, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface CacheChangedEventArgs$instance extends EventArgs {
+export interface CacheChangedEventArgs$instance extends System_Internal.EventArgs {
     readonly __tsonic_type_Microsoft_Identity_Client_Extensions_Msal_CacheChangedEventArgs: never;
+    readonly __tsonic_type_System_EventArgs: never;
 
     readonly AccountsAdded: IEnumerable_1<System_Internal.String>;
     readonly AccountsRemoved: IEnumerable_1<System_Internal.String>;
@@ -69,8 +70,9 @@ export const MsalCacheHelper: {
 
 export type MsalCacheHelper = MsalCacheHelper$instance;
 
-export interface MsalCachePersistenceException$instance extends Exception {
+export interface MsalCachePersistenceException$instance extends System_Internal.Exception {
     readonly __tsonic_type_Microsoft_Identity_Client_Extensions_Msal_MsalCachePersistenceException: never;
+    readonly __tsonic_type_System_Exception: never;
 
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 

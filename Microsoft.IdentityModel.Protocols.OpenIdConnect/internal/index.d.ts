@@ -16,28 +16,30 @@ import type { ICollection_1, IDictionary_2, IEnumerable_1, KeyValuePair_2 } from
 import type { NameValueCollection } from "@tsonic/dotnet/System.Collections.Specialized/internal/index.js";
 import type { HttpClient } from "@tsonic/dotnet/System.Net.Http/internal/index.js";
 import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
-import type { ISerializable, SerializationInfo, StreamingContext } from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
 import type { HashAlgorithm } from "@tsonic/dotnet/System.Security.Cryptography/internal/index.js";
 import type { Task_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
 import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { AsyncCallback, Boolean as ClrBoolean, Enum, Exception, IAsyncResult, ICloneable, IComparable, IConvertible, IFormattable, Int32, IntPtr, ISpanFormattable, MulticastDelegate, Object as ClrObject, String as ClrString, TimeSpan, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export enum OpenIdConnectRequestType {
-    Authentication = 0,
-    Logout = 1,
-    Token = 2
-}
+export type OpenIdConnectRequestType = number & { readonly __tsonic_type_Microsoft_IdentityModel_Protocols_OpenIdConnect_OpenIdConnectRequestType: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const OpenIdConnectRequestType: {
+    readonly Authentication: OpenIdConnectRequestType;
+    readonly Logout: OpenIdConnectRequestType;
+    readonly Token: OpenIdConnectRequestType;
+};
 
 
 export type IdTokenValidator = (idToken: JwtSecurityToken, context: OpenIdConnectProtocolValidationContext) => void;
 
 
-export interface OpenIdConnectConfiguration$instance extends BaseConfiguration {
+export interface OpenIdConnectConfiguration$instance extends Microsoft_IdentityModel_Tokens_Internal.BaseConfiguration$instance {
     readonly __tsonic_type_Microsoft_IdentityModel_Protocols_OpenIdConnect_OpenIdConnectConfiguration: never;
+    readonly __tsonic_type_Microsoft_IdentityModel_Tokens_BaseConfiguration: never;
 
     readonly AcrValuesSupported: ICollection_1<System_Internal.String>;
-    ActiveTokenEndpoint: string;
     readonly AdditionalData: IDictionary_2<System_Internal.String, unknown>;
     AuthorizationEndpoint: string;
     AuthorizationResponseIssParameterSupported: boolean;
@@ -63,7 +65,6 @@ export interface OpenIdConnectConfiguration$instance extends BaseConfiguration {
     IntrospectionEndpoint: string;
     readonly IntrospectionEndpointAuthMethodsSupported: ICollection_1<System_Internal.String>;
     readonly IntrospectionEndpointAuthSigningAlgValuesSupported: ICollection_1<System_Internal.String>;
-    Issuer: string;
     JsonWebKeySet: JsonWebKeySet;
     JwksUri: string;
     LogoutSessionSupported: boolean;
@@ -83,9 +84,7 @@ export interface OpenIdConnectConfiguration$instance extends BaseConfiguration {
     readonly ResponseTypesSupported: ICollection_1<System_Internal.String>;
     readonly ScopesSupported: ICollection_1<System_Internal.String>;
     ServiceDocumentation: string;
-    readonly SigningKeys: ICollection_1<SecurityKey>;
     readonly SubjectTypesSupported: ICollection_1<System_Internal.String>;
-    TokenEndpoint: string;
     readonly TokenEndpointAuthMethodsSupported: ICollection_1<System_Internal.String>;
     readonly TokenEndpointAuthSigningAlgValuesSupported: ICollection_1<System_Internal.String>;
     readonly UILocalesSupported: ICollection_1<System_Internal.String>;
@@ -135,7 +134,7 @@ export const OpenIdConnectConfiguration: {
 
 export type OpenIdConnectConfiguration = OpenIdConnectConfiguration$instance;
 
-export interface OpenIdConnectConfigurationRetriever$instance extends Microsoft_IdentityModel_Protocols_Internal.IConfigurationRetriever_1$instance<OpenIdConnectConfiguration> {
+export interface OpenIdConnectConfigurationRetriever$instance {
     readonly __tsonic_type_Microsoft_IdentityModel_Protocols_OpenIdConnect_OpenIdConnectConfigurationRetriever: never;
 
     readonly __tsonic_iface_Microsoft_IdentityModel_Protocols_IConfigurationRetriever_1: never;
@@ -158,7 +157,8 @@ export interface __OpenIdConnectConfigurationRetriever$views {
 export type OpenIdConnectConfigurationRetriever = OpenIdConnectConfigurationRetriever$instance & __OpenIdConnectConfigurationRetriever$views;
 
 
-export interface OpenIdConnectMessage$instance extends AuthenticationProtocolMessage {
+export interface OpenIdConnectMessage$instance extends Microsoft_IdentityModel_Protocols_Internal.AuthenticationProtocolMessage$instance {
+    readonly __tsonic_type_Microsoft_IdentityModel_Protocols_AuthenticationProtocolMessage: never;
     readonly __tsonic_type_Microsoft_IdentityModel_Protocols_OpenIdConnect_OpenIdConnectMessage: never;
 
     AccessToken: string;
@@ -223,8 +223,9 @@ export const OpenIdConnectMessage: {
 
 export type OpenIdConnectMessage = OpenIdConnectMessage$instance;
 
-export interface OpenIdConnectProtocolException$instance extends Exception {
+export interface OpenIdConnectProtocolException$instance extends System_Internal.Exception {
     readonly __tsonic_type_Microsoft_IdentityModel_Protocols_OpenIdConnect_OpenIdConnectProtocolException: never;
+    readonly __tsonic_type_System_Exception: never;
 
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
@@ -240,8 +241,10 @@ export const OpenIdConnectProtocolException: {
 
 export type OpenIdConnectProtocolException = OpenIdConnectProtocolException$instance;
 
-export interface OpenIdConnectProtocolInvalidAtHashException$instance extends OpenIdConnectProtocolException {
+export interface OpenIdConnectProtocolInvalidAtHashException$instance extends OpenIdConnectProtocolException$instance {
+    readonly __tsonic_type_Microsoft_IdentityModel_Protocols_OpenIdConnect_OpenIdConnectProtocolException: never;
     readonly __tsonic_type_Microsoft_IdentityModel_Protocols_OpenIdConnect_OpenIdConnectProtocolInvalidAtHashException: never;
+    readonly __tsonic_type_System_Exception: never;
 
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
@@ -257,8 +260,10 @@ export const OpenIdConnectProtocolInvalidAtHashException: {
 
 export type OpenIdConnectProtocolInvalidAtHashException = OpenIdConnectProtocolInvalidAtHashException$instance;
 
-export interface OpenIdConnectProtocolInvalidCHashException$instance extends OpenIdConnectProtocolException {
+export interface OpenIdConnectProtocolInvalidCHashException$instance extends OpenIdConnectProtocolException$instance {
+    readonly __tsonic_type_Microsoft_IdentityModel_Protocols_OpenIdConnect_OpenIdConnectProtocolException: never;
     readonly __tsonic_type_Microsoft_IdentityModel_Protocols_OpenIdConnect_OpenIdConnectProtocolInvalidCHashException: never;
+    readonly __tsonic_type_System_Exception: never;
 
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
@@ -274,8 +279,10 @@ export const OpenIdConnectProtocolInvalidCHashException: {
 
 export type OpenIdConnectProtocolInvalidCHashException = OpenIdConnectProtocolInvalidCHashException$instance;
 
-export interface OpenIdConnectProtocolInvalidNonceException$instance extends OpenIdConnectProtocolException {
+export interface OpenIdConnectProtocolInvalidNonceException$instance extends OpenIdConnectProtocolException$instance {
+    readonly __tsonic_type_Microsoft_IdentityModel_Protocols_OpenIdConnect_OpenIdConnectProtocolException: never;
     readonly __tsonic_type_Microsoft_IdentityModel_Protocols_OpenIdConnect_OpenIdConnectProtocolInvalidNonceException: never;
+    readonly __tsonic_type_System_Exception: never;
 
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
@@ -291,8 +298,10 @@ export const OpenIdConnectProtocolInvalidNonceException: {
 
 export type OpenIdConnectProtocolInvalidNonceException = OpenIdConnectProtocolInvalidNonceException$instance;
 
-export interface OpenIdConnectProtocolInvalidStateException$instance extends OpenIdConnectProtocolException {
+export interface OpenIdConnectProtocolInvalidStateException$instance extends OpenIdConnectProtocolException$instance {
+    readonly __tsonic_type_Microsoft_IdentityModel_Protocols_OpenIdConnect_OpenIdConnectProtocolException: never;
     readonly __tsonic_type_Microsoft_IdentityModel_Protocols_OpenIdConnect_OpenIdConnectProtocolInvalidStateException: never;
+    readonly __tsonic_type_System_Exception: never;
 
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 

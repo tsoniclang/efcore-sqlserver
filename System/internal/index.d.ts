@@ -16,11 +16,13 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Byte, Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Object as ClrObject, ReadOnlyMemory_1, String as ClrString, Type } from "@tsonic/dotnet/System/internal/index.js";
 
-export enum UriIdnScope {
-    None = 0,
-    AllExceptIntranet = 1,
-    All = 2
-}
+export type UriIdnScope = number & { readonly __tsonic_type_System_UriIdnScope: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const UriIdnScope: {
+    readonly None: UriIdnScope;
+    readonly AllExceptIntranet: UriIdnScope;
+    readonly All: UriIdnScope;
+};
 
 
 export interface BinaryData$instance {
@@ -33,8 +35,8 @@ export interface BinaryData$instance {
     GetHashCode(): int;
     ToArray(): byte[];
     ToMemory(): ReadOnlyMemory_1<Byte>;
-    ToObjectFromJson<T extends unknown>(options?: JsonSerializerOptions | null): T | null;
     ToObjectFromJson<T extends unknown>(jsonTypeInfo: JsonTypeInfo_1<T>): T | null;
+    ToObjectFromJson<T extends unknown>(options?: JsonSerializerOptions | null): T | null;
     ToStream(): Stream;
     ToString(): string;
     WithMediaType(mediaType: string | null): BinaryData;

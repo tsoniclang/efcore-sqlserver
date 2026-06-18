@@ -143,46 +143,6 @@
             "ownerQualifiedName": "Azure.Core.Pipeline.BearerTokenAuthenticationPolicy",
             "ownerIdentity": "Azure.Core",
             "isExtensionMethod": false
-          },
-          {
-            "stableId": "Azure.Core:Azure.Core.Pipeline.BearerTokenAuthenticationPolicy::AuthenticateAndAuthorizeRequestAsync(Azure.Core.HttpMessage,Azure.Core.TokenRequestContext):System.Threading.Tasks.ValueTask",
-            "targetName": "AuthenticateAndAuthorizeRequestAsync",
-            "metadataToken": 100664492,
-            "canonicalSignature": "(Azure.Core.HttpMessage,Azure.Core.TokenRequestContext):System.Threading.Tasks.ValueTask",
-            "normalizedSignature": "AuthenticateAndAuthorizeRequestAsync|(Azure.Core.HttpMessage,Azure.Core.TokenRequestContext):System.Threading.Tasks.ValueTask|static=false",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "arity": 0,
-            "parameterCount": 2,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "isSealed": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Azure.Core.Pipeline.BearerTokenAuthenticationPolicy",
-            "ownerIdentity": "Azure.Core",
-            "isExtensionMethod": false
-          },
-          {
-            "stableId": "Azure.Core:Azure.Core.Pipeline.BearerTokenAuthenticationPolicy::AuthenticateAndAuthorizeRequest(Azure.Core.HttpMessage,Azure.Core.TokenRequestContext):System.Void",
-            "targetName": "AuthenticateAndAuthorizeRequest",
-            "metadataToken": 100664493,
-            "canonicalSignature": "(Azure.Core.HttpMessage,Azure.Core.TokenRequestContext):System.Void",
-            "normalizedSignature": "AuthenticateAndAuthorizeRequest|(Azure.Core.HttpMessage,Azure.Core.TokenRequestContext):System.Void|static=false",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "arity": 0,
-            "parameterCount": 2,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "isSealed": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Azure.Core.Pipeline.BearerTokenAuthenticationPolicy",
-            "ownerIdentity": "Azure.Core",
-            "isExtensionMethod": false
           }
         ],
         "properties": [],
@@ -854,64 +814,12 @@
             "ownerQualifiedName": "Azure.Core.Pipeline.HttpPipelinePolicy",
             "ownerIdentity": "Azure.Core",
             "isExtensionMethod": false
-          },
-          {
-            "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipelinePolicy::ProcessNextAsync(Azure.Core.HttpMessage,System.ReadOnlyMemory_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):System.Threading.Tasks.ValueTask",
-            "targetName": "ProcessNextAsync",
-            "metadataToken": 100664558,
-            "canonicalSignature": "(Azure.Core.HttpMessage,System.ReadOnlyMemory_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):System.Threading.Tasks.ValueTask",
-            "normalizedSignature": "ProcessNextAsync|(Azure.Core.HttpMessage,System.ReadOnlyMemory_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):System.Threading.Tasks.ValueTask|static=true",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "arity": 0,
-            "parameterCount": 2,
-            "isStatic": true,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "isSealed": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Azure.Core.Pipeline.HttpPipelinePolicy",
-            "ownerIdentity": "Azure.Core",
-            "isExtensionMethod": false
-          },
-          {
-            "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipelinePolicy::ProcessNext(Azure.Core.HttpMessage,System.ReadOnlyMemory_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):System.Void",
-            "targetName": "ProcessNext",
-            "metadataToken": 100664559,
-            "canonicalSignature": "(Azure.Core.HttpMessage,System.ReadOnlyMemory_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):System.Void",
-            "normalizedSignature": "ProcessNext|(Azure.Core.HttpMessage,System.ReadOnlyMemory_1[[Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core,Version=1.47.1.0,Culture=neutral,PublicKeyToken=92742159e12e44c8]]):System.Void|static=true",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "arity": 0,
-            "parameterCount": 2,
-            "isStatic": true,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "isSealed": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Azure.Core.Pipeline.HttpPipelinePolicy",
-            "ownerIdentity": "Azure.Core",
-            "isExtensionMethod": false
           }
         ],
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipelinePolicy::.ctor():void",
-            "metadataToken": 100664560,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Azure.Core.Pipeline.HttpPipelinePolicy",
-            "ownerIdentity": "Azure.Core"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipelineSynchronousPolicy",
@@ -1013,19 +921,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipelineSynchronousPolicy::.ctor():void",
-            "metadataToken": 100664561,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Azure.Core.Pipeline.HttpPipelineSynchronousPolicy",
-            "ownerIdentity": "Azure.Core"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipelineTransport",
@@ -1107,19 +1003,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipelineTransport::.ctor():void",
-            "metadataToken": 100664572,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Azure.Core.Pipeline.HttpPipelineTransport",
-            "ownerIdentity": "Azure.Core"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Azure.Core:Azure.Core.Pipeline.HttpPipelineTransportOptions",

@@ -10,13 +10,15 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable } from "@tsonic/dotnet/System/internal/index.js";
 
-export enum ManagedIdentitySource {
-    None = 0,
-    Imds = 1,
-    AppService = 2,
-    AzureArc = 3,
-    CloudShell = 4,
-    ServiceFabric = 5,
-    DefaultToImds = 6,
-    MachineLearning = 7
-}
+export type ManagedIdentitySource = number & { readonly __tsonic_type_Microsoft_Identity_Client_ManagedIdentity_ManagedIdentitySource: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const ManagedIdentitySource: {
+    readonly None: ManagedIdentitySource;
+    readonly Imds: ManagedIdentitySource;
+    readonly AppService: ManagedIdentitySource;
+    readonly AzureArc: ManagedIdentitySource;
+    readonly CloudShell: ManagedIdentitySource;
+    readonly ServiceFabric: ManagedIdentitySource;
+    readonly DefaultToImds: ManagedIdentitySource;
+    readonly MachineLearning: ManagedIdentitySource;
+};

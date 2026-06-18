@@ -28,23 +28,24 @@ export interface ISqlServerSequenceValueGeneratorFactory$instance {
 
 export type ISqlServerSequenceValueGeneratorFactory = ISqlServerSequenceValueGeneratorFactory$instance;
 
-export interface ISqlServerValueGeneratorCache$instance extends IValueGeneratorCache {
+export interface ISqlServerValueGeneratorCache$instance {
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_SqlServer_ValueGeneration_Internal_ISqlServerValueGeneratorCache: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_ValueGeneration_IValueGeneratorCache: never;
 
     GetOrAddSequenceState(property: IProperty, connection: IRelationalConnection): SqlServerSequenceValueGeneratorState;
 }
 
 
-export interface ISqlServerValueGeneratorCache$instance extends Microsoft_EntityFrameworkCore_ValueGeneration_Internal.IValueGeneratorCache {}
-
 export type ISqlServerValueGeneratorCache = ISqlServerValueGeneratorCache$instance;
 
-export interface SqlServerSequenceHiLoValueGenerator_1$instance<TValue extends unknown> extends HiLoValueGenerator_1<TValue> {
+export interface SqlServerSequenceHiLoValueGenerator_1$instance<TValue extends unknown> extends Microsoft_EntityFrameworkCore_ValueGeneration_Internal.HiLoValueGenerator_1<TValue> {
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_ValueGeneration_Internal_SqlServerSequenceHiLoValueGenerator_1: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_ValueGeneration_HiLoValueGenerator_1: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_ValueGeneration_ValueGenerator: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_ValueGeneration_ValueGenerator_1: never;
 
-    readonly GeneratesTemporaryValues: boolean;
-    GetNewLowValue(): long;
-    GetNewLowValueAsync(cancellationToken?: CancellationToken): Task_1<System_Internal.Int64>;
+    GetNewLowValue: Microsoft_EntityFrameworkCore_ValueGeneration_Internal.HiLoValueGenerator_1<TValue>["GetNewLowValue"] & (() => long);
+    GetNewLowValueAsync: Microsoft_EntityFrameworkCore_ValueGeneration_Internal.HiLoValueGenerator_1<TValue>["GetNewLowValueAsync"] & ((cancellationToken?: CancellationToken) => Task_1<System_Internal.Int64>);
 }
 
 
@@ -55,7 +56,7 @@ export const SqlServerSequenceHiLoValueGenerator_1: {
 
 export type SqlServerSequenceHiLoValueGenerator_1<TValue extends unknown> = SqlServerSequenceHiLoValueGenerator_1$instance<TValue>;
 
-export interface SqlServerSequenceValueGeneratorFactory$instance extends ISqlServerSequenceValueGeneratorFactory$instance {
+export interface SqlServerSequenceValueGeneratorFactory$instance {
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_ValueGeneration_Internal_SqlServerSequenceValueGeneratorFactory: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_SqlServer_ValueGeneration_Internal_ISqlServerSequenceValueGeneratorFactory: never;
@@ -76,8 +77,9 @@ export interface __SqlServerSequenceValueGeneratorFactory$views {
 export type SqlServerSequenceValueGeneratorFactory = SqlServerSequenceValueGeneratorFactory$instance & __SqlServerSequenceValueGeneratorFactory$views;
 
 
-export interface SqlServerSequenceValueGeneratorState$instance extends HiLoValueGeneratorState {
+export interface SqlServerSequenceValueGeneratorState$instance extends Microsoft_EntityFrameworkCore_ValueGeneration_Internal.HiLoValueGeneratorState {
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_ValueGeneration_Internal_SqlServerSequenceValueGeneratorState: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_ValueGeneration_HiLoValueGeneratorState: never;
 
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -92,8 +94,9 @@ export const SqlServerSequenceValueGeneratorState: {
 
 export type SqlServerSequenceValueGeneratorState = SqlServerSequenceValueGeneratorState$instance;
 
-export interface SqlServerValueGeneratorCache$instance extends ValueGeneratorCache, ISqlServerValueGeneratorCache$instance {
+export interface SqlServerValueGeneratorCache$instance extends Microsoft_EntityFrameworkCore_ValueGeneration_Internal.ValueGeneratorCache {
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_ValueGeneration_Internal_SqlServerValueGeneratorCache: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_ValueGeneration_ValueGeneratorCache: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_SqlServer_ValueGeneration_Internal_ISqlServerValueGeneratorCache: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_ValueGeneration_IValueGeneratorCache: never;
@@ -114,15 +117,16 @@ export interface __SqlServerValueGeneratorCache$views {
 export type SqlServerValueGeneratorCache = SqlServerValueGeneratorCache$instance & __SqlServerValueGeneratorCache$views;
 
 
-export interface SqlServerValueGeneratorSelector$instance extends RelationalValueGeneratorSelector {
+export interface SqlServerValueGeneratorSelector$instance extends Microsoft_EntityFrameworkCore_ValueGeneration_Internal.RelationalValueGeneratorSelector {
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServer_ValueGeneration_Internal_SqlServerValueGeneratorSelector: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_ValueGeneration_RelationalValueGeneratorSelector: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_ValueGeneration_ValueGeneratorSelector: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_ValueGeneration_IValueGeneratorSelector: never;
 
-    readonly Cache: ISqlServerValueGeneratorCache;
-    FindForType(property: IProperty, typeBase: ITypeBase, clrType: Type): ValueGenerator | null;
-    Select(property: IProperty, typeBase: ITypeBase): ValueGenerator | null;
-    TrySelect(property: IProperty, typeBase: ITypeBase, valueGenerator: ValueGenerator | null): boolean;
+    FindForType: Microsoft_EntityFrameworkCore_ValueGeneration_Internal.RelationalValueGeneratorSelector["FindForType"] & ((property: IProperty, typeBase: ITypeBase, clrType: Type) => ValueGenerator | null);
+    Select: Microsoft_EntityFrameworkCore_ValueGeneration_Internal.RelationalValueGeneratorSelector["Select"] & ((property: IProperty, typeBase: ITypeBase) => ValueGenerator | null);
+    TrySelect: Microsoft_EntityFrameworkCore_ValueGeneration_Internal.RelationalValueGeneratorSelector["TrySelect"] & ((property: IProperty, typeBase: ITypeBase, valueGenerator: ValueGenerator | null) => boolean);
 }
 
 

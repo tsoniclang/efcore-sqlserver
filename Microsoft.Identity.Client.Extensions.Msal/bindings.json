@@ -402,17 +402,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "Microsoft.Identity.Client.Extensions.Msal.MsalCachePersistenceException",
             "ownerIdentity": "Microsoft.Identity.Client.Extensions.Msal"
-          },
-          {
-            "stableId": "Microsoft.Identity.Client.Extensions.Msal:Microsoft.Identity.Client.Extensions.Msal.MsalCachePersistenceException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "metadataToken": 100663403,
-            "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.Identity.Client.Extensions.Msal.MsalCachePersistenceException",
-            "ownerIdentity": "Microsoft.Identity.Client.Extensions.Msal"
           }
         ]
       },

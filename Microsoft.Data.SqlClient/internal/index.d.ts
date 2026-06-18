@@ -33,131 +33,157 @@ import type { XmlReader } from "@tsonic/dotnet/System.Xml/internal/index.js";
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Array as ClrArray, AsyncCallback, Boolean as ClrBoolean, Byte, Char, DateTime, DateTimeOffset, Decimal, Double, Enum, EventArgs, EventHandler_1, Exception, Func_1, Func_2, Func_3, Func_4, Guid, IAsyncDisposable, IAsyncResult, ICloneable, IComparable, IConvertible, IDisposable, IFormattable, Int16, Int32, Int64, IntPtr, ISpanFormattable, MulticastDelegate, Nullable_1, Object as ClrObject, Predicate_1, Single, String as ClrString, TimeSpan, Type, Uri, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export enum ApplicationIntent {
-    ReadWrite = 0,
-    ReadOnly = 1
-}
+export type ApplicationIntent = number & { readonly __tsonic_type_Microsoft_Data_SqlClient_ApplicationIntent: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const ApplicationIntent: {
+    readonly ReadWrite: ApplicationIntent;
+    readonly ReadOnly: ApplicationIntent;
+};
 
 
-export enum PoolBlockingPeriod {
-    Auto = 0,
-    AlwaysBlock = 1,
-    NeverBlock = 2
-}
+export type PoolBlockingPeriod = number & { readonly __tsonic_type_Microsoft_Data_SqlClient_PoolBlockingPeriod: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const PoolBlockingPeriod: {
+    readonly Auto: PoolBlockingPeriod;
+    readonly AlwaysBlock: PoolBlockingPeriod;
+    readonly NeverBlock: PoolBlockingPeriod;
+};
 
 
-export enum SortOrder {
-    Unspecified = -1,
-    Ascending = 0,
-    Descending = 1
-}
+export type SortOrder = number & { readonly __tsonic_type_Microsoft_Data_SqlClient_SortOrder: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const SortOrder: {
+    readonly Unspecified: SortOrder;
+    readonly Ascending: SortOrder;
+    readonly Descending: SortOrder;
+};
 
 
-export enum SqlAuthenticationMethod {
-    NotSpecified = 0,
-    SqlPassword = 1,
-    ActiveDirectoryPassword = 2,
-    ActiveDirectoryIntegrated = 3,
-    ActiveDirectoryInteractive = 4,
-    ActiveDirectoryServicePrincipal = 5,
-    ActiveDirectoryDeviceCodeFlow = 6,
-    ActiveDirectoryManagedIdentity = 7,
-    ActiveDirectoryMSI = 8,
-    ActiveDirectoryDefault = 9,
-    ActiveDirectoryWorkloadIdentity = 10
-}
+export type SqlAuthenticationMethod = number & { readonly __tsonic_type_Microsoft_Data_SqlClient_SqlAuthenticationMethod: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const SqlAuthenticationMethod: {
+    readonly NotSpecified: SqlAuthenticationMethod;
+    readonly SqlPassword: SqlAuthenticationMethod;
+    readonly ActiveDirectoryPassword: SqlAuthenticationMethod;
+    readonly ActiveDirectoryIntegrated: SqlAuthenticationMethod;
+    readonly ActiveDirectoryInteractive: SqlAuthenticationMethod;
+    readonly ActiveDirectoryServicePrincipal: SqlAuthenticationMethod;
+    readonly ActiveDirectoryDeviceCodeFlow: SqlAuthenticationMethod;
+    readonly ActiveDirectoryManagedIdentity: SqlAuthenticationMethod;
+    readonly ActiveDirectoryMSI: SqlAuthenticationMethod;
+    readonly ActiveDirectoryDefault: SqlAuthenticationMethod;
+    readonly ActiveDirectoryWorkloadIdentity: SqlAuthenticationMethod;
+};
 
 
-export enum SqlBulkCopyOptions {
-    Default = 0,
-    KeepIdentity = 1,
-    CheckConstraints = 2,
-    TableLock = 4,
-    KeepNulls = 8,
-    FireTriggers = 16,
-    UseInternalTransaction = 32,
-    AllowEncryptedValueModifications = 64
-}
+export type SqlBulkCopyOptions = number & { readonly __tsonic_type_Microsoft_Data_SqlClient_SqlBulkCopyOptions: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const SqlBulkCopyOptions: {
+    readonly Default: SqlBulkCopyOptions;
+    readonly KeepIdentity: SqlBulkCopyOptions;
+    readonly CheckConstraints: SqlBulkCopyOptions;
+    readonly TableLock: SqlBulkCopyOptions;
+    readonly KeepNulls: SqlBulkCopyOptions;
+    readonly FireTriggers: SqlBulkCopyOptions;
+    readonly UseInternalTransaction: SqlBulkCopyOptions;
+    readonly AllowEncryptedValueModifications: SqlBulkCopyOptions;
+};
 
 
-export enum SqlCommandColumnEncryptionSetting {
-    UseConnectionSetting = 0,
-    Enabled = 1,
-    ResultSetOnly = 2,
-    Disabled = 3
-}
+export type SqlCommandColumnEncryptionSetting = number & { readonly __tsonic_type_Microsoft_Data_SqlClient_SqlCommandColumnEncryptionSetting: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const SqlCommandColumnEncryptionSetting: {
+    readonly UseConnectionSetting: SqlCommandColumnEncryptionSetting;
+    readonly Enabled: SqlCommandColumnEncryptionSetting;
+    readonly ResultSetOnly: SqlCommandColumnEncryptionSetting;
+    readonly Disabled: SqlCommandColumnEncryptionSetting;
+};
 
 
-export enum SqlConnectionAttestationProtocol {
-    NotSpecified = 0,
-    AAS = 1,
-    None = 2,
-    HGS = 3
-}
+export type SqlConnectionAttestationProtocol = number & { readonly __tsonic_type_Microsoft_Data_SqlClient_SqlConnectionAttestationProtocol: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const SqlConnectionAttestationProtocol: {
+    readonly NotSpecified: SqlConnectionAttestationProtocol;
+    readonly AAS: SqlConnectionAttestationProtocol;
+    readonly None: SqlConnectionAttestationProtocol;
+    readonly HGS: SqlConnectionAttestationProtocol;
+};
 
 
-export enum SqlConnectionColumnEncryptionSetting {
-    Disabled = 0,
-    Enabled = 1
-}
+export type SqlConnectionColumnEncryptionSetting = number & { readonly __tsonic_type_Microsoft_Data_SqlClient_SqlConnectionColumnEncryptionSetting: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const SqlConnectionColumnEncryptionSetting: {
+    readonly Disabled: SqlConnectionColumnEncryptionSetting;
+    readonly Enabled: SqlConnectionColumnEncryptionSetting;
+};
 
 
-export enum SqlConnectionIPAddressPreference {
-    IPv4First = 0,
-    IPv6First = 1,
-    UsePlatformDefault = 2
-}
+export type SqlConnectionIPAddressPreference = number & { readonly __tsonic_type_Microsoft_Data_SqlClient_SqlConnectionIPAddressPreference: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const SqlConnectionIPAddressPreference: {
+    readonly IPv4First: SqlConnectionIPAddressPreference;
+    readonly IPv6First: SqlConnectionIPAddressPreference;
+    readonly UsePlatformDefault: SqlConnectionIPAddressPreference;
+};
 
 
-export enum SqlConnectionOverrides {
-    None = 0,
-    OpenWithoutRetry = 1
-}
+export type SqlConnectionOverrides = number & { readonly __tsonic_type_Microsoft_Data_SqlClient_SqlConnectionOverrides: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const SqlConnectionOverrides: {
+    readonly None: SqlConnectionOverrides;
+    readonly OpenWithoutRetry: SqlConnectionOverrides;
+};
 
 
-export enum SqlNotificationInfo {
-    AlreadyChanged = -2,
-    Unknown = -1,
-    Truncate = 0,
-    Insert = 1,
-    Update = 2,
-    Delete = 3,
-    Drop = 4,
-    Alter = 5,
-    Restart = 6,
-    Error = 7,
-    Query = 8,
-    Invalid = 9,
-    Options = 10,
-    Isolation = 11,
-    Expired = 12,
-    Resource = 13,
-    PreviousFire = 14,
-    TemplateLimit = 15,
-    Merge = 16
-}
+export type SqlNotificationInfo = number & { readonly __tsonic_type_Microsoft_Data_SqlClient_SqlNotificationInfo: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const SqlNotificationInfo: {
+    readonly AlreadyChanged: SqlNotificationInfo;
+    readonly Unknown: SqlNotificationInfo;
+    readonly Truncate: SqlNotificationInfo;
+    readonly Insert: SqlNotificationInfo;
+    readonly Update: SqlNotificationInfo;
+    readonly Delete: SqlNotificationInfo;
+    readonly Drop: SqlNotificationInfo;
+    readonly Alter: SqlNotificationInfo;
+    readonly Restart: SqlNotificationInfo;
+    readonly Error: SqlNotificationInfo;
+    readonly Query: SqlNotificationInfo;
+    readonly Invalid: SqlNotificationInfo;
+    readonly Options: SqlNotificationInfo;
+    readonly Isolation: SqlNotificationInfo;
+    readonly Expired: SqlNotificationInfo;
+    readonly Resource: SqlNotificationInfo;
+    readonly PreviousFire: SqlNotificationInfo;
+    readonly TemplateLimit: SqlNotificationInfo;
+    readonly Merge: SqlNotificationInfo;
+};
 
 
-export enum SqlNotificationSource {
-    Client = -2,
-    Unknown = -1,
-    Data = 0,
-    Timeout = 1,
-    Object = 2,
-    Database = 3,
-    System = 4,
-    Statement = 5,
-    Environment = 6,
-    Execution = 7,
-    Owner = 8
-}
+export type SqlNotificationSource = number & { readonly __tsonic_type_Microsoft_Data_SqlClient_SqlNotificationSource: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const SqlNotificationSource: {
+    readonly Client: SqlNotificationSource;
+    readonly Unknown: SqlNotificationSource;
+    readonly Data: SqlNotificationSource;
+    readonly Timeout: SqlNotificationSource;
+    readonly Object: SqlNotificationSource;
+    readonly Database: SqlNotificationSource;
+    readonly System: SqlNotificationSource;
+    readonly Statement: SqlNotificationSource;
+    readonly Environment: SqlNotificationSource;
+    readonly Execution: SqlNotificationSource;
+    readonly Owner: SqlNotificationSource;
+};
 
 
-export enum SqlNotificationType {
-    Unknown = -1,
-    Change = 0,
-    Subscribe = 1
-}
+export type SqlNotificationType = number & { readonly __tsonic_type_Microsoft_Data_SqlClient_SqlNotificationType: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const SqlNotificationType: {
+    readonly Unknown: SqlNotificationType;
+    readonly Change: SqlNotificationType;
+    readonly Subscribe: SqlNotificationType;
+};
 
 
 export type OnChangeEventHandler = (sender: unknown, e: SqlNotificationEventArgs) => void;
@@ -175,13 +201,14 @@ export type SqlRowUpdatedEventHandler = (sender: unknown, e: SqlRowUpdatedEventA
 export type SqlRowUpdatingEventHandler = (sender: unknown, e: SqlRowUpdatingEventArgs) => void;
 
 
-export interface ActiveDirectoryAuthenticationProvider$instance extends SqlAuthenticationProvider {
+export interface ActiveDirectoryAuthenticationProvider$instance extends SqlAuthenticationProvider$instance {
     readonly __tsonic_type_Microsoft_Data_SqlClient_ActiveDirectoryAuthenticationProvider: never;
+    readonly __tsonic_type_Microsoft_Data_SqlClient_SqlAuthenticationProvider: never;
 
-    AcquireTokenAsync(parameters: SqlAuthenticationParameters): Task_1<SqlAuthenticationToken>;
-    BeforeLoad(authentication: SqlAuthenticationMethod): void;
-    BeforeUnload(authentication: SqlAuthenticationMethod): void;
-    IsSupported(authentication: SqlAuthenticationMethod): boolean;
+    AcquireTokenAsync: SqlAuthenticationProvider$instance["AcquireTokenAsync"] & ((parameters: SqlAuthenticationParameters) => Task_1<SqlAuthenticationToken>);
+    BeforeLoad: SqlAuthenticationProvider$instance["BeforeLoad"] & ((authentication: SqlAuthenticationMethod) => void);
+    BeforeUnload: SqlAuthenticationProvider$instance["BeforeUnload"] & ((authentication: SqlAuthenticationMethod) => void);
+    IsSupported: SqlAuthenticationProvider$instance["IsSupported"] & ((authentication: SqlAuthenticationMethod) => boolean);
     SetAcquireAuthorizationCodeAsyncCallback(acquireAuthorizationCodeAsyncCallback: Func_4<Uri, Uri, CancellationToken, Task_1<Uri>>): void;
     SetDeviceCodeFlowCallback(deviceCodeFlowCallbackMethod: Func_2<DeviceCodeResult, Task>): void;
 }
@@ -204,7 +231,7 @@ export interface SqlAuthenticationInitializer$instance {
 }
 
 
-export const SqlAuthenticationInitializer: (abstract new() => SqlAuthenticationInitializer) & {
+export const SqlAuthenticationInitializer: {
 };
 
 
@@ -225,7 +252,7 @@ export interface SqlAuthenticationParameters$instance {
 }
 
 
-export const SqlAuthenticationParameters: (abstract new(authenticationMethod: SqlAuthenticationMethod, serverName: string, databaseName: string, resource: string, authority: string, userId: string, password: string, connectionId: Guid, connectionTimeout: int) => SqlAuthenticationParameters) & {
+export const SqlAuthenticationParameters: {
 };
 
 
@@ -241,7 +268,7 @@ export interface SqlAuthenticationProvider$instance {
 }
 
 
-export const SqlAuthenticationProvider: (abstract new() => SqlAuthenticationProvider) & {
+export const SqlAuthenticationProvider: {
     GetProvider(authenticationMethod: SqlAuthenticationMethod): SqlAuthenticationProvider;
     SetProvider(authenticationMethod: SqlAuthenticationMethod, provider: SqlAuthenticationProvider): boolean;
 };
@@ -264,33 +291,27 @@ export const SqlAuthenticationToken: {
 
 export type SqlAuthenticationToken = SqlAuthenticationToken$instance;
 
-export interface SqlBatch$instance extends DbBatch {
+export interface SqlBatch$instance extends System_Data_Common_Internal.DbBatch {
     readonly __tsonic_type_Microsoft_Data_SqlClient_SqlBatch: never;
+    readonly __tsonic_type_System_Data_Common_DbBatch: never;
 
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    readonly BatchCommands: SqlBatchCommandCollection;
     readonly Commands: List_1<SqlBatchCommand>;
-    Connection: SqlConnection;
-    readonly DbBatchCommands: DbBatchCommandCollection;
-    DbConnection: DbConnection;
-    DbTransaction: DbTransaction;
-    Timeout: int;
-    Transaction: SqlTransaction;
-    Cancel(): void;
-    CreateDbBatchCommand(): DbBatchCommand;
-    Dispose(): void;
-    ExecuteDbDataReader(behavior: CommandBehavior): DbDataReader;
-    ExecuteDbDataReaderAsync(behavior: CommandBehavior, cancellationToken: CancellationToken): Task_1<DbDataReader>;
-    ExecuteNonQuery(): int;
-    ExecuteNonQueryAsync(cancellationToken?: CancellationToken): Task_1<System_Internal.Int32>;
-    ExecuteReader(): SqlDataReader;
-    ExecuteReaderAsync(cancellationToken?: CancellationToken): Task_1<SqlDataReader>;
-    ExecuteScalar(): unknown;
-    ExecuteScalarAsync(cancellationToken?: CancellationToken): Task_1<unknown>;
-    Prepare(): void;
-    PrepareAsync(cancellationToken?: CancellationToken): Task;
+    Cancel: System_Data_Common_Internal.DbBatch["Cancel"] & (() => void);
+    CreateDbBatchCommand: System_Data_Common_Internal.DbBatch["CreateDbBatchCommand"] & (() => DbBatchCommand);
+    Dispose: System_Data_Common_Internal.DbBatch["Dispose"] & (() => void);
+    ExecuteDbDataReader: System_Data_Common_Internal.DbBatch["ExecuteDbDataReader"] & ((behavior: CommandBehavior) => DbDataReader);
+    ExecuteDbDataReaderAsync: System_Data_Common_Internal.DbBatch["ExecuteDbDataReaderAsync"] & ((behavior: CommandBehavior, cancellationToken: CancellationToken) => Task_1<DbDataReader>);
+    ExecuteNonQuery: System_Data_Common_Internal.DbBatch["ExecuteNonQuery"] & (() => int);
+    ExecuteNonQueryAsync: System_Data_Common_Internal.DbBatch["ExecuteNonQueryAsync"] & ((cancellationToken?: CancellationToken) => Task_1<System_Internal.Int32>);
+    ExecuteReader: System_Data_Common_Internal.DbBatch["ExecuteReader"] & (() => SqlDataReader);
+    ExecuteReaderAsync: System_Data_Common_Internal.DbBatch["ExecuteReaderAsync"] & ((cancellationToken?: CancellationToken) => Task_1<SqlDataReader>);
+    ExecuteScalar: System_Data_Common_Internal.DbBatch["ExecuteScalar"] & (() => unknown);
+    ExecuteScalarAsync: System_Data_Common_Internal.DbBatch["ExecuteScalarAsync"] & ((cancellationToken?: CancellationToken) => Task_1<unknown>);
+    Prepare: System_Data_Common_Internal.DbBatch["Prepare"] & (() => void);
+    PrepareAsync: System_Data_Common_Internal.DbBatch["PrepareAsync"] & ((cancellationToken?: CancellationToken) => Task);
 }
 
 
@@ -302,16 +323,12 @@ export const SqlBatch: {
 
 export type SqlBatch = SqlBatch$instance;
 
-export interface SqlBatchCommand$instance extends DbBatchCommand {
+export interface SqlBatchCommand$instance extends System_Data_Common_Internal.DbBatchCommand {
     readonly __tsonic_type_Microsoft_Data_SqlClient_SqlBatchCommand: never;
+    readonly __tsonic_type_System_Data_Common_DbBatchCommand: never;
 
     ColumnEncryptionSetting: SqlCommandColumnEncryptionSetting;
     CommandBehavior: CommandBehavior;
-    CommandText: string;
-    CommandType: CommandType;
-    readonly DbParameterCollection: DbParameterCollection;
-    readonly Parameters: SqlParameterCollection;
-    readonly RecordsAffected: int;
 }
 
 
@@ -323,33 +340,26 @@ export const SqlBatchCommand: {
 
 export type SqlBatchCommand = SqlBatchCommand$instance;
 
-export interface SqlBatchCommandCollection$instance extends DbBatchCommandCollection {
+export interface SqlBatchCommandCollection$instance extends System_Data_Common_Internal.DbBatchCommandCollection {
     readonly __tsonic_type_Microsoft_Data_SqlClient_SqlBatchCommandCollection: never;
+    readonly __tsonic_type_System_Data_Common_DbBatchCommandCollection: never;
 
     readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IList_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
-    readonly Count: int;
-    readonly IsReadOnly: boolean;
-    Add(item: SqlBatchCommand): void;
-    Add(item: DbBatchCommand): void;
-    Clear(): void;
-    Contains(item: SqlBatchCommand): boolean;
-    Contains(item: DbBatchCommand): boolean;
-    CopyTo(array: SqlBatchCommand[], arrayIndex: int): void;
-    CopyTo(array: DbBatchCommand[], arrayIndex: int): void;
-    GetBatchCommand(index: int): DbBatchCommand;
-    GetEnumerator(): IEnumerator_1<DbBatchCommand>;
-    IndexOf(item: SqlBatchCommand): int;
-    IndexOf(item: DbBatchCommand): int;
-    Insert(index: int, item: SqlBatchCommand): void;
-    Insert(index: int, item: DbBatchCommand): void;
-    Remove(item: SqlBatchCommand): boolean;
-    Remove(item: DbBatchCommand): boolean;
-    RemoveAt(index: int): void;
-    SetBatchCommand(index: int, batchCommand: DbBatchCommand): void;
+    Add: System_Data_Common_Internal.DbBatchCommandCollection["Add"] & ((item: DbBatchCommand) => void) & ((item: SqlBatchCommand) => void);
+    Clear: System_Data_Common_Internal.DbBatchCommandCollection["Clear"] & (() => void);
+    Contains: System_Data_Common_Internal.DbBatchCommandCollection["Contains"] & ((item: DbBatchCommand) => boolean) & ((item: SqlBatchCommand) => boolean);
+    CopyTo: System_Data_Common_Internal.DbBatchCommandCollection["CopyTo"] & ((array: DbBatchCommand[], arrayIndex: int) => void) & ((array: SqlBatchCommand[], arrayIndex: int) => void);
+    GetBatchCommand: System_Data_Common_Internal.DbBatchCommandCollection["GetBatchCommand"] & ((index: int) => DbBatchCommand);
+    GetEnumerator: System_Data_Common_Internal.DbBatchCommandCollection["GetEnumerator"] & (() => IEnumerator_1<DbBatchCommand>);
+    IndexOf: System_Data_Common_Internal.DbBatchCommandCollection["IndexOf"] & ((item: DbBatchCommand) => int) & ((item: SqlBatchCommand) => int);
+    Insert: System_Data_Common_Internal.DbBatchCommandCollection["Insert"] & ((index: int, item: DbBatchCommand) => void) & ((index: int, item: SqlBatchCommand) => void);
+    Remove: System_Data_Common_Internal.DbBatchCommandCollection["Remove"] & ((item: DbBatchCommand) => boolean) & ((item: SqlBatchCommand) => boolean);
+    RemoveAt: System_Data_Common_Internal.DbBatchCommandCollection["RemoveAt"] & ((index: int) => void);
+    SetBatchCommand: System_Data_Common_Internal.DbBatchCommandCollection["SetBatchCommand"] & ((index: int, batchCommand: DbBatchCommand) => void);
 }
 
 
@@ -376,20 +386,20 @@ export interface SqlBulkCopy$instance {
     readonly RowsCopied64: long;
     Close(): void;
     WriteToServer(reader: DbDataReader): void;
+    WriteToServer(reader: IDataReader): void;
     WriteToServer(rows: DataRow[]): void;
     WriteToServer(table: DataTable): void;
     WriteToServer(table: DataTable, rowState: DataRowState): void;
-    WriteToServer(reader: IDataReader): void;
     WriteToServerAsync(reader: DbDataReader): Task;
     WriteToServerAsync(reader: DbDataReader, cancellationToken: CancellationToken): Task;
+    WriteToServerAsync(reader: IDataReader): Task;
+    WriteToServerAsync(reader: IDataReader, cancellationToken: CancellationToken): Task;
     WriteToServerAsync(rows: DataRow[]): Task;
     WriteToServerAsync(rows: DataRow[], cancellationToken: CancellationToken): Task;
     WriteToServerAsync(table: DataTable): Task;
+    WriteToServerAsync(table: DataTable, cancellationToken: CancellationToken): Task;
     WriteToServerAsync(table: DataTable, rowState: DataRowState): Task;
     WriteToServerAsync(table: DataTable, rowState: DataRowState, cancellationToken: CancellationToken): Task;
-    WriteToServerAsync(table: DataTable, cancellationToken: CancellationToken): Task;
-    WriteToServerAsync(reader: IDataReader): Task;
-    WriteToServerAsync(reader: IDataReader, cancellationToken: CancellationToken): Task;
 }
 
 
@@ -424,25 +434,26 @@ export const SqlBulkCopyColumnMapping: {
 
 export type SqlBulkCopyColumnMapping = SqlBulkCopyColumnMapping$instance;
 
-export interface SqlBulkCopyColumnMappingCollection$instance extends CollectionBase {
+export interface SqlBulkCopyColumnMappingCollection$instance extends System_Collections_Internal.CollectionBase {
     readonly __tsonic_type_Microsoft_Data_SqlClient_SqlBulkCopyColumnMappingCollection: never;
+    readonly __tsonic_type_System_Collections_CollectionBase: never;
 
     readonly __tsonic_iface_System_Collections_ICollection: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
     readonly __tsonic_iface_System_Collections_IList: never;
 
     Add(bulkCopyColumnMapping: SqlBulkCopyColumnMapping): SqlBulkCopyColumnMapping;
-    Add(sourceColumnIndex: int, destinationColumnIndex: int): SqlBulkCopyColumnMapping;
-    Add(sourceColumnIndex: int, destinationColumn: string): SqlBulkCopyColumnMapping;
-    Add(sourceColumn: string, destinationColumnIndex: int): SqlBulkCopyColumnMapping;
     Add(sourceColumn: string, destinationColumn: string): SqlBulkCopyColumnMapping;
-    Clear(): void;
+    Add(sourceColumn: string, destinationColumnIndex: int): SqlBulkCopyColumnMapping;
+    Add(sourceColumnIndex: int, destinationColumn: string): SqlBulkCopyColumnMapping;
+    Add(sourceColumnIndex: int, destinationColumnIndex: int): SqlBulkCopyColumnMapping;
+    Clear: System_Collections_Internal.CollectionBase["Clear"] & (() => void);
     Contains(value: SqlBulkCopyColumnMapping): boolean;
     CopyTo(array: SqlBulkCopyColumnMapping[], index: int): void;
     IndexOf(value: SqlBulkCopyColumnMapping): int;
     Insert(index: int, value: SqlBulkCopyColumnMapping): void;
     Remove(value: SqlBulkCopyColumnMapping): void;
-    RemoveAt(index: int): void;
+    RemoveAt: System_Collections_Internal.CollectionBase["RemoveAt"] & ((index: int) => void);
 }
 
 
@@ -467,22 +478,23 @@ export const SqlBulkCopyColumnOrderHint: {
 
 export type SqlBulkCopyColumnOrderHint = SqlBulkCopyColumnOrderHint$instance;
 
-export interface SqlBulkCopyColumnOrderHintCollection$instance extends CollectionBase {
+export interface SqlBulkCopyColumnOrderHintCollection$instance extends System_Collections_Internal.CollectionBase {
     readonly __tsonic_type_Microsoft_Data_SqlClient_SqlBulkCopyColumnOrderHintCollection: never;
+    readonly __tsonic_type_System_Collections_CollectionBase: never;
 
     readonly __tsonic_iface_System_Collections_ICollection: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
     readonly __tsonic_iface_System_Collections_IList: never;
 
-    Add(columnOrderHint: SqlBulkCopyColumnOrderHint): SqlBulkCopyColumnOrderHint;
     Add(column: string, sortOrder: SortOrder): SqlBulkCopyColumnOrderHint;
-    Clear(): void;
+    Add(columnOrderHint: SqlBulkCopyColumnOrderHint): SqlBulkCopyColumnOrderHint;
+    Clear: System_Collections_Internal.CollectionBase["Clear"] & (() => void);
     Contains(value: SqlBulkCopyColumnOrderHint): boolean;
     CopyTo(array: SqlBulkCopyColumnOrderHint[], index: int): void;
     IndexOf(value: SqlBulkCopyColumnOrderHint): int;
     Insert(index: int, columnOrderHint: SqlBulkCopyColumnOrderHint): void;
     Remove(columnOrderHint: SqlBulkCopyColumnOrderHint): void;
-    RemoveAt(index: int): void;
+    RemoveAt: System_Collections_Internal.CollectionBase["RemoveAt"] & ((index: int) => void);
 }
 
 
@@ -493,19 +505,19 @@ export const SqlBulkCopyColumnOrderHintCollection: {
 
 export type SqlBulkCopyColumnOrderHintCollection = SqlBulkCopyColumnOrderHintCollection$instance & { readonly [index: number]: SqlBulkCopyColumnOrderHint; };
 
-export interface SqlClientFactory$instance extends DbProviderFactory {
+export interface SqlClientFactory$instance extends System_Data_Common_Internal.DbProviderFactory {
     readonly __tsonic_type_Microsoft_Data_SqlClient_SqlClientFactory: never;
+    readonly __tsonic_type_System_Data_Common_DbProviderFactory: never;
 
-    readonly CanCreateBatch: boolean;
-    CreateBatch(): DbBatch;
-    CreateBatchCommand(): DbBatchCommand;
-    CreateCommand(): DbCommand;
-    CreateCommandBuilder(): DbCommandBuilder;
-    CreateConnection(): DbConnection;
-    CreateConnectionStringBuilder(): DbConnectionStringBuilder;
-    CreateDataAdapter(): DbDataAdapter;
-    CreateDataSourceEnumerator(): DbDataSourceEnumerator;
-    CreateParameter(): DbParameter;
+    CreateBatch: System_Data_Common_Internal.DbProviderFactory["CreateBatch"] & (() => DbBatch);
+    CreateBatchCommand: System_Data_Common_Internal.DbProviderFactory["CreateBatchCommand"] & (() => DbBatchCommand);
+    CreateCommand: System_Data_Common_Internal.DbProviderFactory["CreateCommand"] & (() => DbCommand);
+    CreateCommandBuilder: System_Data_Common_Internal.DbProviderFactory["CreateCommandBuilder"] & (() => DbCommandBuilder);
+    CreateConnection: System_Data_Common_Internal.DbProviderFactory["CreateConnection"] & (() => DbConnection);
+    CreateConnectionStringBuilder: System_Data_Common_Internal.DbProviderFactory["CreateConnectionStringBuilder"] & (() => DbConnectionStringBuilder);
+    CreateDataAdapter: System_Data_Common_Internal.DbProviderFactory["CreateDataAdapter"] & (() => DbDataAdapter);
+    CreateDataSourceEnumerator: System_Data_Common_Internal.DbProviderFactory["CreateDataSourceEnumerator"] & (() => DbDataSourceEnumerator);
+    CreateParameter: System_Data_Common_Internal.DbProviderFactory["CreateParameter"] & (() => DbParameter);
 }
 
 
@@ -534,13 +546,14 @@ export const SqlClientLogger: {
 
 export type SqlClientLogger = SqlClientLogger$instance;
 
-export interface SqlColumnEncryptionCertificateStoreProvider$instance extends SqlColumnEncryptionKeyStoreProvider {
+export interface SqlColumnEncryptionCertificateStoreProvider$instance extends SqlColumnEncryptionKeyStoreProvider$instance {
     readonly __tsonic_type_Microsoft_Data_SqlClient_SqlColumnEncryptionCertificateStoreProvider: never;
+    readonly __tsonic_type_Microsoft_Data_SqlClient_SqlColumnEncryptionKeyStoreProvider: never;
 
-    DecryptColumnEncryptionKey(masterKeyPath: string, encryptionAlgorithm: string, encryptedColumnEncryptionKey: byte[]): byte[];
-    EncryptColumnEncryptionKey(masterKeyPath: string, encryptionAlgorithm: string, columnEncryptionKey: byte[]): byte[];
-    SignColumnMasterKeyMetadata(masterKeyPath: string, allowEnclaveComputations: boolean): byte[];
-    VerifyColumnMasterKeyMetadata(masterKeyPath: string, allowEnclaveComputations: boolean, signature: byte[]): boolean;
+    DecryptColumnEncryptionKey: SqlColumnEncryptionKeyStoreProvider$instance["DecryptColumnEncryptionKey"] & ((masterKeyPath: string, encryptionAlgorithm: string, encryptedColumnEncryptionKey: byte[]) => byte[]);
+    EncryptColumnEncryptionKey: SqlColumnEncryptionKeyStoreProvider$instance["EncryptColumnEncryptionKey"] & ((masterKeyPath: string, encryptionAlgorithm: string, columnEncryptionKey: byte[]) => byte[]);
+    SignColumnMasterKeyMetadata: SqlColumnEncryptionKeyStoreProvider$instance["SignColumnMasterKeyMetadata"] & ((masterKeyPath: string, allowEnclaveComputations: boolean) => byte[]);
+    VerifyColumnMasterKeyMetadata: SqlColumnEncryptionKeyStoreProvider$instance["VerifyColumnMasterKeyMetadata"] & ((masterKeyPath: string, allowEnclaveComputations: boolean, signature: byte[]) => boolean);
 }
 
 
@@ -552,13 +565,14 @@ export const SqlColumnEncryptionCertificateStoreProvider: {
 
 export type SqlColumnEncryptionCertificateStoreProvider = SqlColumnEncryptionCertificateStoreProvider$instance;
 
-export interface SqlColumnEncryptionCngProvider$instance extends SqlColumnEncryptionKeyStoreProvider {
+export interface SqlColumnEncryptionCngProvider$instance extends SqlColumnEncryptionKeyStoreProvider$instance {
     readonly __tsonic_type_Microsoft_Data_SqlClient_SqlColumnEncryptionCngProvider: never;
+    readonly __tsonic_type_Microsoft_Data_SqlClient_SqlColumnEncryptionKeyStoreProvider: never;
 
-    DecryptColumnEncryptionKey(masterKeyPath: string, encryptionAlgorithm: string, encryptedColumnEncryptionKey: byte[]): byte[];
-    EncryptColumnEncryptionKey(masterKeyPath: string, encryptionAlgorithm: string, columnEncryptionKey: byte[]): byte[];
-    SignColumnMasterKeyMetadata(masterKeyPath: string, allowEnclaveComputations: boolean): byte[];
-    VerifyColumnMasterKeyMetadata(masterKeyPath: string, allowEnclaveComputations: boolean, signature: byte[]): boolean;
+    DecryptColumnEncryptionKey: SqlColumnEncryptionKeyStoreProvider$instance["DecryptColumnEncryptionKey"] & ((masterKeyPath: string, encryptionAlgorithm: string, encryptedColumnEncryptionKey: byte[]) => byte[]);
+    EncryptColumnEncryptionKey: SqlColumnEncryptionKeyStoreProvider$instance["EncryptColumnEncryptionKey"] & ((masterKeyPath: string, encryptionAlgorithm: string, columnEncryptionKey: byte[]) => byte[]);
+    SignColumnMasterKeyMetadata: SqlColumnEncryptionKeyStoreProvider$instance["SignColumnMasterKeyMetadata"] & ((masterKeyPath: string, allowEnclaveComputations: boolean) => byte[]);
+    VerifyColumnMasterKeyMetadata: SqlColumnEncryptionKeyStoreProvider$instance["VerifyColumnMasterKeyMetadata"] & ((masterKeyPath: string, allowEnclaveComputations: boolean, signature: byte[]) => boolean);
 }
 
 
@@ -570,13 +584,14 @@ export const SqlColumnEncryptionCngProvider: {
 
 export type SqlColumnEncryptionCngProvider = SqlColumnEncryptionCngProvider$instance;
 
-export interface SqlColumnEncryptionCspProvider$instance extends SqlColumnEncryptionKeyStoreProvider {
+export interface SqlColumnEncryptionCspProvider$instance extends SqlColumnEncryptionKeyStoreProvider$instance {
     readonly __tsonic_type_Microsoft_Data_SqlClient_SqlColumnEncryptionCspProvider: never;
+    readonly __tsonic_type_Microsoft_Data_SqlClient_SqlColumnEncryptionKeyStoreProvider: never;
 
-    DecryptColumnEncryptionKey(masterKeyPath: string, encryptionAlgorithm: string, encryptedColumnEncryptionKey: byte[]): byte[];
-    EncryptColumnEncryptionKey(masterKeyPath: string, encryptionAlgorithm: string, columnEncryptionKey: byte[]): byte[];
-    SignColumnMasterKeyMetadata(masterKeyPath: string, allowEnclaveComputations: boolean): byte[];
-    VerifyColumnMasterKeyMetadata(masterKeyPath: string, allowEnclaveComputations: boolean, signature: byte[]): boolean;
+    DecryptColumnEncryptionKey: SqlColumnEncryptionKeyStoreProvider$instance["DecryptColumnEncryptionKey"] & ((masterKeyPath: string, encryptionAlgorithm: string, encryptedColumnEncryptionKey: byte[]) => byte[]);
+    EncryptColumnEncryptionKey: SqlColumnEncryptionKeyStoreProvider$instance["EncryptColumnEncryptionKey"] & ((masterKeyPath: string, encryptionAlgorithm: string, columnEncryptionKey: byte[]) => byte[]);
+    SignColumnMasterKeyMetadata: SqlColumnEncryptionKeyStoreProvider$instance["SignColumnMasterKeyMetadata"] & ((masterKeyPath: string, allowEnclaveComputations: boolean) => byte[]);
+    VerifyColumnMasterKeyMetadata: SqlColumnEncryptionKeyStoreProvider$instance["VerifyColumnMasterKeyMetadata"] & ((masterKeyPath: string, allowEnclaveComputations: boolean, signature: byte[]) => boolean);
 }
 
 
@@ -600,14 +615,17 @@ export interface SqlColumnEncryptionKeyStoreProvider$instance {
 }
 
 
-export const SqlColumnEncryptionKeyStoreProvider: (abstract new() => SqlColumnEncryptionKeyStoreProvider) & {
+export const SqlColumnEncryptionKeyStoreProvider: {
 };
 
 
 export type SqlColumnEncryptionKeyStoreProvider = SqlColumnEncryptionKeyStoreProvider$instance;
 
-export interface SqlCommand$instance extends DbCommand {
+export interface SqlCommand$instance extends System_Data_Common_Internal.DbCommand {
     readonly __tsonic_type_Microsoft_Data_SqlClient_SqlCommand: never;
+    readonly __tsonic_type_System_ComponentModel_Component: never;
+    readonly __tsonic_type_System_Data_Common_DbCommand: never;
+    readonly __tsonic_type_System_MarshalByRefObject: never;
 
     readonly __tsonic_iface_System_ComponentModel_IComponent: never;
     readonly __tsonic_iface_System_Data_IDbCommand: never;
@@ -616,52 +634,37 @@ export interface SqlCommand$instance extends DbCommand {
     readonly __tsonic_iface_System_IDisposable: never;
 
     readonly ColumnEncryptionSetting: SqlCommandColumnEncryptionSetting;
-    CommandText: string;
-    CommandTimeout: int;
-    CommandType: CommandType;
-    Connection: SqlConnection;
-    DbConnection: DbConnection;
-    readonly DbParameterCollection: DbParameterCollection;
-    DbTransaction: DbTransaction;
-    DesignTimeVisible: boolean;
     EnableOptimizedParameterBinding: boolean;
     Notification: SqlNotificationRequest;
-    readonly Parameters: SqlParameterCollection;
     RetryLogicProvider: SqlRetryLogicBaseProvider;
-    Transaction: SqlTransaction;
-    UpdatedRowSource: UpdateRowSource;
     BeginExecuteNonQuery(): IAsyncResult;
     BeginExecuteNonQuery(callback: AsyncCallback, stateObject: unknown): IAsyncResult;
     BeginExecuteReader(): IAsyncResult;
+    BeginExecuteReader(behavior: CommandBehavior): IAsyncResult;
     BeginExecuteReader(callback: AsyncCallback, stateObject: unknown): IAsyncResult;
     BeginExecuteReader(callback: AsyncCallback, stateObject: unknown, behavior: CommandBehavior): IAsyncResult;
-    BeginExecuteReader(behavior: CommandBehavior): IAsyncResult;
     BeginExecuteXmlReader(): IAsyncResult;
     BeginExecuteXmlReader(callback: AsyncCallback, stateObject: unknown): IAsyncResult;
-    Cancel(): void;
+    Cancel: System_Data_Common_Internal.DbCommand["Cancel"] & (() => void);
     Clone(): SqlCommand;
-    CreateDbParameter(): DbParameter;
-    CreateParameter(): SqlParameter;
-    Dispose(disposing: boolean): void;
+    CreateDbParameter: System_Data_Common_Internal.DbCommand["CreateDbParameter"] & (() => DbParameter);
+    CreateParameter: System_Data_Common_Internal.DbCommand["CreateParameter"] & (() => SqlParameter);
+    Dispose: System_Data_Common_Internal.DbCommand["Dispose"] & ((disposing: boolean) => void);
     EndExecuteNonQuery(asyncResult: IAsyncResult): int;
     EndExecuteReader(asyncResult: IAsyncResult): SqlDataReader;
     EndExecuteXmlReader(asyncResult: IAsyncResult): XmlReader;
-    ExecuteDbDataReader(behavior: CommandBehavior): DbDataReader;
-    ExecuteDbDataReaderAsync(behavior: CommandBehavior, cancellationToken: CancellationToken): Task_1<DbDataReader>;
-    ExecuteNonQuery(): int;
-    ExecuteNonQueryAsync(cancellationToken: CancellationToken): Task_1<System_Internal.Int32>;
-    ExecuteReader(): SqlDataReader;
-    ExecuteReader(behavior: CommandBehavior): SqlDataReader;
-    ExecuteReaderAsync(): Task_1<SqlDataReader>;
-    ExecuteReaderAsync(behavior: CommandBehavior): Task_1<SqlDataReader>;
-    ExecuteReaderAsync(behavior: CommandBehavior, cancellationToken: CancellationToken): Task_1<SqlDataReader>;
-    ExecuteReaderAsync(cancellationToken: CancellationToken): Task_1<SqlDataReader>;
-    ExecuteScalar(): unknown;
-    ExecuteScalarAsync(cancellationToken: CancellationToken): Task_1<unknown>;
+    ExecuteDbDataReader: System_Data_Common_Internal.DbCommand["ExecuteDbDataReader"] & ((behavior: CommandBehavior) => DbDataReader);
+    ExecuteDbDataReaderAsync: System_Data_Common_Internal.DbCommand["ExecuteDbDataReaderAsync"] & ((behavior: CommandBehavior, cancellationToken: CancellationToken) => Task_1<DbDataReader>);
+    ExecuteNonQuery: System_Data_Common_Internal.DbCommand["ExecuteNonQuery"] & (() => int);
+    ExecuteNonQueryAsync: System_Data_Common_Internal.DbCommand["ExecuteNonQueryAsync"] & ((cancellationToken: CancellationToken) => Task_1<System_Internal.Int32>);
+    ExecuteReader: System_Data_Common_Internal.DbCommand["ExecuteReader"] & (() => SqlDataReader) & ((behavior: CommandBehavior) => SqlDataReader);
+    ExecuteReaderAsync: System_Data_Common_Internal.DbCommand["ExecuteReaderAsync"] & (() => Task_1<SqlDataReader>) & ((behavior: CommandBehavior) => Task_1<SqlDataReader>) & ((behavior: CommandBehavior, cancellationToken: CancellationToken) => Task_1<SqlDataReader>) & ((cancellationToken: CancellationToken) => Task_1<SqlDataReader>);
+    ExecuteScalar: System_Data_Common_Internal.DbCommand["ExecuteScalar"] & (() => unknown);
+    ExecuteScalarAsync: System_Data_Common_Internal.DbCommand["ExecuteScalarAsync"] & ((cancellationToken: CancellationToken) => Task_1<unknown>);
     ExecuteXmlReader(): XmlReader;
     ExecuteXmlReaderAsync(): Task_1<XmlReader>;
     ExecuteXmlReaderAsync(cancellationToken: CancellationToken): Task_1<XmlReader>;
-    Prepare(): void;
+    Prepare: System_Data_Common_Internal.DbCommand["Prepare"] & (() => void);
     RegisterColumnEncryptionKeyStoreProvidersOnCommand(customProviders: IDictionary_2<System_Internal.String, SqlColumnEncryptionKeyStoreProvider>): void;
     ResetCommandTimeout(): void;
 }
@@ -678,33 +681,26 @@ export const SqlCommand: {
 
 export type SqlCommand = SqlCommand$instance;
 
-export interface SqlCommandBuilder$instance extends DbCommandBuilder {
+export interface SqlCommandBuilder$instance extends System_Data_Common_Internal.DbCommandBuilder {
     readonly __tsonic_type_Microsoft_Data_SqlClient_SqlCommandBuilder: never;
+    readonly __tsonic_type_System_ComponentModel_Component: never;
+    readonly __tsonic_type_System_Data_Common_DbCommandBuilder: never;
+    readonly __tsonic_type_System_MarshalByRefObject: never;
 
     readonly __tsonic_iface_System_ComponentModel_IComponent: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    CatalogLocation: CatalogLocation;
-    CatalogSeparator: string;
-    DataAdapter: SqlDataAdapter;
-    QuotePrefix: string;
-    QuoteSuffix: string;
-    SchemaSeparator: string;
-    ApplyParameterInfo(parameter: DbParameter, datarow: DataRow, statementType: StatementType, whereClause: boolean): void;
-    GetDeleteCommand(): SqlCommand;
-    GetDeleteCommand(useColumnsForParameterNames: boolean): SqlCommand;
-    GetInsertCommand(): SqlCommand;
-    GetInsertCommand(useColumnsForParameterNames: boolean): SqlCommand;
-    GetParameterName(parameterOrdinal: int): string;
-    GetParameterName(parameterName: string): string;
-    GetParameterPlaceholder(parameterOrdinal: int): string;
-    GetSchemaTable(srcCommand: DbCommand): DataTable;
-    GetUpdateCommand(): SqlCommand;
-    GetUpdateCommand(useColumnsForParameterNames: boolean): SqlCommand;
-    InitializeCommand(command: DbCommand): DbCommand;
-    QuoteIdentifier(unquotedIdentifier: string): string;
-    SetRowUpdatingHandler(adapter: DbDataAdapter): void;
-    UnquoteIdentifier(quotedIdentifier: string): string;
+    ApplyParameterInfo: System_Data_Common_Internal.DbCommandBuilder["ApplyParameterInfo"] & ((parameter: DbParameter, datarow: DataRow, statementType: StatementType, whereClause: boolean) => void);
+    GetDeleteCommand: System_Data_Common_Internal.DbCommandBuilder["GetDeleteCommand"] & (() => SqlCommand) & ((useColumnsForParameterNames: boolean) => SqlCommand);
+    GetInsertCommand: System_Data_Common_Internal.DbCommandBuilder["GetInsertCommand"] & (() => SqlCommand) & ((useColumnsForParameterNames: boolean) => SqlCommand);
+    GetParameterName: System_Data_Common_Internal.DbCommandBuilder["GetParameterName"] & ((parameterName: string) => string) & ((parameterOrdinal: int) => string);
+    GetParameterPlaceholder: System_Data_Common_Internal.DbCommandBuilder["GetParameterPlaceholder"] & ((parameterOrdinal: int) => string);
+    GetSchemaTable: System_Data_Common_Internal.DbCommandBuilder["GetSchemaTable"] & ((srcCommand: DbCommand) => DataTable);
+    GetUpdateCommand: System_Data_Common_Internal.DbCommandBuilder["GetUpdateCommand"] & (() => SqlCommand) & ((useColumnsForParameterNames: boolean) => SqlCommand);
+    InitializeCommand: System_Data_Common_Internal.DbCommandBuilder["InitializeCommand"] & ((command: DbCommand) => DbCommand);
+    QuoteIdentifier: System_Data_Common_Internal.DbCommandBuilder["QuoteIdentifier"] & ((unquotedIdentifier: string) => string);
+    SetRowUpdatingHandler: System_Data_Common_Internal.DbCommandBuilder["SetRowUpdatingHandler"] & ((adapter: DbDataAdapter) => void);
+    UnquoteIdentifier: System_Data_Common_Internal.DbCommandBuilder["UnquoteIdentifier"] & ((quotedIdentifier: string) => string);
 }
 
 
@@ -734,8 +730,11 @@ export const SqlConfigurableRetryFactory: {
 
 export type SqlConfigurableRetryFactory = SqlConfigurableRetryFactory$instance;
 
-export interface SqlConnection$instance extends DbConnection {
+export interface SqlConnection$instance extends System_Data_Common_Internal.DbConnection {
     readonly __tsonic_type_Microsoft_Data_SqlClient_SqlConnection: never;
+    readonly __tsonic_type_System_ComponentModel_Component: never;
+    readonly __tsonic_type_System_Data_Common_DbConnection: never;
+    readonly __tsonic_type_System_MarshalByRefObject: never;
 
     readonly __tsonic_iface_System_ComponentModel_IComponent: never;
     readonly __tsonic_iface_System_Data_IDbConnection: never;
@@ -745,40 +744,26 @@ export interface SqlConnection$instance extends DbConnection {
 
     AccessToken: string;
     AccessTokenCallback: Func_3<SqlAuthenticationParameters, CancellationToken, Task_1<SqlAuthenticationToken>>;
-    readonly CanCreateBatch: boolean;
     readonly ClientConnectionId: Guid;
     readonly CommandTimeout: int;
-    ConnectionString: string;
-    readonly ConnectionTimeout: int;
     Credential: SqlCredential;
-    readonly Database: string;
-    readonly DataSource: string;
     FireInfoMessageEventOnUserErrors: boolean;
     readonly PacketSize: int;
     RetryLogicProvider: SqlRetryLogicBaseProvider;
     readonly ServerProcessId: int;
-    readonly ServerVersion: string;
-    readonly State: ConnectionState;
     StatisticsEnabled: boolean;
     readonly WorkstationId: string;
-    BeginDbTransaction(isolationLevel: IsolationLevel): DbTransaction;
-    BeginTransaction(): SqlTransaction;
-    BeginTransaction(iso: IsolationLevel): SqlTransaction;
-    BeginTransaction(iso: IsolationLevel, transactionName: string): SqlTransaction;
-    BeginTransaction(transactionName: string): SqlTransaction;
-    ChangeDatabase(database: string): void;
-    Close(): void;
-    CreateCommand(): SqlCommand;
-    CreateDbBatch(): DbBatch;
-    CreateDbCommand(): DbCommand;
-    Dispose(disposing: boolean): void;
-    GetSchema(): DataTable;
-    GetSchema(collectionName: string): DataTable;
-    GetSchema(collectionName: string, restrictionValues: string[]): DataTable;
-    Open(): void;
-    Open(overrides: SqlConnectionOverrides): void;
-    OpenAsync(overrides: SqlConnectionOverrides, cancellationToken: CancellationToken): Task;
-    OpenAsync(cancellationToken: CancellationToken): Task;
+    BeginDbTransaction: System_Data_Common_Internal.DbConnection["BeginDbTransaction"] & ((isolationLevel: IsolationLevel) => DbTransaction);
+    BeginTransaction: System_Data_Common_Internal.DbConnection["BeginTransaction"] & (() => SqlTransaction) & ((iso: IsolationLevel) => SqlTransaction) & ((iso: IsolationLevel, transactionName: string) => SqlTransaction) & ((transactionName: string) => SqlTransaction);
+    ChangeDatabase: System_Data_Common_Internal.DbConnection["ChangeDatabase"] & ((database: string) => void);
+    Close: System_Data_Common_Internal.DbConnection["Close"] & (() => void);
+    CreateCommand: System_Data_Common_Internal.DbConnection["CreateCommand"] & (() => SqlCommand);
+    CreateDbBatch: System_Data_Common_Internal.DbConnection["CreateDbBatch"] & (() => DbBatch);
+    CreateDbCommand: System_Data_Common_Internal.DbConnection["CreateDbCommand"] & (() => DbCommand);
+    Dispose: System_Data_Common_Internal.DbConnection["Dispose"] & ((disposing: boolean) => void);
+    GetSchema: System_Data_Common_Internal.DbConnection["GetSchema"] & (() => DataTable) & ((collectionName: string) => DataTable) & ((collectionName: string, restrictionValues: string[]) => DataTable);
+    Open: System_Data_Common_Internal.DbConnection["Open"] & (() => void) & ((overrides: SqlConnectionOverrides) => void);
+    OpenAsync: System_Data_Common_Internal.DbConnection["OpenAsync"] & ((cancellationToken: CancellationToken) => Task) & ((overrides: SqlConnectionOverrides, cancellationToken: CancellationToken) => Task);
     RegisterColumnEncryptionKeyStoreProvidersOnConnection(customProviders: IDictionary_2<System_Internal.String, SqlColumnEncryptionKeyStoreProvider>): void;
     ResetStatistics(): void;
     RetrieveInternalInfo(): IDictionary_2<System_Internal.String, unknown>;
@@ -824,8 +809,9 @@ export const SqlConnectionEncryptOption: {
 
 export type SqlConnectionEncryptOption = SqlConnectionEncryptOption$instance;
 
-export interface SqlConnectionStringBuilder$instance extends DbConnectionStringBuilder {
+export interface SqlConnectionStringBuilder$instance extends System_Data_Common_Internal.DbConnectionStringBuilder {
     readonly __tsonic_type_Microsoft_Data_SqlClient_SqlConnectionStringBuilder: never;
+    readonly __tsonic_type_System_Data_Common_DbConnectionStringBuilder: never;
 
     readonly __tsonic_iface_System_Collections_ICollection: never;
     readonly __tsonic_iface_System_Collections_IDictionary: never;
@@ -853,8 +839,6 @@ export interface SqlConnectionStringBuilder$instance extends DbConnectionStringB
     InitialCatalog: string;
     IntegratedSecurity: boolean;
     IPAddressPreference: SqlConnectionIPAddressPreference;
-    readonly IsFixedSize: boolean;
-    readonly Keys: ICollection;
     LoadBalanceTimeout: int;
     MaxPoolSize: int;
     MinPoolSize: int;
@@ -873,13 +857,12 @@ export interface SqlConnectionStringBuilder$instance extends DbConnectionStringB
     TypeSystemVersion: string;
     UserID: string;
     UserInstance: boolean;
-    readonly Values: ICollection;
     WorkstationID: string;
-    Clear(): void;
-    ContainsKey(keyword: string): boolean;
-    Remove(keyword: string): boolean;
-    ShouldSerialize(keyword: string): boolean;
-    TryGetValue(keyword: string, value: unknown): boolean;
+    Clear: System_Data_Common_Internal.DbConnectionStringBuilder["Clear"] & (() => void);
+    ContainsKey: System_Data_Common_Internal.DbConnectionStringBuilder["ContainsKey"] & ((keyword: string) => boolean);
+    Remove: System_Data_Common_Internal.DbConnectionStringBuilder["Remove"] & ((keyword: string) => boolean);
+    ShouldSerialize: System_Data_Common_Internal.DbConnectionStringBuilder["ShouldSerialize"] & ((keyword: string) => boolean);
+    TryGetValue: System_Data_Common_Internal.DbConnectionStringBuilder["TryGetValue"] & ((keyword: string, value: unknown) => boolean);
 }
 
 
@@ -906,8 +889,12 @@ export const SqlCredential: {
 
 export type SqlCredential = SqlCredential$instance;
 
-export interface SqlDataAdapter$instance extends DbDataAdapter {
+export interface SqlDataAdapter$instance extends System_Data_Common_Internal.DbDataAdapter {
     readonly __tsonic_type_Microsoft_Data_SqlClient_SqlDataAdapter: never;
+    readonly __tsonic_type_System_ComponentModel_Component: never;
+    readonly __tsonic_type_System_Data_Common_DataAdapter: never;
+    readonly __tsonic_type_System_Data_Common_DbDataAdapter: never;
+    readonly __tsonic_type_System_MarshalByRefObject: never;
 
     readonly __tsonic_iface_System_ComponentModel_IComponent: never;
     readonly __tsonic_iface_System_Data_IDataAdapter: never;
@@ -915,13 +902,8 @@ export interface SqlDataAdapter$instance extends DbDataAdapter {
     readonly __tsonic_iface_System_ICloneable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    DeleteCommand: SqlCommand;
-    InsertCommand: SqlCommand;
-    SelectCommand: SqlCommand;
-    UpdateBatchSize: int;
-    UpdateCommand: SqlCommand;
-    OnRowUpdated(value: RowUpdatedEventArgs): void;
-    OnRowUpdating(value: RowUpdatingEventArgs): void;
+    OnRowUpdated: System_Data_Common_Internal.DbDataAdapter["OnRowUpdated"] & ((value: RowUpdatedEventArgs) => void);
+    OnRowUpdating: System_Data_Common_Internal.DbDataAdapter["OnRowUpdating"] & ((value: RowUpdatingEventArgs) => void);
 }
 
 
@@ -935,8 +917,10 @@ export const SqlDataAdapter: {
 
 export type SqlDataAdapter = SqlDataAdapter$instance;
 
-export interface SqlDataReader$instance extends DbDataReader {
+export interface SqlDataReader$instance extends System_Data_Common_Internal.DbDataReader {
     readonly __tsonic_type_Microsoft_Data_SqlClient_SqlDataReader: never;
+    readonly __tsonic_type_System_Data_Common_DbDataReader: never;
+    readonly __tsonic_type_System_MarshalByRefObject: never;
 
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
     readonly __tsonic_iface_System_Data_Common_IDbColumnSchemaGenerator: never;
@@ -945,42 +929,35 @@ export interface SqlDataReader$instance extends DbDataReader {
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    readonly Depth: int;
-    readonly FieldCount: int;
-    readonly HasRows: boolean;
-    readonly IsClosed: boolean;
-    readonly RecordsAffected: int;
     readonly SensitivityClassification: SensitivityClassification;
-    readonly VisibleFieldCount: int;
-    Close(): void;
-    get_Item(i: int): unknown;
-    get_Item(name: string): unknown;
-    GetBoolean(i: int): boolean;
-    GetByte(i: int): byte;
-    GetBytes(i: int, dataIndex: long, buffer: byte[], bufferIndex: int, length: int): long;
-    GetChar(i: int): char;
-    GetChars(i: int, dataIndex: long, buffer: char[], bufferIndex: int, length: int): long;
+    Close: System_Data_Common_Internal.DbDataReader["Close"] & (() => void);
+    get_Item: System_Data_Common_Internal.DbDataReader["get_Item"] & ((i: int) => unknown) & ((name: string) => unknown);
+    GetBoolean: System_Data_Common_Internal.DbDataReader["GetBoolean"] & ((i: int) => boolean);
+    GetByte: System_Data_Common_Internal.DbDataReader["GetByte"] & ((i: int) => byte);
+    GetBytes: System_Data_Common_Internal.DbDataReader["GetBytes"] & ((i: int, dataIndex: long, buffer: byte[], bufferIndex: int, length: int) => long);
+    GetChar: System_Data_Common_Internal.DbDataReader["GetChar"] & ((i: int) => char);
+    GetChars: System_Data_Common_Internal.DbDataReader["GetChars"] & ((i: int, dataIndex: long, buffer: char[], bufferIndex: int, length: int) => long);
     GetColumnSchema(): ReadOnlyCollection_1<DbColumn>;
-    GetDataTypeName(i: int): string;
-    GetDateTime(i: int): DateTime;
+    GetDataTypeName: System_Data_Common_Internal.DbDataReader["GetDataTypeName"] & ((i: int) => string);
+    GetDateTime: System_Data_Common_Internal.DbDataReader["GetDateTime"] & ((i: int) => DateTime);
     GetDateTimeOffset(i: int): DateTimeOffset;
-    GetDecimal(i: int): decimal;
-    GetDouble(i: int): double;
-    GetEnumerator(): IEnumerator;
-    GetFieldType(i: int): Type;
-    GetFieldValue<T extends unknown>(i: int): T;
-    GetFieldValueAsync<T extends unknown>(i: int, cancellationToken: CancellationToken): Task_1<T>;
-    GetFloat(i: int): float;
-    GetGuid(i: int): Guid;
-    GetInt16(i: int): short;
-    GetInt32(i: int): int;
-    GetInt64(i: int): long;
-    GetName(i: int): string;
-    GetOrdinal(name: string): int;
-    GetProviderSpecificFieldType(i: int): Type;
-    GetProviderSpecificValue(i: int): unknown;
-    GetProviderSpecificValues(values: unknown[]): int;
-    GetSchemaTable(): DataTable;
+    GetDecimal: System_Data_Common_Internal.DbDataReader["GetDecimal"] & ((i: int) => decimal);
+    GetDouble: System_Data_Common_Internal.DbDataReader["GetDouble"] & ((i: int) => double);
+    GetEnumerator: System_Data_Common_Internal.DbDataReader["GetEnumerator"] & (() => IEnumerator);
+    GetFieldType: System_Data_Common_Internal.DbDataReader["GetFieldType"] & ((i: int) => Type);
+    GetFieldValue: System_Data_Common_Internal.DbDataReader["GetFieldValue"] & (<T extends unknown>(i: int) => T);
+    GetFieldValueAsync: System_Data_Common_Internal.DbDataReader["GetFieldValueAsync"] & (<T extends unknown>(i: int, cancellationToken: CancellationToken) => Task_1<T>);
+    GetFloat: System_Data_Common_Internal.DbDataReader["GetFloat"] & ((i: int) => float);
+    GetGuid: System_Data_Common_Internal.DbDataReader["GetGuid"] & ((i: int) => Guid);
+    GetInt16: System_Data_Common_Internal.DbDataReader["GetInt16"] & ((i: int) => short);
+    GetInt32: System_Data_Common_Internal.DbDataReader["GetInt32"] & ((i: int) => int);
+    GetInt64: System_Data_Common_Internal.DbDataReader["GetInt64"] & ((i: int) => long);
+    GetName: System_Data_Common_Internal.DbDataReader["GetName"] & ((i: int) => string);
+    GetOrdinal: System_Data_Common_Internal.DbDataReader["GetOrdinal"] & ((name: string) => int);
+    GetProviderSpecificFieldType: System_Data_Common_Internal.DbDataReader["GetProviderSpecificFieldType"] & ((i: int) => Type);
+    GetProviderSpecificValue: System_Data_Common_Internal.DbDataReader["GetProviderSpecificValue"] & ((i: int) => unknown);
+    GetProviderSpecificValues: System_Data_Common_Internal.DbDataReader["GetProviderSpecificValues"] & ((values: unknown[]) => int);
+    GetSchemaTable: System_Data_Common_Internal.DbDataReader["GetSchemaTable"] & (() => DataTable);
     GetSqlBinary(i: int): SqlBinary;
     GetSqlBoolean(i: int): SqlBoolean;
     GetSqlByte(i: int): SqlByte;
@@ -999,21 +976,21 @@ export interface SqlDataReader$instance extends DbDataReader {
     GetSqlString(i: int): SqlString;
     GetSqlValue(i: int): unknown;
     GetSqlValues(values: unknown[]): int;
-    GetSqlVector<T extends NonNullable<unknown>>(i: int): SqlVector_1<T>;
+    GetSqlVector<T extends { readonly __tsonic_type_System_ValueType: never }>(i: int): SqlVector_1<T>;
     GetSqlXml(i: int): SqlXml;
-    GetStream(i: int): Stream;
-    GetString(i: int): string;
-    GetTextReader(i: int): TextReader;
+    GetStream: System_Data_Common_Internal.DbDataReader["GetStream"] & ((i: int) => Stream);
+    GetString: System_Data_Common_Internal.DbDataReader["GetString"] & ((i: int) => string);
+    GetTextReader: System_Data_Common_Internal.DbDataReader["GetTextReader"] & ((i: int) => TextReader);
     GetTimeSpan(i: int): TimeSpan;
-    GetValue(i: int): unknown;
-    GetValues(values: unknown[]): int;
+    GetValue: System_Data_Common_Internal.DbDataReader["GetValue"] & ((i: int) => unknown);
+    GetValues: System_Data_Common_Internal.DbDataReader["GetValues"] & ((values: unknown[]) => int);
     GetXmlReader(i: int): XmlReader;
-    IsDBNull(i: int): boolean;
-    IsDBNullAsync(i: int, cancellationToken: CancellationToken): Task_1<System_Internal.Boolean>;
-    NextResult(): boolean;
-    NextResultAsync(cancellationToken: CancellationToken): Task_1<System_Internal.Boolean>;
-    Read(): boolean;
-    ReadAsync(cancellationToken: CancellationToken): Task_1<System_Internal.Boolean>;
+    IsDBNull: System_Data_Common_Internal.DbDataReader["IsDBNull"] & ((i: int) => boolean);
+    IsDBNullAsync: System_Data_Common_Internal.DbDataReader["IsDBNullAsync"] & ((i: int, cancellationToken: CancellationToken) => Task_1<System_Internal.Boolean>);
+    NextResult: System_Data_Common_Internal.DbDataReader["NextResult"] & (() => boolean);
+    NextResultAsync: System_Data_Common_Internal.DbDataReader["NextResultAsync"] & ((cancellationToken: CancellationToken) => Task_1<System_Internal.Boolean>);
+    Read: System_Data_Common_Internal.DbDataReader["Read"] & (() => boolean);
+    ReadAsync: System_Data_Common_Internal.DbDataReader["ReadAsync"] & ((cancellationToken: CancellationToken) => Task_1<System_Internal.Boolean>);
 }
 
 
@@ -1073,8 +1050,8 @@ export interface SqlErrorCollection$instance {
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly Count: int;
-    CopyTo(array: SqlError[], index: int): void;
     CopyTo(array: ClrArray, index: int): void;
+    CopyTo(array: SqlError[], index: int): void;
     GetEnumerator(): IEnumerator;
 }
 
@@ -1085,24 +1062,25 @@ export const SqlErrorCollection: {
 
 export type SqlErrorCollection = SqlErrorCollection$instance & { readonly [index: number]: SqlError; };
 
-export interface SqlException$instance extends DbException {
+export interface SqlException$instance extends System_Data_Common_Internal.DbException {
     readonly __tsonic_type_Microsoft_Data_SqlClient_SqlException: never;
+    readonly __tsonic_type_System_Data_Common_DbException: never;
+    readonly __tsonic_type_System_Exception: never;
+    readonly __tsonic_type_System_Runtime_InteropServices_ExternalException: never;
+    readonly __tsonic_type_System_SystemException: never;
 
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
-    readonly BatchCommand: SqlBatchCommand;
     readonly Class: byte;
     readonly ClientConnectionId: Guid;
-    readonly DbBatchCommand: DbBatchCommand;
     readonly Errors: SqlErrorCollection;
     readonly LineNumber: int;
     readonly Number: int;
     readonly Procedure: string;
     readonly Server: string;
-    readonly Source: string;
     readonly State: byte;
-    GetObjectData(si: SerializationInfo, context: StreamingContext): void;
-    ToString(): string;
+    GetObjectData: System_Data_Common_Internal.DbException["GetObjectData"] & ((si: SerializationInfo, context: StreamingContext) => void);
+    ToString: System_Data_Common_Internal.DbException["ToString"] & (() => string);
 }
 
 
@@ -1112,8 +1090,9 @@ export const SqlException: {
 
 export type SqlException = SqlException$instance;
 
-export interface SqlInfoMessageEventArgs$instance extends EventArgs {
+export interface SqlInfoMessageEventArgs$instance extends System_Internal.EventArgs {
     readonly __tsonic_type_Microsoft_Data_SqlClient_SqlInfoMessageEventArgs: never;
+    readonly __tsonic_type_System_EventArgs: never;
 
     readonly Errors: SqlErrorCollection;
     readonly Message: string;
@@ -1128,8 +1107,9 @@ export const SqlInfoMessageEventArgs: {
 
 export type SqlInfoMessageEventArgs = SqlInfoMessageEventArgs$instance;
 
-export interface SqlNotificationEventArgs$instance extends EventArgs {
+export interface SqlNotificationEventArgs$instance extends System_Internal.EventArgs {
     readonly __tsonic_type_Microsoft_Data_SqlClient_SqlNotificationEventArgs: never;
+    readonly __tsonic_type_System_EventArgs: never;
 
     readonly Info: SqlNotificationInfo;
     readonly Source: SqlNotificationSource;
@@ -1144,36 +1124,27 @@ export const SqlNotificationEventArgs: {
 
 export type SqlNotificationEventArgs = SqlNotificationEventArgs$instance;
 
-export interface SqlParameter$instance extends DbParameter {
+export interface SqlParameter$instance extends System_Data_Common_Internal.DbParameter {
     readonly __tsonic_type_Microsoft_Data_SqlClient_SqlParameter: never;
+    readonly __tsonic_type_System_Data_Common_DbParameter: never;
+    readonly __tsonic_type_System_MarshalByRefObject: never;
 
     readonly __tsonic_iface_System_Data_IDataParameter: never;
     readonly __tsonic_iface_System_Data_IDbDataParameter: never;
     readonly __tsonic_iface_System_ICloneable: never;
 
     CompareInfo: SqlCompareOptions;
-    DbType: DbType;
-    Direction: ParameterDirection;
     ForceColumnEncryption: boolean;
-    IsNullable: boolean;
     LocaleId: int;
     Offset: int;
-    ParameterName: string;
-    Precision: byte;
-    Scale: byte;
-    Size: int;
-    SourceColumn: string;
-    SourceColumnNullMapping: boolean;
-    SourceVersion: DataRowVersion;
     SqlDbType: SqlDbType;
     SqlValue: unknown;
     TypeName: string;
     UdtTypeName: string;
-    Value: unknown;
     XmlSchemaCollectionDatabase: string;
     XmlSchemaCollectionName: string;
     XmlSchemaCollectionOwningSchema: string;
-    ResetDbType(): void;
+    ResetDbType: System_Data_Common_Internal.DbParameter["ResetDbType"] & (() => void);
     ResetSqlDbType(): void;
     ToString(): string;
 }
@@ -1192,50 +1163,31 @@ export const SqlParameter: {
 
 export type SqlParameter = SqlParameter$instance;
 
-export interface SqlParameterCollection$instance extends DbParameterCollection {
+export interface SqlParameterCollection$instance extends System_Data_Common_Internal.DbParameterCollection {
     readonly __tsonic_type_Microsoft_Data_SqlClient_SqlParameterCollection: never;
+    readonly __tsonic_type_System_Data_Common_DbParameterCollection: never;
+    readonly __tsonic_type_System_MarshalByRefObject: never;
 
     readonly __tsonic_iface_System_Collections_ICollection: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
     readonly __tsonic_iface_System_Collections_IList: never;
     readonly __tsonic_iface_System_Data_IDataParameterCollection: never;
 
-    readonly Count: int;
-    readonly IsFixedSize: boolean;
-    readonly IsReadOnly: boolean;
-    readonly SyncRoot: unknown;
-    Add(value: SqlParameter): SqlParameter;
-    Add(value: unknown): int;
-    Add(parameterName: string, sqlDbType: SqlDbType): SqlParameter;
-    Add(parameterName: string, sqlDbType: SqlDbType, size: int): SqlParameter;
-    Add(parameterName: string, sqlDbType: SqlDbType, size: int, sourceColumn: string): SqlParameter;
-    AddRange(values: SqlParameter[]): void;
-    AddRange(values: ClrArray): void;
+    Add: System_Data_Common_Internal.DbParameterCollection["Add"] & ((parameterName: string, sqlDbType: SqlDbType) => SqlParameter) & ((parameterName: string, sqlDbType: SqlDbType, size: int) => SqlParameter) & ((parameterName: string, sqlDbType: SqlDbType, size: int, sourceColumn: string) => SqlParameter) & ((value: SqlParameter) => SqlParameter) & ((value: unknown) => int);
+    AddRange: System_Data_Common_Internal.DbParameterCollection["AddRange"] & ((values: ClrArray) => void) & ((values: SqlParameter[]) => void);
     AddWithValue(parameterName: string, value: unknown): SqlParameter;
-    Clear(): void;
-    Contains(value: SqlParameter): boolean;
-    Contains(value: unknown): boolean;
-    Contains(value: string): boolean;
-    CopyTo(array: SqlParameter[], index: int): void;
-    CopyTo(array: ClrArray, index: int): void;
-    get_Item(index: int): SqlParameter;
-    get_Item(parameterName: string): SqlParameter;
-    GetEnumerator(): IEnumerator;
-    GetParameter(index: int): DbParameter;
-    GetParameter(parameterName: string): DbParameter;
-    IndexOf(value: SqlParameter): int;
-    IndexOf(value: unknown): int;
-    IndexOf(parameterName: string): int;
-    Insert(index: int, value: SqlParameter): void;
-    Insert(index: int, value: unknown): void;
-    Remove(value: SqlParameter): void;
-    Remove(value: unknown): void;
-    RemoveAt(index: int): void;
-    RemoveAt(parameterName: string): void;
-    set_Item(index: int, value: SqlParameter): void;
-    set_Item(parameterName: string, value: SqlParameter): void;
-    SetParameter(index: int, value: DbParameter): void;
-    SetParameter(parameterName: string, value: DbParameter): void;
+    Clear: System_Data_Common_Internal.DbParameterCollection["Clear"] & (() => void);
+    Contains: System_Data_Common_Internal.DbParameterCollection["Contains"] & ((value: SqlParameter) => boolean) & ((value: string) => boolean) & ((value: unknown) => boolean);
+    CopyTo: System_Data_Common_Internal.DbParameterCollection["CopyTo"] & ((array: ClrArray, index: int) => void) & ((array: SqlParameter[], index: int) => void);
+    get_Item: System_Data_Common_Internal.DbParameterCollection["get_Item"] & ((index: int) => SqlParameter) & ((parameterName: string) => SqlParameter);
+    GetEnumerator: System_Data_Common_Internal.DbParameterCollection["GetEnumerator"] & (() => IEnumerator);
+    GetParameter: System_Data_Common_Internal.DbParameterCollection["GetParameter"] & ((index: int) => DbParameter) & ((parameterName: string) => DbParameter);
+    IndexOf: System_Data_Common_Internal.DbParameterCollection["IndexOf"] & ((parameterName: string) => int) & ((value: SqlParameter) => int) & ((value: unknown) => int);
+    Insert: System_Data_Common_Internal.DbParameterCollection["Insert"] & ((index: int, value: SqlParameter) => void) & ((index: int, value: unknown) => void);
+    Remove: System_Data_Common_Internal.DbParameterCollection["Remove"] & ((value: SqlParameter) => void) & ((value: unknown) => void);
+    RemoveAt: System_Data_Common_Internal.DbParameterCollection["RemoveAt"] & ((index: int) => void) & ((parameterName: string) => void);
+    set_Item: System_Data_Common_Internal.DbParameterCollection["set_Item"] & ((index: int, value: SqlParameter) => void) & ((parameterName: string, value: SqlParameter) => void);
+    SetParameter: System_Data_Common_Internal.DbParameterCollection["SetParameter"] & ((index: int, value: DbParameter) => void) & ((parameterName: string, value: DbParameter) => void);
 }
 
 
@@ -1245,8 +1197,9 @@ export const SqlParameterCollection: {
 
 export type SqlParameterCollection = SqlParameterCollection$instance;
 
-export interface SqlRetryingEventArgs$instance extends EventArgs {
+export interface SqlRetryingEventArgs$instance extends System_Internal.EventArgs {
     readonly __tsonic_type_Microsoft_Data_SqlClient_SqlRetryingEventArgs: never;
+    readonly __tsonic_type_System_EventArgs: never;
 
     Cancel: boolean;
     readonly Delay: TimeSpan;
@@ -1270,10 +1223,10 @@ export interface SqlRetryIntervalBaseEnumerator$instance {
     readonly __tsonic_iface_System_ICloneable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    Current: TimeSpan;
-    GapTimeInterval: TimeSpan;
-    MaxTimeInterval: TimeSpan;
-    MinTimeInterval: TimeSpan;
+    readonly Current: TimeSpan;
+    readonly GapTimeInterval: TimeSpan;
+    readonly MaxTimeInterval: TimeSpan;
+    readonly MinTimeInterval: TimeSpan;
     Clone(): unknown;
     Dispose(): void;
     GetNextInterval(): TimeSpan;
@@ -1294,10 +1247,10 @@ export interface SqlRetryLogicBase$instance {
 
     readonly __tsonic_iface_System_ICloneable: never;
 
-    Current: int;
-    NumberOfTries: int;
-    RetryIntervalEnumerator: SqlRetryIntervalBaseEnumerator;
-    TransientPredicate: Predicate_1<Exception>;
+    readonly Current: int;
+    readonly NumberOfTries: int;
+    readonly RetryIntervalEnumerator: SqlRetryIntervalBaseEnumerator;
+    readonly TransientPredicate: Predicate_1<Exception>;
     Clone(): unknown;
     Reset(): void;
     RetryCondition(sender: unknown): boolean;
@@ -1305,7 +1258,7 @@ export interface SqlRetryLogicBase$instance {
 }
 
 
-export const SqlRetryLogicBase: (abstract new() => SqlRetryLogicBase) & {
+export const SqlRetryLogicBase: {
 };
 
 
@@ -1315,14 +1268,14 @@ export interface SqlRetryLogicBaseProvider$instance {
     readonly __tsonic_type_Microsoft_Data_SqlClient_SqlRetryLogicBaseProvider: never;
 
     Retrying: EventHandler_1<SqlRetryingEventArgs>;
-    RetryLogic: SqlRetryLogicBase;
+    readonly RetryLogic: SqlRetryLogicBase;
     Execute<TResult extends unknown>(sender: unknown, function_: Func_1<TResult>): TResult;
     ExecuteAsync(sender: unknown, function_: Func_1<Task>, cancellationToken?: CancellationToken): Task;
     ExecuteAsync<TResult extends unknown>(sender: unknown, function_: Func_1<Task_1<TResult>>, cancellationToken?: CancellationToken): Task_1<TResult>;
 }
 
 
-export const SqlRetryLogicBaseProvider: (abstract new() => SqlRetryLogicBaseProvider) & {
+export const SqlRetryLogicBaseProvider: {
 };
 
 
@@ -1347,8 +1300,9 @@ export const SqlRetryLogicOption: {
 
 export type SqlRetryLogicOption = SqlRetryLogicOption$instance;
 
-export interface SqlRowsCopiedEventArgs$instance extends EventArgs {
+export interface SqlRowsCopiedEventArgs$instance extends System_Internal.EventArgs {
     readonly __tsonic_type_Microsoft_Data_SqlClient_SqlRowsCopiedEventArgs: never;
+    readonly __tsonic_type_System_EventArgs: never;
 
     Abort: boolean;
     readonly RowsCopied: long;
@@ -1362,10 +1316,11 @@ export const SqlRowsCopiedEventArgs: {
 
 export type SqlRowsCopiedEventArgs = SqlRowsCopiedEventArgs$instance;
 
-export interface SqlRowUpdatedEventArgs$instance extends RowUpdatedEventArgs {
+export interface SqlRowUpdatedEventArgs$instance extends System_Data_Common_Internal.RowUpdatedEventArgs {
     readonly __tsonic_type_Microsoft_Data_SqlClient_SqlRowUpdatedEventArgs: never;
+    readonly __tsonic_type_System_Data_Common_RowUpdatedEventArgs: never;
+    readonly __tsonic_type_System_EventArgs: never;
 
-    readonly Command: SqlCommand;
 }
 
 
@@ -1376,11 +1331,11 @@ export const SqlRowUpdatedEventArgs: {
 
 export type SqlRowUpdatedEventArgs = SqlRowUpdatedEventArgs$instance;
 
-export interface SqlRowUpdatingEventArgs$instance extends RowUpdatingEventArgs {
+export interface SqlRowUpdatingEventArgs$instance extends System_Data_Common_Internal.RowUpdatingEventArgs {
     readonly __tsonic_type_Microsoft_Data_SqlClient_SqlRowUpdatingEventArgs: never;
+    readonly __tsonic_type_System_Data_Common_RowUpdatingEventArgs: never;
+    readonly __tsonic_type_System_EventArgs: never;
 
-    BaseCommand: IDbCommand;
-    Command: SqlCommand;
 }
 
 
@@ -1391,21 +1346,19 @@ export const SqlRowUpdatingEventArgs: {
 
 export type SqlRowUpdatingEventArgs = SqlRowUpdatingEventArgs$instance;
 
-export interface SqlTransaction$instance extends DbTransaction {
+export interface SqlTransaction$instance extends System_Data_Common_Internal.DbTransaction {
     readonly __tsonic_type_Microsoft_Data_SqlClient_SqlTransaction: never;
+    readonly __tsonic_type_System_Data_Common_DbTransaction: never;
+    readonly __tsonic_type_System_MarshalByRefObject: never;
 
     readonly __tsonic_iface_System_Data_IDbTransaction: never;
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    readonly Connection: SqlConnection;
-    readonly DbConnection: DbConnection;
-    readonly IsolationLevel: IsolationLevel;
-    Commit(): void;
-    Dispose(disposing: boolean): void;
-    Rollback(): void;
-    Rollback(transactionName: string): void;
-    Save(savePointName: string): void;
+    Commit: System_Data_Common_Internal.DbTransaction["Commit"] & (() => void);
+    Dispose: System_Data_Common_Internal.DbTransaction["Dispose"] & ((disposing: boolean) => void);
+    Rollback: System_Data_Common_Internal.DbTransaction["Rollback"] & (() => void) & ((transactionName: string) => void);
+    Save: System_Data_Common_Internal.DbTransaction["Save"] & ((savePointName: string) => void);
 }
 
 

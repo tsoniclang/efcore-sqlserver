@@ -15,8 +15,9 @@ import type { EventData, EventDefinitionBase } from "@tsonic/efcore/Microsoft.En
 import type { IReadOnlyProperty } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata/internal/index.js";
 import type { EventId } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
 
-export interface ConflictingValueGenerationStrategiesEventData$instance extends EventData {
+export interface ConflictingValueGenerationStrategiesEventData$instance extends Microsoft_EntityFrameworkCore_Diagnostics_Internal.EventData {
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_Diagnostics_ConflictingValueGenerationStrategiesEventData: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Diagnostics_EventData: never;
 
     readonly OtherValueGenerationStrategy: string;
     readonly Property: IReadOnlyProperty;

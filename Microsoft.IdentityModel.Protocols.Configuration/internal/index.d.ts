@@ -12,13 +12,14 @@ import type { LKGConfigurationCacheOptions } from "../../Microsoft.IdentityModel
 import type { BaseConfiguration } from "../../Microsoft.IdentityModel.Tokens/internal/index.js";
 import type { IEqualityComparer_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
 import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
-import type { ISerializable, SerializationInfo, StreamingContext } from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
 import type { TaskCreationOptions } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Exception, Int32, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface InvalidConfigurationException$instance extends Exception {
+export interface InvalidConfigurationException$instance extends System_Internal.Exception {
     readonly __tsonic_type_Microsoft_IdentityModel_Protocols_Configuration_InvalidConfigurationException: never;
+    readonly __tsonic_type_System_Exception: never;
 
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
@@ -34,8 +35,9 @@ export const InvalidConfigurationException: {
 
 export type InvalidConfigurationException = InvalidConfigurationException$instance;
 
-export interface LastKnownGoodConfigurationCacheOptions$instance extends LKGConfigurationCacheOptions {
+export interface LastKnownGoodConfigurationCacheOptions$instance extends Microsoft_IdentityModel_Tokens_Configuration_Internal.LKGConfigurationCacheOptions$instance {
     readonly __tsonic_type_Microsoft_IdentityModel_Protocols_Configuration_LastKnownGoodConfigurationCacheOptions: never;
+    readonly __tsonic_type_Microsoft_IdentityModel_Tokens_Configuration_LKGConfigurationCacheOptions: never;
 
 }
 

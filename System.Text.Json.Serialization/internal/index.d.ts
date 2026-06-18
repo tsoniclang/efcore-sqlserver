@@ -7,7 +7,6 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 
 
 // Import types from other namespaces
-import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import * as System_Internal from "../../System/internal/index.js";
 import type { BinaryData } from "../../System/internal/index.js";
 import * as System_Text_Json_Serialization_Internal from "@tsonic/dotnet/System.Text.Json.Serialization/internal/index.js";
@@ -15,11 +14,13 @@ import type { JsonConverter_1 } from "@tsonic/dotnet/System.Text.Json.Serializat
 import type { JsonSerializerOptions, Utf8JsonReader, Utf8JsonWriter } from "@tsonic/dotnet/System.Text.Json/internal/index.js";
 import type { Type, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface BinaryDataJsonConverter$instance extends JsonConverter_1<BinaryData> {
+export interface BinaryDataJsonConverter$instance extends System_Text_Json_Serialization_Internal.JsonConverter_1<BinaryData> {
     readonly __tsonic_type_System_Text_Json_Serialization_BinaryDataJsonConverter: never;
+    readonly __tsonic_type_System_Text_Json_Serialization_JsonConverter: never;
+    readonly __tsonic_type_System_Text_Json_Serialization_JsonConverter_1: never;
 
-    Read(reader: Utf8JsonReader, typeToConvert: Type, options: JsonSerializerOptions): BinaryData | null;
-    Write(writer: Utf8JsonWriter, value: BinaryData, options: JsonSerializerOptions): void;
+    Read: System_Text_Json_Serialization_Internal.JsonConverter_1<BinaryData>["Read"] & ((reader: Utf8JsonReader, typeToConvert: Type, options: JsonSerializerOptions) => BinaryData | null);
+    Write: System_Text_Json_Serialization_Internal.JsonConverter_1<BinaryData>["Write"] & ((writer: Utf8JsonWriter, value: BinaryData, options: JsonSerializerOptions) => void);
 }
 
 

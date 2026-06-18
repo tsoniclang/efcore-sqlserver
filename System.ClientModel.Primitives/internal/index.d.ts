@@ -7,6 +7,7 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 
 
 // Import types from other namespaces
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { ApiKeyCredential, AuthenticationTokenProvider, BinaryContent, ClientResult, ContinuationToken } from "../../System.ClientModel/internal/index.js";
 import type { BinaryData } from "../../System/internal/index.js";
 import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
@@ -27,35 +28,42 @@ import * as System_Lib_tsonic_dotnet from "@tsonic/dotnet/System/internal/index.
 import type { Attribute, Boolean as ClrBoolean, DateTimeOffset, Enum, Exception, Func_1, IComparable, IConvertible, IDisposable, IFormattable, Int32, ISpanFormattable, Nullable_1, Object as ClrObject, ReadOnlySpan_1, String as ClrString, TimeSpan, Type, UInt16, Uri, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
 
-export enum ClientErrorBehaviors {
-    Default = 0,
-    NoThrow = 1
-}
+export type ClientErrorBehaviors = number & { readonly __tsonic_type_System_ClientModel_Primitives_ClientErrorBehaviors: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const ClientErrorBehaviors: {
+    readonly Default: ClientErrorBehaviors;
+    readonly NoThrow: ClientErrorBehaviors;
+};
 
 
-export enum CredentialKind {
-    None = 0,
-    ApiKeyString = 1,
-    TokenCredential = 2
-}
+export type CredentialKind = number & { readonly __tsonic_type_System_ClientModel_Primitives_CredentialKind: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const CredentialKind: {
+    readonly None: CredentialKind;
+    readonly ApiKeyString: CredentialKind;
+    readonly TokenCredential: CredentialKind;
+};
 
 
-export enum PipelinePosition {
-    PerCall = 0,
-    PerTry = 1,
-    BeforeTransport = 2
-}
+export type PipelinePosition = number & { readonly __tsonic_type_System_ClientModel_Primitives_PipelinePosition: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const PipelinePosition: {
+    readonly PerCall: PipelinePosition;
+    readonly PerTry: PipelinePosition;
+    readonly BeforeTransport: PipelinePosition;
+};
 
 
-export interface IJsonModel_1$instance<T extends unknown> extends IPersistableModel_1<T> {
+export interface IJsonModel_1$instance<T extends unknown> {
     readonly __tsonic_iface_System_ClientModel_Primitives_IJsonModel_1: never;
+    readonly __tsonic_iface_System_ClientModel_Primitives_IPersistableModel_1: never;
 
-    Create(reader: Utf8JsonReader, options: ModelReaderWriterOptions): T | null;
     Create(data: BinaryData, options: ModelReaderWriterOptions): T | null;
+    Create(reader: Utf8JsonReader, options: ModelReaderWriterOptions): T | null;
     Create(data: BinaryData, options: ModelReaderWriterOptions): T;
     GetFormatFromOptions(options: ModelReaderWriterOptions): string;
-    Write(writer: Utf8JsonWriter, options: ModelReaderWriterOptions): void;
     Write(options: ModelReaderWriterOptions): BinaryData;
+    Write(writer: Utf8JsonWriter, options: ModelReaderWriterOptions): void;
 }
 
 
@@ -74,6 +82,7 @@ export type IPersistableModel_1<T extends unknown> = IPersistableModel_1$instanc
 
 export interface ClientConnection$instance {
     readonly __tsonic_type_System_ClientModel_Primitives_ClientConnection: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly Credential: unknown | null;
     readonly CredentialKind: CredentialKind;
@@ -92,11 +101,13 @@ export const ClientConnection: {
 
 export type ClientConnection = ClientConnection$instance;
 
-export interface ApiKeyAuthenticationPolicy$instance extends AuthenticationPolicy {
+export interface ApiKeyAuthenticationPolicy$instance extends AuthenticationPolicy$instance {
     readonly __tsonic_type_System_ClientModel_Primitives_ApiKeyAuthenticationPolicy: never;
+    readonly __tsonic_type_System_ClientModel_Primitives_AuthenticationPolicy: never;
+    readonly __tsonic_type_System_ClientModel_Primitives_PipelinePolicy: never;
 
-    Process(message: PipelineMessage, pipeline: IReadOnlyList_1<PipelinePolicy>, currentIndex: int): void;
-    ProcessAsync(message: PipelineMessage, pipeline: IReadOnlyList_1<PipelinePolicy>, currentIndex: int): ValueTask;
+    Process: AuthenticationPolicy$instance["Process"] & ((message: PipelineMessage, pipeline: IReadOnlyList_1<PipelinePolicy>, currentIndex: int) => void);
+    ProcessAsync: AuthenticationPolicy$instance["ProcessAsync"] & ((message: PipelineMessage, pipeline: IReadOnlyList_1<PipelinePolicy>, currentIndex: int) => ValueTask);
 }
 
 
@@ -117,19 +128,20 @@ export interface AsyncCollectionResult$instance {
 }
 
 
-export const AsyncCollectionResult: (abstract new() => AsyncCollectionResult) & {
+export const AsyncCollectionResult: {
 };
 
 
 export type AsyncCollectionResult = AsyncCollectionResult$instance;
 
-export interface AuthenticationPolicy$instance extends PipelinePolicy {
+export interface AuthenticationPolicy$instance extends PipelinePolicy$instance {
     readonly __tsonic_type_System_ClientModel_Primitives_AuthenticationPolicy: never;
+    readonly __tsonic_type_System_ClientModel_Primitives_PipelinePolicy: never;
 
 }
 
 
-export const AuthenticationPolicy: (abstract new() => AuthenticationPolicy) & {
+export const AuthenticationPolicy: {
 };
 
 
@@ -152,11 +164,13 @@ export const AuthenticationToken: {
 
 export type AuthenticationToken = AuthenticationToken$instance;
 
-export interface BearerTokenPolicy$instance extends AuthenticationPolicy {
+export interface BearerTokenPolicy$instance extends AuthenticationPolicy$instance {
+    readonly __tsonic_type_System_ClientModel_Primitives_AuthenticationPolicy: never;
     readonly __tsonic_type_System_ClientModel_Primitives_BearerTokenPolicy: never;
+    readonly __tsonic_type_System_ClientModel_Primitives_PipelinePolicy: never;
 
-    Process(message: PipelineMessage, pipeline: IReadOnlyList_1<PipelinePolicy>, currentIndex: int): void;
-    ProcessAsync(message: PipelineMessage, pipeline: IReadOnlyList_1<PipelinePolicy>, currentIndex: int): ValueTask;
+    Process: AuthenticationPolicy$instance["Process"] & ((message: PipelineMessage, pipeline: IReadOnlyList_1<PipelinePolicy>, currentIndex: int) => void);
+    ProcessAsync: AuthenticationPolicy$instance["ProcessAsync"] & ((message: PipelineMessage, pipeline: IReadOnlyList_1<PipelinePolicy>, currentIndex: int) => ValueTask);
 }
 
 
@@ -182,8 +196,10 @@ export const ClientCache: {
 
 export type ClientCache = ClientCache$instance;
 
-export interface ClientConnectionCollection$instance extends KeyedCollection_2<System_Internal.String, ClientConnection> {
+export interface ClientConnectionCollection$instance extends System_Collections_ObjectModel_Internal.KeyedCollection_2<System_Internal.String, ClientConnection> {
     readonly __tsonic_type_System_ClientModel_Primitives_ClientConnectionCollection: never;
+    readonly __tsonic_type_System_Collections_ObjectModel_Collection_1: never;
+    readonly __tsonic_type_System_Collections_ObjectModel_KeyedCollection_2: never;
 
     readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
@@ -195,7 +211,7 @@ export interface ClientConnectionCollection$instance extends KeyedCollection_2<S
     readonly __tsonic_iface_System_Collections_IList: never;
 
     AddRange(connections: IEnumerable_1<ClientConnection>): void;
-    GetKeyForItem(item: ClientConnection): string;
+    GetKeyForItem: System_Collections_ObjectModel_Internal.KeyedCollection_2<System_Internal.String, ClientConnection>["GetKeyForItem"] & ((item: ClientConnection) => string);
 }
 
 
@@ -215,7 +231,7 @@ export interface ClientConnectionProvider$instance {
 }
 
 
-export const ClientConnectionProvider: (abstract new(maxCacheSize: int) => ClientConnectionProvider) & {
+export const ClientConnectionProvider: {
 };
 
 
@@ -291,8 +307,9 @@ export const ClientPipelineOptions: {
 
 export type ClientPipelineOptions = ClientPipelineOptions$instance;
 
-export interface ClientRetryPolicy$instance extends PipelinePolicy {
+export interface ClientRetryPolicy$instance extends PipelinePolicy$instance {
     readonly __tsonic_type_System_ClientModel_Primitives_ClientRetryPolicy: never;
+    readonly __tsonic_type_System_ClientModel_Primitives_PipelinePolicy: never;
 
     GetNextDelay(message: PipelineMessage, tryCount: int): TimeSpan;
     OnRequestSent(message: PipelineMessage): void;
@@ -300,8 +317,8 @@ export interface ClientRetryPolicy$instance extends PipelinePolicy {
     OnSendingRequest(message: PipelineMessage): void;
     OnSendingRequestAsync(message: PipelineMessage): ValueTask;
     OnTryComplete(message: PipelineMessage): void;
-    Process(message: PipelineMessage, pipeline: IReadOnlyList_1<PipelinePolicy>, currentIndex: int): void;
-    ProcessAsync(message: PipelineMessage, pipeline: IReadOnlyList_1<PipelinePolicy>, currentIndex: int): ValueTask;
+    Process: PipelinePolicy$instance["Process"] & ((message: PipelineMessage, pipeline: IReadOnlyList_1<PipelinePolicy>, currentIndex: int) => void);
+    ProcessAsync: PipelinePolicy$instance["ProcessAsync"] & ((message: PipelineMessage, pipeline: IReadOnlyList_1<PipelinePolicy>, currentIndex: int) => ValueTask);
     ShouldRetry(message: PipelineMessage, exception: Exception | null): boolean;
     ShouldRetryAsync(message: PipelineMessage, exception: Exception | null): ValueTask_1<System_Internal.Boolean>;
     Wait(time: TimeSpan, cancellationToken: CancellationToken): void;
@@ -326,7 +343,7 @@ export interface CollectionResult$instance {
 }
 
 
-export const CollectionResult: (abstract new() => CollectionResult) & {
+export const CollectionResult: {
 };
 
 
@@ -350,18 +367,20 @@ export const GetTokenOptions: {
 
 export type GetTokenOptions = GetTokenOptions$instance;
 
-export interface HttpClientPipelineTransport$instance extends PipelineTransport {
+export interface HttpClientPipelineTransport$instance extends PipelineTransport$instance {
     readonly __tsonic_type_System_ClientModel_Primitives_HttpClientPipelineTransport: never;
+    readonly __tsonic_type_System_ClientModel_Primitives_PipelinePolicy: never;
+    readonly __tsonic_type_System_ClientModel_Primitives_PipelineTransport: never;
 
     readonly __tsonic_iface_System_IDisposable: never;
 
-    CreateMessageCore(): PipelineMessage;
+    CreateMessageCore: PipelineTransport$instance["CreateMessageCore"] & (() => PipelineMessage);
     Dispose(): void;
     Dispose(disposing: boolean): void;
     OnReceivedResponse(message: PipelineMessage, httpResponse: HttpResponseMessage): void;
     OnSendingRequest(message: PipelineMessage, httpRequest: HttpRequestMessage): void;
-    ProcessCore(message: PipelineMessage): void;
-    ProcessCoreAsync(message: PipelineMessage): ValueTask;
+    ProcessCore: PipelineTransport$instance["ProcessCore"] & ((message: PipelineMessage) => void);
+    ProcessCoreAsync: PipelineTransport$instance["ProcessCoreAsync"] & ((message: PipelineMessage) => ValueTask);
 }
 
 
@@ -375,12 +394,14 @@ export const HttpClientPipelineTransport: {
 
 export type HttpClientPipelineTransport = HttpClientPipelineTransport$instance;
 
-export interface JsonModelConverter$instance extends JsonConverter_1<IJsonModel_1<unknown>> {
+export interface JsonModelConverter$instance extends System_Text_Json_Serialization_Internal.JsonConverter_1<IJsonModel_1<unknown>> {
     readonly __tsonic_type_System_ClientModel_Primitives_JsonModelConverter: never;
+    readonly __tsonic_type_System_Text_Json_Serialization_JsonConverter: never;
+    readonly __tsonic_type_System_Text_Json_Serialization_JsonConverter_1: never;
 
-    CanConvert(typeToConvert: Type): boolean;
-    Read(reader: Utf8JsonReader, typeToConvert: Type, options: JsonSerializerOptions): IJsonModel_1<unknown> | null;
-    Write(writer: Utf8JsonWriter, value: IJsonModel_1<unknown>, options: JsonSerializerOptions): void;
+    CanConvert: System_Text_Json_Serialization_Internal.JsonConverter_1<IJsonModel_1<unknown>>["CanConvert"] & ((typeToConvert: Type) => boolean);
+    Read: System_Text_Json_Serialization_Internal.JsonConverter_1<IJsonModel_1<unknown>>["Read"] & ((reader: Utf8JsonReader, typeToConvert: Type, options: JsonSerializerOptions) => IJsonModel_1<unknown> | null);
+    Write: System_Text_Json_Serialization_Internal.JsonConverter_1<IJsonModel_1<unknown>>["Write"] & ((writer: Utf8JsonWriter, value: IJsonModel_1<unknown>, options: JsonSerializerOptions) => void);
 }
 
 
@@ -393,11 +414,12 @@ export const JsonModelConverter: {
 
 export type JsonModelConverter = JsonModelConverter$instance;
 
-export interface MessageLoggingPolicy$instance extends PipelinePolicy {
+export interface MessageLoggingPolicy$instance extends PipelinePolicy$instance {
     readonly __tsonic_type_System_ClientModel_Primitives_MessageLoggingPolicy: never;
+    readonly __tsonic_type_System_ClientModel_Primitives_PipelinePolicy: never;
 
-    Process(message: PipelineMessage, pipeline: IReadOnlyList_1<PipelinePolicy>, currentIndex: int): void;
-    ProcessAsync(message: PipelineMessage, pipeline: IReadOnlyList_1<PipelinePolicy>, currentIndex: int): ValueTask;
+    Process: PipelinePolicy$instance["Process"] & ((message: PipelineMessage, pipeline: IReadOnlyList_1<PipelinePolicy>, currentIndex: int) => void);
+    ProcessAsync: PipelinePolicy$instance["ProcessAsync"] & ((message: PipelineMessage, pipeline: IReadOnlyList_1<PipelinePolicy>, currentIndex: int) => ValueTask);
 }
 
 
@@ -409,7 +431,8 @@ export const MessageLoggingPolicy: {
 
 export type MessageLoggingPolicy = MessageLoggingPolicy$instance;
 
-export interface ModelReaderWriterBuildableAttribute$instance extends Attribute {
+export interface ModelReaderWriterBuildableAttribute$instance extends System_Lib_tsonic_dotnet.Attribute {
+    readonly __tsonic_type_System_Attribute: never;
     readonly __tsonic_type_System_ClientModel_Primitives_ModelReaderWriterBuildableAttribute: never;
 
 }
@@ -431,13 +454,14 @@ export interface ModelReaderWriterContext$instance {
 }
 
 
-export const ModelReaderWriterContext: (abstract new() => ModelReaderWriterContext) & {
+export const ModelReaderWriterContext: {
 };
 
 
 export type ModelReaderWriterContext = ModelReaderWriterContext$instance;
 
-export interface ModelReaderWriterContextTypeAttribute$instance extends Attribute {
+export interface ModelReaderWriterContextTypeAttribute$instance extends System_Lib_tsonic_dotnet.Attribute {
+    readonly __tsonic_type_System_Attribute: never;
     readonly __tsonic_type_System_ClientModel_Primitives_ModelReaderWriterContextTypeAttribute: never;
 
 }
@@ -479,7 +503,7 @@ export interface ModelReaderWriterTypeBuilder$instance {
 }
 
 
-export const ModelReaderWriterTypeBuilder: (abstract new() => ModelReaderWriterTypeBuilder) & {
+export const ModelReaderWriterTypeBuilder: {
 };
 
 
@@ -488,7 +512,7 @@ export type ModelReaderWriterTypeBuilder = ModelReaderWriterTypeBuilder$instance
 export interface OperationResult$instance {
     readonly __tsonic_type_System_ClientModel_Primitives_OperationResult: never;
 
-    HasCompleted: boolean;
+    readonly HasCompleted: boolean;
     get RehydrationToken(): ContinuationToken | null;
     set RehydrationToken(value: ContinuationToken | null);
     GetRawResponse(): PipelineResponse;
@@ -499,13 +523,14 @@ export interface OperationResult$instance {
 }
 
 
-export const OperationResult: (abstract new(response: PipelineResponse) => OperationResult) & {
+export const OperationResult: {
 };
 
 
 export type OperationResult = OperationResult$instance;
 
-export interface PersistableModelProxyAttribute$instance extends Attribute {
+export interface PersistableModelProxyAttribute$instance extends System_Lib_tsonic_dotnet.Attribute {
+    readonly __tsonic_type_System_Attribute: never;
     readonly __tsonic_type_System_ClientModel_Primitives_PersistableModelProxyAttribute: never;
 
     readonly ProxyType: Type;
@@ -525,12 +550,11 @@ export interface PipelineMessage$instance {
     readonly __tsonic_iface_System_IDisposable: never;
 
     BufferResponse: boolean;
-    CancellationToken: CancellationToken;
+    readonly CancellationToken: CancellationToken;
     get NetworkTimeout(): Nullable_1<TimeSpan>;
     set NetworkTimeout(value: Nullable_1<TimeSpan> | TimeSpan);
     readonly Request: PipelineRequest;
-    get Response(): PipelineResponse | null;
-    set Response(value: PipelineResponse | null);
+    readonly Response: PipelineResponse | null;
     ResponseClassifier: PipelineMessageClassifier;
     Apply(options: RequestOptions | null): void;
     Dispose(): void;
@@ -541,7 +565,7 @@ export interface PipelineMessage$instance {
 }
 
 
-export const PipelineMessage: (abstract new(request: PipelineRequest) => PipelineMessage) & {
+export const PipelineMessage: {
 };
 
 
@@ -550,12 +574,12 @@ export type PipelineMessage = PipelineMessage$instance;
 export interface PipelineMessageClassifier$instance {
     readonly __tsonic_type_System_ClientModel_Primitives_PipelineMessageClassifier: never;
 
-    TryClassify(message: PipelineMessage, isError: boolean): boolean;
     TryClassify(message: PipelineMessage, exception: Exception | null, isRetriable: boolean): boolean;
+    TryClassify(message: PipelineMessage, isError: boolean): boolean;
 }
 
 
-export const PipelineMessageClassifier: (abstract new() => PipelineMessageClassifier) & {
+export const PipelineMessageClassifier: {
     readonly Default: PipelineMessageClassifier;
     Create(successStatusCodes: ReadOnlySpan_1<System_Internal.UInt16>): PipelineMessageClassifier;
 };
@@ -571,9 +595,7 @@ export interface PipelinePolicy$instance {
 }
 
 
-export const PipelinePolicy: (abstract new() => PipelinePolicy) & {
-    ProcessNext(message: PipelineMessage, pipeline: IReadOnlyList_1<PipelinePolicy>, currentIndex: int): void;
-    ProcessNextAsync(message: PipelineMessage, pipeline: IReadOnlyList_1<PipelinePolicy>, currentIndex: int): ValueTask;
+export const PipelinePolicy: {
 };
 
 
@@ -600,7 +622,7 @@ export interface PipelineRequest$instance {
 }
 
 
-export const PipelineRequest: (abstract new() => PipelineRequest) & {
+export const PipelineRequest: {
 };
 
 
@@ -621,7 +643,7 @@ export interface PipelineRequestHeaders$instance {
 }
 
 
-export const PipelineRequestHeaders: (abstract new() => PipelineRequestHeaders) & {
+export const PipelineRequestHeaders: {
 };
 
 
@@ -647,7 +669,7 @@ export interface PipelineResponse$instance {
 }
 
 
-export const PipelineResponse: (abstract new() => PipelineResponse) & {
+export const PipelineResponse: {
 };
 
 
@@ -665,27 +687,26 @@ export interface PipelineResponseHeaders$instance {
 }
 
 
-export const PipelineResponseHeaders: (abstract new() => PipelineResponseHeaders) & {
+export const PipelineResponseHeaders: {
 };
 
 
 export type PipelineResponseHeaders = PipelineResponseHeaders$instance;
 
-export interface PipelineTransport$instance extends PipelinePolicy {
+export interface PipelineTransport$instance extends PipelinePolicy$instance {
+    readonly __tsonic_type_System_ClientModel_Primitives_PipelinePolicy: never;
     readonly __tsonic_type_System_ClientModel_Primitives_PipelineTransport: never;
 
     CreateMessage(): PipelineMessage;
     CreateMessageCore(): PipelineMessage;
-    Process(message: PipelineMessage): void;
-    Process(message: PipelineMessage, pipeline: IReadOnlyList_1<PipelinePolicy>, currentIndex: int): void;
-    ProcessAsync(message: PipelineMessage): ValueTask;
-    ProcessAsync(message: PipelineMessage, pipeline: IReadOnlyList_1<PipelinePolicy>, currentIndex: int): ValueTask;
+    Process: PipelinePolicy$instance["Process"] & ((message: PipelineMessage) => void) & ((message: PipelineMessage, pipeline: IReadOnlyList_1<PipelinePolicy>, currentIndex: int) => void);
+    ProcessAsync: PipelinePolicy$instance["ProcessAsync"] & ((message: PipelineMessage) => ValueTask) & ((message: PipelineMessage, pipeline: IReadOnlyList_1<PipelinePolicy>, currentIndex: int) => ValueTask);
     ProcessCore(message: PipelineMessage): void;
     ProcessCoreAsync(message: PipelineMessage): ValueTask;
 }
 
 
-export const PipelineTransport: (abstract new() => PipelineTransport) & (abstract new(enableLogging: boolean, loggerFactory: ILoggerFactory | null) => PipelineTransport) & {
+export const PipelineTransport: {
 };
 
 
@@ -722,13 +743,13 @@ export type ActivityExtensions = ActivityExtensions$instance;
 
 export abstract class ModelReaderWriter$instance {
     static Read<T extends unknown>(data: BinaryData, options: ModelReaderWriterOptions, context: ModelReaderWriterContext): T | null;
-    static Read<T extends unknown & IPersistableModel_1<T>>(data: BinaryData, options?: ModelReaderWriterOptions | null): T | null;
+    static Read<T extends unknown & { readonly __tsonic_iface_System_ClientModel_Primitives_IPersistableModel_1: never }>(data: BinaryData, options?: ModelReaderWriterOptions | null): T | null;
     static Read(data: BinaryData, returnType: Type, options: ModelReaderWriterOptions, context: ModelReaderWriterContext): unknown | null;
     static Read(data: BinaryData, returnType: Type, options?: ModelReaderWriterOptions | null): unknown | null;
     static Write(model: unknown, options: ModelReaderWriterOptions, context: ModelReaderWriterContext): BinaryData;
     static Write(model: unknown, options?: ModelReaderWriterOptions | null): BinaryData;
     static Write<T extends unknown>(model: T, options: ModelReaderWriterOptions, context: ModelReaderWriterContext): BinaryData;
-    static Write<T extends unknown & IPersistableModel_1<T>>(model: T, options?: ModelReaderWriterOptions | null): BinaryData;
+    static Write<T extends unknown & { readonly __tsonic_iface_System_ClientModel_Primitives_IPersistableModel_1: never }>(model: T, options?: ModelReaderWriterOptions | null): BinaryData;
 }
 
 

@@ -10,9 +10,11 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable } from "@tsonic/dotnet/System/internal/index.js";
 
-export enum SqlServerValueGenerationStrategy {
-    None = 0,
-    SequenceHiLo = 1,
-    IdentityColumn = 2,
-    Sequence = 3
-}
+export type SqlServerValueGenerationStrategy = number & { readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_SqlServerValueGenerationStrategy: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const SqlServerValueGenerationStrategy: {
+    readonly None: SqlServerValueGenerationStrategy;
+    readonly SequenceHiLo: SqlServerValueGenerationStrategy;
+    readonly IdentityColumn: SqlServerValueGenerationStrategy;
+    readonly Sequence: SqlServerValueGenerationStrategy;
+};

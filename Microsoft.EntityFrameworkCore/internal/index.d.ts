@@ -24,21 +24,24 @@ import * as Microsoft_EntityFrameworkCore_Storage_Internal from "@tsonic/efcore/
 import type { ExecutionStrategy, ExecutionStrategyDependencies, IExecutionStrategy } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage/internal/index.js";
 import type { DbContext, DbContextOptionsBuilder, DbContextOptionsBuilder_1, DbFunctions, DbSet_1, ModelBuilder } from "@tsonic/efcore/Microsoft.EntityFrameworkCore/internal/index.js";
 
-export enum DataCompressionType {
-    None = 0,
-    Row = 1,
-    Page = 2
-}
+export type DataCompressionType = number & { readonly __tsonic_type_Microsoft_EntityFrameworkCore_DataCompressionType: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const DataCompressionType: {
+    readonly None: DataCompressionType;
+    readonly Row: DataCompressionType;
+    readonly Page: DataCompressionType;
+};
 
 
-export interface SqlServerRetryingExecutionStrategy$instance extends ExecutionStrategy {
+export interface SqlServerRetryingExecutionStrategy$instance extends Microsoft_EntityFrameworkCore_Storage_Internal.ExecutionStrategy {
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_SqlServerRetryingExecutionStrategy: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_ExecutionStrategy: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_IExecutionStrategy: never;
 
     readonly AdditionalErrorNumbers: IEnumerable_1<System_Internal.Int32> | null;
-    GetNextDelay(lastException: Exception): Nullable_1<TimeSpan>;
-    ShouldRetryOn(exception: Exception): boolean;
+    GetNextDelay: Microsoft_EntityFrameworkCore_Storage_Internal.ExecutionStrategy["GetNextDelay"] & ((lastException: Exception) => Nullable_1<TimeSpan>);
+    ShouldRetryOn: Microsoft_EntityFrameworkCore_Storage_Internal.ExecutionStrategy["ShouldRetryOn"] & ((exception: Exception) => boolean);
 }
 
 
@@ -50,7 +53,6 @@ export const SqlServerRetryingExecutionStrategy: {
     new(dependencies: ExecutionStrategyDependencies, errorNumbersToAdd: IEnumerable_1<System_Internal.Int32>): SqlServerRetryingExecutionStrategy;
     new(context: DbContext, maxRetryCount: int, maxRetryDelay: TimeSpan, errorNumbersToAdd: IEnumerable_1<System_Internal.Int32> | null): SqlServerRetryingExecutionStrategy;
     new(dependencies: ExecutionStrategyDependencies, maxRetryCount: int, maxRetryDelay: TimeSpan, errorNumbersToAdd: IEnumerable_1<System_Internal.Int32> | null): SqlServerRetryingExecutionStrategy;
-    readonly DefaultMinDelayThrottling: TimeSpan;
 };
 
 
@@ -96,28 +98,28 @@ export abstract class SqlServerDatabaseFacadeExtensions$instance {
 export type SqlServerDatabaseFacadeExtensions = SqlServerDatabaseFacadeExtensions$instance;
 
 export abstract class SqlServerDbContextOptionsExtensions$instance {
-    static ConfigureSqlEngine<TContext extends unknown & DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, sqlEngineOptionsAction?: Action_1<SqlEngineDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
+    static ConfigureSqlEngine<TContext extends unknown & { readonly __tsonic_type_Microsoft_EntityFrameworkCore_DbContext: never }>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, sqlEngineOptionsAction?: Action_1<SqlEngineDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
     static ConfigureSqlEngine(optionsBuilder: DbContextOptionsBuilder, sqlEngineOptionsAction?: Action_1<SqlEngineDbContextOptionsBuilder> | null): DbContextOptionsBuilder;
-    static UseAzureSql<TContext extends unknown & DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, azureSqlOptionsAction?: Action_1<AzureSqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
-    static UseAzureSql<TContext extends unknown & DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connection: DbConnection, azureSqlOptionsAction?: Action_1<AzureSqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
-    static UseAzureSql<TContext extends unknown & DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connection: DbConnection, contextOwnsConnection: boolean, azureSqlOptionsAction?: Action_1<AzureSqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
-    static UseAzureSql<TContext extends unknown & DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connectionString: string | null, azureSqlOptionsAction?: Action_1<AzureSqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
+    static UseAzureSql<TContext extends unknown & { readonly __tsonic_type_Microsoft_EntityFrameworkCore_DbContext: never }>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, azureSqlOptionsAction?: Action_1<AzureSqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
+    static UseAzureSql<TContext extends unknown & { readonly __tsonic_type_Microsoft_EntityFrameworkCore_DbContext: never }>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connection: DbConnection, azureSqlOptionsAction?: Action_1<AzureSqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
+    static UseAzureSql<TContext extends unknown & { readonly __tsonic_type_Microsoft_EntityFrameworkCore_DbContext: never }>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connection: DbConnection, contextOwnsConnection: boolean, azureSqlOptionsAction?: Action_1<AzureSqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
+    static UseAzureSql<TContext extends unknown & { readonly __tsonic_type_Microsoft_EntityFrameworkCore_DbContext: never }>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connectionString: string | null, azureSqlOptionsAction?: Action_1<AzureSqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
     static UseAzureSql(optionsBuilder: DbContextOptionsBuilder, azureSqlOptionsAction?: Action_1<AzureSqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder;
     static UseAzureSql(optionsBuilder: DbContextOptionsBuilder, connection: DbConnection, azureSqlOptionsAction?: Action_1<AzureSqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder;
     static UseAzureSql(optionsBuilder: DbContextOptionsBuilder, connection: DbConnection, contextOwnsConnection: boolean, azureSqlOptionsAction?: Action_1<AzureSqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder;
     static UseAzureSql(optionsBuilder: DbContextOptionsBuilder, connectionString: string | null, azureSqlOptionsAction?: Action_1<AzureSqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder;
-    static UseAzureSynapse<TContext extends unknown & DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, azureSynapseOptionsAction?: Action_1<AzureSynapseDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
-    static UseAzureSynapse<TContext extends unknown & DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connection: DbConnection, azureSynapseOptionsAction?: Action_1<AzureSynapseDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
-    static UseAzureSynapse<TContext extends unknown & DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connection: DbConnection, contextOwnsConnection: boolean, azureSynapseOptionsAction?: Action_1<AzureSynapseDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
-    static UseAzureSynapse<TContext extends unknown & DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connectionString: string | null, azureSynapseOptionsAction?: Action_1<AzureSynapseDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
+    static UseAzureSynapse<TContext extends unknown & { readonly __tsonic_type_Microsoft_EntityFrameworkCore_DbContext: never }>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, azureSynapseOptionsAction?: Action_1<AzureSynapseDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
+    static UseAzureSynapse<TContext extends unknown & { readonly __tsonic_type_Microsoft_EntityFrameworkCore_DbContext: never }>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connection: DbConnection, azureSynapseOptionsAction?: Action_1<AzureSynapseDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
+    static UseAzureSynapse<TContext extends unknown & { readonly __tsonic_type_Microsoft_EntityFrameworkCore_DbContext: never }>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connection: DbConnection, contextOwnsConnection: boolean, azureSynapseOptionsAction?: Action_1<AzureSynapseDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
+    static UseAzureSynapse<TContext extends unknown & { readonly __tsonic_type_Microsoft_EntityFrameworkCore_DbContext: never }>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connectionString: string | null, azureSynapseOptionsAction?: Action_1<AzureSynapseDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
     static UseAzureSynapse(optionsBuilder: DbContextOptionsBuilder, azureSynapseOptionsAction?: Action_1<AzureSynapseDbContextOptionsBuilder> | null): DbContextOptionsBuilder;
     static UseAzureSynapse(optionsBuilder: DbContextOptionsBuilder, connection: DbConnection, azureSynapseOptionsAction?: Action_1<AzureSynapseDbContextOptionsBuilder> | null): DbContextOptionsBuilder;
     static UseAzureSynapse(optionsBuilder: DbContextOptionsBuilder, connection: DbConnection, contextOwnsConnection: boolean, azureSynapseOptionsAction?: Action_1<AzureSynapseDbContextOptionsBuilder> | null): DbContextOptionsBuilder;
     static UseAzureSynapse(optionsBuilder: DbContextOptionsBuilder, connectionString: string | null, azureSynapseOptionsAction?: Action_1<AzureSynapseDbContextOptionsBuilder> | null): DbContextOptionsBuilder;
-    static UseSqlServer<TContext extends unknown & DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, sqlServerOptionsAction?: Action_1<SqlServerDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
-    static UseSqlServer<TContext extends unknown & DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connection: DbConnection, sqlServerOptionsAction?: Action_1<SqlServerDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
-    static UseSqlServer<TContext extends unknown & DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connection: DbConnection, contextOwnsConnection: boolean, sqlServerOptionsAction?: Action_1<SqlServerDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
-    static UseSqlServer<TContext extends unknown & DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connectionString: string | null, sqlServerOptionsAction?: Action_1<SqlServerDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
+    static UseSqlServer<TContext extends unknown & { readonly __tsonic_type_Microsoft_EntityFrameworkCore_DbContext: never }>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, sqlServerOptionsAction?: Action_1<SqlServerDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
+    static UseSqlServer<TContext extends unknown & { readonly __tsonic_type_Microsoft_EntityFrameworkCore_DbContext: never }>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connection: DbConnection, sqlServerOptionsAction?: Action_1<SqlServerDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
+    static UseSqlServer<TContext extends unknown & { readonly __tsonic_type_Microsoft_EntityFrameworkCore_DbContext: never }>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connection: DbConnection, contextOwnsConnection: boolean, sqlServerOptionsAction?: Action_1<SqlServerDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
+    static UseSqlServer<TContext extends unknown & { readonly __tsonic_type_Microsoft_EntityFrameworkCore_DbContext: never }>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connectionString: string | null, sqlServerOptionsAction?: Action_1<SqlServerDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
     static UseSqlServer(optionsBuilder: DbContextOptionsBuilder, sqlServerOptionsAction?: Action_1<SqlServerDbContextOptionsBuilder> | null): DbContextOptionsBuilder;
     static UseSqlServer(optionsBuilder: DbContextOptionsBuilder, connection: DbConnection, sqlServerOptionsAction?: Action_1<SqlServerDbContextOptionsBuilder> | null): DbContextOptionsBuilder;
     static UseSqlServer(optionsBuilder: DbContextOptionsBuilder, connection: DbConnection, contextOwnsConnection: boolean, sqlServerOptionsAction?: Action_1<SqlServerDbContextOptionsBuilder> | null): DbContextOptionsBuilder;
@@ -264,7 +266,7 @@ export abstract class SqlServerDbFunctionsExtensions$instance {
     static VarianceSample(_: DbFunctions, values: IEnumerable_1<System_Internal.Int32>): Nullable_1<System_Internal.Double>;
     static VarianceSample(_: DbFunctions, values: IEnumerable_1<System_Internal.Int64>): Nullable_1<System_Internal.Double>;
     static VarianceSample(_: DbFunctions, values: IEnumerable_1<System_Internal.Single>): Nullable_1<System_Internal.Double>;
-    static VectorDistance<T extends NonNullable<unknown>>(_: DbFunctions, distanceMetric: string, vector1: SqlVector_1<T>, vector2: SqlVector_1<T>): double;
+    static VectorDistance<T extends { readonly __tsonic_type_System_ValueType: never }>(_: DbFunctions, distanceMetric: string, vector1: SqlVector_1<T>, vector2: SqlVector_1<T>): double;
 }
 
 

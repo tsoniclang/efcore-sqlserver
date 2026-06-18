@@ -7,7 +7,7 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 
 
 // Import types from other namespaces
-import type { ClientOptions, DelayStrategy, HttpMessage, Request, RequestFailedDetailsParser, ResponseClassifier, TokenCredential, TokenRequestContext } from "../../Azure.Core/internal/index.js";
+import type { ClientOptions, DelayStrategy, HttpMessage, Request, RequestFailedDetailsParser, ResponseClassifier, TokenCredential } from "../../Azure.Core/internal/index.js";
 import type { RequestContext, Response } from "../../Azure/internal/index.js";
 import type { IDictionary_2, IEnumerable_1, IList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
 import type { HttpClient, HttpMessageHandler } from "@tsonic/dotnet/System.Net.Http/internal/index.js";
@@ -18,15 +18,16 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Exception, Func_2, IDisposable, Int32, Object as ClrObject, ReadOnlyMemory_1, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface BearerTokenAuthenticationPolicy$instance extends HttpPipelinePolicy {
+export interface BearerTokenAuthenticationPolicy$instance extends HttpPipelinePolicy$instance {
     readonly __tsonic_type_Azure_Core_Pipeline_BearerTokenAuthenticationPolicy: never;
+    readonly __tsonic_type_Azure_Core_Pipeline_HttpPipelinePolicy: never;
 
     AuthorizeRequest(message: HttpMessage): void;
     AuthorizeRequestAsync(message: HttpMessage): ValueTask;
     AuthorizeRequestOnChallenge(message: HttpMessage): boolean;
     AuthorizeRequestOnChallengeAsync(message: HttpMessage): ValueTask_1<System_Internal.Boolean>;
-    Process(message: HttpMessage, pipeline: ReadOnlyMemory_1<HttpPipelinePolicy>): void;
-    ProcessAsync(message: HttpMessage, pipeline: ReadOnlyMemory_1<HttpPipelinePolicy>): ValueTask;
+    Process: HttpPipelinePolicy$instance["Process"] & ((message: HttpMessage, pipeline: ReadOnlyMemory_1<HttpPipelinePolicy>) => void);
+    ProcessAsync: HttpPipelinePolicy$instance["ProcessAsync"] & ((message: HttpMessage, pipeline: ReadOnlyMemory_1<HttpPipelinePolicy>) => ValueTask);
 }
 
 
@@ -38,8 +39,9 @@ export const BearerTokenAuthenticationPolicy: {
 
 export type BearerTokenAuthenticationPolicy = BearerTokenAuthenticationPolicy$instance;
 
-export interface DisposableHttpPipeline$instance extends HttpPipeline {
+export interface DisposableHttpPipeline$instance extends HttpPipeline$instance {
     readonly __tsonic_type_Azure_Core_Pipeline_DisposableHttpPipeline: never;
+    readonly __tsonic_type_Azure_Core_Pipeline_HttpPipeline: never;
 
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -53,15 +55,16 @@ export const DisposableHttpPipeline: {
 
 export type DisposableHttpPipeline = DisposableHttpPipeline$instance;
 
-export interface HttpClientTransport$instance extends HttpPipelineTransport {
+export interface HttpClientTransport$instance extends HttpPipelineTransport$instance {
     readonly __tsonic_type_Azure_Core_Pipeline_HttpClientTransport: never;
+    readonly __tsonic_type_Azure_Core_Pipeline_HttpPipelineTransport: never;
 
     readonly __tsonic_iface_System_IDisposable: never;
 
-    CreateRequest(): Request;
+    CreateRequest: HttpPipelineTransport$instance["CreateRequest"] & (() => Request);
     Dispose(): void;
-    Process(message: HttpMessage): void;
-    ProcessAsync(message: HttpMessage): ValueTask;
+    Process: HttpPipelineTransport$instance["Process"] & ((message: HttpMessage) => void);
+    ProcessAsync: HttpPipelineTransport$instance["ProcessAsync"] & ((message: HttpMessage) => ValueTask);
 }
 
 
@@ -126,25 +129,24 @@ export interface HttpPipelinePolicy$instance {
 }
 
 
-export const HttpPipelinePolicy: (abstract new() => HttpPipelinePolicy) & {
-    ProcessNext(message: HttpMessage, pipeline: ReadOnlyMemory_1<HttpPipelinePolicy>): void;
-    ProcessNextAsync(message: HttpMessage, pipeline: ReadOnlyMemory_1<HttpPipelinePolicy>): ValueTask;
+export const HttpPipelinePolicy: {
 };
 
 
 export type HttpPipelinePolicy = HttpPipelinePolicy$instance;
 
-export interface HttpPipelineSynchronousPolicy$instance extends HttpPipelinePolicy {
+export interface HttpPipelineSynchronousPolicy$instance extends HttpPipelinePolicy$instance {
+    readonly __tsonic_type_Azure_Core_Pipeline_HttpPipelinePolicy: never;
     readonly __tsonic_type_Azure_Core_Pipeline_HttpPipelineSynchronousPolicy: never;
 
     OnReceivedResponse(message: HttpMessage): void;
     OnSendingRequest(message: HttpMessage): void;
-    Process(message: HttpMessage, pipeline: ReadOnlyMemory_1<HttpPipelinePolicy>): void;
-    ProcessAsync(message: HttpMessage, pipeline: ReadOnlyMemory_1<HttpPipelinePolicy>): ValueTask;
+    Process: HttpPipelinePolicy$instance["Process"] & ((message: HttpMessage, pipeline: ReadOnlyMemory_1<HttpPipelinePolicy>) => void);
+    ProcessAsync: HttpPipelinePolicy$instance["ProcessAsync"] & ((message: HttpMessage, pipeline: ReadOnlyMemory_1<HttpPipelinePolicy>) => ValueTask);
 }
 
 
-export const HttpPipelineSynchronousPolicy: (abstract new() => HttpPipelineSynchronousPolicy) & {
+export const HttpPipelineSynchronousPolicy: {
 };
 
 
@@ -159,7 +161,7 @@ export interface HttpPipelineTransport$instance {
 }
 
 
-export const HttpPipelineTransport: (abstract new() => HttpPipelineTransport) & {
+export const HttpPipelineTransport: {
 };
 
 
@@ -182,11 +184,12 @@ export const HttpPipelineTransportOptions: {
 
 export type HttpPipelineTransportOptions = HttpPipelineTransportOptions$instance;
 
-export interface RedirectPolicy$instance extends HttpPipelinePolicy {
+export interface RedirectPolicy$instance extends HttpPipelinePolicy$instance {
+    readonly __tsonic_type_Azure_Core_Pipeline_HttpPipelinePolicy: never;
     readonly __tsonic_type_Azure_Core_Pipeline_RedirectPolicy: never;
 
-    Process(message: HttpMessage, pipeline: ReadOnlyMemory_1<HttpPipelinePolicy>): void;
-    ProcessAsync(message: HttpMessage, pipeline: ReadOnlyMemory_1<HttpPipelinePolicy>): ValueTask;
+    Process: HttpPipelinePolicy$instance["Process"] & ((message: HttpMessage, pipeline: ReadOnlyMemory_1<HttpPipelinePolicy>) => void);
+    ProcessAsync: HttpPipelinePolicy$instance["ProcessAsync"] & ((message: HttpMessage, pipeline: ReadOnlyMemory_1<HttpPipelinePolicy>) => ValueTask);
 }
 
 
@@ -197,15 +200,16 @@ export const RedirectPolicy: {
 
 export type RedirectPolicy = RedirectPolicy$instance;
 
-export interface RetryPolicy$instance extends HttpPipelinePolicy {
+export interface RetryPolicy$instance extends HttpPipelinePolicy$instance {
+    readonly __tsonic_type_Azure_Core_Pipeline_HttpPipelinePolicy: never;
     readonly __tsonic_type_Azure_Core_Pipeline_RetryPolicy: never;
 
     OnRequestSent(message: HttpMessage): void;
     OnRequestSentAsync(message: HttpMessage): ValueTask;
     OnSendingRequest(message: HttpMessage): void;
     OnSendingRequestAsync(message: HttpMessage): ValueTask;
-    Process(message: HttpMessage, pipeline: ReadOnlyMemory_1<HttpPipelinePolicy>): void;
-    ProcessAsync(message: HttpMessage, pipeline: ReadOnlyMemory_1<HttpPipelinePolicy>): ValueTask;
+    Process: HttpPipelinePolicy$instance["Process"] & ((message: HttpMessage, pipeline: ReadOnlyMemory_1<HttpPipelinePolicy>) => void);
+    ProcessAsync: HttpPipelinePolicy$instance["ProcessAsync"] & ((message: HttpMessage, pipeline: ReadOnlyMemory_1<HttpPipelinePolicy>) => ValueTask);
     ShouldRetry(message: HttpMessage, exception: Exception | null): boolean;
     ShouldRetryAsync(message: HttpMessage, exception: Exception | null): ValueTask_1<System_Internal.Boolean>;
 }

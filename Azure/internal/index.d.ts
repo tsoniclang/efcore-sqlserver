@@ -7,6 +7,7 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 
 
 // Import types from other namespaces
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { HttpPipeline, HttpPipelinePolicy } from "../../Azure.Core.Pipeline/internal/index.js";
 import type { JsonPropertyNames, ObjectSerializer } from "../../Azure.Core.Serialization/internal/index.js";
 import type { ClientOptions, DelayStrategy, HttpHeader, HttpPipelinePosition, RehydrationToken, RequestFailedDetailsParser, ResponseClassificationHandler, ResponseHeaders } from "../../Azure.Core/internal/index.js";
@@ -28,26 +29,31 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal
 import * as System_Lib_tsonic_dotnet from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Byte, DateTimeOffset, Enum, EventArgs, Exception, IComparable, IConvertible, IDisposable, IEquatable_1, IFormattable, Int32, Int64, ISpanFormattable, Nullable_1, Object as ClrObject, ReadOnlyMemory_1, String as ClrString, TimeSpan, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export enum ErrorOptions {
-    Default = 0,
-    NoThrow = 1
-}
+export type ErrorOptions = number & { readonly __tsonic_type_Azure_ErrorOptions: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const ErrorOptions: {
+    readonly Default: ErrorOptions;
+    readonly NoThrow: ErrorOptions;
+};
 
 
-export enum WaitUntil {
-    Completed = 0,
-    Started = 1
-}
+export type WaitUntil = number & { readonly __tsonic_type_Azure_WaitUntil: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const WaitUntil: {
+    readonly Completed: WaitUntil;
+    readonly Started: WaitUntil;
+};
 
 
 export interface ETag$instance {
     readonly __tsonic_type_Azure_ETag: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_IEquatable_1: never;
 
+    Equals(obj: unknown | null): boolean;
     Equals(other: ETag): boolean;
     Equals(other: string | null): boolean;
-    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     ToString(): string;
     ToString(format: string): string;
@@ -64,13 +70,14 @@ export type ETag = ETag$instance;
 
 export interface HttpRange$instance {
     readonly __tsonic_type_Azure_HttpRange: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     readonly Length: Nullable_1<System_Internal.Int64>;
     readonly Offset: long;
-    Equals(other: HttpRange): boolean;
     Equals(obj: unknown | null): boolean;
+    Equals(other: HttpRange): boolean;
     GetHashCode(): int;
     ToString(): string;
 }
@@ -97,17 +104,18 @@ export interface AsyncPageable_1$instance<T extends unknown> {
 }
 
 
-export const AsyncPageable_1: (abstract new<T extends unknown>() => AsyncPageable_1<T>) & (abstract new<T extends unknown>(cancellationToken: CancellationToken) => AsyncPageable_1<T>) & {
+export const AsyncPageable_1: {
     FromPages<T extends unknown>(pages: IEnumerable_1<Page_1<T>>): AsyncPageable_1<T>;
 };
 
 
 export type AsyncPageable_1<T extends unknown> = AsyncPageable_1$instance<T>;
 
-export interface AzureKeyCredential$instance extends ApiKeyCredential {
+export interface AzureKeyCredential$instance extends System_ClientModel_Internal.ApiKeyCredential$instance {
     readonly __tsonic_type_Azure_AzureKeyCredential: never;
+    readonly __tsonic_type_System_ClientModel_ApiKeyCredential: never;
 
-    Key: string;
+    readonly Key: string;
 }
 
 
@@ -137,7 +145,7 @@ export type AzureNamedKeyCredential = AzureNamedKeyCredential$instance;
 export interface AzureSasCredential$instance {
     readonly __tsonic_type_Azure_AzureSasCredential: never;
 
-    Signature: string;
+    readonly Signature: string;
     Update(signature: string): void;
 }
 
@@ -221,7 +229,7 @@ export interface NullableResponse_1$instance<T extends unknown> {
 }
 
 
-export const NullableResponse_1: (abstract new<T extends unknown>() => NullableResponse_1<T>) & {
+export const NullableResponse_1: {
 };
 
 
@@ -240,42 +248,41 @@ export interface Operation$instance {
     UpdateStatus(cancellationToken?: CancellationToken): Response;
     UpdateStatusAsync(cancellationToken?: CancellationToken): ValueTask_1<Response>;
     WaitForCompletionResponse(cancellationToken?: CancellationToken): Response;
-    WaitForCompletionResponse(pollingInterval: TimeSpan, cancellationToken?: CancellationToken): Response;
     WaitForCompletionResponse(delayStrategy: DelayStrategy, cancellationToken?: CancellationToken): Response;
+    WaitForCompletionResponse(pollingInterval: TimeSpan, cancellationToken?: CancellationToken): Response;
     WaitForCompletionResponseAsync(cancellationToken?: CancellationToken): ValueTask_1<Response>;
-    WaitForCompletionResponseAsync(pollingInterval: TimeSpan, cancellationToken?: CancellationToken): ValueTask_1<Response>;
     WaitForCompletionResponseAsync(delayStrategy: DelayStrategy, cancellationToken?: CancellationToken): ValueTask_1<Response>;
+    WaitForCompletionResponseAsync(pollingInterval: TimeSpan, cancellationToken?: CancellationToken): ValueTask_1<Response>;
 }
 
 
-export const Operation: (abstract new() => Operation) & {
+export const Operation: {
     Rehydrate(pipeline: HttpPipeline, rehydrationToken: RehydrationToken, options?: ClientOptions | null): Operation;
-    Rehydrate<T extends unknown & IPersistableModel_1<T>>(pipeline: HttpPipeline, rehydrationToken: RehydrationToken, options?: ClientOptions | null): Operation_1<T>;
+    Rehydrate<T extends unknown & { readonly __tsonic_iface_System_ClientModel_Primitives_IPersistableModel_1: never }>(pipeline: HttpPipeline, rehydrationToken: RehydrationToken, options?: ClientOptions | null): Operation_1<T>;
     RehydrateAsync(pipeline: HttpPipeline, rehydrationToken: RehydrationToken, options?: ClientOptions | null): Task_1<Operation>;
-    RehydrateAsync<T extends unknown & IPersistableModel_1<T>>(pipeline: HttpPipeline, rehydrationToken: RehydrationToken, options?: ClientOptions | null): Task_1<Operation_1<T>>;
+    RehydrateAsync<T extends unknown & { readonly __tsonic_iface_System_ClientModel_Primitives_IPersistableModel_1: never }>(pipeline: HttpPipeline, rehydrationToken: RehydrationToken, options?: ClientOptions | null): Task_1<Operation_1<T>>;
 };
 
 
 export type Operation = Operation$instance;
 
-export interface Operation_1$instance<T extends unknown> extends Operation {
+export interface Operation_1$instance<T extends unknown> extends Operation$instance {
+    readonly __tsonic_type_Azure_Operation: never;
     readonly __tsonic_type_Azure_Operation_1: never;
 
     readonly HasValue: boolean;
     readonly Value: T;
     WaitForCompletion(cancellationToken?: CancellationToken): Response_1<T>;
-    WaitForCompletion(pollingInterval: TimeSpan, cancellationToken: CancellationToken): Response_1<T>;
     WaitForCompletion(delayStrategy: DelayStrategy, cancellationToken: CancellationToken): Response_1<T>;
+    WaitForCompletion(pollingInterval: TimeSpan, cancellationToken: CancellationToken): Response_1<T>;
     WaitForCompletionAsync(cancellationToken?: CancellationToken): ValueTask_1<Response_1<T>>;
-    WaitForCompletionAsync(pollingInterval: TimeSpan, cancellationToken: CancellationToken): ValueTask_1<Response_1<T>>;
     WaitForCompletionAsync(delayStrategy: DelayStrategy, cancellationToken: CancellationToken): ValueTask_1<Response_1<T>>;
-    WaitForCompletionResponseAsync(cancellationToken?: CancellationToken): ValueTask_1<Response>;
-    WaitForCompletionResponseAsync(pollingInterval: TimeSpan, cancellationToken?: CancellationToken): ValueTask_1<Response>;
-    WaitForCompletionResponseAsync(delayStrategy: DelayStrategy, cancellationToken?: CancellationToken): ValueTask_1<Response>;
+    WaitForCompletionAsync(pollingInterval: TimeSpan, cancellationToken: CancellationToken): ValueTask_1<Response_1<T>>;
+    WaitForCompletionResponseAsync: Operation$instance["WaitForCompletionResponseAsync"] & ((cancellationToken?: CancellationToken) => ValueTask_1<Response>) & ((delayStrategy: DelayStrategy, cancellationToken?: CancellationToken) => ValueTask_1<Response>) & ((pollingInterval: TimeSpan, cancellationToken?: CancellationToken) => ValueTask_1<Response>);
 }
 
 
-export const Operation_1: (abstract new<T extends unknown>() => Operation_1<T>) & {
+export const Operation_1: {
 };
 
 
@@ -293,7 +300,7 @@ export interface Page_1$instance<T extends unknown> {
 }
 
 
-export const Page_1: (abstract new<T extends unknown>() => Page_1<T>) & {
+export const Page_1: {
     FromValues<T extends unknown>(values: IReadOnlyList_1<T>, continuationToken: string | null, response: Response): Page_1<T>;
 };
 
@@ -315,29 +322,31 @@ export interface Pageable_1$instance<T extends unknown> {
 }
 
 
-export const Pageable_1: (abstract new<T extends unknown>() => Pageable_1<T>) & (abstract new<T extends unknown>(cancellationToken: CancellationToken) => Pageable_1<T>) & {
+export const Pageable_1: {
     FromPages<T extends unknown>(pages: IEnumerable_1<Page_1<T>>): Pageable_1<T>;
 };
 
 
 export type Pageable_1<T extends unknown> = Pageable_1$instance<T>;
 
-export interface PageableOperation_1$instance<T extends unknown> extends Operation_1<AsyncPageable_1<T>> {
+export interface PageableOperation_1$instance<T extends unknown> extends Operation_1$instance<AsyncPageable_1<T>> {
+    readonly __tsonic_type_Azure_Operation: never;
+    readonly __tsonic_type_Azure_Operation_1: never;
     readonly __tsonic_type_Azure_PageableOperation_1: never;
 
-    readonly Value: AsyncPageable_1<T>;
     GetValues(cancellationToken?: CancellationToken): Pageable_1<T>;
     GetValuesAsync(cancellationToken?: CancellationToken): AsyncPageable_1<T>;
 }
 
 
-export const PageableOperation_1: (abstract new<T extends unknown>() => PageableOperation_1<T>) & {
+export const PageableOperation_1: {
 };
 
 
 export type PageableOperation_1<T extends unknown> = PageableOperation_1$instance<T>;
 
-export interface RequestConditions$instance extends MatchConditions {
+export interface RequestConditions$instance extends MatchConditions$instance {
+    readonly __tsonic_type_Azure_MatchConditions: never;
     readonly __tsonic_type_Azure_RequestConditions: never;
 
     get IfModifiedSince(): Nullable_1<DateTimeOffset>;
@@ -359,8 +368,8 @@ export interface RequestContext$instance {
 
     CancellationToken: CancellationToken;
     ErrorOptions: ErrorOptions;
-    AddClassifier(statusCode: int, isError: boolean): void;
     AddClassifier(classifier: ResponseClassificationHandler): void;
+    AddClassifier(statusCode: int, isError: boolean): void;
     AddPolicy(policy: HttpPipelinePolicy, position: HttpPipelinePosition): void;
 }
 
@@ -372,14 +381,15 @@ export const RequestContext: {
 
 export type RequestContext = RequestContext$instance;
 
-export interface RequestFailedException$instance extends Exception {
+export interface RequestFailedException$instance extends System_Lib_tsonic_dotnet.Exception {
     readonly __tsonic_type_Azure_RequestFailedException: never;
+    readonly __tsonic_type_System_Exception: never;
 
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
     readonly ErrorCode: string | null;
     readonly Status: int;
-    GetObjectData(info: SerializationInfo, context: StreamingContext): void;
+    GetObjectData: System_Lib_tsonic_dotnet.Exception["GetObjectData"] & ((info: SerializationInfo, context: StreamingContext) => void);
     GetRawResponse(): Response | null;
 }
 
@@ -408,7 +418,7 @@ export interface Response$instance {
     get ContentStream(): Stream | null;
     set ContentStream(value: Stream | null);
     readonly Headers: ResponseHeaders;
-    IsError: boolean;
+    readonly IsError: boolean;
     readonly ReasonPhrase: string;
     readonly Status: int;
     ContainsHeader(name: string): boolean;
@@ -420,30 +430,29 @@ export interface Response$instance {
 }
 
 
-export const Response: (abstract new() => Response) & {
+export const Response: {
     FromValue<T extends unknown>(value: T, response: Response): Response_1<T>;
 };
 
 
 export type Response = Response$instance;
 
-export interface Response_1$instance<T extends unknown> extends NullableResponse_1<T> {
+export interface Response_1$instance<T extends unknown> extends NullableResponse_1$instance<T> {
+    readonly __tsonic_type_Azure_NullableResponse_1: never;
     readonly __tsonic_type_Azure_Response_1: never;
 
-    readonly HasValue: boolean;
-    readonly Value: T;
-    Equals(obj: unknown | null): boolean;
-    GetHashCode(): int;
+    Equals: NullableResponse_1$instance<T>["Equals"] & ((obj: unknown | null) => boolean);
+    GetHashCode: NullableResponse_1$instance<T>["GetHashCode"] & (() => int);
 }
 
 
-export const Response_1: (abstract new<T extends unknown>() => Response_1<T>) & {
+export const Response_1: {
 };
 
 
 export type Response_1<T extends unknown> = Response_1$instance<T>;
 
-export interface ResponseError$instance extends System_ClientModel_Primitives_Internal.IJsonModel_1$instance<ResponseError> {
+export interface ResponseError$instance {
     readonly __tsonic_type_Azure_ResponseError: never;
 
     readonly __tsonic_iface_System_ClientModel_Primitives_IJsonModel_1: never;
@@ -469,8 +478,9 @@ export interface __ResponseError$views {
 export type ResponseError = ResponseError$instance & __ResponseError$views;
 
 
-export interface SyncAsyncEventArgs$instance extends EventArgs {
+export interface SyncAsyncEventArgs$instance extends System_Lib_tsonic_dotnet.EventArgs {
     readonly __tsonic_type_Azure_SyncAsyncEventArgs: never;
+    readonly __tsonic_type_System_EventArgs: never;
 
     readonly CancellationToken: CancellationToken;
     readonly IsRunningSynchronously: boolean;

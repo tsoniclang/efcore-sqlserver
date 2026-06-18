@@ -13,23 +13,29 @@ import type { ISerializable, SerializationInfo, StreamingContext } from "@tsonic
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Attribute, Boolean as ClrBoolean, Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, String as ClrString, SystemException, Type, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export enum DataAccessKind {
-    None = 0,
-    Read = 1
-}
+export type DataAccessKind = number & { readonly __tsonic_type_Microsoft_SqlServer_Server_DataAccessKind: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const DataAccessKind: {
+    readonly None: DataAccessKind;
+    readonly Read: DataAccessKind;
+};
 
 
-export enum Format {
-    Unknown = 0,
-    Native = 1,
-    UserDefined = 2
-}
+export type Format = number & { readonly __tsonic_type_Microsoft_SqlServer_Server_Format: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const Format: {
+    readonly Unknown: Format;
+    readonly Native: Format;
+    readonly UserDefined: Format;
+};
 
 
-export enum SystemDataAccessKind {
-    None = 0,
-    Read = 1
-}
+export type SystemDataAccessKind = number & { readonly __tsonic_type_Microsoft_SqlServer_Server_SystemDataAccessKind: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const SystemDataAccessKind: {
+    readonly None: SystemDataAccessKind;
+    readonly Read: SystemDataAccessKind;
+};
 
 
 export interface IBinarySerialize$instance {
@@ -42,12 +48,14 @@ export interface IBinarySerialize$instance {
 
 export type IBinarySerialize = IBinarySerialize$instance;
 
-export interface InvalidUdtException$instance extends SystemException {
+export interface InvalidUdtException$instance extends System_Internal.SystemException {
     readonly __tsonic_type_Microsoft_SqlServer_Server_InvalidUdtException: never;
+    readonly __tsonic_type_System_Exception: never;
+    readonly __tsonic_type_System_SystemException: never;
 
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
-    GetObjectData(si: SerializationInfo, context: StreamingContext): void;
+    GetObjectData: System_Internal.SystemException["GetObjectData"] & ((si: SerializationInfo, context: StreamingContext) => void);
 }
 
 
@@ -58,8 +66,9 @@ export const InvalidUdtException: {
 
 export type InvalidUdtException = InvalidUdtException$instance;
 
-export interface SqlFacetAttribute$instance extends Attribute {
+export interface SqlFacetAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_SqlServer_Server_SqlFacetAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     IsFixedLength: boolean;
     IsNullable: boolean;
@@ -76,8 +85,9 @@ export const SqlFacetAttribute: {
 
 export type SqlFacetAttribute = SqlFacetAttribute$instance;
 
-export interface SqlFunctionAttribute$instance extends Attribute {
+export interface SqlFunctionAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_SqlServer_Server_SqlFunctionAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     DataAccess: DataAccessKind;
     FillRowMethodName: string;
@@ -96,8 +106,10 @@ export const SqlFunctionAttribute: {
 
 export type SqlFunctionAttribute = SqlFunctionAttribute$instance;
 
-export interface SqlMethodAttribute$instance extends SqlFunctionAttribute {
+export interface SqlMethodAttribute$instance extends SqlFunctionAttribute$instance {
+    readonly __tsonic_type_Microsoft_SqlServer_Server_SqlFunctionAttribute: never;
     readonly __tsonic_type_Microsoft_SqlServer_Server_SqlMethodAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     InvokeIfReceiverIsNull: boolean;
     IsMutator: boolean;
@@ -112,8 +124,9 @@ export const SqlMethodAttribute: {
 
 export type SqlMethodAttribute = SqlMethodAttribute$instance;
 
-export interface SqlUserDefinedAggregateAttribute$instance extends Attribute {
+export interface SqlUserDefinedAggregateAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_SqlServer_Server_SqlUserDefinedAggregateAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     readonly Format: Format;
     IsInvariantToDuplicates: boolean;
@@ -133,8 +146,9 @@ export const SqlUserDefinedAggregateAttribute: {
 
 export type SqlUserDefinedAggregateAttribute = SqlUserDefinedAggregateAttribute$instance;
 
-export interface SqlUserDefinedTypeAttribute$instance extends Attribute {
+export interface SqlUserDefinedTypeAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_SqlServer_Server_SqlUserDefinedTypeAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     readonly Format: Format;
     IsByteOrdered: boolean;
